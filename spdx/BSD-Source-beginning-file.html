@@ -1,0 +1,434 @@
+<html><head><title>ldbcollector: spdx:BSD-Source-beginning-file</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-Source-beginning-file</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Source-beginning-file</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Source Code Attribution - beginning of file variant</span></li><li><span class="licensename">BSD-Source-beginning-file</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Source-beginning-file</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:abb0b49298edd1479aacf08e43365eec">[<a href="/fact/SPDXLicense/abb0b49298edd1479aacf08e43365eec">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6319d87e305e88c2eaaf2fe43a317f01">[<a href="/fact/OrtLicenseCategorization/6319d87e305e88c2eaaf2fe43a317f01">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6319d87e305e88c2eaaf2fe43a317f01">[<a href="/fact/OrtLicenseCategorization/6319d87e305e88c2eaaf2fe43a317f01">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is mostly the same as BSD-Source-Code but adds includes a specific requirement requiring retention of the copyright notice &quot;immediately at the beginning of the file&quot;.<span class="provided-by">(provided by: <span title="SPDXLicense:abb0b49298edd1479aacf08e43365eec">[<a href="/fact/SPDXLicense/abb0b49298edd1479aacf08e43365eec">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4" target="_blank">https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1997 Justin T. Gibbs.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions, and the following disclaimer,
+   without modification, immediately at the beginning of the file.
+2. The name of the author may not be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1997 Justin T. Gibbs.
+            &lt;br /&gt;
+
+All rights reserved.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions
+         are met:
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+            Redistributions of source code must retain the above copyright
+            notice, this list of conditions, and the following disclaimer,
+            without modification, immediately at the beginning of the file.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+            The name of
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            the author&lt;/var&gt; may not be used to endorse or promote products
+            derived from this software without specific prior written permission
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;/var&gt;.
+
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE AUTHORS
+        AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED
+        WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+        PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE AUTHOR
+        OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT,
+        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+        OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+        WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+        THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+        DAMAGE.
+      &lt;/p&gt;
+
+    </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/abb0b49298edd1479aacf08e43365eec">SPDXLicense:abb0b49298edd1479aacf08e43365eec</a> for <a href="/?license=spdx:BSD-Source-beginning-file"><span class="licensename"><span class="namespace">spdx:</span>BSD-Source-beginning-file</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Source-beginning-file</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Source Code Attribution - beginning of file variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:abb0b49298edd1479aacf08e43365eec">[<a href="/fact/SPDXLicense/abb0b49298edd1479aacf08e43365eec">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is mostly the same as BSD-Source-Code but adds includes a specific requirement requiring retention of the copyright notice &quot;immediately at the beginning of the file&quot;.<span class="provided-by">(provided by: <span title="SPDXLicense:abb0b49298edd1479aacf08e43365eec">[<a href="/fact/SPDXLicense/abb0b49298edd1479aacf08e43365eec">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4" target="_blank">https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1997 Justin T. Gibbs.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions, and the following disclaimer,
+   without modification, immediately at the beginning of the file.
+2. The name of the author may not be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1997 Justin T. Gibbs.
+            &lt;br /&gt;
+
+All rights reserved.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions
+         are met:
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+            Redistributions of source code must retain the above copyright
+            notice, this list of conditions, and the following disclaimer,
+            without modification, immediately at the beginning of the file.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+            The name of
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            the author&lt;/var&gt; may not be used to endorse or promote products
+            derived from this software without specific prior written permission
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;/var&gt;.
+
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE AUTHORS
+        AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED
+        WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+        PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE AUTHOR
+        OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT,
+        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+        OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+        WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+        THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+        DAMAGE.
+      &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Source-beginning-file&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Source Code Attribution - beginning of file variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;abb0b49298edd1479aacf08e43365eec&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is mostly the same as BSD-Source-Code but adds includes a specific requirement requiring retention of the copyright notice \&quot;immediately at the beginning of the file\&quot;.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1997 Justin T. Gibbs.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions, and the following disclaimer,\n   without modification, immediately at the beginning of the file.\n2. The name of the author may not be used to endorse or promote products\n   derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1997 Justin T. Gibbs.\n            &lt;br /&gt;\n\nAll rights reserved.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without\n         modification, are permitted provided that the following conditions\n         are met:\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n            Redistributions of source code must retain the above copyright\n            notice, this list of conditions, and the following disclaimer,\n            without modification, immediately at the beginning of the file.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n            The name of\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            the author&lt;/var&gt; may not be used to endorse or promote products\n            derived from this software without specific prior written permission\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;/var&gt;.\n\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE AUTHORS\n        AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED\n        WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n        PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE AUTHOR\n        OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT,\n        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n        OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n        WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n        THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n        DAMAGE.\n      &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:14Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is mostly the same as BSD-Source-Code but adds includes a specific requirement requiring retention of the copyright notice \&quot;immediately at the beginning of the file\&quot;.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:BSD-Source-beginning-file&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1997 Justin T. Gibbs.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions, and the following disclaimer,\n   without modification, immediately at the beginning of the file.\n2. The name of the author may not be used to endorse or promote products\n   derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1997 Justin T. Gibbs.\n            &lt;br /&gt;\n\nAll rights reserved.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without\n         modification, are permitted provided that the following conditions\n         are met:\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n            Redistributions of source code must retain the above copyright\n            notice, this list of conditions, and the following disclaimer,\n            without modification, immediately at the beginning of the file.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n            The name of\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            the author&lt;/var&gt; may not be used to endorse or promote products\n            derived from this software without specific prior written permission\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;/var&gt;.\n\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE AUTHORS\n        AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED\n        WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n        PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE AUTHOR\n        OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT,\n        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n        OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n        WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n        THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n        DAMAGE.\n      &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;BSD Source Code Attribution - beginning of file variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1997 Justin T. Gibbs.  All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer, without modification, immediately at the beginning of the file.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name of &lt;&lt;var;name=\&quot;organizationClause3\&quot;;original=\&quot;the author\&quot;;match=\&quot;.+\&quot;&gt;&gt; may not be used to endorse or promote products derived from this software without specific prior written permission &lt;&lt;var;name=\&quot;organizationClause2\&quot;;original=\&quot;\&quot;;match=\&quot;.*\&quot;&gt;&gt; .\n\nTHIS SOFTWARE IS PROVIDED BY &lt;&lt;var;name=\&quot;copyrightHolderAsIs\&quot;;original=\&quot;THE AUTHORS AND CONTRIBUTORS\&quot;;match=\&quot;.+\&quot;&gt;&gt; \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;&lt;var;name=\&quot;copyrightHolderLiability\&quot;;original=\&quot;THE AUTHOR OR CONTRIBUTORS\&quot;;match=\&quot;.+\&quot;&gt;&gt; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/6319d87e305e88c2eaaf2fe43a317f01">OrtLicenseCategorization:6319d87e305e88c2eaaf2fe43a317f01</a> for <a href="/?license=SPDX:BSD-Source-beginning-file"><span class="licensename"><span class="namespace">SPDX:</span>BSD-Source-beginning-file</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-Source-beginning-file</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6319d87e305e88c2eaaf2fe43a317f01">[<a href="/fact/OrtLicenseCategorization/6319d87e305e88c2eaaf2fe43a317f01">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6319d87e305e88c2eaaf2fe43a317f01">[<a href="/fact/OrtLicenseCategorization/6319d87e305e88c2eaaf2fe43a317f01">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-Source-beginning-file&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;6319d87e305e88c2eaaf2fe43a317f01&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-Source-beginning-file&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li></ul></body></html>

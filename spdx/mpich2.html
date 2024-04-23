@@ -1,0 +1,791 @@
+<html><head><title>ldbcollector: spdx:mpich2</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:mpich2</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>mpich2</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">mpich2</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>mpich2</span></li><li><span class="licensename"><span class="namespace">cavil:</span>mpich2</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>mpich2</span></li><li><span class="licensename"><span class="namespace">fossology:</span>mpich2</span></li><li><span class="licensename"><span class="namespace">spdx:</span>mpich2</span></li><li><span class="licensename">mpich2 License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>mpich2 License</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li><li><span class="licensename">mit-license</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mpich</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:5d52b1d65f84ebc4403a215c6c26d3a6">[<a href="/fact/BlueOakCouncil/5d52b1d65f84ebc4403a215c6c26d3a6">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:03df102631423e5757018bfda98afa71">[<a href="/fact/SPDXLicense/03df102631423e5757018bfda98afa71">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:3ff2e152e8b43b448598ff34dc93aa27">[<a href="/fact/FedoraEntry/3ff2e152e8b43b448598ff34dc93aa27">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:5d52b1d65f84ebc4403a215c6c26d3a6">[<a href="/fact/BlueOakCouncil/5d52b1d65f84ebc4403a215c6c26d3a6">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9302411181fc97ec366aefe3608c8963">[<a href="/fact/OrtLicenseCategorization/9302411181fc97ec366aefe3608c8963">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9302411181fc97ec366aefe3608c8963">[<a href="/fact/OrtLicenseCategorization/9302411181fc97ec366aefe3608c8963">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT</a></li><li><a href="https://spdx.org/licenses/mpich2.html" target="_blank">https://spdx.org/licenses/mpich2.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT
+
+The following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.
+
+Copyright Notice
+1998--2020, Argonne National Laboratory
+
+Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:
+
+Mathematics and Computer Science Division
+Argonne National Laboratory, Argonne IL 60439
+
+(and)
+
+Department of Computer Science
+University of Illinois at Urbana-Champaign
+
+GOVERNMENT LICENSE
+
+Portions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+DISCLAIMER
+
+This computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;COPYRIGHT&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;The following is a notice of limited availability of the code, and disclaimer which must be included in
+	      the prologue of the code and in all source listings of the code.&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+	      &lt;p&gt;Copyright Notice&lt;/p&gt;
+
+	      &lt;p&gt;1998--2020, Argonne National Laboratory&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others.
+         This software was authored by:&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+	 &lt;p&gt;Mathematics and Computer Science Division&lt;/p&gt;
+
+	 &lt;p&gt;Argonne National Laboratory, Argonne IL 60439&lt;/p&gt;
+
+	 &lt;p&gt;(and)&lt;/p&gt;
+
+	 &lt;p&gt;Department of Computer Science&lt;/p&gt;
+
+	 &lt;p&gt;University of Illinois at Urbana-Champaign&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;GOVERNMENT LICENSE&lt;/p&gt;
+
+      &lt;p&gt;Portions of this material resulted from work developed under a U.S. Government Contract and are subject
+         to the following license: the Government is granted for itself and others acting on its behalf a
+         paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare
+         derivative works, and perform publicly and display publicly.&lt;/p&gt;
+
+      &lt;p&gt;DISCLAIMER&lt;/p&gt;
+
+      &lt;p&gt;This computer code material was prepared, in part, as an account of work sponsored by an agency of the
+         United States Government. Neither the United States, nor the University of Chicago, nor any of their
+         employees, makes any warranty express or implied, or assumes any legal liability or responsibility for
+         the accuracy, completeness, or usefulness of any information, apparatus, product, or process
+         disclosed, or represents that its use would not infringe privately owned rights.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>COPYRIGHT
+
+The following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.
+
+Copyright Notice
+
++ 2002 University of Chicago
+
+Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:
+
+Argonne National Laboratory Group W. Gropp: (630) 252-4318; FAX: (630) 252-5986; e-mail: gropp@mcs.anl.gov E. Lusk: (630) 252-7852; FAX: (630) 252-5986; e-mail: lusk@mcs.anl.gov Mathematics and Computer Science Division Argonne National Laboratory, Argonne IL 60439
+
+GOVERNMENT LICENSE
+
+Portions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+DISCLAIMER
+
+This computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/03df102631423e5757018bfda98afa71">SPDXLicense:03df102631423e5757018bfda98afa71</a> for <a href="/?license=spdx:mpich2"><span class="licensename"><span class="namespace">spdx:</span>mpich2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>mpich2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">mpich2 License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:03df102631423e5757018bfda98afa71">[<a href="/fact/SPDXLicense/03df102631423e5757018bfda98afa71">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT
+
+The following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.
+
+Copyright Notice
+1998--2020, Argonne National Laboratory
+
+Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:
+
+Mathematics and Computer Science Division
+Argonne National Laboratory, Argonne IL 60439
+
+(and)
+
+Department of Computer Science
+University of Illinois at Urbana-Champaign
+
+GOVERNMENT LICENSE
+
+Portions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+DISCLAIMER
+
+This computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;COPYRIGHT&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;The following is a notice of limited availability of the code, and disclaimer which must be included in
+	      the prologue of the code and in all source listings of the code.&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+	      &lt;p&gt;Copyright Notice&lt;/p&gt;
+
+	      &lt;p&gt;1998--2020, Argonne National Laboratory&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others.
+         This software was authored by:&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+	 &lt;p&gt;Mathematics and Computer Science Division&lt;/p&gt;
+
+	 &lt;p&gt;Argonne National Laboratory, Argonne IL 60439&lt;/p&gt;
+
+	 &lt;p&gt;(and)&lt;/p&gt;
+
+	 &lt;p&gt;Department of Computer Science&lt;/p&gt;
+
+	 &lt;p&gt;University of Illinois at Urbana-Champaign&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;GOVERNMENT LICENSE&lt;/p&gt;
+
+      &lt;p&gt;Portions of this material resulted from work developed under a U.S. Government Contract and are subject
+         to the following license: the Government is granted for itself and others acting on its behalf a
+         paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare
+         derivative works, and perform publicly and display publicly.&lt;/p&gt;
+
+      &lt;p&gt;DISCLAIMER&lt;/p&gt;
+
+      &lt;p&gt;This computer code material was prepared, in part, as an account of work sponsored by an agency of the
+         United States Government. Neither the United States, nor the University of Chicago, nor any of their
+         employees, makes any warranty express or implied, or assumes any legal liability or responsibility for
+         the accuracy, completeness, or usefulness of any information, apparatus, product, or process
+         disclosed, or represents that its use would not infringe privately owned rights.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:mpich2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;mpich2 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;03df102631423e5757018bfda98afa71&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;COPYRIGHT\n\nThe following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.\n\nCopyright Notice\n1998--2020, Argonne National Laboratory\n\nPermission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:\n\nMathematics and Computer Science Division\nArgonne National Laboratory, Argonne IL 60439\n\n(and)\n\nDepartment of Computer Science\nUniversity of Illinois at Urbana-Champaign\n\nGOVERNMENT LICENSE\n\nPortions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\nDISCLAIMER\n\nThis computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;COPYRIGHT&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;The following is a notice of limited availability of the code, and disclaimer which must be included in\n\t      the prologue of the code and in all source listings of the code.&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n\t      &lt;p&gt;Copyright Notice&lt;/p&gt;\n\n\t      &lt;p&gt;1998--2020, Argonne National Laboratory&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others.\n         This software was authored by:&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n\t &lt;p&gt;Mathematics and Computer Science Division&lt;/p&gt;\n\n\t &lt;p&gt;Argonne National Laboratory, Argonne IL 60439&lt;/p&gt;\n\n\t &lt;p&gt;(and)&lt;/p&gt;\n\n\t &lt;p&gt;Department of Computer Science&lt;/p&gt;\n\n\t &lt;p&gt;University of Illinois at Urbana-Champaign&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;GOVERNMENT LICENSE&lt;/p&gt;\n\n      &lt;p&gt;Portions of this material resulted from work developed under a U.S. Government Contract and are subject\n         to the following license: the Government is granted for itself and others acting on its behalf a\n         paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare\n         derivative works, and perform publicly and display publicly.&lt;/p&gt;\n\n      &lt;p&gt;DISCLAIMER&lt;/p&gt;\n\n      &lt;p&gt;This computer code material was prepared, in part, as an account of work sponsored by an agency of the\n         United States Government. Neither the United States, nor the University of Chicago, nor any of their\n         employees, makes any warranty express or implied, or assumes any legal liability or responsibility for\n         the accuracy, completeness, or usefulness of any information, apparatus, product, or process\n         disclosed, or represents that its use would not infringe privately owned rights.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:46Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:mpich2&quot;,
+        &quot;licenseText&quot;: &quot;COPYRIGHT\n\nThe following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.\n\nCopyright Notice\n1998--2020, Argonne National Laboratory\n\nPermission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:\n\nMathematics and Computer Science Division\nArgonne National Laboratory, Argonne IL 60439\n\n(and)\n\nDepartment of Computer Science\nUniversity of Illinois at Urbana-Champaign\n\nGOVERNMENT LICENSE\n\nPortions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\nDISCLAIMER\n\nThis computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;COPYRIGHT&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;The following is a notice of limited availability of the code, and disclaimer which must be included in\n\t      the prologue of the code and in all source listings of the code.&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n\t      &lt;p&gt;Copyright Notice&lt;/p&gt;\n\n\t      &lt;p&gt;1998--2020, Argonne National Laboratory&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others.\n         This software was authored by:&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n\t &lt;p&gt;Mathematics and Computer Science Division&lt;/p&gt;\n\n\t &lt;p&gt;Argonne National Laboratory, Argonne IL 60439&lt;/p&gt;\n\n\t &lt;p&gt;(and)&lt;/p&gt;\n\n\t &lt;p&gt;Department of Computer Science&lt;/p&gt;\n\n\t &lt;p&gt;University of Illinois at Urbana-Champaign&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;GOVERNMENT LICENSE&lt;/p&gt;\n\n      &lt;p&gt;Portions of this material resulted from work developed under a U.S. Government Contract and are subject\n         to the following license: the Government is granted for itself and others acting on its behalf a\n         paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare\n         derivative works, and perform publicly and display publicly.&lt;/p&gt;\n\n      &lt;p&gt;DISCLAIMER&lt;/p&gt;\n\n      &lt;p&gt;This computer code material was prepared, in part, as an account of work sponsored by an agency of the\n         United States Government. Neither the United States, nor the University of Chicago, nor any of their\n         employees, makes any warranty express or implied, or assumes any legal liability or responsibility for\n         the accuracy, completeness, or usefulness of any information, apparatus, product, or process\n         disclosed, or represents that its use would not infringe privately owned rights.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;mpich2 License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;COPYRIGHT  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThe following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.\n\n&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright Notice    1998--2020, Argonne National Laboratory  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:\n\n&lt;&lt;var;name=\&quot;author\&quot;;original=\&quot;Mathematics and Computer Science Division    Argonne National Laboratory, Argonne IL 60439    (and)    Department of Computer Science    University of Illinois at Urbana-Champaign  \&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\nGOVERNMENT LICENSE\n\nPortions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\nDISCLAIMER\n\nThis computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/3ff2e152e8b43b448598ff34dc93aa27">FedoraEntry:3ff2e152e8b43b448598ff34dc93aa27</a> for <a href="/?license=Fedora:mpich2"><span class="licensename"><span class="namespace">Fedora:</span>mpich2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>mpich2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>mpich2</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li><li><span class="licensename">mpich2 License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:3ff2e152e8b43b448598ff34dc93aa27">[<a href="/fact/FedoraEntry/3ff2e152e8b43b448598ff34dc93aa27">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:mpich2&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:mpich2&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;mpich2 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;3ff2e152e8b43b448598ff34dc93aa27&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MIT&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;mpich2 License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;mpich2&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:mpich2&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/5d52b1d65f84ebc4403a215c6c26d3a6">BlueOakCouncil:5d52b1d65f84ebc4403a215c6c26d3a6</a> for <a href="/?license=BlueOak:mpich2"><span class="licensename"><span class="namespace">BlueOak:</span>mpich2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>mpich2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">mpich2 License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:5d52b1d65f84ebc4403a215c6c26d3a6">[<a href="/fact/BlueOakCouncil/5d52b1d65f84ebc4403a215c6c26d3a6">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:5d52b1d65f84ebc4403a215c6c26d3a6">[<a href="/fact/BlueOakCouncil/5d52b1d65f84ebc4403a215c6c26d3a6">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/mpich2.html" target="_blank">https://spdx.org/licenses/mpich2.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:mpich2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;mpich2 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;5d52b1d65f84ebc4403a215c6c26d3a6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/mpich2.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;mpich2&quot;,
+                &quot;_name&quot;: &quot;mpich2 License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/mpich2.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/116579dabbcf5271c5306348f0a24463">Fossology:116579dabbcf5271c5306348f0a24463</a> for <a href="/?license=fossology:mpich2"><span class="licensename"><span class="namespace">fossology:</span>mpich2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>mpich2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">mpich2 License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT
+
+The following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.
+
+Copyright Notice
+
++ 2002 University of Chicago
+
+Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:
+
+Argonne National Laboratory Group W. Gropp: (630) 252-4318; FAX: (630) 252-5986; e-mail: gropp@mcs.anl.gov E. Lusk: (630) 252-7852; FAX: (630) 252-5986; e-mail: lusk@mcs.anl.gov Mathematics and Computer Science Division Argonne National Laboratory, Argonne IL 60439
+
+GOVERNMENT LICENSE
+
+Portions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+DISCLAIMER
+
+This computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:mpich2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;mpich2 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;116579dabbcf5271c5306348f0a24463&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;COPYRIGHT\n\nThe following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.\n\nCopyright Notice\n\n+ 2002 University of Chicago\n\nPermission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:\n\nArgonne National Laboratory Group W. Gropp: (630) 252-4318; FAX: (630) 252-5986; e-mail: gropp@mcs.anl.gov E. Lusk: (630) 252-7852; FAX: (630) 252-5986; e-mail: lusk@mcs.anl.gov Mathematics and Computer Science Division Argonne National Laboratory, Argonne IL 60439\n\nGOVERNMENT LICENSE\n\nPortions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\nDISCLAIMER\n\nThis computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;mpich2 License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:mpich2&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;COPYRIGHT\n\nThe following is a notice of limited availability of the code, and disclaimer which must be included in the prologue of the code and in all source listings of the code.\n\nCopyright Notice\n\n+ 2002 University of Chicago\n\nPermission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others. This software was authored by:\n\nArgonne National Laboratory Group W. Gropp: (630) 252-4318; FAX: (630) 252-5986; e-mail: gropp@mcs.anl.gov E. Lusk: (630) 252-7852; FAX: (630) 252-5986; e-mail: lusk@mcs.anl.gov Mathematics and Computer Science Division Argonne National Laboratory, Argonne IL 60439\n\nGOVERNMENT LICENSE\n\nPortions of this material resulted from work developed under a U.S. Government Contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\nDISCLAIMER\n\nThis computer code material was prepared, in part, as an account of work sponsored by an agency of the United States Government. Neither the United States, nor the University of Chicago, nor any of their employees, makes any warranty express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MIT&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/9302411181fc97ec366aefe3608c8963">OrtLicenseCategorization:9302411181fc97ec366aefe3608c8963</a> for <a href="/?license=SPDX:mpich2"><span class="licensename"><span class="namespace">SPDX:</span>mpich2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>mpich2</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9302411181fc97ec366aefe3608c8963">[<a href="/fact/OrtLicenseCategorization/9302411181fc97ec366aefe3608c8963">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9302411181fc97ec366aefe3608c8963">[<a href="/fact/OrtLicenseCategorization/9302411181fc97ec366aefe3608c8963">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:mpich2&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9302411181fc97ec366aefe3608c8963&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:mpich2&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/18f401afb50e69f7a8bca6e13b24b749">CavilLicenseChange:18f401afb50e69f7a8bca6e13b24b749</a> for <a href="/?license=cavil:mpich2"><span class="licensename"><span class="namespace">cavil:</span>mpich2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>mpich2</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">mpich2</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:mpich2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;mpich2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;18f401afb50e69f7a8bca6e13b24b749&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;mpich2&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:mpich2&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/00665cd26c56ba62b2b318db0c17d84e">MetaeffektLicense:00665cd26c56ba62b2b318db0c17d84e</a> for <a href="/?license=metaeffekt:mpich2 License"><span class="licensename"><span class="namespace">metaeffekt:</span>mpich2 License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>mpich2 License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>mpich2</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>mpich</span></li><li><span class="licensename">mpich2</span></li><li><span class="licensename">mpich2 License</span></li><li><span class="licensename">MPICH2 LICENSE</span></li><li><span class="licensename">MPICH2 License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:mpich2 License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:mpich2&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;mpich2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;mpich2 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MPICH2 LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MPICH2 License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:mpich&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;00665cd26c56ba62b2b318db0c17d84e&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;mpich2 License&quot;,
+            &quot;MPICH2 LICENSE&quot;,
+            &quot;MPICH2 License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:mpich2 License&quot;,
+        &quot;_category&quot;: &quot;mpich2&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:mpich&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:mpich2&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

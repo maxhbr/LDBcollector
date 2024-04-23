@@ -1,0 +1,736 @@
+<html><head><title>ldbcollector: spdx:DL-DE-BY-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:DL-DE-BY-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DL-DE-BY-2.0</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Data Licence Germany BY 2.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Data Licence Germany BY 2.0</span></li><li><span class="licensename">Data licence Germany – attribution – version 2.0</span></li><li><span class="licensename">DL-DE-BY-2.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>DL-DE-BY-2.0</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>DL-DE-BY-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DL-DE-BY-2.0</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">{{DL-DE-BY-2.0}} https:</span>//spdx.org/licenses/DL-DE-BY-2.0</span></li><li><span class="licensename"><span class="namespace">https:</span>//www.govdata.de/dl-de/by-2-0</span></li><li><span class="licensename">Data Licence BY</span></li><li><span class="licensename">Data license Germany - attribution 2.0</span></li><li><span class="licensename">DL-DE-BY</span></li><li><span class="licensename"><span class="namespace">scancode:</span>dl-de-by-2-0-en</span></li><li><span class="licensename">licenses.nuget.org/DL-DE-BY-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c382df836f7ecbeb5760ed472cc7aacc">[<a href="/fact/SPDXLicense/c382df836f7ecbeb5760ed472cc7aacc">SPDXLicense</a>]</span>)</span></li><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:a0e853120e5e37729bc1ccb23a34694d">[<a href="/fact/FedoraEntry/a0e853120e5e37729bc1ccb23a34694d">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:21b0370b942fea8312ad736ad4327419">[<a href="/fact/OrtLicenseCategorization/21b0370b942fea8312ad736ad4327419">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:21b0370b942fea8312ad736ad4327419">[<a href="/fact/OrtLicenseCategorization/21b0370b942fea8312ad736ad4327419">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank">https://www.govdata.de/dl-de/by-2-0</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>DL-DE-&gt;BY-2.0
+Datenlizenz Deutschland – Namensnennung – Version 2.0
+
+(1) Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0&quot; zulässig.
+
+Die bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere
+
+    vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;
+    mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;
+    in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.
+
+(2) Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:
+
+    Bezeichnung des Bereitstellers nach dessen Maßgabe,
+    der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0&quot; oder „dl-de/by-2-0&quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie
+    einen Verweis auf den Datensatz (URI).
+
+Dies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.
+
+(3) Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.
+
+
+Data licence Germany – attribution – version 2.0
+
+(1) Any use will be permitted provided it fulfils the requirements of this &quot;Data licence Germany – attribution – Version 2.0&quot;.
+
+The data and meta-data provided may, for commercial and non-commercial use, in particular
+
+    be copied, printed, presented, altered, processed and transmitted to third parties;
+    be merged with own data and with the data of others and be combined to form new and independent datasets;
+    be integrated in internal and external business processes, products and applications in public and non-public electronic networks.
+
+(2) The user must ensure that the source note contains the following information:
+
+    the name of the provider,
+    the annotation &quot;Data licence Germany – attribution – Version 2.0&quot; or &quot;dl-de/by-2-0&quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and
+    a reference to the dataset (URI).
+
+This applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.
+
+(3) Changes, editing, new designs or other amendments must be marked as such in the source note.
+
+
+
+URL: http://www.govdata.de/dl-de/by-2-0
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; DL-DE-&amp;gt;BY-2.0&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; Datenlizenz Deutschland – Namensnennung – Version 2.0&lt;/var&gt;
+         
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; zulässig.
+            &lt;p&gt;Die bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.&lt;/li&gt;
+            
+&lt;/ul&gt;&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;Bezeichnung des Bereitstellers nach dessen Maßgabe,&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; oder „dl-de/by-2-0&amp;quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;einen Verweis auf den Datensatz (URI).&lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;Dies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.&lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; Data licence Germany – attribution – version 2.0&lt;/var&gt;
+         
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;Any use will be permitted provided it fulfils the requirements of this &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot;.
+            &lt;p&gt;The data and meta-data provided may, for commercial and non-commercial use, in particular&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;be copied, printed, presented, altered, processed and transmitted to third parties;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;be merged with own data and with the data of others and be combined to form new and independent datasets;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;be integrated in internal and external business processes, products and applications in public and non-public electronic networks.&lt;/li&gt;
+            
+&lt;/ul&gt;&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;The user must ensure that the source note contains the following information:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;the name of the provider,&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;the annotation &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot; or &amp;quot;dl-de/by-2-0&amp;quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;a reference to the dataset (URI).&lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;This applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;Changes, editing, new designs or other amendments must be marked as such in the source note.&lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;URL: http://www.govdata.de/dl-de/by-2-0&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/c382df836f7ecbeb5760ed472cc7aacc">SPDXLicense:c382df836f7ecbeb5760ed472cc7aacc</a> for <a href="/?license=spdx:DL-DE-BY-2.0"><span class="licensename"><span class="namespace">spdx:</span>DL-DE-BY-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DL-DE-BY-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Data licence Germany – attribution – version 2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c382df836f7ecbeb5760ed472cc7aacc">[<a href="/fact/SPDXLicense/c382df836f7ecbeb5760ed472cc7aacc">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.govdata.de/dl-de/by-2-0" target="_blank">https://www.govdata.de/dl-de/by-2-0</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>DL-DE-&gt;BY-2.0
+Datenlizenz Deutschland – Namensnennung – Version 2.0
+
+(1) Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0&quot; zulässig.
+
+Die bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere
+
+    vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;
+    mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;
+    in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.
+
+(2) Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:
+
+    Bezeichnung des Bereitstellers nach dessen Maßgabe,
+    der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0&quot; oder „dl-de/by-2-0&quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie
+    einen Verweis auf den Datensatz (URI).
+
+Dies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.
+
+(3) Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.
+
+
+Data licence Germany – attribution – version 2.0
+
+(1) Any use will be permitted provided it fulfils the requirements of this &quot;Data licence Germany – attribution – Version 2.0&quot;.
+
+The data and meta-data provided may, for commercial and non-commercial use, in particular
+
+    be copied, printed, presented, altered, processed and transmitted to third parties;
+    be merged with own data and with the data of others and be combined to form new and independent datasets;
+    be integrated in internal and external business processes, products and applications in public and non-public electronic networks.
+
+(2) The user must ensure that the source note contains the following information:
+
+    the name of the provider,
+    the annotation &quot;Data licence Germany – attribution – Version 2.0&quot; or &quot;dl-de/by-2-0&quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and
+    a reference to the dataset (URI).
+
+This applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.
+
+(3) Changes, editing, new designs or other amendments must be marked as such in the source note.
+
+
+
+URL: http://www.govdata.de/dl-de/by-2-0
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; DL-DE-&amp;gt;BY-2.0&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; Datenlizenz Deutschland – Namensnennung – Version 2.0&lt;/var&gt;
+         
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; zulässig.
+            &lt;p&gt;Die bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.&lt;/li&gt;
+            
+&lt;/ul&gt;&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;Bezeichnung des Bereitstellers nach dessen Maßgabe,&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; oder „dl-de/by-2-0&amp;quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;einen Verweis auf den Datensatz (URI).&lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;Dies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.&lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; Data licence Germany – attribution – version 2.0&lt;/var&gt;
+         
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;Any use will be permitted provided it fulfils the requirements of this &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot;.
+            &lt;p&gt;The data and meta-data provided may, for commercial and non-commercial use, in particular&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;be copied, printed, presented, altered, processed and transmitted to third parties;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;be merged with own data and with the data of others and be combined to form new and independent datasets;&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;be integrated in internal and external business processes, products and applications in public and non-public electronic networks.&lt;/li&gt;
+            
+&lt;/ul&gt;&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;The user must ensure that the source note contains the following information:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;the name of the provider,&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;the annotation &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot; or &amp;quot;dl-de/by-2-0&amp;quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and&lt;/li&gt;
+               
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;a reference to the dataset (URI).&lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;This applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;Changes, editing, new designs or other amendments must be marked as such in the source note.&lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;URL: http://www.govdata.de/dl-de/by-2-0&lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:DL-DE-BY-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Data licence Germany – attribution – version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;c382df836f7ecbeb5760ed472cc7aacc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;DL-DE-&gt;BY-2.0\nDatenlizenz Deutschland – Namensnennung – Version 2.0\n\n(1) Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0\&quot; zulässig.\n\nDie bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere\n\n    vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;\n    mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;\n    in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.\n\n(2) Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:\n\n    Bezeichnung des Bereitstellers nach dessen Maßgabe,\n    der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0\&quot; oder „dl-de/by-2-0\&quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie\n    einen Verweis auf den Datensatz (URI).\n\nDies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.\n\n(3) Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.\n\n\nData licence Germany – attribution – version 2.0\n\n(1) Any use will be permitted provided it fulfils the requirements of this \&quot;Data licence Germany – attribution – Version 2.0\&quot;.\n\nThe data and meta-data provided may, for commercial and non-commercial use, in particular\n\n    be copied, printed, presented, altered, processed and transmitted to third parties;\n    be merged with own data and with the data of others and be combined to form new and independent datasets;\n    be integrated in internal and external business processes, products and applications in public and non-public electronic networks.\n\n(2) The user must ensure that the source note contains the following information:\n\n    the name of the provider,\n    the annotation \&quot;Data licence Germany – attribution – Version 2.0\&quot; or \&quot;dl-de/by-2-0\&quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and\n    a reference to the dataset (URI).\n\nThis applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.\n\n(3) Changes, editing, new designs or other amendments must be marked as such in the source note.\n\n\n\nURL: http://www.govdata.de/dl-de/by-2-0\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; DL-DE-&amp;gt;BY-2.0&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; Datenlizenz Deutschland – Namensnennung – Version 2.0&lt;/var&gt;\n         \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; zulässig.\n            &lt;p&gt;Die bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.&lt;/li&gt;\n            \n&lt;/ul&gt;&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;Bezeichnung des Bereitstellers nach dessen Maßgabe,&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; oder „dl-de/by-2-0&amp;quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;einen Verweis auf den Datensatz (URI).&lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;Dies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.&lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; Data licence Germany – attribution – version 2.0&lt;/var&gt;\n         \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;Any use will be permitted provided it fulfils the requirements of this &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot;.\n            &lt;p&gt;The data and meta-data provided may, for commercial and non-commercial use, in particular&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;be copied, printed, presented, altered, processed and transmitted to third parties;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;be merged with own data and with the data of others and be combined to form new and independent datasets;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;be integrated in internal and external business processes, products and applications in public and non-public electronic networks.&lt;/li&gt;\n            \n&lt;/ul&gt;&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;The user must ensure that the source note contains the following information:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;the name of the provider,&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;the annotation &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot; or &amp;quot;dl-de/by-2-0&amp;quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;a reference to the dataset (URI).&lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;This applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;Changes, editing, new designs or other amendments must be marked as such in the source note.&lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;URL: http://www.govdata.de/dl-de/by-2-0&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.govdata.de/dl-de/by-2-0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.govdata.de/dl-de/by-2-0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:51Z&quot;,
+                &quot;url&quot;: &quot;https://www.govdata.de/dl-de/by-2-0&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:DL-DE-BY-2.0&quot;,
+        &quot;licenseText&quot;: &quot;DL-DE-&gt;BY-2.0\nDatenlizenz Deutschland – Namensnennung – Version 2.0\n\n(1) Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0\&quot; zulässig.\n\nDie bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere\n\n    vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;\n    mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;\n    in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.\n\n(2) Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:\n\n    Bezeichnung des Bereitstellers nach dessen Maßgabe,\n    der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0\&quot; oder „dl-de/by-2-0\&quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie\n    einen Verweis auf den Datensatz (URI).\n\nDies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.\n\n(3) Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.\n\n\nData licence Germany – attribution – version 2.0\n\n(1) Any use will be permitted provided it fulfils the requirements of this \&quot;Data licence Germany – attribution – Version 2.0\&quot;.\n\nThe data and meta-data provided may, for commercial and non-commercial use, in particular\n\n    be copied, printed, presented, altered, processed and transmitted to third parties;\n    be merged with own data and with the data of others and be combined to form new and independent datasets;\n    be integrated in internal and external business processes, products and applications in public and non-public electronic networks.\n\n(2) The user must ensure that the source note contains the following information:\n\n    the name of the provider,\n    the annotation \&quot;Data licence Germany – attribution – Version 2.0\&quot; or \&quot;dl-de/by-2-0\&quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and\n    a reference to the dataset (URI).\n\nThis applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.\n\n(3) Changes, editing, new designs or other amendments must be marked as such in the source note.\n\n\n\nURL: http://www.govdata.de/dl-de/by-2-0\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; DL-DE-&amp;gt;BY-2.0&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; Datenlizenz Deutschland – Namensnennung – Version 2.0&lt;/var&gt;\n         \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; zulässig.\n            &lt;p&gt;Die bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.&lt;/li&gt;\n            \n&lt;/ul&gt;&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;Bezeichnung des Bereitstellers nach dessen Maßgabe,&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0&amp;quot; oder „dl-de/by-2-0&amp;quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;einen Verweis auf den Datensatz (URI).&lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;Dies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.&lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; Data licence Germany – attribution – version 2.0&lt;/var&gt;\n         \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;Any use will be permitted provided it fulfils the requirements of this &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot;.\n            &lt;p&gt;The data and meta-data provided may, for commercial and non-commercial use, in particular&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;be copied, printed, presented, altered, processed and transmitted to third parties;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;be merged with own data and with the data of others and be combined to form new and independent datasets;&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;be integrated in internal and external business processes, products and applications in public and non-public electronic networks.&lt;/li&gt;\n            \n&lt;/ul&gt;&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;The user must ensure that the source note contains the following information:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;the name of the provider,&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;the annotation &amp;quot;Data licence Germany – attribution – Version 2.0&amp;quot; or &amp;quot;dl-de/by-2-0&amp;quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and&lt;/li&gt;\n               \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;a reference to the dataset (URI).&lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;This applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;Changes, editing, new designs or other amendments must be marked as such in the source note.&lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;URL: http://www.govdata.de/dl-de/by-2-0&lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+        &quot;name&quot;: &quot;Data licence Germany – attribution – version 2.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.govdata.de/dl-de/by-2-0&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;DL-DE-&gt;BY-2.0&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; Datenlizenz Deutschland – Namensnennung – Version 2.0&lt;&lt;endOptional&gt;&gt;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(1)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Jede Nutzung ist unter den Bedingungen dieser „Datenlizenz Deutschland – Namensnennung – Version 2.0\&quot; zulässig.\n\n   Die bereitgestellten Daten und Metadaten dürfen für die kommerzielle und nicht kommerzielle Nutzung insbesondere\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; vervielfältigt, ausgedruckt, präsentiert, verändert, bearbeitet sowie an Dritte übermittelt werden;\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; mit eigenen Daten und Daten Anderer zusammengeführt und zu selbständigen neuen Datensätzen verbunden werden;\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; in interne und externe Geschäftsprozesse, Produkte und Anwendungen in öffentlichen und nicht öffentlichen elektronischen Netzwerken eingebunden werden.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(2)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Bei der Nutzung ist sicherzustellen, dass folgende Angaben als Quellenvermerk enthalten sind:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Bezeichnung des Bereitstellers nach dessen Maßgabe,\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; der Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0\&quot; oder „dl-de/by-2-0\&quot; mit Verweis auf den Lizenztext unter www.govdata.de/dl-de/by-2-0 sowie\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; einen Verweis auf den Datensatz (URI).\n\n   Dies gilt nur soweit die datenhaltende Stelle die Angaben 1. bis 3. zum Quellenvermerk bereitstellt.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(3)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Veränderungen, Bearbeitungen, neue Gestaltungen oder sonstige Abwandlungen sind im Quellenvermerk mit dem Hinweis zu versehen, dass die Daten geändert wurden.&lt;&lt;beginOptional&gt;&gt; Data licence Germany – attribution – version 2.0&lt;&lt;endOptional&gt;&gt;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(1)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Any use will be permitted provided it fulfils the requirements of this \&quot;Data licence Germany – attribution – Version 2.0\&quot;.\n\n   The data and meta-data provided may, for commercial and non-commercial use, in particular\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; be copied, printed, presented, altered, processed and transmitted to third parties;\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; be merged with own data and with the data of others and be combined to form new and independent datasets;\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; be integrated in internal and external business processes, products and applications in public and non-public electronic networks.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(2)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The user must ensure that the source note contains the following information:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; the name of the provider,\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; the annotation \&quot;Data licence Germany – attribution – Version 2.0\&quot; or \&quot;dl-de/by-2-0\&quot; referring to the licence text available at www.govdata.de/dl-de/by-2-0, and\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; a reference to the dataset (URI).\n\n   This applies only if the entity keeping the data provides the pieces of information 1-3 for the source note.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(3)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Changes, editing, new designs or other amendments must be marked as such in the source note.&lt;&lt;beginOptional&gt;&gt; URL: http://www.govdata.de/dl-de/by-2-0\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/a0e853120e5e37729bc1ccb23a34694d">FedoraEntry:a0e853120e5e37729bc1ccb23a34694d</a> for <a href="/?license=Fedora:DL-DE-BY-2.0"><span class="licensename"><span class="namespace">Fedora:</span>DL-DE-BY-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>DL-DE-BY-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DL-DE-BY-2.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Data license Germany - attribution 2.0</span></li><li><span class="licensename">DL-DE-BY</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:a0e853120e5e37729bc1ccb23a34694d">[<a href="/fact/FedoraEntry/a0e853120e5e37729bc1ccb23a34694d">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:DL-DE-BY-2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:DL-DE-BY-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Data license Germany - attribution 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DL-DE-BY&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;a0e853120e5e37729bc1ccb23a34694d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed-content\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed-content&quot;,
+                                    {
+                                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;DL-DE-BY&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Data license Germany - attribution 2.0&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;DL-DE-BY-2.0&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:DL-DE-BY-2.0&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed-content&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/21b0370b942fea8312ad736ad4327419">OrtLicenseCategorization:21b0370b942fea8312ad736ad4327419</a> for <a href="/?license=SPDX:DL-DE-BY-2.0"><span class="licensename"><span class="namespace">SPDX:</span>DL-DE-BY-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>DL-DE-BY-2.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:21b0370b942fea8312ad736ad4327419">[<a href="/fact/OrtLicenseCategorization/21b0370b942fea8312ad736ad4327419">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:21b0370b942fea8312ad736ad4327419">[<a href="/fact/OrtLicenseCategorization/21b0370b942fea8312ad736ad4327419">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:DL-DE-BY-2.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;21b0370b942fea8312ad736ad4327419&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:DL-DE-BY-2.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/ad554164d22a9bc62e7bc8da3d7607a0">CavilLicenseChange:ad554164d22a9bc62e7bc8da3d7607a0</a> for <a href="/?license=cavil:DL-DE-BY-2.0"><span class="licensename"><span class="namespace">cavil:</span>DL-DE-BY-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>DL-DE-BY-2.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">DL-DE-BY-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:DL-DE-BY-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DL-DE-BY-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;ad554164d22a9bc62e7bc8da3d7607a0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;DL-DE-BY-2.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:DL-DE-BY-2.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/042cc7a4afd81c5c3cfff4c574fec00c">MetaeffektLicense:042cc7a4afd81c5c3cfff4c574fec00c</a> for <a href="/?license=metaeffekt:Data Licence Germany BY 2.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Data Licence Germany BY 2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Data Licence Germany BY 2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DL-DE-BY-2.0</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">{{DL-DE-BY-2.0}} https:</span>//spdx.org/licenses/DL-DE-BY-2.0</span></li><li><span class="licensename"><span class="namespace">https:</span>//www.govdata.de/dl-de/by-2-0</span></li><li><span class="licensename">Data Licence BY</span></li><li><span class="licensename">Data Licence Germany BY 2.0</span></li><li><span class="licensename">Data licence Germany – attribution – Version 2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>dl-de-by-2-0-en</span></li><li><span class="licensename">licenses.nuget.org/DL-DE-BY-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Data Licence Germany BY 2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:DL-DE-BY-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Data Licence BY&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Data Licence Germany BY 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Data licence Germany – attribution – Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://www.govdata.de/dl-de/by-2-0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;licenses.nuget.org/DL-DE-BY-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;{{DL-DE-BY-2.0}} https://spdx.org/licenses/DL-DE-BY-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:dl-de-by-2-0-en&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;042cc7a4afd81c5c3cfff4c574fec00c&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Data Licence Germany BY 2.0&quot;,
+            &quot;Data licence Germany – attribution – Version 2.0&quot;,
+            &quot;https://www.govdata.de/dl-de/by-2-0&quot;,
+            &quot;licenses.nuget.org/DL-DE-BY-2.0&quot;,
+            &quot;{{DL-DE-BY-2.0}} https://spdx.org/licenses/DL-DE-BY-2.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Data Licence Germany BY 2.0&quot;,
+        &quot;_category&quot;: &quot;Data Licence BY&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:dl-de-by-2-0-en&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:DL-DE-BY-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

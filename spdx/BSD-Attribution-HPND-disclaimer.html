@@ -1,0 +1,582 @@
+<html><head><title>ldbcollector: spdx:BSD-Attribution-HPND-disclaimer</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-Attribution-HPND-disclaimer</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Attribution-HPND-disclaimer</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD with Attribution and HPND disclaimer</span></li><li><span class="licensename">BSD-Attribution-HPND-disclaimer</span></li><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Attribution-HPND-disclaimer</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Attribution-HPND-disclaimer</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Attribution-HPND-disclaimer</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2aa917d389d71c75398307d27895e02a">[<a href="/fact/SPDXLicense/2aa917d389d71c75398307d27895e02a">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:dfaab29c04dfa3fa8192dd91307f0df9">[<a href="/fact/FedoraEntry/dfaab29c04dfa3fa8192dd91307f0df9">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4227f67ef49129519f2dbd3e7bca605">[<a href="/fact/OrtLicenseCategorization/c4227f67ef49129519f2dbd3e7bca605">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4227f67ef49129519f2dbd3e7bca605">[<a href="/fact/OrtLicenseCategorization/c4227f67ef49129519f2dbd3e7bca605">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING" target="_blank">https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in
+   the documentation and/or other materials provided with the
+   distribution.
+
+3. The name &quot;Carnegie Mellon University&quot; must not be used to
+   endorse or promote products derived from this software without
+   prior written permission. For permission or any other legal
+   details, please contact
+     Office of Technology Transfer
+     Carnegie Mellon University
+     5000 Forbes Avenue
+     Pittsburgh, PA  15213-3890
+     (412) 268-4387, fax: (412) 268-7395
+     tech-transfer@andrew.cmu.edu
+
+4. Redistributions of any form whatsoever must retain the following
+   acknowledgment:
+   &quot;This product includes software developed by Computing Services
+    at Carnegie Mellon University (http://www.cmu.edu/computing/).&quot;
+
+CARNEGIE MELLON UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO
+THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE
+FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+		Redistribution and use in source and binary forms, with or without
+		modification, are permitted provided that the following conditions
+		are met:
+	 &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; Redistributions of source code must retain the above copyright
+			notice, this list of conditions and the following disclaimer.
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; Redistributions in binary form must reproduce the above copyright
+			notice, this list of conditions and the following disclaimer in
+			the documentation and/or other materials provided with the
+			distribution.
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; The &lt;var class=&quot;replaceable-license-text&quot;&gt; name&lt;/var&gt; &amp;quot;&lt;var class=&quot;replaceable-license-text&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; must not be used to
+			endorse or promote products derived from this software without
+			prior written permission.&lt;var class=&quot;optional-license-text&quot;&gt;  For permission or any &lt;var class=&quot;optional-license-text&quot;&gt; other&lt;/var&gt; legal
+			details, please contact&lt;br /&gt;
+
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; Office of Technology Transfer&lt;br /&gt;
+
+			Carnegie Mellon University&lt;br /&gt;
+
+			5000 Forbes Avenue&lt;br /&gt;
+
+			Pittsburgh, PA  15213-3890&lt;br /&gt;
+
+			(412) 268-4387, fax: (412) 268-7395&lt;br /&gt;
+
+			tech-transfer@andrew.cmu.edu&lt;br /&gt;
+
+   &lt;/var&gt;&lt;/var&gt;
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Redistributions of any form whatsoever must retain the following
+			acknowledgment:&lt;br /&gt;
+
+			&amp;quot;This product includes software developed by &lt;var class=&quot;replaceable-license-text&quot;&gt; Computing Services&lt;/var&gt;&lt;br /&gt;
+
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; at Carnegie Mellon University (http://www.cmu.edu/computing/).&lt;/var&gt;&amp;quot;&lt;var class=&quot;optional-license-text&quot;&gt; .&lt;/var&gt;&lt;br /&gt;
+
+		&lt;/li&gt;
+	
+&lt;/ul&gt;
+	&lt;p&gt;
+		&lt;var class=&quot;replaceable-license-text&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO
+		THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+		AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE
+		FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+		WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+		AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+		OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+        &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/2aa917d389d71c75398307d27895e02a">SPDXLicense:2aa917d389d71c75398307d27895e02a</a> for <a href="/?license=spdx:BSD-Attribution-HPND-disclaimer"><span class="licensename"><span class="namespace">spdx:</span>BSD-Attribution-HPND-disclaimer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Attribution-HPND-disclaimer</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD with Attribution and HPND disclaimer</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2aa917d389d71c75398307d27895e02a">[<a href="/fact/SPDXLicense/2aa917d389d71c75398307d27895e02a">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING" target="_blank">https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in
+   the documentation and/or other materials provided with the
+   distribution.
+
+3. The name &quot;Carnegie Mellon University&quot; must not be used to
+   endorse or promote products derived from this software without
+   prior written permission. For permission or any other legal
+   details, please contact
+     Office of Technology Transfer
+     Carnegie Mellon University
+     5000 Forbes Avenue
+     Pittsburgh, PA  15213-3890
+     (412) 268-4387, fax: (412) 268-7395
+     tech-transfer@andrew.cmu.edu
+
+4. Redistributions of any form whatsoever must retain the following
+   acknowledgment:
+   &quot;This product includes software developed by Computing Services
+    at Carnegie Mellon University (http://www.cmu.edu/computing/).&quot;
+
+CARNEGIE MELLON UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO
+THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE
+FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+		Redistribution and use in source and binary forms, with or without
+		modification, are permitted provided that the following conditions
+		are met:
+	 &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; Redistributions of source code must retain the above copyright
+			notice, this list of conditions and the following disclaimer.
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; Redistributions in binary form must reproduce the above copyright
+			notice, this list of conditions and the following disclaimer in
+			the documentation and/or other materials provided with the
+			distribution.
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; The &lt;var class=&quot;replaceable-license-text&quot;&gt; name&lt;/var&gt; &amp;quot;&lt;var class=&quot;replaceable-license-text&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; must not be used to
+			endorse or promote products derived from this software without
+			prior written permission.&lt;var class=&quot;optional-license-text&quot;&gt;  For permission or any &lt;var class=&quot;optional-license-text&quot;&gt; other&lt;/var&gt; legal
+			details, please contact&lt;br /&gt;
+
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; Office of Technology Transfer&lt;br /&gt;
+
+			Carnegie Mellon University&lt;br /&gt;
+
+			5000 Forbes Avenue&lt;br /&gt;
+
+			Pittsburgh, PA  15213-3890&lt;br /&gt;
+
+			(412) 268-4387, fax: (412) 268-7395&lt;br /&gt;
+
+			tech-transfer@andrew.cmu.edu&lt;br /&gt;
+
+   &lt;/var&gt;&lt;/var&gt;
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Redistributions of any form whatsoever must retain the following
+			acknowledgment:&lt;br /&gt;
+
+			&amp;quot;This product includes software developed by &lt;var class=&quot;replaceable-license-text&quot;&gt; Computing Services&lt;/var&gt;&lt;br /&gt;
+
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; at Carnegie Mellon University (http://www.cmu.edu/computing/).&lt;/var&gt;&amp;quot;&lt;var class=&quot;optional-license-text&quot;&gt; .&lt;/var&gt;&lt;br /&gt;
+
+		&lt;/li&gt;
+	
+&lt;/ul&gt;
+	&lt;p&gt;
+		&lt;var class=&quot;replaceable-license-text&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO
+		THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+		AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE
+		FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+		WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+		AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+		OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+        &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Attribution-HPND-disclaimer&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD with Attribution and HPND disclaimer&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;2aa917d389d71c75398307d27895e02a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. The name \&quot;Carnegie Mellon University\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For permission or any other legal\n   details, please contact\n     Office of Technology Transfer\n     Carnegie Mellon University\n     5000 Forbes Avenue\n     Pittsburgh, PA  15213-3890\n     (412) 268-4387, fax: (412) 268-7395\n     tech-transfer@andrew.cmu.edu\n\n4. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by Computing Services\n    at Carnegie Mellon University (http://www.cmu.edu/computing/).\&quot;\n\nCARNEGIE MELLON UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO\nTHIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE\nFOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN\nAN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING\nOUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n\t\tRedistribution and use in source and binary forms, with or without\n\t\tmodification, are permitted provided that the following conditions\n\t\tare met:\n\t &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; Redistributions of source code must retain the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer.\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; Redistributions in binary form must reproduce the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer in\n\t\t\tthe documentation and/or other materials provided with the\n\t\t\tdistribution.\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; The &lt;var class=\&quot;replaceable-license-text\&quot;&gt; name&lt;/var&gt; &amp;quot;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; must not be used to\n\t\t\tendorse or promote products derived from this software without\n\t\t\tprior written permission.&lt;var class=\&quot;optional-license-text\&quot;&gt;  For permission or any &lt;var class=\&quot;optional-license-text\&quot;&gt; other&lt;/var&gt; legal\n\t\t\tdetails, please contact&lt;br /&gt;\n\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; Office of Technology Transfer&lt;br /&gt;\n\n\t\t\tCarnegie Mellon University&lt;br /&gt;\n\n\t\t\t5000 Forbes Avenue&lt;br /&gt;\n\n\t\t\tPittsburgh, PA  15213-3890&lt;br /&gt;\n\n\t\t\t(412) 268-4387, fax: (412) 268-7395&lt;br /&gt;\n\n\t\t\ttech-transfer@andrew.cmu.edu&lt;br /&gt;\n\n   &lt;/var&gt;&lt;/var&gt;\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Redistributions of any form whatsoever must retain the following\n\t\t\tacknowledgment:&lt;br /&gt;\n\n\t\t\t&amp;quot;This product includes software developed by &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Computing Services&lt;/var&gt;&lt;br /&gt;\n\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; at Carnegie Mellon University (http://www.cmu.edu/computing/).&lt;/var&gt;&amp;quot;&lt;var class=\&quot;optional-license-text\&quot;&gt; .&lt;/var&gt;&lt;br /&gt;\n\n\t\t&lt;/li&gt;\n\t\n&lt;/ul&gt;\n\t&lt;p&gt;\n\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO\n\t\tTHIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\n\t\tAND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE\n\t\tFOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n\t\tWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN\n\t\tAN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING\n\t\tOUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n        &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:01:08Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:BSD-Attribution-HPND-disclaimer&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. The name \&quot;Carnegie Mellon University\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For permission or any other legal\n   details, please contact\n     Office of Technology Transfer\n     Carnegie Mellon University\n     5000 Forbes Avenue\n     Pittsburgh, PA  15213-3890\n     (412) 268-4387, fax: (412) 268-7395\n     tech-transfer@andrew.cmu.edu\n\n4. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by Computing Services\n    at Carnegie Mellon University (http://www.cmu.edu/computing/).\&quot;\n\nCARNEGIE MELLON UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO\nTHIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE\nFOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN\nAN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING\nOUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 1998-2003 Carnegie Mellon University.  All rights reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n\t\tRedistribution and use in source and binary forms, with or without\n\t\tmodification, are permitted provided that the following conditions\n\t\tare met:\n\t &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; Redistributions of source code must retain the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer.\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; Redistributions in binary form must reproduce the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer in\n\t\t\tthe documentation and/or other materials provided with the\n\t\t\tdistribution.\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; The &lt;var class=\&quot;replaceable-license-text\&quot;&gt; name&lt;/var&gt; &amp;quot;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; must not be used to\n\t\t\tendorse or promote products derived from this software without\n\t\t\tprior written permission.&lt;var class=\&quot;optional-license-text\&quot;&gt;  For permission or any &lt;var class=\&quot;optional-license-text\&quot;&gt; other&lt;/var&gt; legal\n\t\t\tdetails, please contact&lt;br /&gt;\n\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; Office of Technology Transfer&lt;br /&gt;\n\n\t\t\tCarnegie Mellon University&lt;br /&gt;\n\n\t\t\t5000 Forbes Avenue&lt;br /&gt;\n\n\t\t\tPittsburgh, PA  15213-3890&lt;br /&gt;\n\n\t\t\t(412) 268-4387, fax: (412) 268-7395&lt;br /&gt;\n\n\t\t\ttech-transfer@andrew.cmu.edu&lt;br /&gt;\n\n   &lt;/var&gt;&lt;/var&gt;\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Redistributions of any form whatsoever must retain the following\n\t\t\tacknowledgment:&lt;br /&gt;\n\n\t\t\t&amp;quot;This product includes software developed by &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Computing Services&lt;/var&gt;&lt;br /&gt;\n\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; at Carnegie Mellon University (http://www.cmu.edu/computing/).&lt;/var&gt;&amp;quot;&lt;var class=\&quot;optional-license-text\&quot;&gt; .&lt;/var&gt;&lt;br /&gt;\n\n\t\t&lt;/li&gt;\n\t\n&lt;/ul&gt;\n\t&lt;p&gt;\n\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; COPYRIGHT HOLDER&lt;/var&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO\n\t\tTHIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\n\t\tAND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE\n\t\tFOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\n\t\tWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN\n\t\tAN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING\n\t\tOUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n        &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;BSD with Attribution and HPND disclaimer&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/cyrusimap/cyrus-sasl/blob/master/COPYING&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1998-2003 Carnegie Mellon University. All rights reserved.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The &lt;&lt;var;name=\&quot;name\&quot;;original=\&quot;name\&quot;;match=\&quot;name(\\(s\\))?\&quot;&gt;&gt; \&quot; &lt;&lt;var;name=\&quot;copyrightHolder\&quot;;original=\&quot;COPYRIGHT HOLDER\&quot;;match=\&quot;.+\&quot;&gt;&gt; must not be used to endorse or promote products derived from this software without prior written permission.&lt;&lt;beginOptional&gt;&gt; For permission or any&lt;&lt;beginOptional&gt;&gt; other&lt;&lt;endOptional&gt;&gt; legal details, please contact\n\n   &lt;&lt;var;name=\&quot;address\&quot;;original=\&quot;Office of Technology Transfer     Carnegie Mellon University     5000 Forbes Avenue     Pittsburgh, PA 15213-3890     (412) 268-4387, fax: (412) 268-7395     tech-transfer@andrew.cmu.edu     \&quot;;match=\&quot;.+\&quot;&gt;&gt;&lt;&lt;endOptional&gt;&gt;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of any form whatsoever must retain the following acknowledgment:\n\n   \&quot;This product includes software developed by &lt;&lt;var;name=\&quot;developer1\&quot;;original=\&quot;Computing Services\&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\n   &lt;&lt;var;name=\&quot;developer2\&quot;;original=\&quot;at Carnegie Mellon University (http://www.cmu.edu/computing/).\&quot;;match=\&quot;.+\&quot;&gt;&gt; \&quot;&lt;&lt;beginOptional&gt;&gt; .&lt;&lt;endOptional&gt;&gt;\n\n&lt;&lt;var;name=\&quot;copyrightHolderUpper\&quot;;original=\&quot;COPYRIGHT HOLDER\&quot;;match=\&quot;.+\&quot;&gt;&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/dfaab29c04dfa3fa8192dd91307f0df9">FedoraEntry:dfaab29c04dfa3fa8192dd91307f0df9</a> for <a href="/?license=Fedora:BSD-Attribution-HPND-disclaimer"><span class="licensename"><span class="namespace">Fedora:</span>BSD-Attribution-HPND-disclaimer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Attribution-HPND-disclaimer</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Attribution-HPND-disclaimer</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:dfaab29c04dfa3fa8192dd91307f0df9">[<a href="/fact/FedoraEntry/dfaab29c04dfa3fa8192dd91307f0df9">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BSD-Attribution-HPND-disclaimer&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Attribution-HPND-disclaimer&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;dfaab29c04dfa3fa8192dd91307f0df9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BSD-Attribution-HPND-disclaimer&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BSD-Attribution-HPND-disclaimer&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c4227f67ef49129519f2dbd3e7bca605">OrtLicenseCategorization:c4227f67ef49129519f2dbd3e7bca605</a> for <a href="/?license=SPDX:BSD-Attribution-HPND-disclaimer"><span class="licensename"><span class="namespace">SPDX:</span>BSD-Attribution-HPND-disclaimer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-Attribution-HPND-disclaimer</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4227f67ef49129519f2dbd3e7bca605">[<a href="/fact/OrtLicenseCategorization/c4227f67ef49129519f2dbd3e7bca605">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4227f67ef49129519f2dbd3e7bca605">[<a href="/fact/OrtLicenseCategorization/c4227f67ef49129519f2dbd3e7bca605">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-Attribution-HPND-disclaimer&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c4227f67ef49129519f2dbd3e7bca605&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-Attribution-HPND-disclaimer&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/e00b8d81844a4ec4e47c56c6cb5ee959">CavilLicenseChange:e00b8d81844a4ec4e47c56c6cb5ee959</a> for <a href="/?license=cavil:BSD-Attribution-HPND-disclaimer"><span class="licensename"><span class="namespace">cavil:</span>BSD-Attribution-HPND-disclaimer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Attribution-HPND-disclaimer</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Attribution-HPND-disclaimer</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:BSD-Attribution-HPND-disclaimer&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-Attribution-HPND-disclaimer&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;e00b8d81844a4ec4e47c56c6cb5ee959&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;BSD-Attribution-HPND-disclaimer&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:BSD-Attribution-HPND-disclaimer&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li></ul></body></html>

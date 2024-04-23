@@ -1,0 +1,1094 @@
+<html><head><title>ldbcollector: spdx:BSD-2-Clause-Views</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-2-Clause-Views</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseNames (12):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 2-Clause License (with authors view)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 2-Clause License (with authors view)</span></li><li><span class="licensename">BSD 2-Clause with views sentence</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>BSD 2-Clause with views sentence</span></li><li><span class="licensename">BSD-2-Clause-Views</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>BSD-2-Clause-Views</span></li><li><span class="licensename"><span class="namespace">cavil:</span>BSD-2-Clause-Views</span></li><li><span class="licensename"><span class="namespace">eclipse:</span>BSD-2-Clause-Views</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-2-Clause-Views</span></li><li><span class="licensename"><span class="namespace">fossology:</span>BSD-2-Clause-Views</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-2-clause-views</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename">FreeBSD BSD Variant (2 clause BSD)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:1880ff1661a22fbbdf7725ecb6ece3d7">[<a href="/fact/BlueOakCouncil/1880ff1661a22fbbdf7725ecb6ece3d7">BlueOakCouncil</a>]</span><span title="ScancodeData:b9342835e00ee6f2f6e4dbfb80889b95">[<a href="/fact/ScancodeData/b9342835e00ee6f2f6e4dbfb80889b95">ScancodeData</a>]</span><span title="FOSSLight:6db3ef70f4f6267e80c840c9098207b1">[<a href="/fact/FOSSLight/6db3ef70f4f6267e80c840c9098207b1">FOSSLight</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d3ae0cb91a4d17c1ddcc3663b187ea92">[<a href="/fact/SPDXLicense/d3ae0cb91a4d17c1ddcc3663b187ea92">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:394e9de1abc2762adc196190ef6d9c66">[<a href="/fact/FedoraEntry/394e9de1abc2762adc196190ef6d9c66">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.">BlueOakCouncil: <b style="color: green;">Silver</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:1880ff1661a22fbbdf7725ecb6ece3d7">[<a href="/fact/BlueOakCouncil/1880ff1661a22fbbdf7725ecb6ece3d7">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:048942fdcbd19f31b5f189f91653ace2">[<a href="/fact/MetaeffektLicense/048942fdcbd19f31b5f189f91653ace2">MetaeffektLicense</a>]</span>)</span></li><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:3b72831debb44d62ca9742fdade31097">[<a href="/fact/EclipseLicense/3b72831debb44d62ca9742fdade31097">EclipseLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd32f84bc9fcafbbb03401f3472a70a6">[<a href="/fact/OrtLicenseCategorization/cd32f84bc9fcafbbb03401f3472a70a6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd32f84bc9fcafbbb03401f3472a70a6">[<a href="/fact/OrtLicenseCategorization/cd32f84bc9fcafbbb03401f3472a70a6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7f6933045c878d3a797fa6f0ffc6b65f">[<a href="/fact/OrtLicenseCategorization/7f6933045c878d3a797fa6f0ffc6b65f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7f6933045c878d3a797fa6f0ffc6b65f">[<a href="/fact/OrtLicenseCategorization/7f6933045c878d3a797fa6f0ffc6b65f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7f6933045c878d3a797fa6f0ffc6b65f">[<a href="/fact/OrtLicenseCategorization/7f6933045c878d3a797fa6f0ffc6b65f">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the &quot;views and conclusions&quot; sentence at the end.<span class="provided-by">(provided by: <span title="SPDXLicense:d3ae0cb91a4d17c1ddcc3663b187ea92">[<a href="/fact/SPDXLicense/d3ae0cb91a4d17c1ddcc3663b187ea92">SPDXLicense</a>]</span>)</span></li><li><b>Fossology: </b>This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the &quot;views and conclusions&quot; sentence at the end.<span class="provided-by">(provided by: <span title="Fossology:336005c0b0090cc3f145d6cbdd130aba">[<a href="/fact/Fossology/336005c0b0090cc3f145d6cbdd130aba">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.freebsd.org/copyright/freebsd-license.html" target="_blank">http://www.freebsd.org/copyright/freebsd-license.html</a></li><li><a href="https://github.com/protegeproject/protege/blob/master/license.txt" target="_blank">https://github.com/protegeproject/protege/blob/master/license.txt</a></li><li><a href="https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh" target="_blank">https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh</a></li><li><a href="https://spdx.org/licenses/BSD-2-Clause-Views.html" target="_blank">https://spdx.org/licenses/BSD-2-Clause-Views.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://www.freebsd.org/copyright/freebsd-license.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;owner&amp;gt; All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the following disclaimer.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE COPYRIGHT HOLDERS AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; EXPRESS&lt;/var&gt; OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+        AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE COPYRIGHT HOLDER OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+        TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+        ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+      &lt;p&gt;The views and conclusions contained in the software and documentation are those of the authors and should
+         not be interpreted as representing official policies, either expressed or implied, of &lt;var class=&quot;replaceable-license-text&quot;&gt; the copyright holders or contributors.&lt;/var&gt;&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list
+of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those
+of the authors and should not be interpreted as representing official policies,
+either expressed or implied, of the FreeBSD Project.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/d3ae0cb91a4d17c1ddcc3663b187ea92">SPDXLicense:d3ae0cb91a4d17c1ddcc3663b187ea92</a> for <a href="/?license=spdx:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">spdx:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 2-Clause with views sentence</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d3ae0cb91a4d17c1ddcc3663b187ea92">[<a href="/fact/SPDXLicense/d3ae0cb91a4d17c1ddcc3663b187ea92">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the &quot;views and conclusions&quot; sentence at the end.<span class="provided-by">(provided by: <span title="SPDXLicense:d3ae0cb91a4d17c1ddcc3663b187ea92">[<a href="/fact/SPDXLicense/d3ae0cb91a4d17c1ddcc3663b187ea92">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.freebsd.org/copyright/freebsd-license.html" target="_blank">http://www.freebsd.org/copyright/freebsd-license.html</a></li><li><a href="https://github.com/protegeproject/protege/blob/master/license.txt" target="_blank">https://github.com/protegeproject/protege/blob/master/license.txt</a></li><li><a href="https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh" target="_blank">https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;owner&amp;gt; All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the following disclaimer.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE COPYRIGHT HOLDERS AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; EXPRESS&lt;/var&gt; OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+        AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; THE COPYRIGHT HOLDER OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+        TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+        ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+      &lt;p&gt;The views and conclusions contained in the software and documentation are those of the authors and should
+         not be interpreted as representing official policies, either expressed or implied, of &lt;var class=&quot;replaceable-license-text&quot;&gt; the copyright holders or contributors.&lt;/var&gt;&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-2-Clause-Views&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;d3ae0cb91a4d17c1ddcc3663b187ea92&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the \&quot;views and conclusions\&quot; sentence at the end.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;owner&amp;gt; All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided\n         that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the following disclaimer.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE COPYRIGHT HOLDERS AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; EXPRESS&lt;/var&gt; OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\n        AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE COPYRIGHT HOLDER OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR\n        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\n        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR\n        TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\n        ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n      &lt;p&gt;The views and conclusions contained in the software and documentation are those of the authors and should\n         not be interpreted as representing official policies, either expressed or implied, of &lt;var class=\&quot;replaceable-license-text\&quot;&gt; the copyright holders or contributors.&lt;/var&gt;&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/protegeproject/protege/blob/master/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/protegeproject/protege/blob/master/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:10:29Z&quot;,
+                &quot;url&quot;: &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:10:29Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/protegeproject/protege/blob/master/license.txt&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:10:30Z&quot;,
+                &quot;url&quot;: &quot;https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the \&quot;views and conclusions\&quot; sentence at the end.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:BSD-2-Clause-Views&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) &amp;lt;year&amp;gt; &amp;lt;owner&amp;gt; All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided\n         that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the following disclaimer.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE COPYRIGHT HOLDERS AND CONTRIBUTORS&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; EXPRESS&lt;/var&gt; OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\n        AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE COPYRIGHT HOLDER OR CONTRIBUTORS&lt;/var&gt; BE LIABLE FOR\n        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\n        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR\n        TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\n        ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n      &lt;p&gt;The views and conclusions contained in the software and documentation are those of the authors and should\n         not be interpreted as representing official policies, either expressed or implied, of &lt;var class=\&quot;replaceable-license-text\&quot;&gt; the copyright holders or contributors.&lt;/var&gt;&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;,
+            &quot;https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh&quot;,
+            &quot;https://github.com/protegeproject/protege/blob/master/license.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY &lt;&lt;var;name=\&quot;copyrightHolderAsIs\&quot;;original=\&quot;THE COPYRIGHT HOLDERS AND CONTRIBUTORS\&quot;;match=\&quot;.+\&quot;&gt;&gt; \&quot;AS IS\&quot; AND ANY &lt;&lt;var;name=\&quot;express\&quot;;original=\&quot;EXPRESS\&quot;;match=\&quot;EXPRESS(ED)?\&quot;&gt;&gt; OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;&lt;var;name=\&quot;copyrightHolderLiability\&quot;;original=\&quot;THE COPYRIGHT HOLDER OR CONTRIBUTORS\&quot;;match=\&quot;.+\&quot;&gt;&gt; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of &lt;&lt;var;name=\&quot;copyrightHolderViews\&quot;;original=\&quot;the copyright holders or contributors.\&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/394e9de1abc2762adc196190ef6d9c66">FedoraEntry:394e9de1abc2762adc196190ef6d9c66</a> for <a href="/?license=Fedora:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">Fedora:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename">FreeBSD BSD Variant (2 clause BSD)</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:394e9de1abc2762adc196190ef6d9c66">[<a href="/fact/FedoraEntry/394e9de1abc2762adc196190ef6d9c66">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BSD-2-Clause-Views&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-2-Clause-Views&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD BSD Variant (2 clause BSD)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;394e9de1abc2762adc196190ef6d9c66&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;BSD&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;FreeBSD BSD Variant (2 clause BSD)&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BSD-2-Clause-Views&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BSD-2-Clause-Views&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/1880ff1661a22fbbdf7725ecb6ece3d7">BlueOakCouncil:1880ff1661a22fbbdf7725ecb6ece3d7</a> for <a href="/?license=BlueOak:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">BlueOak:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 2-Clause with Views Sentence</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:1880ff1661a22fbbdf7725ecb6ece3d7">[<a href="/fact/BlueOakCouncil/1880ff1661a22fbbdf7725ecb6ece3d7">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.">BlueOakCouncil: <b style="color: green;">Silver</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:1880ff1661a22fbbdf7725ecb6ece3d7">[<a href="/fact/BlueOakCouncil/1880ff1661a22fbbdf7725ecb6ece3d7">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/BSD-2-Clause-Views.html" target="_blank">https://spdx.org/licenses/BSD-2-Clause-Views.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:BSD-2-Clause-Views&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD 2-Clause with Views Sentence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;1880ff1661a22fbbdf7725ecb6ece3d7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Silver&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/BSD-2-Clause-Views.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Silver&quot;,
+            &quot;These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.&quot;,
+            {
+                &quot;_id&quot;: &quot;BSD-2-Clause-Views&quot;,
+                &quot;_name&quot;: &quot;BSD 2-Clause with Views Sentence&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/BSD-2-Clause-Views.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/b9342835e00ee6f2f6e4dbfb80889b95">ScancodeData:b9342835e00ee6f2f6e4dbfb80889b95</a> for <a href="/?license=scancode:bsd-2-clause-views"><span class="licensename"><span class="namespace">scancode:</span>bsd-2-clause-views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bsd-2-clause-views</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 2-Clause with views sentence</span></li><li><span class="licensename">BSD-2-Clause-Views</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:b9342835e00ee6f2f6e4dbfb80889b95">[<a href="/fact/ScancodeData/b9342835e00ee6f2f6e4dbfb80889b95">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/protegeproject/protege/blob/master/license.txt" target="_blank">https://github.com/protegeproject/protege/blob/master/license.txt</a></li><li><a href="http://www.freebsd.org/copyright/freebsd-license.html" target="_blank">http://www.freebsd.org/copyright/freebsd-license.html</a></li><li><a href="https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh" target="_blank">https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh</a></li></ul><h3>Other Statements</h3><ul><li>https://www.freebsd.org/copyright/freebsd-license.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list
+of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those
+of the authors and should not be interpreted as representing official policies,
+either expressed or implied, of the FreeBSD Project.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bsd-2-clause-views&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-2-Clause-Views&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;b9342835e00ee6f2f6e4dbfb80889b95&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.freebsd.org/copyright/freebsd-license.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/protegeproject/protege/blob/master/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those\nof the authors and should not be interpreted as representing official policies,\neither expressed or implied, of the FreeBSD Project.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.freebsd.org/copyright/freebsd-license.html&quot;,
+        &quot;_key&quot;: &quot;bsd-2-clause-views&quot;,
+        &quot;_name&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;,
+            &quot;https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh&quot;
+        ],
+        &quot;_owner&quot;: &quot;FreeBSD&quot;,
+        &quot;_shortName&quot;: &quot;BSD-2-Clause-Views&quot;,
+        &quot;_spdxId&quot;: &quot;BSD-2-Clause-Views&quot;,
+        &quot;_text&quot;: &quot;Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those\nof the authors and should not be interpreted as representing official policies,\neither expressed or implied, of the FreeBSD Project.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://github.com/protegeproject/protege/blob/master/license.txt&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/336005c0b0090cc3f145d6cbdd130aba">Fossology:336005c0b0090cc3f145d6cbdd130aba</a> for <a href="/?license=fossology:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">fossology:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 2-Clause with views sentence</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the &quot;views and conclusions&quot; sentence at the end.<span class="provided-by">(provided by: <span title="Fossology:336005c0b0090cc3f145d6cbdd130aba">[<a href="/fact/Fossology/336005c0b0090cc3f145d6cbdd130aba">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.freebsd.org/copyright/freebsd-license.html" target="_blank">http://www.freebsd.org/copyright/freebsd-license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:BSD-2-Clause-Views&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;336005c0b0090cc3f145d6cbdd130aba&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the \&quot;views and conclusions\&quot; sentence at the end.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+        &quot;_rf_notes&quot;: &quot;This is a more generalized version of BSD-2-Clause-FreeBSD, which is now deprecated. It is identical to BSD-2-Clause with the addition of the \&quot;views and conclusions\&quot; sentence at the end.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:BSD-2-Clause-Views&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/cd32f84bc9fcafbbb03401f3472a70a6">OrtLicenseCategorization:cd32f84bc9fcafbbb03401f3472a70a6</a> for <a href="/?license=SPDX:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">SPDX:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-2-Clause-Views</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd32f84bc9fcafbbb03401f3472a70a6">[<a href="/fact/OrtLicenseCategorization/cd32f84bc9fcafbbb03401f3472a70a6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd32f84bc9fcafbbb03401f3472a70a6">[<a href="/fact/OrtLicenseCategorization/cd32f84bc9fcafbbb03401f3472a70a6">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-2-Clause-Views&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;cd32f84bc9fcafbbb03401f3472a70a6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-2-Clause-Views&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/7f6933045c878d3a797fa6f0ffc6b65f">OrtLicenseCategorization:7f6933045c878d3a797fa6f0ffc6b65f</a> for <a href="/?license=SPDX:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">SPDX:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-2-Clause-Views</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7f6933045c878d3a797fa6f0ffc6b65f">[<a href="/fact/OrtLicenseCategorization/7f6933045c878d3a797fa6f0ffc6b65f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7f6933045c878d3a797fa6f0ffc6b65f">[<a href="/fact/OrtLicenseCategorization/7f6933045c878d3a797fa6f0ffc6b65f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7f6933045c878d3a797fa6f0ffc6b65f">[<a href="/fact/OrtLicenseCategorization/7f6933045c878d3a797fa6f0ffc6b65f">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-2-Clause-Views&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;7f6933045c878d3a797fa6f0ffc6b65f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-2-Clause-Views&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/7f07b0311b59f66eadcbc6801664ffd9">CavilLicenseChange:7f07b0311b59f66eadcbc6801664ffd9</a> for <a href="/?license=cavil:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">cavil:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-2-Clause-Views</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:BSD-2-Clause-Views&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-2-Clause-Views&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;7f07b0311b59f66eadcbc6801664ffd9&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;BSD-2-Clause-Views&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:BSD-2-Clause-Views&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/048942fdcbd19f31b5f189f91653ace2">MetaeffektLicense:048942fdcbd19f31b5f189f91653ace2</a> for <a href="/?license=metaeffekt:BSD 2-Clause License (with authors view)"><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 2-Clause License (with authors view)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 2-Clause License (with authors view)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename">BSD 2-Clause with views sentence</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:048942fdcbd19f31b5f189f91653ace2">[<a href="/fact/MetaeffektLicense/048942fdcbd19f31b5f189f91653ace2">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:BSD 2-Clause License (with authors view)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-2-Clause-Views&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;048942fdcbd19f31b5f189f91653ace2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;BSD 2-Clause with views sentence&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:BSD 2-Clause License (with authors view)&quot;,
+        &quot;_category&quot;: &quot;BSD&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:BSD-2-Clause-Views&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/6db3ef70f4f6267e80c840c9098207b1">FOSSLight:6db3ef70f4f6267e80c840c9098207b1</a> for <a href="/?license=fosslight:BSD 2-Clause with views sentence"><span class="licensename"><span class="namespace">fosslight:</span>BSD 2-Clause with views sentence</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>BSD 2-Clause with views sentence</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-2-Clause-Views</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:6db3ef70f4f6267e80c840c9098207b1">[<a href="/fact/FOSSLight/6db3ef70f4f6267e80c840c9098207b1">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:BSD 2-Clause with views sentence&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;BSD-2-Clause-Views&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;6db3ef70f4f6267e80c840c9098207b1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot; It is identical to BSD-2-Clause with the addition of the \&quot;views and conclusions\&quot; sentence at the end.&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;Copyright (c) &lt;year&gt; &lt;owner&gt; All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the copyright holders or contributors.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: &quot;&quot;,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;BSD-2-Clause-Views&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/BSD-2-Clause-Views.html&quot;,
+            &quot;_fossLight_id&quot;: 639,
+            &quot;_fossLight_name&quot;: &quot;fosslight:BSD 2-Clause with views sentence&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li><li><h3><a href="/source/Eclipse">Eclipse</a>: <a href="/fact/EclipseLicense/3b72831debb44d62ca9742fdade31097">EclipseLicense:3b72831debb44d62ca9742fdade31097</a> for <a href="/?license=eclipse:BSD-2-Clause-Views"><span class="licensename"><span class="namespace">eclipse:</span>BSD-2-Clause-Views</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">eclipse:</span>BSD-2-Clause-Views</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 2-Clause with views sentence</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:3b72831debb44d62ca9742fdade31097">[<a href="/fact/EclipseLicense/3b72831debb44d62ca9742fdade31097">EclipseLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;eclipse:BSD-2-Clause-Views&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD 2-Clause with views sentence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;EclipseLicense&quot;,
+        &quot;3b72831debb44d62ca9742fdade31097&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;EclipseLicense&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. &quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;eclipse:BSD-2-Clause-Views&quot;,
+            &quot;BSD 2-Clause with views sentence&quot;
+        ],
+        &quot;tag&quot;: &quot;ApprovedLicense&quot;
+    },
+    &quot;type&quot;: &quot;EclipseLicense&quot;
+}</pre></details></li></ul></body></html>

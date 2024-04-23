@@ -1,0 +1,1250 @@
+<html><head><title>ldbcollector: spdx:wxWindows</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:wxWindows</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>wxWindows</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">The wxWindows Library Licence</span></li><li><span class="licensename">wxWindows</span></li><li><span class="licensename"><span class="namespace">fossology:</span>WXwindows</span></li><li><span class="licensename"><span class="namespace">osi:</span>WXwindows</span></li><li><span class="licensename"><span class="namespace">scancode:</span>wxwindows</span></li><li><span class="licensename"><span class="namespace">spdx:</span>wxWindows</span></li><li><span class="licensename">wxWindows Library Licence 3.1</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>wxWindows Library Licence 3.1</span></li><li><span class="licensename">wxWindows Library License</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>wxWindows Library License</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.opensource.org/licenses/wxwindows.php</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>LGPL-2.0-or-later_WITH_WxWindows-exception-3.1</span></li><li><span class="licensename">wxWindows Library Licence</span></li><li><span class="licensename">wxWindows licence</span></li><li><span class="licensename">wxWindows license</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:c808d436dfae84a3731ba65c63d25de4">[<a href="/fact/ScancodeData/c808d436dfae84a3731ba65c63d25de4">ScancodeData</a>]</span>)</span></li><li>WeaklyProtective<span class="provided-by">(provided by: <span title="FOSSLight:7dbc5cdbcd254ca9257437dfaf2cc068">[<a href="/fact/FOSSLight/7dbc5cdbcd254ca9257437dfaf2cc068">FOSSLight</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c57a3d17cab809e3bf0f1ba02d6edfae">[<a href="/fact/SPDXLicense/c57a3d17cab809e3bf0f1ba02d6edfae">SPDXLicense</a>]</span><span title="OSILicense:452d5056d44b245af5fbd790f1f1c98e">[<a href="/fact/OSILicense/452d5056d44b245af5fbd790f1f1c98e">OSILicense</a>]</span><span title="OKFN:ac1bf845f8742cf43be75824699e8b4c">[<a href="/fact/OKFN/ac1bf845f8742cf43be75824699e8b4c">OKFN</a>]</span>)</span></li><li><span title="">OSI-keyword: <b style="color: red;">discouraged</b></span><span class="provided-by">(provided by: <span title="OSILicense:452d5056d44b245af5fbd790f1f1c98e">[<a href="/fact/OSILicense/452d5056d44b245af5fbd790f1f1c98e">OSILicense</a>]</span>)</span></li><li><span title="">OSI-keyword: <b style="color: red;">non-reusable</b></span><span class="provided-by">(provided by: <span title="OSILicense:452d5056d44b245af5fbd790f1f1c98e">[<a href="/fact/OSILicense/452d5056d44b245af5fbd790f1f1c98e">OSILicense</a>]</span>)</span></li><li><span title="">OKFN status: <b style="color: green;">active</b></span><span class="provided-by">(provided by: <span title="OKFN:ac1bf845f8742cf43be75824699e8b4c">[<a href="/fact/OKFN/ac1bf845f8742cf43be75824699e8b4c">OKFN</a>]</span>)</span></li><li><span title="">Open Definition: <b style="">not reviewed</b></span><span class="provided-by">(provided by: <span title="OKFN:ac1bf845f8742cf43be75824699e8b4c">[<a href="/fact/OKFN/ac1bf845f8742cf43be75824699e8b4c">OKFN</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d2dbc480f1bf31a44ef89fbfa03e96de">[<a href="/fact/OrtLicenseCategorization/d2dbc480f1bf31a44ef89fbfa03e96de">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d2dbc480f1bf31a44ef89fbfa03e96de">[<a href="/fact/OrtLicenseCategorization/d2dbc480f1bf31a44ef89fbfa03e96de">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d2dbc480f1bf31a44ef89fbfa03e96de">[<a href="/fact/OrtLicenseCategorization/d2dbc480f1bf31a44ef89fbfa03e96de">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>DEPRECATED: Use license expression including main license, &quot;WITH&quot; operator, and identifier: WxWindows-exception-3.1<span class="provided-by">(provided by: <span title="SPDXLicense:c57a3d17cab809e3bf0f1ba02d6edfae">[<a href="/fact/SPDXLicense/c57a3d17cab809e3bf0f1ba02d6edfae">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>this has been replaced by the lgpl-2.0-plus WITH wxwindows-exception-3.1 and was formerly using the wxWindows SPDX license id<span class="provided-by">(provided by: <span title="ScancodeData:c808d436dfae84a3731ba65c63d25de4">[<a href="/fact/ScancodeData/c808d436dfae84a3731ba65c63d25de4">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/WXwindows" target="_blank">https://opensource.org/licenses/WXwindows</a></li><li>OSI Page: <a href="https://opensource.org/licenses/WXwindows" target="_blank">https://opensource.org/licenses/WXwindows</a></li><li>OSI: <a href="http://www.opensource.org/licenses/wxwindows.php" target="_blank">http://www.opensource.org/licenses/wxwindows.php</a></li><li><a href="http://www.wxwidgets.org/about/newlicen.htm" target="_blank">http://www.wxwidgets.org/about/newlicen.htm</a></li><li><a href="http://www.opensource.org/licenses/WXwindows" target="_blank">http://www.opensource.org/licenses/WXwindows</a></li><li><a href="http://www.wxwidgets.org/about/licence3.txt" target="_blank">http://www.wxwidgets.org/about/licence3.txt</a></li></ul><h3>Other Statements</h3><ul><li>spdx:wxWindows is a deprecated LicenseId</li><li>http://www.wxwidgets.org/about/newlicen.htm</li><li>http://www.opensource.org/licenses/wxwindows.php</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>EXCEPTION NOTICE
+
+   1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.
+
+   2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.
+
+   3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.
+
+   4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;EXCEPTION NOTICE&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          As a special exception, the copyright holders of this
+             library give permission for additional uses of the
+             text contained in this release of the library as
+             licenced under the wxWindows Library Licence, applying
+             either version 3.1 of the Licence, or (at your option)
+             any later version of the Licence as published by the
+             copyright holders of version 3.1 of the Licence
+             document.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          The exception is that you may use, copy, link, modify and
+             distribute under your own terms, binary object code
+             versions of works based on the Library.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          If you copy code from files distributed under the terms
+             of the GNU General Public Licence or the GNU Library
+             General Public Licence into a copy of this library, as
+             this licence permits, the exception does not apply to
+             the code that you add in this way. To avoid misleading
+             anyone as to the status of such modified files, you
+             must delete this exception notice from such code
+             and/or adjust the licensing conditions notice
+             accordingly.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          If you write modifications of your own for this library,
+             it is your choice whether to permit this exception to
+             apply to your modifications. If you do not wish that,
+             you must delete the exception notice from such code
+             and/or adjust the licensing conditions notice
+             accordingly.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>  wxWindows Library Licence, Version 3.1
+  ======================================
+
+  Copyright (C) 1998-2005 Julian Smart, Robert Roebling et al
+
+  Everyone is permitted to copy and distribute verbatim copies
+  of this licence document, but changing it is not allowed.
+
+                       WXWINDOWS LIBRARY LICENCE
+     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+  
+  This library is free software; you can redistribute it and/or modify it
+  under the terms of the GNU Library General Public Licence as published by
+  the Free Software Foundation; either version 2 of the Licence, or (at
+  your option) any later version.
+  
+  This library is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library
+  General Public Licence for more details.
+
+  You should have received a copy of the GNU Library General Public Licence
+  along with this software, usually in a file named COPYING.LIB.  If not,
+  write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+  Boston, MA 02111-1307 USA.
+
+  EXCEPTION NOTICE
+
+  1. As a special exception, the copyright holders of this library give
+  permission for additional uses of the text contained in this release of
+  the library as licenced under the wxWindows Library Licence, applying
+  either version 3.1 of the Licence, or (at your option) any later version of
+  the Licence as published by the copyright holders of version
+  3.1 of the Licence document.
+
+  2. The exception is that you may use, copy, link, modify and distribute
+  under your own terms, binary object code versions of works based
+  on the Library.
+
+  3. If you copy code from files distributed under the terms of the GNU
+  General Public Licence or the GNU Library General Public Licence into a
+  copy of this library, as this licence permits, the exception does not
+  apply to the code that you add in this way.  To avoid misleading anyone as
+  to the status of such modified files, you must delete this exception
+  notice from such code and/or adjust the licensing conditions notice
+  accordingly.
+
+  4. If you write modifications of your own for this library, it is your
+  choice whether to permit this exception to apply to your modifications. 
+  If you do not wish that, you must delete the exception notice from such
+  code and/or adjust the licensing conditions notice accordingly.</pre></details></li><li><details><summary>Text:</summary><pre>The wxWindows Library Licence
+
+Copyright (c) 1998 Julian Smart, Robert Roebling [, ...]
+
+Everyone is permitted to copy and distribute verbatim copies
+of this licence document, but changing it is not allowed.
+
+WXWINDOWS LIBRARY LICENCE
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+This library is free software; you can redistribute it and/or modify it
+under the terms of the GNU Library General Public Licence as published by
+the Free Software Foundation; either version 2 of the Licence, or (at
+your option) any later version.
+
+This library is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library
+General Public Licence for more details.
+
+You should have received a copy of the GNU Library General Public Licence
+along with this software, usually in a file named COPYING.LIB. If not,
+write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+Boston, MA 02111-1307 USA.
+
+EXCEPTION NOTICE
+
+1. As a special exception, the copyright holders of this library give
+permission for additional uses of the text contained in this release of
+the library as licenced under the wxWindows Library Licence, applying
+either version 3 of the Licence, or (at your option) any later version of
+the Licence as published by the copyright holders of version 3 of the
+Licence document.
+
+2. The exception is that you may use, copy, link, modify and distribute
+under the user&#39;s own terms, binary object code versions of works based
+on the Library.
+
+3. If you copy code from files distributed under the terms of the GNU
+General Public Licence or the GNU Library General Public Licence into a
+copy of this library, as this licence permits, the exception does not
+apply to the code that you add in this way. To avoid misleading anyone as
+to the status of such modified files, you must delete this exception
+notice from such code and/or adjust the licensing conditions notice
+accordingly.
+
+4. If you write modifications of your own for this library, it is your
+choice whether to permit this exception to apply to your modifications.
+If you do not wish that, you must delete the exception notice from such
+code and/or adjust the licensing conditions notice accordingly.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/c57a3d17cab809e3bf0f1ba02d6edfae">SPDXLicense:c57a3d17cab809e3bf0f1ba02d6edfae</a> for <a href="/?license=spdx:wxWindows"><span class="licensename"><span class="namespace">spdx:</span>wxWindows</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>wxWindows</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">wxWindows Library License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c57a3d17cab809e3bf0f1ba02d6edfae">[<a href="/fact/SPDXLicense/c57a3d17cab809e3bf0f1ba02d6edfae">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>DEPRECATED: Use license expression including main license, &quot;WITH&quot; operator, and identifier: WxWindows-exception-3.1<span class="provided-by">(provided by: <span title="SPDXLicense:c57a3d17cab809e3bf0f1ba02d6edfae">[<a href="/fact/SPDXLicense/c57a3d17cab809e3bf0f1ba02d6edfae">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/WXwindows" target="_blank">https://opensource.org/licenses/WXwindows</a></li></ul><h3>Other Statements</h3><ul><li>spdx:wxWindows is a deprecated LicenseId</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>EXCEPTION NOTICE
+
+   1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.
+
+   2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.
+
+   3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.
+
+   4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;EXCEPTION NOTICE&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          As a special exception, the copyright holders of this
+             library give permission for additional uses of the
+             text contained in this release of the library as
+             licenced under the wxWindows Library Licence, applying
+             either version 3.1 of the Licence, or (at your option)
+             any later version of the Licence as published by the
+             copyright holders of version 3.1 of the Licence
+             document.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          The exception is that you may use, copy, link, modify and
+             distribute under your own terms, binary object code
+             versions of works based on the Library.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          If you copy code from files distributed under the terms
+             of the GNU General Public Licence or the GNU Library
+             General Public Licence into a copy of this library, as
+             this licence permits, the exception does not apply to
+             the code that you add in this way. To avoid misleading
+             anyone as to the status of such modified files, you
+             must delete this exception notice from such code
+             and/or adjust the licensing conditions notice
+             accordingly.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          If you write modifications of your own for this library,
+             it is your choice whether to permit this exception to
+             apply to your modifications. If you do not wish that,
+             you must delete the exception notice from such code
+             and/or adjust the licensing conditions notice
+             accordingly.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:wxWindows&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;c57a3d17cab809e3bf0f1ba02d6edfae&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;spdx:wxWindows is a deprecated LicenseId&quot;,
+            &quot;tag&quot;: &quot;LicenseStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;DEPRECATED: Use license expression including main license, \&quot;WITH\&quot; operator, and identifier: WxWindows-exception-3.1&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;EXCEPTION NOTICE\n\n   1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.\n\n   2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.\n\n   3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.\n\n   4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;EXCEPTION NOTICE&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          As a special exception, the copyright holders of this\n             library give permission for additional uses of the\n             text contained in this release of the library as\n             licenced under the wxWindows Library Licence, applying\n             either version 3.1 of the Licence, or (at your option)\n             any later version of the Licence as published by the\n             copyright holders of version 3.1 of the Licence\n             document.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          The exception is that you may use, copy, link, modify and\n             distribute under your own terms, binary object code\n             versions of works based on the Library.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          If you copy code from files distributed under the terms\n             of the GNU General Public Licence or the GNU Library\n             General Public Licence into a copy of this library, as\n             this licence permits, the exception does not apply to\n             the code that you add in this way. To avoid misleading\n             anyone as to the status of such modified files, you\n             must delete this exception notice from such code\n             and/or adjust the licensing conditions notice\n             accordingly.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          If you write modifications of your own for this library,\n             it is your choice whether to permit this exception to\n             apply to your modifications. If you do not wish that,\n             you must delete the exception notice from such code\n             and/or adjust the licensing conditions notice\n             accordingly.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://opensource.org/licenses/WXwindows&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://opensource.org/licenses/WXwindows&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:07:45Z&quot;,
+                &quot;url&quot;: &quot;https://opensource.org/licenses/WXwindows&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: true,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: true,
+        &quot;licenseComments&quot;: &quot;DEPRECATED: Use license expression including main license, \&quot;WITH\&quot; operator, and identifier: WxWindows-exception-3.1&quot;,
+        &quot;licenseId&quot;: &quot;spdx:wxWindows&quot;,
+        &quot;licenseText&quot;: &quot;EXCEPTION NOTICE\n\n   1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.\n\n   2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.\n\n   3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.\n\n   4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;EXCEPTION NOTICE&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          As a special exception, the copyright holders of this\n             library give permission for additional uses of the\n             text contained in this release of the library as\n             licenced under the wxWindows Library Licence, applying\n             either version 3.1 of the Licence, or (at your option)\n             any later version of the Licence as published by the\n             copyright holders of version 3.1 of the Licence\n             document.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          The exception is that you may use, copy, link, modify and\n             distribute under your own terms, binary object code\n             versions of works based on the Library.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          If you copy code from files distributed under the terms\n             of the GNU General Public Licence or the GNU Library\n             General Public Licence into a copy of this library, as\n             this licence permits, the exception does not apply to\n             the code that you add in this way. To avoid misleading\n             anyone as to the status of such modified files, you\n             must delete this exception notice from such code\n             and/or adjust the licensing conditions notice\n             accordingly.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          If you write modifications of your own for this library,\n             it is your choice whether to permit this exception to\n             apply to your modifications. If you do not wish that,\n             you must delete the exception notice from such code\n             and/or adjust the licensing conditions notice\n             accordingly.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;wxWindows Library License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://opensource.org/licenses/WXwindows&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;EXCEPTION NOTICE\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/OSI">OSI</a>: <a href="/fact/OSILicense/452d5056d44b245af5fbd790f1f1c98e">OSILicense:452d5056d44b245af5fbd790f1f1c98e</a> for <a href="/?license=osi:WXwindows"><span class="licensename"><span class="namespace">osi:</span>WXwindows</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osi:</span>WXwindows</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">The wxWindows Library Licence</span></li><li><span class="licensename"><span class="namespace">SPDX:</span>WXwindows</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI-keyword: <b style="color: red;">discouraged</b></span><span class="provided-by">(provided by: <span title="OSILicense:452d5056d44b245af5fbd790f1f1c98e">[<a href="/fact/OSILicense/452d5056d44b245af5fbd790f1f1c98e">OSILicense</a>]</span>)</span></li><li><span title="">OSI-keyword: <b style="color: red;">non-reusable</b></span><span class="provided-by">(provided by: <span title="OSILicense:452d5056d44b245af5fbd790f1f1c98e">[<a href="/fact/OSILicense/452d5056d44b245af5fbd790f1f1c98e">OSILicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="OSILicense:452d5056d44b245af5fbd790f1f1c98e">[<a href="/fact/OSILicense/452d5056d44b245af5fbd790f1f1c98e">OSILicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li>OSI Page: <a href="https://opensource.org/licenses/WXwindows" target="_blank">https://opensource.org/licenses/WXwindows</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;osi:WXwindows&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;The wxWindows Library Licence&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;SPDX:WXwindows&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSILicense&quot;,
+        &quot;452d5056d44b245af5fbd790f1f1c98e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                &quot;OSI Page&quot;,
+                &quot;https://opensource.org/licenses/WXwindows&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI-keyword&quot;,
+                        &quot;discouraged&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI-keyword&quot;,
+                        &quot;non-reusable&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;id&quot;: &quot;WXwindows&quot;,
+        &quot;identifiers&quot;: [
+            {
+                &quot;identifier&quot;: &quot;WXwindows&quot;,
+                &quot;scheme&quot;: &quot;SPDX&quot;
+            }
+        ],
+        &quot;keywords&quot;: [
+            &quot;discouraged&quot;,
+            &quot;non-reusable&quot;,
+            &quot;osi-approved&quot;
+        ],
+        &quot;links&quot;: [
+            {
+                &quot;note&quot;: &quot;OSI Page&quot;,
+                &quot;url&quot;: &quot;https://opensource.org/licenses/WXwindows&quot;
+            }
+        ],
+        &quot;name&quot;: &quot;The wxWindows Library Licence&quot;,
+        &quot;other_names&quot;: [],
+        &quot;superseded_by&quot;: null,
+        &quot;text&quot;: [
+            {
+                &quot;media_type&quot;: &quot;text/html&quot;,
+                &quot;title&quot;: &quot;HTML&quot;,
+                &quot;url&quot;: &quot;https://opensource.org/licenses/WXwindows&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;OSILicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/c808d436dfae84a3731ba65c63d25de4">ScancodeData:c808d436dfae84a3731ba65c63d25de4</a> for <a href="/?license=scancode:wxwindows"><span class="licensename"><span class="namespace">scancode:</span>wxwindows</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>wxwindows</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">wxWindows Library Licence 3.1</span></li><li><span class="licensename">wxWindows Library Licence 3.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:c808d436dfae84a3731ba65c63d25de4">[<a href="/fact/ScancodeData/c808d436dfae84a3731ba65c63d25de4">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>this has been replaced by the lgpl-2.0-plus WITH wxwindows-exception-3.1 and was formerly using the wxWindows SPDX license id<span class="provided-by">(provided by: <span title="ScancodeData:c808d436dfae84a3731ba65c63d25de4">[<a href="/fact/ScancodeData/c808d436dfae84a3731ba65c63d25de4">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li>OSI: <a href="http://www.opensource.org/licenses/wxwindows.php" target="_blank">http://www.opensource.org/licenses/wxwindows.php</a></li><li><a href="http://www.wxwidgets.org/about/newlicen.htm" target="_blank">http://www.wxwidgets.org/about/newlicen.htm</a></li><li><a href="http://www.opensource.org/licenses/WXwindows" target="_blank">http://www.opensource.org/licenses/WXwindows</a></li><li><a href="http://www.wxwidgets.org/about/licence3.txt" target="_blank">http://www.wxwidgets.org/about/licence3.txt</a></li></ul><h3>Other Statements</h3><ul><li>http://www.wxwidgets.org/about/newlicen.htm</li><li>http://www.opensource.org/licenses/wxwindows.php</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>  wxWindows Library Licence, Version 3.1
+  ======================================
+
+  Copyright (C) 1998-2005 Julian Smart, Robert Roebling et al
+
+  Everyone is permitted to copy and distribute verbatim copies
+  of this licence document, but changing it is not allowed.
+
+                       WXWINDOWS LIBRARY LICENCE
+     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+  
+  This library is free software; you can redistribute it and/or modify it
+  under the terms of the GNU Library General Public Licence as published by
+  the Free Software Foundation; either version 2 of the Licence, or (at
+  your option) any later version.
+  
+  This library is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library
+  General Public Licence for more details.
+
+  You should have received a copy of the GNU Library General Public Licence
+  along with this software, usually in a file named COPYING.LIB.  If not,
+  write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+  Boston, MA 02111-1307 USA.
+
+  EXCEPTION NOTICE
+
+  1. As a special exception, the copyright holders of this library give
+  permission for additional uses of the text contained in this release of
+  the library as licenced under the wxWindows Library Licence, applying
+  either version 3.1 of the Licence, or (at your option) any later version of
+  the Licence as published by the copyright holders of version
+  3.1 of the Licence document.
+
+  2. The exception is that you may use, copy, link, modify and distribute
+  under your own terms, binary object code versions of works based
+  on the Library.
+
+  3. If you copy code from files distributed under the terms of the GNU
+  General Public Licence or the GNU Library General Public Licence into a
+  copy of this library, as this licence permits, the exception does not
+  apply to the code that you add in this way.  To avoid misleading anyone as
+  to the status of such modified files, you must delete this exception
+  notice from such code and/or adjust the licensing conditions notice
+  accordingly.
+
+  4. If you write modifications of your own for this library, it is your
+  choice whether to permit this exception to apply to your modifications. 
+  If you do not wish that, you must delete the exception notice from such
+  code and/or adjust the licensing conditions notice accordingly.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:wxwindows&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library Licence 3.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library Licence 3.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;c808d436dfae84a3731ba65c63d25de4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.wxwidgets.org/about/newlicen.htm&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.opensource.org/licenses/wxwindows.php&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;this has been replaced by the lgpl-2.0-plus WITH wxwindows-exception-3.1 and was formerly using the wxWindows SPDX license id&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                &quot;OSI&quot;,
+                &quot;http://www.opensource.org/licenses/wxwindows.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.wxwidgets.org/about/newlicen.htm&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.opensource.org/licenses/WXwindows&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.wxwidgets.org/about/licence3.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;  wxWindows Library Licence, Version 3.1\n  ======================================\n\n  Copyright (C) 1998-2005 Julian Smart, Robert Roebling et al\n\n  Everyone is permitted to copy and distribute verbatim copies\n  of this licence document, but changing it is not allowed.\n\n                       WXWINDOWS LIBRARY LICENCE\n     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n  \n  This library is free software; you can redistribute it and/or modify it\n  under the terms of the GNU Library General Public Licence as published by\n  the Free Software Foundation; either version 2 of the Licence, or (at\n  your option) any later version.\n  \n  This library is distributed in the hope that it will be useful, but\n  WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library\n  General Public Licence for more details.\n\n  You should have received a copy of the GNU Library General Public Licence\n  along with this software, usually in a file named COPYING.LIB.  If not,\n  write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,\n  Boston, MA 02111-1307 USA.\n\n  EXCEPTION NOTICE\n\n  1. As a special exception, the copyright holders of this library give\n  permission for additional uses of the text contained in this release of\n  the library as licenced under the wxWindows Library Licence, applying\n  either version 3.1 of the Licence, or (at your option) any later version of\n  the Licence as published by the copyright holders of version\n  3.1 of the Licence document.\n\n  2. The exception is that you may use, copy, link, modify and distribute\n  under your own terms, binary object code versions of works based\n  on the Library.\n\n  3. If you copy code from files distributed under the terms of the GNU\n  General Public Licence or the GNU Library General Public Licence into a\n  copy of this library, as this licence permits, the exception does not\n  apply to the code that you add in this way.  To avoid misleading anyone as\n  to the status of such modified files, you must delete this exception\n  notice from such code and/or adjust the licensing conditions notice\n  accordingly.\n\n  4. If you write modifications of your own for this library, it is your\n  choice whether to permit this exception to apply to your modifications. \n  If you do not wish that, you must delete the exception notice from such\n  code and/or adjust the licensing conditions notice accordingly.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.wxwidgets.org/about/newlicen.htm&quot;,
+        &quot;_key&quot;: &quot;wxwindows&quot;,
+        &quot;_name&quot;: &quot;wxWindows Library Licence 3.1&quot;,
+        &quot;_notes&quot;: &quot;this has been replaced by the lgpl-2.0-plus WITH wxwindows-exception-3.1 and was formerly using the wxWindows SPDX license id&quot;,
+        &quot;_osiUrl&quot;: &quot;http://www.opensource.org/licenses/wxwindows.php&quot;,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.opensource.org/licenses/WXwindows&quot;,
+            &quot;http://www.wxwidgets.org/about/licence3.txt&quot;
+        ],
+        &quot;_owner&quot;: &quot;wxWidgets&quot;,
+        &quot;_shortName&quot;: &quot;wxWindows Library Licence 3.1&quot;,
+        &quot;_spdxId&quot;: &quot;wxWindows&quot;,
+        &quot;_text&quot;: &quot;  wxWindows Library Licence, Version 3.1\n  ======================================\n\n  Copyright (C) 1998-2005 Julian Smart, Robert Roebling et al\n\n  Everyone is permitted to copy and distribute verbatim copies\n  of this licence document, but changing it is not allowed.\n\n                       WXWINDOWS LIBRARY LICENCE\n     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n  \n  This library is free software; you can redistribute it and/or modify it\n  under the terms of the GNU Library General Public Licence as published by\n  the Free Software Foundation; either version 2 of the Licence, or (at\n  your option) any later version.\n  \n  This library is distributed in the hope that it will be useful, but\n  WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library\n  General Public Licence for more details.\n\n  You should have received a copy of the GNU Library General Public Licence\n  along with this software, usually in a file named COPYING.LIB.  If not,\n  write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,\n  Boston, MA 02111-1307 USA.\n\n  EXCEPTION NOTICE\n\n  1. As a special exception, the copyright holders of this library give\n  permission for additional uses of the text contained in this release of\n  the library as licenced under the wxWindows Library Licence, applying\n  either version 3.1 of the Licence, or (at your option) any later version of\n  the Licence as published by the copyright holders of version\n  3.1 of the Licence document.\n\n  2. The exception is that you may use, copy, link, modify and distribute\n  under your own terms, binary object code versions of works based\n  on the Library.\n\n  3. If you copy code from files distributed under the terms of the GNU\n  General Public Licence or the GNU Library General Public Licence into a\n  copy of this library, as this licence permits, the exception does not\n  apply to the code that you add in this way.  To avoid misleading anyone as\n  to the status of such modified files, you must delete this exception\n  notice from such code and/or adjust the licensing conditions notice\n  accordingly.\n\n  4. If you write modifications of your own for this library, it is your\n  choice whether to permit this exception to apply to your modifications. \n  If you do not wish that, you must delete the exception notice from such\n  code and/or adjust the licensing conditions notice accordingly.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.wxwidgets.org/about/newlicen.htm&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/b5a276f937b79c2c905f0f83adf09ede">Fossology:b5a276f937b79c2c905f0f83adf09ede</a> for <a href="/?license=fossology:WXwindows"><span class="licensename"><span class="namespace">fossology:</span>WXwindows</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>WXwindows</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">wxWindows Library License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="http://www.wxwidgets.org/about/licence3.txt" target="_blank">http://www.wxwidgets.org/about/licence3.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The wxWindows Library Licence
+
+Copyright (c) 1998 Julian Smart, Robert Roebling [, ...]
+
+Everyone is permitted to copy and distribute verbatim copies
+of this licence document, but changing it is not allowed.
+
+WXWINDOWS LIBRARY LICENCE
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+This library is free software; you can redistribute it and/or modify it
+under the terms of the GNU Library General Public Licence as published by
+the Free Software Foundation; either version 2 of the Licence, or (at
+your option) any later version.
+
+This library is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library
+General Public Licence for more details.
+
+You should have received a copy of the GNU Library General Public Licence
+along with this software, usually in a file named COPYING.LIB. If not,
+write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+Boston, MA 02111-1307 USA.
+
+EXCEPTION NOTICE
+
+1. As a special exception, the copyright holders of this library give
+permission for additional uses of the text contained in this release of
+the library as licenced under the wxWindows Library Licence, applying
+either version 3 of the Licence, or (at your option) any later version of
+the Licence as published by the copyright holders of version 3 of the
+Licence document.
+
+2. The exception is that you may use, copy, link, modify and distribute
+under the user&#39;s own terms, binary object code versions of works based
+on the Library.
+
+3. If you copy code from files distributed under the terms of the GNU
+General Public Licence or the GNU Library General Public Licence into a
+copy of this library, as this licence permits, the exception does not
+apply to the code that you add in this way. To avoid misleading anyone as
+to the status of such modified files, you must delete this exception
+notice from such code and/or adjust the licensing conditions notice
+accordingly.
+
+4. If you write modifications of your own for this library, it is your
+choice whether to permit this exception to apply to your modifications.
+If you do not wish that, you must delete the exception notice from such
+code and/or adjust the licensing conditions notice accordingly.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:WXwindows&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;b5a276f937b79c2c905f0f83adf09ede&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.wxwidgets.org/about/licence3.txt&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The wxWindows Library Licence\n\nCopyright (c) 1998 Julian Smart, Robert Roebling [, ...]\n\nEveryone is permitted to copy and distribute verbatim copies\nof this licence document, but changing it is not allowed.\n\nWXWINDOWS LIBRARY LICENCE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\nThis library is free software; you can redistribute it and/or modify it\nunder the terms of the GNU Library General Public Licence as published by\nthe Free Software Foundation; either version 2 of the Licence, or (at\nyour option) any later version.\n\nThis library is distributed in the hope that it will be useful, but\nWITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library\nGeneral Public Licence for more details.\n\nYou should have received a copy of the GNU Library General Public Licence\nalong with this software, usually in a file named COPYING.LIB. If not,\nwrite to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,\nBoston, MA 02111-1307 USA.\n\nEXCEPTION NOTICE\n\n1. As a special exception, the copyright holders of this library give\npermission for additional uses of the text contained in this release of\nthe library as licenced under the wxWindows Library Licence, applying\neither version 3 of the Licence, or (at your option) any later version of\nthe Licence as published by the copyright holders of version 3 of the\nLicence document.\n\n2. The exception is that you may use, copy, link, modify and distribute\nunder the user&#39;s own terms, binary object code versions of works based\non the Library.\n\n3. If you copy code from files distributed under the terms of the GNU\nGeneral Public Licence or the GNU Library General Public Licence into a\ncopy of this library, as this licence permits, the exception does not\napply to the code that you add in this way. To avoid misleading anyone as\nto the status of such modified files, you must delete this exception\nnotice from such code and/or adjust the licensing conditions notice\naccordingly.\n\n4. If you write modifications of your own for this library, it is your\nchoice whether to permit this exception to apply to your modifications.\nIf you do not wish that, you must delete the exception notice from such\ncode and/or adjust the licensing conditions notice accordingly.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;wxWindows Library License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:WXwindows&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The wxWindows Library Licence\n\nCopyright (c) 1998 Julian Smart, Robert Roebling [, ...]\n\nEveryone is permitted to copy and distribute verbatim copies\nof this licence document, but changing it is not allowed.\n\nWXWINDOWS LIBRARY LICENCE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\nThis library is free software; you can redistribute it and/or modify it\nunder the terms of the GNU Library General Public Licence as published by\nthe Free Software Foundation; either version 2 of the Licence, or (at\nyour option) any later version.\n\nThis library is distributed in the hope that it will be useful, but\nWITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library\nGeneral Public Licence for more details.\n\nYou should have received a copy of the GNU Library General Public Licence\nalong with this software, usually in a file named COPYING.LIB. If not,\nwrite to the Free Software Foundation, Inc., 59 Temple Place, Suite 330,\nBoston, MA 02111-1307 USA.\n\nEXCEPTION NOTICE\n\n1. As a special exception, the copyright holders of this library give\npermission for additional uses of the text contained in this release of\nthe library as licenced under the wxWindows Library Licence, applying\neither version 3 of the Licence, or (at your option) any later version of\nthe Licence as published by the copyright holders of version 3 of the\nLicence document.\n\n2. The exception is that you may use, copy, link, modify and distribute\nunder the user&#39;s own terms, binary object code versions of works based\non the Library.\n\n3. If you copy code from files distributed under the terms of the GNU\nGeneral Public Licence or the GNU Library General Public Licence into a\ncopy of this library, as this licence permits, the exception does not\napply to the code that you add in this way. To avoid misleading anyone as\nto the status of such modified files, you must delete this exception\nnotice from such code and/or adjust the licensing conditions notice\naccordingly.\n\n4. If you write modifications of your own for this library, it is your\nchoice whether to permit this exception to apply to your modifications.\nIf you do not wish that, you must delete the exception notice from such\ncode and/or adjust the licensing conditions notice accordingly.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.wxwidgets.org/about/licence3.txt&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/9a7e33625dc31a9836c2d8b040f02081">Fossology:9a7e33625dc31a9836c2d8b040f02081</a> for <a href="/?license=fossology:wxWindows"><span class="licensename"><span class="namespace">fossology:</span>wxWindows</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>wxWindows</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">wxWindows Library License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/WXwindows" target="_blank">https://opensource.org/licenses/WXwindows</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>EXCEPTION NOTICE
+
+   1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.
+
+   2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.
+
+   3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.
+
+   4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:wxWindows&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;9a7e33625dc31a9836c2d8b040f02081&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://opensource.org/licenses/WXwindows&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;EXCEPTION NOTICE\n\n   1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.\n\n   2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.\n\n   3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.\n\n   4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;wxWindows Library License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:wxWindows&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;EXCEPTION NOTICE\n\n   1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.\n\n   2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.\n\n   3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.\n\n   4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://opensource.org/licenses/WXwindows&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/OKFN">OKFN</a>: <a href="/fact/OKFN/ac1bf845f8742cf43be75824699e8b4c">OKFN:ac1bf845f8742cf43be75824699e8b4c</a> for <a href="/?license=WXwindows"><span class="licensename">WXwindows</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename">WXwindows</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">wxWindows Library License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OKFN status: <b style="color: green;">active</b></span><span class="provided-by">(provided by: <span title="OKFN:ac1bf845f8742cf43be75824699e8b4c">[<a href="/fact/OKFN/ac1bf845f8742cf43be75824699e8b4c">OKFN</a>]</span>)</span></li><li><span title="">Open Definition: <b style="">not reviewed</b></span><span class="provided-by">(provided by: <span title="OKFN:ac1bf845f8742cf43be75824699e8b4c">[<a href="/fact/OKFN/ac1bf845f8742cf43be75824699e8b4c">OKFN</a>]</span>)</span></li><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="OKFN:ac1bf845f8742cf43be75824699e8b4c">[<a href="/fact/OKFN/ac1bf845f8742cf43be75824699e8b4c">OKFN</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/WXwindows" target="_blank">https://opensource.org/licenses/WXwindows</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;WXwindows&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;wxWindows Library License&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OKFN&quot;,
+        &quot;ac1bf845f8742cf43be75824699e8b4c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://opensource.org/licenses/WXwindows&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OKFN status&quot;,
+                        &quot;active&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Open Definition&quot;,
+                        &quot;not reviewed&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_domain_content&quot;: false,
+        &quot;_domain_data&quot;: false,
+        &quot;_domain_software&quot;: true,
+        &quot;_family&quot;: null,
+        &quot;_id&quot;: &quot;WXwindows&quot;,
+        &quot;_legacy_ids&quot;: [],
+        &quot;_maintainer&quot;: &quot;wxWidgets Team&quot;,
+        &quot;_od_conformance&quot;: &quot;not reviewed&quot;,
+        &quot;_osd_conformance&quot;: &quot;approved&quot;,
+        &quot;_status&quot;: &quot;active&quot;,
+        &quot;_title&quot;: &quot;wxWindows Library License&quot;,
+        &quot;_url&quot;: &quot;https://opensource.org/licenses/WXwindows&quot;
+    },
+    &quot;type&quot;: &quot;OKFN&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/d2dbc480f1bf31a44ef89fbfa03e96de">OrtLicenseCategorization:d2dbc480f1bf31a44ef89fbfa03e96de</a> for <a href="/?license=SPDX:wxWindows"><span class="licensename"><span class="namespace">SPDX:</span>wxWindows</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>wxWindows</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d2dbc480f1bf31a44ef89fbfa03e96de">[<a href="/fact/OrtLicenseCategorization/d2dbc480f1bf31a44ef89fbfa03e96de">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d2dbc480f1bf31a44ef89fbfa03e96de">[<a href="/fact/OrtLicenseCategorization/d2dbc480f1bf31a44ef89fbfa03e96de">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d2dbc480f1bf31a44ef89fbfa03e96de">[<a href="/fact/OrtLicenseCategorization/d2dbc480f1bf31a44ef89fbfa03e96de">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:wxWindows&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d2dbc480f1bf31a44ef89fbfa03e96de&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:wxWindows&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/ff16ce2a26f22339815c266c31a74a5a">MetaeffektLicense:ff16ce2a26f22339815c266c31a74a5a</a> for <a href="/?license=metaeffekt:wxWindows Library Licence 3.1"><span class="licensename"><span class="namespace">metaeffekt:</span>wxWindows Library Licence 3.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>wxWindows Library Licence 3.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>wxWindows</span></li></ul></li><li><b>other LicenseName Hints (8):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.opensource.org/licenses/wxwindows.php</span></li><li><span class="licensename"><span class="namespace">osi:</span>WXwindows</span></li><li><span class="licensename"><span class="namespace">scancode:</span>wxwindows</span></li><li><span class="licensename">wxWindows Library Licence</span></li><li><span class="licensename">wxWindows Library Licence 3.1</span></li><li><span class="licensename">wxWindows Library License</span></li><li><span class="licensename">wxWindows licence</span></li><li><span class="licensename">wxWindows license</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:wxWindows Library Licence 3.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:wxWindows&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library Licence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.opensource.org/licenses/wxwindows.php&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;wxWindows licence&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;wxWindows license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;wxWindows Library Licence 3.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:wxwindows&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;osi:WXwindows&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;ff16ce2a26f22339815c266c31a74a5a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;wxWindows Library License&quot;,
+            &quot;http://www.opensource.org/licenses/wxwindows.php&quot;,
+            &quot;wxWindows licence&quot;,
+            &quot;wxWindows license&quot;,
+            &quot;wxWindows Library Licence 3.1&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:wxWindows Library Licence 3.1&quot;,
+        &quot;_category&quot;: &quot;wxWindows Library Licence&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:wxwindows&quot;,
+            &quot;osi:WXwindows&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:wxWindows&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/7dbc5cdbcd254ca9257437dfaf2cc068">FOSSLight:7dbc5cdbcd254ca9257437dfaf2cc068</a> for <a href="/?license=fosslight:wxWindows Library License"><span class="licensename"><span class="namespace">fosslight:</span>wxWindows Library License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>wxWindows Library License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">WXwindows</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="FOSSLight:7dbc5cdbcd254ca9257437dfaf2cc068">[<a href="/fact/FOSSLight/7dbc5cdbcd254ca9257437dfaf2cc068">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:wxWindows Library License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;WXwindows&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;7dbc5cdbcd254ca9257437dfaf2cc068&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;WeaklyProtective&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;LGPL-2.1? ?? Exception??, ?? ? LGPL-2.1? ?? ?? ?? ??? ?????, wxWindows ?????? Link ??? Object Code? ???? ??? ???.\nIt is an exception to LGPL-2.1. To distribute the software, disclosing source code under LGPL-2.1 is required but it doesn&#39;t require to disclose object code when linking with wxWindows library.\n&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;wxWindows Library Licence, Version 3.1 \n\nCopyright (C) 1998-2005 Julian Smart, Robert Roebling et al\n\nEveryone is permitted to copy and distribute verbatim copies of this licence document, but changing it is not allowed.\n\nWXWINDOWS LIBRARY LICENCE \n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION \n\nThis library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public Licence as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version. \n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library General Public Licence for more details.\n\nYou should have received a copy of the GNU Library General Public Licence along with this software, usually in a file named COPYING.LIB. If not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.\n\nEXCEPTION NOTICE\n\n1. As a special exception, the copyright holders of this library give permission for additional uses of the text contained in this release of the library as licenced under the wxWindows Library Licence, applying either version 3.1 of the Licence, or (at your option) any later version of the Licence as published by the copyright holders of version 3.1 of the Licence document.\n\n2. The exception is that you may use, copy, link, modify and distribute under your own terms, binary object code versions of works based on the Library.\n\n3. If you copy code from files distributed under the terms of the GNU General Public Licence or the GNU Library General Public Licence into a copy of this library, as this licence permits, the exception does not apply to the code that you add in this way. To avoid misleading anyone as to the status of such modified files, you must delete this exception notice from such code and/or adjust the licensing conditions notice accordingly.\n\n4. If you write modifications of your own for this library, it is your choice whether to permit this exception to apply to your modifications. If you do not wish that, you must delete the exception notice from such code and/or adjust the licensing conditions notice accordingly. &quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: true,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: &quot;&quot;,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;WXwindows&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/WXwindows.html&quot;,
+            &quot;_fossLight_id&quot;: 149,
+            &quot;_fossLight_name&quot;: &quot;fosslight:wxWindows Library License&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Weak_Copyleft&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,853 @@
+<html><head><title>ldbcollector: spdx:SMPPL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:SMPPL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SMPPL</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Secure Messaging Protocol Public License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Secure Messaging Protocol Public License</span></li><li><span class="licensename">SMPPL</span></li><li><span class="licensename"><span class="namespace">cavil:</span>SMPPL</span></li><li><span class="licensename"><span class="namespace">fossology:</span>SMPPL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>smppl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SMPPL</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Secure Messaging Protocol (SMP) Public License</span></li><li><span class="licensename">SMP Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:bdb33facabe4dd14774e294db1968c6b">[<a href="/fact/ScancodeData/bdb33facabe4dd14774e294db1968c6b">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a318ec968caf0e05e501ceeea8cd409e">[<a href="/fact/SPDXLicense/a318ec968caf0e05e501ceeea8cd409e">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b7064ff255eb2d046bdee6b0bf80a21a">[<a href="/fact/OrtLicenseCategorization/b7064ff255eb2d046bdee6b0bf80a21a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b7064ff255eb2d046bdee6b0bf80a21a">[<a href="/fact/OrtLicenseCategorization/b7064ff255eb2d046bdee6b0bf80a21a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b7064ff255eb2d046bdee6b0bf80a21a">[<a href="/fact/OrtLicenseCategorization/b7064ff255eb2d046bdee6b0bf80a21a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/dcblake/SMP/blob/master/Documentation/License.txt" target="_blank">https://github.com/dcblake/SMP/blob/master/Documentation/License.txt</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/dcblake/SMP/blob/master/Documentation/License.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
+
+Distribution Rights
+
+All source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.
+
+29 May 2002
+
+Secure Messaging Protocol (SMP) Public License
+
+The United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively &quot;the U.S. Government&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the &quot;SMP Software&quot;) and associated documentation files (the &quot;SMP Documentation&quot;), or any portions thereof, to do the following, subject to the following license conditions:
+
+You may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.
+
+You may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.
+
+Furthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.
+
+Transmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.
+
+The SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.
+
+The U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.
+
+It is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein.  Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.
+
+The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects.  The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.  None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library.  The eSNACC Compiler is not distributed as part of the SMP.
+
+Copyright © 1997-2002 National Security Agency
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]&lt;/p&gt;
+
+      &lt;/div&gt;
+         &lt;p&gt;Distribution Rights&lt;/p&gt;
+
+      &lt;p&gt;All source code for the SMP is being provided at no cost and with
+         no financial limitations regarding its use and distribution.
+         Organizations can use the SMP without paying any royalties or
+         licensing fees. The SMP was originally developed by the U.S.
+         Government. BAE Systems is enhancing and supporting the SMP
+         under contract to the U.S. Government. The U.S. Government is
+         furnishing the SMP software at no cost to the vendor subject
+         to the conditions of the SMP Public License provided with the
+         SMP software.&lt;/p&gt;
+
+      &lt;p&gt;29 May 2002&lt;/p&gt;
+
+      &lt;p&gt;Secure Messaging Protocol (SMP) Public License&lt;/p&gt;
+
+      &lt;p&gt;The United States Government/Department of Defense/National
+         Security Agency/Office of Network Security (collectively &amp;quot;the
+         U.S. Government&amp;quot;) hereby grants permission to any person
+         obtaining a copy of the SMP source and object files (the &amp;quot;SMP
+         Software&amp;quot;) and associated documentation files (the &amp;quot;SMP
+         Documentation&amp;quot;), or any portions thereof, to do the following,
+         subject to the following license conditions:&lt;/p&gt;
+
+      &lt;p&gt;You may, free of charge and without additional permission from
+         the U.S. Government, use, copy, modify, sublicense and
+         otherwise distribute the SMP Software or components of the SMP
+         Software, with or without modifications developed by you
+         and/or by others.&lt;/p&gt;
+
+      &lt;p&gt;You may, free of charge and without additional permission from
+         the U.S. Government, distribute copies of the SMP
+         Documentation, with or without modifications developed by you
+         and/or by others, at no charge or at a charge that covers the
+         cost of reproducing such copies, provided that this SMP Public
+         License is retained.&lt;/p&gt;
+
+      &lt;p&gt;Furthermore, if you distribute the SMP Software or parts of the
+         SMP Software, with or without modifications developed by you
+         and/or others, then you must either make available the source
+         code to all portions of the SMP Software (exclusive of any
+         modifications made by you and/or by others) upon request, or
+         instead you may notify anyone requesting the SMP Software
+         source code that it is freely available from the U.S.
+         Government.&lt;/p&gt;
+
+      &lt;p&gt;Transmission of this SMP Public License must accompany whatever
+         portions of the SMP Software you redistribute.&lt;/p&gt;
+
+      &lt;p&gt;The SMP Software is provided without warranty or guarantee of any
+         nature, express or implied, including without limitation the
+         warranties of merchantability and fitness for a particular
+         purpose.&lt;/p&gt;
+
+      &lt;p&gt;The U.S. Government cannot be held liable for any damages either
+         directly or indirectly caused by the use of the SMP
+         Software.&lt;/p&gt;
+
+      &lt;p&gt;It is not permitted to copy, sublicense, distribute or transfer
+         any of the SMP Software except as expressly indicated herein.
+         Any attempts to do otherwise will be considered a violation of
+         this License and your rights to the SMP Software will be
+         voided.&lt;/p&gt;
+
+      &lt;p&gt;The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation
+         One (ASN.1) C++ Library to ASN.1 encode and decode
+         security-related data objects.  The eSNACC ASN.1 C++ Library
+         is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.
+         None of the GNU public licenses apply to the eSNACC ASN.1 C++
+         Library.  The eSNACC Compiler is not distributed as part of
+         the SMP.&lt;/p&gt;
+
+       &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright © 1997-2002 National Security Agency&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
+Distribution Rights
+
+All source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.
+
+29 May 2002
+
+Secure Messaging Protocol (SMP) Public License
+
+The United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively &quot;the U.S. Government&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the &quot;SMP Software&quot;) and associated documentation files (the &quot;SMP Documentation&quot;), or any portions thereof, to do the following, subject to the following license conditions:
+
+You may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.
+
+You may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.
+
+Furthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.
+
+Transmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.
+
+The SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.
+
+The U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.
+
+It is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.
+
+The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP.
+
+Copyright © 1997-2002 National Security Agency</pre></details></li><li><details><summary>Text:</summary><pre>Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
+
+Distribution Rights
+
+All source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.
+
+29 May 2002
+
+Secure Messaging Protocol (SMP) Public License
+
+The United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively &quot;the U.S. Government&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the &quot;SMP Software&quot;) and associated documentation files (the &quot;SMP Documentation&quot;), or any portions thereof, to do the following, subject to the following license conditions:
+
+You may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.
+
+You may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.
+
+Furthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.
+
+Transmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.
+
+The SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.
+
+The U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.
+
+It is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.
+
+The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP. Copyright © 1997-2002 National Security Agency</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/a318ec968caf0e05e501ceeea8cd409e">SPDXLicense:a318ec968caf0e05e501ceeea8cd409e</a> for <a href="/?license=spdx:SMPPL"><span class="licensename"><span class="namespace">spdx:</span>SMPPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SMPPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Secure Messaging Protocol Public License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a318ec968caf0e05e501ceeea8cd409e">[<a href="/fact/SPDXLicense/a318ec968caf0e05e501ceeea8cd409e">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/dcblake/SMP/blob/master/Documentation/License.txt" target="_blank">https://github.com/dcblake/SMP/blob/master/Documentation/License.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
+
+Distribution Rights
+
+All source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.
+
+29 May 2002
+
+Secure Messaging Protocol (SMP) Public License
+
+The United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively &quot;the U.S. Government&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the &quot;SMP Software&quot;) and associated documentation files (the &quot;SMP Documentation&quot;), or any portions thereof, to do the following, subject to the following license conditions:
+
+You may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.
+
+You may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.
+
+Furthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.
+
+Transmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.
+
+The SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.
+
+The U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.
+
+It is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein.  Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.
+
+The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects.  The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.  None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library.  The eSNACC Compiler is not distributed as part of the SMP.
+
+Copyright © 1997-2002 National Security Agency
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]&lt;/p&gt;
+
+      &lt;/div&gt;
+         &lt;p&gt;Distribution Rights&lt;/p&gt;
+
+      &lt;p&gt;All source code for the SMP is being provided at no cost and with
+         no financial limitations regarding its use and distribution.
+         Organizations can use the SMP without paying any royalties or
+         licensing fees. The SMP was originally developed by the U.S.
+         Government. BAE Systems is enhancing and supporting the SMP
+         under contract to the U.S. Government. The U.S. Government is
+         furnishing the SMP software at no cost to the vendor subject
+         to the conditions of the SMP Public License provided with the
+         SMP software.&lt;/p&gt;
+
+      &lt;p&gt;29 May 2002&lt;/p&gt;
+
+      &lt;p&gt;Secure Messaging Protocol (SMP) Public License&lt;/p&gt;
+
+      &lt;p&gt;The United States Government/Department of Defense/National
+         Security Agency/Office of Network Security (collectively &amp;quot;the
+         U.S. Government&amp;quot;) hereby grants permission to any person
+         obtaining a copy of the SMP source and object files (the &amp;quot;SMP
+         Software&amp;quot;) and associated documentation files (the &amp;quot;SMP
+         Documentation&amp;quot;), or any portions thereof, to do the following,
+         subject to the following license conditions:&lt;/p&gt;
+
+      &lt;p&gt;You may, free of charge and without additional permission from
+         the U.S. Government, use, copy, modify, sublicense and
+         otherwise distribute the SMP Software or components of the SMP
+         Software, with or without modifications developed by you
+         and/or by others.&lt;/p&gt;
+
+      &lt;p&gt;You may, free of charge and without additional permission from
+         the U.S. Government, distribute copies of the SMP
+         Documentation, with or without modifications developed by you
+         and/or by others, at no charge or at a charge that covers the
+         cost of reproducing such copies, provided that this SMP Public
+         License is retained.&lt;/p&gt;
+
+      &lt;p&gt;Furthermore, if you distribute the SMP Software or parts of the
+         SMP Software, with or without modifications developed by you
+         and/or others, then you must either make available the source
+         code to all portions of the SMP Software (exclusive of any
+         modifications made by you and/or by others) upon request, or
+         instead you may notify anyone requesting the SMP Software
+         source code that it is freely available from the U.S.
+         Government.&lt;/p&gt;
+
+      &lt;p&gt;Transmission of this SMP Public License must accompany whatever
+         portions of the SMP Software you redistribute.&lt;/p&gt;
+
+      &lt;p&gt;The SMP Software is provided without warranty or guarantee of any
+         nature, express or implied, including without limitation the
+         warranties of merchantability and fitness for a particular
+         purpose.&lt;/p&gt;
+
+      &lt;p&gt;The U.S. Government cannot be held liable for any damages either
+         directly or indirectly caused by the use of the SMP
+         Software.&lt;/p&gt;
+
+      &lt;p&gt;It is not permitted to copy, sublicense, distribute or transfer
+         any of the SMP Software except as expressly indicated herein.
+         Any attempts to do otherwise will be considered a violation of
+         this License and your rights to the SMP Software will be
+         voided.&lt;/p&gt;
+
+      &lt;p&gt;The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation
+         One (ASN.1) C++ Library to ASN.1 encode and decode
+         security-related data objects.  The eSNACC ASN.1 C++ Library
+         is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.
+         None of the GNU public licenses apply to the eSNACC ASN.1 C++
+         Library.  The eSNACC Compiler is not distributed as part of
+         the SMP.&lt;/p&gt;
+
+       &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright © 1997-2002 National Security Agency&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:SMPPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Secure Messaging Protocol Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;a318ec968caf0e05e501ceeea8cd409e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]\n\nDistribution Rights\n\nAll source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.\n\n29 May 2002\n\nSecure Messaging Protocol (SMP) Public License\n\nThe United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively \&quot;the U.S. Government\&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the \&quot;SMP Software\&quot;) and associated documentation files (the \&quot;SMP Documentation\&quot;), or any portions thereof, to do the following, subject to the following license conditions:\n\nYou may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.\n\nYou may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.\n\nFurthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.\n\nTransmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.\n\nThe SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.\n\nThe U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.\n\nIt is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein.  Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.\n\nThe SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects.  The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.  None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library.  The eSNACC Compiler is not distributed as part of the SMP.\n\nCopyright © 1997-2002 National Security Agency\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]&lt;/p&gt;\n\n      &lt;/div&gt;\n         &lt;p&gt;Distribution Rights&lt;/p&gt;\n\n      &lt;p&gt;All source code for the SMP is being provided at no cost and with\n         no financial limitations regarding its use and distribution.\n         Organizations can use the SMP without paying any royalties or\n         licensing fees. The SMP was originally developed by the U.S.\n         Government. BAE Systems is enhancing and supporting the SMP\n         under contract to the U.S. Government. The U.S. Government is\n         furnishing the SMP software at no cost to the vendor subject\n         to the conditions of the SMP Public License provided with the\n         SMP software.&lt;/p&gt;\n\n      &lt;p&gt;29 May 2002&lt;/p&gt;\n\n      &lt;p&gt;Secure Messaging Protocol (SMP) Public License&lt;/p&gt;\n\n      &lt;p&gt;The United States Government/Department of Defense/National\n         Security Agency/Office of Network Security (collectively &amp;quot;the\n         U.S. Government&amp;quot;) hereby grants permission to any person\n         obtaining a copy of the SMP source and object files (the &amp;quot;SMP\n         Software&amp;quot;) and associated documentation files (the &amp;quot;SMP\n         Documentation&amp;quot;), or any portions thereof, to do the following,\n         subject to the following license conditions:&lt;/p&gt;\n\n      &lt;p&gt;You may, free of charge and without additional permission from\n         the U.S. Government, use, copy, modify, sublicense and\n         otherwise distribute the SMP Software or components of the SMP\n         Software, with or without modifications developed by you\n         and/or by others.&lt;/p&gt;\n\n      &lt;p&gt;You may, free of charge and without additional permission from\n         the U.S. Government, distribute copies of the SMP\n         Documentation, with or without modifications developed by you\n         and/or by others, at no charge or at a charge that covers the\n         cost of reproducing such copies, provided that this SMP Public\n         License is retained.&lt;/p&gt;\n\n      &lt;p&gt;Furthermore, if you distribute the SMP Software or parts of the\n         SMP Software, with or without modifications developed by you\n         and/or others, then you must either make available the source\n         code to all portions of the SMP Software (exclusive of any\n         modifications made by you and/or by others) upon request, or\n         instead you may notify anyone requesting the SMP Software\n         source code that it is freely available from the U.S.\n         Government.&lt;/p&gt;\n\n      &lt;p&gt;Transmission of this SMP Public License must accompany whatever\n         portions of the SMP Software you redistribute.&lt;/p&gt;\n\n      &lt;p&gt;The SMP Software is provided without warranty or guarantee of any\n         nature, express or implied, including without limitation the\n         warranties of merchantability and fitness for a particular\n         purpose.&lt;/p&gt;\n\n      &lt;p&gt;The U.S. Government cannot be held liable for any damages either\n         directly or indirectly caused by the use of the SMP\n         Software.&lt;/p&gt;\n\n      &lt;p&gt;It is not permitted to copy, sublicense, distribute or transfer\n         any of the SMP Software except as expressly indicated herein.\n         Any attempts to do otherwise will be considered a violation of\n         this License and your rights to the SMP Software will be\n         voided.&lt;/p&gt;\n\n      &lt;p&gt;The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation\n         One (ASN.1) C++ Library to ASN.1 encode and decode\n         security-related data objects.  The eSNACC ASN.1 C++ Library\n         is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.\n         None of the GNU public licenses apply to the eSNACC ASN.1 C++\n         Library.  The eSNACC Compiler is not distributed as part of\n         the SMP.&lt;/p&gt;\n\n       &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright © 1997-2002 National Security Agency&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:14Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:SMPPL&quot;,
+        &quot;licenseText&quot;: &quot;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]\n\nDistribution Rights\n\nAll source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.\n\n29 May 2002\n\nSecure Messaging Protocol (SMP) Public License\n\nThe United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively \&quot;the U.S. Government\&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the \&quot;SMP Software\&quot;) and associated documentation files (the \&quot;SMP Documentation\&quot;), or any portions thereof, to do the following, subject to the following license conditions:\n\nYou may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.\n\nYou may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.\n\nFurthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.\n\nTransmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.\n\nThe SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.\n\nThe U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.\n\nIt is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein.  Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.\n\nThe SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects.  The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.  None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library.  The eSNACC Compiler is not distributed as part of the SMP.\n\nCopyright © 1997-2002 National Security Agency\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]&lt;/p&gt;\n\n      &lt;/div&gt;\n         &lt;p&gt;Distribution Rights&lt;/p&gt;\n\n      &lt;p&gt;All source code for the SMP is being provided at no cost and with\n         no financial limitations regarding its use and distribution.\n         Organizations can use the SMP without paying any royalties or\n         licensing fees. The SMP was originally developed by the U.S.\n         Government. BAE Systems is enhancing and supporting the SMP\n         under contract to the U.S. Government. The U.S. Government is\n         furnishing the SMP software at no cost to the vendor subject\n         to the conditions of the SMP Public License provided with the\n         SMP software.&lt;/p&gt;\n\n      &lt;p&gt;29 May 2002&lt;/p&gt;\n\n      &lt;p&gt;Secure Messaging Protocol (SMP) Public License&lt;/p&gt;\n\n      &lt;p&gt;The United States Government/Department of Defense/National\n         Security Agency/Office of Network Security (collectively &amp;quot;the\n         U.S. Government&amp;quot;) hereby grants permission to any person\n         obtaining a copy of the SMP source and object files (the &amp;quot;SMP\n         Software&amp;quot;) and associated documentation files (the &amp;quot;SMP\n         Documentation&amp;quot;), or any portions thereof, to do the following,\n         subject to the following license conditions:&lt;/p&gt;\n\n      &lt;p&gt;You may, free of charge and without additional permission from\n         the U.S. Government, use, copy, modify, sublicense and\n         otherwise distribute the SMP Software or components of the SMP\n         Software, with or without modifications developed by you\n         and/or by others.&lt;/p&gt;\n\n      &lt;p&gt;You may, free of charge and without additional permission from\n         the U.S. Government, distribute copies of the SMP\n         Documentation, with or without modifications developed by you\n         and/or by others, at no charge or at a charge that covers the\n         cost of reproducing such copies, provided that this SMP Public\n         License is retained.&lt;/p&gt;\n\n      &lt;p&gt;Furthermore, if you distribute the SMP Software or parts of the\n         SMP Software, with or without modifications developed by you\n         and/or others, then you must either make available the source\n         code to all portions of the SMP Software (exclusive of any\n         modifications made by you and/or by others) upon request, or\n         instead you may notify anyone requesting the SMP Software\n         source code that it is freely available from the U.S.\n         Government.&lt;/p&gt;\n\n      &lt;p&gt;Transmission of this SMP Public License must accompany whatever\n         portions of the SMP Software you redistribute.&lt;/p&gt;\n\n      &lt;p&gt;The SMP Software is provided without warranty or guarantee of any\n         nature, express or implied, including without limitation the\n         warranties of merchantability and fitness for a particular\n         purpose.&lt;/p&gt;\n\n      &lt;p&gt;The U.S. Government cannot be held liable for any damages either\n         directly or indirectly caused by the use of the SMP\n         Software.&lt;/p&gt;\n\n      &lt;p&gt;It is not permitted to copy, sublicense, distribute or transfer\n         any of the SMP Software except as expressly indicated herein.\n         Any attempts to do otherwise will be considered a violation of\n         this License and your rights to the SMP Software will be\n         voided.&lt;/p&gt;\n\n      &lt;p&gt;The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation\n         One (ASN.1) C++ Library to ASN.1 encode and decode\n         security-related data objects.  The eSNACC ASN.1 C++ Library\n         is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE.\n         None of the GNU public licenses apply to the eSNACC ASN.1 C++\n         Library.  The eSNACC Compiler is not distributed as part of\n         the SMP.&lt;/p&gt;\n\n       &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright © 1997-2002 National Security Agency&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Secure Messaging Protocol Public License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]\n\n&lt;&lt;endOptional&gt;&gt;\n\nDistribution Rights\n\nAll source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.\n\n29 May 2002\n\nSecure Messaging Protocol (SMP) Public License\n\nThe United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively \&quot;the U.S. Government\&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the \&quot;SMP Software\&quot;) and associated documentation files (the \&quot;SMP Documentation\&quot;), or any portions thereof, to do the following, subject to the following license conditions:\n\nYou may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.\n\nYou may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.\n\nFurthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.\n\nTransmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.\n\nThe SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.\n\nThe U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.\n\nIt is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.\n\nThe SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP.\n\n&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright © 1997-2002 National Security Agency  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/bdb33facabe4dd14774e294db1968c6b">ScancodeData:bdb33facabe4dd14774e294db1968c6b</a> for <a href="/?license=scancode:smppl"><span class="licensename"><span class="namespace">scancode:</span>smppl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>smppl</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Secure Messaging Protocol Public License</span></li><li><span class="licensename">SMPPL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:bdb33facabe4dd14774e294db1968c6b">[<a href="/fact/ScancodeData/bdb33facabe4dd14774e294db1968c6b">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://github.com/dcblake/SMP/blob/master/Documentation/License.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
+Distribution Rights
+
+All source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.
+
+29 May 2002
+
+Secure Messaging Protocol (SMP) Public License
+
+The United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively &quot;the U.S. Government&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the &quot;SMP Software&quot;) and associated documentation files (the &quot;SMP Documentation&quot;), or any portions thereof, to do the following, subject to the following license conditions:
+
+You may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.
+
+You may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.
+
+Furthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.
+
+Transmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.
+
+The SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.
+
+The U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.
+
+It is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.
+
+The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP.
+
+Copyright © 1997-2002 National Security Agency</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:smppl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SMPPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Secure Messaging Protocol Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;bdb33facabe4dd14774e294db1968c6b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]\nDistribution Rights\n\nAll source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.\n\n29 May 2002\n\nSecure Messaging Protocol (SMP) Public License\n\nThe United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively \&quot;the U.S. Government\&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the \&quot;SMP Software\&quot;) and associated documentation files (the \&quot;SMP Documentation\&quot;), or any portions thereof, to do the following, subject to the following license conditions:\n\nYou may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.\n\nYou may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.\n\nFurthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.\n\nTransmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.\n\nThe SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.\n\nThe U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.\n\nIt is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.\n\nThe SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP.\n\nCopyright © 1997-2002 National Security Agency&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;,
+        &quot;_key&quot;: &quot;smppl&quot;,
+        &quot;_name&quot;: &quot;Secure Messaging Protocol Public License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;National Security Agency&quot;,
+        &quot;_shortName&quot;: &quot;SMPPL&quot;,
+        &quot;_spdxId&quot;: &quot;SMPPL&quot;,
+        &quot;_text&quot;: &quot;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]\nDistribution Rights\n\nAll source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.\n\n29 May 2002\n\nSecure Messaging Protocol (SMP) Public License\n\nThe United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively \&quot;the U.S. Government\&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the \&quot;SMP Software\&quot;) and associated documentation files (the \&quot;SMP Documentation\&quot;), or any portions thereof, to do the following, subject to the following license conditions:\n\nYou may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.\n\nYou may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.\n\nFurthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.\n\nTransmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.\n\nThe SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.\n\nThe U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.\n\nIt is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.\n\nThe SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP.\n\nCopyright © 1997-2002 National Security Agency&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/c81fd034596142c03ca2629040f4c2ce">Fossology:c81fd034596142c03ca2629040f4c2ce</a> for <a href="/?license=fossology:SMPPL"><span class="licensename"><span class="namespace">fossology:</span>SMPPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>SMPPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Secure Messaging Protocol Public License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://github.com/dcblake/SMP/blob/master/Documentation/License.txt" target="_blank">https://github.com/dcblake/SMP/blob/master/Documentation/License.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
+
+Distribution Rights
+
+All source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.
+
+29 May 2002
+
+Secure Messaging Protocol (SMP) Public License
+
+The United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively &quot;the U.S. Government&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the &quot;SMP Software&quot;) and associated documentation files (the &quot;SMP Documentation&quot;), or any portions thereof, to do the following, subject to the following license conditions:
+
+You may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.
+
+You may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.
+
+Furthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.
+
+Transmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.
+
+The SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.
+
+The U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.
+
+It is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.
+
+The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP. Copyright © 1997-2002 National Security Agency</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:SMPPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Secure Messaging Protocol Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;c81fd034596142c03ca2629040f4c2ce&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]\n\nDistribution Rights\n\nAll source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.\n\n29 May 2002\n\nSecure Messaging Protocol (SMP) Public License\n\nThe United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively \&quot;the U.S. Government\&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the \&quot;SMP Software\&quot;) and associated documentation files (the \&quot;SMP Documentation\&quot;), or any portions thereof, to do the following, subject to the following license conditions:\n\nYou may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.\n\nYou may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.\n\nFurthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.\n\nTransmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.\n\nThe SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.\n\nThe U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.\n\nIt is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.\n\nThe SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP. Copyright © 1997-2002 National Security Agency&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Secure Messaging Protocol Public License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:SMPPL&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]\n\nDistribution Rights\n\nAll source code for the SMP is being provided at no cost and with no financial limitations regarding its use and distribution. Organizations can use the SMP without paying any royalties or licensing fees. The SMP was originally developed by the U.S. Government. BAE Systems is enhancing and supporting the SMP under contract to the U.S. Government. The U.S. Government is furnishing the SMP software at no cost to the vendor subject to the conditions of the SMP Public License provided with the SMP software.\n\n29 May 2002\n\nSecure Messaging Protocol (SMP) Public License\n\nThe United States Government/Department of Defense/National Security Agency/Office of Network Security (collectively \&quot;the U.S. Government\&quot;) hereby grants permission to any person obtaining a copy of the SMP source and object files (the \&quot;SMP Software\&quot;) and associated documentation files (the \&quot;SMP Documentation\&quot;), or any portions thereof, to do the following, subject to the following license conditions:\n\nYou may, free of charge and without additional permission from the U.S. Government, use, copy, modify, sublicense and otherwise distribute the SMP Software or components of the SMP Software, with or without modifications developed by you and/or by others.\n\nYou may, free of charge and without additional permission from the U.S. Government, distribute copies of the SMP Documentation, with or without modifications developed by you and/or by others, at no charge or at a charge that covers the cost of reproducing such copies, provided that this SMP Public License is retained.\n\nFurthermore, if you distribute the SMP Software or parts of the SMP Software, with or without modifications developed by you and/or others, then you must either make available the source code to all portions of the SMP Software (exclusive of any modifications made by you and/or by others) upon request, or instead you may notify anyone requesting the SMP Software source code that it is freely available from the U.S. Government.\n\nTransmission of this SMP Public License must accompany whatever portions of the SMP Software you redistribute.\n\nThe SMP Software is provided without warranty or guarantee of any nature, express or implied, including without limitation the warranties of merchantability and fitness for a particular purpose.\n\nThe U.S. Government cannot be held liable for any damages either directly or indirectly caused by the use of the SMP Software.\n\nIt is not permitted to copy, sublicense, distribute or transfer any of the SMP Software except as expressly indicated herein. Any attempts to do otherwise will be considered a violation of this License and your rights to the SMP Software will be voided.\n\nThe SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP. Copyright © 1997-2002 National Security Agency&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://github.com/dcblake/SMP/blob/master/Documentation/License.txt&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/b7064ff255eb2d046bdee6b0bf80a21a">OrtLicenseCategorization:b7064ff255eb2d046bdee6b0bf80a21a</a> for <a href="/?license=SPDX:SMPPL"><span class="licensename"><span class="namespace">SPDX:</span>SMPPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>SMPPL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b7064ff255eb2d046bdee6b0bf80a21a">[<a href="/fact/OrtLicenseCategorization/b7064ff255eb2d046bdee6b0bf80a21a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b7064ff255eb2d046bdee6b0bf80a21a">[<a href="/fact/OrtLicenseCategorization/b7064ff255eb2d046bdee6b0bf80a21a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b7064ff255eb2d046bdee6b0bf80a21a">[<a href="/fact/OrtLicenseCategorization/b7064ff255eb2d046bdee6b0bf80a21a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:SMPPL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b7064ff255eb2d046bdee6b0bf80a21a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:SMPPL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/e890cba640db11dccdb548d5b33ed804">CavilLicenseChange:e890cba640db11dccdb548d5b33ed804</a> for <a href="/?license=cavil:SMPPL"><span class="licensename"><span class="namespace">cavil:</span>SMPPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>SMPPL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SMPPL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:SMPPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SMPPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;e890cba640db11dccdb548d5b33ed804&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;SMPPL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:SMPPL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/02f5e3855b499b9ef1e50adb1aee89a0">MetaeffektLicense:02f5e3855b499b9ef1e50adb1aee89a0</a> for <a href="/?license=metaeffekt:Secure Messaging Protocol Public License"><span class="licensename"><span class="namespace">metaeffekt:</span>Secure Messaging Protocol Public License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Secure Messaging Protocol Public License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SMPPL</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Secure Messaging Protocol (SMP) Public License</span></li><li><span class="licensename">Secure Messaging Protocol Public License</span></li><li><span class="licensename">SMP Public License</span></li><li><span class="licensename">SMPPL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>smppl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Secure Messaging Protocol Public License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SMPPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SMPPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SMP Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Secure Messaging Protocol (SMP) Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Secure Messaging Protocol Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:smppl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;02f5e3855b499b9ef1e50adb1aee89a0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;SMP Public License&quot;,
+            &quot;Secure Messaging Protocol (SMP) Public License&quot;,
+            &quot;Secure Messaging Protocol Public License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Secure Messaging Protocol Public License&quot;,
+        &quot;_category&quot;: &quot;SMPPL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:smppl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:SMPPL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

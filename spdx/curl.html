@@ -1,0 +1,2352 @@
+<html><head><title>ldbcollector: spdx:curl</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:curl</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>curl</span></li></ul></li><li><b>other LicenseNames (16):</b><ul class="capsulUl clearfix"><li><span class="licensename">curl</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>curl</span></li><li><span class="licensename"><span class="namespace">cavil:</span>curl</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>curl</span></li><li><span class="licensename"><span class="namespace">fossology:</span>curl</span></li><li><span class="licensename"><span class="namespace">osadl:</span>curl</span></li><li><span class="licensename"><span class="namespace">scancode:</span>curl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>curl</span></li><li><span class="licensename">curl License</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>cURL License</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Curl License</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>Curl License</span></li><li><span class="licensename">Permission Terms (curl)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (curl)</span></li><li><span class="licensename">scancode://curl</span></li><li><span class="licensename">scancode:curl</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Permission</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:4fe18829eb7b423d9adb43c479508e01">[<a href="/fact/BlueOakCouncil/4fe18829eb7b423d9adb43c479508e01">BlueOakCouncil</a>]</span><span title="ScancodeData:1d26b45670e0e7ca5c40deb0cd882164">[<a href="/fact/ScancodeData/1d26b45670e0e7ca5c40deb0cd882164">ScancodeData</a>]</span><span title="FOSSLight:e326b71161faaab41bd90beda3e28a73">[<a href="/fact/FOSSLight/e326b71161faaab41bd90beda3e28a73">FOSSLight</a>]</span><span title="ifrOSS License:35df1c501236856e1f2168bd0289cbb9">[<a href="/fact/ifrOSS License/35df1c501236856e1f2168bd0289cbb9">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4fdbba9514a1d513949262cbfeb60f07">[<a href="/fact/SPDXLicense/4fdbba9514a1d513949262cbfeb60f07">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:f271b615dc2140b8f47c31fed023076d">[<a href="/fact/FedoraEntry/f271b615dc2140b8f47c31fed023076d">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:4fe18829eb7b423d9adb43c479508e01">[<a href="/fact/BlueOakCouncil/4fe18829eb7b423d9adb43c479508e01">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:c62f306772c55f3b3d1904699b1f8b45">[<a href="/fact/MetaeffektLicense/c62f306772c55f3b3d1904699b1f8b45">MetaeffektLicense</a>]</span>)</span></li><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:35df1c501236856e1f2168bd0289cbb9">[<a href="/fact/ifrOSS License/35df1c501236856e1f2168bd0289cbb9">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:35df1c501236856e1f2168bd0289cbb9">[<a href="/fact/ifrOSS License/35df1c501236856e1f2168bd0289cbb9">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8938cadcaea9781fb1f8de6a58130b17">[<a href="/fact/OrtLicenseCategorization/8938cadcaea9781fb1f8de6a58130b17">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8938cadcaea9781fb1f8de6a58130b17">[<a href="/fact/OrtLicenseCategorization/8938cadcaea9781fb1f8de6a58130b17">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f8cb1886e9f6d7191aaf73cfb2f3812">[<a href="/fact/OrtLicenseCategorization/9f8cb1886e9f6d7191aaf73cfb2f3812">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f8cb1886e9f6d7191aaf73cfb2f3812">[<a href="/fact/OrtLicenseCategorization/9f8cb1886e9f6d7191aaf73cfb2f3812">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f8cb1886e9f6d7191aaf73cfb2f3812">[<a href="/fact/OrtLicenseCategorization/9f8cb1886e9f6d7191aaf73cfb2f3812">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/bagder/curl/blob/master/COPYING" target="_blank">https://github.com/bagder/curl/blob/master/COPYING</a></li><li><a href="https://spdx.org/licenses/curl.html" target="_blank">https://spdx.org/licenses/curl.html</a></li><li><a href="http://curl.haxx.se/docs/copyright.html" target="_blank">http://curl.haxx.se/docs/copyright.html</a></li><li><a href="http://www.focuseek.com/manuals/License/curl-license.html" target="_blank">http://www.focuseek.com/manuals/License/curl-license.html</a></li><li><a href="http://curl.haxx.se/legal/licmix.html" target="_blank">http://curl.haxx.se/legal/licmix.html</a></li><li><a href="https://github.com/curl/curl/blob/master/COPYING" target="_blank">https://github.com/curl/curl/blob/master/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://curl.haxx.se/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT AND PERMISSION NOTICE
+
+Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.
+All rights reserved.
+
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;COPYRIGHT AND PERMISSION NOTICE&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1996 - 2015, Daniel Stenberg, &amp;lt;daniel@haxx.se&amp;gt;.
+        &lt;br /&gt;
+
+All rights reserved.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, and distribute this software for any purpose with or without fee is
+         hereby granted, provided that the above copyright notice and this permission notice appear in all
+         copies.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+         THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+         DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+         OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+      &lt;p&gt;Except as contained in this notice, the name of a copyright holder shall not be used in advertising or
+         otherwise to promote the sale, use or other dealings in this Software without prior written
+         authorization of the copyright holder.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software for any purpose
+with or without fee is hereby granted, provided that the above copyright
+notice and this permission notice appear in all copies.
+ 
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+Except as contained in this notice, the name of a copyright holder shall not
+be used in advertising or otherwise to promote the sale, use or other dealings
+in this Software without prior written authorization of the copyright holder.</pre></details></li><li><details><summary>Text:</summary><pre>COPYRIGHT AND PERMISSION NOTICE Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.
+
+All rights reserved.
+
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/4fdbba9514a1d513949262cbfeb60f07">SPDXLicense:4fdbba9514a1d513949262cbfeb60f07</a> for <a href="/?license=spdx:curl"><span class="licensename"><span class="namespace">spdx:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>curl</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">curl License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4fdbba9514a1d513949262cbfeb60f07">[<a href="/fact/SPDXLicense/4fdbba9514a1d513949262cbfeb60f07">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/bagder/curl/blob/master/COPYING" target="_blank">https://github.com/bagder/curl/blob/master/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT AND PERMISSION NOTICE
+
+Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.
+All rights reserved.
+
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;COPYRIGHT AND PERMISSION NOTICE&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1996 - 2015, Daniel Stenberg, &amp;lt;daniel@haxx.se&amp;gt;.
+        &lt;br /&gt;
+
+All rights reserved.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, and distribute this software for any purpose with or without fee is
+         hereby granted, provided that the above copyright notice and this permission notice appear in all
+         copies.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+         THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+         DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+         OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+      &lt;p&gt;Except as contained in this notice, the name of a copyright holder shall not be used in advertising or
+         otherwise to promote the sale, use or other dealings in this Software without prior written
+         authorization of the copyright holder.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:curl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;curl License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;4fdbba9514a1d513949262cbfeb60f07&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;COPYRIGHT AND PERMISSION NOTICE\n\nCopyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.\nAll rights reserved.\n\nPermission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;COPYRIGHT AND PERMISSION NOTICE&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1996 - 2015, Daniel Stenberg, &amp;lt;daniel@haxx.se&amp;gt;.\n        &lt;br /&gt;\n\nAll rights reserved.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, and distribute this software for any purpose with or without fee is\n         hereby granted, provided that the above copyright notice and this permission notice appear in all\n         copies.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT\n         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF\n         THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\n         DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF\n         OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n      &lt;p&gt;Except as contained in this notice, the name of a copyright holder shall not be used in advertising or\n         otherwise to promote the sale, use or other dealings in this Software without prior written\n         authorization of the copyright holder.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:47Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:curl&quot;,
+        &quot;licenseText&quot;: &quot;COPYRIGHT AND PERMISSION NOTICE\n\nCopyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.\nAll rights reserved.\n\nPermission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;COPYRIGHT AND PERMISSION NOTICE&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1996 - 2015, Daniel Stenberg, &amp;lt;daniel@haxx.se&amp;gt;.\n        &lt;br /&gt;\n\nAll rights reserved.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, and distribute this software for any purpose with or without fee is\n         hereby granted, provided that the above copyright notice and this permission notice appear in all\n         copies.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT\n         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF\n         THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\n         DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF\n         OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n      &lt;p&gt;Except as contained in this notice, the name of a copyright holder shall not be used in advertising or\n         otherwise to promote the sale, use or other dealings in this Software without prior written\n         authorization of the copyright holder.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;curl License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;COPYRIGHT AND PERMISSION NOTICE\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.  All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/f271b615dc2140b8f47c31fed023076d">FedoraEntry:f271b615dc2140b8f47c31fed023076d</a> for <a href="/?license=Fedora:curl"><span class="licensename"><span class="namespace">Fedora:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>curl</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>curl</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:f271b615dc2140b8f47c31fed023076d">[<a href="/fact/FedoraEntry/f271b615dc2140b8f47c31fed023076d">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:curl&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:curl&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;f271b615dc2140b8f47c31fed023076d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;curl&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:curl&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/4fe18829eb7b423d9adb43c479508e01">BlueOakCouncil:4fe18829eb7b423d9adb43c479508e01</a> for <a href="/?license=BlueOak:curl"><span class="licensename"><span class="namespace">BlueOak:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>curl</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">curl License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:4fe18829eb7b423d9adb43c479508e01">[<a href="/fact/BlueOakCouncil/4fe18829eb7b423d9adb43c479508e01">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:4fe18829eb7b423d9adb43c479508e01">[<a href="/fact/BlueOakCouncil/4fe18829eb7b423d9adb43c479508e01">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/curl.html" target="_blank">https://spdx.org/licenses/curl.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:curl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;curl License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;4fe18829eb7b423d9adb43c479508e01&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/curl.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;curl&quot;,
+                &quot;_name&quot;: &quot;curl License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/curl.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLRule/878a84b6aaa3c4b1508d81d1e59841be">OSADLRule:878a84b6aaa3c4b1508d81d1e59841be</a> for <a href="/?license=osadl:curl"><span class="licensename"><span class="namespace">osadl:</span>curl</span></a></h3><pre>USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide Copyright notices
+	YOU MUST Provide License text
+	YOU MUST NOT Promote
+</pre><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>curl</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>curl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;osadl:curl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:curl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLRule&quot;,
+        &quot;878a84b6aaa3c4b1508d81d1e59841be&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide Copyright notices\n\tYOU MUST Provide License text\n\tYOU MUST NOT Promote\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseRule&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide Copyright notices\n\tYOU MUST Provide License text\n\tYOU MUST NOT Promote\n&quot;,
+        &quot;spdxId&quot;: &quot;osadl:curl&quot;
+    },
+    &quot;type&quot;: &quot;OSADLRule&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLMatrix/d39bc710977813dbc39a1090ba0637ac">OSADLMatrix:d39bc710977813dbc39a1090ba0637ac</a> for <a href="/?license=osadl:curl"><span class="licensename"><span class="namespace">osadl:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>curl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;osadl:curl&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLMatrix&quot;,
+        &quot;d39bc710977813dbc39a1090ba0637ac&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;0BSD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;blessing&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC0-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Same&quot;,
+                    &quot;_explanation&quot;: &quot;n.a.&quot;,
+                    &quot;_other&quot;: &quot;curl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;EFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.2&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFAP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFUL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLR&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLRWD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FTL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;HPND&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IBM-pibs&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ICU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IJG&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ImageMagick&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Info-ZIP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;IPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ISC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;JasPer-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Libpng&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libpng-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libtiff&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Minpack&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MirOS&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT-CMU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;MS-PL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MS-RL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NBPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NCSA&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NTP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;OpenSSL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;OSL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PHP-3.01&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PostgreSQL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Python-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Qhull&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;RSA-MD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Saxpath&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;Sleepycat&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SMLNJ&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-short&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SunPro&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unlicense&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;UPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-19980720&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-20150513&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;WTFPL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;X11&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;XFree86-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Zlib&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ZPL-2.0&quot;
+                }
+            ],
+            &quot;tag&quot;: &quot;LicenseCompatibilities&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_name&quot;: &quot;osadl:curl&quot;,
+        &quot;compatibilities&quot;: [
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;0BSD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;blessing&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC0-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Same&quot;,
+                &quot;_explanation&quot;: &quot;n.a.&quot;,
+                &quot;_other&quot;: &quot;curl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;EFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.2&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFAP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFUL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLR&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLRWD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FTL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;HPND&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IBM-pibs&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ICU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IJG&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ImageMagick&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Info-ZIP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;IPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ISC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;JasPer-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Libpng&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libpng-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libtiff&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Minpack&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MirOS&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT-CMU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;MS-PL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MS-RL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NBPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NCSA&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NTP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;OpenSSL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;OSL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PHP-3.01&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PostgreSQL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Python-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Qhull&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;RSA-MD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Saxpath&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the curl license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;Sleepycat&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SMLNJ&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-short&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SunPro&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unlicense&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;UPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-19980720&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-20150513&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;WTFPL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;X11&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;XFree86-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Zlib&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the curl license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ZPL-2.0&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;OSADLMatrix&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/1d26b45670e0e7ca5c40deb0cd882164">ScancodeData:1d26b45670e0e7ca5c40deb0cd882164</a> for <a href="/?license=scancode:curl"><span class="licensename"><span class="namespace">scancode:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>curl</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">cURL License</span></li><li><span class="licensename">cURL License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:1d26b45670e0e7ca5c40deb0cd882164">[<a href="/fact/ScancodeData/1d26b45670e0e7ca5c40deb0cd882164">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://curl.haxx.se/docs/copyright.html" target="_blank">http://curl.haxx.se/docs/copyright.html</a></li><li><a href="http://www.focuseek.com/manuals/License/curl-license.html" target="_blank">http://www.focuseek.com/manuals/License/curl-license.html</a></li><li><a href="http://curl.haxx.se/legal/licmix.html" target="_blank">http://curl.haxx.se/legal/licmix.html</a></li><li><a href="https://github.com/bagder/curl/blob/master/COPYING" target="_blank">https://github.com/bagder/curl/blob/master/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>http://curl.haxx.se/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software for any purpose
+with or without fee is hereby granted, provided that the above copyright
+notice and this permission notice appear in all copies.
+ 
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+Except as contained in this notice, the name of a copyright holder shall not
+be used in advertising or otherwise to promote the sale, use or other dealings
+in this Software without prior written authorization of the copyright holder.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:curl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;cURL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;cURL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;1d26b45670e0e7ca5c40deb0cd882164&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://curl.haxx.se/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://curl.haxx.se/docs/copyright.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.focuseek.com/manuals/License/curl-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://curl.haxx.se/legal/licmix.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://curl.haxx.se/&quot;,
+        &quot;_key&quot;: &quot;curl&quot;,
+        &quot;_name&quot;: &quot;cURL License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://curl.haxx.se/legal/licmix.html&quot;,
+            &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+        ],
+        &quot;_owner&quot;: &quot;cURL&quot;,
+        &quot;_shortName&quot;: &quot;cURL License&quot;,
+        &quot;_spdxId&quot;: &quot;curl&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://curl.haxx.se/docs/copyright.html&quot;,
+            &quot;http://www.focuseek.com/manuals/License/curl-license.html&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/00abf043a2e45102847f89079b0685d4">Fossology:00abf043a2e45102847f89079b0685d4</a> for <a href="/?license=fossology:curl"><span class="licensename"><span class="namespace">fossology:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>curl</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">curl License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://github.com/bagder/curl/blob/master/COPYING" target="_blank">https://github.com/bagder/curl/blob/master/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT AND PERMISSION NOTICE Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.
+
+All rights reserved.
+
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:curl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;curl License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;00abf043a2e45102847f89079b0685d4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;COPYRIGHT AND PERMISSION NOTICE Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.\n\nAll rights reserved.\n\nPermission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;curl License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:curl&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;COPYRIGHT AND PERMISSION NOTICE Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.\n\nAll rights reserved.\n\nPermission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.&quot;,
+        &quot;_rf_text_updatable&quot;: true,
+        &quot;_rf_url&quot;: &quot;https://github.com/bagder/curl/blob/master/COPYING&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/8938cadcaea9781fb1f8de6a58130b17">OrtLicenseCategorization:8938cadcaea9781fb1f8de6a58130b17</a> for <a href="/?license=SPDX:curl"><span class="licensename"><span class="namespace">SPDX:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>curl</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8938cadcaea9781fb1f8de6a58130b17">[<a href="/fact/OrtLicenseCategorization/8938cadcaea9781fb1f8de6a58130b17">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8938cadcaea9781fb1f8de6a58130b17">[<a href="/fact/OrtLicenseCategorization/8938cadcaea9781fb1f8de6a58130b17">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:curl&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;8938cadcaea9781fb1f8de6a58130b17&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:curl&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/9f8cb1886e9f6d7191aaf73cfb2f3812">OrtLicenseCategorization:9f8cb1886e9f6d7191aaf73cfb2f3812</a> for <a href="/?license=SPDX:curl"><span class="licensename"><span class="namespace">SPDX:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>curl</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f8cb1886e9f6d7191aaf73cfb2f3812">[<a href="/fact/OrtLicenseCategorization/9f8cb1886e9f6d7191aaf73cfb2f3812">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f8cb1886e9f6d7191aaf73cfb2f3812">[<a href="/fact/OrtLicenseCategorization/9f8cb1886e9f6d7191aaf73cfb2f3812">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f8cb1886e9f6d7191aaf73cfb2f3812">[<a href="/fact/OrtLicenseCategorization/9f8cb1886e9f6d7191aaf73cfb2f3812">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:curl&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9f8cb1886e9f6d7191aaf73cfb2f3812&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:curl&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/ac97649699af9c9e08f4a9d7831cc2f8">CavilLicenseChange:ac97649699af9c9e08f4a9d7831cc2f8</a> for <a href="/?license=cavil:curl"><span class="licensename"><span class="namespace">cavil:</span>curl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>curl</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">curl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:curl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;curl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;ac97649699af9c9e08f4a9d7831cc2f8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;curl&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:curl&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/c62f306772c55f3b3d1904699b1f8b45">MetaeffektLicense:c62f306772c55f3b3d1904699b1f8b45</a> for <a href="/?license=metaeffekt:Permission Terms (curl)"><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (curl)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (curl)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>curl</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>curl</span></li><li><span class="licensename">CURL LICENSE</span></li><li><span class="licensename">CURL License</span></li><li><span class="licensename">Curl License</span></li><li><span class="licensename">curl license</span></li><li><span class="licensename">Permission</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:c62f306772c55f3b3d1904699b1f8b45">[<a href="/fact/MetaeffektLicense/c62f306772c55f3b3d1904699b1f8b45">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Permission Terms (curl)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:curl&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Permission&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CURL LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CURL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Curl License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;curl license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:curl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;c62f306772c55f3b3d1904699b1f8b45&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;CURL LICENSE&quot;,
+            &quot;CURL License&quot;,
+            &quot;Curl License&quot;,
+            &quot;curl license&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Permission Terms (curl)&quot;,
+        &quot;_category&quot;: &quot;Permission&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:curl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:curl&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/1a7d3bbe77dc69ee90b03cef41671827">FossLicense:1a7d3bbe77dc69ee90b03cef41671827</a> for <a href="/?license=foss-license:cURL License"><span class="licensename"><span class="namespace">foss-license:</span>cURL License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>cURL License</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">curl</span></li><li><span class="licensename"><span class="namespace">scancode:</span>curl</span></li><li><span class="licensename">curl License</span></li><li><span class="licensename">cURL License</span></li><li><span class="licensename">CURL LICENSE</span></li><li><span class="licensename">CURL License</span></li><li><span class="licensename">Curl License</span></li><li><span class="licensename">curl license</span></li><li><span class="licensename">Permission Terms (curl)</span></li><li><span class="licensename">scancode://curl</span></li><li><span class="licensename">scancode:curl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:cURL License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:curl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;curl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;curl License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Permission Terms (curl)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://curl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;cURL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CURL LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CURL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Curl License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;curl license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:curl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;1a7d3bbe77dc69ee90b03cef41671827&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;curl&quot;,
+            &quot;curl License&quot;,
+            &quot;Permission Terms (curl)&quot;,
+            &quot;scancode://curl&quot;,
+            &quot;cURL License&quot;,
+            &quot;CURL LICENSE&quot;,
+            &quot;CURL License&quot;,
+            &quot;Curl License&quot;,
+            &quot;curl license&quot;,
+            &quot;scancode:curl&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;cURL License&quot;,
+        &quot;scancode_key&quot;: &quot;curl&quot;,
+        &quot;spdxid&quot;: &quot;curl&quot;,
+        &quot;text&quot;: &quot;Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/e326b71161faaab41bd90beda3e28a73">FOSSLight:e326b71161faaab41bd90beda3e28a73</a> for <a href="/?license=fosslight:Curl License"><span class="licensename"><span class="namespace">fosslight:</span>Curl License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Curl License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">curl</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:e326b71161faaab41bd90beda3e28a73">[<a href="/fact/FOSSLight/e326b71161faaab41bd90beda3e28a73">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Curl License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;curl&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;e326b71161faaab41bd90beda3e28a73&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;Copyright (c) 1996 - 2015, Daniel Stenberg, &lt;daniel@haxx.se&gt;.\nAll rights reserved.\n\nPermission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: &quot;&quot;,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;curl&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/curl.html&quot;,
+            &quot;_fossLight_id&quot;: 40,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Curl License&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/35df1c501236856e1f2168bd0289cbb9">ifrOSS License:35df1c501236856e1f2168bd0289cbb9</a> for <a href="/?license=ifrOSS:Curl License"><span class="licensename"><span class="namespace">ifrOSS:</span>Curl License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>Curl License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Curl License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ifrOSS License:35df1c501236856e1f2168bd0289cbb9">[<a href="/fact/ifrOSS License/35df1c501236856e1f2168bd0289cbb9">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:35df1c501236856e1f2168bd0289cbb9">[<a href="/fact/ifrOSS License/35df1c501236856e1f2168bd0289cbb9">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:35df1c501236856e1f2168bd0289cbb9">[<a href="/fact/ifrOSS License/35df1c501236856e1f2168bd0289cbb9">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/curl/curl/blob/master/COPYING" target="_blank">https://github.com/curl/curl/blob/master/COPYING</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:Curl License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Curl License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;35df1c501236856e1f2168bd0289cbb9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/curl/curl/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: {
+                                    &quot;contents&quot;: [
+                                        &quot;ifrOSS Classification&quot;,
+                                        &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                                        {
+                                            &quot;contents&quot;: &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;,
+                                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                        }
+                                    ],
+                                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                },
+                                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                            },
+                            &quot;tag&quot;: &quot;LicenseRating&quot;
+                        },
+                        [
+                            {
+                                &quot;contents&quot;: {
+                                    &quot;tag&quot;: &quot;Permissive&quot;
+                                },
+                                &quot;tag&quot;: &quot;LicenseType&quot;
+                            }
+                        ]
+                    ],
+                    &quot;tag&quot;: &quot;SubStatements&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;ifrOSS Classification&quot;,
+                                    &quot;Open Source Lizenzen&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Source Lizenzen&quot;,
+                &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;
+            ],
+            [
+                &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:Curl License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;Curl License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;https://github.com/curl/curl/blob/master/COPYING&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

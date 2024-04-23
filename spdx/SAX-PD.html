@@ -1,0 +1,1020 @@
+<html><head><title>ldbcollector: spdx:SAX-PD</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:SAX-PD</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SAX-PD</span></li></ul></li><li><b>other LicenseNames (15):</b><ul class="capsulUl clearfix"><li><span class="licensename">for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)</span></li><li><span class="licensename">http://www.saxproject.org/copying.html</span></li><li><span class="licensename">http://www.spdx.org/licenses/SAX-PD</span></li><li><span class="licensename">http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt</span></li><li><span class="licensename">https://spdx.org/licenses/sax-pd</span></li><li><span class="licensename">Sax Public Domain Notice</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>SAX Public Domain Notice</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>SAX Public Domain Notice</span></li><li><span class="licensename">SAX-PD</span></li><li><span class="licensename"><span class="namespace">cavil:</span>SAX-PD</span></li><li><span class="licensename"><span class="namespace">fossology:</span>SAX-PD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sax-pd</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SAX-PD</span></li><li><span class="licensename">scancode://sax-pd</span></li><li><span class="licensename">scancode:sax-pd</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//spdx.org/licenses/sax-pd</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.saxproject.org/copying.html</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.spdx.org/licenses/SAX-PD</span></li><li><span class="licensename"><span class="namespace">for license please see accompanying LICENSE.txt file (available also at http:</span>//www.xmlpull.org/)</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.xmlpull.org/v1/download/unpacked/LICENSE.txt</span></li><li><span class="licensename">SAX Public Domain</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:3e1637340c716b21837e3d78389e6de1">[<a href="/fact/ScancodeData/3e1637340c716b21837e3d78389e6de1">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:fae2dd4791eb83b603ca35846ce8c348">[<a href="/fact/SPDXLicense/fae2dd4791eb83b603ca35846ce8c348">SPDXLicense</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:45ea8444d1f8f71421608de13434a1b1">[<a href="/fact/MetaeffektLicense/45ea8444d1f8f71421608de13434a1b1">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7b936e942a9e211c57461724318c50a6">[<a href="/fact/OrtLicenseCategorization/7b936e942a9e211c57461724318c50a6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7b936e942a9e211c57461724318c50a6">[<a href="/fact/OrtLicenseCategorization/7b936e942a9e211c57461724318c50a6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e4f53445d94b99f7c3236bc12e006fba">[<a href="/fact/OrtLicenseCategorization/e4f53445d94b99f7c3236bc12e006fba">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.saxproject.org/copying.html" target="_blank">http://www.saxproject.org/copying.html</a></li></ul><h3>Other Statements</h3><ul><li>http://www.saxproject.org/copying.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright Status
+
+SAX is free!
+
+In fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.
+
+No Warranty
+
+Because SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX &quot;as is&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.
+
+In no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.
+
+Copyright Disclaimers
+
+This page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.
+
+SAX 1.0
+
+Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.
+
+No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.
+
+David Megginson, Megginson Technologies Ltd.
+1998-05-11
+
+SAX 2.0
+
+I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.
+
+David Megginson, Megginson Technologies Ltd.
+2000-05-05
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Copyright Status&lt;/p&gt;
+
+      &lt;p&gt;SAX is free!&lt;/p&gt;
+
+      &lt;p&gt;In fact, it&amp;apos;s not possible to own a license to SAX, since it&amp;apos;s been placed in the public domain.&lt;/p&gt;
+
+      &lt;p&gt;No Warranty&lt;/p&gt;
+
+      &lt;p&gt;Because SAX is released to the public domain, there is no warranty for the design or for the software
+         implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the
+         copyright holders and/or other parties provide SAX &amp;quot;as is&amp;quot; without warranty of any kind, either
+         expressed or implied, including, but not limited to, the implied warranties of merchantability and
+         fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with
+         you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or
+         correction.&lt;/p&gt;
+
+      &lt;p&gt;In no event unless required by applicable law or agreed to in writing will any copyright holder, or any
+         other party who may modify and/or redistribute SAX, be liable to you for damages, including any
+         general, special, incidental or consequential damages arising out of the use or inability to use SAX
+         (including but not limited to loss of data or data being rendered inaccurate or losses sustained by
+         you or third parties or a failure of the SAX to operate with any other programs), even if such holder
+         or other party has been advised of the possibility of such damages.&lt;/p&gt;
+
+      &lt;p&gt;Copyright Disclaimers&lt;/p&gt;
+
+      &lt;p&gt;This page includes statements to that effect by David Megginson, who would have been able to claim
+         copyright for the original work.&lt;/p&gt;
+
+      &lt;p&gt;SAX 1.0&lt;/p&gt;
+
+      &lt;p&gt;Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV
+         mailing list, is hereby released into the public domain.&lt;/p&gt;
+
+      &lt;p&gt;No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with
+         your software distribution, include it on a CD-ROM, list the source code in a book, mirror the
+         documentation at your own web site, or use it in any other way you see fit.&lt;/p&gt;
+
+      &lt;p&gt;David Megginson, Megginson Technologies Ltd.
+        &lt;br /&gt;
+
+1998-05-11
+      &lt;/p&gt;
+
+      &lt;p&gt;SAX 2.0&lt;/p&gt;
+
+      &lt;p&gt;I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0
+         source code, compiled code, and documentation contained in this distribution into the Public Domain.
+         SAX comes with NO WARRANTY or guarantee of fitness for any purpose.&lt;/p&gt;
+
+      &lt;p&gt;David Megginson, Megginson Technologies Ltd.
+        &lt;br /&gt;
+
+2000-05-05
+      &lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Copyright Status for SAX
+
+SAX is free!
+
+In fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in
+the public domain.
+
+No Warranty
+
+Because SAX is released to the public domain, there is no warranty for the
+design or for the software implementation, to the extent permitted by applicable
+law. Except when otherwise stated in writing the copyright holders and/or other
+parties provide SAX &quot;as is&quot; without warranty of any kind, either expressed or
+implied, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose. The entire risk as to the
+quality and performance of SAX is with you. Should SAX prove defective, you
+assume the cost of all necessary servicing, repair or correction.
+
+In no event unless required by applicable law or agreed to in writing will any
+copyright holder, or any other party who may modify and/or redistribute SAX, be
+liable to you for damages, including any general, special, incidental or
+consequential damages arising out of the use or inability to use SAX (including
+but not limited to loss of data or data being rendered inaccurate or losses
+sustained by you or third parties or a failure of the SAX to operate with any
+other programs), even if such holder or other party has been advised of the
+possibility of such damages.
+
+Copyright Disclaimers
+
+This page includes statements to that effect by David Megginson, who would have
+been able to claim copyright for the original work.
+
+SAX 1.0
+
+Version 1.0 of the Simple API for XML (SAX), created collectively by the
+membership of the XML-DEV mailing list, is hereby released into the public
+domain.
+
+No one owns SAX: you may use it freely in both commercial and non-commercial
+applications, bundle it with your software distribution, include it on a CD-ROM,
+list the source code in a book, mirror the documentation at your own web site,
+or use it in any other way you see fit.
+
+David Megginson, Megginson Technologies Ltd.
+1998-05-11
+
+SAX 2.0
+
+I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and
+release all of the SAX 2.0 source code, compiled code, and documentation
+contained in this distribution into the Public Domain. SAX comes with NO
+WARRANTY or guarantee of fitness for any purpose.
+
+David Megginson, Megginson Technologies Ltd.
+2000-05-05</pre></details></li><li><details><summary>Text:</summary><pre>Copyright Status
+
+SAX is free!
+
+In fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.
+
+No Warranty
+
+Because SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX &quot;as is&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.
+
+In no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.
+
+Copyright Disclaimers
+
+This page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.
+
+SAX 1.0
+
+Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.
+
+No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.
+
+David Megginson, Megginson Technologies Ltd.
+
+1998-05-11
+
+SAX 2.0
+
+I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.
+
+David Megginson, Megginson Technologies Ltd.
+
+2000-05-05</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/fae2dd4791eb83b603ca35846ce8c348">SPDXLicense:fae2dd4791eb83b603ca35846ce8c348</a> for <a href="/?license=spdx:SAX-PD"><span class="licensename"><span class="namespace">spdx:</span>SAX-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SAX-PD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sax Public Domain Notice</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:fae2dd4791eb83b603ca35846ce8c348">[<a href="/fact/SPDXLicense/fae2dd4791eb83b603ca35846ce8c348">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.saxproject.org/copying.html" target="_blank">http://www.saxproject.org/copying.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright Status
+
+SAX is free!
+
+In fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.
+
+No Warranty
+
+Because SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX &quot;as is&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.
+
+In no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.
+
+Copyright Disclaimers
+
+This page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.
+
+SAX 1.0
+
+Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.
+
+No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.
+
+David Megginson, Megginson Technologies Ltd.
+1998-05-11
+
+SAX 2.0
+
+I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.
+
+David Megginson, Megginson Technologies Ltd.
+2000-05-05
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Copyright Status&lt;/p&gt;
+
+      &lt;p&gt;SAX is free!&lt;/p&gt;
+
+      &lt;p&gt;In fact, it&amp;apos;s not possible to own a license to SAX, since it&amp;apos;s been placed in the public domain.&lt;/p&gt;
+
+      &lt;p&gt;No Warranty&lt;/p&gt;
+
+      &lt;p&gt;Because SAX is released to the public domain, there is no warranty for the design or for the software
+         implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the
+         copyright holders and/or other parties provide SAX &amp;quot;as is&amp;quot; without warranty of any kind, either
+         expressed or implied, including, but not limited to, the implied warranties of merchantability and
+         fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with
+         you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or
+         correction.&lt;/p&gt;
+
+      &lt;p&gt;In no event unless required by applicable law or agreed to in writing will any copyright holder, or any
+         other party who may modify and/or redistribute SAX, be liable to you for damages, including any
+         general, special, incidental or consequential damages arising out of the use or inability to use SAX
+         (including but not limited to loss of data or data being rendered inaccurate or losses sustained by
+         you or third parties or a failure of the SAX to operate with any other programs), even if such holder
+         or other party has been advised of the possibility of such damages.&lt;/p&gt;
+
+      &lt;p&gt;Copyright Disclaimers&lt;/p&gt;
+
+      &lt;p&gt;This page includes statements to that effect by David Megginson, who would have been able to claim
+         copyright for the original work.&lt;/p&gt;
+
+      &lt;p&gt;SAX 1.0&lt;/p&gt;
+
+      &lt;p&gt;Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV
+         mailing list, is hereby released into the public domain.&lt;/p&gt;
+
+      &lt;p&gt;No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with
+         your software distribution, include it on a CD-ROM, list the source code in a book, mirror the
+         documentation at your own web site, or use it in any other way you see fit.&lt;/p&gt;
+
+      &lt;p&gt;David Megginson, Megginson Technologies Ltd.
+        &lt;br /&gt;
+
+1998-05-11
+      &lt;/p&gt;
+
+      &lt;p&gt;SAX 2.0&lt;/p&gt;
+
+      &lt;p&gt;I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0
+         source code, compiled code, and documentation contained in this distribution into the Public Domain.
+         SAX comes with NO WARRANTY or guarantee of fitness for any purpose.&lt;/p&gt;
+
+      &lt;p&gt;David Megginson, Megginson Technologies Ltd.
+        &lt;br /&gt;
+
+2000-05-05
+      &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:SAX-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sax Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;fae2dd4791eb83b603ca35846ce8c348&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright Status\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n2000-05-05\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;Copyright Status&lt;/p&gt;\n\n      &lt;p&gt;SAX is free!&lt;/p&gt;\n\n      &lt;p&gt;In fact, it&amp;apos;s not possible to own a license to SAX, since it&amp;apos;s been placed in the public domain.&lt;/p&gt;\n\n      &lt;p&gt;No Warranty&lt;/p&gt;\n\n      &lt;p&gt;Because SAX is released to the public domain, there is no warranty for the design or for the software\n         implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the\n         copyright holders and/or other parties provide SAX &amp;quot;as is&amp;quot; without warranty of any kind, either\n         expressed or implied, including, but not limited to, the implied warranties of merchantability and\n         fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with\n         you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or\n         correction.&lt;/p&gt;\n\n      &lt;p&gt;In no event unless required by applicable law or agreed to in writing will any copyright holder, or any\n         other party who may modify and/or redistribute SAX, be liable to you for damages, including any\n         general, special, incidental or consequential damages arising out of the use or inability to use SAX\n         (including but not limited to loss of data or data being rendered inaccurate or losses sustained by\n         you or third parties or a failure of the SAX to operate with any other programs), even if such holder\n         or other party has been advised of the possibility of such damages.&lt;/p&gt;\n\n      &lt;p&gt;Copyright Disclaimers&lt;/p&gt;\n\n      &lt;p&gt;This page includes statements to that effect by David Megginson, who would have been able to claim\n         copyright for the original work.&lt;/p&gt;\n\n      &lt;p&gt;SAX 1.0&lt;/p&gt;\n\n      &lt;p&gt;Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV\n         mailing list, is hereby released into the public domain.&lt;/p&gt;\n\n      &lt;p&gt;No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with\n         your software distribution, include it on a CD-ROM, list the source code in a book, mirror the\n         documentation at your own web site, or use it in any other way you see fit.&lt;/p&gt;\n\n      &lt;p&gt;David Megginson, Megginson Technologies Ltd.\n        &lt;br /&gt;\n\n1998-05-11\n      &lt;/p&gt;\n\n      &lt;p&gt;SAX 2.0&lt;/p&gt;\n\n      &lt;p&gt;I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0\n         source code, compiled code, and documentation contained in this distribution into the Public Domain.\n         SAX comes with NO WARRANTY or guarantee of fitness for any purpose.&lt;/p&gt;\n\n      &lt;p&gt;David Megginson, Megginson Technologies Ltd.\n        &lt;br /&gt;\n\n2000-05-05\n      &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.saxproject.org/copying.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.saxproject.org/copying.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:55Z&quot;,
+                &quot;url&quot;: &quot;http://www.saxproject.org/copying.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:SAX-PD&quot;,
+        &quot;licenseText&quot;: &quot;Copyright Status\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n2000-05-05\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;Copyright Status&lt;/p&gt;\n\n      &lt;p&gt;SAX is free!&lt;/p&gt;\n\n      &lt;p&gt;In fact, it&amp;apos;s not possible to own a license to SAX, since it&amp;apos;s been placed in the public domain.&lt;/p&gt;\n\n      &lt;p&gt;No Warranty&lt;/p&gt;\n\n      &lt;p&gt;Because SAX is released to the public domain, there is no warranty for the design or for the software\n         implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the\n         copyright holders and/or other parties provide SAX &amp;quot;as is&amp;quot; without warranty of any kind, either\n         expressed or implied, including, but not limited to, the implied warranties of merchantability and\n         fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with\n         you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or\n         correction.&lt;/p&gt;\n\n      &lt;p&gt;In no event unless required by applicable law or agreed to in writing will any copyright holder, or any\n         other party who may modify and/or redistribute SAX, be liable to you for damages, including any\n         general, special, incidental or consequential damages arising out of the use or inability to use SAX\n         (including but not limited to loss of data or data being rendered inaccurate or losses sustained by\n         you or third parties or a failure of the SAX to operate with any other programs), even if such holder\n         or other party has been advised of the possibility of such damages.&lt;/p&gt;\n\n      &lt;p&gt;Copyright Disclaimers&lt;/p&gt;\n\n      &lt;p&gt;This page includes statements to that effect by David Megginson, who would have been able to claim\n         copyright for the original work.&lt;/p&gt;\n\n      &lt;p&gt;SAX 1.0&lt;/p&gt;\n\n      &lt;p&gt;Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV\n         mailing list, is hereby released into the public domain.&lt;/p&gt;\n\n      &lt;p&gt;No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with\n         your software distribution, include it on a CD-ROM, list the source code in a book, mirror the\n         documentation at your own web site, or use it in any other way you see fit.&lt;/p&gt;\n\n      &lt;p&gt;David Megginson, Megginson Technologies Ltd.\n        &lt;br /&gt;\n\n1998-05-11\n      &lt;/p&gt;\n\n      &lt;p&gt;SAX 2.0&lt;/p&gt;\n\n      &lt;p&gt;I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0\n         source code, compiled code, and documentation contained in this distribution into the Public Domain.\n         SAX comes with NO WARRANTY or guarantee of fitness for any purpose.&lt;/p&gt;\n\n      &lt;p&gt;David Megginson, Megginson Technologies Ltd.\n        &lt;br /&gt;\n\n2000-05-05\n      &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Sax Public Domain Notice&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.saxproject.org/copying.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Copyright Status\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n\n2000-05-05\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/3e1637340c716b21837e3d78389e6de1">ScancodeData:3e1637340c716b21837e3d78389e6de1</a> for <a href="/?license=scancode:sax-pd"><span class="licensename"><span class="namespace">scancode:</span>sax-pd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>sax-pd</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">SAX Public Domain Notice</span></li><li><span class="licensename">SAX-PD</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:3e1637340c716b21837e3d78389e6de1">[<a href="/fact/ScancodeData/3e1637340c716b21837e3d78389e6de1">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.saxproject.org/copying.html" target="_blank">http://www.saxproject.org/copying.html</a></li></ul><h3>Other Statements</h3><ul><li>http://www.saxproject.org/copying.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright Status for SAX
+
+SAX is free!
+
+In fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in
+the public domain.
+
+No Warranty
+
+Because SAX is released to the public domain, there is no warranty for the
+design or for the software implementation, to the extent permitted by applicable
+law. Except when otherwise stated in writing the copyright holders and/or other
+parties provide SAX &quot;as is&quot; without warranty of any kind, either expressed or
+implied, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose. The entire risk as to the
+quality and performance of SAX is with you. Should SAX prove defective, you
+assume the cost of all necessary servicing, repair or correction.
+
+In no event unless required by applicable law or agreed to in writing will any
+copyright holder, or any other party who may modify and/or redistribute SAX, be
+liable to you for damages, including any general, special, incidental or
+consequential damages arising out of the use or inability to use SAX (including
+but not limited to loss of data or data being rendered inaccurate or losses
+sustained by you or third parties or a failure of the SAX to operate with any
+other programs), even if such holder or other party has been advised of the
+possibility of such damages.
+
+Copyright Disclaimers
+
+This page includes statements to that effect by David Megginson, who would have
+been able to claim copyright for the original work.
+
+SAX 1.0
+
+Version 1.0 of the Simple API for XML (SAX), created collectively by the
+membership of the XML-DEV mailing list, is hereby released into the public
+domain.
+
+No one owns SAX: you may use it freely in both commercial and non-commercial
+applications, bundle it with your software distribution, include it on a CD-ROM,
+list the source code in a book, mirror the documentation at your own web site,
+or use it in any other way you see fit.
+
+David Megginson, Megginson Technologies Ltd.
+1998-05-11
+
+SAX 2.0
+
+I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and
+release all of the SAX 2.0 source code, compiled code, and documentation
+contained in this distribution into the Public Domain. SAX comes with NO
+WARRANTY or guarantee of fitness for any purpose.
+
+David Megginson, Megginson Technologies Ltd.
+2000-05-05</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:sax-pd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SAX-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SAX Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;3e1637340c716b21837e3d78389e6de1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.saxproject.org/copying.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.saxproject.org/copying.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright Status for SAX\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in\nthe public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the\ndesign or for the software implementation, to the extent permitted by applicable\nlaw. Except when otherwise stated in writing the copyright holders and/or other\nparties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or\nimplied, including, but not limited to, the implied warranties of\nmerchantability and fitness for a particular purpose. The entire risk as to the\nquality and performance of SAX is with you. Should SAX prove defective, you\nassume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any\ncopyright holder, or any other party who may modify and/or redistribute SAX, be\nliable to you for damages, including any general, special, incidental or\nconsequential damages arising out of the use or inability to use SAX (including\nbut not limited to loss of data or data being rendered inaccurate or losses\nsustained by you or third parties or a failure of the SAX to operate with any\nother programs), even if such holder or other party has been advised of the\npossibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have\nbeen able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the\nmembership of the XML-DEV mailing list, is hereby released into the public\ndomain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial\napplications, bundle it with your software distribution, include it on a CD-ROM,\nlist the source code in a book, mirror the documentation at your own web site,\nor use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and\nrelease all of the SAX 2.0 source code, compiled code, and documentation\ncontained in this distribution into the Public Domain. SAX comes with NO\nWARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n2000-05-05&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.saxproject.org/copying.html&quot;,
+        &quot;_key&quot;: &quot;sax-pd&quot;,
+        &quot;_name&quot;: &quot;SAX Public Domain Notice&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;SAX Project&quot;,
+        &quot;_shortName&quot;: &quot;SAX-PD&quot;,
+        &quot;_spdxId&quot;: &quot;SAX-PD&quot;,
+        &quot;_text&quot;: &quot;Copyright Status for SAX\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in\nthe public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the\ndesign or for the software implementation, to the extent permitted by applicable\nlaw. Except when otherwise stated in writing the copyright holders and/or other\nparties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or\nimplied, including, but not limited to, the implied warranties of\nmerchantability and fitness for a particular purpose. The entire risk as to the\nquality and performance of SAX is with you. Should SAX prove defective, you\nassume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any\ncopyright holder, or any other party who may modify and/or redistribute SAX, be\nliable to you for damages, including any general, special, incidental or\nconsequential damages arising out of the use or inability to use SAX (including\nbut not limited to loss of data or data being rendered inaccurate or losses\nsustained by you or third parties or a failure of the SAX to operate with any\nother programs), even if such holder or other party has been advised of the\npossibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have\nbeen able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the\nmembership of the XML-DEV mailing list, is hereby released into the public\ndomain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial\napplications, bundle it with your software distribution, include it on a CD-ROM,\nlist the source code in a book, mirror the documentation at your own web site,\nor use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and\nrelease all of the SAX 2.0 source code, compiled code, and documentation\ncontained in this distribution into the Public Domain. SAX comes with NO\nWARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n2000-05-05&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.saxproject.org/copying.html&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/e81c0c5f54efcac9e830428bb2fcc74a">Fossology:e81c0c5f54efcac9e830428bb2fcc74a</a> for <a href="/?license=fossology:SAX-PD"><span class="licensename"><span class="namespace">fossology:</span>SAX-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>SAX-PD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sax Public Domain Notice</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="http://www.saxproject.org/copying.html" target="_blank">http://www.saxproject.org/copying.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright Status
+
+SAX is free!
+
+In fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.
+
+No Warranty
+
+Because SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX &quot;as is&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.
+
+In no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.
+
+Copyright Disclaimers
+
+This page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.
+
+SAX 1.0
+
+Version 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.
+
+No one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.
+
+David Megginson, Megginson Technologies Ltd.
+
+1998-05-11
+
+SAX 2.0
+
+I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.
+
+David Megginson, Megginson Technologies Ltd.
+
+2000-05-05</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:SAX-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sax Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;e81c0c5f54efcac9e830428bb2fcc74a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.saxproject.org/copying.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright Status\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n\n2000-05-05&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Sax Public Domain Notice&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:SAX-PD&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright Status\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in the public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the design or for the software implementation, to the extent permitted by applicable law. Except when otherwise stated in writing the copyright holders and/or other parties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of SAX is with you. Should SAX prove defective, you assume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute SAX, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use SAX (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SAX to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have been able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the membership of the XML-DEV mailing list, is hereby released into the public domain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial applications, bundle it with your software distribution, include it on a CD-ROM, list the source code in a book, mirror the documentation at your own web site, or use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and release all of the SAX 2.0 source code, compiled code, and documentation contained in this distribution into the Public Domain. SAX comes with NO WARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n\n2000-05-05&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.saxproject.org/copying.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/7b936e942a9e211c57461724318c50a6">OrtLicenseCategorization:7b936e942a9e211c57461724318c50a6</a> for <a href="/?license=SPDX:SAX-PD"><span class="licensename"><span class="namespace">SPDX:</span>SAX-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>SAX-PD</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7b936e942a9e211c57461724318c50a6">[<a href="/fact/OrtLicenseCategorization/7b936e942a9e211c57461724318c50a6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7b936e942a9e211c57461724318c50a6">[<a href="/fact/OrtLicenseCategorization/7b936e942a9e211c57461724318c50a6">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:SAX-PD&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;7b936e942a9e211c57461724318c50a6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:SAX-PD&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/e4f53445d94b99f7c3236bc12e006fba">OrtLicenseCategorization:e4f53445d94b99f7c3236bc12e006fba</a> for <a href="/?license=SPDX:SAX-PD"><span class="licensename"><span class="namespace">SPDX:</span>SAX-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>SAX-PD</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e4f53445d94b99f7c3236bc12e006fba">[<a href="/fact/OrtLicenseCategorization/e4f53445d94b99f7c3236bc12e006fba">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:SAX-PD&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;e4f53445d94b99f7c3236bc12e006fba&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;contents&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                &quot;name&quot;: &quot;public-domain&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:SAX-PD&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/557475679e1f313c2d3a84d16ffeaf9f">CavilLicenseChange:557475679e1f313c2d3a84d16ffeaf9f</a> for <a href="/?license=cavil:SAX-PD"><span class="licensename"><span class="namespace">cavil:</span>SAX-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>SAX-PD</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SAX-PD</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:SAX-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SAX-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;557475679e1f313c2d3a84d16ffeaf9f&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;SAX-PD&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:SAX-PD&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/45ea8444d1f8f71421608de13434a1b1">MetaeffektLicense:45ea8444d1f8f71421608de13434a1b1</a> for <a href="/?license=metaeffekt:SAX Public Domain Notice"><span class="licensename"><span class="namespace">metaeffekt:</span>SAX Public Domain Notice</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>SAX Public Domain Notice</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SAX-PD</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//spdx.org/licenses/sax-pd</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.saxproject.org/copying.html</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.spdx.org/licenses/SAX-PD</span></li><li><span class="licensename"><span class="namespace">for license please see accompanying LICENSE.txt file (available also at http:</span>//www.xmlpull.org/)</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.xmlpull.org/v1/download/unpacked/LICENSE.txt</span></li><li><span class="licensename">SAX Public Domain</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sax-pd</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:45ea8444d1f8f71421608de13434a1b1">[<a href="/fact/MetaeffektLicense/45ea8444d1f8f71421608de13434a1b1">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:SAX Public Domain Notice&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SAX-PD&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SAX Public Domain&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.spdx.org/licenses/SAX-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.saxproject.org/copying.html&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://spdx.org/licenses/sax-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:sax-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;45ea8444d1f8f71421608de13434a1b1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;http://www.spdx.org/licenses/SAX-PD&quot;,
+            &quot;for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)&quot;,
+            &quot;http://www.saxproject.org/copying.html&quot;,
+            &quot;https://spdx.org/licenses/sax-pd&quot;,
+            &quot;http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:SAX Public Domain Notice&quot;,
+        &quot;_category&quot;: &quot;SAX Public Domain&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:sax-pd&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:SAX-PD&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/28a11ad9340e4cb60b9de43c749ec8ab">FossLicense:28a11ad9340e4cb60b9de43c749ec8ab</a> for <a href="/?license=foss-license:SAX Public Domain Notice"><span class="licensename"><span class="namespace">foss-license:</span>SAX Public Domain Notice</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>SAX Public Domain Notice</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)</span></li><li><span class="licensename">http://www.saxproject.org/copying.html</span></li><li><span class="licensename">http://www.spdx.org/licenses/SAX-PD</span></li><li><span class="licensename">http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt</span></li><li><span class="licensename">https://spdx.org/licenses/sax-pd</span></li><li><span class="licensename">SAX Public Domain Notice</span></li><li><span class="licensename">Sax Public Domain Notice</span></li><li><span class="licensename">SAX-PD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sax-pd</span></li><li><span class="licensename">scancode://sax-pd</span></li><li><span class="licensename">scancode:sax-pd</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:SAX Public Domain Notice&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:sax-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SAX-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SAX Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sax Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://sax-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.spdx.org/licenses/SAX-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.saxproject.org/copying.html&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://spdx.org/licenses/sax-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:sax-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;28a11ad9340e4cb60b9de43c749ec8ab&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;SAX-PD&quot;,
+            &quot;SAX Public Domain Notice&quot;,
+            &quot;Sax Public Domain Notice&quot;,
+            &quot;scancode://sax-pd&quot;,
+            &quot;http://www.spdx.org/licenses/SAX-PD&quot;,
+            &quot;for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)&quot;,
+            &quot;http://www.saxproject.org/copying.html&quot;,
+            &quot;https://spdx.org/licenses/sax-pd&quot;,
+            &quot;http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt&quot;,
+            &quot;scancode:sax-pd&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;SAX Public Domain Notice&quot;,
+        &quot;scancode_key&quot;: &quot;sax-pd&quot;,
+        &quot;spdxid&quot;: &quot;SAX-PD&quot;,
+        &quot;text&quot;: &quot;Copyright Status for SAX\n\nSAX is free!\n\nIn fact, it&#39;s not possible to own a license to SAX, since it&#39;s been placed in\nthe public domain.\n\nNo Warranty\n\nBecause SAX is released to the public domain, there is no warranty for the\ndesign or for the software implementation, to the extent permitted by applicable\nlaw. Except when otherwise stated in writing the copyright holders and/or other\nparties provide SAX \&quot;as is\&quot; without warranty of any kind, either expressed or\nimplied, including, but not limited to, the implied warranties of\nmerchantability and fitness for a particular purpose. The entire risk as to the\nquality and performance of SAX is with you. Should SAX prove defective, you\nassume the cost of all necessary servicing, repair or correction.\n\nIn no event unless required by applicable law or agreed to in writing will any\ncopyright holder, or any other party who may modify and/or redistribute SAX, be\nliable to you for damages, including any general, special, incidental or\nconsequential damages arising out of the use or inability to use SAX (including\nbut not limited to loss of data or data being rendered inaccurate or losses\nsustained by you or third parties or a failure of the SAX to operate with any\nother programs), even if such holder or other party has been advised of the\npossibility of such damages.\n\nCopyright Disclaimers\n\nThis page includes statements to that effect by David Megginson, who would have\nbeen able to claim copyright for the original work.\n\nSAX 1.0\n\nVersion 1.0 of the Simple API for XML (SAX), created collectively by the\nmembership of the XML-DEV mailing list, is hereby released into the public\ndomain.\n\nNo one owns SAX: you may use it freely in both commercial and non-commercial\napplications, bundle it with your software distribution, include it on a CD-ROM,\nlist the source code in a book, mirror the documentation at your own web site,\nor use it in any other way you see fit.\n\nDavid Megginson, Megginson Technologies Ltd.\n1998-05-11\n\nSAX 2.0\n\nI hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and\nrelease all of the SAX 2.0 source code, compiled code, and documentation\ncontained in this distribution into the Public Domain. SAX comes with NO\nWARRANTY or guarantee of fitness for any purpose.\n\nDavid Megginson, Megginson Technologies Ltd.\n2000-05-05&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li></ul></body></html>

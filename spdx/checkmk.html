@@ -1,0 +1,583 @@
+<html><head><title>ldbcollector: spdx:checkmk</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:checkmk</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>checkmk</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">checkmk</span></li><li><span class="licensename"><span class="namespace">cavil:</span>checkmk</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>checkmk</span></li><li><span class="licensename"><span class="namespace">scancode:</span>checkmk</span></li><li><span class="licensename"><span class="namespace">spdx:</span>checkmk</span></li><li><span class="licensename">Checkmk License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Checkmk License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Micah Cowan</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:c626d75c81ca7ffe2d61db948bb2c262">[<a href="/fact/ScancodeData/c626d75c81ca7ffe2d61db948bb2c262">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8c6fc25a51a970b868a12beb22c73f6f">[<a href="/fact/SPDXLicense/8c6fc25a51a970b868a12beb22c73f6f">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5ea36ea11b41d3a3ffd34ce40a68e4b2">[<a href="/fact/FedoraEntry/5ea36ea11b41d3a3ffd34ce40a68e4b2">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:0c96c9aee3f3577d22b9af6411c4fe14">[<a href="/fact/MetaeffektLicense/0c96c9aee3f3577d22b9af6411c4fe14">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:48a27352437132e0a52a10b2783a1861">[<a href="/fact/OrtLicenseCategorization/48a27352437132e0a52a10b2783a1861">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:48a27352437132e0a52a10b2783a1861">[<a href="/fact/OrtLicenseCategorization/48a27352437132e0a52a10b2783a1861">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/libcheck/check/blob/master/checkmk/checkmk.in" target="_blank">https://github.com/libcheck/check/blob/master/checkmk/checkmk.in</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre># Copyright (c) 2006, 2010  Micah Cowan
+#
+# Redistribution of this program in any form, with or without
+# modifications, is permitted, provided that the above copyright is
+# retained in distributions of this program in source form.
+#
+# (This is a free, non-copyleft license compatible with pretty much any
+# other free or proprietary license, including the GPL. It&#39;s essentially
+# a scaled-down version of the &quot;modified&quot; BSD license.)
+</pre></details></li><li><details><summary>Text:</summary><pre>
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2006, 2010  Micah Cowan&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution of this program in any form, with or without
+ modifications, is permitted, provided that the above copyright is
+ retained in distributions of this program in source form.&lt;/p&gt;
+
+&lt;p&gt; (This is a free, non-copyleft license compatible with pretty much any
+other free or proprietary license, including the GPL. It&amp;apos;s essentially
+a scaled-down version of the &amp;quot;modified&amp;quot; BSD license.)
+&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution of this program in any form, with or without
+modifications, is permitted, provided that the above copyright is
+retained in distributions of this program in source form.
+
+(This is a free, non-copyleft license compatible with pretty much any
+other free or proprietary license, including the GPL. It&#39;s essentially
+a scaled-down version of the &quot;modified&quot; BSD license.)</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/8c6fc25a51a970b868a12beb22c73f6f">SPDXLicense:8c6fc25a51a970b868a12beb22c73f6f</a> for <a href="/?license=spdx:checkmk"><span class="licensename"><span class="namespace">spdx:</span>checkmk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>checkmk</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Checkmk License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8c6fc25a51a970b868a12beb22c73f6f">[<a href="/fact/SPDXLicense/8c6fc25a51a970b868a12beb22c73f6f">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/libcheck/check/blob/master/checkmk/checkmk.in" target="_blank">https://github.com/libcheck/check/blob/master/checkmk/checkmk.in</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre># Copyright (c) 2006, 2010  Micah Cowan
+#
+# Redistribution of this program in any form, with or without
+# modifications, is permitted, provided that the above copyright is
+# retained in distributions of this program in source form.
+#
+# (This is a free, non-copyleft license compatible with pretty much any
+# other free or proprietary license, including the GPL. It&#39;s essentially
+# a scaled-down version of the &quot;modified&quot; BSD license.)
+</pre></details></li><li><details><summary>Text:</summary><pre>
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2006, 2010  Micah Cowan&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution of this program in any form, with or without
+ modifications, is permitted, provided that the above copyright is
+ retained in distributions of this program in source form.&lt;/p&gt;
+
+&lt;p&gt; (This is a free, non-copyleft license compatible with pretty much any
+other free or proprietary license, including the GPL. It&amp;apos;s essentially
+a scaled-down version of the &amp;quot;modified&amp;quot; BSD license.)
+&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:checkmk&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Checkmk License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;8c6fc25a51a970b868a12beb22c73f6f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;# Copyright (c) 2006, 2010  Micah Cowan\n#\n# Redistribution of this program in any form, with or without\n# modifications, is permitted, provided that the above copyright is\n# retained in distributions of this program in source form.\n#\n# (This is a free, non-copyleft license compatible with pretty much any\n# other free or proprietary license, including the GPL. It&#39;s essentially\n# a scaled-down version of the \&quot;modified\&quot; BSD license.)\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2006, 2010  Micah Cowan&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution of this program in any form, with or without\n modifications, is permitted, provided that the above copyright is\n retained in distributions of this program in source form.&lt;/p&gt;\n\n&lt;p&gt; (This is a free, non-copyleft license compatible with pretty much any\nother free or proprietary license, including the GPL. It&amp;apos;s essentially\na scaled-down version of the &amp;quot;modified&amp;quot; BSD license.)\n&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/libcheck/check/blob/master/checkmk/checkmk.in&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/libcheck/check/blob/master/checkmk/checkmk.in&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:58Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/libcheck/check/blob/master/checkmk/checkmk.in&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:checkmk&quot;,
+        &quot;licenseText&quot;: &quot;# Copyright (c) 2006, 2010  Micah Cowan\n#\n# Redistribution of this program in any form, with or without\n# modifications, is permitted, provided that the above copyright is\n# retained in distributions of this program in source form.\n#\n# (This is a free, non-copyleft license compatible with pretty much any\n# other free or proprietary license, including the GPL. It&#39;s essentially\n# a scaled-down version of the \&quot;modified\&quot; BSD license.)\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2006, 2010  Micah Cowan&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution of this program in any form, with or without\n modifications, is permitted, provided that the above copyright is\n retained in distributions of this program in source form.&lt;/p&gt;\n\n&lt;p&gt; (This is a free, non-copyleft license compatible with pretty much any\nother free or proprietary license, including the GPL. It&amp;apos;s essentially\na scaled-down version of the &amp;quot;modified&amp;quot; BSD license.)\n&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Checkmk License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/libcheck/check/blob/master/checkmk/checkmk.in&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2006, 2010 Micah Cowan  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution of this program in any form, with or without modifications, is permitted, provided that the above copyright is retained in distributions of this program in source form.\n\n(This is a free, non-copyleft license compatible with pretty much any other free or proprietary license, including the GPL. It&#39;s essentially a scaled-down version of the \&quot;modified\&quot; BSD license.)\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/5ea36ea11b41d3a3ffd34ce40a68e4b2">FedoraEntry:5ea36ea11b41d3a3ffd34ce40a68e4b2</a> for <a href="/?license=Fedora:checkmk"><span class="licensename"><span class="namespace">Fedora:</span>checkmk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>checkmk</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>checkmk</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5ea36ea11b41d3a3ffd34ce40a68e4b2">[<a href="/fact/FedoraEntry/5ea36ea11b41d3a3ffd34ce40a68e4b2">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:checkmk&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:checkmk&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;5ea36ea11b41d3a3ffd34ce40a68e4b2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;checkmk&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:checkmk&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/c626d75c81ca7ffe2d61db948bb2c262">ScancodeData:c626d75c81ca7ffe2d61db948bb2c262</a> for <a href="/?license=scancode:checkmk"><span class="licensename"><span class="namespace">scancode:</span>checkmk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>checkmk</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Checkmk License</span></li><li><span class="licensename">Checkmk License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:c626d75c81ca7ffe2d61db948bb2c262">[<a href="/fact/ScancodeData/c626d75c81ca7ffe2d61db948bb2c262">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/libcheck/check/blob/master/checkmk/checkmk.in" target="_blank">https://github.com/libcheck/check/blob/master/checkmk/checkmk.in</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution of this program in any form, with or without
+modifications, is permitted, provided that the above copyright is
+retained in distributions of this program in source form.
+
+(This is a free, non-copyleft license compatible with pretty much any
+other free or proprietary license, including the GPL. It&#39;s essentially
+a scaled-down version of the &quot;modified&quot; BSD license.)</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:checkmk&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Checkmk License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Checkmk License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;c626d75c81ca7ffe2d61db948bb2c262&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/libcheck/check/blob/master/checkmk/checkmk.in&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution of this program in any form, with or without\nmodifications, is permitted, provided that the above copyright is\nretained in distributions of this program in source form.\n\n(This is a free, non-copyleft license compatible with pretty much any\nother free or proprietary license, including the GPL. It&#39;s essentially\na scaled-down version of the \&quot;modified\&quot; BSD license.)&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;checkmk&quot;,
+        &quot;_name&quot;: &quot;Checkmk License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/libcheck/check/blob/master/checkmk/checkmk.in&quot;
+        ],
+        &quot;_owner&quot;: &quot;libcheck&quot;,
+        &quot;_shortName&quot;: &quot;Checkmk License&quot;,
+        &quot;_spdxId&quot;: &quot;checkmk&quot;,
+        &quot;_text&quot;: &quot;Redistribution of this program in any form, with or without\nmodifications, is permitted, provided that the above copyright is\nretained in distributions of this program in source form.\n\n(This is a free, non-copyleft license compatible with pretty much any\nother free or proprietary license, including the GPL. It&#39;s essentially\na scaled-down version of the \&quot;modified\&quot; BSD license.)&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/48a27352437132e0a52a10b2783a1861">OrtLicenseCategorization:48a27352437132e0a52a10b2783a1861</a> for <a href="/?license=SPDX:checkmk"><span class="licensename"><span class="namespace">SPDX:</span>checkmk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>checkmk</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:48a27352437132e0a52a10b2783a1861">[<a href="/fact/OrtLicenseCategorization/48a27352437132e0a52a10b2783a1861">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:48a27352437132e0a52a10b2783a1861">[<a href="/fact/OrtLicenseCategorization/48a27352437132e0a52a10b2783a1861">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:checkmk&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;48a27352437132e0a52a10b2783a1861&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:checkmk&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/2605bc8f4ddeab7d81edad0fda02bc79">CavilLicenseChange:2605bc8f4ddeab7d81edad0fda02bc79</a> for <a href="/?license=cavil:checkmk"><span class="licensename"><span class="namespace">cavil:</span>checkmk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>checkmk</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">checkmk</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:checkmk&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;checkmk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;2605bc8f4ddeab7d81edad0fda02bc79&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;checkmk&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:checkmk&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/0c96c9aee3f3577d22b9af6411c4fe14">MetaeffektLicense:0c96c9aee3f3577d22b9af6411c4fe14</a> for <a href="/?license=metaeffekt:Checkmk License"><span class="licensename"><span class="namespace">metaeffekt:</span>Checkmk License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Checkmk License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>checkmk</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Checkmk</span></li><li><span class="licensename"><span class="namespace">scancode:</span>checkmk</span></li><li><span class="licensename">Checkmk License</span></li><li><span class="licensename">Micah Cowan</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:0c96c9aee3f3577d22b9af6411c4fe14">[<a href="/fact/MetaeffektLicense/0c96c9aee3f3577d22b9af6411c4fe14">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Checkmk License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:checkmk&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Checkmk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Checkmk License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Micah Cowan&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:checkmk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;0c96c9aee3f3577d22b9af6411c4fe14&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Checkmk License&quot;,
+            &quot;Micah Cowan&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Checkmk License&quot;,
+        &quot;_category&quot;: &quot;Checkmk&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:checkmk&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:checkmk&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

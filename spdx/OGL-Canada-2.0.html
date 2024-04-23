@@ -1,0 +1,1017 @@
+<html><head><title>ldbcollector: spdx:OGL-Canada-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:OGL-Canada-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OGL-Canada-2.0</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">OGL-Canada-2.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>OGL-Canada-2.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>OGL-Canada-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OGL-Canada-2.0</span></li><li><span class="licensename">Open Government Licence (CAN)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Open Government Licence (CAN)</span></li><li><span class="licensename">Open Government Licence - Canada</span></li><li><span class="licensename">Open Government License 2.0 (Canada)</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>can-ogl-2.0-en</span></li><li><span class="licensename">OGL</span></li><li><span class="licensename">OGL-CA-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c3be192810a9f273b4f20df07cf153ea">[<a href="/fact/SPDXLicense/c3be192810a9f273b4f20df07cf153ea">SPDXLicense</a>]</span>)</span></li><li><span title="">OKFN status: <b style="color: green;">active</b></span><span class="provided-by">(provided by: <span title="OKFN:e281bc5152dd3be89ea92bcc73799f88">[<a href="/fact/OKFN/e281bc5152dd3be89ea92bcc73799f88">OKFN</a>]</span>)</span></li><li><span title="Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).">Open Definition: <b style="color: green;">approved</b></span><span class="provided-by">(provided by: <span title="OKFN:e281bc5152dd3be89ea92bcc73799f88">[<a href="/fact/OKFN/e281bc5152dd3be89ea92bcc73799f88">OKFN</a>]</span>)</span></li><li><span title="">OSD: <b style="">not reviewed</b></span><span class="provided-by">(provided by: <span title="OKFN:e281bc5152dd3be89ea92bcc73799f88">[<a href="/fact/OKFN/e281bc5152dd3be89ea92bcc73799f88">OKFN</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e5b2dbc7dafd18b582e870f90188f6f9">[<a href="/fact/OrtLicenseCategorization/e5b2dbc7dafd18b582e870f90188f6f9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e5b2dbc7dafd18b582e870f90188f6f9">[<a href="/fact/OrtLicenseCategorization/e5b2dbc7dafd18b582e870f90188f6f9">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank">https://open.canada.ca/en/open-government-licence-canada</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Open Government Licence - Canada
+
+You are encouraged to use the Information that is available under this licence with only a few conditions.
+
+Using Information under this licence
+* Use of any Information indicates your acceptance of the terms below.
+* The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.
+
+You are free to:
+* Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.
+
+You must, where you do any of the above:
+* Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.
+* If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:
+     Contains information licensed under the Open Government Licence – Canada.
+
+The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.
+
+Exemptions
+This licence does not grant you any right to use:
+* Personal Information;
+* third party rights the Information Provider is not authorized to license;
+* the names, crests, logos, or other official symbols of the Information Provider; and
+* Information subject to other intellectual property rights, including patents, trade-marks and official marks.
+
+Non-endorsement
+This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.
+
+No Warranty
+The Information is licensed “as is”, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.
+
+The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.
+
+Governing Law
+This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.
+
+Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.
+
+Definitions
+In this licence, the terms below have the following meanings:
+
+&quot;Information&quot; means information resources protected by copyright or other information that is offered for use under the terms of this licence.
+
+&quot;Information Provider&quot; means Her Majesty the Queen in right of Canada.
+
+“Personal Information” means “personal information” as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.
+
+&quot;You&quot; means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.
+
+Versioning
+This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;p&gt;Open Government Licence - Canada&lt;/p&gt;
+
+            &lt;p&gt;You are encouraged to use the Information that is available under this licence with only a few conditions.&lt;/p&gt;
+
+            &lt;p&gt;Using Information under this licence&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Use of any Information indicates your acceptance of the terms below.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;You are free to:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;You must, where you do any of the above:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:
+                    &lt;p&gt;Contains information licensed under the Open Government Licence – Canada.&lt;/p&gt;
+
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.&lt;/p&gt;
+
+            &lt;p&gt;Exemptions&lt;/p&gt;
+
+            &lt;p&gt;This licence does not grant you any right to use:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Personal Information;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; third party rights the Information Provider is not authorized to license;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; the names, crests, logos, or other official symbols of the Information Provider; and
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Information subject to other intellectual property rights, including patents, trade-marks and official marks.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;Non-endorsement&lt;/p&gt;
+
+            &lt;p&gt;This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.&lt;/p&gt;
+
+            &lt;p&gt;No Warranty&lt;/p&gt;
+
+            &lt;p&gt;The Information is licensed &amp;quot;as is&amp;quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.&lt;/p&gt;
+
+            &lt;p&gt;The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.&lt;/p&gt;
+
+            &lt;p&gt;Governing Law&lt;/p&gt;
+
+            &lt;p&gt;This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.&lt;/p&gt;
+
+            &lt;p&gt;Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.&lt;/p&gt;
+
+            &lt;p&gt;Definitions&lt;/p&gt;
+
+            &lt;p&gt;In this licence, the terms below have the following meanings:&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;Information&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means information resources protected by copyright or other information that is offered for use under the terms of this licence.&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;Information Provider&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means Her Majesty the Queen in right of Canada.&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;Personal Information&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means &amp;quot;personal information&amp;quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;You&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.&lt;/p&gt;
+
+            &lt;p&gt;Versioning&lt;/p&gt;
+
+            &lt;p&gt;This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.&lt;/p&gt;
+
+        </pre></details></li><li><details><summary>Text:</summary><pre>Open Government Licence - Canada
+
+You are encouraged to use the Information that is available under this licence with only a few conditions.
+
+Using Information under this licence
+
+   * Use of any Information indicates your acceptance of the terms below.
+
+   * The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.
+
+You are free to:
+
+   * Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.
+
+You must, where you do any of the above:
+
+   * Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.
+
+   * If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:
+
+   Contains information licensed under the Open Government Licence – Canada.
+
+The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.
+
+Exemptions
+
+This licence does not grant you any right to use:
+
+   * Personal Information;
+
+   * third party rights the Information Provider is not authorized to license;
+
+   * the names, crests, logos, or other official symbols of the Information Provider; and
+
+   * Information subject to other intellectual property rights, including patents, trade-marks and official marks.
+
+Non-endorsement
+
+This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.
+
+No Warranty
+
+The Information is licensed &quot;as is&quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.
+
+The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.
+
+Governing Law
+
+This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.
+
+Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.
+
+Definitions
+
+In this licence, the terms below have the following meanings:
+
+&quot;Information&quot;
+
+means information resources protected by copyright or other information that is offered for use under the terms of this licence.
+
+&quot;Information Provider&quot;
+
+means Her Majesty the Queen in right of Canada.
+
+&quot;Personal Information&quot;
+
+means &quot;personal information&quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.
+
+&quot;You&quot;
+
+means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.
+
+Versioning
+
+This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/c3be192810a9f273b4f20df07cf153ea">SPDXLicense:c3be192810a9f273b4f20df07cf153ea</a> for <a href="/?license=spdx:OGL-Canada-2.0"><span class="licensename"><span class="namespace">spdx:</span>OGL-Canada-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OGL-Canada-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open Government Licence - Canada</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c3be192810a9f273b4f20df07cf153ea">[<a href="/fact/SPDXLicense/c3be192810a9f273b4f20df07cf153ea">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank">https://open.canada.ca/en/open-government-licence-canada</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Open Government Licence - Canada
+
+You are encouraged to use the Information that is available under this licence with only a few conditions.
+
+Using Information under this licence
+* Use of any Information indicates your acceptance of the terms below.
+* The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.
+
+You are free to:
+* Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.
+
+You must, where you do any of the above:
+* Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.
+* If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:
+     Contains information licensed under the Open Government Licence – Canada.
+
+The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.
+
+Exemptions
+This licence does not grant you any right to use:
+* Personal Information;
+* third party rights the Information Provider is not authorized to license;
+* the names, crests, logos, or other official symbols of the Information Provider; and
+* Information subject to other intellectual property rights, including patents, trade-marks and official marks.
+
+Non-endorsement
+This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.
+
+No Warranty
+The Information is licensed “as is”, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.
+
+The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.
+
+Governing Law
+This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.
+
+Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.
+
+Definitions
+In this licence, the terms below have the following meanings:
+
+&quot;Information&quot; means information resources protected by copyright or other information that is offered for use under the terms of this licence.
+
+&quot;Information Provider&quot; means Her Majesty the Queen in right of Canada.
+
+“Personal Information” means “personal information” as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.
+
+&quot;You&quot; means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.
+
+Versioning
+This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;p&gt;Open Government Licence - Canada&lt;/p&gt;
+
+            &lt;p&gt;You are encouraged to use the Information that is available under this licence with only a few conditions.&lt;/p&gt;
+
+            &lt;p&gt;Using Information under this licence&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Use of any Information indicates your acceptance of the terms below.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;You are free to:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;You must, where you do any of the above:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:
+                    &lt;p&gt;Contains information licensed under the Open Government Licence – Canada.&lt;/p&gt;
+
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.&lt;/p&gt;
+
+            &lt;p&gt;Exemptions&lt;/p&gt;
+
+            &lt;p&gt;This licence does not grant you any right to use:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Personal Information;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; third party rights the Information Provider is not authorized to license;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; the names, crests, logos, or other official symbols of the Information Provider; and
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt; Information subject to other intellectual property rights, including patents, trade-marks and official marks.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;Non-endorsement&lt;/p&gt;
+
+            &lt;p&gt;This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.&lt;/p&gt;
+
+            &lt;p&gt;No Warranty&lt;/p&gt;
+
+            &lt;p&gt;The Information is licensed &amp;quot;as is&amp;quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.&lt;/p&gt;
+
+            &lt;p&gt;The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.&lt;/p&gt;
+
+            &lt;p&gt;Governing Law&lt;/p&gt;
+
+            &lt;p&gt;This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.&lt;/p&gt;
+
+            &lt;p&gt;Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.&lt;/p&gt;
+
+            &lt;p&gt;Definitions&lt;/p&gt;
+
+            &lt;p&gt;In this licence, the terms below have the following meanings:&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;Information&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means information resources protected by copyright or other information that is offered for use under the terms of this licence.&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;Information Provider&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means Her Majesty the Queen in right of Canada.&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;Personal Information&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means &amp;quot;personal information&amp;quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.&lt;/p&gt;
+
+            &lt;p&gt;&amp;quot;You&amp;quot;&lt;/p&gt;
+
+            &lt;p&gt;means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.&lt;/p&gt;
+
+            &lt;p&gt;Versioning&lt;/p&gt;
+
+            &lt;p&gt;This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.&lt;/p&gt;
+
+        </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OGL-Canada-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open Government Licence - Canada&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;c3be192810a9f273b4f20df07cf153ea&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Open Government Licence - Canada\n\nYou are encouraged to use the Information that is available under this licence with only a few conditions.\n\nUsing Information under this licence\n* Use of any Information indicates your acceptance of the terms below.\n* The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.\n\nYou are free to:\n* Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.\n\nYou must, where you do any of the above:\n* Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.\n* If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:\n     Contains information licensed under the Open Government Licence – Canada.\n\nThe terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.\n\nExemptions\nThis licence does not grant you any right to use:\n* Personal Information;\n* third party rights the Information Provider is not authorized to license;\n* the names, crests, logos, or other official symbols of the Information Provider; and\n* Information subject to other intellectual property rights, including patents, trade-marks and official marks.\n\nNon-endorsement\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\n\nNo Warranty\nThe Information is licensed “as is”, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.\n\nGoverning Law\nThis licence is governed by the laws of the province of Ontario and the applicable laws of Canada.\n\nLegal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.\n\nDefinitions\nIn this licence, the terms below have the following meanings:\n\n\&quot;Information\&quot; means information resources protected by copyright or other information that is offered for use under the terms of this licence.\n\n\&quot;Information Provider\&quot; means Her Majesty the Queen in right of Canada.\n\n“Personal Information” means “personal information” as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.\n\n\&quot;You\&quot; means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\n\nVersioning\nThis is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n            &lt;p&gt;Open Government Licence - Canada&lt;/p&gt;\n\n            &lt;p&gt;You are encouraged to use the Information that is available under this licence with only a few conditions.&lt;/p&gt;\n\n            &lt;p&gt;Using Information under this licence&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Use of any Information indicates your acceptance of the terms below.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;You are free to:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;You must, where you do any of the above:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:\n                    &lt;p&gt;Contains information licensed under the Open Government Licence – Canada.&lt;/p&gt;\n\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.&lt;/p&gt;\n\n            &lt;p&gt;Exemptions&lt;/p&gt;\n\n            &lt;p&gt;This licence does not grant you any right to use:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Personal Information;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; third party rights the Information Provider is not authorized to license;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; the names, crests, logos, or other official symbols of the Information Provider; and\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Information subject to other intellectual property rights, including patents, trade-marks and official marks.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;Non-endorsement&lt;/p&gt;\n\n            &lt;p&gt;This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.&lt;/p&gt;\n\n            &lt;p&gt;No Warranty&lt;/p&gt;\n\n            &lt;p&gt;The Information is licensed &amp;quot;as is&amp;quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.&lt;/p&gt;\n\n            &lt;p&gt;The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.&lt;/p&gt;\n\n            &lt;p&gt;Governing Law&lt;/p&gt;\n\n            &lt;p&gt;This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.&lt;/p&gt;\n\n            &lt;p&gt;Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.&lt;/p&gt;\n\n            &lt;p&gt;Definitions&lt;/p&gt;\n\n            &lt;p&gt;In this licence, the terms below have the following meanings:&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;Information&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means information resources protected by copyright or other information that is offered for use under the terms of this licence.&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;Information Provider&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means Her Majesty the Queen in right of Canada.&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;Personal Information&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means &amp;quot;personal information&amp;quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;You&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.&lt;/p&gt;\n\n            &lt;p&gt;Versioning&lt;/p&gt;\n\n            &lt;p&gt;This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.&lt;/p&gt;\n\n        &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:26Z&quot;,
+                &quot;url&quot;: &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:OGL-Canada-2.0&quot;,
+        &quot;licenseText&quot;: &quot;Open Government Licence - Canada\n\nYou are encouraged to use the Information that is available under this licence with only a few conditions.\n\nUsing Information under this licence\n* Use of any Information indicates your acceptance of the terms below.\n* The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.\n\nYou are free to:\n* Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.\n\nYou must, where you do any of the above:\n* Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.\n* If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:\n     Contains information licensed under the Open Government Licence – Canada.\n\nThe terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.\n\nExemptions\nThis licence does not grant you any right to use:\n* Personal Information;\n* third party rights the Information Provider is not authorized to license;\n* the names, crests, logos, or other official symbols of the Information Provider; and\n* Information subject to other intellectual property rights, including patents, trade-marks and official marks.\n\nNon-endorsement\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\n\nNo Warranty\nThe Information is licensed “as is”, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.\n\nGoverning Law\nThis licence is governed by the laws of the province of Ontario and the applicable laws of Canada.\n\nLegal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.\n\nDefinitions\nIn this licence, the terms below have the following meanings:\n\n\&quot;Information\&quot; means information resources protected by copyright or other information that is offered for use under the terms of this licence.\n\n\&quot;Information Provider\&quot; means Her Majesty the Queen in right of Canada.\n\n“Personal Information” means “personal information” as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.\n\n\&quot;You\&quot; means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\n\nVersioning\nThis is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n            &lt;p&gt;Open Government Licence - Canada&lt;/p&gt;\n\n            &lt;p&gt;You are encouraged to use the Information that is available under this licence with only a few conditions.&lt;/p&gt;\n\n            &lt;p&gt;Using Information under this licence&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Use of any Information indicates your acceptance of the terms below.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;You are free to:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;You must, where you do any of the above:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:\n                    &lt;p&gt;Contains information licensed under the Open Government Licence – Canada.&lt;/p&gt;\n\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.&lt;/p&gt;\n\n            &lt;p&gt;Exemptions&lt;/p&gt;\n\n            &lt;p&gt;This licence does not grant you any right to use:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Personal Information;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; third party rights the Information Provider is not authorized to license;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; the names, crests, logos, or other official symbols of the Information Provider; and\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt; Information subject to other intellectual property rights, including patents, trade-marks and official marks.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;Non-endorsement&lt;/p&gt;\n\n            &lt;p&gt;This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.&lt;/p&gt;\n\n            &lt;p&gt;No Warranty&lt;/p&gt;\n\n            &lt;p&gt;The Information is licensed &amp;quot;as is&amp;quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.&lt;/p&gt;\n\n            &lt;p&gt;The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.&lt;/p&gt;\n\n            &lt;p&gt;Governing Law&lt;/p&gt;\n\n            &lt;p&gt;This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.&lt;/p&gt;\n\n            &lt;p&gt;Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.&lt;/p&gt;\n\n            &lt;p&gt;Definitions&lt;/p&gt;\n\n            &lt;p&gt;In this licence, the terms below have the following meanings:&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;Information&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means information resources protected by copyright or other information that is offered for use under the terms of this licence.&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;Information Provider&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means Her Majesty the Queen in right of Canada.&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;Personal Information&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means &amp;quot;personal information&amp;quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.&lt;/p&gt;\n\n            &lt;p&gt;&amp;quot;You&amp;quot;&lt;/p&gt;\n\n            &lt;p&gt;means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.&lt;/p&gt;\n\n            &lt;p&gt;Versioning&lt;/p&gt;\n\n            &lt;p&gt;This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.&lt;/p&gt;\n\n        &quot;,
+        &quot;name&quot;: &quot;Open Government Licence - Canada&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Open Government Licence - Canada\n\nYou are encouraged to use the Information that is available under this licence with only a few conditions.\n\nUsing Information under this licence\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Use of any Information indicates your acceptance of the terms below.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.\n\nYou are free to:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.\n\nYou must, where you do any of the above:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:\n\n   Contains information licensed under the Open Government Licence – Canada.\n\nThe terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.\n\nExemptions\n\nThis licence does not grant you any right to use:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Personal Information;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; third party rights the Information Provider is not authorized to license;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; the names, crests, logos, or other official symbols of the Information Provider; and\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Information subject to other intellectual property rights, including patents, trade-marks and official marks.\n\nNon-endorsement\n\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\n\nNo Warranty\n\nThe Information is licensed \&quot;as is\&quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.\n\nGoverning Law\n\nThis licence is governed by the laws of the province of Ontario and the applicable laws of Canada.\n\nLegal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.\n\nDefinitions\n\nIn this licence, the terms below have the following meanings:\n\n\&quot;Information\&quot;\n\nmeans information resources protected by copyright or other information that is offered for use under the terms of this licence.\n\n\&quot;Information Provider\&quot;\n\nmeans Her Majesty the Queen in right of Canada.\n\n\&quot;Personal Information\&quot;\n\nmeans \&quot;personal information\&quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.\n\n\&quot;You\&quot;\n\nmeans the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\n\nVersioning\n\nThis is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/f253d99f02feae258790381935b90eda">Fossology:f253d99f02feae258790381935b90eda</a> for <a href="/?license=fossology:OGL-Canada-2.0"><span class="licensename"><span class="namespace">fossology:</span>OGL-Canada-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>OGL-Canada-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open Government Licence - Canada</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank">https://open.canada.ca/en/open-government-licence-canada</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Open Government Licence - Canada
+
+You are encouraged to use the Information that is available under this licence with only a few conditions.
+
+Using Information under this licence
+
+   * Use of any Information indicates your acceptance of the terms below.
+
+   * The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.
+
+You are free to:
+
+   * Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.
+
+You must, where you do any of the above:
+
+   * Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.
+
+   * If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:
+
+   Contains information licensed under the Open Government Licence – Canada.
+
+The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.
+
+Exemptions
+
+This licence does not grant you any right to use:
+
+   * Personal Information;
+
+   * third party rights the Information Provider is not authorized to license;
+
+   * the names, crests, logos, or other official symbols of the Information Provider; and
+
+   * Information subject to other intellectual property rights, including patents, trade-marks and official marks.
+
+Non-endorsement
+
+This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.
+
+No Warranty
+
+The Information is licensed &quot;as is&quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.
+
+The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.
+
+Governing Law
+
+This licence is governed by the laws of the province of Ontario and the applicable laws of Canada.
+
+Legal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.
+
+Definitions
+
+In this licence, the terms below have the following meanings:
+
+&quot;Information&quot;
+
+means information resources protected by copyright or other information that is offered for use under the terms of this licence.
+
+&quot;Information Provider&quot;
+
+means Her Majesty the Queen in right of Canada.
+
+&quot;Personal Information&quot;
+
+means &quot;personal information&quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.
+
+&quot;You&quot;
+
+means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.
+
+Versioning
+
+This is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:OGL-Canada-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open Government Licence - Canada&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;f253d99f02feae258790381935b90eda&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Open Government Licence - Canada\n\nYou are encouraged to use the Information that is available under this licence with only a few conditions.\n\nUsing Information under this licence\n\n   * Use of any Information indicates your acceptance of the terms below.\n\n   * The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.\n\nYou are free to:\n\n   * Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.\n\nYou must, where you do any of the above:\n\n   * Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.\n\n   * If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:\n\n   Contains information licensed under the Open Government Licence – Canada.\n\nThe terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.\n\nExemptions\n\nThis licence does not grant you any right to use:\n\n   * Personal Information;\n\n   * third party rights the Information Provider is not authorized to license;\n\n   * the names, crests, logos, or other official symbols of the Information Provider; and\n\n   * Information subject to other intellectual property rights, including patents, trade-marks and official marks.\n\nNon-endorsement\n\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\n\nNo Warranty\n\nThe Information is licensed \&quot;as is\&quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.\n\nGoverning Law\n\nThis licence is governed by the laws of the province of Ontario and the applicable laws of Canada.\n\nLegal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.\n\nDefinitions\n\nIn this licence, the terms below have the following meanings:\n\n\&quot;Information\&quot;\n\nmeans information resources protected by copyright or other information that is offered for use under the terms of this licence.\n\n\&quot;Information Provider\&quot;\n\nmeans Her Majesty the Queen in right of Canada.\n\n\&quot;Personal Information\&quot;\n\nmeans \&quot;personal information\&quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.\n\n\&quot;You\&quot;\n\nmeans the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\n\nVersioning\n\nThis is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Open Government Licence - Canada&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:OGL-Canada-2.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Open Government Licence - Canada\n\nYou are encouraged to use the Information that is available under this licence with only a few conditions.\n\nUsing Information under this licence\n\n   * Use of any Information indicates your acceptance of the terms below.\n\n   * The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below.\n\nYou are free to:\n\n   * Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose.\n\nYou must, where you do any of the above:\n\n   * Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence.\n\n   * If the Information Provider does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:\n\n   Contains information licensed under the Open Government Licence – Canada.\n\nThe terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.\n\nExemptions\n\nThis licence does not grant you any right to use:\n\n   * Personal Information;\n\n   * third party rights the Information Provider is not authorized to license;\n\n   * the names, crests, logos, or other official symbols of the Information Provider; and\n\n   * Information subject to other intellectual property rights, including patents, trade-marks and official marks.\n\nNon-endorsement\n\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\n\nNo Warranty\n\nThe Information is licensed \&quot;as is\&quot;, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.\n\nGoverning Law\n\nThis licence is governed by the laws of the province of Ontario and the applicable laws of Canada.\n\nLegal proceedings related to this licence may only be brought in the courts of Ontario or the Federal Court of Canada.\n\nDefinitions\n\nIn this licence, the terms below have the following meanings:\n\n\&quot;Information\&quot;\n\nmeans information resources protected by copyright or other information that is offered for use under the terms of this licence.\n\n\&quot;Information Provider\&quot;\n\nmeans Her Majesty the Queen in right of Canada.\n\n\&quot;Personal Information\&quot;\n\nmeans \&quot;personal information\&quot; as defined in section 3 of the Privacy Act, R.S.C. 1985, c. P-21.\n\n\&quot;You\&quot;\n\nmeans the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\n\nVersioning\n\nThis is version 2.0 of the Open Government Licence – Canada. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/OKFN">OKFN</a>: <a href="/fact/OKFN/e281bc5152dd3be89ea92bcc73799f88">OKFN:e281bc5152dd3be89ea92bcc73799f88</a> for <a href="/?license=OGL-Canada-2.0"><span class="licensename">OGL-Canada-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename">OGL-Canada-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open Government License 2.0 (Canada)</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OGL-CA-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OKFN status: <b style="color: green;">active</b></span><span class="provided-by">(provided by: <span title="OKFN:e281bc5152dd3be89ea92bcc73799f88">[<a href="/fact/OKFN/e281bc5152dd3be89ea92bcc73799f88">OKFN</a>]</span>)</span></li><li><span title="Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).">Open Definition: <b style="color: green;">approved</b></span><span class="provided-by">(provided by: <span title="OKFN:e281bc5152dd3be89ea92bcc73799f88">[<a href="/fact/OKFN/e281bc5152dd3be89ea92bcc73799f88">OKFN</a>]</span>)</span></li><li><span title="">OSD: <b style="">not reviewed</b></span><span class="provided-by">(provided by: <span title="OKFN:e281bc5152dd3be89ea92bcc73799f88">[<a href="/fact/OKFN/e281bc5152dd3be89ea92bcc73799f88">OKFN</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank">https://open.canada.ca/en/open-government-licence-canada</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;OGL-Canada-2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;Open Government License 2.0 (Canada)&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OGL-CA-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OKFN&quot;,
+        &quot;e281bc5152dd3be89ea92bcc73799f88&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OKFN status&quot;,
+                        &quot;active&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Open Definition&quot;,
+                        &quot;approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSD&quot;,
+                        &quot;not reviewed&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_domain_content&quot;: true,
+        &quot;_domain_data&quot;: true,
+        &quot;_domain_software&quot;: false,
+        &quot;_family&quot;: null,
+        &quot;_id&quot;: &quot;OGL-Canada-2.0&quot;,
+        &quot;_legacy_ids&quot;: [
+            &quot;OGL-CA-2.0&quot;
+        ],
+        &quot;_maintainer&quot;: &quot;Government of Canada&quot;,
+        &quot;_od_conformance&quot;: &quot;approved&quot;,
+        &quot;_osd_conformance&quot;: &quot;not reviewed&quot;,
+        &quot;_status&quot;: &quot;active&quot;,
+        &quot;_title&quot;: &quot;Open Government License 2.0 (Canada)&quot;,
+        &quot;_url&quot;: &quot;https://open.canada.ca/en/open-government-licence-canada&quot;
+    },
+    &quot;type&quot;: &quot;OKFN&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/e5b2dbc7dafd18b582e870f90188f6f9">OrtLicenseCategorization:e5b2dbc7dafd18b582e870f90188f6f9</a> for <a href="/?license=SPDX:OGL-Canada-2.0"><span class="licensename"><span class="namespace">SPDX:</span>OGL-Canada-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>OGL-Canada-2.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e5b2dbc7dafd18b582e870f90188f6f9">[<a href="/fact/OrtLicenseCategorization/e5b2dbc7dafd18b582e870f90188f6f9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e5b2dbc7dafd18b582e870f90188f6f9">[<a href="/fact/OrtLicenseCategorization/e5b2dbc7dafd18b582e870f90188f6f9">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:OGL-Canada-2.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;e5b2dbc7dafd18b582e870f90188f6f9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:OGL-Canada-2.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/97bd81ff7070cb676c59857301325066">CavilLicenseChange:97bd81ff7070cb676c59857301325066</a> for <a href="/?license=cavil:OGL-Canada-2.0"><span class="licensename"><span class="namespace">cavil:</span>OGL-Canada-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>OGL-Canada-2.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OGL-Canada-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:OGL-Canada-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OGL-Canada-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;97bd81ff7070cb676c59857301325066&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;OGL-Canada-2.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:OGL-Canada-2.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/82a146dbaf10ab5b5773268f0c918e32">MetaeffektLicense:82a146dbaf10ab5b5773268f0c918e32</a> for <a href="/?license=metaeffekt:Open Government Licence (CAN)"><span class="licensename"><span class="namespace">metaeffekt:</span>Open Government Licence (CAN)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Open Government Licence (CAN)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OGL-Canada-2.0</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>can-ogl-2.0-en</span></li><li><span class="licensename">OGL</span></li><li><span class="licensename">OGL-Canada-2.0</span></li><li><span class="licensename">Open Government Licence (CAN)</span></li><li><span class="licensename">Open Government Licence - Canada</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Open Government Licence (CAN)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OGL-Canada-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OGL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OGL-Canada-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Open Government Licence - Canada&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Open Government Licence (CAN)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:can-ogl-2.0-en&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;82a146dbaf10ab5b5773268f0c918e32&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;OGL-Canada-2.0&quot;,
+            &quot;Open Government Licence - Canada&quot;,
+            &quot;Open Government Licence (CAN)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Open Government Licence (CAN)&quot;,
+        &quot;_category&quot;: &quot;OGL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:can-ogl-2.0-en&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:OGL-Canada-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

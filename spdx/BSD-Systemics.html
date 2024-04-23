@@ -1,0 +1,773 @@
+<html><head><title>ldbcollector: spdx:BSD-Systemics</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-Systemics</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Systemics</span></li><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Systemics</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Systemics</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-systemics</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics</span></li><li><span class="licensename">Systemics BSD variant license</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Systemics BSD variant license</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:c1b3b657f02e6b851aa7e7055eeab56d">[<a href="/fact/ScancodeData/c1b3b657f02e6b851aa7e7055eeab56d">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:28000792b54a11f4c2a51d32b7971016">[<a href="/fact/SPDXLicense/28000792b54a11f4c2a51d32b7971016">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:34382fcf8aae8144aff6047ec9362cb3">[<a href="/fact/FedoraEntry/34382fcf8aae8144aff6047ec9362cb3">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9471cb28f9321f0a05a3a2abd8fe7728">[<a href="/fact/OrtLicenseCategorization/9471cb28f9321f0a05a3a2abd8fe7728">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9471cb28f9321f0a05a3a2abd8fe7728">[<a href="/fact/OrtLicenseCategorization/9471cb28f9321f0a05a3a2abd8fe7728">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT" target="_blank">https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)
+All rights reserved.
+ 
+This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+ 
+The licence and distribution terms for any publically available version or
+derivative of this code cannot be changed.  i.e. this code cannot simply be
+copied and put under another distribution licence [including the GNU Public Licence.]
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;
+                       Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)&lt;br /&gt;
+
+                       All rights reserved.
+                &lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;p&gt;This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+               as long as the following conditions are adhered to.&lt;/p&gt;
+
+            &lt;p&gt;Copyright remains with Systemics Ltd, and as such any Copyright notices
+               in the code are not to be removed.  If this code is used in a product,
+               Systemics should be given attribution as the author of the parts used.
+               This can be in the form of a textual message at program startup or
+               in documentation (online or textual) provided with the package.&lt;/p&gt;
+
+            &lt;p&gt;Redistribution and use in source and binary forms, with or without
+               modification, are permitted provided that the following conditions
+               are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+                    Redistributions of source code must retain the copyright
+                    notice, this list of conditions and the following disclaimer.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+                    Redistributions in binary form must reproduce the above copyright
+                    notice, this list of conditions and the following disclaimer in the
+                    documentation and/or other materials provided with the distribution.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+                    All advertising materials mentioning features or use of this software
+                    must display the following acknowledgement:
+                    This product includes software developed by Systemics Ltd (http://www.systemics.com/)
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+
+            &lt;p&gt;THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&amp;apos;&amp;apos; AND
+               ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+               IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+               ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+               FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+               DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+               OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+               HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+               LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+               OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+               SUCH DAMAGE.&lt;/p&gt;
+
+           &lt;p&gt;The licence and distribution terms for any publically available version or
+              derivative of this code cannot be changed.  i.e. this code cannot simply be
+              copied and put under another distribution licence
+              [including the GNU Public Licence.]&lt;/p&gt;
+
+        </pre></details></li><li><details><summary>Text:</summary><pre>This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+ 
+The licence and distribution terms for any publically available version or
+derivative of this code cannot be changed.  i.e. this code cannot simply be
+copied and put under another distribution licence [including the GNU Public Licence.]</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/28000792b54a11f4c2a51d32b7971016">SPDXLicense:28000792b54a11f4c2a51d32b7971016</a> for <a href="/?license=spdx:BSD-Systemics"><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Systemics BSD variant license</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:28000792b54a11f4c2a51d32b7971016">[<a href="/fact/SPDXLicense/28000792b54a11f4c2a51d32b7971016">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT" target="_blank">https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)
+All rights reserved.
+ 
+This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+ 
+The licence and distribution terms for any publically available version or
+derivative of this code cannot be changed.  i.e. this code cannot simply be
+copied and put under another distribution licence [including the GNU Public Licence.]
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;
+                       Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)&lt;br /&gt;
+
+                       All rights reserved.
+                &lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;p&gt;This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+               as long as the following conditions are adhered to.&lt;/p&gt;
+
+            &lt;p&gt;Copyright remains with Systemics Ltd, and as such any Copyright notices
+               in the code are not to be removed.  If this code is used in a product,
+               Systemics should be given attribution as the author of the parts used.
+               This can be in the form of a textual message at program startup or
+               in documentation (online or textual) provided with the package.&lt;/p&gt;
+
+            &lt;p&gt;Redistribution and use in source and binary forms, with or without
+               modification, are permitted provided that the following conditions
+               are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+                    Redistributions of source code must retain the copyright
+                    notice, this list of conditions and the following disclaimer.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+                    Redistributions in binary form must reproduce the above copyright
+                    notice, this list of conditions and the following disclaimer in the
+                    documentation and/or other materials provided with the distribution.
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+                    All advertising materials mentioning features or use of this software
+                    must display the following acknowledgement:
+                    This product includes software developed by Systemics Ltd (http://www.systemics.com/)
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+
+            &lt;p&gt;THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&amp;apos;&amp;apos; AND
+               ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+               IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+               ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+               FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+               DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+               OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+               HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+               LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+               OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+               SUCH DAMAGE.&lt;/p&gt;
+
+           &lt;p&gt;The licence and distribution terms for any publically available version or
+              derivative of this code cannot be changed.  i.e. this code cannot simply be
+              copied and put under another distribution licence
+              [including the GNU Public Licence.]&lt;/p&gt;
+
+        </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Systemics&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Systemics BSD variant license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;28000792b54a11f4c2a51d32b7971016&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)\nAll rights reserved.\n \nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \nTHIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n \nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence [including the GNU Public Licence.]\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n            &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;\n                       Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)&lt;br /&gt;\n\n                       All rights reserved.\n                &lt;/p&gt;\n\n            &lt;/div&gt;\n\n            &lt;p&gt;This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\n               as long as the following conditions are adhered to.&lt;/p&gt;\n\n            &lt;p&gt;Copyright remains with Systemics Ltd, and as such any Copyright notices\n               in the code are not to be removed.  If this code is used in a product,\n               Systemics should be given attribution as the author of the parts used.\n               This can be in the form of a textual message at program startup or\n               in documentation (online or textual) provided with the package.&lt;/p&gt;\n\n            &lt;p&gt;Redistribution and use in source and binary forms, with or without\n               modification, are permitted provided that the following conditions\n               are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n                    Redistributions of source code must retain the copyright\n                    notice, this list of conditions and the following disclaimer.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n                    Redistributions in binary form must reproduce the above copyright\n                    notice, this list of conditions and the following disclaimer in the\n                    documentation and/or other materials provided with the distribution.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n                    All advertising materials mentioning features or use of this software\n                    must display the following acknowledgement:\n                    This product includes software developed by Systemics Ltd (http://www.systemics.com/)\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n\n            &lt;p&gt;THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&amp;apos;&amp;apos; AND\n               ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n               IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n               ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n               FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n               DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n               OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n               HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n               LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n               OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n               SUCH DAMAGE.&lt;/p&gt;\n\n           &lt;p&gt;The licence and distribution terms for any publically available version or\n              derivative of this code cannot be changed.  i.e. this code cannot simply be\n              copied and put under another distribution licence\n              [including the GNU Public Licence.]&lt;/p&gt;\n\n        &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:13:52Z&quot;,
+                &quot;url&quot;: &quot;https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:BSD-Systemics&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)\nAll rights reserved.\n \nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \nTHIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n \nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence [including the GNU Public Licence.]\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n            &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;\n                       Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)&lt;br /&gt;\n\n                       All rights reserved.\n                &lt;/p&gt;\n\n            &lt;/div&gt;\n\n            &lt;p&gt;This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\n               as long as the following conditions are adhered to.&lt;/p&gt;\n\n            &lt;p&gt;Copyright remains with Systemics Ltd, and as such any Copyright notices\n               in the code are not to be removed.  If this code is used in a product,\n               Systemics should be given attribution as the author of the parts used.\n               This can be in the form of a textual message at program startup or\n               in documentation (online or textual) provided with the package.&lt;/p&gt;\n\n            &lt;p&gt;Redistribution and use in source and binary forms, with or without\n               modification, are permitted provided that the following conditions\n               are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n                    Redistributions of source code must retain the copyright\n                    notice, this list of conditions and the following disclaimer.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n                    Redistributions in binary form must reproduce the above copyright\n                    notice, this list of conditions and the following disclaimer in the\n                    documentation and/or other materials provided with the distribution.\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n                    All advertising materials mentioning features or use of this software\n                    must display the following acknowledgement:\n                    This product includes software developed by Systemics Ltd (http://www.systemics.com/)\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n\n            &lt;p&gt;THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&amp;apos;&amp;apos; AND\n               ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n               IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n               ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n               FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n               DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n               OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n               HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n               LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n               OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n               SUCH DAMAGE.&lt;/p&gt;\n\n           &lt;p&gt;The licence and distribution terms for any publically available version or\n              derivative of this code cannot be changed.  i.e. this code cannot simply be\n              copied and put under another distribution licence\n              [including the GNU Public Licence.]&lt;/p&gt;\n\n        &quot;,
+        &quot;name&quot;: &quot;Systemics BSD variant license&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)  All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE as long as the following conditions are adhered to.\n\nCopyright remains with Systemics Ltd, and as such any Copyright notices in the code are not to be removed. If this code is used in a product, Systemics should be given attribution as the author of the parts used. This can be in the form of a textual message at program startup or in documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All advertising materials mentioning features or use of this software must display the following acknowledgement: This product includes software developed by Systemics Ltd (http://www.systemics.com/)\n\nTHIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or derivative of this code cannot be changed. i.e. this code cannot simply be copied and put under another distribution licence [including the GNU Public Licence.]\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/34382fcf8aae8144aff6047ec9362cb3">FedoraEntry:34382fcf8aae8144aff6047ec9362cb3</a> for <a href="/?license=Fedora:BSD-Systemics"><span class="licensename"><span class="namespace">Fedora:</span>BSD-Systemics</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Systemics</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:34382fcf8aae8144aff6047ec9362cb3">[<a href="/fact/FedoraEntry/34382fcf8aae8144aff6047ec9362cb3">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BSD-Systemics&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Systemics&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;34382fcf8aae8144aff6047ec9362cb3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BSD-Systemics&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BSD-Systemics&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/c1b3b657f02e6b851aa7e7055eeab56d">ScancodeData:c1b3b657f02e6b851aa7e7055eeab56d</a> for <a href="/?license=scancode:bsd-systemics"><span class="licensename"><span class="namespace">scancode:</span>bsd-systemics</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bsd-systemics</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Systemics BSD variant license</span></li><li><span class="licensename">Systemics BSD variant license</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:c1b3b657f02e6b851aa7e7055eeab56d">[<a href="/fact/ScancodeData/c1b3b657f02e6b851aa7e7055eeab56d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT" target="_blank">https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+ 
+The licence and distribution terms for any publically available version or
+derivative of this code cannot be changed.  i.e. this code cannot simply be
+copied and put under another distribution licence [including the GNU Public Licence.]</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bsd-systemics&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Systemics BSD variant license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Systemics BSD variant license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;c1b3b657f02e6b851aa7e7055eeab56d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \nTHIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n \nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence [including the GNU Public Licence.]&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;bsd-systemics&quot;,
+        &quot;_name&quot;: &quot;Systemics BSD variant license&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://metacpan.org/release/DPARIS/Crypt-DES-2.07/source/COPYRIGHT&quot;
+        ],
+        &quot;_owner&quot;: &quot;Systemics Ltd&quot;,
+        &quot;_shortName&quot;: &quot;Systemics BSD variant license&quot;,
+        &quot;_spdxId&quot;: &quot;BSD-Systemics&quot;,
+        &quot;_text&quot;: &quot;This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \nTHIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n \nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence [including the GNU Public Licence.]&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/9471cb28f9321f0a05a3a2abd8fe7728">OrtLicenseCategorization:9471cb28f9321f0a05a3a2abd8fe7728</a> for <a href="/?license=SPDX:BSD-Systemics"><span class="licensename"><span class="namespace">SPDX:</span>BSD-Systemics</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-Systemics</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9471cb28f9321f0a05a3a2abd8fe7728">[<a href="/fact/OrtLicenseCategorization/9471cb28f9321f0a05a3a2abd8fe7728">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9471cb28f9321f0a05a3a2abd8fe7728">[<a href="/fact/OrtLicenseCategorization/9471cb28f9321f0a05a3a2abd8fe7728">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-Systemics&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9471cb28f9321f0a05a3a2abd8fe7728&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-Systemics&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/6a00261143a82c7eb747347b1cdf5bf0">CavilLicenseChange:6a00261143a82c7eb747347b1cdf5bf0</a> for <a href="/?license=cavil:BSD-Systemics"><span class="licensename"><span class="namespace">cavil:</span>BSD-Systemics</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Systemics</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Systemics</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:BSD-Systemics&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-Systemics&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;6a00261143a82c7eb747347b1cdf5bf0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;BSD-Systemics&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:BSD-Systemics&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/994c36d9d2d8f242c1b5c9ec6c180902">MetaeffektLicense:994c36d9d2d8f242c1b5c9ec6c180902</a> for <a href="/?license=metaeffekt:Systemics BSD variant license"><span class="licensename"><span class="namespace">metaeffekt:</span>Systemics BSD variant license</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Systemics BSD variant license</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Systemics</span></li><li><span class="licensename">BSD-Systemics</span></li><li><span class="licensename">Systemics BSD variant license</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Systemics BSD variant license&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Systemics&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-Systemics&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD-Systemics&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Systemics BSD variant license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;994c36d9d2d8f242c1b5c9ec6c180902&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;BSD-Systemics&quot;,
+            &quot;Systemics BSD variant license&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Systemics BSD variant license&quot;,
+        &quot;_category&quot;: &quot;BSD-Systemics&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:BSD-Systemics&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

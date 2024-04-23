@@ -1,0 +1,541 @@
+<html><head><title>ldbcollector: spdx:DRL-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:DRL-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DRL-1.0</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">Detection Rule License 1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Detection Rule License 1.0</span></li><li><span class="licensename">DRL-1.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>DRL-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>drl-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>DRL-1.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Detection Rule</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:49fb110017d1a3e0e081bcfd0a5e1a21">[<a href="/fact/ScancodeData/49fb110017d1a3e0e081bcfd0a5e1a21">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e30ce9c81cb12589848ba186a43e1d50">[<a href="/fact/SPDXLicense/e30ce9c81cb12589848ba186a43e1d50">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:860227b6f353315f9ad26ae3148992d8">[<a href="/fact/OrtLicenseCategorization/860227b6f353315f9ad26ae3148992d8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:860227b6f353315f9ad26ae3148992d8">[<a href="/fact/OrtLicenseCategorization/860227b6f353315f9ad26ae3148992d8">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md" target="_blank">https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Detection Rule License (DRL) 1.0
+Permission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the &quot;Rules&quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:
+
+If you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:
+
+identification of the authors(s) (&quot;author&quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).
+
+a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable
+
+indicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable
+
+THE RULES ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+    &lt;var class=&quot;optional-license-text&quot;&gt; Detection Rule License (DRL) 1.0&lt;/var&gt;
+
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the &amp;quot;Rules&amp;quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+&lt;p&gt;If you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+	
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+    identification of the authors(s) (&amp;quot;author&amp;quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).&lt;/li&gt;
+    
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+    a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable&lt;/li&gt;
+    
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;indicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;THE RULES ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.&lt;/p&gt;
+
+</pre></details></li><li><details><summary>Text:</summary><pre>Detection Rule License (DRL) 1.0
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this rule set and associated documentation files (the &quot;Rules&quot;), to deal in the
+Rules without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules,
+and to permit persons to whom the Rules are furnished to do so, subject to the
+following conditions:
+
+If you share the Rules (including in modified form), you must retain the
+following if it is supplied within the Rules:
+
+identification of the authors(s) (&quot;author&quot; field) of the Rule and any others
+designated to receive attribution, in any reasonable manner requested by the
+Rule author (including by pseudonym if designated).
+
+a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably
+practicable
+
+indicate the Rules are licensed under this Detection Rule License, and include
+the text of, or the URI or hyperlink to, this Detection Rule License to the
+extent reasonably practicable
+
+THE RULES ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e30ce9c81cb12589848ba186a43e1d50">SPDXLicense:e30ce9c81cb12589848ba186a43e1d50</a> for <a href="/?license=spdx:DRL-1.0"><span class="licensename"><span class="namespace">spdx:</span>DRL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DRL-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Detection Rule License 1.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e30ce9c81cb12589848ba186a43e1d50">[<a href="/fact/SPDXLicense/e30ce9c81cb12589848ba186a43e1d50">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md" target="_blank">https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Detection Rule License (DRL) 1.0
+Permission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the &quot;Rules&quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:
+
+If you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:
+
+identification of the authors(s) (&quot;author&quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).
+
+a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable
+
+indicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable
+
+THE RULES ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+    &lt;var class=&quot;optional-license-text&quot;&gt; Detection Rule License (DRL) 1.0&lt;/var&gt;
+
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the &amp;quot;Rules&amp;quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+&lt;p&gt;If you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+	
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+    identification of the authors(s) (&amp;quot;author&amp;quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).&lt;/li&gt;
+    
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+    a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable&lt;/li&gt;
+    
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;indicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;THE RULES ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.&lt;/p&gt;
+
+</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:DRL-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Detection Rule License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e30ce9c81cb12589848ba186a43e1d50&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Detection Rule License (DRL) 1.0\nPermission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the \&quot;Rules\&quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:\n\nIf you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:\n\nidentification of the authors(s) (\&quot;author\&quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).\n\na URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable\n\nindicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable\n\nTHE RULES ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n    &lt;var class=\&quot;optional-license-text\&quot;&gt; Detection Rule License (DRL) 1.0&lt;/var&gt;\n\n&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the &amp;quot;Rules&amp;quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:&lt;/p&gt;\n\n&lt;p&gt;If you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\t\n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n    identification of the authors(s) (&amp;quot;author&amp;quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).&lt;/li&gt;\n    \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n    a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable&lt;/li&gt;\n    \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;indicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable&lt;/li&gt;\n\n&lt;/ul&gt;\n&lt;p&gt;THE RULES ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.&lt;/p&gt;\n\n&quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:10:22Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:DRL-1.0&quot;,
+        &quot;licenseText&quot;: &quot;Detection Rule License (DRL) 1.0\nPermission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the \&quot;Rules\&quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:\n\nIf you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:\n\nidentification of the authors(s) (\&quot;author\&quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).\n\na URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable\n\nindicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable\n\nTHE RULES ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n    &lt;var class=\&quot;optional-license-text\&quot;&gt; Detection Rule License (DRL) 1.0&lt;/var&gt;\n\n&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the &amp;quot;Rules&amp;quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:&lt;/p&gt;\n\n&lt;p&gt;If you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\t\n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n    identification of the authors(s) (&amp;quot;author&amp;quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).&lt;/li&gt;\n    \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n    a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable&lt;/li&gt;\n    \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;indicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable&lt;/li&gt;\n\n&lt;/ul&gt;\n&lt;p&gt;THE RULES ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.&lt;/p&gt;\n\n&quot;,
+        &quot;name&quot;: &quot;Detection Rule License 1.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Detection Rule License (DRL) 1.0&lt;&lt;endOptional&gt;&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this rule set and associated documentation files (the \&quot;Rules\&quot;), to deal in the Rules without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules, and to permit persons to whom the Rules are furnished to do so, subject to the following conditions:\n\nIf you share the Rules (including in modified form), you must retain the following if it is supplied within the Rules:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; identification of the authors(s) (\&quot;author\&quot; field) of the Rule and any others designated to receive attribution, in any reasonable manner requested by the Rule author (including by pseudonym if designated).\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably practicable\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; indicate the Rules are licensed under this Detection Rule License, and include the text of, or the URI or hyperlink to, this Detection Rule License to the extent reasonably practicable\n\nTHE RULES ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/49fb110017d1a3e0e081bcfd0a5e1a21">ScancodeData:49fb110017d1a3e0e081bcfd0a5e1a21</a> for <a href="/?license=scancode:drl-1.0"><span class="licensename"><span class="namespace">scancode:</span>drl-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>drl-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Detection Rule License 1.0</span></li><li><span class="licensename">DRL-1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:49fb110017d1a3e0e081bcfd0a5e1a21">[<a href="/fact/ScancodeData/49fb110017d1a3e0e081bcfd0a5e1a21">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md" target="_blank">https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Detection Rule License (DRL) 1.0
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this rule set and associated documentation files (the &quot;Rules&quot;), to deal in the
+Rules without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of the Rules,
+and to permit persons to whom the Rules are furnished to do so, subject to the
+following conditions:
+
+If you share the Rules (including in modified form), you must retain the
+following if it is supplied within the Rules:
+
+identification of the authors(s) (&quot;author&quot; field) of the Rule and any others
+designated to receive attribution, in any reasonable manner requested by the
+Rule author (including by pseudonym if designated).
+
+a URI or hyperlink to the Rule set or explicit Rule to the extent reasonably
+practicable
+
+indicate the Rules are licensed under this Detection Rule License, and include
+the text of, or the URI or hyperlink to, this Detection Rule License to the
+extent reasonably practicable
+
+THE RULES ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:drl-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DRL-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Detection Rule License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;49fb110017d1a3e0e081bcfd0a5e1a21&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Detection Rule License (DRL) 1.0\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis rule set and associated documentation files (the \&quot;Rules\&quot;), to deal in the\nRules without restriction, including without limitation the rights to use, copy,\nmodify, merge, publish, distribute, sublicense, and/or sell copies of the Rules,\nand to permit persons to whom the Rules are furnished to do so, subject to the\nfollowing conditions:\n\nIf you share the Rules (including in modified form), you must retain the\nfollowing if it is supplied within the Rules:\n\nidentification of the authors(s) (\&quot;author\&quot; field) of the Rule and any others\ndesignated to receive attribution, in any reasonable manner requested by the\nRule author (including by pseudonym if designated).\n\na URI or hyperlink to the Rule set or explicit Rule to the extent reasonably\npracticable\n\nindicate the Rules are licensed under this Detection Rule License, and include\nthe text of, or the URI or hyperlink to, this Detection Rule License to the\nextent reasonably practicable\n\nTHE RULES ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;,
+        &quot;_key&quot;: &quot;drl-1.0&quot;,
+        &quot;_name&quot;: &quot;Detection Rule License 1.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md&quot;
+        ],
+        &quot;_owner&quot;: &quot;Florian Roth&quot;,
+        &quot;_shortName&quot;: &quot;DRL-1.0&quot;,
+        &quot;_spdxId&quot;: &quot;DRL-1.0&quot;,
+        &quot;_text&quot;: &quot;Detection Rule License (DRL) 1.0\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis rule set and associated documentation files (the \&quot;Rules\&quot;), to deal in the\nRules without restriction, including without limitation the rights to use, copy,\nmodify, merge, publish, distribute, sublicense, and/or sell copies of the Rules,\nand to permit persons to whom the Rules are furnished to do so, subject to the\nfollowing conditions:\n\nIf you share the Rules (including in modified form), you must retain the\nfollowing if it is supplied within the Rules:\n\nidentification of the authors(s) (\&quot;author\&quot; field) of the Rule and any others\ndesignated to receive attribution, in any reasonable manner requested by the\nRule author (including by pseudonym if designated).\n\na URI or hyperlink to the Rule set or explicit Rule to the extent reasonably\npracticable\n\nindicate the Rules are licensed under this Detection Rule License, and include\nthe text of, or the URI or hyperlink to, this Detection Rule License to the\nextent reasonably practicable\n\nTHE RULES ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE RULES OR THE USE OR OTHER DEALINGS IN THE RULES.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/860227b6f353315f9ad26ae3148992d8">OrtLicenseCategorization:860227b6f353315f9ad26ae3148992d8</a> for <a href="/?license=SPDX:DRL-1.0"><span class="licensename"><span class="namespace">SPDX:</span>DRL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>DRL-1.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:860227b6f353315f9ad26ae3148992d8">[<a href="/fact/OrtLicenseCategorization/860227b6f353315f9ad26ae3148992d8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:860227b6f353315f9ad26ae3148992d8">[<a href="/fact/OrtLicenseCategorization/860227b6f353315f9ad26ae3148992d8">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:DRL-1.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;860227b6f353315f9ad26ae3148992d8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:DRL-1.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/332bbee7a7fb5bb54fe2f63f53a40d3a">CavilLicenseChange:332bbee7a7fb5bb54fe2f63f53a40d3a</a> for <a href="/?license=cavil:DRL-1.0"><span class="licensename"><span class="namespace">cavil:</span>DRL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>DRL-1.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">DRL-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:DRL-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;DRL-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;332bbee7a7fb5bb54fe2f63f53a40d3a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;DRL-1.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:DRL-1.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/0c407ad5ac8c779ccc8a52f6fd3a5ef1">MetaeffektLicense:0c407ad5ac8c779ccc8a52f6fd3a5ef1</a> for <a href="/?license=metaeffekt:Detection Rule License 1.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Detection Rule License 1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Detection Rule License 1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>DRL-1.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Detection Rule</span></li><li><span class="licensename"><span class="namespace">scancode:</span>drl-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Detection Rule License 1.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:DRL-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Detection Rule&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:drl-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;0c407ad5ac8c779ccc8a52f6fd3a5ef1&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Detection Rule License 1.0&quot;,
+        &quot;_category&quot;: &quot;Detection Rule&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:drl-1.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:DRL-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

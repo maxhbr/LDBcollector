@@ -1,0 +1,522 @@
+<html><head><title>ldbcollector: spdx:GPL-CC-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:GPL-CC-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-CC-1.0</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL Cooperation Commitment 1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>GPL Cooperation Commitment 1.0</span></li><li><span class="licensename">GPL-CC-1.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>GPL-CC-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GPL-CC-1.0</span></li><li><span class="licensename">gplcc-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gplcc-1.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL Cooperation Commitment</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:6fbbeba71f6ec2f616bbe0ec2482f8fc">[<a href="/fact/ScancodeData/6fbbeba71f6ec2f616bbe0ec2482f8fc">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>Fossology: </b>This is the GPL Cooperation Commitment for projects. It is distinct from the GPL Cooperation Commitment for companies or individuals in that it applies at the project level for all contributions going forward as of the date it is adopted.<span class="provided-by">(provided by: <span title="Fossology:9e69bfcb17f3bbfdbdbc4b35a22b5ab4">[<a href="/fact/Fossology/9e69bfcb17f3bbfdbdbc4b35a22b5ab4">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://git.gluster.org/cgit/glusterfs.git/tree/COMMITMENT" target="_blank">http://git.gluster.org/cgit/glusterfs.git/tree/COMMITMENT</a></li><li><a href="https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT" target="_blank">https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT</a></li><li><a href="https://github.com/wildfly/wildfly-core/blob/master/COMMITMENT" target="_blank">https://github.com/wildfly/wildfly-core/blob/master/COMMITMENT</a></li><li><a href="https://github.com/wildfly/wildfly/blob/master/COMMITMENT" target="_blank">https://github.com/wildfly/wildfly/blob/master/COMMITMENT</a></li><li><a href="https://gplcc.github.io/gplcc/Project/README-PROJECT.html" target="_blank">https://gplcc.github.io/gplcc/Project/README-PROJECT.html</a></li><li><a href="https://raw.githubusercontent.com/wildfly/wildfly/master/COMMITMENT" target="_blank">https://raw.githubusercontent.com/wildfly/wildfly/master/COMMITMENT</a></li><li><a href="https://www.fsf.org/blogs/licensing/red-hat-leads-coalition-supporting-key-part-of-principles-of-community-oriented-gpl-enforcement" target="_blank">https://www.fsf.org/blogs/licensing/red-hat-leads-coalition-supporting-key-part-of-principles-of-community-oriented-gpl-enforcement</a></li><li><a href="https://www.kernel.org/doc/html/latest/process/kernel-enforcement-statement.html" target="_blank">https://www.kernel.org/doc/html/latest/process/kernel-enforcement-statement.html</a></li><li><a href="https://www.redhat.com/en/about/press-releases/technology-industry-leaders-join-forces-increase-predictability-open-source-licensing" target="_blank">https://www.redhat.com/en/about/press-releases/technology-industry-leaders-join-forces-increase-predictability-open-source-licensing</a></li><li><a href="https://www.redhat.com/en/blog/gpl-cooperation-commitment-and-red-hat-projects?source=author&amp;term=26851" target="_blank">https://www.redhat.com/en/blog/gpl-cooperation-commitment-and-red-hat-projects?source=author&amp;term=26851</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/gplcc/gplcc/blob/eee52346dd48bdf985657f082bb847f12f40c464/Project/COMMITMENT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>GPL Cooperation Commitment
+Version 1.0
+
+Before filing or continuing to prosecute any legal proceeding or claim
+(other than a Defensive Action) arising from termination of a Covered
+License, we commit to extend to the person or entity (&#39;you&#39;) accused
+of violating the Covered License the following provisions regarding
+cure and reinstatement, taken from GPL version 3. As used here, the
+term &#39;this License&#39; refers to the specific Covered License being
+enforced.
+
+    However, if you cease all violation of this License, then your
+    license from a particular copyright holder is reinstated (a)
+    provisionally, unless and until the copyright holder explicitly
+    and finally terminates your license, and (b) permanently, if the
+    copyright holder fails to notify you of the violation by some
+    reasonable means prior to 60 days after the cessation.
+
+    Moreover, your license from a particular copyright holder is
+    reinstated permanently if the copyright holder notifies you of the
+    violation by some reasonable means, this is the first time you
+    have received notice of violation of this License (for any work)
+    from that copyright holder, and you cure the violation prior to 30
+    days after your receipt of the notice.
+
+We intend this Commitment to be irrevocable, and binding and
+enforceable against us and assignees of or successors to our
+copyrights.
+
+Definitions
+
+&#39;Covered License&#39; means the GNU General Public License, version 2
+(GPLv2), the GNU Lesser General Public License, version 2.1
+(LGPLv2.1), or the GNU Library General Public License, version 2
+(LGPLv2), all as published by the Free Software Foundation.
+
+&#39;Defensive Action&#39; means a legal proceeding or claim that We bring
+against you in response to a prior proceeding or claim initiated by
+you or your affiliate.
+
+&#39;We&#39; means each contributor to this repository as of the date of
+inclusion of this file, including subsidiaries of a corporate
+contributor.
+
+This work is available under a Creative Commons Attribution-ShareAlike
+4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).</pre></details></li><li><details><summary>Text:</summary><pre>GPL Cooperation Commitment Version 1.0
+
+Before filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License, we commit to extend to the person or entity (&#39;you&#39;) accused of violating the Covered License the following provisions regarding cure and reinstatement, taken from GPL version 3. As used here, the term &#39;this License&#39; refers to the specific Covered License being enforced.
+
+However, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.
+
+Moreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.
+
+We intend this Commitment to be irrevocable, and binding and enforceable against us and assignees of or successors to our copyrights.
+
+Definitions:
+
+&quot;Covered License&quot; means the GNU General Public License, version 2 (GPLv2), the GNU Lesser General Public License, version 2.1 (LGPLv2.1), or the GNU Library General Public License, version 2 (LGPLv2), all as published by the Free Software Foundation.
+
+&quot;Defensive Action&quot; means a legal proceeding or claim that We bring against you in response to a prior proceeding or claim initiated by you or your affiliate.
+
+&quot;We&quot; means each contributor to this repository as of the date of inclusion of this file, including subsidiaries of a corporate contributor. This work is available under a Creative Commons Attribution-ShareAlike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/6fbbeba71f6ec2f616bbe0ec2482f8fc">ScancodeData:6fbbeba71f6ec2f616bbe0ec2482f8fc</a> for <a href="/?license=scancode:gplcc-1.0"><span class="licensename"><span class="namespace">scancode:</span>gplcc-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>gplcc-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL Cooperation Commitment 1.0</span></li><li><span class="licensename">GPL Cooperation Commitment 1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:6fbbeba71f6ec2f616bbe0ec2482f8fc">[<a href="/fact/ScancodeData/6fbbeba71f6ec2f616bbe0ec2482f8fc">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://git.gluster.org/cgit/glusterfs.git/tree/COMMITMENT" target="_blank">http://git.gluster.org/cgit/glusterfs.git/tree/COMMITMENT</a></li><li><a href="https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT" target="_blank">https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT</a></li><li><a href="https://github.com/wildfly/wildfly-core/blob/master/COMMITMENT" target="_blank">https://github.com/wildfly/wildfly-core/blob/master/COMMITMENT</a></li><li><a href="https://github.com/wildfly/wildfly/blob/master/COMMITMENT" target="_blank">https://github.com/wildfly/wildfly/blob/master/COMMITMENT</a></li><li><a href="https://gplcc.github.io/gplcc/Project/README-PROJECT.html" target="_blank">https://gplcc.github.io/gplcc/Project/README-PROJECT.html</a></li><li><a href="https://raw.githubusercontent.com/wildfly/wildfly/master/COMMITMENT" target="_blank">https://raw.githubusercontent.com/wildfly/wildfly/master/COMMITMENT</a></li><li><a href="https://www.fsf.org/blogs/licensing/red-hat-leads-coalition-supporting-key-part-of-principles-of-community-oriented-gpl-enforcement" target="_blank">https://www.fsf.org/blogs/licensing/red-hat-leads-coalition-supporting-key-part-of-principles-of-community-oriented-gpl-enforcement</a></li><li><a href="https://www.kernel.org/doc/html/latest/process/kernel-enforcement-statement.html" target="_blank">https://www.kernel.org/doc/html/latest/process/kernel-enforcement-statement.html</a></li><li><a href="https://www.redhat.com/en/about/press-releases/technology-industry-leaders-join-forces-increase-predictability-open-source-licensing" target="_blank">https://www.redhat.com/en/about/press-releases/technology-industry-leaders-join-forces-increase-predictability-open-source-licensing</a></li><li><a href="https://www.redhat.com/en/blog/gpl-cooperation-commitment-and-red-hat-projects?source=author&amp;term=26851" target="_blank">https://www.redhat.com/en/blog/gpl-cooperation-commitment-and-red-hat-projects?source=author&amp;term=26851</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/gplcc/gplcc/blob/eee52346dd48bdf985657f082bb847f12f40c464/Project/COMMITMENT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>GPL Cooperation Commitment
+Version 1.0
+
+Before filing or continuing to prosecute any legal proceeding or claim
+(other than a Defensive Action) arising from termination of a Covered
+License, we commit to extend to the person or entity (&#39;you&#39;) accused
+of violating the Covered License the following provisions regarding
+cure and reinstatement, taken from GPL version 3. As used here, the
+term &#39;this License&#39; refers to the specific Covered License being
+enforced.
+
+    However, if you cease all violation of this License, then your
+    license from a particular copyright holder is reinstated (a)
+    provisionally, unless and until the copyright holder explicitly
+    and finally terminates your license, and (b) permanently, if the
+    copyright holder fails to notify you of the violation by some
+    reasonable means prior to 60 days after the cessation.
+
+    Moreover, your license from a particular copyright holder is
+    reinstated permanently if the copyright holder notifies you of the
+    violation by some reasonable means, this is the first time you
+    have received notice of violation of this License (for any work)
+    from that copyright holder, and you cure the violation prior to 30
+    days after your receipt of the notice.
+
+We intend this Commitment to be irrevocable, and binding and
+enforceable against us and assignees of or successors to our
+copyrights.
+
+Definitions
+
+&#39;Covered License&#39; means the GNU General Public License, version 2
+(GPLv2), the GNU Lesser General Public License, version 2.1
+(LGPLv2.1), or the GNU Library General Public License, version 2
+(LGPLv2), all as published by the Free Software Foundation.
+
+&#39;Defensive Action&#39; means a legal proceeding or claim that We bring
+against you in response to a prior proceeding or claim initiated by
+you or your affiliate.
+
+&#39;We&#39; means each contributor to this repository as of the date of
+inclusion of this file, including subsidiaries of a corporate
+contributor.
+
+This work is available under a Creative Commons Attribution-ShareAlike
+4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:gplcc-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL Cooperation Commitment 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GPL Cooperation Commitment 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;6fbbeba71f6ec2f616bbe0ec2482f8fc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/gplcc/gplcc/blob/eee52346dd48bdf985657f082bb847f12f40c464/Project/COMMITMENT&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://git.gluster.org/cgit/glusterfs.git/tree/COMMITMENT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/wildfly/wildfly-core/blob/master/COMMITMENT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/wildfly/wildfly/blob/master/COMMITMENT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gplcc.github.io/gplcc/Project/README-PROJECT.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://raw.githubusercontent.com/wildfly/wildfly/master/COMMITMENT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.fsf.org/blogs/licensing/red-hat-leads-coalition-supporting-key-part-of-principles-of-community-oriented-gpl-enforcement&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.kernel.org/doc/html/latest/process/kernel-enforcement-statement.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.redhat.com/en/about/press-releases/technology-industry-leaders-join-forces-increase-predictability-open-source-licensing&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.redhat.com/en/blog/gpl-cooperation-commitment-and-red-hat-projects?source=author&amp;term=26851&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;GPL Cooperation Commitment\nVersion 1.0\n\nBefore filing or continuing to prosecute any legal proceeding or claim\n(other than a Defensive Action) arising from termination of a Covered\nLicense, we commit to extend to the person or entity (&#39;you&#39;) accused\nof violating the Covered License the following provisions regarding\ncure and reinstatement, taken from GPL version 3. As used here, the\nterm &#39;this License&#39; refers to the specific Covered License being\nenforced.\n\n    However, if you cease all violation of this License, then your\n    license from a particular copyright holder is reinstated (a)\n    provisionally, unless and until the copyright holder explicitly\n    and finally terminates your license, and (b) permanently, if the\n    copyright holder fails to notify you of the violation by some\n    reasonable means prior to 60 days after the cessation.\n\n    Moreover, your license from a particular copyright holder is\n    reinstated permanently if the copyright holder notifies you of the\n    violation by some reasonable means, this is the first time you\n    have received notice of violation of this License (for any work)\n    from that copyright holder, and you cure the violation prior to 30\n    days after your receipt of the notice.\n\nWe intend this Commitment to be irrevocable, and binding and\nenforceable against us and assignees of or successors to our\ncopyrights.\n\nDefinitions\n\n&#39;Covered License&#39; means the GNU General Public License, version 2\n(GPLv2), the GNU Lesser General Public License, version 2.1\n(LGPLv2.1), or the GNU Library General Public License, version 2\n(LGPLv2), all as published by the Free Software Foundation.\n\n&#39;Defensive Action&#39; means a legal proceeding or claim that We bring\nagainst you in response to a prior proceeding or claim initiated by\nyou or your affiliate.\n\n&#39;We&#39; means each contributor to this repository as of the date of\ninclusion of this file, including subsidiaries of a corporate\ncontributor.\n\nThis work is available under a Creative Commons Attribution-ShareAlike\n4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/gplcc/gplcc/blob/eee52346dd48bdf985657f082bb847f12f40c464/Project/COMMITMENT&quot;,
+        &quot;_key&quot;: &quot;gplcc-1.0&quot;,
+        &quot;_name&quot;: &quot;GPL Cooperation Commitment 1.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://git.gluster.org/cgit/glusterfs.git/tree/COMMITMENT&quot;,
+            &quot;https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT&quot;,
+            &quot;https://github.com/wildfly/wildfly-core/blob/master/COMMITMENT&quot;,
+            &quot;https://github.com/wildfly/wildfly/blob/master/COMMITMENT&quot;,
+            &quot;https://gplcc.github.io/gplcc/Project/README-PROJECT.html&quot;,
+            &quot;https://raw.githubusercontent.com/wildfly/wildfly/master/COMMITMENT&quot;,
+            &quot;https://www.fsf.org/blogs/licensing/red-hat-leads-coalition-supporting-key-part-of-principles-of-community-oriented-gpl-enforcement&quot;,
+            &quot;https://www.kernel.org/doc/html/latest/process/kernel-enforcement-statement.html&quot;,
+            &quot;https://www.redhat.com/en/about/press-releases/technology-industry-leaders-join-forces-increase-predictability-open-source-licensing&quot;,
+            &quot;https://www.redhat.com/en/blog/gpl-cooperation-commitment-and-red-hat-projects?source=author&amp;term=26851&quot;
+        ],
+        &quot;_owner&quot;: &quot;Red Hat&quot;,
+        &quot;_shortName&quot;: &quot;GPL Cooperation Commitment 1.0&quot;,
+        &quot;_spdxId&quot;: &quot;GPL-CC-1.0&quot;,
+        &quot;_text&quot;: &quot;GPL Cooperation Commitment\nVersion 1.0\n\nBefore filing or continuing to prosecute any legal proceeding or claim\n(other than a Defensive Action) arising from termination of a Covered\nLicense, we commit to extend to the person or entity (&#39;you&#39;) accused\nof violating the Covered License the following provisions regarding\ncure and reinstatement, taken from GPL version 3. As used here, the\nterm &#39;this License&#39; refers to the specific Covered License being\nenforced.\n\n    However, if you cease all violation of this License, then your\n    license from a particular copyright holder is reinstated (a)\n    provisionally, unless and until the copyright holder explicitly\n    and finally terminates your license, and (b) permanently, if the\n    copyright holder fails to notify you of the violation by some\n    reasonable means prior to 60 days after the cessation.\n\n    Moreover, your license from a particular copyright holder is\n    reinstated permanently if the copyright holder notifies you of the\n    violation by some reasonable means, this is the first time you\n    have received notice of violation of this License (for any work)\n    from that copyright holder, and you cure the violation prior to 30\n    days after your receipt of the notice.\n\nWe intend this Commitment to be irrevocable, and binding and\nenforceable against us and assignees of or successors to our\ncopyrights.\n\nDefinitions\n\n&#39;Covered License&#39; means the GNU General Public License, version 2\n(GPLv2), the GNU Lesser General Public License, version 2.1\n(LGPLv2.1), or the GNU Library General Public License, version 2\n(LGPLv2), all as published by the Free Software Foundation.\n\n&#39;Defensive Action&#39; means a legal proceeding or claim that We bring\nagainst you in response to a prior proceeding or claim initiated by\nyou or your affiliate.\n\n&#39;We&#39; means each contributor to this repository as of the date of\ninclusion of this file, including subsidiaries of a corporate\ncontributor.\n\nThis work is available under a Creative Commons Attribution-ShareAlike\n4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/9e69bfcb17f3bbfdbdbc4b35a22b5ab4">Fossology:9e69bfcb17f3bbfdbdbc4b35a22b5ab4</a> for <a href="/?license=fossology:GPL-CC-1.0"><span class="licensename"><span class="namespace">fossology:</span>GPL-CC-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>GPL-CC-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL Cooperation Commitment 1.0</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This is the GPL Cooperation Commitment for projects. It is distinct from the GPL Cooperation Commitment for companies or individuals in that it applies at the project level for all contributions going forward as of the date it is adopted.<span class="provided-by">(provided by: <span title="Fossology:9e69bfcb17f3bbfdbdbc4b35a22b5ab4">[<a href="/fact/Fossology/9e69bfcb17f3bbfdbdbc4b35a22b5ab4">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT" target="_blank">https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>GPL Cooperation Commitment Version 1.0
+
+Before filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License, we commit to extend to the person or entity (&#39;you&#39;) accused of violating the Covered License the following provisions regarding cure and reinstatement, taken from GPL version 3. As used here, the term &#39;this License&#39; refers to the specific Covered License being enforced.
+
+However, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.
+
+Moreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.
+
+We intend this Commitment to be irrevocable, and binding and enforceable against us and assignees of or successors to our copyrights.
+
+Definitions:
+
+&quot;Covered License&quot; means the GNU General Public License, version 2 (GPLv2), the GNU Lesser General Public License, version 2.1 (LGPLv2.1), or the GNU Library General Public License, version 2 (LGPLv2), all as published by the Free Software Foundation.
+
+&quot;Defensive Action&quot; means a legal proceeding or claim that We bring against you in response to a prior proceeding or claim initiated by you or your affiliate.
+
+&quot;We&quot; means each contributor to this repository as of the date of inclusion of this file, including subsidiaries of a corporate contributor. This work is available under a Creative Commons Attribution-ShareAlike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:GPL-CC-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL Cooperation Commitment 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;9e69bfcb17f3bbfdbdbc4b35a22b5ab4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This is the GPL Cooperation Commitment for projects. It is distinct from the GPL Cooperation Commitment for companies or individuals in that it applies at the project level for all contributions going forward as of the date it is adopted.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;GPL Cooperation Commitment Version 1.0\n\nBefore filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License, we commit to extend to the person or entity (&#39;you&#39;) accused of violating the Covered License the following provisions regarding cure and reinstatement, taken from GPL version 3. As used here, the term &#39;this License&#39; refers to the specific Covered License being enforced.\n\nHowever, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.\n\nMoreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.\n\nWe intend this Commitment to be irrevocable, and binding and enforceable against us and assignees of or successors to our copyrights.\n\nDefinitions:\n\n\&quot;Covered License\&quot; means the GNU General Public License, version 2 (GPLv2), the GNU Lesser General Public License, version 2.1 (LGPLv2.1), or the GNU Library General Public License, version 2 (LGPLv2), all as published by the Free Software Foundation.\n\n\&quot;Defensive Action\&quot; means a legal proceeding or claim that We bring against you in response to a prior proceeding or claim initiated by you or your affiliate.\n\n\&quot;We\&quot; means each contributor to this repository as of the date of inclusion of this file, including subsidiaries of a corporate contributor. This work is available under a Creative Commons Attribution-ShareAlike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;GPL Cooperation Commitment 1.0&quot;,
+        &quot;_rf_notes&quot;: &quot;This is the GPL Cooperation Commitment for projects. It is distinct from the GPL Cooperation Commitment for companies or individuals in that it applies at the project level for all contributions going forward as of the date it is adopted.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:GPL-CC-1.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;GPL Cooperation Commitment Version 1.0\n\nBefore filing or continuing to prosecute any legal proceeding or claim (other than a Defensive Action) arising from termination of a Covered License, we commit to extend to the person or entity (&#39;you&#39;) accused of violating the Covered License the following provisions regarding cure and reinstatement, taken from GPL version 3. As used here, the term &#39;this License&#39; refers to the specific Covered License being enforced.\n\nHowever, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.\n\nMoreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.\n\nWe intend this Commitment to be irrevocable, and binding and enforceable against us and assignees of or successors to our copyrights.\n\nDefinitions:\n\n\&quot;Covered License\&quot; means the GNU General Public License, version 2 (GPLv2), the GNU Lesser General Public License, version 2.1 (LGPLv2.1), or the GNU Library General Public License, version 2 (LGPLv2), all as published by the Free Software Foundation.\n\n\&quot;Defensive Action\&quot; means a legal proceeding or claim that We bring against you in response to a prior proceeding or claim initiated by you or your affiliate.\n\n\&quot;We\&quot; means each contributor to this repository as of the date of inclusion of this file, including subsidiaries of a corporate contributor. This work is available under a Creative Commons Attribution-ShareAlike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/).&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://github.com/gplcc/gplcc/blob/master/Project/COMMITMENT&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/f56cefa0d7e538ac5ab03af90a1f6631">MetaeffektLicense:f56cefa0d7e538ac5ab03af90a1f6631</a> for <a href="/?license=metaeffekt:GPL Cooperation Commitment 1.0"><span class="licensename"><span class="namespace">metaeffekt:</span>GPL Cooperation Commitment 1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>GPL Cooperation Commitment 1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-CC-1.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL Cooperation Commitment</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gplcc-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:GPL Cooperation Commitment 1.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:GPL-CC-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL Cooperation Commitment&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:gplcc-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;f56cefa0d7e538ac5ab03af90a1f6631&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:GPL Cooperation Commitment 1.0&quot;,
+        &quot;_category&quot;: &quot;GPL Cooperation Commitment&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:gplcc-1.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:GPL-CC-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

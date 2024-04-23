@@ -1,0 +1,1303 @@
+<html><head><title>ldbcollector: spdx:SSLeay-standalone</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:SSLeay-standalone</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SSLeay-standalone</span></li></ul></li><li><b>other LicenseNames (12):</b><ul class="capsulUl clearfix"><li><span class="licensename">Original SSLeay License</span></li><li><span class="licensename"><span class="namespace">hitachi:</span>Original SSLeay License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Original SSLeay License</span></li><li><span class="licensename">ssleay</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>SSLeay</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ssleay</span></li><li><span class="licensename">SSLeay License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>SSLeay License</span></li><li><span class="licensename">SSLeay License - standalone</span></li><li><span class="licensename">SSLeay-standalone</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>SSLeay-standalone</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SSLeay-standalone</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ssleay-windows</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:46ae7a3af1fe9f413a1a5f13a8878814">[<a href="/fact/ScancodeData/46ae7a3af1fe9f413a1a5f13a8878814">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0ce00e03cc63e3a218562978c24d1244">[<a href="/fact/SPDXLicense/0ce00e03cc63e3a218562978c24d1244">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:0d152f708d75e9c071985ef3348e66c1">[<a href="/fact/FedoraEntry/0d152f708d75e9c071985ef3348e66c1">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:4bc01864b9ec122b0547f6b00d39052f">[<a href="/fact/MetaeffektLicense/4bc01864b9ec122b0547f6b00d39052f">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b925d1aaa6fabaf07e0f330815d4c0">[<a href="/fact/OrtLicenseCategorization/88b925d1aaa6fabaf07e0f330815d4c0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b925d1aaa6fabaf07e0f330815d4c0">[<a href="/fact/OrtLicenseCategorization/88b925d1aaa6fabaf07e0f330815d4c0">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is the second license in the OpenSSL two-license stack as a standalone option.<span class="provided-by">(provided by: <span title="SPDXLicense:0ce00e03cc63e3a218562978c24d1244">[<a href="/fact/SPDXLicense/0ce00e03cc63e3a218562978c24d1244">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf" target="_blank">https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf</a></li><li><a href="http://www.openssl.org/source/license.html" target="_blank">http://www.openssl.org/source/license.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://www.openssl.org/source/license.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Original SSLeay License
+ -----------------------
+
+  Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+  All rights reserved.
+ 
+  This package is an SSL implementation written
+  by Eric Young (eay@cryptsoft.com).
+  The implementation was written so as to conform with Netscapes SSL.
+ 
+  This library is free for commercial and non-commercial use as long as
+  the following conditions are aheared to.  The following conditions
+  apply to all code found in this distribution, be it the RC4, RSA,
+  lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+  included with this distribution is covered by the same copyright terms
+  except that the holder is Tim Hudson (tjh@cryptsoft.com).
+ 
+  Copyright remains Eric Young&#39;s, and as such any Copyright notices in
+  the code are not to be removed.
+  If this package is used in a product, Eric Young should be given attribution
+  as the author of the parts of the library used.
+  This can be in the form of a textual message at program startup or
+  in documentation (online or textual) provided with the package.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  1. Redistributions of source code must retain the copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+  3. All advertising materials mentioning features or use of this software
+     must display the following acknowledgement:
+     &quot;This product includes cryptographic software written by
+      Eric Young (eay@cryptsoft.com)&quot;
+     The word &#39;cryptographic&#39; can be left out if the rouines from the library
+     being used are not cryptographic related :-).
+  4. If you include any Windows specific code (or a derivative thereof) from
+     the apps directory (application code) you must include an acknowledgement:
+     &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;
+ 
+  THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  SUCH DAMAGE.
+ 
+  The licence and distribution terms for any publically available version or
+  derivative of this code cannot be changed.  i.e. this code cannot simply be
+  copied and put under another distribution licence
+  [including the GNU Public Licence.]
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;
+               Original SSLeay License
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+               Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)&lt;br /&gt;
+
+               All rights reserved.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            This package is an SSL implementation written by
+            Eric Young (eay@cryptsoft.com). The implementation
+            was written so as to conform with Netscapes SSL.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This library is free for commercial and non-commercial use as long
+            as the following conditions are aheared to. The following conditions
+            apply to all code found in this distribution, be it the RC4, RSA,
+            lhash, DES, etc., code; not just the SSL code. The SSL documentation
+            included with this distribution is covered by the same copyright
+            terms except that the holder is Tim Hudson (tjh@cryptsoft.com).
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Copyright remains Eric Young&amp;apos;s, and as such any Copyright
+            notices in the code are not to be removed. If this package
+            is used in a product, Eric Young should be given attribution
+            as the author of the parts of the library used. This can be
+            in the form of a textual message at program startup or in
+            documentation (online or textual) provided with the package.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               Redistributions of source code must retain the copyright
+               notice, this list of conditions and the following disclaimer.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               Redistributions in binary form must reproduce the
+               above copyright notice, this list of conditions and
+               the following disclaimer in the documentation and/or
+               other materials provided with the distribution.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               All advertising materials mentioning features or use of this
+               software must display the following acknowledgement:&lt;br /&gt;
+
+               &amp;quot;This product includes cryptographic software
+               written by Eric Young (eay@cryptsoft.com)&amp;quot;&lt;br /&gt;
+
+               The word &amp;apos;cryptographic&amp;apos; can be left out if the rouines from
+               the library being used are not cryptographic related :-).
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               If you include any Windows specific code (or a derivative
+               thereof) from the apps directory (application code) you
+               must include an acknowledgement: &amp;quot;This product includes
+               software written by Tim Hudson (tjh@cryptsoft.com)&amp;quot;
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS
+            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+            ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE
+            LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The licence and distribution terms for any publically available
+            version or derivative of this code cannot be changed. i.e.
+            this code cannot simply be copied and put under another
+            distribution licence [including the GNU Public Licence.]
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>This package is an SSL implementation written by Eric Young (eay@cryptsoft.com).
+The implementation was written so as to conform with Netscapes SSL.
+
+This library is free for commercial and non-commercial use as long as
+the following conditions are aheared to.  The following conditions
+apply to all code found in this distribution, be it the RC4, RSA,
+lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+included with this distribution is covered by the same copyright terms
+except that the holder is Tim Hudson (tjh@cryptsoft.com).
+
+Copyright remains Eric Young&#39;s, and as such any Copyright notices in
+the code are not to be removed.
+If this package is used in a product, Eric Young should be given attribution
+as the author of the parts of the library used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   &quot;This product includes cryptographic software written by
+    Eric Young (eay@cryptsoft.com)&quot;
+   The word &#39;cryptographic&#39; can be left out if the rouines from the library
+   being used are not cryptographic related :-).
+
+THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+
+The licence and distribution terms for any publically available version or
+derivative of this code cannot be changed.  i.e. this code cannot simply be
+copied and put under another distribution licence
+[including the GNU Public Licence.]</pre></details></li><li><details><summary>Text:</summary><pre>Original SSLeay License
+ -----------------------
+
+/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+ * All rights reserved.
+ *
+ * This package is an SSL implementation written
+ * by Eric Young (eay@cryptsoft.com).
+ * The implementation was written so as to conform with Netscapes SSL.
+ *
+ * This library is free for commercial and non-commercial use as long as
+ * the following conditions are aheared to.  The following conditions
+ * apply to all code found in this distribution, be it the RC4, RSA,
+ * lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+ * included with this distribution is covered by the same copyright terms
+ * except that the holder is Tim Hudson (tjh@cryptsoft.com).
+ *
+ * Copyright remains Eric Young&#39;s, and as such any Copyright notices in
+ * the code are not to be removed.
+ * If this package is used in a product, Eric Young should be given attribution
+ * as the author of the parts of the library used.
+ * This can be in the form of a textual message at program startup or
+ * in documentation (online or textual) provided with the package.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. All advertising materials mentioning features or use of this software
+ *    must display the following acknowledgement:
+ *    &quot;This product includes cryptographic software written by
+ *     Eric Young (eay@cryptsoft.com)&quot;
+ *    The word &#39;cryptographic&#39; can be left out if the rouines from the library
+ *    being used are not cryptographic related :-).
+ * 4. If you include any Windows specific code (or a derivative thereof) from
+ *    the apps directory (application code) you must include an acknowledgement:
+ *    &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;
+ *
+ * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ * The licence and distribution terms for any publically available version or
+ * derivative of this code cannot be changed.  i.e. this code cannot simply be
+ * copied and put under another distribution licence
+ * [including the GNU Public Licence.]
+ */</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/0ce00e03cc63e3a218562978c24d1244">SPDXLicense:0ce00e03cc63e3a218562978c24d1244</a> for <a href="/?license=spdx:SSLeay-standalone"><span class="licensename"><span class="namespace">spdx:</span>SSLeay-standalone</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SSLeay-standalone</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SSLeay License - standalone</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0ce00e03cc63e3a218562978c24d1244">[<a href="/fact/SPDXLicense/0ce00e03cc63e3a218562978c24d1244">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is the second license in the OpenSSL two-license stack as a standalone option.<span class="provided-by">(provided by: <span title="SPDXLicense:0ce00e03cc63e3a218562978c24d1244">[<a href="/fact/SPDXLicense/0ce00e03cc63e3a218562978c24d1244">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf" target="_blank">https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Original SSLeay License
+ -----------------------
+
+  Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+  All rights reserved.
+ 
+  This package is an SSL implementation written
+  by Eric Young (eay@cryptsoft.com).
+  The implementation was written so as to conform with Netscapes SSL.
+ 
+  This library is free for commercial and non-commercial use as long as
+  the following conditions are aheared to.  The following conditions
+  apply to all code found in this distribution, be it the RC4, RSA,
+  lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+  included with this distribution is covered by the same copyright terms
+  except that the holder is Tim Hudson (tjh@cryptsoft.com).
+ 
+  Copyright remains Eric Young&#39;s, and as such any Copyright notices in
+  the code are not to be removed.
+  If this package is used in a product, Eric Young should be given attribution
+  as the author of the parts of the library used.
+  This can be in the form of a textual message at program startup or
+  in documentation (online or textual) provided with the package.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  1. Redistributions of source code must retain the copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+  3. All advertising materials mentioning features or use of this software
+     must display the following acknowledgement:
+     &quot;This product includes cryptographic software written by
+      Eric Young (eay@cryptsoft.com)&quot;
+     The word &#39;cryptographic&#39; can be left out if the rouines from the library
+     being used are not cryptographic related :-).
+  4. If you include any Windows specific code (or a derivative thereof) from
+     the apps directory (application code) you must include an acknowledgement:
+     &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;
+ 
+  THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  SUCH DAMAGE.
+ 
+  The licence and distribution terms for any publically available version or
+  derivative of this code cannot be changed.  i.e. this code cannot simply be
+  copied and put under another distribution licence
+  [including the GNU Public Licence.]
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;
+               Original SSLeay License
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+               Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)&lt;br /&gt;
+
+               All rights reserved.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            This package is an SSL implementation written by
+            Eric Young (eay@cryptsoft.com). The implementation
+            was written so as to conform with Netscapes SSL.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This library is free for commercial and non-commercial use as long
+            as the following conditions are aheared to. The following conditions
+            apply to all code found in this distribution, be it the RC4, RSA,
+            lhash, DES, etc., code; not just the SSL code. The SSL documentation
+            included with this distribution is covered by the same copyright
+            terms except that the holder is Tim Hudson (tjh@cryptsoft.com).
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Copyright remains Eric Young&amp;apos;s, and as such any Copyright
+            notices in the code are not to be removed. If this package
+            is used in a product, Eric Young should be given attribution
+            as the author of the parts of the library used. This can be
+            in the form of a textual message at program startup or in
+            documentation (online or textual) provided with the package.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               Redistributions of source code must retain the copyright
+               notice, this list of conditions and the following disclaimer.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               Redistributions in binary form must reproduce the
+               above copyright notice, this list of conditions and
+               the following disclaimer in the documentation and/or
+               other materials provided with the distribution.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               All advertising materials mentioning features or use of this
+               software must display the following acknowledgement:&lt;br /&gt;
+
+               &amp;quot;This product includes cryptographic software
+               written by Eric Young (eay@cryptsoft.com)&amp;quot;&lt;br /&gt;
+
+               The word &amp;apos;cryptographic&amp;apos; can be left out if the rouines from
+               the library being used are not cryptographic related :-).
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               If you include any Windows specific code (or a derivative
+               thereof) from the apps directory (application code) you
+               must include an acknowledgement: &amp;quot;This product includes
+               software written by Tim Hudson (tjh@cryptsoft.com)&amp;quot;
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS
+            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+            ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE
+            LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The licence and distribution terms for any publically available
+            version or derivative of this code cannot be changed. i.e.
+            this code cannot simply be copied and put under another
+            distribution licence [including the GNU Public Licence.]
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:SSLeay-standalone&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SSLeay License - standalone&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;0ce00e03cc63e3a218562978c24d1244&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is the second license in the OpenSSL two-license stack as a standalone option.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Original SSLeay License\n -----------------------\n\n  Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\n  All rights reserved.\n \n  This package is an SSL implementation written\n  by Eric Young (eay@cryptsoft.com).\n  The implementation was written so as to conform with Netscapes SSL.\n \n  This library is free for commercial and non-commercial use as long as\n  the following conditions are aheared to.  The following conditions\n  apply to all code found in this distribution, be it the RC4, RSA,\n  lhash, DES, etc., code; not just the SSL code.  The SSL documentation\n  included with this distribution is covered by the same copyright terms\n  except that the holder is Tim Hudson (tjh@cryptsoft.com).\n \n  Copyright remains Eric Young&#39;s, and as such any Copyright notices in\n  the code are not to be removed.\n  If this package is used in a product, Eric Young should be given attribution\n  as the author of the parts of the library used.\n  This can be in the form of a textual message at program startup or\n  in documentation (online or textual) provided with the package.\n \n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n  1. Redistributions of source code must retain the copyright\n     notice, this list of conditions and the following disclaimer.\n  2. Redistributions in binary form must reproduce the above copyright\n     notice, this list of conditions and the following disclaimer in the\n     documentation and/or other materials provided with the distribution.\n  3. All advertising materials mentioning features or use of this software\n     must display the following acknowledgement:\n     \&quot;This product includes cryptographic software written by\n      Eric Young (eay@cryptsoft.com)\&quot;\n     The word &#39;cryptographic&#39; can be left out if the rouines from the library\n     being used are not cryptographic related :-).\n  4. If you include any Windows specific code (or a derivative thereof) from\n     the apps directory (application code) you must include an acknowledgement:\n     \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n \n  THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\n  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n  ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n  SUCH DAMAGE.\n \n  The licence and distribution terms for any publically available version or\n  derivative of this code cannot be changed.  i.e. this code cannot simply be\n  copied and put under another distribution licence\n  [including the GNU Public Licence.]\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;\n               Original SSLeay License\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n               Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)&lt;br /&gt;\n\n               All rights reserved.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            This package is an SSL implementation written by\n            Eric Young (eay@cryptsoft.com). The implementation\n            was written so as to conform with Netscapes SSL.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This library is free for commercial and non-commercial use as long\n            as the following conditions are aheared to. The following conditions\n            apply to all code found in this distribution, be it the RC4, RSA,\n            lhash, DES, etc., code; not just the SSL code. The SSL documentation\n            included with this distribution is covered by the same copyright\n            terms except that the holder is Tim Hudson (tjh@cryptsoft.com).\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Copyright remains Eric Young&amp;apos;s, and as such any Copyright\n            notices in the code are not to be removed. If this package\n            is used in a product, Eric Young should be given attribution\n            as the author of the parts of the library used. This can be\n            in the form of a textual message at program startup or in\n            documentation (online or textual) provided with the package.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               Redistributions of source code must retain the copyright\n               notice, this list of conditions and the following disclaimer.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               Redistributions in binary form must reproduce the\n               above copyright notice, this list of conditions and\n               the following disclaimer in the documentation and/or\n               other materials provided with the distribution.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               All advertising materials mentioning features or use of this\n               software must display the following acknowledgement:&lt;br /&gt;\n\n               &amp;quot;This product includes cryptographic software\n               written by Eric Young (eay@cryptsoft.com)&amp;quot;&lt;br /&gt;\n\n               The word &amp;apos;cryptographic&amp;apos; can be left out if the rouines from\n               the library being used are not cryptographic related :-).\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               If you include any Windows specific code (or a derivative\n               thereof) from the apps directory (application code) you\n               must include an acknowledgement: &amp;quot;This product includes\n               software written by Tim Hudson (tjh@cryptsoft.com)&amp;quot;\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS\n            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n            ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE\n            LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\n            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;\n            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The licence and distribution terms for any publically available\n            version or derivative of this code cannot be changed. i.e.\n            this code cannot simply be copied and put under another\n            distribution licence [including the GNU Public Licence.]\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:59Z&quot;,
+                &quot;url&quot;: &quot;https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is the second license in the OpenSSL two-license stack as a standalone option.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:SSLeay-standalone&quot;,
+        &quot;licenseText&quot;: &quot;Original SSLeay License\n -----------------------\n\n  Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\n  All rights reserved.\n \n  This package is an SSL implementation written\n  by Eric Young (eay@cryptsoft.com).\n  The implementation was written so as to conform with Netscapes SSL.\n \n  This library is free for commercial and non-commercial use as long as\n  the following conditions are aheared to.  The following conditions\n  apply to all code found in this distribution, be it the RC4, RSA,\n  lhash, DES, etc., code; not just the SSL code.  The SSL documentation\n  included with this distribution is covered by the same copyright terms\n  except that the holder is Tim Hudson (tjh@cryptsoft.com).\n \n  Copyright remains Eric Young&#39;s, and as such any Copyright notices in\n  the code are not to be removed.\n  If this package is used in a product, Eric Young should be given attribution\n  as the author of the parts of the library used.\n  This can be in the form of a textual message at program startup or\n  in documentation (online or textual) provided with the package.\n \n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n  1. Redistributions of source code must retain the copyright\n     notice, this list of conditions and the following disclaimer.\n  2. Redistributions in binary form must reproduce the above copyright\n     notice, this list of conditions and the following disclaimer in the\n     documentation and/or other materials provided with the distribution.\n  3. All advertising materials mentioning features or use of this software\n     must display the following acknowledgement:\n     \&quot;This product includes cryptographic software written by\n      Eric Young (eay@cryptsoft.com)\&quot;\n     The word &#39;cryptographic&#39; can be left out if the rouines from the library\n     being used are not cryptographic related :-).\n  4. If you include any Windows specific code (or a derivative thereof) from\n     the apps directory (application code) you must include an acknowledgement:\n     \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n \n  THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\n  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n  ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n  SUCH DAMAGE.\n \n  The licence and distribution terms for any publically available version or\n  derivative of this code cannot be changed.  i.e. this code cannot simply be\n  copied and put under another distribution licence\n  [including the GNU Public Licence.]\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;\n               Original SSLeay License\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n               Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)&lt;br /&gt;\n\n               All rights reserved.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            This package is an SSL implementation written by\n            Eric Young (eay@cryptsoft.com). The implementation\n            was written so as to conform with Netscapes SSL.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This library is free for commercial and non-commercial use as long\n            as the following conditions are aheared to. The following conditions\n            apply to all code found in this distribution, be it the RC4, RSA,\n            lhash, DES, etc., code; not just the SSL code. The SSL documentation\n            included with this distribution is covered by the same copyright\n            terms except that the holder is Tim Hudson (tjh@cryptsoft.com).\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Copyright remains Eric Young&amp;apos;s, and as such any Copyright\n            notices in the code are not to be removed. If this package\n            is used in a product, Eric Young should be given attribution\n            as the author of the parts of the library used. This can be\n            in the form of a textual message at program startup or in\n            documentation (online or textual) provided with the package.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               Redistributions of source code must retain the copyright\n               notice, this list of conditions and the following disclaimer.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               Redistributions in binary form must reproduce the\n               above copyright notice, this list of conditions and\n               the following disclaimer in the documentation and/or\n               other materials provided with the distribution.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               All advertising materials mentioning features or use of this\n               software must display the following acknowledgement:&lt;br /&gt;\n\n               &amp;quot;This product includes cryptographic software\n               written by Eric Young (eay@cryptsoft.com)&amp;quot;&lt;br /&gt;\n\n               The word &amp;apos;cryptographic&amp;apos; can be left out if the rouines from\n               the library being used are not cryptographic related :-).\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               If you include any Windows specific code (or a derivative\n               thereof) from the apps directory (application code) you\n               must include an acknowledgement: &amp;quot;This product includes\n               software written by Tim Hudson (tjh@cryptsoft.com)&amp;quot;\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS\n            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n            ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE\n            LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\n            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;\n            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The licence and distribution terms for any publically available\n            version or derivative of this code cannot be changed. i.e.\n            this code cannot simply be copied and put under another\n            distribution licence [including the GNU Public Licence.]\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;SSLeay License - standalone&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.tq-group.com/filedownloads/files/software-license-conditions/OriginalSSLeay/OriginalSSLeay.pdf&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Original SSLeay License\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)  All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThis package is an SSL implementation written by Eric Young (eay@cryptsoft.com). The implementation was written so as to conform with Netscapes SSL.\n\nThis library is free for commercial and non-commercial use as long as the following conditions are aheared to. The following conditions apply to all code found in this distribution, be it the RC4, RSA, lhash, DES, etc., code; not just the SSL code. The SSL documentation included with this distribution is covered by the same copyright terms except that the holder is Tim Hudson (tjh@cryptsoft.com).\n\nCopyright remains Eric Young&#39;s, and as such any Copyright notices in the code are not to be removed. If this package is used in a product, Eric Young should be given attribution as the author of the parts of the library used. This can be in the form of a textual message at program startup or in documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All advertising materials mentioning features or use of this software must display the following acknowledgement:\n\n   \&quot;This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\&quot;\n\n   The word &#39;cryptographic&#39; can be left out if the rouines from the library being used are not cryptographic related :-).\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If you include any Windows specific code (or a derivative thereof) from the apps directory (application code) you must include an acknowledgement: \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or derivative of this code cannot be changed. i.e. this code cannot simply be copied and put under another distribution licence [including the GNU Public Licence.]\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/0d152f708d75e9c071985ef3348e66c1">FedoraEntry:0d152f708d75e9c071985ef3348e66c1</a> for <a href="/?license=Fedora:SSLeay-standalone"><span class="licensename"><span class="namespace">Fedora:</span>SSLeay-standalone</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>SSLeay-standalone</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SSLeay-standalone</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:0d152f708d75e9c071985ef3348e66c1">[<a href="/fact/FedoraEntry/0d152f708d75e9c071985ef3348e66c1">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:SSLeay-standalone&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SSLeay-standalone&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;0d152f708d75e9c071985ef3348e66c1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;SSLeay-standalone&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:SSLeay-standalone&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/46ae7a3af1fe9f413a1a5f13a8878814">ScancodeData:46ae7a3af1fe9f413a1a5f13a8878814</a> for <a href="/?license=scancode:ssleay"><span class="licensename"><span class="namespace">scancode:</span>ssleay</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ssleay</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Original SSLeay License</span></li><li><span class="licensename">Original SSLeay License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:46ae7a3af1fe9f413a1a5f13a8878814">[<a href="/fact/ScancodeData/46ae7a3af1fe9f413a1a5f13a8878814">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openssl.org/source/license.html" target="_blank">http://www.openssl.org/source/license.html</a></li></ul><h3>Other Statements</h3><ul><li>http://www.openssl.org/source/license.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This package is an SSL implementation written by Eric Young (eay@cryptsoft.com).
+The implementation was written so as to conform with Netscapes SSL.
+
+This library is free for commercial and non-commercial use as long as
+the following conditions are aheared to.  The following conditions
+apply to all code found in this distribution, be it the RC4, RSA,
+lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+included with this distribution is covered by the same copyright terms
+except that the holder is Tim Hudson (tjh@cryptsoft.com).
+
+Copyright remains Eric Young&#39;s, and as such any Copyright notices in
+the code are not to be removed.
+If this package is used in a product, Eric Young should be given attribution
+as the author of the parts of the library used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   &quot;This product includes cryptographic software written by
+    Eric Young (eay@cryptsoft.com)&quot;
+   The word &#39;cryptographic&#39; can be left out if the rouines from the library
+   being used are not cryptographic related :-).
+
+THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+
+The licence and distribution terms for any publically available version or
+derivative of this code cannot be changed.  i.e. this code cannot simply be
+copied and put under another distribution licence
+[including the GNU Public Licence.]</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ssleay&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Original SSLeay License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Original SSLeay License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;46ae7a3af1fe9f413a1a5f13a8878814&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.openssl.org/source/license.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openssl.org/source/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This package is an SSL implementation written by Eric Young (eay@cryptsoft.com).\nThe implementation was written so as to conform with Netscapes SSL.\n\nThis library is free for commercial and non-commercial use as long as\nthe following conditions are aheared to.  The following conditions\napply to all code found in this distribution, be it the RC4, RSA,\nlhash, DES, etc., code; not just the SSL code.  The SSL documentation\nincluded with this distribution is covered by the same copyright terms\nexcept that the holder is Tim Hudson (tjh@cryptsoft.com).\n\nCopyright remains Eric Young&#39;s, and as such any Copyright notices in\nthe code are not to be removed.\nIf this package is used in a product, Eric Young should be given attribution\nas the author of the parts of the library used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   \&quot;This product includes cryptographic software written by\n    Eric Young (eay@cryptsoft.com)\&quot;\n   The word &#39;cryptographic&#39; can be left out if the rouines from the library\n   being used are not cryptographic related :-).\n\nTHIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence\n[including the GNU Public Licence.]&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.openssl.org/source/license.html&quot;,
+        &quot;_key&quot;: &quot;ssleay&quot;,
+        &quot;_name&quot;: &quot;Original SSLeay License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;OpenSSL&quot;,
+        &quot;_shortName&quot;: &quot;Original SSLeay License&quot;,
+        &quot;_spdxId&quot;: &quot;LicenseRef-scancode-ssleay&quot;,
+        &quot;_text&quot;: &quot;This package is an SSL implementation written by Eric Young (eay@cryptsoft.com).\nThe implementation was written so as to conform with Netscapes SSL.\n\nThis library is free for commercial and non-commercial use as long as\nthe following conditions are aheared to.  The following conditions\napply to all code found in this distribution, be it the RC4, RSA,\nlhash, DES, etc., code; not just the SSL code.  The SSL documentation\nincluded with this distribution is covered by the same copyright terms\nexcept that the holder is Tim Hudson (tjh@cryptsoft.com).\n\nCopyright remains Eric Young&#39;s, and as such any Copyright notices in\nthe code are not to be removed.\nIf this package is used in a product, Eric Young should be given attribution\nas the author of the parts of the library used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   \&quot;This product includes cryptographic software written by\n    Eric Young (eay@cryptsoft.com)\&quot;\n   The word &#39;cryptographic&#39; can be left out if the rouines from the library\n   being used are not cryptographic related :-).\n\nTHIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence\n[including the GNU Public Licence.]&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.openssl.org/source/license.html&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/88b925d1aaa6fabaf07e0f330815d4c0">OrtLicenseCategorization:88b925d1aaa6fabaf07e0f330815d4c0</a> for <a href="/?license=SPDX:SSLeay-standalone"><span class="licensename"><span class="namespace">SPDX:</span>SSLeay-standalone</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>SSLeay-standalone</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b925d1aaa6fabaf07e0f330815d4c0">[<a href="/fact/OrtLicenseCategorization/88b925d1aaa6fabaf07e0f330815d4c0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b925d1aaa6fabaf07e0f330815d4c0">[<a href="/fact/OrtLicenseCategorization/88b925d1aaa6fabaf07e0f330815d4c0">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:SSLeay-standalone&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;88b925d1aaa6fabaf07e0f330815d4c0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:SSLeay-standalone&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/d0416fc552dbb2b2777f0cb5a3ed98fa">MetaeffektLicense:d0416fc552dbb2b2777f0cb5a3ed98fa</a> for <a href="/?license=metaeffekt:Original SSLeay License"><span class="licensename"><span class="namespace">metaeffekt:</span>Original SSLeay License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Original SSLeay License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SSLeay-standalone</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Original SSLeay License</span></li><li><span class="licensename">SSLeay License</span></li><li><span class="licensename">SSLeay License - standalone</span></li><li><span class="licensename">SSLeay-standalone</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ssleay-windows</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Original SSLeay License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SSLeay-standalone&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SSLeay License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Original SSLeay License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SSLeay-standalone&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SSLeay License - standalone&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ssleay-windows&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;d0416fc552dbb2b2777f0cb5a3ed98fa&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Original SSLeay License&quot;,
+            &quot;SSLeay-standalone&quot;,
+            &quot;SSLeay License - standalone&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Original SSLeay License&quot;,
+        &quot;_category&quot;: &quot;SSLeay License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ssleay-windows&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:SSLeay-standalone&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/4bc01864b9ec122b0547f6b00d39052f">MetaeffektLicense:4bc01864b9ec122b0547f6b00d39052f</a> for <a href="/?license=metaeffekt:SSLeay"><span class="licensename"><span class="namespace">metaeffekt:</span>SSLeay</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>SSLeay</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>SSLeay License</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ssleay</span></li><li><span class="licensename">SSLeay License</span></li><li><span class="licensename">SSLeay License</span></li><li><span class="licensename">SSLeay license</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:4bc01864b9ec122b0547f6b00d39052f">[<a href="/fact/MetaeffektLicense/4bc01864b9ec122b0547f6b00d39052f">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:SSLeay&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:SSLeay License&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SSLeay License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SSLeay License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SSLeay license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ssleay&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;4bc01864b9ec122b0547f6b00d39052f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;SSLeay License&quot;,
+            &quot;SSLeay license&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:SSLeay License&quot;,
+        &quot;_category&quot;: &quot;SSLeay License&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ssleay&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:SSLeay&quot;,
+        &quot;_spdxIdentifier&quot;: null
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HitachiOpenLicense">HitachiOpenLicense</a>: <a href="/fact/HitachiOpenLicense/bba8a1605ac7dcc2371e16b0fe3c0502">HitachiOpenLicense:bba8a1605ac7dcc2371e16b0fe3c0502</a> for <a href="/?license=hitachi:Original SSLeay License"><span class="licensename"><span class="namespace">hitachi:</span>Original SSLeay License</span></a></h3><h4>Permissions:</h4><ul><li><h5>Actions:</h5><ul><li><b>Use the obtained source code without modification</b>: <br><span>Use the fetched code as it is.</span></li><li><b>Modify the obtained source code.</b>: <br><span></span></li><li><b>Using Modified Source Code</b>: <br><span></span></li><li><b>Use the retrieved binaries</b>: <br><span>Use the fetched binary as it is.</span></li><li><b>Use binaries generated from modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><span>None</span></li><li><h5>Actions:</h5><ul><li><b>Distribute the obtained source code without modification</b>: <br><span>Redistribute the code as it was obtained</span></li><li><b>Distribution of Modified Source Code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Correctly indicate the origin of the software in question<br></li><li><b>OBLIGATION</b>: Include the copyright notice contained in the software<br></li><li><b>OBLIGATION</b>: Include a copyright notice, list of terms and conditions, and disclaimer included in the license<br></li></ul></li><li><h5>Actions:</h5><ul><li><b>Distribute the fetched binaries</b>: <br><span>Redistribute the fetched binaries as they are</span></li><li><b>Distribute the generated binaries from modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Correctly indicate the origin of the software in question<br></li><li><b>OBLIGATION</b>: Include the copyright notice contained in the software<br></li><li><b>OBLIGATION</b>: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license<br></li></ul></li><li><h5>Description:</h5><span>Acknowledgements include &quot;This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).&quot; &quot;If you&#39;re talking about routines that aren&#39;t cryptographically related, &#39;cryptographic&#39; You can leave out the word</span><h5>Actions:</h5><ul><li><b>Create an advertising medium that describes the features and use of the software</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>OBLIGATION</b>: Acknowledgements<br></li><li><h5>Description:</h5><span>Acknowledgements include &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;</span><h5>Actions:</h5><ul><li><b>Include in your own work the code specific to the Windows environment in the apps directory (application code) or its derivatives.</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>OBLIGATION</b>: Acknowledgements<br></li></ul><h4>Notices:</h4><ul><li><h5>Description:</h5><span>There is no guarantee.</span><h5>Content:</h5><span>the software is provided by the copyright holder &quot;as-is&quot; and without any warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.</span></li><li><h5>Content:</h5><span>Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated.</span></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">hitachi:</span>Original SSLeay License</span></li></ul></li></ul></div><div></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Original SSLeay License
+ -----------------------
+
+/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+ * All rights reserved.
+ *
+ * This package is an SSL implementation written
+ * by Eric Young (eay@cryptsoft.com).
+ * The implementation was written so as to conform with Netscapes SSL.
+ *
+ * This library is free for commercial and non-commercial use as long as
+ * the following conditions are aheared to.  The following conditions
+ * apply to all code found in this distribution, be it the RC4, RSA,
+ * lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+ * included with this distribution is covered by the same copyright terms
+ * except that the holder is Tim Hudson (tjh@cryptsoft.com).
+ *
+ * Copyright remains Eric Young&#39;s, and as such any Copyright notices in
+ * the code are not to be removed.
+ * If this package is used in a product, Eric Young should be given attribution
+ * as the author of the parts of the library used.
+ * This can be in the form of a textual message at program startup or
+ * in documentation (online or textual) provided with the package.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. All advertising materials mentioning features or use of this software
+ *    must display the following acknowledgement:
+ *    &quot;This product includes cryptographic software written by
+ *     Eric Young (eay@cryptsoft.com)&quot;
+ *    The word &#39;cryptographic&#39; can be left out if the rouines from the library
+ *    being used are not cryptographic related :-).
+ * 4. If you include any Windows specific code (or a derivative thereof) from
+ *    the apps directory (application code) you must include an acknowledgement:
+ *    &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;
+ *
+ * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ * The licence and distribution terms for any publically available version or
+ * derivative of this code cannot be changed.  i.e. this code cannot simply be
+ * copied and put under another distribution licence
+ * [including the GNU Public Licence.]
+ */</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;hitachi:Original SSLeay License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HitachiOpenLicense&quot;,
+        &quot;bba8a1605ac7dcc2371e16b0fe3c0502&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;Original SSLeay License\n -----------------------\n\n/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\n * All rights reserved.\n *\n * This package is an SSL implementation written\n * by Eric Young (eay@cryptsoft.com).\n * The implementation was written so as to conform with Netscapes SSL.\n *\n * This library is free for commercial and non-commercial use as long as\n * the following conditions are aheared to.  The following conditions\n * apply to all code found in this distribution, be it the RC4, RSA,\n * lhash, DES, etc., code; not just the SSL code.  The SSL documentation\n * included with this distribution is covered by the same copyright terms\n * except that the holder is Tim Hudson (tjh@cryptsoft.com).\n *\n * Copyright remains Eric Young&#39;s, and as such any Copyright notices in\n * the code are not to be removed.\n * If this package is used in a product, Eric Young should be given attribution\n * as the author of the parts of the library used.\n * This can be in the form of a textual message at program startup or\n * in documentation (online or textual) provided with the package.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n * 3. All advertising materials mentioning features or use of this software\n *    must display the following acknowledgement:\n *    \&quot;This product includes cryptographic software written by\n *     Eric Young (eay@cryptsoft.com)\&quot;\n *    The word &#39;cryptographic&#39; can be left out if the rouines from the library\n *    being used are not cryptographic related :-).\n * 4. If you include any Windows specific code (or a derivative thereof) from\n *    the apps directory (application code) you must include an acknowledgement:\n *    \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n *\n * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.\n *\n * The licence and distribution terms for any publically available version or\n * derivative of this code cannot be changed.  i.e. this code cannot simply be\n * copied and put under another distribution licence\n * [including the GNU Public Licence.]\n */&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;content&quot;: &quot;Original SSLeay License\n -----------------------\n\n/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\n * All rights reserved.\n *\n * This package is an SSL implementation written\n * by Eric Young (eay@cryptsoft.com).\n * The implementation was written so as to conform with Netscapes SSL.\n *\n * This library is free for commercial and non-commercial use as long as\n * the following conditions are aheared to.  The following conditions\n * apply to all code found in this distribution, be it the RC4, RSA,\n * lhash, DES, etc., code; not just the SSL code.  The SSL documentation\n * included with this distribution is covered by the same copyright terms\n * except that the holder is Tim Hudson (tjh@cryptsoft.com).\n *\n * Copyright remains Eric Young&#39;s, and as such any Copyright notices in\n * the code are not to be removed.\n * If this package is used in a product, Eric Young should be given attribution\n * as the author of the parts of the library used.\n * This can be in the form of a textual message at program startup or\n * in documentation (online or textual) provided with the package.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions\n * are met:\n * 1. Redistributions of source code must retain the copyright\n *    notice, this list of conditions and the following disclaimer.\n * 2. Redistributions in binary form must reproduce the above copyright\n *    notice, this list of conditions and the following disclaimer in the\n *    documentation and/or other materials provided with the distribution.\n * 3. All advertising materials mentioning features or use of this software\n *    must display the following acknowledgement:\n *    \&quot;This product includes cryptographic software written by\n *     Eric Young (eay@cryptsoft.com)\&quot;\n *    The word &#39;cryptographic&#39; can be left out if the rouines from the library\n *    being used are not cryptographic related :-).\n * 4. If you include any Windows specific code (or a derivative thereof) from\n *    the apps directory (application code) you must include an acknowledgement:\n *    \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n *\n * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE.\n *\n * The licence and distribution terms for any publically available version or\n * derivative of this code cannot be changed.  i.e. this code cannot simply be\n * copied and put under another distribution licence\n * [including the GNU Public Licence.]\n */&quot;,
+        &quot;name&quot;: &quot;hitachi:Original SSLeay License&quot;,
+        &quot;notices&quot;: [
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;the software is provided by the copyright holder \&quot;as-is\&quot; and without any warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.&quot;,
+                    &quot;description&quot;: &quot;There is no guarantee.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            },
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            }
+        ],
+        &quot;permissions&quot;: [
+            {
+                &quot;_str&quot;: &quot;Actions:\n- Ol Use the obtained source code without modification (Use the fetched code as it is.)\n- Ol Modify the obtained source code.\n- Ol Using Modified Source Code\n- Ol Use the retrieved binaries (Use the fetched binary as it is.)\n- Ol Use binaries generated from modified source code\n\nConditions: None\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched binary as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the retrieved binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use binaries generated from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: null
+            },
+            {
+                &quot;_str&quot;: &quot;Actions:\n- Ol Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Ol Distribution of Modified Source Code\n\nConditions:\nAND\n  Ol OBLIGATION: Correctly indicate the origin of the software in question\n  Ol OBLIGATION: Include the copyright notice contained in the software\n  Ol OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;name&quot;: &quot;Distribute the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the copyright notice contained in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a copyright notice, list of terms and conditions, and disclaimer included in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                }
+            },
+            {
+                &quot;_str&quot;: &quot;Actions:\n- Ol Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Ol Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  Ol OBLIGATION: Correctly indicate the origin of the software in question\n  Ol OBLIGATION: Include the copyright notice contained in the software\n  Ol OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the fetched binaries as they are&quot;,
+                            &quot;name&quot;: &quot;Distribute the fetched binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include the copyright notice contained in the software&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        }
+                    ]
+                }
+            },
+            {
+                &quot;_str&quot;: &quot;Description: Acknowledgements include \&quot;This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).\&quot; \&quot;If you&#39;re talking about routines that aren&#39;t cryptographically related, &#39;cryptographic&#39; You can leave out the word\nActions:\n- Ol Create an advertising medium that describes the features and use of the software\n\nConditions:\nOl OBLIGATION: Acknowledgements\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Create an advertising medium that describes the features and use of the software&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;contents&quot;: {
+                        &quot;name&quot;: &quot;Acknowledgements&quot;,
+                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                    },
+                    &quot;tag&quot;: &quot;Ol&quot;
+                },
+                &quot;description&quot;: &quot;Acknowledgements include \&quot;This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).\&quot; \&quot;If you&#39;re talking about routines that aren&#39;t cryptographically related, &#39;cryptographic&#39; You can leave out the word&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: Acknowledgements include \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\nActions:\n- Ol Include in your own work the code specific to the Windows environment in the apps directory (application code) or its derivatives.\n\nConditions:\nOl OBLIGATION: Acknowledgements\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Include in your own work the code specific to the Windows environment in the apps directory (application code) or its derivatives.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;contents&quot;: {
+                        &quot;name&quot;: &quot;Acknowledgements&quot;,
+                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                    },
+                    &quot;tag&quot;: &quot;Ol&quot;
+                },
+                &quot;description&quot;: &quot;Acknowledgements include \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;HitachiOpenLicense&quot;
+}</pre></details></li></ul></body></html>

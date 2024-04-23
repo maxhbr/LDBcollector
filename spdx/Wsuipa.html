@@ -1,0 +1,737 @@
+<html><head><title>ldbcollector: spdx:Wsuipa</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Wsuipa</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Wsuipa</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Wsuipa</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Wsuipa</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Wsuipa</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Wsuipa</span></li><li><span class="licensename"><span class="namespace">scancode:</span>wsuipa</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Wsuipa</span></li><li><span class="licensename">Wsuipa License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Wsuipa License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:331715fd9493b1cdc3a08214eeba9f11">[<a href="/fact/BlueOakCouncil/331715fd9493b1cdc3a08214eeba9f11">BlueOakCouncil</a>]</span><span title="ScancodeData:3c873eeee464aeb0932b4923386e3416">[<a href="/fact/ScancodeData/3c873eeee464aeb0932b4923386e3416">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:31027887e1d57fa903d1ded6d34589f8">[<a href="/fact/SPDXLicense/31027887e1d57fa903d1ded6d34589f8">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:67885f6f727e6668ec737b5ca8826b6d">[<a href="/fact/FedoraEntry/67885f6f727e6668ec737b5ca8826b6d">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:331715fd9493b1cdc3a08214eeba9f11">[<a href="/fact/BlueOakCouncil/331715fd9493b1cdc3a08214eeba9f11">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f7ac1c073201445e80891972bd6a447d">[<a href="/fact/OrtLicenseCategorization/f7ac1c073201445e80891972bd6a447d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f7ac1c073201445e80891972bd6a447d">[<a href="/fact/OrtLicenseCategorization/f7ac1c073201445e80891972bd6a447d">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license was found on the &quot;wsuipa&quot; component of texlive
+2010. It is Free, but GPL-incompatible.
+<span class="provided-by">(provided by: <span title="ScancodeData:3c873eeee464aeb0932b4923386e3416">[<a href="/fact/ScancodeData/3c873eeee464aeb0932b4923386e3416">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Wsuipa" target="_blank">https://fedoraproject.org/wiki/Licensing/Wsuipa</a></li><li><a href="https://spdx.org/licenses/Wsuipa.html" target="_blank">https://spdx.org/licenses/Wsuipa.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/Wsuipa</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.
+
+Unlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed.
+
+The copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to
+         this file were added to all source files.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Unlimited copying and redistribution of each of the files is permitted as long as the file is not
+         modified. Modifications, and redistribution of modified versions, are also permitted, but only if the
+         resulting file is renamed.&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;The copyright holder is Washington State University. The original author of the fonts is Janene Winter.
+         The primary contact (as of 2008) is Dean Guenther.&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean
+Guenther and pointers to this file were added to all source files.
+
+Unlimited copying and redistribution of each of the files is permitted as long
+as the file is not modified. Modifications, and redistribution of modified
+versions, are also permitted, but only if the resulting file is renamed.
+
+The copyright holder is Washington State University. The original author of the
+fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.</pre></details></li><li><details><summary>Text:</summary><pre>This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.
+
+Unlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed. The copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/31027887e1d57fa903d1ded6d34589f8">SPDXLicense:31027887e1d57fa903d1ded6d34589f8</a> for <a href="/?license=spdx:Wsuipa"><span class="licensename"><span class="namespace">spdx:</span>Wsuipa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Wsuipa</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:31027887e1d57fa903d1ded6d34589f8">[<a href="/fact/SPDXLicense/31027887e1d57fa903d1ded6d34589f8">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Wsuipa" target="_blank">https://fedoraproject.org/wiki/Licensing/Wsuipa</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.
+
+Unlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed.
+
+The copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to
+         this file were added to all source files.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Unlimited copying and redistribution of each of the files is permitted as long as the file is not
+         modified. Modifications, and redistribution of modified versions, are also permitted, but only if the
+         resulting file is renamed.&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;The copyright holder is Washington State University. The original author of the fonts is Janene Winter.
+         The primary contact (as of 2008) is Dean Guenther.&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Wsuipa&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Wsuipa License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;31027887e1d57fa903d1ded6d34589f8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to\n         this file were added to all source files.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Unlimited copying and redistribution of each of the files is permitted as long as the file is not\n         modified. Modifications, and redistribution of modified versions, are also permitted, but only if the\n         resulting file is renamed.&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;The copyright holder is Washington State University. The original author of the fonts is Janene Winter.\n         The primary contact (as of 2008) is Dean Guenther.&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:06:33Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Wsuipa&quot;,
+        &quot;licenseText&quot;: &quot;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to\n         this file were added to all source files.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Unlimited copying and redistribution of each of the files is permitted as long as the file is not\n         modified. Modifications, and redistribution of modified versions, are also permitted, but only if the\n         resulting file is renamed.&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;The copyright holder is Washington State University. The original author of the fonts is Janene Winter.\n         The primary contact (as of 2008) is Dean Guenther.&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Wsuipa License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.\n\n&lt;&lt;endOptional&gt;&gt;\n\nUnlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed.\n\n&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;The copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/67885f6f727e6668ec737b5ca8826b6d">FedoraEntry:67885f6f727e6668ec737b5ca8826b6d</a> for <a href="/?license=Fedora:Wsuipa"><span class="licensename"><span class="namespace">Fedora:</span>Wsuipa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Wsuipa</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Wsuipa</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa</span></li><li><span class="licensename">Wsuipa License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:67885f6f727e6668ec737b5ca8826b6d">[<a href="/fact/FedoraEntry/67885f6f727e6668ec737b5ca8826b6d">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Wsuipa&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Wsuipa&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Wsuipa License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Wsuipa&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;67885f6f727e6668ec737b5ca8826b6d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Wsuipa&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Wsuipa License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Wsuipa&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Wsuipa&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/331715fd9493b1cdc3a08214eeba9f11">BlueOakCouncil:331715fd9493b1cdc3a08214eeba9f11</a> for <a href="/?license=BlueOak:Wsuipa"><span class="licensename"><span class="namespace">BlueOak:</span>Wsuipa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Wsuipa</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:331715fd9493b1cdc3a08214eeba9f11">[<a href="/fact/BlueOakCouncil/331715fd9493b1cdc3a08214eeba9f11">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:331715fd9493b1cdc3a08214eeba9f11">[<a href="/fact/BlueOakCouncil/331715fd9493b1cdc3a08214eeba9f11">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Wsuipa.html" target="_blank">https://spdx.org/licenses/Wsuipa.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:Wsuipa&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Wsuipa License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;331715fd9493b1cdc3a08214eeba9f11&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Wsuipa.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;Wsuipa&quot;,
+                &quot;_name&quot;: &quot;Wsuipa License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Wsuipa.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/3c873eeee464aeb0932b4923386e3416">ScancodeData:3c873eeee464aeb0932b4923386e3416</a> for <a href="/?license=scancode:wsuipa"><span class="licensename"><span class="namespace">scancode:</span>wsuipa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>wsuipa</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa License</span></li><li><span class="licensename">Wsuipa License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:3c873eeee464aeb0932b4923386e3416">[<a href="/fact/ScancodeData/3c873eeee464aeb0932b4923386e3416">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license was found on the &quot;wsuipa&quot; component of texlive
+2010. It is Free, but GPL-incompatible.
+<span class="provided-by">(provided by: <span title="ScancodeData:3c873eeee464aeb0932b4923386e3416">[<a href="/fact/ScancodeData/3c873eeee464aeb0932b4923386e3416">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/Wsuipa</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean
+Guenther and pointers to this file were added to all source files.
+
+Unlimited copying and redistribution of each of the files is permitted as long
+as the file is not modified. Modifications, and redistribution of modified
+versions, are also permitted, but only if the resulting file is renamed.
+
+The copyright holder is Washington State University. The original author of the
+fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:wsuipa&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Wsuipa License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Wsuipa License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;3c873eeee464aeb0932b4923386e3416&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per Fedora, this license was found on the \&quot;wsuipa\&quot; component of texlive\n2010. It is Free, but GPL-incompatible.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean\nGuenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long\nas the file is not modified. Modifications, and redistribution of modified\nversions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the\nfonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;,
+        &quot;_key&quot;: &quot;wsuipa&quot;,
+        &quot;_name&quot;: &quot;Wsuipa License&quot;,
+        &quot;_notes&quot;: &quot;Per Fedora, this license was found on the \&quot;wsuipa\&quot; component of texlive\n2010. It is Free, but GPL-incompatible.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Washington State University&quot;,
+        &quot;_shortName&quot;: &quot;Wsuipa License&quot;,
+        &quot;_spdxId&quot;: &quot;Wsuipa&quot;,
+        &quot;_text&quot;: &quot;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean\nGuenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long\nas the file is not modified. Modifications, and redistribution of modified\nversions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the\nfonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/d7bb0a6e618867b34c5284426aec7c44">Fossology:d7bb0a6e618867b34c5284426aec7c44</a> for <a href="/?license=fossology:Wsuipa"><span class="licensename"><span class="namespace">fossology:</span>Wsuipa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Wsuipa</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Wsuipa" target="_blank">https://fedoraproject.org/wiki/Licensing/Wsuipa</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.
+
+Unlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed. The copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Wsuipa&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Wsuipa License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;d7bb0a6e618867b34c5284426aec7c44&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed. The copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Wsuipa License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Wsuipa&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean Guenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long as the file is not modified. Modifications, and redistribution of modified versions, are also permitted, but only if the resulting file is renamed. The copyright holder is Washington State University. The original author of the fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Wsuipa&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/f7ac1c073201445e80891972bd6a447d">OrtLicenseCategorization:f7ac1c073201445e80891972bd6a447d</a> for <a href="/?license=SPDX:Wsuipa"><span class="licensename"><span class="namespace">SPDX:</span>Wsuipa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Wsuipa</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f7ac1c073201445e80891972bd6a447d">[<a href="/fact/OrtLicenseCategorization/f7ac1c073201445e80891972bd6a447d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f7ac1c073201445e80891972bd6a447d">[<a href="/fact/OrtLicenseCategorization/f7ac1c073201445e80891972bd6a447d">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Wsuipa&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f7ac1c073201445e80891972bd6a447d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Wsuipa&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/c8bb51610686e604a7bb7058fe24b771">CavilLicenseChange:c8bb51610686e604a7bb7058fe24b771</a> for <a href="/?license=cavil:Wsuipa"><span class="licensename"><span class="namespace">cavil:</span>Wsuipa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Wsuipa</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Wsuipa&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Wsuipa&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;c8bb51610686e604a7bb7058fe24b771&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Wsuipa&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Wsuipa&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/60dc69c751fd59b15825353aa075e88c">MetaeffektLicense:60dc69c751fd59b15825353aa075e88c</a> for <a href="/?license=metaeffekt:Wsuipa License"><span class="licensename"><span class="namespace">metaeffekt:</span>Wsuipa License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Wsuipa License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Wsuipa</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Wsuipa</span></li><li><span class="licensename"><span class="namespace">scancode:</span>wsuipa</span></li><li><span class="licensename">Wsuipa License</span></li><li><span class="licensename">WSUIPA LICENSE</span></li><li><span class="licensename">WSUIPA License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Wsuipa License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Wsuipa&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Wsuipa&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Wsuipa License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WSUIPA LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WSUIPA License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:wsuipa&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;60dc69c751fd59b15825353aa075e88c&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Wsuipa License&quot;,
+            &quot;WSUIPA LICENSE&quot;,
+            &quot;WSUIPA License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Wsuipa License&quot;,
+        &quot;_category&quot;: &quot;Wsuipa&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:wsuipa&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Wsuipa&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,427 @@
+<html><head><title>ldbcollector: spdx:CLISP-exception-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:CLISP-exception-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CLISP-exception-2.0</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">CLISP Exception</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>CLISP Exception</span></li><li><span class="licensename">CLISP exception 2.0</span></li><li><span class="licensename">CLISP Exception to GPL 2.0</span></li><li><span class="licensename">CLISP-Exception</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>CLISP-Exception</span></li><li><span class="licensename">clisp-exception-2.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>CLISP-exception-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>clisp-exception-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CLISP-exception-2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:2f33b3bad7704be49e2c84ade07af4ef">[<a href="/fact/ScancodeData/2f33b3bad7704be49e2c84ade07af4ef">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>Fossology: </b>Typically used with GPL-2.0<span class="provided-by">(provided by: <span title="Fossology:42581efa13653ff7300e7a9825f7846e">[<a href="/fact/Fossology/42581efa13653ff7300e7a9825f7846e">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT" target="_blank">http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT</a></li><li><a href="http://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">http://www.gnu.org/licenses/gpl-2.0.txt</a></li></ul><h3>Other Statements</h3><ul><li>https://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This copyright does NOT cover user programs that run in CLISP and third-party
+packages not part of CLISP, if a) They only reference external symbols in
+CLISP&#39;s public packages that define API also provided by many other Common Lisp
+implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD,
+CLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well
+run in any other Common Lisp implementation. Or b) They only reference external
+symbols in CLISP&#39;s public packages that define API also provided by many other
+Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER,
+KEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in
+third-party packages that are released with source code under a GPL compatible
+license and that run in a great number of Common Lisp implementations, i.e. if
+they rely on CLISP internals only to the extent needed for gaining some
+functionality also available in a great number of Common Lisp implementations.
+Such user programs are not covered by the term &quot;derived work&quot; used in the
+GNU GPL. Neither is their compiled code, i.e. the result of compiling them by
+use of the function COMPILE-FILE. We refer to such user programs as
+&quot;independent work&quot;.
+
+You may copy and distribute memory image files generated by the function
+SAVEINITMEM, if it was generated only from CLISP and independent work, and
+provided that you accompany them, in the sense of section 3 of the GNU GPL, with
+the source code of CLISP - precisely the same CLISP version that was used to
+build the memory image -, the source or compiled code of the user programs
+needed to rebuild the memory image (source code for all the parts that are not
+independent work, see above), and a precise description how to rebuild the
+memory image from these.
+
+Foreign non-Lisp code that is linked with CLISP or loaded into CLISP through
+dynamic linking is not exempted from this copyright. I.e. such code, when
+distributed for use with CLISP, must be distributed under the GPL.</pre></details></li><li><details><summary>Text:</summary><pre>Summary:
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation; see file GNU-GPL.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Note:
+
+This copyright does NOT cover user programs that run in CLISP and third-party packages not part of CLISP, if a) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well run in any other Common Lisp implementation. Or b) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in third-party packages that are released with source code under a GPL compatible license and that run in a great number of Common Lisp implementations, i.e. if they rely on CLISP internals only to the extent needed for gaining some functionality also available in a great number of Common Lisp implementations. Such user programs are not covered by the term &quot;&quot;&quot;&quot;derived work&quot;&quot;&quot;&quot; used in the GNU GPL. Neither is their compiled code, i.e. the result of compiling them by use of the function COMPILE-FILE. We refer to such user programs as &quot;&quot;&quot;&quot;independent work&quot;&quot;&quot;&quot;.
+
+You may copy and distribute memory image files generated by the function SAVEINITMEM, if it was generated only from CLISP and independent work, and provided that you accompany them, in the sense of section 3 of the GNU GPL, with the source code of CLISP - precisely the same CLISP version that was used to build the memory image -, the source or compiled code of the user programs needed to rebuild the memory image (source code for all the parts that are not independent work, see above), and a precise description how to rebuild the memory image from these.
+
+Foreign non-Lisp code that is linked with CLISP or loaded into CLISP through dynamic linking is not exempted from this copyright. I.e. such code, when distributed for use with CLISP, must be distributed under the GPL.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/2f33b3bad7704be49e2c84ade07af4ef">ScancodeData:2f33b3bad7704be49e2c84ade07af4ef</a> for <a href="/?license=scancode:clisp-exception-2.0"><span class="licensename"><span class="namespace">scancode:</span>clisp-exception-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>clisp-exception-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">CLISP Exception to GPL 2.0</span></li><li><span class="licensename">CLISP Exception to GPL 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:2f33b3bad7704be49e2c84ade07af4ef">[<a href="/fact/ScancodeData/2f33b3bad7704be49e2c84ade07af4ef">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT" target="_blank">http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT</a></li><li><a href="http://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">http://www.gnu.org/licenses/gpl-2.0.txt</a></li></ul><h3>Other Statements</h3><ul><li>https://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This copyright does NOT cover user programs that run in CLISP and third-party
+packages not part of CLISP, if a) They only reference external symbols in
+CLISP&#39;s public packages that define API also provided by many other Common Lisp
+implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD,
+CLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well
+run in any other Common Lisp implementation. Or b) They only reference external
+symbols in CLISP&#39;s public packages that define API also provided by many other
+Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER,
+KEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in
+third-party packages that are released with source code under a GPL compatible
+license and that run in a great number of Common Lisp implementations, i.e. if
+they rely on CLISP internals only to the extent needed for gaining some
+functionality also available in a great number of Common Lisp implementations.
+Such user programs are not covered by the term &quot;derived work&quot; used in the
+GNU GPL. Neither is their compiled code, i.e. the result of compiling them by
+use of the function COMPILE-FILE. We refer to such user programs as
+&quot;independent work&quot;.
+
+You may copy and distribute memory image files generated by the function
+SAVEINITMEM, if it was generated only from CLISP and independent work, and
+provided that you accompany them, in the sense of section 3 of the GNU GPL, with
+the source code of CLISP - precisely the same CLISP version that was used to
+build the memory image -, the source or compiled code of the user programs
+needed to rebuild the memory image (source code for all the parts that are not
+independent work, see above), and a precise description how to rebuild the
+memory image from these.
+
+Foreign non-Lisp code that is linked with CLISP or loaded into CLISP through
+dynamic linking is not exempted from this copyright. I.e. such code, when
+distributed for use with CLISP, must be distributed under the GPL.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:clisp-exception-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CLISP Exception to GPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CLISP Exception to GPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;2f33b3bad7704be49e2c84ade07af4ef&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/gpl-2.0.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This copyright does NOT cover user programs that run in CLISP and third-party\npackages not part of CLISP, if a) They only reference external symbols in\nCLISP&#39;s public packages that define API also provided by many other Common Lisp\nimplementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD,\nCLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well\nrun in any other Common Lisp implementation. Or b) They only reference external\nsymbols in CLISP&#39;s public packages that define API also provided by many other\nCommon Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER,\nKEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in\nthird-party packages that are released with source code under a GPL compatible\nlicense and that run in a great number of Common Lisp implementations, i.e. if\nthey rely on CLISP internals only to the extent needed for gaining some\nfunctionality also available in a great number of Common Lisp implementations.\nSuch user programs are not covered by the term \&quot;derived work\&quot; used in the\nGNU GPL. Neither is their compiled code, i.e. the result of compiling them by\nuse of the function COMPILE-FILE. We refer to such user programs as\n\&quot;independent work\&quot;.\n\nYou may copy and distribute memory image files generated by the function\nSAVEINITMEM, if it was generated only from CLISP and independent work, and\nprovided that you accompany them, in the sense of section 3 of the GNU GPL, with\nthe source code of CLISP - precisely the same CLISP version that was used to\nbuild the memory image -, the source or compiled code of the user programs\nneeded to rebuild the memory image (source code for all the parts that are not\nindependent work, see above), and a precise description how to rebuild the\nmemory image from these.\n\nForeign non-Lisp code that is linked with CLISP or loaded into CLISP through\ndynamic linking is not exempted from this copyright. I.e. such code, when\ndistributed for use with CLISP, must be distributed under the GPL.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT&quot;,
+        &quot;_key&quot;: &quot;clisp-exception-2.0&quot;,
+        &quot;_name&quot;: &quot;CLISP Exception to GPL 2.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.gnu.org/licenses/gpl-2.0.txt&quot;
+        ],
+        &quot;_owner&quot;: &quot;Clisp&quot;,
+        &quot;_shortName&quot;: &quot;CLISP Exception to GPL 2.0&quot;,
+        &quot;_spdxId&quot;: &quot;CLISP-exception-2.0&quot;,
+        &quot;_text&quot;: &quot;This copyright does NOT cover user programs that run in CLISP and third-party\npackages not part of CLISP, if a) They only reference external symbols in\nCLISP&#39;s public packages that define API also provided by many other Common Lisp\nimplementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD,\nCLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well\nrun in any other Common Lisp implementation. Or b) They only reference external\nsymbols in CLISP&#39;s public packages that define API also provided by many other\nCommon Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER,\nKEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in\nthird-party packages that are released with source code under a GPL compatible\nlicense and that run in a great number of Common Lisp implementations, i.e. if\nthey rely on CLISP internals only to the extent needed for gaining some\nfunctionality also available in a great number of Common Lisp implementations.\nSuch user programs are not covered by the term \&quot;derived work\&quot; used in the\nGNU GPL. Neither is their compiled code, i.e. the result of compiling them by\nuse of the function COMPILE-FILE. We refer to such user programs as\n\&quot;independent work\&quot;.\n\nYou may copy and distribute memory image files generated by the function\nSAVEINITMEM, if it was generated only from CLISP and independent work, and\nprovided that you accompany them, in the sense of section 3 of the GNU GPL, with\nthe source code of CLISP - precisely the same CLISP version that was used to\nbuild the memory image -, the source or compiled code of the user programs\nneeded to rebuild the memory image (source code for all the parts that are not\nindependent work, see above), and a precise description how to rebuild the\nmemory image from these.\n\nForeign non-Lisp code that is linked with CLISP or loaded into CLISP through\ndynamic linking is not exempted from this copyright. I.e. such code, when\ndistributed for use with CLISP, must be distributed under the GPL.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/42581efa13653ff7300e7a9825f7846e">Fossology:42581efa13653ff7300e7a9825f7846e</a> for <a href="/?license=fossology:CLISP-exception-2.0"><span class="licensename"><span class="namespace">fossology:</span>CLISP-exception-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>CLISP-exception-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CLISP exception 2.0</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>Typically used with GPL-2.0<span class="provided-by">(provided by: <span title="Fossology:42581efa13653ff7300e7a9825f7846e">[<a href="/fact/Fossology/42581efa13653ff7300e7a9825f7846e">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT" target="_blank">http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Summary:
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation; see file GNU-GPL.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Note:
+
+This copyright does NOT cover user programs that run in CLISP and third-party packages not part of CLISP, if a) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well run in any other Common Lisp implementation. Or b) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in third-party packages that are released with source code under a GPL compatible license and that run in a great number of Common Lisp implementations, i.e. if they rely on CLISP internals only to the extent needed for gaining some functionality also available in a great number of Common Lisp implementations. Such user programs are not covered by the term &quot;&quot;&quot;&quot;derived work&quot;&quot;&quot;&quot; used in the GNU GPL. Neither is their compiled code, i.e. the result of compiling them by use of the function COMPILE-FILE. We refer to such user programs as &quot;&quot;&quot;&quot;independent work&quot;&quot;&quot;&quot;.
+
+You may copy and distribute memory image files generated by the function SAVEINITMEM, if it was generated only from CLISP and independent work, and provided that you accompany them, in the sense of section 3 of the GNU GPL, with the source code of CLISP - precisely the same CLISP version that was used to build the memory image -, the source or compiled code of the user programs needed to rebuild the memory image (source code for all the parts that are not independent work, see above), and a precise description how to rebuild the memory image from these.
+
+Foreign non-Lisp code that is linked with CLISP or loaded into CLISP through dynamic linking is not exempted from this copyright. I.e. such code, when distributed for use with CLISP, must be distributed under the GPL.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:CLISP-exception-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CLISP exception 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;42581efa13653ff7300e7a9825f7846e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;Typically used with GPL-2.0&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Summary:\n\nThis program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation; see file GNU-GPL.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nNote:\n\nThis copyright does NOT cover user programs that run in CLISP and third-party packages not part of CLISP, if a) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well run in any other Common Lisp implementation. Or b) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in third-party packages that are released with source code under a GPL compatible license and that run in a great number of Common Lisp implementations, i.e. if they rely on CLISP internals only to the extent needed for gaining some functionality also available in a great number of Common Lisp implementations. Such user programs are not covered by the term \&quot;\&quot;\&quot;\&quot;derived work\&quot;\&quot;\&quot;\&quot; used in the GNU GPL. Neither is their compiled code, i.e. the result of compiling them by use of the function COMPILE-FILE. We refer to such user programs as \&quot;\&quot;\&quot;\&quot;independent work\&quot;\&quot;\&quot;\&quot;.\n\nYou may copy and distribute memory image files generated by the function SAVEINITMEM, if it was generated only from CLISP and independent work, and provided that you accompany them, in the sense of section 3 of the GNU GPL, with the source code of CLISP - precisely the same CLISP version that was used to build the memory image -, the source or compiled code of the user programs needed to rebuild the memory image (source code for all the parts that are not independent work, see above), and a precise description how to rebuild the memory image from these.\n\nForeign non-Lisp code that is linked with CLISP or loaded into CLISP through dynamic linking is not exempted from this copyright. I.e. such code, when distributed for use with CLISP, must be distributed under the GPL.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;CLISP exception 2.0&quot;,
+        &quot;_rf_notes&quot;: &quot;Typically used with GPL-2.0&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:CLISP-exception-2.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: false,
+        &quot;_rf_text&quot;: &quot;Summary:\n\nThis program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation; see file GNU-GPL.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nNote:\n\nThis copyright does NOT cover user programs that run in CLISP and third-party packages not part of CLISP, if a) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT), i.e. if they don&#39;t rely on CLISP internals and would as well run in any other Common Lisp implementation. Or b) They only reference external symbols in CLISP&#39;s public packages that define API also provided by many other Common Lisp implementations (namely the packages COMMON-LISP, COMMON-LISP-USER, KEYWORD, CLOS, GRAY, EXT) and some external, not CLISP specific, symbols in third-party packages that are released with source code under a GPL compatible license and that run in a great number of Common Lisp implementations, i.e. if they rely on CLISP internals only to the extent needed for gaining some functionality also available in a great number of Common Lisp implementations. Such user programs are not covered by the term \&quot;\&quot;\&quot;\&quot;derived work\&quot;\&quot;\&quot;\&quot; used in the GNU GPL. Neither is their compiled code, i.e. the result of compiling them by use of the function COMPILE-FILE. We refer to such user programs as \&quot;\&quot;\&quot;\&quot;independent work\&quot;\&quot;\&quot;\&quot;.\n\nYou may copy and distribute memory image files generated by the function SAVEINITMEM, if it was generated only from CLISP and independent work, and provided that you accompany them, in the sense of section 3 of the GNU GPL, with the source code of CLISP - precisely the same CLISP version that was used to build the memory image -, the source or compiled code of the user programs needed to rebuild the memory image (source code for all the parts that are not independent work, see above), and a precise description how to rebuild the memory image from these.\n\nForeign non-Lisp code that is linked with CLISP or loaded into CLISP through dynamic linking is not exempted from this copyright. I.e. such code, when distributed for use with CLISP, must be distributed under the GPL.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://sourceforge.net/p/clisp/clisp/ci/default/tree/COPYRIGHT&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/1d6b9215bd012a321c139bf1cb3aa494">MetaeffektLicense:1d6b9215bd012a321c139bf1cb3aa494</a> for <a href="/?license=metaeffekt:CLISP-Exception"><span class="licensename"><span class="namespace">metaeffekt:</span>CLISP-Exception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>CLISP-Exception</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>CLISP Exception</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CLISP-exception-2.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">CLISP Exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>clisp-exception-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:CLISP-Exception&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:CLISP Exception&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:CLISP-exception-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CLISP Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:clisp-exception-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;1d6b9215bd012a321c139bf1cb3aa494&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:CLISP Exception&quot;,
+        &quot;_category&quot;: &quot;CLISP Exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:clisp-exception-2.0&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:CLISP-Exception&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:CLISP-exception-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

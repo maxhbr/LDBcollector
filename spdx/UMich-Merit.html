@@ -1,0 +1,630 @@
+<html><head><title>ldbcollector: spdx:UMich-Merit</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:UMich-Merit</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UMich-Merit</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Michigan License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Michigan License</span></li><li><span class="licensename">Michigan/Merit Networks License</span></li><li><span class="licensename">UMich-Merit</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>UMich-Merit</span></li><li><span class="licensename"><span class="namespace">scancode:</span>umich-merit</span></li><li><span class="licensename"><span class="namespace">spdx:</span>UMich-Merit</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Michigan</span></li><li><span class="licensename"><span class="namespace">OpenCoDE:</span>Michigan</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:1001dd96c1a6af3a3e398521db61ca9f">[<a href="/fact/ScancodeData/1001dd96c1a6af3a3e398521db61ca9f">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a205a66e51ff10b6b5626da69114738b">[<a href="/fact/SPDXLicense/a205a66e51ff10b6b5626da69114738b">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:209e92432fef8ff4f5cfbc74a38f7c06">[<a href="/fact/FedoraEntry/209e92432fef8ff4f5cfbc74a38f7c06">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:649a35d872c884adaa264fbc22e558dc">[<a href="/fact/MetaeffektLicense/649a35d872c884adaa264fbc22e558dc">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4732b7d7fab46cb826e03e0a9031f535">[<a href="/fact/OrtLicenseCategorization/4732b7d7fab46cb826e03e0a9031f535">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4732b7d7fab46cb826e03e0a9031f535">[<a href="/fact/OrtLicenseCategorization/4732b7d7fab46cb826e03e0a9031f535">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license starts with an HPND-like grant, but has additional obligations (similar to HPND-Kevlin-Henney and HPND_Pbmplus) and a different disclaimer of warranties.<span class="provided-by">(provided by: <span title="SPDXLicense:a205a66e51ff10b6b5626da69114738b">[<a href="/fact/SPDXLicense/a205a66e51ff10b6b5626da69114738b">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64" target="_blank">https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>[C] The Regents of the University of Michigan and Merit Network, Inc. 1992,
+1993, 1994, 1995 All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice appear in all
+copies of the software and derivative works or modified versions thereof,
+and that both the copyright notice and this permission and disclaimer
+notice appear in supporting documentation.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE
+UNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE
+FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR
+THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the
+University of Michigan and Merit Network, Inc. shall not be liable for any
+special, indirect, incidental or consequential damages with respect to any
+claim by Licensee or any third party arising from use of the software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Michigan/Merit Networks License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;[C] &amp;lt;copyright holder&amp;gt; &amp;lt;year&amp;gt; All Rights Reserved&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;
+	Permission to use, copy, modify, and distribute this software and its
+	documentation for any purpose and without fee is hereby granted, provided
+	that the above copyright notice and this permission notice appear in all
+	copies of the software and derivative works or modified versions thereof,
+	and that both the copyright notice and this permission and disclaimer
+	notice appear in supporting documentation.
+
+	THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND, EITHER
+	EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF
+	MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE
+	UNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE
+	FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&amp;apos;S REQUIREMENTS OR
+	THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the
+	University of Michigan and Merit Network, Inc. shall not be liable for any
+	special, indirect, incidental or consequential damages with respect to any
+	claim by Licensee or any third party arising from use of the software.
+      &lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice appear in all
+copies of the software and derivative works or modified versions thereof,
+and that both the copyright notice and this permission and disclaimer
+notice appear in supporting documentation.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE
+UNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE
+FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR
+THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the
+University of Michigan and Merit Network, Inc. shall not be liable for any
+special, indirect, incidental or consequential damages with respect to any
+claim by Licensee or any third party arising from use of the software.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/a205a66e51ff10b6b5626da69114738b">SPDXLicense:a205a66e51ff10b6b5626da69114738b</a> for <a href="/?license=spdx:UMich-Merit"><span class="licensename"><span class="namespace">spdx:</span>UMich-Merit</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UMich-Merit</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Michigan/Merit Networks License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a205a66e51ff10b6b5626da69114738b">[<a href="/fact/SPDXLicense/a205a66e51ff10b6b5626da69114738b">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license starts with an HPND-like grant, but has additional obligations (similar to HPND-Kevlin-Henney and HPND_Pbmplus) and a different disclaimer of warranties.<span class="provided-by">(provided by: <span title="SPDXLicense:a205a66e51ff10b6b5626da69114738b">[<a href="/fact/SPDXLicense/a205a66e51ff10b6b5626da69114738b">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64" target="_blank">https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>[C] The Regents of the University of Michigan and Merit Network, Inc. 1992,
+1993, 1994, 1995 All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice appear in all
+copies of the software and derivative works or modified versions thereof,
+and that both the copyright notice and this permission and disclaimer
+notice appear in supporting documentation.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE
+UNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE
+FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR
+THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the
+University of Michigan and Merit Network, Inc. shall not be liable for any
+special, indirect, incidental or consequential damages with respect to any
+claim by Licensee or any third party arising from use of the software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Michigan/Merit Networks License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;[C] &amp;lt;copyright holder&amp;gt; &amp;lt;year&amp;gt; All Rights Reserved&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;
+	Permission to use, copy, modify, and distribute this software and its
+	documentation for any purpose and without fee is hereby granted, provided
+	that the above copyright notice and this permission notice appear in all
+	copies of the software and derivative works or modified versions thereof,
+	and that both the copyright notice and this permission and disclaimer
+	notice appear in supporting documentation.
+
+	THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND, EITHER
+	EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF
+	MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE
+	UNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE
+	FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&amp;apos;S REQUIREMENTS OR
+	THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the
+	University of Michigan and Merit Network, Inc. shall not be liable for any
+	special, indirect, incidental or consequential damages with respect to any
+	claim by Licensee or any third party arising from use of the software.
+      &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:UMich-Merit&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Michigan/Merit Networks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;a205a66e51ff10b6b5626da69114738b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license starts with an HPND-like grant, but has additional obligations (similar to HPND-Kevlin-Henney and HPND_Pbmplus) and a different disclaimer of warranties.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[C] The Regents of the University of Michigan and Merit Network, Inc. 1992,\n1993, 1994, 1995 All Rights Reserved\n\nPermission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice appear in all\ncopies of the software and derivative works or modified versions thereof,\nand that both the copyright notice and this permission and disclaimer\nnotice appear in supporting documentation.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND, EITHER\nEXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE\nUNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE\nFUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR\nTHAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the\nUniversity of Michigan and Merit Network, Inc. shall not be liable for any\nspecial, indirect, incidental or consequential damages with respect to any\nclaim by Licensee or any third party arising from use of the software.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Michigan/Merit Networks License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;[C] &amp;lt;copyright holder&amp;gt; &amp;lt;year&amp;gt; All Rights Reserved&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;\n\tPermission to use, copy, modify, and distribute this software and its\n\tdocumentation for any purpose and without fee is hereby granted, provided\n\tthat the above copyright notice and this permission notice appear in all\n\tcopies of the software and derivative works or modified versions thereof,\n\tand that both the copyright notice and this permission and disclaimer\n\tnotice appear in supporting documentation.\n\n\tTHIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND, EITHER\n\tEXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF\n\tMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE\n\tUNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE\n\tFUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&amp;apos;S REQUIREMENTS OR\n\tTHAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the\n\tUniversity of Michigan and Merit Network, Inc. shall not be liable for any\n\tspecial, indirect, incidental or consequential damages with respect to any\n\tclaim by Licensee or any third party arising from use of the software.\n      &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T04:59:57Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license starts with an HPND-like grant, but has additional obligations (similar to HPND-Kevlin-Henney and HPND_Pbmplus) and a different disclaimer of warranties.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:UMich-Merit&quot;,
+        &quot;licenseText&quot;: &quot;[C] The Regents of the University of Michigan and Merit Network, Inc. 1992,\n1993, 1994, 1995 All Rights Reserved\n\nPermission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice appear in all\ncopies of the software and derivative works or modified versions thereof,\nand that both the copyright notice and this permission and disclaimer\nnotice appear in supporting documentation.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND, EITHER\nEXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE\nUNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE\nFUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR\nTHAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the\nUniversity of Michigan and Merit Network, Inc. shall not be liable for any\nspecial, indirect, incidental or consequential damages with respect to any\nclaim by Licensee or any third party arising from use of the software.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Michigan/Merit Networks License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;[C] &amp;lt;copyright holder&amp;gt; &amp;lt;year&amp;gt; All Rights Reserved&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;\n\tPermission to use, copy, modify, and distribute this software and its\n\tdocumentation for any purpose and without fee is hereby granted, provided\n\tthat the above copyright notice and this permission notice appear in all\n\tcopies of the software and derivative works or modified versions thereof,\n\tand that both the copyright notice and this permission and disclaimer\n\tnotice appear in supporting documentation.\n\n\tTHIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND, EITHER\n\tEXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF\n\tMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE\n\tUNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE\n\tFUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&amp;apos;S REQUIREMENTS OR\n\tTHAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the\n\tUniversity of Michigan and Merit Network, Inc. shall not be liable for any\n\tspecial, indirect, incidental or consequential damages with respect to any\n\tclaim by Licensee or any third party arising from use of the software.\n      &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Michigan/Merit Networks License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Michigan/Merit Networks License\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;[C] &lt;copyright holder&gt; &lt;year&gt; All Rights Reserved  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies of the software and derivative works or modified versions thereof, and that both the copyright notice and this permission and disclaimer notice appear in supporting documentation. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE REGENTS OF THE UNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE. The Regents of the University of Michigan and Merit Network, Inc. shall not be liable for any special, indirect, incidental or consequential damages with respect to any claim by Licensee or any third party arising from use of the software.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/209e92432fef8ff4f5cfbc74a38f7c06">FedoraEntry:209e92432fef8ff4f5cfbc74a38f7c06</a> for <a href="/?license=Fedora:UMich-Merit"><span class="licensename"><span class="namespace">Fedora:</span>UMich-Merit</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>UMich-Merit</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UMich-Merit</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:209e92432fef8ff4f5cfbc74a38f7c06">[<a href="/fact/FedoraEntry/209e92432fef8ff4f5cfbc74a38f7c06">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:UMich-Merit&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:UMich-Merit&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;209e92432fef8ff4f5cfbc74a38f7c06&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;UMich-Merit&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:UMich-Merit&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/1001dd96c1a6af3a3e398521db61ca9f">ScancodeData:1001dd96c1a6af3a3e398521db61ca9f</a> for <a href="/?license=scancode:umich-merit"><span class="licensename"><span class="namespace">scancode:</span>umich-merit</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>umich-merit</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Michigan/Merit Networks License</span></li><li><span class="licensename">Michigan/Merit Networks License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:1001dd96c1a6af3a3e398521db61ca9f">[<a href="/fact/ScancodeData/1001dd96c1a6af3a3e398521db61ca9f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64" target="_blank">https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice appear in all
+copies of the software and derivative works or modified versions thereof,
+and that both the copyright notice and this permission and disclaimer
+notice appear in supporting documentation.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE
+UNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE
+FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR
+THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the
+University of Michigan and Merit Network, Inc. shall not be liable for any
+special, indirect, incidental or consequential damages with respect to any
+claim by Licensee or any third party arising from use of the software.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:umich-merit&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Michigan/Merit Networks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Michigan/Merit Networks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;1001dd96c1a6af3a3e398521db61ca9f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice appear in all\ncopies of the software and derivative works or modified versions thereof,\nand that both the copyright notice and this permission and disclaimer\nnotice appear in supporting documentation.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND, EITHER\nEXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE\nUNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE\nFUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR\nTHAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the\nUniversity of Michigan and Merit Network, Inc. shall not be liable for any\nspecial, indirect, incidental or consequential damages with respect to any\nclaim by Licensee or any third party arising from use of the software.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;umich-merit&quot;,
+        &quot;_name&quot;: &quot;Michigan/Merit Networks License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/radcli/radcli/blob/master/COPYRIGHT#L64&quot;
+        ],
+        &quot;_owner&quot;: &quot;University of Michigan&quot;,
+        &quot;_shortName&quot;: &quot;Michigan/Merit Networks License&quot;,
+        &quot;_spdxId&quot;: &quot;UMich-Merit&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice appear in all\ncopies of the software and derivative works or modified versions thereof,\nand that both the copyright notice and this permission and disclaimer\nnotice appear in supporting documentation.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND, EITHER\nEXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE REGENTS OF THE\nUNIVERSITY OF MICHIGAN AND MERIT NETWORK, INC. DO NOT WARRANT THAT THE\nFUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&#39;S REQUIREMENTS OR\nTHAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.  The Regents of the\nUniversity of Michigan and Merit Network, Inc. shall not be liable for any\nspecial, indirect, incidental or consequential damages with respect to any\nclaim by Licensee or any third party arising from use of the software.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/4732b7d7fab46cb826e03e0a9031f535">OrtLicenseCategorization:4732b7d7fab46cb826e03e0a9031f535</a> for <a href="/?license=SPDX:UMich-Merit"><span class="licensename"><span class="namespace">SPDX:</span>UMich-Merit</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>UMich-Merit</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4732b7d7fab46cb826e03e0a9031f535">[<a href="/fact/OrtLicenseCategorization/4732b7d7fab46cb826e03e0a9031f535">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4732b7d7fab46cb826e03e0a9031f535">[<a href="/fact/OrtLicenseCategorization/4732b7d7fab46cb826e03e0a9031f535">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:UMich-Merit&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;4732b7d7fab46cb826e03e0a9031f535&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:UMich-Merit&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/649a35d872c884adaa264fbc22e558dc">MetaeffektLicense:649a35d872c884adaa264fbc22e558dc</a> for <a href="/?license=metaeffekt:Michigan License"><span class="licensename"><span class="namespace">metaeffekt:</span>Michigan License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Michigan License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UMich-Merit</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Michigan</span></li><li><span class="licensename"><span class="namespace">OpenCoDE:</span>Michigan</span></li><li><span class="licensename">Michigan License</span></li><li><span class="licensename">Michigan/Merit Networks License</span></li><li><span class="licensename">UMich-Merit</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:649a35d872c884adaa264fbc22e558dc">[<a href="/fact/MetaeffektLicense/649a35d872c884adaa264fbc22e558dc">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Michigan License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:UMich-Merit&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Michigan&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Michigan License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;UMich-Merit&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Michigan/Merit Networks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenCoDE:Michigan&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;649a35d872c884adaa264fbc22e558dc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Michigan License&quot;,
+            &quot;UMich-Merit&quot;,
+            &quot;Michigan/Merit Networks License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Michigan License&quot;,
+        &quot;_category&quot;: &quot;Michigan&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;OpenCoDE:Michigan&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:UMich-Merit&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

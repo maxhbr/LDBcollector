@@ -1,0 +1,1013 @@
+<html><head><title>ldbcollector: spdx:TORQUE-1.1</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:TORQUE-1.1</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE 1.1</span></li><li><span class="licensename">TORQUE License 1.1</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>TORQUE License 1.1</span></li><li><span class="licensename">TORQUE v2.5+ Software License v1.1</span></li><li><span class="licensename">TORQUE-1.1</span></li><li><span class="licensename"><span class="namespace">cavil:</span>TORQUE-1.1</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>TORQUE-1.1</span></li><li><span class="licensename"><span class="namespace">fossology:</span>TORQUE-1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>torque-1.1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE</span></li><li><span class="licensename">TORQUE License, 1.1</span></li><li><span class="licensename">TORQUE License, Version 1.1</span></li><li><span class="licensename">TORQUE, Version 1.1</span></li><li><span class="licensename">TORQUEv1.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:d4b32c62778713ede24c8f37d1fa35e2">[<a href="/fact/ScancodeData/d4b32c62778713ede24c8f37d1fa35e2">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:5a13b406920337d09141cb06ac52160b">[<a href="/fact/SPDXLicense/5a13b406920337d09141cb06ac52160b">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:730e0193d7cfbb17f1de5863e439154f">[<a href="/fact/FedoraEntry/730e0193d7cfbb17f1de5863e439154f">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b9f6bc9c89e5fb6967faedb4d8d420ec">[<a href="/fact/OrtLicenseCategorization/b9f6bc9c89e5fb6967faedb4d8d420ec">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b9f6bc9c89e5fb6967faedb4d8d420ec">[<a href="/fact/OrtLicenseCategorization/b9f6bc9c89e5fb6967faedb4d8d420ec">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b9f6bc9c89e5fb6967faedb4d8d420ec">[<a href="/fact/OrtLicenseCategorization/b9f6bc9c89e5fb6967faedb4d8d420ec">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE upstream
+drafted a new license with updated contact information. The intention was
+to have a lawyer retain the same functionality as the older licensing, but
+because part of it was misread or accidentally ignored, v1.0 of the TORQUE
+v2.5+ Software License contained commercial use restrictions which made it
+non-free. After this issue was raised on the TORQUE mailing lists, the
+TORQUE upstream revised the license to remove the commercial use
+restrictions in v1.1. The TORQUE v2.5+ Software License v1.1 is Free, but
+GPL incompatible because of the advertising clause. Also noteworthy is that
+this license references the fact that much of the TORQUE v2.5 code is
+derived from OpenPBS&#39;&#39;s code, so the TORQUE v2.5+ software is properly dual
+licensed TORQUEv1.1 and OpenPBS. This also means that this license is not
+useful for other codebases without removing Note 1.
+<span class="provided-by">(provided by: <span title="ScancodeData:d4b32c62778713ede24c8f37d1fa35e2">[<a href="/fact/ScancodeData/d4b32c62778713ede24c8f37d1fa35e2">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/TORQUEv1.1" target="_blank">https://fedoraproject.org/wiki/Licensing/TORQUEv1.1</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/TORQUEv1.1</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>TORQUE v2.5+ Software License v1.1
+Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
+
+Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:
+Email: torque-support@adaptivecomputing.com.
+Phone: (801) 717-3700
+Web: www.adaptivecomputing.com www.clusterresources.com
+
+This license covers use of the TORQUE v2.5 software (the &quot;Software&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.
+
+1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+
+2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.
+
+3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.
+
+4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:
+&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.”
+
+5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of Utah, without reference to its choice of law rules.
+
+Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;TORQUE v2.5+ Software License v1.1&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for
+         TORQUE users, questions should be emailed to the community of TORQUE users at
+         torqueusers@supercluster.org. Users can also subscribe to the user mailing list at
+         http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed
+         users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing
+         via:
+        &lt;br /&gt;
+
+Email: torque-support@adaptivecomputing.com.
+        &lt;br /&gt;
+
+Phone: (801) 717-3700
+        &lt;br /&gt;
+
+Web: www.adaptivecomputing.com www.clusterresources.com
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;This license covers use of the TORQUE v2.5 software (the &amp;quot;Software&amp;quot;) at your site or location, and, for
+         certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are
+         also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or
+         without modification, are permitted provided that all of the following conditions are met.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Any Redistribution of source code must retain the above copyright notice and the acknowledgment
+             contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment
+             contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in
+             the documentation and/or other materials provided with the distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Redistributions in any form must be accompanied by information on how to obtain complete source code
+             for TORQUE and any modifications and/or additions to TORQUE. The source code must either be
+             included in the distribution or be available for no more than the cost of distribution plus a
+             nominal fee, and all modifications and additions to the Software must be freely redistributable by
+             any party (including Licensor) without restriction.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          All advertising materials mentioning features or use of the Software must display the following
+             acknowledgment:
+            &lt;br /&gt;
+
+   &amp;quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence
+                 Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information
+                 Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE
+                 and to download TORQUE. For information about Moab branded products and so receive support
+                 from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&amp;quot;
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR
+             IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+             FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL
+             ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT
+             OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+             CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+             LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+             LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+             ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+             DAMAGE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;This license will be governed by the laws of Utah, without reference to its choice of law rules.&lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS
+         v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+        &lt;br /&gt;
+
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;amp;industry=All&amp;amp;pro
+             duct_service=All&amp;amp;category=Free%20Software%20Downloads&amp;amp;order_by=title. Users of TORQUE
+             should comply with the TORQUE license as well as the OpenPBS license.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>TORQUE v2.5+ Software License v1.1
+Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
+
+Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:
+Email: torque-support@adaptivecomputing.com.
+Phone: (801) 717-3700
+Web: www.adaptivecomputing.com www.clusterresources.com
+
+This license covers use of the TORQUE v2.5 software (the &quot;Software&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.
+
+1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+
+2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.
+
+3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.
+
+4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:
+&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&quot;
+
+5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of Utah, without reference to its choice of law rules.
+
+Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.</pre></details></li><li><details><summary>Text:</summary><pre>TORQUE v2.5+ Software License v1.1 Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved. Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:
+
+Email: torque-support@adaptivecomputing.com.
+
+Phone: (801) 717-3700
+
+Web: www.adaptivecomputing.com www.clusterresources.com
+
+This license covers use of the TORQUE v2.5 software (the &quot;Software&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.
+
+   1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+
+   2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.
+
+   3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.
+
+   4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:
+
+   &quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&quot;
+
+   5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of Utah, without reference to its choice of law rules. Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/5a13b406920337d09141cb06ac52160b">SPDXLicense:5a13b406920337d09141cb06ac52160b</a> for <a href="/?license=spdx:TORQUE-1.1"><span class="licensename"><span class="namespace">spdx:</span>TORQUE-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE v2.5+ Software License v1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:5a13b406920337d09141cb06ac52160b">[<a href="/fact/SPDXLicense/5a13b406920337d09141cb06ac52160b">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/TORQUEv1.1" target="_blank">https://fedoraproject.org/wiki/Licensing/TORQUEv1.1</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>TORQUE v2.5+ Software License v1.1
+Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
+
+Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:
+Email: torque-support@adaptivecomputing.com.
+Phone: (801) 717-3700
+Web: www.adaptivecomputing.com www.clusterresources.com
+
+This license covers use of the TORQUE v2.5 software (the &quot;Software&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.
+
+1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+
+2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.
+
+3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.
+
+4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:
+&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.”
+
+5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of Utah, without reference to its choice of law rules.
+
+Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;TORQUE v2.5+ Software License v1.1&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for
+         TORQUE users, questions should be emailed to the community of TORQUE users at
+         torqueusers@supercluster.org. Users can also subscribe to the user mailing list at
+         http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed
+         users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing
+         via:
+        &lt;br /&gt;
+
+Email: torque-support@adaptivecomputing.com.
+        &lt;br /&gt;
+
+Phone: (801) 717-3700
+        &lt;br /&gt;
+
+Web: www.adaptivecomputing.com www.clusterresources.com
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;This license covers use of the TORQUE v2.5 software (the &amp;quot;Software&amp;quot;) at your site or location, and, for
+         certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are
+         also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or
+         without modification, are permitted provided that all of the following conditions are met.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Any Redistribution of source code must retain the above copyright notice and the acknowledgment
+             contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment
+             contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in
+             the documentation and/or other materials provided with the distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Redistributions in any form must be accompanied by information on how to obtain complete source code
+             for TORQUE and any modifications and/or additions to TORQUE. The source code must either be
+             included in the distribution or be available for no more than the cost of distribution plus a
+             nominal fee, and all modifications and additions to the Software must be freely redistributable by
+             any party (including Licensor) without restriction.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          All advertising materials mentioning features or use of the Software must display the following
+             acknowledgment:
+            &lt;br /&gt;
+
+   &amp;quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence
+                 Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information
+                 Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE
+                 and to download TORQUE. For information about Moab branded products and so receive support
+                 from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&amp;quot;
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR
+             IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+             FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL
+             ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT
+             OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+             CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+             LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+             LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+             ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+             DAMAGE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;This license will be governed by the laws of Utah, without reference to its choice of law rules.&lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS
+         v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+        &lt;br /&gt;
+
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;amp;industry=All&amp;amp;pro
+             duct_service=All&amp;amp;category=Free%20Software%20Downloads&amp;amp;order_by=title. Users of TORQUE
+             should comply with the TORQUE license as well as the OpenPBS license.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:TORQUE-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;5a13b406920337d09141cb06ac52160b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1\nCopyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.\n\nUse this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:\nEmail: torque-support@adaptivecomputing.com.\nPhone: (801) 717-3700\nWeb: www.adaptivecomputing.com www.clusterresources.com\n\nThis license covers use of the TORQUE v2.5 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.\n\n1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n\n2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.\n\n3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.”\n\n5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of Utah, without reference to its choice of law rules.\n\nNote 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;TORQUE v2.5+ Software License v1.1&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for\n         TORQUE users, questions should be emailed to the community of TORQUE users at\n         torqueusers@supercluster.org. Users can also subscribe to the user mailing list at\n         http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed\n         users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing\n         via:\n        &lt;br /&gt;\n\nEmail: torque-support@adaptivecomputing.com.\n        &lt;br /&gt;\n\nPhone: (801) 717-3700\n        &lt;br /&gt;\n\nWeb: www.adaptivecomputing.com www.clusterresources.com\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;This license covers use of the TORQUE v2.5 software (the &amp;quot;Software&amp;quot;) at your site or location, and, for\n         certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are\n         also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or\n         without modification, are permitted provided that all of the following conditions are met.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Any Redistribution of source code must retain the above copyright notice and the acknowledgment\n             contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment\n             contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in\n             the documentation and/or other materials provided with the distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Redistributions in any form must be accompanied by information on how to obtain complete source code\n             for TORQUE and any modifications and/or additions to TORQUE. The source code must either be\n             included in the distribution or be available for no more than the cost of distribution plus a\n             nominal fee, and all modifications and additions to the Software must be freely redistributable by\n             any party (including Licensor) without restriction.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          All advertising materials mentioning features or use of the Software must display the following\n             acknowledgment:\n            &lt;br /&gt;\n\n   &amp;quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence\n                 Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information\n                 Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE\n                 and to download TORQUE. For information about Moab branded products and so receive support\n                 from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&amp;quot;\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR\n             IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,\n             FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL\n             ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT\n             OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n             CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n             LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n             LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n             ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n             DAMAGE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;This license will be governed by the laws of Utah, without reference to its choice of law rules.&lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS\n         v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\n        &lt;br /&gt;\n\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;amp;industry=All&amp;amp;pro\n             duct_service=All&amp;amp;category=Free%20Software%20Downloads&amp;amp;order_by=title. Users of TORQUE\n             should comply with the TORQUE license as well as the OpenPBS license.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:10:47Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:TORQUE-1.1&quot;,
+        &quot;licenseText&quot;: &quot;TORQUE v2.5+ Software License v1.1\nCopyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.\n\nUse this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:\nEmail: torque-support@adaptivecomputing.com.\nPhone: (801) 717-3700\nWeb: www.adaptivecomputing.com www.clusterresources.com\n\nThis license covers use of the TORQUE v2.5 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.\n\n1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n\n2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.\n\n3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.”\n\n5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of Utah, without reference to its choice of law rules.\n\nNote 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;TORQUE v2.5+ Software License v1.1&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for\n         TORQUE users, questions should be emailed to the community of TORQUE users at\n         torqueusers@supercluster.org. Users can also subscribe to the user mailing list at\n         http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed\n         users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing\n         via:\n        &lt;br /&gt;\n\nEmail: torque-support@adaptivecomputing.com.\n        &lt;br /&gt;\n\nPhone: (801) 717-3700\n        &lt;br /&gt;\n\nWeb: www.adaptivecomputing.com www.clusterresources.com\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;This license covers use of the TORQUE v2.5 software (the &amp;quot;Software&amp;quot;) at your site or location, and, for\n         certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are\n         also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or\n         without modification, are permitted provided that all of the following conditions are met.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Any Redistribution of source code must retain the above copyright notice and the acknowledgment\n             contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment\n             contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in\n             the documentation and/or other materials provided with the distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Redistributions in any form must be accompanied by information on how to obtain complete source code\n             for TORQUE and any modifications and/or additions to TORQUE. The source code must either be\n             included in the distribution or be available for no more than the cost of distribution plus a\n             nominal fee, and all modifications and additions to the Software must be freely redistributable by\n             any party (including Licensor) without restriction.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          All advertising materials mentioning features or use of the Software must display the following\n             acknowledgment:\n            &lt;br /&gt;\n\n   &amp;quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence\n                 Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information\n                 Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE\n                 and to download TORQUE. For information about Moab branded products and so receive support\n                 from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&amp;quot;\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR\n             IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,\n             FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL\n             ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT\n             OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n             CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n             LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n             LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n             ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n             DAMAGE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;This license will be governed by the laws of Utah, without reference to its choice of law rules.&lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS\n         v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\n        &lt;br /&gt;\n\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;amp;industry=All&amp;amp;pro\n             duct_service=All&amp;amp;category=Free%20Software%20Downloads&amp;amp;order_by=title. Users of TORQUE\n             should comply with the TORQUE license as well as the OpenPBS license.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;TORQUE v2.5+ Software License v1.1\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:\n\nEmail: torque-support@adaptivecomputing.com.\n\nPhone: (801) 717-3700\n\nWeb: www.adaptivecomputing.com www.clusterresources.com\n\n&lt;&lt;endOptional&gt;&gt;\n\nThis license covers use of the TORQUE v2.5 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\n   \&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of Utah, without reference to its choice of law rules.\n\n&lt;&lt;beginOptional&gt;&gt;Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\n\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/730e0193d7cfbb17f1de5863e439154f">FedoraEntry:730e0193d7cfbb17f1de5863e439154f</a> for <a href="/?license=Fedora:TORQUE-1.1"><span class="licensename"><span class="namespace">Fedora:</span>TORQUE-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE v2.5+ Software License v1.1</span></li><li><span class="licensename">TORQUEv1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:730e0193d7cfbb17f1de5863e439154f">[<a href="/fact/FedoraEntry/730e0193d7cfbb17f1de5863e439154f">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/TORQUEv1.1" target="_blank">https://fedoraproject.org/wiki/Licensing/TORQUEv1.1</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:TORQUE-1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:TORQUE-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TORQUEv1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;730e0193d7cfbb17f1de5863e439154f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;TORQUEv1.1&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;TORQUE v2.5+ Software License v1.1&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;TORQUE-1.1&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:TORQUE-1.1&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/d4b32c62778713ede24c8f37d1fa35e2">ScancodeData:d4b32c62778713ede24c8f37d1fa35e2</a> for <a href="/?license=scancode:torque-1.1"><span class="licensename"><span class="namespace">scancode:</span>torque-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>torque-1.1</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE 1.1</span></li><li><span class="licensename">TORQUE v2.5+ Software License v1.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:d4b32c62778713ede24c8f37d1fa35e2">[<a href="/fact/ScancodeData/d4b32c62778713ede24c8f37d1fa35e2">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE upstream
+drafted a new license with updated contact information. The intention was
+to have a lawyer retain the same functionality as the older licensing, but
+because part of it was misread or accidentally ignored, v1.0 of the TORQUE
+v2.5+ Software License contained commercial use restrictions which made it
+non-free. After this issue was raised on the TORQUE mailing lists, the
+TORQUE upstream revised the license to remove the commercial use
+restrictions in v1.1. The TORQUE v2.5+ Software License v1.1 is Free, but
+GPL incompatible because of the advertising clause. Also noteworthy is that
+this license references the fact that much of the TORQUE v2.5 code is
+derived from OpenPBS&#39;&#39;s code, so the TORQUE v2.5+ software is properly dual
+licensed TORQUEv1.1 and OpenPBS. This also means that this license is not
+useful for other codebases without removing Note 1.
+<span class="provided-by">(provided by: <span title="ScancodeData:d4b32c62778713ede24c8f37d1fa35e2">[<a href="/fact/ScancodeData/d4b32c62778713ede24c8f37d1fa35e2">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/TORQUEv1.1</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>TORQUE v2.5+ Software License v1.1
+Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
+
+Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:
+Email: torque-support@adaptivecomputing.com.
+Phone: (801) 717-3700
+Web: www.adaptivecomputing.com www.clusterresources.com
+
+This license covers use of the TORQUE v2.5 software (the &quot;Software&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.
+
+1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+
+2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.
+
+3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.
+
+4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:
+&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&quot;
+
+5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of Utah, without reference to its choice of law rules.
+
+Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:torque-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TORQUE 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;d4b32c62778713ede24c8f37d1fa35e2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE upstream\ndrafted a new license with updated contact information. The intention was\nto have a lawyer retain the same functionality as the older licensing, but\nbecause part of it was misread or accidentally ignored, v1.0 of the TORQUE\nv2.5+ Software License contained commercial use restrictions which made it\nnon-free. After this issue was raised on the TORQUE mailing lists, the\nTORQUE upstream revised the license to remove the commercial use\nrestrictions in v1.1. The TORQUE v2.5+ Software License v1.1 is Free, but\nGPL incompatible because of the advertising clause. Also noteworthy is that\nthis license references the fact that much of the TORQUE v2.5 code is\nderived from OpenPBS&#39;&#39;s code, so the TORQUE v2.5+ software is properly dual\nlicensed TORQUEv1.1 and OpenPBS. This also means that this license is not\nuseful for other codebases without removing Note 1.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1\nCopyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.\n\nUse this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:\nEmail: torque-support@adaptivecomputing.com.\nPhone: (801) 717-3700\nWeb: www.adaptivecomputing.com www.clusterresources.com\n\nThis license covers use of the TORQUE v2.5 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.\n\n1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n\n2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.\n\n3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.\&quot;\n\n5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of Utah, without reference to its choice of law rules.\n\nNote 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;,
+        &quot;_key&quot;: &quot;torque-1.1&quot;,
+        &quot;_name&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+        &quot;_notes&quot;: &quot;Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE upstream\ndrafted a new license with updated contact information. The intention was\nto have a lawyer retain the same functionality as the older licensing, but\nbecause part of it was misread or accidentally ignored, v1.0 of the TORQUE\nv2.5+ Software License contained commercial use restrictions which made it\nnon-free. After this issue was raised on the TORQUE mailing lists, the\nTORQUE upstream revised the license to remove the commercial use\nrestrictions in v1.1. The TORQUE v2.5+ Software License v1.1 is Free, but\nGPL incompatible because of the advertising clause. Also noteworthy is that\nthis license references the fact that much of the TORQUE v2.5 code is\nderived from OpenPBS&#39;&#39;s code, so the TORQUE v2.5+ software is properly dual\nlicensed TORQUEv1.1 and OpenPBS. This also means that this license is not\nuseful for other codebases without removing Note 1.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Adaptive Computing Enterprises&quot;,
+        &quot;_shortName&quot;: &quot;TORQUE 1.1&quot;,
+        &quot;_spdxId&quot;: &quot;TORQUE-1.1&quot;,
+        &quot;_text&quot;: &quot;TORQUE v2.5+ Software License v1.1\nCopyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.\n\nUse this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:\nEmail: torque-support@adaptivecomputing.com.\nPhone: (801) 717-3700\nWeb: www.adaptivecomputing.com www.clusterresources.com\n\nThis license covers use of the TORQUE v2.5 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.\n\n1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n\n2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.\n\n3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.\&quot;\n\n5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of Utah, without reference to its choice of law rules.\n\nNote 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/100d3a6f4e39ddded92b9f879bdbdfed">Fossology:100d3a6f4e39ddded92b9f879bdbdfed</a> for <a href="/?license=fossology:TORQUE-1.1"><span class="licensename"><span class="namespace">fossology:</span>TORQUE-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE v2.5+ Software License v1.1</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/TORQUEv1.1" target="_blank">https://fedoraproject.org/wiki/Licensing/TORQUEv1.1</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>TORQUE v2.5+ Software License v1.1 Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved. Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:
+
+Email: torque-support@adaptivecomputing.com.
+
+Phone: (801) 717-3700
+
+Web: www.adaptivecomputing.com www.clusterresources.com
+
+This license covers use of the TORQUE v2.5 software (the &quot;Software&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.
+
+   1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.
+
+   2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.
+
+   3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.
+
+   4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:
+
+   &quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.&quot;
+
+   5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of Utah, without reference to its choice of law rules. Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
+
+http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:TORQUE-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;100d3a6f4e39ddded92b9f879bdbdfed&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1 Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved. Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:\n\nEmail: torque-support@adaptivecomputing.com.\n\nPhone: (801) 717-3700\n\nWeb: www.adaptivecomputing.com www.clusterresources.com\n\nThis license covers use of the TORQUE v2.5 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.\n\n   1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n\n   2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.\n\n   3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n   4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\n   \&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.\&quot;\n\n   5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of Utah, without reference to its choice of law rules. Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\n\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:TORQUE-1.1&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;TORQUE v2.5+ Software License v1.1 Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved. Use this license to use or redistribute the TORQUE software v2.5+ and later versions. For free support for TORQUE users, questions should be emailed to the community of TORQUE users at torqueusers@supercluster.org. Users can also subscribe to the user mailing list at http://www.supercluster.org/mailman/listinfo/torqueusers. Customers using TORQUE that also are licensed users of Moab branded software from Adaptive Computing Inc. can get TORQUE support from Adaptive Computing via:\n\nEmail: torque-support@adaptivecomputing.com.\n\nPhone: (801) 717-3700\n\nWeb: www.adaptivecomputing.com www.clusterresources.com\n\nThis license covers use of the TORQUE v2.5 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations1. Later versions of TORQUE are also covered by this license. Use and redistribution of TORQUE v2.5 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met.\n\n   1. Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 5, this list of conditions and the disclaimer contained in paragraph 5.\n\n   2. Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 4, this list of conditions and the disclaimer contained in paragraph 5 in the documentation and/or other materials provided with the distribution.\n\n   3. Redistributions in any form must be accompanied by information on how to obtain complete source code for TORQUE and any modifications and/or additions to TORQUE. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n   4. All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\n   \&quot;TORQUE is a modification of OpenPBS which was developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian TORQUE Open Source License v1.1. 1 Information Solutions, Inc. Visit www.clusterresources.com/products/ for more information about TORQUE and to download TORQUE. For information about Moab branded products and so receive support from Adaptive Computing for TORQUE, see www.adaptivecomputing.com.\&quot;\n\n   5. DISCLAIMER OF WARRANTY THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED. IN NO EVENT SHALL ADAPTIVE COMPUTING ENTERPRISES, INC. CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of Utah, without reference to its choice of law rules. Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:\n\nhttp://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&amp;industry=All&amp;pro duct_service=All&amp;category=Free%20Software%20Downloads&amp;order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/TORQUEv1.1&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/b9f6bc9c89e5fb6967faedb4d8d420ec">OrtLicenseCategorization:b9f6bc9c89e5fb6967faedb4d8d420ec</a> for <a href="/?license=SPDX:TORQUE-1.1"><span class="licensename"><span class="namespace">SPDX:</span>TORQUE-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>TORQUE-1.1</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b9f6bc9c89e5fb6967faedb4d8d420ec">[<a href="/fact/OrtLicenseCategorization/b9f6bc9c89e5fb6967faedb4d8d420ec">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b9f6bc9c89e5fb6967faedb4d8d420ec">[<a href="/fact/OrtLicenseCategorization/b9f6bc9c89e5fb6967faedb4d8d420ec">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b9f6bc9c89e5fb6967faedb4d8d420ec">[<a href="/fact/OrtLicenseCategorization/b9f6bc9c89e5fb6967faedb4d8d420ec">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:TORQUE-1.1&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b9f6bc9c89e5fb6967faedb4d8d420ec&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:TORQUE-1.1&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/bcb6c58f017e40a4ea29e88c9e6d71ae">CavilLicenseChange:bcb6c58f017e40a4ea29e88c9e6d71ae</a> for <a href="/?license=cavil:TORQUE-1.1"><span class="licensename"><span class="namespace">cavil:</span>TORQUE-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:TORQUE-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TORQUE-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;bcb6c58f017e40a4ea29e88c9e6d71ae&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;TORQUE-1.1&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:TORQUE-1.1&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/680e2f33d7c781580629ccbc29eb25e4">MetaeffektLicense:680e2f33d7c781580629ccbc29eb25e4</a> for <a href="/?license=metaeffekt:TORQUE License 1.1"><span class="licensename"><span class="namespace">metaeffekt:</span>TORQUE License 1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>TORQUE License 1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TORQUE-1.1</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">TORQUE</span></li><li><span class="licensename">TORQUE 1.1</span></li><li><span class="licensename">TORQUE License, 1.1</span></li><li><span class="licensename">TORQUE License, Version 1.1</span></li><li><span class="licensename">TORQUE v2.5+ Software License v1.1</span></li><li><span class="licensename">TORQUE, Version 1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>torque-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:TORQUE License 1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:TORQUE-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TORQUE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TORQUE, Version 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TORQUE 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TORQUE License, Version 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TORQUE License, 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TORQUE v2.5+ Software License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:torque-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;680e2f33d7c781580629ccbc29eb25e4&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;TORQUE, Version 1.1&quot;,
+            &quot;TORQUE 1.1&quot;,
+            &quot;TORQUE License, Version 1.1&quot;,
+            &quot;TORQUE License, 1.1&quot;,
+            &quot;TORQUE v2.5+ Software License v1.1&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:TORQUE License 1.1&quot;,
+        &quot;_category&quot;: &quot;TORQUE&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:torque-1.1&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:TORQUE-1.1&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

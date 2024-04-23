@@ -1,0 +1,1040 @@
+<html><head><title>ldbcollector: spdx:EPICS</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:EPICS</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>EPICS</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">EPICS</span></li><li><span class="licensename"><span class="namespace">cavil:</span>EPICS</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>EPICS</span></li><li><span class="licensename"><span class="namespace">fossology:</span>EPICS</span></li><li><span class="licensename"><span class="namespace">scancode:</span>epics</span></li><li><span class="licensename"><span class="namespace">spdx:</span>EPICS</span></li><li><span class="licensename">EPICS Open License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>EPICS Open License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.aps.anl.gov/epics/license/open.php</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:6c42eaa580934735129e4b0ef555180e">[<a href="/fact/ScancodeData/6c42eaa580934735129e4b0ef555180e">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7d732cd1f6e376ce04e2628baff5412c">[<a href="/fact/SPDXLicense/7d732cd1f6e376ce04e2628baff5412c">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:e7a2eb45782a0e32283d98e2d92ef0e1">[<a href="/fact/FedoraEntry/e7a2eb45782a0e32283d98e2d92ef0e1">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4b7270a6cfe13b856847456d513e568b">[<a href="/fact/OrtLicenseCategorization/4b7270a6cfe13b856847456d513e568b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4b7270a6cfe13b856847456d513e568b">[<a href="/fact/OrtLicenseCategorization/4b7270a6cfe13b856847456d513e568b">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://epics.anl.gov/license/open.php" target="_blank">https://epics.anl.gov/license/open.php</a></li><li><a href="http://www.aps.anl.gov/epics/license/open.php" target="_blank">http://www.aps.anl.gov/epics/license/open.php</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://www.aps.anl.gov/epics/license/open.php</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>EPICS Open License Terms
+
+The following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.
+
+Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.
+
+&lt;PRODUCT&gt; is distributed subject to the following license conditions:
+
+SOFTWARE LICENSE AGREEMENT
+
+Software: &lt;PRODUCT&gt;
+
+1. The &quot;Software&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as &quot;you&quot; or &quot;Licensee.&quot;
+
+2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.
+
+3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:
+
+a. Copies in source code must include the copyright notice and this Software License Agreement.
+b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.
+
+4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:
+
+a. Copies in source code must include the copyright notice and this Software License Agreement;
+b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;
+c. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.
+
+5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+
+7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;EPICS Open License Terms&lt;/p&gt;
+
+      &lt;p&gt;The following is the text of the EPICS Open software license agreement which now
+      applies to EPICS Base and many of the unbundled EPICS extensions and support modules.&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright © &amp;lt;YEAR&amp;gt; &amp;lt;HOLDERS&amp;gt;. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;&amp;lt;PRODUCT&amp;gt; is distributed subject to the following license conditions:&lt;/p&gt;
+
+      &lt;p&gt;SOFTWARE LICENSE AGREEMENT&lt;/p&gt;
+
+      &lt;p&gt;Software: &amp;lt;PRODUCT&amp;gt;&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          The &amp;quot;Software&amp;quot;, below, refers to &amp;lt;PRODUCT&amp;gt; (in either source code, or binary form
+          and accompanying documentation). Each licensee is addressed as &amp;quot;you&amp;quot; or &amp;quot;Licensee.&amp;quot;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          The copyright holders shown above and their third-party licensors hereby grant Licensee a
+          royalty-free nonexclusive license, subject to the limitations stated herein and U.S.
+          Government license rights.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may modify and make a copy or copies of the Software for use within your
+          organization, if you meet the following conditions:
+          
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                Copies in source code must include the copyright notice and this Software License
+                Agreement.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                Copies in binary form must include the copyright notice and this Software License
+                Agreement in the documentation and/or other materials provided with the copy.
+            &lt;/li&gt;
+          
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may modify a copy or copies of the Software or any portion of it, thus forming a work
+          based on the Software, and distribute copies of such work outside your organization, if you
+          meet all of the following conditions:
+          
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                Copies in source code must include the copyright notice and this Software License
+                Agreement;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                Copies in binary form must include the copyright notice and this Software License
+                Agreement in the documentation and/or other materials provided with the copy;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; c.&lt;/var&gt;
+                Modified copies and works based on the Software must carry prominent notices stating
+                that you changed specified portions of the Software.
+            &lt;/li&gt;
+          
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Portions of the Software resulted from work developed under a U.S. Government contract
+          and are subject to the following license: the Government is granted for itself and others
+          acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer
+          software to reproduce, prepare derivative works, and perform publicly and display publicly.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF
+          ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED
+          STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES:
+          (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+          ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+          TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR
+          RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE
+          SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE
+          PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION
+          UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD
+          PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY,
+          OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,
+          SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED
+          TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER
+          SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING
+          NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS
+          BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>Experimental Physics and Industrial Control System (EPICS) Open Source License
+
+EPICS Open License Terms
+
+The following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.
+
+Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.
+
+&lt;PRODUCT&gt; is distributed subject to the following license conditions:
+
+SOFTWARE LICENSE AGREEMENT
+Software: &lt;PRODUCT&gt;
+
+The &quot;Software&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as &quot;you&quot; or &quot;Licensee.&quot;
+
+The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.
+
+You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:
+
+Copies in source code must include the copyright notice and this Software License Agreement.
+Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.
+You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:
+
+Copies in source code must include the copyright notice and this Software License Agreement;
+Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;
+Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.
+Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPRESENT THAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+
+LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.</pre></details></li><li><details><summary>Text:</summary><pre>EPICS Open License Terms
+
+The following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules. Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.
+
+&lt;PRODUCT&gt; is distributed subject to the following license conditions:
+
+SOFTWARE LICENSE AGREEMENT
+
+Software: &lt;PRODUCT&gt;
+
+   1. The &quot;Software&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as &quot;you&quot; or &quot;Licensee.&quot;
+
+   2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.
+
+   3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:
+
+      a. Copies in source code must include the copyright notice and this Software License Agreement.
+
+      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.
+
+   4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:
+
+      a. Copies in source code must include the copyright notice and this Software License Agreement;
+
+      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;
+
+      c. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.
+
+   5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+   6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+
+   7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/7d732cd1f6e376ce04e2628baff5412c">SPDXLicense:7d732cd1f6e376ce04e2628baff5412c</a> for <a href="/?license=spdx:EPICS"><span class="licensename"><span class="namespace">spdx:</span>EPICS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>EPICS</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">EPICS Open License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7d732cd1f6e376ce04e2628baff5412c">[<a href="/fact/SPDXLicense/7d732cd1f6e376ce04e2628baff5412c">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://epics.anl.gov/license/open.php" target="_blank">https://epics.anl.gov/license/open.php</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>EPICS Open License Terms
+
+The following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.
+
+Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.
+
+&lt;PRODUCT&gt; is distributed subject to the following license conditions:
+
+SOFTWARE LICENSE AGREEMENT
+
+Software: &lt;PRODUCT&gt;
+
+1. The &quot;Software&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as &quot;you&quot; or &quot;Licensee.&quot;
+
+2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.
+
+3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:
+
+a. Copies in source code must include the copyright notice and this Software License Agreement.
+b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.
+
+4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:
+
+a. Copies in source code must include the copyright notice and this Software License Agreement;
+b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;
+c. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.
+
+5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+
+7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;EPICS Open License Terms&lt;/p&gt;
+
+      &lt;p&gt;The following is the text of the EPICS Open software license agreement which now
+      applies to EPICS Base and many of the unbundled EPICS extensions and support modules.&lt;/p&gt;
+
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright © &amp;lt;YEAR&amp;gt; &amp;lt;HOLDERS&amp;gt;. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;&amp;lt;PRODUCT&amp;gt; is distributed subject to the following license conditions:&lt;/p&gt;
+
+      &lt;p&gt;SOFTWARE LICENSE AGREEMENT&lt;/p&gt;
+
+      &lt;p&gt;Software: &amp;lt;PRODUCT&amp;gt;&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          The &amp;quot;Software&amp;quot;, below, refers to &amp;lt;PRODUCT&amp;gt; (in either source code, or binary form
+          and accompanying documentation). Each licensee is addressed as &amp;quot;you&amp;quot; or &amp;quot;Licensee.&amp;quot;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          The copyright holders shown above and their third-party licensors hereby grant Licensee a
+          royalty-free nonexclusive license, subject to the limitations stated herein and U.S.
+          Government license rights.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may modify and make a copy or copies of the Software for use within your
+          organization, if you meet the following conditions:
+          
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                Copies in source code must include the copyright notice and this Software License
+                Agreement.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                Copies in binary form must include the copyright notice and this Software License
+                Agreement in the documentation and/or other materials provided with the copy.
+            &lt;/li&gt;
+          
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may modify a copy or copies of the Software or any portion of it, thus forming a work
+          based on the Software, and distribute copies of such work outside your organization, if you
+          meet all of the following conditions:
+          
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                Copies in source code must include the copyright notice and this Software License
+                Agreement;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                Copies in binary form must include the copyright notice and this Software License
+                Agreement in the documentation and/or other materials provided with the copy;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; c.&lt;/var&gt;
+                Modified copies and works based on the Software must carry prominent notices stating
+                that you changed specified portions of the Software.
+            &lt;/li&gt;
+          
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Portions of the Software resulted from work developed under a U.S. Government contract
+          and are subject to the following license: the Government is granted for itself and others
+          acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer
+          software to reproduce, prepare derivative works, and perform publicly and display publicly.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF
+          ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED
+          STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES:
+          (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+          ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+          TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR
+          RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE
+          SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE
+          PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION
+          UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+          &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD
+          PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY,
+          OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,
+          SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED
+          TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER
+          SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING
+          NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS
+          BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:EPICS&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;EPICS Open License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;7d732cd1f6e376ce04e2628baff5412c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;EPICS Open License Terms\n\nThe following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.\n\nCopyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.\n\n&lt;PRODUCT&gt; is distributed subject to the following license conditions:\n\nSOFTWARE LICENSE AGREEMENT\n\nSoftware: &lt;PRODUCT&gt;\n\n1. The \&quot;Software\&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as \&quot;you\&quot; or \&quot;Licensee.\&quot;\n\n2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.\n\n3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:\n\na. Copies in source code must include the copyright notice and this Software License Agreement.\nb. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.\n\n4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:\n\na. Copies in source code must include the copyright notice and this Software License Agreement;\nb. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;\nc. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.\n\n5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\n6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n\n7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;EPICS Open License Terms&lt;/p&gt;\n\n      &lt;p&gt;The following is the text of the EPICS Open software license agreement which now\n      applies to EPICS Base and many of the unbundled EPICS extensions and support modules.&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright © &amp;lt;YEAR&amp;gt; &amp;lt;HOLDERS&amp;gt;. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;&amp;lt;PRODUCT&amp;gt; is distributed subject to the following license conditions:&lt;/p&gt;\n\n      &lt;p&gt;SOFTWARE LICENSE AGREEMENT&lt;/p&gt;\n\n      &lt;p&gt;Software: &amp;lt;PRODUCT&amp;gt;&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          The &amp;quot;Software&amp;quot;, below, refers to &amp;lt;PRODUCT&amp;gt; (in either source code, or binary form\n          and accompanying documentation). Each licensee is addressed as &amp;quot;you&amp;quot; or &amp;quot;Licensee.&amp;quot;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          The copyright holders shown above and their third-party licensors hereby grant Licensee a\n          royalty-free nonexclusive license, subject to the limitations stated herein and U.S.\n          Government license rights.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may modify and make a copy or copies of the Software for use within your\n          organization, if you meet the following conditions:\n          \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                Copies in source code must include the copyright notice and this Software License\n                Agreement.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                Copies in binary form must include the copyright notice and this Software License\n                Agreement in the documentation and/or other materials provided with the copy.\n            &lt;/li&gt;\n          \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may modify a copy or copies of the Software or any portion of it, thus forming a work\n          based on the Software, and distribute copies of such work outside your organization, if you\n          meet all of the following conditions:\n          \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                Copies in source code must include the copyright notice and this Software License\n                Agreement;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                Copies in binary form must include the copyright notice and this Software License\n                Agreement in the documentation and/or other materials provided with the copy;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c.&lt;/var&gt;\n                Modified copies and works based on the Software must carry prominent notices stating\n                that you changed specified portions of the Software.\n            &lt;/li&gt;\n          \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Portions of the Software resulted from work developed under a U.S. Government contract\n          and are subject to the following license: the Government is granted for itself and others\n          acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer\n          software to reproduce, prepare derivative works, and perform publicly and display publicly.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF\n          ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED\n          STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES:\n          (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO\n          ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n          TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR\n          RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE\n          SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE\n          PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION\n          UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD\n          PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY,\n          OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,\n          SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED\n          TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER\n          SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING\n          NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS\n          BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://epics.anl.gov/license/open.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://epics.anl.gov/license/open.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:16Z&quot;,
+                &quot;url&quot;: &quot;https://epics.anl.gov/license/open.php&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:EPICS&quot;,
+        &quot;licenseText&quot;: &quot;EPICS Open License Terms\n\nThe following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.\n\nCopyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.\n\n&lt;PRODUCT&gt; is distributed subject to the following license conditions:\n\nSOFTWARE LICENSE AGREEMENT\n\nSoftware: &lt;PRODUCT&gt;\n\n1. The \&quot;Software\&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as \&quot;you\&quot; or \&quot;Licensee.\&quot;\n\n2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.\n\n3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:\n\na. Copies in source code must include the copyright notice and this Software License Agreement.\nb. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.\n\n4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:\n\na. Copies in source code must include the copyright notice and this Software License Agreement;\nb. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;\nc. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.\n\n5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\n6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n\n7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;EPICS Open License Terms&lt;/p&gt;\n\n      &lt;p&gt;The following is the text of the EPICS Open software license agreement which now\n      applies to EPICS Base and many of the unbundled EPICS extensions and support modules.&lt;/p&gt;\n\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright © &amp;lt;YEAR&amp;gt; &amp;lt;HOLDERS&amp;gt;. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;&amp;lt;PRODUCT&amp;gt; is distributed subject to the following license conditions:&lt;/p&gt;\n\n      &lt;p&gt;SOFTWARE LICENSE AGREEMENT&lt;/p&gt;\n\n      &lt;p&gt;Software: &amp;lt;PRODUCT&amp;gt;&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          The &amp;quot;Software&amp;quot;, below, refers to &amp;lt;PRODUCT&amp;gt; (in either source code, or binary form\n          and accompanying documentation). Each licensee is addressed as &amp;quot;you&amp;quot; or &amp;quot;Licensee.&amp;quot;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          The copyright holders shown above and their third-party licensors hereby grant Licensee a\n          royalty-free nonexclusive license, subject to the limitations stated herein and U.S.\n          Government license rights.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may modify and make a copy or copies of the Software for use within your\n          organization, if you meet the following conditions:\n          \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                Copies in source code must include the copyright notice and this Software License\n                Agreement.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                Copies in binary form must include the copyright notice and this Software License\n                Agreement in the documentation and/or other materials provided with the copy.\n            &lt;/li&gt;\n          \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may modify a copy or copies of the Software or any portion of it, thus forming a work\n          based on the Software, and distribute copies of such work outside your organization, if you\n          meet all of the following conditions:\n          \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                Copies in source code must include the copyright notice and this Software License\n                Agreement;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                Copies in binary form must include the copyright notice and this Software License\n                Agreement in the documentation and/or other materials provided with the copy;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c.&lt;/var&gt;\n                Modified copies and works based on the Software must carry prominent notices stating\n                that you changed specified portions of the Software.\n            &lt;/li&gt;\n          \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Portions of the Software resulted from work developed under a U.S. Government contract\n          and are subject to the following license: the Government is granted for itself and others\n          acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer\n          software to reproduce, prepare derivative works, and perform publicly and display publicly.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF\n          ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED\n          STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES:\n          (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO\n          ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n          TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR\n          RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE\n          SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE\n          PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION\n          UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n          &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD\n          PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY,\n          OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL,\n          SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED\n          TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER\n          SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING\n          NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS\n          BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;EPICS Open License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://epics.anl.gov/license/open.php&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;EPICS Open License Terms\n\nThe following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.\n\n&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\n&lt;PRODUCT&gt; is distributed subject to the following license conditions:\n\nSOFTWARE LICENSE AGREEMENT\n\nSoftware: &lt;PRODUCT&gt;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The \&quot;Software\&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as \&quot;you\&quot; or \&quot;Licensee.\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Copies in source code must include the copyright notice and this Software License Agreement.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Copies in source code must include the copyright notice and this Software License Agreement;\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;7.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/e7a2eb45782a0e32283d98e2d92ef0e1">FedoraEntry:e7a2eb45782a0e32283d98e2d92ef0e1</a> for <a href="/?license=Fedora:EPICS"><span class="licensename"><span class="namespace">Fedora:</span>EPICS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>EPICS</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>EPICS</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">EPICS</span></li><li><span class="licensename">EPICS Open License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:e7a2eb45782a0e32283d98e2d92ef0e1">[<a href="/fact/FedoraEntry/e7a2eb45782a0e32283d98e2d92ef0e1">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.aps.anl.gov/epics/license/open.php" target="_blank">http://www.aps.anl.gov/epics/license/open.php</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:EPICS&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:EPICS&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;EPICS Open License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;EPICS&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;e7a2eb45782a0e32283d98e2d92ef0e1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.aps.anl.gov/epics/license/open.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;EPICS&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;EPICS Open License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;EPICS&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:EPICS&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;http://www.aps.anl.gov/epics/license/open.php&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/6c42eaa580934735129e4b0ef555180e">ScancodeData:6c42eaa580934735129e4b0ef555180e</a> for <a href="/?license=scancode:epics"><span class="licensename"><span class="namespace">scancode:</span>epics</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>epics</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">EPICS Open License</span></li><li><span class="licensename">EPICS Open License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:6c42eaa580934735129e4b0ef555180e">[<a href="/fact/ScancodeData/6c42eaa580934735129e4b0ef555180e">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.aps.anl.gov/epics/license/open.php" target="_blank">http://www.aps.anl.gov/epics/license/open.php</a></li><li><a href="https://epics.anl.gov/license/open.php" target="_blank">https://epics.anl.gov/license/open.php</a></li></ul><h3>Other Statements</h3><ul><li>http://www.aps.anl.gov/epics/license/open.php</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Experimental Physics and Industrial Control System (EPICS) Open Source License
+
+EPICS Open License Terms
+
+The following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.
+
+Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.
+
+&lt;PRODUCT&gt; is distributed subject to the following license conditions:
+
+SOFTWARE LICENSE AGREEMENT
+Software: &lt;PRODUCT&gt;
+
+The &quot;Software&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as &quot;you&quot; or &quot;Licensee.&quot;
+
+The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.
+
+You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:
+
+Copies in source code must include the copyright notice and this Software License Agreement.
+Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.
+You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:
+
+Copies in source code must include the copyright notice and this Software License Agreement;
+Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;
+Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.
+Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPRESENT THAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+
+LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:epics&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;EPICS Open License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;EPICS Open License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;6c42eaa580934735129e4b0ef555180e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.aps.anl.gov/epics/license/open.php&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.aps.anl.gov/epics/license/open.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://epics.anl.gov/license/open.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Experimental Physics and Industrial Control System (EPICS) Open Source License\n\nEPICS Open License Terms\n\nThe following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.\n\nCopyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.\n\n&lt;PRODUCT&gt; is distributed subject to the following license conditions:\n\nSOFTWARE LICENSE AGREEMENT\nSoftware: &lt;PRODUCT&gt;\n\nThe \&quot;Software\&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as \&quot;you\&quot; or \&quot;Licensee.\&quot;\n\nThe copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.\n\nYou may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:\n\nCopies in source code must include the copyright notice and this Software License Agreement.\nCopies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.\nYou may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:\n\nCopies in source code must include the copyright notice and this Software License Agreement;\nCopies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;\nModified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.\nPortions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\nWARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPRESENT THAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n\nLIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.aps.anl.gov/epics/license/open.php&quot;,
+        &quot;_key&quot;: &quot;epics&quot;,
+        &quot;_name&quot;: &quot;EPICS Open License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://epics.anl.gov/license/open.php&quot;
+        ],
+        &quot;_owner&quot;: &quot;Argonne National Laboratory&quot;,
+        &quot;_shortName&quot;: &quot;EPICS Open License&quot;,
+        &quot;_spdxId&quot;: &quot;EPICS&quot;,
+        &quot;_text&quot;: &quot;Experimental Physics and Industrial Control System (EPICS) Open Source License\n\nEPICS Open License Terms\n\nThe following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules.\n\nCopyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.\n\n&lt;PRODUCT&gt; is distributed subject to the following license conditions:\n\nSOFTWARE LICENSE AGREEMENT\nSoftware: &lt;PRODUCT&gt;\n\nThe \&quot;Software\&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as \&quot;you\&quot; or \&quot;Licensee.\&quot;\n\nThe copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.\n\nYou may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:\n\nCopies in source code must include the copyright notice and this Software License Agreement.\nCopies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.\nYou may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:\n\nCopies in source code must include the copyright notice and this Software License Agreement;\nCopies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;\nModified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.\nPortions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\nWARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPRESENT THAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n\nLIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.aps.anl.gov/epics/license/open.php&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/73d1155f94997037d3371c48b3678b02">Fossology:73d1155f94997037d3371c48b3678b02</a> for <a href="/?license=fossology:EPICS"><span class="licensename"><span class="namespace">fossology:</span>EPICS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>EPICS</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">EPICS Open License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://epics.anl.gov/license/open.php" target="_blank">https://epics.anl.gov/license/open.php</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>EPICS Open License Terms
+
+The following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules. Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.
+
+&lt;PRODUCT&gt; is distributed subject to the following license conditions:
+
+SOFTWARE LICENSE AGREEMENT
+
+Software: &lt;PRODUCT&gt;
+
+   1. The &quot;Software&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as &quot;you&quot; or &quot;Licensee.&quot;
+
+   2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.
+
+   3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:
+
+      a. Copies in source code must include the copyright notice and this Software License Agreement.
+
+      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.
+
+   4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:
+
+      a. Copies in source code must include the copyright notice and this Software License Agreement;
+
+      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;
+
+      c. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.
+
+   5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.
+
+   6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.
+
+   7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:EPICS&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;EPICS Open License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;73d1155f94997037d3371c48b3678b02&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://epics.anl.gov/license/open.php&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;EPICS Open License Terms\n\nThe following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules. Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.\n\n&lt;PRODUCT&gt; is distributed subject to the following license conditions:\n\nSOFTWARE LICENSE AGREEMENT\n\nSoftware: &lt;PRODUCT&gt;\n\n   1. The \&quot;Software\&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as \&quot;you\&quot; or \&quot;Licensee.\&quot;\n\n   2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.\n\n   3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:\n\n      a. Copies in source code must include the copyright notice and this Software License Agreement.\n\n      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.\n\n   4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:\n\n      a. Copies in source code must include the copyright notice and this Software License Agreement;\n\n      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;\n\n      c. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.\n\n   5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\n   6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n\n   7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;EPICS Open License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:EPICS&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;EPICS Open License Terms\n\nThe following is the text of the EPICS Open software license agreement which now applies to EPICS Base and many of the unbundled EPICS extensions and support modules. Copyright © &lt;YEAR&gt; &lt;HOLDERS&gt;. All rights reserved.\n\n&lt;PRODUCT&gt; is distributed subject to the following license conditions:\n\nSOFTWARE LICENSE AGREEMENT\n\nSoftware: &lt;PRODUCT&gt;\n\n   1. The \&quot;Software\&quot;, below, refers to &lt;PRODUCT&gt; (in either source code, or binary form and accompanying documentation). Each licensee is addressed as \&quot;you\&quot; or \&quot;Licensee.\&quot;\n\n   2. The copyright holders shown above and their third-party licensors hereby grant Licensee a royalty-free nonexclusive license, subject to the limitations stated herein and U.S. Government license rights.\n\n   3. You may modify and make a copy or copies of the Software for use within your organization, if you meet the following conditions:\n\n      a. Copies in source code must include the copyright notice and this Software License Agreement.\n\n      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy.\n\n   4. You may modify a copy or copies of the Software or any portion of it, thus forming a work based on the Software, and distribute copies of such work outside your organization, if you meet all of the following conditions:\n\n      a. Copies in source code must include the copyright notice and this Software License Agreement;\n\n      b. Copies in binary form must include the copyright notice and this Software License Agreement in the documentation and/or other materials provided with the copy;\n\n      c. Modified copies and works based on the Software must carry prominent notices stating that you changed specified portions of the Software.\n\n   5. Portions of the Software resulted from work developed under a U.S. Government contract and are subject to the following license: the Government is granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare derivative works, and perform publicly and display publicly.\n\n   6. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE SOFTWARE, (3) DO NOT REPTHAT USE OF THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4) DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED.\n\n   7. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PARTY LICENSORS, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGES.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://epics.anl.gov/license/open.php&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/4b7270a6cfe13b856847456d513e568b">OrtLicenseCategorization:4b7270a6cfe13b856847456d513e568b</a> for <a href="/?license=SPDX:EPICS"><span class="licensename"><span class="namespace">SPDX:</span>EPICS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>EPICS</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4b7270a6cfe13b856847456d513e568b">[<a href="/fact/OrtLicenseCategorization/4b7270a6cfe13b856847456d513e568b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4b7270a6cfe13b856847456d513e568b">[<a href="/fact/OrtLicenseCategorization/4b7270a6cfe13b856847456d513e568b">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:EPICS&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;4b7270a6cfe13b856847456d513e568b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:EPICS&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/ba69ad9db4c05284d3dbc29ac49a6607">CavilLicenseChange:ba69ad9db4c05284d3dbc29ac49a6607</a> for <a href="/?license=cavil:EPICS"><span class="licensename"><span class="namespace">cavil:</span>EPICS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>EPICS</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">EPICS</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:EPICS&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;EPICS&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;ba69ad9db4c05284d3dbc29ac49a6607&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;EPICS&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:EPICS&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/d00cef608cdfd4f7b3ca35fdbe56ac53">MetaeffektLicense:d00cef608cdfd4f7b3ca35fdbe56ac53</a> for <a href="/?license=metaeffekt:EPICS Open License"><span class="licensename"><span class="namespace">metaeffekt:</span>EPICS Open License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>EPICS Open License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>EPICS</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//www.aps.anl.gov/epics/license/open.php</span></li><li><span class="licensename">EPICS</span></li><li><span class="licensename"><span class="namespace">scancode:</span>epics</span></li><li><span class="licensename">EPICS Open License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:EPICS Open License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:EPICS&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;EPICS Open License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.aps.anl.gov/epics/license/open.php&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;EPICS&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:epics&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;d00cef608cdfd4f7b3ca35fdbe56ac53&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;http://www.aps.anl.gov/epics/license/open.php&quot;,
+            &quot;EPICS&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:EPICS Open License&quot;,
+        &quot;_category&quot;: &quot;EPICS Open License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:epics&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:EPICS&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,674 @@
+<html><head><title>ldbcollector: spdx:python-ldap</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:python-ldap</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>python-ldap</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Python ldap License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Python ldap License</span></li><li><span class="licensename">python-ldap</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>python-ldap</span></li><li><span class="licensename"><span class="namespace">cavil:</span>python-ldap</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>python-ldap</span></li><li><span class="licensename"><span class="namespace">scancode:</span>python-ldap</span></li><li><span class="licensename"><span class="namespace">spdx:</span>python-ldap</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:b0137611f7b4f6b8d13465635516453a">[<a href="/fact/BlueOakCouncil/b0137611f7b4f6b8d13465635516453a">BlueOakCouncil</a>]</span><span title="ScancodeData:9ff26a7dfca6968a216a43e7790e92f9">[<a href="/fact/ScancodeData/9ff26a7dfca6968a216a43e7790e92f9">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f4f86d15ad281ceb98ba3f30cbcf242b">[<a href="/fact/SPDXLicense/f4f86d15ad281ceb98ba3f30cbcf242b">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:1ae5cf4ecce7652e1721fb593bcf54b1">[<a href="/fact/FedoraEntry/1ae5cf4ecce7652e1721fb593bcf54b1">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:b0137611f7b4f6b8d13465635516453a">[<a href="/fact/BlueOakCouncil/b0137611f7b4f6b8d13465635516453a">BlueOakCouncil</a>]</span>)</span></li><li><span title="">CoDEStatus: <b style="">not approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:da663244535df6364a05a7658bfaa45c">[<a href="/fact/MetaeffektLicense/da663244535df6364a05a7658bfaa45c">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1b527f7e6c873851012e47a5871dc3db">[<a href="/fact/OrtLicenseCategorization/1b527f7e6c873851012e47a5871dc3db">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1b527f7e6c873851012e47a5871dc3db">[<a href="/fact/OrtLicenseCategorization/1b527f7e6c873851012e47a5871dc3db">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This was python_19.RULE before<span class="provided-by">(provided by: <span title="ScancodeData:9ff26a7dfca6968a216a43e7790e92f9">[<a href="/fact/ScancodeData/9ff26a7dfca6968a216a43e7790e92f9">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/python-ldap/python-ldap/blob/main/LICENCE" target="_blank">https://github.com/python-ldap/python-ldap/blob/main/LICENCE</a></li><li><a href="https://spdx.org/licenses/python-ldap" target="_blank">https://spdx.org/licenses/python-ldap</a></li><li><a href="https://github.com/zdohnal/hplip/blob/master/base/ldif.py" target="_blank">https://github.com/zdohnal/hplip/blob/master/base/ldif.py</a></li><li><a href="https://sourceforge.net/projects/hplip/files/hplip/3.23.5/hplip-3.23.5.tar.gz/download" target="_blank">https://sourceforge.net/projects/hplip/files/hplip/3.23.5/hplip-3.23.5.tar.gz/download</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The python-ldap package is distributed under Python-style license.
+
+Standard disclaimer:
+   This software is made available by the author(s) to the public for free
+   and &quot;as is&quot;.  All users of this free software are solely and entirely
+   responsible for their own choice and use of this software for their
+   own purposes.  By using this software, each user agrees that the
+   author(s) shall not be liable for damages of any kind in relation to
+   its use or performance. The author(s) do not warrant that this software
+   is fit for any purpose.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            The python-ldap package is distributed under Python-style license.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Standard disclaimer:
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            This software is made available by the
+            author(s) to the public for free and &amp;quot;as is&amp;quot;. All users of this free
+            software are solely and entirely responsible for their own choice
+            and use of this software for their own purposes. By using this
+            software, each user agrees that the author(s) shall not be liable
+            for damages of any kind in relation to its use or performance. The
+            author(s) do not warrant that this software is fit for any purpose.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>The python-ldap package is distributed under Python-style license.
+
+Standard disclaimer
+   This software is made available by the author(s) to the public for free
+   and &quot;as is&quot;.  All users of this free software are solely and entirely
+   responsible for their own choice and use of this software for their
+   own purposes.  By using this software, each user agrees that the
+   author(s) shall not be liable for damages of any kind in relation to
+   its use or performance. The author(s) do not warrant that this software
+   is fit for any purpose.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/f4f86d15ad281ceb98ba3f30cbcf242b">SPDXLicense:f4f86d15ad281ceb98ba3f30cbcf242b</a> for <a href="/?license=spdx:python-ldap"><span class="licensename"><span class="namespace">spdx:</span>python-ldap</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>python-ldap</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Python ldap License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f4f86d15ad281ceb98ba3f30cbcf242b">[<a href="/fact/SPDXLicense/f4f86d15ad281ceb98ba3f30cbcf242b">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/python-ldap/python-ldap/blob/main/LICENCE" target="_blank">https://github.com/python-ldap/python-ldap/blob/main/LICENCE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The python-ldap package is distributed under Python-style license.
+
+Standard disclaimer:
+   This software is made available by the author(s) to the public for free
+   and &quot;as is&quot;.  All users of this free software are solely and entirely
+   responsible for their own choice and use of this software for their
+   own purposes.  By using this software, each user agrees that the
+   author(s) shall not be liable for damages of any kind in relation to
+   its use or performance. The author(s) do not warrant that this software
+   is fit for any purpose.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            The python-ldap package is distributed under Python-style license.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Standard disclaimer:
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            This software is made available by the
+            author(s) to the public for free and &amp;quot;as is&amp;quot;. All users of this free
+            software are solely and entirely responsible for their own choice
+            and use of this software for their own purposes. By using this
+            software, each user agrees that the author(s) shall not be liable
+            for damages of any kind in relation to its use or performance. The
+            author(s) do not warrant that this software is fit for any purpose.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:python-ldap&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Python ldap License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;f4f86d15ad281ceb98ba3f30cbcf242b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The python-ldap package is distributed under Python-style license.\n\nStandard disclaimer:\n   This software is made available by the author(s) to the public for free\n   and \&quot;as is\&quot;.  All users of this free software are solely and entirely\n   responsible for their own choice and use of this software for their\n   own purposes.  By using this software, each user agrees that the\n   author(s) shall not be liable for damages of any kind in relation to\n   its use or performance. The author(s) do not warrant that this software\n   is fit for any purpose.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            The python-ldap package is distributed under Python-style license.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Standard disclaimer:\n        &lt;/p&gt;\n\n        &lt;p&gt;\n            This software is made available by the\n            author(s) to the public for free and &amp;quot;as is&amp;quot;. All users of this free\n            software are solely and entirely responsible for their own choice\n            and use of this software for their own purposes. By using this\n            software, each user agrees that the author(s) shall not be liable\n            for damages of any kind in relation to its use or performance. The\n            author(s) do not warrant that this software is fit for any purpose.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/python-ldap/python-ldap/blob/main/LICENCE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/python-ldap/python-ldap/blob/main/LICENCE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:19Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/python-ldap/python-ldap/blob/main/LICENCE&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:python-ldap&quot;,
+        &quot;licenseText&quot;: &quot;The python-ldap package is distributed under Python-style license.\n\nStandard disclaimer:\n   This software is made available by the author(s) to the public for free\n   and \&quot;as is\&quot;.  All users of this free software are solely and entirely\n   responsible for their own choice and use of this software for their\n   own purposes.  By using this software, each user agrees that the\n   author(s) shall not be liable for damages of any kind in relation to\n   its use or performance. The author(s) do not warrant that this software\n   is fit for any purpose.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            The python-ldap package is distributed under Python-style license.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Standard disclaimer:\n        &lt;/p&gt;\n\n        &lt;p&gt;\n            This software is made available by the\n            author(s) to the public for free and &amp;quot;as is&amp;quot;. All users of this free\n            software are solely and entirely responsible for their own choice\n            and use of this software for their own purposes. By using this\n            software, each user agrees that the author(s) shall not be liable\n            for damages of any kind in relation to its use or performance. The\n            author(s) do not warrant that this software is fit for any purpose.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Python ldap License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/python-ldap/python-ldap/blob/main/LICENCE&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;The python-ldap package is distributed under Python-style license.\n\nStandard disclaimer:\n\nThis software is made available by the author(s) to the public for free and \&quot;as is\&quot;. All users of this free software are solely and entirely responsible for their own choice and use of this software for their own purposes. By using this software, each user agrees that the author(s) shall not be liable for damages of any kind in relation to its use or performance. The author(s) do not warrant that this software is fit for any purpose.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/1ae5cf4ecce7652e1721fb593bcf54b1">FedoraEntry:1ae5cf4ecce7652e1721fb593bcf54b1</a> for <a href="/?license=Fedora:python-ldap"><span class="licensename"><span class="namespace">Fedora:</span>python-ldap</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>python-ldap</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>python-ldap</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:1ae5cf4ecce7652e1721fb593bcf54b1">[<a href="/fact/FedoraEntry/1ae5cf4ecce7652e1721fb593bcf54b1">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:python-ldap&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:python-ldap&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;1ae5cf4ecce7652e1721fb593bcf54b1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;python-ldap&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:python-ldap&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/b0137611f7b4f6b8d13465635516453a">BlueOakCouncil:b0137611f7b4f6b8d13465635516453a</a> for <a href="/?license=BlueOak:python-ldap"><span class="licensename"><span class="namespace">BlueOak:</span>python-ldap</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>python-ldap</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Python ldap License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:b0137611f7b4f6b8d13465635516453a">[<a href="/fact/BlueOakCouncil/b0137611f7b4f6b8d13465635516453a">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:b0137611f7b4f6b8d13465635516453a">[<a href="/fact/BlueOakCouncil/b0137611f7b4f6b8d13465635516453a">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/python-ldap" target="_blank">https://spdx.org/licenses/python-ldap</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:python-ldap&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Python ldap License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;b0137611f7b4f6b8d13465635516453a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/python-ldap&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;python-ldap&quot;,
+                &quot;_name&quot;: &quot;Python ldap License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/python-ldap&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/9ff26a7dfca6968a216a43e7790e92f9">ScancodeData:9ff26a7dfca6968a216a43e7790e92f9</a> for <a href="/?license=scancode:python-ldap"><span class="licensename"><span class="namespace">scancode:</span>python-ldap</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>python-ldap</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Python ldap License</span></li><li><span class="licensename">Python ldap License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:9ff26a7dfca6968a216a43e7790e92f9">[<a href="/fact/ScancodeData/9ff26a7dfca6968a216a43e7790e92f9">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This was python_19.RULE before<span class="provided-by">(provided by: <span title="ScancodeData:9ff26a7dfca6968a216a43e7790e92f9">[<a href="/fact/ScancodeData/9ff26a7dfca6968a216a43e7790e92f9">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/zdohnal/hplip/blob/master/base/ldif.py" target="_blank">https://github.com/zdohnal/hplip/blob/master/base/ldif.py</a></li><li><a href="https://sourceforge.net/projects/hplip/files/hplip/3.23.5/hplip-3.23.5.tar.gz/download" target="_blank">https://sourceforge.net/projects/hplip/files/hplip/3.23.5/hplip-3.23.5.tar.gz/download</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The python-ldap package is distributed under Python-style license.
+
+Standard disclaimer
+   This software is made available by the author(s) to the public for free
+   and &quot;as is&quot;.  All users of this free software are solely and entirely
+   responsible for their own choice and use of this software for their
+   own purposes.  By using this software, each user agrees that the
+   author(s) shall not be liable for damages of any kind in relation to
+   its use or performance. The author(s) do not warrant that this software
+   is fit for any purpose.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:python-ldap&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Python ldap License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Python ldap License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;9ff26a7dfca6968a216a43e7790e92f9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;This was python_19.RULE before&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/zdohnal/hplip/blob/master/base/ldif.py&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/projects/hplip/files/hplip/3.23.5/hplip-3.23.5.tar.gz/download&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The python-ldap package is distributed under Python-style license.\n\nStandard disclaimer\n   This software is made available by the author(s) to the public for free\n   and \&quot;as is\&quot;.  All users of this free software are solely and entirely\n   responsible for their own choice and use of this software for their\n   own purposes.  By using this software, each user agrees that the\n   author(s) shall not be liable for damages of any kind in relation to\n   its use or performance. The author(s) do not warrant that this software\n   is fit for any purpose.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;python-ldap&quot;,
+        &quot;_name&quot;: &quot;Python ldap License&quot;,
+        &quot;_notes&quot;: &quot;This was python_19.RULE before&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/zdohnal/hplip/blob/master/base/ldif.py&quot;,
+            &quot;https://sourceforge.net/projects/hplip/files/hplip/3.23.5/hplip-3.23.5.tar.gz/download&quot;
+        ],
+        &quot;_owner&quot;: &quot;Python Software Foundation (PSF)&quot;,
+        &quot;_shortName&quot;: &quot;Python ldap License&quot;,
+        &quot;_spdxId&quot;: &quot;python-ldap&quot;,
+        &quot;_text&quot;: &quot;The python-ldap package is distributed under Python-style license.\n\nStandard disclaimer\n   This software is made available by the author(s) to the public for free\n   and \&quot;as is\&quot;.  All users of this free software are solely and entirely\n   responsible for their own choice and use of this software for their\n   own purposes.  By using this software, each user agrees that the\n   author(s) shall not be liable for damages of any kind in relation to\n   its use or performance. The author(s) do not warrant that this software\n   is fit for any purpose.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/1b527f7e6c873851012e47a5871dc3db">OrtLicenseCategorization:1b527f7e6c873851012e47a5871dc3db</a> for <a href="/?license=SPDX:python-ldap"><span class="licensename"><span class="namespace">SPDX:</span>python-ldap</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>python-ldap</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1b527f7e6c873851012e47a5871dc3db">[<a href="/fact/OrtLicenseCategorization/1b527f7e6c873851012e47a5871dc3db">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1b527f7e6c873851012e47a5871dc3db">[<a href="/fact/OrtLicenseCategorization/1b527f7e6c873851012e47a5871dc3db">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:python-ldap&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;1b527f7e6c873851012e47a5871dc3db&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:python-ldap&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/882ef24e1e611a79642cc5e3e269494b">CavilLicenseChange:882ef24e1e611a79642cc5e3e269494b</a> for <a href="/?license=cavil:python-ldap"><span class="licensename"><span class="namespace">cavil:</span>python-ldap</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>python-ldap</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">python-ldap</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:python-ldap&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;python-ldap&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;882ef24e1e611a79642cc5e3e269494b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;python-ldap&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:python-ldap&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/da663244535df6364a05a7658bfaa45c">MetaeffektLicense:da663244535df6364a05a7658bfaa45c</a> for <a href="/?license=metaeffekt:Python ldap License"><span class="licensename"><span class="namespace">metaeffekt:</span>Python ldap License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Python ldap License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>python-ldap</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Python ldap License</span></li><li><span class="licensename">python-ldap</span></li><li><span class="licensename"><span class="namespace">scancode:</span>python-ldap</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">CoDEStatus: <b style="">not approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:da663244535df6364a05a7658bfaa45c">[<a href="/fact/MetaeffektLicense/da663244535df6364a05a7658bfaa45c">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Python ldap License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:python-ldap&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;python-ldap&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Python ldap License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:python-ldap&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;da663244535df6364a05a7658bfaa45c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;not approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Python ldap License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Python ldap License&quot;,
+        &quot;_category&quot;: &quot;python-ldap&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;not approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:python-ldap&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:python-ldap&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

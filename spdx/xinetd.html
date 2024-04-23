@@ -1,0 +1,1255 @@
+<html><head><title>ldbcollector: spdx:xinetd</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:xinetd</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>xinetd</span></li></ul></li><li><b>other LicenseNames (13):</b><ul class="capsulUl clearfix"><li><span class="licensename">License of xinetd</span></li><li><span class="licensename">xinetd</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>xinetd</span></li><li><span class="licensename"><span class="namespace">cavil:</span>xinetd</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>xinetd</span></li><li><span class="licensename"><span class="namespace">fossology:</span>xinetd</span></li><li><span class="licensename"><span class="namespace">fsf:</span>xinetd</span></li><li><span class="licensename"><span class="namespace">scancode:</span>xinetd</span></li><li><span class="licensename"><span class="namespace">spdx:</span>xinetd</span></li><li><span class="licensename">xinetd License</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Xinetd License</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>xinetd License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>xinetd License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SUSE-xinetd</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:901b158378d4c41b3355f6e88deb0d4f">[<a href="/fact/BlueOakCouncil/901b158378d4c41b3355f6e88deb0d4f">BlueOakCouncil</a>]</span><span title="ScancodeData:cd4ab7fbd1946bd93429b17ea331654c">[<a href="/fact/ScancodeData/cd4ab7fbd1946bd93429b17ea331654c">ScancodeData</a>]</span><span title="FOSSLight:0ba6acac2ba5aa91056e3ec40f458726">[<a href="/fact/FOSSLight/0ba6acac2ba5aa91056e3ec40f458726">FOSSLight</a>]</span><span title="ifrOSS License:909754b172233fec3ae36d87be409515">[<a href="/fact/ifrOSS License/909754b172233fec3ae36d87be409515">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:318fadbaa30fd64cfe536f6f97fdf005">[<a href="/fact/SPDXLicense/318fadbaa30fd64cfe536f6f97fdf005">SPDXLicense</a>]</span><span title="FSF:fd7529f95d1d7e10994b4d5506a5ff7a">[<a href="/fact/FSF/fd7529f95d1d7e10994b4d5506a5ff7a">FSF</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:318fadbaa30fd64cfe536f6f97fdf005">[<a href="/fact/SPDXLicense/318fadbaa30fd64cfe536f6f97fdf005">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5fc4f818283bde0c951f36221ccc5aac">[<a href="/fact/FedoraEntry/5fc4f818283bde0c951f36221ccc5aac">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:901b158378d4c41b3355f6e88deb0d4f">[<a href="/fact/BlueOakCouncil/901b158378d4c41b3355f6e88deb0d4f">BlueOakCouncil</a>]</span>)</span></li><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:909754b172233fec3ae36d87be409515">[<a href="/fact/ifrOSS License/909754b172233fec3ae36d87be409515">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:909754b172233fec3ae36d87be409515">[<a href="/fact/ifrOSS License/909754b172233fec3ae36d87be409515">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b2cfbe26971e7fc00d66d16998ed1d">[<a href="/fact/OrtLicenseCategorization/88b2cfbe26971e7fc00d66d16998ed1d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b2cfbe26971e7fc00d66d16998ed1d">[<a href="/fact/OrtLicenseCategorization/88b2cfbe26971e7fc00d66d16998ed1d">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Xinetd_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Xinetd_License</a></li><li><a href="https://spdx.org/licenses/xinetd.html" target="_blank">https://spdx.org/licenses/xinetd.html</a></li><li><a href="https://www.gnu.org/licenses/license-list.html#xinetd" target="_blank">https://www.gnu.org/licenses/license-list.html#xinetd</a></li><li><a href="http://directory.fsf.org/wiki/License:Xinetd" target="_blank">http://directory.fsf.org/wiki/License:Xinetd</a></li><li><a href="https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain" target="_blank">https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/Xinetd_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>ORIGINAL LICENSE: This software is
+
+(c) Copyright 1992 by Panagiotis Tsirigotis
+
+The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.
+
+Modifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:
+
+1. The version number will be modified as follows:
+     a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.
+     b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.
+
+2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.
+
+The author makes no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without any express or implied warranty.
+
+Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun
+
+Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb
+
+This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:
+
+I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.
+
+So, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;ORIGINAL LICENSE: This software is&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;(c) Copyright 1992 by Panagiotis Tsirigotis&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its
+         documentation for any purpose and without fee, provided that the above copyright notice extant in
+         files in this distribution is not removed from files included in any redistribution and that this
+         copyright notice is also included in any redistribution.&lt;/p&gt;
+
+      &lt;p&gt;Modifications to this software may be distributed, either by distributing the modified software or by
+         distributing patches to the original software, under the following additional terms:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          The version number will be modified as follows:
+          
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+              The first 3 components of the version number (i.e &amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;)
+                 will remain unchanged.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+              A new component will be appended to the version number to indicate the modification level. The
+                 form of this component is up to the author of the modifications.
+            &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          The author of the modifications will include his/her name by appending it along with the new
+             version number to this file and will be responsible for any wrong behavior of the modified
+             software.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+        &lt;p&gt;The author makes no representations about the suitability of this software for any purpose. It is
+           provided &amp;quot;as is&amp;quot; without any express or implied warranty.&lt;/p&gt;
+
+        &lt;p&gt;Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun&lt;/p&gt;
+
+        &lt;p&gt;Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb&lt;/p&gt;
+
+        &lt;p&gt;This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me
+           (Rob Braun), to use the higher version numbers:&lt;/p&gt;
+
+        &lt;p&gt;I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not
+           mean them to last as long as they did.&lt;/p&gt;
+
+        &lt;p&gt;So, if you want, you may use any 2.N.* (N &amp;gt;= 3) version string for future xinetd versions that you
+           release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the
+           next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>xinetd License
+
+ORIGINAL LICENSE:
+This software is
+
+(c) Copyright 1992 by Panagiotis Tsirigotis
+
+The author (Panagiotis Tsirigotis) grants permission to use, copy, and
+distribute this software and its documentation for any purpose and without fee,
+provided that the above copyright notice extant in files in this distribution is
+not removed from files included in any redistribution and that this copyright
+notice is also included in any redistribution.
+
+Modifications to this software may be distributed, either by distributing the
+modified software or by distributing patches to the original software, under the
+following additional terms:
+
+1. The version number will be modified as follows:
+
+a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;)
+will remain unchanged.
+
+b. A new component will be appended to the version number to indicate the
+modification level. The form of this component is up to the author of the
+modifications.
+
+2. The author of the modifications will include his/her name by appending it
+along with the new version number to this file and will be responsible for any
+wrong behavior of the modified software.
+
+The author makes no representations about the suitability of this software for
+any purpose. It is provided &quot;as is&quot; without any express or implied warranty.
+
+Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun
+
+Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb
+
+This is an exerpt from an email I recieved from the original author, allowing
+xinetd as maintained by me, to use the higher version numbers:
+
+I appreciate your maintaining the version string guidelines as specified in the
+copyright. But I did not mean them to last as long as they did.
+
+So, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd
+versions that you release. Note that I am excluding the 2.2.* line; using that
+would only create confusion. Naming the next release 2.3.0 would put to rest the
+confusion about 2.2.1 and 2.1.8.*.</pre></details></li><li><details><summary>Text:</summary><pre>ORIGINAL LICENSE: This software is (c) Copyright 1992 by Panagiotis Tsirigotis
+
+The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.
+
+Modifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:
+
+   1. The version number will be modified as follows:
+
+      a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.
+
+      b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.
+
+   2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.
+
+The author makes no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without any express or implied warranty.
+
+Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun
+
+Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb
+
+This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:
+
+I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.
+
+So, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/318fadbaa30fd64cfe536f6f97fdf005">SPDXLicense:318fadbaa30fd64cfe536f6f97fdf005</a> for <a href="/?license=spdx:xinetd"><span class="licensename"><span class="namespace">spdx:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>xinetd</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:318fadbaa30fd64cfe536f6f97fdf005">[<a href="/fact/SPDXLicense/318fadbaa30fd64cfe536f6f97fdf005">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:318fadbaa30fd64cfe536f6f97fdf005">[<a href="/fact/SPDXLicense/318fadbaa30fd64cfe536f6f97fdf005">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Xinetd_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Xinetd_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>ORIGINAL LICENSE: This software is
+
+(c) Copyright 1992 by Panagiotis Tsirigotis
+
+The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.
+
+Modifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:
+
+1. The version number will be modified as follows:
+     a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.
+     b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.
+
+2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.
+
+The author makes no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without any express or implied warranty.
+
+Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun
+
+Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb
+
+This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:
+
+I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.
+
+So, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;ORIGINAL LICENSE: This software is&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;(c) Copyright 1992 by Panagiotis Tsirigotis&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its
+         documentation for any purpose and without fee, provided that the above copyright notice extant in
+         files in this distribution is not removed from files included in any redistribution and that this
+         copyright notice is also included in any redistribution.&lt;/p&gt;
+
+      &lt;p&gt;Modifications to this software may be distributed, either by distributing the modified software or by
+         distributing patches to the original software, under the following additional terms:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          The version number will be modified as follows:
+          
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+              The first 3 components of the version number (i.e &amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;)
+                 will remain unchanged.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+              A new component will be appended to the version number to indicate the modification level. The
+                 form of this component is up to the author of the modifications.
+            &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          The author of the modifications will include his/her name by appending it along with the new
+             version number to this file and will be responsible for any wrong behavior of the modified
+             software.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+        &lt;p&gt;The author makes no representations about the suitability of this software for any purpose. It is
+           provided &amp;quot;as is&amp;quot; without any express or implied warranty.&lt;/p&gt;
+
+        &lt;p&gt;Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun&lt;/p&gt;
+
+        &lt;p&gt;Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb&lt;/p&gt;
+
+        &lt;p&gt;This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me
+           (Rob Braun), to use the higher version numbers:&lt;/p&gt;
+
+        &lt;p&gt;I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not
+           mean them to last as long as they did.&lt;/p&gt;
+
+        &lt;p&gt;So, if you want, you may use any 2.N.* (N &amp;gt;= 3) version string for future xinetd versions that you
+           release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the
+           next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:xinetd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;318fadbaa30fd64cfe536f6f97fdf005&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;ORIGINAL LICENSE: This software is\n\n(c) Copyright 1992 by Panagiotis Tsirigotis\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:\n\n1. The version number will be modified as follows:\n     a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.\n     b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.\n\n2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without any express or implied warranty.\n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;ORIGINAL LICENSE: This software is&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;(c) Copyright 1992 by Panagiotis Tsirigotis&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its\n         documentation for any purpose and without fee, provided that the above copyright notice extant in\n         files in this distribution is not removed from files included in any redistribution and that this\n         copyright notice is also included in any redistribution.&lt;/p&gt;\n\n      &lt;p&gt;Modifications to this software may be distributed, either by distributing the modified software or by\n         distributing patches to the original software, under the following additional terms:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          The version number will be modified as follows:\n          \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n              The first 3 components of the version number (i.e &amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;)\n                 will remain unchanged.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n              A new component will be appended to the version number to indicate the modification level. The\n                 form of this component is up to the author of the modifications.\n            &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          The author of the modifications will include his/her name by appending it along with the new\n             version number to this file and will be responsible for any wrong behavior of the modified\n             software.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n        &lt;p&gt;The author makes no representations about the suitability of this software for any purpose. It is\n           provided &amp;quot;as is&amp;quot; without any express or implied warranty.&lt;/p&gt;\n\n        &lt;p&gt;Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun&lt;/p&gt;\n\n        &lt;p&gt;Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb&lt;/p&gt;\n\n        &lt;p&gt;This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me\n           (Rob Braun), to use the higher version numbers:&lt;/p&gt;\n\n        &lt;p&gt;I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not\n           mean them to last as long as they did.&lt;/p&gt;\n\n        &lt;p&gt;So, if you want, you may use any 2.N.* (N &amp;gt;= 3) version string for future xinetd versions that you\n           release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the\n           next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:16Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: true,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:xinetd&quot;,
+        &quot;licenseText&quot;: &quot;ORIGINAL LICENSE: This software is\n\n(c) Copyright 1992 by Panagiotis Tsirigotis\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:\n\n1. The version number will be modified as follows:\n     a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.\n     b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.\n\n2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without any express or implied warranty.\n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;ORIGINAL LICENSE: This software is&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;(c) Copyright 1992 by Panagiotis Tsirigotis&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its\n         documentation for any purpose and without fee, provided that the above copyright notice extant in\n         files in this distribution is not removed from files included in any redistribution and that this\n         copyright notice is also included in any redistribution.&lt;/p&gt;\n\n      &lt;p&gt;Modifications to this software may be distributed, either by distributing the modified software or by\n         distributing patches to the original software, under the following additional terms:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          The version number will be modified as follows:\n          \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n              The first 3 components of the version number (i.e &amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;.&amp;lt;number&amp;gt;)\n                 will remain unchanged.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n              A new component will be appended to the version number to indicate the modification level. The\n                 form of this component is up to the author of the modifications.\n            &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          The author of the modifications will include his/her name by appending it along with the new\n             version number to this file and will be responsible for any wrong behavior of the modified\n             software.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n        &lt;p&gt;The author makes no representations about the suitability of this software for any purpose. It is\n           provided &amp;quot;as is&amp;quot; without any express or implied warranty.&lt;/p&gt;\n\n        &lt;p&gt;Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun&lt;/p&gt;\n\n        &lt;p&gt;Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb&lt;/p&gt;\n\n        &lt;p&gt;This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me\n           (Rob Braun), to use the higher version numbers:&lt;/p&gt;\n\n        &lt;p&gt;I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not\n           mean them to last as long as they did.&lt;/p&gt;\n\n        &lt;p&gt;So, if you want, you may use any 2.N.* (N &amp;gt;= 3) version string for future xinetd versions that you\n           release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the\n           next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;xinetd License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;ORIGINAL LICENSE: This software is\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;(c) Copyright 1992 by Panagiotis Tsirigotis  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The version number will be modified as follows:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without any express or implied warranty.\n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/5fc4f818283bde0c951f36221ccc5aac">FedoraEntry:5fc4f818283bde0c951f36221ccc5aac</a> for <a href="/?license=Fedora:xinetd"><span class="licensename"><span class="namespace">Fedora:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>xinetd</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>xinetd</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd</span></li><li><span class="licensename">xinetd License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5fc4f818283bde0c951f36221ccc5aac">[<a href="/fact/FedoraEntry/5fc4f818283bde0c951f36221ccc5aac">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:xinetd&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:xinetd&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;xinetd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;5fc4f818283bde0c951f36221ccc5aac&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;xinetd&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;xinetd License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;xinetd&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:xinetd&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/901b158378d4c41b3355f6e88deb0d4f">BlueOakCouncil:901b158378d4c41b3355f6e88deb0d4f</a> for <a href="/?license=BlueOak:xinetd"><span class="licensename"><span class="namespace">BlueOak:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>xinetd</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:901b158378d4c41b3355f6e88deb0d4f">[<a href="/fact/BlueOakCouncil/901b158378d4c41b3355f6e88deb0d4f">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:901b158378d4c41b3355f6e88deb0d4f">[<a href="/fact/BlueOakCouncil/901b158378d4c41b3355f6e88deb0d4f">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/xinetd.html" target="_blank">https://spdx.org/licenses/xinetd.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:xinetd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;901b158378d4c41b3355f6e88deb0d4f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/xinetd.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;xinetd&quot;,
+                &quot;_name&quot;: &quot;xinetd License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/xinetd.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/FSF">FSF</a>: <a href="/fact/FSF/fd7529f95d1d7e10994b4d5506a5ff7a">FSF:fd7529f95d1d7e10994b4d5506a5ff7a</a> for <a href="/?license=fsf:xinetd"><span class="licensename"><span class="namespace">fsf:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fsf:</span>xinetd</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">License of xinetd</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>xinetd</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="FSF:fd7529f95d1d7e10994b4d5506a5ff7a">[<a href="/fact/FSF/fd7529f95d1d7e10994b4d5506a5ff7a">FSF</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/license-list.html#xinetd" target="_blank">https://www.gnu.org/licenses/license-list.html#xinetd</a></li><li><a href="http://directory.fsf.org/wiki/License:Xinetd" target="_blank">http://directory.fsf.org/wiki/License:Xinetd</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fsf:xinetd&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;License of xinetd&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:xinetd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FSF&quot;,
+        &quot;fd7529f95d1d7e10994b4d5506a5ff7a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/license-list.html#xinetd&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://directory.fsf.org/wiki/License:Xinetd&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_id&quot;: &quot;fsf:xinetd&quot;,
+        &quot;_identifiers&quot;: {
+            &quot;spdx&quot;: [
+                &quot;xinetd&quot;
+            ]
+        },
+        &quot;_name&quot;: &quot;License of xinetd&quot;,
+        &quot;_tags&quot;: [
+            &quot;libre&quot;
+        ],
+        &quot;_uris&quot;: [
+            &quot;https://www.gnu.org/licenses/license-list.html#xinetd&quot;,
+            &quot;http://directory.fsf.org/wiki/License:Xinetd&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;FSF&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/cd4ab7fbd1946bd93429b17ea331654c">ScancodeData:cd4ab7fbd1946bd93429b17ea331654c</a> for <a href="/?license=scancode:xinetd"><span class="licensename"><span class="namespace">scancode:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>xinetd</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd License</span></li><li><span class="licensename">xinetd License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:cd4ab7fbd1946bd93429b17ea331654c">[<a href="/fact/ScancodeData/cd4ab7fbd1946bd93429b17ea331654c">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/Xinetd_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>xinetd License
+
+ORIGINAL LICENSE:
+This software is
+
+(c) Copyright 1992 by Panagiotis Tsirigotis
+
+The author (Panagiotis Tsirigotis) grants permission to use, copy, and
+distribute this software and its documentation for any purpose and without fee,
+provided that the above copyright notice extant in files in this distribution is
+not removed from files included in any redistribution and that this copyright
+notice is also included in any redistribution.
+
+Modifications to this software may be distributed, either by distributing the
+modified software or by distributing patches to the original software, under the
+following additional terms:
+
+1. The version number will be modified as follows:
+
+a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;)
+will remain unchanged.
+
+b. A new component will be appended to the version number to indicate the
+modification level. The form of this component is up to the author of the
+modifications.
+
+2. The author of the modifications will include his/her name by appending it
+along with the new version number to this file and will be responsible for any
+wrong behavior of the modified software.
+
+The author makes no representations about the suitability of this software for
+any purpose. It is provided &quot;as is&quot; without any express or implied warranty.
+
+Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun
+
+Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb
+
+This is an exerpt from an email I recieved from the original author, allowing
+xinetd as maintained by me, to use the higher version numbers:
+
+I appreciate your maintaining the version string guidelines as specified in the
+copyright. But I did not mean them to last as long as they did.
+
+So, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd
+versions that you release. Note that I am excluding the 2.2.* line; using that
+would only create confusion. Naming the next release 2.3.0 would put to rest the
+confusion about 2.2.1 and 2.1.8.*.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:xinetd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;cd4ab7fbd1946bd93429b17ea331654c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;xinetd License\n\nORIGINAL LICENSE:\nThis software is\n\n(c) Copyright 1992 by Panagiotis Tsirigotis\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and\ndistribute this software and its documentation for any purpose and without fee,\nprovided that the above copyright notice extant in files in this distribution is\nnot removed from files included in any redistribution and that this copyright\nnotice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the\nmodified software or by distributing patches to the original software, under the\nfollowing additional terms:\n\n1. The version number will be modified as follows:\n\na. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;)\nwill remain unchanged.\n\nb. A new component will be appended to the version number to indicate the\nmodification level. The form of this component is up to the author of the\nmodifications.\n\n2. The author of the modifications will include his/her name by appending it\nalong with the new version number to this file and will be responsible for any\nwrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for\nany purpose. It is provided \&quot;as is\&quot; without any express or implied warranty.\n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing\nxinetd as maintained by me, to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the\ncopyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd\nversions that you release. Note that I am excluding the 2.2.* line; using that\nwould only create confusion. Naming the next release 2.3.0 would put to rest the\nconfusion about 2.2.1 and 2.1.8.*.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;,
+        &quot;_key&quot;: &quot;xinetd&quot;,
+        &quot;_name&quot;: &quot;xinetd License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;xinetd&quot;,
+        &quot;_shortName&quot;: &quot;xinetd License&quot;,
+        &quot;_spdxId&quot;: &quot;xinetd&quot;,
+        &quot;_text&quot;: &quot;xinetd License\n\nORIGINAL LICENSE:\nThis software is\n\n(c) Copyright 1992 by Panagiotis Tsirigotis\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and\ndistribute this software and its documentation for any purpose and without fee,\nprovided that the above copyright notice extant in files in this distribution is\nnot removed from files included in any redistribution and that this copyright\nnotice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the\nmodified software or by distributing patches to the original software, under the\nfollowing additional terms:\n\n1. The version number will be modified as follows:\n\na. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;)\nwill remain unchanged.\n\nb. A new component will be appended to the version number to indicate the\nmodification level. The form of this component is up to the author of the\nmodifications.\n\n2. The author of the modifications will include his/her name by appending it\nalong with the new version number to this file and will be responsible for any\nwrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for\nany purpose. It is provided \&quot;as is\&quot; without any express or implied warranty.\n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing\nxinetd as maintained by me, to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the\ncopyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd\nversions that you release. Note that I am excluding the 2.2.* line; using that\nwould only create confusion. Naming the next release 2.3.0 would put to rest the\nconfusion about 2.2.1 and 2.1.8.*.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/2f91c01c0674baf7f9a96992b1b97e29">Fossology:2f91c01c0674baf7f9a96992b1b97e29</a> for <a href="/?license=fossology:xinetd"><span class="licensename"><span class="namespace">fossology:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>xinetd</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Xinetd_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Xinetd_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>ORIGINAL LICENSE: This software is (c) Copyright 1992 by Panagiotis Tsirigotis
+
+The author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.
+
+Modifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:
+
+   1. The version number will be modified as follows:
+
+      a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.
+
+      b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.
+
+   2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.
+
+The author makes no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without any express or implied warranty.
+
+Modifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun
+
+Sensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb
+
+This is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:
+
+I appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.
+
+So, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:xinetd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;2f91c01c0674baf7f9a96992b1b97e29&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;ORIGINAL LICENSE: This software is (c) Copyright 1992 by Panagiotis Tsirigotis\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:\n\n   1. The version number will be modified as follows:\n\n      a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.\n\n      b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.\n\n   2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without any express or implied warranty.\n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;xinetd License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:xinetd&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;ORIGINAL LICENSE: This software is (c) Copyright 1992 by Panagiotis Tsirigotis\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:\n\n   1. The version number will be modified as follows:\n\n      a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged.\n\n      b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.\n\n   2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without any express or implied warranty.\n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Xinetd_License&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/88b2cfbe26971e7fc00d66d16998ed1d">OrtLicenseCategorization:88b2cfbe26971e7fc00d66d16998ed1d</a> for <a href="/?license=SPDX:xinetd"><span class="licensename"><span class="namespace">SPDX:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>xinetd</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b2cfbe26971e7fc00d66d16998ed1d">[<a href="/fact/OrtLicenseCategorization/88b2cfbe26971e7fc00d66d16998ed1d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:88b2cfbe26971e7fc00d66d16998ed1d">[<a href="/fact/OrtLicenseCategorization/88b2cfbe26971e7fc00d66d16998ed1d">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:xinetd&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;88b2cfbe26971e7fc00d66d16998ed1d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:xinetd&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/6a99b4e8db4d55e0da456cc76192145d">CavilLicenseChange:6a99b4e8db4d55e0da456cc76192145d</a> for <a href="/?license=cavil:xinetd"><span class="licensename"><span class="namespace">cavil:</span>xinetd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>xinetd</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">SUSE-xinetd</span></li><li><span class="licensename">xinetd</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:xinetd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SUSE-xinetd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;xinetd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;6a99b4e8db4d55e0da456cc76192145d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;SUSE-xinetd&quot;,
+            &quot;xinetd&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:xinetd&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/ecbfdac0ea6bb115119fd4b0339e3ab5">MetaeffektLicense:ecbfdac0ea6bb115119fd4b0339e3ab5</a> for <a href="/?license=metaeffekt:xinetd License"><span class="licensename"><span class="namespace">metaeffekt:</span>xinetd License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>xinetd License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>xinetd</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd</span></li><li><span class="licensename"><span class="namespace">scancode:</span>xinetd</span></li><li><span class="licensename">xinetd License</span></li><li><span class="licensename">XINETD LICENSE</span></li><li><span class="licensename">XINETD License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:xinetd License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:xinetd&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;xinetd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;XINETD LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;XINETD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:xinetd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;ecbfdac0ea6bb115119fd4b0339e3ab5&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;xinetd License&quot;,
+            &quot;XINETD LICENSE&quot;,
+            &quot;XINETD License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:xinetd License&quot;,
+        &quot;_category&quot;: &quot;xinetd&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:xinetd&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:xinetd&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/0ba6acac2ba5aa91056e3ec40f458726">FOSSLight:0ba6acac2ba5aa91056e3ec40f458726</a> for <a href="/?license=fosslight:Xinetd License"><span class="licensename"><span class="namespace">fosslight:</span>Xinetd License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Xinetd License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:0ba6acac2ba5aa91056e3ec40f458726">[<a href="/fact/FOSSLight/0ba6acac2ba5aa91056e3ec40f458726">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Xinetd License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;xinetd&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;0ba6acac2ba5aa91056e3ec40f458726&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;ORIGINAL LICENSE: This software is\n\n(c) Copyright 1992 by Panagiotis Tsirigotis\n\nThe author (Panagiotis Tsirigotis) grants permission to use, copy, and distribute this software and its documentation for any purpose and without fee, provided that the above copyright notice extant in files in this distribution is not removed from files included in any redistribution and that this copyright notice is also included in any redistribution.\n\nModifications to this software may be distributed, either by distributing the modified software or by distributing patches to the original software, under the following additional terms:\n\n1. The version number will be modified as follows: \n     a. The first 3 components of the version number (i.e &lt;number&gt;.&lt;number&gt;.&lt;number&gt;) will remain unchanged. \n     b. A new component will be appended to the version number to indicate the modification level. The form of this component is up to the author of the modifications.\n\n2. The author of the modifications will include his/her name by appending it along with the new version number to this file and will be responsible for any wrong behavior of the modified software.\n\nThe author makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without any express or implied warranty. \n\nModifications: Version: 2.1.8.7-current Copyright 1998-2001 by Rob Braun\n\nSensor Addition Version: 2.1.8.9pre14a Copyright 2001 by Steve Grubb\n\nThis is an exerpt from an email I recieved from the original author, allowing xinetd as maintained by me (Rob Braun), to use the higher version numbers:\n\nI appreciate your maintaining the version string guidelines as specified in the copyright. But I did not mean them to last as long as they did.\n\nSo, if you want, you may use any 2.N.* (N &gt;= 3) version string for future xinetd versions that you release. Note that I am excluding the 2.2.* line; using that would only create confusion. Naming the next release 2.3.0 would put to rest the confusion about 2.2.1 and 2.1.8.*.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: null,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;xinetd&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/xinetd.html&quot;,
+            &quot;_fossLight_id&quot;: 152,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Xinetd License&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/909754b172233fec3ae36d87be409515">ifrOSS License:909754b172233fec3ae36d87be409515</a> for <a href="/?license=ifrOSS:xinetd License"><span class="licensename"><span class="namespace">ifrOSS:</span>xinetd License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>xinetd License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">xinetd License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ifrOSS License:909754b172233fec3ae36d87be409515">[<a href="/fact/ifrOSS License/909754b172233fec3ae36d87be409515">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:909754b172233fec3ae36d87be409515">[<a href="/fact/ifrOSS License/909754b172233fec3ae36d87be409515">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:909754b172233fec3ae36d87be409515">[<a href="/fact/ifrOSS License/909754b172233fec3ae36d87be409515">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain" target="_blank">https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:xinetd License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;xinetd License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;909754b172233fec3ae36d87be409515&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: {
+                                    &quot;contents&quot;: [
+                                        &quot;ifrOSS Classification&quot;,
+                                        &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                                        {
+                                            &quot;contents&quot;: &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;,
+                                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                        }
+                                    ],
+                                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                },
+                                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                            },
+                            &quot;tag&quot;: &quot;LicenseRating&quot;
+                        },
+                        [
+                            {
+                                &quot;contents&quot;: {
+                                    &quot;tag&quot;: &quot;Permissive&quot;
+                                },
+                                &quot;tag&quot;: &quot;LicenseType&quot;
+                            }
+                        ]
+                    ],
+                    &quot;tag&quot;: &quot;SubStatements&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;ifrOSS Classification&quot;,
+                                    &quot;Open Source Lizenzen&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Source Lizenzen&quot;,
+                &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;
+            ],
+            [
+                &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:xinetd License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;xinetd License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

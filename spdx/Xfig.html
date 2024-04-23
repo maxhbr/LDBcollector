@@ -1,0 +1,529 @@
+<html><head><title>ldbcollector: spdx:Xfig</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Xfig</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Xfig</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">Xfig</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Xfig</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Xfig</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Xfig</span></li><li><span class="licensename">Xfig License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Xfig License</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li><li><span class="licensename">mit-license</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mit-xfig</span></li><li><span class="licensename"><span class="namespace">MIT:</span>Xfig Variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2266e88102f690ef7fd754ed63c91326">[<a href="/fact/SPDXLicense/2266e88102f690ef7fd754ed63c91326">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:cde9c1fd7f27d1cc41bcfdb3f501fc59">[<a href="/fact/FedoraEntry/cde9c1fd7f27d1cc41bcfdb3f501fc59">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:562367ad2127e0c788e03ccb9b7bd6eb">[<a href="/fact/OrtLicenseCategorization/562367ad2127e0c788e03ccb9b7bd6eb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:562367ad2127e0c788e03ccb9b7bd6eb">[<a href="/fact/OrtLicenseCategorization/562367ad2127e0c788e03ccb9b7bd6eb">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c" target="_blank">https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c</a></li><li><a href="https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am" target="_blank">https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am</a></li><li><a href="https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Any party obtaining a copy of these files is granted, free of charge, 
+a full and unrestricted irrevocable, world-wide, paid up, royalty-free, 
+nonexclusive right and license to deal in this software and documentation 
+files (the &quot;Software&quot;), including without limitation the rights to use, 
+copy, modify, merge, publish and/or distribute copies of the Software, 
+and to permit persons who receive copies from any such party to do so, 
+with the only requirement being that this copyright notice remain intact.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            Any party obtaining a copy of these files is granted, free of
+            charge, a full and unrestricted irrevocable, world-wide, paid
+            up, royalty-free, nonexclusive right and license to deal in this
+            software and documentation files (the &amp;quot;Software&amp;quot;), including
+            without limitation the rights to use, copy, modify, merge, publish
+            and/or distribute copies of the Software, and to permit persons
+            who receive copies from any such party to do so, with the only
+            requirement being that this copyright notice remain intact.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/2266e88102f690ef7fd754ed63c91326">SPDXLicense:2266e88102f690ef7fd754ed63c91326</a> for <a href="/?license=spdx:Xfig"><span class="licensename"><span class="namespace">spdx:</span>Xfig</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Xfig</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Xfig License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2266e88102f690ef7fd754ed63c91326">[<a href="/fact/SPDXLicense/2266e88102f690ef7fd754ed63c91326">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c" target="_blank">https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c</a></li><li><a href="https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am" target="_blank">https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am</a></li><li><a href="https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Any party obtaining a copy of these files is granted, free of charge, 
+a full and unrestricted irrevocable, world-wide, paid up, royalty-free, 
+nonexclusive right and license to deal in this software and documentation 
+files (the &quot;Software&quot;), including without limitation the rights to use, 
+copy, modify, merge, publish and/or distribute copies of the Software, 
+and to permit persons who receive copies from any such party to do so, 
+with the only requirement being that this copyright notice remain intact.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            Any party obtaining a copy of these files is granted, free of
+            charge, a full and unrestricted irrevocable, world-wide, paid
+            up, royalty-free, nonexclusive right and license to deal in this
+            software and documentation files (the &amp;quot;Software&amp;quot;), including
+            without limitation the rights to use, copy, modify, merge, publish
+            and/or distribute copies of the Software, and to permit persons
+            who receive copies from any such party to do so, with the only
+            requirement being that this copyright notice remain intact.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Xfig&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Xfig License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;2266e88102f690ef7fd754ed63c91326&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Any party obtaining a copy of these files is granted, free of charge, \na full and unrestricted irrevocable, world-wide, paid up, royalty-free, \nnonexclusive right and license to deal in this software and documentation \nfiles (the \&quot;Software\&quot;), including without limitation the rights to use, \ncopy, modify, merge, publish and/or distribute copies of the Software, \nand to permit persons who receive copies from any such party to do so, \nwith the only requirement being that this copyright notice remain intact.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            Any party obtaining a copy of these files is granted, free of\n            charge, a full and unrestricted irrevocable, world-wide, paid\n            up, royalty-free, nonexclusive right and license to deal in this\n            software and documentation files (the &amp;quot;Software&amp;quot;), including\n            without limitation the rights to use, copy, modify, merge, publish\n            and/or distribute copies of the Software, and to permit persons\n            who receive copies from any such party to do so, with the only\n            requirement being that this copyright notice remain intact.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:57Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:58Z&quot;,
+                &quot;url&quot;: &quot;https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:58Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Xfig&quot;,
+        &quot;licenseText&quot;: &quot;Any party obtaining a copy of these files is granted, free of charge, \na full and unrestricted irrevocable, world-wide, paid up, royalty-free, \nnonexclusive right and license to deal in this software and documentation \nfiles (the \&quot;Software\&quot;), including without limitation the rights to use, \ncopy, modify, merge, publish and/or distribute copies of the Software, \nand to permit persons who receive copies from any such party to do so, \nwith the only requirement being that this copyright notice remain intact.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            Any party obtaining a copy of these files is granted, free of\n            charge, a full and unrestricted irrevocable, world-wide, paid\n            up, royalty-free, nonexclusive right and license to deal in this\n            software and documentation files (the &amp;quot;Software&amp;quot;), including\n            without limitation the rights to use, copy, modify, merge, publish\n            and/or distribute copies of the Software, and to permit persons\n            who receive copies from any such party to do so, with the only\n            requirement being that this copyright notice remain intact.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Xfig License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/Distrotech/transfig/blob/master/transfig/transfig.c&quot;,
+            &quot;https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant&quot;,
+            &quot;https://sourceforge.net/p/mcj/xfig/ci/master/tree/src/Makefile.am&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Any party obtaining a copy of these files is granted, free of charge, a full and unrestricted irrevocable, world-wide, paid up, royalty-free, nonexclusive right and license to deal in this software and documentation files (the \&quot;Software\&quot;), including without limitation the rights to use, copy, modify, merge, publish and/or distribute copies of the Software, and to permit persons who receive copies from any such party to do so, with the only requirement being that this copyright notice remain intact.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/cde9c1fd7f27d1cc41bcfdb3f501fc59">FedoraEntry:cde9c1fd7f27d1cc41bcfdb3f501fc59</a> for <a href="/?license=Fedora:Xfig"><span class="licensename"><span class="namespace">Fedora:</span>Xfig</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Xfig</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Xfig</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li><li><span class="licensename"><span class="namespace">MIT:</span>Xfig Variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:cde9c1fd7f27d1cc41bcfdb3f501fc59">[<a href="/fact/FedoraEntry/cde9c1fd7f27d1cc41bcfdb3f501fc59">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Xfig&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Xfig&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT:Xfig Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;cde9c1fd7f27d1cc41bcfdb3f501fc59&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MIT&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;MIT:Xfig Variant&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Xfig&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Xfig&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/562367ad2127e0c788e03ccb9b7bd6eb">OrtLicenseCategorization:562367ad2127e0c788e03ccb9b7bd6eb</a> for <a href="/?license=SPDX:Xfig"><span class="licensename"><span class="namespace">SPDX:</span>Xfig</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Xfig</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:562367ad2127e0c788e03ccb9b7bd6eb">[<a href="/fact/OrtLicenseCategorization/562367ad2127e0c788e03ccb9b7bd6eb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:562367ad2127e0c788e03ccb9b7bd6eb">[<a href="/fact/OrtLicenseCategorization/562367ad2127e0c788e03ccb9b7bd6eb">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Xfig&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;562367ad2127e0c788e03ccb9b7bd6eb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Xfig&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/05ca43c2129f6b139c178299c78c08d0">CavilLicenseChange:05ca43c2129f6b139c178299c78c08d0</a> for <a href="/?license=cavil:Xfig"><span class="licensename"><span class="namespace">cavil:</span>Xfig</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Xfig</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Xfig</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Xfig&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Xfig&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;05ca43c2129f6b139c178299c78c08d0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Xfig&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Xfig&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/745481cc01ff07a93c9a50ea5b2ec0f3">MetaeffektLicense:745481cc01ff07a93c9a50ea5b2ec0f3</a> for <a href="/?license=metaeffekt:Xfig License"><span class="licensename"><span class="namespace">metaeffekt:</span>Xfig License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Xfig License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Xfig</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>mit-xfig</span></li><li><span class="licensename">Xfig</span></li><li><span class="licensename">Xfig License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Xfig License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Xfig&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Xfig&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Xfig License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:mit-xfig&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;745481cc01ff07a93c9a50ea5b2ec0f3&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Xfig License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Xfig License&quot;,
+        &quot;_category&quot;: &quot;Xfig&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:mit-xfig&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Xfig&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

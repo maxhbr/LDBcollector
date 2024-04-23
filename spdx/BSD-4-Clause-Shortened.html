@@ -1,0 +1,698 @@
+<html><head><title>ldbcollector: spdx:BSD-4-Clause-Shortened</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-4-Clause-Shortened</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-4-Clause-Shortened</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 4 Clause Shortened</span></li><li><span class="licensename">BSD 4-Clause License (shortened)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 4-Clause License (shortened)</span></li><li><span class="licensename">BSD 4-Clause Shortened</span></li><li><span class="licensename">BSD-4-Clause-Shortened</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>BSD-4-Clause-Shortened</span></li><li><span class="licensename"><span class="namespace">cavil:</span>BSD-4-Clause-Shortened</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-4-clause-shortened</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-4-Clause-Shortened</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD-4-Clause-shortened-copyright</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:31639c427f414e1d6032624fdd242b27">[<a href="/fact/BlueOakCouncil/31639c427f414e1d6032624fdd242b27">BlueOakCouncil</a>]</span><span title="ScancodeData:5f15ae534ea01f08fd1ce87813ca5ad0">[<a href="/fact/ScancodeData/5f15ae534ea01f08fd1ce87813ca5ad0">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3212537395ca5103473209df42fdd007">[<a href="/fact/SPDXLicense/3212537395ca5103473209df42fdd007">SPDXLicense</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:31639c427f414e1d6032624fdd242b27">[<a href="/fact/BlueOakCouncil/31639c427f414e1d6032624fdd242b27">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:54bc30f908348ac49f7ad887875b8965">[<a href="/fact/MetaeffektLicense/54bc30f908348ac49f7ad887875b8965">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d9bc8f5ec9f182a6a11ac0c79366f3f1">[<a href="/fact/OrtLicenseCategorization/d9bc8f5ec9f182a6a11ac0c79366f3f1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d9bc8f5ec9f182a6a11ac0c79366f3f1">[<a href="/fact/OrtLicenseCategorization/d9bc8f5ec9f182a6a11ac0c79366f3f1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cbb578bd814196dcdfd8be5ca4bc5769">[<a href="/fact/OrtLicenseCategorization/cbb578bd814196dcdfd8be5ca4bc5769">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cbb578bd814196dcdfd8be5ca4bc5769">[<a href="/fact/OrtLicenseCategorization/cbb578bd814196dcdfd8be5ca4bc5769">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cbb578bd814196dcdfd8be5ca4bc5769">[<a href="/fact/OrtLicenseCategorization/cbb578bd814196dcdfd8be5ca4bc5769">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright" target="_blank">https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright</a></li><li><a href="https://spdx.org/licenses/BSD-4-Clause-Shortened.html" target="_blank">https://spdx.org/licenses/BSD-4-Clause-Shortened.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>License: BSD-4-Clause-Shortened
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that:
+
+(1) source code distributions retain the above copyright notice and this paragraph in its entirety,
+(2) distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and
+(3) all advertising materials mentioning features or use of this software display the following acknowledgement:
+
+&quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&#39;&#39;
+
+Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;License: BSD-4-Clause-Shortened&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided that:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;
+            source code distributions retain the above copyright notice and this paragraph in its entirety,
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;
+            distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;
+            all advertising materials mentioning features or use of this software display the following acknowledgement:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;&amp;quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&amp;apos;&amp;apos;&lt;/p&gt;
+
+      &lt;p&gt;Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;
+
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that:
+
+(1) source code distributions retain the above copyright notice and this
+paragraph in its entirety,
+
+(2) distributions including binary code include the above copyright notice and
+this paragraph in its entirety in the documentation or other materials provided
+with the distribution, and
+
+(3) all advertising materials mentioning features or use of this software
+display the following acknowledgement:
+
+&quot;This product includes software developed by the University of California,
+Lawrence Berkeley Laboratory and its contributors.&quot;
+
+Neither the name of the University nor the names of its contributors may be used
+to endorse or promote products derived from this software without specific prior
+written permission.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/3212537395ca5103473209df42fdd007">SPDXLicense:3212537395ca5103473209df42fdd007</a> for <a href="/?license=spdx:BSD-4-Clause-Shortened"><span class="licensename"><span class="namespace">spdx:</span>BSD-4-Clause-Shortened</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-4-Clause-Shortened</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 4 Clause Shortened</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3212537395ca5103473209df42fdd007">[<a href="/fact/SPDXLicense/3212537395ca5103473209df42fdd007">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright" target="_blank">https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>License: BSD-4-Clause-Shortened
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that:
+
+(1) source code distributions retain the above copyright notice and this paragraph in its entirety,
+(2) distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and
+(3) all advertising materials mentioning features or use of this software display the following acknowledgement:
+
+&quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&#39;&#39;
+
+Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;License: BSD-4-Clause-Shortened&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided that:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;
+            source code distributions retain the above copyright notice and this paragraph in its entirety,
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;
+            distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;
+            all advertising materials mentioning features or use of this software display the following acknowledgement:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;&amp;quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&amp;apos;&amp;apos;&lt;/p&gt;
+
+      &lt;p&gt;Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;
+
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-4-Clause-Shortened&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD 4 Clause Shortened&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;3212537395ca5103473209df42fdd007&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;License: BSD-4-Clause-Shortened\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that:\n\n(1) source code distributions retain the above copyright notice and this paragraph in its entirety,\n(2) distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and\n(3) all advertising materials mentioning features or use of this software display the following acknowledgement:\n\n\&quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&#39;&#39;\n\nNeither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;License: BSD-4-Clause-Shortened&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided that:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;\n            source code distributions retain the above copyright notice and this paragraph in its entirety,\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;\n            distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;\n            all advertising materials mentioning features or use of this software display the following acknowledgement:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;&amp;quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&amp;apos;&amp;apos;&lt;/p&gt;\n\n      &lt;p&gt;Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;\n\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: false,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:22Z&quot;,
+                &quot;url&quot;: &quot;https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:BSD-4-Clause-Shortened&quot;,
+        &quot;licenseText&quot;: &quot;License: BSD-4-Clause-Shortened\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that:\n\n(1) source code distributions retain the above copyright notice and this paragraph in its entirety,\n(2) distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and\n(3) all advertising materials mentioning features or use of this software display the following acknowledgement:\n\n\&quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&#39;&#39;\n\nNeither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;License: BSD-4-Clause-Shortened&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided that:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;\n            source code distributions retain the above copyright notice and this paragraph in its entirety,\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;\n            distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;\n            all advertising materials mentioning features or use of this software display the following acknowledgement:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;&amp;quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&amp;apos;&amp;apos;&lt;/p&gt;\n\n      &lt;p&gt;Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;\n\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;BSD 4 Clause Shortened&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;License: BSD-4-Clause-Shortened\n\n&lt;&lt;endOptional&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(1)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; source code distributions retain the above copyright notice and this paragraph in its entirety,\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(2)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; distributions including binary code include the above copyright notice and this paragraph in its entirety in the documentation or other materials provided with the distribution, and\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(3)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; all advertising materials mentioning features or use of this software display the following acknowledgement:\n\n\&quot;This product includes software developed by the University of California, Lawrence Berkeley Laboratory and its contributors.&#39;&#39;\n\nNeither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/31639c427f414e1d6032624fdd242b27">BlueOakCouncil:31639c427f414e1d6032624fdd242b27</a> for <a href="/?license=BlueOak:BSD-4-Clause-Shortened"><span class="licensename"><span class="namespace">BlueOak:</span>BSD-4-Clause-Shortened</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>BSD-4-Clause-Shortened</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 4-Clause Shortened</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:31639c427f414e1d6032624fdd242b27">[<a href="/fact/BlueOakCouncil/31639c427f414e1d6032624fdd242b27">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:31639c427f414e1d6032624fdd242b27">[<a href="/fact/BlueOakCouncil/31639c427f414e1d6032624fdd242b27">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/BSD-4-Clause-Shortened.html" target="_blank">https://spdx.org/licenses/BSD-4-Clause-Shortened.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:BSD-4-Clause-Shortened&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD 4-Clause Shortened&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;31639c427f414e1d6032624fdd242b27&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/BSD-4-Clause-Shortened.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;BSD-4-Clause-Shortened&quot;,
+                &quot;_name&quot;: &quot;BSD 4-Clause Shortened&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/BSD-4-Clause-Shortened.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/5f15ae534ea01f08fd1ce87813ca5ad0">ScancodeData:5f15ae534ea01f08fd1ce87813ca5ad0</a> for <a href="/?license=scancode:bsd-4-clause-shortened"><span class="licensename"><span class="namespace">scancode:</span>bsd-4-clause-shortened</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bsd-4-clause-shortened</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-4-Clause-Shortened</span></li><li><span class="licensename">BSD-4-Clause-Shortened</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:5f15ae534ea01f08fd1ce87813ca5ad0">[<a href="/fact/ScancodeData/5f15ae534ea01f08fd1ce87813ca5ad0">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright" target="_blank">https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that:
+
+(1) source code distributions retain the above copyright notice and this
+paragraph in its entirety,
+
+(2) distributions including binary code include the above copyright notice and
+this paragraph in its entirety in the documentation or other materials provided
+with the distribution, and
+
+(3) all advertising materials mentioning features or use of this software
+display the following acknowledgement:
+
+&quot;This product includes software developed by the University of California,
+Lawrence Berkeley Laboratory and its contributors.&quot;
+
+Neither the name of the University nor the names of its contributors may be used
+to endorse or promote products derived from this software without specific prior
+written permission.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bsd-4-clause-shortened&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-4-Clause-Shortened&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD-4-Clause-Shortened&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;5f15ae534ea01f08fd1ce87813ca5ad0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that:\n\n(1) source code distributions retain the above copyright notice and this\nparagraph in its entirety,\n\n(2) distributions including binary code include the above copyright notice and\nthis paragraph in its entirety in the documentation or other materials provided\nwith the distribution, and\n\n(3) all advertising materials mentioning features or use of this software\ndisplay the following acknowledgement:\n\n\&quot;This product includes software developed by the University of California,\nLawrence Berkeley Laboratory and its contributors.\&quot;\n\nNeither the name of the University nor the names of its contributors may be used\nto endorse or promote products derived from this software without specific prior\nwritten permission.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,\nINCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;bsd-4-clause-shortened&quot;,
+        &quot;_name&quot;: &quot;BSD-4-Clause-Shortened&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright&quot;
+        ],
+        &quot;_owner&quot;: &quot;Regents of the University of California&quot;,
+        &quot;_shortName&quot;: &quot;BSD-4-Clause-Shortened&quot;,
+        &quot;_spdxId&quot;: &quot;BSD-4-Clause-Shortened&quot;,
+        &quot;_text&quot;: &quot;Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that:\n\n(1) source code distributions retain the above copyright notice and this\nparagraph in its entirety,\n\n(2) distributions including binary code include the above copyright notice and\nthis paragraph in its entirety in the documentation or other materials provided\nwith the distribution, and\n\n(3) all advertising materials mentioning features or use of this software\ndisplay the following acknowledgement:\n\n\&quot;This product includes software developed by the University of California,\nLawrence Berkeley Laboratory and its contributors.\&quot;\n\nNeither the name of the University nor the names of its contributors may be used\nto endorse or promote products derived from this software without specific prior\nwritten permission.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,\nINCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/d9bc8f5ec9f182a6a11ac0c79366f3f1">OrtLicenseCategorization:d9bc8f5ec9f182a6a11ac0c79366f3f1</a> for <a href="/?license=SPDX:BSD-4-Clause-Shortened"><span class="licensename"><span class="namespace">SPDX:</span>BSD-4-Clause-Shortened</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-4-Clause-Shortened</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d9bc8f5ec9f182a6a11ac0c79366f3f1">[<a href="/fact/OrtLicenseCategorization/d9bc8f5ec9f182a6a11ac0c79366f3f1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d9bc8f5ec9f182a6a11ac0c79366f3f1">[<a href="/fact/OrtLicenseCategorization/d9bc8f5ec9f182a6a11ac0c79366f3f1">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-4-Clause-Shortened&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d9bc8f5ec9f182a6a11ac0c79366f3f1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-4-Clause-Shortened&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/cbb578bd814196dcdfd8be5ca4bc5769">OrtLicenseCategorization:cbb578bd814196dcdfd8be5ca4bc5769</a> for <a href="/?license=SPDX:BSD-4-Clause-Shortened"><span class="licensename"><span class="namespace">SPDX:</span>BSD-4-Clause-Shortened</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-4-Clause-Shortened</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cbb578bd814196dcdfd8be5ca4bc5769">[<a href="/fact/OrtLicenseCategorization/cbb578bd814196dcdfd8be5ca4bc5769">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cbb578bd814196dcdfd8be5ca4bc5769">[<a href="/fact/OrtLicenseCategorization/cbb578bd814196dcdfd8be5ca4bc5769">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cbb578bd814196dcdfd8be5ca4bc5769">[<a href="/fact/OrtLicenseCategorization/cbb578bd814196dcdfd8be5ca4bc5769">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-4-Clause-Shortened&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;cbb578bd814196dcdfd8be5ca4bc5769&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-4-Clause-Shortened&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/96ef2e64820c993cd0064575aa933606">CavilLicenseChange:96ef2e64820c993cd0064575aa933606</a> for <a href="/?license=cavil:BSD-4-Clause-Shortened"><span class="licensename"><span class="namespace">cavil:</span>BSD-4-Clause-Shortened</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>BSD-4-Clause-Shortened</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-4-Clause-Shortened</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:BSD-4-Clause-Shortened&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-4-Clause-Shortened&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;96ef2e64820c993cd0064575aa933606&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;BSD-4-Clause-Shortened&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:BSD-4-Clause-Shortened&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/54bc30f908348ac49f7ad887875b8965">MetaeffektLicense:54bc30f908348ac49f7ad887875b8965</a> for <a href="/?license=metaeffekt:BSD 4-Clause License (shortened)"><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 4-Clause License (shortened)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 4-Clause License (shortened)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-4-Clause-Shortened</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:54bc30f908348ac49f7ad887875b8965">[<a href="/fact/MetaeffektLicense/54bc30f908348ac49f7ad887875b8965">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:BSD 4-Clause License (shortened)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-4-Clause-Shortened&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;54bc30f908348ac49f7ad887875b8965&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:BSD 4-Clause License (shortened)&quot;,
+        &quot;_category&quot;: &quot;BSD&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:BSD-4-Clause-Shortened&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

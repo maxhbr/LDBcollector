@@ -1,0 +1,856 @@
+<html><head><title>ldbcollector: spdx:BSD-Systemics-W3Works</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-Systemics-W3Works</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics-W3Works</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Systemics-W3Works</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Systemics-W3Works</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-systemics-w3works</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics-W3Works</span></li><li><span class="licensename">Systemics W3Works BSD variant license</span></li><li><span class="licensename">Systemics W3Works License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:db56acc1487facb3abeff32f8d9c0933">[<a href="/fact/ScancodeData/db56acc1487facb3abeff32f8d9c0933">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:450ba5b5cdf84f739bda20ac42082761">[<a href="/fact/SPDXLicense/450ba5b5cdf84f739bda20ac42082761">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:7cb04725d8afe6923a80e6a8b05b6499">[<a href="/fact/FedoraEntry/7cb04725d8afe6923a80e6a8b05b6499">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a0f14132411d3076dd06fbb3a3bea3f8">[<a href="/fact/OrtLicenseCategorization/a0f14132411d3076dd06fbb3a3bea3f8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a0f14132411d3076dd06fbb3a3bea3f8">[<a href="/fact/OrtLicenseCategorization/a0f14132411d3076dd06fbb3a3bea3f8">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7" target="_blank">https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)
+ 
+Modifications and Current Implimentation Copyright (C) 2000 W3Works, LLC.
+ 
+All rights reserved.
+ 
+Current implimentation contains modifications made by W3Works, LLC.  The 
+modifications remain copyright of W3Works, LLC and attribution for these 
+modification should be made to W3Works, LLC.  These modifications and 
+this copyright must remain with this package.
+ 
+Additions to the Restrictions set out below are:
+1. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)
+ 
+   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE EXTENDED BY THIS DISTRIBUTION.
+ 
+   Any subsequent derrivations of this package must retainl this copyright.
+ 
+ 
+Original Copyright Below
+ 
+This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+   SUCH DAMAGE.
+ 
+   The licence and distribution terms for any publically available version or
+   derivative of this code cannot be changed.  i.e. this code cannot simply be
+   copied and put under another distribution licence
+   [including the GNU Public Licence.]
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;
+                        Copyright (C) 1995, 1996 Systemics Ltd
+                        (http://www.systemics.com/)
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                        Modifications and Current Implimentation Copyright (C)
+                        2000 W3Works, LLC.
+                &lt;/p&gt;
+
+        &lt;p&gt;
+                All rights reserved.
+        &lt;/p&gt;
+
+                    &lt;/div&gt;
+        &lt;p&gt;
+                Current &lt;var class=&quot;replaceable-license-text&quot;&gt; implimentation&lt;/var&gt; 
+                contains modifications made by W3Works, LLC. The modifications remain copyright of W3Works, LLC
+                and attribution for these modification should be made to W3Works, LLC.  These modifications and
+                this copyright must remain with this package.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+        Additions to the Restrictions set out below are:
+        1. All advertising materials mentioning features or use of this software must display
+        the following &lt;var class=&quot;replaceable-license-text&quot;&gt; acknowledgement&lt;/var&gt;:
+        This product &lt;var class=&quot;replaceable-license-text&quot;&gt; inculdes&lt;/var&gt; software developed by
+        W3Works, LLC (http://www.w3works.com)
+        &lt;/p&gt;
+
+        &lt;p&gt;
+        NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED
+        TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+        PARTICULAR PURPOSE ARE EXTENDED BY THIS DISTRIBUTION.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Any subsequent &lt;var class=&quot;replaceable-license-text&quot;&gt; derrivations&lt;/var&gt; of this package must &lt;var class=&quot;replaceable-license-text&quot;&gt; retainl&lt;/var&gt; this
+                copyright.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Original Copyright Below
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                This library and applications are FREE FOR COMMERCIAL AND
+                NON-COMMERCIAL USE as long as the following conditions are
+                adhered to.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Copyright remains with Systemics Ltd, and as such any Copyright
+                notices in the code are not to be removed. If this code is used
+                in a product, Systemics should be given attribution as the
+                author of the parts used. This can be in the form of a textual
+                message at program startup or in documentation (online or
+                textual) provided with the package.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Redistribution and use in source and binary forms, with or
+                without modification, are permitted provided that the following
+                conditions are met:
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                1. Redistributions of source code must retain the copyright
+                notice, this list of conditions and the following disclaimer.
+                2. Redistributions in binary form must reproduce the above
+                copyright notice, this list of conditions and the following
+                disclaimer in the documentation and/or other materials
+                provided with the distribution.
+                3. All advertising materials mentioning features or use of this software must display the
+                following &lt;var class=&quot;replaceable-license-text&quot;&gt; acknowledgement&lt;/var&gt;: This product includes software
+                developed by Systemics Ltd (http://www.systemics.com/)
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD &amp;apos;&amp;apos;AS IS&amp;apos;&amp;apos; AND ANY
+                EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+                THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+                AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+                INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+                (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+                INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+                WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+                NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+                THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+                DAMAGE.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                The licence and distribution terms for any publically available
+                version or derivative of this code cannot be changed. i.e.
+                this code cannot simply be copied and put under another
+                distribution licence [including the GNU Public Licence.]
+        &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Current implimentation contains modifications made by W3Works, LLC.  The 
+modifications remain copyright of W3Works, LLC and attribution for these 
+modification should be made to W3Works, LLC.  These modifications and 
+this copyright must remain with this package.
+ 
+Additions to the Restrictions set out below are:
+1. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)
+ 
+   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE EXTENDED BY THIS DISTRIBUTION.
+ 
+   Any subsequent derrivations of this package must retainl this copyright.
+ 
+ 
+Original Copyright Below
+ 
+This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+   SUCH DAMAGE.
+ 
+   The licence and distribution terms for any publically available version or
+   derivative of this code cannot be changed.  i.e. this code cannot simply be
+   copied and put under another distribution licence
+   [including the GNU Public Licence.]</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/450ba5b5cdf84f739bda20ac42082761">SPDXLicense:450ba5b5cdf84f739bda20ac42082761</a> for <a href="/?license=spdx:BSD-Systemics-W3Works"><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics-W3Works</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics-W3Works</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Systemics W3Works BSD variant license</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:450ba5b5cdf84f739bda20ac42082761">[<a href="/fact/SPDXLicense/450ba5b5cdf84f739bda20ac42082761">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7" target="_blank">https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)
+ 
+Modifications and Current Implimentation Copyright (C) 2000 W3Works, LLC.
+ 
+All rights reserved.
+ 
+Current implimentation contains modifications made by W3Works, LLC.  The 
+modifications remain copyright of W3Works, LLC and attribution for these 
+modification should be made to W3Works, LLC.  These modifications and 
+this copyright must remain with this package.
+ 
+Additions to the Restrictions set out below are:
+1. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)
+ 
+   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE EXTENDED BY THIS DISTRIBUTION.
+ 
+   Any subsequent derrivations of this package must retainl this copyright.
+ 
+ 
+Original Copyright Below
+ 
+This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+   SUCH DAMAGE.
+ 
+   The licence and distribution terms for any publically available version or
+   derivative of this code cannot be changed.  i.e. this code cannot simply be
+   copied and put under another distribution licence
+   [including the GNU Public Licence.]
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;
+                        Copyright (C) 1995, 1996 Systemics Ltd
+                        (http://www.systemics.com/)
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                        Modifications and Current Implimentation Copyright (C)
+                        2000 W3Works, LLC.
+                &lt;/p&gt;
+
+        &lt;p&gt;
+                All rights reserved.
+        &lt;/p&gt;
+
+                    &lt;/div&gt;
+        &lt;p&gt;
+                Current &lt;var class=&quot;replaceable-license-text&quot;&gt; implimentation&lt;/var&gt; 
+                contains modifications made by W3Works, LLC. The modifications remain copyright of W3Works, LLC
+                and attribution for these modification should be made to W3Works, LLC.  These modifications and
+                this copyright must remain with this package.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+        Additions to the Restrictions set out below are:
+        1. All advertising materials mentioning features or use of this software must display
+        the following &lt;var class=&quot;replaceable-license-text&quot;&gt; acknowledgement&lt;/var&gt;:
+        This product &lt;var class=&quot;replaceable-license-text&quot;&gt; inculdes&lt;/var&gt; software developed by
+        W3Works, LLC (http://www.w3works.com)
+        &lt;/p&gt;
+
+        &lt;p&gt;
+        NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED
+        TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+        PARTICULAR PURPOSE ARE EXTENDED BY THIS DISTRIBUTION.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Any subsequent &lt;var class=&quot;replaceable-license-text&quot;&gt; derrivations&lt;/var&gt; of this package must &lt;var class=&quot;replaceable-license-text&quot;&gt; retainl&lt;/var&gt; this
+                copyright.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Original Copyright Below
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                This library and applications are FREE FOR COMMERCIAL AND
+                NON-COMMERCIAL USE as long as the following conditions are
+                adhered to.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Copyright remains with Systemics Ltd, and as such any Copyright
+                notices in the code are not to be removed. If this code is used
+                in a product, Systemics should be given attribution as the
+                author of the parts used. This can be in the form of a textual
+                message at program startup or in documentation (online or
+                textual) provided with the package.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Redistribution and use in source and binary forms, with or
+                without modification, are permitted provided that the following
+                conditions are met:
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                1. Redistributions of source code must retain the copyright
+                notice, this list of conditions and the following disclaimer.
+                2. Redistributions in binary form must reproduce the above
+                copyright notice, this list of conditions and the following
+                disclaimer in the documentation and/or other materials
+                provided with the distribution.
+                3. All advertising materials mentioning features or use of this software must display the
+                following &lt;var class=&quot;replaceable-license-text&quot;&gt; acknowledgement&lt;/var&gt;: This product includes software
+                developed by Systemics Ltd (http://www.systemics.com/)
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD &amp;apos;&amp;apos;AS IS&amp;apos;&amp;apos; AND ANY
+                EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+                THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+                AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+                INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+                (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+                INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+                WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+                NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+                THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+                DAMAGE.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                The licence and distribution terms for any publically available
+                version or derivative of this code cannot be changed. i.e.
+                this code cannot simply be copied and put under another
+                distribution licence [including the GNU Public Licence.]
+        &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Systemics-W3Works&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Systemics W3Works BSD variant license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;450ba5b5cdf84f739bda20ac42082761&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)\n \nModifications and Current Implimentation Copyright (C) 2000 W3Works, LLC.\n \nAll rights reserved.\n \nCurrent implimentation contains modifications made by W3Works, LLC.  The \nmodifications remain copyright of W3Works, LLC and attribution for these \nmodification should be made to W3Works, LLC.  These modifications and \nthis copyright must remain with this package.\n \nAdditions to the Restrictions set out below are:\n1. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)\n \n   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\n   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE EXTENDED BY THIS DISTRIBUTION.\n \n   Any subsequent derrivations of this package must retainl this copyright.\n \n \nOriginal Copyright Below\n \nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \n   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\n   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n   SUCH DAMAGE.\n \n   The licence and distribution terms for any publically available version or\n   derivative of this code cannot be changed.  i.e. this code cannot simply be\n   copied and put under another distribution licence\n   [including the GNU Public Licence.]\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;\n                        Copyright (C) 1995, 1996 Systemics Ltd\n                        (http://www.systemics.com/)\n                &lt;/p&gt;\n\n                &lt;p&gt;\n                        Modifications and Current Implimentation Copyright (C)\n                        2000 W3Works, LLC.\n                &lt;/p&gt;\n\n        &lt;p&gt;\n                All rights reserved.\n        &lt;/p&gt;\n\n                    &lt;/div&gt;\n        &lt;p&gt;\n                Current &lt;var class=\&quot;replaceable-license-text\&quot;&gt; implimentation&lt;/var&gt; \n                contains modifications made by W3Works, LLC. The modifications remain copyright of W3Works, LLC\n                and attribution for these modification should be made to W3Works, LLC.  These modifications and\n                this copyright must remain with this package.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n        Additions to the Restrictions set out below are:\n        1. All advertising materials mentioning features or use of this software must display\n        the following &lt;var class=\&quot;replaceable-license-text\&quot;&gt; acknowledgement&lt;/var&gt;:\n        This product &lt;var class=\&quot;replaceable-license-text\&quot;&gt; inculdes&lt;/var&gt; software developed by\n        W3Works, LLC (http://www.w3works.com)\n        &lt;/p&gt;\n\n        &lt;p&gt;\n        NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED\n        TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n        PARTICULAR PURPOSE ARE EXTENDED BY THIS DISTRIBUTION.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Any subsequent &lt;var class=\&quot;replaceable-license-text\&quot;&gt; derrivations&lt;/var&gt; of this package must &lt;var class=\&quot;replaceable-license-text\&quot;&gt; retainl&lt;/var&gt; this\n                copyright.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Original Copyright Below\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                This library and applications are FREE FOR COMMERCIAL AND\n                NON-COMMERCIAL USE as long as the following conditions are\n                adhered to.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Copyright remains with Systemics Ltd, and as such any Copyright\n                notices in the code are not to be removed. If this code is used\n                in a product, Systemics should be given attribution as the\n                author of the parts used. This can be in the form of a textual\n                message at program startup or in documentation (online or\n                textual) provided with the package.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Redistribution and use in source and binary forms, with or\n                without modification, are permitted provided that the following\n                conditions are met:\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                1. Redistributions of source code must retain the copyright\n                notice, this list of conditions and the following disclaimer.\n                2. Redistributions in binary form must reproduce the above\n                copyright notice, this list of conditions and the following\n                disclaimer in the documentation and/or other materials\n                provided with the distribution.\n                3. All advertising materials mentioning features or use of this software must display the\n                following &lt;var class=\&quot;replaceable-license-text\&quot;&gt; acknowledgement&lt;/var&gt;: This product includes software\n                developed by Systemics Ltd (http://www.systemics.com/)\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD &amp;apos;&amp;apos;AS IS&amp;apos;&amp;apos; AND ANY\n                EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\n                THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n                PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE\n                AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\n                INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n                (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n                INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n                WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n                NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n                THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n                DAMAGE.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                The licence and distribution terms for any publically available\n                version or derivative of this code cannot be changed. i.e.\n                this code cannot simply be copied and put under another\n                distribution licence [including the GNU Public Licence.]\n        &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:29Z&quot;,
+                &quot;url&quot;: &quot;https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:BSD-Systemics-W3Works&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)\n \nModifications and Current Implimentation Copyright (C) 2000 W3Works, LLC.\n \nAll rights reserved.\n \nCurrent implimentation contains modifications made by W3Works, LLC.  The \nmodifications remain copyright of W3Works, LLC and attribution for these \nmodification should be made to W3Works, LLC.  These modifications and \nthis copyright must remain with this package.\n \nAdditions to the Restrictions set out below are:\n1. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)\n \n   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\n   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE EXTENDED BY THIS DISTRIBUTION.\n \n   Any subsequent derrivations of this package must retainl this copyright.\n \n \nOriginal Copyright Below\n \nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \n   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\n   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n   SUCH DAMAGE.\n \n   The licence and distribution terms for any publically available version or\n   derivative of this code cannot be changed.  i.e. this code cannot simply be\n   copied and put under another distribution licence\n   [including the GNU Public Licence.]\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;\n                        Copyright (C) 1995, 1996 Systemics Ltd\n                        (http://www.systemics.com/)\n                &lt;/p&gt;\n\n                &lt;p&gt;\n                        Modifications and Current Implimentation Copyright (C)\n                        2000 W3Works, LLC.\n                &lt;/p&gt;\n\n        &lt;p&gt;\n                All rights reserved.\n        &lt;/p&gt;\n\n                    &lt;/div&gt;\n        &lt;p&gt;\n                Current &lt;var class=\&quot;replaceable-license-text\&quot;&gt; implimentation&lt;/var&gt; \n                contains modifications made by W3Works, LLC. The modifications remain copyright of W3Works, LLC\n                and attribution for these modification should be made to W3Works, LLC.  These modifications and\n                this copyright must remain with this package.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n        Additions to the Restrictions set out below are:\n        1. All advertising materials mentioning features or use of this software must display\n        the following &lt;var class=\&quot;replaceable-license-text\&quot;&gt; acknowledgement&lt;/var&gt;:\n        This product &lt;var class=\&quot;replaceable-license-text\&quot;&gt; inculdes&lt;/var&gt; software developed by\n        W3Works, LLC (http://www.w3works.com)\n        &lt;/p&gt;\n\n        &lt;p&gt;\n        NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED\n        TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n        PARTICULAR PURPOSE ARE EXTENDED BY THIS DISTRIBUTION.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Any subsequent &lt;var class=\&quot;replaceable-license-text\&quot;&gt; derrivations&lt;/var&gt; of this package must &lt;var class=\&quot;replaceable-license-text\&quot;&gt; retainl&lt;/var&gt; this\n                copyright.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Original Copyright Below\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                This library and applications are FREE FOR COMMERCIAL AND\n                NON-COMMERCIAL USE as long as the following conditions are\n                adhered to.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Copyright remains with Systemics Ltd, and as such any Copyright\n                notices in the code are not to be removed. If this code is used\n                in a product, Systemics should be given attribution as the\n                author of the parts used. This can be in the form of a textual\n                message at program startup or in documentation (online or\n                textual) provided with the package.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Redistribution and use in source and binary forms, with or\n                without modification, are permitted provided that the following\n                conditions are met:\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                1. Redistributions of source code must retain the copyright\n                notice, this list of conditions and the following disclaimer.\n                2. Redistributions in binary form must reproduce the above\n                copyright notice, this list of conditions and the following\n                disclaimer in the documentation and/or other materials\n                provided with the distribution.\n                3. All advertising materials mentioning features or use of this software must display the\n                following &lt;var class=\&quot;replaceable-license-text\&quot;&gt; acknowledgement&lt;/var&gt;: This product includes software\n                developed by Systemics Ltd (http://www.systemics.com/)\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD &amp;apos;&amp;apos;AS IS&amp;apos;&amp;apos; AND ANY\n                EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\n                THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n                PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE\n                AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\n                INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n                (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n                OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n                INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n                WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n                NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n                THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n                DAMAGE.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                The licence and distribution terms for any publically available\n                version or derivative of this code cannot be changed. i.e.\n                this code cannot simply be copied and put under another\n                distribution licence [including the GNU Public Licence.]\n        &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Systemics W3Works BSD variant license&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)    Modifications and Current Implimentation Copyright (C) 2000 W3Works, LLC.    All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nCurrent &lt;&lt;var;name=\&quot;implimentation\&quot;;original=\&quot;implimentation\&quot;;match=\&quot;implimentation|implementation\&quot;&gt;&gt; contains modifications made by W3Works, LLC. The modifications remain copyright of W3Works, LLC and attribution for these modification should be made to W3Works, LLC. These modifications and this copyright must remain with this package.\n\nAdditions to the Restrictions set out below are: 1. All advertising materials mentioning features or use of this software must display the following &lt;&lt;var;name=\&quot;acknowledgement\&quot;;original=\&quot;acknowledgement\&quot;;match=\&quot;acknowledgement|acknowledgment\&quot;&gt;&gt; : This product &lt;&lt;var;name=\&quot;inculdes\&quot;;original=\&quot;inculdes\&quot;;match=\&quot;inculdes|includes\&quot;&gt;&gt; software developed by W3Works, LLC (http://www.w3works.com)\n\nNO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE EXTENDED BY THIS DISTRIBUTION.\n\nAny subsequent &lt;&lt;var;name=\&quot;derrivations\&quot;;original=\&quot;derrivations\&quot;;match=\&quot;derrivations|derivations\&quot;&gt;&gt; of this package must &lt;&lt;var;name=\&quot;retainl\&quot;;original=\&quot;retainl\&quot;;match=\&quot;retainl|retain\&quot;&gt;&gt; this copyright.\n\nOriginal Copyright Below\n\nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE as long as the following conditions are adhered to.\n\nCopyright remains with Systemics Ltd, and as such any Copyright notices in the code are not to be removed. If this code is used in a product, Systemics should be given attribution as the author of the parts used. This can be in the form of a textual message at program startup or in documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 3. All advertising materials mentioning features or use of this software must display the following &lt;&lt;var;name=\&quot;acknowledgement\&quot;;original=\&quot;acknowledgement\&quot;;match=\&quot;acknowledgement|acknowledgment\&quot;&gt;&gt; : This product includes software developed by Systemics Ltd (http://www.systemics.com/)\n\nTHIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD &#39;&#39;AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or derivative of this code cannot be changed. i.e. this code cannot simply be copied and put under another distribution licence [including the GNU Public Licence.]\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/7cb04725d8afe6923a80e6a8b05b6499">FedoraEntry:7cb04725d8afe6923a80e6a8b05b6499</a> for <a href="/?license=Fedora:BSD-Systemics-W3Works"><span class="licensename"><span class="namespace">Fedora:</span>BSD-Systemics-W3Works</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Systemics-W3Works</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Systemics-W3Works</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:7cb04725d8afe6923a80e6a8b05b6499">[<a href="/fact/FedoraEntry/7cb04725d8afe6923a80e6a8b05b6499">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BSD-Systemics-W3Works&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Systemics-W3Works&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;7cb04725d8afe6923a80e6a8b05b6499&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BSD-Systemics-W3Works&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BSD-Systemics-W3Works&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/db56acc1487facb3abeff32f8d9c0933">ScancodeData:db56acc1487facb3abeff32f8d9c0933</a> for <a href="/?license=scancode:bsd-systemics-w3works"><span class="licensename"><span class="namespace">scancode:</span>bsd-systemics-w3works</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bsd-systemics-w3works</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Systemics W3Works BSD variant license</span></li><li><span class="licensename">Systemics W3Works License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:db56acc1487facb3abeff32f8d9c0933">[<a href="/fact/ScancodeData/db56acc1487facb3abeff32f8d9c0933">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7" target="_blank">https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Current implimentation contains modifications made by W3Works, LLC.  The 
+modifications remain copyright of W3Works, LLC and attribution for these 
+modification should be made to W3Works, LLC.  These modifications and 
+this copyright must remain with this package.
+ 
+Additions to the Restrictions set out below are:
+1. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)
+ 
+   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE EXTENDED BY THIS DISTRIBUTION.
+ 
+   Any subsequent derrivations of this package must retainl this copyright.
+ 
+ 
+Original Copyright Below
+ 
+This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE
+as long as the following conditions are adhered to.
+ 
+Copyright remains with Systemics Ltd, and as such any Copyright notices
+in the code are not to be removed.  If this code is used in a product,
+Systemics should be given attribution as the author of the parts used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   
+ 
+   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND
+   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+   SUCH DAMAGE.
+ 
+   The licence and distribution terms for any publically available version or
+   derivative of this code cannot be changed.  i.e. this code cannot simply be
+   copied and put under another distribution licence
+   [including the GNU Public Licence.]</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bsd-systemics-w3works&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Systemics W3Works License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Systemics W3Works BSD variant license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;db56acc1487facb3abeff32f8d9c0933&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Current implimentation contains modifications made by W3Works, LLC.  The \nmodifications remain copyright of W3Works, LLC and attribution for these \nmodification should be made to W3Works, LLC.  These modifications and \nthis copyright must remain with this package.\n \nAdditions to the Restrictions set out below are:\n1. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)\n \n   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\n   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE EXTENDED BY THIS DISTRIBUTION.\n \n   Any subsequent derrivations of this package must retainl this copyright.\n \n \nOriginal Copyright Below\n \nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \n   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\n   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n   SUCH DAMAGE.\n \n   The licence and distribution terms for any publically available version or\n   derivative of this code cannot be changed.  i.e. this code cannot simply be\n   copied and put under another distribution licence\n   [including the GNU Public Licence.]&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;bsd-systemics-w3works&quot;,
+        &quot;_name&quot;: &quot;Systemics W3Works BSD variant license&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://metacpan.org/release/DPARIS/Crypt-Blowfish-2.14/source/COPYRIGHT#L7&quot;
+        ],
+        &quot;_owner&quot;: &quot;Systemics Ltd&quot;,
+        &quot;_shortName&quot;: &quot;Systemics W3Works License&quot;,
+        &quot;_spdxId&quot;: &quot;BSD-Systemics-W3Works&quot;,
+        &quot;_text&quot;: &quot;Current implimentation contains modifications made by W3Works, LLC.  The \nmodifications remain copyright of W3Works, LLC and attribution for these \nmodification should be made to W3Works, LLC.  These modifications and \nthis copyright must remain with this package.\n \nAdditions to the Restrictions set out below are:\n1. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product inculdes software developed by W3Works, LLC (http://www.w3works.com)\n \n   NO ADDITIONAL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\n   THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE EXTENDED BY THIS DISTRIBUTION.\n \n   Any subsequent derrivations of this package must retainl this copyright.\n \n \nOriginal Copyright Below\n \nThis library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\nas long as the following conditions are adhered to.\n \nCopyright remains with Systemics Ltd, and as such any Copyright notices\nin the code are not to be removed.  If this code is used in a product,\nSystemics should be given attribution as the author of the parts used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n \nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   This product includes software developed by Systemics Ltd (http://www.systemics.com/)   \n \n   THIS SOFTWARE IS PROVIDED BY SYSTEMICS LTD ``AS IS&#39;&#39; AND\n   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n   SUCH DAMAGE.\n \n   The licence and distribution terms for any publically available version or\n   derivative of this code cannot be changed.  i.e. this code cannot simply be\n   copied and put under another distribution licence\n   [including the GNU Public Licence.]&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/a0f14132411d3076dd06fbb3a3bea3f8">OrtLicenseCategorization:a0f14132411d3076dd06fbb3a3bea3f8</a> for <a href="/?license=SPDX:BSD-Systemics-W3Works"><span class="licensename"><span class="namespace">SPDX:</span>BSD-Systemics-W3Works</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-Systemics-W3Works</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a0f14132411d3076dd06fbb3a3bea3f8">[<a href="/fact/OrtLicenseCategorization/a0f14132411d3076dd06fbb3a3bea3f8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a0f14132411d3076dd06fbb3a3bea3f8">[<a href="/fact/OrtLicenseCategorization/a0f14132411d3076dd06fbb3a3bea3f8">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-Systemics-W3Works&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;a0f14132411d3076dd06fbb3a3bea3f8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-Systemics-W3Works&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li></ul></body></html>

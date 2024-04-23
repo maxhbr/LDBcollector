@@ -1,0 +1,1128 @@
+<html><head><title>ldbcollector: spdx:MTLL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MTLL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MTLL</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Matrix Template Library License</span></li><li><span class="licensename">MTLL</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>MTLL</span></li><li><span class="licensename"><span class="namespace">cavil:</span>MTLL</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>MTLL</span></li><li><span class="licensename"><span class="namespace">fossology:</span>MTLL</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>MTLL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mtll</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MTLL</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MTL License</span></li><li><span class="licensename">Software License for MTL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:b8d1b3e551e02bdaec8c86be0c882eac">[<a href="/fact/BlueOakCouncil/b8d1b3e551e02bdaec8c86be0c882eac">BlueOakCouncil</a>]</span><span title="ScancodeData:df3fc12c899271a20f5a8f8b149455b0">[<a href="/fact/ScancodeData/df3fc12c899271a20f5a8f8b149455b0">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d230dfe0d55a8ec286d56d1cc5a8b184">[<a href="/fact/SPDXLicense/d230dfe0d55a8ec286d56d1cc5a8b184">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b4a074a3f5f37dfa168b2f92c0ee1581">[<a href="/fact/FedoraEntry/b4a074a3f5f37dfa168b2f92c0ee1581">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:b8d1b3e551e02bdaec8c86be0c882eac">[<a href="/fact/BlueOakCouncil/b8d1b3e551e02bdaec8c86be0c882eac">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:b1c6a17f7a4059b53c4300e05f851279">[<a href="/fact/MetaeffektLicense/b1c6a17f7a4059b53c4300e05f851279">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:18b6ae5d522bf4451d181f3795b2d8ba">[<a href="/fact/OrtLicenseCategorization/18b6ae5d522bf4451d181f3795b2d8ba">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:18b6ae5d522bf4451d181f3795b2d8ba">[<a href="/fact/OrtLicenseCategorization/18b6ae5d522bf4451d181f3795b2d8ba">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:685ec27c5c6987172720829402603464">[<a href="/fact/OrtLicenseCategorization/685ec27c5c6987172720829402603464">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:685ec27c5c6987172720829402603464">[<a href="/fact/OrtLicenseCategorization/685ec27c5c6987172720829402603464">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:685ec27c5c6987172720829402603464">[<a href="/fact/OrtLicenseCategorization/685ec27c5c6987172720829402603464">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license was found in the Matrix Template Library. It is
+derived from the Apache Software License v1.1, but it is modified in
+several ways. It is Free, but GPL-incompatible.
+<span class="provided-by">(provided by: <span title="ScancodeData:df3fc12c899271a20f5a8f8b149455b0">[<a href="/fact/ScancodeData/df3fc12c899271a20f5a8f8b149455b0">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License</a></li><li><a href="https://spdx.org/licenses/MTLL.html" target="_blank">https://spdx.org/licenses/MTLL.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Software License for MTL
+
+Copyright (c) 2007 The Trustees of Indiana University.
+     2008 Dresden University of Technology and the Trustees of Indiana University.
+     2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.
+All rights reserved.
+Authors: Peter Gottschling and Andrew Lumsdaine
+
+This file is part of the Matrix Template Library
+
+Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+     1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;
+     2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;
+     3. Any documentation included with all redistributions must include the following acknowledgement:
+     &quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&quot;
+     Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.
+     4. The name &quot;MTL&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.
+     5. Products derived from this software may not be called &quot;MTL&quot;, nor may &quot;MTL&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.
+
+TUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.
+
+LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &quot;AS IS&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM &quot;BUGS&quot;, &quot;VIRUSES&quot;, &quot;TROJAN HORSES&quot;, &quot;TRAP DOORS&quot;, &quot;WORMS&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Software License for MTL&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2007 The Trustees of Indiana University.
+        &lt;br /&gt;
+
+2008 Dresden University of Technology and the Trustees of Indiana University.
+        &lt;br /&gt;
+
+2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.
+        &lt;br /&gt;
+
+All rights reserved.
+        &lt;br /&gt;
+
+Authors: Peter Gottschling and Andrew Lumsdaine
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;This file is part of the Matrix Template Library&lt;/p&gt;
+
+      &lt;p&gt;Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive
+         rights to license this product under the following license.
+        &lt;br /&gt;
+
+Redistribution and use in source and binary forms, with or without modification, are permitted
+             provided that the following conditions are met:
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          All redistributions of source code must retain the above copyright notice, the list of
+               authors in the original source code, this list of conditions and the disclaimer listed in
+               this license;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          All redistributions in binary form must reproduce the above copyright notice, this list of
+              conditions and the disclaimer listed in this license in the documentation and/or other
+              materials provided with the distribution;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Any documentation included with all redistributions must include the following acknowledgement:
+            &lt;br /&gt;
+
+   &amp;quot;This product includes software developed at the University of Notre Dame, the
+                  Pervasive Technology Labs at Indiana University, and Dresden University of
+                  Technology. For technical information contact Andrew Lumsdaine at the Pervasive
+                  Technology Labs at Indiana University. For administrative and license questions
+                  contact the Advanced Research and Technology Institute at 1100 Waterway Blvd.
+                  Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&amp;quot;
+            &lt;br /&gt;
+
+   Alternatively, this acknowledgement may appear in the software itself, and wherever
+                   such third-party acknowledgments normally appear.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          The name &amp;quot;MTL&amp;quot; shall not be used to endorse or promote products derived from this
+              software without prior written permission from IU or TUD. For written permission, please
+             contact Indiana University Advanced Research &amp;amp; Technology Institute.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Products derived from this software may not be called &amp;quot;MTL&amp;quot;, nor may
+             &amp;quot;MTL&amp;quot; appear in their name, without prior written permission of Indiana
+             University Advanced Research &amp;amp; Technology Institute.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;TUD and IU provide no reassurances that the source code provided does not infringe the patent or any
+         other intellectual property rights of any other entity. TUD and IU disclaim any liability to any
+         recipient for claims brought by any other entity based on infringement of intellectual property rights
+         or otherwise.&lt;/p&gt;
+
+      &lt;p&gt;LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; FOR WHICH NO WARRANTIES AS TO
+         CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO
+         WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT,
+         COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE
+         NO WARRANTIES THAT SOFTWARE IS FREE FROM &amp;quot;BUGS&amp;quot;, &amp;quot;VIRUSES&amp;quot;, &amp;quot;TROJAN
+         HORSES&amp;quot;, &amp;quot;TRAP DOORS&amp;quot;, &amp;quot;WORMS&amp;quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE
+         ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND
+         VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Software License for MTL
+
+
+This file is part of the Matrix Template Library
+
+Dresden University of Technology -- short TUD -- and Indiana University 
+-- short IU -- have the exclusive rights to license this product under the
+following license.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license; 
+2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution; 
+3. Any documentation included with all redistributions must include the following acknowledgement: 
+&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&quot; 
+Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear. 
+4. The name &quot;MTL&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute. 
+5. Products derived from this software may not be called &quot;MTL&quot;, nor may &quot;MTL&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.
+
+TUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.
+
+LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &quot;AS IS&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM &quot;BUGS&quot;, &quot;VIRUSES&quot;, &quot;TROJAN HORSES&quot;, &quot;TRAP DOORS&quot;, &quot;WORMS&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.</pre></details></li><li><details><summary>Text:</summary><pre>Software License for MTL Copyright (c) 2007 The Trustees of Indiana University.
+
+2008 Dresden University of Technology and the Trustees of Indiana University.
+
+2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.
+
+All rights reserved.
+
+Authors: Peter Gottschling and Andrew Lumsdaine
+
+This file is part of the Matrix Template Library
+
+Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;
+
+   2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;
+
+   3. Any documentation included with all redistributions must include the following acknowledgement:
+
+   &quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&quot;
+
+   Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.
+
+   4. The name &quot;MTL&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.
+
+   5. Products derived from this software may not be called &quot;MTL&quot;, nor may &quot;MTL&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.
+
+TUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.
+
+LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &quot;AS IS&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM &quot;BUGS&quot;, &quot;VIRUSES&quot;, &quot;TROJAN HORSES&quot;, &quot;TRAP DOORS&quot;, &quot;WORMS&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/d230dfe0d55a8ec286d56d1cc5a8b184">SPDXLicense:d230dfe0d55a8ec286d56d1cc5a8b184</a> for <a href="/?license=spdx:MTLL"><span class="licensename"><span class="namespace">spdx:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MTLL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Matrix Template Library License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d230dfe0d55a8ec286d56d1cc5a8b184">[<a href="/fact/SPDXLicense/d230dfe0d55a8ec286d56d1cc5a8b184">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Software License for MTL
+
+Copyright (c) 2007 The Trustees of Indiana University.
+     2008 Dresden University of Technology and the Trustees of Indiana University.
+     2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.
+All rights reserved.
+Authors: Peter Gottschling and Andrew Lumsdaine
+
+This file is part of the Matrix Template Library
+
+Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+     1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;
+     2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;
+     3. Any documentation included with all redistributions must include the following acknowledgement:
+     &quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&quot;
+     Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.
+     4. The name &quot;MTL&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.
+     5. Products derived from this software may not be called &quot;MTL&quot;, nor may &quot;MTL&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.
+
+TUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.
+
+LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &quot;AS IS&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM &quot;BUGS&quot;, &quot;VIRUSES&quot;, &quot;TROJAN HORSES&quot;, &quot;TRAP DOORS&quot;, &quot;WORMS&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Software License for MTL&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2007 The Trustees of Indiana University.
+        &lt;br /&gt;
+
+2008 Dresden University of Technology and the Trustees of Indiana University.
+        &lt;br /&gt;
+
+2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.
+        &lt;br /&gt;
+
+All rights reserved.
+        &lt;br /&gt;
+
+Authors: Peter Gottschling and Andrew Lumsdaine
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;This file is part of the Matrix Template Library&lt;/p&gt;
+
+      &lt;p&gt;Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive
+         rights to license this product under the following license.
+        &lt;br /&gt;
+
+Redistribution and use in source and binary forms, with or without modification, are permitted
+             provided that the following conditions are met:
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          All redistributions of source code must retain the above copyright notice, the list of
+               authors in the original source code, this list of conditions and the disclaimer listed in
+               this license;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          All redistributions in binary form must reproduce the above copyright notice, this list of
+              conditions and the disclaimer listed in this license in the documentation and/or other
+              materials provided with the distribution;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Any documentation included with all redistributions must include the following acknowledgement:
+            &lt;br /&gt;
+
+   &amp;quot;This product includes software developed at the University of Notre Dame, the
+                  Pervasive Technology Labs at Indiana University, and Dresden University of
+                  Technology. For technical information contact Andrew Lumsdaine at the Pervasive
+                  Technology Labs at Indiana University. For administrative and license questions
+                  contact the Advanced Research and Technology Institute at 1100 Waterway Blvd.
+                  Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&amp;quot;
+            &lt;br /&gt;
+
+   Alternatively, this acknowledgement may appear in the software itself, and wherever
+                   such third-party acknowledgments normally appear.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          The name &amp;quot;MTL&amp;quot; shall not be used to endorse or promote products derived from this
+              software without prior written permission from IU or TUD. For written permission, please
+             contact Indiana University Advanced Research &amp;amp; Technology Institute.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Products derived from this software may not be called &amp;quot;MTL&amp;quot;, nor may
+             &amp;quot;MTL&amp;quot; appear in their name, without prior written permission of Indiana
+             University Advanced Research &amp;amp; Technology Institute.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;TUD and IU provide no reassurances that the source code provided does not infringe the patent or any
+         other intellectual property rights of any other entity. TUD and IU disclaim any liability to any
+         recipient for claims brought by any other entity based on infringement of intellectual property rights
+         or otherwise.&lt;/p&gt;
+
+      &lt;p&gt;LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; FOR WHICH NO WARRANTIES AS TO
+         CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO
+         WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT,
+         COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE
+         NO WARRANTIES THAT SOFTWARE IS FREE FROM &amp;quot;BUGS&amp;quot;, &amp;quot;VIRUSES&amp;quot;, &amp;quot;TROJAN
+         HORSES&amp;quot;, &amp;quot;TRAP DOORS&amp;quot;, &amp;quot;WORMS&amp;quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE
+         ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND
+         VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:MTLL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Matrix Template Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;d230dfe0d55a8ec286d56d1cc5a8b184&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Software License for MTL\n\nCopyright (c) 2007 The Trustees of Indiana University.\n     2008 Dresden University of Technology and the Trustees of Indiana University.\n     2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.\nAll rights reserved.\nAuthors: Peter Gottschling and Andrew Lumsdaine\n\nThis file is part of the Matrix Template Library\n\nDresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n     1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;\n     2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;\n     3. Any documentation included with all redistributions must include the following acknowledgement:\n     \&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.\&quot;\n     Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.\n     4. The name \&quot;MTL\&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.\n     5. Products derived from this software may not be called \&quot;MTL\&quot;, nor may \&quot;MTL\&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.\n\nTUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.\n\nLICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED \&quot;AS IS\&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM \&quot;BUGS\&quot;, \&quot;VIRUSES\&quot;, \&quot;TROJAN HORSES\&quot;, \&quot;TRAP DOORS\&quot;, \&quot;WORMS\&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Software License for MTL&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2007 The Trustees of Indiana University.\n        &lt;br /&gt;\n\n2008 Dresden University of Technology and the Trustees of Indiana University.\n        &lt;br /&gt;\n\n2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.\n        &lt;br /&gt;\n\nAll rights reserved.\n        &lt;br /&gt;\n\nAuthors: Peter Gottschling and Andrew Lumsdaine\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;This file is part of the Matrix Template Library&lt;/p&gt;\n\n      &lt;p&gt;Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive\n         rights to license this product under the following license.\n        &lt;br /&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted\n             provided that the following conditions are met:\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          All redistributions of source code must retain the above copyright notice, the list of\n               authors in the original source code, this list of conditions and the disclaimer listed in\n               this license;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          All redistributions in binary form must reproduce the above copyright notice, this list of\n              conditions and the disclaimer listed in this license in the documentation and/or other\n              materials provided with the distribution;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Any documentation included with all redistributions must include the following acknowledgement:\n            &lt;br /&gt;\n\n   &amp;quot;This product includes software developed at the University of Notre Dame, the\n                  Pervasive Technology Labs at Indiana University, and Dresden University of\n                  Technology. For technical information contact Andrew Lumsdaine at the Pervasive\n                  Technology Labs at Indiana University. For administrative and license questions\n                  contact the Advanced Research and Technology Institute at 1100 Waterway Blvd.\n                  Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&amp;quot;\n            &lt;br /&gt;\n\n   Alternatively, this acknowledgement may appear in the software itself, and wherever\n                   such third-party acknowledgments normally appear.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          The name &amp;quot;MTL&amp;quot; shall not be used to endorse or promote products derived from this\n              software without prior written permission from IU or TUD. For written permission, please\n             contact Indiana University Advanced Research &amp;amp; Technology Institute.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Products derived from this software may not be called &amp;quot;MTL&amp;quot;, nor may\n             &amp;quot;MTL&amp;quot; appear in their name, without prior written permission of Indiana\n             University Advanced Research &amp;amp; Technology Institute.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;TUD and IU provide no reassurances that the source code provided does not infringe the patent or any\n         other intellectual property rights of any other entity. TUD and IU disclaim any liability to any\n         recipient for claims brought by any other entity based on infringement of intellectual property rights\n         or otherwise.&lt;/p&gt;\n\n      &lt;p&gt;LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; FOR WHICH NO WARRANTIES AS TO\n         CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO\n         WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT,\n         COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE\n         NO WARRANTIES THAT SOFTWARE IS FREE FROM &amp;quot;BUGS&amp;quot;, &amp;quot;VIRUSES&amp;quot;, &amp;quot;TROJAN\n         HORSES&amp;quot;, &amp;quot;TRAP DOORS&amp;quot;, &amp;quot;WORMS&amp;quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE\n         ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND\n         VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:51Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:MTLL&quot;,
+        &quot;licenseText&quot;: &quot;Software License for MTL\n\nCopyright (c) 2007 The Trustees of Indiana University.\n     2008 Dresden University of Technology and the Trustees of Indiana University.\n     2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.\nAll rights reserved.\nAuthors: Peter Gottschling and Andrew Lumsdaine\n\nThis file is part of the Matrix Template Library\n\nDresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n     1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;\n     2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;\n     3. Any documentation included with all redistributions must include the following acknowledgement:\n     \&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.\&quot;\n     Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.\n     4. The name \&quot;MTL\&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.\n     5. Products derived from this software may not be called \&quot;MTL\&quot;, nor may \&quot;MTL\&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.\n\nTUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.\n\nLICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED \&quot;AS IS\&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM \&quot;BUGS\&quot;, \&quot;VIRUSES\&quot;, \&quot;TROJAN HORSES\&quot;, \&quot;TRAP DOORS\&quot;, \&quot;WORMS\&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Software License for MTL&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2007 The Trustees of Indiana University.\n        &lt;br /&gt;\n\n2008 Dresden University of Technology and the Trustees of Indiana University.\n        &lt;br /&gt;\n\n2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.\n        &lt;br /&gt;\n\nAll rights reserved.\n        &lt;br /&gt;\n\nAuthors: Peter Gottschling and Andrew Lumsdaine\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;This file is part of the Matrix Template Library&lt;/p&gt;\n\n      &lt;p&gt;Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive\n         rights to license this product under the following license.\n        &lt;br /&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted\n             provided that the following conditions are met:\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          All redistributions of source code must retain the above copyright notice, the list of\n               authors in the original source code, this list of conditions and the disclaimer listed in\n               this license;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          All redistributions in binary form must reproduce the above copyright notice, this list of\n              conditions and the disclaimer listed in this license in the documentation and/or other\n              materials provided with the distribution;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Any documentation included with all redistributions must include the following acknowledgement:\n            &lt;br /&gt;\n\n   &amp;quot;This product includes software developed at the University of Notre Dame, the\n                  Pervasive Technology Labs at Indiana University, and Dresden University of\n                  Technology. For technical information contact Andrew Lumsdaine at the Pervasive\n                  Technology Labs at Indiana University. For administrative and license questions\n                  contact the Advanced Research and Technology Institute at 1100 Waterway Blvd.\n                  Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&amp;quot;\n            &lt;br /&gt;\n\n   Alternatively, this acknowledgement may appear in the software itself, and wherever\n                   such third-party acknowledgments normally appear.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          The name &amp;quot;MTL&amp;quot; shall not be used to endorse or promote products derived from this\n              software without prior written permission from IU or TUD. For written permission, please\n             contact Indiana University Advanced Research &amp;amp; Technology Institute.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Products derived from this software may not be called &amp;quot;MTL&amp;quot;, nor may\n             &amp;quot;MTL&amp;quot; appear in their name, without prior written permission of Indiana\n             University Advanced Research &amp;amp; Technology Institute.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;TUD and IU provide no reassurances that the source code provided does not infringe the patent or any\n         other intellectual property rights of any other entity. TUD and IU disclaim any liability to any\n         recipient for claims brought by any other entity based on infringement of intellectual property rights\n         or otherwise.&lt;/p&gt;\n\n      &lt;p&gt;LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; FOR WHICH NO WARRANTIES AS TO\n         CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO\n         WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT,\n         COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE\n         NO WARRANTIES THAT SOFTWARE IS FREE FROM &amp;quot;BUGS&amp;quot;, &amp;quot;VIRUSES&amp;quot;, &amp;quot;TROJAN\n         HORSES&amp;quot;, &amp;quot;TRAP DOORS&amp;quot;, &amp;quot;WORMS&amp;quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE\n         ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND\n         VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Matrix Template Library License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Software License for MTL\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2007 The Trustees of Indiana University.  2008 Dresden University of Technology and the Trustees of Indiana University.  2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.  All rights reserved.  Authors: Peter Gottschling and Andrew Lumsdaine  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThis file is part of the Matrix Template Library\n\nDresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Any documentation included with all redistributions must include the following acknowledgement:\n\n   \&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.\&quot;\n\n   Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name \&quot;MTL\&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Products derived from this software may not be called \&quot;MTL\&quot;, nor may \&quot;MTL\&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.\n\nTUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.\n\nLICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED \&quot;AS IS\&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM \&quot;BUGS\&quot;, \&quot;VIRUSES\&quot;, \&quot;TROJAN HORSES\&quot;, \&quot;TRAP DOORS\&quot;, \&quot;WORMS\&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/b4a074a3f5f37dfa168b2f92c0ee1581">FedoraEntry:b4a074a3f5f37dfa168b2f92c0ee1581</a> for <a href="/?license=Fedora:MTLL"><span class="licensename"><span class="namespace">Fedora:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>MTLL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MTLL</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Matrix Template Library License</span></li><li><span class="licensename">MTLL</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b4a074a3f5f37dfa168b2f92c0ee1581">[<a href="/fact/FedoraEntry/b4a074a3f5f37dfa168b2f92c0ee1581">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:MTLL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MTLL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Matrix Template Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MTLL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;b4a074a3f5f37dfa168b2f92c0ee1581&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MTLL&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Matrix Template Library License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;MTLL&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:MTLL&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/b8d1b3e551e02bdaec8c86be0c882eac">BlueOakCouncil:b8d1b3e551e02bdaec8c86be0c882eac</a> for <a href="/?license=BlueOak:MTLL"><span class="licensename"><span class="namespace">BlueOak:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>MTLL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Matrix Template Library License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:b8d1b3e551e02bdaec8c86be0c882eac">[<a href="/fact/BlueOakCouncil/b8d1b3e551e02bdaec8c86be0c882eac">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:b8d1b3e551e02bdaec8c86be0c882eac">[<a href="/fact/BlueOakCouncil/b8d1b3e551e02bdaec8c86be0c882eac">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/MTLL.html" target="_blank">https://spdx.org/licenses/MTLL.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:MTLL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Matrix Template Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;b8d1b3e551e02bdaec8c86be0c882eac&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/MTLL.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;MTLL&quot;,
+                &quot;_name&quot;: &quot;Matrix Template Library License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/MTLL.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/df3fc12c899271a20f5a8f8b149455b0">ScancodeData:df3fc12c899271a20f5a8f8b149455b0</a> for <a href="/?license=scancode:mtll"><span class="licensename"><span class="namespace">scancode:</span>mtll</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>mtll</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Matrix Template Library License</span></li><li><span class="licensename">Matrix Template Library License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:df3fc12c899271a20f5a8f8b149455b0">[<a href="/fact/ScancodeData/df3fc12c899271a20f5a8f8b149455b0">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license was found in the Matrix Template Library. It is
+derived from the Apache Software License v1.1, but it is modified in
+several ways. It is Free, but GPL-incompatible.
+<span class="provided-by">(provided by: <span title="ScancodeData:df3fc12c899271a20f5a8f8b149455b0">[<a href="/fact/ScancodeData/df3fc12c899271a20f5a8f8b149455b0">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Software License for MTL
+
+
+This file is part of the Matrix Template Library
+
+Dresden University of Technology -- short TUD -- and Indiana University 
+-- short IU -- have the exclusive rights to license this product under the
+following license.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license; 
+2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution; 
+3. Any documentation included with all redistributions must include the following acknowledgement: 
+&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&quot; 
+Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear. 
+4. The name &quot;MTL&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute. 
+5. Products derived from this software may not be called &quot;MTL&quot;, nor may &quot;MTL&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.
+
+TUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.
+
+LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &quot;AS IS&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM &quot;BUGS&quot;, &quot;VIRUSES&quot;, &quot;TROJAN HORSES&quot;, &quot;TRAP DOORS&quot;, &quot;WORMS&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:mtll&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Matrix Template Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Matrix Template Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;df3fc12c899271a20f5a8f8b149455b0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Software License for MTL\n\n\nThis file is part of the Matrix Template Library\n\nDresden University of Technology -- short TUD -- and Indiana University \n-- short IU -- have the exclusive rights to license this product under the\nfollowing license.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: \n1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license; \n2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution; \n3. Any documentation included with all redistributions must include the following acknowledgement: \n\&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.\&quot; \nAlternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear. \n4. The name \&quot;MTL\&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute. \n5. Products derived from this software may not be called \&quot;MTL\&quot;, nor may \&quot;MTL\&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.\n\nTUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.\n\nLICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED \&quot;AS IS\&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM \&quot;BUGS\&quot;, \&quot;VIRUSES\&quot;, \&quot;TROJAN HORSES\&quot;, \&quot;TRAP DOORS\&quot;, \&quot;WORMS\&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;,
+        &quot;_key&quot;: &quot;mtll&quot;,
+        &quot;_name&quot;: &quot;Matrix Template Library License&quot;,
+        &quot;_notes&quot;: &quot;Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Indiana University&quot;,
+        &quot;_shortName&quot;: &quot;Matrix Template Library License&quot;,
+        &quot;_spdxId&quot;: &quot;MTLL&quot;,
+        &quot;_text&quot;: &quot;Software License for MTL\n\n\nThis file is part of the Matrix Template Library\n\nDresden University of Technology -- short TUD -- and Indiana University \n-- short IU -- have the exclusive rights to license this product under the\nfollowing license.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: \n1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license; \n2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution; \n3. Any documentation included with all redistributions must include the following acknowledgement: \n\&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.\&quot; \nAlternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear. \n4. The name \&quot;MTL\&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute. \n5. Products derived from this software may not be called \&quot;MTL\&quot;, nor may \&quot;MTL\&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.\n\nTUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.\n\nLICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED \&quot;AS IS\&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM \&quot;BUGS\&quot;, \&quot;VIRUSES\&quot;, \&quot;TROJAN HORSES\&quot;, \&quot;TRAP DOORS\&quot;, \&quot;WORMS\&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/e836ca146a086e7ce191ae1a40672b06">Fossology:e836ca146a086e7ce191ae1a40672b06</a> for <a href="/?license=fossology:MTLL"><span class="licensename"><span class="namespace">fossology:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>MTLL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Matrix Template Library License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Software License for MTL Copyright (c) 2007 The Trustees of Indiana University.
+
+2008 Dresden University of Technology and the Trustees of Indiana University.
+
+2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.
+
+All rights reserved.
+
+Authors: Peter Gottschling and Andrew Lumsdaine
+
+This file is part of the Matrix Template Library
+
+Dresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;
+
+   2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;
+
+   3. Any documentation included with all redistributions must include the following acknowledgement:
+
+   &quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.&quot;
+
+   Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.
+
+   4. The name &quot;MTL&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.
+
+   5. Products derived from this software may not be called &quot;MTL&quot;, nor may &quot;MTL&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.
+
+TUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.
+
+LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &quot;AS IS&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM &quot;BUGS&quot;, &quot;VIRUSES&quot;, &quot;TROJAN HORSES&quot;, &quot;TRAP DOORS&quot;, &quot;WORMS&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:MTLL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Matrix Template Library License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;e836ca146a086e7ce191ae1a40672b06&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Software License for MTL Copyright (c) 2007 The Trustees of Indiana University.\n\n2008 Dresden University of Technology and the Trustees of Indiana University.\n\n2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.\n\nAll rights reserved.\n\nAuthors: Peter Gottschling and Andrew Lumsdaine\n\nThis file is part of the Matrix Template Library\n\nDresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;\n\n   2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;\n\n   3. Any documentation included with all redistributions must include the following acknowledgement:\n\n   \&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.\&quot;\n\n   Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.\n\n   4. The name \&quot;MTL\&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.\n\n   5. Products derived from this software may not be called \&quot;MTL\&quot;, nor may \&quot;MTL\&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.\n\nTUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.\n\nLICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED \&quot;AS IS\&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM \&quot;BUGS\&quot;, \&quot;VIRUSES\&quot;, \&quot;TROJAN HORSES\&quot;, \&quot;TRAP DOORS\&quot;, \&quot;WORMS\&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Matrix Template Library License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:MTLL&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Software License for MTL Copyright (c) 2007 The Trustees of Indiana University.\n\n2008 Dresden University of Technology and the Trustees of Indiana University.\n\n2010 SimuNova UG (haftungsbeschränkt), www.simunova.com.\n\nAll rights reserved.\n\nAuthors: Peter Gottschling and Andrew Lumsdaine\n\nThis file is part of the Matrix Template Library\n\nDresden University of Technology -- short TUD -- and Indiana University -- short IU -- have the exclusive rights to license this product under the following license.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   1. All redistributions of source code must retain the above copyright notice, the list of authors in the original source code, this list of conditions and the disclaimer listed in this license;\n\n   2. All redistributions in binary form must reproduce the above copyright notice, this list of conditions and the disclaimer listed in this license in the documentation and/or other materials provided with the distribution;\n\n   3. Any documentation included with all redistributions must include the following acknowledgement:\n\n   \&quot;This product includes software developed at the University of Notre Dame, the Pervasive Technology Labs at Indiana University, and Dresden University of Technology. For technical information contact Andrew Lumsdaine at the Pervasive Technology Labs at Indiana University. For administrative and license questions contact the Advanced Research and Technology Institute at 1100 Waterway Blvd. Indianapolis, Indiana 46202, phone 317-274-5905, fax 317-274-5902.\&quot;\n\n   Alternatively, this acknowledgement may appear in the software itself, and wherever such third-party acknowledgments normally appear.\n\n   4. The name \&quot;MTL\&quot; shall not be used to endorse or promote products derived from this software without prior written permission from IU or TUD. For written permission, please contact Indiana University Advanced Research &amp; Technology Institute.\n\n   5. Products derived from this software may not be called \&quot;MTL\&quot;, nor may \&quot;MTL\&quot; appear in their name, without prior written permission of Indiana University Advanced Research &amp; Technology Institute.\n\nTUD and IU provide no reassurances that the source code provided does not infringe the patent or any other intellectual property rights of any other entity. TUD and IU disclaim any liability to any recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise.\n\nLICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED \&quot;AS IS\&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR ACCURACY ARE MADE. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY GIVE NO WARRANTIES AND MAKE NO REPRESENTATION THAT SOFTWARE IS FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. DRESDEN UNIVERSITY OF TECHNOLOGY AND INDIANA UNIVERSITY MAKE NO WARRANTIES THAT SOFTWARE IS FREE FROM \&quot;BUGS\&quot;, \&quot;VIRUSES\&quot;, \&quot;TROJAN HORSES\&quot;, \&quot;TRAP DOORS\&quot;, \&quot;WORMS\&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING SOFTWARE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/18b6ae5d522bf4451d181f3795b2d8ba">OrtLicenseCategorization:18b6ae5d522bf4451d181f3795b2d8ba</a> for <a href="/?license=SPDX:MTLL"><span class="licensename"><span class="namespace">SPDX:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MTLL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:18b6ae5d522bf4451d181f3795b2d8ba">[<a href="/fact/OrtLicenseCategorization/18b6ae5d522bf4451d181f3795b2d8ba">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:18b6ae5d522bf4451d181f3795b2d8ba">[<a href="/fact/OrtLicenseCategorization/18b6ae5d522bf4451d181f3795b2d8ba">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MTLL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;18b6ae5d522bf4451d181f3795b2d8ba&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MTLL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/685ec27c5c6987172720829402603464">OrtLicenseCategorization:685ec27c5c6987172720829402603464</a> for <a href="/?license=SPDX:MTLL"><span class="licensename"><span class="namespace">SPDX:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MTLL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:685ec27c5c6987172720829402603464">[<a href="/fact/OrtLicenseCategorization/685ec27c5c6987172720829402603464">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:685ec27c5c6987172720829402603464">[<a href="/fact/OrtLicenseCategorization/685ec27c5c6987172720829402603464">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:685ec27c5c6987172720829402603464">[<a href="/fact/OrtLicenseCategorization/685ec27c5c6987172720829402603464">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MTLL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;685ec27c5c6987172720829402603464&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MTLL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/d5cfd22918f8510ce85cc50614f88136">CavilLicenseChange:d5cfd22918f8510ce85cc50614f88136</a> for <a href="/?license=cavil:MTLL"><span class="licensename"><span class="namespace">cavil:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>MTLL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MTLL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:MTLL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MTLL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;d5cfd22918f8510ce85cc50614f88136&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;MTLL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:MTLL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/b1c6a17f7a4059b53c4300e05f851279">MetaeffektLicense:b1c6a17f7a4059b53c4300e05f851279</a> for <a href="/?license=metaeffekt:MTLL"><span class="licensename"><span class="namespace">metaeffekt:</span>MTLL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>MTLL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MTLL</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">MTL License</span></li><li><span class="licensename">MTL LICENSE</span></li><li><span class="licensename">MTLL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mtll</span></li><li><span class="licensename">Software License for MTL</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:b1c6a17f7a4059b53c4300e05f851279">[<a href="/fact/MetaeffektLicense/b1c6a17f7a4059b53c4300e05f851279">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:MTLL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MTLL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MTLL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MTL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MTL LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Software License for MTL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:mtll&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;b1c6a17f7a4059b53c4300e05f851279&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;MTL License&quot;,
+            &quot;MTL LICENSE&quot;,
+            &quot;Software License for MTL&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:MTLL&quot;,
+        &quot;_category&quot;: &quot;MTLL&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:mtll&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:MTLL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

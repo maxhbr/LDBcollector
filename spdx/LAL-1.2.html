@@ -1,0 +1,1579 @@
+<html><head><title>ldbcollector: spdx:LAL-1.2</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:LAL-1.2</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LAL-1.2</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">LAL 1.2</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>LAL 1.2</span></li><li><span class="licensename">LAL-1.2</span></li><li><span class="licensename"><span class="namespace">cavil:</span>LAL-1.2</span></li><li><span class="licensename"><span class="namespace">fossology:</span>LAL-1.2</span></li><li><span class="licensename"><span class="namespace">scancode:</span>lal-1.2</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LAL-1.2</span></li><li><span class="licensename">Licence Art Libre 1.2</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">https://spdx.org/licenses/LAL-1.2.html</span></li><li><span class="licensename">LAL</span></li><li><span class="licensename">LAL, 1.2</span></li><li><span class="licensename">LAL, Version 1.2</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Copyleft<span class="provided-by">(provided by: <span title="ScancodeData:98a9a9d56bb031613a42592e6b3d6c08">[<a href="/fact/ScancodeData/98a9a9d56bb031613a42592e6b3d6c08">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e879a09a4bf457d8494dfd99a11f5dd9">[<a href="/fact/SPDXLicense/e879a09a4bf457d8494dfd99a11f5dd9">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:74ce3eddbc69f6e690e170fb2f815b47">[<a href="/fact/OrtLicenseCategorization/74ce3eddbc69f6e690e170fb2f815b47">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:74ce3eddbc69f6e690e170fb2f815b47">[<a href="/fact/OrtLicenseCategorization/74ce3eddbc69f6e690e170fb2f815b47">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:74ce3eddbc69f6e690e170fb2f815b47">[<a href="/fact/OrtLicenseCategorization/74ce3eddbc69f6e690e170fb2f815b47">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/<span class="provided-by">(provided by: <span title="SPDXLicense:e879a09a4bf457d8494dfd99a11f5dd9">[<a href="/fact/SPDXLicense/e879a09a4bf457d8494dfd99a11f5dd9">SPDXLicense</a>]</span>)</span></li><li><b>Fossology: </b>French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/<span class="provided-by">(provided by: <span title="Fossology:a801ae0b531dd94cdf2e4e0fba4b505d">[<a href="/fact/Fossology/a801ae0b531dd94cdf2e4e0fba4b505d">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://artlibre.org/licence/lal/licence-art-libre-12/" target="_blank">http://artlibre.org/licence/lal/licence-art-libre-12/</a></li><li><a href="http://artlibre.org/licence/lal/it/" target="_blank">http://artlibre.org/licence/lal/it/</a></li><li><a href="http://artlibre.org/licence/lal/es/" target="_blank">http://artlibre.org/licence/lal/es/</a></li></ul><h3>Other Statements</h3><ul><li>http://artlibre.org/licence/lal/licence-art-libre-12/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Licence Art Libre
+[ Copyleft Attitude ]
+
+Version 1.2
+
+Préambule :
+
+Avec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.
+
+Loin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.
+Alors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.
+L’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.
+
+En effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains.
+Le savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.
+Ainsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.
+
+DÉFINITIONS
+
+– L’oeuvre :il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+
+– L’oeuvre originelle :c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+
+– Les oeuvres conséquentes :c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+
+– Original (source ou ressource de l’oeuvre) :exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+
+– Copie :toute reproduction d’un original au sens de cette licence.
+
+– Auteur de l’oeuvre originelle :c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.
+
+– Contributeur :toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.
+
+1. OBJET
+Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.
+
+2. L’ÉTENDUE DE LA JOUISSANCE
+Cette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)
+Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.
+
+2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION)
+Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:
+     – joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,      – indiquer au destinataire le nom de l’auteur des originaux,      – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.
+
+2.3 LA LIBERTÉ DE MODIFIER
+Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.
+
+3. L’INCORPORATION DE L’OEUVRE
+Tous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.
+
+4. VOS DROITS D’AUTEUR
+Cette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.
+
+5. LA DURÉE DE LA LICENCE
+Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.
+
+6. LES DIFFÉRENTES VERSIONS DE LA LICENCE
+Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.
+Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.
+
+7. LES SOUS-LICENCES
+Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.
+
+8. LA LOI APPLICABLE AU CONTRAT
+Cette licence est soumise au droit français.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Licence Art Libre
+        &lt;br /&gt;
+
+[ Copyleft Attitude ]
+      &lt;/p&gt;
+
+         &lt;p&gt;Version 1.2&lt;/p&gt;
+
+      &lt;/div&gt;
+         &lt;p&gt;Préambule :&lt;/p&gt;
+
+      &lt;p&gt;Avec cette Licence Art Libre, l&amp;apos;autorisation est donnée de
+         copier, de diffuser et de transformer librement les oeuvres
+         dans le respect des droits de l&amp;apos;auteur.&lt;/p&gt;
+
+      &lt;p&gt;Loin d&amp;apos;ignorer les droits de l&amp;apos;auteur, cette licence les
+         reconnaît et les protège. Elle en reformule le principe en
+         permettant au public de faire un usage créatif des oeuvres
+         d&amp;apos;art.
+        &lt;br /&gt;
+
+Alors que l&amp;apos;usage fait du droit de la propriété littéraire
+             et artistique conduit à restreindre l&amp;apos;accès du public
+             à l&amp;apos;oeuvre, la Licence Art Libre a pour but de le
+             favoriser.
+        &lt;br /&gt;
+
+L&amp;apos;intention est d&amp;apos;ouvrir l&amp;apos;accès et d&amp;apos;autoriser
+             l&amp;apos;utilisation des ressources d&amp;apos;une oeuvre par le plus
+             grand nombre. En avoir jouissance pour en multiplier
+             les réjouissances, créer de nouvelles conditions de
+             création pour amplifier les possibilités de création.
+             Dans le respect des auteurs avec la reconnaissance et
+             la défense de leur droit moral.
+      &lt;/p&gt;
+
+      &lt;p&gt;En effet, avec la venue du numérique, l&amp;apos;invention de l&amp;apos;internet
+         et des logiciels libres, un nouveau mode de création et de
+         production est apparu. Il est aussi l&amp;apos;amplification de ce qui
+         a été expérimenté par nombre d&amp;apos;artistes contemporains.
+        &lt;br /&gt;
+
+Le savoir et la création sont des ressources qui doivent
+             demeurer libres pour être encore véritablement du
+             savoir et de la création. C&amp;apos;est à dire rester une
+             recherche fondamentale qui ne soit pas directement
+             liée à une application concrète. Créer c&amp;apos;est découvrir
+             l&amp;apos;inconnu, c&amp;apos;est inventer le réel avant tout souci de
+             réalisme.
+        &lt;br /&gt;
+
+Ainsi, l&amp;apos;objet de l&amp;apos;art n&amp;apos;est pas confondu avec l&amp;apos;objet
+             d&amp;apos;art fini et défini comme tel.
+		&lt;br /&gt;
+
+C&amp;apos;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&amp;apos;économie de marché.
+      &lt;/p&gt;
+
+      &lt;p&gt;DÉFINITIONS&lt;/p&gt;
+
+      &lt;p&gt;– L&amp;apos;oeuvre :
+	  &lt;br /&gt;
+
+il s&amp;apos;agit d&amp;apos;une oeuvre commune qui comprend l&amp;apos;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&amp;apos;initiative de l&amp;apos;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– L&amp;apos;oeuvre originelle :
+	  &lt;br /&gt;
+
+c&amp;apos;est-à-dire l&amp;apos;oeuvre créée par l&amp;apos;initiateur de l&amp;apos;oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Les oeuvres conséquentes :
+	  &lt;br /&gt;
+
+c&amp;apos;est-à-dire les propositions des auteurs qui contribuent à la formation de l&amp;apos;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Original (source ou ressource de l&amp;apos;oeuvre) :
+	  &lt;br /&gt;
+
+exemplaire daté de l&amp;apos;oeuvre, de sa définition, de sa partition ou de son programme que l&amp;apos;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Copie :
+	  &lt;br /&gt;
+
+toute reproduction d&amp;apos;un original au sens de cette licence.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Auteur de l&amp;apos;oeuvre originelle :
+	  &lt;br /&gt;
+
+c&amp;apos;est la personne qui a créé l&amp;apos;oeuvre à l&amp;apos;origine d&amp;apos;une arborescence de cette oeuvre modifiée. Par cette licence, l&amp;apos;auteur détermine les conditions dans lesquelles ce travail se fait.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Contributeur :
+	  &lt;br /&gt;
+
+toute personne qui contribue à la création de l&amp;apos;oeuvre. Il est l&amp;apos;auteur d&amp;apos;une oeuvre originale résultant de la modification d&amp;apos;une copie de l&amp;apos;oeuvre originelle ou de la modification d&amp;apos;une copie d&amp;apos;une oeuvre conséquente.
+	  &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          OBJET
+            &lt;br /&gt;
+
+   Cette licence a pour objet de définir les
+                 conditions selon lesquelles vous pouvez jouir
+                 librement de cette oeuvre.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          L&amp;apos;ÉTENDUE DE LA JOUISSANCE
+            &lt;br /&gt;
+
+   Cette oeuvre est soumise au droit d&amp;apos;auteur, et
+                 l&amp;apos;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.1&lt;/var&gt;
+          LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)
+            &lt;br /&gt;
+
+   Vous avez la liberté de copier cette oeuvre pour un
+                 usage personnel, pour vos amis, ou toute autre
+                 personne et quelque soit la technique
+                 employée.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.2&lt;/var&gt;
+          LA LIBERTÉ DE DIFFUSER, D&amp;apos;INTERPRÉTER (OU DE REPRÉSENTATION)
+            &lt;br /&gt;
+
+   Vous pouvez diffuser librement les copies de ces
+                 oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:
+            &lt;br /&gt;
+
+   – joindre aux copies, cette licence à l&amp;apos;identique,
+                 ou indiquer précisément où se trouve la licence,
+			&lt;br /&gt;
+
+   – indiquer au destinataire le nom de l&amp;apos;auteur des originaux,
+			&lt;br /&gt;
+
+   – indiquer au destinataire où il pourra avoir accès aux originaux
+			&lt;br /&gt;
+
+   (originels et/ou conséquents).
+			L&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à diffuser l&amp;apos;original dans les mêmes conditions que les copies.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.3&lt;/var&gt;
+          LA LIBERTÉ DE MODIFIER
+            &lt;br /&gt;
+
+   Vous avez la liberté de modifier les copies des
+                 originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&amp;apos;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à modifier l&amp;apos;original dans les mêmes conditions que les copies.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          L&amp;apos;INCORPORATION DE L&amp;apos;OEUVRE
+            &lt;br /&gt;
+
+   Tous les éléments de cette oeuvre doivent demeurer
+                 libres, c&amp;apos;est pourquoi il ne vous est pas
+                 permis d&amp;apos;intégrer les originaux (originels et
+                 conséquents) dans une autre oeuvre qui ne
+                 serait pas soumise à cette licence.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          VOS DROITS D&amp;apos;AUTEUR
+            &lt;br /&gt;
+
+   Cette licence n&amp;apos;a pas pour objet de nier vos droits
+                 d&amp;apos;auteur sur votre contribution. En
+                 choisissant de contribuer à l&amp;apos;évolution de
+                 cette oeuvre, vous acceptez seulement d&amp;apos;offrir
+                 aux autres les mêmes droits sur votre
+                 contribution que ceux qui vous ont été
+                 accordés par cette licence.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          LA DURÉE DE LA LICENCE
+            &lt;br /&gt;
+
+   Cette licence prend effet dès votre acceptation de
+                 ses dispositions. Le fait de copier, de
+                 diffuser, ou de modifier l&amp;apos;oeuvre constitue
+                 une acception tacite.
+            &lt;br /&gt;
+
+   Cette licence a pour durée la durée des droits d&amp;apos;auteur attachés à l&amp;apos;oeuvre.
+			&lt;br /&gt;
+
+   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&amp;apos;elle vous confère.
+			&lt;br /&gt;
+
+   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&amp;apos;elle confère.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          LES DIFFÉRENTES VERSIONS DE LA LICENCE
+            &lt;br /&gt;
+
+   Cette licence pourra être modifiée régulièrement,
+                 en vue de son amélioration, par ses auteurs
+                 (les acteurs du mouvement « copyleft
+                 attitude ») sous la forme de nouvelles
+                 versions numérotées.
+            &lt;br /&gt;
+
+   Vous avez toujours le choix entre vous contenter
+                 des dispositions contenues dans la version
+                 sous laquelle la copie vous a été communiquée
+                 ou alors, vous prévaloir des dispositions
+                 d&amp;apos;une des versions ultérieures.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          LES SOUS-LICENCES
+            &lt;br /&gt;
+
+   Les sous licences ne sont pas autorisées par la
+                 présente. Toute personne qui souhaite
+                 bénéficier des libertés qu&amp;apos;elle confère sera
+                 liée directement à l&amp;apos;auteur de l&amp;apos;oeuvre
+                 originelle.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 8.&lt;/var&gt;
+          LA LOI APPLICABLE AU CONTRAT
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Cette licence est soumise au droit français.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Licence Art Libre 
+ [ Copyleft Attitude ]
+Version 1.2
+
+Préambule :
+
+Avec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.
+
+Loin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.  
+Alors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.  
+L’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.
+
+En effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains. 
+Le savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.  
+Ainsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.
+
+DÉFINITIONS
+
+– L’oeuvre : il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+
+– L’oeuvre originelle : c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+
+– Les oeuvres conséquentes : c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+
+– Original (source ou ressource de l’oeuvre) : exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+
+– Copie : toute reproduction d’un original au sens de cette licence.
+
+– Auteur de l’oeuvre originelle : c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.
+
+– Contributeur : toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.
+
+1. OBJET 
+Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.
+
+2. L’ÉTENDUE DE LA JOUISSANCE 
+Cette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION) 
+Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.
+
+2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION) 
+Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:  
+– joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,  – indiquer au destinataire le nom de l’auteur des originaux,  – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.
+
+2.3 LA LIBERTÉ DE MODIFIER 
+Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.
+
+3. L’INCORPORATION DE L’OEUVRE 
+Tous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.
+
+4. VOS DROITS D’AUTEUR 
+Cette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.
+
+5. LA DURÉE DE LA LICENCE 
+Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.
+
+6. LES DIFFÉRENTES VERSIONS DE LA LICENCE 
+Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées. 
+Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.
+
+7. LES SOUS-LICENCES 
+Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.
+
+8. LA LOI APPLICABLE AU CONTRAT 
+Cette licence est soumise au droit français.</pre></details></li><li><details><summary>Text:</summary><pre>Licence Art Libre
+
+[ Copyleft Attitude ]
+
+Version 1.2
+
+Préambule :
+
+Avec cette Licence Art Libre, l&#39;autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l&#39;auteur.
+
+Loin d&#39;ignorer les droits de l&#39;auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d&#39;art.
+
+Alors que l&#39;usage fait du droit de la propriété littéraire et artistique conduit à restreindre l&#39;accès du public à l&#39;oeuvre, la Licence Art Libre a pour but de le favoriser.
+
+L&#39;intention est d&#39;ouvrir l&#39;accès et d&#39;autoriser l&#39;utilisation des ressources d&#39;une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.
+
+En effet, avec la venue du numérique, l&#39;invention de l&#39;internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l&#39;amplification de ce qui a été expérimenté par nombre d&#39;artistes contemporains.
+
+Le savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C&#39;est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c&#39;est découvrir l&#39;inconnu, c&#39;est inventer le réel avant tout souci de réalisme.
+
+Ainsi, l&#39;objet de l&#39;art n&#39;est pas confondu avec l&#39;objet d&#39;art fini et défini comme tel.
+
+C&#39;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&#39;économie de marché.
+
+DÉFINITIONS
+
+– L&#39;oeuvre :
+
+il s&#39;agit d&#39;une oeuvre commune qui comprend l&#39;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&#39;initiative de l&#39;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+
+– L&#39;oeuvre originelle :
+
+c&#39;est-à-dire l&#39;oeuvre créée par l&#39;initiateur de l&#39;oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+
+– Les oeuvres conséquentes :
+
+c&#39;est-à-dire les propositions des auteurs qui contribuent à la formation de l&#39;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+
+– Original (source ou ressource de l&#39;oeuvre) :
+
+exemplaire daté de l&#39;oeuvre, de sa définition, de sa partition ou de son programme que l&#39;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+
+– Copie :
+
+toute reproduction d&#39;un original au sens de cette licence.
+
+– Auteur de l&#39;oeuvre originelle :
+
+c&#39;est la personne qui a créé l&#39;oeuvre à l&#39;origine d&#39;une arborescence de cette oeuvre modifiée. Par cette licence, l&#39;auteur détermine les conditions dans lesquelles ce travail se fait.
+
+– Contributeur :
+
+toute personne qui contribue à la création de l&#39;oeuvre. Il est l&#39;auteur d&#39;une oeuvre originale résultant de la modification d&#39;une copie de l&#39;oeuvre originelle ou de la modification d&#39;une copie d&#39;une oeuvre conséquente.
+
+   1. OBJET
+
+   Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.
+
+   2. L&#39;ÉTENDUE DE LA JOUISSANCE
+
+   Cette oeuvre est soumise au droit d&#39;auteur, et l&#39;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+   2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)
+
+   Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.
+
+   2.2 LA LIBERTÉ DE DIFFUSER, D&#39;INTERPRÉTER (OU DE REPRÉSENTATION)
+
+   Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:
+
+   – joindre aux copies, cette licence à l&#39;identique, ou indiquer précisément où se trouve la licence,
+
+   – indiquer au destinataire le nom de l&#39;auteur des originaux,
+
+   – indiquer au destinataire où il pourra avoir accès aux originaux
+
+   (originels et/ou conséquents). L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à diffuser l&#39;original dans les mêmes conditions que les copies.
+
+   2.3 LA LIBERTÉ DE MODIFIER
+
+   Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&#39;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à modifier l&#39;original dans les mêmes conditions que les copies.
+
+   3. L&#39;INCORPORATION DE L&#39;OEUVRE
+
+   Tous les éléments de cette oeuvre doivent demeurer libres, c&#39;est pourquoi il ne vous est pas permis d&#39;intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.
+
+   4. VOS DROITS D&#39;AUTEUR
+
+   Cette licence n&#39;a pas pour objet de nier vos droits d&#39;auteur sur votre contribution. En choisissant de contribuer à l&#39;évolution de cette oeuvre, vous acceptez seulement d&#39;offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.
+
+   5. LA DURÉE DE LA LICENCE
+
+   Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l&#39;oeuvre constitue une acception tacite.
+
+   Cette licence a pour durée la durée des droits d&#39;auteur attachés à l&#39;oeuvre.
+
+   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&#39;elle vous confère.
+
+   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&#39;elle confère.
+
+   6. LES DIFFÉRENTES VERSIONS DE LA LICENCE
+
+   Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.
+
+   Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d&#39;une des versions ultérieures.
+
+   7. LES SOUS-LICENCES
+
+   Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu&#39;elle confère sera liée directement à l&#39;auteur de l&#39;oeuvre originelle.
+
+   8. LA LOI APPLICABLE AU CONTRAT
+
+Cette licence est soumise au droit français.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e879a09a4bf457d8494dfd99a11f5dd9">SPDXLicense:e879a09a4bf457d8494dfd99a11f5dd9</a> for <a href="/?license=spdx:LAL-1.2"><span class="licensename"><span class="namespace">spdx:</span>LAL-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LAL-1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Licence Art Libre 1.2</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e879a09a4bf457d8494dfd99a11f5dd9">[<a href="/fact/SPDXLicense/e879a09a4bf457d8494dfd99a11f5dd9">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/<span class="provided-by">(provided by: <span title="SPDXLicense:e879a09a4bf457d8494dfd99a11f5dd9">[<a href="/fact/SPDXLicense/e879a09a4bf457d8494dfd99a11f5dd9">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://artlibre.org/licence/lal/licence-art-libre-12/" target="_blank">http://artlibre.org/licence/lal/licence-art-libre-12/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Licence Art Libre
+[ Copyleft Attitude ]
+
+Version 1.2
+
+Préambule :
+
+Avec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.
+
+Loin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.
+Alors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.
+L’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.
+
+En effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains.
+Le savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.
+Ainsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.
+
+DÉFINITIONS
+
+– L’oeuvre :il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+
+– L’oeuvre originelle :c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+
+– Les oeuvres conséquentes :c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+
+– Original (source ou ressource de l’oeuvre) :exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+
+– Copie :toute reproduction d’un original au sens de cette licence.
+
+– Auteur de l’oeuvre originelle :c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.
+
+– Contributeur :toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.
+
+1. OBJET
+Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.
+
+2. L’ÉTENDUE DE LA JOUISSANCE
+Cette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)
+Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.
+
+2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION)
+Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:
+     – joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,      – indiquer au destinataire le nom de l’auteur des originaux,      – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.
+
+2.3 LA LIBERTÉ DE MODIFIER
+Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.
+
+3. L’INCORPORATION DE L’OEUVRE
+Tous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.
+
+4. VOS DROITS D’AUTEUR
+Cette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.
+
+5. LA DURÉE DE LA LICENCE
+Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.
+
+6. LES DIFFÉRENTES VERSIONS DE LA LICENCE
+Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.
+Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.
+
+7. LES SOUS-LICENCES
+Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.
+
+8. LA LOI APPLICABLE AU CONTRAT
+Cette licence est soumise au droit français.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Licence Art Libre
+        &lt;br /&gt;
+
+[ Copyleft Attitude ]
+      &lt;/p&gt;
+
+         &lt;p&gt;Version 1.2&lt;/p&gt;
+
+      &lt;/div&gt;
+         &lt;p&gt;Préambule :&lt;/p&gt;
+
+      &lt;p&gt;Avec cette Licence Art Libre, l&amp;apos;autorisation est donnée de
+         copier, de diffuser et de transformer librement les oeuvres
+         dans le respect des droits de l&amp;apos;auteur.&lt;/p&gt;
+
+      &lt;p&gt;Loin d&amp;apos;ignorer les droits de l&amp;apos;auteur, cette licence les
+         reconnaît et les protège. Elle en reformule le principe en
+         permettant au public de faire un usage créatif des oeuvres
+         d&amp;apos;art.
+        &lt;br /&gt;
+
+Alors que l&amp;apos;usage fait du droit de la propriété littéraire
+             et artistique conduit à restreindre l&amp;apos;accès du public
+             à l&amp;apos;oeuvre, la Licence Art Libre a pour but de le
+             favoriser.
+        &lt;br /&gt;
+
+L&amp;apos;intention est d&amp;apos;ouvrir l&amp;apos;accès et d&amp;apos;autoriser
+             l&amp;apos;utilisation des ressources d&amp;apos;une oeuvre par le plus
+             grand nombre. En avoir jouissance pour en multiplier
+             les réjouissances, créer de nouvelles conditions de
+             création pour amplifier les possibilités de création.
+             Dans le respect des auteurs avec la reconnaissance et
+             la défense de leur droit moral.
+      &lt;/p&gt;
+
+      &lt;p&gt;En effet, avec la venue du numérique, l&amp;apos;invention de l&amp;apos;internet
+         et des logiciels libres, un nouveau mode de création et de
+         production est apparu. Il est aussi l&amp;apos;amplification de ce qui
+         a été expérimenté par nombre d&amp;apos;artistes contemporains.
+        &lt;br /&gt;
+
+Le savoir et la création sont des ressources qui doivent
+             demeurer libres pour être encore véritablement du
+             savoir et de la création. C&amp;apos;est à dire rester une
+             recherche fondamentale qui ne soit pas directement
+             liée à une application concrète. Créer c&amp;apos;est découvrir
+             l&amp;apos;inconnu, c&amp;apos;est inventer le réel avant tout souci de
+             réalisme.
+        &lt;br /&gt;
+
+Ainsi, l&amp;apos;objet de l&amp;apos;art n&amp;apos;est pas confondu avec l&amp;apos;objet
+             d&amp;apos;art fini et défini comme tel.
+		&lt;br /&gt;
+
+C&amp;apos;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&amp;apos;économie de marché.
+      &lt;/p&gt;
+
+      &lt;p&gt;DÉFINITIONS&lt;/p&gt;
+
+      &lt;p&gt;– L&amp;apos;oeuvre :
+	  &lt;br /&gt;
+
+il s&amp;apos;agit d&amp;apos;une oeuvre commune qui comprend l&amp;apos;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&amp;apos;initiative de l&amp;apos;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– L&amp;apos;oeuvre originelle :
+	  &lt;br /&gt;
+
+c&amp;apos;est-à-dire l&amp;apos;oeuvre créée par l&amp;apos;initiateur de l&amp;apos;oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Les oeuvres conséquentes :
+	  &lt;br /&gt;
+
+c&amp;apos;est-à-dire les propositions des auteurs qui contribuent à la formation de l&amp;apos;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Original (source ou ressource de l&amp;apos;oeuvre) :
+	  &lt;br /&gt;
+
+exemplaire daté de l&amp;apos;oeuvre, de sa définition, de sa partition ou de son programme que l&amp;apos;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Copie :
+	  &lt;br /&gt;
+
+toute reproduction d&amp;apos;un original au sens de cette licence.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Auteur de l&amp;apos;oeuvre originelle :
+	  &lt;br /&gt;
+
+c&amp;apos;est la personne qui a créé l&amp;apos;oeuvre à l&amp;apos;origine d&amp;apos;une arborescence de cette oeuvre modifiée. Par cette licence, l&amp;apos;auteur détermine les conditions dans lesquelles ce travail se fait.
+	  &lt;/p&gt;
+
+      &lt;p&gt;– Contributeur :
+	  &lt;br /&gt;
+
+toute personne qui contribue à la création de l&amp;apos;oeuvre. Il est l&amp;apos;auteur d&amp;apos;une oeuvre originale résultant de la modification d&amp;apos;une copie de l&amp;apos;oeuvre originelle ou de la modification d&amp;apos;une copie d&amp;apos;une oeuvre conséquente.
+	  &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          OBJET
+            &lt;br /&gt;
+
+   Cette licence a pour objet de définir les
+                 conditions selon lesquelles vous pouvez jouir
+                 librement de cette oeuvre.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          L&amp;apos;ÉTENDUE DE LA JOUISSANCE
+            &lt;br /&gt;
+
+   Cette oeuvre est soumise au droit d&amp;apos;auteur, et
+                 l&amp;apos;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.1&lt;/var&gt;
+          LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)
+            &lt;br /&gt;
+
+   Vous avez la liberté de copier cette oeuvre pour un
+                 usage personnel, pour vos amis, ou toute autre
+                 personne et quelque soit la technique
+                 employée.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.2&lt;/var&gt;
+          LA LIBERTÉ DE DIFFUSER, D&amp;apos;INTERPRÉTER (OU DE REPRÉSENTATION)
+            &lt;br /&gt;
+
+   Vous pouvez diffuser librement les copies de ces
+                 oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:
+            &lt;br /&gt;
+
+   – joindre aux copies, cette licence à l&amp;apos;identique,
+                 ou indiquer précisément où se trouve la licence,
+			&lt;br /&gt;
+
+   – indiquer au destinataire le nom de l&amp;apos;auteur des originaux,
+			&lt;br /&gt;
+
+   – indiquer au destinataire où il pourra avoir accès aux originaux
+			&lt;br /&gt;
+
+   (originels et/ou conséquents).
+			L&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à diffuser l&amp;apos;original dans les mêmes conditions que les copies.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.3&lt;/var&gt;
+          LA LIBERTÉ DE MODIFIER
+            &lt;br /&gt;
+
+   Vous avez la liberté de modifier les copies des
+                 originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&amp;apos;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à modifier l&amp;apos;original dans les mêmes conditions que les copies.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          L&amp;apos;INCORPORATION DE L&amp;apos;OEUVRE
+            &lt;br /&gt;
+
+   Tous les éléments de cette oeuvre doivent demeurer
+                 libres, c&amp;apos;est pourquoi il ne vous est pas
+                 permis d&amp;apos;intégrer les originaux (originels et
+                 conséquents) dans une autre oeuvre qui ne
+                 serait pas soumise à cette licence.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          VOS DROITS D&amp;apos;AUTEUR
+            &lt;br /&gt;
+
+   Cette licence n&amp;apos;a pas pour objet de nier vos droits
+                 d&amp;apos;auteur sur votre contribution. En
+                 choisissant de contribuer à l&amp;apos;évolution de
+                 cette oeuvre, vous acceptez seulement d&amp;apos;offrir
+                 aux autres les mêmes droits sur votre
+                 contribution que ceux qui vous ont été
+                 accordés par cette licence.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          LA DURÉE DE LA LICENCE
+            &lt;br /&gt;
+
+   Cette licence prend effet dès votre acceptation de
+                 ses dispositions. Le fait de copier, de
+                 diffuser, ou de modifier l&amp;apos;oeuvre constitue
+                 une acception tacite.
+            &lt;br /&gt;
+
+   Cette licence a pour durée la durée des droits d&amp;apos;auteur attachés à l&amp;apos;oeuvre.
+			&lt;br /&gt;
+
+   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&amp;apos;elle vous confère.
+			&lt;br /&gt;
+
+   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&amp;apos;elle confère.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          LES DIFFÉRENTES VERSIONS DE LA LICENCE
+            &lt;br /&gt;
+
+   Cette licence pourra être modifiée régulièrement,
+                 en vue de son amélioration, par ses auteurs
+                 (les acteurs du mouvement « copyleft
+                 attitude ») sous la forme de nouvelles
+                 versions numérotées.
+            &lt;br /&gt;
+
+   Vous avez toujours le choix entre vous contenter
+                 des dispositions contenues dans la version
+                 sous laquelle la copie vous a été communiquée
+                 ou alors, vous prévaloir des dispositions
+                 d&amp;apos;une des versions ultérieures.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          LES SOUS-LICENCES
+            &lt;br /&gt;
+
+   Les sous licences ne sont pas autorisées par la
+                 présente. Toute personne qui souhaite
+                 bénéficier des libertés qu&amp;apos;elle confère sera
+                 liée directement à l&amp;apos;auteur de l&amp;apos;oeuvre
+                 originelle.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 8.&lt;/var&gt;
+          LA LOI APPLICABLE AU CONTRAT
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Cette licence est soumise au droit français.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:LAL-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Licence Art Libre 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e879a09a4bf457d8494dfd99a11f5dd9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Licence Art Libre\n[ Copyleft Attitude ]\n\nVersion 1.2\n\nPréambule :\n\nAvec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.\n\nLoin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.\nAlors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.\nL’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.\n\nEn effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains.\nLe savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.\nAinsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.\n\nDÉFINITIONS\n\n– L’oeuvre :il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\n– L’oeuvre originelle :c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\n– Les oeuvres conséquentes :c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\n– Original (source ou ressource de l’oeuvre) :exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\n– Copie :toute reproduction d’un original au sens de cette licence.\n\n– Auteur de l’oeuvre originelle :c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.\n\n– Contributeur :toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.\n\n1. OBJET\nCette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.\n\n2. L’ÉTENDUE DE LA JOUISSANCE\nCette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)\nVous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.\n\n2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION)\nVous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:\n     – joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,      – indiquer au destinataire le nom de l’auteur des originaux,      – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.\n\n2.3 LA LIBERTÉ DE MODIFIER\nVous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.\n\n3. L’INCORPORATION DE L’OEUVRE\nTous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.\n\n4. VOS DROITS D’AUTEUR\nCette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.\n\n5. LA DURÉE DE LA LICENCE\nCette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.\n\n6. LES DIFFÉRENTES VERSIONS DE LA LICENCE\nCette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.\nVous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.\n\n7. LES SOUS-LICENCES\nLes sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.\n\n8. LA LOI APPLICABLE AU CONTRAT\nCette licence est soumise au droit français.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Licence Art Libre\n        &lt;br /&gt;\n\n[ Copyleft Attitude ]\n      &lt;/p&gt;\n\n         &lt;p&gt;Version 1.2&lt;/p&gt;\n\n      &lt;/div&gt;\n         &lt;p&gt;Préambule :&lt;/p&gt;\n\n      &lt;p&gt;Avec cette Licence Art Libre, l&amp;apos;autorisation est donnée de\n         copier, de diffuser et de transformer librement les oeuvres\n         dans le respect des droits de l&amp;apos;auteur.&lt;/p&gt;\n\n      &lt;p&gt;Loin d&amp;apos;ignorer les droits de l&amp;apos;auteur, cette licence les\n         reconnaît et les protège. Elle en reformule le principe en\n         permettant au public de faire un usage créatif des oeuvres\n         d&amp;apos;art.\n        &lt;br /&gt;\n\nAlors que l&amp;apos;usage fait du droit de la propriété littéraire\n             et artistique conduit à restreindre l&amp;apos;accès du public\n             à l&amp;apos;oeuvre, la Licence Art Libre a pour but de le\n             favoriser.\n        &lt;br /&gt;\n\nL&amp;apos;intention est d&amp;apos;ouvrir l&amp;apos;accès et d&amp;apos;autoriser\n             l&amp;apos;utilisation des ressources d&amp;apos;une oeuvre par le plus\n             grand nombre. En avoir jouissance pour en multiplier\n             les réjouissances, créer de nouvelles conditions de\n             création pour amplifier les possibilités de création.\n             Dans le respect des auteurs avec la reconnaissance et\n             la défense de leur droit moral.\n      &lt;/p&gt;\n\n      &lt;p&gt;En effet, avec la venue du numérique, l&amp;apos;invention de l&amp;apos;internet\n         et des logiciels libres, un nouveau mode de création et de\n         production est apparu. Il est aussi l&amp;apos;amplification de ce qui\n         a été expérimenté par nombre d&amp;apos;artistes contemporains.\n        &lt;br /&gt;\n\nLe savoir et la création sont des ressources qui doivent\n             demeurer libres pour être encore véritablement du\n             savoir et de la création. C&amp;apos;est à dire rester une\n             recherche fondamentale qui ne soit pas directement\n             liée à une application concrète. Créer c&amp;apos;est découvrir\n             l&amp;apos;inconnu, c&amp;apos;est inventer le réel avant tout souci de\n             réalisme.\n        &lt;br /&gt;\n\nAinsi, l&amp;apos;objet de l&amp;apos;art n&amp;apos;est pas confondu avec l&amp;apos;objet\n             d&amp;apos;art fini et défini comme tel.\n\t\t&lt;br /&gt;\n\nC&amp;apos;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&amp;apos;économie de marché.\n      &lt;/p&gt;\n\n      &lt;p&gt;DÉFINITIONS&lt;/p&gt;\n\n      &lt;p&gt;– L&amp;apos;oeuvre :\n\t  &lt;br /&gt;\n\nil s&amp;apos;agit d&amp;apos;une oeuvre commune qui comprend l&amp;apos;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&amp;apos;initiative de l&amp;apos;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– L&amp;apos;oeuvre originelle :\n\t  &lt;br /&gt;\n\nc&amp;apos;est-à-dire l&amp;apos;oeuvre créée par l&amp;apos;initiateur de l&amp;apos;oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Les oeuvres conséquentes :\n\t  &lt;br /&gt;\n\nc&amp;apos;est-à-dire les propositions des auteurs qui contribuent à la formation de l&amp;apos;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Original (source ou ressource de l&amp;apos;oeuvre) :\n\t  &lt;br /&gt;\n\nexemplaire daté de l&amp;apos;oeuvre, de sa définition, de sa partition ou de son programme que l&amp;apos;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Copie :\n\t  &lt;br /&gt;\n\ntoute reproduction d&amp;apos;un original au sens de cette licence.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Auteur de l&amp;apos;oeuvre originelle :\n\t  &lt;br /&gt;\n\nc&amp;apos;est la personne qui a créé l&amp;apos;oeuvre à l&amp;apos;origine d&amp;apos;une arborescence de cette oeuvre modifiée. Par cette licence, l&amp;apos;auteur détermine les conditions dans lesquelles ce travail se fait.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Contributeur :\n\t  &lt;br /&gt;\n\ntoute personne qui contribue à la création de l&amp;apos;oeuvre. Il est l&amp;apos;auteur d&amp;apos;une oeuvre originale résultant de la modification d&amp;apos;une copie de l&amp;apos;oeuvre originelle ou de la modification d&amp;apos;une copie d&amp;apos;une oeuvre conséquente.\n\t  &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          OBJET\n            &lt;br /&gt;\n\n   Cette licence a pour objet de définir les\n                 conditions selon lesquelles vous pouvez jouir\n                 librement de cette oeuvre.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          L&amp;apos;ÉTENDUE DE LA JOUISSANCE\n            &lt;br /&gt;\n\n   Cette oeuvre est soumise au droit d&amp;apos;auteur, et\n                 l&amp;apos;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.1&lt;/var&gt;\n          LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)\n            &lt;br /&gt;\n\n   Vous avez la liberté de copier cette oeuvre pour un\n                 usage personnel, pour vos amis, ou toute autre\n                 personne et quelque soit la technique\n                 employée.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.2&lt;/var&gt;\n          LA LIBERTÉ DE DIFFUSER, D&amp;apos;INTERPRÉTER (OU DE REPRÉSENTATION)\n            &lt;br /&gt;\n\n   Vous pouvez diffuser librement les copies de ces\n                 oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:\n            &lt;br /&gt;\n\n   – joindre aux copies, cette licence à l&amp;apos;identique,\n                 ou indiquer précisément où se trouve la licence,\n\t\t\t&lt;br /&gt;\n\n   – indiquer au destinataire le nom de l&amp;apos;auteur des originaux,\n\t\t\t&lt;br /&gt;\n\n   – indiquer au destinataire où il pourra avoir accès aux originaux\n\t\t\t&lt;br /&gt;\n\n   (originels et/ou conséquents).\n\t\t\tL&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à diffuser l&amp;apos;original dans les mêmes conditions que les copies.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.3&lt;/var&gt;\n          LA LIBERTÉ DE MODIFIER\n            &lt;br /&gt;\n\n   Vous avez la liberté de modifier les copies des\n                 originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&amp;apos;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à modifier l&amp;apos;original dans les mêmes conditions que les copies.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          L&amp;apos;INCORPORATION DE L&amp;apos;OEUVRE\n            &lt;br /&gt;\n\n   Tous les éléments de cette oeuvre doivent demeurer\n                 libres, c&amp;apos;est pourquoi il ne vous est pas\n                 permis d&amp;apos;intégrer les originaux (originels et\n                 conséquents) dans une autre oeuvre qui ne\n                 serait pas soumise à cette licence.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          VOS DROITS D&amp;apos;AUTEUR\n            &lt;br /&gt;\n\n   Cette licence n&amp;apos;a pas pour objet de nier vos droits\n                 d&amp;apos;auteur sur votre contribution. En\n                 choisissant de contribuer à l&amp;apos;évolution de\n                 cette oeuvre, vous acceptez seulement d&amp;apos;offrir\n                 aux autres les mêmes droits sur votre\n                 contribution que ceux qui vous ont été\n                 accordés par cette licence.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          LA DURÉE DE LA LICENCE\n            &lt;br /&gt;\n\n   Cette licence prend effet dès votre acceptation de\n                 ses dispositions. Le fait de copier, de\n                 diffuser, ou de modifier l&amp;apos;oeuvre constitue\n                 une acception tacite.\n            &lt;br /&gt;\n\n   Cette licence a pour durée la durée des droits d&amp;apos;auteur attachés à l&amp;apos;oeuvre.\n\t\t\t&lt;br /&gt;\n\n   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&amp;apos;elle vous confère.\n\t\t\t&lt;br /&gt;\n\n   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&amp;apos;elle confère.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          LES DIFFÉRENTES VERSIONS DE LA LICENCE\n            &lt;br /&gt;\n\n   Cette licence pourra être modifiée régulièrement,\n                 en vue de son amélioration, par ses auteurs\n                 (les acteurs du mouvement « copyleft\n                 attitude ») sous la forme de nouvelles\n                 versions numérotées.\n            &lt;br /&gt;\n\n   Vous avez toujours le choix entre vous contenter\n                 des dispositions contenues dans la version\n                 sous laquelle la copie vous a été communiquée\n                 ou alors, vous prévaloir des dispositions\n                 d&amp;apos;une des versions ultérieures.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          LES SOUS-LICENCES\n            &lt;br /&gt;\n\n   Les sous licences ne sont pas autorisées par la\n                 présente. Toute personne qui souhaite\n                 bénéficier des libertés qu&amp;apos;elle confère sera\n                 liée directement à l&amp;apos;auteur de l&amp;apos;oeuvre\n                 originelle.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 8.&lt;/var&gt;\n          LA LOI APPLICABLE AU CONTRAT\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Cette licence est soumise au droit français.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:01:37Z&quot;,
+                &quot;url&quot;: &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/&quot;,
+        &quot;licenseId&quot;: &quot;spdx:LAL-1.2&quot;,
+        &quot;licenseText&quot;: &quot;Licence Art Libre\n[ Copyleft Attitude ]\n\nVersion 1.2\n\nPréambule :\n\nAvec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.\n\nLoin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.\nAlors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.\nL’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.\n\nEn effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains.\nLe savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.\nAinsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.\n\nDÉFINITIONS\n\n– L’oeuvre :il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\n– L’oeuvre originelle :c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\n– Les oeuvres conséquentes :c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\n– Original (source ou ressource de l’oeuvre) :exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\n– Copie :toute reproduction d’un original au sens de cette licence.\n\n– Auteur de l’oeuvre originelle :c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.\n\n– Contributeur :toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.\n\n1. OBJET\nCette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.\n\n2. L’ÉTENDUE DE LA JOUISSANCE\nCette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)\nVous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.\n\n2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION)\nVous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:\n     – joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,      – indiquer au destinataire le nom de l’auteur des originaux,      – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.\n\n2.3 LA LIBERTÉ DE MODIFIER\nVous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.\n\n3. L’INCORPORATION DE L’OEUVRE\nTous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.\n\n4. VOS DROITS D’AUTEUR\nCette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.\n\n5. LA DURÉE DE LA LICENCE\nCette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.\n\n6. LES DIFFÉRENTES VERSIONS DE LA LICENCE\nCette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.\nVous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.\n\n7. LES SOUS-LICENCES\nLes sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.\n\n8. LA LOI APPLICABLE AU CONTRAT\nCette licence est soumise au droit français.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Licence Art Libre\n        &lt;br /&gt;\n\n[ Copyleft Attitude ]\n      &lt;/p&gt;\n\n         &lt;p&gt;Version 1.2&lt;/p&gt;\n\n      &lt;/div&gt;\n         &lt;p&gt;Préambule :&lt;/p&gt;\n\n      &lt;p&gt;Avec cette Licence Art Libre, l&amp;apos;autorisation est donnée de\n         copier, de diffuser et de transformer librement les oeuvres\n         dans le respect des droits de l&amp;apos;auteur.&lt;/p&gt;\n\n      &lt;p&gt;Loin d&amp;apos;ignorer les droits de l&amp;apos;auteur, cette licence les\n         reconnaît et les protège. Elle en reformule le principe en\n         permettant au public de faire un usage créatif des oeuvres\n         d&amp;apos;art.\n        &lt;br /&gt;\n\nAlors que l&amp;apos;usage fait du droit de la propriété littéraire\n             et artistique conduit à restreindre l&amp;apos;accès du public\n             à l&amp;apos;oeuvre, la Licence Art Libre a pour but de le\n             favoriser.\n        &lt;br /&gt;\n\nL&amp;apos;intention est d&amp;apos;ouvrir l&amp;apos;accès et d&amp;apos;autoriser\n             l&amp;apos;utilisation des ressources d&amp;apos;une oeuvre par le plus\n             grand nombre. En avoir jouissance pour en multiplier\n             les réjouissances, créer de nouvelles conditions de\n             création pour amplifier les possibilités de création.\n             Dans le respect des auteurs avec la reconnaissance et\n             la défense de leur droit moral.\n      &lt;/p&gt;\n\n      &lt;p&gt;En effet, avec la venue du numérique, l&amp;apos;invention de l&amp;apos;internet\n         et des logiciels libres, un nouveau mode de création et de\n         production est apparu. Il est aussi l&amp;apos;amplification de ce qui\n         a été expérimenté par nombre d&amp;apos;artistes contemporains.\n        &lt;br /&gt;\n\nLe savoir et la création sont des ressources qui doivent\n             demeurer libres pour être encore véritablement du\n             savoir et de la création. C&amp;apos;est à dire rester une\n             recherche fondamentale qui ne soit pas directement\n             liée à une application concrète. Créer c&amp;apos;est découvrir\n             l&amp;apos;inconnu, c&amp;apos;est inventer le réel avant tout souci de\n             réalisme.\n        &lt;br /&gt;\n\nAinsi, l&amp;apos;objet de l&amp;apos;art n&amp;apos;est pas confondu avec l&amp;apos;objet\n             d&amp;apos;art fini et défini comme tel.\n\t\t&lt;br /&gt;\n\nC&amp;apos;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&amp;apos;économie de marché.\n      &lt;/p&gt;\n\n      &lt;p&gt;DÉFINITIONS&lt;/p&gt;\n\n      &lt;p&gt;– L&amp;apos;oeuvre :\n\t  &lt;br /&gt;\n\nil s&amp;apos;agit d&amp;apos;une oeuvre commune qui comprend l&amp;apos;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&amp;apos;initiative de l&amp;apos;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– L&amp;apos;oeuvre originelle :\n\t  &lt;br /&gt;\n\nc&amp;apos;est-à-dire l&amp;apos;oeuvre créée par l&amp;apos;initiateur de l&amp;apos;oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Les oeuvres conséquentes :\n\t  &lt;br /&gt;\n\nc&amp;apos;est-à-dire les propositions des auteurs qui contribuent à la formation de l&amp;apos;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Original (source ou ressource de l&amp;apos;oeuvre) :\n\t  &lt;br /&gt;\n\nexemplaire daté de l&amp;apos;oeuvre, de sa définition, de sa partition ou de son programme que l&amp;apos;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Copie :\n\t  &lt;br /&gt;\n\ntoute reproduction d&amp;apos;un original au sens de cette licence.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Auteur de l&amp;apos;oeuvre originelle :\n\t  &lt;br /&gt;\n\nc&amp;apos;est la personne qui a créé l&amp;apos;oeuvre à l&amp;apos;origine d&amp;apos;une arborescence de cette oeuvre modifiée. Par cette licence, l&amp;apos;auteur détermine les conditions dans lesquelles ce travail se fait.\n\t  &lt;/p&gt;\n\n      &lt;p&gt;– Contributeur :\n\t  &lt;br /&gt;\n\ntoute personne qui contribue à la création de l&amp;apos;oeuvre. Il est l&amp;apos;auteur d&amp;apos;une oeuvre originale résultant de la modification d&amp;apos;une copie de l&amp;apos;oeuvre originelle ou de la modification d&amp;apos;une copie d&amp;apos;une oeuvre conséquente.\n\t  &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          OBJET\n            &lt;br /&gt;\n\n   Cette licence a pour objet de définir les\n                 conditions selon lesquelles vous pouvez jouir\n                 librement de cette oeuvre.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          L&amp;apos;ÉTENDUE DE LA JOUISSANCE\n            &lt;br /&gt;\n\n   Cette oeuvre est soumise au droit d&amp;apos;auteur, et\n                 l&amp;apos;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.1&lt;/var&gt;\n          LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)\n            &lt;br /&gt;\n\n   Vous avez la liberté de copier cette oeuvre pour un\n                 usage personnel, pour vos amis, ou toute autre\n                 personne et quelque soit la technique\n                 employée.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.2&lt;/var&gt;\n          LA LIBERTÉ DE DIFFUSER, D&amp;apos;INTERPRÉTER (OU DE REPRÉSENTATION)\n            &lt;br /&gt;\n\n   Vous pouvez diffuser librement les copies de ces\n                 oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:\n            &lt;br /&gt;\n\n   – joindre aux copies, cette licence à l&amp;apos;identique,\n                 ou indiquer précisément où se trouve la licence,\n\t\t\t&lt;br /&gt;\n\n   – indiquer au destinataire le nom de l&amp;apos;auteur des originaux,\n\t\t\t&lt;br /&gt;\n\n   – indiquer au destinataire où il pourra avoir accès aux originaux\n\t\t\t&lt;br /&gt;\n\n   (originels et/ou conséquents).\n\t\t\tL&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à diffuser l&amp;apos;original dans les mêmes conditions que les copies.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.3&lt;/var&gt;\n          LA LIBERTÉ DE MODIFIER\n            &lt;br /&gt;\n\n   Vous avez la liberté de modifier les copies des\n                 originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&amp;apos;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&amp;apos;auteur de l&amp;apos;original pourra, s&amp;apos;il le souhaite, vous autoriser à modifier l&amp;apos;original dans les mêmes conditions que les copies.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          L&amp;apos;INCORPORATION DE L&amp;apos;OEUVRE\n            &lt;br /&gt;\n\n   Tous les éléments de cette oeuvre doivent demeurer\n                 libres, c&amp;apos;est pourquoi il ne vous est pas\n                 permis d&amp;apos;intégrer les originaux (originels et\n                 conséquents) dans une autre oeuvre qui ne\n                 serait pas soumise à cette licence.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          VOS DROITS D&amp;apos;AUTEUR\n            &lt;br /&gt;\n\n   Cette licence n&amp;apos;a pas pour objet de nier vos droits\n                 d&amp;apos;auteur sur votre contribution. En\n                 choisissant de contribuer à l&amp;apos;évolution de\n                 cette oeuvre, vous acceptez seulement d&amp;apos;offrir\n                 aux autres les mêmes droits sur votre\n                 contribution que ceux qui vous ont été\n                 accordés par cette licence.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          LA DURÉE DE LA LICENCE\n            &lt;br /&gt;\n\n   Cette licence prend effet dès votre acceptation de\n                 ses dispositions. Le fait de copier, de\n                 diffuser, ou de modifier l&amp;apos;oeuvre constitue\n                 une acception tacite.\n            &lt;br /&gt;\n\n   Cette licence a pour durée la durée des droits d&amp;apos;auteur attachés à l&amp;apos;oeuvre.\n\t\t\t&lt;br /&gt;\n\n   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&amp;apos;elle vous confère.\n\t\t\t&lt;br /&gt;\n\n   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&amp;apos;elle confère.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          LES DIFFÉRENTES VERSIONS DE LA LICENCE\n            &lt;br /&gt;\n\n   Cette licence pourra être modifiée régulièrement,\n                 en vue de son amélioration, par ses auteurs\n                 (les acteurs du mouvement « copyleft\n                 attitude ») sous la forme de nouvelles\n                 versions numérotées.\n            &lt;br /&gt;\n\n   Vous avez toujours le choix entre vous contenter\n                 des dispositions contenues dans la version\n                 sous laquelle la copie vous a été communiquée\n                 ou alors, vous prévaloir des dispositions\n                 d&amp;apos;une des versions ultérieures.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          LES SOUS-LICENCES\n            &lt;br /&gt;\n\n   Les sous licences ne sont pas autorisées par la\n                 présente. Toute personne qui souhaite\n                 bénéficier des libertés qu&amp;apos;elle confère sera\n                 liée directement à l&amp;apos;auteur de l&amp;apos;oeuvre\n                 originelle.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 8.&lt;/var&gt;\n          LA LOI APPLICABLE AU CONTRAT\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Cette licence est soumise au droit français.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Licence Art Libre 1.2&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Licence Art Libre\n\n[ Copyleft Attitude ]\n\nVersion 1.2\n\n&lt;&lt;endOptional&gt;&gt;\n\nPréambule :\n\nAvec cette Licence Art Libre, l&#39;autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l&#39;auteur.\n\nLoin d&#39;ignorer les droits de l&#39;auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d&#39;art.\n\nAlors que l&#39;usage fait du droit de la propriété littéraire et artistique conduit à restreindre l&#39;accès du public à l&#39;oeuvre, la Licence Art Libre a pour but de le favoriser.\n\nL&#39;intention est d&#39;ouvrir l&#39;accès et d&#39;autoriser l&#39;utilisation des ressources d&#39;une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.\n\nEn effet, avec la venue du numérique, l&#39;invention de l&#39;internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l&#39;amplification de ce qui a été expérimenté par nombre d&#39;artistes contemporains.\n\nLe savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C&#39;est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c&#39;est découvrir l&#39;inconnu, c&#39;est inventer le réel avant tout souci de réalisme.\n\nAinsi, l&#39;objet de l&#39;art n&#39;est pas confondu avec l&#39;objet d&#39;art fini et défini comme tel.\n\nC&#39;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&#39;économie de marché.\n\nDÉFINITIONS\n\n– L&#39;oeuvre :\n\nil s&#39;agit d&#39;une oeuvre commune qui comprend l&#39;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&#39;initiative de l&#39;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\n– L&#39;oeuvre originelle :\n\nc&#39;est-à-dire l&#39;oeuvre créée par l&#39;initiateur de l&#39;oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\n– Les oeuvres conséquentes :\n\nc&#39;est-à-dire les propositions des auteurs qui contribuent à la formation de l&#39;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\n– Original (source ou ressource de l&#39;oeuvre) :\n\nexemplaire daté de l&#39;oeuvre, de sa définition, de sa partition ou de son programme que l&#39;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\n– Copie :\n\ntoute reproduction d&#39;un original au sens de cette licence.\n\n– Auteur de l&#39;oeuvre originelle :\n\nc&#39;est la personne qui a créé l&#39;oeuvre à l&#39;origine d&#39;une arborescence de cette oeuvre modifiée. Par cette licence, l&#39;auteur détermine les conditions dans lesquelles ce travail se fait.\n\n– Contributeur :\n\ntoute personne qui contribue à la création de l&#39;oeuvre. Il est l&#39;auteur d&#39;une oeuvre originale résultant de la modification d&#39;une copie de l&#39;oeuvre originelle ou de la modification d&#39;une copie d&#39;une oeuvre conséquente.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; OBJET\n\n   Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; L&#39;ÉTENDUE DE LA JOUISSANCE\n\n   Cette oeuvre est soumise au droit d&#39;auteur, et l&#39;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.1\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)\n\n   Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.2\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LA LIBERTÉ DE DIFFUSER, D&#39;INTERPRÉTER (OU DE REPRÉSENTATION)\n\n   Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:\n\n   – joindre aux copies, cette licence à l&#39;identique, ou indiquer précisément où se trouve la licence,\n\n   – indiquer au destinataire le nom de l&#39;auteur des originaux,\n\n   – indiquer au destinataire où il pourra avoir accès aux originaux\n\n   (originels et/ou conséquents). L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à diffuser l&#39;original dans les mêmes conditions que les copies.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.3\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LA LIBERTÉ DE MODIFIER\n\n   Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&#39;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à modifier l&#39;original dans les mêmes conditions que les copies.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; L&#39;INCORPORATION DE L&#39;OEUVRE\n\n   Tous les éléments de cette oeuvre doivent demeurer libres, c&#39;est pourquoi il ne vous est pas permis d&#39;intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; VOS DROITS D&#39;AUTEUR\n\n   Cette licence n&#39;a pas pour objet de nier vos droits d&#39;auteur sur votre contribution. En choisissant de contribuer à l&#39;évolution de cette oeuvre, vous acceptez seulement d&#39;offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LA DURÉE DE LA LICENCE\n\n   Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l&#39;oeuvre constitue une acception tacite.\n\n   Cette licence a pour durée la durée des droits d&#39;auteur attachés à l&#39;oeuvre.\n\n   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&#39;elle vous confère.\n\n   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&#39;elle confère.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LES DIFFÉRENTES VERSIONS DE LA LICENCE\n\n   Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.\n\n   Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d&#39;une des versions ultérieures.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;7.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LES SOUS-LICENCES\n\n   Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu&#39;elle confère sera liée directement à l&#39;auteur de l&#39;oeuvre originelle.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;8.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; LA LOI APPLICABLE AU CONTRAT\n\nCette licence est soumise au droit français.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/98a9a9d56bb031613a42592e6b3d6c08">ScancodeData:98a9a9d56bb031613a42592e6b3d6c08</a> for <a href="/?license=scancode:lal-1.2"><span class="licensename"><span class="namespace">scancode:</span>lal-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>lal-1.2</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Licence Art Libre 1.2</span></li><li><span class="licensename">Licence Art Libre 1.2</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Copyleft<span class="provided-by">(provided by: <span title="ScancodeData:98a9a9d56bb031613a42592e6b3d6c08">[<a href="/fact/ScancodeData/98a9a9d56bb031613a42592e6b3d6c08">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://artlibre.org/licence/lal/licence-art-libre-12/" target="_blank">http://artlibre.org/licence/lal/licence-art-libre-12/</a></li><li><a href="http://artlibre.org/licence/lal/it/" target="_blank">http://artlibre.org/licence/lal/it/</a></li><li><a href="http://artlibre.org/licence/lal/es/" target="_blank">http://artlibre.org/licence/lal/es/</a></li></ul><h3>Other Statements</h3><ul><li>http://artlibre.org/licence/lal/licence-art-libre-12/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Licence Art Libre 
+ [ Copyleft Attitude ]
+Version 1.2
+
+Préambule :
+
+Avec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.
+
+Loin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.  
+Alors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.  
+L’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.
+
+En effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains. 
+Le savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.  
+Ainsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.
+
+DÉFINITIONS
+
+– L’oeuvre : il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+
+– L’oeuvre originelle : c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+
+– Les oeuvres conséquentes : c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+
+– Original (source ou ressource de l’oeuvre) : exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+
+– Copie : toute reproduction d’un original au sens de cette licence.
+
+– Auteur de l’oeuvre originelle : c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.
+
+– Contributeur : toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.
+
+1. OBJET 
+Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.
+
+2. L’ÉTENDUE DE LA JOUISSANCE 
+Cette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION) 
+Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.
+
+2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION) 
+Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:  
+– joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,  – indiquer au destinataire le nom de l’auteur des originaux,  – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.
+
+2.3 LA LIBERTÉ DE MODIFIER 
+Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.
+
+3. L’INCORPORATION DE L’OEUVRE 
+Tous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.
+
+4. VOS DROITS D’AUTEUR 
+Cette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.
+
+5. LA DURÉE DE LA LICENCE 
+Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.
+
+6. LES DIFFÉRENTES VERSIONS DE LA LICENCE 
+Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées. 
+Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.
+
+7. LES SOUS-LICENCES 
+Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.
+
+8. LA LOI APPLICABLE AU CONTRAT 
+Cette licence est soumise au droit français.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:lal-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Licence Art Libre 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Licence Art Libre 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;98a9a9d56bb031613a42592e6b3d6c08&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Copyleft&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://artlibre.org/licence/lal/it/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://artlibre.org/licence/lal/es/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Licence Art Libre \n [ Copyleft Attitude ]\nVersion 1.2\n\nPréambule :\n\nAvec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.\n\nLoin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.  \nAlors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.  \nL’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.\n\nEn effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains. \nLe savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.  \nAinsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.\n\nDÉFINITIONS\n\n– L’oeuvre : il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\n– L’oeuvre originelle : c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\n– Les oeuvres conséquentes : c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\n– Original (source ou ressource de l’oeuvre) : exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\n– Copie : toute reproduction d’un original au sens de cette licence.\n\n– Auteur de l’oeuvre originelle : c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.\n\n– Contributeur : toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.\n\n1. OBJET \nCette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.\n\n2. L’ÉTENDUE DE LA JOUISSANCE \nCette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION) \nVous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.\n\n2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION) \nVous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:  \n– joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,  – indiquer au destinataire le nom de l’auteur des originaux,  – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.\n\n2.3 LA LIBERTÉ DE MODIFIER \nVous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.\n\n3. L’INCORPORATION DE L’OEUVRE \nTous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.\n\n4. VOS DROITS D’AUTEUR \nCette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.\n\n5. LA DURÉE DE LA LICENCE \nCette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.\n\n6. LES DIFFÉRENTES VERSIONS DE LA LICENCE \nCette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées. \nVous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.\n\n7. LES SOUS-LICENCES \nLes sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.\n\n8. LA LOI APPLICABLE AU CONTRAT \nCette licence est soumise au droit français.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;,
+        &quot;_key&quot;: &quot;lal-1.2&quot;,
+        &quot;_name&quot;: &quot;Licence Art Libre 1.2&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Licence Art Libre&quot;,
+        &quot;_shortName&quot;: &quot;Licence Art Libre 1.2&quot;,
+        &quot;_spdxId&quot;: &quot;LAL-1.2&quot;,
+        &quot;_text&quot;: &quot;Licence Art Libre \n [ Copyleft Attitude ]\nVersion 1.2\n\nPréambule :\n\nAvec cette Licence Art Libre, l’autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l’auteur.\n\nLoin d’ignorer les droits de l’auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d’art.  \nAlors que l’usage fait du droit de la propriété littéraire et artistique conduit à restreindre l’accès du public à l’oeuvre, la Licence Art Libre a pour but de le favoriser.  \nL’intention est d’ouvrir l’accès et d’autoriser l’utilisation des ressources d’une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.\n\nEn effet, avec la venue du numérique, l’invention de l’internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l’amplification de ce qui a été expérimenté par nombre d’artistes contemporains. \nLe savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C’est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c’est découvrir l’inconnu, c’est inventer le réel avant tout souci de réalisme.  \nAinsi, l’objet de l’art n’est pas confondu avec l’objet d’art fini et défini comme tel. C’est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l’économie de marché.\n\nDÉFINITIONS\n\n– L’oeuvre : il s’agit d’une oeuvre commune qui comprend l’oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l’initiative de l’auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\n– L’oeuvre originelle : c’est-à-dire l’oeuvre créée par l’initiateur de l’oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\n– Les oeuvres conséquentes : c’est-à-dire les propositions des auteurs qui contribuent à la formation de l’oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\n– Original (source ou ressource de l’oeuvre) : exemplaire daté de l’oeuvre, de sa définition, de sa partition ou de son programme que l’auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\n– Copie : toute reproduction d’un original au sens de cette licence.\n\n– Auteur de l’oeuvre originelle : c’est la personne qui a créé l’oeuvre à l’origine d’une arborescence de cette oeuvre modifiée. Par cette licence, l’auteur détermine les conditions dans lesquelles ce travail se fait.\n\n– Contributeur : toute personne qui contribue à la création de l’oeuvre. Il est l’auteur d’une oeuvre originale résultant de la modification d’une copie de l’oeuvre originelle ou de la modification d’une copie d’une oeuvre conséquente.\n\n1. OBJET \nCette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.\n\n2. L’ÉTENDUE DE LA JOUISSANCE \nCette oeuvre est soumise au droit d’auteur, et l’auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION) \nVous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.\n\n2.2 LA LIBERTÉ DE DIFFUSER, D’INTERPRÉTER (OU DE REPRÉSENTATION) \nVous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:  \n– joindre aux copies, cette licence à l’identique, ou indiquer précisément où se trouve la licence,  – indiquer au destinataire le nom de l’auteur des originaux,  – indiquer au destinataire où il pourra avoir accès aux originaux (originels et/ou conséquents). L’auteur de l’original pourra, s’il le souhaite, vous autoriser à diffuser l’original dans les mêmes conditions que les copies.\n\n2.3 LA LIBERTÉ DE MODIFIER \nVous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l’article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L’auteur de l’original pourra, s’il le souhaite, vous autoriser à modifier l’original dans les mêmes conditions que les copies.\n\n3. L’INCORPORATION DE L’OEUVRE \nTous les éléments de cette oeuvre doivent demeurer libres, c’est pourquoi il ne vous est pas permis d’intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.\n\n4. VOS DROITS D’AUTEUR \nCette licence n’a pas pour objet de nier vos droits d’auteur sur votre contribution. En choisissant de contribuer à l’évolution de cette oeuvre, vous acceptez seulement d’offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.\n\n5. LA DURÉE DE LA LICENCE \nCette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l’oeuvre constitue une acception tacite. Cette licence a pour durée la durée des droits d’auteur attachés à l’oeuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu’elle vous confère. Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu’elle confère.\n\n6. LES DIFFÉRENTES VERSIONS DE LA LICENCE \nCette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées. \nVous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d’une des versions ultérieures.\n\n7. LES SOUS-LICENCES \nLes sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu’elle confère sera liée directement à l’auteur de l’oeuvre originelle.\n\n8. LA LOI APPLICABLE AU CONTRAT \nCette licence est soumise au droit français.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;,
+            &quot;http://artlibre.org/licence/lal/it/&quot;,
+            &quot;http://artlibre.org/licence/lal/es/&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/a801ae0b531dd94cdf2e4e0fba4b505d">Fossology:a801ae0b531dd94cdf2e4e0fba4b505d</a> for <a href="/?license=fossology:LAL-1.2"><span class="licensename"><span class="namespace">fossology:</span>LAL-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>LAL-1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Licence Art Libre 1.2</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/<span class="provided-by">(provided by: <span title="Fossology:a801ae0b531dd94cdf2e4e0fba4b505d">[<a href="/fact/Fossology/a801ae0b531dd94cdf2e4e0fba4b505d">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://artlibre.org/licence/lal/licence-art-libre-12/" target="_blank">http://artlibre.org/licence/lal/licence-art-libre-12/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Licence Art Libre
+
+[ Copyleft Attitude ]
+
+Version 1.2
+
+Préambule :
+
+Avec cette Licence Art Libre, l&#39;autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l&#39;auteur.
+
+Loin d&#39;ignorer les droits de l&#39;auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d&#39;art.
+
+Alors que l&#39;usage fait du droit de la propriété littéraire et artistique conduit à restreindre l&#39;accès du public à l&#39;oeuvre, la Licence Art Libre a pour but de le favoriser.
+
+L&#39;intention est d&#39;ouvrir l&#39;accès et d&#39;autoriser l&#39;utilisation des ressources d&#39;une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.
+
+En effet, avec la venue du numérique, l&#39;invention de l&#39;internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l&#39;amplification de ce qui a été expérimenté par nombre d&#39;artistes contemporains.
+
+Le savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C&#39;est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c&#39;est découvrir l&#39;inconnu, c&#39;est inventer le réel avant tout souci de réalisme.
+
+Ainsi, l&#39;objet de l&#39;art n&#39;est pas confondu avec l&#39;objet d&#39;art fini et défini comme tel.
+
+C&#39;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&#39;économie de marché.
+
+DÉFINITIONS
+
+– L&#39;oeuvre :
+
+il s&#39;agit d&#39;une oeuvre commune qui comprend l&#39;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&#39;initiative de l&#39;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.
+
+– L&#39;oeuvre originelle :
+
+c&#39;est-à-dire l&#39;oeuvre créée par l&#39;initiateur de l&#39;oeuvre commune dont les copies vont être modifiées par qui le souhaite.
+
+– Les oeuvres conséquentes :
+
+c&#39;est-à-dire les propositions des auteurs qui contribuent à la formation de l&#39;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.
+
+– Original (source ou ressource de l&#39;oeuvre) :
+
+exemplaire daté de l&#39;oeuvre, de sa définition, de sa partition ou de son programme que l&#39;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.
+
+– Copie :
+
+toute reproduction d&#39;un original au sens de cette licence.
+
+– Auteur de l&#39;oeuvre originelle :
+
+c&#39;est la personne qui a créé l&#39;oeuvre à l&#39;origine d&#39;une arborescence de cette oeuvre modifiée. Par cette licence, l&#39;auteur détermine les conditions dans lesquelles ce travail se fait.
+
+– Contributeur :
+
+toute personne qui contribue à la création de l&#39;oeuvre. Il est l&#39;auteur d&#39;une oeuvre originale résultant de la modification d&#39;une copie de l&#39;oeuvre originelle ou de la modification d&#39;une copie d&#39;une oeuvre conséquente.
+
+   1. OBJET
+
+   Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.
+
+   2. L&#39;ÉTENDUE DE LA JOUISSANCE
+
+   Cette oeuvre est soumise au droit d&#39;auteur, et l&#39;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:
+
+   2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)
+
+   Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.
+
+   2.2 LA LIBERTÉ DE DIFFUSER, D&#39;INTERPRÉTER (OU DE REPRÉSENTATION)
+
+   Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:
+
+   – joindre aux copies, cette licence à l&#39;identique, ou indiquer précisément où se trouve la licence,
+
+   – indiquer au destinataire le nom de l&#39;auteur des originaux,
+
+   – indiquer au destinataire où il pourra avoir accès aux originaux
+
+   (originels et/ou conséquents). L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à diffuser l&#39;original dans les mêmes conditions que les copies.
+
+   2.3 LA LIBERTÉ DE MODIFIER
+
+   Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&#39;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à modifier l&#39;original dans les mêmes conditions que les copies.
+
+   3. L&#39;INCORPORATION DE L&#39;OEUVRE
+
+   Tous les éléments de cette oeuvre doivent demeurer libres, c&#39;est pourquoi il ne vous est pas permis d&#39;intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.
+
+   4. VOS DROITS D&#39;AUTEUR
+
+   Cette licence n&#39;a pas pour objet de nier vos droits d&#39;auteur sur votre contribution. En choisissant de contribuer à l&#39;évolution de cette oeuvre, vous acceptez seulement d&#39;offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.
+
+   5. LA DURÉE DE LA LICENCE
+
+   Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l&#39;oeuvre constitue une acception tacite.
+
+   Cette licence a pour durée la durée des droits d&#39;auteur attachés à l&#39;oeuvre.
+
+   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&#39;elle vous confère.
+
+   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&#39;elle confère.
+
+   6. LES DIFFÉRENTES VERSIONS DE LA LICENCE
+
+   Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.
+
+   Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d&#39;une des versions ultérieures.
+
+   7. LES SOUS-LICENCES
+
+   Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu&#39;elle confère sera liée directement à l&#39;auteur de l&#39;oeuvre originelle.
+
+   8. LA LOI APPLICABLE AU CONTRAT
+
+Cette licence est soumise au droit français.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:LAL-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Licence Art Libre 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;a801ae0b531dd94cdf2e4e0fba4b505d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Licence Art Libre\n\n[ Copyleft Attitude ]\n\nVersion 1.2\n\nPréambule :\n\nAvec cette Licence Art Libre, l&#39;autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l&#39;auteur.\n\nLoin d&#39;ignorer les droits de l&#39;auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d&#39;art.\n\nAlors que l&#39;usage fait du droit de la propriété littéraire et artistique conduit à restreindre l&#39;accès du public à l&#39;oeuvre, la Licence Art Libre a pour but de le favoriser.\n\nL&#39;intention est d&#39;ouvrir l&#39;accès et d&#39;autoriser l&#39;utilisation des ressources d&#39;une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.\n\nEn effet, avec la venue du numérique, l&#39;invention de l&#39;internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l&#39;amplification de ce qui a été expérimenté par nombre d&#39;artistes contemporains.\n\nLe savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C&#39;est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c&#39;est découvrir l&#39;inconnu, c&#39;est inventer le réel avant tout souci de réalisme.\n\nAinsi, l&#39;objet de l&#39;art n&#39;est pas confondu avec l&#39;objet d&#39;art fini et défini comme tel.\n\nC&#39;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&#39;économie de marché.\n\nDÉFINITIONS\n\n– L&#39;oeuvre :\n\nil s&#39;agit d&#39;une oeuvre commune qui comprend l&#39;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&#39;initiative de l&#39;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\n– L&#39;oeuvre originelle :\n\nc&#39;est-à-dire l&#39;oeuvre créée par l&#39;initiateur de l&#39;oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\n– Les oeuvres conséquentes :\n\nc&#39;est-à-dire les propositions des auteurs qui contribuent à la formation de l&#39;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\n– Original (source ou ressource de l&#39;oeuvre) :\n\nexemplaire daté de l&#39;oeuvre, de sa définition, de sa partition ou de son programme que l&#39;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\n– Copie :\n\ntoute reproduction d&#39;un original au sens de cette licence.\n\n– Auteur de l&#39;oeuvre originelle :\n\nc&#39;est la personne qui a créé l&#39;oeuvre à l&#39;origine d&#39;une arborescence de cette oeuvre modifiée. Par cette licence, l&#39;auteur détermine les conditions dans lesquelles ce travail se fait.\n\n– Contributeur :\n\ntoute personne qui contribue à la création de l&#39;oeuvre. Il est l&#39;auteur d&#39;une oeuvre originale résultant de la modification d&#39;une copie de l&#39;oeuvre originelle ou de la modification d&#39;une copie d&#39;une oeuvre conséquente.\n\n   1. OBJET\n\n   Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.\n\n   2. L&#39;ÉTENDUE DE LA JOUISSANCE\n\n   Cette oeuvre est soumise au droit d&#39;auteur, et l&#39;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n   2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)\n\n   Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.\n\n   2.2 LA LIBERTÉ DE DIFFUSER, D&#39;INTERPRÉTER (OU DE REPRÉSENTATION)\n\n   Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:\n\n   – joindre aux copies, cette licence à l&#39;identique, ou indiquer précisément où se trouve la licence,\n\n   – indiquer au destinataire le nom de l&#39;auteur des originaux,\n\n   – indiquer au destinataire où il pourra avoir accès aux originaux\n\n   (originels et/ou conséquents). L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à diffuser l&#39;original dans les mêmes conditions que les copies.\n\n   2.3 LA LIBERTÉ DE MODIFIER\n\n   Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&#39;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à modifier l&#39;original dans les mêmes conditions que les copies.\n\n   3. L&#39;INCORPORATION DE L&#39;OEUVRE\n\n   Tous les éléments de cette oeuvre doivent demeurer libres, c&#39;est pourquoi il ne vous est pas permis d&#39;intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.\n\n   4. VOS DROITS D&#39;AUTEUR\n\n   Cette licence n&#39;a pas pour objet de nier vos droits d&#39;auteur sur votre contribution. En choisissant de contribuer à l&#39;évolution de cette oeuvre, vous acceptez seulement d&#39;offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.\n\n   5. LA DURÉE DE LA LICENCE\n\n   Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l&#39;oeuvre constitue une acception tacite.\n\n   Cette licence a pour durée la durée des droits d&#39;auteur attachés à l&#39;oeuvre.\n\n   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&#39;elle vous confère.\n\n   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&#39;elle confère.\n\n   6. LES DIFFÉRENTES VERSIONS DE LA LICENCE\n\n   Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.\n\n   Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d&#39;une des versions ultérieures.\n\n   7. LES SOUS-LICENCES\n\n   Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu&#39;elle confère sera liée directement à l&#39;auteur de l&#39;oeuvre originelle.\n\n   8. LA LOI APPLICABLE AU CONTRAT\n\nCette licence est soumise au droit français.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Licence Art Libre 1.2&quot;,
+        &quot;_rf_notes&quot;: &quot;French is the canonical language for this license. Translations are available in: English: http://artlibre.org/licence/lal/licence-art-libre-12/ Italian: http://artlibre.org/licence/lal/it/ Spanish: http://artlibre.org/licence/lal/es/&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:LAL-1.2&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Licence Art Libre\n\n[ Copyleft Attitude ]\n\nVersion 1.2\n\nPréambule :\n\nAvec cette Licence Art Libre, l&#39;autorisation est donnée de copier, de diffuser et de transformer librement les oeuvres dans le respect des droits de l&#39;auteur.\n\nLoin d&#39;ignorer les droits de l&#39;auteur, cette licence les reconnaît et les protège. Elle en reformule le principe en permettant au public de faire un usage créatif des oeuvres d&#39;art.\n\nAlors que l&#39;usage fait du droit de la propriété littéraire et artistique conduit à restreindre l&#39;accès du public à l&#39;oeuvre, la Licence Art Libre a pour but de le favoriser.\n\nL&#39;intention est d&#39;ouvrir l&#39;accès et d&#39;autoriser l&#39;utilisation des ressources d&#39;une oeuvre par le plus grand nombre. En avoir jouissance pour en multiplier les réjouissances, créer de nouvelles conditions de création pour amplifier les possibilités de création. Dans le respect des auteurs avec la reconnaissance et la défense de leur droit moral.\n\nEn effet, avec la venue du numérique, l&#39;invention de l&#39;internet et des logiciels libres, un nouveau mode de création et de production est apparu. Il est aussi l&#39;amplification de ce qui a été expérimenté par nombre d&#39;artistes contemporains.\n\nLe savoir et la création sont des ressources qui doivent demeurer libres pour être encore véritablement du savoir et de la création. C&#39;est à dire rester une recherche fondamentale qui ne soit pas directement liée à une application concrète. Créer c&#39;est découvrir l&#39;inconnu, c&#39;est inventer le réel avant tout souci de réalisme.\n\nAinsi, l&#39;objet de l&#39;art n&#39;est pas confondu avec l&#39;objet d&#39;art fini et défini comme tel.\n\nC&#39;est la raison essentielle de cette Licence Art Libre : promouvoir et protéger des pratiques artistiques libérées des seules règles de l&#39;économie de marché.\n\nDÉFINITIONS\n\n– L&#39;oeuvre :\n\nil s&#39;agit d&#39;une oeuvre commune qui comprend l&#39;oeuvre originelle ainsi que toutes les contributions postérieures (les originaux conséquents et les copies). Elle est créée à l&#39;initiative de l&#39;auteur originel qui par cette licence définit les conditions selon lesquelles les contributions sont faites.\n\n– L&#39;oeuvre originelle :\n\nc&#39;est-à-dire l&#39;oeuvre créée par l&#39;initiateur de l&#39;oeuvre commune dont les copies vont être modifiées par qui le souhaite.\n\n– Les oeuvres conséquentes :\n\nc&#39;est-à-dire les propositions des auteurs qui contribuent à la formation de l&#39;oeuvre en faisant usage des droits de reproduction, de diffusion et de modification que leur confère la licence.\n\n– Original (source ou ressource de l&#39;oeuvre) :\n\nexemplaire daté de l&#39;oeuvre, de sa définition, de sa partition ou de son programme que l&#39;auteur présente comme référence pour toutes actualisations, interprétations, copies ou reproductions ultérieures.\n\n– Copie :\n\ntoute reproduction d&#39;un original au sens de cette licence.\n\n– Auteur de l&#39;oeuvre originelle :\n\nc&#39;est la personne qui a créé l&#39;oeuvre à l&#39;origine d&#39;une arborescence de cette oeuvre modifiée. Par cette licence, l&#39;auteur détermine les conditions dans lesquelles ce travail se fait.\n\n– Contributeur :\n\ntoute personne qui contribue à la création de l&#39;oeuvre. Il est l&#39;auteur d&#39;une oeuvre originale résultant de la modification d&#39;une copie de l&#39;oeuvre originelle ou de la modification d&#39;une copie d&#39;une oeuvre conséquente.\n\n   1. OBJET\n\n   Cette licence a pour objet de définir les conditions selon lesquelles vous pouvez jouir librement de cette oeuvre.\n\n   2. L&#39;ÉTENDUE DE LA JOUISSANCE\n\n   Cette oeuvre est soumise au droit d&#39;auteur, et l&#39;auteur par cette licence vous indique quelles sont vos libertés pour la copier, la diffuser et la modifier:\n\n   2.1 LA LIBERTÉ DE COPIER (OU DE REPRODUCTION)\n\n   Vous avez la liberté de copier cette oeuvre pour un usage personnel, pour vos amis, ou toute autre personne et quelque soit la technique employée.\n\n   2.2 LA LIBERTÉ DE DIFFUSER, D&#39;INTERPRÉTER (OU DE REPRÉSENTATION)\n\n   Vous pouvez diffuser librement les copies de ces oeuvres, modifiées ou non, quel que soit le support, quel que soit le lieu, à titre onéreux ou gratuit si vous respectez toutes les conditions suivantes:\n\n   – joindre aux copies, cette licence à l&#39;identique, ou indiquer précisément où se trouve la licence,\n\n   – indiquer au destinataire le nom de l&#39;auteur des originaux,\n\n   – indiquer au destinataire où il pourra avoir accès aux originaux\n\n   (originels et/ou conséquents). L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à diffuser l&#39;original dans les mêmes conditions que les copies.\n\n   2.3 LA LIBERTÉ DE MODIFIER\n\n   Vous avez la liberté de modifier les copies des originaux (originels et conséquents), qui peuvent être partielles ou non, dans le respect des conditions prévues à l&#39;article 2.2 en cas de diffusion (ou représentation) de la copie modifiée. L&#39;auteur de l&#39;original pourra, s&#39;il le souhaite, vous autoriser à modifier l&#39;original dans les mêmes conditions que les copies.\n\n   3. L&#39;INCORPORATION DE L&#39;OEUVRE\n\n   Tous les éléments de cette oeuvre doivent demeurer libres, c&#39;est pourquoi il ne vous est pas permis d&#39;intégrer les originaux (originels et conséquents) dans une autre oeuvre qui ne serait pas soumise à cette licence.\n\n   4. VOS DROITS D&#39;AUTEUR\n\n   Cette licence n&#39;a pas pour objet de nier vos droits d&#39;auteur sur votre contribution. En choisissant de contribuer à l&#39;évolution de cette oeuvre, vous acceptez seulement d&#39;offrir aux autres les mêmes droits sur votre contribution que ceux qui vous ont été accordés par cette licence.\n\n   5. LA DURÉE DE LA LICENCE\n\n   Cette licence prend effet dès votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier l&#39;oeuvre constitue une acception tacite.\n\n   Cette licence a pour durée la durée des droits d&#39;auteur attachés à l&#39;oeuvre.\n\n   Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits qu&#39;elle vous confère.\n\n   Si le régime juridique auquel vous êtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prévaloir des libertés qu&#39;elle confère.\n\n   6. LES DIFFÉRENTES VERSIONS DE LA LICENCE\n\n   Cette licence pourra être modifiée régulièrement, en vue de son amélioration, par ses auteurs (les acteurs du mouvement « copyleft attitude ») sous la forme de nouvelles versions numérotées.\n\n   Vous avez toujours le choix entre vous contenter des dispositions contenues dans la version sous laquelle la copie vous a été communiquée ou alors, vous prévaloir des dispositions d&#39;une des versions ultérieures.\n\n   7. LES SOUS-LICENCES\n\n   Les sous licences ne sont pas autorisées par la présente. Toute personne qui souhaite bénéficier des libertés qu&#39;elle confère sera liée directement à l&#39;auteur de l&#39;oeuvre originelle.\n\n   8. LA LOI APPLICABLE AU CONTRAT\n\nCette licence est soumise au droit français.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://artlibre.org/licence/lal/licence-art-libre-12/&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/74ce3eddbc69f6e690e170fb2f815b47">OrtLicenseCategorization:74ce3eddbc69f6e690e170fb2f815b47</a> for <a href="/?license=SPDX:LAL-1.2"><span class="licensename"><span class="namespace">SPDX:</span>LAL-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LAL-1.2</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:74ce3eddbc69f6e690e170fb2f815b47">[<a href="/fact/OrtLicenseCategorization/74ce3eddbc69f6e690e170fb2f815b47">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:74ce3eddbc69f6e690e170fb2f815b47">[<a href="/fact/OrtLicenseCategorization/74ce3eddbc69f6e690e170fb2f815b47">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:74ce3eddbc69f6e690e170fb2f815b47">[<a href="/fact/OrtLicenseCategorization/74ce3eddbc69f6e690e170fb2f815b47">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LAL-1.2&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;74ce3eddbc69f6e690e170fb2f815b47&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LAL-1.2&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/b88bb674c46f6c40be6e2bf87a4a6398">CavilLicenseChange:b88bb674c46f6c40be6e2bf87a4a6398</a> for <a href="/?license=cavil:LAL-1.2"><span class="licensename"><span class="namespace">cavil:</span>LAL-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>LAL-1.2</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">https://spdx.org/licenses/LAL-1.2.html</span></li><li><span class="licensename">LAL-1.2</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:LAL-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LAL-1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://spdx.org/licenses/LAL-1.2.html&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;b88bb674c46f6c40be6e2bf87a4a6398&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;LAL-1.2&quot;,
+            &quot;https://spdx.org/licenses/LAL-1.2.html&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:LAL-1.2&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/96348a47ceac3c38b3c27821566ac176">MetaeffektLicense:96348a47ceac3c38b3c27821566ac176</a> for <a href="/?license=metaeffekt:LAL 1.2"><span class="licensename"><span class="namespace">metaeffekt:</span>LAL 1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>LAL 1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LAL-1.2</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">LAL</span></li><li><span class="licensename">LAL, 1.2</span></li><li><span class="licensename">LAL, Version 1.2</span></li><li><span class="licensename"><span class="namespace">scancode:</span>lal-1.2</span></li><li><span class="licensename">Licence Art Libre 1.2</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:LAL 1.2&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:LAL-1.2&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LAL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;LAL, Version 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;LAL, 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Licence Art Libre 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:lal-1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;96348a47ceac3c38b3c27821566ac176&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;LAL, Version 1.2&quot;,
+            &quot;LAL, 1.2&quot;,
+            &quot;Licence Art Libre 1.2&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:LAL 1.2&quot;,
+        &quot;_category&quot;: &quot;LAL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:lal-1.2&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:LAL-1.2&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

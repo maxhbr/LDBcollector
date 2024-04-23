@@ -1,0 +1,472 @@
+<html><head><title>ldbcollector: spdx:PADL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:PADL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>PADL</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">PADL</span></li><li><span class="licensename"><span class="namespace">cavil:</span>PADL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>padl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>PADL</span></li><li><span class="licensename">PADL License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>PADL License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:01ddf26161370ed1cbb6b48a01cfe5c9">[<a href="/fact/ScancodeData/01ddf26161370ed1cbb6b48a01cfe5c9">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:59015d3aa5b6a2f252a1a11f39769a62">[<a href="/fact/SPDXLicense/59015d3aa5b6a2f252a1a11f39769a62">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fb4f02b84c0d792ac08adb6a22151060">[<a href="/fact/OrtLicenseCategorization/fb4f02b84c0d792ac08adb6a22151060">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fb4f02b84c0d792ac08adb6a22151060">[<a href="/fact/OrtLicenseCategorization/fb4f02b84c0d792ac08adb6a22151060">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar to BSD-4.3RENO and Furuseth<span class="provided-by">(provided by: <span title="SPDXLicense:59015d3aa5b6a2f252a1a11f39769a62">[<a href="/fact/SPDXLicense/59015d3aa5b6a2f252a1a11f39769a62">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23" target="_blank">https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Portions (C) Copyright PADL Software Pty Ltd. 1999
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that this notice is preserved
+and that due credit is given to PADL Software Pty Ltd. This software
+is provided ``as is&#39;&#39; without express or implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+                Portions (C) Copyright PADL Software Pty Ltd. 1999
+        &lt;/var&gt;
+        &lt;p&gt;
+                Redistribution and use in source and binary forms,
+                with or without modification, are permitted provided
+                that this notice is preserved and that due credit
+                is given to PADL Software Pty Ltd. This software is
+                provided ``as is&amp;apos;&amp;apos; without express or implied warranty.
+        &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that this notice is preserved
+and that due credit is given to PADL Software Pty Ltd. This software
+is provided ``as is&#39;&#39; without express or implied warranty.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/59015d3aa5b6a2f252a1a11f39769a62">SPDXLicense:59015d3aa5b6a2f252a1a11f39769a62</a> for <a href="/?license=spdx:PADL"><span class="licensename"><span class="namespace">spdx:</span>PADL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>PADL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">PADL License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:59015d3aa5b6a2f252a1a11f39769a62">[<a href="/fact/SPDXLicense/59015d3aa5b6a2f252a1a11f39769a62">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar to BSD-4.3RENO and Furuseth<span class="provided-by">(provided by: <span title="SPDXLicense:59015d3aa5b6a2f252a1a11f39769a62">[<a href="/fact/SPDXLicense/59015d3aa5b6a2f252a1a11f39769a62">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23" target="_blank">https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Portions (C) Copyright PADL Software Pty Ltd. 1999
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that this notice is preserved
+and that due credit is given to PADL Software Pty Ltd. This software
+is provided ``as is&#39;&#39; without express or implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+                Portions (C) Copyright PADL Software Pty Ltd. 1999
+        &lt;/var&gt;
+        &lt;p&gt;
+                Redistribution and use in source and binary forms,
+                with or without modification, are permitted provided
+                that this notice is preserved and that due credit
+                is given to PADL Software Pty Ltd. This software is
+                provided ``as is&amp;apos;&amp;apos; without express or implied warranty.
+        &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:PADL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;PADL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;59015d3aa5b6a2f252a1a11f39769a62&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is similar to BSD-4.3RENO and Furuseth&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Portions (C) Copyright PADL Software Pty Ltd. 1999\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that this notice is preserved\nand that due credit is given to PADL Software Pty Ltd. This software\nis provided ``as is&#39;&#39; without express or implied warranty.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n                Portions (C) Copyright PADL Software Pty Ltd. 1999\n        &lt;/var&gt;\n        &lt;p&gt;\n                Redistribution and use in source and binary forms,\n                with or without modification, are permitted provided\n                that this notice is preserved and that due credit\n                is given to PADL Software Pty Ltd. This software is\n                provided ``as is&amp;apos;&amp;apos; without express or implied warranty.\n        &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:03Z&quot;,
+                &quot;url&quot;: &quot;https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is similar to BSD-4.3RENO and Furuseth&quot;,
+        &quot;licenseId&quot;: &quot;spdx:PADL&quot;,
+        &quot;licenseText&quot;: &quot;Portions (C) Copyright PADL Software Pty Ltd. 1999\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that this notice is preserved\nand that due credit is given to PADL Software Pty Ltd. This software\nis provided ``as is&#39;&#39; without express or implied warranty.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n                Portions (C) Copyright PADL Software Pty Ltd. 1999\n        &lt;/var&gt;\n        &lt;p&gt;\n                Redistribution and use in source and binary forms,\n                with or without modification, are permitted provided\n                that this notice is preserved and that due credit\n                is given to PADL Software Pty Ltd. This software is\n                provided ``as is&amp;apos;&amp;apos; without express or implied warranty.\n        &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;PADL License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Portions (C) Copyright PADL Software Pty Ltd. 1999\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that this notice is preserved and that due credit is given to PADL Software Pty Ltd. This software is provided ``as is&#39;&#39; without express or implied warranty.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/01ddf26161370ed1cbb6b48a01cfe5c9">ScancodeData:01ddf26161370ed1cbb6b48a01cfe5c9</a> for <a href="/?license=scancode:padl"><span class="licensename"><span class="namespace">scancode:</span>padl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>padl</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">PADL License</span></li><li><span class="licensename">PADL License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:01ddf26161370ed1cbb6b48a01cfe5c9">[<a href="/fact/ScancodeData/01ddf26161370ed1cbb6b48a01cfe5c9">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23" target="_blank">https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that this notice is preserved
+and that due credit is given to PADL Software Pty Ltd. This software
+is provided ``as is&#39;&#39; without express or implied warranty.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:padl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;PADL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;PADL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;01ddf26161370ed1cbb6b48a01cfe5c9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that this notice is preserved\nand that due credit is given to PADL Software Pty Ltd. This software\nis provided ``as is&#39;&#39; without express or implied warranty.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;padl&quot;,
+        &quot;_name&quot;: &quot;PADL License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://git.openldap.org/openldap/openldap/-/blob/master/libraries/libldap/os-local.c?ref_type=heads#L19-23&quot;
+        ],
+        &quot;_owner&quot;: &quot;PADL Software Pty Ltd.&quot;,
+        &quot;_shortName&quot;: &quot;PADL License&quot;,
+        &quot;_spdxId&quot;: &quot;PADL&quot;,
+        &quot;_text&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that this notice is preserved\nand that due credit is given to PADL Software Pty Ltd. This software\nis provided ``as is&#39;&#39; without express or implied warranty.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/fb4f02b84c0d792ac08adb6a22151060">OrtLicenseCategorization:fb4f02b84c0d792ac08adb6a22151060</a> for <a href="/?license=SPDX:PADL"><span class="licensename"><span class="namespace">SPDX:</span>PADL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>PADL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fb4f02b84c0d792ac08adb6a22151060">[<a href="/fact/OrtLicenseCategorization/fb4f02b84c0d792ac08adb6a22151060">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fb4f02b84c0d792ac08adb6a22151060">[<a href="/fact/OrtLicenseCategorization/fb4f02b84c0d792ac08adb6a22151060">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:PADL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;fb4f02b84c0d792ac08adb6a22151060&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:PADL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/6152f86a51956c036420ea45e419f915">CavilLicenseChange:6152f86a51956c036420ea45e419f915</a> for <a href="/?license=cavil:PADL"><span class="licensename"><span class="namespace">cavil:</span>PADL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>PADL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">PADL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:PADL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;PADL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;6152f86a51956c036420ea45e419f915&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;PADL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:PADL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/e9e1cac131810b891fa0000bb1b15b12">MetaeffektLicense:e9e1cac131810b891fa0000bb1b15b12</a> for <a href="/?license=metaeffekt:PADL License"><span class="licensename"><span class="namespace">metaeffekt:</span>PADL License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>PADL License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>PADL</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">PADL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>padl</span></li><li><span class="licensename">PADL License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:PADL License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:PADL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;PADL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;PADL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:padl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;e9e1cac131810b891fa0000bb1b15b12&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;PADL License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:PADL License&quot;,
+        &quot;_category&quot;: &quot;PADL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:padl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:PADL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

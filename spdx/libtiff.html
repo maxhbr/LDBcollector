@@ -1,0 +1,2112 @@
+<html><head><title>ldbcollector: spdx:libtiff</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:libtiff</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>libtiff</span></li></ul></li><li><b>other LicenseNames (15):</b><ul class="capsulUl clearfix"><li><span class="licensename">libtiff</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>libtiff</span></li><li><span class="licensename"><span class="namespace">cavil:</span>libtiff</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>libtiff</span></li><li><span class="licensename"><span class="namespace">fossology:</span>libtiff</span></li><li><span class="licensename"><span class="namespace">osadl:</span>libtiff</span></li><li><span class="licensename"><span class="namespace">spdx:</span>libtiff</span></li><li><span class="licensename">libtiff License</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Libtiff License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Libtiff License</span></li><li><span class="licensename">scancode://x11-tiff</span></li><li><span class="licensename">X11-Style (Tiff)</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>X11-Style (Tiff)</span></li><li><span class="licensename">x11-tiff</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-tiff</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename"><span class="namespace">MIT:</span>Hylafax Variant</span></li><li><span class="licensename">MIT</span></li><li><span class="licensename">mit-license</span></li><li><span class="licensename">Permission Terms (SL)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:f512accaa7a52e62dc0ef9635cb7fef0">[<a href="/fact/BlueOakCouncil/f512accaa7a52e62dc0ef9635cb7fef0">BlueOakCouncil</a>]</span><span title="ScancodeData:ede52e34e674787fa8134dbab6d3810f">[<a href="/fact/ScancodeData/ede52e34e674787fa8134dbab6d3810f">ScancodeData</a>]</span><span title="FOSSLight:f1182f6cb1ac31b99fdaef7c6824c6e7">[<a href="/fact/FOSSLight/f1182f6cb1ac31b99fdaef7c6824c6e7">FOSSLight</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:31819aac7367fd69b03de060d8389623">[<a href="/fact/SPDXLicense/31819aac7367fd69b03de060d8389623">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:9dd2e3ee6b51c02fbd1ce75bacb157d7">[<a href="/fact/FedoraEntry/9dd2e3ee6b51c02fbd1ce75bacb157d7">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:f512accaa7a52e62dc0ef9635cb7fef0">[<a href="/fact/BlueOakCouncil/f512accaa7a52e62dc0ef9635cb7fef0">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:8a1fbae6c670459bd374226351cc8569">[<a href="/fact/MetaeffektLicense/8a1fbae6c670459bd374226351cc8569">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:89aadc89541294bdbca3f55d6cfb3c66">[<a href="/fact/OrtLicenseCategorization/89aadc89541294bdbca3f55d6cfb3c66">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:89aadc89541294bdbca3f55d6cfb3c66">[<a href="/fact/OrtLicenseCategorization/89aadc89541294bdbca3f55d6cfb3c66">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/libtiff" target="_blank">https://fedoraproject.org/wiki/Licensing/libtiff</a></li><li><a href="https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant</a></li><li><a href="https://spdx.org/licenses/libtiff.html" target="_blank">https://spdx.org/licenses/libtiff.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1988-1997 Sam Leffler
+Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1988-1997 Sam Leffler&lt;/p&gt;
+
+         &lt;p&gt;Copyright (c) 1991-1997 Silicon Graphics, Inc.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose
+         is hereby granted without fee, provided that (i) the above copyright notices and this permission
+         notice appear in all copies of the software and related documentation, and (ii) the names of Sam
+         Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software
+         without the specific, prior written permission of Sam Leffler and Silicon Graphics.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS-IS&amp;quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
+         INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+      &lt;p&gt;IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR
+         CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+         PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING
+         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided
+that (i) the above copyright notices and this permission notice appear in
+all copies of the software and related documentation, and (ii) the names of
+Sam Leffler and Silicon Graphics may not be used in any advertising or
+publicity relating to the software without the specific, prior written
+permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY 
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR
+ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF 
+LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
+OF THIS SOFTWARE.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright (c) 1988-1997 Sam Leffler
+
+Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/31819aac7367fd69b03de060d8389623">SPDXLicense:31819aac7367fd69b03de060d8389623</a> for <a href="/?license=spdx:libtiff"><span class="licensename"><span class="namespace">spdx:</span>libtiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>libtiff</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">libtiff License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:31819aac7367fd69b03de060d8389623">[<a href="/fact/SPDXLicense/31819aac7367fd69b03de060d8389623">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/libtiff" target="_blank">https://fedoraproject.org/wiki/Licensing/libtiff</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1988-1997 Sam Leffler
+Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1988-1997 Sam Leffler&lt;/p&gt;
+
+         &lt;p&gt;Copyright (c) 1991-1997 Silicon Graphics, Inc.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose
+         is hereby granted without fee, provided that (i) the above copyright notices and this permission
+         notice appear in all copies of the software and related documentation, and (ii) the names of Sam
+         Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software
+         without the specific, prior written permission of Sam Leffler and Silicon Graphics.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS-IS&amp;quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
+         INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+      &lt;p&gt;IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR
+         CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+         PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING
+         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:libtiff&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;libtiff License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;31819aac7367fd69b03de060d8389623&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1988-1997 Sam Leffler\nCopyright (c) 1991-1997 Silicon Graphics, Inc.\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1988-1997 Sam Leffler&lt;/p&gt;\n\n         &lt;p&gt;Copyright (c) 1991-1997 Silicon Graphics, Inc.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose\n         is hereby granted without fee, provided that (i) the above copyright notices and this permission\n         notice appear in all copies of the software and related documentation, and (ii) the names of Sam\n         Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software\n         without the specific, prior written permission of Sam Leffler and Silicon Graphics.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS-IS&amp;quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,\n         INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n      &lt;p&gt;IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR\n         CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR\n         PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING\n         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:03Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:libtiff&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1988-1997 Sam Leffler\nCopyright (c) 1991-1997 Silicon Graphics, Inc.\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1988-1997 Sam Leffler&lt;/p&gt;\n\n         &lt;p&gt;Copyright (c) 1991-1997 Silicon Graphics, Inc.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose\n         is hereby granted without fee, provided that (i) the above copyright notices and this permission\n         notice appear in all copies of the software and related documentation, and (ii) the names of Sam\n         Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software\n         without the specific, prior written permission of Sam Leffler and Silicon Graphics.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS-IS&amp;quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,\n         INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n      &lt;p&gt;IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR\n         CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR\n         PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING\n         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;libtiff License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1988-1997 Sam Leffler    Copyright (c) 1991-1997 Silicon Graphics, Inc.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/9dd2e3ee6b51c02fbd1ce75bacb157d7">FedoraEntry:9dd2e3ee6b51c02fbd1ce75bacb157d7</a> for <a href="/?license=Fedora:libtiff"><span class="licensename"><span class="namespace">Fedora:</span>libtiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>libtiff</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>libtiff</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">MIT:</span>Hylafax Variant</span></li><li><span class="licensename">libtiff</span></li><li><span class="licensename">libtiff License</span></li><li><span class="licensename">MIT</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:9dd2e3ee6b51c02fbd1ce75bacb157d7">[<a href="/fact/FedoraEntry/9dd2e3ee6b51c02fbd1ce75bacb157d7">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/libtiff" target="_blank">https://fedoraproject.org/wiki/Licensing/libtiff</a></li><li><a href="https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:libtiff&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:libtiff&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;libtiff License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT:Hylafax Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;libtiff&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;9dd2e3ee6b51c02fbd1ce75bacb157d7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;libtiff&quot;,
+                &quot;MIT&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;libtiff License&quot;,
+                &quot;MIT:Hylafax Variant&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;libtiff&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:libtiff&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;,
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/f512accaa7a52e62dc0ef9635cb7fef0">BlueOakCouncil:f512accaa7a52e62dc0ef9635cb7fef0</a> for <a href="/?license=BlueOak:libtiff"><span class="licensename"><span class="namespace">BlueOak:</span>libtiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>libtiff</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">libtiff License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:f512accaa7a52e62dc0ef9635cb7fef0">[<a href="/fact/BlueOakCouncil/f512accaa7a52e62dc0ef9635cb7fef0">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:f512accaa7a52e62dc0ef9635cb7fef0">[<a href="/fact/BlueOakCouncil/f512accaa7a52e62dc0ef9635cb7fef0">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/libtiff.html" target="_blank">https://spdx.org/licenses/libtiff.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:libtiff&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;libtiff License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;f512accaa7a52e62dc0ef9635cb7fef0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/libtiff.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;libtiff&quot;,
+                &quot;_name&quot;: &quot;libtiff License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/libtiff.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLRule/20129507b00d466609d80c2c614a2c64">OSADLRule:20129507b00d466609d80c2c614a2c64</a> for <a href="/?license=osadl:libtiff"><span class="licensename"><span class="namespace">osadl:</span>libtiff</span></a></h3><pre>USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide Copyright notices
+	YOU MUST Provide License text
+	YOU MUST Provide Copyright notices In Documentation
+	YOU MUST Provide License text In Documentation
+	YOU MUST NOT Promote
+</pre><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>libtiff</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>libtiff</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;osadl:libtiff&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:libtiff&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLRule&quot;,
+        &quot;20129507b00d466609d80c2c614a2c64&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide Copyright notices\n\tYOU MUST Provide License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseRule&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide Copyright notices\n\tYOU MUST Provide License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n&quot;,
+        &quot;spdxId&quot;: &quot;osadl:libtiff&quot;
+    },
+    &quot;type&quot;: &quot;OSADLRule&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLMatrix/c0a5918767d012853dbe1a345c8829d9">OSADLMatrix:c0a5918767d012853dbe1a345c8829d9</a> for <a href="/?license=osadl:libtiff"><span class="licensename"><span class="namespace">osadl:</span>libtiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>libtiff</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;osadl:libtiff&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLMatrix&quot;,
+        &quot;c0a5918767d012853dbe1a345c8829d9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;0BSD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;blessing&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC0-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;curl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;EFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.2&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFAP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFUL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLR&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLRWD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FTL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;HPND&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IBM-pibs&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ICU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IJG&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ImageMagick&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Info-ZIP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;IPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ISC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;JasPer-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Libpng&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libpng-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Same&quot;,
+                    &quot;_explanation&quot;: &quot;n.a.&quot;,
+                    &quot;_other&quot;: &quot;libtiff&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Minpack&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MirOS&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT-CMU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;MS-PL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MS-RL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NBPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NCSA&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NTP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;OpenSSL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;OSL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PHP-3.01&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PostgreSQL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Python-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Qhull&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;RSA-MD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Saxpath&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;Sleepycat&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SMLNJ&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-short&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SunPro&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unlicense&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;UPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-19980720&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-20150513&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;WTFPL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;X11&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;XFree86-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Zlib&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ZPL-2.0&quot;
+                }
+            ],
+            &quot;tag&quot;: &quot;LicenseCompatibilities&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_name&quot;: &quot;osadl:libtiff&quot;,
+        &quot;compatibilities&quot;: [
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;0BSD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;blessing&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC0-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;curl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;EFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.2&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFAP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFUL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLR&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLRWD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FTL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;HPND&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IBM-pibs&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ICU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IJG&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ImageMagick&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Info-ZIP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;IPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ISC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;JasPer-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Libpng&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libpng-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Same&quot;,
+                &quot;_explanation&quot;: &quot;n.a.&quot;,
+                &quot;_other&quot;: &quot;libtiff&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Minpack&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MirOS&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT-CMU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;MS-PL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MS-RL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NBPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NCSA&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NTP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;OpenSSL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;OSL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PHP-3.01&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PostgreSQL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Python-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Qhull&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;RSA-MD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Saxpath&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the libtiff license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;Sleepycat&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SMLNJ&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-short&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SunPro&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unlicense&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;UPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-19980720&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-20150513&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;WTFPL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;X11&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;XFree86-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Zlib&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the libtiff license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ZPL-2.0&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;OSADLMatrix&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/ede52e34e674787fa8134dbab6d3810f">ScancodeData:ede52e34e674787fa8134dbab6d3810f</a> for <a href="/?license=scancode:x11-tiff"><span class="licensename"><span class="namespace">scancode:</span>x11-tiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>x11-tiff</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11-Style (Tiff)</span></li><li><span class="licensename">X11-Style (Tiff)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:ede52e34e674787fa8134dbab6d3810f">[<a href="/fact/ScancodeData/ede52e34e674787fa8134dbab6d3810f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/libtiff" target="_blank">https://fedoraproject.org/wiki/Licensing/libtiff</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided
+that (i) the above copyright notices and this permission notice appear in
+all copies of the software and related documentation, and (ii) the names of
+Sam Leffler and Silicon Graphics may not be used in any advertising or
+publicity relating to the software without the specific, prior written
+permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY 
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR
+ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF 
+LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
+OF THIS SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:x11-tiff&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;X11-Style (Tiff)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11-Style (Tiff)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;ede52e34e674787fa8134dbab6d3810f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;x11-tiff&quot;,
+        &quot;_name&quot;: &quot;X11-Style (Tiff)&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;SGI - Silicon Graphics&quot;,
+        &quot;_shortName&quot;: &quot;X11-Style (Tiff)&quot;,
+        &quot;_spdxId&quot;: &quot;libtiff&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/12211b1f2ca111e5a6fb0df2d6bf10ee">Fossology:12211b1f2ca111e5a6fb0df2d6bf10ee</a> for <a href="/?license=fossology:libtiff"><span class="licensename"><span class="namespace">fossology:</span>libtiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>libtiff</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">libtiff License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/libtiff" target="_blank">https://fedoraproject.org/wiki/Licensing/libtiff</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1988-1997 Sam Leffler
+
+Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:libtiff&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;libtiff License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;12211b1f2ca111e5a6fb0df2d6bf10ee&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright (c) 1988-1997 Sam Leffler\n\nCopyright (c) 1991-1997 Silicon Graphics, Inc.\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;libtiff License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:libtiff&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright (c) 1988-1997 Sam Leffler\n\nCopyright (c) 1991-1997 Silicon Graphics, Inc.\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/libtiff&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/89aadc89541294bdbca3f55d6cfb3c66">OrtLicenseCategorization:89aadc89541294bdbca3f55d6cfb3c66</a> for <a href="/?license=SPDX:libtiff"><span class="licensename"><span class="namespace">SPDX:</span>libtiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>libtiff</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:89aadc89541294bdbca3f55d6cfb3c66">[<a href="/fact/OrtLicenseCategorization/89aadc89541294bdbca3f55d6cfb3c66">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:89aadc89541294bdbca3f55d6cfb3c66">[<a href="/fact/OrtLicenseCategorization/89aadc89541294bdbca3f55d6cfb3c66">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:libtiff&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;89aadc89541294bdbca3f55d6cfb3c66&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:libtiff&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/2c3281537f380f31f2a79f41e20d52c8">CavilLicenseChange:2c3281537f380f31f2a79f41e20d52c8</a> for <a href="/?license=cavil:libtiff"><span class="licensename"><span class="namespace">cavil:</span>libtiff</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>libtiff</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">libtiff</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:libtiff&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;libtiff&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;2c3281537f380f31f2a79f41e20d52c8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;libtiff&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:libtiff&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/8a1fbae6c670459bd374226351cc8569">MetaeffektLicense:8a1fbae6c670459bd374226351cc8569</a> for <a href="/?license=metaeffekt:Libtiff License"><span class="licensename"><span class="namespace">metaeffekt:</span>Libtiff License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Libtiff License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>libtiff</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename">Permission Terms (SL)</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-tiff</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:8a1fbae6c670459bd374226351cc8569">[<a href="/fact/MetaeffektLicense/8a1fbae6c670459bd374226351cc8569">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Libtiff License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:libtiff&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Permission Terms (SL)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:x11-tiff&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;8a1fbae6c670459bd374226351cc8569&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Permission Terms (SL)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Libtiff License&quot;,
+        &quot;_category&quot;: &quot;BSD&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:x11-tiff&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:libtiff&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/27507ed2cec545c52071dd6ecb2a8954">FossLicense:27507ed2cec545c52071dd6ecb2a8954</a> for <a href="/?license=foss-license:X11-Style (Tiff)"><span class="licensename"><span class="namespace">foss-license:</span>X11-Style (Tiff)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>X11-Style (Tiff)</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">libtiff</span></li><li><span class="licensename">libtiff License</span></li><li><span class="licensename">scancode://x11-tiff</span></li><li><span class="licensename">X11-Style (Tiff)</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-tiff</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:X11-Style (Tiff)&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:x11-tiff&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;libtiff&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;libtiff License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://x11-tiff&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11-Style (Tiff)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;27507ed2cec545c52071dd6ecb2a8954&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;libtiff&quot;,
+            &quot;libtiff License&quot;,
+            &quot;scancode://x11-tiff&quot;,
+            &quot;X11-Style (Tiff)&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;X11-Style (Tiff)&quot;,
+        &quot;scancode_key&quot;: &quot;x11-tiff&quot;,
+        &quot;spdxid&quot;: &quot;libtiff&quot;,
+        &quot;text&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/f1182f6cb1ac31b99fdaef7c6824c6e7">FOSSLight:f1182f6cb1ac31b99fdaef7c6824c6e7</a> for <a href="/?license=fosslight:Libtiff License"><span class="licensename"><span class="namespace">fosslight:</span>Libtiff License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Libtiff License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">libtiff</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:f1182f6cb1ac31b99fdaef7c6824c6e7">[<a href="/fact/FOSSLight/f1182f6cb1ac31b99fdaef7c6824c6e7">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Libtiff License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;libtiff&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;f1182f6cb1ac31b99fdaef7c6824c6e7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: null,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;libtiff&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/libtiff.html&quot;,
+            &quot;_fossLight_id&quot;: 82,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Libtiff License&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li></ul></body></html>

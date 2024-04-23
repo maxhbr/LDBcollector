@@ -1,0 +1,528 @@
+<html><head><title>ldbcollector: spdx:LZMA-SDK-9.11-to-9.20</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:LZMA-SDK-9.11-to-9.20</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LZMA-SDK-9.11-to-9.20</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">LZMA SDK License (versions 9.11 to 9.20)</span></li><li><span class="licensename">LZMA SDK License 9.11 to 9.20</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>LZMA SDK License 9.11 to 9.20</span></li><li><span class="licensename">LZMA-SDK-9.11-to-9.20</span></li><li><span class="licensename"><span class="namespace">cavil:</span>LZMA-SDK-9.11-to-9.20</span></li><li><span class="licensename"><span class="namespace">scancode:</span>lzma-sdk-9.11-to-9.20</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LZMA-SDK-9.11-to-9.20</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Public Domain</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:5e07ae99789063be7b0d507de3d6d722">[<a href="/fact/ScancodeData/5e07ae99789063be7b0d507de3d6d722">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8cc8a5856ab530866bd5e34f7119eb98">[<a href="/fact/SPDXLicense/8cc8a5856ab530866bd5e34f7119eb98">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f2dd194a2ef834423f05c2f1e6d9c89f">[<a href="/fact/OrtLicenseCategorization/f2dd194a2ef834423f05c2f1e6d9c89f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f2dd194a2ef834423f05c2f1e6d9c89f">[<a href="/fact/OrtLicenseCategorization/f2dd194a2ef834423f05c2f1e6d9c89f">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>The license text currently displayed on the 7-zip SDK website is not the same as any of the lzma.txt file in the root folders of the .tar.bz SDK distributions (versions 922 and below) that are hosted on SourceForge, nor is it the same as the .7z distributions (versions 935 and above) which shifted the license text to DOC\lzma-sdk.txt. This license applies to versions between 9.11 and 9.20 (inclusive).<span class="provided-by">(provided by: <span title="SPDXLicense:8cc8a5856ab530866bd5e34f7119eb98">[<a href="/fact/SPDXLicense/8cc8a5856ab530866bd5e34f7119eb98">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/" target="_blank">https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/</a></li><li><a href="https://www.7-zip.org/sdk.html" target="_blank">https://www.7-zip.org/sdk.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>LICENSE
+-------
+
+LZMA SDK is written and placed in the public domain by Igor Pavlov.
+
+Some code in LZMA is based on public domain code from another developers:
+  1) PPMd var.H (2001): Dmitry Shkarin
+  2) SHA-256: Wei Dai (Crypto++ library)
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+          LICENSE
+         &lt;/p&gt;
+
+         &lt;p&gt;
+          -------
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+        &lt;p&gt;
+          LZMA SDK is written and placed in the public domain by Igor Pavlov.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+          Some code in LZMA is based on public domain code from another developers:
+            1) PPMd var.H (2001): Dmitry Shkarin
+            2) SHA-256: Wei Dai (Crypto++ library)
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>LICENSE
+-------
+
+LZMA SDK is written and placed in the public domain by Igor Pavlov.
+
+Some code in LZMA is based on public domain code from another developers:
+  1) PPMd var.H (2001): Dmitry Shkarin
+  2) SHA-256: Wei Dai (Crypto++ library)</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/8cc8a5856ab530866bd5e34f7119eb98">SPDXLicense:8cc8a5856ab530866bd5e34f7119eb98</a> for <a href="/?license=spdx:LZMA-SDK-9.11-to-9.20"><span class="licensename"><span class="namespace">spdx:</span>LZMA-SDK-9.11-to-9.20</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LZMA-SDK-9.11-to-9.20</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">LZMA SDK License (versions 9.11 to 9.20)</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8cc8a5856ab530866bd5e34f7119eb98">[<a href="/fact/SPDXLicense/8cc8a5856ab530866bd5e34f7119eb98">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>The license text currently displayed on the 7-zip SDK website is not the same as any of the lzma.txt file in the root folders of the .tar.bz SDK distributions (versions 922 and below) that are hosted on SourceForge, nor is it the same as the .7z distributions (versions 935 and above) which shifted the license text to DOC\lzma-sdk.txt. This license applies to versions between 9.11 and 9.20 (inclusive).<span class="provided-by">(provided by: <span title="SPDXLicense:8cc8a5856ab530866bd5e34f7119eb98">[<a href="/fact/SPDXLicense/8cc8a5856ab530866bd5e34f7119eb98">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/" target="_blank">https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/</a></li><li><a href="https://www.7-zip.org/sdk.html" target="_blank">https://www.7-zip.org/sdk.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>LICENSE
+-------
+
+LZMA SDK is written and placed in the public domain by Igor Pavlov.
+
+Some code in LZMA is based on public domain code from another developers:
+  1) PPMd var.H (2001): Dmitry Shkarin
+  2) SHA-256: Wei Dai (Crypto++ library)
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;
+          LICENSE
+         &lt;/p&gt;
+
+         &lt;p&gt;
+          -------
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+        &lt;p&gt;
+          LZMA SDK is written and placed in the public domain by Igor Pavlov.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+          Some code in LZMA is based on public domain code from another developers:
+            1) PPMd var.H (2001): Dmitry Shkarin
+            2) SHA-256: Wei Dai (Crypto++ library)
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:LZMA-SDK-9.11-to-9.20&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LZMA SDK License (versions 9.11 to 9.20)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;8cc8a5856ab530866bd5e34f7119eb98&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;The license text currently displayed on the 7-zip SDK website is not the same as any of the lzma.txt file in the root folders of the .tar.bz SDK distributions (versions 922 and below) that are hosted on SourceForge, nor is it the same as the .7z distributions (versions 935 and above) which shifted the license text to DOC\\lzma-sdk.txt. This license applies to versions between 9.11 and 9.20 (inclusive).&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;LICENSE\n-------\n\nLZMA SDK is written and placed in the public domain by Igor Pavlov.\n\nSome code in LZMA is based on public domain code from another developers:\n  1) PPMd var.H (2001): Dmitry Shkarin\n  2) SHA-256: Wei Dai (Crypto++ library)\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n          LICENSE\n         &lt;/p&gt;\n\n         &lt;p&gt;\n          -------\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n        &lt;p&gt;\n          LZMA SDK is written and placed in the public domain by Igor Pavlov.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n          Some code in LZMA is based on public domain code from another developers:\n            1) PPMd var.H (2001): Dmitry Shkarin\n            2) SHA-256: Wei Dai (Crypto++ library)\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.7-zip.org/sdk.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.7-zip.org/sdk.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:37Z&quot;,
+                &quot;url&quot;: &quot;https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:38Z&quot;,
+                &quot;url&quot;: &quot;https://www.7-zip.org/sdk.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;The license text currently displayed on the 7-zip SDK website is not the same as any of the lzma.txt file in the root folders of the .tar.bz SDK distributions (versions 922 and below) that are hosted on SourceForge, nor is it the same as the .7z distributions (versions 935 and above) which shifted the license text to DOC\\lzma-sdk.txt. This license applies to versions between 9.11 and 9.20 (inclusive).&quot;,
+        &quot;licenseId&quot;: &quot;spdx:LZMA-SDK-9.11-to-9.20&quot;,
+        &quot;licenseText&quot;: &quot;LICENSE\n-------\n\nLZMA SDK is written and placed in the public domain by Igor Pavlov.\n\nSome code in LZMA is based on public domain code from another developers:\n  1) PPMd var.H (2001): Dmitry Shkarin\n  2) SHA-256: Wei Dai (Crypto++ library)\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;\n          LICENSE\n         &lt;/p&gt;\n\n         &lt;p&gt;\n          -------\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n        &lt;p&gt;\n          LZMA SDK is written and placed in the public domain by Igor Pavlov.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n          Some code in LZMA is based on public domain code from another developers:\n            1) PPMd var.H (2001): Dmitry Shkarin\n            2) SHA-256: Wei Dai (Crypto++ library)\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;LZMA SDK License (versions 9.11 to 9.20)&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.7-zip.org/sdk.html&quot;,
+            &quot;https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;LICENSE\n\n-------\n\n&lt;&lt;endOptional&gt;&gt;\n\nLZMA SDK is written and placed in the public domain by Igor Pavlov.\n\nSome code in LZMA is based on public domain code from another developers: 1) PPMd var.H (2001): Dmitry Shkarin 2) SHA-256: Wei Dai (Crypto++ library)\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/5e07ae99789063be7b0d507de3d6d722">ScancodeData:5e07ae99789063be7b0d507de3d6d722</a> for <a href="/?license=scancode:lzma-sdk-9.11-to-9.20"><span class="licensename"><span class="namespace">scancode:</span>lzma-sdk-9.11-to-9.20</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>lzma-sdk-9.11-to-9.20</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">LZMA SDK License (versions 9.11 to 9.20)</span></li><li><span class="licensename">LZMA SDK License (versions 9.11 to 9.20)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:5e07ae99789063be7b0d507de3d6d722">[<a href="/fact/ScancodeData/5e07ae99789063be7b0d507de3d6d722">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.7-zip.org/sdk.html" target="_blank">https://www.7-zip.org/sdk.html</a></li><li><a href="https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/" target="_blank">https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>LICENSE
+-------
+
+LZMA SDK is written and placed in the public domain by Igor Pavlov.
+
+Some code in LZMA is based on public domain code from another developers:
+  1) PPMd var.H (2001): Dmitry Shkarin
+  2) SHA-256: Wei Dai (Crypto++ library)</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:lzma-sdk-9.11-to-9.20&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LZMA SDK License (versions 9.11 to 9.20)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;LZMA SDK License (versions 9.11 to 9.20)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;5e07ae99789063be7b0d507de3d6d722&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.7-zip.org/sdk.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;LICENSE\n-------\n\nLZMA SDK is written and placed in the public domain by Igor Pavlov.\n\nSome code in LZMA is based on public domain code from another developers:\n  1) PPMd var.H (2001): Dmitry Shkarin\n  2) SHA-256: Wei Dai (Crypto++ library)&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;lzma-sdk-9.11-to-9.20&quot;,
+        &quot;_name&quot;: &quot;LZMA SDK License (versions 9.11 to 9.20)&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://www.7-zip.org/sdk.html&quot;,
+            &quot;https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/&quot;
+        ],
+        &quot;_owner&quot;: &quot;Igor Pavlov&quot;,
+        &quot;_shortName&quot;: &quot;LZMA SDK License (versions 9.11 to 9.20)&quot;,
+        &quot;_spdxId&quot;: &quot;LZMA-SDK-9.11-to-9.20&quot;,
+        &quot;_text&quot;: &quot;LICENSE\n-------\n\nLZMA SDK is written and placed in the public domain by Igor Pavlov.\n\nSome code in LZMA is based on public domain code from another developers:\n  1) PPMd var.H (2001): Dmitry Shkarin\n  2) SHA-256: Wei Dai (Crypto++ library)&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/f2dd194a2ef834423f05c2f1e6d9c89f">OrtLicenseCategorization:f2dd194a2ef834423f05c2f1e6d9c89f</a> for <a href="/?license=SPDX:LZMA-SDK-9.11-to-9.20"><span class="licensename"><span class="namespace">SPDX:</span>LZMA-SDK-9.11-to-9.20</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LZMA-SDK-9.11-to-9.20</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f2dd194a2ef834423f05c2f1e6d9c89f">[<a href="/fact/OrtLicenseCategorization/f2dd194a2ef834423f05c2f1e6d9c89f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f2dd194a2ef834423f05c2f1e6d9c89f">[<a href="/fact/OrtLicenseCategorization/f2dd194a2ef834423f05c2f1e6d9c89f">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LZMA-SDK-9.11-to-9.20&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f2dd194a2ef834423f05c2f1e6d9c89f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LZMA-SDK-9.11-to-9.20&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/4bd5aab3d1d17bc056158e6809f56577">CavilLicenseChange:4bd5aab3d1d17bc056158e6809f56577</a> for <a href="/?license=cavil:LZMA-SDK-9.11-to-9.20"><span class="licensename"><span class="namespace">cavil:</span>LZMA-SDK-9.11-to-9.20</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>LZMA-SDK-9.11-to-9.20</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">LZMA-SDK-9.11-to-9.20</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:LZMA-SDK-9.11-to-9.20&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LZMA-SDK-9.11-to-9.20&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;4bd5aab3d1d17bc056158e6809f56577&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;LZMA-SDK-9.11-to-9.20&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:LZMA-SDK-9.11-to-9.20&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/7a17c26e76d64fd34dcf73b785e2948b">MetaeffektLicense:7a17c26e76d64fd34dcf73b785e2948b</a> for <a href="/?license=metaeffekt:LZMA SDK License 9.11 to 9.20"><span class="licensename"><span class="namespace">metaeffekt:</span>LZMA SDK License 9.11 to 9.20</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>LZMA SDK License 9.11 to 9.20</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LZMA-SDK-9.11-to-9.20</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>lzma-sdk-9.11-to-9.20</span></li><li><span class="licensename">Public Domain</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:LZMA SDK License 9.11 to 9.20&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:LZMA-SDK-9.11-to-9.20&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Public Domain&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:lzma-sdk-9.11-to-9.20&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;7a17c26e76d64fd34dcf73b785e2948b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:LZMA SDK License 9.11 to 9.20&quot;,
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:lzma-sdk-9.11-to-9.20&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:LZMA-SDK-9.11-to-9.20&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,423 @@
+<html><head><title>ldbcollector: spdx:MIT-Khronos-old</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MIT-Khronos-old</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Khronos-old</span></li></ul></li><li><b>other LicenseNames (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT Khronos - old variant</span></li><li><span class="licensename">MIT-Khronos-old</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>MIT-Khronos-old</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Khronos-old</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:39b8ddd5cd00aa6d390fff997cf783d5">[<a href="/fact/SPDXLicense/39b8ddd5cd00aa6d390fff997cf783d5">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d2b1fcedd2516287844fdb30ba984abf">[<a href="/fact/FedoraEntry/d2b1fcedd2516287844fdb30ba984abf">FedoraEntry</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is considered obsolete by the Khronos Group, but may still be in use in older projects or versions.<span class="provided-by">(provided by: <span title="SPDXLicense:39b8ddd5cd00aa6d390fff997cf783d5">[<a href="/fact/SPDXLicense/39b8ddd5cd00aa6d390fff997cf783d5">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt" target="_blank">https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2014-2020 The Khronos Group Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and/or associated documentation files (the &quot;Materials&quot;),
+to deal in the Materials without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Materials, and to permit persons to whom the
+Materials are furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Materials.
+
+MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS KHRONOS
+STANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS SPECIFICATIONS AND
+HEADER INFORMATION ARE LOCATED AT https://www.khronos.org/registry/
+
+THE MATERIALS ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM,OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS
+IN THE MATERIALS.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 2014-2020 The Khronos Group Inc.
+         &lt;/var&gt;
+         &lt;p&gt;
+            Permission is hereby granted, free of charge, to any person
+            obtaining a copy of this software and/or associated documentation
+            files (the &amp;quot;Materials&amp;quot;), to deal in the Materials without
+            restriction, including without limitation the rights to use, copy,
+            modify, merge, publish, distribute, sublicense, and/or sell copies
+            of the Materials, and to permit persons to whom the Materials
+            are furnished to do so, subject to the following conditions:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The above copyright notice and this permission notice shall be
+            included in all copies or substantial portions of the Materials.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY
+            REFLECTS KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE
+            VERSIONS OF KHRONOS SPECIFICATIONS AND HEADER INFORMATION
+            ARE LOCATED AT https://www.khronos.org/registry/
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            THE MATERIALS ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF
+            ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+            THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+            OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE
+            MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/39b8ddd5cd00aa6d390fff997cf783d5">SPDXLicense:39b8ddd5cd00aa6d390fff997cf783d5</a> for <a href="/?license=spdx:MIT-Khronos-old"><span class="licensename"><span class="namespace">spdx:</span>MIT-Khronos-old</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Khronos-old</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT Khronos - old variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:39b8ddd5cd00aa6d390fff997cf783d5">[<a href="/fact/SPDXLicense/39b8ddd5cd00aa6d390fff997cf783d5">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is considered obsolete by the Khronos Group, but may still be in use in older projects or versions.<span class="provided-by">(provided by: <span title="SPDXLicense:39b8ddd5cd00aa6d390fff997cf783d5">[<a href="/fact/SPDXLicense/39b8ddd5cd00aa6d390fff997cf783d5">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt" target="_blank">https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2014-2020 The Khronos Group Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and/or associated documentation files (the &quot;Materials&quot;),
+to deal in the Materials without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Materials, and to permit persons to whom the
+Materials are furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Materials.
+
+MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS KHRONOS
+STANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS SPECIFICATIONS AND
+HEADER INFORMATION ARE LOCATED AT https://www.khronos.org/registry/
+
+THE MATERIALS ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM,OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS
+IN THE MATERIALS.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 2014-2020 The Khronos Group Inc.
+         &lt;/var&gt;
+         &lt;p&gt;
+            Permission is hereby granted, free of charge, to any person
+            obtaining a copy of this software and/or associated documentation
+            files (the &amp;quot;Materials&amp;quot;), to deal in the Materials without
+            restriction, including without limitation the rights to use, copy,
+            modify, merge, publish, distribute, sublicense, and/or sell copies
+            of the Materials, and to permit persons to whom the Materials
+            are furnished to do so, subject to the following conditions:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The above copyright notice and this permission notice shall be
+            included in all copies or substantial portions of the Materials.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY
+            REFLECTS KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE
+            VERSIONS OF KHRONOS SPECIFICATIONS AND HEADER INFORMATION
+            ARE LOCATED AT https://www.khronos.org/registry/
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            THE MATERIALS ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF
+            ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+            THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+            OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE
+            MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:MIT-Khronos-old&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT Khronos - old variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;39b8ddd5cd00aa6d390fff997cf783d5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is considered obsolete by the Khronos Group, but may still be in use in older projects or versions.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 2014-2020 The Khronos Group Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and/or associated documentation files (the \&quot;Materials\&quot;),\nto deal in the Materials without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Materials, and to permit persons to whom the\nMaterials are furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Materials.\n\nMODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS KHRONOS\nSTANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS SPECIFICATIONS AND\nHEADER INFORMATION ARE LOCATED AT https://www.khronos.org/registry/\n\nTHE MATERIALS ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL\nTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM,OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS\nIN THE MATERIALS.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 2014-2020 The Khronos Group Inc.\n         &lt;/var&gt;\n         &lt;p&gt;\n            Permission is hereby granted, free of charge, to any person\n            obtaining a copy of this software and/or associated documentation\n            files (the &amp;quot;Materials&amp;quot;), to deal in the Materials without\n            restriction, including without limitation the rights to use, copy,\n            modify, merge, publish, distribute, sublicense, and/or sell copies\n            of the Materials, and to permit persons to whom the Materials\n            are furnished to do so, subject to the following conditions:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The above copyright notice and this permission notice shall be\n            included in all copies or substantial portions of the Materials.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY\n            REFLECTS KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE\n            VERSIONS OF KHRONOS SPECIFICATIONS AND HEADER INFORMATION\n            ARE LOCATED AT https://www.khronos.org/registry/\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            THE MATERIALS ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF\n            ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO\n            THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\n            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS\n            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR\n            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\n            OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE\n            MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:27Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is considered obsolete by the Khronos Group, but may still be in use in older projects or versions.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:MIT-Khronos-old&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 2014-2020 The Khronos Group Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and/or associated documentation files (the \&quot;Materials\&quot;),\nto deal in the Materials without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Materials, and to permit persons to whom the\nMaterials are furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Materials.\n\nMODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS KHRONOS\nSTANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS SPECIFICATIONS AND\nHEADER INFORMATION ARE LOCATED AT https://www.khronos.org/registry/\n\nTHE MATERIALS ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL\nTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM,OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS\nIN THE MATERIALS.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 2014-2020 The Khronos Group Inc.\n         &lt;/var&gt;\n         &lt;p&gt;\n            Permission is hereby granted, free of charge, to any person\n            obtaining a copy of this software and/or associated documentation\n            files (the &amp;quot;Materials&amp;quot;), to deal in the Materials without\n            restriction, including without limitation the rights to use, copy,\n            modify, merge, publish, distribute, sublicense, and/or sell copies\n            of the Materials, and to permit persons to whom the Materials\n            are furnished to do so, subject to the following conditions:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The above copyright notice and this permission notice shall be\n            included in all copies or substantial portions of the Materials.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY\n            REFLECTS KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE\n            VERSIONS OF KHRONOS SPECIFICATIONS AND HEADER INFORMATION\n            ARE LOCATED AT https://www.khronos.org/registry/\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            THE MATERIALS ARE PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF\n            ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO\n            THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\n            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS\n            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR\n            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\n            OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE\n            MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;MIT Khronos - old variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/KhronosGroup/SPIRV-Cross/blob/main/LICENSES/LicenseRef-KhronosFreeUse.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2014-2020 The Khronos Group Inc.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and/or associated documentation files (the \&quot;Materials\&quot;), to deal in the Materials without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Materials, and to permit persons to whom the Materials are furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Materials.\n\nMODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS SPECIFICATIONS AND HEADER INFORMATION ARE LOCATED AT https://www.khronos.org/registry/\n\nTHE MATERIALS ARE PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/d2b1fcedd2516287844fdb30ba984abf">FedoraEntry:d2b1fcedd2516287844fdb30ba984abf</a> for <a href="/?license=Fedora:MIT-Khronos-old"><span class="licensename"><span class="namespace">Fedora:</span>MIT-Khronos-old</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>MIT-Khronos-old</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Khronos-old</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d2b1fcedd2516287844fdb30ba984abf">[<a href="/fact/FedoraEntry/d2b1fcedd2516287844fdb30ba984abf">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:MIT-Khronos-old&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MIT-Khronos-old&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;d2b1fcedd2516287844fdb30ba984abf&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;MIT-Khronos-old&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:MIT-Khronos-old&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li></ul></body></html>

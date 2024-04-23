@@ -1,0 +1,2041 @@
+<html><head><title>ldbcollector: spdx:blessing</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:blessing</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>blessing</span></li></ul></li><li><b>other LicenseNames (13):</b><ul class="capsulUl clearfix"><li><span class="licensename">blessing</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>blessing</span></li><li><span class="licensename"><span class="namespace">cavil:</span>blessing</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Blessing</span></li><li><span class="licensename"><span class="namespace">fossology:</span>blessing</span></li><li><span class="licensename"><span class="namespace">osadl:</span>blessing</span></li><li><span class="licensename"><span class="namespace">scancode:</span>blessing</span></li><li><span class="licensename"><span class="namespace">spdx:</span>blessing</span></li><li><span class="licensename">scancode://blessing</span></li><li><span class="licensename">scancode:blessing</span></li><li><span class="licensename">SQLite Blessing</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>SQLite Blessing</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>SQLite Blessing</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Public Domain</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:a2b17a0022814594e2d1b8f265238a44">[<a href="/fact/BlueOakCouncil/a2b17a0022814594e2d1b8f265238a44">BlueOakCouncil</a>]</span>)</span></li><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:539b940af6738ed8bf5cfd0fc0ba930b">[<a href="/fact/ScancodeData/539b940af6738ed8bf5cfd0fc0ba930b">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f0e650cd77eb38417a919eb065fc9d16">[<a href="/fact/SPDXLicense/f0e650cd77eb38417a919eb065fc9d16">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:99a5e8f55de9227c37508a4097ccd7af">[<a href="/fact/FedoraEntry/99a5e8f55de9227c37508a4097ccd7af">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:a2b17a0022814594e2d1b8f265238a44">[<a href="/fact/BlueOakCouncil/a2b17a0022814594e2d1b8f265238a44">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:c9bd3339329b4cd892b7046d17c6e903">[<a href="/fact/MetaeffektLicense/c9bd3339329b4cd892b7046d17c6e903">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:23ef6ac18f75438c720fedde4ecc0b87">[<a href="/fact/OrtLicenseCategorization/23ef6ac18f75438c720fedde4ecc0b87">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:23ef6ac18f75438c720fedde4ecc0b87">[<a href="/fact/OrtLicenseCategorization/23ef6ac18f75438c720fedde4ecc0b87">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ecdb70459523794f00bc8a2914b0ae45">[<a href="/fact/OrtLicenseCategorization/ecdb70459523794f00bc8a2914b0ae45">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9" target="_blank">https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9</a></li><li><a href="https://sqlite.org/src/artifact/df5091916dbb40e6" target="_blank">https://sqlite.org/src/artifact/df5091916dbb40e6</a></li><li><a href="https://spdx.org/licenses/blessing.html" target="_blank">https://spdx.org/licenses/blessing.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://sqlite.org/src/artifact/df5091916dbb40e6</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:
+
+May you do good and not evil.
+May you find forgiveness for yourself and forgive others.
+May you share freely, never taking more than you give.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;p&gt;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;&lt;p&gt;May you do good and not evil.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;&lt;p&gt;May you find forgiveness for yourself and forgive others.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;&lt;p&gt;May you share freely, never taking more than you give.&lt;/p&gt;
+&lt;/li&gt;
+        
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>The author disclaims copyright to this source code.
+In place of a legal notice, here is a blessing:
+   May you do good and not evil.
+   May you find forgiveness for yourself and forgive others.
+   May you share freely, never taking more than you give.</pre></details></li><li><details><summary>Text:</summary><pre>The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:
+
+   
+
+   May you do good and not evil.
+
+   
+
+   May you find forgiveness for yourself and forgive others.
+
+   
+
+   May you share freely, never taking more than you give.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/f0e650cd77eb38417a919eb065fc9d16">SPDXLicense:f0e650cd77eb38417a919eb065fc9d16</a> for <a href="/?license=spdx:blessing"><span class="licensename"><span class="namespace">spdx:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>blessing</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SQLite Blessing</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f0e650cd77eb38417a919eb065fc9d16">[<a href="/fact/SPDXLicense/f0e650cd77eb38417a919eb065fc9d16">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9" target="_blank">https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9</a></li><li><a href="https://sqlite.org/src/artifact/df5091916dbb40e6" target="_blank">https://sqlite.org/src/artifact/df5091916dbb40e6</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:
+
+May you do good and not evil.
+May you find forgiveness for yourself and forgive others.
+May you share freely, never taking more than you give.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;p&gt;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;&lt;p&gt;May you do good and not evil.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;&lt;p&gt;May you find forgiveness for yourself and forgive others.&lt;/p&gt;
+&lt;/li&gt;
+            
+&lt;li&gt;&lt;p&gt;May you share freely, never taking more than you give.&lt;/p&gt;
+&lt;/li&gt;
+        
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:blessing&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SQLite Blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;f0e650cd77eb38417a919eb065fc9d16&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:\n\nMay you do good and not evil.\nMay you find forgiveness for yourself and forgive others.\nMay you share freely, never taking more than you give.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;p&gt;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;&lt;p&gt;May you do good and not evil.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;&lt;p&gt;May you find forgiveness for yourself and forgive others.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;&lt;p&gt;May you share freely, never taking more than you give.&lt;/p&gt;\n&lt;/li&gt;\n        \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:23Z&quot;,
+                &quot;url&quot;: &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:23Z&quot;,
+                &quot;url&quot;: &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:blessing&quot;,
+        &quot;licenseText&quot;: &quot;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:\n\nMay you do good and not evil.\nMay you find forgiveness for yourself and forgive others.\nMay you share freely, never taking more than you give.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;p&gt;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;&lt;p&gt;May you do good and not evil.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;&lt;p&gt;May you find forgiveness for yourself and forgive others.&lt;/p&gt;\n&lt;/li&gt;\n            \n&lt;li&gt;&lt;p&gt;May you share freely, never taking more than you give.&lt;/p&gt;\n&lt;/li&gt;\n        \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;SQLite Blessing&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;,
+            &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:\n\n   May you do good and not evil.\n\n   May you find forgiveness for yourself and forgive others.\n\n   May you share freely, never taking more than you give.\n\n   &quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/99a5e8f55de9227c37508a4097ccd7af">FedoraEntry:99a5e8f55de9227c37508a4097ccd7af</a> for <a href="/?license=Fedora:Blessing"><span class="licensename"><span class="namespace">Fedora:</span>Blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Blessing</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>blessing</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:99a5e8f55de9227c37508a4097ccd7af">[<a href="/fact/FedoraEntry/99a5e8f55de9227c37508a4097ccd7af">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Blessing&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:blessing&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;99a5e8f55de9227c37508a4097ccd7af&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Blessing&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:blessing&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/a2b17a0022814594e2d1b8f265238a44">BlueOakCouncil:a2b17a0022814594e2d1b8f265238a44</a> for <a href="/?license=BlueOak:blessing"><span class="licensename"><span class="namespace">BlueOak:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>blessing</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SQLite Blessing</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:a2b17a0022814594e2d1b8f265238a44">[<a href="/fact/BlueOakCouncil/a2b17a0022814594e2d1b8f265238a44">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:a2b17a0022814594e2d1b8f265238a44">[<a href="/fact/BlueOakCouncil/a2b17a0022814594e2d1b8f265238a44">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/blessing.html" target="_blank">https://spdx.org/licenses/blessing.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:blessing&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SQLite Blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;a2b17a0022814594e2d1b8f265238a44&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/blessing.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;blessing&quot;,
+                &quot;_name&quot;: &quot;SQLite Blessing&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/blessing.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLRule/1e0dfa379dd17764f073a7ea9b2317c1">OSADLRule:1e0dfa379dd17764f073a7ea9b2317c1</a> for <a href="/?license=osadl:blessing"><span class="licensename"><span class="namespace">osadl:</span>blessing</span></a></h3><pre>USE CASE Source code delivery OR Binary delivery
+</pre><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>blessing</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>blessing</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;osadl:blessing&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLRule&quot;,
+        &quot;1e0dfa379dd17764f073a7ea9b2317c1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseRule&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n&quot;,
+        &quot;spdxId&quot;: &quot;osadl:blessing&quot;
+    },
+    &quot;type&quot;: &quot;OSADLRule&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLMatrix/57d0fc504b604234898c1ddd76332df2">OSADLMatrix:57d0fc504b604234898c1ddd76332df2</a> for <a href="/?license=osadl:blessing"><span class="licensename"><span class="namespace">osadl:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>blessing</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;osadl:blessing&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLMatrix&quot;,
+        &quot;57d0fc504b604234898c1ddd76332df2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;0BSD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Same&quot;,
+                    &quot;_explanation&quot;: &quot;n.a.&quot;,
+                    &quot;_other&quot;: &quot;blessing&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC0-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;curl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;EFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.2&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFAP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFUL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLR&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLRWD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FTL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;HPND&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IBM-pibs&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ICU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IJG&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ImageMagick&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Info-ZIP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;IPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ISC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;JasPer-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Libpng&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libpng-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libtiff&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Minpack&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MirOS&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT-CMU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;MS-PL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MS-RL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NBPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NCSA&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NTP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;OpenSSL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;OSL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PHP-3.01&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PostgreSQL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Python-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Qhull&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;RSA-MD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Saxpath&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;Sleepycat&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SMLNJ&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-short&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SunPro&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unlicense&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;UPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-19980720&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-20150513&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;WTFPL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;X11&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;XFree86-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Zlib&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ZPL-2.0&quot;
+                }
+            ],
+            &quot;tag&quot;: &quot;LicenseCompatibilities&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_name&quot;: &quot;osadl:blessing&quot;,
+        &quot;compatibilities&quot;: [
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;0BSD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Same&quot;,
+                &quot;_explanation&quot;: &quot;n.a.&quot;,
+                &quot;_other&quot;: &quot;blessing&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC0-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;curl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;EFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.2&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFAP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFUL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLR&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLRWD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FTL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;HPND&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IBM-pibs&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ICU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IJG&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ImageMagick&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Info-ZIP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;IPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ISC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;JasPer-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Libpng&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libpng-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libtiff&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Minpack&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MirOS&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT-CMU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;MS-PL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MS-RL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NBPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NCSA&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NTP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;OpenSSL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;OSL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PHP-3.01&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PostgreSQL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Python-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Qhull&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;RSA-MD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Saxpath&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the blessing license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;Sleepycat&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SMLNJ&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-short&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SunPro&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unlicense&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;UPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-19980720&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-20150513&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;WTFPL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;X11&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;XFree86-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Zlib&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the blessing license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ZPL-2.0&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;OSADLMatrix&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/539b940af6738ed8bf5cfd0fc0ba930b">ScancodeData:539b940af6738ed8bf5cfd0fc0ba930b</a> for <a href="/?license=scancode:blessing"><span class="licensename"><span class="namespace">scancode:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>blessing</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">SQLite Blessing</span></li><li><span class="licensename">SQLite Blessing</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:539b940af6738ed8bf5cfd0fc0ba930b">[<a href="/fact/ScancodeData/539b940af6738ed8bf5cfd0fc0ba930b">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9" target="_blank">https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9</a></li><li><a href="https://sqlite.org/src/artifact/df5091916dbb40e6" target="_blank">https://sqlite.org/src/artifact/df5091916dbb40e6</a></li></ul><h3>Other Statements</h3><ul><li>https://sqlite.org/src/artifact/df5091916dbb40e6</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The author disclaims copyright to this source code.
+In place of a legal notice, here is a blessing:
+   May you do good and not evil.
+   May you find forgiveness for yourself and forgive others.
+   May you share freely, never taking more than you give.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:blessing&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SQLite Blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SQLite Blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;539b940af6738ed8bf5cfd0fc0ba930b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The author disclaims copyright to this source code.\nIn place of a legal notice, here is a blessing:\n   May you do good and not evil.\n   May you find forgiveness for yourself and forgive others.\n   May you share freely, never taking more than you give.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;,
+        &quot;_key&quot;: &quot;blessing&quot;,
+        &quot;_name&quot;: &quot;SQLite Blessing&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;,
+            &quot;https://sqlite.org/src/artifact/df5091916dbb40e6&quot;
+        ],
+        &quot;_owner&quot;: &quot;SQLite&quot;,
+        &quot;_shortName&quot;: &quot;SQLite Blessing&quot;,
+        &quot;_spdxId&quot;: &quot;blessing&quot;,
+        &quot;_text&quot;: &quot;The author disclaims copyright to this source code.\nIn place of a legal notice, here is a blessing:\n   May you do good and not evil.\n   May you find forgiveness for yourself and forgive others.\n   May you share freely, never taking more than you give.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/9ddd98066446ebc4531365e3b681b92b">Fossology:9ddd98066446ebc4531365e3b681b92b</a> for <a href="/?license=fossology:blessing"><span class="licensename"><span class="namespace">fossology:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>blessing</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SQLite Blessing</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9" target="_blank">https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:
+
+   
+
+   May you do good and not evil.
+
+   
+
+   May you find forgiveness for yourself and forgive others.
+
+   
+
+   May you share freely, never taking more than you give.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:blessing&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SQLite Blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;9ddd98066446ebc4531365e3b681b92b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:\n\n   \n\n   May you do good and not evil.\n\n   \n\n   May you find forgiveness for yourself and forgive others.\n\n   \n\n   May you share freely, never taking more than you give.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;SQLite Blessing&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:blessing&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:\n\n   \n\n   May you do good and not evil.\n\n   \n\n   May you find forgiveness for yourself and forgive others.\n\n   \n\n   May you share freely, never taking more than you give.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/23ef6ac18f75438c720fedde4ecc0b87">OrtLicenseCategorization:23ef6ac18f75438c720fedde4ecc0b87</a> for <a href="/?license=SPDX:blessing"><span class="licensename"><span class="namespace">SPDX:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>blessing</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:23ef6ac18f75438c720fedde4ecc0b87">[<a href="/fact/OrtLicenseCategorization/23ef6ac18f75438c720fedde4ecc0b87">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:23ef6ac18f75438c720fedde4ecc0b87">[<a href="/fact/OrtLicenseCategorization/23ef6ac18f75438c720fedde4ecc0b87">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:blessing&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;23ef6ac18f75438c720fedde4ecc0b87&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:blessing&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/ecdb70459523794f00bc8a2914b0ae45">OrtLicenseCategorization:ecdb70459523794f00bc8a2914b0ae45</a> for <a href="/?license=SPDX:blessing"><span class="licensename"><span class="namespace">SPDX:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>blessing</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ecdb70459523794f00bc8a2914b0ae45">[<a href="/fact/OrtLicenseCategorization/ecdb70459523794f00bc8a2914b0ae45">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:blessing&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;ecdb70459523794f00bc8a2914b0ae45&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;contents&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                &quot;name&quot;: &quot;public-domain&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:blessing&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/3a18501809eabb9af2e0d272f86adff2">CavilLicenseChange:3a18501809eabb9af2e0d272f86adff2</a> for <a href="/?license=cavil:blessing"><span class="licensename"><span class="namespace">cavil:</span>blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>blessing</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">blessing</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:blessing&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;3a18501809eabb9af2e0d272f86adff2&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;blessing&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:blessing&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/c9bd3339329b4cd892b7046d17c6e903">MetaeffektLicense:c9bd3339329b4cd892b7046d17c6e903</a> for <a href="/?license=metaeffekt:SQLite Blessing"><span class="licensename"><span class="namespace">metaeffekt:</span>SQLite Blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>SQLite Blessing</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>blessing</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>blessing</span></li><li><span class="licensename">Public Domain</span></li><li><span class="licensename">SQLite Blessing</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:c9bd3339329b4cd892b7046d17c6e903">[<a href="/fact/MetaeffektLicense/c9bd3339329b4cd892b7046d17c6e903">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:SQLite Blessing&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:blessing&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Public Domain&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SQLite Blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;c9bd3339329b4cd892b7046d17c6e903&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;SQLite Blessing&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:SQLite Blessing&quot;,
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:blessing&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:blessing&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/80363f8a04987184e92e1fc95f6be9a0">FossLicense:80363f8a04987184e92e1fc95f6be9a0</a> for <a href="/?license=foss-license:SQLite Blessing"><span class="licensename"><span class="namespace">foss-license:</span>SQLite Blessing</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>SQLite Blessing</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">blessing</span></li><li><span class="licensename"><span class="namespace">scancode:</span>blessing</span></li><li><span class="licensename">scancode://blessing</span></li><li><span class="licensename">scancode:blessing</span></li><li><span class="licensename">SQLite Blessing</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:SQLite Blessing&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SQLite Blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:blessing&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;80363f8a04987184e92e1fc95f6be9a0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;blessing&quot;,
+            &quot;SQLite Blessing&quot;,
+            &quot;scancode://blessing&quot;,
+            &quot;scancode:blessing&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;SQLite Blessing&quot;,
+        &quot;scancode_key&quot;: &quot;blessing&quot;,
+        &quot;spdxid&quot;: &quot;blessing&quot;,
+        &quot;text&quot;: &quot;The author disclaims copyright to this source code.\nIn place of a legal notice, here is a blessing:\n   May you do good and not evil.\n   May you find forgiveness for yourself and forgive others.\n   May you share freely, never taking more than you give.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li></ul></body></html>

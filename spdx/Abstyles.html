@@ -1,0 +1,917 @@
+<html><head><title>ldbcollector: spdx:Abstyles</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Abstyles</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Abstyles</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Abstyles</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Abstyles</span></li><li><span class="licensename"><span class="namespace">scancode:</span>abstyles</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></li><li><span class="licensename">Abstyles License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Abstyles License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d89a7812841cb0e0c8cfaf684e8b9e11">[<a href="/fact/ScancodeData/d89a7812841cb0e0c8cfaf684e8b9e11">ScancodeData</a>]</span><span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:26d5cdfb1de77fa14faedcfc6053bcde">[<a href="/fact/SPDXLicense/26d5cdfb1de77fa14faedcfc6053bcde">SPDXLicense</a>]</span><span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:562294125378afa6017777082dc24cac">[<a href="/fact/FedoraEntry/562294125378afa6017777082dc24cac">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:5ec4d8b07501aa3b6d5195d86a69a21e">[<a href="/fact/MetaeffektLicense/5ec4d8b07501aa3b6d5195d86a69a21e">MetaeffektLicense</a>]</span>)</span></li><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c9ebb3adb7ffeab97cbad89c2672674a">[<a href="/fact/OrtLicenseCategorization/c9ebb3adb7ffeab97cbad89c2672674a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c9ebb3adb7ffeab97cbad89c2672674a">[<a href="/fact/OrtLicenseCategorization/c9ebb3adb7ffeab97cbad89c2672674a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>the latext2e, verbatim-manual and abstyles are similar licenses<span class="provided-by">(provided by: <span title="ScancodeData:d89a7812841cb0e0c8cfaf684e8b9e11">[<a href="/fact/ScancodeData/d89a7812841cb0e0c8cfaf684e8b9e11">ScancodeData</a>]</span>)</span></li><li><b>HermineLicense: </b>&quot;Abstyles&quot; is of radical: Abstyles<span class="provided-by">(provided by: <span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Abstyles" target="_blank">https://fedoraproject.org/wiki/Licensing/Abstyles</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/Abstyles</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode
+(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.
+See the file APREAMBL.DOC for a detailed documentation.
+
+This program is distributed WITHOUT ANY WARRANTY, express or implied.
+
+Copyright (C) 1991, 1992 Hans-Hermann Bode
+
+Permission is granted to make and distribute verbatim copies of this  document provided that the copyright notice and this permission notice are preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode
+        &lt;br /&gt;
+
+(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&amp;apos; family, version 1.10.
+        &lt;br /&gt;
+
+See the file APREAMBL.DOC for a detailed documentation.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;This program is distributed WITHOUT ANY WARRANTY, express or implied.&lt;/p&gt;
+
+      &lt;p&gt;Copyright (C) 1991, 1992 Hans-Hermann Bode&lt;/p&gt;
+
+      &lt;p&gt;Permission is granted to make and distribute verbatim copies of this document provided that the copyright
+         notice and this permission notice are preserved on all copies.&lt;/p&gt;
+
+      &lt;p&gt;Permission is granted to copy and distribute modified versions of this document under the conditions for
+         verbatim copying, provided that the entire resulting derived work is distributed under the terms of a
+         permission notice identical to this one.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>This program is distributed WITHOUT ANY WARRANTY, express or implied.  
+
+Permission is granted to make and distribute verbatim copies of this
+document provided that the copyright notice and this permission notice are
+preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this
+document under the conditions for verbatim copying, provided that the
+entire resulting derived work is distributed under the terms of a
+permission notice identical to this one.</pre></details></li><li><details><summary>Text:</summary><pre>This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode
+
+(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.
+
+See the file APREAMBL.DOC for a detailed documentation.
+
+This program is distributed WITHOUT ANY WARRANTY, express or implied.
+
+Copyright (C) 1991, 1992 Hans-Hermann Bode
+
+Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/26d5cdfb1de77fa14faedcfc6053bcde">SPDXLicense:26d5cdfb1de77fa14faedcfc6053bcde</a> for <a href="/?license=spdx:Abstyles"><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:26d5cdfb1de77fa14faedcfc6053bcde">[<a href="/fact/SPDXLicense/26d5cdfb1de77fa14faedcfc6053bcde">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Abstyles" target="_blank">https://fedoraproject.org/wiki/Licensing/Abstyles</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode
+(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.
+See the file APREAMBL.DOC for a detailed documentation.
+
+This program is distributed WITHOUT ANY WARRANTY, express or implied.
+
+Copyright (C) 1991, 1992 Hans-Hermann Bode
+
+Permission is granted to make and distribute verbatim copies of this  document provided that the copyright notice and this permission notice are preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode
+        &lt;br /&gt;
+
+(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&amp;apos; family, version 1.10.
+        &lt;br /&gt;
+
+See the file APREAMBL.DOC for a detailed documentation.
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;This program is distributed WITHOUT ANY WARRANTY, express or implied.&lt;/p&gt;
+
+      &lt;p&gt;Copyright (C) 1991, 1992 Hans-Hermann Bode&lt;/p&gt;
+
+      &lt;p&gt;Permission is granted to make and distribute verbatim copies of this document provided that the copyright
+         notice and this permission notice are preserved on all copies.&lt;/p&gt;
+
+      &lt;p&gt;Permission is granted to copy and distribute modified versions of this document under the conditions for
+         verbatim copying, provided that the entire resulting derived work is distributed under the terms of a
+         permission notice identical to this one.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Abstyles&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Abstyles License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;26d5cdfb1de77fa14faedcfc6053bcde&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode\n(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.\nSee the file APREAMBL.DOC for a detailed documentation.\n\nThis program is distributed WITHOUT ANY WARRANTY, express or implied.\n\nCopyright (C) 1991, 1992 Hans-Hermann Bode\n\nPermission is granted to make and distribute verbatim copies of this  document provided that the copyright notice and this permission notice are preserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode\n        &lt;br /&gt;\n\n(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&amp;apos; family, version 1.10.\n        &lt;br /&gt;\n\nSee the file APREAMBL.DOC for a detailed documentation.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;This program is distributed WITHOUT ANY WARRANTY, express or implied.&lt;/p&gt;\n\n      &lt;p&gt;Copyright (C) 1991, 1992 Hans-Hermann Bode&lt;/p&gt;\n\n      &lt;p&gt;Permission is granted to make and distribute verbatim copies of this document provided that the copyright\n         notice and this permission notice are preserved on all copies.&lt;/p&gt;\n\n      &lt;p&gt;Permission is granted to copy and distribute modified versions of this document under the conditions for\n         verbatim copying, provided that the entire resulting derived work is distributed under the terms of a\n         permission notice identical to this one.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:59Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Abstyles&quot;,
+        &quot;licenseText&quot;: &quot;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode\n(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.\nSee the file APREAMBL.DOC for a detailed documentation.\n\nThis program is distributed WITHOUT ANY WARRANTY, express or implied.\n\nCopyright (C) 1991, 1992 Hans-Hermann Bode\n\nPermission is granted to make and distribute verbatim copies of this  document provided that the copyright notice and this permission notice are preserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode\n        &lt;br /&gt;\n\n(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&amp;apos; family, version 1.10.\n        &lt;br /&gt;\n\nSee the file APREAMBL.DOC for a detailed documentation.\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;This program is distributed WITHOUT ANY WARRANTY, express or implied.&lt;/p&gt;\n\n      &lt;p&gt;Copyright (C) 1991, 1992 Hans-Hermann Bode&lt;/p&gt;\n\n      &lt;p&gt;Permission is granted to make and distribute verbatim copies of this document provided that the copyright\n         notice and this permission notice are preserved on all copies.&lt;/p&gt;\n\n      &lt;p&gt;Permission is granted to copy and distribute modified versions of this document under the conditions for\n         verbatim copying, provided that the entire resulting derived work is distributed under the terms of a\n         permission notice identical to this one.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Abstyles License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode\n\n(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.\n\nSee the file APREAMBL.DOC for a detailed documentation.\n\n&lt;&lt;endOptional&gt;&gt;\n\nThis program is distributed WITHOUT ANY WARRANTY, express or implied.\n\nCopyright (C) 1991, 1992 Hans-Hermann Bode\n\nPermission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/562294125378afa6017777082dc24cac">FedoraEntry:562294125378afa6017777082dc24cac</a> for <a href="/?license=Fedora:Abstyles"><span class="licensename"><span class="namespace">Fedora:</span>Abstyles</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Abstyles</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles</span></li><li><span class="licensename">Abstyles License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:562294125378afa6017777082dc24cac">[<a href="/fact/FedoraEntry/562294125378afa6017777082dc24cac">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Abstyles" target="_blank">https://fedoraproject.org/wiki/Licensing/Abstyles</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Abstyles&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Abstyles&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Abstyles License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Abstyles&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;562294125378afa6017777082dc24cac&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Abstyles&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Abstyles License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Abstyles&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Abstyles&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/d89a7812841cb0e0c8cfaf684e8b9e11">ScancodeData:d89a7812841cb0e0c8cfaf684e8b9e11</a> for <a href="/?license=scancode:abstyles"><span class="licensename"><span class="namespace">scancode:</span>abstyles</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>abstyles</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles License</span></li><li><span class="licensename">Abstyles License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d89a7812841cb0e0c8cfaf684e8b9e11">[<a href="/fact/ScancodeData/d89a7812841cb0e0c8cfaf684e8b9e11">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>the latext2e, verbatim-manual and abstyles are similar licenses<span class="provided-by">(provided by: <span title="ScancodeData:d89a7812841cb0e0c8cfaf684e8b9e11">[<a href="/fact/ScancodeData/d89a7812841cb0e0c8cfaf684e8b9e11">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/Abstyles</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This program is distributed WITHOUT ANY WARRANTY, express or implied.  
+
+Permission is granted to make and distribute verbatim copies of this
+document provided that the copyright notice and this permission notice are
+preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this
+document under the conditions for verbatim copying, provided that the
+entire resulting derived work is distributed under the terms of a
+permission notice identical to this one.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:abstyles&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Abstyles License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Abstyles License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;d89a7812841cb0e0c8cfaf684e8b9e11&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;the latext2e, verbatim-manual and abstyles are similar licenses&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;,
+        &quot;_key&quot;: &quot;abstyles&quot;,
+        &quot;_name&quot;: &quot;Abstyles License&quot;,
+        &quot;_notes&quot;: &quot;the latext2e, verbatim-manual and abstyles are similar licenses&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;CTAN&quot;,
+        &quot;_shortName&quot;: &quot;Abstyles License&quot;,
+        &quot;_spdxId&quot;: &quot;Abstyles&quot;,
+        &quot;_text&quot;: &quot;This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/913c4f4c1a2a4b863d42594372a4b212">Fossology:913c4f4c1a2a4b863d42594372a4b212</a> for <a href="/?license=fossology:Abstyles"><span class="licensename"><span class="namespace">fossology:</span>Abstyles</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Abstyles</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Abstyles" target="_blank">https://fedoraproject.org/wiki/Licensing/Abstyles</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode
+
+(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.
+
+See the file APREAMBL.DOC for a detailed documentation.
+
+This program is distributed WITHOUT ANY WARRANTY, express or implied.
+
+Copyright (C) 1991, 1992 Hans-Hermann Bode
+
+Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Abstyles&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Abstyles License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;913c4f4c1a2a4b863d42594372a4b212&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode\n\n(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.\n\nSee the file APREAMBL.DOC for a detailed documentation.\n\nThis program is distributed WITHOUT ANY WARRANTY, express or implied.\n\nCopyright (C) 1991, 1992 Hans-Hermann Bode\n\nPermission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Abstyles License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Abstyles&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;This is APREAMBL.TEX, version 1.10e, written by Hans-Hermann Bode\n\n(HHBODE@DOSUNI1.BITNET), for the BibTeX `adaptable&#39; family, version 1.10.\n\nSee the file APREAMBL.DOC for a detailed documentation.\n\nThis program is distributed WITHOUT ANY WARRANTY, express or implied.\n\nCopyright (C) 1991, 1992 Hans-Hermann Bode\n\nPermission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this document under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.&quot;,
+        &quot;_rf_text_updatable&quot;: true,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c9ebb3adb7ffeab97cbad89c2672674a">OrtLicenseCategorization:c9ebb3adb7ffeab97cbad89c2672674a</a> for <a href="/?license=SPDX:Abstyles"><span class="licensename"><span class="namespace">SPDX:</span>Abstyles</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Abstyles</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c9ebb3adb7ffeab97cbad89c2672674a">[<a href="/fact/OrtLicenseCategorization/c9ebb3adb7ffeab97cbad89c2672674a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c9ebb3adb7ffeab97cbad89c2672674a">[<a href="/fact/OrtLicenseCategorization/c9ebb3adb7ffeab97cbad89c2672674a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Abstyles&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c9ebb3adb7ffeab97cbad89c2672674a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Abstyles&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/954c1decdb46f85f6e59e0fb8cd97d81">CavilLicenseChange:954c1decdb46f85f6e59e0fb8cd97d81</a> for <a href="/?license=cavil:Abstyles"><span class="licensename"><span class="namespace">cavil:</span>Abstyles</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Abstyles</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Abstyles&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Abstyles&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;954c1decdb46f85f6e59e0fb8cd97d81&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Abstyles&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Abstyles&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/5ec4d8b07501aa3b6d5195d86a69a21e">MetaeffektLicense:5ec4d8b07501aa3b6d5195d86a69a21e</a> for <a href="/?license=metaeffekt:Abstyles License"><span class="licensename"><span class="namespace">metaeffekt:</span>Abstyles License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Abstyles License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles</span></li><li><span class="licensename"><span class="namespace">scancode:</span>abstyles</span></li><li><span class="licensename">Abstyles License</span></li><li><span class="licensename">ABSTYLES LICENSE</span></li><li><span class="licensename">ABSTYLES License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:5ec4d8b07501aa3b6d5195d86a69a21e">[<a href="/fact/MetaeffektLicense/5ec4d8b07501aa3b6d5195d86a69a21e">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Abstyles License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Abstyles&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Abstyles&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Abstyles License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ABSTYLES LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ABSTYLES License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:abstyles&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;5ec4d8b07501aa3b6d5195d86a69a21e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Abstyles License&quot;,
+            &quot;ABSTYLES LICENSE&quot;,
+            &quot;ABSTYLES License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Abstyles License&quot;,
+        &quot;_category&quot;: &quot;Abstyles&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:abstyles&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Abstyles&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HermineData">HermineData</a>: <a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb</a> for <a href="/?license=spdx:Abstyles"><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></a></h3><h4>Obligations</h4><ul><li><h5>Preserve legal mentions in Source Code</h5><pre>Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.</pre><p><strong>License:</strong><ul><li>Abstyles</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Preserve legal mentions in source code</h5><p><strong>Description:</strong>Keep all legal notices and license texts intact in the Source Code, including in the headers.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Licence and copyright notices in documentation</h5><pre>Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.</pre><p><strong>License:</strong><ul><li>Abstyles</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Reproduce license and legal mentions in documentation</h5><p><strong>Description:</strong>Reproduce within the documentation the complete text of the licenses, copyright notices and other texts related to involved Intellectual Property.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Abstyles</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Abstyles License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HermineLicense: </b>&quot;Abstyles&quot; is of radical: Abstyles<span class="provided-by">(provided by: <span title="HermineLicense:81ba5a5bc30a6c24ed94ae1fb8921ebb">[<a href="/fact/HermineLicense/81ba5a5bc30a6c24ed94ae1fb8921ebb">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Abstyles" target="_blank">https://fedoraproject.org/wiki/Licensing/Abstyles</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Abstyles&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Abstyles License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HermineLicense&quot;,
+        &quot;81ba5a5bc30a6c24ed94ae1fb8921ebb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;HermineLicense&quot;,
+                        &quot;We consider it is FOSS&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;\&quot;Abstyles\&quot; is of radical: Abstyles&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;autoupgrade&quot;: null,
+        &quot;comment&quot;: &quot;&quot;,
+        &quot;copyleft&quot;: &quot;None&quot;,
+        &quot;ethical_clause&quot;: false,
+        &quot;foss&quot;: &quot;Yes&quot;,
+        &quot;fsf_approved&quot;: null,
+        &quot;inspiration_spdx&quot;: &quot;&quot;,
+        &quot;law_choice&quot;: &quot;&quot;,
+        &quot;license_version&quot;: &quot;&quot;,
+        &quot;long_name&quot;: &quot;Abstyles License&quot;,
+        &quot;non_commercial&quot;: false,
+        &quot;non_tivoisation&quot;: false,
+        &quot;obligations&quot;: [
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Keep all legal notices and license texts intact in the Source Code, including in the headers.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Preserve legal mentions in source code&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Abstyles&quot;
+                ],
+                &quot;name&quot;: &quot;Preserve legal mentions in Source Code&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Reproduce within the documentation the complete text of the licenses, copyright notices and other texts related to involved Intellectual Property.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Reproduce license and legal mentions in documentation&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Abstyles&quot;
+                ],
+                &quot;name&quot;: &quot;Licence and copyright notices in documentation&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.&quot;
+            }
+        ],
+        &quot;osi_approved&quot;: false,
+        &quot;patent_grant&quot;: false,
+        &quot;radical&quot;: &quot;Abstyles&quot;,
+        &quot;spdx_id&quot;: &quot;Abstyles&quot;,
+        &quot;steward&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Abstyles&quot;,
+        &quot;verbatim&quot;: &quot;&quot;
+    },
+    &quot;type&quot;: &quot;HermineLicense&quot;
+}</pre></details></li></ul></body></html>

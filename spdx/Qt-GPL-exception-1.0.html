@@ -1,0 +1,390 @@
+<html><head><title>ldbcollector: spdx:Qt-GPL-exception-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Qt-GPL-exception-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Qt-GPL-exception-1.0</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qt Company Exception 1.0 (GPL)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qt Company Exception 1.0 (GPL)</span></li><li><span class="licensename">Qt GPL exception 1.0</span></li><li><span class="licensename">Qt-Exception-1.0-GPL</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qt-Exception-1.0-GPL</span></li><li><span class="licensename">qt-gpl-exception-1.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Qt-GPL-exception-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>qt-gpl-exception-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Qt-GPL-exception-1.0</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL Qt Exception</span></li><li><span class="licensename">Qt Company GPL Exception 1.0</span></li><li><span class="licensename">Qt-GPL-exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:0d10d0b9373cf2f48235c7e2346c2302">[<a href="/fact/ScancodeData/0d10d0b9373cf2f48235c7e2346c2302">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>Fossology: </b>Typically used with the GPL-3.0.<span class="provided-by">(provided by: <span title="Fossology:5e3fa8379d4b561baffbaa979d764b57">[<a href="/fact/Fossology/5e3fa8379d4b561baffbaa979d764b57">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT" target="_blank">http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT</a></li></ul><h3>Other Statements</h3><ul><li>http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Qt Company GPL Exception 1.0
+
+Exception 1:
+
+As a special exception you may create a larger work which contains the
+output of this application and distribute that work under terms of your
+choice, so long as the work is not otherwise derived from or based on
+this application and so long as the work does not in itself generate
+output that contains the output from this application in its original
+or modified form.
+
+Exception 2:
+
+As a special exception, you have permission to combine this application
+with Plugins licensed under the terms of your choice, to produce an
+executable, and to copy and distribute the resulting executable under
+the terms of your choice. However, the executable must be accompanied
+by a prominent notice offering all users of the executable the entire
+source code to this application, excluding the source code of the
+independent modules, but including any changes you have made to this
+application, under the terms of this license.</pre></details></li><li><details><summary>Text:</summary><pre>The Qt Company GPL Exception 1.0
+
+Exception 1:
+
+As a special exception, you may create a larger work which contains the output of this application and distribute that work under terms of your choice, so long as the work is not otherwise derived from or based on this application and so long as the work does not in itself generate output that contains the output from this application in its original or modified form.
+
+Exception 2:
+
+As a special exception, you have permission to combine this application with Plugins licensed under the terms of your choice, to produce an executable, and to copy and distribute the resulting executable under the terms of your choice. However, the executable must be accompanied by a prominent notice offering all users of the executable the entire source code to this application, excluding the source code of the independent modules, but including any changes you have made to this application, under the terms of this license.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/0d10d0b9373cf2f48235c7e2346c2302">ScancodeData:0d10d0b9373cf2f48235c7e2346c2302</a> for <a href="/?license=scancode:qt-gpl-exception-1.0"><span class="licensename"><span class="namespace">scancode:</span>qt-gpl-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>qt-gpl-exception-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qt GPL exception 1.0</span></li><li><span class="licensename">Qt GPL exception 1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:0d10d0b9373cf2f48235c7e2346c2302">[<a href="/fact/ScancodeData/0d10d0b9373cf2f48235c7e2346c2302">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Qt Company GPL Exception 1.0
+
+Exception 1:
+
+As a special exception you may create a larger work which contains the
+output of this application and distribute that work under terms of your
+choice, so long as the work is not otherwise derived from or based on
+this application and so long as the work does not in itself generate
+output that contains the output from this application in its original
+or modified form.
+
+Exception 2:
+
+As a special exception, you have permission to combine this application
+with Plugins licensed under the terms of your choice, to produce an
+executable, and to copy and distribute the resulting executable under
+the terms of your choice. However, the executable must be accompanied
+by a prominent notice offering all users of the executable the entire
+source code to this application, excluding the source code of the
+independent modules, but including any changes you have made to this
+application, under the terms of this license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:qt-gpl-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Qt GPL exception 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Qt GPL exception 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;0d10d0b9373cf2f48235c7e2346c2302&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Qt Company GPL Exception 1.0\n\nException 1:\n\nAs a special exception you may create a larger work which contains the\noutput of this application and distribute that work under terms of your\nchoice, so long as the work is not otherwise derived from or based on\nthis application and so long as the work does not in itself generate\noutput that contains the output from this application in its original\nor modified form.\n\nException 2:\n\nAs a special exception, you have permission to combine this application\nwith Plugins licensed under the terms of your choice, to produce an\nexecutable, and to copy and distribute the resulting executable under\nthe terms of your choice. However, the executable must be accompanied\nby a prominent notice offering all users of the executable the entire\nsource code to this application, excluding the source code of the\nindependent modules, but including any changes you have made to this\napplication, under the terms of this license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT&quot;,
+        &quot;_key&quot;: &quot;qt-gpl-exception-1.0&quot;,
+        &quot;_name&quot;: &quot;Qt GPL exception 1.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Qt Company&quot;,
+        &quot;_shortName&quot;: &quot;Qt GPL exception 1.0&quot;,
+        &quot;_spdxId&quot;: &quot;Qt-GPL-exception-1.0&quot;,
+        &quot;_text&quot;: &quot;The Qt Company GPL Exception 1.0\n\nException 1:\n\nAs a special exception you may create a larger work which contains the\noutput of this application and distribute that work under terms of your\nchoice, so long as the work is not otherwise derived from or based on\nthis application and so long as the work does not in itself generate\noutput that contains the output from this application in its original\nor modified form.\n\nException 2:\n\nAs a special exception, you have permission to combine this application\nwith Plugins licensed under the terms of your choice, to produce an\nexecutable, and to copy and distribute the resulting executable under\nthe terms of your choice. However, the executable must be accompanied\nby a prominent notice offering all users of the executable the entire\nsource code to this application, excluding the source code of the\nindependent modules, but including any changes you have made to this\napplication, under the terms of this license.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/5e3fa8379d4b561baffbaa979d764b57">Fossology:5e3fa8379d4b561baffbaa979d764b57</a> for <a href="/?license=fossology:Qt-GPL-exception-1.0"><span class="licensename"><span class="namespace">fossology:</span>Qt-GPL-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Qt-GPL-exception-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qt GPL exception 1.0</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>Typically used with the GPL-3.0.<span class="provided-by">(provided by: <span title="Fossology:5e3fa8379d4b561baffbaa979d764b57">[<a href="/fact/Fossology/5e3fa8379d4b561baffbaa979d764b57">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT" target="_blank">http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Qt Company GPL Exception 1.0
+
+Exception 1:
+
+As a special exception, you may create a larger work which contains the output of this application and distribute that work under terms of your choice, so long as the work is not otherwise derived from or based on this application and so long as the work does not in itself generate output that contains the output from this application in its original or modified form.
+
+Exception 2:
+
+As a special exception, you have permission to combine this application with Plugins licensed under the terms of your choice, to produce an executable, and to copy and distribute the resulting executable under the terms of your choice. However, the executable must be accompanied by a prominent notice offering all users of the executable the entire source code to this application, excluding the source code of the independent modules, but including any changes you have made to this application, under the terms of this license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Qt-GPL-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Qt GPL exception 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;5e3fa8379d4b561baffbaa979d764b57&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;Typically used with the GPL-3.0.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Qt Company GPL Exception 1.0\n\nException 1:\n\nAs a special exception, you may create a larger work which contains the output of this application and distribute that work under terms of your choice, so long as the work is not otherwise derived from or based on this application and so long as the work does not in itself generate output that contains the output from this application in its original or modified form.\n\nException 2:\n\nAs a special exception, you have permission to combine this application with Plugins licensed under the terms of your choice, to produce an executable, and to copy and distribute the resulting executable under the terms of your choice. However, the executable must be accompanied by a prominent notice offering all users of the executable the entire source code to this application, excluding the source code of the independent modules, but including any changes you have made to this application, under the terms of this license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Qt GPL exception 1.0&quot;,
+        &quot;_rf_notes&quot;: &quot;Typically used with the GPL-3.0.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Qt-GPL-exception-1.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The Qt Company GPL Exception 1.0\n\nException 1:\n\nAs a special exception, you may create a larger work which contains the output of this application and distribute that work under terms of your choice, so long as the work is not otherwise derived from or based on this application and so long as the work does not in itself generate output that contains the output from this application in its original or modified form.\n\nException 2:\n\nAs a special exception, you have permission to combine this application with Plugins licensed under the terms of your choice, to produce an executable, and to copy and distribute the resulting executable under the terms of your choice. However, the executable must be accompanied by a prominent notice offering all users of the executable the entire source code to this application, excluding the source code of the independent modules, but including any changes you have made to this application, under the terms of this license.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://code.qt.io/cgit/qt/qtbase.git/tree/LICENSE.GPL3-EXCEPT&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/6a49c454b0e0c213d1ddc1d79588dccb">MetaeffektLicense:6a49c454b0e0c213d1ddc1d79588dccb</a> for <a href="/?license=metaeffekt:Qt-Exception-1.0-GPL"><span class="licensename"><span class="namespace">metaeffekt:</span>Qt-Exception-1.0-GPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qt-Exception-1.0-GPL</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qt Company Exception 1.0 (GPL)</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Qt-GPL-exception-1.0</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL Qt Exception</span></li><li><span class="licensename">Qt Company GPL Exception 1.0</span></li><li><span class="licensename">Qt-GPL-exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>qt-gpl-exception-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Qt-Exception-1.0-GPL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Qt Company Exception 1.0 (GPL)&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:Qt-GPL-exception-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL Qt Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Qt-GPL-exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Qt Company GPL Exception 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:qt-gpl-exception-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;6a49c454b0e0c213d1ddc1d79588dccb&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Qt-GPL-exception&quot;,
+            &quot;Qt Company GPL Exception 1.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Qt Company Exception 1.0 (GPL)&quot;,
+        &quot;_category&quot;: &quot;GPL Qt Exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:qt-gpl-exception-1.0&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:Qt-Exception-1.0-GPL&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Qt-GPL-exception-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

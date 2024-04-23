@@ -1,0 +1,687 @@
+<html><head><title>ldbcollector: spdx:CrystalStacker</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:CrystalStacker</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">CrystalStacker</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>CrystalStacker</span></li><li><span class="licensename"><span class="namespace">cavil:</span>CrystalStacker</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>CrystalStacker</span></li><li><span class="licensename"><span class="namespace">fossology:</span>CrystalStacker</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CrystalStacker</span></li><li><span class="licensename">CrystalStacker License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>CrystalStacker License</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Crystal Stacker</span></li><li><span class="licensename">Crystal Stacker is freeware</span></li><li><span class="licensename">Crystal Stacker License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>crystal-stacker</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:ec82b0283e5c8b1db7c1c1c66d9d7a40">[<a href="/fact/BlueOakCouncil/ec82b0283e5c8b1db7c1c1c66d9d7a40">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0e3402363c46765a61bf5359103c1467">[<a href="/fact/SPDXLicense/0e3402363c46765a61bf5359103c1467">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:ab8757211468bb9cff5bb6d2090090dd">[<a href="/fact/FedoraEntry/ab8757211468bb9cff5bb6d2090090dd">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:ec82b0283e5c8b1db7c1c1c66d9d7a40">[<a href="/fact/BlueOakCouncil/ec82b0283e5c8b1db7c1c1c66d9d7a40">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f0b65ab152848fe032b2c3500045a032">[<a href="/fact/OrtLicenseCategorization/f0b65ab152848fe032b2c3500045a032">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f0b65ab152848fe032b2c3500045a032">[<a href="/fact/OrtLicenseCategorization/f0b65ab152848fe032b2c3500045a032">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker" target="_blank">https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker</a></li><li><a href="https://fedoraproject.org/wiki/Licensing/CrystalStacker" target="_blank">https://fedoraproject.org/wiki/Licensing/CrystalStacker</a></li><li><a href="https://spdx.org/licenses/CrystalStacker.html" target="_blank">https://spdx.org/licenses/CrystalStacker.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the &quot;Contacting Us&quot; section of this document if you need to contact us for any reason.
+
+Disclaimer
+
+NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the &quot;Contacting Us&quot; section of this document.
+
+The source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the &quot;Contacting Us&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this
+         document in it&amp;apos;s original form in your distribution. Please see the &amp;quot;Contacting Us&amp;quot; section of this
+         document if you need to contact us for any reason.&lt;/p&gt;
+
+      &lt;p&gt;Disclaimer&lt;/p&gt;
+
+      &lt;p&gt;NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for
+         damages caused by it, though the software is not known to cause any problems. If you have trouble with
+         the software, see the &amp;quot;Contacting Us&amp;quot; section of this document.&lt;/p&gt;
+
+      &lt;p&gt;The source code is provided as-is and you may do with it whatsoever you please provided that you include
+         this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees
+         regarding the usability of the source but are willing to help with any problems you might run into.
+         Please see the &amp;quot;Contacting Us&amp;quot; section of this document if you need to get in touch with us about any
+         issues you have regarding the source.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the &quot;Contacting Us&quot; section of this document if you need to contact us for any reason.
+
+Disclaimer
+
+NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the &quot;Contacting Us&quot; section of this document.
+
+The source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the &quot;Contacting Us&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/0e3402363c46765a61bf5359103c1467">SPDXLicense:0e3402363c46765a61bf5359103c1467</a> for <a href="/?license=spdx:CrystalStacker"><span class="licensename"><span class="namespace">spdx:</span>CrystalStacker</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CrystalStacker License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0e3402363c46765a61bf5359103c1467">[<a href="/fact/SPDXLicense/0e3402363c46765a61bf5359103c1467">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker" target="_blank">https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the &quot;Contacting Us&quot; section of this document if you need to contact us for any reason.
+
+Disclaimer
+
+NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the &quot;Contacting Us&quot; section of this document.
+
+The source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the &quot;Contacting Us&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this
+         document in it&amp;apos;s original form in your distribution. Please see the &amp;quot;Contacting Us&amp;quot; section of this
+         document if you need to contact us for any reason.&lt;/p&gt;
+
+      &lt;p&gt;Disclaimer&lt;/p&gt;
+
+      &lt;p&gt;NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for
+         damages caused by it, though the software is not known to cause any problems. If you have trouble with
+         the software, see the &amp;quot;Contacting Us&amp;quot; section of this document.&lt;/p&gt;
+
+      &lt;p&gt;The source code is provided as-is and you may do with it whatsoever you please provided that you include
+         this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees
+         regarding the usability of the source but are willing to help with any problems you might run into.
+         Please see the &amp;quot;Contacting Us&amp;quot; section of this document if you need to get in touch with us about any
+         issues you have regarding the source.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:CrystalStacker&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CrystalStacker License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;0e3402363c46765a61bf5359103c1467&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the \&quot;Contacting Us\&quot; section of this document if you need to contact us for any reason.\n\nDisclaimer\n\nNewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the \&quot;Contacting Us\&quot; section of this document.\n\nThe source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the \&quot;Contacting Us\&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this\n         document in it&amp;apos;s original form in your distribution. Please see the &amp;quot;Contacting Us&amp;quot; section of this\n         document if you need to contact us for any reason.&lt;/p&gt;\n\n      &lt;p&gt;Disclaimer&lt;/p&gt;\n\n      &lt;p&gt;NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for\n         damages caused by it, though the software is not known to cause any problems. If you have trouble with\n         the software, see the &amp;quot;Contacting Us&amp;quot; section of this document.&lt;/p&gt;\n\n      &lt;p&gt;The source code is provided as-is and you may do with it whatsoever you please provided that you include\n         this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees\n         regarding the usability of the source but are willing to help with any problems you might run into.\n         Please see the &amp;quot;Contacting Us&amp;quot; section of this document if you need to get in touch with us about any\n         issues you have regarding the source.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:07Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:CrystalStacker&quot;,
+        &quot;licenseText&quot;: &quot;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the \&quot;Contacting Us\&quot; section of this document if you need to contact us for any reason.\n\nDisclaimer\n\nNewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the \&quot;Contacting Us\&quot; section of this document.\n\nThe source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the \&quot;Contacting Us\&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this\n         document in it&amp;apos;s original form in your distribution. Please see the &amp;quot;Contacting Us&amp;quot; section of this\n         document if you need to contact us for any reason.&lt;/p&gt;\n\n      &lt;p&gt;Disclaimer&lt;/p&gt;\n\n      &lt;p&gt;NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for\n         damages caused by it, though the software is not known to cause any problems. If you have trouble with\n         the software, see the &amp;quot;Contacting Us&amp;quot; section of this document.&lt;/p&gt;\n\n      &lt;p&gt;The source code is provided as-is and you may do with it whatsoever you please provided that you include\n         this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees\n         regarding the usability of the source but are willing to help with any problems you might run into.\n         Please see the &amp;quot;Contacting Us&amp;quot; section of this document if you need to get in touch with us about any\n         issues you have regarding the source.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;CrystalStacker License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the \&quot;Contacting Us\&quot; section of this document if you need to contact us for any reason.\n\nDisclaimer\n\nNewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the \&quot;Contacting Us\&quot; section of this document.\n\nThe source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the \&quot;Contacting Us\&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/ab8757211468bb9cff5bb6d2090090dd">FedoraEntry:ab8757211468bb9cff5bb6d2090090dd</a> for <a href="/?license=Fedora:CrystalStacker"><span class="licensename"><span class="namespace">Fedora:</span>CrystalStacker</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Crystal Stacker</span></li><li><span class="licensename">Crystal Stacker License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:ab8757211468bb9cff5bb6d2090090dd">[<a href="/fact/FedoraEntry/ab8757211468bb9cff5bb6d2090090dd">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/CrystalStacker" target="_blank">https://fedoraproject.org/wiki/Licensing/CrystalStacker</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:CrystalStacker&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CrystalStacker&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Crystal Stacker License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Crystal Stacker&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;ab8757211468bb9cff5bb6d2090090dd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/CrystalStacker&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Crystal Stacker&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Crystal Stacker License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;CrystalStacker&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:CrystalStacker&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/CrystalStacker&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/ec82b0283e5c8b1db7c1c1c66d9d7a40">BlueOakCouncil:ec82b0283e5c8b1db7c1c1c66d9d7a40</a> for <a href="/?license=BlueOak:CrystalStacker"><span class="licensename"><span class="namespace">BlueOak:</span>CrystalStacker</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CrystalStacker License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:ec82b0283e5c8b1db7c1c1c66d9d7a40">[<a href="/fact/BlueOakCouncil/ec82b0283e5c8b1db7c1c1c66d9d7a40">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:ec82b0283e5c8b1db7c1c1c66d9d7a40">[<a href="/fact/BlueOakCouncil/ec82b0283e5c8b1db7c1c1c66d9d7a40">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/CrystalStacker.html" target="_blank">https://spdx.org/licenses/CrystalStacker.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:CrystalStacker&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CrystalStacker License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;ec82b0283e5c8b1db7c1c1c66d9d7a40&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/CrystalStacker.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;CrystalStacker&quot;,
+                &quot;_name&quot;: &quot;CrystalStacker License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/CrystalStacker.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/124ab7f3aaabedf719ba947caa82c9a2">Fossology:124ab7f3aaabedf719ba947caa82c9a2</a> for <a href="/?license=fossology:CrystalStacker"><span class="licensename"><span class="namespace">fossology:</span>CrystalStacker</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CrystalStacker License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker" target="_blank">https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the &quot;Contacting Us&quot; section of this document if you need to contact us for any reason.
+
+Disclaimer
+
+NewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the &quot;Contacting Us&quot; section of this document.
+
+The source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the &quot;Contacting Us&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:CrystalStacker&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CrystalStacker License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;124ab7f3aaabedf719ba947caa82c9a2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the \&quot;Contacting Us\&quot; section of this document if you need to contact us for any reason.\n\nDisclaimer\n\nNewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the \&quot;Contacting Us\&quot; section of this document.\n\nThe source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the \&quot;Contacting Us\&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;CrystalStacker License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:CrystalStacker&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it&#39;s original form in your distribution. Please see the \&quot;Contacting Us\&quot; section of this document if you need to contact us for any reason.\n\nDisclaimer\n\nNewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the \&quot;Contacting Us\&quot; section of this document.\n\nThe source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the \&quot;Contacting Us\&quot; section of this document if you need to get in touch with us about any issues you have regarding the source.&quot;,
+        &quot;_rf_text_updatable&quot;: true,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/f0b65ab152848fe032b2c3500045a032">OrtLicenseCategorization:f0b65ab152848fe032b2c3500045a032</a> for <a href="/?license=SPDX:CrystalStacker"><span class="licensename"><span class="namespace">SPDX:</span>CrystalStacker</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>CrystalStacker</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f0b65ab152848fe032b2c3500045a032">[<a href="/fact/OrtLicenseCategorization/f0b65ab152848fe032b2c3500045a032">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f0b65ab152848fe032b2c3500045a032">[<a href="/fact/OrtLicenseCategorization/f0b65ab152848fe032b2c3500045a032">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:CrystalStacker&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f0b65ab152848fe032b2c3500045a032&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:CrystalStacker&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/6e27cefa62beef75118e6ee6c361d8c0">CavilLicenseChange:6e27cefa62beef75118e6ee6c361d8c0</a> for <a href="/?license=cavil:CrystalStacker"><span class="licensename"><span class="namespace">cavil:</span>CrystalStacker</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CrystalStacker</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:CrystalStacker&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CrystalStacker&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;6e27cefa62beef75118e6ee6c361d8c0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;CrystalStacker&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:CrystalStacker&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/5673ef17f9dc172e995357e181aa9568">MetaeffektLicense:5673ef17f9dc172e995357e181aa9568</a> for <a href="/?license=metaeffekt:CrystalStacker License"><span class="licensename"><span class="namespace">metaeffekt:</span>CrystalStacker License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>CrystalStacker License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CrystalStacker</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Crystal Stacker is freeware</span></li><li><span class="licensename">Crystal Stacker License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>crystal-stacker</span></li><li><span class="licensename">CrystalStacker</span></li><li><span class="licensename">CrystalStacker License</span></li><li><span class="licensename">CRYSTALSTACKER LICENSE</span></li><li><span class="licensename">CRYSTALSTACKER License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:CrystalStacker License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CrystalStacker&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CrystalStacker&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Crystal Stacker is freeware&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CrystalStacker License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Crystal Stacker License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CRYSTALSTACKER LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CRYSTALSTACKER License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:crystal-stacker&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;5673ef17f9dc172e995357e181aa9568&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Crystal Stacker is freeware&quot;,
+            &quot;CrystalStacker License&quot;,
+            &quot;Crystal Stacker License&quot;,
+            &quot;CRYSTALSTACKER LICENSE&quot;,
+            &quot;CRYSTALSTACKER License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:CrystalStacker License&quot;,
+        &quot;_category&quot;: &quot;CrystalStacker&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:crystal-stacker&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:CrystalStacker&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

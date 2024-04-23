@@ -1,0 +1,258 @@
+<html><head><title>ldbcollector: spdx:stunnel-exception</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:stunnel-exception</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>stunnel-exception</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">stunnel Exception</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>stunnel Exception</span></li><li><span class="licensename">stunnel-exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>stunnel-exception</span></li><li><span class="licensename"><span class="namespace">spdx:</span>stunnel-exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:da82eae8292720b31c6a0b61d39a8992">[<a href="/fact/ScancodeData/da82eae8292720b31c6a0b61d39a8992">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>similar to the strongswan-exception LICENSE<span class="provided-by">(provided by: <span title="ScancodeData:da82eae8292720b31c6a0b61d39a8992">[<a href="/fact/ScancodeData/da82eae8292720b31c6a0b61d39a8992">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/mtrojnar/stunnel/blob/master/COPYING.md" target="_blank">https://github.com/mtrojnar/stunnel/blob/master/COPYING.md</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Linking stunnel statically or dynamically with other modules is making a combined work based on stunnel. Thus, the terms and conditions of the GNU General Public License cover the whole combination.
+
+In addition, as a special exception, the copyright holder of stunnel gives you permission to combine stunnel with free software programs or libraries that are released under the GNU LGPL and with code included in the standard release of OpenSSL under the OpenSSL License (or modified versions of such code, with unchanged license). You may copy and distribute such a system following the terms of the GNU GPL for stunnel and the licenses of the other code concerned.
+
+Note that people who make modified versions of stunnel are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/da82eae8292720b31c6a0b61d39a8992">ScancodeData:da82eae8292720b31c6a0b61d39a8992</a> for <a href="/?license=scancode:stunnel-exception"><span class="licensename"><span class="namespace">scancode:</span>stunnel-exception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>stunnel-exception</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">stunnel Exception</span></li><li><span class="licensename">stunnel Exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:da82eae8292720b31c6a0b61d39a8992">[<a href="/fact/ScancodeData/da82eae8292720b31c6a0b61d39a8992">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>similar to the strongswan-exception LICENSE<span class="provided-by">(provided by: <span title="ScancodeData:da82eae8292720b31c6a0b61d39a8992">[<a href="/fact/ScancodeData/da82eae8292720b31c6a0b61d39a8992">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/mtrojnar/stunnel/blob/master/COPYING.md" target="_blank">https://github.com/mtrojnar/stunnel/blob/master/COPYING.md</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Linking stunnel statically or dynamically with other modules is making a combined work based on stunnel. Thus, the terms and conditions of the GNU General Public License cover the whole combination.
+
+In addition, as a special exception, the copyright holder of stunnel gives you permission to combine stunnel with free software programs or libraries that are released under the GNU LGPL and with code included in the standard release of OpenSSL under the OpenSSL License (or modified versions of such code, with unchanged license). You may copy and distribute such a system following the terms of the GNU GPL for stunnel and the licenses of the other code concerned.
+
+Note that people who make modified versions of stunnel are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:stunnel-exception&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;stunnel Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;stunnel Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;da82eae8292720b31c6a0b61d39a8992&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;similar to the strongswan-exception LICENSE&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/mtrojnar/stunnel/blob/master/COPYING.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Linking stunnel statically or dynamically with other modules is making a combined work based on stunnel. Thus, the terms and conditions of the GNU General Public License cover the whole combination.\n\nIn addition, as a special exception, the copyright holder of stunnel gives you permission to combine stunnel with free software programs or libraries that are released under the GNU LGPL and with code included in the standard release of OpenSSL under the OpenSSL License (or modified versions of such code, with unchanged license). You may copy and distribute such a system following the terms of the GNU GPL for stunnel and the licenses of the other code concerned.\n\nNote that people who make modified versions of stunnel are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;stunnel-exception&quot;,
+        &quot;_name&quot;: &quot;stunnel Exception&quot;,
+        &quot;_notes&quot;: &quot;similar to the strongswan-exception LICENSE&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/mtrojnar/stunnel/blob/master/COPYING.md&quot;
+        ],
+        &quot;_owner&quot;: &quot;Stunnel&quot;,
+        &quot;_shortName&quot;: &quot;stunnel Exception&quot;,
+        &quot;_spdxId&quot;: &quot;stunnel-exception&quot;,
+        &quot;_text&quot;: &quot;Linking stunnel statically or dynamically with other modules is making a combined work based on stunnel. Thus, the terms and conditions of the GNU General Public License cover the whole combination.\n\nIn addition, as a special exception, the copyright holder of stunnel gives you permission to combine stunnel with free software programs or libraries that are released under the GNU LGPL and with code included in the standard release of OpenSSL under the OpenSSL License (or modified versions of such code, with unchanged license). You may copy and distribute such a system following the terms of the GNU GPL for stunnel and the licenses of the other code concerned.\n\nNote that people who make modified versions of stunnel are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/f4bdbe1e15ef2e970d5295d48d46624d">MetaeffektLicense:f4bdbe1e15ef2e970d5295d48d46624d</a> for <a href="/?license=metaeffekt:stunnel Exception"><span class="licensename"><span class="namespace">metaeffekt:</span>stunnel Exception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>stunnel Exception</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>stunnel-exception</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">stunnel Exception</span></li><li><span class="licensename">stunnel-exception</span></li><li><span class="licensename">stunnel-exception</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:stunnel Exception&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:stunnel-exception&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;stunnel-exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;stunnel-exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;stunnel Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;f4bdbe1e15ef2e970d5295d48d46624d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;stunnel-exception&quot;,
+            &quot;stunnel Exception&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:stunnel Exception&quot;,
+        &quot;_category&quot;: &quot;stunnel-exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:stunnel-exception&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

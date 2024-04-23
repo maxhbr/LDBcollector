@@ -1,0 +1,750 @@
+<html><head><title>ldbcollector: spdx:lsof</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:lsof</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>lsof</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">lsof</span></li><li><span class="licensename"><span class="namespace">cavil:</span>lsof</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>lsof</span></li><li><span class="licensename"><span class="namespace">spdx:</span>lsof</span></li><li><span class="licensename">lsof License</span></li><li><span class="licensename">Purdue BSD-Style License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Purdue BSD-Style License</span></li><li><span class="licensename">purdue-bsd</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Purdue-BSD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>purdue-bsd</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:27d51741d0c176a2724fcdf5a0749224">[<a href="/fact/ScancodeData/27d51741d0c176a2724fcdf5a0749224">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7bcb3f4888d37bf2065e964a572242cb">[<a href="/fact/SPDXLicense/7bcb3f4888d37bf2065e964a572242cb">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5b6713ea85966139f39a6c680bc2fea4">[<a href="/fact/FedoraEntry/5b6713ea85966139f39a6c680bc2fea4">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:2417fd2c957ba412032dcfd5788e67a5">[<a href="/fact/MetaeffektLicense/2417fd2c957ba412032dcfd5788e67a5">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ce6e4f72c4096fdd28f63f336390dc2">[<a href="/fact/OrtLicenseCategorization/1ce6e4f72c4096fdd28f63f336390dc2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ce6e4f72c4096fdd28f63f336390dc2">[<a href="/fact/OrtLicenseCategorization/1ce6e4f72c4096fdd28f63f336390dc2">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>this is very similar to the hs-regexp license<span class="provided-by">(provided by: <span title="ScancodeData:27d51741d0c176a2724fcdf5a0749224">[<a href="/fact/ScancodeData/27d51741d0c176a2724fcdf5a0749224">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/lsof-org/lsof/blob/master/COPYING" target="_blank">https://github.com/lsof-org/lsof/blob/master/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://github.com/lsof-org/lsof/blob/master/COPYING</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 2002 Purdue Research Foundation, West Lafayette,
+Indiana 47907.  All rights reserved.
+
+Written by Victor A. Abell
+
+This software is not subject to any license of the American
+Telephone and Telegraph Company or the Regents of the
+University of California.
+
+Permission is granted to anyone to use this software for
+any purpose on any computer system, and to alter it and
+redistribute it freely, subject to the following
+restrictions:
+
+1. Neither the authors nor Purdue University are responsible
+   for any consequences of the use of this software.
+
+2. The origin of this software must not be misrepresented,
+   either by explicit claim or by omission.  Credit to the
+   authors and Purdue University must appear in documentation
+   and sources.
+
+3. Altered versions must be plainly marked as such, and must
+   not be misrepresented as being the original software.
+
+4. This notice may not be removed or altered.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;
+            Copyright 2002 Purdue Research Foundation, West
+            Lafayette, Indiana 47907. All rights reserved.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Written by Victor A. Abell
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            This software is not subject to any license of
+            the American Telephone and Telegraph Company
+            or the Regents of the University of California.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Permission is granted to anyone to use this software for
+            any purpose on any computer system, and to alter it and
+            redistribute it freely, subject to the following restrictions:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               &lt;p&gt;
+                  Neither the authors nor Purdue University are responsible
+                  for any consequences of the use of this software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               &lt;p&gt;
+                  The origin of this software must not be misrepresented, either
+                  by explicit claim or by omission. Credit to the authors and
+                  Purdue University must appear in documentation and sources.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               &lt;p&gt;
+                  Altered versions must be plainly marked as such, and must
+                  not be misrepresented as being the original software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               &lt;p&gt;
+                  This notice may not be removed or altered.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>This software is not subject to any license of the American Telephone
+and Telegraph Company or the Regents of the University of California.
+
+Permission is granted to anyone to use this software for any purpose on any
+computer system, and to alter it and redistribute it freely, subject to the following
+restrictions:
+
+1. Neither the authors nor Purdue University are responsible for any
+consequences of the use of this software.
+
+2. The origin of this software must not be misrepresented, either by
+explicit claim or by omission. Credit to the authors and Purdue
+University must appear in documentation and sources.
+
+3. Altered versions must be plainly marked as such, and must not be
+misrepresented as being the original software.
+
+4. This notice may not be removed or altered.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/7bcb3f4888d37bf2065e964a572242cb">SPDXLicense:7bcb3f4888d37bf2065e964a572242cb</a> for <a href="/?license=spdx:lsof"><span class="licensename"><span class="namespace">spdx:</span>lsof</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>lsof</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">lsof License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7bcb3f4888d37bf2065e964a572242cb">[<a href="/fact/SPDXLicense/7bcb3f4888d37bf2065e964a572242cb">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/lsof-org/lsof/blob/master/COPYING" target="_blank">https://github.com/lsof-org/lsof/blob/master/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 2002 Purdue Research Foundation, West Lafayette,
+Indiana 47907.  All rights reserved.
+
+Written by Victor A. Abell
+
+This software is not subject to any license of the American
+Telephone and Telegraph Company or the Regents of the
+University of California.
+
+Permission is granted to anyone to use this software for
+any purpose on any computer system, and to alter it and
+redistribute it freely, subject to the following
+restrictions:
+
+1. Neither the authors nor Purdue University are responsible
+   for any consequences of the use of this software.
+
+2. The origin of this software must not be misrepresented,
+   either by explicit claim or by omission.  Credit to the
+   authors and Purdue University must appear in documentation
+   and sources.
+
+3. Altered versions must be plainly marked as such, and must
+   not be misrepresented as being the original software.
+
+4. This notice may not be removed or altered.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;
+            Copyright 2002 Purdue Research Foundation, West
+            Lafayette, Indiana 47907. All rights reserved.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Written by Victor A. Abell
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            This software is not subject to any license of
+            the American Telephone and Telegraph Company
+            or the Regents of the University of California.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Permission is granted to anyone to use this software for
+            any purpose on any computer system, and to alter it and
+            redistribute it freely, subject to the following restrictions:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               &lt;p&gt;
+                  Neither the authors nor Purdue University are responsible
+                  for any consequences of the use of this software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               &lt;p&gt;
+                  The origin of this software must not be misrepresented, either
+                  by explicit claim or by omission. Credit to the authors and
+                  Purdue University must appear in documentation and sources.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               &lt;p&gt;
+                  Altered versions must be plainly marked as such, and must
+                  not be misrepresented as being the original software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               &lt;p&gt;
+                  This notice may not be removed or altered.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:lsof&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;lsof License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;7bcb3f4888d37bf2065e964a572242cb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 2002 Purdue Research Foundation, West Lafayette,\nIndiana 47907.  All rights reserved.\n\nWritten by Victor A. Abell\n\nThis software is not subject to any license of the American\nTelephone and Telegraph Company or the Regents of the\nUniversity of California.\n\nPermission is granted to anyone to use this software for\nany purpose on any computer system, and to alter it and\nredistribute it freely, subject to the following\nrestrictions:\n\n1. Neither the authors nor Purdue University are responsible\n   for any consequences of the use of this software.\n\n2. The origin of this software must not be misrepresented,\n   either by explicit claim or by omission.  Credit to the\n   authors and Purdue University must appear in documentation\n   and sources.\n\n3. Altered versions must be plainly marked as such, and must\n   not be misrepresented as being the original software.\n\n4. This notice may not be removed or altered.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;\n            Copyright 2002 Purdue Research Foundation, West\n            Lafayette, Indiana 47907. All rights reserved.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Written by Victor A. Abell\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            This software is not subject to any license of\n            the American Telephone and Telegraph Company\n            or the Regents of the University of California.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Permission is granted to anyone to use this software for\n            any purpose on any computer system, and to alter it and\n            redistribute it freely, subject to the following restrictions:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               &lt;p&gt;\n                  Neither the authors nor Purdue University are responsible\n                  for any consequences of the use of this software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               &lt;p&gt;\n                  The origin of this software must not be misrepresented, either\n                  by explicit claim or by omission. Credit to the authors and\n                  Purdue University must appear in documentation and sources.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               &lt;p&gt;\n                  Altered versions must be plainly marked as such, and must\n                  not be misrepresented as being the original software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               &lt;p&gt;\n                  This notice may not be removed or altered.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:10:14Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:lsof&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 2002 Purdue Research Foundation, West Lafayette,\nIndiana 47907.  All rights reserved.\n\nWritten by Victor A. Abell\n\nThis software is not subject to any license of the American\nTelephone and Telegraph Company or the Regents of the\nUniversity of California.\n\nPermission is granted to anyone to use this software for\nany purpose on any computer system, and to alter it and\nredistribute it freely, subject to the following\nrestrictions:\n\n1. Neither the authors nor Purdue University are responsible\n   for any consequences of the use of this software.\n\n2. The origin of this software must not be misrepresented,\n   either by explicit claim or by omission.  Credit to the\n   authors and Purdue University must appear in documentation\n   and sources.\n\n3. Altered versions must be plainly marked as such, and must\n   not be misrepresented as being the original software.\n\n4. This notice may not be removed or altered.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;\n            Copyright 2002 Purdue Research Foundation, West\n            Lafayette, Indiana 47907. All rights reserved.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Written by Victor A. Abell\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            This software is not subject to any license of\n            the American Telephone and Telegraph Company\n            or the Regents of the University of California.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Permission is granted to anyone to use this software for\n            any purpose on any computer system, and to alter it and\n            redistribute it freely, subject to the following restrictions:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               &lt;p&gt;\n                  Neither the authors nor Purdue University are responsible\n                  for any consequences of the use of this software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               &lt;p&gt;\n                  The origin of this software must not be misrepresented, either\n                  by explicit claim or by omission. Credit to the authors and\n                  Purdue University must appear in documentation and sources.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               &lt;p&gt;\n                  Altered versions must be plainly marked as such, and must\n                  not be misrepresented as being the original software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               &lt;p&gt;\n                  This notice may not be removed or altered.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+        &quot;name&quot;: &quot;lsof License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 2002 Purdue Research Foundation, West Lafayette, Indiana 47907. All rights reserved.    Written by Victor A. Abell  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThis software is not subject to any license of the American Telephone and Telegraph Company or the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any computer system, and to alter it and redistribute it freely, subject to the following restrictions:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Neither the authors nor Purdue University are responsible for any consequences of the use of this software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   The origin of this software must not be misrepresented, either by explicit claim or by omission. Credit to the authors and Purdue University must appear in documentation and sources.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   This notice may not be removed or altered.\n\n   &quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/5b6713ea85966139f39a6c680bc2fea4">FedoraEntry:5b6713ea85966139f39a6c680bc2fea4</a> for <a href="/?license=Fedora:lsof"><span class="licensename"><span class="namespace">Fedora:</span>lsof</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>lsof</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>lsof</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5b6713ea85966139f39a6c680bc2fea4">[<a href="/fact/FedoraEntry/5b6713ea85966139f39a6c680bc2fea4">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:lsof&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:lsof&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;5b6713ea85966139f39a6c680bc2fea4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;lsof&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:lsof&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/27d51741d0c176a2724fcdf5a0749224">ScancodeData:27d51741d0c176a2724fcdf5a0749224</a> for <a href="/?license=scancode:purdue-bsd"><span class="licensename"><span class="namespace">scancode:</span>purdue-bsd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>purdue-bsd</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Purdue BSD-Style License</span></li><li><span class="licensename">Purdue BSD-Style License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:27d51741d0c176a2724fcdf5a0749224">[<a href="/fact/ScancodeData/27d51741d0c176a2724fcdf5a0749224">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>this is very similar to the hs-regexp license<span class="provided-by">(provided by: <span title="ScancodeData:27d51741d0c176a2724fcdf5a0749224">[<a href="/fact/ScancodeData/27d51741d0c176a2724fcdf5a0749224">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/lsof-org/lsof/blob/master/COPYING" target="_blank">https://github.com/lsof-org/lsof/blob/master/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/lsof-org/lsof/blob/master/COPYING</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software is not subject to any license of the American Telephone
+and Telegraph Company or the Regents of the University of California.
+
+Permission is granted to anyone to use this software for any purpose on any
+computer system, and to alter it and redistribute it freely, subject to the following
+restrictions:
+
+1. Neither the authors nor Purdue University are responsible for any
+consequences of the use of this software.
+
+2. The origin of this software must not be misrepresented, either by
+explicit claim or by omission. Credit to the authors and Purdue
+University must appear in documentation and sources.
+
+3. Altered versions must be plainly marked as such, and must not be
+misrepresented as being the original software.
+
+4. This notice may not be removed or altered.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:purdue-bsd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Purdue BSD-Style License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Purdue BSD-Style License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;27d51741d0c176a2724fcdf5a0749224&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;this is very similar to the hs-regexp license&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This software is not subject to any license of the American Telephone\nand Telegraph Company or the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it freely, subject to the following\nrestrictions:\n\n1. Neither the authors nor Purdue University are responsible for any\nconsequences of the use of this software.\n\n2. The origin of this software must not be misrepresented, either by\nexplicit claim or by omission. Credit to the authors and Purdue\nUniversity must appear in documentation and sources.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.\n\n4. This notice may not be removed or altered.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;,
+        &quot;_key&quot;: &quot;purdue-bsd&quot;,
+        &quot;_name&quot;: &quot;Purdue BSD-Style License&quot;,
+        &quot;_notes&quot;: &quot;this is very similar to the hs-regexp license&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/lsof-org/lsof/blob/master/COPYING&quot;
+        ],
+        &quot;_owner&quot;: &quot;Purdue Research Foundation&quot;,
+        &quot;_shortName&quot;: &quot;Purdue BSD-Style License&quot;,
+        &quot;_spdxId&quot;: &quot;lsof&quot;,
+        &quot;_text&quot;: &quot;This software is not subject to any license of the American Telephone\nand Telegraph Company or the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it freely, subject to the following\nrestrictions:\n\n1. Neither the authors nor Purdue University are responsible for any\nconsequences of the use of this software.\n\n2. The origin of this software must not be misrepresented, either by\nexplicit claim or by omission. Credit to the authors and Purdue\nUniversity must appear in documentation and sources.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.\n\n4. This notice may not be removed or altered.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/1ce6e4f72c4096fdd28f63f336390dc2">OrtLicenseCategorization:1ce6e4f72c4096fdd28f63f336390dc2</a> for <a href="/?license=SPDX:lsof"><span class="licensename"><span class="namespace">SPDX:</span>lsof</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>lsof</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ce6e4f72c4096fdd28f63f336390dc2">[<a href="/fact/OrtLicenseCategorization/1ce6e4f72c4096fdd28f63f336390dc2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ce6e4f72c4096fdd28f63f336390dc2">[<a href="/fact/OrtLicenseCategorization/1ce6e4f72c4096fdd28f63f336390dc2">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:lsof&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;1ce6e4f72c4096fdd28f63f336390dc2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:lsof&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/cfd8d1b474a0aaed5fe4f9a9cdf07e53">CavilLicenseChange:cfd8d1b474a0aaed5fe4f9a9cdf07e53</a> for <a href="/?license=cavil:lsof"><span class="licensename"><span class="namespace">cavil:</span>lsof</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>lsof</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">lsof</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:lsof&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;lsof&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;cfd8d1b474a0aaed5fe4f9a9cdf07e53&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;lsof&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:lsof&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/2417fd2c957ba412032dcfd5788e67a5">MetaeffektLicense:2417fd2c957ba412032dcfd5788e67a5</a> for <a href="/?license=metaeffekt:Purdue-BSD"><span class="licensename"><span class="namespace">metaeffekt:</span>Purdue-BSD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Purdue-BSD</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>lsof</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Purdue BSD-Style License</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">lsof License</span></li><li><span class="licensename">Purdue BSD-Style License</span></li><li><span class="licensename">purdue-bsd</span></li><li><span class="licensename"><span class="namespace">scancode:</span>purdue-bsd</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:2417fd2c957ba412032dcfd5788e67a5">[<a href="/fact/MetaeffektLicense/2417fd2c957ba412032dcfd5788e67a5">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Purdue-BSD&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Purdue BSD-Style License&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:lsof&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Purdue BSD-Style License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;purdue-bsd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;lsof License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:purdue-bsd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;2417fd2c957ba412032dcfd5788e67a5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;purdue-bsd&quot;,
+            &quot;lsof License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Purdue BSD-Style License&quot;,
+        &quot;_category&quot;: &quot;Purdue BSD-Style License&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:purdue-bsd&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:Purdue-BSD&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:lsof&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,256 @@
+<html><head><title>ldbcollector: spdx:GPL-3.0-interface-exception</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:GPL-3.0-interface-exception</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-interface-exception</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL-3.0 Interface Exception</span></li><li><span class="licensename">gpl-3.0-interface-exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gpl-3.0-interface-exception</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-interface-exception</span></li><li><span class="licensename">Interface Exception (GPL)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Interface Exception (GPL)</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Interface Exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:0a4716a7e8e332914024259f124c3aec">[<a href="/fact/ScancodeData/0a4716a7e8e332914024259f124c3aec">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface" target="_blank">https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface</a></li></ul><h3>Other Statements</h3><ul><li>https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Linking [name of library] statically or dynamically with other modules is making a combined work based on [name of library]. Thus, the terms and conditions of the GNU General Public License cover the whole combination.
+
+As a special exception, the copyright holders of [name of library] give you permission to combine [name of library] program with free software programs or libraries that are released under the GNU LGPL and with independent modules that communicate with [name of library] solely through the [name of library&#39;s interface] interface. You may copy and distribute such a system following the terms of the GNU GPL for [name of library] and the licenses of the other code concerned, provided that you include the source code of that other code when and as the GNU GPL requires distribution of source code and provided that you do not modify the [name of library&#39;s interface] interface.
+
+Note that people who make modified versions of [name of library] are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception. If you modify the [name of library&#39;s interface] interface, this exception does not apply to your modified version of [name of library], and you must remove this exception when you distribute your modified version.
+
+This exception is an additional permission under section 7 of the GNU General Public License, version 3 (&quot;GPLv3&quot;)</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/0a4716a7e8e332914024259f124c3aec">ScancodeData:0a4716a7e8e332914024259f124c3aec</a> for <a href="/?license=scancode:gpl-3.0-interface-exception"><span class="licensename"><span class="namespace">scancode:</span>gpl-3.0-interface-exception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>gpl-3.0-interface-exception</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL-3.0 Interface Exception</span></li><li><span class="licensename">GPL-3.0 Interface Exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:0a4716a7e8e332914024259f124c3aec">[<a href="/fact/ScancodeData/0a4716a7e8e332914024259f124c3aec">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface" target="_blank">https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface</a></li></ul><h3>Other Statements</h3><ul><li>https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Linking [name of library] statically or dynamically with other modules is making a combined work based on [name of library]. Thus, the terms and conditions of the GNU General Public License cover the whole combination.
+
+As a special exception, the copyright holders of [name of library] give you permission to combine [name of library] program with free software programs or libraries that are released under the GNU LGPL and with independent modules that communicate with [name of library] solely through the [name of library&#39;s interface] interface. You may copy and distribute such a system following the terms of the GNU GPL for [name of library] and the licenses of the other code concerned, provided that you include the source code of that other code when and as the GNU GPL requires distribution of source code and provided that you do not modify the [name of library&#39;s interface] interface.
+
+Note that people who make modified versions of [name of library] are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception. If you modify the [name of library&#39;s interface] interface, this exception does not apply to your modified version of [name of library], and you must remove this exception when you distribute your modified version.
+
+This exception is an additional permission under section 7 of the GNU General Public License, version 3 (&quot;GPLv3&quot;)</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:gpl-3.0-interface-exception&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL-3.0 Interface Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GPL-3.0 Interface Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;0a4716a7e8e332914024259f124c3aec&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Linking [name of library] statically or dynamically with other modules is making a combined work based on [name of library]. Thus, the terms and conditions of the GNU General Public License cover the whole combination.\n\nAs a special exception, the copyright holders of [name of library] give you permission to combine [name of library] program with free software programs or libraries that are released under the GNU LGPL and with independent modules that communicate with [name of library] solely through the [name of library&#39;s interface] interface. You may copy and distribute such a system following the terms of the GNU GPL for [name of library] and the licenses of the other code concerned, provided that you include the source code of that other code when and as the GNU GPL requires distribution of source code and provided that you do not modify the [name of library&#39;s interface] interface.\n\nNote that people who make modified versions of [name of library] are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception. If you modify the [name of library&#39;s interface] interface, this exception does not apply to your modified version of [name of library], and you must remove this exception when you distribute your modified version.\n\nThis exception is an additional permission under section 7 of the GNU General Public License, version 3 (\&quot;GPLv3\&quot;)&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface&quot;,
+        &quot;_key&quot;: &quot;gpl-3.0-interface-exception&quot;,
+        &quot;_name&quot;: &quot;GPL-3.0 Interface Exception&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://www.gnu.org/licenses/gpl-faq.en.html#LinkingOverControlledInterface&quot;
+        ],
+        &quot;_owner&quot;: &quot;Free Software Foundation (FSF)&quot;,
+        &quot;_shortName&quot;: &quot;GPL-3.0 Interface Exception&quot;,
+        &quot;_spdxId&quot;: &quot;GPL-3.0-interface-exception&quot;,
+        &quot;_text&quot;: &quot;Linking [name of library] statically or dynamically with other modules is making a combined work based on [name of library]. Thus, the terms and conditions of the GNU General Public License cover the whole combination.\n\nAs a special exception, the copyright holders of [name of library] give you permission to combine [name of library] program with free software programs or libraries that are released under the GNU LGPL and with independent modules that communicate with [name of library] solely through the [name of library&#39;s interface] interface. You may copy and distribute such a system following the terms of the GNU GPL for [name of library] and the licenses of the other code concerned, provided that you include the source code of that other code when and as the GNU GPL requires distribution of source code and provided that you do not modify the [name of library&#39;s interface] interface.\n\nNote that people who make modified versions of [name of library] are not obligated to grant this special exception for their modified versions; it is their choice whether to do so. The GNU General Public License gives permission to release a modified version without this exception; this exception also makes it possible to release a modified version which carries forward this exception. If you modify the [name of library&#39;s interface] interface, this exception does not apply to your modified version of [name of library], and you must remove this exception when you distribute your modified version.\n\nThis exception is an additional permission under section 7 of the GNU General Public License, version 3 (\&quot;GPLv3\&quot;)&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/134e993139165c03f0825e918ab1a78b">MetaeffektLicense:134e993139165c03f0825e918ab1a78b</a> for <a href="/?license=metaeffekt:Interface Exception (GPL)"><span class="licensename"><span class="namespace">metaeffekt:</span>Interface Exception (GPL)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Interface Exception (GPL)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-interface-exception</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL-3.0 Interface Exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gpl-3.0-interface-exception</span></li><li><span class="licensename">Interface Exception</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Interface Exception (GPL)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:GPL-3.0-interface-exception&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Interface Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GPL-3.0 Interface Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:gpl-3.0-interface-exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;134e993139165c03f0825e918ab1a78b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;GPL-3.0 Interface Exception&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Interface Exception (GPL)&quot;,
+        &quot;_category&quot;: &quot;Interface Exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:gpl-3.0-interface-exception&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:GPL-3.0-interface-exception&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

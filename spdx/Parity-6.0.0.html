@@ -1,0 +1,835 @@
+<html><head><title>ldbcollector: spdx:Parity-6.0.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Parity-6.0.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Parity-6.0.0</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity Public License 6.0.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Parity Public License 6.0.0</span></li><li><span class="licensename">Parity-6.0.0</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Parity-6.0.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Parity-6.0.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Parity-6.0.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>parity-6.0.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Parity-6.0.0</span></li><li><span class="licensename">The Parity Public License 6.0.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity</span></li><li><span class="licensename">The Parity Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;maximal&quot;)<span class="provided-by">(provided by: <span title="BlueOakCouncil:3450bf719336b98f788a45b5eb0ca632">[<a href="/fact/BlueOakCouncil/3450bf719336b98f788a45b5eb0ca632">BlueOakCouncil</a>]</span>)</span></li><li>Copyleft<span class="provided-by">(provided by: <span title="BlueOakCouncil:3450bf719336b98f788a45b5eb0ca632">[<a href="/fact/BlueOakCouncil/3450bf719336b98f788a45b5eb0ca632">BlueOakCouncil</a>]</span><span title="ScancodeData:e088655921b7860ccda99c8b45f2a4a3">[<a href="/fact/ScancodeData/e088655921b7860ccda99c8b45f2a4a3">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:22d34183592bc5e72a5a3a614e2b5a5a">[<a href="/fact/SPDXLicense/22d34183592bc5e72a5a3a614e2b5a5a">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a5ea526901a3d4110f8a3b31baa81647">[<a href="/fact/OrtLicenseCategorization/a5ea526901a3d4110f8a3b31baa81647">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a5ea526901a3d4110f8a3b31baa81647">[<a href="/fact/OrtLicenseCategorization/a5ea526901a3d4110f8a3b31baa81647">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a5ea526901a3d4110f8a3b31baa81647">[<a href="/fact/OrtLicenseCategorization/a5ea526901a3d4110f8a3b31baa81647">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://paritylicense.com/versions/6.0.0.html" target="_blank">https://paritylicense.com/versions/6.0.0.html</a></li><li><a href="https://spdx.org/licenses/Parity-6.0.0" target="_blank">https://spdx.org/licenses/Parity-6.0.0</a></li></ul><h3>Other Statements</h3><ul><li>https://paritylicense.com/versions/6.0.0.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Parity Public License 6.0.0
+
+Contributor: Example, Inc.
+
+Source Code: https://example.com/sourcecode
+
+This license lets you use and share this software for free, as
+long as you contribute software you make with it. Specifically:
+
+If you follow the rules below, you may do everything with this
+software that would otherwise infringe either the contributor&#39;s
+copyright in it, any patent claim the contributor can license,
+or both.
+
+1. Contribute changes and additions you make to this software.
+
+2. If you combine this software with other software, contribute
+   that other software.
+
+3. Contribute software you develop, deploy, monitor, or run with
+   this software.
+
+4. Ensure everyone who gets a copy of this software from you, in
+   source code or any other form, gets the text of this license
+   and the contributor and source code lines above.
+
+5. Do not make any legal claim against anyone accusing this
+   software, with or without changes, alone or with other
+   software, of infringing any patent claim.
+
+To contribute software, publish all its source code, in the
+preferred form for making changes, through a freely accessible
+distribution system widely used for similar source code, and
+license contributions not already licensed to the public on terms
+as permissive as this license accordingly.
+
+You are excused for unknowingly breaking 1, 2, or 3 if you
+contribute as required, or stop doing anything requiring this
+license, within 30 days of learning you broke the rule.
+
+**As far as the law allows, this software comes as is, without
+any warranty, and the contributor will not be liable to anyone
+for any damages related to this software or this license, for any
+kind of legal claim.**
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;The Parity Public License 6.0.0&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Contributor: &lt;var class=&quot;replaceable-license-text&quot;&gt; contributor name&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;Source Code: &lt;var class=&quot;replaceable-license-text&quot;&gt; source&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;This license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:&lt;/p&gt;
+
+      &lt;p&gt;If you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&amp;apos;s copyright in it, any patent claim the contributor can license, or both.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; Contribute changes and additions you make to this software.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; If you combine this software with other software, contribute that other software.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; Contribute software you develop, deploy, monitor, or run with this software.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt; Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim. &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;To contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.&lt;/p&gt;
+
+      &lt;p&gt;You are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.&lt;/p&gt;
+
+      &lt;p&gt;**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>The Parity Public License 6.0.0
+
+Contributor: contributor name
+
+Source Code: source
+
+This license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:
+
+If you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.
+
+   1. Contribute changes and additions you make to this software.
+
+   2. If you combine this software with other software, contribute that other software.
+
+   3. Contribute software you develop, deploy, monitor, or run with this software.
+
+   4. Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.
+
+   5. Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.
+
+To contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.
+
+You are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.
+
+**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/22d34183592bc5e72a5a3a614e2b5a5a">SPDXLicense:22d34183592bc5e72a5a3a614e2b5a5a</a> for <a href="/?license=spdx:Parity-6.0.0"><span class="licensename"><span class="namespace">spdx:</span>Parity-6.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Parity-6.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 6.0.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:22d34183592bc5e72a5a3a614e2b5a5a">[<a href="/fact/SPDXLicense/22d34183592bc5e72a5a3a614e2b5a5a">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://paritylicense.com/versions/6.0.0.html" target="_blank">https://paritylicense.com/versions/6.0.0.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Parity Public License 6.0.0
+
+Contributor: Example, Inc.
+
+Source Code: https://example.com/sourcecode
+
+This license lets you use and share this software for free, as
+long as you contribute software you make with it. Specifically:
+
+If you follow the rules below, you may do everything with this
+software that would otherwise infringe either the contributor&#39;s
+copyright in it, any patent claim the contributor can license,
+or both.
+
+1. Contribute changes and additions you make to this software.
+
+2. If you combine this software with other software, contribute
+   that other software.
+
+3. Contribute software you develop, deploy, monitor, or run with
+   this software.
+
+4. Ensure everyone who gets a copy of this software from you, in
+   source code or any other form, gets the text of this license
+   and the contributor and source code lines above.
+
+5. Do not make any legal claim against anyone accusing this
+   software, with or without changes, alone or with other
+   software, of infringing any patent claim.
+
+To contribute software, publish all its source code, in the
+preferred form for making changes, through a freely accessible
+distribution system widely used for similar source code, and
+license contributions not already licensed to the public on terms
+as permissive as this license accordingly.
+
+You are excused for unknowingly breaking 1, 2, or 3 if you
+contribute as required, or stop doing anything requiring this
+license, within 30 days of learning you broke the rule.
+
+**As far as the law allows, this software comes as is, without
+any warranty, and the contributor will not be liable to anyone
+for any damages related to this software or this license, for any
+kind of legal claim.**
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;The Parity Public License 6.0.0&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Contributor: &lt;var class=&quot;replaceable-license-text&quot;&gt; contributor name&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;Source Code: &lt;var class=&quot;replaceable-license-text&quot;&gt; source&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;This license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:&lt;/p&gt;
+
+      &lt;p&gt;If you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&amp;apos;s copyright in it, any patent claim the contributor can license, or both.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; Contribute changes and additions you make to this software.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; If you combine this software with other software, contribute that other software.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; Contribute software you develop, deploy, monitor, or run with this software.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.
+          &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt; Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim. &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;To contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.&lt;/p&gt;
+
+      &lt;p&gt;You are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.&lt;/p&gt;
+
+      &lt;p&gt;**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Parity-6.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;22d34183592bc5e72a5a3a614e2b5a5a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 6.0.0\n\nContributor: Example, Inc.\n\nSource Code: https://example.com/sourcecode\n\nThis license lets you use and share this software for free, as\nlong as you contribute software you make with it. Specifically:\n\nIf you follow the rules below, you may do everything with this\nsoftware that would otherwise infringe either the contributor&#39;s\ncopyright in it, any patent claim the contributor can license,\nor both.\n\n1. Contribute changes and additions you make to this software.\n\n2. If you combine this software with other software, contribute\n   that other software.\n\n3. Contribute software you develop, deploy, monitor, or run with\n   this software.\n\n4. Ensure everyone who gets a copy of this software from you, in\n   source code or any other form, gets the text of this license\n   and the contributor and source code lines above.\n\n5. Do not make any legal claim against anyone accusing this\n   software, with or without changes, alone or with other\n   software, of infringing any patent claim.\n\nTo contribute software, publish all its source code, in the\npreferred form for making changes, through a freely accessible\ndistribution system widely used for similar source code, and\nlicense contributions not already licensed to the public on terms\nas permissive as this license accordingly.\n\nYou are excused for unknowingly breaking 1, 2, or 3 if you\ncontribute as required, or stop doing anything requiring this\nlicense, within 30 days of learning you broke the rule.\n\n**As far as the law allows, this software comes as is, without\nany warranty, and the contributor will not be liable to anyone\nfor any damages related to this software or this license, for any\nkind of legal claim.**\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;The Parity Public License 6.0.0&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Contributor: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; contributor name&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;Source Code: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; source&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;This license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:&lt;/p&gt;\n\n      &lt;p&gt;If you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&amp;apos;s copyright in it, any patent claim the contributor can license, or both.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; Contribute changes and additions you make to this software.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; If you combine this software with other software, contribute that other software.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; Contribute software you develop, deploy, monitor, or run with this software.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt; Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim. &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;To contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.&lt;/p&gt;\n\n      &lt;p&gt;You are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.&lt;/p&gt;\n\n      &lt;p&gt;**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:09Z&quot;,
+                &quot;url&quot;: &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Parity-6.0.0&quot;,
+        &quot;licenseText&quot;: &quot;The Parity Public License 6.0.0\n\nContributor: Example, Inc.\n\nSource Code: https://example.com/sourcecode\n\nThis license lets you use and share this software for free, as\nlong as you contribute software you make with it. Specifically:\n\nIf you follow the rules below, you may do everything with this\nsoftware that would otherwise infringe either the contributor&#39;s\ncopyright in it, any patent claim the contributor can license,\nor both.\n\n1. Contribute changes and additions you make to this software.\n\n2. If you combine this software with other software, contribute\n   that other software.\n\n3. Contribute software you develop, deploy, monitor, or run with\n   this software.\n\n4. Ensure everyone who gets a copy of this software from you, in\n   source code or any other form, gets the text of this license\n   and the contributor and source code lines above.\n\n5. Do not make any legal claim against anyone accusing this\n   software, with or without changes, alone or with other\n   software, of infringing any patent claim.\n\nTo contribute software, publish all its source code, in the\npreferred form for making changes, through a freely accessible\ndistribution system widely used for similar source code, and\nlicense contributions not already licensed to the public on terms\nas permissive as this license accordingly.\n\nYou are excused for unknowingly breaking 1, 2, or 3 if you\ncontribute as required, or stop doing anything requiring this\nlicense, within 30 days of learning you broke the rule.\n\n**As far as the law allows, this software comes as is, without\nany warranty, and the contributor will not be liable to anyone\nfor any damages related to this software or this license, for any\nkind of legal claim.**\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;The Parity Public License 6.0.0&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Contributor: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; contributor name&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;Source Code: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; source&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;This license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:&lt;/p&gt;\n\n      &lt;p&gt;If you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&amp;apos;s copyright in it, any patent claim the contributor can license, or both.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; Contribute changes and additions you make to this software.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; If you combine this software with other software, contribute that other software.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; Contribute software you develop, deploy, monitor, or run with this software.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.\n          &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt; Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim. &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;To contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.&lt;/p&gt;\n\n      &lt;p&gt;You are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.&lt;/p&gt;\n\n      &lt;p&gt;**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;The Parity Public License 6.0.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The Parity Public License 6.0.0\n\n&lt;&lt;endOptional&gt;&gt;\n\nContributor: &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;contributor name\&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\nSource Code: &lt;&lt;var;name=\&quot;source\&quot;;original=\&quot;source\&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\nThis license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:\n\nIf you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Contribute changes and additions you make to this software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If you combine this software with other software, contribute that other software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Contribute software you develop, deploy, monitor, or run with this software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.\n\nTo contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.\n\nYou are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.\n\n**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/3450bf719336b98f788a45b5eb0ca632">BlueOakCouncil:3450bf719336b98f788a45b5eb0ca632</a> for <a href="/?license=BlueOak:Parity-6.0.0"><span class="licensename"><span class="namespace">BlueOak:</span>Parity-6.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Parity-6.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 6.0.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;maximal&quot;)<span class="provided-by">(provided by: <span title="BlueOakCouncil:3450bf719336b98f788a45b5eb0ca632">[<a href="/fact/BlueOakCouncil/3450bf719336b98f788a45b5eb0ca632">BlueOakCouncil</a>]</span>)</span></li><li>Copyleft<span class="provided-by">(provided by: <span title="BlueOakCouncil:3450bf719336b98f788a45b5eb0ca632">[<a href="/fact/BlueOakCouncil/3450bf719336b98f788a45b5eb0ca632">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Parity-6.0.0" target="_blank">https://spdx.org/licenses/Parity-6.0.0</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;BlueOak:Parity-6.0.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;The Parity Public License 6.0.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;3450bf719336b98f788a45b5eb0ca632&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: {
+                        &quot;contents&quot;: &quot;maximal&quot;,
+                        &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+                    },
+                    &quot;tag&quot;: &quot;LicenseType&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;tag&quot;: &quot;Copyleft&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseType&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Parity-6.0.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;maximal&quot;,
+            &quot;The Parity Public License&quot;,
+            {
+                &quot;_id&quot;: &quot;Parity-6.0.0&quot;,
+                &quot;_name&quot;: &quot;The Parity Public License 6.0.0&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Parity-6.0.0&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCCopyleft&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e088655921b7860ccda99c8b45f2a4a3">ScancodeData:e088655921b7860ccda99c8b45f2a4a3</a> for <a href="/?license=scancode:parity-6.0.0"><span class="licensename"><span class="namespace">scancode:</span>parity-6.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>parity-6.0.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 6.0.0</span></li><li><span class="licensename">The Parity Public License 6.0.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Copyleft<span class="provided-by">(provided by: <span title="ScancodeData:e088655921b7860ccda99c8b45f2a4a3">[<a href="/fact/ScancodeData/e088655921b7860ccda99c8b45f2a4a3">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://paritylicense.com/versions/6.0.0.html" target="_blank">https://paritylicense.com/versions/6.0.0.html</a></li></ul><h3>Other Statements</h3><ul><li>https://paritylicense.com/versions/6.0.0.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Parity Public License 6.0.0
+
+Contributor: contributor name
+
+Source Code: source
+
+This license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:
+
+If you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.
+
+   1. Contribute changes and additions you make to this software.
+
+   2. If you combine this software with other software, contribute that other software.
+
+   3. Contribute software you develop, deploy, monitor, or run with this software.
+
+   4. Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.
+
+   5. Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.
+
+To contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.
+
+You are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.
+
+**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:parity-6.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e088655921b7860ccda99c8b45f2a4a3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Copyleft&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://paritylicense.com/versions/6.0.0.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Parity Public License 6.0.0\n\nContributor: contributor name\n\nSource Code: source\n\nThis license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:\n\nIf you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.\n\n   1. Contribute changes and additions you make to this software.\n\n   2. If you combine this software with other software, contribute that other software.\n\n   3. Contribute software you develop, deploy, monitor, or run with this software.\n\n   4. Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.\n\n   5. Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.\n\nTo contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.\n\nYou are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.\n\n**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://paritylicense.com/versions/6.0.0.html&quot;,
+        &quot;_key&quot;: &quot;parity-6.0.0&quot;,
+        &quot;_name&quot;: &quot;The Parity Public License 6.0.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+        ],
+        &quot;_owner&quot;: &quot;Kyle Mitchell&quot;,
+        &quot;_shortName&quot;: &quot;The Parity Public License 6.0.0&quot;,
+        &quot;_spdxId&quot;: &quot;Parity-6.0.0&quot;,
+        &quot;_text&quot;: &quot;The Parity Public License 6.0.0\n\nContributor: contributor name\n\nSource Code: source\n\nThis license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:\n\nIf you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.\n\n   1. Contribute changes and additions you make to this software.\n\n   2. If you combine this software with other software, contribute that other software.\n\n   3. Contribute software you develop, deploy, monitor, or run with this software.\n\n   4. Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.\n\n   5. Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.\n\nTo contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.\n\nYou are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.\n\n**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/8a3e488d85666980a0b1d1c079bbd515">Fossology:8a3e488d85666980a0b1d1c079bbd515</a> for <a href="/?license=fossology:Parity-6.0.0"><span class="licensename"><span class="namespace">fossology:</span>Parity-6.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Parity-6.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 6.0.0</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://paritylicense.com/versions/6.0.0.html" target="_blank">https://paritylicense.com/versions/6.0.0.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Parity Public License 6.0.0
+
+Contributor: contributor name
+
+Source Code: source
+
+This license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:
+
+If you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.
+
+   1. Contribute changes and additions you make to this software.
+
+   2. If you combine this software with other software, contribute that other software.
+
+   3. Contribute software you develop, deploy, monitor, or run with this software.
+
+   4. Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.
+
+   5. Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.
+
+To contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.
+
+You are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.
+
+**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Parity-6.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;8a3e488d85666980a0b1d1c079bbd515&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Parity Public License 6.0.0\n\nContributor: contributor name\n\nSource Code: source\n\nThis license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:\n\nIf you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.\n\n   1. Contribute changes and additions you make to this software.\n\n   2. If you combine this software with other software, contribute that other software.\n\n   3. Contribute software you develop, deploy, monitor, or run with this software.\n\n   4. Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.\n\n   5. Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.\n\nTo contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.\n\nYou are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.\n\n**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;The Parity Public License 6.0.0&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Parity-6.0.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The Parity Public License 6.0.0\n\nContributor: contributor name\n\nSource Code: source\n\nThis license lets you use and share this software for free, as long as you contribute software you make with it. Specifically:\n\nIf you follow the rules below, you may do everything with this software that would otherwise infringe either the contributor&#39;s copyright in it, any patent claim the contributor can license, or both.\n\n   1. Contribute changes and additions you make to this software.\n\n   2. If you combine this software with other software, contribute that other software.\n\n   3. Contribute software you develop, deploy, monitor, or run with this software.\n\n   4. Ensure everyone who gets a copy of this software from you, in source code or any other form, gets the text of this license and the contributor and source code lines above.\n\n   5. Do not make any legal claim against anyone accusing this software, with or without changes, alone or with other software, of infringing any patent claim.\n\nTo contribute software, publish all its source code, in the preferred form for making changes, through a freely accessible distribution system widely used for similar source code, and license contributions not already licensed to the public on terms as permissive as this license accordingly.\n\nYou are excused for unknowingly breaking 1, 2, or 3 if you contribute as required, or stop doing anything requiring this license, within 30 days of learning you broke the rule.\n\n**As far as the law allows, this software comes as is, without any warranty, and the contributor will not be liable to anyone for any damages related to this software or this license, for any kind of legal claim.**&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://paritylicense.com/versions/6.0.0.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/a5ea526901a3d4110f8a3b31baa81647">OrtLicenseCategorization:a5ea526901a3d4110f8a3b31baa81647</a> for <a href="/?license=SPDX:Parity-6.0.0"><span class="licensename"><span class="namespace">SPDX:</span>Parity-6.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Parity-6.0.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a5ea526901a3d4110f8a3b31baa81647">[<a href="/fact/OrtLicenseCategorization/a5ea526901a3d4110f8a3b31baa81647">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a5ea526901a3d4110f8a3b31baa81647">[<a href="/fact/OrtLicenseCategorization/a5ea526901a3d4110f8a3b31baa81647">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a5ea526901a3d4110f8a3b31baa81647">[<a href="/fact/OrtLicenseCategorization/a5ea526901a3d4110f8a3b31baa81647">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Parity-6.0.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;a5ea526901a3d4110f8a3b31baa81647&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Parity-6.0.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/400a5951108e0dcc82121554096c8e54">CavilLicenseChange:400a5951108e0dcc82121554096c8e54</a> for <a href="/?license=cavil:Parity-6.0.0"><span class="licensename"><span class="namespace">cavil:</span>Parity-6.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Parity-6.0.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity-6.0.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Parity-6.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Parity-6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;400a5951108e0dcc82121554096c8e54&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Parity-6.0.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Parity-6.0.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/914a45dd1f638927853461a1551cc46e">MetaeffektLicense:914a45dd1f638927853461a1551cc46e</a> for <a href="/?license=metaeffekt:Parity Public License 6.0.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Parity Public License 6.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Parity Public License 6.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Parity-6.0.0</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity</span></li><li><span class="licensename">Parity Public License 6.0.0</span></li><li><span class="licensename">Parity-6.0.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>parity-6.0.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Parity Public License 6.0.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Parity-6.0.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Parity&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Parity Public License 6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Parity-6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:parity-6.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;914a45dd1f638927853461a1551cc46e&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Parity Public License 6.0.0&quot;,
+            &quot;Parity-6.0.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Parity Public License 6.0.0&quot;,
+        &quot;_category&quot;: &quot;Parity&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:parity-6.0.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Parity-6.0.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

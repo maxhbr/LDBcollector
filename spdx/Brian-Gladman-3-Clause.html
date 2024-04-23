@@ -1,0 +1,716 @@
+<html><head><title>ldbcollector: spdx:Brian-Gladman-3-Clause</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Brian-Gladman-3-Clause</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Brian-Gladman-3-Clause</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Brian Gladman 3-Clause License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Brian Gladman 3-Clause License</span></li><li><span class="licensename">Brian-Gladman-3-Clause</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Brian-Gladman-3-Clause</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Brian-Gladman-3-Clause</span></li><li><span class="licensename"><span class="namespace">scancode:</span>brian-gladman-3-clause</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Brian-Gladman-3-Clause</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:fbf2990f9fd648a578dfc4b25792e8a8">[<a href="/fact/ScancodeData/fbf2990f9fd648a578dfc4b25792e8a8">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:fbb8e0a32b2440d55ba78148a096a2bb">[<a href="/fact/SPDXLicense/fbb8e0a32b2440d55ba78148a096a2bb">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b0a0497eab74f3f44710da6d656e8c84">[<a href="/fact/FedoraEntry/b0a0497eab74f3f44710da6d656e8c84">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:0153d96dff004b103edac6b5a8c10d98">[<a href="/fact/MetaeffektLicense/0153d96dff004b103edac6b5a8c10d98">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:3909ad93daf664956132881b208addcf">[<a href="/fact/OrtLicenseCategorization/3909ad93daf664956132881b208addcf">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:3909ad93daf664956132881b208addcf">[<a href="/fact/OrtLicenseCategorization/3909ad93daf664956132881b208addcf">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>There is now a SPDX license with the same name as this license but
+this is actually a license that we track at brian-gladman-dual.
+<span class="provided-by">(provided by: <span title="ScancodeData:fbf2990f9fd648a578dfc4b25792e8a8">[<a href="/fact/ScancodeData/fbf2990f9fd648a578dfc4b25792e8a8">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h" target="_blank">https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.
+
+LICENSE TERMS
+
+The free distribution and use of this software in both source and binary
+form is allowed (with or without changes) provided that:
+
+  1. distributions of this source code include the above copyright
+     notice, this list of conditions and the following disclaimer;
+
+  2. distributions in binary form include the above copyright
+     notice, this list of conditions and the following disclaimer
+     in the documentation and/or other associated materials;
+
+  3. the copyright holder&#39;s name is not used to endorse products
+     built using this software without specific written permission.
+
+ALTERNATIVELY, provided that this notice is retained in full, this product
+may be distributed under the terms of the GNU General Public License (GPL),
+in which case the provisions of the GPL apply INSTEAD OF those given above.
+
+DISCLAIMER
+
+This software is provided &#39;as is&#39; with no explicit or implied warranties
+in respect of its properties, including, but not limited to, correctness
+and/or fitness for purpose.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+            LICENSE TERMS
+         &lt;/p&gt;
+
+	 &lt;p&gt;
+            The free distribution and use of this software in both source and binary
+            form is allowed (with or without changes) provided that:
+	 &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; distributions of this source code include the above copyright
+			notice, this list of conditions and the following disclaimer;
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; distributions in binary form include the above copyright
+			notice, this list of conditions and the following disclaimer
+			in the documentation and/or other associated materials;
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; the copyright holder&amp;apos;s name is not used to endorse products
+			built using this software without specific written permission.
+		&lt;/li&gt;
+	
+&lt;/ul&gt;
+	&lt;p&gt;
+		ALTERNATIVELY, provided that this notice is retained in full, this product
+		may be distributed under the terms of the GNU General Public License (GPL),
+		in which case the provisions of the GPL apply INSTEAD OF those given above.
+	&lt;/p&gt;
+
+	&lt;p&gt;
+		DISCLAIMER
+	&lt;/p&gt;
+
+	&lt;p&gt;
+		This software is provided &amp;apos;as is&amp;apos; with no explicit or implied warranties
+		in respect of its properties, including, but not limited to, correctness
+		and/or fitness for purpose.
+	&lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre> LICENSE TERMS
+
+ The free distribution and use of this software in both source and binary
+ form is allowed (with or without changes) provided that:
+
+   1. distributions of this source code include the above copyright
+      notice, this list of conditions and the following disclaimer;
+
+   2. distributions in binary form include the above copyright
+      notice, this list of conditions and the following disclaimer
+      in the documentation and/or other associated materials;
+
+   3. the copyright holder&#39;s name is not used to endorse products
+      built using this software without specific written permission.
+
+ DISCLAIMER
+
+ This software is provided &#39;as is&#39; with no explicit or implied warranties
+ in respect of its properties, including, but not limited to, correctness
+ and fitness for purpose.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/fbb8e0a32b2440d55ba78148a096a2bb">SPDXLicense:fbb8e0a32b2440d55ba78148a096a2bb</a> for <a href="/?license=spdx:Brian-Gladman-3-Clause"><span class="licensename"><span class="namespace">spdx:</span>Brian-Gladman-3-Clause</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Brian-Gladman-3-Clause</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Brian Gladman 3-Clause License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:fbb8e0a32b2440d55ba78148a096a2bb">[<a href="/fact/SPDXLicense/fbb8e0a32b2440d55ba78148a096a2bb">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h" target="_blank">https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.
+
+LICENSE TERMS
+
+The free distribution and use of this software in both source and binary
+form is allowed (with or without changes) provided that:
+
+  1. distributions of this source code include the above copyright
+     notice, this list of conditions and the following disclaimer;
+
+  2. distributions in binary form include the above copyright
+     notice, this list of conditions and the following disclaimer
+     in the documentation and/or other associated materials;
+
+  3. the copyright holder&#39;s name is not used to endorse products
+     built using this software without specific written permission.
+
+ALTERNATIVELY, provided that this notice is retained in full, this product
+may be distributed under the terms of the GNU General Public License (GPL),
+in which case the provisions of the GPL apply INSTEAD OF those given above.
+
+DISCLAIMER
+
+This software is provided &#39;as is&#39; with no explicit or implied warranties
+in respect of its properties, including, but not limited to, correctness
+and/or fitness for purpose.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+            LICENSE TERMS
+         &lt;/p&gt;
+
+	 &lt;p&gt;
+            The free distribution and use of this software in both source and binary
+            form is allowed (with or without changes) provided that:
+	 &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; distributions of this source code include the above copyright
+			notice, this list of conditions and the following disclaimer;
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; distributions in binary form include the above copyright
+			notice, this list of conditions and the following disclaimer
+			in the documentation and/or other associated materials;
+		&lt;/li&gt;
+		
+&lt;li&gt;
+			&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; the copyright holder&amp;apos;s name is not used to endorse products
+			built using this software without specific written permission.
+		&lt;/li&gt;
+	
+&lt;/ul&gt;
+	&lt;p&gt;
+		ALTERNATIVELY, provided that this notice is retained in full, this product
+		may be distributed under the terms of the GNU General Public License (GPL),
+		in which case the provisions of the GPL apply INSTEAD OF those given above.
+	&lt;/p&gt;
+
+	&lt;p&gt;
+		DISCLAIMER
+	&lt;/p&gt;
+
+	&lt;p&gt;
+		This software is provided &amp;apos;as is&amp;apos; with no explicit or implied warranties
+		in respect of its properties, including, but not limited to, correctness
+		and/or fitness for purpose.
+	&lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Brian-Gladman-3-Clause&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;fbb8e0a32b2440d55ba78148a096a2bb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.\n\nLICENSE TERMS\n\nThe free distribution and use of this software in both source and binary\nform is allowed (with or without changes) provided that:\n\n  1. distributions of this source code include the above copyright\n     notice, this list of conditions and the following disclaimer;\n\n  2. distributions in binary form include the above copyright\n     notice, this list of conditions and the following disclaimer\n     in the documentation and/or other associated materials;\n\n  3. the copyright holder&#39;s name is not used to endorse products\n     built using this software without specific written permission.\n\nALTERNATIVELY, provided that this notice is retained in full, this product\nmay be distributed under the terms of the GNU General Public License (GPL),\nin which case the provisions of the GPL apply INSTEAD OF those given above.\n\nDISCLAIMER\n\nThis software is provided &#39;as is&#39; with no explicit or implied warranties\nin respect of its properties, including, but not limited to, correctness\nand/or fitness for purpose.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n            LICENSE TERMS\n         &lt;/p&gt;\n\n\t &lt;p&gt;\n            The free distribution and use of this software in both source and binary\n            form is allowed (with or without changes) provided that:\n\t &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; distributions of this source code include the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer;\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; distributions in binary form include the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer\n\t\t\tin the documentation and/or other associated materials;\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; the copyright holder&amp;apos;s name is not used to endorse products\n\t\t\tbuilt using this software without specific written permission.\n\t\t&lt;/li&gt;\n\t\n&lt;/ul&gt;\n\t&lt;p&gt;\n\t\tALTERNATIVELY, provided that this notice is retained in full, this product\n\t\tmay be distributed under the terms of the GNU General Public License (GPL),\n\t\tin which case the provisions of the GPL apply INSTEAD OF those given above.\n\t&lt;/p&gt;\n\n\t&lt;p&gt;\n\t\tDISCLAIMER\n\t&lt;/p&gt;\n\n\t&lt;p&gt;\n\t\tThis software is provided &amp;apos;as is&amp;apos; with no explicit or implied warranties\n\t\tin respect of its properties, including, but not limited to, correctness\n\t\tand/or fitness for purpose.\n\t&lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:17Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Brian-Gladman-3-Clause&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.\n\nLICENSE TERMS\n\nThe free distribution and use of this software in both source and binary\nform is allowed (with or without changes) provided that:\n\n  1. distributions of this source code include the above copyright\n     notice, this list of conditions and the following disclaimer;\n\n  2. distributions in binary form include the above copyright\n     notice, this list of conditions and the following disclaimer\n     in the documentation and/or other associated materials;\n\n  3. the copyright holder&#39;s name is not used to endorse products\n     built using this software without specific written permission.\n\nALTERNATIVELY, provided that this notice is retained in full, this product\nmay be distributed under the terms of the GNU General Public License (GPL),\nin which case the provisions of the GPL apply INSTEAD OF those given above.\n\nDISCLAIMER\n\nThis software is provided &#39;as is&#39; with no explicit or implied warranties\nin respect of its properties, including, but not limited to, correctness\nand/or fitness for purpose.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 2003, Dr Brian Gladman, Worcester, UK.   All rights reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n            LICENSE TERMS\n         &lt;/p&gt;\n\n\t &lt;p&gt;\n            The free distribution and use of this software in both source and binary\n            form is allowed (with or without changes) provided that:\n\t &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; distributions of this source code include the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer;\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; distributions in binary form include the above copyright\n\t\t\tnotice, this list of conditions and the following disclaimer\n\t\t\tin the documentation and/or other associated materials;\n\t\t&lt;/li&gt;\n\t\t\n&lt;li&gt;\n\t\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; the copyright holder&amp;apos;s name is not used to endorse products\n\t\t\tbuilt using this software without specific written permission.\n\t\t&lt;/li&gt;\n\t\n&lt;/ul&gt;\n\t&lt;p&gt;\n\t\tALTERNATIVELY, provided that this notice is retained in full, this product\n\t\tmay be distributed under the terms of the GNU General Public License (GPL),\n\t\tin which case the provisions of the GPL apply INSTEAD OF those given above.\n\t&lt;/p&gt;\n\n\t&lt;p&gt;\n\t\tDISCLAIMER\n\t&lt;/p&gt;\n\n\t&lt;p&gt;\n\t\tThis software is provided &amp;apos;as is&amp;apos; with no explicit or implied warranties\n\t\tin respect of its properties, including, but not limited to, correctness\n\t\tand/or fitness for purpose.\n\t&lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2003, Dr Brian Gladman, Worcester, UK. All rights reserved.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nLICENSE TERMS\n\nThe free distribution and use of this software in both source and binary form is allowed (with or without changes) provided that:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; distributions of this source code include the above copyright notice, this list of conditions and the following disclaimer;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; distributions in binary form include the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other associated materials;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; the copyright holder&#39;s name is not used to endorse products built using this software without specific written permission.\n\nALTERNATIVELY, provided that this notice is retained in full, this product may be distributed under the terms of the GNU General Public License (GPL), in which case the provisions of the GPL apply INSTEAD OF those given above.\n\nDISCLAIMER\n\nThis software is provided &#39;as is&#39; with no explicit or implied warranties in respect of its properties, including, but not limited to, correctness and/or fitness for purpose.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/b0a0497eab74f3f44710da6d656e8c84">FedoraEntry:b0a0497eab74f3f44710da6d656e8c84</a> for <a href="/?license=Fedora:Brian-Gladman-3-Clause"><span class="licensename"><span class="namespace">Fedora:</span>Brian-Gladman-3-Clause</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Brian-Gladman-3-Clause</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Brian-Gladman-3-Clause</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b0a0497eab74f3f44710da6d656e8c84">[<a href="/fact/FedoraEntry/b0a0497eab74f3f44710da6d656e8c84">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Brian-Gladman-3-Clause&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Brian-Gladman-3-Clause&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;b0a0497eab74f3f44710da6d656e8c84&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Brian-Gladman-3-Clause&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Brian-Gladman-3-Clause&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/fbf2990f9fd648a578dfc4b25792e8a8">ScancodeData:fbf2990f9fd648a578dfc4b25792e8a8</a> for <a href="/?license=scancode:brian-gladman-3-clause"><span class="licensename"><span class="namespace">scancode:</span>brian-gladman-3-clause</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>brian-gladman-3-clause</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Brian Gladman 3-Clause License</span></li><li><span class="licensename">Brian Gladman 3-Clause License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:fbf2990f9fd648a578dfc4b25792e8a8">[<a href="/fact/ScancodeData/fbf2990f9fd648a578dfc4b25792e8a8">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>There is now a SPDX license with the same name as this license but
+this is actually a license that we track at brian-gladman-dual.
+<span class="provided-by">(provided by: <span title="ScancodeData:fbf2990f9fd648a578dfc4b25792e8a8">[<a href="/fact/ScancodeData/fbf2990f9fd648a578dfc4b25792e8a8">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h" target="_blank">https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre> LICENSE TERMS
+
+ The free distribution and use of this software in both source and binary
+ form is allowed (with or without changes) provided that:
+
+   1. distributions of this source code include the above copyright
+      notice, this list of conditions and the following disclaimer;
+
+   2. distributions in binary form include the above copyright
+      notice, this list of conditions and the following disclaimer
+      in the documentation and/or other associated materials;
+
+   3. the copyright holder&#39;s name is not used to endorse products
+      built using this software without specific written permission.
+
+ DISCLAIMER
+
+ This software is provided &#39;as is&#39; with no explicit or implied warranties
+ in respect of its properties, including, but not limited to, correctness
+ and fitness for purpose.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:brian-gladman-3-clause&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;fbf2990f9fd648a578dfc4b25792e8a8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;There is now a SPDX license with the same name as this license but\nthis is actually a license that we track at brian-gladman-dual.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot; LICENSE TERMS\n\n The free distribution and use of this software in both source and binary\n form is allowed (with or without changes) provided that:\n\n   1. distributions of this source code include the above copyright\n      notice, this list of conditions and the following disclaimer;\n\n   2. distributions in binary form include the above copyright\n      notice, this list of conditions and the following disclaimer\n      in the documentation and/or other associated materials;\n\n   3. the copyright holder&#39;s name is not used to endorse products\n      built using this software without specific written permission.\n\n DISCLAIMER\n\n This software is provided &#39;as is&#39; with no explicit or implied warranties\n in respect of its properties, including, but not limited to, correctness\n and fitness for purpose.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;brian-gladman-3-clause&quot;,
+        &quot;_name&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+        &quot;_notes&quot;: &quot;There is now a SPDX license with the same name as this license but\nthis is actually a license that we track at brian-gladman-dual.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/SWI-Prolog/packages-clib/blob/master/sha1/brg_endian.h&quot;
+        ],
+        &quot;_owner&quot;: &quot;Brian Gladman&quot;,
+        &quot;_shortName&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+        &quot;_spdxId&quot;: &quot;LicenseRef-scancode-brian-gladman-3-clause&quot;,
+        &quot;_text&quot;: &quot; LICENSE TERMS\n\n The free distribution and use of this software in both source and binary\n form is allowed (with or without changes) provided that:\n\n   1. distributions of this source code include the above copyright\n      notice, this list of conditions and the following disclaimer;\n\n   2. distributions in binary form include the above copyright\n      notice, this list of conditions and the following disclaimer\n      in the documentation and/or other associated materials;\n\n   3. the copyright holder&#39;s name is not used to endorse products\n      built using this software without specific written permission.\n\n DISCLAIMER\n\n This software is provided &#39;as is&#39; with no explicit or implied warranties\n in respect of its properties, including, but not limited to, correctness\n and fitness for purpose.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/3909ad93daf664956132881b208addcf">OrtLicenseCategorization:3909ad93daf664956132881b208addcf</a> for <a href="/?license=SPDX:Brian-Gladman-3-Clause"><span class="licensename"><span class="namespace">SPDX:</span>Brian-Gladman-3-Clause</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Brian-Gladman-3-Clause</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:3909ad93daf664956132881b208addcf">[<a href="/fact/OrtLicenseCategorization/3909ad93daf664956132881b208addcf">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:3909ad93daf664956132881b208addcf">[<a href="/fact/OrtLicenseCategorization/3909ad93daf664956132881b208addcf">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Brian-Gladman-3-Clause&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;3909ad93daf664956132881b208addcf&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Brian-Gladman-3-Clause&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/bd1d6c1f9eec6f1eb0d2347465bf1df2">CavilLicenseChange:bd1d6c1f9eec6f1eb0d2347465bf1df2</a> for <a href="/?license=cavil:Brian-Gladman-3-Clause"><span class="licensename"><span class="namespace">cavil:</span>Brian-Gladman-3-Clause</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Brian-Gladman-3-Clause</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Brian-Gladman-3-Clause</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Brian-Gladman-3-Clause&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Brian-Gladman-3-Clause&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;bd1d6c1f9eec6f1eb0d2347465bf1df2&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Brian-Gladman-3-Clause&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Brian-Gladman-3-Clause&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/0153d96dff004b103edac6b5a8c10d98">MetaeffektLicense:0153d96dff004b103edac6b5a8c10d98</a> for <a href="/?license=metaeffekt:Brian Gladman 3-Clause License"><span class="licensename"><span class="namespace">metaeffekt:</span>Brian Gladman 3-Clause License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Brian Gladman 3-Clause License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Brian-Gladman-3-Clause</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Brian Gladman 3-Clause License</span></li><li><span class="licensename">brian-gladman-3-clause</span></li><li><span class="licensename"><span class="namespace">scancode:</span>brian-gladman-3-clause</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:0153d96dff004b103edac6b5a8c10d98">[<a href="/fact/MetaeffektLicense/0153d96dff004b103edac6b5a8c10d98">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Brian Gladman 3-Clause License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Brian-Gladman-3-Clause&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;brian-gladman-3-clause&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:brian-gladman-3-clause&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;0153d96dff004b103edac6b5a8c10d98&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;brian-gladman-3-clause&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Brian Gladman 3-Clause License&quot;,
+        &quot;_category&quot;: &quot;Brian Gladman 3-Clause License&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:brian-gladman-3-clause&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Brian-Gladman-3-Clause&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

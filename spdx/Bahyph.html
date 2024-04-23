@@ -1,0 +1,784 @@
+<html><head><title>ldbcollector: spdx:Bahyph</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Bahyph</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Bahyph</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Bahyph</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Bahyph</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Bahyph</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Bahyph</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bahyph</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Bahyph</span></li><li><span class="licensename">Bahyph License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Bahyph License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:d7dbeaa997150f8779dc841662dc929a">[<a href="/fact/BlueOakCouncil/d7dbeaa997150f8779dc841662dc929a">BlueOakCouncil</a>]</span><span title="ScancodeData:dd1bc74b77965a28dadf7b1bf4c935fe">[<a href="/fact/ScancodeData/dd1bc74b77965a28dadf7b1bf4c935fe">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4932108ab2777815137cbf874dd5ecac">[<a href="/fact/SPDXLicense/4932108ab2777815137cbf874dd5ecac">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:ebe20842aecbe0bd3a81da17402b1320">[<a href="/fact/FedoraEntry/ebe20842aecbe0bd3a81da17402b1320">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:d7dbeaa997150f8779dc841662dc929a">[<a href="/fact/BlueOakCouncil/d7dbeaa997150f8779dc841662dc929a">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5268e6ac41bc4362f912fba5f3b93af">[<a href="/fact/OrtLicenseCategorization/c5268e6ac41bc4362f912fba5f3b93af">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5268e6ac41bc4362f912fba5f3b93af">[<a href="/fact/OrtLicenseCategorization/c5268e6ac41bc4362f912fba5f3b93af">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Bahyph" target="_blank">https://fedoraproject.org/wiki/Licensing/Bahyph</a></li><li><a href="https://spdx.org/licenses/Bahyph" target="_blank">https://spdx.org/licenses/Bahyph</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/Bahyph</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT NOTICE
+
+These patterns and the generating sh script are Copyright (c) GMV 1991
+
+These patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.
+
+However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.
+
+You can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.
+
+END OF COPYRIGHT NOTICE
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;COPYRIGHT NOTICE&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;These patterns and the generating sh script are Copyright (c) GMV 1991&lt;/p&gt;
+
+      &lt;p&gt;These patterns were developed for internal GMV use and are made public in the hope that they will benefit
+         others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to
+         provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.&lt;/p&gt;
+
+      &lt;p&gt;However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV,
+         Jos&amp;apos;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this
+         software nor for any damages derived from its use, even in case any of the above has been notified of
+         the possibility of such damages. If any such situation arises, you responsible for repair. Use of this
+         software is an explicit acceptance of these conditions.&lt;/p&gt;
+
+      &lt;p&gt;You can use this software for any purpose. You cannot delete this copyright notice. If you change this
+         software, you must include comments explaining who, when and why. You are kindly requested to send any
+         changes to tex@gmv.es. If you change the generating script, you must include code in it such that any
+         output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would
+         like to hear about any problem you find. Please report problems to tex@gmv.es.&lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;END OF COPYRIGHT NOTICE&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>COPYRIGHT NOTICE   
+
+These patterns and the generating sh script are Copyright (c) GMV 1991  
+
+These patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users. 
+
+However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.   
+
+You can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.   
+
+END OF COPYRIGHT NOTICE</pre></details></li><li><details><summary>Text:</summary><pre>COPYRIGHT NOTICE
+
+These patterns and the generating sh script are Copyright (c) GMV 1991
+
+These patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.
+
+However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit acceptance of these conditions.
+
+You can use this software for any purpose. You cannot delete this copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es. END OF COPYRIGHT NOTICE</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/4932108ab2777815137cbf874dd5ecac">SPDXLicense:4932108ab2777815137cbf874dd5ecac</a> for <a href="/?license=spdx:Bahyph"><span class="licensename"><span class="namespace">spdx:</span>Bahyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Bahyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4932108ab2777815137cbf874dd5ecac">[<a href="/fact/SPDXLicense/4932108ab2777815137cbf874dd5ecac">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Bahyph" target="_blank">https://fedoraproject.org/wiki/Licensing/Bahyph</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT NOTICE
+
+These patterns and the generating sh script are Copyright (c) GMV 1991
+
+These patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.
+
+However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.
+
+You can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.
+
+END OF COPYRIGHT NOTICE
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;COPYRIGHT NOTICE&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;These patterns and the generating sh script are Copyright (c) GMV 1991&lt;/p&gt;
+
+      &lt;p&gt;These patterns were developed for internal GMV use and are made public in the hope that they will benefit
+         others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to
+         provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.&lt;/p&gt;
+
+      &lt;p&gt;However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV,
+         Jos&amp;apos;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this
+         software nor for any damages derived from its use, even in case any of the above has been notified of
+         the possibility of such damages. If any such situation arises, you responsible for repair. Use of this
+         software is an explicit acceptance of these conditions.&lt;/p&gt;
+
+      &lt;p&gt;You can use this software for any purpose. You cannot delete this copyright notice. If you change this
+         software, you must include comments explaining who, when and why. You are kindly requested to send any
+         changes to tex@gmv.es. If you change the generating script, you must include code in it such that any
+         output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would
+         like to hear about any problem you find. Please report problems to tex@gmv.es.&lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;END OF COPYRIGHT NOTICE&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Bahyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Bahyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;4932108ab2777815137cbf874dd5ecac&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;COPYRIGHT NOTICE\n\nThese patterns and the generating sh script are Copyright (c) GMV 1991\n\nThese patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.\n\nHowever, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.\n\nYou can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.\n\nEND OF COPYRIGHT NOTICE\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;COPYRIGHT NOTICE&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;These patterns and the generating sh script are Copyright (c) GMV 1991&lt;/p&gt;\n\n      &lt;p&gt;These patterns were developed for internal GMV use and are made public in the hope that they will benefit\n         others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to\n         provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.&lt;/p&gt;\n\n      &lt;p&gt;However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV,\n         Jos&amp;apos;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this\n         software nor for any damages derived from its use, even in case any of the above has been notified of\n         the possibility of such damages. If any such situation arises, you responsible for repair. Use of this\n         software is an explicit acceptance of these conditions.&lt;/p&gt;\n\n      &lt;p&gt;You can use this software for any purpose. You cannot delete this copyright notice. If you change this\n         software, you must include comments explaining who, when and why. You are kindly requested to send any\n         changes to tex@gmv.es. If you change the generating script, you must include code in it such that any\n         output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would\n         like to hear about any problem you find. Please report problems to tex@gmv.es.&lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;END OF COPYRIGHT NOTICE&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:09:54Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Bahyph&quot;,
+        &quot;licenseText&quot;: &quot;COPYRIGHT NOTICE\n\nThese patterns and the generating sh script are Copyright (c) GMV 1991\n\nThese patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.\n\nHowever, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.\n\nYou can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.\n\nEND OF COPYRIGHT NOTICE\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;COPYRIGHT NOTICE&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;These patterns and the generating sh script are Copyright (c) GMV 1991&lt;/p&gt;\n\n      &lt;p&gt;These patterns were developed for internal GMV use and are made public in the hope that they will benefit\n         others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to\n         provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.&lt;/p&gt;\n\n      &lt;p&gt;However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV,\n         Jos&amp;apos;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this\n         software nor for any damages derived from its use, even in case any of the above has been notified of\n         the possibility of such damages. If any such situation arises, you responsible for repair. Use of this\n         software is an explicit acceptance of these conditions.&lt;/p&gt;\n\n      &lt;p&gt;You can use this software for any purpose. You cannot delete this copyright notice. If you change this\n         software, you must include comments explaining who, when and why. You are kindly requested to send any\n         changes to tex@gmv.es. If you change the generating script, you must include code in it such that any\n         output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would\n         like to hear about any problem you find. Please report problems to tex@gmv.es.&lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;END OF COPYRIGHT NOTICE&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Bahyph License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;COPYRIGHT NOTICE\n\n&lt;&lt;endOptional&gt;&gt;\n\nThese patterns and the generating sh script are Copyright (c) GMV 1991\n\nThese patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.\n\nHowever, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit acceptance of these conditions.\n\nYou can use this software for any purpose. You cannot delete this copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.\n\n&lt;&lt;beginOptional&gt;&gt;END OF COPYRIGHT NOTICE\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/ebe20842aecbe0bd3a81da17402b1320">FedoraEntry:ebe20842aecbe0bd3a81da17402b1320</a> for <a href="/?license=Fedora:Bahyph"><span class="licensename"><span class="namespace">Fedora:</span>Bahyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Bahyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Bahyph</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph</span></li><li><span class="licensename">Bahyph License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:ebe20842aecbe0bd3a81da17402b1320">[<a href="/fact/FedoraEntry/ebe20842aecbe0bd3a81da17402b1320">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Bahyph" target="_blank">https://fedoraproject.org/wiki/Licensing/Bahyph</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Bahyph&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Bahyph&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Bahyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Bahyph&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;ebe20842aecbe0bd3a81da17402b1320&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Bahyph&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Bahyph License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Bahyph&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Bahyph&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/d7dbeaa997150f8779dc841662dc929a">BlueOakCouncil:d7dbeaa997150f8779dc841662dc929a</a> for <a href="/?license=BlueOak:Bahyph"><span class="licensename"><span class="namespace">BlueOak:</span>Bahyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Bahyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:d7dbeaa997150f8779dc841662dc929a">[<a href="/fact/BlueOakCouncil/d7dbeaa997150f8779dc841662dc929a">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:d7dbeaa997150f8779dc841662dc929a">[<a href="/fact/BlueOakCouncil/d7dbeaa997150f8779dc841662dc929a">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Bahyph" target="_blank">https://spdx.org/licenses/Bahyph</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:Bahyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Bahyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;d7dbeaa997150f8779dc841662dc929a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Bahyph&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;Bahyph&quot;,
+                &quot;_name&quot;: &quot;Bahyph License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Bahyph&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/dd1bc74b77965a28dadf7b1bf4c935fe">ScancodeData:dd1bc74b77965a28dadf7b1bf4c935fe</a> for <a href="/?license=scancode:bahyph"><span class="licensename"><span class="namespace">scancode:</span>bahyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bahyph</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph License</span></li><li><span class="licensename">Bahyph License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:dd1bc74b77965a28dadf7b1bf4c935fe">[<a href="/fact/ScancodeData/dd1bc74b77965a28dadf7b1bf4c935fe">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/Bahyph</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT NOTICE   
+
+These patterns and the generating sh script are Copyright (c) GMV 1991  
+
+These patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users. 
+
+However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.   
+
+You can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.   
+
+END OF COPYRIGHT NOTICE</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bahyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Bahyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Bahyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;dd1bc74b77965a28dadf7b1bf4c935fe&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;COPYRIGHT NOTICE   \n\nThese patterns and the generating sh script are Copyright (c) GMV 1991  \n\nThese patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users. \n\nHowever, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.   \n\nYou can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.   \n\nEND OF COPYRIGHT NOTICE&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;,
+        &quot;_key&quot;: &quot;bahyph&quot;,
+        &quot;_name&quot;: &quot;Bahyph License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;GMV&quot;,
+        &quot;_shortName&quot;: &quot;Bahyph License&quot;,
+        &quot;_spdxId&quot;: &quot;Bahyph&quot;,
+        &quot;_text&quot;: &quot;COPYRIGHT NOTICE   \n\nThese patterns and the generating sh script are Copyright (c) GMV 1991  \n\nThese patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users. \n\nHowever, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit  acceptance of these conditions.   \n\nYou can use this software for any purpose. You cannot delete this  copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script.   Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es.   \n\nEND OF COPYRIGHT NOTICE&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/09006726a3da495b746dd27b1669671c">Fossology:09006726a3da495b746dd27b1669671c</a> for <a href="/?license=fossology:Bahyph"><span class="licensename"><span class="namespace">fossology:</span>Bahyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Bahyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Bahyph" target="_blank">https://fedoraproject.org/wiki/Licensing/Bahyph</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>COPYRIGHT NOTICE
+
+These patterns and the generating sh script are Copyright (c) GMV 1991
+
+These patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.
+
+However, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit acceptance of these conditions.
+
+You can use this software for any purpose. You cannot delete this copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es. END OF COPYRIGHT NOTICE</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Bahyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Bahyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;09006726a3da495b746dd27b1669671c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;COPYRIGHT NOTICE\n\nThese patterns and the generating sh script are Copyright (c) GMV 1991\n\nThese patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.\n\nHowever, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit acceptance of these conditions.\n\nYou can use this software for any purpose. You cannot delete this copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es. END OF COPYRIGHT NOTICE&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Bahyph License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Bahyph&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;COPYRIGHT NOTICE\n\nThese patterns and the generating sh script are Copyright (c) GMV 1991\n\nThese patterns were developed for internal GMV use and are made public in the hope that they will benefit others. Also, spreading these patterns throughout the Spanish-language TeX community is expected to provide back-benefits to GMV in that it can help keeping GMV in the mainstream of spanish users.\n\nHowever, this is given for free and WITHOUT ANY WARRANTY. Under no circumstances can Julio Sanchez, GMV, Jos&#39;e A. Ma~nas or any agents or representatives thereof be held responsible for any errors in this software nor for any damages derived from its use, even in case any of the above has been notified of the possibility of such damages. If any such situation arises, you responsible for repair. Use of this software is an explicit acceptance of these conditions.\n\nYou can use this software for any purpose. You cannot delete this copyright notice. If you change this software, you must include comments explaining who, when and why. You are kindly requested to send any changes to tex@gmv.es. If you change the generating script, you must include code in it such that any output is clearly labeled as generated by a modified script. Despite the lack of warranty, we would like to hear about any problem you find. Please report problems to tex@gmv.es. END OF COPYRIGHT NOTICE&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Bahyph&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c5268e6ac41bc4362f912fba5f3b93af">OrtLicenseCategorization:c5268e6ac41bc4362f912fba5f3b93af</a> for <a href="/?license=SPDX:Bahyph"><span class="licensename"><span class="namespace">SPDX:</span>Bahyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Bahyph</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5268e6ac41bc4362f912fba5f3b93af">[<a href="/fact/OrtLicenseCategorization/c5268e6ac41bc4362f912fba5f3b93af">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5268e6ac41bc4362f912fba5f3b93af">[<a href="/fact/OrtLicenseCategorization/c5268e6ac41bc4362f912fba5f3b93af">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Bahyph&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c5268e6ac41bc4362f912fba5f3b93af&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Bahyph&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/4e7ed5d115523f99cbae6cb7d208bd7d">CavilLicenseChange:4e7ed5d115523f99cbae6cb7d208bd7d</a> for <a href="/?license=cavil:Bahyph"><span class="licensename"><span class="namespace">cavil:</span>Bahyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Bahyph</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Bahyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Bahyph&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;4e7ed5d115523f99cbae6cb7d208bd7d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Bahyph&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Bahyph&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/99d4ddb9481e319439d425ba5153d080">MetaeffektLicense:99d4ddb9481e319439d425ba5153d080</a> for <a href="/?license=metaeffekt:Bahyph License"><span class="licensename"><span class="namespace">metaeffekt:</span>Bahyph License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Bahyph License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Bahyph</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bahyph</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bahyph</span></li><li><span class="licensename">Bahyph License</span></li><li><span class="licensename">BAHYPH LICENSE</span></li><li><span class="licensename">BAHYPH License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Bahyph License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Bahyph&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Bahyph&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Bahyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BAHYPH LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BAHYPH License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:bahyph&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;99d4ddb9481e319439d425ba5153d080&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Bahyph License&quot;,
+            &quot;BAHYPH LICENSE&quot;,
+            &quot;BAHYPH License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Bahyph License&quot;,
+        &quot;_category&quot;: &quot;Bahyph&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:bahyph&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Bahyph&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

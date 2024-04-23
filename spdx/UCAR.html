@@ -1,0 +1,753 @@
+<html><head><title>ldbcollector: spdx:UCAR</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:UCAR</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UCAR</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">UCAR</span></li><li><span class="licensename"><span class="namespace">cavil:</span>UCAR</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>UCAR</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ucar</span></li><li><span class="licensename"><span class="namespace">spdx:</span>UCAR</span></li><li><span class="licensename">UCAR License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>UCAR License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:59500afeef4c56d26fd8ea609d6921d4">[<a href="/fact/ScancodeData/59500afeef4c56d26fd8ea609d6921d4">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:71916b79794a76af5f300406193a9497">[<a href="/fact/SPDXLicense/71916b79794a76af5f300406193a9497">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d13a1c5822068cd05407050007753afb">[<a href="/fact/FedoraEntry/d13a1c5822068cd05407050007753afb">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05eaa4f8f66402acde4acea51ae1707d">[<a href="/fact/OrtLicenseCategorization/05eaa4f8f66402acde4acea51ae1707d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05eaa4f8f66402acde4acea51ae1707d">[<a href="/fact/OrtLicenseCategorization/05eaa4f8f66402acde4acea51ae1707d">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT" target="_blank">https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 2014 University Corporation for Atmospheric Research and contributors.
+All rights reserved.
+
+This software was developed by the Unidata Program Center of the
+University Corporation for Atmospheric Research (UCAR)
+&lt;http://www.unidata.ucar.edu&gt;.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+   1) Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+   2) Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+   3) Neither the names of the development group, the copyright holders, nor the
+      names of contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+   4) This license shall terminate automatically and you may no longer exercise
+      any of the rights granted to you by this license as of the date you
+      commence an action, including a cross-claim or counterclaim, against
+      the copyright holders or any contributor alleging that this software
+      infringes a patent. This termination provision shall not apply for an
+      action alleging patent infringement by combinations of this software with
+      other software or hardware.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright 2014 University Corporation for Atmospheric
+            Research and contributors. All rights reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+            This software was developed by the Unidata Program
+            Center of the University Corporation for Atmospheric
+            Research (UCAR) &amp;lt;http://www.unidata.ucar.edu&amp;gt;.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1)&lt;/var&gt;
+               Redistributions of source code must retain the above copyright
+               notice, this list of conditions and the following disclaimer.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2)&lt;/var&gt;
+               Redistributions in binary form must reproduce the
+               above copyright notice, this list of conditions and
+               the following disclaimer in the documentation and/or
+               other materials provided with the distribution.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3)&lt;/var&gt;
+               Neither the names of the development group, the copyright
+               holders, nor the names of contributors may be used to endorse
+               or promote products derived from this software without specific
+               prior written permission.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4)&lt;/var&gt; This license shall terminate
+               automatically and you may no longer exercise any of the rights
+               granted to you by this license as of the date you commence
+               an action, including a cross-claim or counterclaim, against
+               the copyright holders or any contributor alleging that this
+               software infringes a patent. This termination provision
+               shall not apply for an action alleging patent infringement by
+               combinations of this software with other software or hardware.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY
+            KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS
+            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+            OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+            SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>This software was developed by the Unidata Program Center of the
+University Corporation for Atmospheric Research (UCAR)
+&lt;http://www.unidata.ucar.edu&gt;.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+   1) Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+   2) Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+   3) Neither the names of the development group, the copyright holders, nor the
+      names of contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+   4) This license shall terminate automatically and you may no longer exercise
+      any of the rights granted to you by this license as of the date you
+      commence an action, including a cross-claim or counterclaim, against
+      the copyright holders or any contributor alleging that this software
+      infringes a patent. This termination provision shall not apply for an
+      action alleging patent infringement by combinations of this software with
+      other software or hardware.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/71916b79794a76af5f300406193a9497">SPDXLicense:71916b79794a76af5f300406193a9497</a> for <a href="/?license=spdx:UCAR"><span class="licensename"><span class="namespace">spdx:</span>UCAR</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UCAR</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">UCAR License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:71916b79794a76af5f300406193a9497">[<a href="/fact/SPDXLicense/71916b79794a76af5f300406193a9497">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT" target="_blank">https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 2014 University Corporation for Atmospheric Research and contributors.
+All rights reserved.
+
+This software was developed by the Unidata Program Center of the
+University Corporation for Atmospheric Research (UCAR)
+&lt;http://www.unidata.ucar.edu&gt;.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+   1) Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+   2) Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+   3) Neither the names of the development group, the copyright holders, nor the
+      names of contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+   4) This license shall terminate automatically and you may no longer exercise
+      any of the rights granted to you by this license as of the date you
+      commence an action, including a cross-claim or counterclaim, against
+      the copyright holders or any contributor alleging that this software
+      infringes a patent. This termination provision shall not apply for an
+      action alleging patent infringement by combinations of this software with
+      other software or hardware.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright 2014 University Corporation for Atmospheric
+            Research and contributors. All rights reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+            This software was developed by the Unidata Program
+            Center of the University Corporation for Atmospheric
+            Research (UCAR) &amp;lt;http://www.unidata.ucar.edu&amp;gt;.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1)&lt;/var&gt;
+               Redistributions of source code must retain the above copyright
+               notice, this list of conditions and the following disclaimer.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2)&lt;/var&gt;
+               Redistributions in binary form must reproduce the
+               above copyright notice, this list of conditions and
+               the following disclaimer in the documentation and/or
+               other materials provided with the distribution.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3)&lt;/var&gt;
+               Neither the names of the development group, the copyright
+               holders, nor the names of contributors may be used to endorse
+               or promote products derived from this software without specific
+               prior written permission.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4)&lt;/var&gt; This license shall terminate
+               automatically and you may no longer exercise any of the rights
+               granted to you by this license as of the date you commence
+               an action, including a cross-claim or counterclaim, against
+               the copyright holders or any contributor alleging that this
+               software infringes a patent. This termination provision
+               shall not apply for an action alleging patent infringement by
+               combinations of this software with other software or hardware.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY
+            KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS
+            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+            OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+            SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:UCAR&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UCAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;71916b79794a76af5f300406193a9497&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 2014 University Corporation for Atmospheric Research and contributors.\nAll rights reserved.\n\nThis software was developed by the Unidata Program Center of the\nUniversity Corporation for Atmospheric Research (UCAR)\n&lt;http://www.unidata.ucar.edu&gt;.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1) Redistributions of source code must retain the above copyright notice,\n      this list of conditions and the following disclaimer.\n   2) Redistributions in binary form must reproduce the above copyright notice,\n      this list of conditions and the following disclaimer in the documentation\n      and/or other materials provided with the distribution.\n   3) Neither the names of the development group, the copyright holders, nor the\n      names of contributors may be used to endorse or promote products derived\n      from this software without specific prior written permission.\n   4) This license shall terminate automatically and you may no longer exercise\n      any of the rights granted to you by this license as of the date you\n      commence an action, including a cross-claim or counterclaim, against\n      the copyright holders or any contributor alleging that this software\n      infringes a patent. This termination provision shall not apply for an\n      action alleging patent infringement by combinations of this software with\n      other software or hardware.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS\nOR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright 2014 University Corporation for Atmospheric\n            Research and contributors. All rights reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n            This software was developed by the Unidata Program\n            Center of the University Corporation for Atmospheric\n            Research (UCAR) &amp;lt;http://www.unidata.ucar.edu&amp;gt;.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1)&lt;/var&gt;\n               Redistributions of source code must retain the above copyright\n               notice, this list of conditions and the following disclaimer.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2)&lt;/var&gt;\n               Redistributions in binary form must reproduce the\n               above copyright notice, this list of conditions and\n               the following disclaimer in the documentation and/or\n               other materials provided with the distribution.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3)&lt;/var&gt;\n               Neither the names of the development group, the copyright\n               holders, nor the names of contributors may be used to endorse\n               or promote products derived from this software without specific\n               prior written permission.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4)&lt;/var&gt; This license shall terminate\n               automatically and you may no longer exercise any of the rights\n               granted to you by this license as of the date you commence\n               an action, including a cross-claim or counterclaim, against\n               the copyright holders or any contributor alleging that this\n               software infringes a patent. This termination provision\n               shall not apply for an action alleging patent infringement by\n               combinations of this software with other software or hardware.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY\n            KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE\n            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\n            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS\n            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR\n            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\n            OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\n            SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:01:29Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:UCAR&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 2014 University Corporation for Atmospheric Research and contributors.\nAll rights reserved.\n\nThis software was developed by the Unidata Program Center of the\nUniversity Corporation for Atmospheric Research (UCAR)\n&lt;http://www.unidata.ucar.edu&gt;.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1) Redistributions of source code must retain the above copyright notice,\n      this list of conditions and the following disclaimer.\n   2) Redistributions in binary form must reproduce the above copyright notice,\n      this list of conditions and the following disclaimer in the documentation\n      and/or other materials provided with the distribution.\n   3) Neither the names of the development group, the copyright holders, nor the\n      names of contributors may be used to endorse or promote products derived\n      from this software without specific prior written permission.\n   4) This license shall terminate automatically and you may no longer exercise\n      any of the rights granted to you by this license as of the date you\n      commence an action, including a cross-claim or counterclaim, against\n      the copyright holders or any contributor alleging that this software\n      infringes a patent. This termination provision shall not apply for an\n      action alleging patent infringement by combinations of this software with\n      other software or hardware.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS\nOR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright 2014 University Corporation for Atmospheric\n            Research and contributors. All rights reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n            This software was developed by the Unidata Program\n            Center of the University Corporation for Atmospheric\n            Research (UCAR) &amp;lt;http://www.unidata.ucar.edu&amp;gt;.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1)&lt;/var&gt;\n               Redistributions of source code must retain the above copyright\n               notice, this list of conditions and the following disclaimer.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2)&lt;/var&gt;\n               Redistributions in binary form must reproduce the\n               above copyright notice, this list of conditions and\n               the following disclaimer in the documentation and/or\n               other materials provided with the distribution.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3)&lt;/var&gt;\n               Neither the names of the development group, the copyright\n               holders, nor the names of contributors may be used to endorse\n               or promote products derived from this software without specific\n               prior written permission.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4)&lt;/var&gt; This license shall terminate\n               automatically and you may no longer exercise any of the rights\n               granted to you by this license as of the date you commence\n               an action, including a cross-claim or counterclaim, against\n               the copyright holders or any contributor alleging that this\n               software infringes a patent. This termination provision\n               shall not apply for an action alleging patent infringement by\n               combinations of this software with other software or hardware.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY\n            KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE\n            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\n            PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS\n            OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR\n            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\n            OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\n            SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;UCAR License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 2014 University Corporation for Atmospheric Research and contributors. All rights reserved.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThis software was developed by the Unidata Program Center of the University Corporation for Atmospheric Research (UCAR) &lt;http://www.unidata.ucar.edu&gt;.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Neither the names of the development group, the copyright holders, nor the names of contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; This license shall terminate automatically and you may no longer exercise any of the rights granted to you by this license as of the date you commence an action, including a cross-claim or counterclaim, against the copyright holders or any contributor alleging that this software infringes a patent. This termination provision shall not apply for an action alleging patent infringement by combinations of this software with other software or hardware.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/d13a1c5822068cd05407050007753afb">FedoraEntry:d13a1c5822068cd05407050007753afb</a> for <a href="/?license=Fedora:UCAR"><span class="licensename"><span class="namespace">Fedora:</span>UCAR</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>UCAR</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UCAR</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">UCAR</span></li><li><span class="licensename">UCAR License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d13a1c5822068cd05407050007753afb">[<a href="/fact/FedoraEntry/d13a1c5822068cd05407050007753afb">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:UCAR&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:UCAR&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UCAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;UCAR&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;d13a1c5822068cd05407050007753afb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;UCAR&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;UCAR License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;UCAR&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:UCAR&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/59500afeef4c56d26fd8ea609d6921d4">ScancodeData:59500afeef4c56d26fd8ea609d6921d4</a> for <a href="/?license=scancode:ucar"><span class="licensename"><span class="namespace">scancode:</span>ucar</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ucar</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">UCAR License</span></li><li><span class="licensename">UCAR License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:59500afeef4c56d26fd8ea609d6921d4">[<a href="/fact/ScancodeData/59500afeef4c56d26fd8ea609d6921d4">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software was developed by the Unidata Program Center of the
+University Corporation for Atmospheric Research (UCAR)
+&lt;http://www.unidata.ucar.edu&gt;.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+   1) Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+   2) Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+   3) Neither the names of the development group, the copyright holders, nor the
+      names of contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+   4) This license shall terminate automatically and you may no longer exercise
+      any of the rights granted to you by this license as of the date you
+      commence an action, including a cross-claim or counterclaim, against
+      the copyright holders or any contributor alleging that this software
+      infringes a patent. This termination provision shall not apply for an
+      action alleging patent infringement by combinations of this software with
+      other software or hardware.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ucar&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UCAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;UCAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;59500afeef4c56d26fd8ea609d6921d4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This software was developed by the Unidata Program Center of the\nUniversity Corporation for Atmospheric Research (UCAR)\n&lt;http://www.unidata.ucar.edu&gt;.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1) Redistributions of source code must retain the above copyright notice,\n      this list of conditions and the following disclaimer.\n   2) Redistributions in binary form must reproduce the above copyright notice,\n      this list of conditions and the following disclaimer in the documentation\n      and/or other materials provided with the distribution.\n   3) Neither the names of the development group, the copyright holders, nor the\n      names of contributors may be used to endorse or promote products derived\n      from this software without specific prior written permission.\n   4) This license shall terminate automatically and you may no longer exercise\n      any of the rights granted to you by this license as of the date you\n      commence an action, including a cross-claim or counterclaim, against\n      the copyright holders or any contributor alleging that this software\n      infringes a patent. This termination provision shall not apply for an\n      action alleging patent infringement by combinations of this software with\n      other software or hardware.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS\nOR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT&quot;,
+        &quot;_key&quot;: &quot;ucar&quot;,
+        &quot;_name&quot;: &quot;UCAR License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;UCAR&quot;,
+        &quot;_shortName&quot;: &quot;UCAR License&quot;,
+        &quot;_spdxId&quot;: &quot;UCAR&quot;,
+        &quot;_text&quot;: &quot;This software was developed by the Unidata Program Center of the\nUniversity Corporation for Atmospheric Research (UCAR)\n&lt;http://www.unidata.ucar.edu&gt;.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1) Redistributions of source code must retain the above copyright notice,\n      this list of conditions and the following disclaimer.\n   2) Redistributions in binary form must reproduce the above copyright notice,\n      this list of conditions and the following disclaimer in the documentation\n      and/or other materials provided with the distribution.\n   3) Neither the names of the development group, the copyright holders, nor the\n      names of contributors may be used to endorse or promote products derived\n      from this software without specific prior written permission.\n   4) This license shall terminate automatically and you may no longer exercise\n      any of the rights granted to you by this license as of the date you\n      commence an action, including a cross-claim or counterclaim, against\n      the copyright holders or any contributor alleging that this software\n      infringes a patent. This termination provision shall not apply for an\n      action alleging patent infringement by combinations of this software with\n      other software or hardware.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS\nOR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/05eaa4f8f66402acde4acea51ae1707d">OrtLicenseCategorization:05eaa4f8f66402acde4acea51ae1707d</a> for <a href="/?license=SPDX:UCAR"><span class="licensename"><span class="namespace">SPDX:</span>UCAR</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>UCAR</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05eaa4f8f66402acde4acea51ae1707d">[<a href="/fact/OrtLicenseCategorization/05eaa4f8f66402acde4acea51ae1707d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05eaa4f8f66402acde4acea51ae1707d">[<a href="/fact/OrtLicenseCategorization/05eaa4f8f66402acde4acea51ae1707d">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:UCAR&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;05eaa4f8f66402acde4acea51ae1707d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:UCAR&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/f8582d6c3279669f8553e4e8acc571fa">CavilLicenseChange:f8582d6c3279669f8553e4e8acc571fa</a> for <a href="/?license=cavil:UCAR"><span class="licensename"><span class="namespace">cavil:</span>UCAR</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>UCAR</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">UCAR</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:UCAR&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UCAR&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;f8582d6c3279669f8553e4e8acc571fa&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;UCAR&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:UCAR&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/7ed019b3ce783bed436fa944c52d0bd7">MetaeffektLicense:7ed019b3ce783bed436fa944c52d0bd7</a> for <a href="/?license=metaeffekt:UCAR License"><span class="licensename"><span class="namespace">metaeffekt:</span>UCAR License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>UCAR License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>UCAR</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">UCAR</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ucar</span></li><li><span class="licensename">UCAR License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:UCAR License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:UCAR&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;UCAR&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;UCAR License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ucar&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;7ed019b3ce783bed436fa944c52d0bd7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;UCAR License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:UCAR License&quot;,
+        &quot;_category&quot;: &quot;UCAR&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ucar&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:UCAR&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

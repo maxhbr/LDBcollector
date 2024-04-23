@@ -1,0 +1,376 @@
+<html><head><title>ldbcollector: spdx:u-boot-exception-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:u-boot-exception-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>u-boot-exception-2.0</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">U-Boot Exception (GPL)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>U-Boot Exception (GPL)</span></li><li><span class="licensename">U-Boot exception 2.0</span></li><li><span class="licensename">U-Boot exception to GPL 2.0</span></li><li><span class="licensename">u-boot-exception-2.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>u-boot-exception-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>u-boot-exception-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>u-boot-exception-2.0</span></li><li><span class="licensename">U-Boot-Exception-GPL</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>U-Boot-Exception-GPL</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//spdx.org/licenses/u-boot-exception-2.0</span></li><li><span class="licensename">GPL U-Boot Exception</span></li><li><span class="licensename">The U-Boot Exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:ff3ab10de88da929f5e440adda612ca5">[<a href="/fact/ScancodeData/ff3ab10de88da929f5e440adda612ca5">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>Fossology: </b>Typically used with GPL-2.0+<span class="provided-by">(provided by: <span title="Fossology:944ef35931b203b5f82a7e425ecf4fa0">[<a href="/fact/Fossology/944ef35931b203b5f82a7e425ecf4fa0">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions" target="_blank">http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions</a></li><li><a href="http://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">http://www.gnu.org/licenses/gpl-2.0.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The U-Boot Exception:
+
+NOTE! This copyright does *not* cover the so-called &quot;standalone&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+The header files &quot;include/image.h&quot; and &quot;include/asm-*/u-boot.h&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+Also note that the GPL below is copyrighted by the Free Software Foundation, but the instance of code that it refers to (the U-Boot source code) is copyrighted by me and others who actually wrote it. 
+
+-- Wolfgang Denk</pre></details></li><li><details><summary>Text:</summary><pre>GPL License Exception:
+
+Even though U-Boot in general is covered by the GPL-2.0/GPL-2.0+, this does *not* cover the so-called &quot;standalone&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+The header files &quot;include/image.h&quot; and &quot;arch/*/include/asm/u-boot.h&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+-- Wolfgang Denk</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/ff3ab10de88da929f5e440adda612ca5">ScancodeData:ff3ab10de88da929f5e440adda612ca5</a> for <a href="/?license=scancode:u-boot-exception-2.0"><span class="licensename"><span class="namespace">scancode:</span>u-boot-exception-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>u-boot-exception-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">U-Boot exception to GPL 2.0</span></li><li><span class="licensename">U-Boot exception to GPL 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:ff3ab10de88da929f5e440adda612ca5">[<a href="/fact/ScancodeData/ff3ab10de88da929f5e440adda612ca5">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions" target="_blank">http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions</a></li><li><a href="http://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">http://www.gnu.org/licenses/gpl-2.0.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The U-Boot Exception:
+
+NOTE! This copyright does *not* cover the so-called &quot;standalone&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+The header files &quot;include/image.h&quot; and &quot;include/asm-*/u-boot.h&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+Also note that the GPL below is copyrighted by the Free Software Foundation, but the instance of code that it refers to (the U-Boot source code) is copyrighted by me and others who actually wrote it. 
+
+-- Wolfgang Denk</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:u-boot-exception-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;U-Boot exception to GPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;U-Boot exception to GPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;ff3ab10de88da929f5e440adda612ca5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/gpl-2.0.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The U-Boot Exception:\n\nNOTE! This copyright does *not* cover the so-called \&quot;standalone\&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\nThe header files \&quot;include/image.h\&quot; and \&quot;include/asm-*/u-boot.h\&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\nAlso note that the GPL below is copyrighted by the Free Software Foundation, but the instance of code that it refers to (the U-Boot source code) is copyrighted by me and others who actually wrote it. \n\n-- Wolfgang Denk&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;u-boot-exception-2.0&quot;,
+        &quot;_name&quot;: &quot;U-Boot exception to GPL 2.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions&quot;,
+            &quot;http://www.gnu.org/licenses/gpl-2.0.txt&quot;
+        ],
+        &quot;_owner&quot;: &quot;U-Boot&quot;,
+        &quot;_shortName&quot;: &quot;U-Boot exception to GPL 2.0&quot;,
+        &quot;_spdxId&quot;: &quot;u-boot-exception-2.0&quot;,
+        &quot;_text&quot;: &quot;The U-Boot Exception:\n\nNOTE! This copyright does *not* cover the so-called \&quot;standalone\&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\nThe header files \&quot;include/image.h\&quot; and \&quot;include/asm-*/u-boot.h\&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\nAlso note that the GPL below is copyrighted by the Free Software Foundation, but the instance of code that it refers to (the U-Boot source code) is copyrighted by me and others who actually wrote it. \n\n-- Wolfgang Denk&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/944ef35931b203b5f82a7e425ecf4fa0">Fossology:944ef35931b203b5f82a7e425ecf4fa0</a> for <a href="/?license=fossology:u-boot-exception-2.0"><span class="licensename"><span class="namespace">fossology:</span>u-boot-exception-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>u-boot-exception-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">U-Boot exception 2.0</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>Typically used with GPL-2.0+<span class="provided-by">(provided by: <span title="Fossology:944ef35931b203b5f82a7e425ecf4fa0">[<a href="/fact/Fossology/944ef35931b203b5f82a7e425ecf4fa0">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions" target="_blank">http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>GPL License Exception:
+
+Even though U-Boot in general is covered by the GPL-2.0/GPL-2.0+, this does *not* cover the so-called &quot;standalone&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+The header files &quot;include/image.h&quot; and &quot;arch/*/include/asm/u-boot.h&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of &quot;derived work&quot;.
+
+-- Wolfgang Denk</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:u-boot-exception-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;U-Boot exception 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;944ef35931b203b5f82a7e425ecf4fa0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;Typically used with GPL-2.0+&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;GPL License Exception:\n\nEven though U-Boot in general is covered by the GPL-2.0/GPL-2.0+, this does *not* cover the so-called \&quot;standalone\&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\nThe header files \&quot;include/image.h\&quot; and \&quot;arch/*/include/asm/u-boot.h\&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\n-- Wolfgang Denk&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;U-Boot exception 2.0&quot;,
+        &quot;_rf_notes&quot;: &quot;Typically used with GPL-2.0+&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:u-boot-exception-2.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;GPL License Exception:\n\nEven though U-Boot in general is covered by the GPL-2.0/GPL-2.0+, this does *not* cover the so-called \&quot;standalone\&quot; applications that use U-Boot services by means of the jump table provided by U-Boot exactly for this purpose - this is merely considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\nThe header files \&quot;include/image.h\&quot; and \&quot;arch/*/include/asm/u-boot.h\&quot; define interfaces to U-Boot. Including these (unmodified) header files in another file is considered normal use of U-Boot, and does *not* fall under the heading of \&quot;derived work\&quot;.\n\n-- Wolfgang Denk&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://git.denx.de/?p=u-boot.git;a=blob;f=Licenses/Exceptions&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/1caf02df4e8ca50cca7cb9c095d1e923">MetaeffektLicense:1caf02df4e8ca50cca7cb9c095d1e923</a> for <a href="/?license=metaeffekt:U-Boot-Exception-GPL"><span class="licensename"><span class="namespace">metaeffekt:</span>U-Boot-Exception-GPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>U-Boot-Exception-GPL</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>U-Boot Exception (GPL)</span></li><li><span class="licensename"><span class="namespace">spdx:</span>u-boot-exception-2.0</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//spdx.org/licenses/u-boot-exception-2.0</span></li><li><span class="licensename">GPL U-Boot Exception</span></li><li><span class="licensename">The U-Boot Exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>u-boot-exception-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:U-Boot-Exception-GPL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:U-Boot Exception (GPL)&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:u-boot-exception-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL U-Boot Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://spdx.org/licenses/u-boot-exception-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The U-Boot Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:u-boot-exception-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;1caf02df4e8ca50cca7cb9c095d1e923&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;https://spdx.org/licenses/u-boot-exception-2.0&quot;,
+            &quot;The U-Boot Exception&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:U-Boot Exception (GPL)&quot;,
+        &quot;_category&quot;: &quot;GPL U-Boot Exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:u-boot-exception-2.0&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:U-Boot-Exception-GPL&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:u-boot-exception-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

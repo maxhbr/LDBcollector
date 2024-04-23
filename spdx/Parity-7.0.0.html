@@ -1,0 +1,1167 @@
+<html><head><title>ldbcollector: spdx:Parity-7.0.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Parity-7.0.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Parity-7.0.0</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity Public License 7.0.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Parity Public License 7.0.0</span></li><li><span class="licensename">Parity-7.0.0</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Parity-7.0.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Parity-7.0.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Parity-7.0.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>parity-7.0.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Parity-7.0.0</span></li><li><span class="licensename">The Parity Public License 7.0.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity</span></li><li><span class="licensename">The Parity Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;maximal&quot;)<span class="provided-by">(provided by: <span title="BlueOakCouncil:acb7452a134dc75792acff9f63f7fe37">[<a href="/fact/BlueOakCouncil/acb7452a134dc75792acff9f63f7fe37">BlueOakCouncil</a>]</span>)</span></li><li>Copyleft<span class="provided-by">(provided by: <span title="BlueOakCouncil:acb7452a134dc75792acff9f63f7fe37">[<a href="/fact/BlueOakCouncil/acb7452a134dc75792acff9f63f7fe37">BlueOakCouncil</a>]</span><span title="ScancodeData:d770774f63e569ce9b7a5047abd6847a">[<a href="/fact/ScancodeData/d770774f63e569ce9b7a5047abd6847a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a882369252f9e4ed28639e5bdc55c68c">[<a href="/fact/SPDXLicense/a882369252f9e4ed28639e5bdc55c68c">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c83b29caacff3d6081451877b1307a33">[<a href="/fact/OrtLicenseCategorization/c83b29caacff3d6081451877b1307a33">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c83b29caacff3d6081451877b1307a33">[<a href="/fact/OrtLicenseCategorization/c83b29caacff3d6081451877b1307a33">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c83b29caacff3d6081451877b1307a33">[<a href="/fact/OrtLicenseCategorization/c83b29caacff3d6081451877b1307a33">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was released on November 3, 2019.<span class="provided-by">(provided by: <span title="SPDXLicense:a882369252f9e4ed28639e5bdc55c68c">[<a href="/fact/SPDXLicense/a882369252f9e4ed28639e5bdc55c68c">SPDXLicense</a>]</span>)</span></li><li><b>Fossology: </b>This license was released on November 3, 2019.<span class="provided-by">(provided by: <span title="Fossology:8fda7b4433a807b9ffe8eaa4f176c436">[<a href="/fact/Fossology/8fda7b4433a807b9ffe8eaa4f176c436">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://paritylicense.com/versions/7.0.0.html" target="_blank">https://paritylicense.com/versions/7.0.0.html</a></li><li><a href="https://spdx.org/licenses/Parity-7.0.0" target="_blank">https://spdx.org/licenses/Parity-7.0.0</a></li></ul><h3>Other Statements</h3><ul><li>https://paritylicense.com/versions/7.0.0.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre># The Parity Public License 7.0.0
+
+Contributor: Artless Devices, LLC [US-CA]
+
+Source Code: https://github.com/licensezero/licensezero.com
+
+## Purpose
+
+This license allows you to use and share this software for free, but you have to share software that builds on it alike.
+
+## Agreement
+
+In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.
+
+## Notices
+
+Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.
+
+## Copyleft
+
+[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, [contribute](#contribute).
+
+## Prototypes
+
+You don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:
+
+1.  You don&#39;t use it for more than thirty days.
+
+2.  You don&#39;t share it outside the team developing it, other than for non-production user testing.
+
+3.  You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.
+
+## Reverse Engineering
+
+You may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute).
+
+## Contribute
+
+To [contribute](#contribute) software:
+
+1.  Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.
+
+2.  Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).
+
+3.  Take these steps within thirty days.
+
+4.  Note that this license does _not_ allow you to change the license terms for this software.  You must follow [Notices](#notices).
+
+## Excuse
+
+You&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+## Defense
+
+Don&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.
+
+## Copyright
+
+The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
+
+## Patent
+
+The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.
+
+## Reliability
+
+The contributor can&#39;t revoke this license.
+
+## No Liability
+
+***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; # &lt;/var&gt;The Parity Public License 7.0.0&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Contributor: &lt;var class=&quot;replaceable-license-text&quot;&gt; name&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;Source Code: &lt;var class=&quot;replaceable-license-text&quot;&gt; address&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Purpose&lt;/p&gt;
+
+      &lt;p&gt;This license allows you to use and share this software for free, but you have to share software that builds on it alike.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Agreement&lt;/p&gt;
+
+      &lt;p&gt;In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&amp;apos;t do anything with this software that triggers a rule you can&amp;apos;t or won&amp;apos;t follow.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Notices&lt;/p&gt;
+
+      &lt;p&gt;Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Copyleft&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; [Contribute](#contribute)&lt;/var&gt; software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Prototypes&lt;/p&gt;
+
+      &lt;p&gt;You don&amp;apos;t have to &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; any change, addition, or other software that meets all these criteria:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.  &lt;/var&gt;You don&amp;apos;t use it for more than thirty days.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.  &lt;/var&gt;You don&amp;apos;t share it outside the team developing it, other than for non-production user testing.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.  &lt;/var&gt;You don&amp;apos;t develop, operate, or analyze other software with it for anyone outside the team developing it.&lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Reverse Engineering&lt;/p&gt;
+
+      &lt;p&gt;You may use this software to operate and analyze software you can&amp;apos;t &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; in order to develop alternatives you can and do &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Contribute&lt;/p&gt;
+
+      &lt;p&gt;To &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; software:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.  &lt;/var&gt;Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.  &lt;/var&gt;Make sure every part of the source code is available under this license or another license that allows everything this license does, such as &lt;var class=&quot;replaceable-license-text&quot;&gt; [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).&lt;/var&gt;&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.  &lt;/var&gt;Take these steps within thirty days.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.  &lt;/var&gt;Note that this license does &lt;var class=&quot;replaceable-license-text&quot;&gt; _not_&lt;/var&gt; allow you to change the license terms for this software.  You must follow &lt;var class=&quot;replaceable-license-text&quot;&gt; [Notices](#notices)&lt;/var&gt;.&lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Excuse&lt;/p&gt;
+
+      &lt;p&gt;You&amp;apos;re excused for unknowingly breaking &lt;var class=&quot;replaceable-license-text&quot;&gt; [Copyleft](#copyleft)&lt;/var&gt; if you &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&amp;apos;re excused for unknowingly breaking &lt;var class=&quot;replaceable-license-text&quot;&gt; [Notices](#notices)&lt;/var&gt; if you take all practical steps to comply within thirty days of learning you broke the rule.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Defense&lt;/p&gt;
+
+      &lt;p&gt;Don&amp;apos;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Copyright&lt;/p&gt;
+
+      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Patent&lt;/p&gt;
+
+      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Reliability&lt;/p&gt;
+
+      &lt;p&gt;The contributor can&amp;apos;t revoke this license.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;No Liability&lt;/p&gt;
+
+      &lt;p&gt;***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&amp;apos;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>The Parity Public License 7.0.0
+
+Contributor: contributor name
+
+Source Code: source
+
+Purpose
+This license allows you to use and share this software for free, but you have to share software that builds on it alike.
+
+Agreement
+In order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don’t do anything with this software that triggers a rule you can’t or won’t follow.
+
+Notices
+Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.
+
+Copyleft
+Contribute software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, contribute.
+
+Prototypes
+You don’t have to contribute any change, addition, or other software that meets all these criteria:
+
+You don’t use it for more than thirty days.
+
+You don’t share it outside the team developing it, other than for non-production user testing.
+
+You don’t develop, operate, or analyze other software with it for anyone outside the team developing it.
+
+Reverse Engineering
+You may use this software to operate and analyze software you can’t contribute in order to develop alternatives you can and do contribute.
+
+Contribute
+To contribute software:
+
+Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.
+
+Make sure every part of the source code is available under this license or another license that allows everything this license does, such as the Blue Oak Model License 1.0.0, the Apache License 2.0, the MIT license, or the two-clause BSD license.
+
+Take these steps within thirty days.
+
+Note that this license does not allow you to change the license terms for this software. You must follow Notices.
+
+Excuse
+You’re excused for unknowingly breaking Copyleft if you contribute as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You’re excused for unknowingly breaking Notices if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+Defense
+Don’t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.
+
+Copyright
+The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
+
+Patent
+The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.
+
+Reliability
+The contributor can’t revoke this license.
+
+No Liability
+As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won’t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.</pre></details></li><li><details><summary>Text:</summary><pre># The Parity Public License 7.0.0
+
+Contributor: name
+
+Source Code: address
+
+## Purpose
+
+This license allows you to use and share this software for free, but you have to share software that builds on it alike.
+
+## Agreement
+
+In order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.
+
+## Notices
+
+Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.
+
+## Copyleft
+
+[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, [contribute](#contribute) .
+
+## Prototypes
+
+You don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:
+
+   1. You don&#39;t use it for more than thirty days.
+
+   2. You don&#39;t share it outside the team developing it, other than for non-production user testing.
+
+   3. You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.
+
+## Reverse Engineering
+
+You may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute) .
+
+## Contribute
+
+To [contribute](#contribute) software:
+
+   1. Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.
+
+   2. Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).
+
+   3. Take these steps within thirty days.
+
+   4. Note that this license does _not_ allow you to change the license terms for this software. You must follow [Notices](#notices) .
+
+## Excuse
+
+You&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+## Defense
+
+Don&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.
+
+## Copyright
+
+The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
+
+## Patent
+
+The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.
+
+## Reliability
+
+The contributor can&#39;t revoke this license.
+
+## No Liability
+
+***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/a882369252f9e4ed28639e5bdc55c68c">SPDXLicense:a882369252f9e4ed28639e5bdc55c68c</a> for <a href="/?license=spdx:Parity-7.0.0"><span class="licensename"><span class="namespace">spdx:</span>Parity-7.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Parity-7.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 7.0.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a882369252f9e4ed28639e5bdc55c68c">[<a href="/fact/SPDXLicense/a882369252f9e4ed28639e5bdc55c68c">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was released on November 3, 2019.<span class="provided-by">(provided by: <span title="SPDXLicense:a882369252f9e4ed28639e5bdc55c68c">[<a href="/fact/SPDXLicense/a882369252f9e4ed28639e5bdc55c68c">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://paritylicense.com/versions/7.0.0.html" target="_blank">https://paritylicense.com/versions/7.0.0.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre># The Parity Public License 7.0.0
+
+Contributor: Artless Devices, LLC [US-CA]
+
+Source Code: https://github.com/licensezero/licensezero.com
+
+## Purpose
+
+This license allows you to use and share this software for free, but you have to share software that builds on it alike.
+
+## Agreement
+
+In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.
+
+## Notices
+
+Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.
+
+## Copyleft
+
+[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, [contribute](#contribute).
+
+## Prototypes
+
+You don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:
+
+1.  You don&#39;t use it for more than thirty days.
+
+2.  You don&#39;t share it outside the team developing it, other than for non-production user testing.
+
+3.  You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.
+
+## Reverse Engineering
+
+You may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute).
+
+## Contribute
+
+To [contribute](#contribute) software:
+
+1.  Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.
+
+2.  Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).
+
+3.  Take these steps within thirty days.
+
+4.  Note that this license does _not_ allow you to change the license terms for this software.  You must follow [Notices](#notices).
+
+## Excuse
+
+You&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+## Defense
+
+Don&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.
+
+## Copyright
+
+The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
+
+## Patent
+
+The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.
+
+## Reliability
+
+The contributor can&#39;t revoke this license.
+
+## No Liability
+
+***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; # &lt;/var&gt;The Parity Public License 7.0.0&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Contributor: &lt;var class=&quot;replaceable-license-text&quot;&gt; name&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;Source Code: &lt;var class=&quot;replaceable-license-text&quot;&gt; address&lt;/var&gt;&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Purpose&lt;/p&gt;
+
+      &lt;p&gt;This license allows you to use and share this software for free, but you have to share software that builds on it alike.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Agreement&lt;/p&gt;
+
+      &lt;p&gt;In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&amp;apos;t do anything with this software that triggers a rule you can&amp;apos;t or won&amp;apos;t follow.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Notices&lt;/p&gt;
+
+      &lt;p&gt;Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Copyleft&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; [Contribute](#contribute)&lt;/var&gt; software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Prototypes&lt;/p&gt;
+
+      &lt;p&gt;You don&amp;apos;t have to &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; any change, addition, or other software that meets all these criteria:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.  &lt;/var&gt;You don&amp;apos;t use it for more than thirty days.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.  &lt;/var&gt;You don&amp;apos;t share it outside the team developing it, other than for non-production user testing.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.  &lt;/var&gt;You don&amp;apos;t develop, operate, or analyze other software with it for anyone outside the team developing it.&lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Reverse Engineering&lt;/p&gt;
+
+      &lt;p&gt;You may use this software to operate and analyze software you can&amp;apos;t &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; in order to develop alternatives you can and do &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Contribute&lt;/p&gt;
+
+      &lt;p&gt;To &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; software:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.  &lt;/var&gt;Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.  &lt;/var&gt;Make sure every part of the source code is available under this license or another license that allows everything this license does, such as &lt;var class=&quot;replaceable-license-text&quot;&gt; [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).&lt;/var&gt;&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.  &lt;/var&gt;Take these steps within thirty days.&lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.  &lt;/var&gt;Note that this license does &lt;var class=&quot;replaceable-license-text&quot;&gt; _not_&lt;/var&gt; allow you to change the license terms for this software.  You must follow &lt;var class=&quot;replaceable-license-text&quot;&gt; [Notices](#notices)&lt;/var&gt;.&lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Excuse&lt;/p&gt;
+
+      &lt;p&gt;You&amp;apos;re excused for unknowingly breaking &lt;var class=&quot;replaceable-license-text&quot;&gt; [Copyleft](#copyleft)&lt;/var&gt; if you &lt;var class=&quot;replaceable-license-text&quot;&gt; [contribute](#contribute)&lt;/var&gt; as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&amp;apos;re excused for unknowingly breaking &lt;var class=&quot;replaceable-license-text&quot;&gt; [Notices](#notices)&lt;/var&gt; if you take all practical steps to comply within thirty days of learning you broke the rule.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Defense&lt;/p&gt;
+
+      &lt;p&gt;Don&amp;apos;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Copyright&lt;/p&gt;
+
+      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Patent&lt;/p&gt;
+
+      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;Reliability&lt;/p&gt;
+
+      &lt;p&gt;The contributor can&amp;apos;t revoke this license.&lt;/p&gt;
+
+      &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt; ## &lt;/var&gt;No Liability&lt;/p&gt;
+
+      &lt;p&gt;***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&amp;apos;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Parity-7.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;a882369252f9e4ed28639e5bdc55c68c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license was released on November 3, 2019.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;# The Parity Public License 7.0.0\n\nContributor: Artless Devices, LLC [US-CA]\n\nSource Code: https://github.com/licensezero/licensezero.com\n\n## Purpose\n\nThis license allows you to use and share this software for free, but you have to share software that builds on it alike.\n\n## Agreement\n\nIn order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.\n\n## Notices\n\nMake sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.\n\n## Copyleft\n\n[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, [contribute](#contribute).\n\n## Prototypes\n\nYou don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:\n\n1.  You don&#39;t use it for more than thirty days.\n\n2.  You don&#39;t share it outside the team developing it, other than for non-production user testing.\n\n3.  You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.\n\n## Reverse Engineering\n\nYou may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute).\n\n## Contribute\n\nTo [contribute](#contribute) software:\n\n1.  Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.\n\n2.  Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).\n\n3.  Take these steps within thirty days.\n\n4.  Note that this license does _not_ allow you to change the license terms for this software.  You must follow [Notices](#notices).\n\n## Excuse\n\nYou&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.\n\n## Defense\n\nDon&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.\n\n## Copyright\n\nThe contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.\n\n## Patent\n\nThe contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.\n\n## Reliability\n\nThe contributor can&#39;t revoke this license.\n\n## No Liability\n\n***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; # &lt;/var&gt;The Parity Public License 7.0.0&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Contributor: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; name&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;Source Code: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; address&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Purpose&lt;/p&gt;\n\n      &lt;p&gt;This license allows you to use and share this software for free, but you have to share software that builds on it alike.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Agreement&lt;/p&gt;\n\n      &lt;p&gt;In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&amp;apos;t do anything with this software that triggers a rule you can&amp;apos;t or won&amp;apos;t follow.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Notices&lt;/p&gt;\n\n      &lt;p&gt;Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Copyleft&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Contribute](#contribute)&lt;/var&gt; software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Prototypes&lt;/p&gt;\n\n      &lt;p&gt;You don&amp;apos;t have to &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; any change, addition, or other software that meets all these criteria:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.  &lt;/var&gt;You don&amp;apos;t use it for more than thirty days.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.  &lt;/var&gt;You don&amp;apos;t share it outside the team developing it, other than for non-production user testing.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.  &lt;/var&gt;You don&amp;apos;t develop, operate, or analyze other software with it for anyone outside the team developing it.&lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Reverse Engineering&lt;/p&gt;\n\n      &lt;p&gt;You may use this software to operate and analyze software you can&amp;apos;t &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; in order to develop alternatives you can and do &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Contribute&lt;/p&gt;\n\n      &lt;p&gt;To &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; software:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.  &lt;/var&gt;Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.  &lt;/var&gt;Make sure every part of the source code is available under this license or another license that allows everything this license does, such as &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).&lt;/var&gt;&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.  &lt;/var&gt;Take these steps within thirty days.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.  &lt;/var&gt;Note that this license does &lt;var class=\&quot;replaceable-license-text\&quot;&gt; _not_&lt;/var&gt; allow you to change the license terms for this software.  You must follow &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Notices](#notices)&lt;/var&gt;.&lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Excuse&lt;/p&gt;\n\n      &lt;p&gt;You&amp;apos;re excused for unknowingly breaking &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Copyleft](#copyleft)&lt;/var&gt; if you &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&amp;apos;re excused for unknowingly breaking &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Notices](#notices)&lt;/var&gt; if you take all practical steps to comply within thirty days of learning you broke the rule.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Defense&lt;/p&gt;\n\n      &lt;p&gt;Don&amp;apos;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Copyright&lt;/p&gt;\n\n      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Patent&lt;/p&gt;\n\n      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Reliability&lt;/p&gt;\n\n      &lt;p&gt;The contributor can&amp;apos;t revoke this license.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;No Liability&lt;/p&gt;\n\n      &lt;p&gt;***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&amp;apos;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://paritylicense.com/versions/7.0.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://paritylicense.com/versions/7.0.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:09Z&quot;,
+                &quot;url&quot;: &quot;https://paritylicense.com/versions/7.0.0.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license was released on November 3, 2019.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:Parity-7.0.0&quot;,
+        &quot;licenseText&quot;: &quot;# The Parity Public License 7.0.0\n\nContributor: Artless Devices, LLC [US-CA]\n\nSource Code: https://github.com/licensezero/licensezero.com\n\n## Purpose\n\nThis license allows you to use and share this software for free, but you have to share software that builds on it alike.\n\n## Agreement\n\nIn order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.\n\n## Notices\n\nMake sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.\n\n## Copyleft\n\n[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, [contribute](#contribute).\n\n## Prototypes\n\nYou don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:\n\n1.  You don&#39;t use it for more than thirty days.\n\n2.  You don&#39;t share it outside the team developing it, other than for non-production user testing.\n\n3.  You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.\n\n## Reverse Engineering\n\nYou may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute).\n\n## Contribute\n\nTo [contribute](#contribute) software:\n\n1.  Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.\n\n2.  Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).\n\n3.  Take these steps within thirty days.\n\n4.  Note that this license does _not_ allow you to change the license terms for this software.  You must follow [Notices](#notices).\n\n## Excuse\n\nYou&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.\n\n## Defense\n\nDon&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.\n\n## Copyright\n\nThe contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.\n\n## Patent\n\nThe contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.\n\n## Reliability\n\nThe contributor can&#39;t revoke this license.\n\n## No Liability\n\n***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; # &lt;/var&gt;The Parity Public License 7.0.0&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Contributor: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; name&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;Source Code: &lt;var class=\&quot;replaceable-license-text\&quot;&gt; address&lt;/var&gt;&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Purpose&lt;/p&gt;\n\n      &lt;p&gt;This license allows you to use and share this software for free, but you have to share software that builds on it alike.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Agreement&lt;/p&gt;\n\n      &lt;p&gt;In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don&amp;apos;t do anything with this software that triggers a rule you can&amp;apos;t or won&amp;apos;t follow.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Notices&lt;/p&gt;\n\n      &lt;p&gt;Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Copyleft&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Contribute](#contribute)&lt;/var&gt; software you develop, operate, or analyze with this software, including changes or additions to this software.  When in doubt, &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Prototypes&lt;/p&gt;\n\n      &lt;p&gt;You don&amp;apos;t have to &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; any change, addition, or other software that meets all these criteria:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.  &lt;/var&gt;You don&amp;apos;t use it for more than thirty days.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.  &lt;/var&gt;You don&amp;apos;t share it outside the team developing it, other than for non-production user testing.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.  &lt;/var&gt;You don&amp;apos;t develop, operate, or analyze other software with it for anyone outside the team developing it.&lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Reverse Engineering&lt;/p&gt;\n\n      &lt;p&gt;You may use this software to operate and analyze software you can&amp;apos;t &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; in order to develop alternatives you can and do &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Contribute&lt;/p&gt;\n\n      &lt;p&gt;To &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; software:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.  &lt;/var&gt;Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.  &lt;/var&gt;Make sure every part of the source code is available under this license or another license that allows everything this license does, such as &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).&lt;/var&gt;&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.  &lt;/var&gt;Take these steps within thirty days.&lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.  &lt;/var&gt;Note that this license does &lt;var class=\&quot;replaceable-license-text\&quot;&gt; _not_&lt;/var&gt; allow you to change the license terms for this software.  You must follow &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Notices](#notices)&lt;/var&gt;.&lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Excuse&lt;/p&gt;\n\n      &lt;p&gt;You&amp;apos;re excused for unknowingly breaking &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Copyleft](#copyleft)&lt;/var&gt; if you &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [contribute](#contribute)&lt;/var&gt; as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule.  You&amp;apos;re excused for unknowingly breaking &lt;var class=\&quot;replaceable-license-text\&quot;&gt; [Notices](#notices)&lt;/var&gt; if you take all practical steps to comply within thirty days of learning you broke the rule.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Defense&lt;/p&gt;\n\n      &lt;p&gt;Don&amp;apos;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Copyright&lt;/p&gt;\n\n      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Patent&lt;/p&gt;\n\n      &lt;p&gt;The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;Reliability&lt;/p&gt;\n\n      &lt;p&gt;The contributor can&amp;apos;t revoke this license.&lt;/p&gt;\n\n      &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt; ## &lt;/var&gt;No Liability&lt;/p&gt;\n\n      &lt;p&gt;***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&amp;apos;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;The Parity Public License 7.0.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://paritylicense.com/versions/7.0.0.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt;#&lt;&lt;endOptional&gt;&gt; The Parity Public License 7.0.0\n\n&lt;&lt;endOptional&gt;&gt;\n\nContributor: &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;name\&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\nSource Code: &lt;&lt;var;name=\&quot;address\&quot;;original=\&quot;address\&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Purpose\n\nThis license allows you to use and share this software for free, but you have to share software that builds on it alike.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Agreement\n\nIn order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Notices\n\nMake sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Copyleft\n\n&lt;&lt;var;name=\&quot;contributeRef\&quot;;original=\&quot;[Contribute](#contribute)\&quot;;match=\&quot;\\[Contribute\\]\\(\\#contribute\\)|Contribute\&quot;&gt;&gt; software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, &lt;&lt;var;name=\&quot;contributeRef\&quot;;original=\&quot;[contribute](#contribute)\&quot;;match=\&quot;\\[contribute\\]\\(#contribute\\)|contribute\&quot;&gt;&gt; .\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Prototypes\n\nYou don&#39;t have to &lt;&lt;var;name=\&quot;contributeRef\&quot;;original=\&quot;[contribute](#contribute)\&quot;;match=\&quot;\\[contribute\\]\\(#contribute\\)|contribute\&quot;&gt;&gt; any change, addition, or other software that meets all these criteria:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You don&#39;t use it for more than thirty days.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You don&#39;t share it outside the team developing it, other than for non-production user testing.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Reverse Engineering\n\nYou may use this software to operate and analyze software you can&#39;t &lt;&lt;var;name=\&quot;contributeRef\&quot;;original=\&quot;[contribute](#contribute)\&quot;;match=\&quot;\\[contribute\\]\\(#contribute\\)|contribute\&quot;&gt;&gt; in order to develop alternatives you can and do &lt;&lt;var;name=\&quot;contributeRef\&quot;;original=\&quot;[contribute](#contribute)\&quot;;match=\&quot;\\[contribute\\]\\(#contribute\\)|contribute\&quot;&gt;&gt; .\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Contribute\n\nTo &lt;&lt;var;name=\&quot;contributeRef\&quot;;original=\&quot;[contribute](#contribute)\&quot;;match=\&quot;\\[contribute\\]\\(#contribute\\)|contribute\&quot;&gt;&gt; software:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Make sure every part of the source code is available under this license or another license that allows everything this license does, such as &lt;&lt;var;name=\&quot;licenseList\&quot;;original=\&quot;[the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).\&quot;;match=\&quot;\\[the Blue Oak Model License 1\\.0\\.0\\]\\(https://blueoakcouncil\\.org/license/1\\.0\\.0\\), \\[the Apache License 2\\.0\\]\\(https://www\\.apache\\.org/licenses/LICENSE-2\\.0\\.html\\), \\[the MIT license\\]\\(https://spdx\\.org/licenses/MIT\\.html\\), or \\[the two-clause BSD license\\]\\(https://spdx\\.org/licenses/BSD-2-Clause\\.html\\)\\.|the Blue Oak Model License 1\\.0\\.0, the Apache License 2\\.0, the MIT License, or the two-clause BSD License\\.\&quot;&gt;&gt;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Take these steps within thirty days.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Note that this license does &lt;&lt;var;name=\&quot;emphasizedNot\&quot;;original=\&quot;_not_\&quot;;match=\&quot;_not_|not\&quot;&gt;&gt; allow you to change the license terms for this software. You must follow &lt;&lt;var;name=\&quot;noticesRef\&quot;;original=\&quot;[Notices](#notices)\&quot;;match=\&quot;\\[Notices\\]\\(#notices\\)|Notices\&quot;&gt;&gt; .\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Excuse\n\nYou&#39;re excused for unknowingly breaking &lt;&lt;var;name=\&quot;copyleftRef\&quot;;original=\&quot;[Copyleft](#copyleft)\&quot;;match=\&quot;\\[Copyleft\\]\\(#copyleft\\)|Copyleft\&quot;&gt;&gt; if you &lt;&lt;var;name=\&quot;contributeRef\&quot;;original=\&quot;[contribute](#contribute)\&quot;;match=\&quot;\\[contribute\\]\\(#contribute\\)|contribute\&quot;&gt;&gt; as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You&#39;re excused for unknowingly breaking &lt;&lt;var;name=\&quot;noticesRef\&quot;;original=\&quot;[Notices](#notices)\&quot;;match=\&quot;\\[Notices\\]\\(#notices\\)|Notices\&quot;&gt;&gt; if you take all practical steps to comply within thirty days of learning you broke the rule.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Defense\n\nDon&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Copyright\n\nThe contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Patent\n\nThe contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; Reliability\n\nThe contributor can&#39;t revoke this license.\n\n&lt;&lt;beginOptional&gt;&gt;##&lt;&lt;endOptional&gt;&gt; No Liability\n\n***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/acb7452a134dc75792acff9f63f7fe37">BlueOakCouncil:acb7452a134dc75792acff9f63f7fe37</a> for <a href="/?license=BlueOak:Parity-7.0.0"><span class="licensename"><span class="namespace">BlueOak:</span>Parity-7.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Parity-7.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 7.0.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;maximal&quot;)<span class="provided-by">(provided by: <span title="BlueOakCouncil:acb7452a134dc75792acff9f63f7fe37">[<a href="/fact/BlueOakCouncil/acb7452a134dc75792acff9f63f7fe37">BlueOakCouncil</a>]</span>)</span></li><li>Copyleft<span class="provided-by">(provided by: <span title="BlueOakCouncil:acb7452a134dc75792acff9f63f7fe37">[<a href="/fact/BlueOakCouncil/acb7452a134dc75792acff9f63f7fe37">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Parity-7.0.0" target="_blank">https://spdx.org/licenses/Parity-7.0.0</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;BlueOak:Parity-7.0.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;The Parity Public License 7.0.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;acb7452a134dc75792acff9f63f7fe37&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: {
+                        &quot;contents&quot;: &quot;maximal&quot;,
+                        &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+                    },
+                    &quot;tag&quot;: &quot;LicenseType&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;tag&quot;: &quot;Copyleft&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseType&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Parity-7.0.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;maximal&quot;,
+            &quot;The Parity Public License&quot;,
+            {
+                &quot;_id&quot;: &quot;Parity-7.0.0&quot;,
+                &quot;_name&quot;: &quot;The Parity Public License 7.0.0&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Parity-7.0.0&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCCopyleft&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/d770774f63e569ce9b7a5047abd6847a">ScancodeData:d770774f63e569ce9b7a5047abd6847a</a> for <a href="/?license=scancode:parity-7.0.0"><span class="licensename"><span class="namespace">scancode:</span>parity-7.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>parity-7.0.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 7.0.0</span></li><li><span class="licensename">The Parity Public License 7.0.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Copyleft<span class="provided-by">(provided by: <span title="ScancodeData:d770774f63e569ce9b7a5047abd6847a">[<a href="/fact/ScancodeData/d770774f63e569ce9b7a5047abd6847a">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://paritylicense.com/versions/7.0.0.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Parity Public License 7.0.0
+
+Contributor: contributor name
+
+Source Code: source
+
+Purpose
+This license allows you to use and share this software for free, but you have to share software that builds on it alike.
+
+Agreement
+In order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don’t do anything with this software that triggers a rule you can’t or won’t follow.
+
+Notices
+Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.
+
+Copyleft
+Contribute software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, contribute.
+
+Prototypes
+You don’t have to contribute any change, addition, or other software that meets all these criteria:
+
+You don’t use it for more than thirty days.
+
+You don’t share it outside the team developing it, other than for non-production user testing.
+
+You don’t develop, operate, or analyze other software with it for anyone outside the team developing it.
+
+Reverse Engineering
+You may use this software to operate and analyze software you can’t contribute in order to develop alternatives you can and do contribute.
+
+Contribute
+To contribute software:
+
+Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.
+
+Make sure every part of the source code is available under this license or another license that allows everything this license does, such as the Blue Oak Model License 1.0.0, the Apache License 2.0, the MIT license, or the two-clause BSD license.
+
+Take these steps within thirty days.
+
+Note that this license does not allow you to change the license terms for this software. You must follow Notices.
+
+Excuse
+You’re excused for unknowingly breaking Copyleft if you contribute as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You’re excused for unknowingly breaking Notices if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+Defense
+Don’t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.
+
+Copyright
+The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
+
+Patent
+The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.
+
+Reliability
+The contributor can’t revoke this license.
+
+No Liability
+As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won’t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:parity-7.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;d770774f63e569ce9b7a5047abd6847a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Copyleft&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://paritylicense.com/versions/7.0.0.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Parity Public License 7.0.0\n\nContributor: contributor name\n\nSource Code: source\n\nPurpose\nThis license allows you to use and share this software for free, but you have to share software that builds on it alike.\n\nAgreement\nIn order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don’t do anything with this software that triggers a rule you can’t or won’t follow.\n\nNotices\nMake sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.\n\nCopyleft\nContribute software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, contribute.\n\nPrototypes\nYou don’t have to contribute any change, addition, or other software that meets all these criteria:\n\nYou don’t use it for more than thirty days.\n\nYou don’t share it outside the team developing it, other than for non-production user testing.\n\nYou don’t develop, operate, or analyze other software with it for anyone outside the team developing it.\n\nReverse Engineering\nYou may use this software to operate and analyze software you can’t contribute in order to develop alternatives you can and do contribute.\n\nContribute\nTo contribute software:\n\nPublish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.\n\nMake sure every part of the source code is available under this license or another license that allows everything this license does, such as the Blue Oak Model License 1.0.0, the Apache License 2.0, the MIT license, or the two-clause BSD license.\n\nTake these steps within thirty days.\n\nNote that this license does not allow you to change the license terms for this software. You must follow Notices.\n\nExcuse\nYou’re excused for unknowingly breaking Copyleft if you contribute as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You’re excused for unknowingly breaking Notices if you take all practical steps to comply within thirty days of learning you broke the rule.\n\nDefense\nDon’t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.\n\nCopyright\nThe contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.\n\nPatent\nThe contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.\n\nReliability\nThe contributor can’t revoke this license.\n\nNo Liability\nAs far as the law allows, this software comes as is, without any warranty or condition, and the contributor won’t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://paritylicense.com/versions/7.0.0.html&quot;,
+        &quot;_key&quot;: &quot;parity-7.0.0&quot;,
+        &quot;_name&quot;: &quot;The Parity Public License 7.0.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Kyle Mitchell&quot;,
+        &quot;_shortName&quot;: &quot;The Parity Public License 7.0.0&quot;,
+        &quot;_spdxId&quot;: &quot;Parity-7.0.0&quot;,
+        &quot;_text&quot;: &quot;The Parity Public License 7.0.0\n\nContributor: contributor name\n\nSource Code: source\n\nPurpose\nThis license allows you to use and share this software for free, but you have to share software that builds on it alike.\n\nAgreement\nIn order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don’t do anything with this software that triggers a rule you can’t or won’t follow.\n\nNotices\nMake sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.\n\nCopyleft\nContribute software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, contribute.\n\nPrototypes\nYou don’t have to contribute any change, addition, or other software that meets all these criteria:\n\nYou don’t use it for more than thirty days.\n\nYou don’t share it outside the team developing it, other than for non-production user testing.\n\nYou don’t develop, operate, or analyze other software with it for anyone outside the team developing it.\n\nReverse Engineering\nYou may use this software to operate and analyze software you can’t contribute in order to develop alternatives you can and do contribute.\n\nContribute\nTo contribute software:\n\nPublish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.\n\nMake sure every part of the source code is available under this license or another license that allows everything this license does, such as the Blue Oak Model License 1.0.0, the Apache License 2.0, the MIT license, or the two-clause BSD license.\n\nTake these steps within thirty days.\n\nNote that this license does not allow you to change the license terms for this software. You must follow Notices.\n\nExcuse\nYou’re excused for unknowingly breaking Copyleft if you contribute as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You’re excused for unknowingly breaking Notices if you take all practical steps to comply within thirty days of learning you broke the rule.\n\nDefense\nDon’t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.\n\nCopyright\nThe contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.\n\nPatent\nThe contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.\n\nReliability\nThe contributor can’t revoke this license.\n\nNo Liability\nAs far as the law allows, this software comes as is, without any warranty or condition, and the contributor won’t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/8fda7b4433a807b9ffe8eaa4f176c436">Fossology:8fda7b4433a807b9ffe8eaa4f176c436</a> for <a href="/?license=fossology:Parity-7.0.0"><span class="licensename"><span class="namespace">fossology:</span>Parity-7.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Parity-7.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Parity Public License 7.0.0</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license was released on November 3, 2019.<span class="provided-by">(provided by: <span title="Fossology:8fda7b4433a807b9ffe8eaa4f176c436">[<a href="/fact/Fossology/8fda7b4433a807b9ffe8eaa4f176c436">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://paritylicense.com/versions/7.0.0.html" target="_blank">https://paritylicense.com/versions/7.0.0.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre># The Parity Public License 7.0.0
+
+Contributor: name
+
+Source Code: address
+
+## Purpose
+
+This license allows you to use and share this software for free, but you have to share software that builds on it alike.
+
+## Agreement
+
+In order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.
+
+## Notices
+
+Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.
+
+## Copyleft
+
+[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, [contribute](#contribute) .
+
+## Prototypes
+
+You don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:
+
+   1. You don&#39;t use it for more than thirty days.
+
+   2. You don&#39;t share it outside the team developing it, other than for non-production user testing.
+
+   3. You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.
+
+## Reverse Engineering
+
+You may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute) .
+
+## Contribute
+
+To [contribute](#contribute) software:
+
+   1. Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.
+
+   2. Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).
+
+   3. Take these steps within thirty days.
+
+   4. Note that this license does _not_ allow you to change the license terms for this software. You must follow [Notices](#notices) .
+
+## Excuse
+
+You&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+## Defense
+
+Don&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.
+
+## Copyright
+
+The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
+
+## Patent
+
+The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.
+
+## Reliability
+
+The contributor can&#39;t revoke this license.
+
+## No Liability
+
+***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Parity-7.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;8fda7b4433a807b9ffe8eaa4f176c436&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://paritylicense.com/versions/7.0.0.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license was released on November 3, 2019.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;# The Parity Public License 7.0.0\n\nContributor: name\n\nSource Code: address\n\n## Purpose\n\nThis license allows you to use and share this software for free, but you have to share software that builds on it alike.\n\n## Agreement\n\nIn order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.\n\n## Notices\n\nMake sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.\n\n## Copyleft\n\n[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, [contribute](#contribute) .\n\n## Prototypes\n\nYou don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:\n\n   1. You don&#39;t use it for more than thirty days.\n\n   2. You don&#39;t share it outside the team developing it, other than for non-production user testing.\n\n   3. You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.\n\n## Reverse Engineering\n\nYou may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute) .\n\n## Contribute\n\nTo [contribute](#contribute) software:\n\n   1. Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.\n\n   2. Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).\n\n   3. Take these steps within thirty days.\n\n   4. Note that this license does _not_ allow you to change the license terms for this software. You must follow [Notices](#notices) .\n\n## Excuse\n\nYou&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.\n\n## Defense\n\nDon&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.\n\n## Copyright\n\nThe contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.\n\n## Patent\n\nThe contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.\n\n## Reliability\n\nThe contributor can&#39;t revoke this license.\n\n## No Liability\n\n***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;The Parity Public License 7.0.0&quot;,
+        &quot;_rf_notes&quot;: &quot;This license was released on November 3, 2019.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Parity-7.0.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;# The Parity Public License 7.0.0\n\nContributor: name\n\nSource Code: address\n\n## Purpose\n\nThis license allows you to use and share this software for free, but you have to share software that builds on it alike.\n\n## Agreement\n\nIn order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don&#39;t do anything with this software that triggers a rule you can&#39;t or won&#39;t follow.\n\n## Notices\n\nMake sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.\n\n## Copyleft\n\n[Contribute](#contribute) software you develop, operate, or analyze with this software, including changes or additions to this software. When in doubt, [contribute](#contribute) .\n\n## Prototypes\n\nYou don&#39;t have to [contribute](#contribute) any change, addition, or other software that meets all these criteria:\n\n   1. You don&#39;t use it for more than thirty days.\n\n   2. You don&#39;t share it outside the team developing it, other than for non-production user testing.\n\n   3. You don&#39;t develop, operate, or analyze other software with it for anyone outside the team developing it.\n\n## Reverse Engineering\n\nYou may use this software to operate and analyze software you can&#39;t [contribute](#contribute) in order to develop alternatives you can and do [contribute](#contribute) .\n\n## Contribute\n\nTo [contribute](#contribute) software:\n\n   1. Publish all source code for the software in the preferred form for making changes through a freely accessible distribution system widely used for similar source code so the contributor and others can find and copy it.\n\n   2. Make sure every part of the source code is available under this license or another license that allows everything this license does, such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html).\n\n   3. Take these steps within thirty days.\n\n   4. Note that this license does _not_ allow you to change the license terms for this software. You must follow [Notices](#notices) .\n\n## Excuse\n\nYou&#39;re excused for unknowingly breaking [Copyleft](#copyleft) if you [contribute](#contribute) as required, or stop doing anything requiring this license, within thirty days of learning you broke the rule. You&#39;re excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.\n\n## Defense\n\nDon&#39;t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.\n\n## Copyright\n\nThe contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.\n\n## Patent\n\nThe contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.\n\n## Reliability\n\nThe contributor can&#39;t revoke this license.\n\n## No Liability\n\n***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won&#39;t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://paritylicense.com/versions/7.0.0.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c83b29caacff3d6081451877b1307a33">OrtLicenseCategorization:c83b29caacff3d6081451877b1307a33</a> for <a href="/?license=SPDX:Parity-7.0.0"><span class="licensename"><span class="namespace">SPDX:</span>Parity-7.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Parity-7.0.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c83b29caacff3d6081451877b1307a33">[<a href="/fact/OrtLicenseCategorization/c83b29caacff3d6081451877b1307a33">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c83b29caacff3d6081451877b1307a33">[<a href="/fact/OrtLicenseCategorization/c83b29caacff3d6081451877b1307a33">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c83b29caacff3d6081451877b1307a33">[<a href="/fact/OrtLicenseCategorization/c83b29caacff3d6081451877b1307a33">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Parity-7.0.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c83b29caacff3d6081451877b1307a33&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Parity-7.0.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/2cdedd7af7fda1e3b92a2f90bc082200">CavilLicenseChange:2cdedd7af7fda1e3b92a2f90bc082200</a> for <a href="/?license=cavil:Parity-7.0.0"><span class="licensename"><span class="namespace">cavil:</span>Parity-7.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Parity-7.0.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity-7.0.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Parity-7.0.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Parity-7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;2cdedd7af7fda1e3b92a2f90bc082200&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Parity-7.0.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Parity-7.0.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/27a2ccd65e7a82101cb1f1e5cd39950e">MetaeffektLicense:27a2ccd65e7a82101cb1f1e5cd39950e</a> for <a href="/?license=metaeffekt:Parity Public License 7.0.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Parity Public License 7.0.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Parity Public License 7.0.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Parity-7.0.0</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Parity</span></li><li><span class="licensename">Parity-7.0.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>parity-7.0.0</span></li><li><span class="licensename">The Parity Public License 7.0.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Parity Public License 7.0.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Parity-7.0.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Parity&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Parity-7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The Parity Public License 7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:parity-7.0.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;27a2ccd65e7a82101cb1f1e5cd39950e&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Parity-7.0.0&quot;,
+            &quot;The Parity Public License 7.0.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Parity Public License 7.0.0&quot;,
+        &quot;_category&quot;: &quot;Parity&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:parity-7.0.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Parity-7.0.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

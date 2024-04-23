@@ -1,0 +1,714 @@
+<html><head><title>ldbcollector: spdx:GPL-3.0-with-autoconf-exception</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:GPL-3.0-with-autoconf-exception</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-with-autoconf-exception</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">GNU General Public License v3.0 w/Autoconf exception</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>GNU General Public License v3.0 w/Autoconf exception</span></li><li><span class="licensename">GPL-3.0-with-autoconf-exception</span></li><li><span class="licensename"><span class="namespace">fossology:</span>GPL-3.0-with-autoconf-exception</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-with-autoconf-exception</span></li><li><span class="licensename">GPL30withautoconfexception</span></li><li><span class="licensename"><span class="namespace">google:</span>GPL30withautoconfexception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:481318ef01434295f0bb90b949abf521">[<a href="/fact/SPDXLicense/481318ef01434295f0bb90b949abf521">SPDXLicense</a>]</span>)</span></li><li><span title="restricted - Licenses in this category require mandatory source distribution if we ships a product that includes third-party code protected by such a license.">Google Policy Classification: <b style="color: red;">restricted</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:03439695bbba33c456a2b395753b2b68">[<a href="/fact/GoogleLicense/03439695bbba33c456a2b395753b2b68">GoogleLicense</a>]</span>)</span></li><li><span title="">ifrOSS Classification: <b style="">Sonstige Lizenzen mit beschränktem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li><li><span title="Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält.">ifrOSS Classification: <b style="">Lizenzen mit beschränktem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>DEPRECATED: Use license expression including main license, &quot;WITH&quot; operator, and identifier: Autoconf-exception-3.0<span class="provided-by">(provided by: <span title="SPDXLicense:481318ef01434295f0bb90b949abf521">[<a href="/fact/SPDXLicense/481318ef01434295f0bb90b949abf521">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/autoconf-exception-3.0.html" target="_blank">https://www.gnu.org/licenses/autoconf-exception-3.0.html</a></li><li><a href="http://www.gnu.org/licenses/autoconf-exception-3.0.html" target="_blank">http://www.gnu.org/licenses/autoconf-exception-3.0.html</a></li></ul><h3>Other Statements</h3><ul><li>spdx:GPL-3.0-with-autoconf-exception is a deprecated LicenseId</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>insert GPL v3 text here
+
+AUTOCONF CONFIGURE SCRIPT EXCEPTION
+
+Version 3.0, 18 August 2009
+
+Copyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&quot;GPLv3&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.
+
+The purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).
+
+   0. Definitions.
+
+   &quot;Covered Code&quot; is the source or object code of a version of Autoconf that is a covered work under this License.
+
+   &quot;Normally Copied Code&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.
+
+   &quot;Ineligible Code&quot; is Covered Code that is not Normally Copied Code.
+
+   1. Grant of Additional Permission.
+
+   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.
+
+   2. No Weakening of Autoconf Copyleft.
+
+   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.
+
+   </pre></details></li><li><details><summary>Text:</summary><pre>
+	     &lt;p&gt;insert GPL v3 text here&lt;/p&gt;
+
+	     &lt;p&gt;AUTOCONF CONFIGURE SCRIPT EXCEPTION&lt;/p&gt;
+
+	     &lt;p&gt;Version 3.0, 18 August 2009&lt;/p&gt;
+
+	     &lt;p&gt;Copyright © 2009 Free Software Foundation, Inc. &amp;gt;http://fsf.org/&amp;lt;&lt;/p&gt;
+
+	     &lt;p&gt;Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.&lt;/p&gt;
+
+	     &lt;p&gt;This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&amp;quot;GPLv3&amp;quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.&lt;/p&gt;
+
+	     &lt;p&gt;The purpose of this Exception is to allow distribution of Autoconf&amp;apos;s typical output under terms of the recipient&amp;apos;s choice (including proprietary).&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+			         &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+			 Definitions.
+			&lt;p&gt;&amp;quot;Covered Code&amp;quot; is the source or object code of a version of Autoconf that is a covered work under this License.&lt;/p&gt;
+
+			         &lt;p&gt;&amp;quot;Normally Copied Code&amp;quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.&lt;/p&gt;
+
+			         &lt;p&gt;&amp;quot;Ineligible Code&amp;quot; is Covered Code that is not Normally Copied Code.&lt;/p&gt;
+
+		       &lt;/li&gt;
+		       
+&lt;li&gt;
+			         &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+			 Grant of Additional Permission.
+			&lt;p&gt;You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.&lt;/p&gt;
+
+		       &lt;/li&gt;
+		       
+&lt;li&gt;
+			         &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+			No Weakening of Autoconf Copyleft.
+			&lt;p&gt;The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.&lt;/p&gt;
+
+		       &lt;/li&gt;
+	     
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>insert GPL v3 text here
+
+AUTOCONF CONFIGURE SCRIPT EXCEPTION
+
+Version 3.0, 18 August 2009
+
+Copyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&quot;GPLv3&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.
+
+The purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).
+
+   0. Definitions.
+
+   &quot;Covered Code&quot; is the source or object code of a version of Autoconf that is a covered work under this License.
+
+   &quot;Normally Copied Code&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.
+
+   &quot;Ineligible Code&quot; is Covered Code that is not Normally Copied Code.
+
+   1. Grant of Additional Permission.
+
+   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.
+
+   2. No Weakening of Autoconf Copyleft.
+
+   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/481318ef01434295f0bb90b949abf521">SPDXLicense:481318ef01434295f0bb90b949abf521</a> for <a href="/?license=spdx:GPL-3.0-with-autoconf-exception"><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-with-autoconf-exception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-with-autoconf-exception</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GNU General Public License v3.0 w/Autoconf exception</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:481318ef01434295f0bb90b949abf521">[<a href="/fact/SPDXLicense/481318ef01434295f0bb90b949abf521">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>DEPRECATED: Use license expression including main license, &quot;WITH&quot; operator, and identifier: Autoconf-exception-3.0<span class="provided-by">(provided by: <span title="SPDXLicense:481318ef01434295f0bb90b949abf521">[<a href="/fact/SPDXLicense/481318ef01434295f0bb90b949abf521">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/autoconf-exception-3.0.html" target="_blank">https://www.gnu.org/licenses/autoconf-exception-3.0.html</a></li></ul><h3>Other Statements</h3><ul><li>spdx:GPL-3.0-with-autoconf-exception is a deprecated LicenseId</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>insert GPL v3 text here
+
+AUTOCONF CONFIGURE SCRIPT EXCEPTION
+
+Version 3.0, 18 August 2009
+
+Copyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&quot;GPLv3&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.
+
+The purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).
+
+   0. Definitions.
+
+   &quot;Covered Code&quot; is the source or object code of a version of Autoconf that is a covered work under this License.
+
+   &quot;Normally Copied Code&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.
+
+   &quot;Ineligible Code&quot; is Covered Code that is not Normally Copied Code.
+
+   1. Grant of Additional Permission.
+
+   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.
+
+   2. No Weakening of Autoconf Copyleft.
+
+   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.
+
+   </pre></details></li><li><details><summary>Text:</summary><pre>
+	     &lt;p&gt;insert GPL v3 text here&lt;/p&gt;
+
+	     &lt;p&gt;AUTOCONF CONFIGURE SCRIPT EXCEPTION&lt;/p&gt;
+
+	     &lt;p&gt;Version 3.0, 18 August 2009&lt;/p&gt;
+
+	     &lt;p&gt;Copyright © 2009 Free Software Foundation, Inc. &amp;gt;http://fsf.org/&amp;lt;&lt;/p&gt;
+
+	     &lt;p&gt;Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.&lt;/p&gt;
+
+	     &lt;p&gt;This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&amp;quot;GPLv3&amp;quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.&lt;/p&gt;
+
+	     &lt;p&gt;The purpose of this Exception is to allow distribution of Autoconf&amp;apos;s typical output under terms of the recipient&amp;apos;s choice (including proprietary).&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+			         &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+			 Definitions.
+			&lt;p&gt;&amp;quot;Covered Code&amp;quot; is the source or object code of a version of Autoconf that is a covered work under this License.&lt;/p&gt;
+
+			         &lt;p&gt;&amp;quot;Normally Copied Code&amp;quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.&lt;/p&gt;
+
+			         &lt;p&gt;&amp;quot;Ineligible Code&amp;quot; is Covered Code that is not Normally Copied Code.&lt;/p&gt;
+
+		       &lt;/li&gt;
+		       
+&lt;li&gt;
+			         &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+			 Grant of Additional Permission.
+			&lt;p&gt;You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.&lt;/p&gt;
+
+		       &lt;/li&gt;
+		       
+&lt;li&gt;
+			         &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+			No Weakening of Autoconf Copyleft.
+			&lt;p&gt;The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.&lt;/p&gt;
+
+		       &lt;/li&gt;
+	     
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:GPL-3.0-with-autoconf-exception&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GNU General Public License v3.0 w/Autoconf exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;481318ef01434295f0bb90b949abf521&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;spdx:GPL-3.0-with-autoconf-exception is a deprecated LicenseId&quot;,
+            &quot;tag&quot;: &quot;LicenseStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;DEPRECATED: Use license expression including main license, \&quot;WITH\&quot; operator, and identifier: Autoconf-exception-3.0&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;insert GPL v3 text here\n\nAUTOCONF CONFIGURE SCRIPT EXCEPTION\n\nVersion 3.0, 18 August 2009\n\nCopyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;\n\nEveryone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.\n\nThis Exception is an additional permission under section 7 of the GNU General Public License, version 3 (\&quot;GPLv3\&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.\n\nThe purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).\n\n   0. Definitions.\n\n   \&quot;Covered Code\&quot; is the source or object code of a version of Autoconf that is a covered work under this License.\n\n   \&quot;Normally Copied Code\&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.\n\n   \&quot;Ineligible Code\&quot; is Covered Code that is not Normally Copied Code.\n\n   1. Grant of Additional Permission.\n\n   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.\n\n   2. No Weakening of Autoconf Copyleft.\n\n   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.\n\n   &quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n\t     &lt;p&gt;insert GPL v3 text here&lt;/p&gt;\n\n\t     &lt;p&gt;AUTOCONF CONFIGURE SCRIPT EXCEPTION&lt;/p&gt;\n\n\t     &lt;p&gt;Version 3.0, 18 August 2009&lt;/p&gt;\n\n\t     &lt;p&gt;Copyright © 2009 Free Software Foundation, Inc. &amp;gt;http://fsf.org/&amp;lt;&lt;/p&gt;\n\n\t     &lt;p&gt;Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.&lt;/p&gt;\n\n\t     &lt;p&gt;This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&amp;quot;GPLv3&amp;quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.&lt;/p&gt;\n\n\t     &lt;p&gt;The purpose of this Exception is to allow distribution of Autoconf&amp;apos;s typical output under terms of the recipient&amp;apos;s choice (including proprietary).&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n\t\t\t         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n\t\t\t Definitions.\n\t\t\t&lt;p&gt;&amp;quot;Covered Code&amp;quot; is the source or object code of a version of Autoconf that is a covered work under this License.&lt;/p&gt;\n\n\t\t\t         &lt;p&gt;&amp;quot;Normally Copied Code&amp;quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.&lt;/p&gt;\n\n\t\t\t         &lt;p&gt;&amp;quot;Ineligible Code&amp;quot; is Covered Code that is not Normally Copied Code.&lt;/p&gt;\n\n\t\t       &lt;/li&gt;\n\t\t       \n&lt;li&gt;\n\t\t\t         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n\t\t\t Grant of Additional Permission.\n\t\t\t&lt;p&gt;You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.&lt;/p&gt;\n\n\t\t       &lt;/li&gt;\n\t\t       \n&lt;li&gt;\n\t\t\t         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n\t\t\tNo Weakening of Autoconf Copyleft.\n\t\t\t&lt;p&gt;The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.&lt;/p&gt;\n\n\t\t       &lt;/li&gt;\n\t     \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:36Z&quot;,
+                &quot;url&quot;: &quot;https://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: true,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;DEPRECATED: Use license expression including main license, \&quot;WITH\&quot; operator, and identifier: Autoconf-exception-3.0&quot;,
+        &quot;licenseId&quot;: &quot;spdx:GPL-3.0-with-autoconf-exception&quot;,
+        &quot;licenseText&quot;: &quot;insert GPL v3 text here\n\nAUTOCONF CONFIGURE SCRIPT EXCEPTION\n\nVersion 3.0, 18 August 2009\n\nCopyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;\n\nEveryone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.\n\nThis Exception is an additional permission under section 7 of the GNU General Public License, version 3 (\&quot;GPLv3\&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.\n\nThe purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).\n\n   0. Definitions.\n\n   \&quot;Covered Code\&quot; is the source or object code of a version of Autoconf that is a covered work under this License.\n\n   \&quot;Normally Copied Code\&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.\n\n   \&quot;Ineligible Code\&quot; is Covered Code that is not Normally Copied Code.\n\n   1. Grant of Additional Permission.\n\n   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.\n\n   2. No Weakening of Autoconf Copyleft.\n\n   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.\n\n   &quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n\t     &lt;p&gt;insert GPL v3 text here&lt;/p&gt;\n\n\t     &lt;p&gt;AUTOCONF CONFIGURE SCRIPT EXCEPTION&lt;/p&gt;\n\n\t     &lt;p&gt;Version 3.0, 18 August 2009&lt;/p&gt;\n\n\t     &lt;p&gt;Copyright © 2009 Free Software Foundation, Inc. &amp;gt;http://fsf.org/&amp;lt;&lt;/p&gt;\n\n\t     &lt;p&gt;Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.&lt;/p&gt;\n\n\t     &lt;p&gt;This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&amp;quot;GPLv3&amp;quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.&lt;/p&gt;\n\n\t     &lt;p&gt;The purpose of this Exception is to allow distribution of Autoconf&amp;apos;s typical output under terms of the recipient&amp;apos;s choice (including proprietary).&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n\t\t\t         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n\t\t\t Definitions.\n\t\t\t&lt;p&gt;&amp;quot;Covered Code&amp;quot; is the source or object code of a version of Autoconf that is a covered work under this License.&lt;/p&gt;\n\n\t\t\t         &lt;p&gt;&amp;quot;Normally Copied Code&amp;quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.&lt;/p&gt;\n\n\t\t\t         &lt;p&gt;&amp;quot;Ineligible Code&amp;quot; is Covered Code that is not Normally Copied Code.&lt;/p&gt;\n\n\t\t       &lt;/li&gt;\n\t\t       \n&lt;li&gt;\n\t\t\t         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n\t\t\t Grant of Additional Permission.\n\t\t\t&lt;p&gt;You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.&lt;/p&gt;\n\n\t\t       &lt;/li&gt;\n\t\t       \n&lt;li&gt;\n\t\t\t         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n\t\t\tNo Weakening of Autoconf Copyleft.\n\t\t\t&lt;p&gt;The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.&lt;/p&gt;\n\n\t\t       &lt;/li&gt;\n\t     \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;GNU General Public License v3.0 w/Autoconf exception&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;insert GPL v3 text here\n\nAUTOCONF CONFIGURE SCRIPT EXCEPTION\n\nVersion 3.0, 18 August 2009\n\nCopyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;\n\nEveryone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.\n\nThis Exception is an additional permission under section 7 of the GNU General Public License, version 3 (\&quot;GPLv3\&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.\n\nThe purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Definitions.\n\n   \&quot;Covered Code\&quot; is the source or object code of a version of Autoconf that is a covered work under this License.\n\n   \&quot;Normally Copied Code\&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.\n\n   \&quot;Ineligible Code\&quot; is Covered Code that is not Normally Copied Code.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Grant of Additional Permission.\n\n   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; No Weakening of Autoconf Copyleft.\n\n   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.\n\n   &quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/03439695bbba33c456a2b395753b2b68">GoogleLicense:03439695bbba33c456a2b395753b2b68</a> for <a href="/?license=google:GPL30withautoconfexception"><span class="licensename"><span class="namespace">google:</span>GPL30withautoconfexception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>GPL30withautoconfexception</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-3.0-with-autoconf-exception</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="restricted - Licenses in this category require mandatory source distribution if we ships a product that includes third-party code protected by such a license.">Google Policy Classification: <b style="color: red;">restricted</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:03439695bbba33c456a2b395753b2b68">[<a href="/fact/GoogleLicense/03439695bbba33c456a2b395753b2b68">GoogleLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:GPL30withautoconfexception&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:GPL-3.0-with-autoconf-exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;03439695bbba33c456a2b395753b2b68&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Google Policy Classification&quot;,
+                        &quot;restricted&quot;,
+                        {
+                            &quot;contents&quot;: &quot;restricted - Licenses in this category require mandatory source distribution if we ships a product that includes third-party code protected by such a license.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:GPL30withautoconfexception&quot;,
+        &quot;googleLicenseType&quot;: &quot;restricted&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;restricted - Licenses in this category require mandatory source distribution if we ships a product that includes third-party code protected by such a license.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:GPL-3.0-with-autoconf-exception&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/82c5af1475d45718eb23070c12c72de8">Fossology:82c5af1475d45718eb23070c12c72de8</a> for <a href="/?license=fossology:GPL-3.0-with-autoconf-exception"><span class="licensename"><span class="namespace">fossology:</span>GPL-3.0-with-autoconf-exception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>GPL-3.0-with-autoconf-exception</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GNU General Public License v3.0 w/Autoconf exception</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/autoconf-exception-3.0.html" target="_blank">https://www.gnu.org/licenses/autoconf-exception-3.0.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>insert GPL v3 text here
+
+AUTOCONF CONFIGURE SCRIPT EXCEPTION
+
+Version 3.0, 18 August 2009
+
+Copyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&quot;GPLv3&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.
+
+The purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).
+
+   0. Definitions.
+
+   &quot;Covered Code&quot; is the source or object code of a version of Autoconf that is a covered work under this License.
+
+   &quot;Normally Copied Code&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.
+
+   &quot;Ineligible Code&quot; is Covered Code that is not Normally Copied Code.
+
+   1. Grant of Additional Permission.
+
+   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.
+
+   2. No Weakening of Autoconf Copyleft.
+
+   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:GPL-3.0-with-autoconf-exception&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GNU General Public License v3.0 w/Autoconf exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;82c5af1475d45718eb23070c12c72de8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;insert GPL v3 text here\n\nAUTOCONF CONFIGURE SCRIPT EXCEPTION\n\nVersion 3.0, 18 August 2009\n\nCopyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;\n\nEveryone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.\n\nThis Exception is an additional permission under section 7 of the GNU General Public License, version 3 (\&quot;GPLv3\&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.\n\nThe purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).\n\n   0. Definitions.\n\n   \&quot;Covered Code\&quot; is the source or object code of a version of Autoconf that is a covered work under this License.\n\n   \&quot;Normally Copied Code\&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.\n\n   \&quot;Ineligible Code\&quot; is Covered Code that is not Normally Copied Code.\n\n   1. Grant of Additional Permission.\n\n   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.\n\n   2. No Weakening of Autoconf Copyleft.\n\n   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;GNU General Public License v3.0 w/Autoconf exception&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:GPL-3.0-with-autoconf-exception&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;insert GPL v3 text here\n\nAUTOCONF CONFIGURE SCRIPT EXCEPTION\n\nVersion 3.0, 18 August 2009\n\nCopyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;\n\nEveryone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.\n\nThis Exception is an additional permission under section 7 of the GNU General Public License, version 3 (\&quot;GPLv3\&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.\n\nThe purpose of this Exception is to allow distribution of Autoconf&#39;s typical output under terms of the recipient&#39;s choice (including proprietary).\n\n   0. Definitions.\n\n   \&quot;Covered Code\&quot; is the source or object code of a version of Autoconf that is a covered work under this License.\n\n   \&quot;Normally Copied Code\&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.\n\n   \&quot;Ineligible Code\&quot; is Covered Code that is not Normally Copied Code.\n\n   1. Grant of Additional Permission.\n\n   You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.\n\n   2. No Weakening of Autoconf Copyleft.\n\n   The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License:c900216d62743c7f95e54c65beceb82e</a> for <a href="/?license=ifrOSS:GNU General Public License v3.0 w/Autoconf exception"><span class="licensename"><span class="namespace">ifrOSS:</span>GNU General Public License v3.0 w/Autoconf exception</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>GNU General Public License v3.0 w/Autoconf exception</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GNU General Public License v3.0 w/Autoconf exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">ifrOSS Classification: <b style="">Sonstige Lizenzen mit beschränktem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li><li><span title="Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält.">ifrOSS Classification: <b style="">Lizenzen mit beschränktem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:c900216d62743c7f95e54c65beceb82e">[<a href="/fact/ifrOSS License/c900216d62743c7f95e54c65beceb82e">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.gnu.org/licenses/autoconf-exception-3.0.html" target="_blank">http://www.gnu.org/licenses/autoconf-exception-3.0.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:GNU General Public License v3.0 w/Autoconf exception&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GNU General Public License v3.0 w/Autoconf exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;c900216d62743c7f95e54c65beceb82e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: [
+                                &quot;ifrOSS Classification&quot;,
+                                &quot;Sonstige Lizenzen mit beschränktem Copyleft-Effekt&quot;,
+                                {
+                                    &quot;contents&quot;: &quot;&quot;,
+                                    &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                }
+                            ],
+                            &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                        },
+                        &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                    },
+                    &quot;tag&quot;: &quot;LicenseRating&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: [
+                            {
+                                &quot;contents&quot;: [
+                                    {
+                                        &quot;contents&quot;: {
+                                            &quot;contents&quot;: {
+                                                &quot;contents&quot;: [
+                                                    &quot;ifrOSS Classification&quot;,
+                                                    &quot;Lizenzen mit beschränktem Copyleft-Effekt&quot;,
+                                                    {
+                                                        &quot;contents&quot;: &quot;Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält.&quot;,
+                                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                                    }
+                                                ],
+                                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                            },
+                                            &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                                        },
+                                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                                    },
+                                    [
+                                        {
+                                            &quot;contents&quot;: {
+                                                &quot;tag&quot;: &quot;WeaklyProtective&quot;
+                                            },
+                                            &quot;tag&quot;: &quot;LicenseType&quot;
+                                        }
+                                    ]
+                                ],
+                                &quot;tag&quot;: &quot;SubStatements&quot;
+                            },
+                            [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;contents&quot;: {
+                                            &quot;contents&quot;: [
+                                                &quot;ifrOSS Classification&quot;,
+                                                &quot;Open Source Lizenzen&quot;,
+                                                {
+                                                    &quot;contents&quot;: &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;,
+                                                    &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                                }
+                                            ],
+                                            &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                        },
+                                        &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;LicenseRating&quot;
+                                }
+                            ]
+                        ],
+                        &quot;tag&quot;: &quot;SubStatements&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Source Lizenzen&quot;,
+                &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;
+            ],
+            [
+                &quot;Lizenzen mit beschränktem Copyleft-Effekt&quot;,
+                &quot;Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält.&quot;
+            ],
+            [
+                &quot;Sonstige Lizenzen mit beschränktem Copyleft-Effekt&quot;,
+                &quot;&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:GNU General Public License v3.0 w/Autoconf exception&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;GNU General Public License v3.0 w/Autoconf exception&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;http://www.gnu.org/licenses/autoconf-exception-3.0.html&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

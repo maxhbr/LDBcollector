@@ -1,0 +1,554 @@
+<html><head><title>ldbcollector: spdx:Widget-Workshop</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Widget-Workshop</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Widget-Workshop</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">Widget Workshop License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Widget Workshop License</span></li><li><span class="licensename">Widget-Workshop</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Widget-Workshop</span></li><li><span class="licensename"><span class="namespace">scancode:</span>widget-workshop</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Widget-Workshop</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:48c6529996bb821e147ebe22f6ab6ede">[<a href="/fact/ScancodeData/48c6529996bb821e147ebe22f6ab6ede">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8256b8744b15fa9c1506e13d5643aa67">[<a href="/fact/SPDXLicense/8256b8744b15fa9c1506e13d5643aa67">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8a181f071907aca1105bca62e4c51d7c">[<a href="/fact/OrtLicenseCategorization/8a181f071907aca1105bca62e4c51d7c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8a181f071907aca1105bca62e4c51d7c">[<a href="/fact/OrtLicenseCategorization/8a181f071907aca1105bca62e4c51d7c">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24" target="_blank">https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved. 
+
+Permission to use, copy, modify, and distribute this software and 
+its documentation for NON-COMMERCIAL or COMMERCIAL purposes and 
+without fee is hereby granted, provided that this copyright notice 
+is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES 
+ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP 
+SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT 
+OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. 
+THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE 
+CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, 
+SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR 
+COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, 
+OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD 
+DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL 
+DAMAGE (&quot;HIGH RISK ACTIVITIES&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS 
+ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this software
+            and its documentation for NON-COMMERCIAL or COMMERCIAL purposes
+            and without fee is hereby granted, provided that this copyright
+            notice is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS
+            OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER
+            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+            OR NON-INFRINGEMENT. WIDGET WORKSHOP SHALL NOT BE LIABLE FOR
+            ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING
+            OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. THIS SOFTWARE
+            IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE
+            CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE
+            PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES,
+            AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL,
+            DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE
+            FAILURE OF THE SOFTWARE COULD LEAD DIRECTLY TO DEATH, PERSONAL
+            INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (&amp;quot;HIGH
+            RISK ACTIVITIES&amp;quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS ANY
+            EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and 
+its documentation for NON-COMMERCIAL or COMMERCIAL purposes and 
+without fee is hereby granted, provided that this copyright notice 
+is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES 
+ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP 
+SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT 
+OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. 
+THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE 
+CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, 
+SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR 
+COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, 
+OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD 
+DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL 
+DAMAGE (&quot;HIGH RISK ACTIVITIES&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS 
+ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/8256b8744b15fa9c1506e13d5643aa67">SPDXLicense:8256b8744b15fa9c1506e13d5643aa67</a> for <a href="/?license=spdx:Widget-Workshop"><span class="licensename"><span class="namespace">spdx:</span>Widget-Workshop</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Widget-Workshop</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Widget Workshop License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8256b8744b15fa9c1506e13d5643aa67">[<a href="/fact/SPDXLicense/8256b8744b15fa9c1506e13d5643aa67">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24" target="_blank">https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved. 
+
+Permission to use, copy, modify, and distribute this software and 
+its documentation for NON-COMMERCIAL or COMMERCIAL purposes and 
+without fee is hereby granted, provided that this copyright notice 
+is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES 
+ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP 
+SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT 
+OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. 
+THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE 
+CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, 
+SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR 
+COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, 
+OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD 
+DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL 
+DAMAGE (&quot;HIGH RISK ACTIVITIES&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS 
+ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved.
+         &lt;/var&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this software
+            and its documentation for NON-COMMERCIAL or COMMERCIAL purposes
+            and without fee is hereby granted, provided that this copyright
+            notice is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS
+            OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER
+            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+            OR NON-INFRINGEMENT. WIDGET WORKSHOP SHALL NOT BE LIABLE FOR
+            ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING
+            OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. THIS SOFTWARE
+            IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE
+            CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE
+            PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES,
+            AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL,
+            DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE
+            FAILURE OF THE SOFTWARE COULD LEAD DIRECTLY TO DEATH, PERSONAL
+            INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (&amp;quot;HIGH
+            RISK ACTIVITIES&amp;quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS ANY
+            EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Widget-Workshop&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Widget Workshop License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;8256b8744b15fa9c1506e13d5643aa67&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved. \n\nPermission to use, copy, modify, and distribute this software and \nits documentation for NON-COMMERCIAL or COMMERCIAL purposes and \nwithout fee is hereby granted, provided that this copyright notice \nis kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES \nABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP \nSHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT \nOF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. \nTHIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE \nCONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, \nSUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR \nCOMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, \nOR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD \nDIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL \nDAMAGE (\&quot;HIGH RISK ACTIVITIES\&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS \nANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this software\n            and its documentation for NON-COMMERCIAL or COMMERCIAL purposes\n            and without fee is hereby granted, provided that this copyright\n            notice is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS\n            OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER\n            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED\n            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n            OR NON-INFRINGEMENT. WIDGET WORKSHOP SHALL NOT BE LIABLE FOR\n            ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING\n            OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. THIS SOFTWARE\n            IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE\n            CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE\n            PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES,\n            AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL,\n            DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE\n            FAILURE OF THE SOFTWARE COULD LEAD DIRECTLY TO DEATH, PERSONAL\n            INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (&amp;quot;HIGH\n            RISK ACTIVITIES&amp;quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS ANY\n            EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:01:26Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Widget-Workshop&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved. \n\nPermission to use, copy, modify, and distribute this software and \nits documentation for NON-COMMERCIAL or COMMERCIAL purposes and \nwithout fee is hereby granted, provided that this copyright notice \nis kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES \nABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP \nSHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT \nOF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. \nTHIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE \nCONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, \nSUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR \nCOMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, \nOR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD \nDIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL \nDAMAGE (\&quot;HIGH RISK ACTIVITIES\&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS \nANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved.\n         &lt;/var&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this software\n            and its documentation for NON-COMMERCIAL or COMMERCIAL purposes\n            and without fee is hereby granted, provided that this copyright\n            notice is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS\n            OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER\n            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED\n            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n            OR NON-INFRINGEMENT. WIDGET WORKSHOP SHALL NOT BE LIABLE FOR\n            ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING\n            OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. THIS SOFTWARE\n            IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE\n            CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE\n            PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES,\n            AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL,\n            DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE\n            FAILURE OF THE SOFTWARE COULD LEAD DIRECTLY TO DEATH, PERSONAL\n            INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (&amp;quot;HIGH\n            RISK ACTIVITIES&amp;quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS ANY\n            EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Widget Workshop License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1996 Widget Workshop, Inc. All Rights Reserved.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this software and its documentation for NON-COMMERCIAL or COMMERCIAL purposes and without fee is hereby granted, provided that this copyright notice is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (\&quot;HIGH RISK ACTIVITIES\&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/48c6529996bb821e147ebe22f6ab6ede">ScancodeData:48c6529996bb821e147ebe22f6ab6ede</a> for <a href="/?license=scancode:widget-workshop"><span class="licensename"><span class="namespace">scancode:</span>widget-workshop</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>widget-workshop</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Widget Workshop License</span></li><li><span class="licensename">Widget Workshop License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:48c6529996bb821e147ebe22f6ab6ede">[<a href="/fact/ScancodeData/48c6529996bb821e147ebe22f6ab6ede">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24" target="_blank">https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and 
+its documentation for NON-COMMERCIAL or COMMERCIAL purposes and 
+without fee is hereby granted, provided that this copyright notice 
+is kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES 
+ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP 
+SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT 
+OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. 
+THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE 
+CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, 
+SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR 
+COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, 
+OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD 
+DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL 
+DAMAGE (&quot;HIGH RISK ACTIVITIES&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS 
+ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:widget-workshop&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Widget Workshop License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Widget Workshop License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;48c6529996bb821e147ebe22f6ab6ede&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, and distribute this software and \nits documentation for NON-COMMERCIAL or COMMERCIAL purposes and \nwithout fee is hereby granted, provided that this copyright notice \nis kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES \nABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP \nSHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT \nOF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. \nTHIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE \nCONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, \nSUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR \nCOMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, \nOR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD \nDIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL \nDAMAGE (\&quot;HIGH RISK ACTIVITIES\&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS \nANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;,
+        &quot;_key&quot;: &quot;widget-workshop&quot;,
+        &quot;_name&quot;: &quot;Widget Workshop License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/novnc/noVNC/blob/master/core/crypto/des.js#L24&quot;
+        ],
+        &quot;_owner&quot;: &quot;Widget Workshop&quot;,
+        &quot;_shortName&quot;: &quot;Widget Workshop License&quot;,
+        &quot;_spdxId&quot;: &quot;Widget-Workshop&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, and distribute this software and \nits documentation for NON-COMMERCIAL or COMMERCIAL purposes and \nwithout fee is hereby granted, provided that this copyright notice \nis kept intact. WIDGET WORKSHOP MAKES NO REPRESENTATIONS OR WARRANTIES \nABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WIDGET WORKSHOP \nSHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT \nOF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. \nTHIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE \nCONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, \nSUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR \nCOMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, \nOR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SOFTWARE COULD LEAD \nDIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL \nDAMAGE (\&quot;HIGH RISK ACTIVITIES\&quot;). WIDGET WORKSHOP SPECIFICALLY DISCLAIMS \nANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/8a181f071907aca1105bca62e4c51d7c">OrtLicenseCategorization:8a181f071907aca1105bca62e4c51d7c</a> for <a href="/?license=SPDX:Widget-Workshop"><span class="licensename"><span class="namespace">SPDX:</span>Widget-Workshop</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Widget-Workshop</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8a181f071907aca1105bca62e4c51d7c">[<a href="/fact/OrtLicenseCategorization/8a181f071907aca1105bca62e4c51d7c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8a181f071907aca1105bca62e4c51d7c">[<a href="/fact/OrtLicenseCategorization/8a181f071907aca1105bca62e4c51d7c">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Widget-Workshop&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;8a181f071907aca1105bca62e4c51d7c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Widget-Workshop&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/8ef9f0f6d200e69015f9c8a35309cb93">CavilLicenseChange:8ef9f0f6d200e69015f9c8a35309cb93</a> for <a href="/?license=cavil:Widget-Workshop"><span class="licensename"><span class="namespace">cavil:</span>Widget-Workshop</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Widget-Workshop</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Widget-Workshop</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Widget-Workshop&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Widget-Workshop&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;8ef9f0f6d200e69015f9c8a35309cb93&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Widget-Workshop&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Widget-Workshop&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/3cbf4322294e941791ced94867babf77">MetaeffektLicense:3cbf4322294e941791ced94867babf77</a> for <a href="/?license=metaeffekt:Widget Workshop License"><span class="licensename"><span class="namespace">metaeffekt:</span>Widget Workshop License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Widget Workshop License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Widget-Workshop</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Widget Workshop License</span></li><li><span class="licensename">Widget-Workshop</span></li><li><span class="licensename">Widget-Workshop</span></li><li><span class="licensename"><span class="namespace">scancode:</span>widget-workshop</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Widget Workshop License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Widget-Workshop&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Widget-Workshop&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Widget-Workshop&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Widget Workshop License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:widget-workshop&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;3cbf4322294e941791ced94867babf77&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Widget-Workshop&quot;,
+            &quot;Widget Workshop License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Widget Workshop License&quot;,
+        &quot;_category&quot;: &quot;Widget-Workshop&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:widget-workshop&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Widget-Workshop&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

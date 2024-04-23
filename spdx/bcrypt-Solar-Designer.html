@@ -1,0 +1,516 @@
+<html><head><title>ldbcollector: spdx:bcrypt-Solar-Designer</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:bcrypt-Solar-Designer</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>bcrypt-Solar-Designer</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">bcrypt Solar Designer License</span></li><li><span class="licensename">bcrypt-Solar-Designer</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>bcrypt-Solar-Designer</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bcrypt-solar-designer</span></li><li><span class="licensename"><span class="namespace">spdx:</span>bcrypt-Solar-Designer</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:8db67e358e6fe0bde48efdbab115ab38">[<a href="/fact/ScancodeData/8db67e358e6fe0bde48efdbab115ab38">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3dd966fa7d6074726d040c860a7f7c1c">[<a href="/fact/SPDXLicense/3dd966fa7d6074726d040c860a7f7c1c">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:e5446841fdac5c05045fb0adcf707faa">[<a href="/fact/FedoraEntry/e5446841fdac5c05045fb0adcf707faa">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:caaca6ccea313b162825c903ed4b58df">[<a href="/fact/OrtLicenseCategorization/caaca6ccea313b162825c903ed4b58df">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:caaca6ccea313b162825c903ed4b58df">[<a href="/fact/OrtLicenseCategorization/caaca6ccea313b162825c903ed4b58df">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This was previously the openwall-md5-permissive_8.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:8db67e358e6fe0bde48efdbab115ab38">[<a href="/fact/ScancodeData/8db67e358e6fe0bde48efdbab115ab38">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c" target="_blank">https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.
+No copyright is claimed, and the software is hereby placed in the public
+domain.  In case this attempt to disclaim copyright and place the software
+in the public domain is deemed null and void, then the software is
+Copyright (c) 1998-2014 Solar Designer and it is hereby released to the
+general public under the following terms:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted.
+
+There&#39;s ABSOLUTELY NO WARRANTY, express or implied.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Written by Solar Designer &amp;lt;solar
+            at openwall.com&amp;gt; in 1998-2014.
+         &lt;/var&gt;
+         &lt;p&gt;
+            No copyright is claimed, and the software is hereby placed in
+            the public domain. In case this attempt to disclaim copyright
+            and place the software in the public domain is deemed null
+            and void, then the software is&lt;var class=&quot;replaceable-license-text&quot;&gt; Copyright (c) 1998-2014 Solar Designer&lt;/var&gt;
+            and it is hereby released to the general
+            public under the following terms:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Redistribution and use in source and binary forms,
+            with or without modification, are permitted.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            There&amp;apos;s ABSOLUTELY NO WARRANTY, express or implied.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.
+No copyright is claimed, and the software is hereby placed in the public
+domain.  In case this attempt to disclaim copyright and place the software
+in the public domain is deemed null and void, then the software is
+Copyright (c) 1998-2014 Solar Designer and it is hereby released to the
+general public under the following terms:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted.
+
+There&#39;s ABSOLUTELY NO WARRANTY, express or implied.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/3dd966fa7d6074726d040c860a7f7c1c">SPDXLicense:3dd966fa7d6074726d040c860a7f7c1c</a> for <a href="/?license=spdx:bcrypt-Solar-Designer"><span class="licensename"><span class="namespace">spdx:</span>bcrypt-Solar-Designer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>bcrypt-Solar-Designer</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">bcrypt Solar Designer License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3dd966fa7d6074726d040c860a7f7c1c">[<a href="/fact/SPDXLicense/3dd966fa7d6074726d040c860a7f7c1c">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c" target="_blank">https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.
+No copyright is claimed, and the software is hereby placed in the public
+domain.  In case this attempt to disclaim copyright and place the software
+in the public domain is deemed null and void, then the software is
+Copyright (c) 1998-2014 Solar Designer and it is hereby released to the
+general public under the following terms:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted.
+
+There&#39;s ABSOLUTELY NO WARRANTY, express or implied.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Written by Solar Designer &amp;lt;solar
+            at openwall.com&amp;gt; in 1998-2014.
+         &lt;/var&gt;
+         &lt;p&gt;
+            No copyright is claimed, and the software is hereby placed in
+            the public domain. In case this attempt to disclaim copyright
+            and place the software in the public domain is deemed null
+            and void, then the software is&lt;var class=&quot;replaceable-license-text&quot;&gt; Copyright (c) 1998-2014 Solar Designer&lt;/var&gt;
+            and it is hereby released to the general
+            public under the following terms:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Redistribution and use in source and binary forms,
+            with or without modification, are permitted.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            There&amp;apos;s ABSOLUTELY NO WARRANTY, express or implied.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:bcrypt-Solar-Designer&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;bcrypt Solar Designer License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;3dd966fa7d6074726d040c860a7f7c1c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.\nNo copyright is claimed, and the software is hereby placed in the public\ndomain.  In case this attempt to disclaim copyright and place the software\nin the public domain is deemed null and void, then the software is\nCopyright (c) 1998-2014 Solar Designer and it is hereby released to the\ngeneral public under the following terms:\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted.\n\nThere&#39;s ABSOLUTELY NO WARRANTY, express or implied.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Written by Solar Designer &amp;lt;solar\n            at openwall.com&amp;gt; in 1998-2014.\n         &lt;/var&gt;\n         &lt;p&gt;\n            No copyright is claimed, and the software is hereby placed in\n            the public domain. In case this attempt to disclaim copyright\n            and place the software in the public domain is deemed null\n            and void, then the software is&lt;var class=\&quot;replaceable-license-text\&quot;&gt; Copyright (c) 1998-2014 Solar Designer&lt;/var&gt;\n            and it is hereby released to the general\n            public under the following terms:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Redistribution and use in source and binary forms,\n            with or without modification, are permitted.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            There&amp;apos;s ABSOLUTELY NO WARRANTY, express or implied.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:04:13Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:bcrypt-Solar-Designer&quot;,
+        &quot;licenseText&quot;: &quot;Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.\nNo copyright is claimed, and the software is hereby placed in the public\ndomain.  In case this attempt to disclaim copyright and place the software\nin the public domain is deemed null and void, then the software is\nCopyright (c) 1998-2014 Solar Designer and it is hereby released to the\ngeneral public under the following terms:\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted.\n\nThere&#39;s ABSOLUTELY NO WARRANTY, express or implied.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Written by Solar Designer &amp;lt;solar\n            at openwall.com&amp;gt; in 1998-2014.\n         &lt;/var&gt;\n         &lt;p&gt;\n            No copyright is claimed, and the software is hereby placed in\n            the public domain. In case this attempt to disclaim copyright\n            and place the software in the public domain is deemed null\n            and void, then the software is&lt;var class=\&quot;replaceable-license-text\&quot;&gt; Copyright (c) 1998-2014 Solar Designer&lt;/var&gt;\n            and it is hereby released to the general\n            public under the following terms:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Redistribution and use in source and binary forms,\n            with or without modification, are permitted.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            There&amp;apos;s ABSOLUTELY NO WARRANTY, express or implied.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;bcrypt Solar Designer License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nNo copyright is claimed, and the software is hereby placed in the public domain. In case this attempt to disclaim copyright and place the software in the public domain is deemed null and void, then the software is &lt;&lt;var;name=\&quot;CopyrightHolder\&quot;;original=\&quot;Copyright (c) 1998-2014 Solar Designer\&quot;;match=\&quot;.+\&quot;&gt;&gt; and it is hereby released to the general public under the following terms:\n\nRedistribution and use in source and binary forms, with or without modification, are permitted.\n\nThere&#39;s ABSOLUTELY NO WARRANTY, express or implied.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/e5446841fdac5c05045fb0adcf707faa">FedoraEntry:e5446841fdac5c05045fb0adcf707faa</a> for <a href="/?license=Fedora:bcrypt-Solar-Designer"><span class="licensename"><span class="namespace">Fedora:</span>bcrypt-Solar-Designer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>bcrypt-Solar-Designer</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>bcrypt-Solar-Designer</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:e5446841fdac5c05045fb0adcf707faa">[<a href="/fact/FedoraEntry/e5446841fdac5c05045fb0adcf707faa">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:bcrypt-Solar-Designer&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:bcrypt-Solar-Designer&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;e5446841fdac5c05045fb0adcf707faa&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;bcrypt-Solar-Designer&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:bcrypt-Solar-Designer&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/8db67e358e6fe0bde48efdbab115ab38">ScancodeData:8db67e358e6fe0bde48efdbab115ab38</a> for <a href="/?license=scancode:bcrypt-solar-designer"><span class="licensename"><span class="namespace">scancode:</span>bcrypt-solar-designer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bcrypt-solar-designer</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">bcrypt Solar Designer License</span></li><li><span class="licensename">bcrypt Solar Designer License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:8db67e358e6fe0bde48efdbab115ab38">[<a href="/fact/ScancodeData/8db67e358e6fe0bde48efdbab115ab38">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This was previously the openwall-md5-permissive_8.RULE
+<span class="provided-by">(provided by: <span title="ScancodeData:8db67e358e6fe0bde48efdbab115ab38">[<a href="/fact/ScancodeData/8db67e358e6fe0bde48efdbab115ab38">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c" target="_blank">https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.
+No copyright is claimed, and the software is hereby placed in the public
+domain.  In case this attempt to disclaim copyright and place the software
+in the public domain is deemed null and void, then the software is
+Copyright (c) 1998-2014 Solar Designer and it is hereby released to the
+general public under the following terms:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted.
+
+There&#39;s ABSOLUTELY NO WARRANTY, express or implied.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bcrypt-solar-designer&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;bcrypt Solar Designer License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;bcrypt Solar Designer License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;8db67e358e6fe0bde48efdbab115ab38&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;This was previously the openwall-md5-permissive_8.RULE\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.\nNo copyright is claimed, and the software is hereby placed in the public\ndomain.  In case this attempt to disclaim copyright and place the software\nin the public domain is deemed null and void, then the software is\nCopyright (c) 1998-2014 Solar Designer and it is hereby released to the\ngeneral public under the following terms:\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted.\n\nThere&#39;s ABSOLUTELY NO WARRANTY, express or implied.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;bcrypt-solar-designer&quot;,
+        &quot;_name&quot;: &quot;bcrypt Solar Designer License&quot;,
+        &quot;_notes&quot;: &quot;This was previously the openwall-md5-permissive_8.RULE\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/bcrypt-ruby/bcrypt-ruby/blob/master/ext/mri/crypt_blowfish.c&quot;
+        ],
+        &quot;_owner&quot;: &quot;Openwall&quot;,
+        &quot;_shortName&quot;: &quot;bcrypt Solar Designer License&quot;,
+        &quot;_spdxId&quot;: &quot;bcrypt-Solar-Designer&quot;,
+        &quot;_text&quot;: &quot;Written by Solar Designer &lt;solar at openwall.com&gt; in 1998-2014.\nNo copyright is claimed, and the software is hereby placed in the public\ndomain.  In case this attempt to disclaim copyright and place the software\nin the public domain is deemed null and void, then the software is\nCopyright (c) 1998-2014 Solar Designer and it is hereby released to the\ngeneral public under the following terms:\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted.\n\nThere&#39;s ABSOLUTELY NO WARRANTY, express or implied.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/caaca6ccea313b162825c903ed4b58df">OrtLicenseCategorization:caaca6ccea313b162825c903ed4b58df</a> for <a href="/?license=SPDX:bcrypt-Solar-Designer"><span class="licensename"><span class="namespace">SPDX:</span>bcrypt-Solar-Designer</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>bcrypt-Solar-Designer</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:caaca6ccea313b162825c903ed4b58df">[<a href="/fact/OrtLicenseCategorization/caaca6ccea313b162825c903ed4b58df">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:caaca6ccea313b162825c903ed4b58df">[<a href="/fact/OrtLicenseCategorization/caaca6ccea313b162825c903ed4b58df">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:bcrypt-Solar-Designer&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;caaca6ccea313b162825c903ed4b58df&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:bcrypt-Solar-Designer&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,1132 @@
+<html><head><title>ldbcollector: spdx:NAIST-2003</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:NAIST-2003</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NAIST-2003</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">NAIST-2003</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>NAIST-2003</span></li><li><span class="licensename"><span class="namespace">cavil:</span>NAIST-2003</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>NAIST-2003</span></li><li><span class="licensename"><span class="namespace">scancode:</span>naist-2003</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NAIST-2003</span></li><li><span class="licensename">Nara Institute License 2003</span></li><li><span class="licensename">Nara Institute of Science and Technology License (2003)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Nara Institute of Science and Technology License (2003)</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">mecab-ipadic</span></li><li><span class="licensename">mecab-ipadic license</span></li><li><span class="licensename">NAIST</span></li><li><span class="licensename">NAIST Terms</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:424095507b730efc8b4c34a653983257">[<a href="/fact/BlueOakCouncil/424095507b730efc8b4c34a653983257">BlueOakCouncil</a>]</span><span title="ScancodeData:34a302623d55e0613fd7a13f2f6fe6b7">[<a href="/fact/ScancodeData/34a302623d55e0613fd7a13f2f6fe6b7">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:00ba47a5d1214672780a54844f60969c">[<a href="/fact/SPDXLicense/00ba47a5d1214672780a54844f60969c">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:1b5b93ad4b1e3c46bbba4c5d90a191f5">[<a href="/fact/FedoraEntry/1b5b93ad4b1e3c46bbba4c5d90a191f5">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:424095507b730efc8b4c34a653983257">[<a href="/fact/BlueOakCouncil/424095507b730efc8b4c34a653983257">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:bba125eaf44e21e533f10c2dbb7fa37b">[<a href="/fact/MetaeffektLicense/bba125eaf44e21e533f10c2dbb7fa37b">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0db8ba6f696a259a4cd9c3c227bed43b">[<a href="/fact/OrtLicenseCategorization/0db8ba6f696a259a4cd9c3c227bed43b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0db8ba6f696a259a4cd9c3c227bed43b">[<a href="/fact/OrtLicenseCategorization/0db8ba6f696a259a4cd9c3c227bed43b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b31ebf8356a2e909cd7d0aa03a26cc9c">[<a href="/fact/OrtLicenseCategorization/b31ebf8356a2e909cd7d0aa03a26cc9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b31ebf8356a2e909cd7d0aa03a26cc9c">[<a href="/fact/OrtLicenseCategorization/b31ebf8356a2e909cd7d0aa03a26cc9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b31ebf8356a2e909cd7d0aa03a26cc9c">[<a href="/fact/OrtLicenseCategorization/b31ebf8356a2e909cd7d0aa03a26cc9c">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>this license references the icot-free license<span class="provided-by">(provided by: <span title="ScancodeData:34a302623d55e0613fd7a13f2f6fe6b7">[<a href="/fact/ScancodeData/34a302623d55e0613fd7a13f2f6fe6b7">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343" target="_blank">https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343</a></li><li><a href="https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text" target="_blank">https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text</a></li><li><a href="https://spdx.org/licenses/NAIST-2003" target="_blank">https://spdx.org/licenses/NAIST-2003</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 2000, 2001, 2002, 2003 Nara Institute of Science
+and Technology.  All Rights Reserved.
+
+Use, reproduction, and distribution of this software is permitted.
+Any copy of this software, whether in its original form or modified,
+must include both the above copyright notice and the following
+paragraphs.
+
+Nara Institute of Science and Technology (NAIST),
+the copyright holders, disclaims all warranties with regard to this
+software, including all implied warranties of merchantability and
+fitness, in no event shall NAIST be liable for
+any special, indirect or consequential damages or any damages
+whatsoever resulting from loss of use, data or profits, whether in an
+action of contract, negligence or other tortuous action, arising out
+of or in connection with the use or performance of this software.
+
+A large portion of the dictionary entries
+originate from ICOT Free Software.  The following conditions for ICOT
+Free Software applies to the current dictionary as well.
+
+Each User may also freely distribute the Program, whether in its
+original form or modified, to any third party or parties, PROVIDED
+that the provisions of Section 3 (&quot;NO WARRANTY&quot;) will ALWAYS appear
+on, or be attached to, the Program, which is distributed substantially
+in the same form as set out herein and that such intended
+distribution, if actually made, will neither violate or otherwise
+contravene any of the laws and regulations of the countries having
+jurisdiction over the User or the intended distribution itself.
+
+NO WARRANTY
+
+The program was produced on an experimental basis in the course of the
+research and development conducted during the project and is provided
+to users as so produced on an experimental basis.  Accordingly, the
+program is provided without any warranty whatsoever, whether express,
+implied, statutory or otherwise.  The term &quot;warranty&quot; used herein
+includes, but is not limited to, any warranty of the quality,
+performance, merchantability and fitness for a particular purpose of
+the program and the nonexistence of any infringement or violation of
+any right of any third party.
+
+Each user of the program will agree and understand, and be deemed to
+have agreed and understood, that there is no warranty whatsoever for
+the program and, accordingly, the entire risk arising from or
+otherwise connected with the program is assumed by the user.
+
+Therefore, neither ICOT, the copyright holder, or any other
+organization that participated in or was otherwise related to the
+development of the program and their respective officials, directors,
+officers and other employees shall be held liable for any and all
+damages, including, without limitation, general, special, incidental
+and consequential damages, arising out of or otherwise in connection
+with the use or inability to use the program or any product, material
+or result produced or otherwise obtained by using the program,
+regardless of whether they have been advised of, or otherwise had
+knowledge of, the possibility of such damages at any time during the
+project or thereafter.  Each user will be deemed to have agreed to the
+foregoing by his or her commencement of use of the program.  The term
+&quot;use&quot; as used herein includes, but is not limited to, the use,
+modification, copying and distribution of the program and the
+production of secondary products from the program.
+
+In the case where the program, whether in its original form or
+modified, was distributed or delivered to or received by a user from
+any person, organization or entity other than ICOT, unless it makes or
+grants independently of ICOT any specific warranty to the user in
+writing, such person, organization or entity, will also be exempted
+from and not be held liable to the user for any such damages as noted
+above as far as the program is concerned.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+                Copyright 2000, 2001, 2002, 2003 Nara Institute of Science
+                and Technology.  All Rights Reserved.
+            &lt;/var&gt;
+
+            &lt;p&gt;Use, reproduction, and distribution of this software is permitted.
+            Any copy of this software, whether in its original form or modified,
+            must include both the above copyright notice and the following
+            paragraphs.&lt;/p&gt;
+
+            &lt;p&gt;Nara Institute of Science and Technology (NAIST),
+            the copyright holders, disclaims all warranties with regard to this
+            software, including all implied warranties of merchantability and
+            fitness, in no event shall NAIST be liable for
+            any special, indirect or consequential damages or any damages
+            whatsoever resulting from loss of use, data or profits, whether in an
+            action of contract, negligence or other tortuous action, arising out
+            of or in connection with the use or performance of this software.&lt;/p&gt;
+
+            &lt;p&gt;A large portion of the dictionary entries
+            originate from ICOT Free Software.  The following conditions for ICOT
+            Free Software applies to the current dictionary as well.&lt;/p&gt;
+
+            &lt;p&gt;Each User may also freely distribute the Program, whether in its
+            original form or modified, to any third party or parties, PROVIDED
+            that the provisions of Section 3 (&amp;quot;NO WARRANTY&amp;quot;) will ALWAYS appear
+            on, or be attached to, the Program, which is distributed substantially
+            in the same form as set out herein and that such intended
+            distribution, if actually made, will neither violate or otherwise
+            contravene any of the laws and regulations of the countries having
+            jurisdiction over the User or the intended distribution itself.&lt;/p&gt;
+
+            &lt;p&gt;NO WARRANTY&lt;/p&gt;
+
+            &lt;p&gt;The program was produced on an experimental basis in the course of the
+            research and development conducted during the project and is provided
+            to users as so produced on an experimental basis.  Accordingly, the
+            program is provided without any warranty whatsoever, whether express,
+            implied, statutory or otherwise.  The term &amp;quot;warranty&amp;quot; used herein
+            includes, but is not limited to, any warranty of the quality,
+            performance, merchantability and fitness for a particular purpose of
+            the program and the nonexistence of any infringement or violation of
+            any right of any third party.&lt;/p&gt;
+
+            &lt;p&gt;Each user of the program will agree and understand, and be deemed to
+            have agreed and understood, that there is no warranty whatsoever for
+            the program and, accordingly, the entire risk arising from or
+            otherwise connected with the program is assumed by the user.&lt;/p&gt;
+
+            &lt;p&gt;Therefore, neither ICOT, the copyright holder, or any other
+            organization that participated in or was otherwise related to the
+            development of the program and their respective officials, directors,
+            officers and other employees shall be held liable for any and all
+            damages, including, without limitation, general, special, incidental
+            and consequential damages, arising out of or otherwise in connection
+            with the use or inability to use the program or any product, material
+            or result produced or otherwise obtained by using the program,
+            regardless of whether they have been advised of, or otherwise had
+            knowledge of, the possibility of such damages at any time during the
+            project or thereafter.  Each user will be deemed to have agreed to the
+            foregoing by his or her commencement of use of the program.  The term
+            &amp;quot;use&amp;quot; as used herein includes, but is not limited to, the use,
+            modification, copying and distribution of the program and the
+            production of secondary products from the program.&lt;/p&gt;
+
+            &lt;p&gt;In the case where the program, whether in its original form or
+            modified, was distributed or delivered to or received by a user from
+            any person, organization or entity other than ICOT, unless it makes or
+            grants independently of ICOT any specific warranty to the user in
+            writing, such person, organization or entity, will also be exempted
+            from and not be held liable to the user for any such damages as noted
+            above as far as the program is concerned.&lt;/p&gt;
+
+        </pre></details></li><li><details><summary>Text:</summary><pre>Use, reproduction, and distribution of this software is permitted.
+Any copy of this software, whether in its original form or modified,
+must include both the above copyright notice and the following
+paragraphs.
+
+Nara Institute of Science and Technology (NAIST),
+the copyright holders, disclaims all warranties with regard to this
+software, including all implied warranties of merchantability and
+fitness, in no event shall NAIST be liable for
+any special, indirect or consequential damages or any damages
+whatsoever resulting from loss of use, data or profits, whether in an
+action of contract, negligence or other tortuous action, arising out
+of or in connection with the use or performance of this software.
+
+A large portion of the dictionary entries
+originate from ICOT Free Software.  The following conditions for ICOT
+Free Software applies to the current dictionary as well.
+
+Each User may also freely distribute the Program, whether in its
+original form or modified, to any third party or parties, PROVIDED
+that the provisions of Section 3 (&quot;NO WARRANTY&quot;) will ALWAYS appear
+on, or be attached to, the Program, which is distributed substantially
+in the same form as set out herein and that such intended
+distribution, if actually made, will neither violate or otherwise
+contravene any of the laws and regulations of the countries having
+jurisdiction over the User or the intended distribution itself.
+
+NO WARRANTY
+
+The program was produced on an experimental basis in the course of the
+research and development conducted during the project and is provided
+to users as so produced on an experimental basis.  Accordingly, the
+program is provided without any warranty whatsoever, whether express,
+implied, statutory or otherwise.  The term &quot;warranty&quot; used herein
+includes, but is not limited to, any warranty of the quality,
+performance, merchantability and fitness for a particular purpose of
+the program and the nonexistence of any infringement or violation of
+any right of any third party.
+
+Each user of the program will agree and understand, and be deemed to
+have agreed and understood, that there is no warranty whatsoever for
+the program and, accordingly, the entire risk arising from or
+otherwise connected with the program is assumed by the user.
+
+Therefore, neither ICOT, the copyright holder, or any other
+organization that participated in or was otherwise related to the
+development of the program and their respective officials, directors,
+officers and other employees shall be held liable for any and all
+damages, including, without limitation, general, special, incidental
+and consequential damages, arising out of or otherwise in connection
+with the use or inability to use the program or any product, material
+or result produced or otherwise obtained by using the program,
+regardless of whether they have been advised of, or otherwise had
+knowledge of, the possibility of such damages at any time during the
+project or thereafter.  Each user will be deemed to have agreed to the
+foregoing by his or her commencement of use of the program.  The term
+&quot;use&quot; as used herein includes, but is not limited to, the use,
+modification, copying and distribution of the program and the
+production of secondary products from the program.
+
+In the case where the program, whether in its original form or
+modified, was distributed or delivered to or received by a user from
+any person, organization or entity other than ICOT, unless it makes or
+grants independently of ICOT any specific warranty to the user in
+writing, such person, organization or entity, will also be exempted
+from and not be held liable to the user for any such damages as noted
+above as far as the program is concerned.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/00ba47a5d1214672780a54844f60969c">SPDXLicense:00ba47a5d1214672780a54844f60969c</a> for <a href="/?license=spdx:NAIST-2003"><span class="licensename"><span class="namespace">spdx:</span>NAIST-2003</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NAIST-2003</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Nara Institute of Science and Technology License (2003)</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:00ba47a5d1214672780a54844f60969c">[<a href="/fact/SPDXLicense/00ba47a5d1214672780a54844f60969c">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343" target="_blank">https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343</a></li><li><a href="https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text" target="_blank">https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 2000, 2001, 2002, 2003 Nara Institute of Science
+and Technology.  All Rights Reserved.
+
+Use, reproduction, and distribution of this software is permitted.
+Any copy of this software, whether in its original form or modified,
+must include both the above copyright notice and the following
+paragraphs.
+
+Nara Institute of Science and Technology (NAIST),
+the copyright holders, disclaims all warranties with regard to this
+software, including all implied warranties of merchantability and
+fitness, in no event shall NAIST be liable for
+any special, indirect or consequential damages or any damages
+whatsoever resulting from loss of use, data or profits, whether in an
+action of contract, negligence or other tortuous action, arising out
+of or in connection with the use or performance of this software.
+
+A large portion of the dictionary entries
+originate from ICOT Free Software.  The following conditions for ICOT
+Free Software applies to the current dictionary as well.
+
+Each User may also freely distribute the Program, whether in its
+original form or modified, to any third party or parties, PROVIDED
+that the provisions of Section 3 (&quot;NO WARRANTY&quot;) will ALWAYS appear
+on, or be attached to, the Program, which is distributed substantially
+in the same form as set out herein and that such intended
+distribution, if actually made, will neither violate or otherwise
+contravene any of the laws and regulations of the countries having
+jurisdiction over the User or the intended distribution itself.
+
+NO WARRANTY
+
+The program was produced on an experimental basis in the course of the
+research and development conducted during the project and is provided
+to users as so produced on an experimental basis.  Accordingly, the
+program is provided without any warranty whatsoever, whether express,
+implied, statutory or otherwise.  The term &quot;warranty&quot; used herein
+includes, but is not limited to, any warranty of the quality,
+performance, merchantability and fitness for a particular purpose of
+the program and the nonexistence of any infringement or violation of
+any right of any third party.
+
+Each user of the program will agree and understand, and be deemed to
+have agreed and understood, that there is no warranty whatsoever for
+the program and, accordingly, the entire risk arising from or
+otherwise connected with the program is assumed by the user.
+
+Therefore, neither ICOT, the copyright holder, or any other
+organization that participated in or was otherwise related to the
+development of the program and their respective officials, directors,
+officers and other employees shall be held liable for any and all
+damages, including, without limitation, general, special, incidental
+and consequential damages, arising out of or otherwise in connection
+with the use or inability to use the program or any product, material
+or result produced or otherwise obtained by using the program,
+regardless of whether they have been advised of, or otherwise had
+knowledge of, the possibility of such damages at any time during the
+project or thereafter.  Each user will be deemed to have agreed to the
+foregoing by his or her commencement of use of the program.  The term
+&quot;use&quot; as used herein includes, but is not limited to, the use,
+modification, copying and distribution of the program and the
+production of secondary products from the program.
+
+In the case where the program, whether in its original form or
+modified, was distributed or delivered to or received by a user from
+any person, organization or entity other than ICOT, unless it makes or
+grants independently of ICOT any specific warranty to the user in
+writing, such person, organization or entity, will also be exempted
+from and not be held liable to the user for any such damages as noted
+above as far as the program is concerned.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+                Copyright 2000, 2001, 2002, 2003 Nara Institute of Science
+                and Technology.  All Rights Reserved.
+            &lt;/var&gt;
+
+            &lt;p&gt;Use, reproduction, and distribution of this software is permitted.
+            Any copy of this software, whether in its original form or modified,
+            must include both the above copyright notice and the following
+            paragraphs.&lt;/p&gt;
+
+            &lt;p&gt;Nara Institute of Science and Technology (NAIST),
+            the copyright holders, disclaims all warranties with regard to this
+            software, including all implied warranties of merchantability and
+            fitness, in no event shall NAIST be liable for
+            any special, indirect or consequential damages or any damages
+            whatsoever resulting from loss of use, data or profits, whether in an
+            action of contract, negligence or other tortuous action, arising out
+            of or in connection with the use or performance of this software.&lt;/p&gt;
+
+            &lt;p&gt;A large portion of the dictionary entries
+            originate from ICOT Free Software.  The following conditions for ICOT
+            Free Software applies to the current dictionary as well.&lt;/p&gt;
+
+            &lt;p&gt;Each User may also freely distribute the Program, whether in its
+            original form or modified, to any third party or parties, PROVIDED
+            that the provisions of Section 3 (&amp;quot;NO WARRANTY&amp;quot;) will ALWAYS appear
+            on, or be attached to, the Program, which is distributed substantially
+            in the same form as set out herein and that such intended
+            distribution, if actually made, will neither violate or otherwise
+            contravene any of the laws and regulations of the countries having
+            jurisdiction over the User or the intended distribution itself.&lt;/p&gt;
+
+            &lt;p&gt;NO WARRANTY&lt;/p&gt;
+
+            &lt;p&gt;The program was produced on an experimental basis in the course of the
+            research and development conducted during the project and is provided
+            to users as so produced on an experimental basis.  Accordingly, the
+            program is provided without any warranty whatsoever, whether express,
+            implied, statutory or otherwise.  The term &amp;quot;warranty&amp;quot; used herein
+            includes, but is not limited to, any warranty of the quality,
+            performance, merchantability and fitness for a particular purpose of
+            the program and the nonexistence of any infringement or violation of
+            any right of any third party.&lt;/p&gt;
+
+            &lt;p&gt;Each user of the program will agree and understand, and be deemed to
+            have agreed and understood, that there is no warranty whatsoever for
+            the program and, accordingly, the entire risk arising from or
+            otherwise connected with the program is assumed by the user.&lt;/p&gt;
+
+            &lt;p&gt;Therefore, neither ICOT, the copyright holder, or any other
+            organization that participated in or was otherwise related to the
+            development of the program and their respective officials, directors,
+            officers and other employees shall be held liable for any and all
+            damages, including, without limitation, general, special, incidental
+            and consequential damages, arising out of or otherwise in connection
+            with the use or inability to use the program or any product, material
+            or result produced or otherwise obtained by using the program,
+            regardless of whether they have been advised of, or otherwise had
+            knowledge of, the possibility of such damages at any time during the
+            project or thereafter.  Each user will be deemed to have agreed to the
+            foregoing by his or her commencement of use of the program.  The term
+            &amp;quot;use&amp;quot; as used herein includes, but is not limited to, the use,
+            modification, copying and distribution of the program and the
+            production of secondary products from the program.&lt;/p&gt;
+
+            &lt;p&gt;In the case where the program, whether in its original form or
+            modified, was distributed or delivered to or received by a user from
+            any person, organization or entity other than ICOT, unless it makes or
+            grants independently of ICOT any specific warranty to the user in
+            writing, such person, organization or entity, will also be exempted
+            from and not be held liable to the user for any such damages as noted
+            above as far as the program is concerned.&lt;/p&gt;
+
+        </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NAIST-2003&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Nara Institute of Science and Technology License (2003)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;00ba47a5d1214672780a54844f60969c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 2000, 2001, 2002, 2003 Nara Institute of Science\nand Technology.  All Rights Reserved.\n\nUse, reproduction, and distribution of this software is permitted.\nAny copy of this software, whether in its original form or modified,\nmust include both the above copyright notice and the following\nparagraphs.\n\nNara Institute of Science and Technology (NAIST),\nthe copyright holders, disclaims all warranties with regard to this\nsoftware, including all implied warranties of merchantability and\nfitness, in no event shall NAIST be liable for\nany special, indirect or consequential damages or any damages\nwhatsoever resulting from loss of use, data or profits, whether in an\naction of contract, negligence or other tortuous action, arising out\nof or in connection with the use or performance of this software.\n\nA large portion of the dictionary entries\noriginate from ICOT Free Software.  The following conditions for ICOT\nFree Software applies to the current dictionary as well.\n\nEach User may also freely distribute the Program, whether in its\noriginal form or modified, to any third party or parties, PROVIDED\nthat the provisions of Section 3 (\&quot;NO WARRANTY\&quot;) will ALWAYS appear\non, or be attached to, the Program, which is distributed substantially\nin the same form as set out herein and that such intended\ndistribution, if actually made, will neither violate or otherwise\ncontravene any of the laws and regulations of the countries having\njurisdiction over the User or the intended distribution itself.\n\nNO WARRANTY\n\nThe program was produced on an experimental basis in the course of the\nresearch and development conducted during the project and is provided\nto users as so produced on an experimental basis.  Accordingly, the\nprogram is provided without any warranty whatsoever, whether express,\nimplied, statutory or otherwise.  The term \&quot;warranty\&quot; used herein\nincludes, but is not limited to, any warranty of the quality,\nperformance, merchantability and fitness for a particular purpose of\nthe program and the nonexistence of any infringement or violation of\nany right of any third party.\n\nEach user of the program will agree and understand, and be deemed to\nhave agreed and understood, that there is no warranty whatsoever for\nthe program and, accordingly, the entire risk arising from or\notherwise connected with the program is assumed by the user.\n\nTherefore, neither ICOT, the copyright holder, or any other\norganization that participated in or was otherwise related to the\ndevelopment of the program and their respective officials, directors,\nofficers and other employees shall be held liable for any and all\ndamages, including, without limitation, general, special, incidental\nand consequential damages, arising out of or otherwise in connection\nwith the use or inability to use the program or any product, material\nor result produced or otherwise obtained by using the program,\nregardless of whether they have been advised of, or otherwise had\nknowledge of, the possibility of such damages at any time during the\nproject or thereafter.  Each user will be deemed to have agreed to the\nforegoing by his or her commencement of use of the program.  The term\n\&quot;use\&quot; as used herein includes, but is not limited to, the use,\nmodification, copying and distribution of the program and the\nproduction of secondary products from the program.\n\nIn the case where the program, whether in its original form or\nmodified, was distributed or delivered to or received by a user from\nany person, organization or entity other than ICOT, unless it makes or\ngrants independently of ICOT any specific warranty to the user in\nwriting, such person, organization or entity, will also be exempted\nfrom and not be held liable to the user for any such damages as noted\nabove as far as the program is concerned.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n                Copyright 2000, 2001, 2002, 2003 Nara Institute of Science\n                and Technology.  All Rights Reserved.\n            &lt;/var&gt;\n\n            &lt;p&gt;Use, reproduction, and distribution of this software is permitted.\n            Any copy of this software, whether in its original form or modified,\n            must include both the above copyright notice and the following\n            paragraphs.&lt;/p&gt;\n\n            &lt;p&gt;Nara Institute of Science and Technology (NAIST),\n            the copyright holders, disclaims all warranties with regard to this\n            software, including all implied warranties of merchantability and\n            fitness, in no event shall NAIST be liable for\n            any special, indirect or consequential damages or any damages\n            whatsoever resulting from loss of use, data or profits, whether in an\n            action of contract, negligence or other tortuous action, arising out\n            of or in connection with the use or performance of this software.&lt;/p&gt;\n\n            &lt;p&gt;A large portion of the dictionary entries\n            originate from ICOT Free Software.  The following conditions for ICOT\n            Free Software applies to the current dictionary as well.&lt;/p&gt;\n\n            &lt;p&gt;Each User may also freely distribute the Program, whether in its\n            original form or modified, to any third party or parties, PROVIDED\n            that the provisions of Section 3 (&amp;quot;NO WARRANTY&amp;quot;) will ALWAYS appear\n            on, or be attached to, the Program, which is distributed substantially\n            in the same form as set out herein and that such intended\n            distribution, if actually made, will neither violate or otherwise\n            contravene any of the laws and regulations of the countries having\n            jurisdiction over the User or the intended distribution itself.&lt;/p&gt;\n\n            &lt;p&gt;NO WARRANTY&lt;/p&gt;\n\n            &lt;p&gt;The program was produced on an experimental basis in the course of the\n            research and development conducted during the project and is provided\n            to users as so produced on an experimental basis.  Accordingly, the\n            program is provided without any warranty whatsoever, whether express,\n            implied, statutory or otherwise.  The term &amp;quot;warranty&amp;quot; used herein\n            includes, but is not limited to, any warranty of the quality,\n            performance, merchantability and fitness for a particular purpose of\n            the program and the nonexistence of any infringement or violation of\n            any right of any third party.&lt;/p&gt;\n\n            &lt;p&gt;Each user of the program will agree and understand, and be deemed to\n            have agreed and understood, that there is no warranty whatsoever for\n            the program and, accordingly, the entire risk arising from or\n            otherwise connected with the program is assumed by the user.&lt;/p&gt;\n\n            &lt;p&gt;Therefore, neither ICOT, the copyright holder, or any other\n            organization that participated in or was otherwise related to the\n            development of the program and their respective officials, directors,\n            officers and other employees shall be held liable for any and all\n            damages, including, without limitation, general, special, incidental\n            and consequential damages, arising out of or otherwise in connection\n            with the use or inability to use the program or any product, material\n            or result produced or otherwise obtained by using the program,\n            regardless of whether they have been advised of, or otherwise had\n            knowledge of, the possibility of such damages at any time during the\n            project or thereafter.  Each user will be deemed to have agreed to the\n            foregoing by his or her commencement of use of the program.  The term\n            &amp;quot;use&amp;quot; as used herein includes, but is not limited to, the use,\n            modification, copying and distribution of the program and the\n            production of secondary products from the program.&lt;/p&gt;\n\n            &lt;p&gt;In the case where the program, whether in its original form or\n            modified, was distributed or delivered to or received by a user from\n            any person, organization or entity other than ICOT, unless it makes or\n            grants independently of ICOT any specific warranty to the user in\n            writing, such person, organization or entity, will also be exempted\n            from and not be held liable to the user for any such damages as noted\n            above as far as the program is concerned.&lt;/p&gt;\n\n        &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:22Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:23Z&quot;,
+                &quot;url&quot;: &quot;https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:NAIST-2003&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 2000, 2001, 2002, 2003 Nara Institute of Science\nand Technology.  All Rights Reserved.\n\nUse, reproduction, and distribution of this software is permitted.\nAny copy of this software, whether in its original form or modified,\nmust include both the above copyright notice and the following\nparagraphs.\n\nNara Institute of Science and Technology (NAIST),\nthe copyright holders, disclaims all warranties with regard to this\nsoftware, including all implied warranties of merchantability and\nfitness, in no event shall NAIST be liable for\nany special, indirect or consequential damages or any damages\nwhatsoever resulting from loss of use, data or profits, whether in an\naction of contract, negligence or other tortuous action, arising out\nof or in connection with the use or performance of this software.\n\nA large portion of the dictionary entries\noriginate from ICOT Free Software.  The following conditions for ICOT\nFree Software applies to the current dictionary as well.\n\nEach User may also freely distribute the Program, whether in its\noriginal form or modified, to any third party or parties, PROVIDED\nthat the provisions of Section 3 (\&quot;NO WARRANTY\&quot;) will ALWAYS appear\non, or be attached to, the Program, which is distributed substantially\nin the same form as set out herein and that such intended\ndistribution, if actually made, will neither violate or otherwise\ncontravene any of the laws and regulations of the countries having\njurisdiction over the User or the intended distribution itself.\n\nNO WARRANTY\n\nThe program was produced on an experimental basis in the course of the\nresearch and development conducted during the project and is provided\nto users as so produced on an experimental basis.  Accordingly, the\nprogram is provided without any warranty whatsoever, whether express,\nimplied, statutory or otherwise.  The term \&quot;warranty\&quot; used herein\nincludes, but is not limited to, any warranty of the quality,\nperformance, merchantability and fitness for a particular purpose of\nthe program and the nonexistence of any infringement or violation of\nany right of any third party.\n\nEach user of the program will agree and understand, and be deemed to\nhave agreed and understood, that there is no warranty whatsoever for\nthe program and, accordingly, the entire risk arising from or\notherwise connected with the program is assumed by the user.\n\nTherefore, neither ICOT, the copyright holder, or any other\norganization that participated in or was otherwise related to the\ndevelopment of the program and their respective officials, directors,\nofficers and other employees shall be held liable for any and all\ndamages, including, without limitation, general, special, incidental\nand consequential damages, arising out of or otherwise in connection\nwith the use or inability to use the program or any product, material\nor result produced or otherwise obtained by using the program,\nregardless of whether they have been advised of, or otherwise had\nknowledge of, the possibility of such damages at any time during the\nproject or thereafter.  Each user will be deemed to have agreed to the\nforegoing by his or her commencement of use of the program.  The term\n\&quot;use\&quot; as used herein includes, but is not limited to, the use,\nmodification, copying and distribution of the program and the\nproduction of secondary products from the program.\n\nIn the case where the program, whether in its original form or\nmodified, was distributed or delivered to or received by a user from\nany person, organization or entity other than ICOT, unless it makes or\ngrants independently of ICOT any specific warranty to the user in\nwriting, such person, organization or entity, will also be exempted\nfrom and not be held liable to the user for any such damages as noted\nabove as far as the program is concerned.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n                Copyright 2000, 2001, 2002, 2003 Nara Institute of Science\n                and Technology.  All Rights Reserved.\n            &lt;/var&gt;\n\n            &lt;p&gt;Use, reproduction, and distribution of this software is permitted.\n            Any copy of this software, whether in its original form or modified,\n            must include both the above copyright notice and the following\n            paragraphs.&lt;/p&gt;\n\n            &lt;p&gt;Nara Institute of Science and Technology (NAIST),\n            the copyright holders, disclaims all warranties with regard to this\n            software, including all implied warranties of merchantability and\n            fitness, in no event shall NAIST be liable for\n            any special, indirect or consequential damages or any damages\n            whatsoever resulting from loss of use, data or profits, whether in an\n            action of contract, negligence or other tortuous action, arising out\n            of or in connection with the use or performance of this software.&lt;/p&gt;\n\n            &lt;p&gt;A large portion of the dictionary entries\n            originate from ICOT Free Software.  The following conditions for ICOT\n            Free Software applies to the current dictionary as well.&lt;/p&gt;\n\n            &lt;p&gt;Each User may also freely distribute the Program, whether in its\n            original form or modified, to any third party or parties, PROVIDED\n            that the provisions of Section 3 (&amp;quot;NO WARRANTY&amp;quot;) will ALWAYS appear\n            on, or be attached to, the Program, which is distributed substantially\n            in the same form as set out herein and that such intended\n            distribution, if actually made, will neither violate or otherwise\n            contravene any of the laws and regulations of the countries having\n            jurisdiction over the User or the intended distribution itself.&lt;/p&gt;\n\n            &lt;p&gt;NO WARRANTY&lt;/p&gt;\n\n            &lt;p&gt;The program was produced on an experimental basis in the course of the\n            research and development conducted during the project and is provided\n            to users as so produced on an experimental basis.  Accordingly, the\n            program is provided without any warranty whatsoever, whether express,\n            implied, statutory or otherwise.  The term &amp;quot;warranty&amp;quot; used herein\n            includes, but is not limited to, any warranty of the quality,\n            performance, merchantability and fitness for a particular purpose of\n            the program and the nonexistence of any infringement or violation of\n            any right of any third party.&lt;/p&gt;\n\n            &lt;p&gt;Each user of the program will agree and understand, and be deemed to\n            have agreed and understood, that there is no warranty whatsoever for\n            the program and, accordingly, the entire risk arising from or\n            otherwise connected with the program is assumed by the user.&lt;/p&gt;\n\n            &lt;p&gt;Therefore, neither ICOT, the copyright holder, or any other\n            organization that participated in or was otherwise related to the\n            development of the program and their respective officials, directors,\n            officers and other employees shall be held liable for any and all\n            damages, including, without limitation, general, special, incidental\n            and consequential damages, arising out of or otherwise in connection\n            with the use or inability to use the program or any product, material\n            or result produced or otherwise obtained by using the program,\n            regardless of whether they have been advised of, or otherwise had\n            knowledge of, the possibility of such damages at any time during the\n            project or thereafter.  Each user will be deemed to have agreed to the\n            foregoing by his or her commencement of use of the program.  The term\n            &amp;quot;use&amp;quot; as used herein includes, but is not limited to, the use,\n            modification, copying and distribution of the program and the\n            production of secondary products from the program.&lt;/p&gt;\n\n            &lt;p&gt;In the case where the program, whether in its original form or\n            modified, was distributed or delivered to or received by a user from\n            any person, organization or entity other than ICOT, unless it makes or\n            grants independently of ICOT any specific warranty to the user in\n            writing, such person, organization or entity, will also be exempted\n            from and not be held liable to the user for any such damages as noted\n            above as far as the program is concerned.&lt;/p&gt;\n\n        &quot;,
+        &quot;name&quot;: &quot;Nara Institute of Science and Technology License (2003)&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text&quot;,
+            &quot;https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 2000, 2001, 2002, 2003 Nara Institute of Science and Technology. All Rights Reserved.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nUse, reproduction, and distribution of this software is permitted. Any copy of this software, whether in its original form or modified, must include both the above copyright notice and the following paragraphs.\n\nNara Institute of Science and Technology (NAIST), the copyright holders, disclaims all warranties with regard to this software, including all implied warranties of merchantability and fitness, in no event shall NAIST be liable for any special, indirect or consequential damages or any damages whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other tortuous action, arising out of or in connection with the use or performance of this software.\n\nA large portion of the dictionary entries originate from ICOT Free Software. The following conditions for ICOT Free Software applies to the current dictionary as well.\n\nEach User may also freely distribute the Program, whether in its original form or modified, to any third party or parties, PROVIDED that the provisions of Section 3 (\&quot;NO WARRANTY\&quot;) will ALWAYS appear on, or be attached to, the Program, which is distributed substantially in the same form as set out herein and that such intended distribution, if actually made, will neither violate or otherwise contravene any of the laws and regulations of the countries having jurisdiction over the User or the intended distribution itself.\n\nNO WARRANTY\n\nThe program was produced on an experimental basis in the course of the research and development conducted during the project and is provided to users as so produced on an experimental basis. Accordingly, the program is provided without any warranty whatsoever, whether express, implied, statutory or otherwise. The term \&quot;warranty\&quot; used herein includes, but is not limited to, any warranty of the quality, performance, merchantability and fitness for a particular purpose of the program and the nonexistence of any infringement or violation of any right of any third party.\n\nEach user of the program will agree and understand, and be deemed to have agreed and understood, that there is no warranty whatsoever for the program and, accordingly, the entire risk arising from or otherwise connected with the program is assumed by the user.\n\nTherefore, neither ICOT, the copyright holder, or any other organization that participated in or was otherwise related to the development of the program and their respective officials, directors, officers and other employees shall be held liable for any and all damages, including, without limitation, general, special, incidental and consequential damages, arising out of or otherwise in connection with the use or inability to use the program or any product, material or result produced or otherwise obtained by using the program, regardless of whether they have been advised of, or otherwise had knowledge of, the possibility of such damages at any time during the project or thereafter. Each user will be deemed to have agreed to the foregoing by his or her commencement of use of the program. The term \&quot;use\&quot; as used herein includes, but is not limited to, the use, modification, copying and distribution of the program and the production of secondary products from the program.\n\nIn the case where the program, whether in its original form or modified, was distributed or delivered to or received by a user from any person, organization or entity other than ICOT, unless it makes or grants independently of ICOT any specific warranty to the user in writing, such person, organization or entity, will also be exempted from and not be held liable to the user for any such damages as noted above as far as the program is concerned.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/1b5b93ad4b1e3c46bbba4c5d90a191f5">FedoraEntry:1b5b93ad4b1e3c46bbba4c5d90a191f5</a> for <a href="/?license=Fedora:NAIST-2003"><span class="licensename"><span class="namespace">Fedora:</span>NAIST-2003</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>NAIST-2003</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NAIST-2003</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">mecab-ipadic</span></li><li><span class="licensename">mecab-ipadic license</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:1b5b93ad4b1e3c46bbba4c5d90a191f5">[<a href="/fact/FedoraEntry/1b5b93ad4b1e3c46bbba4c5d90a191f5">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:NAIST-2003&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NAIST-2003&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;mecab-ipadic license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;mecab-ipadic&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;1b5b93ad4b1e3c46bbba4c5d90a191f5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;mecab-ipadic&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;mecab-ipadic license&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;NAIST-2003&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:NAIST-2003&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/424095507b730efc8b4c34a653983257">BlueOakCouncil:424095507b730efc8b4c34a653983257</a> for <a href="/?license=BlueOak:NAIST-2003"><span class="licensename"><span class="namespace">BlueOak:</span>NAIST-2003</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>NAIST-2003</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Nara Institute of Science and Technology License (2003)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:424095507b730efc8b4c34a653983257">[<a href="/fact/BlueOakCouncil/424095507b730efc8b4c34a653983257">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:424095507b730efc8b4c34a653983257">[<a href="/fact/BlueOakCouncil/424095507b730efc8b4c34a653983257">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/NAIST-2003" target="_blank">https://spdx.org/licenses/NAIST-2003</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:NAIST-2003&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Nara Institute of Science and Technology License (2003)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;424095507b730efc8b4c34a653983257&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/NAIST-2003&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;NAIST-2003&quot;,
+                &quot;_name&quot;: &quot;Nara Institute of Science and Technology License (2003)&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/NAIST-2003&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/34a302623d55e0613fd7a13f2f6fe6b7">ScancodeData:34a302623d55e0613fd7a13f2f6fe6b7</a> for <a href="/?license=scancode:naist-2003"><span class="licensename"><span class="namespace">scancode:</span>naist-2003</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>naist-2003</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Nara Institute License 2003</span></li><li><span class="licensename">Nara Institute License 2003</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:34a302623d55e0613fd7a13f2f6fe6b7">[<a href="/fact/ScancodeData/34a302623d55e0613fd7a13f2f6fe6b7">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>this license references the icot-free license<span class="provided-by">(provided by: <span title="ScancodeData:34a302623d55e0613fd7a13f2f6fe6b7">[<a href="/fact/ScancodeData/34a302623d55e0613fd7a13f2f6fe6b7">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text" target="_blank">https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text</a></li><li><a href="https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343" target="_blank">https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Use, reproduction, and distribution of this software is permitted.
+Any copy of this software, whether in its original form or modified,
+must include both the above copyright notice and the following
+paragraphs.
+
+Nara Institute of Science and Technology (NAIST),
+the copyright holders, disclaims all warranties with regard to this
+software, including all implied warranties of merchantability and
+fitness, in no event shall NAIST be liable for
+any special, indirect or consequential damages or any damages
+whatsoever resulting from loss of use, data or profits, whether in an
+action of contract, negligence or other tortuous action, arising out
+of or in connection with the use or performance of this software.
+
+A large portion of the dictionary entries
+originate from ICOT Free Software.  The following conditions for ICOT
+Free Software applies to the current dictionary as well.
+
+Each User may also freely distribute the Program, whether in its
+original form or modified, to any third party or parties, PROVIDED
+that the provisions of Section 3 (&quot;NO WARRANTY&quot;) will ALWAYS appear
+on, or be attached to, the Program, which is distributed substantially
+in the same form as set out herein and that such intended
+distribution, if actually made, will neither violate or otherwise
+contravene any of the laws and regulations of the countries having
+jurisdiction over the User or the intended distribution itself.
+
+NO WARRANTY
+
+The program was produced on an experimental basis in the course of the
+research and development conducted during the project and is provided
+to users as so produced on an experimental basis.  Accordingly, the
+program is provided without any warranty whatsoever, whether express,
+implied, statutory or otherwise.  The term &quot;warranty&quot; used herein
+includes, but is not limited to, any warranty of the quality,
+performance, merchantability and fitness for a particular purpose of
+the program and the nonexistence of any infringement or violation of
+any right of any third party.
+
+Each user of the program will agree and understand, and be deemed to
+have agreed and understood, that there is no warranty whatsoever for
+the program and, accordingly, the entire risk arising from or
+otherwise connected with the program is assumed by the user.
+
+Therefore, neither ICOT, the copyright holder, or any other
+organization that participated in or was otherwise related to the
+development of the program and their respective officials, directors,
+officers and other employees shall be held liable for any and all
+damages, including, without limitation, general, special, incidental
+and consequential damages, arising out of or otherwise in connection
+with the use or inability to use the program or any product, material
+or result produced or otherwise obtained by using the program,
+regardless of whether they have been advised of, or otherwise had
+knowledge of, the possibility of such damages at any time during the
+project or thereafter.  Each user will be deemed to have agreed to the
+foregoing by his or her commencement of use of the program.  The term
+&quot;use&quot; as used herein includes, but is not limited to, the use,
+modification, copying and distribution of the program and the
+production of secondary products from the program.
+
+In the case where the program, whether in its original form or
+modified, was distributed or delivered to or received by a user from
+any person, organization or entity other than ICOT, unless it makes or
+grants independently of ICOT any specific warranty to the user in
+writing, such person, organization or entity, will also be exempted
+from and not be held liable to the user for any such damages as noted
+above as far as the program is concerned.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:naist-2003&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Nara Institute License 2003&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Nara Institute License 2003&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;34a302623d55e0613fd7a13f2f6fe6b7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;this license references the icot-free license&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Use, reproduction, and distribution of this software is permitted.\nAny copy of this software, whether in its original form or modified,\nmust include both the above copyright notice and the following\nparagraphs.\n\nNara Institute of Science and Technology (NAIST),\nthe copyright holders, disclaims all warranties with regard to this\nsoftware, including all implied warranties of merchantability and\nfitness, in no event shall NAIST be liable for\nany special, indirect or consequential damages or any damages\nwhatsoever resulting from loss of use, data or profits, whether in an\naction of contract, negligence or other tortuous action, arising out\nof or in connection with the use or performance of this software.\n\nA large portion of the dictionary entries\noriginate from ICOT Free Software.  The following conditions for ICOT\nFree Software applies to the current dictionary as well.\n\nEach User may also freely distribute the Program, whether in its\noriginal form or modified, to any third party or parties, PROVIDED\nthat the provisions of Section 3 (\&quot;NO WARRANTY\&quot;) will ALWAYS appear\non, or be attached to, the Program, which is distributed substantially\nin the same form as set out herein and that such intended\ndistribution, if actually made, will neither violate or otherwise\ncontravene any of the laws and regulations of the countries having\njurisdiction over the User or the intended distribution itself.\n\nNO WARRANTY\n\nThe program was produced on an experimental basis in the course of the\nresearch and development conducted during the project and is provided\nto users as so produced on an experimental basis.  Accordingly, the\nprogram is provided without any warranty whatsoever, whether express,\nimplied, statutory or otherwise.  The term \&quot;warranty\&quot; used herein\nincludes, but is not limited to, any warranty of the quality,\nperformance, merchantability and fitness for a particular purpose of\nthe program and the nonexistence of any infringement or violation of\nany right of any third party.\n\nEach user of the program will agree and understand, and be deemed to\nhave agreed and understood, that there is no warranty whatsoever for\nthe program and, accordingly, the entire risk arising from or\notherwise connected with the program is assumed by the user.\n\nTherefore, neither ICOT, the copyright holder, or any other\norganization that participated in or was otherwise related to the\ndevelopment of the program and their respective officials, directors,\nofficers and other employees shall be held liable for any and all\ndamages, including, without limitation, general, special, incidental\nand consequential damages, arising out of or otherwise in connection\nwith the use or inability to use the program or any product, material\nor result produced or otherwise obtained by using the program,\nregardless of whether they have been advised of, or otherwise had\nknowledge of, the possibility of such damages at any time during the\nproject or thereafter.  Each user will be deemed to have agreed to the\nforegoing by his or her commencement of use of the program.  The term\n\&quot;use\&quot; as used herein includes, but is not limited to, the use,\nmodification, copying and distribution of the program and the\nproduction of secondary products from the program.\n\nIn the case where the program, whether in its original form or\nmodified, was distributed or delivered to or received by a user from\nany person, organization or entity other than ICOT, unless it makes or\ngrants independently of ICOT any specific warranty to the user in\nwriting, such person, organization or entity, will also be exempted\nfrom and not be held liable to the user for any such damages as noted\nabove as far as the program is concerned.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;naist-2003&quot;,
+        &quot;_name&quot;: &quot;Nara Institute License 2003&quot;,
+        &quot;_notes&quot;: &quot;this license references the icot-free license&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://enterprise.dejacode.com/licenses/public/naist-2003/#license-text&quot;,
+            &quot;https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343&quot;
+        ],
+        &quot;_owner&quot;: &quot;Nara Institute of Science and Technology&quot;,
+        &quot;_shortName&quot;: &quot;Nara Institute License 2003&quot;,
+        &quot;_spdxId&quot;: &quot;NAIST-2003&quot;,
+        &quot;_text&quot;: &quot;Use, reproduction, and distribution of this software is permitted.\nAny copy of this software, whether in its original form or modified,\nmust include both the above copyright notice and the following\nparagraphs.\n\nNara Institute of Science and Technology (NAIST),\nthe copyright holders, disclaims all warranties with regard to this\nsoftware, including all implied warranties of merchantability and\nfitness, in no event shall NAIST be liable for\nany special, indirect or consequential damages or any damages\nwhatsoever resulting from loss of use, data or profits, whether in an\naction of contract, negligence or other tortuous action, arising out\nof or in connection with the use or performance of this software.\n\nA large portion of the dictionary entries\noriginate from ICOT Free Software.  The following conditions for ICOT\nFree Software applies to the current dictionary as well.\n\nEach User may also freely distribute the Program, whether in its\noriginal form or modified, to any third party or parties, PROVIDED\nthat the provisions of Section 3 (\&quot;NO WARRANTY\&quot;) will ALWAYS appear\non, or be attached to, the Program, which is distributed substantially\nin the same form as set out herein and that such intended\ndistribution, if actually made, will neither violate or otherwise\ncontravene any of the laws and regulations of the countries having\njurisdiction over the User or the intended distribution itself.\n\nNO WARRANTY\n\nThe program was produced on an experimental basis in the course of the\nresearch and development conducted during the project and is provided\nto users as so produced on an experimental basis.  Accordingly, the\nprogram is provided without any warranty whatsoever, whether express,\nimplied, statutory or otherwise.  The term \&quot;warranty\&quot; used herein\nincludes, but is not limited to, any warranty of the quality,\nperformance, merchantability and fitness for a particular purpose of\nthe program and the nonexistence of any infringement or violation of\nany right of any third party.\n\nEach user of the program will agree and understand, and be deemed to\nhave agreed and understood, that there is no warranty whatsoever for\nthe program and, accordingly, the entire risk arising from or\notherwise connected with the program is assumed by the user.\n\nTherefore, neither ICOT, the copyright holder, or any other\norganization that participated in or was otherwise related to the\ndevelopment of the program and their respective officials, directors,\nofficers and other employees shall be held liable for any and all\ndamages, including, without limitation, general, special, incidental\nand consequential damages, arising out of or otherwise in connection\nwith the use or inability to use the program or any product, material\nor result produced or otherwise obtained by using the program,\nregardless of whether they have been advised of, or otherwise had\nknowledge of, the possibility of such damages at any time during the\nproject or thereafter.  Each user will be deemed to have agreed to the\nforegoing by his or her commencement of use of the program.  The term\n\&quot;use\&quot; as used herein includes, but is not limited to, the use,\nmodification, copying and distribution of the program and the\nproduction of secondary products from the program.\n\nIn the case where the program, whether in its original form or\nmodified, was distributed or delivered to or received by a user from\nany person, organization or entity other than ICOT, unless it makes or\ngrants independently of ICOT any specific warranty to the user in\nwriting, such person, organization or entity, will also be exempted\nfrom and not be held liable to the user for any such damages as noted\nabove as far as the program is concerned.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/0db8ba6f696a259a4cd9c3c227bed43b">OrtLicenseCategorization:0db8ba6f696a259a4cd9c3c227bed43b</a> for <a href="/?license=SPDX:NAIST-2003"><span class="licensename"><span class="namespace">SPDX:</span>NAIST-2003</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NAIST-2003</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0db8ba6f696a259a4cd9c3c227bed43b">[<a href="/fact/OrtLicenseCategorization/0db8ba6f696a259a4cd9c3c227bed43b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0db8ba6f696a259a4cd9c3c227bed43b">[<a href="/fact/OrtLicenseCategorization/0db8ba6f696a259a4cd9c3c227bed43b">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NAIST-2003&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;0db8ba6f696a259a4cd9c3c227bed43b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NAIST-2003&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/b31ebf8356a2e909cd7d0aa03a26cc9c">OrtLicenseCategorization:b31ebf8356a2e909cd7d0aa03a26cc9c</a> for <a href="/?license=SPDX:naist-2003"><span class="licensename"><span class="namespace">SPDX:</span>naist-2003</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>naist-2003</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b31ebf8356a2e909cd7d0aa03a26cc9c">[<a href="/fact/OrtLicenseCategorization/b31ebf8356a2e909cd7d0aa03a26cc9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b31ebf8356a2e909cd7d0aa03a26cc9c">[<a href="/fact/OrtLicenseCategorization/b31ebf8356a2e909cd7d0aa03a26cc9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b31ebf8356a2e909cd7d0aa03a26cc9c">[<a href="/fact/OrtLicenseCategorization/b31ebf8356a2e909cd7d0aa03a26cc9c">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:naist-2003&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b31ebf8356a2e909cd7d0aa03a26cc9c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:naist-2003&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/75069206a99b8af2f2fd7f44d911dc78">CavilLicenseChange:75069206a99b8af2f2fd7f44d911dc78</a> for <a href="/?license=cavil:NAIST-2003"><span class="licensename"><span class="namespace">cavil:</span>NAIST-2003</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>NAIST-2003</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NAIST-2003</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:NAIST-2003&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NAIST-2003&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;75069206a99b8af2f2fd7f44d911dc78&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;NAIST-2003&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:NAIST-2003&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/bba125eaf44e21e533f10c2dbb7fa37b">MetaeffektLicense:bba125eaf44e21e533f10c2dbb7fa37b</a> for <a href="/?license=metaeffekt:Nara Institute of Science and Technology License (2003)"><span class="licensename"><span class="namespace">metaeffekt:</span>Nara Institute of Science and Technology License (2003)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Nara Institute of Science and Technology License (2003)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NAIST-2003</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">NAIST</span></li><li><span class="licensename">NAIST Terms</span></li><li><span class="licensename"><span class="namespace">scancode:</span>naist-2003</span></li><li><span class="licensename">Nara Institute of Science and Technology License (2003)</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:bba125eaf44e21e533f10c2dbb7fa37b">[<a href="/fact/MetaeffektLicense/bba125eaf44e21e533f10c2dbb7fa37b">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Nara Institute of Science and Technology License (2003)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NAIST-2003&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NAIST&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NAIST Terms&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Nara Institute of Science and Technology License (2003)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:naist-2003&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;bba125eaf44e21e533f10c2dbb7fa37b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;NAIST Terms&quot;,
+            &quot;Nara Institute of Science and Technology License (2003)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Nara Institute of Science and Technology License (2003)&quot;,
+        &quot;_category&quot;: &quot;NAIST&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:naist-2003&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:NAIST-2003&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

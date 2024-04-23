@@ -1,0 +1,842 @@
+<html><head><title>ldbcollector: spdx:Caldera</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Caldera</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Caldera</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Caldera</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Caldera</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Caldera</span></li><li><span class="licensename"><span class="namespace">scancode:</span>caldera</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Caldera</span></li><li><span class="licensename">Caldera License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Caldera License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Free Restricted&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:c241d63d46a62004d7b6862ade4e2fce">[<a href="/fact/ScancodeData/c241d63d46a62004d7b6862ade4e2fce">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d75e7330476742a5170d10c1495591bc">[<a href="/fact/SPDXLicense/d75e7330476742a5170d10c1495591bc">SPDXLicense</a>]</span>)</span></li><li><span title="">CoDEStatus: <b style="">not approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a5a78a7e3f0f251083ee40fe29163552">[<a href="/fact/MetaeffektLicense/a5a78a7e3f0f251083ee40fe29163552">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>free-restricted</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:36f10b4823770d35831fcf91e45bf792">[<a href="/fact/OrtLicenseCategorization/36f10b4823770d35831fcf91e45bf792">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:36f10b4823770d35831fcf91e45bf792">[<a href="/fact/OrtLicenseCategorization/36f10b4823770d35831fcf91e45bf792">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.lemis.com/grog/UNIX/ancient-source-all.pdf" target="_blank">http://www.lemis.com/grog/UNIX/ancient-source-all.pdf</a></li><li><a href="https://git.simple-cc.org/scc/file/LICENSE.html" target="_blank">https://git.simple-cc.org/scc/file/LICENSE.html</a></li></ul><h3>Other Statements</h3><ul><li>https://git.simple-cc.org/scc/file/doc/caldera.txt.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:
+
+     32-bit 32V UNIX
+     16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7
+
+Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera
+International, Inc.
+
+The following copyright notice applies to the source code files for which this license is granted.
+
+Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+     Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+     Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+     All advertising materials mentioning features or use of this software must display the following acknowledgement:
+This product includes software developed or owned by Caldera International, Inc.
+
+     Neither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and
+         distribute this named source code, including creating derived binary products created from the source
+         code. The source code for which Caldera International, Inc. grants rights are limited to the following
+         UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX
+         Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating
+         systems:&lt;/p&gt;
+
+      &lt;p&gt;32-bit 32V UNIX&lt;/p&gt;
+
+      &lt;p&gt;16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7&lt;/p&gt;
+
+      &lt;p&gt;Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera
+        International, Inc.
+      &lt;/p&gt;
+
+      &lt;p&gt;The following copyright notice applies to the source code files for which this license is granted.&lt;/p&gt;
+
+      &lt;p&gt;Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.&lt;/p&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:&lt;/p&gt;
+
+      &lt;p&gt;Redistributions of source code and documentation must retain the above copyright notice, this list of
+         conditions and the following disclaimer.&lt;/p&gt;
+
+      &lt;p&gt;Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the
+         following disclaimer in the documentation and/or other materials provided with the distribution.&lt;/p&gt;
+
+      &lt;p&gt;All advertising materials mentioning features or use of this software must display the following
+         acknowledgement:
+        
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;p&gt;This product includes software developed or owned by Caldera International, Inc.&lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+      &lt;/p&gt;
+
+      &lt;p&gt;Neither the name of Caldera International, Inc. nor the names of other contributors may be used to
+         endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;
+
+      &lt;p&gt;USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS
+         IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+         MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL,
+         INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+         INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+         TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+         OF THE POSSIBILITY OF SUCH DAMAGE.
+      &lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Caldera International, Inc. hereby grants a fee free license that includes the
+rights use, modify and distribute this named source code, including creating
+derived binary products created from the source code. The source code for which
+Caldera International, Inc. grants rights are limited to the following UNIX
+Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of
+the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and
+UNIX System V and successor operating systems:
+
+32-bit 32V UNIX
+16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7
+
+Caldera International, Inc. makes no guarantees or commitments that any source
+code is available from Caldera International, Inc.
+
+The following copyright notice applies to the source code files for which this
+license is granted.
+
+Copyright(C) Caldera International Inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+Redistributions of source code and documentation must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+
+All advertising materials mentioning features or use of this software must
+display the following acknowledgement: This product includes software developed
+or owned by Caldera International, Inc.
+
+Neither the name of Caldera International, Inc. nor the names of other
+contributors may be used to endorse or promote products derived from this
+software without specific prior written permission.
+
+USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL,
+INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA
+INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGE.</pre></details></li><li><details><summary>Text:</summary><pre>Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:
+
+32-bit 32V UNIX
+
+16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7
+
+Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera International, Inc.
+
+The following copyright notice applies to the source code files for which this license is granted.
+
+Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+All advertising materials mentioning features or use of this software must display the following acknowledgement:
+
+   
+
+   This product includes software developed or owned by Caldera International, Inc.
+
+Neither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/d75e7330476742a5170d10c1495591bc">SPDXLicense:d75e7330476742a5170d10c1495591bc</a> for <a href="/?license=spdx:Caldera"><span class="licensename"><span class="namespace">spdx:</span>Caldera</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Caldera</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Caldera License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d75e7330476742a5170d10c1495591bc">[<a href="/fact/SPDXLicense/d75e7330476742a5170d10c1495591bc">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.lemis.com/grog/UNIX/ancient-source-all.pdf" target="_blank">http://www.lemis.com/grog/UNIX/ancient-source-all.pdf</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:
+
+     32-bit 32V UNIX
+     16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7
+
+Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera
+International, Inc.
+
+The following copyright notice applies to the source code files for which this license is granted.
+
+Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+     Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+     Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+     All advertising materials mentioning features or use of this software must display the following acknowledgement:
+This product includes software developed or owned by Caldera International, Inc.
+
+     Neither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and
+         distribute this named source code, including creating derived binary products created from the source
+         code. The source code for which Caldera International, Inc. grants rights are limited to the following
+         UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX
+         Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating
+         systems:&lt;/p&gt;
+
+      &lt;p&gt;32-bit 32V UNIX&lt;/p&gt;
+
+      &lt;p&gt;16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7&lt;/p&gt;
+
+      &lt;p&gt;Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera
+        International, Inc.
+      &lt;/p&gt;
+
+      &lt;p&gt;The following copyright notice applies to the source code files for which this license is granted.&lt;/p&gt;
+
+      &lt;p&gt;Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.&lt;/p&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:&lt;/p&gt;
+
+      &lt;p&gt;Redistributions of source code and documentation must retain the above copyright notice, this list of
+         conditions and the following disclaimer.&lt;/p&gt;
+
+      &lt;p&gt;Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the
+         following disclaimer in the documentation and/or other materials provided with the distribution.&lt;/p&gt;
+
+      &lt;p&gt;All advertising materials mentioning features or use of this software must display the following
+         acknowledgement:
+        
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;p&gt;This product includes software developed or owned by Caldera International, Inc.&lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+      &lt;/p&gt;
+
+      &lt;p&gt;Neither the name of Caldera International, Inc. nor the names of other contributors may be used to
+         endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;
+
+      &lt;p&gt;USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS
+         IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+         MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL,
+         INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+         INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+         TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+         OF THE POSSIBILITY OF SUCH DAMAGE.
+      &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Caldera&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Caldera License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;d75e7330476742a5170d10c1495591bc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:\n\n     32-bit 32V UNIX\n     16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7\n\nCaldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera\nInternational, Inc.\n\nThe following copyright notice applies to the source code files for which this license is granted.\n\nCopyright(C) Caldera International Inc. 2001-2002. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n     Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n     Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n     All advertising materials mentioning features or use of this software must display the following acknowledgement:\nThis product includes software developed or owned by Caldera International, Inc.\n\n     Neither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nUSE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and\n         distribute this named source code, including creating derived binary products created from the source\n         code. The source code for which Caldera International, Inc. grants rights are limited to the following\n         UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX\n         Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating\n         systems:&lt;/p&gt;\n\n      &lt;p&gt;32-bit 32V UNIX&lt;/p&gt;\n\n      &lt;p&gt;16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7&lt;/p&gt;\n\n      &lt;p&gt;Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera\n        International, Inc.\n      &lt;/p&gt;\n\n      &lt;p&gt;The following copyright notice applies to the source code files for which this license is granted.&lt;/p&gt;\n\n      &lt;p&gt;Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.&lt;/p&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided\n         that the following conditions are met:&lt;/p&gt;\n\n      &lt;p&gt;Redistributions of source code and documentation must retain the above copyright notice, this list of\n         conditions and the following disclaimer.&lt;/p&gt;\n\n      &lt;p&gt;Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the\n         following disclaimer in the documentation and/or other materials provided with the distribution.&lt;/p&gt;\n\n      &lt;p&gt;All advertising materials mentioning features or use of this software must display the following\n         acknowledgement:\n        \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;p&gt;This product includes software developed or owned by Caldera International, Inc.&lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n      &lt;/p&gt;\n\n      &lt;p&gt;Neither the name of Caldera International, Inc. nor the names of other contributors may be used to\n         endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;\n\n      &lt;p&gt;USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS\n         IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n         MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL,\n         INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\n         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n         INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR\n         TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\n         OF THE POSSIBILITY OF SUCH DAMAGE.\n      &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.lemis.com/grog/UNIX/ancient-source-all.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.lemis.com/grog/UNIX/ancient-source-all.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:31Z&quot;,
+                &quot;url&quot;: &quot;http://www.lemis.com/grog/UNIX/ancient-source-all.pdf&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Caldera&quot;,
+        &quot;licenseText&quot;: &quot;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:\n\n     32-bit 32V UNIX\n     16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7\n\nCaldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera\nInternational, Inc.\n\nThe following copyright notice applies to the source code files for which this license is granted.\n\nCopyright(C) Caldera International Inc. 2001-2002. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n     Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n     Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n     All advertising materials mentioning features or use of this software must display the following acknowledgement:\nThis product includes software developed or owned by Caldera International, Inc.\n\n     Neither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nUSE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and\n         distribute this named source code, including creating derived binary products created from the source\n         code. The source code for which Caldera International, Inc. grants rights are limited to the following\n         UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX\n         Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating\n         systems:&lt;/p&gt;\n\n      &lt;p&gt;32-bit 32V UNIX&lt;/p&gt;\n\n      &lt;p&gt;16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7&lt;/p&gt;\n\n      &lt;p&gt;Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera\n        International, Inc.\n      &lt;/p&gt;\n\n      &lt;p&gt;The following copyright notice applies to the source code files for which this license is granted.&lt;/p&gt;\n\n      &lt;p&gt;Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.&lt;/p&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided\n         that the following conditions are met:&lt;/p&gt;\n\n      &lt;p&gt;Redistributions of source code and documentation must retain the above copyright notice, this list of\n         conditions and the following disclaimer.&lt;/p&gt;\n\n      &lt;p&gt;Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the\n         following disclaimer in the documentation and/or other materials provided with the distribution.&lt;/p&gt;\n\n      &lt;p&gt;All advertising materials mentioning features or use of this software must display the following\n         acknowledgement:\n        \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;p&gt;This product includes software developed or owned by Caldera International, Inc.&lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n      &lt;/p&gt;\n\n      &lt;p&gt;Neither the name of Caldera International, Inc. nor the names of other contributors may be used to\n         endorse or promote products derived from this software without specific prior written permission.&lt;/p&gt;\n\n      &lt;p&gt;USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS\n         IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n         MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL,\n         INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\n         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n         INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR\n         TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\n         OF THE POSSIBILITY OF SUCH DAMAGE.\n      &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Caldera License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.lemis.com/grog/UNIX/ancient-source-all.pdf&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:\n\n32-bit 32V UNIX\n\n16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7\n\nCaldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera International, Inc.\n\nThe following copyright notice applies to the source code files for which this license is granted.\n\nCopyright(C) Caldera International Inc. 2001-2002. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nAll advertising materials mentioning features or use of this software must display the following acknowledgement:\n\n   This product includes software developed or owned by Caldera International, Inc.\n\nNeither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nUSE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/c241d63d46a62004d7b6862ade4e2fce">ScancodeData:c241d63d46a62004d7b6862ade4e2fce</a> for <a href="/?license=scancode:caldera"><span class="licensename"><span class="namespace">scancode:</span>caldera</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>caldera</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Caldera License</span></li><li><span class="licensename">Caldera License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Free Restricted&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:c241d63d46a62004d7b6862ade4e2fce">[<a href="/fact/ScancodeData/c241d63d46a62004d7b6862ade4e2fce">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.simple-cc.org/scc/file/LICENSE.html" target="_blank">https://git.simple-cc.org/scc/file/LICENSE.html</a></li></ul><h3>Other Statements</h3><ul><li>https://git.simple-cc.org/scc/file/doc/caldera.txt.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Caldera International, Inc. hereby grants a fee free license that includes the
+rights use, modify and distribute this named source code, including creating
+derived binary products created from the source code. The source code for which
+Caldera International, Inc. grants rights are limited to the following UNIX
+Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of
+the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and
+UNIX System V and successor operating systems:
+
+32-bit 32V UNIX
+16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7
+
+Caldera International, Inc. makes no guarantees or commitments that any source
+code is available from Caldera International, Inc.
+
+The following copyright notice applies to the source code files for which this
+license is granted.
+
+Copyright(C) Caldera International Inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+Redistributions of source code and documentation must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+
+All advertising materials mentioning features or use of this software must
+display the following acknowledgement: This product includes software developed
+or owned by Caldera International, Inc.
+
+Neither the name of Caldera International, Inc. nor the names of other
+contributors may be used to endorse or promote products derived from this
+software without specific prior written permission.
+
+USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL,
+INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA
+INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:caldera&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Caldera License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Caldera License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;c241d63d46a62004d7b6862ade4e2fce&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Free Restricted&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://git.simple-cc.org/scc/file/doc/caldera.txt.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.simple-cc.org/scc/file/LICENSE.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Caldera International, Inc. hereby grants a fee free license that includes the\nrights use, modify and distribute this named source code, including creating\nderived binary products created from the source code. The source code for which\nCaldera International, Inc. grants rights are limited to the following UNIX\nOperating Systems that operate on the 16-Bit PDP-11 CPU and early versions of\nthe 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and\nUNIX System V and successor operating systems:\n\n32-bit 32V UNIX\n16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7\n\nCaldera International, Inc. makes no guarantees or commitments that any source\ncode is available from Caldera International, Inc.\n\nThe following copyright notice applies to the source code files for which this\nlicense is granted.\n\nCopyright(C) Caldera International Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code and documentation must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nAll advertising materials mentioning features or use of this software must\ndisplay the following acknowledgement: This product includes software developed\nor owned by Caldera International, Inc.\n\nNeither the name of Caldera International, Inc. nor the names of other\ncontributors may be used to endorse or promote products derived from this\nsoftware without specific prior written permission.\n\nUSE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL,\nINC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA\nINTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Free Restricted&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://git.simple-cc.org/scc/file/doc/caldera.txt.html&quot;,
+        &quot;_key&quot;: &quot;caldera&quot;,
+        &quot;_name&quot;: &quot;Caldera License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://git.simple-cc.org/scc/file/LICENSE.html&quot;
+        ],
+        &quot;_owner&quot;: &quot;Caldera&quot;,
+        &quot;_shortName&quot;: &quot;Caldera License&quot;,
+        &quot;_spdxId&quot;: &quot;Caldera&quot;,
+        &quot;_text&quot;: &quot;Caldera International, Inc. hereby grants a fee free license that includes the\nrights use, modify and distribute this named source code, including creating\nderived binary products created from the source code. The source code for which\nCaldera International, Inc. grants rights are limited to the following UNIX\nOperating Systems that operate on the 16-Bit PDP-11 CPU and early versions of\nthe 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and\nUNIX System V and successor operating systems:\n\n32-bit 32V UNIX\n16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7\n\nCaldera International, Inc. makes no guarantees or commitments that any source\ncode is available from Caldera International, Inc.\n\nThe following copyright notice applies to the source code files for which this\nlicense is granted.\n\nCopyright(C) Caldera International Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code and documentation must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nAll advertising materials mentioning features or use of this software must\ndisplay the following acknowledgement: This product includes software developed\nor owned by Caldera International, Inc.\n\nNeither the name of Caldera International, Inc. nor the names of other\ncontributors may be used to endorse or promote products derived from this\nsoftware without specific prior written permission.\n\nUSE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL,\nINC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA\nINTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/0315b8fd5cd3dd69d1deca8ffb2c9b16">Fossology:0315b8fd5cd3dd69d1deca8ffb2c9b16</a> for <a href="/?license=fossology:Caldera"><span class="licensename"><span class="namespace">fossology:</span>Caldera</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Caldera</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Caldera License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="http://www.lemis.com/grog/UNIX/ancient-source-all.pdf" target="_blank">http://www.lemis.com/grog/UNIX/ancient-source-all.pdf</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:
+
+32-bit 32V UNIX
+
+16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7
+
+Caldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera International, Inc.
+
+The following copyright notice applies to the source code files for which this license is granted.
+
+Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+All advertising materials mentioning features or use of this software must display the following acknowledgement:
+
+   
+
+   This product includes software developed or owned by Caldera International, Inc.
+
+Neither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+USE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Caldera&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Caldera License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;0315b8fd5cd3dd69d1deca8ffb2c9b16&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.lemis.com/grog/UNIX/ancient-source-all.pdf&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:\n\n32-bit 32V UNIX\n\n16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7\n\nCaldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera International, Inc.\n\nThe following copyright notice applies to the source code files for which this license is granted.\n\nCopyright(C) Caldera International Inc. 2001-2002. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nAll advertising materials mentioning features or use of this software must display the following acknowledgement:\n\n   \n\n   This product includes software developed or owned by Caldera International, Inc.\n\nNeither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nUSE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Caldera License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Caldera&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Caldera International, Inc. hereby grants a fee free license that includes the rights use, modify and distribute this named source code, including creating derived binary products created from the source code. The source code for which Caldera International, Inc. grants rights are limited to the following UNIX Operating Systems that operate on the 16-Bit PDP-11 CPU and early versions of the 32-Bit UNIX Operating System, with specific exclusion of UNIX System III and UNIX System V and successor operating systems:\n\n32-bit 32V UNIX\n\n16 bit UNIX Versions 1, 2, 3, 4, 5, 6, 7\n\nCaldera International, Inc. makes no guarantees or commitments that any source code is available from Caldera International, Inc.\n\nThe following copyright notice applies to the source code files for which this license is granted.\n\nCopyright(C) Caldera International Inc. 2001-2002. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code and documentation must retain the above copyright notice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nAll advertising materials mentioning features or use of this software must display the following acknowledgement:\n\n   \n\n   This product includes software developed or owned by Caldera International, Inc.\n\nNeither the name of Caldera International, Inc. nor the names of other contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nUSE OF THE SOFTWARE PROVIDED FOR UNDER THIS LICENSE BY CALDERA INTERNATIONAL, INC. AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL CALDERA INTERNATIONAL, INC. BE LIABLE FOR ANY DIRECT, INDIRECT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.lemis.com/grog/UNIX/ancient-source-all.pdf&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/36f10b4823770d35831fcf91e45bf792">OrtLicenseCategorization:36f10b4823770d35831fcf91e45bf792</a> for <a href="/?license=SPDX:Caldera"><span class="licensename"><span class="namespace">SPDX:</span>Caldera</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Caldera</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>free-restricted</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:36f10b4823770d35831fcf91e45bf792">[<a href="/fact/OrtLicenseCategorization/36f10b4823770d35831fcf91e45bf792">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:36f10b4823770d35831fcf91e45bf792">[<a href="/fact/OrtLicenseCategorization/36f10b4823770d35831fcf91e45bf792">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Caldera&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;36f10b4823770d35831fcf91e45bf792&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;free-restricted&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;free-restricted&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Caldera&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/32b40f15f00b974ca10e0bb75280b933">CavilLicenseChange:32b40f15f00b974ca10e0bb75280b933</a> for <a href="/?license=cavil:Caldera"><span class="licensename"><span class="namespace">cavil:</span>Caldera</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Caldera</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Caldera</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Caldera&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Caldera&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;32b40f15f00b974ca10e0bb75280b933&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Caldera&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Caldera&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/a5a78a7e3f0f251083ee40fe29163552">MetaeffektLicense:a5a78a7e3f0f251083ee40fe29163552</a> for <a href="/?license=metaeffekt:Caldera License"><span class="licensename"><span class="namespace">metaeffekt:</span>Caldera License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Caldera License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Caldera</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">Caldera</span></li><li><span class="licensename"><span class="namespace">scancode:</span>caldera</span></li><li><span class="licensename">Caldera License</span></li><li><span class="licensename">CALDERA LICENSE</span></li><li><span class="licensename">CALDERA License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">CoDEStatus: <b style="">not approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a5a78a7e3f0f251083ee40fe29163552">[<a href="/fact/MetaeffektLicense/a5a78a7e3f0f251083ee40fe29163552">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Caldera License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Caldera&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Caldera&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Caldera License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CALDERA LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CALDERA License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:caldera&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;a5a78a7e3f0f251083ee40fe29163552&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;not approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Caldera License&quot;,
+            &quot;CALDERA LICENSE&quot;,
+            &quot;CALDERA License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Caldera License&quot;,
+        &quot;_category&quot;: &quot;Caldera&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;not approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:caldera&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Caldera&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

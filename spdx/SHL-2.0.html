@@ -1,0 +1,442 @@
+<html><head><title>ldbcollector: spdx:SHL-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:SHL-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SHL-2.0</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">shl-2.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>SHL-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>shl-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SHL-2.0</span></li><li><span class="licensename">Solderpad Hardware License 2.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Solderpad Hardware License 2.0</span></li><li><span class="licensename">Solderpad Hardware License v2.0</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">SHL</span></li><li><span class="licensename">Solderpad Hardware Licence Version 2.0</span></li><li><span class="licensename">SOLDERPAD HARDWARE LICENSE version 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:7c60e6d9764b5ab2d4232c41f398d75d">[<a href="/fact/ScancodeData/7c60e6d9764b5ab2d4232c41f398d75d">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>Fossology: </b>Used with Apache-2.0. Italicized text from original license is not reflected in this copy but can be seen in license steward&#39;s version at https://solderpad.org/licenses/SHL-2.0/<span class="provided-by">(provided by: <span title="Fossology:324b49488899c81f14be00c1c3c64cff">[<a href="/fact/Fossology/324b49488899c81f14be00c1c3c64cff">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://solderpad.org/licenses/SHL-2.0/" target="_blank">https://solderpad.org/licenses/SHL-2.0/</a></li></ul><h3>Other Statements</h3><ul><li>https://solderpad.org/licenses/SHL-2.0/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Solderpad Hardware Licence  v2.0
+
+Solderpad Hardware Licence v2.0
+AN UPDATED VERSION OF THIS LICENSE IS AVAILABLE.
+
+Please see the licenses page.
+
+This licence (the “Licence”) operates as a wraparound licence to the Apache License Version 2.0 (the “Apache License”) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.
+
+1. The definitions set out in the Apache License are modified as follows:
+
+Copyright any reference to ‘copyright’ (whether capitalised or not) includes ‘Rights’ (as defined below).
+
+Contribution also includes any design, as well as any work of authorship.
+
+Derivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.
+
+Object form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).
+
+Rights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).
+
+Source form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.
+
+Work also includes a design or work of authorship, whether in Source form or other Object form.
+
+2. Grant of Licence
+
+2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.</pre></details></li><li><details><summary>Text:</summary><pre># Solderpad Hardware Licence Version 2.0
+
+This licence (the &quot;Licence&quot;) operates as a wraparound licence to the Apache License Version 2.0 (the &quot;Apache License&quot;) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.
+
+   1. The definitions set out in the Apache License are modified as follows:
+
+   Copyright any reference to &#39;copyright&#39; (whether capitalised or not) includes &#39;Rights&#39; (as defined below).
+
+   Contribution also includes any design, as well as any work of authorship.
+
+   Derivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.
+
+   Object form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).
+
+   Rights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).
+
+   Source form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.
+
+   Work also includes a design or work of authorship, whether in Source form or other Object form.
+
+   2. Grant of Licence
+
+      2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/7c60e6d9764b5ab2d4232c41f398d75d">ScancodeData:7c60e6d9764b5ab2d4232c41f398d75d</a> for <a href="/?license=scancode:shl-2.0"><span class="licensename"><span class="namespace">scancode:</span>shl-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>shl-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Solderpad Hardware License v2.0</span></li><li><span class="licensename">Solderpad Hardware License v2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:7c60e6d9764b5ab2d4232c41f398d75d">[<a href="/fact/ScancodeData/7c60e6d9764b5ab2d4232c41f398d75d">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://solderpad.org/licenses/SHL-2.0/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Solderpad Hardware Licence  v2.0
+
+Solderpad Hardware Licence v2.0
+AN UPDATED VERSION OF THIS LICENSE IS AVAILABLE.
+
+Please see the licenses page.
+
+This licence (the “Licence”) operates as a wraparound licence to the Apache License Version 2.0 (the “Apache License”) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.
+
+1. The definitions set out in the Apache License are modified as follows:
+
+Copyright any reference to ‘copyright’ (whether capitalised or not) includes ‘Rights’ (as defined below).
+
+Contribution also includes any design, as well as any work of authorship.
+
+Derivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.
+
+Object form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).
+
+Rights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).
+
+Source form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.
+
+Work also includes a design or work of authorship, whether in Source form or other Object form.
+
+2. Grant of Licence
+
+2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:shl-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Solderpad Hardware License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Solderpad Hardware License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;7c60e6d9764b5ab2d4232c41f398d75d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://solderpad.org/licenses/SHL-2.0/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Solderpad Hardware Licence  v2.0\n\nSolderpad Hardware Licence v2.0\nAN UPDATED VERSION OF THIS LICENSE IS AVAILABLE.\n\nPlease see the licenses page.\n\nThis licence (the “Licence”) operates as a wraparound licence to the Apache License Version 2.0 (the “Apache License”) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.\n\n1. The definitions set out in the Apache License are modified as follows:\n\nCopyright any reference to ‘copyright’ (whether capitalised or not) includes ‘Rights’ (as defined below).\n\nContribution also includes any design, as well as any work of authorship.\n\nDerivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.\n\nObject form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).\n\nRights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).\n\nSource form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.\n\nWork also includes a design or work of authorship, whether in Source form or other Object form.\n\n2. Grant of Licence\n\n2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://solderpad.org/licenses/SHL-2.0/&quot;,
+        &quot;_key&quot;: &quot;shl-2.0&quot;,
+        &quot;_name&quot;: &quot;Solderpad Hardware License v2.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;SolderPad&quot;,
+        &quot;_shortName&quot;: &quot;Solderpad Hardware License v2.0&quot;,
+        &quot;_spdxId&quot;: &quot;SHL-2.0&quot;,
+        &quot;_text&quot;: &quot;Solderpad Hardware Licence  v2.0\n\nSolderpad Hardware Licence v2.0\nAN UPDATED VERSION OF THIS LICENSE IS AVAILABLE.\n\nPlease see the licenses page.\n\nThis licence (the “Licence”) operates as a wraparound licence to the Apache License Version 2.0 (the “Apache License”) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.\n\n1. The definitions set out in the Apache License are modified as follows:\n\nCopyright any reference to ‘copyright’ (whether capitalised or not) includes ‘Rights’ (as defined below).\n\nContribution also includes any design, as well as any work of authorship.\n\nDerivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.\n\nObject form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).\n\nRights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).\n\nSource form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.\n\nWork also includes a design or work of authorship, whether in Source form or other Object form.\n\n2. Grant of Licence\n\n2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/324b49488899c81f14be00c1c3c64cff">Fossology:324b49488899c81f14be00c1c3c64cff</a> for <a href="/?license=fossology:SHL-2.0"><span class="licensename"><span class="namespace">fossology:</span>SHL-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>SHL-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Solderpad Hardware License v2.0</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>Used with Apache-2.0. Italicized text from original license is not reflected in this copy but can be seen in license steward&#39;s version at https://solderpad.org/licenses/SHL-2.0/<span class="provided-by">(provided by: <span title="Fossology:324b49488899c81f14be00c1c3c64cff">[<a href="/fact/Fossology/324b49488899c81f14be00c1c3c64cff">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://solderpad.org/licenses/SHL-2.0/" target="_blank">https://solderpad.org/licenses/SHL-2.0/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre># Solderpad Hardware Licence Version 2.0
+
+This licence (the &quot;Licence&quot;) operates as a wraparound licence to the Apache License Version 2.0 (the &quot;Apache License&quot;) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.
+
+   1. The definitions set out in the Apache License are modified as follows:
+
+   Copyright any reference to &#39;copyright&#39; (whether capitalised or not) includes &#39;Rights&#39; (as defined below).
+
+   Contribution also includes any design, as well as any work of authorship.
+
+   Derivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.
+
+   Object form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).
+
+   Rights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).
+
+   Source form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.
+
+   Work also includes a design or work of authorship, whether in Source form or other Object form.
+
+   2. Grant of Licence
+
+      2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:SHL-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Solderpad Hardware License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;324b49488899c81f14be00c1c3c64cff&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://solderpad.org/licenses/SHL-2.0/&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;Used with Apache-2.0. Italicized text from original license is not reflected in this copy but can be seen in license steward&#39;s version at https://solderpad.org/licenses/SHL-2.0/&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;# Solderpad Hardware Licence Version 2.0\n\nThis licence (the \&quot;Licence\&quot;) operates as a wraparound licence to the Apache License Version 2.0 (the \&quot;Apache License\&quot;) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.\n\n   1. The definitions set out in the Apache License are modified as follows:\n\n   Copyright any reference to &#39;copyright&#39; (whether capitalised or not) includes &#39;Rights&#39; (as defined below).\n\n   Contribution also includes any design, as well as any work of authorship.\n\n   Derivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.\n\n   Object form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).\n\n   Rights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).\n\n   Source form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.\n\n   Work also includes a design or work of authorship, whether in Source form or other Object form.\n\n   2. Grant of Licence\n\n      2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Solderpad Hardware License v2.0&quot;,
+        &quot;_rf_notes&quot;: &quot;Used with Apache-2.0. Italicized text from original license is not reflected in this copy but can be seen in license steward&#39;s version at https://solderpad.org/licenses/SHL-2.0/&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:SHL-2.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;# Solderpad Hardware Licence Version 2.0\n\nThis licence (the \&quot;Licence\&quot;) operates as a wraparound licence to the Apache License Version 2.0 (the \&quot;Apache License\&quot;) and grants to You the rights, and imposes the obligations, set out in the Apache License (which can be found here: http://apache.org/licenses/LICENSE-2.0), with the following extensions. It must be read in conjunction with the Apache License. Section 1 below modifies definitions in the Apache License, and section 2 below replaces sections 2 of the Apache License. You may, at your option, choose to treat any Work released under this License as released under the Apache License (thus ignoring all sections written below entirely). Words in italics indicate changes rom the Apache License, but are indicative and not to be taken into account in interpretation.\n\n   1. The definitions set out in the Apache License are modified as follows:\n\n   Copyright any reference to &#39;copyright&#39; (whether capitalised or not) includes &#39;Rights&#39; (as defined below).\n\n   Contribution also includes any design, as well as any work of authorship.\n\n   Derivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the interfaces of the Work and Derivative Works thereof.\n\n   Object form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).\n\n   Rights means copyright and any similar right including design right (whether registered or unregistered), semiconductor topography (mask) rights and database rights (but excluding Patents and Trademarks).\n\n   Source form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.\n\n   Work also includes a design or work of authorship, whether in Source form or other Object form.\n\n   2. Grant of Licence\n\n      2.1 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://solderpad.org/licenses/SHL-2.0/&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/7bc74da18eb14f080bc5bbaa999ce900">MetaeffektLicense:7bc74da18eb14f080bc5bbaa999ce900</a> for <a href="/?license=metaeffekt:Solderpad Hardware License 2.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Solderpad Hardware License 2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Solderpad Hardware License 2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SHL-2.0</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">SHL</span></li><li><span class="licensename">SHL-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>shl-2.0</span></li><li><span class="licensename">Solderpad Hardware Licence Version 2.0</span></li><li><span class="licensename">Solderpad Hardware License v2.0</span></li><li><span class="licensename">SOLDERPAD HARDWARE LICENSE version 2.0</span></li><li><span class="licensename">SOLDERPAD HARDWARE LICENSE Version 2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Solderpad Hardware License 2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SHL-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SHL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Solderpad Hardware License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Solderpad Hardware Licence Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SOLDERPAD HARDWARE LICENSE version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SOLDERPAD HARDWARE LICENSE Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SHL-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:shl-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;7bc74da18eb14f080bc5bbaa999ce900&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Solderpad Hardware License v2.0&quot;,
+            &quot;Solderpad Hardware Licence Version 2.0&quot;,
+            &quot;SOLDERPAD HARDWARE LICENSE version 2.0&quot;,
+            &quot;SOLDERPAD HARDWARE LICENSE Version 2.0&quot;,
+            &quot;SHL-2.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Solderpad Hardware License 2.0&quot;,
+        &quot;_category&quot;: &quot;SHL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:shl-2.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:SHL-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

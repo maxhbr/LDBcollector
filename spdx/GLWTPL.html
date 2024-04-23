@@ -1,0 +1,763 @@
+<html><head><title>ldbcollector: spdx:GLWTPL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:GLWTPL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GLWTPL</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">GLWTPL</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>GLWTPL</span></li><li><span class="licensename"><span class="namespace">cavil:</span>GLWTPL</span></li><li><span class="licensename"><span class="namespace">fossology:</span>GLWTPL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>glwtpl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GLWTPL</span></li><li><span class="licensename">Good Luck With That Public License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Good Luck With That Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:48d171986888635376bc7b9c93200acb">[<a href="/fact/BlueOakCouncil/48d171986888635376bc7b9c93200acb">BlueOakCouncil</a>]</span><span title="ScancodeData:25e34d7d448384ca8f107fc68ee513bc">[<a href="/fact/ScancodeData/25e34d7d448384ca8f107fc68ee513bc">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2ed6b6e520a9c8898abc37b5803ffcff">[<a href="/fact/SPDXLicense/2ed6b6e520a9c8898abc37b5803ffcff">SPDXLicense</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:48d171986888635376bc7b9c93200acb">[<a href="/fact/BlueOakCouncil/48d171986888635376bc7b9c93200acb">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ee4b17dffecae5733455c73185339717">[<a href="/fact/OrtLicenseCategorization/ee4b17dffecae5733455c73185339717">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ee4b17dffecae5733455c73185339717">[<a href="/fact/OrtLicenseCategorization/ee4b17dffecae5733455c73185339717">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85" target="_blank">https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85</a></li><li><a href="https://spdx.org/licenses/GLWTPL" target="_blank">https://spdx.org/licenses/GLWTPL</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/me-shaon/GLWTPL/blob/master/LICENSE</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>               GLWT(Good Luck With That) Public License
+                 Copyright (c) Everyone, except Author
+
+Everyone is permitted to copy, distribute, modify, merge, sell, publish,
+sublicense or whatever they want with this software but at their OWN RISK.
+
+                            Preamble
+
+The author has absolutely no clue what the code in this project does.
+It might just work or not, there is no third option.
+
+
+                GOOD LUCK WITH THAT PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+  0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A
+TRACE TO TRACK THE AUTHOR of the original product to blame for or hold
+responsible.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+Good luck and Godspeed.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;optional-license-text&quot;&gt; 
+                &lt;p&gt;GLWT(Good Luck With That) Public License&lt;/p&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;Copyright (c) Everyone, except Author&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;p&gt;Everyone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.&lt;/p&gt;
+
+            &lt;p&gt;Preamble&lt;/p&gt;
+
+            &lt;p&gt;The author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.&lt;/p&gt;
+
+            &lt;p&gt;GOOD LUCK WITH THAT PUBLIC LICENSE&lt;/p&gt;
+
+            &lt;p&gt;TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt; You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+            &lt;p&gt;Good luck and Godspeed.&lt;/p&gt;
+
+        </pre></details></li><li><details><summary>Text:</summary><pre>GLWT(Good Luck With That) Public License 
+Copyright (c) Everyone, except Author
+
+Everyone is permitted to copy, distribute, modify, merge, sell, publish,
+sublicense or whatever they want with this software but at their OWN RISK.
+
+Preamble
+
+The author has absolutely no clue what the code in this project does.
+It might just work or not, there is no third option.
+
+GOOD LUCK WITH THAT PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A
+TRACE TO TRACK THE AUTHOR of the original product to blame for or hold
+responsible.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+Good luck and Godspeed.</pre></details></li><li><details><summary>Text:</summary><pre>GLWT(Good Luck With That) Public License Copyright (c) Everyone, except Author
+
+Everyone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.
+
+Preamble
+
+The author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.
+
+GOOD LUCK WITH THAT PUBLIC LICENSE
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+   0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Good luck and Godspeed.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/2ed6b6e520a9c8898abc37b5803ffcff">SPDXLicense:2ed6b6e520a9c8898abc37b5803ffcff</a> for <a href="/?license=spdx:GLWTPL"><span class="licensename"><span class="namespace">spdx:</span>GLWTPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GLWTPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Good Luck With That Public License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2ed6b6e520a9c8898abc37b5803ffcff">[<a href="/fact/SPDXLicense/2ed6b6e520a9c8898abc37b5803ffcff">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85" target="_blank">https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>               GLWT(Good Luck With That) Public License
+                 Copyright (c) Everyone, except Author
+
+Everyone is permitted to copy, distribute, modify, merge, sell, publish,
+sublicense or whatever they want with this software but at their OWN RISK.
+
+                            Preamble
+
+The author has absolutely no clue what the code in this project does.
+It might just work or not, there is no third option.
+
+
+                GOOD LUCK WITH THAT PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+  0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A
+TRACE TO TRACK THE AUTHOR of the original product to blame for or hold
+responsible.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+Good luck and Godspeed.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;optional-license-text&quot;&gt; 
+                &lt;p&gt;GLWT(Good Luck With That) Public License&lt;/p&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;Copyright (c) Everyone, except Author&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;p&gt;Everyone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.&lt;/p&gt;
+
+            &lt;p&gt;Preamble&lt;/p&gt;
+
+            &lt;p&gt;The author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.&lt;/p&gt;
+
+            &lt;p&gt;GOOD LUCK WITH THAT PUBLIC LICENSE&lt;/p&gt;
+
+            &lt;p&gt;TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt; You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+            &lt;p&gt;IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+            &lt;p&gt;Good luck and Godspeed.&lt;/p&gt;
+
+        </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:GLWTPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Good Luck With That Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;2ed6b6e520a9c8898abc37b5803ffcff&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;               GLWT(Good Luck With That) Public License\n                 Copyright (c) Everyone, except Author\n\nEveryone is permitted to copy, distribute, modify, merge, sell, publish,\nsublicense or whatever they want with this software but at their OWN RISK.\n\n                            Preamble\n\nThe author has absolutely no clue what the code in this project does.\nIt might just work or not, there is no third option.\n\n\n                GOOD LUCK WITH THAT PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n  0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A\nTRACE TO TRACK THE AUTHOR of the original product to blame for or hold\nresponsible.\n\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n\nGood luck and Godspeed.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n            &lt;div class=\&quot;optional-license-text\&quot;&gt; \n                &lt;p&gt;GLWT(Good Luck With That) Public License&lt;/p&gt;\n\n            &lt;/div&gt;\n            &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;Copyright (c) Everyone, except Author&lt;/p&gt;\n\n            &lt;/div&gt;\n\n            &lt;p&gt;Everyone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.&lt;/p&gt;\n\n            &lt;p&gt;Preamble&lt;/p&gt;\n\n            &lt;p&gt;The author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.&lt;/p&gt;\n\n            &lt;p&gt;GOOD LUCK WITH THAT PUBLIC LICENSE&lt;/p&gt;\n\n            &lt;p&gt;TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt; You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n            &lt;p&gt;Good luck and Godspeed.&lt;/p&gt;\n\n        &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:39Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:GLWTPL&quot;,
+        &quot;licenseText&quot;: &quot;               GLWT(Good Luck With That) Public License\n                 Copyright (c) Everyone, except Author\n\nEveryone is permitted to copy, distribute, modify, merge, sell, publish,\nsublicense or whatever they want with this software but at their OWN RISK.\n\n                            Preamble\n\nThe author has absolutely no clue what the code in this project does.\nIt might just work or not, there is no third option.\n\n\n                GOOD LUCK WITH THAT PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n  0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A\nTRACE TO TRACK THE AUTHOR of the original product to blame for or hold\nresponsible.\n\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n\nGood luck and Godspeed.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n            &lt;div class=\&quot;optional-license-text\&quot;&gt; \n                &lt;p&gt;GLWT(Good Luck With That) Public License&lt;/p&gt;\n\n            &lt;/div&gt;\n            &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;Copyright (c) Everyone, except Author&lt;/p&gt;\n\n            &lt;/div&gt;\n\n            &lt;p&gt;Everyone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.&lt;/p&gt;\n\n            &lt;p&gt;Preamble&lt;/p&gt;\n\n            &lt;p&gt;The author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.&lt;/p&gt;\n\n            &lt;p&gt;GOOD LUCK WITH THAT PUBLIC LICENSE&lt;/p&gt;\n\n            &lt;p&gt;TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt; You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n            &lt;p&gt;IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n            &lt;p&gt;Good luck and Godspeed.&lt;/p&gt;\n\n        &quot;,
+        &quot;name&quot;: &quot;Good Luck With That Public License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;GLWT(Good Luck With That) Public License\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) Everyone, except Author  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nEveryone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.\n\nPreamble\n\nThe author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.\n\nGOOD LUCK WITH THAT PUBLIC LICENSE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.\n\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nGood luck and Godspeed.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/48d171986888635376bc7b9c93200acb">BlueOakCouncil:48d171986888635376bc7b9c93200acb</a> for <a href="/?license=BlueOak:GLWTPL"><span class="licensename"><span class="namespace">BlueOak:</span>GLWTPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>GLWTPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Good Luck With That Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:48d171986888635376bc7b9c93200acb">[<a href="/fact/BlueOakCouncil/48d171986888635376bc7b9c93200acb">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:48d171986888635376bc7b9c93200acb">[<a href="/fact/BlueOakCouncil/48d171986888635376bc7b9c93200acb">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/GLWTPL" target="_blank">https://spdx.org/licenses/GLWTPL</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:GLWTPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Good Luck With That Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;48d171986888635376bc7b9c93200acb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/GLWTPL&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;GLWTPL&quot;,
+                &quot;_name&quot;: &quot;Good Luck With That Public License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/GLWTPL&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/25e34d7d448384ca8f107fc68ee513bc">ScancodeData:25e34d7d448384ca8f107fc68ee513bc</a> for <a href="/?license=scancode:glwtpl"><span class="licensename"><span class="namespace">scancode:</span>glwtpl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>glwtpl</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">GLWTPL</span></li><li><span class="licensename">Good Luck With That Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:25e34d7d448384ca8f107fc68ee513bc">[<a href="/fact/ScancodeData/25e34d7d448384ca8f107fc68ee513bc">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85" target="_blank">https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/me-shaon/GLWTPL/blob/master/LICENSE</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>GLWT(Good Luck With That) Public License 
+Copyright (c) Everyone, except Author
+
+Everyone is permitted to copy, distribute, modify, merge, sell, publish,
+sublicense or whatever they want with this software but at their OWN RISK.
+
+Preamble
+
+The author has absolutely no clue what the code in this project does.
+It might just work or not, there is no third option.
+
+GOOD LUCK WITH THAT PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A
+TRACE TO TRACK THE AUTHOR of the original product to blame for or hold
+responsible.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+Good luck and Godspeed.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:glwtpl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GLWTPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Good Luck With That Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;25e34d7d448384ca8f107fc68ee513bc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/me-shaon/GLWTPL/blob/master/LICENSE&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;GLWT(Good Luck With That) Public License \nCopyright (c) Everyone, except Author\n\nEveryone is permitted to copy, distribute, modify, merge, sell, publish,\nsublicense or whatever they want with this software but at their OWN RISK.\n\nPreamble\n\nThe author has absolutely no clue what the code in this project does.\nIt might just work or not, there is no third option.\n\nGOOD LUCK WITH THAT PUBLIC LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A\nTRACE TO TRACK THE AUTHOR of the original product to blame for or hold\nresponsible.\n\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n\nGood luck and Godspeed.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/me-shaon/GLWTPL/blob/master/LICENSE&quot;,
+        &quot;_key&quot;: &quot;glwtpl&quot;,
+        &quot;_name&quot;: &quot;Good Luck With That Public License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+        ],
+        &quot;_owner&quot;: &quot;Unspecified&quot;,
+        &quot;_shortName&quot;: &quot;GLWTPL&quot;,
+        &quot;_spdxId&quot;: &quot;GLWTPL&quot;,
+        &quot;_text&quot;: &quot;GLWT(Good Luck With That) Public License \nCopyright (c) Everyone, except Author\n\nEveryone is permitted to copy, distribute, modify, merge, sell, publish,\nsublicense or whatever they want with this software but at their OWN RISK.\n\nPreamble\n\nThe author has absolutely no clue what the code in this project does.\nIt might just work or not, there is no third option.\n\nGOOD LUCK WITH THAT PUBLIC LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A\nTRACE TO TRACK THE AUTHOR of the original product to blame for or hold\nresponsible.\n\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n\nGood luck and Godspeed.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/57f5d3b2fa7dcb79257af2778f8f18c7">Fossology:57f5d3b2fa7dcb79257af2778f8f18c7</a> for <a href="/?license=fossology:GLWTPL"><span class="licensename"><span class="namespace">fossology:</span>GLWTPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>GLWTPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Good Luck With That Public License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85" target="_blank">https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>GLWT(Good Luck With That) Public License Copyright (c) Everyone, except Author
+
+Everyone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.
+
+Preamble
+
+The author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.
+
+GOOD LUCK WITH THAT PUBLIC LICENSE
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+   0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.
+
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Good luck and Godspeed.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:GLWTPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Good Luck With That Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;57f5d3b2fa7dcb79257af2778f8f18c7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;GLWT(Good Luck With That) Public License Copyright (c) Everyone, except Author\n\nEveryone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.\n\nPreamble\n\nThe author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.\n\nGOOD LUCK WITH THAT PUBLIC LICENSE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n   0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.\n\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nGood luck and Godspeed.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Good Luck With That Public License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:GLWTPL&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;GLWT(Good Luck With That) Public License Copyright (c) Everyone, except Author\n\nEveryone is permitted to copy, distribute, modify, merge, sell, publish, sublicense or whatever they want with this software but at their OWN RISK.\n\nPreamble\n\nThe author has absolutely no clue what the code in this project does. It might just work or not, there is no third option.\n\nGOOD LUCK WITH THAT PUBLIC LICENSE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n   0. You just DO WHATEVER YOU WANT TO as long as you NEVER LEAVE A TRACE TO TRACK THE AUTHOR of the original product to blame for or hold responsible.\n\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nGood luck and Godspeed.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/ee4b17dffecae5733455c73185339717">OrtLicenseCategorization:ee4b17dffecae5733455c73185339717</a> for <a href="/?license=SPDX:GLWTPL"><span class="licensename"><span class="namespace">SPDX:</span>GLWTPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>GLWTPL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ee4b17dffecae5733455c73185339717">[<a href="/fact/OrtLicenseCategorization/ee4b17dffecae5733455c73185339717">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ee4b17dffecae5733455c73185339717">[<a href="/fact/OrtLicenseCategorization/ee4b17dffecae5733455c73185339717">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:GLWTPL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;ee4b17dffecae5733455c73185339717&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:GLWTPL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/3efc6c52112877006a61cde7ef96163b">CavilLicenseChange:3efc6c52112877006a61cde7ef96163b</a> for <a href="/?license=cavil:GLWTPL"><span class="licensename"><span class="namespace">cavil:</span>GLWTPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>GLWTPL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GLWTPL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:GLWTPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GLWTPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;3efc6c52112877006a61cde7ef96163b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;GLWTPL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:GLWTPL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/de861ff1bd571fe296bf6d74fb34e005">MetaeffektLicense:de861ff1bd571fe296bf6d74fb34e005</a> for <a href="/?license=metaeffekt:Good Luck With That Public License"><span class="licensename"><span class="namespace">metaeffekt:</span>Good Luck With That Public License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Good Luck With That Public License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GLWTPL</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>glwtpl</span></li><li><span class="licensename">Good Luck With That Public License</span></li><li><span class="licensename">GOOD LUCK WITH THAT PUBLIC LICENSE</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Good Luck With That Public License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:GLWTPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Good Luck With That Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GOOD LUCK WITH THAT PUBLIC LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:glwtpl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;de861ff1bd571fe296bf6d74fb34e005&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;GOOD LUCK WITH THAT PUBLIC LICENSE&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Good Luck With That Public License&quot;,
+        &quot;_category&quot;: &quot;Good Luck With That Public License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:glwtpl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:GLWTPL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

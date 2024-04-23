@@ -1,0 +1,1370 @@
+<html><head><title>ldbcollector: spdx:MITNFA</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MITNFA</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MITNFA</span></li></ul></li><li><b>other LicenseNames (19):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT (NFA) License</span></li><li><span class="licensename">MIT +no-false-attribs license</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>MIT +no-false-attribs license</span></li><li><span class="licensename"><span class="namespace">hitachi:</span>MIT +no-false-attribs License</span></li><li><span class="licensename">MIT License (NFA)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>MIT License (NFA)</span></li><li><span class="licensename">MIT no false attribution License</span></li><li><span class="licensename">MIT with no false attribution License</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>MIT with no false attribution License</span></li><li><span class="licensename">mit-no-false-attribs</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mit-no-false-attribs</span></li><li><span class="licensename">MITNFA</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>MITNFA</span></li><li><span class="licensename"><span class="namespace">cavil:</span>MITNFA</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>MITNFA</span></li><li><span class="licensename"><span class="namespace">fossology:</span>MITNFA</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MITNFA</span></li><li><span class="licensename">scancode://mit-no-false-attribs</span></li><li><span class="licensename">scancode:mit-no-false-attribs</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:a9c08807be8f138f6268a85fdacbdbe7">[<a href="/fact/BlueOakCouncil/a9c08807be8f138f6268a85fdacbdbe7">BlueOakCouncil</a>]</span><span title="ScancodeData:be41d4caf8dcca4832e23958de89760d">[<a href="/fact/ScancodeData/be41d4caf8dcca4832e23958de89760d">ScancodeData</a>]</span><span title="FOSSLight:263d3e845cd315327cc72665d3c1162e">[<a href="/fact/FOSSLight/263d3e845cd315327cc72665d3c1162e">FOSSLight</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:429e229dcf0bb196b80a5ae67b98b319">[<a href="/fact/SPDXLicense/429e229dcf0bb196b80a5ae67b98b319">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:7c94c5cdf85cc002d7cefde8aae2e087">[<a href="/fact/FedoraEntry/7c94c5cdf85cc002d7cefde8aae2e087">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:a9c08807be8f138f6268a85fdacbdbe7">[<a href="/fact/BlueOakCouncil/a9c08807be8f138f6268a85fdacbdbe7">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:670f6bed7e94b096d20f901b4459185e">[<a href="/fact/MetaeffektLicense/670f6bed7e94b096d20f901b4459185e">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9777d9083ca597f290c0e6d739f19248">[<a href="/fact/OrtLicenseCategorization/9777d9083ca597f290c0e6d739f19248">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9777d9083ca597f290c0e6d739f19248">[<a href="/fact/OrtLicenseCategorization/9777d9083ca597f290c0e6d739f19248">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.">OrtLicenseCategorization: <b>property:modification-related-obligations</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license is based on the MIT license, but contains an
+additional section covering the removal of attributions in certain
+modification scenarios. It is Free and GPL-compatible. Use License MITNFA
+<span class="provided-by">(provided by: <span title="ScancodeData:be41d4caf8dcca4832e23958de89760d">[<a href="/fact/ScancodeData/be41d4caf8dcca4832e23958de89760d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MITNFA" target="_blank">https://fedoraproject.org/wiki/Licensing/MITNFA</a></li><li><a href="https://spdx.org/licenses/MITNFA.html" target="_blank">https://spdx.org/licenses/MITNFA.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/MITNFA</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+         associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction,
+         including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+         and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+         subject to the following conditions:&lt;/p&gt;
+
+      &lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial
+         portions of the Software.&lt;/p&gt;
+
+      &lt;p&gt;Distributions of all or part of the Software intended to be used by the recipients as they would use the
+         unmodified Software, containing modifications that substantially alter, remove, or disable
+         functionality of the Software, outside of the documented configuration mechanisms provided by the
+         Software, shall be modified such that the Original Author&amp;apos;s bug reporting email addresses and urls are
+         either replaced with the contact information of the parties responsible for the changes, or removed
+         entirely.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+         NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+         SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used
+by the recipients as they would use the unmodified Software,
+containing modifications that substantially alter, remove, or
+disable functionality of the Software, outside of the documented
+configuration mechanisms provided by the Software, shall be
+modified such that the Original Author&#39;s bug reporting email
+addresses and urls are either replaced with the contact information
+of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</pre></details></li><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright 2013, NAN contributors:
+  - Rod Vagg &lt;https://github.com/rvagg&gt;
+  - Benjamin Byholm &lt;https://github.com/kkoopa&gt;
+  - Trevor Norris &lt;https://github.com/trevnorris&gt;
+  - Nathan Rajlich &lt;https://github.com/TooTallNate&gt;
+  - Brett Lawson &lt;https://github.com/brett19&gt;
+  - Ben Noordhuis &lt;https://github.com/bnoordhuis&gt;
+(the &quot;Original Author&quot;)
+All rights reserved.
+
+MIT +no-false-attribs License
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used
+by the recipients as they would use the unmodified Software,
+containing modifications that substantially alter, remove, or
+disable functionality of the Software, outside of the documented
+configuration mechanisms provided by the Software, shall be
+modified such that the Original Author&#39;s bug reporting email
+addresses and urls are either replaced with the contact information
+of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+Except where noted, this license applies to any and all software
+programs and associated documentation files created by the
+Original Author, when distributed with the Software.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/429e229dcf0bb196b80a5ae67b98b319">SPDXLicense:429e229dcf0bb196b80a5ae67b98b319</a> for <a href="/?license=spdx:MITNFA"><span class="licensename"><span class="namespace">spdx:</span>MITNFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MITNFA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT +no-false-attribs license</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:429e229dcf0bb196b80a5ae67b98b319">[<a href="/fact/SPDXLicense/429e229dcf0bb196b80a5ae67b98b319">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MITNFA" target="_blank">https://fedoraproject.org/wiki/Licensing/MITNFA</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+         associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction,
+         including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+         and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+         subject to the following conditions:&lt;/p&gt;
+
+      &lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial
+         portions of the Software.&lt;/p&gt;
+
+      &lt;p&gt;Distributions of all or part of the Software intended to be used by the recipients as they would use the
+         unmodified Software, containing modifications that substantially alter, remove, or disable
+         functionality of the Software, outside of the documented configuration mechanisms provided by the
+         Software, shall be modified such that the Original Author&amp;apos;s bug reporting email addresses and urls are
+         either replaced with the contact information of the parties responsible for the changes, or removed
+         entirely.&lt;/p&gt;
+
+      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+         NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+         SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:MITNFA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT +no-false-attribs license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;429e229dcf0bb196b80a5ae67b98b319&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and\n         associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction,\n         including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,\n         and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,\n         subject to the following conditions:&lt;/p&gt;\n\n      &lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial\n         portions of the Software.&lt;/p&gt;\n\n      &lt;p&gt;Distributions of all or part of the Software intended to be used by the recipients as they would use the\n         unmodified Software, containing modifications that substantially alter, remove, or disable\n         functionality of the Software, outside of the documented configuration mechanisms provided by the\n         Software, shall be modified such that the Original Author&amp;apos;s bug reporting email addresses and urls are\n         either replaced with the contact information of the parties responsible for the changes, or removed\n         entirely.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT\n         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN\n         NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\n         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\n         SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:01:12Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:MITNFA&quot;,
+        &quot;licenseText&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and\n         associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction,\n         including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,\n         and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,\n         subject to the following conditions:&lt;/p&gt;\n\n      &lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial\n         portions of the Software.&lt;/p&gt;\n\n      &lt;p&gt;Distributions of all or part of the Software intended to be used by the recipients as they would use the\n         unmodified Software, containing modifications that substantially alter, remove, or disable\n         functionality of the Software, outside of the documented configuration mechanisms provided by the\n         Software, shall be modified such that the Original Author&amp;apos;s bug reporting email addresses and urls are\n         either replaced with the contact information of the parties responsible for the changes, or removed\n         entirely.&lt;/p&gt;\n\n      &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT\n         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN\n         NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\n         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\n         SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;MIT +no-false-attribs license&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/7c94c5cdf85cc002d7cefde8aae2e087">FedoraEntry:7c94c5cdf85cc002d7cefde8aae2e087</a> for <a href="/?license=Fedora:MITNFA"><span class="licensename"><span class="namespace">Fedora:</span>MITNFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>MITNFA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MITNFA</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT +no-false-attribs license</span></li><li><span class="licensename">MITNFA</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:7c94c5cdf85cc002d7cefde8aae2e087">[<a href="/fact/FedoraEntry/7c94c5cdf85cc002d7cefde8aae2e087">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MITNFA" target="_blank">https://fedoraproject.org/wiki/Licensing/MITNFA</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:MITNFA&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MITNFA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT +no-false-attribs license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MITNFA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;7c94c5cdf85cc002d7cefde8aae2e087&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MITNFA&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;MIT +no-false-attribs license&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;MITNFA&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:MITNFA&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/a9c08807be8f138f6268a85fdacbdbe7">BlueOakCouncil:a9c08807be8f138f6268a85fdacbdbe7</a> for <a href="/?license=BlueOak:MITNFA"><span class="licensename"><span class="namespace">BlueOak:</span>MITNFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>MITNFA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT +no-false-attribs license</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:a9c08807be8f138f6268a85fdacbdbe7">[<a href="/fact/BlueOakCouncil/a9c08807be8f138f6268a85fdacbdbe7">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:a9c08807be8f138f6268a85fdacbdbe7">[<a href="/fact/BlueOakCouncil/a9c08807be8f138f6268a85fdacbdbe7">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/MITNFA.html" target="_blank">https://spdx.org/licenses/MITNFA.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:MITNFA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT +no-false-attribs license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;a9c08807be8f138f6268a85fdacbdbe7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/MITNFA.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;MITNFA&quot;,
+                &quot;_name&quot;: &quot;MIT +no-false-attribs license&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/MITNFA.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/be41d4caf8dcca4832e23958de89760d">ScancodeData:be41d4caf8dcca4832e23958de89760d</a> for <a href="/?license=scancode:mit-no-false-attribs"><span class="licensename"><span class="namespace">scancode:</span>mit-no-false-attribs</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>mit-no-false-attribs</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT no false attribution License</span></li><li><span class="licensename">MIT with no false attribution License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:be41d4caf8dcca4832e23958de89760d">[<a href="/fact/ScancodeData/be41d4caf8dcca4832e23958de89760d">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license is based on the MIT license, but contains an
+additional section covering the removal of attributions in certain
+modification scenarios. It is Free and GPL-compatible. Use License MITNFA
+<span class="provided-by">(provided by: <span title="ScancodeData:be41d4caf8dcca4832e23958de89760d">[<a href="/fact/ScancodeData/be41d4caf8dcca4832e23958de89760d">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/MITNFA</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used
+by the recipients as they would use the unmodified Software,
+containing modifications that substantially alter, remove, or
+disable functionality of the Software, outside of the documented
+configuration mechanisms provided by the Software, shall be
+modified such that the Original Author&#39;s bug reporting email
+addresses and urls are either replaced with the contact information
+of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:mit-no-false-attribs&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT no false attribution License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT with no false attribution License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;be41d4caf8dcca4832e23958de89760d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \&quot;Software\&quot;), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author&#39;s bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;,
+        &quot;_key&quot;: &quot;mit-no-false-attribs&quot;,
+        &quot;_name&quot;: &quot;MIT with no false attribution License&quot;,
+        &quot;_notes&quot;: &quot;Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;npm Registry&quot;,
+        &quot;_shortName&quot;: &quot;MIT no false attribution License&quot;,
+        &quot;_spdxId&quot;: &quot;MITNFA&quot;,
+        &quot;_text&quot;: &quot;Permission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \&quot;Software\&quot;), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author&#39;s bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/f188d3f3e3beeefae6e645d78b836625">Fossology:f188d3f3e3beeefae6e645d78b836625</a> for <a href="/?license=fossology:MITNFA"><span class="licensename"><span class="namespace">fossology:</span>MITNFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>MITNFA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT +no-false-attribs license</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MITNFA" target="_blank">https://fedoraproject.org/wiki/Licensing/MITNFA</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:MITNFA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT +no-false-attribs license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;f188d3f3e3beeefae6e645d78b836625&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;MIT +no-false-attribs license&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:MITNFA&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MITNFA&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/9777d9083ca597f290c0e6d739f19248">OrtLicenseCategorization:9777d9083ca597f290c0e6d739f19248</a> for <a href="/?license=SPDX:MITNFA"><span class="licensename"><span class="namespace">SPDX:</span>MITNFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MITNFA</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9777d9083ca597f290c0e6d739f19248">[<a href="/fact/OrtLicenseCategorization/9777d9083ca597f290c0e6d739f19248">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9777d9083ca597f290c0e6d739f19248">[<a href="/fact/OrtLicenseCategorization/9777d9083ca597f290c0e6d739f19248">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MITNFA&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9777d9083ca597f290c0e6d739f19248&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MITNFA&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1</a> for <a href="/?license=SPDX:MITNFA"><span class="licensename"><span class="namespace">SPDX:</span>MITNFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MITNFA</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.">OrtLicenseCategorization: <b>property:modification-related-obligations</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1ac9d852f00f1680861a74d03734bfb1">[<a href="/fact/OrtLicenseCategorization/1ac9d852f00f1680861a74d03734bfb1">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MITNFA&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;1ac9d852f00f1680861a74d03734bfb1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:modification-related-obligations&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.&quot;,
+                &quot;name&quot;: &quot;property:modification-related-obligations&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MITNFA&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/8fc20f0c779c0cb8086b6fc97e43b4c0">CavilLicenseChange:8fc20f0c779c0cb8086b6fc97e43b4c0</a> for <a href="/?license=cavil:MITNFA"><span class="licensename"><span class="namespace">cavil:</span>MITNFA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>MITNFA</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MITNFA</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:MITNFA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MITNFA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;8fc20f0c779c0cb8086b6fc97e43b4c0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;MITNFA&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:MITNFA&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/670f6bed7e94b096d20f901b4459185e">MetaeffektLicense:670f6bed7e94b096d20f901b4459185e</a> for <a href="/?license=metaeffekt:MIT License (NFA)"><span class="licensename"><span class="namespace">metaeffekt:</span>MIT License (NFA)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>MIT License (NFA)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MITNFA</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT +no-false-attribs license</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mit-no-false-attribs</span></li><li><span class="licensename">MITNFA</span></li><li><span class="licensename">MITNFA</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:670f6bed7e94b096d20f901b4459185e">[<a href="/fact/MetaeffektLicense/670f6bed7e94b096d20f901b4459185e">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:MIT License (NFA)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MITNFA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MITNFA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MITNFA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT +no-false-attribs license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:mit-no-false-attribs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;670f6bed7e94b096d20f901b4459185e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;MITNFA&quot;,
+            &quot;MIT +no-false-attribs license&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:MIT License (NFA)&quot;,
+        &quot;_category&quot;: &quot;MITNFA&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:mit-no-false-attribs&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:MITNFA&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/5adce777b1435de06b3d099fa543dfc7">FossLicense:5adce777b1435de06b3d099fa543dfc7</a> for <a href="/?license=foss-license:MIT with no false attribution License"><span class="licensename"><span class="namespace">foss-license:</span>MIT with no false attribution License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>MIT with no false attribution License</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT (NFA) License</span></li><li><span class="licensename">MIT +no-false-attribs license</span></li><li><span class="licensename">MIT +no-false-attribs License</span></li><li><span class="licensename">MIT no false attribution License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mit-no-false-attribs</span></li><li><span class="licensename">MITNFA</span></li><li><span class="licensename">scancode://mit-no-false-attribs</span></li><li><span class="licensename">scancode:mit-no-false-attribs</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:MIT with no false attribution License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:mit-no-false-attribs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MITNFA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT +no-false-attribs license&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT (NFA) License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT +no-false-attribs License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://mit-no-false-attribs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT no false attribution License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:mit-no-false-attribs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;5adce777b1435de06b3d099fa543dfc7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;MITNFA&quot;,
+            &quot;MIT +no-false-attribs license&quot;,
+            &quot;MIT (NFA) License&quot;,
+            &quot;MIT +no-false-attribs License&quot;,
+            &quot;scancode://mit-no-false-attribs&quot;,
+            &quot;MIT no false attribution License&quot;,
+            &quot;scancode:mit-no-false-attribs&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;MIT with no false attribution License&quot;,
+        &quot;scancode_key&quot;: &quot;mit-no-false-attribs&quot;,
+        &quot;spdxid&quot;: &quot;MITNFA&quot;,
+        &quot;text&quot;: &quot;Permission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \&quot;Software\&quot;), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author&#39;s bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/263d3e845cd315327cc72665d3c1162e">FOSSLight:263d3e845cd315327cc72665d3c1162e</a> for <a href="/?license=fosslight:MIT +no-false-attribs license"><span class="licensename"><span class="namespace">fosslight:</span>MIT +no-false-attribs license</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>MIT +no-false-attribs license</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MITNFA</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:263d3e845cd315327cc72665d3c1162e">[<a href="/fact/FOSSLight/263d3e845cd315327cc72665d3c1162e">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:MIT +no-false-attribs license&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;MITNFA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;263d3e845cd315327cc72665d3c1162e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used by the recipients as they would use the unmodified Software, containing modifications that substantially alter, remove, or disable functionality of the Software, outside of the documented configuration mechanisms provided by the Software, shall be modified such that the Original Author&#39;s bug reporting email addresses and urls are either replaced with the contact information of the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: null,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;MITNFA&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/MITNFA.html&quot;,
+            &quot;_fossLight_id&quot;: 423,
+            &quot;_fossLight_name&quot;: &quot;fosslight:MIT +no-false-attribs license&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li><li><h3><a href="/source/HitachiOpenLicense">HitachiOpenLicense</a>: <a href="/fact/HitachiOpenLicense/b87202d76aa3a6b16029cecf0ad66b98">HitachiOpenLicense:b87202d76aa3a6b16029cecf0ad66b98</a> for <a href="/?license=hitachi:MIT +no-false-attribs License"><span class="licensename"><span class="namespace">hitachi:</span>MIT +no-false-attribs License</span></a></h3><h4>Permissions:</h4><ul><li><h5>Description:</h5><span>Relevant documentation for the software should be treated in the same way as for the software.</span><h5>Actions:</h5><ul><li><b>Use the obtained source code without modification</b>: <br><span>Use the fetched code as it is.</span></li><li><b>Modify the obtained source code.</b>: <br><span></span></li><li><b>Using Modified Source Code</b>: <br><span></span></li><li><b>Use the retrieved object code</b>: <br><span>Use the fetched code as it is.</span></li><li><b>Use the object code generated from the modified source code</b>: <br><span></span></li><li><b>Use the retrieved executable</b>: <br><span>Use the obtained executable as is.</span></li><li><b>Use the executable generated from the modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><span>None</span></li><li><h5>Description:</h5><span>The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.</span><h5>Actions:</h5><ul><li><b>Distribute the obtained source code without modification</b>: <br><span>Redistribute the code as it was obtained</span></li><li><b>Distribute the obtained object code</b>: <br><span>Redistribute the code as it was obtained</span></li><li><b>Sublicense the acquired source code.</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Sublicense the acquired object code</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Selling Software</b>: <br><span></span></li><li><b>Distribute the obtained executable</b>: <br><span>Redistribute the obtained executable as-is</span></li><li><b>Sublicense the acquired executable</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li></ul><h5>Conditions:</h5><b>OBLIGATION</b>: Include a copyright notice, list of terms and conditions, and disclaimer included in the license<br></li><li><h5>Description:</h5><span>The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.</span><h5>Actions:</h5><ul><li><b>Distribution of Modified Source Code</b>: <br><span></span></li><li><b>Distribute the object code generated from the modified source code</b>: <br><span></span></li><li><b>Sublicensing Modified Source Code</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Sublicense the object code generated from the modified source code</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li><li><b>Distribute the executable generated from the modified source code</b>: <br><span></span></li><li><b>Sublicense the generated executable from modified source code</b>: <br><span>Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.</span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Include a copyright notice, list of terms and conditions, and disclaimer included in the license<br></li><li><b>OR</b><ul><li><b>OBLIGATION</b>: Change the e-mail address or URL of the original author&#39;s bug report to the contact information of the organization responsible for the modification.<br></li><li><b>OBLIGATION</b>: Delete the e-mail address or URL of the original author&#39;s bug report<br></li></ul></li></ul></li></ul><h4>Notices:</h4><ul><li><h5>Description:</h5><span>There is no guarantee.</span><h5>Content:</h5><span>the software is provided &quot;as-is&quot; and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided &quot;as-is&quot; and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.</span></li><li>notices/4</li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">hitachi:</span>MIT +no-false-attribs License</span></li></ul></li></ul></div><div></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 2013, NAN contributors:
+  - Rod Vagg &lt;https://github.com/rvagg&gt;
+  - Benjamin Byholm &lt;https://github.com/kkoopa&gt;
+  - Trevor Norris &lt;https://github.com/trevnorris&gt;
+  - Nathan Rajlich &lt;https://github.com/TooTallNate&gt;
+  - Brett Lawson &lt;https://github.com/brett19&gt;
+  - Ben Noordhuis &lt;https://github.com/bnoordhuis&gt;
+(the &quot;Original Author&quot;)
+All rights reserved.
+
+MIT +no-false-attribs License
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+Distributions of all or part of the Software intended to be used
+by the recipients as they would use the unmodified Software,
+containing modifications that substantially alter, remove, or
+disable functionality of the Software, outside of the documented
+configuration mechanisms provided by the Software, shall be
+modified such that the Original Author&#39;s bug reporting email
+addresses and urls are either replaced with the contact information
+of the parties responsible for the changes, or removed entirely.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+Except where noted, this license applies to any and all software
+programs and associated documentation files created by the
+Original Author, when distributed with the Software.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;hitachi:MIT +no-false-attribs License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HitachiOpenLicense&quot;,
+        &quot;b87202d76aa3a6b16029cecf0ad66b98&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;Copyright 2013, NAN contributors:\n  - Rod Vagg &lt;https://github.com/rvagg&gt;\n  - Benjamin Byholm &lt;https://github.com/kkoopa&gt;\n  - Trevor Norris &lt;https://github.com/trevnorris&gt;\n  - Nathan Rajlich &lt;https://github.com/TooTallNate&gt;\n  - Brett Lawson &lt;https://github.com/brett19&gt;\n  - Ben Noordhuis &lt;https://github.com/bnoordhuis&gt;\n(the \&quot;Original Author\&quot;)\nAll rights reserved.\n\nMIT +no-false-attribs License\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \&quot;Software\&quot;), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author&#39;s bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\n\nExcept where noted, this license applies to any and all software\nprograms and associated documentation files created by the\nOriginal Author, when distributed with the Software.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;content&quot;: &quot;Copyright 2013, NAN contributors:\n  - Rod Vagg &lt;https://github.com/rvagg&gt;\n  - Benjamin Byholm &lt;https://github.com/kkoopa&gt;\n  - Trevor Norris &lt;https://github.com/trevnorris&gt;\n  - Nathan Rajlich &lt;https://github.com/TooTallNate&gt;\n  - Brett Lawson &lt;https://github.com/brett19&gt;\n  - Ben Noordhuis &lt;https://github.com/bnoordhuis&gt;\n(the \&quot;Original Author\&quot;)\nAll rights reserved.\n\nMIT +no-false-attribs License\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \&quot;Software\&quot;), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author&#39;s bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\n\nExcept where noted, this license applies to any and all software\nprograms and associated documentation files created by the\nOriginal Author, when distributed with the Software.&quot;,
+        &quot;name&quot;: &quot;hitachi:MIT +no-false-attribs License&quot;,
+        &quot;notices&quot;: [
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;the software is provided \&quot;as-is\&quot; and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \&quot;as-is\&quot; and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.&quot;,
+                    &quot;description&quot;: &quot;There is no guarantee.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            },
+            {
+                &quot;contents&quot;: &quot;notices/4&quot;,
+                &quot;tag&quot;: &quot;OlRef&quot;
+            }
+        ],
+        &quot;permissions&quot;: [
+            {
+                &quot;_str&quot;: &quot;Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Ol Use the obtained source code without modification (Use the fetched code as it is.)\n- Ol Modify the obtained source code.\n- Ol Using Modified Source Code\n- Ol Use the retrieved object code (Use the fetched code as it is.)\n- Ol Use the object code generated from the modified source code\n- Ol Use the retrieved executable (Use the obtained executable as is.)\n- Ol Use the executable generated from the modified source code\n\nConditions: None\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the retrieved object code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use the object code generated from the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the obtained executable as is.&quot;,
+                            &quot;name&quot;: &quot;Use the retrieved executable&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use the executable generated from the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: null,
+                &quot;description&quot;: &quot;Relevant documentation for the software should be treated in the same way as for the software.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Ol Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Ol Distribute the obtained object code (Redistribute the code as it was obtained)\n- Ol Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Selling Software\n- Ol Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Ol Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nOl OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;name&quot;: &quot;Distribute the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;name&quot;: &quot;Distribute the obtained object code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the acquired source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the acquired object code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Selling Software&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the obtained executable as-is&quot;,
+                            &quot;name&quot;: &quot;Distribute the obtained executable&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the acquired executable&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;contents&quot;: {
+                        &quot;name&quot;: &quot;Include a copyright notice, list of terms and conditions, and disclaimer included in the license&quot;,
+                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                    },
+                    &quot;tag&quot;: &quot;Ol&quot;
+                },
+                &quot;description&quot;: &quot;The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Ol Distribution of Modified Source Code\n- Ol Distribute the object code generated from the modified source code\n- Ol Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Ol Distribute the executable generated from the modified source code\n- Ol Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  Ol OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OR\n    Ol OBLIGATION: Change the e-mail address or URL of the original author&#39;s bug report to the contact information of the organization responsible for the modification.\n    Ol OBLIGATION: Delete the e-mail address or URL of the original author&#39;s bug report\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribute the object code generated from the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicensing Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the object code generated from the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribute the executable generated from the modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.&quot;,
+                            &quot;name&quot;: &quot;Sublicense the generated executable from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a copyright notice, list of terms and conditions, and disclaimer included in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;OR&quot;: [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Change the e-mail address or URL of the original author&#39;s bug report to the contact information of the organization responsible for the modification.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Delete the e-mail address or URL of the original author&#39;s bug report&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                }
+                            ]
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;HitachiOpenLicense&quot;
+}</pre></details></li></ul></body></html>

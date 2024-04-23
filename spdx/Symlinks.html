@@ -1,0 +1,632 @@
+<html><head><title>ldbcollector: spdx:Symlinks</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Symlinks</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Symlinks</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Symlinks</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Symlinks</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Symlinks</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Symlinks</span></li><li><span class="licensename"><span class="namespace">scancode:</span>symlinks</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Symlinks</span></li><li><span class="licensename">Symlinks License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Symlinks License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Symlinks Clarification License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:0fdc4786ea2dea746e5f3a424cc02e02">[<a href="/fact/BlueOakCouncil/0fdc4786ea2dea746e5f3a424cc02e02">BlueOakCouncil</a>]</span>)</span></li><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:8645cf3f9b6653198f6bef7d36cfe9ee">[<a href="/fact/ScancodeData/8645cf3f9b6653198f6bef7d36cfe9ee">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d6cc46958faa8e5807226560e1b3c0f2">[<a href="/fact/SPDXLicense/d6cc46958faa8e5807226560e1b3c0f2">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:fbe3e25b9327bc630f858315f41bb59e">[<a href="/fact/FedoraEntry/fbe3e25b9327bc630f858315f41bb59e">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:0fdc4786ea2dea746e5f3a424cc02e02">[<a href="/fact/BlueOakCouncil/0fdc4786ea2dea746e5f3a424cc02e02">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ec39fafd799c34f894364cc08573a15b">[<a href="/fact/OrtLicenseCategorization/ec39fafd799c34f894364cc08573a15b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ec39fafd799c34f894364cc08573a15b">[<a href="/fact/OrtLicenseCategorization/ec39fafd799c34f894364cc08573a15b">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html" target="_blank">https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html</a></li><li><a href="https://spdx.org/licenses/Symlinks" target="_blank">https://spdx.org/licenses/Symlinks</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre> My &quot;symlinks&quot; utility pre-dates the &quot;open source licensing&quot;
+fad by a number of years. Just to clarify, this is 100%
+freeware, written entirely by myself. The intent is to use
+it to detect missing/obsolete symlink targets on an installed
+distro, before creating the &quot;gold&quot; (or &quot;final&quot;) release discs.
+
+Use and distribute and modify as you (or anyone
+else) sees fit. There have no formal restrictions or
+requirements whatsoever regarding distribution of either
+binaries or source code, whether modified or original.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            My &amp;quot;symlinks&amp;quot; utility pre-dates the &amp;quot;open source licensing&amp;quot;
+            fad by a number of years. Just to clarify, this is 100%
+            freeware, written entirely by myself. The intent is to use
+            it to detect missing/obsolete symlink targets on an installed
+            distro, before creating the &amp;quot;gold&amp;quot; (or &amp;quot;final&amp;quot;) release discs.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Use and distribute and modify as you (or anyone
+            else) sees fit. There have no formal restrictions or
+            requirements whatsoever regarding distribution of either
+            binaries or source code, whether modified or original.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>My &quot;symlinks&quot; utility pre-dates the &quot;open source licensing&quot;
+fad by a number of years. Just to clarify, this is 100%
+freeware, written entirely by myself. The intent is to use
+it to detect missing/obsolete symlink targets on an installed
+distro, before creating the &quot;gold&quot; (or &quot;final&quot;) release discs.
+
+Use and distribute and modify as you (or anyone
+else) sees fit. There have no formal restrictions or
+requirements whatsoever regarding distribution of either
+binaries or source code, whether modified or original.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/d6cc46958faa8e5807226560e1b3c0f2">SPDXLicense:d6cc46958faa8e5807226560e1b3c0f2</a> for <a href="/?license=spdx:Symlinks"><span class="licensename"><span class="namespace">spdx:</span>Symlinks</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Symlinks</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Symlinks License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d6cc46958faa8e5807226560e1b3c0f2">[<a href="/fact/SPDXLicense/d6cc46958faa8e5807226560e1b3c0f2">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html" target="_blank">https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre> My &quot;symlinks&quot; utility pre-dates the &quot;open source licensing&quot;
+fad by a number of years. Just to clarify, this is 100%
+freeware, written entirely by myself. The intent is to use
+it to detect missing/obsolete symlink targets on an installed
+distro, before creating the &quot;gold&quot; (or &quot;final&quot;) release discs.
+
+Use and distribute and modify as you (or anyone
+else) sees fit. There have no formal restrictions or
+requirements whatsoever regarding distribution of either
+binaries or source code, whether modified or original.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            My &amp;quot;symlinks&amp;quot; utility pre-dates the &amp;quot;open source licensing&amp;quot;
+            fad by a number of years. Just to clarify, this is 100%
+            freeware, written entirely by myself. The intent is to use
+            it to detect missing/obsolete symlink targets on an installed
+            distro, before creating the &amp;quot;gold&amp;quot; (or &amp;quot;final&amp;quot;) release discs.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            Use and distribute and modify as you (or anyone
+            else) sees fit. There have no formal restrictions or
+            requirements whatsoever regarding distribution of either
+            binaries or source code, whether modified or original.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Symlinks&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Symlinks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;d6cc46958faa8e5807226560e1b3c0f2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot; My \&quot;symlinks\&quot; utility pre-dates the \&quot;open source licensing\&quot;\nfad by a number of years. Just to clarify, this is 100%\nfreeware, written entirely by myself. The intent is to use\nit to detect missing/obsolete symlink targets on an installed\ndistro, before creating the \&quot;gold\&quot; (or \&quot;final\&quot;) release discs.\n\nUse and distribute and modify as you (or anyone\nelse) sees fit. There have no formal restrictions or\nrequirements whatsoever regarding distribution of either\nbinaries or source code, whether modified or original.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            My &amp;quot;symlinks&amp;quot; utility pre-dates the &amp;quot;open source licensing&amp;quot;\n            fad by a number of years. Just to clarify, this is 100%\n            freeware, written entirely by myself. The intent is to use\n            it to detect missing/obsolete symlink targets on an installed\n            distro, before creating the &amp;quot;gold&amp;quot; (or &amp;quot;final&amp;quot;) release discs.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Use and distribute and modify as you (or anyone\n            else) sees fit. There have no formal restrictions or\n            requirements whatsoever regarding distribution of either\n            binaries or source code, whether modified or original.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:00Z&quot;,
+                &quot;url&quot;: &quot;https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Symlinks&quot;,
+        &quot;licenseText&quot;: &quot; My \&quot;symlinks\&quot; utility pre-dates the \&quot;open source licensing\&quot;\nfad by a number of years. Just to clarify, this is 100%\nfreeware, written entirely by myself. The intent is to use\nit to detect missing/obsolete symlink targets on an installed\ndistro, before creating the \&quot;gold\&quot; (or \&quot;final\&quot;) release discs.\n\nUse and distribute and modify as you (or anyone\nelse) sees fit. There have no formal restrictions or\nrequirements whatsoever regarding distribution of either\nbinaries or source code, whether modified or original.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            My &amp;quot;symlinks&amp;quot; utility pre-dates the &amp;quot;open source licensing&amp;quot;\n            fad by a number of years. Just to clarify, this is 100%\n            freeware, written entirely by myself. The intent is to use\n            it to detect missing/obsolete symlink targets on an installed\n            distro, before creating the &amp;quot;gold&amp;quot; (or &amp;quot;final&amp;quot;) release discs.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            Use and distribute and modify as you (or anyone\n            else) sees fit. There have no formal restrictions or\n            requirements whatsoever regarding distribution of either\n            binaries or source code, whether modified or original.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Symlinks License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;My \&quot;symlinks\&quot; utility pre-dates the \&quot;open source licensing\&quot; fad by a number of years. Just to clarify, this is 100% freeware, written entirely by myself. The intent is to use it to detect missing/obsolete symlink targets on an installed distro, before creating the \&quot;gold\&quot; (or \&quot;final\&quot;) release discs.\n\nUse and distribute and modify as you (or anyone else) sees fit. There have no formal restrictions or requirements whatsoever regarding distribution of either binaries or source code, whether modified or original.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/fbe3e25b9327bc630f858315f41bb59e">FedoraEntry:fbe3e25b9327bc630f858315f41bb59e</a> for <a href="/?license=Fedora:Symlinks"><span class="licensename"><span class="namespace">Fedora:</span>Symlinks</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Symlinks</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Symlinks</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:fbe3e25b9327bc630f858315f41bb59e">[<a href="/fact/FedoraEntry/fbe3e25b9327bc630f858315f41bb59e">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Symlinks&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Symlinks&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;fbe3e25b9327bc630f858315f41bb59e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Symlinks&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Symlinks&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/0fdc4786ea2dea746e5f3a424cc02e02">BlueOakCouncil:0fdc4786ea2dea746e5f3a424cc02e02</a> for <a href="/?license=BlueOak:Symlinks"><span class="licensename"><span class="namespace">BlueOak:</span>Symlinks</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Symlinks</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Symlinks License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:0fdc4786ea2dea746e5f3a424cc02e02">[<a href="/fact/BlueOakCouncil/0fdc4786ea2dea746e5f3a424cc02e02">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:0fdc4786ea2dea746e5f3a424cc02e02">[<a href="/fact/BlueOakCouncil/0fdc4786ea2dea746e5f3a424cc02e02">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Symlinks" target="_blank">https://spdx.org/licenses/Symlinks</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:Symlinks&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Symlinks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;0fdc4786ea2dea746e5f3a424cc02e02&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Symlinks&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;Symlinks&quot;,
+                &quot;_name&quot;: &quot;Symlinks License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Symlinks&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/8645cf3f9b6653198f6bef7d36cfe9ee">ScancodeData:8645cf3f9b6653198f6bef7d36cfe9ee</a> for <a href="/?license=scancode:symlinks"><span class="licensename"><span class="namespace">scancode:</span>symlinks</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>symlinks</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Symlinks License</span></li><li><span class="licensename">Symlinks License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:8645cf3f9b6653198f6bef7d36cfe9ee">[<a href="/fact/ScancodeData/8645cf3f9b6653198f6bef7d36cfe9ee">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>My &quot;symlinks&quot; utility pre-dates the &quot;open source licensing&quot;
+fad by a number of years. Just to clarify, this is 100%
+freeware, written entirely by myself. The intent is to use
+it to detect missing/obsolete symlink targets on an installed
+distro, before creating the &quot;gold&quot; (or &quot;final&quot;) release discs.
+
+Use and distribute and modify as you (or anyone
+else) sees fit. There have no formal restrictions or
+requirements whatsoever regarding distribution of either
+binaries or source code, whether modified or original.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:symlinks&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Symlinks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Symlinks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;8645cf3f9b6653198f6bef7d36cfe9ee&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;My \&quot;symlinks\&quot; utility pre-dates the \&quot;open source licensing\&quot;\nfad by a number of years. Just to clarify, this is 100%\nfreeware, written entirely by myself. The intent is to use\nit to detect missing/obsolete symlink targets on an installed\ndistro, before creating the \&quot;gold\&quot; (or \&quot;final\&quot;) release discs.\n\nUse and distribute and modify as you (or anyone\nelse) sees fit. There have no formal restrictions or\nrequirements whatsoever regarding distribution of either\nbinaries or source code, whether modified or original.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.mail-archive.com/debian-bugs-rc@lists.debian.org/msg11494.html&quot;,
+        &quot;_key&quot;: &quot;symlinks&quot;,
+        &quot;_name&quot;: &quot;Symlinks License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Mark Lord&quot;,
+        &quot;_shortName&quot;: &quot;Symlinks License&quot;,
+        &quot;_spdxId&quot;: &quot;Symlinks&quot;,
+        &quot;_text&quot;: &quot;My \&quot;symlinks\&quot; utility pre-dates the \&quot;open source licensing\&quot;\nfad by a number of years. Just to clarify, this is 100%\nfreeware, written entirely by myself. The intent is to use\nit to detect missing/obsolete symlink targets on an installed\ndistro, before creating the \&quot;gold\&quot; (or \&quot;final\&quot;) release discs.\n\nUse and distribute and modify as you (or anyone\nelse) sees fit. There have no formal restrictions or\nrequirements whatsoever regarding distribution of either\nbinaries or source code, whether modified or original.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/ec39fafd799c34f894364cc08573a15b">OrtLicenseCategorization:ec39fafd799c34f894364cc08573a15b</a> for <a href="/?license=SPDX:Symlinks"><span class="licensename"><span class="namespace">SPDX:</span>Symlinks</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Symlinks</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ec39fafd799c34f894364cc08573a15b">[<a href="/fact/OrtLicenseCategorization/ec39fafd799c34f894364cc08573a15b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ec39fafd799c34f894364cc08573a15b">[<a href="/fact/OrtLicenseCategorization/ec39fafd799c34f894364cc08573a15b">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Symlinks&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;ec39fafd799c34f894364cc08573a15b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Symlinks&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/a1169daf3537e2333356af412b5b1419">CavilLicenseChange:a1169daf3537e2333356af412b5b1419</a> for <a href="/?license=cavil:Symlinks"><span class="licensename"><span class="namespace">cavil:</span>Symlinks</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Symlinks</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Symlinks</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Symlinks&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Symlinks&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;a1169daf3537e2333356af412b5b1419&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Symlinks&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Symlinks&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/aeb1923b3de48566d52b8034b17f21c3">MetaeffektLicense:aeb1923b3de48566d52b8034b17f21c3</a> for <a href="/?license=metaeffekt:Symlinks License"><span class="licensename"><span class="namespace">metaeffekt:</span>Symlinks License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Symlinks License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Symlinks</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Symlinks</span></li><li><span class="licensename"><span class="namespace">scancode:</span>symlinks</span></li><li><span class="licensename">Symlinks Clarification License</span></li><li><span class="licensename">Symlinks License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Symlinks License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Symlinks&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Symlinks&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Symlinks Clarification License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Symlinks License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:symlinks&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;aeb1923b3de48566d52b8034b17f21c3&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Symlinks Clarification License&quot;,
+            &quot;Symlinks License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Symlinks License&quot;,
+        &quot;_category&quot;: &quot;Symlinks&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:symlinks&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Symlinks&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

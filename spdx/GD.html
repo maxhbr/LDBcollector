@@ -1,0 +1,589 @@
+<html><head><title>ldbcollector: spdx:GD</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:GD</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GD</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">GD</span></li><li><span class="licensename"><span class="namespace">cavil:</span>GD</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GD</span></li><li><span class="licensename">GD License</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>GD License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>GD License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>libgd-2018</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ifrOSS License:5b4d79e8310b655b865b884b7aa8f9e2">[<a href="/fact/ifrOSS License/5b4d79e8310b655b865b884b7aa8f9e2">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3f10d6ee729bf739956836956646b89f">[<a href="/fact/SPDXLicense/3f10d6ee729bf739956836956646b89f">SPDXLicense</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:6d5bf72c610ace6970c466cc0ee2dc78">[<a href="/fact/MetaeffektLicense/6d5bf72c610ace6970c466cc0ee2dc78">MetaeffektLicense</a>]</span>)</span></li><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:5b4d79e8310b655b865b884b7aa8f9e2">[<a href="/fact/ifrOSS License/5b4d79e8310b655b865b884b7aa8f9e2">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:5b4d79e8310b655b865b884b7aa8f9e2">[<a href="/fact/ifrOSS License/5b4d79e8310b655b865b884b7aa8f9e2">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb1c30876b7d3950634af214f903ce41">[<a href="/fact/OrtLicenseCategorization/cb1c30876b7d3950634af214f903ce41">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb1c30876b7d3950634af214f903ce41">[<a href="/fact/OrtLicenseCategorization/cb1c30876b7d3950634af214f903ce41">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://libgd.github.io/manuals/2.3.0/files/license-txt.html" target="_blank">https://libgd.github.io/manuals/2.3.0/files/license-txt.html</a></li><li><a href="https://libgd.github.io/manuals/2.3.0/files/license-txt.html [GD]" target="_blank">https://libgd.github.io/manuals/2.3.0/files/license-txt.html [GD]</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Credits and license terms
+
+In order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.
+
+	•	Portions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.
+	•	Portions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.
+	•	Portions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.
+	•	Portions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.
+	•	Portions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).
+	•	Portions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.
+	•	Portions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.
+	•	Portions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)
+
+Permission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.
+
+This does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  “Derived works” includes all programs that utilize the library.  Credit must be given in user-accessible documentation.
+
+This software is provided “AS IS.”  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.
+
+Although their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+&lt;var class=&quot;optional-license-text&quot;&gt; Credits and license terms
+
+In order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.&lt;/var&gt;
+&lt;var class=&quot;replaceable-license-text&quot;&gt; 
+	•	Portions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.
+	•	Portions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.
+	•	Portions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.
+	•	Portions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.
+	•	Portions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).
+	•	Portions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.
+	•	Portions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.
+	•	Portions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)
+    &lt;/var&gt;
+
+&lt;p&gt;Permission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.&lt;/p&gt;
+
+&lt;p&gt;This does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  &amp;quot;Derived works&amp;quot; includes all programs that utilize the library.  Credit must be given in user-accessible documentation.&lt;/p&gt;
+
+&lt;p&gt;This software is provided &amp;quot;AS IS.&amp;quot;  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.&lt;/p&gt;
+
+&lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;Although their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.&lt;/p&gt;
+&lt;/div&gt;
+</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/3f10d6ee729bf739956836956646b89f">SPDXLicense:3f10d6ee729bf739956836956646b89f</a> for <a href="/?license=spdx:GD"><span class="licensename"><span class="namespace">spdx:</span>GD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GD License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3f10d6ee729bf739956836956646b89f">[<a href="/fact/SPDXLicense/3f10d6ee729bf739956836956646b89f">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://libgd.github.io/manuals/2.3.0/files/license-txt.html" target="_blank">https://libgd.github.io/manuals/2.3.0/files/license-txt.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Credits and license terms
+
+In order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.
+
+	•	Portions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.
+	•	Portions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.
+	•	Portions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.
+	•	Portions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.
+	•	Portions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).
+	•	Portions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.
+	•	Portions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.
+	•	Portions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)
+
+Permission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.
+
+This does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  “Derived works” includes all programs that utilize the library.  Credit must be given in user-accessible documentation.
+
+This software is provided “AS IS.”  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.
+
+Although their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+&lt;var class=&quot;optional-license-text&quot;&gt; Credits and license terms
+
+In order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.&lt;/var&gt;
+&lt;var class=&quot;replaceable-license-text&quot;&gt; 
+	•	Portions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.
+	•	Portions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.
+	•	Portions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.
+	•	Portions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.
+	•	Portions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).
+	•	Portions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).
+	•	Portions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.
+	•	Portions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.
+	•	Portions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.
+	•	Portions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)
+    &lt;/var&gt;
+
+&lt;p&gt;Permission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.&lt;/p&gt;
+
+&lt;p&gt;This does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  &amp;quot;Derived works&amp;quot; includes all programs that utilize the library.  Credit must be given in user-accessible documentation.&lt;/p&gt;
+
+&lt;p&gt;This software is provided &amp;quot;AS IS.&amp;quot;  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.&lt;/p&gt;
+
+&lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;Although their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.&lt;/p&gt;
+&lt;/div&gt;
+</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:GD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;3f10d6ee729bf739956836956646b89f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Credits and license terms\n\nIn order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.\n\n\t•\tPortions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.\n\t•\tPortions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.\n\t•\tPortions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.\n\t•\tPortions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.\n\t•\tPortions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).\n\t•\tPortions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.\n\t•\tPortions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.\n\t•\tPortions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)\n\nPermission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.\n\nThis does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  “Derived works” includes all programs that utilize the library.  Credit must be given in user-accessible documentation.\n\nThis software is provided “AS IS.”  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.\n\nAlthough their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n&lt;var class=\&quot;optional-license-text\&quot;&gt; Credits and license terms\n\nIn order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.&lt;/var&gt;\n&lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n\t•\tPortions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.\n\t•\tPortions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.\n\t•\tPortions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.\n\t•\tPortions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.\n\t•\tPortions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).\n\t•\tPortions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.\n\t•\tPortions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.\n\t•\tPortions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)\n    &lt;/var&gt;\n\n&lt;p&gt;Permission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.&lt;/p&gt;\n\n&lt;p&gt;This does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  &amp;quot;Derived works&amp;quot; includes all programs that utilize the library.  Credit must be given in user-accessible documentation.&lt;/p&gt;\n\n&lt;p&gt;This software is provided &amp;quot;AS IS.&amp;quot;  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.&lt;/p&gt;\n\n&lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;Although their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.&lt;/p&gt;\n&lt;/div&gt;\n&quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://libgd.github.io/manuals/2.3.0/files/license-txt.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://libgd.github.io/manuals/2.3.0/files/license-txt.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:15Z&quot;,
+                &quot;url&quot;: &quot;https://libgd.github.io/manuals/2.3.0/files/license-txt.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:GD&quot;,
+        &quot;licenseText&quot;: &quot;Credits and license terms\n\nIn order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.\n\n\t•\tPortions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.\n\t•\tPortions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.\n\t•\tPortions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.\n\t•\tPortions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.\n\t•\tPortions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).\n\t•\tPortions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.\n\t•\tPortions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.\n\t•\tPortions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)\n\nPermission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.\n\nThis does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  “Derived works” includes all programs that utilize the library.  Credit must be given in user-accessible documentation.\n\nThis software is provided “AS IS.”  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.\n\nAlthough their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n&lt;var class=\&quot;optional-license-text\&quot;&gt; Credits and license terms\n\nIn order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.&lt;/var&gt;\n&lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n\t•\tPortions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health.\n\t•\tPortions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc.\n\t•\tPortions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner.\n\t•\tPortions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs.\n\t•\tPortions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org).\n\t•\tPortions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org).\n\t•\tPortions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information.\n\t•\tPortions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell.\n\t•\tPortions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande.\n\t•\tPortions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)\n    &lt;/var&gt;\n\n&lt;p&gt;Permission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.&lt;/p&gt;\n\n&lt;p&gt;This does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  &amp;quot;Derived works&amp;quot; includes all programs that utilize the library.  Credit must be given in user-accessible documentation.&lt;/p&gt;\n\n&lt;p&gt;This software is provided &amp;quot;AS IS.&amp;quot;  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.&lt;/p&gt;\n\n&lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;Although their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.&lt;/p&gt;\n&lt;/div&gt;\n&quot;,
+        &quot;name&quot;: &quot;GD License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://libgd.github.io/manuals/2.3.0/files/license-txt.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Credits and license terms In order to resolve any possible confusion regarding the authorship of gd, the following copyright statement covers all of the authors who have required such a statement.  If you are aware of any oversights in this copyright notice, please contact Pierre-A.  Joye who will be pleased to correct them.&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;• Portions copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Cold Spring Harbor Laboratory.  Funded under Grant P41-RR02188 by the National Institutes of Health. • Portions copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 by Boutell.Com, Inc. • Portions relating to GD2 format copyright 1999, 2000, 2001, 2002, 2003, 2004 Philip Warner. • Portions relating to PNG copyright 1999, 2000, 2001, 2002, 2003, 2004 Greg Roelofs. • Portions relating to gdttf.c copyright 1999, 2000, 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org). • Portions relating to gdft.c copyright 2001, 2002, 2003, 2004 John Ellson (ellson@graphviz.org). • Portions copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Pierre-Alain Joye (pierre@libgd.org). • Portions relating to JPEG and to color quantization copyright 2000, 2001, 2002, 2003, 2004, Doug Becker and copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004 Thomas G.  Lane.  This software is based in part on the work of the Independent JPEG Group.  See the file README-JPEG.TXT for more information. • Portions relating to GIF compression copyright 1989 by Jef Poskanzer and David Rowley, with modifications for thread safety by Thomas Boutell. • Portions relating to GIF decompression copyright 1990, 1991, 1993 by David Koblas, with modifications for thread safety by Thomas Boutell. • Portions relating to WBMP copyright 2000, 2001, 2002, 2003, 2004 Maurice Szmurlo and Johan Van den Brande. • Portions relating to GIF animations copyright 2004 Jaakko Hyvätti (jaakko.hyvatti@iki.fi)\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission has been granted to copy, distribute and modify gd in any context without fee, including a commercial application, provided that this notice is present in user-accessible supporting documentation.\n\nThis does not affect your ownership of the derived work itself, and the intent is to assure proper credit for the authors of gd, not to interfere with your productive use of gd.  If you have questions, ask.  \&quot;Derived works\&quot; includes all programs that utilize the library.  Credit must be given in user-accessible documentation.\n\nThis software is provided \&quot;AS IS.\&quot;  The copyright holders disclaim all warranties, either express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to this code and accompanying documentation.\n\n&lt;&lt;beginOptional&gt;&gt;Although their code does not appear in the current release, the authors wish to thank David Koblas, David Rowley, and Hutchison Avenue Software Corporation for their prior contributions.\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/cb1c30876b7d3950634af214f903ce41">OrtLicenseCategorization:cb1c30876b7d3950634af214f903ce41</a> for <a href="/?license=SPDX:GD"><span class="licensename"><span class="namespace">SPDX:</span>GD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>GD</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb1c30876b7d3950634af214f903ce41">[<a href="/fact/OrtLicenseCategorization/cb1c30876b7d3950634af214f903ce41">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cb1c30876b7d3950634af214f903ce41">[<a href="/fact/OrtLicenseCategorization/cb1c30876b7d3950634af214f903ce41">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:GD&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;cb1c30876b7d3950634af214f903ce41&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:GD&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/33b91bd41e3dbe10590c933dc25935f5">CavilLicenseChange:33b91bd41e3dbe10590c933dc25935f5</a> for <a href="/?license=cavil:GD"><span class="licensename"><span class="namespace">cavil:</span>GD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>GD</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GD</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:GD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;33b91bd41e3dbe10590c933dc25935f5&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;GD&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:GD&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/6d5bf72c610ace6970c466cc0ee2dc78">MetaeffektLicense:6d5bf72c610ace6970c466cc0ee2dc78</a> for <a href="/?license=metaeffekt:GD License"><span class="licensename"><span class="namespace">metaeffekt:</span>GD License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>GD License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GD</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">GD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>libgd-2018</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:6d5bf72c610ace6970c466cc0ee2dc78">[<a href="/fact/MetaeffektLicense/6d5bf72c610ace6970c466cc0ee2dc78">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:GD License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:GD&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:libgd-2018&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;6d5bf72c610ace6970c466cc0ee2dc78&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:GD License&quot;,
+        &quot;_category&quot;: &quot;GD&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:libgd-2018&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:GD&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/5b4d79e8310b655b865b884b7aa8f9e2">ifrOSS License:5b4d79e8310b655b865b884b7aa8f9e2</a> for <a href="/?license=ifrOSS:GD License"><span class="licensename"><span class="namespace">ifrOSS:</span>GD License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>GD License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GD License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ifrOSS License:5b4d79e8310b655b865b884b7aa8f9e2">[<a href="/fact/ifrOSS License/5b4d79e8310b655b865b884b7aa8f9e2">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:5b4d79e8310b655b865b884b7aa8f9e2">[<a href="/fact/ifrOSS License/5b4d79e8310b655b865b884b7aa8f9e2">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:5b4d79e8310b655b865b884b7aa8f9e2">[<a href="/fact/ifrOSS License/5b4d79e8310b655b865b884b7aa8f9e2">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://libgd.github.io/manuals/2.3.0/files/license-txt.html [GD]" target="_blank">https://libgd.github.io/manuals/2.3.0/files/license-txt.html [GD]</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:GD License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GD License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;5b4d79e8310b655b865b884b7aa8f9e2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://libgd.github.io/manuals/2.3.0/files/license-txt.html [GD]&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: {
+                                    &quot;contents&quot;: [
+                                        &quot;ifrOSS Classification&quot;,
+                                        &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                                        {
+                                            &quot;contents&quot;: &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;,
+                                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                        }
+                                    ],
+                                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                },
+                                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                            },
+                            &quot;tag&quot;: &quot;LicenseRating&quot;
+                        },
+                        [
+                            {
+                                &quot;contents&quot;: {
+                                    &quot;tag&quot;: &quot;Permissive&quot;
+                                },
+                                &quot;tag&quot;: &quot;LicenseType&quot;
+                            }
+                        ]
+                    ],
+                    &quot;tag&quot;: &quot;SubStatements&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;ifrOSS Classification&quot;,
+                                    &quot;Open Source Lizenzen&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Source Lizenzen&quot;,
+                &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;
+            ],
+            [
+                &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:GD License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;GD License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;https://libgd.github.io/manuals/2.3.0/files/license-txt.html [GD]&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

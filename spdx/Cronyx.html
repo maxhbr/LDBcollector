@@ -1,0 +1,662 @@
+<html><head><title>ldbcollector: spdx:Cronyx</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Cronyx</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Cronyx</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Cronyx</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Cronyx</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Cronyx</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cronyx</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Cronyx</span></li><li><span class="licensename">Cronyx License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Cronyx License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:cefd2258cd7c845ab5edd03c6f44e4fc">[<a href="/fact/ScancodeData/cefd2258cd7c845ab5edd03c6f44e4fc">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a774034cae5d6e90c0266575e092546b">[<a href="/fact/SPDXLicense/a774034cae5d6e90c0266575e092546b">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b0debd0f3508c9c6749c1fc9a6dbb509">[<a href="/fact/FedoraEntry/b0debd0f3508c9c6749c1fc9a6dbb509">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1554bae9e793adbd7d646a6379c667d5">[<a href="/fact/OrtLicenseCategorization/1554bae9e793adbd7d646a6379c667d5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1554bae9e793adbd7d646a6379c667d5">[<a href="/fact/OrtLicenseCategorization/1554bae9e793adbd7d646a6379c667d5">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This package contains a set of Russian fonts for X11 Release 6.
+Copyright (C) 1994-1995 Cronyx Ltd.
+Changes Copyright (C) 1996 by Sergey Vovk
+Changes Copyright (C) 1999-2000 by Serge Winitzki
+Changes Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.
+
+This software may be used, modified, copied, distributed, and sold,
+in both source and binary form provided that the copyright
+and these terms are retained. Under no circumstances is the author
+responsible for the proper functioning of this software, nor does
+the author assume any responsibility for damages incurred with its use.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+           &lt;p&gt;
+           This package contains a set of Russian fonts for X11 Release 6.
+           Copyright (C) 1994-1995 Cronyx Ltd.
+           Changes Copyright (C) 1996 by Sergey Vovk
+           Changes Copyright (C) 1999-2000 by Serge Winitzki
+           Changes Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.
+           &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            This software may be used, modified, copied, distributed&lt;var class=&quot;optional-license-text&quot;&gt; ,&lt;/var&gt; and sold,
+            in both source and binary form provided that the &lt;var class=&quot;optional-license-text&quot;&gt; above &lt;/var&gt;copyright and these
+            terms are retained. Under no circumstances is the author responsible
+            for the proper functioning of this software, nor does the author
+            assume any responsibility for damages incurred with its use.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>This software may be used, modified, copied, distributed, and sold,
+in both source and binary form provided that the copyright
+and these terms are retained. Under no circumstances is the author
+responsible for the proper functioning of this software, nor does
+the author assume any responsibility for damages incurred with its use.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/a774034cae5d6e90c0266575e092546b">SPDXLicense:a774034cae5d6e90c0266575e092546b</a> for <a href="/?license=spdx:Cronyx"><span class="licensename"><span class="namespace">spdx:</span>Cronyx</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Cronyx</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Cronyx License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:a774034cae5d6e90c0266575e092546b">[<a href="/fact/SPDXLicense/a774034cae5d6e90c0266575e092546b">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This package contains a set of Russian fonts for X11 Release 6.
+Copyright (C) 1994-1995 Cronyx Ltd.
+Changes Copyright (C) 1996 by Sergey Vovk
+Changes Copyright (C) 1999-2000 by Serge Winitzki
+Changes Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.
+
+This software may be used, modified, copied, distributed, and sold,
+in both source and binary form provided that the copyright
+and these terms are retained. Under no circumstances is the author
+responsible for the proper functioning of this software, nor does
+the author assume any responsibility for damages incurred with its use.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+           &lt;p&gt;
+           This package contains a set of Russian fonts for X11 Release 6.
+           Copyright (C) 1994-1995 Cronyx Ltd.
+           Changes Copyright (C) 1996 by Sergey Vovk
+           Changes Copyright (C) 1999-2000 by Serge Winitzki
+           Changes Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.
+           &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            This software may be used, modified, copied, distributed&lt;var class=&quot;optional-license-text&quot;&gt; ,&lt;/var&gt; and sold,
+            in both source and binary form provided that the &lt;var class=&quot;optional-license-text&quot;&gt; above &lt;/var&gt;copyright and these
+            terms are retained. Under no circumstances is the author responsible
+            for the proper functioning of this software, nor does the author
+            assume any responsibility for damages incurred with its use.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Cronyx&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Cronyx License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;a774034cae5d6e90c0266575e092546b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This package contains a set of Russian fonts for X11 Release 6.\nCopyright (C) 1994-1995 Cronyx Ltd.\nChanges Copyright (C) 1996 by Sergey Vovk\nChanges Copyright (C) 1999-2000 by Serge Winitzki\nChanges Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.\n\nThis software may be used, modified, copied, distributed, and sold,\nin both source and binary form provided that the copyright\nand these terms are retained. Under no circumstances is the author\nresponsible for the proper functioning of this software, nor does\nthe author assume any responsibility for damages incurred with its use.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n           &lt;p&gt;\n           This package contains a set of Russian fonts for X11 Release 6.\n           Copyright (C) 1994-1995 Cronyx Ltd.\n           Changes Copyright (C) 1996 by Sergey Vovk\n           Changes Copyright (C) 1999-2000 by Serge Winitzki\n           Changes Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.\n           &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            This software may be used, modified, copied, distributed&lt;var class=\&quot;optional-license-text\&quot;&gt; ,&lt;/var&gt; and sold,\n            in both source and binary form provided that the &lt;var class=\&quot;optional-license-text\&quot;&gt; above &lt;/var&gt;copyright and these\n            terms are retained. Under no circumstances is the author responsible\n            for the proper functioning of this software, nor does the author\n            assume any responsibility for damages incurred with its use.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:05Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:12Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 3,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:17Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:20Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Cronyx&quot;,
+        &quot;licenseText&quot;: &quot;This package contains a set of Russian fonts for X11 Release 6.\nCopyright (C) 1994-1995 Cronyx Ltd.\nChanges Copyright (C) 1996 by Sergey Vovk\nChanges Copyright (C) 1999-2000 by Serge Winitzki\nChanges Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.\n\nThis software may be used, modified, copied, distributed, and sold,\nin both source and binary form provided that the copyright\nand these terms are retained. Under no circumstances is the author\nresponsible for the proper functioning of this software, nor does\nthe author assume any responsibility for damages incurred with its use.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n           &lt;p&gt;\n           This package contains a set of Russian fonts for X11 Release 6.\n           Copyright (C) 1994-1995 Cronyx Ltd.\n           Changes Copyright (C) 1996 by Sergey Vovk\n           Changes Copyright (C) 1999-2000 by Serge Winitzki\n           Changes Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.\n           &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            This software may be used, modified, copied, distributed&lt;var class=\&quot;optional-license-text\&quot;&gt; ,&lt;/var&gt; and sold,\n            in both source and binary form provided that the &lt;var class=\&quot;optional-license-text\&quot;&gt; above &lt;/var&gt;copyright and these\n            terms are retained. Under no circumstances is the author responsible\n            for the proper functioning of this software, nor does the author\n            assume any responsibility for damages incurred with its use.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Cronyx License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;This package contains a set of Russian fonts for X11 Release 6. Copyright (C) 1994-1995 Cronyx Ltd. Changes Copyright (C) 1996 by Sergey Vovk Changes Copyright (C) 1999-2000 by Serge Winitzki Changes Copyright (C) 1996-2000 by Andrey A. Chernov, Moscow, Russia.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThis software may be used, modified, copied, distributed&lt;&lt;beginOptional&gt;&gt; ,&lt;&lt;endOptional&gt;&gt; and sold, in both source and binary form provided that the&lt;&lt;beginOptional&gt;&gt; above&lt;&lt;endOptional&gt;&gt; copyright and these terms are retained. Under no circumstances is the author responsible for the proper functioning of this software, nor does the author assume any responsibility for damages incurred with its use.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/b0debd0f3508c9c6749c1fc9a6dbb509">FedoraEntry:b0debd0f3508c9c6749c1fc9a6dbb509</a> for <a href="/?license=Fedora:Cronyx"><span class="licensename"><span class="namespace">Fedora:</span>Cronyx</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Cronyx</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Cronyx</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b0debd0f3508c9c6749c1fc9a6dbb509">[<a href="/fact/FedoraEntry/b0debd0f3508c9c6749c1fc9a6dbb509">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Cronyx&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Cronyx&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;b0debd0f3508c9c6749c1fc9a6dbb509&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Cronyx&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Cronyx&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/cefd2258cd7c845ab5edd03c6f44e4fc">ScancodeData:cefd2258cd7c845ab5edd03c6f44e4fc</a> for <a href="/?license=scancode:cronyx"><span class="licensename"><span class="namespace">scancode:</span>cronyx</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>cronyx</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Cronyx License</span></li><li><span class="licensename">Cronyx License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:cefd2258cd7c845ab5edd03c6f44e4fc">[<a href="/fact/ScancodeData/cefd2258cd7c845ab5edd03c6f44e4fc">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This software may be used, modified, copied, distributed, and sold,
+in both source and binary form provided that the copyright
+and these terms are retained. Under no circumstances is the author
+responsible for the proper functioning of this software, nor does
+the author assume any responsibility for damages incurred with its use.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:cronyx&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Cronyx License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Cronyx License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;cefd2258cd7c845ab5edd03c6f44e4fc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This software may be used, modified, copied, distributed, and sold,\nin both source and binary form provided that the copyright\nand these terms are retained. Under no circumstances is the author\nresponsible for the proper functioning of this software, nor does\nthe author assume any responsibility for damages incurred with its use.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;cronyx&quot;,
+        &quot;_name&quot;: &quot;Cronyx License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://gitlab.freedesktop.org/xorg/font/alias/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/font/cronyx-cyrillic/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/font/screen-cyrillic/-/blob/master/COPYING&quot;
+        ],
+        &quot;_owner&quot;: &quot;Cronyx&quot;,
+        &quot;_shortName&quot;: &quot;Cronyx License&quot;,
+        &quot;_spdxId&quot;: &quot;Cronyx&quot;,
+        &quot;_text&quot;: &quot;This software may be used, modified, copied, distributed, and sold,\nin both source and binary form provided that the copyright\nand these terms are retained. Under no circumstances is the author\nresponsible for the proper functioning of this software, nor does\nthe author assume any responsibility for damages incurred with its use.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/1554bae9e793adbd7d646a6379c667d5">OrtLicenseCategorization:1554bae9e793adbd7d646a6379c667d5</a> for <a href="/?license=SPDX:Cronyx"><span class="licensename"><span class="namespace">SPDX:</span>Cronyx</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Cronyx</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1554bae9e793adbd7d646a6379c667d5">[<a href="/fact/OrtLicenseCategorization/1554bae9e793adbd7d646a6379c667d5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1554bae9e793adbd7d646a6379c667d5">[<a href="/fact/OrtLicenseCategorization/1554bae9e793adbd7d646a6379c667d5">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Cronyx&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;1554bae9e793adbd7d646a6379c667d5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Cronyx&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/16554f45deebce3885d144917008eabc">CavilLicenseChange:16554f45deebce3885d144917008eabc</a> for <a href="/?license=cavil:Cronyx"><span class="licensename"><span class="namespace">cavil:</span>Cronyx</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Cronyx</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Cronyx</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Cronyx&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Cronyx&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;16554f45deebce3885d144917008eabc&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Cronyx&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Cronyx&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/f5d40b578f38388d4e7cbae9fa9274c8">MetaeffektLicense:f5d40b578f38388d4e7cbae9fa9274c8</a> for <a href="/?license=metaeffekt:Cronyx License"><span class="licensename"><span class="namespace">metaeffekt:</span>Cronyx License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Cronyx License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Cronyx</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Cronyx</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cronyx</span></li><li><span class="licensename">Cronyx License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Cronyx License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Cronyx&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Cronyx&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Cronyx License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:cronyx&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;f5d40b578f38388d4e7cbae9fa9274c8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Cronyx License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Cronyx License&quot;,
+        &quot;_category&quot;: &quot;Cronyx&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:cronyx&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Cronyx&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

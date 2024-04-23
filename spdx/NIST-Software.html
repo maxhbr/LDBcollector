@@ -1,0 +1,754 @@
+<html><head><title>ldbcollector: spdx:NIST-Software</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:NIST-Software</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-Software</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Software License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Software License</span></li><li><span class="licensename">NIST-Software</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>NIST-Software</span></li><li><span class="licensename"><span class="namespace">cavil:</span>NIST-Software</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>NIST-Software</span></li><li><span class="licensename"><span class="namespace">scancode:</span>nist-software</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NIST-Software</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>NIST-PD-fallback</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:1126dc17fd64e72b3ec3308c87bf10ab">[<a href="/fact/BlueOakCouncil/1126dc17fd64e72b3ec3308c87bf10ab">BlueOakCouncil</a>]</span><span title="ScancodeData:a3f3577d75ec5a42b1a67ea8acb19d05">[<a href="/fact/ScancodeData/a3f3577d75ec5a42b1a67ea8acb19d05">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:441c6c395bfcf0974d3b87466bcaa3df">[<a href="/fact/SPDXLicense/441c6c395bfcf0974d3b87466bcaa3df">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6c04ec430e6b6a80ef91ac4266b0f98d">[<a href="/fact/FedoraEntry/6c04ec430e6b6a80ef91ac4266b0f98d">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:1126dc17fd64e72b3ec3308c87bf10ab">[<a href="/fact/BlueOakCouncil/1126dc17fd64e72b3ec3308c87bf10ab">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:33daf6d1a0356b9882045103ecef8aab">[<a href="/fact/OrtLicenseCategorization/33daf6d1a0356b9882045103ecef8aab">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:33daf6d1a0356b9882045103ecef8aab">[<a href="/fact/OrtLicenseCategorization/33daf6d1a0356b9882045103ecef8aab">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15" target="_blank">https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15</a></li><li><a href="https://spdx.org/licenses/NIST-Software" target="_blank">https://spdx.org/licenses/NIST-Software</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NIST-developed software is provided by NIST as a public service. 
+You may use, copy, and distribute copies of the software in any 
+medium, provided that you keep intact this entire notice. You may 
+improve, modify, and create derivative works of the software or any 
+portion of the software, and you may copy and distribute such 
+modifications or works. Modified works should carry a notice stating 
+that you changed the software and should note the date and nature of 
+any such change. Please explicitly acknowledge the National Institute 
+of Standards and Technology as the source of the software.
+
+NIST-developed software is expressly provided &quot;AS IS.&quot; NIST MAKES NO 
+WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION 
+OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST 
+NEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE 
+UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES 
+NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR 
+THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, 
+RELIABILITY, OR USEFULNESS OF THE SOFTWARE.
+
+You are solely responsible for determining the appropriateness of using and 
+distributing the software and you assume all risks associated with its use, 
+including but not limited to the risks and costs of program errors, compliance 
+with applicable laws, damage to or loss of data, programs or equipment, and the 
+unavailability or interruption of operation. This software is not intended to be 
+used in any situation where a failure could cause risk of injury or damage to 
+property. The software developed by NIST employees is not subject to copyright 
+protection within the United States.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            NIST-developed software is provided by NIST as a public service.
+            You may use, copy, and distribute copies of the software in any
+            medium, provided that you keep intact this entire notice. You may
+            improve, modify, and create derivative works of the software or
+            any portion of the software, and you may copy and distribute such
+            modifications or works. Modified works should carry a notice stating
+            that you changed the software and should note the date and nature
+            of any such change. Please explicitly acknowledge the National
+            Institute of Standards and Technology as the source of the software.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            NIST-developed software is expressly provided &amp;quot;AS IS.&amp;quot; NIST MAKES
+            NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING
+            BY OPERATION OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+            WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+            NON-INFRINGEMENT, AND DATA ACCURACY. NIST NEITHER REPRESENTS NOR
+            WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED
+            OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES
+            NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE
+            SOFTWARE OR THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE
+            CORRECTNESS, ACCURACY, RELIABILITY, OR USEFULNESS OF THE SOFTWARE.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            You are solely responsible for determining the appropriateness
+            of using and distributing the software and you assume all risks
+            associated with its use, including but not limited to the risks and
+            costs of program errors, compliance with applicable laws, damage
+            to or loss of data, programs or equipment, and the unavailability
+            or interruption of operation. This software is not intended to be
+            used in any situation where a failure could cause risk of injury
+            or damage to property. The software developed by NIST employees
+            is not subject to copyright protection within the United States.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>NIST-developed software is provided by NIST as a public service. 
+You may use, copy, and distribute copies of the software in any 
+medium, provided that you keep intact this entire notice. You may 
+improve, modify, and create derivative works of the software or any 
+portion of the software, and you may copy and distribute such 
+modifications or works. Modified works should carry a notice stating 
+that you changed the software and should note the date and nature of 
+any such change. Please explicitly acknowledge the National Institute 
+of Standards and Technology as the source of the software.
+
+NIST-developed software is expressly provided &quot;AS IS.&quot; NIST MAKES NO 
+WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION 
+OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST 
+NEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE 
+UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES 
+NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR 
+THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, 
+RELIABILITY, OR USEFULNESS OF THE SOFTWARE.
+
+You are solely responsible for determining the appropriateness of using and 
+distributing the software and you assume all risks associated with its use, 
+including but not limited to the risks and costs of program errors, compliance 
+with applicable laws, damage to or loss of data, programs or equipment, and the 
+unavailability or interruption of operation. This software is not intended to be 
+used in any situation where a failure could cause risk of injury or damage to 
+property. The software developed by NIST employees is not subject to copyright 
+protection within the United States.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/441c6c395bfcf0974d3b87466bcaa3df">SPDXLicense:441c6c395bfcf0974d3b87466bcaa3df</a> for <a href="/?license=spdx:NIST-Software"><span class="licensename"><span class="namespace">spdx:</span>NIST-Software</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-Software</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Software License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:441c6c395bfcf0974d3b87466bcaa3df">[<a href="/fact/SPDXLicense/441c6c395bfcf0974d3b87466bcaa3df">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15" target="_blank">https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NIST-developed software is provided by NIST as a public service. 
+You may use, copy, and distribute copies of the software in any 
+medium, provided that you keep intact this entire notice. You may 
+improve, modify, and create derivative works of the software or any 
+portion of the software, and you may copy and distribute such 
+modifications or works. Modified works should carry a notice stating 
+that you changed the software and should note the date and nature of 
+any such change. Please explicitly acknowledge the National Institute 
+of Standards and Technology as the source of the software.
+
+NIST-developed software is expressly provided &quot;AS IS.&quot; NIST MAKES NO 
+WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION 
+OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST 
+NEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE 
+UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES 
+NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR 
+THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, 
+RELIABILITY, OR USEFULNESS OF THE SOFTWARE.
+
+You are solely responsible for determining the appropriateness of using and 
+distributing the software and you assume all risks associated with its use, 
+including but not limited to the risks and costs of program errors, compliance 
+with applicable laws, damage to or loss of data, programs or equipment, and the 
+unavailability or interruption of operation. This software is not intended to be 
+used in any situation where a failure could cause risk of injury or damage to 
+property. The software developed by NIST employees is not subject to copyright 
+protection within the United States.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            NIST-developed software is provided by NIST as a public service.
+            You may use, copy, and distribute copies of the software in any
+            medium, provided that you keep intact this entire notice. You may
+            improve, modify, and create derivative works of the software or
+            any portion of the software, and you may copy and distribute such
+            modifications or works. Modified works should carry a notice stating
+            that you changed the software and should note the date and nature
+            of any such change. Please explicitly acknowledge the National
+            Institute of Standards and Technology as the source of the software.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            NIST-developed software is expressly provided &amp;quot;AS IS.&amp;quot; NIST MAKES
+            NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING
+            BY OPERATION OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+            WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+            NON-INFRINGEMENT, AND DATA ACCURACY. NIST NEITHER REPRESENTS NOR
+            WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED
+            OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES
+            NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE
+            SOFTWARE OR THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE
+            CORRECTNESS, ACCURACY, RELIABILITY, OR USEFULNESS OF THE SOFTWARE.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            You are solely responsible for determining the appropriateness
+            of using and distributing the software and you assume all risks
+            associated with its use, including but not limited to the risks and
+            costs of program errors, compliance with applicable laws, damage
+            to or loss of data, programs or equipment, and the unavailability
+            or interruption of operation. This software is not intended to be
+            used in any situation where a failure could cause risk of injury
+            or damage to property. The software developed by NIST employees
+            is not subject to copyright protection within the United States.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NIST-Software&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;441c6c395bfcf0974d3b87466bcaa3df&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;NIST-developed software is provided by NIST as a public service. \nYou may use, copy, and distribute copies of the software in any \nmedium, provided that you keep intact this entire notice. You may \nimprove, modify, and create derivative works of the software or any \nportion of the software, and you may copy and distribute such \nmodifications or works. Modified works should carry a notice stating \nthat you changed the software and should note the date and nature of \nany such change. Please explicitly acknowledge the National Institute \nof Standards and Technology as the source of the software.\n\nNIST-developed software is expressly provided \&quot;AS IS.\&quot; NIST MAKES NO \nWARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION \nOF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST \nNEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE \nUNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES \nNOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR \nTHE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, \nRELIABILITY, OR USEFULNESS OF THE SOFTWARE.\n\nYou are solely responsible for determining the appropriateness of using and \ndistributing the software and you assume all risks associated with its use, \nincluding but not limited to the risks and costs of program errors, compliance \nwith applicable laws, damage to or loss of data, programs or equipment, and the \nunavailability or interruption of operation. This software is not intended to be \nused in any situation where a failure could cause risk of injury or damage to \nproperty. The software developed by NIST employees is not subject to copyright \nprotection within the United States.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            NIST-developed software is provided by NIST as a public service.\n            You may use, copy, and distribute copies of the software in any\n            medium, provided that you keep intact this entire notice. You may\n            improve, modify, and create derivative works of the software or\n            any portion of the software, and you may copy and distribute such\n            modifications or works. Modified works should carry a notice stating\n            that you changed the software and should note the date and nature\n            of any such change. Please explicitly acknowledge the National\n            Institute of Standards and Technology as the source of the software.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            NIST-developed software is expressly provided &amp;quot;AS IS.&amp;quot; NIST MAKES\n            NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING\n            BY OPERATION OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n            WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n            NON-INFRINGEMENT, AND DATA ACCURACY. NIST NEITHER REPRESENTS NOR\n            WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED\n            OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES\n            NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE\n            SOFTWARE OR THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE\n            CORRECTNESS, ACCURACY, RELIABILITY, OR USEFULNESS OF THE SOFTWARE.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            You are solely responsible for determining the appropriateness\n            of using and distributing the software and you assume all risks\n            associated with its use, including but not limited to the risks and\n            costs of program errors, compliance with applicable laws, damage\n            to or loss of data, programs or equipment, and the unavailability\n            or interruption of operation. This software is not intended to be\n            used in any situation where a failure could cause risk of injury\n            or damage to property. The software developed by NIST employees\n            is not subject to copyright protection within the United States.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:37Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:NIST-Software&quot;,
+        &quot;licenseText&quot;: &quot;NIST-developed software is provided by NIST as a public service. \nYou may use, copy, and distribute copies of the software in any \nmedium, provided that you keep intact this entire notice. You may \nimprove, modify, and create derivative works of the software or any \nportion of the software, and you may copy and distribute such \nmodifications or works. Modified works should carry a notice stating \nthat you changed the software and should note the date and nature of \nany such change. Please explicitly acknowledge the National Institute \nof Standards and Technology as the source of the software.\n\nNIST-developed software is expressly provided \&quot;AS IS.\&quot; NIST MAKES NO \nWARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION \nOF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST \nNEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE \nUNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES \nNOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR \nTHE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, \nRELIABILITY, OR USEFULNESS OF THE SOFTWARE.\n\nYou are solely responsible for determining the appropriateness of using and \ndistributing the software and you assume all risks associated with its use, \nincluding but not limited to the risks and costs of program errors, compliance \nwith applicable laws, damage to or loss of data, programs or equipment, and the \nunavailability or interruption of operation. This software is not intended to be \nused in any situation where a failure could cause risk of injury or damage to \nproperty. The software developed by NIST employees is not subject to copyright \nprotection within the United States.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            NIST-developed software is provided by NIST as a public service.\n            You may use, copy, and distribute copies of the software in any\n            medium, provided that you keep intact this entire notice. You may\n            improve, modify, and create derivative works of the software or\n            any portion of the software, and you may copy and distribute such\n            modifications or works. Modified works should carry a notice stating\n            that you changed the software and should note the date and nature\n            of any such change. Please explicitly acknowledge the National\n            Institute of Standards and Technology as the source of the software.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            NIST-developed software is expressly provided &amp;quot;AS IS.&amp;quot; NIST MAKES\n            NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING\n            BY OPERATION OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n            WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n            NON-INFRINGEMENT, AND DATA ACCURACY. NIST NEITHER REPRESENTS NOR\n            WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED\n            OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES\n            NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE\n            SOFTWARE OR THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE\n            CORRECTNESS, ACCURACY, RELIABILITY, OR USEFULNESS OF THE SOFTWARE.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            You are solely responsible for determining the appropriateness\n            of using and distributing the software and you assume all risks\n            associated with its use, including but not limited to the risks and\n            costs of program errors, compliance with applicable laws, damage\n            to or loss of data, programs or equipment, and the unavailability\n            or interruption of operation. This software is not intended to be\n            used in any situation where a failure could cause risk of injury\n            or damage to property. The software developed by NIST employees\n            is not subject to copyright protection within the United States.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;NIST Software License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;NIST-developed software is provided by NIST as a public service. You may use, copy, and distribute copies of the software in any medium, provided that you keep intact this entire notice. You may improve, modify, and create derivative works of the software or any portion of the software, and you may copy and distribute such modifications or works. Modified works should carry a notice stating that you changed the software and should note the date and nature of any such change. Please explicitly acknowledge the National Institute of Standards and Technology as the source of the software.\n\nNIST-developed software is expressly provided \&quot;AS IS.\&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST NEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, RELIABILITY, OR USEFULNESS OF THE SOFTWARE.\n\nYou are solely responsible for determining the appropriateness of using and distributing the software and you assume all risks associated with its use, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and the unavailability or interruption of operation. This software is not intended to be used in any situation where a failure could cause risk of injury or damage to property. The software developed by NIST employees is not subject to copyright protection within the United States.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/6c04ec430e6b6a80ef91ac4266b0f98d">FedoraEntry:6c04ec430e6b6a80ef91ac4266b0f98d</a> for <a href="/?license=Fedora:NIST-Software"><span class="licensename"><span class="namespace">Fedora:</span>NIST-Software</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>NIST-Software</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-Software</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6c04ec430e6b6a80ef91ac4266b0f98d">[<a href="/fact/FedoraEntry/6c04ec430e6b6a80ef91ac4266b0f98d">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:NIST-Software&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NIST-Software&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;6c04ec430e6b6a80ef91ac4266b0f98d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;NIST-Software&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:NIST-Software&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/1126dc17fd64e72b3ec3308c87bf10ab">BlueOakCouncil:1126dc17fd64e72b3ec3308c87bf10ab</a> for <a href="/?license=BlueOak:NIST-Software"><span class="licensename"><span class="namespace">BlueOak:</span>NIST-Software</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>NIST-Software</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Software License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:1126dc17fd64e72b3ec3308c87bf10ab">[<a href="/fact/BlueOakCouncil/1126dc17fd64e72b3ec3308c87bf10ab">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:1126dc17fd64e72b3ec3308c87bf10ab">[<a href="/fact/BlueOakCouncil/1126dc17fd64e72b3ec3308c87bf10ab">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/NIST-Software" target="_blank">https://spdx.org/licenses/NIST-Software</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:NIST-Software&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;1126dc17fd64e72b3ec3308c87bf10ab&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/NIST-Software&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;NIST-Software&quot;,
+                &quot;_name&quot;: &quot;NIST Software License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/NIST-Software&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/a3f3577d75ec5a42b1a67ea8acb19d05">ScancodeData:a3f3577d75ec5a42b1a67ea8acb19d05</a> for <a href="/?license=scancode:nist-software"><span class="licensename"><span class="namespace">scancode:</span>nist-software</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>nist-software</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Software License</span></li><li><span class="licensename">NIST Software License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:a3f3577d75ec5a42b1a67ea8acb19d05">[<a href="/fact/ScancodeData/a3f3577d75ec5a42b1a67ea8acb19d05">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15" target="_blank">https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NIST-developed software is provided by NIST as a public service. 
+You may use, copy, and distribute copies of the software in any 
+medium, provided that you keep intact this entire notice. You may 
+improve, modify, and create derivative works of the software or any 
+portion of the software, and you may copy and distribute such 
+modifications or works. Modified works should carry a notice stating 
+that you changed the software and should note the date and nature of 
+any such change. Please explicitly acknowledge the National Institute 
+of Standards and Technology as the source of the software.
+
+NIST-developed software is expressly provided &quot;AS IS.&quot; NIST MAKES NO 
+WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION 
+OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST 
+NEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE 
+UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES 
+NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR 
+THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, 
+RELIABILITY, OR USEFULNESS OF THE SOFTWARE.
+
+You are solely responsible for determining the appropriateness of using and 
+distributing the software and you assume all risks associated with its use, 
+including but not limited to the risks and costs of program errors, compliance 
+with applicable laws, damage to or loss of data, programs or equipment, and the 
+unavailability or interruption of operation. This software is not intended to be 
+used in any situation where a failure could cause risk of injury or damage to 
+property. The software developed by NIST employees is not subject to copyright 
+protection within the United States.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:nist-software&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;a3f3577d75ec5a42b1a67ea8acb19d05&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;NIST-developed software is provided by NIST as a public service. \nYou may use, copy, and distribute copies of the software in any \nmedium, provided that you keep intact this entire notice. You may \nimprove, modify, and create derivative works of the software or any \nportion of the software, and you may copy and distribute such \nmodifications or works. Modified works should carry a notice stating \nthat you changed the software and should note the date and nature of \nany such change. Please explicitly acknowledge the National Institute \nof Standards and Technology as the source of the software.\n\nNIST-developed software is expressly provided \&quot;AS IS.\&quot; NIST MAKES NO \nWARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION \nOF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST \nNEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE \nUNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES \nNOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR \nTHE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, \nRELIABILITY, OR USEFULNESS OF THE SOFTWARE.\n\nYou are solely responsible for determining the appropriateness of using and \ndistributing the software and you assume all risks associated with its use, \nincluding but not limited to the risks and costs of program errors, compliance \nwith applicable laws, damage to or loss of data, programs or equipment, and the \nunavailability or interruption of operation. This software is not intended to be \nused in any situation where a failure could cause risk of injury or damage to \nproperty. The software developed by NIST employees is not subject to copyright \nprotection within the United States.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;nist-software&quot;,
+        &quot;_name&quot;: &quot;NIST Software License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/open-quantum-safe/liboqs/blob/40b01fdbb270f8614fde30e65d30e9da18c02393/src/common/rand/rand_nist.c#L1-L15&quot;
+        ],
+        &quot;_owner&quot;: &quot;NIST&quot;,
+        &quot;_shortName&quot;: &quot;NIST Software License&quot;,
+        &quot;_spdxId&quot;: &quot;NIST-Software&quot;,
+        &quot;_text&quot;: &quot;NIST-developed software is provided by NIST as a public service. \nYou may use, copy, and distribute copies of the software in any \nmedium, provided that you keep intact this entire notice. You may \nimprove, modify, and create derivative works of the software or any \nportion of the software, and you may copy and distribute such \nmodifications or works. Modified works should carry a notice stating \nthat you changed the software and should note the date and nature of \nany such change. Please explicitly acknowledge the National Institute \nof Standards and Technology as the source of the software.\n\nNIST-developed software is expressly provided \&quot;AS IS.\&quot; NIST MAKES NO \nWARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT, OR ARISING BY OPERATION \nOF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND DATA ACCURACY. NIST \nNEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE \nUNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES \nNOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR \nTHE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, \nRELIABILITY, OR USEFULNESS OF THE SOFTWARE.\n\nYou are solely responsible for determining the appropriateness of using and \ndistributing the software and you assume all risks associated with its use, \nincluding but not limited to the risks and costs of program errors, compliance \nwith applicable laws, damage to or loss of data, programs or equipment, and the \nunavailability or interruption of operation. This software is not intended to be \nused in any situation where a failure could cause risk of injury or damage to \nproperty. The software developed by NIST employees is not subject to copyright \nprotection within the United States.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/33daf6d1a0356b9882045103ecef8aab">OrtLicenseCategorization:33daf6d1a0356b9882045103ecef8aab</a> for <a href="/?license=SPDX:NIST-Software"><span class="licensename"><span class="namespace">SPDX:</span>NIST-Software</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NIST-Software</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:33daf6d1a0356b9882045103ecef8aab">[<a href="/fact/OrtLicenseCategorization/33daf6d1a0356b9882045103ecef8aab">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:33daf6d1a0356b9882045103ecef8aab">[<a href="/fact/OrtLicenseCategorization/33daf6d1a0356b9882045103ecef8aab">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NIST-Software&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;33daf6d1a0356b9882045103ecef8aab&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NIST-Software&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/a643c8ffc64afbe5f204daccd122f2a8">CavilLicenseChange:a643c8ffc64afbe5f204daccd122f2a8</a> for <a href="/?license=cavil:NIST-Software"><span class="licensename"><span class="namespace">cavil:</span>NIST-Software</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>NIST-Software</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST-Software</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:NIST-Software&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST-Software&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;a643c8ffc64afbe5f204daccd122f2a8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;NIST-Software&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:NIST-Software&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/4bb3b23418e8fd61d2f3c661b2beb48a">MetaeffektLicense:4bb3b23418e8fd61d2f3c661b2beb48a</a> for <a href="/?license=metaeffekt:NIST Software License"><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Software License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Software License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-Software</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Software License</span></li><li><span class="licensename">NIST-Software</span></li><li><span class="licensename">NIST-Software</span></li><li><span class="licensename"><span class="namespace">scancode:</span>nist-software</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:NIST Software License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NIST-Software&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST-Software&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST-Software&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:nist-software&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;4bb3b23418e8fd61d2f3c661b2beb48a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;NIST-Software&quot;,
+            &quot;NIST Software License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:NIST Software License&quot;,
+        &quot;_category&quot;: &quot;NIST-Software&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:nist-software&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:NIST-Software&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

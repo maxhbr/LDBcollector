@@ -1,0 +1,443 @@
+<html><head><title>ldbcollector: spdx:MagniComp-EULA</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MagniComp-EULA</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MagniComp-EULA</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">MagniComp-EULA</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>MagniComp-EULA</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MagniComp-EULA</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed.">Fedora: <b style="color: red;">not-allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d41d67f2949701b230216519dd9b5cc1">[<a href="/fact/FedoraEntry/d41d67f2949701b230216519dd9b5cc1">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.magnicomp.com/rdist/rdist-eu-license.shtml" target="_blank">https://www.magnicomp.com/rdist/rdist-eu-license.shtml</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;not-allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>                   MagniComp - End User License Agreement
+
+                              www.MagniComp.com
+
+                             RDist Version 6.1
+
+                     Version of This Document: 19990724
+
+GRANT.
+
+MagniComp grants you a non-exclusive license to use RDist version 6.1 and
+all subsequent versions called 6.1.X software (the &quot;Software&quot;) free of
+charge.
+
+This license does not entitle you to hard-copy documentation, support or
+telephone assistance. MagniComp reserves the right at any time to alter
+prices, features, specifications, capabilities, functions, licensing terms,
+general availability of the Software.
+
+SCOPE OF GRANT.
+
+You may:
+
+   * use the Software in any way you wish on any computer regardless of
+     ownership of said computer;
+   * redistribute the Software in any form, including source and binary, to
+     any party with or without charging a fee;
+   * copy the Software for any purpose.
+
+You may not:
+
+   * remove or alter this notice;
+   * remove or alter any proprietary notices or labels on the Software.
+
+REQUIREMENTS.
+
+   * All advertising materials mentioning features or use of this software
+     must display the following acknowledgement:
+
+          This product includes software developed by MagniComp
+          (www.MagniComp.com) and its contributors.
+
+   * Redistributions in binary form must reproduce this copyright notice,
+     this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+   * Neither name of MagniComp nor the names of its contributors may be used
+     to endorse or promote products derived from this software without
+     specific prior written permission.
+
+TITLE.
+
+Title, ownership rights, and intellectual property rights in the Software
+shall remain in MagniComp and/or its suppliers. The Software is protected by
+copyright and other intellectual property laws and by international
+treaties. Title and related rights in the content accessed through the
+Software is the property of the applicable content owner and may be
+protected by applicable law. This license gives you no rights to such
+content.
+
+TERMINATION.
+
+The license will terminate automatically if you fail to comply with the
+limitations described herein. Upon termination of this license, you agree to
+destroy all copies of the Software.
+
+DISCLAIMER OF WARRANTY.
+
+The Software is provided on an &quot;AS IS&quot; basis, without warranty of any kind,
+including without limitation the warranties of merchantability, fitness for
+a particular purpose and non-infringement. The entire risk as to the quality
+and performance of the Software is borne by you. Should the Software prove
+defective, you and not MagniComp or its suppliers assume the entire cost of
+any service and repair. In addition, the security mechanisms implemented by
+MagniComp software have inherent limitations, and you must determine that
+the Software sufficiently meets your requirements. This disclaimer of
+warranty constitutes an essential part of the agreement. SOME JURISDICTIONS
+DO NOT ALLOW EXCLUSIONS OF AN IMPLIED WARRANTY, SO THIS DISCLAIMER MAY NOT
+APPLY TO YOU AND YOU MAY HAVE OTHER LEGAL RIGHTS THAT VARY BY JURISDICTION.
+
+LIMITATION OF LIABILITY.
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, OR
+OTHERWISE, SHALL MAGNICOMP OR ITS SUPPLIERS OR RESELLERS BE LIABLE TO YOU OR
+ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF
+GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL
+OTHER COMMERCIAL DAMAGES OR LOSSES. IN NO EVENT WILL MAGNICOMP BE LIABLE FOR
+ANY DAMAGES, EVEN IF MAGNICOMP SHALL HAVE BEEN INFORMED OF THE POSSIBILITY
+OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY. THIS LIMITATION OF
+LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE
+EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME
+JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR
+CONSEQUENTIAL DAMAGES, SO THIS LIMITATION AND EXCLUSION MAY NOT APPLY TO
+YOU.
+
+HIGH RISK ACTIVITIES.
+
+The Software is not fault-tolerant and is not designed, manufactured or
+intended for use or resale as on-line control equipment in hazardous
+environments requiring fail-safe performance, such as in the operation of
+nuclear facilities, aircraft navigation or communication systems, air
+traffic control, direct life support machines, or weapons systems, in which
+the failure of the Software could lead directly to death, personal injury,
+or severe physical or environmental damage (&quot;High Risk Activities&quot;).
+MagniComp and its suppliers specifically disclaim any express or implied
+warranty of fitness for High Risk Activities.
+
+MISCELLANEOUS.
+
+This Agreement represents the complete agreement concerning this license and
+may amended only by a writing executed by both parties. If any provision of
+this Agreement is held to be unenforceable, such provision shall be reformed
+only to the extent necessary to make it enforceable. This Agreement shall be
+governed by California law (except for conflict of law provisions). The
+application the United Nations Convention of Contracts for the International
+Sale of Goods is expressly excluded.
+
+                                    END
+
+</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/d41d67f2949701b230216519dd9b5cc1">FedoraEntry:d41d67f2949701b230216519dd9b5cc1</a> for <a href="/?license=Fedora:MagniComp-EULA"><span class="licensename"><span class="namespace">Fedora:</span>MagniComp-EULA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>MagniComp-EULA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MagniComp-EULA</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed.">Fedora: <b style="color: red;">not-allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d41d67f2949701b230216519dd9b5cc1">[<a href="/fact/FedoraEntry/d41d67f2949701b230216519dd9b5cc1">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.magnicomp.com/rdist/rdist-eu-license.shtml" target="_blank">https://www.magnicomp.com/rdist/rdist-eu-license.shtml</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;not-allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>                   MagniComp - End User License Agreement
+
+                              www.MagniComp.com
+
+                             RDist Version 6.1
+
+                     Version of This Document: 19990724
+
+GRANT.
+
+MagniComp grants you a non-exclusive license to use RDist version 6.1 and
+all subsequent versions called 6.1.X software (the &quot;Software&quot;) free of
+charge.
+
+This license does not entitle you to hard-copy documentation, support or
+telephone assistance. MagniComp reserves the right at any time to alter
+prices, features, specifications, capabilities, functions, licensing terms,
+general availability of the Software.
+
+SCOPE OF GRANT.
+
+You may:
+
+   * use the Software in any way you wish on any computer regardless of
+     ownership of said computer;
+   * redistribute the Software in any form, including source and binary, to
+     any party with or without charging a fee;
+   * copy the Software for any purpose.
+
+You may not:
+
+   * remove or alter this notice;
+   * remove or alter any proprietary notices or labels on the Software.
+
+REQUIREMENTS.
+
+   * All advertising materials mentioning features or use of this software
+     must display the following acknowledgement:
+
+          This product includes software developed by MagniComp
+          (www.MagniComp.com) and its contributors.
+
+   * Redistributions in binary form must reproduce this copyright notice,
+     this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+   * Neither name of MagniComp nor the names of its contributors may be used
+     to endorse or promote products derived from this software without
+     specific prior written permission.
+
+TITLE.
+
+Title, ownership rights, and intellectual property rights in the Software
+shall remain in MagniComp and/or its suppliers. The Software is protected by
+copyright and other intellectual property laws and by international
+treaties. Title and related rights in the content accessed through the
+Software is the property of the applicable content owner and may be
+protected by applicable law. This license gives you no rights to such
+content.
+
+TERMINATION.
+
+The license will terminate automatically if you fail to comply with the
+limitations described herein. Upon termination of this license, you agree to
+destroy all copies of the Software.
+
+DISCLAIMER OF WARRANTY.
+
+The Software is provided on an &quot;AS IS&quot; basis, without warranty of any kind,
+including without limitation the warranties of merchantability, fitness for
+a particular purpose and non-infringement. The entire risk as to the quality
+and performance of the Software is borne by you. Should the Software prove
+defective, you and not MagniComp or its suppliers assume the entire cost of
+any service and repair. In addition, the security mechanisms implemented by
+MagniComp software have inherent limitations, and you must determine that
+the Software sufficiently meets your requirements. This disclaimer of
+warranty constitutes an essential part of the agreement. SOME JURISDICTIONS
+DO NOT ALLOW EXCLUSIONS OF AN IMPLIED WARRANTY, SO THIS DISCLAIMER MAY NOT
+APPLY TO YOU AND YOU MAY HAVE OTHER LEGAL RIGHTS THAT VARY BY JURISDICTION.
+
+LIMITATION OF LIABILITY.
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, OR
+OTHERWISE, SHALL MAGNICOMP OR ITS SUPPLIERS OR RESELLERS BE LIABLE TO YOU OR
+ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF
+GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL
+OTHER COMMERCIAL DAMAGES OR LOSSES. IN NO EVENT WILL MAGNICOMP BE LIABLE FOR
+ANY DAMAGES, EVEN IF MAGNICOMP SHALL HAVE BEEN INFORMED OF THE POSSIBILITY
+OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY. THIS LIMITATION OF
+LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE
+EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME
+JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR
+CONSEQUENTIAL DAMAGES, SO THIS LIMITATION AND EXCLUSION MAY NOT APPLY TO
+YOU.
+
+HIGH RISK ACTIVITIES.
+
+The Software is not fault-tolerant and is not designed, manufactured or
+intended for use or resale as on-line control equipment in hazardous
+environments requiring fail-safe performance, such as in the operation of
+nuclear facilities, aircraft navigation or communication systems, air
+traffic control, direct life support machines, or weapons systems, in which
+the failure of the Software could lead directly to death, personal injury,
+or severe physical or environmental damage (&quot;High Risk Activities&quot;).
+MagniComp and its suppliers specifically disclaim any express or implied
+warranty of fitness for High Risk Activities.
+
+MISCELLANEOUS.
+
+This Agreement represents the complete agreement concerning this license and
+may amended only by a writing executed by both parties. If any provision of
+this Agreement is held to be unenforceable, such provision shall be reformed
+only to the extent necessary to make it enforceable. This Agreement shall be
+governed by California law (except for conflict of law provisions). The
+application the United Nations Convention of Contracts for the International
+Sale of Goods is expressly excluded.
+
+                                    END
+
+</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:MagniComp-EULA&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MagniComp-EULA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;d41d67f2949701b230216519dd9b5cc1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;not-allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;not-allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.magnicomp.com/rdist/rdist-eu-license.shtml&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;                   MagniComp - End User License Agreement\n\n                              www.MagniComp.com\n\n                             RDist Version 6.1\n\n                     Version of This Document: 19990724\n\nGRANT.\n\nMagniComp grants you a non-exclusive license to use RDist version 6.1 and\nall subsequent versions called 6.1.X software (the \&quot;Software\&quot;) free of\ncharge.\n\nThis license does not entitle you to hard-copy documentation, support or\ntelephone assistance. MagniComp reserves the right at any time to alter\nprices, features, specifications, capabilities, functions, licensing terms,\ngeneral availability of the Software.\n\nSCOPE OF GRANT.\n\nYou may:\n\n   * use the Software in any way you wish on any computer regardless of\n     ownership of said computer;\n   * redistribute the Software in any form, including source and binary, to\n     any party with or without charging a fee;\n   * copy the Software for any purpose.\n\nYou may not:\n\n   * remove or alter this notice;\n   * remove or alter any proprietary notices or labels on the Software.\n\nREQUIREMENTS.\n\n   * All advertising materials mentioning features or use of this software\n     must display the following acknowledgement:\n\n          This product includes software developed by MagniComp\n          (www.MagniComp.com) and its contributors.\n\n   * Redistributions in binary form must reproduce this copyright notice,\n     this list of conditions and the following disclaimer in the\n     documentation and/or other materials provided with the distribution.\n   * Neither name of MagniComp nor the names of its contributors may be used\n     to endorse or promote products derived from this software without\n     specific prior written permission.\n\nTITLE.\n\nTitle, ownership rights, and intellectual property rights in the Software\nshall remain in MagniComp and/or its suppliers. The Software is protected by\ncopyright and other intellectual property laws and by international\ntreaties. Title and related rights in the content accessed through the\nSoftware is the property of the applicable content owner and may be\nprotected by applicable law. This license gives you no rights to such\ncontent.\n\nTERMINATION.\n\nThe license will terminate automatically if you fail to comply with the\nlimitations described herein. Upon termination of this license, you agree to\ndestroy all copies of the Software.\n\nDISCLAIMER OF WARRANTY.\n\nThe Software is provided on an \&quot;AS IS\&quot; basis, without warranty of any kind,\nincluding without limitation the warranties of merchantability, fitness for\na particular purpose and non-infringement. The entire risk as to the quality\nand performance of the Software is borne by you. Should the Software prove\ndefective, you and not MagniComp or its suppliers assume the entire cost of\nany service and repair. In addition, the security mechanisms implemented by\nMagniComp software have inherent limitations, and you must determine that\nthe Software sufficiently meets your requirements. This disclaimer of\nwarranty constitutes an essential part of the agreement. SOME JURISDICTIONS\nDO NOT ALLOW EXCLUSIONS OF AN IMPLIED WARRANTY, SO THIS DISCLAIMER MAY NOT\nAPPLY TO YOU AND YOU MAY HAVE OTHER LEGAL RIGHTS THAT VARY BY JURISDICTION.\n\nLIMITATION OF LIABILITY.\n\nUNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, OR\nOTHERWISE, SHALL MAGNICOMP OR ITS SUPPLIERS OR RESELLERS BE LIABLE TO YOU OR\nANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF\nGOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL\nOTHER COMMERCIAL DAMAGES OR LOSSES. IN NO EVENT WILL MAGNICOMP BE LIABLE FOR\nANY DAMAGES, EVEN IF MAGNICOMP SHALL HAVE BEEN INFORMED OF THE POSSIBILITY\nOF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY. THIS LIMITATION OF\nLIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE\nEXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME\nJURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR\nCONSEQUENTIAL DAMAGES, SO THIS LIMITATION AND EXCLUSION MAY NOT APPLY TO\nYOU.\n\nHIGH RISK ACTIVITIES.\n\nThe Software is not fault-tolerant and is not designed, manufactured or\nintended for use or resale as on-line control equipment in hazardous\nenvironments requiring fail-safe performance, such as in the operation of\nnuclear facilities, aircraft navigation or communication systems, air\ntraffic control, direct life support machines, or weapons systems, in which\nthe failure of the Software could lead directly to death, personal injury,\nor severe physical or environmental damage (\&quot;High Risk Activities\&quot;).\nMagniComp and its suppliers specifically disclaim any express or implied\nwarranty of fitness for High Risk Activities.\n\nMISCELLANEOUS.\n\nThis Agreement represents the complete agreement concerning this license and\nmay amended only by a writing executed by both parties. If any provision of\nthis Agreement is held to be unenforceable, such provision shall be reformed\nonly to the extent necessary to make it enforceable. This Agreement shall be\ngoverned by California law (except for conflict of law provisions). The\napplication the United Nations Convention of Contracts for the International\nSale of Goods is expressly excluded.\n\n                                    END\n\n&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;MagniComp-EULA&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:MagniComp-EULA&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;not-allowed&quot;
+            ],
+            &quot;_text&quot;: &quot;                   MagniComp - End User License Agreement\n\n                              www.MagniComp.com\n\n                             RDist Version 6.1\n\n                     Version of This Document: 19990724\n\nGRANT.\n\nMagniComp grants you a non-exclusive license to use RDist version 6.1 and\nall subsequent versions called 6.1.X software (the \&quot;Software\&quot;) free of\ncharge.\n\nThis license does not entitle you to hard-copy documentation, support or\ntelephone assistance. MagniComp reserves the right at any time to alter\nprices, features, specifications, capabilities, functions, licensing terms,\ngeneral availability of the Software.\n\nSCOPE OF GRANT.\n\nYou may:\n\n   * use the Software in any way you wish on any computer regardless of\n     ownership of said computer;\n   * redistribute the Software in any form, including source and binary, to\n     any party with or without charging a fee;\n   * copy the Software for any purpose.\n\nYou may not:\n\n   * remove or alter this notice;\n   * remove or alter any proprietary notices or labels on the Software.\n\nREQUIREMENTS.\n\n   * All advertising materials mentioning features or use of this software\n     must display the following acknowledgement:\n\n          This product includes software developed by MagniComp\n          (www.MagniComp.com) and its contributors.\n\n   * Redistributions in binary form must reproduce this copyright notice,\n     this list of conditions and the following disclaimer in the\n     documentation and/or other materials provided with the distribution.\n   * Neither name of MagniComp nor the names of its contributors may be used\n     to endorse or promote products derived from this software without\n     specific prior written permission.\n\nTITLE.\n\nTitle, ownership rights, and intellectual property rights in the Software\nshall remain in MagniComp and/or its suppliers. The Software is protected by\ncopyright and other intellectual property laws and by international\ntreaties. Title and related rights in the content accessed through the\nSoftware is the property of the applicable content owner and may be\nprotected by applicable law. This license gives you no rights to such\ncontent.\n\nTERMINATION.\n\nThe license will terminate automatically if you fail to comply with the\nlimitations described herein. Upon termination of this license, you agree to\ndestroy all copies of the Software.\n\nDISCLAIMER OF WARRANTY.\n\nThe Software is provided on an \&quot;AS IS\&quot; basis, without warranty of any kind,\nincluding without limitation the warranties of merchantability, fitness for\na particular purpose and non-infringement. The entire risk as to the quality\nand performance of the Software is borne by you. Should the Software prove\ndefective, you and not MagniComp or its suppliers assume the entire cost of\nany service and repair. In addition, the security mechanisms implemented by\nMagniComp software have inherent limitations, and you must determine that\nthe Software sufficiently meets your requirements. This disclaimer of\nwarranty constitutes an essential part of the agreement. SOME JURISDICTIONS\nDO NOT ALLOW EXCLUSIONS OF AN IMPLIED WARRANTY, SO THIS DISCLAIMER MAY NOT\nAPPLY TO YOU AND YOU MAY HAVE OTHER LEGAL RIGHTS THAT VARY BY JURISDICTION.\n\nLIMITATION OF LIABILITY.\n\nUNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, OR\nOTHERWISE, SHALL MAGNICOMP OR ITS SUPPLIERS OR RESELLERS BE LIABLE TO YOU OR\nANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF\nGOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL\nOTHER COMMERCIAL DAMAGES OR LOSSES. IN NO EVENT WILL MAGNICOMP BE LIABLE FOR\nANY DAMAGES, EVEN IF MAGNICOMP SHALL HAVE BEEN INFORMED OF THE POSSIBILITY\nOF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY. THIS LIMITATION OF\nLIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE\nEXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME\nJURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR\nCONSEQUENTIAL DAMAGES, SO THIS LIMITATION AND EXCLUSION MAY NOT APPLY TO\nYOU.\n\nHIGH RISK ACTIVITIES.\n\nThe Software is not fault-tolerant and is not designed, manufactured or\nintended for use or resale as on-line control equipment in hazardous\nenvironments requiring fail-safe performance, such as in the operation of\nnuclear facilities, aircraft navigation or communication systems, air\ntraffic control, direct life support machines, or weapons systems, in which\nthe failure of the Software could lead directly to death, personal injury,\nor severe physical or environmental damage (\&quot;High Risk Activities\&quot;).\nMagniComp and its suppliers specifically disclaim any express or implied\nwarranty of fitness for High Risk Activities.\n\nMISCELLANEOUS.\n\nThis Agreement represents the complete agreement concerning this license and\nmay amended only by a writing executed by both parties. If any provision of\nthis Agreement is held to be unenforceable, such provision shall be reformed\nonly to the extent necessary to make it enforceable. This Agreement shall be\ngoverned by California law (except for conflict of law provisions). The\napplication the United Nations Convention of Contracts for the International\nSale of Goods is expressly excluded.\n\n                                    END\n\n&quot;,
+            &quot;_urls&quot;: [
+                &quot;https://www.magnicomp.com/rdist/rdist-eu-license.shtml&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,394 @@
+<html><head><title>ldbcollector: spdx:OpenJDK-assembly-exception-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:OpenJDK-assembly-exception-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenJDK-assembly-exception-1.0</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenJDK Assembly Exception (GPL)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenJDK Assembly Exception (GPL)</span></li><li><span class="licensename">OpenJDK Assembly exception 1.0</span></li><li><span class="licensename">OpenJDK Assembly exception to GPL 2.0</span></li><li><span class="licensename">openjdk-assembly-exception-1.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>OpenJDK-assembly-exception-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openjdk-assembly-exception-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OpenJDK-assembly-exception-1.0</span></li><li><span class="licensename">OpenJDK-Assembly-Exception-GPL</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenJDK-Assembly-Exception-GPL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL OpenJDK Assembly Exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:9c49705b978905a0fb883319a37e722f">[<a href="/fact/ScancodeData/9c49705b978905a0fb883319a37e722f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">http://www.gnu.org/licenses/gpl-2.0.txt</a></li><li><a href="http://openjdk.java.net/legal/assembly-exception.html" target="_blank">http://openjdk.java.net/legal/assembly-exception.html</a></li></ul><h3>Other Statements</h3><ul><li>http://openjdk.java.net/legal/assembly-exception.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>OpenJDK Assembly Exception
+
+The OpenJDK source code made available by Oracle America, Inc. (Oracle) at
+openjdk.java.net (&quot;OpenJDK Code&quot;) is distributed under the terms of the GNU
+General Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2
+only (&quot;GPL2&quot;), with the following clarification and special exception.
+
+    Linking this OpenJDK Code statically or dynamically with other code
+    is making a combined work based on this library.  Thus, the terms
+    and conditions of GPL2 cover the whole combination.
+
+    As a special exception, Oracle gives you permission to link this
+    OpenJDK Code with certain code licensed by Oracle as indicated at
+    http://openjdk.java.net/legal/exception-modules-2007-05-08.html
+    (&quot;Designated Exception Modules&quot;) to produce an executable,
+    regardless of the license terms of the Designated Exception Modules,
+    and to copy and distribute the resulting executable under GPL2,
+    provided that the Designated Exception Modules continue to be
+    governed by the licenses under which they were offered by Oracle.
+
+As such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code
+to build an executable that includes those portions of necessary code that
+Oracle could not provide under GPL2 (or that Oracle has provided under GPL2
+with the Classpath exception).  If you modify or add to the OpenJDK code,
+that new GPL2 code may still be combined with Designated Exception Modules
+if the new code is made subject to this exception by its copyright holder.</pre></details></li><li><details><summary>Text:</summary><pre>OpenJDK Assembly Exception The OpenJDK source code made available by Oracle America, Inc. (Oracle) at openjdk.java.net (&quot;OpenJDK Code&quot;) is distributed under the terms of the GNU General Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2 only (&quot;GPL2&quot;), with the following clarification and special exception.
+
+   
+
+   Linking this OpenJDK Code statically or dynamically with other code is making a combined work based on this library. Thus, the terms and conditions of GPL2 cover the whole combination.
+
+   As a special exception, Oracle gives you permission to link this OpenJDK Code with certain code licensed by Oracle as indicated at http://openjdk.java.net/legal/exception-modules-2007-05-08.html (&quot;Designated Exception Modules&quot;) to produce an executable, regardless of the license terms of the Designated Exception Modules, and to copy and distribute the resulting executable under GPL2, provided that the Designated Exception Modules continue to be governed by the licenses under which they were offered by Oracle. As such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code to build an executable that includes those portions of necessary code that Oracle could not provide under GPL2 (or that Oracle has provided under GPL2 with the Classpath exception). If you modify or add to the OpenJDK code, that new GPL2 code may still be combined with Designated Exception Modules if the new code is made subject to this exception by its copyright holder.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/9c49705b978905a0fb883319a37e722f">ScancodeData:9c49705b978905a0fb883319a37e722f</a> for <a href="/?license=scancode:openjdk-assembly-exception-1.0"><span class="licensename"><span class="namespace">scancode:</span>openjdk-assembly-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>openjdk-assembly-exception-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenJDK Assembly exception to GPL 2.0</span></li><li><span class="licensename">OpenJDK Assembly exception to GPL 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:9c49705b978905a0fb883319a37e722f">[<a href="/fact/ScancodeData/9c49705b978905a0fb883319a37e722f">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">http://www.gnu.org/licenses/gpl-2.0.txt</a></li></ul><h3>Other Statements</h3><ul><li>http://openjdk.java.net/legal/assembly-exception.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>OpenJDK Assembly Exception
+
+The OpenJDK source code made available by Oracle America, Inc. (Oracle) at
+openjdk.java.net (&quot;OpenJDK Code&quot;) is distributed under the terms of the GNU
+General Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2
+only (&quot;GPL2&quot;), with the following clarification and special exception.
+
+    Linking this OpenJDK Code statically or dynamically with other code
+    is making a combined work based on this library.  Thus, the terms
+    and conditions of GPL2 cover the whole combination.
+
+    As a special exception, Oracle gives you permission to link this
+    OpenJDK Code with certain code licensed by Oracle as indicated at
+    http://openjdk.java.net/legal/exception-modules-2007-05-08.html
+    (&quot;Designated Exception Modules&quot;) to produce an executable,
+    regardless of the license terms of the Designated Exception Modules,
+    and to copy and distribute the resulting executable under GPL2,
+    provided that the Designated Exception Modules continue to be
+    governed by the licenses under which they were offered by Oracle.
+
+As such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code
+to build an executable that includes those portions of necessary code that
+Oracle could not provide under GPL2 (or that Oracle has provided under GPL2
+with the Classpath exception).  If you modify or add to the OpenJDK code,
+that new GPL2 code may still be combined with Designated Exception Modules
+if the new code is made subject to this exception by its copyright holder.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:openjdk-assembly-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenJDK Assembly exception to GPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenJDK Assembly exception to GPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;9c49705b978905a0fb883319a37e722f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://openjdk.java.net/legal/assembly-exception.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/gpl-2.0.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;OpenJDK Assembly Exception\n\nThe OpenJDK source code made available by Oracle America, Inc. (Oracle) at\nopenjdk.java.net (\&quot;OpenJDK Code\&quot;) is distributed under the terms of the GNU\nGeneral Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2\nonly (\&quot;GPL2\&quot;), with the following clarification and special exception.\n\n    Linking this OpenJDK Code statically or dynamically with other code\n    is making a combined work based on this library.  Thus, the terms\n    and conditions of GPL2 cover the whole combination.\n\n    As a special exception, Oracle gives you permission to link this\n    OpenJDK Code with certain code licensed by Oracle as indicated at\n    http://openjdk.java.net/legal/exception-modules-2007-05-08.html\n    (\&quot;Designated Exception Modules\&quot;) to produce an executable,\n    regardless of the license terms of the Designated Exception Modules,\n    and to copy and distribute the resulting executable under GPL2,\n    provided that the Designated Exception Modules continue to be\n    governed by the licenses under which they were offered by Oracle.\n\nAs such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code\nto build an executable that includes those portions of necessary code that\nOracle could not provide under GPL2 (or that Oracle has provided under GPL2\nwith the Classpath exception).  If you modify or add to the OpenJDK code,\nthat new GPL2 code may still be combined with Designated Exception Modules\nif the new code is made subject to this exception by its copyright holder.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://openjdk.java.net/legal/assembly-exception.html&quot;,
+        &quot;_key&quot;: &quot;openjdk-assembly-exception-1.0&quot;,
+        &quot;_name&quot;: &quot;OpenJDK Assembly exception to GPL 2.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.gnu.org/licenses/gpl-2.0.txt&quot;
+        ],
+        &quot;_owner&quot;: &quot;Oracle Corporation&quot;,
+        &quot;_shortName&quot;: &quot;OpenJDK Assembly exception to GPL 2.0&quot;,
+        &quot;_spdxId&quot;: &quot;OpenJDK-assembly-exception-1.0&quot;,
+        &quot;_text&quot;: &quot;OpenJDK Assembly Exception\n\nThe OpenJDK source code made available by Oracle America, Inc. (Oracle) at\nopenjdk.java.net (\&quot;OpenJDK Code\&quot;) is distributed under the terms of the GNU\nGeneral Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2\nonly (\&quot;GPL2\&quot;), with the following clarification and special exception.\n\n    Linking this OpenJDK Code statically or dynamically with other code\n    is making a combined work based on this library.  Thus, the terms\n    and conditions of GPL2 cover the whole combination.\n\n    As a special exception, Oracle gives you permission to link this\n    OpenJDK Code with certain code licensed by Oracle as indicated at\n    http://openjdk.java.net/legal/exception-modules-2007-05-08.html\n    (\&quot;Designated Exception Modules\&quot;) to produce an executable,\n    regardless of the license terms of the Designated Exception Modules,\n    and to copy and distribute the resulting executable under GPL2,\n    provided that the Designated Exception Modules continue to be\n    governed by the licenses under which they were offered by Oracle.\n\nAs such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code\nto build an executable that includes those portions of necessary code that\nOracle could not provide under GPL2 (or that Oracle has provided under GPL2\nwith the Classpath exception).  If you modify or add to the OpenJDK code,\nthat new GPL2 code may still be combined with Designated Exception Modules\nif the new code is made subject to this exception by its copyright holder.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/920a69a9e87900d60061a0a478e07e40">Fossology:920a69a9e87900d60061a0a478e07e40</a> for <a href="/?license=fossology:OpenJDK-assembly-exception-1.0"><span class="licensename"><span class="namespace">fossology:</span>OpenJDK-assembly-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>OpenJDK-assembly-exception-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenJDK Assembly exception 1.0</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="http://openjdk.java.net/legal/assembly-exception.html" target="_blank">http://openjdk.java.net/legal/assembly-exception.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>OpenJDK Assembly Exception The OpenJDK source code made available by Oracle America, Inc. (Oracle) at openjdk.java.net (&quot;OpenJDK Code&quot;) is distributed under the terms of the GNU General Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2 only (&quot;GPL2&quot;), with the following clarification and special exception.
+
+   
+
+   Linking this OpenJDK Code statically or dynamically with other code is making a combined work based on this library. Thus, the terms and conditions of GPL2 cover the whole combination.
+
+   As a special exception, Oracle gives you permission to link this OpenJDK Code with certain code licensed by Oracle as indicated at http://openjdk.java.net/legal/exception-modules-2007-05-08.html (&quot;Designated Exception Modules&quot;) to produce an executable, regardless of the license terms of the Designated Exception Modules, and to copy and distribute the resulting executable under GPL2, provided that the Designated Exception Modules continue to be governed by the licenses under which they were offered by Oracle. As such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code to build an executable that includes those portions of necessary code that Oracle could not provide under GPL2 (or that Oracle has provided under GPL2 with the Classpath exception). If you modify or add to the OpenJDK code, that new GPL2 code may still be combined with Designated Exception Modules if the new code is made subject to this exception by its copyright holder.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:OpenJDK-assembly-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenJDK Assembly exception 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;920a69a9e87900d60061a0a478e07e40&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://openjdk.java.net/legal/assembly-exception.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;OpenJDK Assembly Exception The OpenJDK source code made available by Oracle America, Inc. (Oracle) at openjdk.java.net (\&quot;OpenJDK Code\&quot;) is distributed under the terms of the GNU General Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2 only (\&quot;GPL2\&quot;), with the following clarification and special exception.\n\n   \n\n   Linking this OpenJDK Code statically or dynamically with other code is making a combined work based on this library. Thus, the terms and conditions of GPL2 cover the whole combination.\n\n   As a special exception, Oracle gives you permission to link this OpenJDK Code with certain code licensed by Oracle as indicated at http://openjdk.java.net/legal/exception-modules-2007-05-08.html (\&quot;Designated Exception Modules\&quot;) to produce an executable, regardless of the license terms of the Designated Exception Modules, and to copy and distribute the resulting executable under GPL2, provided that the Designated Exception Modules continue to be governed by the licenses under which they were offered by Oracle. As such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code to build an executable that includes those portions of necessary code that Oracle could not provide under GPL2 (or that Oracle has provided under GPL2 with the Classpath exception). If you modify or add to the OpenJDK code, that new GPL2 code may still be combined with Designated Exception Modules if the new code is made subject to this exception by its copyright holder.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;OpenJDK Assembly exception 1.0&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:OpenJDK-assembly-exception-1.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;OpenJDK Assembly Exception The OpenJDK source code made available by Oracle America, Inc. (Oracle) at openjdk.java.net (\&quot;OpenJDK Code\&quot;) is distributed under the terms of the GNU General Public License &lt;http://www.gnu.org/copyleft/gpl.html&gt; version 2 only (\&quot;GPL2\&quot;), with the following clarification and special exception.\n\n   \n\n   Linking this OpenJDK Code statically or dynamically with other code is making a combined work based on this library. Thus, the terms and conditions of GPL2 cover the whole combination.\n\n   As a special exception, Oracle gives you permission to link this OpenJDK Code with certain code licensed by Oracle as indicated at http://openjdk.java.net/legal/exception-modules-2007-05-08.html (\&quot;Designated Exception Modules\&quot;) to produce an executable, regardless of the license terms of the Designated Exception Modules, and to copy and distribute the resulting executable under GPL2, provided that the Designated Exception Modules continue to be governed by the licenses under which they were offered by Oracle. As such, it allows licensees and sublicensees of Oracle&#39;s GPL2 OpenJDK Code to build an executable that includes those portions of necessary code that Oracle could not provide under GPL2 (or that Oracle has provided under GPL2 with the Classpath exception). If you modify or add to the OpenJDK code, that new GPL2 code may still be combined with Designated Exception Modules if the new code is made subject to this exception by its copyright holder.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://openjdk.java.net/legal/assembly-exception.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/e29d74494becadcf1ef3466dca76fec3">MetaeffektLicense:e29d74494becadcf1ef3466dca76fec3</a> for <a href="/?license=metaeffekt:OpenJDK-Assembly-Exception-GPL"><span class="licensename"><span class="namespace">metaeffekt:</span>OpenJDK-Assembly-Exception-GPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenJDK-Assembly-Exception-GPL</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenJDK Assembly Exception (GPL)</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OpenJDK-assembly-exception-1.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL OpenJDK Assembly Exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openjdk-assembly-exception-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:OpenJDK-Assembly-Exception-GPL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:OpenJDK Assembly Exception (GPL)&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:OpenJDK-assembly-exception-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL OpenJDK Assembly Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:openjdk-assembly-exception-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;e29d74494becadcf1ef3466dca76fec3&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:OpenJDK Assembly Exception (GPL)&quot;,
+        &quot;_category&quot;: &quot;GPL OpenJDK Assembly Exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:openjdk-assembly-exception-1.0&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:OpenJDK-Assembly-Exception-GPL&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:OpenJDK-assembly-exception-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,719 @@
+<html><head><title>ldbcollector: spdx:JPNIC</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:JPNIC</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>JPNIC</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Japan Network Information Center License</span></li><li><span class="licensename">JPNIC</span></li><li><span class="licensename"><span class="namespace">cavil:</span>JPNIC</span></li><li><span class="licensename"><span class="namespace">fossology:</span>JPNIC</span></li><li><span class="licensename"><span class="namespace">spdx:</span>JPNIC</span></li><li><span class="licensename">JPNIC License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>JPNIC License</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Japan Network Information Center Terms</span></li><li><span class="licensename"><span class="namespace">scancode:</span>jpnic-idnkit</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:9e704b6e5c25966ba3f379d2b9e3f2d2">[<a href="/fact/SPDXLicense/9e704b6e5c25966ba3f379d2b9e3f2d2">SPDXLicense</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:509b8cfde0bb5c4eb456c9c263142fb0">[<a href="/fact/MetaeffektLicense/509b8cfde0bb5c4eb456c9c263142fb0">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5e7a8423f03ea1915180346d23a9fd9">[<a href="/fact/OrtLicenseCategorization/c5e7a8423f03ea1915180346d23a9fd9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5e7a8423f03ea1915180346d23a9fd9">[<a href="/fact/OrtLicenseCategorization/c5e7a8423f03ea1915180346d23a9fd9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8b27561e6f187107c9ea243e41c7a97e">[<a href="/fact/OrtLicenseCategorization/8b27561e6f187107c9ea243e41c7a97e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8b27561e6f187107c9ea243e41c7a97e">[<a href="/fact/OrtLicenseCategorization/8b27561e6f187107c9ea243e41c7a97e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8b27561e6f187107c9ea243e41c7a97e">[<a href="/fact/OrtLicenseCategorization/8b27561e6f187107c9ea243e41c7a97e">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366" target="_blank">https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2000-2002 Japan Network Information Center.  All rights reserved.
+
+By using this file, you agree to the terms and conditions set forth bellow.
+
+                        LICENSE TERMS AND CONDITIONS
+
+The following License Terms and Conditions apply, unless a different
+license is obtained from Japan Network Information Center (&quot;JPNIC&quot;),
+a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda,
+Chiyoda-ku, Tokyo 101-0047, Japan.
+
+1. Use, Modification and Redistribution (including distribution of any
+   modified or derived work) in source and/or binary forms is permitted
+   under this License Terms and Conditions.
+
+2. Redistribution of source code must retain the copyright notices as they
+   appear in each source code file, this License Terms and Conditions.
+
+3. Redistribution in binary form must reproduce the Copyright Notice,
+   this License Terms and Conditions, in the documentation and/or other
+   materials provided with the distribution.  For the purposes of binary
+   distribution the &quot;Copyright Notice&quot; refers to the following language:
+   &quot;Copyright (c) 2000-2002 Japan Network Information Center.  All rights
+   reserved.&quot;
+
+4. The name of JPNIC may not be used to endorse or promote products
+   derived from this Software without specific prior written approval of
+   JPNIC.
+
+5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC
+   &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+   PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL JPNIC BE LIABLE
+   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+   BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+   ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;Japan Network Information Center License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+        &lt;p&gt;Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;By using this file, you agree to the terms and conditions set forth &lt;var class=&quot;replaceable-license-text&quot;&gt; bellow&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;LICENSE TERMS AND CONDITIONS&lt;/p&gt;
+
+      &lt;p&gt;The following License Terms and Conditions apply, unless a different license is obtained from &lt;var class=&quot;replaceable-license-text&quot;&gt; Japan Network Information Center&lt;/var&gt; (&amp;quot;&lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt;&amp;quot;), &lt;var class=&quot;replaceable-license-text&quot;&gt; a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan&lt;/var&gt;.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &amp;quot;Copyright Notice&amp;quot; refers to the following language: &amp;quot;Copyright (c) &lt;var class=&quot;replaceable-license-text&quot;&gt; 2000-2002 Japan Network Information Center&lt;/var&gt;. All rights reserved.&amp;quot;
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          The name of &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt; may not be used to endorse or promote products derived from this Software without specific prior written approval of &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt;.
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>Japan Network Information Center License Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.
+
+By using this file, you agree to the terms and conditions set forth bellow .
+
+LICENSE TERMS AND CONDITIONS
+
+The following License Terms and Conditions apply, unless a different license is obtained from Japan Network Information Center (&quot; JPNIC &quot;), a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan .
+
+   1. Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.
+
+   2. Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.
+
+   3. Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c) 2000-2002 Japan Network Information Center . All rights reserved.&quot;
+
+   4. The name of JPNIC may not be used to endorse or promote products derived from this Software without specific prior written approval of JPNIC .
+
+   5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JPNIC BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/9e704b6e5c25966ba3f379d2b9e3f2d2">SPDXLicense:9e704b6e5c25966ba3f379d2b9e3f2d2</a> for <a href="/?license=spdx:JPNIC"><span class="licensename"><span class="namespace">spdx:</span>JPNIC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>JPNIC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Japan Network Information Center License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:9e704b6e5c25966ba3f379d2b9e3f2d2">[<a href="/fact/SPDXLicense/9e704b6e5c25966ba3f379d2b9e3f2d2">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366" target="_blank">https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2000-2002 Japan Network Information Center.  All rights reserved.
+
+By using this file, you agree to the terms and conditions set forth bellow.
+
+                        LICENSE TERMS AND CONDITIONS
+
+The following License Terms and Conditions apply, unless a different
+license is obtained from Japan Network Information Center (&quot;JPNIC&quot;),
+a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda,
+Chiyoda-ku, Tokyo 101-0047, Japan.
+
+1. Use, Modification and Redistribution (including distribution of any
+   modified or derived work) in source and/or binary forms is permitted
+   under this License Terms and Conditions.
+
+2. Redistribution of source code must retain the copyright notices as they
+   appear in each source code file, this License Terms and Conditions.
+
+3. Redistribution in binary form must reproduce the Copyright Notice,
+   this License Terms and Conditions, in the documentation and/or other
+   materials provided with the distribution.  For the purposes of binary
+   distribution the &quot;Copyright Notice&quot; refers to the following language:
+   &quot;Copyright (c) 2000-2002 Japan Network Information Center.  All rights
+   reserved.&quot;
+
+4. The name of JPNIC may not be used to endorse or promote products
+   derived from this Software without specific prior written approval of
+   JPNIC.
+
+5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC
+   &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+   PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL JPNIC BE LIABLE
+   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+   BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+   ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;Japan Network Information Center License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+        &lt;p&gt;Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;By using this file, you agree to the terms and conditions set forth &lt;var class=&quot;replaceable-license-text&quot;&gt; bellow&lt;/var&gt;.&lt;/p&gt;
+
+      &lt;p&gt;LICENSE TERMS AND CONDITIONS&lt;/p&gt;
+
+      &lt;p&gt;The following License Terms and Conditions apply, unless a different license is obtained from &lt;var class=&quot;replaceable-license-text&quot;&gt; Japan Network Information Center&lt;/var&gt; (&amp;quot;&lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt;&amp;quot;), &lt;var class=&quot;replaceable-license-text&quot;&gt; a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan&lt;/var&gt;.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &amp;quot;Copyright Notice&amp;quot; refers to the following language: &amp;quot;Copyright (c) &lt;var class=&quot;replaceable-license-text&quot;&gt; 2000-2002 Japan Network Information Center&lt;/var&gt;. All rights reserved.&amp;quot;
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          The name of &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt; may not be used to endorse or promote products derived from this Software without specific prior written approval of &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt;.
+        &lt;/li&gt;
+        
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;var class=&quot;replaceable-license-text&quot;&gt; JPNIC&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:JPNIC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Japan Network Information Center License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;9e704b6e5c25966ba3f379d2b9e3f2d2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 2000-2002 Japan Network Information Center.  All rights reserved.\n\nBy using this file, you agree to the terms and conditions set forth bellow.\n\n                        LICENSE TERMS AND CONDITIONS\n\nThe following License Terms and Conditions apply, unless a different\nlicense is obtained from Japan Network Information Center (\&quot;JPNIC\&quot;),\na Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda,\nChiyoda-ku, Tokyo 101-0047, Japan.\n\n1. Use, Modification and Redistribution (including distribution of any\n   modified or derived work) in source and/or binary forms is permitted\n   under this License Terms and Conditions.\n\n2. Redistribution of source code must retain the copyright notices as they\n   appear in each source code file, this License Terms and Conditions.\n\n3. Redistribution in binary form must reproduce the Copyright Notice,\n   this License Terms and Conditions, in the documentation and/or other\n   materials provided with the distribution.  For the purposes of binary\n   distribution the \&quot;Copyright Notice\&quot; refers to the following language:\n   \&quot;Copyright (c) 2000-2002 Japan Network Information Center.  All rights\n   reserved.\&quot;\n\n4. The name of JPNIC may not be used to endorse or promote products\n   derived from this Software without specific prior written approval of\n   JPNIC.\n\n5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC\n   \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n   PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL JPNIC BE LIABLE\n   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\n   BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR\n   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\n   ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;Japan Network Information Center License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n        &lt;p&gt;Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;By using this file, you agree to the terms and conditions set forth &lt;var class=\&quot;replaceable-license-text\&quot;&gt; bellow&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;LICENSE TERMS AND CONDITIONS&lt;/p&gt;\n\n      &lt;p&gt;The following License Terms and Conditions apply, unless a different license is obtained from &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Japan Network Information Center&lt;/var&gt; (&amp;quot;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt;&amp;quot;), &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan&lt;/var&gt;.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &amp;quot;Copyright Notice&amp;quot; refers to the following language: &amp;quot;Copyright (c) &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2000-2002 Japan Network Information Center&lt;/var&gt;. All rights reserved.&amp;quot;\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          The name of &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt; may not be used to endorse or promote products derived from this Software without specific prior written approval of &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt;.\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:01:10Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:JPNIC&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 2000-2002 Japan Network Information Center.  All rights reserved.\n\nBy using this file, you agree to the terms and conditions set forth bellow.\n\n                        LICENSE TERMS AND CONDITIONS\n\nThe following License Terms and Conditions apply, unless a different\nlicense is obtained from Japan Network Information Center (\&quot;JPNIC\&quot;),\na Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda,\nChiyoda-ku, Tokyo 101-0047, Japan.\n\n1. Use, Modification and Redistribution (including distribution of any\n   modified or derived work) in source and/or binary forms is permitted\n   under this License Terms and Conditions.\n\n2. Redistribution of source code must retain the copyright notices as they\n   appear in each source code file, this License Terms and Conditions.\n\n3. Redistribution in binary form must reproduce the Copyright Notice,\n   this License Terms and Conditions, in the documentation and/or other\n   materials provided with the distribution.  For the purposes of binary\n   distribution the \&quot;Copyright Notice\&quot; refers to the following language:\n   \&quot;Copyright (c) 2000-2002 Japan Network Information Center.  All rights\n   reserved.\&quot;\n\n4. The name of JPNIC may not be used to endorse or promote products\n   derived from this Software without specific prior written approval of\n   JPNIC.\n\n5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC\n   \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n   PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL JPNIC BE LIABLE\n   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\n   BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR\n   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\n   ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;Japan Network Information Center License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n        &lt;p&gt;Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;By using this file, you agree to the terms and conditions set forth &lt;var class=\&quot;replaceable-license-text\&quot;&gt; bellow&lt;/var&gt;.&lt;/p&gt;\n\n      &lt;p&gt;LICENSE TERMS AND CONDITIONS&lt;/p&gt;\n\n      &lt;p&gt;The following License Terms and Conditions apply, unless a different license is obtained from &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Japan Network Information Center&lt;/var&gt; (&amp;quot;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt;&amp;quot;), &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan&lt;/var&gt;.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &amp;quot;Copyright Notice&amp;quot; refers to the following language: &amp;quot;Copyright (c) &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2000-2002 Japan Network Information Center&lt;/var&gt;. All rights reserved.&amp;quot;\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          The name of &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt; may not be used to endorse or promote products derived from this Software without specific prior written approval of &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt;.\n        &lt;/li&gt;\n        \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt; &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;var class=\&quot;replaceable-license-text\&quot;&gt; JPNIC&lt;/var&gt; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Japan Network Information Center License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Japan Network Information Center License\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nBy using this file, you agree to the terms and conditions set forth &lt;&lt;var;name=\&quot;bellow\&quot;;original=\&quot;bellow\&quot;;match=\&quot;bellow|below\&quot;&gt;&gt; .\n\nLICENSE TERMS AND CONDITIONS\n\nThe following License Terms and Conditions apply, unless a different license is obtained from &lt;&lt;var;name=\&quot;organizationClause1\&quot;;original=\&quot;Japan Network Information Center\&quot;;match=\&quot;.+\&quot;&gt;&gt; (\&quot; &lt;&lt;var;name=\&quot;organizationClause2\&quot;;original=\&quot;JPNIC\&quot;;match=\&quot;.+\&quot;&gt;&gt; \&quot;), &lt;&lt;var;name=\&quot;organizationClause3\&quot;;original=\&quot;a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan\&quot;;match=\&quot;.+\&quot;&gt;&gt; .\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c) &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;2000-2002 Japan Network Information Center\&quot;;match=\&quot;.+\&quot;&gt;&gt; . All rights reserved.\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name of &lt;&lt;var;name=\&quot;organizationClause2\&quot;;original=\&quot;JPNIC\&quot;;match=\&quot;.+\&quot;&gt;&gt; may not be used to endorse or promote products derived from this Software without specific prior written approval of &lt;&lt;var;name=\&quot;organizationClause2\&quot;;original=\&quot;JPNIC\&quot;;match=\&quot;.+\&quot;&gt;&gt; .\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY &lt;&lt;var;name=\&quot;organizationClause2\&quot;;original=\&quot;JPNIC\&quot;;match=\&quot;.+\&quot;&gt;&gt; \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;&lt;var;name=\&quot;organizationClause2\&quot;;original=\&quot;JPNIC\&quot;;match=\&quot;.+\&quot;&gt;&gt; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/ac04a1dd953f38f81df6283c1e4c932d">Fossology:ac04a1dd953f38f81df6283c1e4c932d</a> for <a href="/?license=fossology:JPNIC"><span class="licensename"><span class="namespace">fossology:</span>JPNIC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>JPNIC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Japan Network Information Center License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366" target="_blank">https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Japan Network Information Center License Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.
+
+By using this file, you agree to the terms and conditions set forth bellow .
+
+LICENSE TERMS AND CONDITIONS
+
+The following License Terms and Conditions apply, unless a different license is obtained from Japan Network Information Center (&quot; JPNIC &quot;), a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan .
+
+   1. Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.
+
+   2. Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.
+
+   3. Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c) 2000-2002 Japan Network Information Center . All rights reserved.&quot;
+
+   4. The name of JPNIC may not be used to endorse or promote products derived from this Software without specific prior written approval of JPNIC .
+
+   5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JPNIC BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:JPNIC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Japan Network Information Center License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;ac04a1dd953f38f81df6283c1e4c932d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Japan Network Information Center License Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.\n\nBy using this file, you agree to the terms and conditions set forth bellow .\n\nLICENSE TERMS AND CONDITIONS\n\nThe following License Terms and Conditions apply, unless a different license is obtained from Japan Network Information Center (\&quot; JPNIC \&quot;), a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan .\n\n   1. Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.\n\n   2. Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.\n\n   3. Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c) 2000-2002 Japan Network Information Center . All rights reserved.\&quot;\n\n   4. The name of JPNIC may not be used to endorse or promote products derived from this Software without specific prior written approval of JPNIC .\n\n   5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JPNIC BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Japan Network Information Center License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:JPNIC&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Japan Network Information Center License Copyright (c) 2000-2002 Japan Network Information Center. All rights reserved.\n\nBy using this file, you agree to the terms and conditions set forth bellow .\n\nLICENSE TERMS AND CONDITIONS\n\nThe following License Terms and Conditions apply, unless a different license is obtained from Japan Network Information Center (\&quot; JPNIC \&quot;), a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda, Chiyoda-ku, Tokyo 101-0047, Japan .\n\n   1. Use, Modification and Redistribution (including distribution of any modified or derived work) in source and/or binary forms is permitted under this License Terms and Conditions.\n\n   2. Redistribution of source code must retain the copyright notices as they appear in each source code file, this License Terms and Conditions.\n\n   3. Redistribution in binary form must reproduce the Copyright Notice, this License Terms and Conditions, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c) 2000-2002 Japan Network Information Center . All rights reserved.\&quot;\n\n   4. The name of JPNIC may not be used to endorse or promote products derived from this Software without specific prior written approval of JPNIC .\n\n   5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JPNIC BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c5e7a8423f03ea1915180346d23a9fd9">OrtLicenseCategorization:c5e7a8423f03ea1915180346d23a9fd9</a> for <a href="/?license=SPDX:JPNIC"><span class="licensename"><span class="namespace">SPDX:</span>JPNIC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>JPNIC</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5e7a8423f03ea1915180346d23a9fd9">[<a href="/fact/OrtLicenseCategorization/c5e7a8423f03ea1915180346d23a9fd9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c5e7a8423f03ea1915180346d23a9fd9">[<a href="/fact/OrtLicenseCategorization/c5e7a8423f03ea1915180346d23a9fd9">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:JPNIC&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c5e7a8423f03ea1915180346d23a9fd9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:JPNIC&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/8b27561e6f187107c9ea243e41c7a97e">OrtLicenseCategorization:8b27561e6f187107c9ea243e41c7a97e</a> for <a href="/?license=SPDX:JPNIC"><span class="licensename"><span class="namespace">SPDX:</span>JPNIC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>JPNIC</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8b27561e6f187107c9ea243e41c7a97e">[<a href="/fact/OrtLicenseCategorization/8b27561e6f187107c9ea243e41c7a97e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8b27561e6f187107c9ea243e41c7a97e">[<a href="/fact/OrtLicenseCategorization/8b27561e6f187107c9ea243e41c7a97e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:8b27561e6f187107c9ea243e41c7a97e">[<a href="/fact/OrtLicenseCategorization/8b27561e6f187107c9ea243e41c7a97e">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:JPNIC&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;8b27561e6f187107c9ea243e41c7a97e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:JPNIC&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/24657ae89f10d6d82b446a5ed4db28ea">CavilLicenseChange:24657ae89f10d6d82b446a5ed4db28ea</a> for <a href="/?license=cavil:JPNIC"><span class="licensename"><span class="namespace">cavil:</span>JPNIC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>JPNIC</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">JPNIC</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:JPNIC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;JPNIC&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;24657ae89f10d6d82b446a5ed4db28ea&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;JPNIC&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:JPNIC&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/509b8cfde0bb5c4eb456c9c263142fb0">MetaeffektLicense:509b8cfde0bb5c4eb456c9c263142fb0</a> for <a href="/?license=metaeffekt:JPNIC License"><span class="licensename"><span class="namespace">metaeffekt:</span>JPNIC License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>JPNIC License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>JPNIC</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Japan Network Information Center License</span></li><li><span class="licensename">Japan Network Information Center Terms</span></li><li><span class="licensename">JPNIC</span></li><li><span class="licensename"><span class="namespace">scancode:</span>jpnic-idnkit</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:509b8cfde0bb5c4eb456c9c263142fb0">[<a href="/fact/MetaeffektLicense/509b8cfde0bb5c4eb456c9c263142fb0">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:JPNIC License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:JPNIC&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;JPNIC&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Japan Network Information Center Terms&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Japan Network Information Center License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:jpnic-idnkit&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;509b8cfde0bb5c4eb456c9c263142fb0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Japan Network Information Center Terms&quot;,
+            &quot;Japan Network Information Center License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:JPNIC License&quot;,
+        &quot;_category&quot;: &quot;JPNIC&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:jpnic-idnkit&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:JPNIC&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

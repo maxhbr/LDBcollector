@@ -1,0 +1,561 @@
+<html><head><title>ldbcollector: spdx:NTP-0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:NTP-0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NTP-0</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">NTP No Attribution</span></li><li><span class="licensename">NTP-0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>NTP-0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>NTP-0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ntp-0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NTP-0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d8b910065c01333f640d673e8c438b29">[<a href="/fact/ScancodeData/d8b910065c01333f640d673e8c438b29">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0335199f8b8ad46b2a28971ddd7c81b5">[<a href="/fact/SPDXLicense/0335199f8b8ad46b2a28971ddd7c81b5">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:328da6fe1f65d9df5303119831ffd0b1">[<a href="/fact/OrtLicenseCategorization/328da6fe1f65d9df5303119831ffd0b1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:328da6fe1f65d9df5303119831ffd0b1">[<a href="/fact/OrtLicenseCategorization/328da6fe1f65d9df5303119831ffd0b1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7364e286a4fdfd450b78d88fe9466f38">[<a href="/fact/OrtLicenseCategorization/7364e286a4fdfd450b78d88fe9466f38">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase &quot;with or without fee&quot;.<span class="provided-by">(provided by: <span title="SPDXLicense:0335199f8b8ad46b2a28971ddd7c81b5">[<a href="/fact/SPDXLicense/0335199f8b8ad46b2a28971ddd7c81b5">SPDXLicense</a>]</span>)</span></li><li><b>Fossology: </b>This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase &quot;with or without fee&quot;.<span class="provided-by">(provided by: <span title="Fossology:6a6a4afc4fc8e7033de3418d5e5d9021">[<a href="/fact/Fossology/6a6a4afc4fc8e7033de3418d5e5d9021">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c" target="_blank">https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NTP No Attribution (NTP-0)
+
+Copyright (4-digit-year) by (CopyrightHoldersName)
+
+Permission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the name of (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) make no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;NTP No Attribution (NTP-0)&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (4-digit-year) by (CopyrightHoldersName)
+         &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, and distribute this software and its documentation for any purpose
+         is hereby granted, provided that the name&lt;var class=&quot;optional-license-text&quot;&gt;s&lt;/var&gt; of
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; (TrademarkedName)&lt;/var&gt; not be used in advertising or publicity pertaining
+        to distribution of the software without specific, written prior permission.
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; (TrademarkedName)&lt;/var&gt; make&lt;var class=&quot;optional-license-text&quot;&gt;s&lt;/var&gt; no representations about the suitability
+        of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.
+      &lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose is hereby granted, provided that
+the names of M.I.T. and the M.I.T. S.I.P.B. not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.  M.I.T. and the
+M.I.T. S.I.P.B. make no representations about the suitability of
+this software for any purpose.  It is provided &quot;as is&quot; without
+express or implied warranty.</pre></details></li><li><details><summary>Text:</summary><pre>NTP No Attribution (NTP-0) Copyright (4-digit-year) by (CopyrightHoldersName)
+
+Permission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the namesof (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) makesno representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/0335199f8b8ad46b2a28971ddd7c81b5">SPDXLicense:0335199f8b8ad46b2a28971ddd7c81b5</a> for <a href="/?license=spdx:NTP-0"><span class="licensename"><span class="namespace">spdx:</span>NTP-0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NTP-0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NTP No Attribution</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0335199f8b8ad46b2a28971ddd7c81b5">[<a href="/fact/SPDXLicense/0335199f8b8ad46b2a28971ddd7c81b5">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase &quot;with or without fee&quot;.<span class="provided-by">(provided by: <span title="SPDXLicense:0335199f8b8ad46b2a28971ddd7c81b5">[<a href="/fact/SPDXLicense/0335199f8b8ad46b2a28971ddd7c81b5">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c" target="_blank">https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NTP No Attribution (NTP-0)
+
+Copyright (4-digit-year) by (CopyrightHoldersName)
+
+Permission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the name of (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) make no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;NTP No Attribution (NTP-0)&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (4-digit-year) by (CopyrightHoldersName)
+         &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, and distribute this software and its documentation for any purpose
+         is hereby granted, provided that the name&lt;var class=&quot;optional-license-text&quot;&gt;s&lt;/var&gt; of
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; (TrademarkedName)&lt;/var&gt; not be used in advertising or publicity pertaining
+        to distribution of the software without specific, written prior permission.
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; (TrademarkedName)&lt;/var&gt; make&lt;var class=&quot;optional-license-text&quot;&gt;s&lt;/var&gt; no representations about the suitability
+        of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.
+      &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NTP-0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NTP No Attribution&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;0335199f8b8ad46b2a28971ddd7c81b5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase \&quot;with or without fee\&quot;.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;NTP No Attribution (NTP-0)\n\nCopyright (4-digit-year) by (CopyrightHoldersName)\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the name of (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) make no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;NTP No Attribution (NTP-0)&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (4-digit-year) by (CopyrightHoldersName)\n         &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, and distribute this software and its documentation for any purpose\n         is hereby granted, provided that the name&lt;var class=\&quot;optional-license-text\&quot;&gt;s&lt;/var&gt; of\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (TrademarkedName)&lt;/var&gt; not be used in advertising or publicity pertaining\n        to distribution of the software without specific, written prior permission.\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (TrademarkedName)&lt;/var&gt; make&lt;var class=\&quot;optional-license-text\&quot;&gt;s&lt;/var&gt; no representations about the suitability\n        of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.\n      &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:59Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase \&quot;with or without fee\&quot;.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:NTP-0&quot;,
+        &quot;licenseText&quot;: &quot;NTP No Attribution (NTP-0)\n\nCopyright (4-digit-year) by (CopyrightHoldersName)\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the name of (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) make no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;NTP No Attribution (NTP-0)&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (4-digit-year) by (CopyrightHoldersName)\n         &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, and distribute this software and its documentation for any purpose\n         is hereby granted, provided that the name&lt;var class=\&quot;optional-license-text\&quot;&gt;s&lt;/var&gt; of\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (TrademarkedName)&lt;/var&gt; not be used in advertising or publicity pertaining\n        to distribution of the software without specific, written prior permission.\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (TrademarkedName)&lt;/var&gt; make&lt;var class=\&quot;optional-license-text\&quot;&gt;s&lt;/var&gt; no representations about the suitability\n        of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.\n      &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;NTP No Attribution&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;NTP No Attribution (NTP-0)\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (4-digit-year) by (CopyrightHoldersName)  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the name&lt;&lt;beginOptional&gt;&gt;s&lt;&lt;endOptional&gt;&gt;of &lt;&lt;var;name=\&quot;TMname\&quot;;original=\&quot;(TrademarkedName)\&quot;;match=\&quot;.+\&quot;&gt;&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. &lt;&lt;var;name=\&quot;TMname\&quot;;original=\&quot;(TrademarkedName)\&quot;;match=\&quot;.+\&quot;&gt;&gt; make&lt;&lt;beginOptional&gt;&gt;s&lt;&lt;endOptional&gt;&gt;no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/d8b910065c01333f640d673e8c438b29">ScancodeData:d8b910065c01333f640d673e8c438b29</a> for <a href="/?license=scancode:ntp-0"><span class="licensename"><span class="namespace">scancode:</span>ntp-0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ntp-0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">NTP No Attribution</span></li><li><span class="licensename">NTP-0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d8b910065c01333f640d673e8c438b29">[<a href="/fact/ScancodeData/d8b910065c01333f640d673e8c438b29">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose is hereby granted, provided that
+the names of M.I.T. and the M.I.T. S.I.P.B. not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.  M.I.T. and the
+M.I.T. S.I.P.B. make no representations about the suitability of
+this software for any purpose.  It is provided &quot;as is&quot; without
+express or implied warranty.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ntp-0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NTP-0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NTP No Attribution&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;d8b910065c01333f640d673e8c438b29&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, and distribute this software and\nits documentation for any purpose is hereby granted, provided that\nthe names of M.I.T. and the M.I.T. S.I.P.B. not be used in\nadvertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission.  M.I.T. and the\nM.I.T. S.I.P.B. make no representations about the suitability of\nthis software for any purpose.  It is provided \&quot;as is\&quot; without\nexpress or implied warranty.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;,
+        &quot;_key&quot;: &quot;ntp-0&quot;,
+        &quot;_name&quot;: &quot;NTP No Attribution&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;MIT&quot;,
+        &quot;_shortName&quot;: &quot;NTP-0&quot;,
+        &quot;_spdxId&quot;: &quot;NTP-0&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, and distribute this software and\nits documentation for any purpose is hereby granted, provided that\nthe names of M.I.T. and the M.I.T. S.I.P.B. not be used in\nadvertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission.  M.I.T. and the\nM.I.T. S.I.P.B. make no representations about the suitability of\nthis software for any purpose.  It is provided \&quot;as is\&quot; without\nexpress or implied warranty.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/6a6a4afc4fc8e7033de3418d5e5d9021">Fossology:6a6a4afc4fc8e7033de3418d5e5d9021</a> for <a href="/?license=fossology:NTP-0"><span class="licensename"><span class="namespace">fossology:</span>NTP-0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>NTP-0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NTP No Attribution</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase &quot;with or without fee&quot;.<span class="provided-by">(provided by: <span title="Fossology:6a6a4afc4fc8e7033de3418d5e5d9021">[<a href="/fact/Fossology/6a6a4afc4fc8e7033de3418d5e5d9021">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c" target="_blank">https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NTP No Attribution (NTP-0) Copyright (4-digit-year) by (CopyrightHoldersName)
+
+Permission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the namesof (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) makesno representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:NTP-0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NTP No Attribution&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;6a6a4afc4fc8e7033de3418d5e5d9021&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase \&quot;with or without fee\&quot;.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;NTP No Attribution (NTP-0) Copyright (4-digit-year) by (CopyrightHoldersName)\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the namesof (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) makesno representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;NTP No Attribution&quot;,
+        &quot;_rf_notes&quot;: &quot;This license is similar to NTP, but it omits the language regarding reproduction of copyright and permission notices. It also omits the phrase \&quot;with or without fee\&quot;.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:NTP-0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;NTP No Attribution (NTP-0) Copyright (4-digit-year) by (CopyrightHoldersName)\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted, provided that the namesof (TrademarkedName) not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. (TrademarkedName) makesno representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/328da6fe1f65d9df5303119831ffd0b1">OrtLicenseCategorization:328da6fe1f65d9df5303119831ffd0b1</a> for <a href="/?license=SPDX:NTP-0"><span class="licensename"><span class="namespace">SPDX:</span>NTP-0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NTP-0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:328da6fe1f65d9df5303119831ffd0b1">[<a href="/fact/OrtLicenseCategorization/328da6fe1f65d9df5303119831ffd0b1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:328da6fe1f65d9df5303119831ffd0b1">[<a href="/fact/OrtLicenseCategorization/328da6fe1f65d9df5303119831ffd0b1">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NTP-0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;328da6fe1f65d9df5303119831ffd0b1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NTP-0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/7364e286a4fdfd450b78d88fe9466f38">OrtLicenseCategorization:7364e286a4fdfd450b78d88fe9466f38</a> for <a href="/?license=SPDX:NTP-0"><span class="licensename"><span class="namespace">SPDX:</span>NTP-0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NTP-0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7364e286a4fdfd450b78d88fe9466f38">[<a href="/fact/OrtLicenseCategorization/7364e286a4fdfd450b78d88fe9466f38">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NTP-0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;7364e286a4fdfd450b78d88fe9466f38&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NTP-0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/f9d4be3ba10cc5eabf861f1227d7e1a7">CavilLicenseChange:f9d4be3ba10cc5eabf861f1227d7e1a7</a> for <a href="/?license=cavil:NTP-0"><span class="licensename"><span class="namespace">cavil:</span>NTP-0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>NTP-0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NTP-0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:NTP-0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NTP-0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;f9d4be3ba10cc5eabf861f1227d7e1a7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;NTP-0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:NTP-0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li></ul></body></html>

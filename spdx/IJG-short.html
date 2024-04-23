@@ -1,0 +1,730 @@
+<html><head><title>ldbcollector: spdx:IJG-short</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:IJG-short</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>IJG-short</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">IJG License (short)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>IJG License (short)</span></li><li><span class="licensename">IJG-short</span></li><li><span class="licensename"><span class="namespace">cavil:</span>IJG-short</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>IJG-short</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ijg-short</span></li><li><span class="licensename"><span class="namespace">spdx:</span>IJG-short</span></li><li><span class="licensename">Independent JPEG Group License - short</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">IJG</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:8809ced46ee1abbc900d59bf5bfb746f">[<a href="/fact/ScancodeData/8809ced46ee1abbc900d59bf5bfb746f">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:75520b3300b581be103dff9855135d85">[<a href="/fact/SPDXLicense/75520b3300b581be103dff9855135d85">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:13cc923a979d686920317626e0c7e941">[<a href="/fact/FedoraEntry/13cc923a979d686920317626e0c7e941">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:7c65feda5a412fceec5332804132190f">[<a href="/fact/MetaeffektLicense/7c65feda5a412fceec5332804132190f">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd8da8214fde29323e23e8789d1610fd">[<a href="/fact/OrtLicenseCategorization/cd8da8214fde29323e23e8789d1610fd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd8da8214fde29323e23e8789d1610fd">[<a href="/fact/OrtLicenseCategorization/cd8da8214fde29323e23e8789d1610fd">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a shorter, presumably earlier version of IJG<span class="provided-by">(provided by: <span title="SPDXLicense:75520b3300b581be103dff9855135d85">[<a href="/fact/SPDXLicense/75520b3300b581be103dff9855135d85">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/" target="_blank">https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The authors make NO WARRANTY or representation, either express or
+implied, with respect to this software, its quality, accuracy,
+merchantability, or fitness for a particular purpose.  This software is
+provided &quot;AS IS&quot;, and you, its user, assume the entire risk as to its
+quality and accuracy.
+
+This software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights
+Reserved except as specified below.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+software (or portions thereof) for any purpose, without fee, subject to
+these conditions:  
+
+(1) If any part of the source code for this software
+is distributed, then this README file must be included, with this
+copyright and no-warranty notice unaltered; and any additions,
+deletions, or changes to the original files must be clearly indicated
+in accompanying documentation.  
+
+(2) If only executable code is
+distributed, then the accompanying documentation must state that &quot;this
+software is based in part on the work of the Independent JPEG Group&quot;.
+
+(3) Permission for use of this software is granted only if the user
+accepts full responsibility for any undesirable consequences; the
+authors accept NO LIABILITY for damages of any kind.
+
+Permission is NOT granted for the use of any IJG author&#39;s name or
+company name in advertising or publicity relating to this software or
+products derived from it.  This software may be referred to only as
+&quot;the Independent JPEG Group&#39;s software&quot;.
+
+We specifically permit and encourage the use of this software as the
+basis of commercial products, provided that all warranty or liability
+claims are assumed by the product vendor.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;The authors make NO WARRANTY or representation, either express or implied, with respect to this software,
+         its quality, accuracy, merchantability, or fitness for a particular purpose. This software is provided
+         &amp;quot;AS IS&amp;quot;, and you, its user, assume the entire risk as to its quality and accuracy.&lt;/p&gt;
+
+      &lt;p&gt;This software is copyright (C) 1991, 1992, Thomas G. Lane. All Rights Reserved except as specified below.&lt;/p&gt;
+
+      &lt;p&gt;Permission is hereby granted to use, copy, modify, and distribute this software (or portions thereof) for
+         any purpose, without fee, subject to these conditions:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;
+          If any part of the source code for this software is distributed, then this README file must
+             be included, with this copyright and no-warranty notice unaltered; and any additions,
+             deletions, or changes to the original files must be clearly indicated in accompanying
+             documentation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;
+          If only executable code is distributed, then the accompanying documentation must state that
+             &amp;quot;this software is based in part on the work of the Independent JPEG Group&amp;quot;.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;
+          Permission for use of this software is granted only if the user accepts full responsibility
+             for any undesirable consequences; the authors accept NO LIABILITY for damages of any
+             kind.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Permission is NOT granted for the use of any IJG author&amp;apos;s name or company name in advertising or
+         publicity relating to this software or products derived from it. This software may be referred to only
+         as &amp;quot;the Independent JPEG Group&amp;apos;s software&amp;quot;.&lt;/p&gt;
+
+      &lt;p&gt;We specifically permit and encourage the use of this software as the basis of commercial products,
+         provided that all warranty or liability claims are assumed by the product vendor.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>The authors make NO WARRANTY or representation, either express or
+implied, with respect to this software, its quality, accuracy,
+merchantability, or fitness for a particular purpose.  This software is
+provided &quot;AS IS&quot;, and you, its user, assume the entire risk as to its
+quality and accuracy.
+
+This software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights
+Reserved except as specified below.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+software (or portions thereof) for any purpose, without fee, subject to
+these conditions:  
+
+(1) If any part of the source code for this software
+is distributed, then this README file must be included, with this
+copyright and no-warranty notice unaltered; and any additions,
+deletions, or changes to the original files must be clearly indicated
+in accompanying documentation.
+
+(2) If only executable code is
+distributed, then the accompanying documentation must state that &quot;this
+software is based in part on the work of the Independent JPEG Group&quot;.
+
+(3) Permission for use of this software is granted only if the user
+accepts full responsibility for any undesirable consequences; the
+authors accept NO LIABILITY for damages of any kind.
+
+Permission is NOT granted for the use of any IJG author&#39;s name or
+company name in advertising or publicity relating to this software or
+products derived from it.  This software may be referred to only as
+&quot;the Independent JPEG Group&#39;s software&quot;.
+
+We specifically permit and encourage the use of this software as the
+basis of commercial products, provided that all warranty or liability
+claims are assumed by the product vendor.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/75520b3300b581be103dff9855135d85">SPDXLicense:75520b3300b581be103dff9855135d85</a> for <a href="/?license=spdx:IJG-short"><span class="licensename"><span class="namespace">spdx:</span>IJG-short</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>IJG-short</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Independent JPEG Group License - short</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:75520b3300b581be103dff9855135d85">[<a href="/fact/SPDXLicense/75520b3300b581be103dff9855135d85">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a shorter, presumably earlier version of IJG<span class="provided-by">(provided by: <span title="SPDXLicense:75520b3300b581be103dff9855135d85">[<a href="/fact/SPDXLicense/75520b3300b581be103dff9855135d85">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/" target="_blank">https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The authors make NO WARRANTY or representation, either express or
+implied, with respect to this software, its quality, accuracy,
+merchantability, or fitness for a particular purpose.  This software is
+provided &quot;AS IS&quot;, and you, its user, assume the entire risk as to its
+quality and accuracy.
+
+This software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights
+Reserved except as specified below.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+software (or portions thereof) for any purpose, without fee, subject to
+these conditions:  
+
+(1) If any part of the source code for this software
+is distributed, then this README file must be included, with this
+copyright and no-warranty notice unaltered; and any additions,
+deletions, or changes to the original files must be clearly indicated
+in accompanying documentation.  
+
+(2) If only executable code is
+distributed, then the accompanying documentation must state that &quot;this
+software is based in part on the work of the Independent JPEG Group&quot;.
+
+(3) Permission for use of this software is granted only if the user
+accepts full responsibility for any undesirable consequences; the
+authors accept NO LIABILITY for damages of any kind.
+
+Permission is NOT granted for the use of any IJG author&#39;s name or
+company name in advertising or publicity relating to this software or
+products derived from it.  This software may be referred to only as
+&quot;the Independent JPEG Group&#39;s software&quot;.
+
+We specifically permit and encourage the use of this software as the
+basis of commercial products, provided that all warranty or liability
+claims are assumed by the product vendor.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;The authors make NO WARRANTY or representation, either express or implied, with respect to this software,
+         its quality, accuracy, merchantability, or fitness for a particular purpose. This software is provided
+         &amp;quot;AS IS&amp;quot;, and you, its user, assume the entire risk as to its quality and accuracy.&lt;/p&gt;
+
+      &lt;p&gt;This software is copyright (C) 1991, 1992, Thomas G. Lane. All Rights Reserved except as specified below.&lt;/p&gt;
+
+      &lt;p&gt;Permission is hereby granted to use, copy, modify, and distribute this software (or portions thereof) for
+         any purpose, without fee, subject to these conditions:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;
+          If any part of the source code for this software is distributed, then this README file must
+             be included, with this copyright and no-warranty notice unaltered; and any additions,
+             deletions, or changes to the original files must be clearly indicated in accompanying
+             documentation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;
+          If only executable code is distributed, then the accompanying documentation must state that
+             &amp;quot;this software is based in part on the work of the Independent JPEG Group&amp;quot;.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (3)&lt;/var&gt;
+          Permission for use of this software is granted only if the user accepts full responsibility
+             for any undesirable consequences; the authors accept NO LIABILITY for damages of any
+             kind.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Permission is NOT granted for the use of any IJG author&amp;apos;s name or company name in advertising or
+         publicity relating to this software or products derived from it. This software may be referred to only
+         as &amp;quot;the Independent JPEG Group&amp;apos;s software&amp;quot;.&lt;/p&gt;
+
+      &lt;p&gt;We specifically permit and encourage the use of this software as the basis of commercial products,
+         provided that all warranty or liability claims are assumed by the product vendor.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:IJG-short&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Independent JPEG Group License - short&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;75520b3300b581be103dff9855135d85&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is a shorter, presumably earlier version of IJG&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The authors make NO WARRANTY or representation, either express or\nimplied, with respect to this software, its quality, accuracy,\nmerchantability, or fitness for a particular purpose.  This software is\nprovided \&quot;AS IS\&quot;, and you, its user, assume the entire risk as to its\nquality and accuracy.\n\nThis software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights\nReserved except as specified below.\n\nPermission is hereby granted to use, copy, modify, and distribute this\nsoftware (or portions thereof) for any purpose, without fee, subject to\nthese conditions:  \n\n(1) If any part of the source code for this software\nis distributed, then this README file must be included, with this\ncopyright and no-warranty notice unaltered; and any additions,\ndeletions, or changes to the original files must be clearly indicated\nin accompanying documentation.  \n\n(2) If only executable code is\ndistributed, then the accompanying documentation must state that \&quot;this\nsoftware is based in part on the work of the Independent JPEG Group\&quot;.\n\n(3) Permission for use of this software is granted only if the user\naccepts full responsibility for any undesirable consequences; the\nauthors accept NO LIABILITY for damages of any kind.\n\nPermission is NOT granted for the use of any IJG author&#39;s name or\ncompany name in advertising or publicity relating to this software or\nproducts derived from it.  This software may be referred to only as\n\&quot;the Independent JPEG Group&#39;s software\&quot;.\n\nWe specifically permit and encourage the use of this software as the\nbasis of commercial products, provided that all warranty or liability\nclaims are assumed by the product vendor.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;The authors make NO WARRANTY or representation, either express or implied, with respect to this software,\n         its quality, accuracy, merchantability, or fitness for a particular purpose. This software is provided\n         &amp;quot;AS IS&amp;quot;, and you, its user, assume the entire risk as to its quality and accuracy.&lt;/p&gt;\n\n      &lt;p&gt;This software is copyright (C) 1991, 1992, Thomas G. Lane. All Rights Reserved except as specified below.&lt;/p&gt;\n\n      &lt;p&gt;Permission is hereby granted to use, copy, modify, and distribute this software (or portions thereof) for\n         any purpose, without fee, subject to these conditions:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;\n          If any part of the source code for this software is distributed, then this README file must\n             be included, with this copyright and no-warranty notice unaltered; and any additions,\n             deletions, or changes to the original files must be clearly indicated in accompanying\n             documentation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;\n          If only executable code is distributed, then the accompanying documentation must state that\n             &amp;quot;this software is based in part on the work of the Independent JPEG Group&amp;quot;.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;\n          Permission for use of this software is granted only if the user accepts full responsibility\n             for any undesirable consequences; the authors accept NO LIABILITY for damages of any\n             kind.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Permission is NOT granted for the use of any IJG author&amp;apos;s name or company name in advertising or\n         publicity relating to this software or products derived from it. This software may be referred to only\n         as &amp;quot;the Independent JPEG Group&amp;apos;s software&amp;quot;.&lt;/p&gt;\n\n      &lt;p&gt;We specifically permit and encourage the use of this software as the basis of commercial products,\n         provided that all warranty or liability claims are assumed by the product vendor.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:06:58Z&quot;,
+                &quot;url&quot;: &quot;https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is a shorter, presumably earlier version of IJG&quot;,
+        &quot;licenseId&quot;: &quot;spdx:IJG-short&quot;,
+        &quot;licenseText&quot;: &quot;The authors make NO WARRANTY or representation, either express or\nimplied, with respect to this software, its quality, accuracy,\nmerchantability, or fitness for a particular purpose.  This software is\nprovided \&quot;AS IS\&quot;, and you, its user, assume the entire risk as to its\nquality and accuracy.\n\nThis software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights\nReserved except as specified below.\n\nPermission is hereby granted to use, copy, modify, and distribute this\nsoftware (or portions thereof) for any purpose, without fee, subject to\nthese conditions:  \n\n(1) If any part of the source code for this software\nis distributed, then this README file must be included, with this\ncopyright and no-warranty notice unaltered; and any additions,\ndeletions, or changes to the original files must be clearly indicated\nin accompanying documentation.  \n\n(2) If only executable code is\ndistributed, then the accompanying documentation must state that \&quot;this\nsoftware is based in part on the work of the Independent JPEG Group\&quot;.\n\n(3) Permission for use of this software is granted only if the user\naccepts full responsibility for any undesirable consequences; the\nauthors accept NO LIABILITY for damages of any kind.\n\nPermission is NOT granted for the use of any IJG author&#39;s name or\ncompany name in advertising or publicity relating to this software or\nproducts derived from it.  This software may be referred to only as\n\&quot;the Independent JPEG Group&#39;s software\&quot;.\n\nWe specifically permit and encourage the use of this software as the\nbasis of commercial products, provided that all warranty or liability\nclaims are assumed by the product vendor.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;The authors make NO WARRANTY or representation, either express or implied, with respect to this software,\n         its quality, accuracy, merchantability, or fitness for a particular purpose. This software is provided\n         &amp;quot;AS IS&amp;quot;, and you, its user, assume the entire risk as to its quality and accuracy.&lt;/p&gt;\n\n      &lt;p&gt;This software is copyright (C) 1991, 1992, Thomas G. Lane. All Rights Reserved except as specified below.&lt;/p&gt;\n\n      &lt;p&gt;Permission is hereby granted to use, copy, modify, and distribute this software (or portions thereof) for\n         any purpose, without fee, subject to these conditions:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;\n          If any part of the source code for this software is distributed, then this README file must\n             be included, with this copyright and no-warranty notice unaltered; and any additions,\n             deletions, or changes to the original files must be clearly indicated in accompanying\n             documentation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;\n          If only executable code is distributed, then the accompanying documentation must state that\n             &amp;quot;this software is based in part on the work of the Independent JPEG Group&amp;quot;.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (3)&lt;/var&gt;\n          Permission for use of this software is granted only if the user accepts full responsibility\n             for any undesirable consequences; the authors accept NO LIABILITY for damages of any\n             kind.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Permission is NOT granted for the use of any IJG author&amp;apos;s name or company name in advertising or\n         publicity relating to this software or products derived from it. This software may be referred to only\n         as &amp;quot;the Independent JPEG Group&amp;apos;s software&amp;quot;.&lt;/p&gt;\n\n      &lt;p&gt;We specifically permit and encourage the use of this software as the basis of commercial products,\n         provided that all warranty or liability claims are assumed by the product vendor.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Independent JPEG Group License - short&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;The authors make NO WARRANTY or representation, either express or implied, with respect to this software, its quality, accuracy, merchantability, or fitness for a particular purpose. This software is provided \&quot;AS IS\&quot;, and you, its user, assume the entire risk as to its quality and accuracy.\n\nThis software is copyright (C) 1991, 1992, Thomas G. Lane. All Rights Reserved except as specified below.\n\nPermission is hereby granted to use, copy, modify, and distribute this software (or portions thereof) for any purpose, without fee, subject to these conditions:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(1)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If any part of the source code for this software is distributed, then this README file must be included, with this copyright and no-warranty notice unaltered; and any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(2)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If only executable code is distributed, then the accompanying documentation must state that \&quot;this software is based in part on the work of the Independent JPEG Group\&quot;.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(3)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Permission for use of this software is granted only if the user accepts full responsibility for any undesirable consequences; the authors accept NO LIABILITY for damages of any kind.\n\nPermission is NOT granted for the use of any IJG author&#39;s name or company name in advertising or publicity relating to this software or products derived from it. This software may be referred to only as \&quot;the Independent JPEG Group&#39;s software\&quot;.\n\nWe specifically permit and encourage the use of this software as the basis of commercial products, provided that all warranty or liability claims are assumed by the product vendor.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/13cc923a979d686920317626e0c7e941">FedoraEntry:13cc923a979d686920317626e0c7e941</a> for <a href="/?license=Fedora:IJG-short"><span class="licensename"><span class="namespace">Fedora:</span>IJG-short</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>IJG-short</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>IJG-short</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:13cc923a979d686920317626e0c7e941">[<a href="/fact/FedoraEntry/13cc923a979d686920317626e0c7e941">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:IJG-short&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:IJG-short&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;13cc923a979d686920317626e0c7e941&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;IJG-short&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:IJG-short&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/8809ced46ee1abbc900d59bf5bfb746f">ScancodeData:8809ced46ee1abbc900d59bf5bfb746f</a> for <a href="/?license=scancode:ijg-short"><span class="licensename"><span class="namespace">scancode:</span>ijg-short</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ijg-short</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Independent JPEG Group License - short</span></li><li><span class="licensename">Independent JPEG Group License - short</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:8809ced46ee1abbc900d59bf5bfb746f">[<a href="/fact/ScancodeData/8809ced46ee1abbc900d59bf5bfb746f">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The authors make NO WARRANTY or representation, either express or
+implied, with respect to this software, its quality, accuracy,
+merchantability, or fitness for a particular purpose.  This software is
+provided &quot;AS IS&quot;, and you, its user, assume the entire risk as to its
+quality and accuracy.
+
+This software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights
+Reserved except as specified below.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+software (or portions thereof) for any purpose, without fee, subject to
+these conditions:  
+
+(1) If any part of the source code for this software
+is distributed, then this README file must be included, with this
+copyright and no-warranty notice unaltered; and any additions,
+deletions, or changes to the original files must be clearly indicated
+in accompanying documentation.
+
+(2) If only executable code is
+distributed, then the accompanying documentation must state that &quot;this
+software is based in part on the work of the Independent JPEG Group&quot;.
+
+(3) Permission for use of this software is granted only if the user
+accepts full responsibility for any undesirable consequences; the
+authors accept NO LIABILITY for damages of any kind.
+
+Permission is NOT granted for the use of any IJG author&#39;s name or
+company name in advertising or publicity relating to this software or
+products derived from it.  This software may be referred to only as
+&quot;the Independent JPEG Group&#39;s software&quot;.
+
+We specifically permit and encourage the use of this software as the
+basis of commercial products, provided that all warranty or liability
+claims are assumed by the product vendor.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ijg-short&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Independent JPEG Group License - short&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Independent JPEG Group License - short&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;8809ced46ee1abbc900d59bf5bfb746f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The authors make NO WARRANTY or representation, either express or\nimplied, with respect to this software, its quality, accuracy,\nmerchantability, or fitness for a particular purpose.  This software is\nprovided \&quot;AS IS\&quot;, and you, its user, assume the entire risk as to its\nquality and accuracy.\n\nThis software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights\nReserved except as specified below.\n\nPermission is hereby granted to use, copy, modify, and distribute this\nsoftware (or portions thereof) for any purpose, without fee, subject to\nthese conditions:  \n\n(1) If any part of the source code for this software\nis distributed, then this README file must be included, with this\ncopyright and no-warranty notice unaltered; and any additions,\ndeletions, or changes to the original files must be clearly indicated\nin accompanying documentation.\n\n(2) If only executable code is\ndistributed, then the accompanying documentation must state that \&quot;this\nsoftware is based in part on the work of the Independent JPEG Group\&quot;.\n\n(3) Permission for use of this software is granted only if the user\naccepts full responsibility for any undesirable consequences; the\nauthors accept NO LIABILITY for damages of any kind.\n\nPermission is NOT granted for the use of any IJG author&#39;s name or\ncompany name in advertising or publicity relating to this software or\nproducts derived from it.  This software may be referred to only as\n\&quot;the Independent JPEG Group&#39;s software\&quot;.\n\nWe specifically permit and encourage the use of this software as the\nbasis of commercial products, provided that all warranty or liability\nclaims are assumed by the product vendor.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://sourceforge.net/p/xmedcon/code/ci/master/tree/libs/ljpg/&quot;,
+        &quot;_key&quot;: &quot;ijg-short&quot;,
+        &quot;_name&quot;: &quot;Independent JPEG Group License - short&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;IJG - Independent JPEG Group&quot;,
+        &quot;_shortName&quot;: &quot;Independent JPEG Group License - short&quot;,
+        &quot;_spdxId&quot;: &quot;IJG-short&quot;,
+        &quot;_text&quot;: &quot;The authors make NO WARRANTY or representation, either express or\nimplied, with respect to this software, its quality, accuracy,\nmerchantability, or fitness for a particular purpose.  This software is\nprovided \&quot;AS IS\&quot;, and you, its user, assume the entire risk as to its\nquality and accuracy.\n\nThis software is copyright (C) 1991, 1992, Thomas G. Lane.  All Rights\nReserved except as specified below.\n\nPermission is hereby granted to use, copy, modify, and distribute this\nsoftware (or portions thereof) for any purpose, without fee, subject to\nthese conditions:  \n\n(1) If any part of the source code for this software\nis distributed, then this README file must be included, with this\ncopyright and no-warranty notice unaltered; and any additions,\ndeletions, or changes to the original files must be clearly indicated\nin accompanying documentation.\n\n(2) If only executable code is\ndistributed, then the accompanying documentation must state that \&quot;this\nsoftware is based in part on the work of the Independent JPEG Group\&quot;.\n\n(3) Permission for use of this software is granted only if the user\naccepts full responsibility for any undesirable consequences; the\nauthors accept NO LIABILITY for damages of any kind.\n\nPermission is NOT granted for the use of any IJG author&#39;s name or\ncompany name in advertising or publicity relating to this software or\nproducts derived from it.  This software may be referred to only as\n\&quot;the Independent JPEG Group&#39;s software\&quot;.\n\nWe specifically permit and encourage the use of this software as the\nbasis of commercial products, provided that all warranty or liability\nclaims are assumed by the product vendor.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/cd8da8214fde29323e23e8789d1610fd">OrtLicenseCategorization:cd8da8214fde29323e23e8789d1610fd</a> for <a href="/?license=SPDX:IJG-short"><span class="licensename"><span class="namespace">SPDX:</span>IJG-short</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>IJG-short</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd8da8214fde29323e23e8789d1610fd">[<a href="/fact/OrtLicenseCategorization/cd8da8214fde29323e23e8789d1610fd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:cd8da8214fde29323e23e8789d1610fd">[<a href="/fact/OrtLicenseCategorization/cd8da8214fde29323e23e8789d1610fd">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:IJG-short&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;cd8da8214fde29323e23e8789d1610fd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:IJG-short&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/6759a96fe329057ebc8770fa3cb6d0d8">CavilLicenseChange:6759a96fe329057ebc8770fa3cb6d0d8</a> for <a href="/?license=cavil:IJG-short"><span class="licensename"><span class="namespace">cavil:</span>IJG-short</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>IJG-short</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">IJG-short</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:IJG-short&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;IJG-short&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;6759a96fe329057ebc8770fa3cb6d0d8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;IJG-short&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:IJG-short&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/7c65feda5a412fceec5332804132190f">MetaeffektLicense:7c65feda5a412fceec5332804132190f</a> for <a href="/?license=metaeffekt:IJG License (short)"><span class="licensename"><span class="namespace">metaeffekt:</span>IJG License (short)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>IJG License (short)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>IJG-short</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">IJG</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ijg-short</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:7c65feda5a412fceec5332804132190f">[<a href="/fact/MetaeffektLicense/7c65feda5a412fceec5332804132190f">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:IJG License (short)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:IJG-short&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;IJG&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ijg-short&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;7c65feda5a412fceec5332804132190f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:IJG License (short)&quot;,
+        &quot;_category&quot;: &quot;IJG&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ijg-short&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:IJG-short&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

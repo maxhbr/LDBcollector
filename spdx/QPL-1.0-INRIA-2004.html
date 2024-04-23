@@ -1,0 +1,1159 @@
+<html><head><title>ldbcollector: spdx:QPL-1.0-INRIA-2004</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:QPL-1.0-INRIA-2004</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>QPL-1.0-INRIA-2004</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Q Public License 1.0 (INRIA 2004)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Q Public License 1.0 (INRIA 2004)</span></li><li><span class="licensename">Q Public License 1.0 - INRIA 2004 variant</span></li><li><span class="licensename">QPL-1.0-INRIA-2004</span></li><li><span class="licensename"><span class="namespace">cavil:</span>QPL-1.0-INRIA-2004</span></li><li><span class="licensename"><span class="namespace">scancode:</span>qpl-1.0-inria-2004</span></li><li><span class="licensename"><span class="namespace">spdx:</span>QPL-1.0-INRIA-2004</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Q Public License 1.0 - INRIA 2004 (variant)</span></li><li><span class="licensename">QPL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:95eb7ffc5cdd59e83475b6d47a6bf38a">[<a href="/fact/ScancodeData/95eb7ffc5cdd59e83475b6d47a6bf38a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d875c728ba4d45aeed9b37ddd9c11df6">[<a href="/fact/SPDXLicense/d875c728ba4d45aeed9b37ddd9c11df6">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7984d26be70d275c59b5f5300d18b72c">[<a href="/fact/OrtLicenseCategorization/7984d26be70d275c59b5f5300d18b72c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7984d26be70d275c59b5f5300d18b72c">[<a href="/fact/OrtLicenseCategorization/7984d26be70d275c59b5f5300d18b72c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7984d26be70d275c59b5f5300d18b72c">[<a href="/fact/OrtLicenseCategorization/7984d26be70d275c59b5f5300d18b72c">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a variant of QPL-1.0 with the choice of law changed to France. This variant appears to be generally used together with QPL-1.0-INRIA-2004-exception.<span class="provided-by">(provided by: <span title="SPDXLicense:d875c728ba4d45aeed9b37ddd9c11df6">[<a href="/fact/SPDXLicense/d875c728ba4d45aeed9b37ddd9c11df6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/maranget/hevea/blob/master/LICENSE" target="_blank">https://github.com/maranget/hevea/blob/master/LICENSE</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/maranget/hevea/blob/master/LICENSE</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>                   THE Q PUBLIC LICENSE version 1.0
+
+              Copyright (C) 1999 Troll Tech AS, Norway.
+                  Everyone is permitted to copy and
+                  distribute this license document.
+
+The intent of this license is to establish freedom to share and change
+the software regulated by this license under the open source model.
+
+This license applies to any software containing a notice placed by the
+copyright holder saying that it may be distributed under the terms of
+the Q Public License version 1.0. Such software is herein referred to
+as the Software. This license covers modification and distribution of
+the Software, use of third-party application programs based on the
+Software, and development of free software which uses the Software.
+
+                            Granted Rights
+
+1. You are granted the non-exclusive rights set forth in this license
+provided you agree to and comply with any and all conditions in this
+license. Whole or partial distribution of the Software, or software
+items that link with the Software, in any form signifies acceptance of
+this license.
+
+2. You may copy and distribute the Software in unmodified form
+provided that the entire package, including - but not restricted to -
+copyright, trademark notices and disclaimers, as released by the
+initial developer of the Software, is distributed.
+
+3. You may make modifications to the Software and distribute your
+modifications, in a form that is separate from the Software, such as
+patches. The following restrictions apply to modifications:
+
+      a. Modifications must not alter or remove any copyright notices
+      in the Software.
+
+      b. When modifications to the Software are released under this
+      license, a non-exclusive royalty-free right is granted to the
+      initial developer of the Software to distribute your
+      modification in future versions of the Software provided such
+      versions remain available under these terms in addition to any
+      other license(s) of the initial developer.
+
+4. You may distribute machine-executable forms of the Software or
+machine-executable forms of modified versions of the Software,
+provided that you meet these restrictions:
+
+      a. You must include this license document in the distribution.
+
+      b. You must ensure that all recipients of the machine-executable
+      forms are also able to receive the complete machine-readable
+      source code to the distributed Software, including all
+      modifications, without any charge beyond the costs of data
+      transfer, and place prominent notices in the distribution
+      explaining this.
+
+      c. You must ensure that all modifications included in the
+      machine-executable forms are available under the terms of this
+      license.
+
+5. You may use the original or modified versions of the Software to
+compile, link and run application programs legally developed by you or
+by others.
+
+6. You may develop application programs, reusable components and other
+software items that link with the original or modified versions of the
+Software. These items, when distributed, are subject to the following
+requirements:
+
+      a. You must ensure that all recipients of machine-executable
+      forms of these items are also able to receive and use the
+      complete machine-readable source code to the items without any
+      charge beyond the costs of data transfer.
+
+      b. You must explicitly license all recipients of your items to
+      use and re-distribute original and modified versions of the
+      items in both machine-executable and source code forms. The
+      recipients must be able to do so without any charges whatsoever,
+      and they must be able to re-distribute to anyone they choose.
+
+      c. If the items are not available to the general public, and the
+      initial developer of the Software requests a copy of the items,
+      then you must supply one.
+
+                       Limitations of Liability
+
+In no event shall the initial developers or copyright holders be
+liable for any damages whatsoever, including - but not restricted to -
+lost revenue or profits or other direct, indirect, special, incidental
+or consequential damages, even if they have been advised of the
+possibility of such damages, except to the extent invariable law, if
+any, provides otherwise.
+
+                             No Warranty
+
+The Software and this license document are provided AS IS with NO
+WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+                            Choice of Law
+
+This license is governed by the Laws of France.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;THE Q PUBLIC LICENSE version 1.0&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (C) 1999 Troll Tech AS, Norway.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Everyone is permitted to copy and distribute this license document.&lt;/p&gt;
+
+      &lt;p&gt;The intent of this license is to establish freedom to share and change the software regulated by this
+         license under the open source model.&lt;/p&gt;
+
+      &lt;p&gt;This license applies to any software containing a notice placed by the copyright holder saying that it
+         may be distributed under the terms of the Q Public License version 1.0. Such software is herein
+         referred to as the Software. This license covers modification and distribution of the Software, use of
+         third-party application programs based on the Software, and development of free software which uses
+         the Software.&lt;/p&gt;
+
+      &lt;p&gt;Granted Rights&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You are granted the non-exclusive rights set forth in this license provided you agree to and
+             comply with any and all conditions in this license. Whole or partial distribution of the
+             Software, or software items that link with the Software, in any form signifies acceptance of
+             this license.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may copy and distribute the Software in unmodified form provided that the entire package,
+             including - but not restricted to - copyright, trademark notices and disclaimers, as released
+             by the initial developer of the Software, is distributed.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may make modifications to the Software and distribute your modifications, in a form that is
+             separate from the Software, such as patches. The following restrictions apply to
+             modifications:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                Modifications must not alter or remove any copyright notices in the Software.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                When modifications to the Software are released under this license, a non-exclusive royalty-free
+                  right is granted to the initial developer of the Software to distribute your modification in
+                  future versions of the Software provided such versions remain available under these terms in
+                  addition to any other license(s) of the initial developer.
+              &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may distribute machine-executable forms of the Software or machine-executable forms of
+             modified versions of the Software, provided that you meet these restrictions:
+           
+&lt;ul style=&quot;list-style:none&quot;&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                You must include this license document in the distribution.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                You must ensure that all recipients of the machine-executable forms are also able to receive the
+                 complete machine-readable source code to the distributed Software, including all
+                 modifications, without any charge beyond the costs of data transfer, and place prominent
+                 notices in the distribution explaining this.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c.&lt;/var&gt;
+                You must ensure that all modifications included in the machine-executable forms are available
+                   under the terms of this license.
+              &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          You may use the original or modified versions of the Software to compile, link and run
+             application programs legally developed by you or by others.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          You may develop application programs, reusable components and other software items that link with
+             the original or modified versions of the Software. These items, when distributed, are subject
+             to the following requirements:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                You must ensure that all recipients of machine-executable forms of these items are also able to
+                   receive and use the complete machine-readable source code to the items without any charge
+                   beyond the costs of data transfer.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                You must explicitly license all recipients of your items to use and re-distribute original and
+                   modified versions of the items in both machine-executable and source code forms. The
+                   recipients must be able to do so without any charges whatsoever, and they must be able to
+                   re-distribute to anyone they choose.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c.&lt;/var&gt;
+                If the items are not available to the general public, and the initial developer of the Software
+                   requests a copy of the items, then you must supply one.
+              &lt;/li&gt;
+            
+&lt;/ul&gt;
+         &lt;/li&gt;
+        
+&lt;/ul&gt;
+      &lt;p&gt;Limitations of Liability&lt;/p&gt;
+
+      &lt;p&gt;In no event shall the initial developers or copyright holders be liable for any damages whatsoever,
+         including - but not restricted to - lost revenue or profits or other direct, indirect, special,
+         incidental or consequential damages, even if they have been advised of the possibility of such
+         damages, except to the extent invariable law, if any, provides otherwise.&lt;/p&gt;
+
+      &lt;p&gt;No Warranty&lt;/p&gt;
+
+      &lt;p&gt;The Software and this license document are provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+         WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+      &lt;p&gt;Choice of Law&lt;/p&gt;
+
+      &lt;p&gt;This license is governed by the Laws of France.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>THE Q PUBLIC LICENSE version 1.0
+
+              Copyright (C) 1999 Troll Tech AS, Norway.
+                  Everyone is permitted to copy and
+                  distribute this license document.
+
+The intent of this license is to establish freedom to share and change
+the software regulated by this license under the open source model.
+
+This license applies to any software containing a notice placed by the
+copyright holder saying that it may be distributed under the terms of
+the Q Public License version 1.0. Such software is herein referred to
+as the Software. This license covers modification and distribution of
+the Software, use of third-party application programs based on the
+Software, and development of free software which uses the Software.
+
+                            Granted Rights
+
+1. You are granted the non-exclusive rights set forth in this license
+provided you agree to and comply with any and all conditions in this
+license. Whole or partial distribution of the Software, or software
+items that link with the Software, in any form signifies acceptance of
+this license.
+
+2. You may copy and distribute the Software in unmodified form
+provided that the entire package, including - but not restricted to -
+copyright, trademark notices and disclaimers, as released by the
+initial developer of the Software, is distributed.
+
+3. You may make modifications to the Software and distribute your
+modifications, in a form that is separate from the Software, such as
+patches. The following restrictions apply to modifications:
+
+      a. Modifications must not alter or remove any copyright notices
+      in the Software.
+
+      b. When modifications to the Software are released under this
+      license, a non-exclusive royalty-free right is granted to the
+      initial developer of the Software to distribute your
+      modification in future versions of the Software provided such
+      versions remain available under these terms in addition to any
+      other license(s) of the initial developer.
+
+4. You may distribute machine-executable forms of the Software or
+machine-executable forms of modified versions of the Software,
+provided that you meet these restrictions:
+
+      a. You must include this license document in the distribution.
+
+      b. You must ensure that all recipients of the machine-executable
+      forms are also able to receive the complete machine-readable
+      source code to the distributed Software, including all
+      modifications, without any charge beyond the costs of data
+      transfer, and place prominent notices in the distribution
+      explaining this.
+
+      c. You must ensure that all modifications included in the
+      machine-executable forms are available under the terms of this
+      license.
+
+5. You may use the original or modified versions of the Software to
+compile, link and run application programs legally developed by you or
+by others.
+
+6. You may develop application programs, reusable components and other
+software items that link with the original or modified versions of the
+Software. These items, when distributed, are subject to the following
+requirements:
+
+      a. You must ensure that all recipients of machine-executable
+      forms of these items are also able to receive and use the
+      complete machine-readable source code to the items without any
+      charge beyond the costs of data transfer.
+
+      b. You must explicitly license all recipients of your items to
+      use and re-distribute original and modified versions of the
+      items in both machine-executable and source code forms. The
+      recipients must be able to do so without any charges whatsoever,
+      and they must be able to re-distribute to anyone they choose.
+
+      c. If the items are not available to the general public, and the
+      initial developer of the Software requests a copy of the items,
+      then you must supply one.
+
+                       Limitations of Liability
+
+In no event shall the initial developers or copyright holders be
+liable for any damages whatsoever, including - but not restricted to -
+lost revenue or profits or other direct, indirect, special, incidental
+or consequential damages, even if they have been advised of the
+possibility of such damages, except to the extent invariable law, if
+any, provides otherwise.
+
+                             No Warranty
+
+The Software and this license document are provided AS IS with NO
+WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+                            Choice of Law
+
+This license is governed by the {{Laws of France}}.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/d875c728ba4d45aeed9b37ddd9c11df6">SPDXLicense:d875c728ba4d45aeed9b37ddd9c11df6</a> for <a href="/?license=spdx:QPL-1.0-INRIA-2004"><span class="licensename"><span class="namespace">spdx:</span>QPL-1.0-INRIA-2004</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>QPL-1.0-INRIA-2004</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Q Public License 1.0 - INRIA 2004 variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:d875c728ba4d45aeed9b37ddd9c11df6">[<a href="/fact/SPDXLicense/d875c728ba4d45aeed9b37ddd9c11df6">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a variant of QPL-1.0 with the choice of law changed to France. This variant appears to be generally used together with QPL-1.0-INRIA-2004-exception.<span class="provided-by">(provided by: <span title="SPDXLicense:d875c728ba4d45aeed9b37ddd9c11df6">[<a href="/fact/SPDXLicense/d875c728ba4d45aeed9b37ddd9c11df6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/maranget/hevea/blob/master/LICENSE" target="_blank">https://github.com/maranget/hevea/blob/master/LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>                   THE Q PUBLIC LICENSE version 1.0
+
+              Copyright (C) 1999 Troll Tech AS, Norway.
+                  Everyone is permitted to copy and
+                  distribute this license document.
+
+The intent of this license is to establish freedom to share and change
+the software regulated by this license under the open source model.
+
+This license applies to any software containing a notice placed by the
+copyright holder saying that it may be distributed under the terms of
+the Q Public License version 1.0. Such software is herein referred to
+as the Software. This license covers modification and distribution of
+the Software, use of third-party application programs based on the
+Software, and development of free software which uses the Software.
+
+                            Granted Rights
+
+1. You are granted the non-exclusive rights set forth in this license
+provided you agree to and comply with any and all conditions in this
+license. Whole or partial distribution of the Software, or software
+items that link with the Software, in any form signifies acceptance of
+this license.
+
+2. You may copy and distribute the Software in unmodified form
+provided that the entire package, including - but not restricted to -
+copyright, trademark notices and disclaimers, as released by the
+initial developer of the Software, is distributed.
+
+3. You may make modifications to the Software and distribute your
+modifications, in a form that is separate from the Software, such as
+patches. The following restrictions apply to modifications:
+
+      a. Modifications must not alter or remove any copyright notices
+      in the Software.
+
+      b. When modifications to the Software are released under this
+      license, a non-exclusive royalty-free right is granted to the
+      initial developer of the Software to distribute your
+      modification in future versions of the Software provided such
+      versions remain available under these terms in addition to any
+      other license(s) of the initial developer.
+
+4. You may distribute machine-executable forms of the Software or
+machine-executable forms of modified versions of the Software,
+provided that you meet these restrictions:
+
+      a. You must include this license document in the distribution.
+
+      b. You must ensure that all recipients of the machine-executable
+      forms are also able to receive the complete machine-readable
+      source code to the distributed Software, including all
+      modifications, without any charge beyond the costs of data
+      transfer, and place prominent notices in the distribution
+      explaining this.
+
+      c. You must ensure that all modifications included in the
+      machine-executable forms are available under the terms of this
+      license.
+
+5. You may use the original or modified versions of the Software to
+compile, link and run application programs legally developed by you or
+by others.
+
+6. You may develop application programs, reusable components and other
+software items that link with the original or modified versions of the
+Software. These items, when distributed, are subject to the following
+requirements:
+
+      a. You must ensure that all recipients of machine-executable
+      forms of these items are also able to receive and use the
+      complete machine-readable source code to the items without any
+      charge beyond the costs of data transfer.
+
+      b. You must explicitly license all recipients of your items to
+      use and re-distribute original and modified versions of the
+      items in both machine-executable and source code forms. The
+      recipients must be able to do so without any charges whatsoever,
+      and they must be able to re-distribute to anyone they choose.
+
+      c. If the items are not available to the general public, and the
+      initial developer of the Software requests a copy of the items,
+      then you must supply one.
+
+                       Limitations of Liability
+
+In no event shall the initial developers or copyright holders be
+liable for any damages whatsoever, including - but not restricted to -
+lost revenue or profits or other direct, indirect, special, incidental
+or consequential damages, even if they have been advised of the
+possibility of such damages, except to the extent invariable law, if
+any, provides otherwise.
+
+                             No Warranty
+
+The Software and this license document are provided AS IS with NO
+WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+                            Choice of Law
+
+This license is governed by the Laws of France.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;THE Q PUBLIC LICENSE version 1.0&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (C) 1999 Troll Tech AS, Norway.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Everyone is permitted to copy and distribute this license document.&lt;/p&gt;
+
+      &lt;p&gt;The intent of this license is to establish freedom to share and change the software regulated by this
+         license under the open source model.&lt;/p&gt;
+
+      &lt;p&gt;This license applies to any software containing a notice placed by the copyright holder saying that it
+         may be distributed under the terms of the Q Public License version 1.0. Such software is herein
+         referred to as the Software. This license covers modification and distribution of the Software, use of
+         third-party application programs based on the Software, and development of free software which uses
+         the Software.&lt;/p&gt;
+
+      &lt;p&gt;Granted Rights&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You are granted the non-exclusive rights set forth in this license provided you agree to and
+             comply with any and all conditions in this license. Whole or partial distribution of the
+             Software, or software items that link with the Software, in any form signifies acceptance of
+             this license.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may copy and distribute the Software in unmodified form provided that the entire package,
+             including - but not restricted to - copyright, trademark notices and disclaimers, as released
+             by the initial developer of the Software, is distributed.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may make modifications to the Software and distribute your modifications, in a form that is
+             separate from the Software, such as patches. The following restrictions apply to
+             modifications:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                Modifications must not alter or remove any copyright notices in the Software.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                When modifications to the Software are released under this license, a non-exclusive royalty-free
+                  right is granted to the initial developer of the Software to distribute your modification in
+                  future versions of the Software provided such versions remain available under these terms in
+                  addition to any other license(s) of the initial developer.
+              &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may distribute machine-executable forms of the Software or machine-executable forms of
+             modified versions of the Software, provided that you meet these restrictions:
+           
+&lt;ul style=&quot;list-style:none&quot;&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                You must include this license document in the distribution.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                You must ensure that all recipients of the machine-executable forms are also able to receive the
+                 complete machine-readable source code to the distributed Software, including all
+                 modifications, without any charge beyond the costs of data transfer, and place prominent
+                 notices in the distribution explaining this.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c.&lt;/var&gt;
+                You must ensure that all modifications included in the machine-executable forms are available
+                   under the terms of this license.
+              &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          You may use the original or modified versions of the Software to compile, link and run
+             application programs legally developed by you or by others.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          You may develop application programs, reusable components and other software items that link with
+             the original or modified versions of the Software. These items, when distributed, are subject
+             to the following requirements:
+            
+&lt;ul style=&quot;list-style:none&quot;&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a.&lt;/var&gt;
+                You must ensure that all recipients of machine-executable forms of these items are also able to
+                   receive and use the complete machine-readable source code to the items without any charge
+                   beyond the costs of data transfer.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b.&lt;/var&gt;
+                You must explicitly license all recipients of your items to use and re-distribute original and
+                   modified versions of the items in both machine-executable and source code forms. The
+                   recipients must be able to do so without any charges whatsoever, and they must be able to
+                   re-distribute to anyone they choose.
+              &lt;/li&gt;
+              
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c.&lt;/var&gt;
+                If the items are not available to the general public, and the initial developer of the Software
+                   requests a copy of the items, then you must supply one.
+              &lt;/li&gt;
+            
+&lt;/ul&gt;
+         &lt;/li&gt;
+        
+&lt;/ul&gt;
+      &lt;p&gt;Limitations of Liability&lt;/p&gt;
+
+      &lt;p&gt;In no event shall the initial developers or copyright holders be liable for any damages whatsoever,
+         including - but not restricted to - lost revenue or profits or other direct, indirect, special,
+         incidental or consequential damages, even if they have been advised of the possibility of such
+         damages, except to the extent invariable law, if any, provides otherwise.&lt;/p&gt;
+
+      &lt;p&gt;No Warranty&lt;/p&gt;
+
+      &lt;p&gt;The Software and this license document are provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+         WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+      &lt;p&gt;Choice of Law&lt;/p&gt;
+
+      &lt;p&gt;This license is governed by the Laws of France.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:QPL-1.0-INRIA-2004&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;d875c728ba4d45aeed9b37ddd9c11df6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is a variant of QPL-1.0 with the choice of law changed to France. This variant appears to be generally used together with QPL-1.0-INRIA-2004-exception.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;                   THE Q PUBLIC LICENSE version 1.0\n\n              Copyright (C) 1999 Troll Tech AS, Norway.\n                  Everyone is permitted to copy and\n                  distribute this license document.\n\nThe intent of this license is to establish freedom to share and change\nthe software regulated by this license under the open source model.\n\nThis license applies to any software containing a notice placed by the\ncopyright holder saying that it may be distributed under the terms of\nthe Q Public License version 1.0. Such software is herein referred to\nas the Software. This license covers modification and distribution of\nthe Software, use of third-party application programs based on the\nSoftware, and development of free software which uses the Software.\n\n                            Granted Rights\n\n1. You are granted the non-exclusive rights set forth in this license\nprovided you agree to and comply with any and all conditions in this\nlicense. Whole or partial distribution of the Software, or software\nitems that link with the Software, in any form signifies acceptance of\nthis license.\n\n2. You may copy and distribute the Software in unmodified form\nprovided that the entire package, including - but not restricted to -\ncopyright, trademark notices and disclaimers, as released by the\ninitial developer of the Software, is distributed.\n\n3. You may make modifications to the Software and distribute your\nmodifications, in a form that is separate from the Software, such as\npatches. The following restrictions apply to modifications:\n\n      a. Modifications must not alter or remove any copyright notices\n      in the Software.\n\n      b. When modifications to the Software are released under this\n      license, a non-exclusive royalty-free right is granted to the\n      initial developer of the Software to distribute your\n      modification in future versions of the Software provided such\n      versions remain available under these terms in addition to any\n      other license(s) of the initial developer.\n\n4. You may distribute machine-executable forms of the Software or\nmachine-executable forms of modified versions of the Software,\nprovided that you meet these restrictions:\n\n      a. You must include this license document in the distribution.\n\n      b. You must ensure that all recipients of the machine-executable\n      forms are also able to receive the complete machine-readable\n      source code to the distributed Software, including all\n      modifications, without any charge beyond the costs of data\n      transfer, and place prominent notices in the distribution\n      explaining this.\n\n      c. You must ensure that all modifications included in the\n      machine-executable forms are available under the terms of this\n      license.\n\n5. You may use the original or modified versions of the Software to\ncompile, link and run application programs legally developed by you or\nby others.\n\n6. You may develop application programs, reusable components and other\nsoftware items that link with the original or modified versions of the\nSoftware. These items, when distributed, are subject to the following\nrequirements:\n\n      a. You must ensure that all recipients of machine-executable\n      forms of these items are also able to receive and use the\n      complete machine-readable source code to the items without any\n      charge beyond the costs of data transfer.\n\n      b. You must explicitly license all recipients of your items to\n      use and re-distribute original and modified versions of the\n      items in both machine-executable and source code forms. The\n      recipients must be able to do so without any charges whatsoever,\n      and they must be able to re-distribute to anyone they choose.\n\n      c. If the items are not available to the general public, and the\n      initial developer of the Software requests a copy of the items,\n      then you must supply one.\n\n                       Limitations of Liability\n\nIn no event shall the initial developers or copyright holders be\nliable for any damages whatsoever, including - but not restricted to -\nlost revenue or profits or other direct, indirect, special, incidental\nor consequential damages, even if they have been advised of the\npossibility of such damages, except to the extent invariable law, if\nany, provides otherwise.\n\n                             No Warranty\n\nThe Software and this license document are provided AS IS with NO\nWARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\n                            Choice of Law\n\nThis license is governed by the Laws of France.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;THE Q PUBLIC LICENSE version 1.0&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (C) 1999 Troll Tech AS, Norway.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Everyone is permitted to copy and distribute this license document.&lt;/p&gt;\n\n      &lt;p&gt;The intent of this license is to establish freedom to share and change the software regulated by this\n         license under the open source model.&lt;/p&gt;\n\n      &lt;p&gt;This license applies to any software containing a notice placed by the copyright holder saying that it\n         may be distributed under the terms of the Q Public License version 1.0. Such software is herein\n         referred to as the Software. This license covers modification and distribution of the Software, use of\n         third-party application programs based on the Software, and development of free software which uses\n         the Software.&lt;/p&gt;\n\n      &lt;p&gt;Granted Rights&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You are granted the non-exclusive rights set forth in this license provided you agree to and\n             comply with any and all conditions in this license. Whole or partial distribution of the\n             Software, or software items that link with the Software, in any form signifies acceptance of\n             this license.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may copy and distribute the Software in unmodified form provided that the entire package,\n             including - but not restricted to - copyright, trademark notices and disclaimers, as released\n             by the initial developer of the Software, is distributed.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may make modifications to the Software and distribute your modifications, in a form that is\n             separate from the Software, such as patches. The following restrictions apply to\n             modifications:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                Modifications must not alter or remove any copyright notices in the Software.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                When modifications to the Software are released under this license, a non-exclusive royalty-free\n                  right is granted to the initial developer of the Software to distribute your modification in\n                  future versions of the Software provided such versions remain available under these terms in\n                  addition to any other license(s) of the initial developer.\n              &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may distribute machine-executable forms of the Software or machine-executable forms of\n             modified versions of the Software, provided that you meet these restrictions:\n           \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                You must include this license document in the distribution.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                You must ensure that all recipients of the machine-executable forms are also able to receive the\n                 complete machine-readable source code to the distributed Software, including all\n                 modifications, without any charge beyond the costs of data transfer, and place prominent\n                 notices in the distribution explaining this.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c.&lt;/var&gt;\n                You must ensure that all modifications included in the machine-executable forms are available\n                   under the terms of this license.\n              &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          You may use the original or modified versions of the Software to compile, link and run\n             application programs legally developed by you or by others.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          You may develop application programs, reusable components and other software items that link with\n             the original or modified versions of the Software. These items, when distributed, are subject\n             to the following requirements:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                You must ensure that all recipients of machine-executable forms of these items are also able to\n                   receive and use the complete machine-readable source code to the items without any charge\n                   beyond the costs of data transfer.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                You must explicitly license all recipients of your items to use and re-distribute original and\n                   modified versions of the items in both machine-executable and source code forms. The\n                   recipients must be able to do so without any charges whatsoever, and they must be able to\n                   re-distribute to anyone they choose.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c.&lt;/var&gt;\n                If the items are not available to the general public, and the initial developer of the Software\n                   requests a copy of the items, then you must supply one.\n              &lt;/li&gt;\n            \n&lt;/ul&gt;\n         &lt;/li&gt;\n        \n&lt;/ul&gt;\n      &lt;p&gt;Limitations of Liability&lt;/p&gt;\n\n      &lt;p&gt;In no event shall the initial developers or copyright holders be liable for any damages whatsoever,\n         including - but not restricted to - lost revenue or profits or other direct, indirect, special,\n         incidental or consequential damages, even if they have been advised of the possibility of such\n         damages, except to the extent invariable law, if any, provides otherwise.&lt;/p&gt;\n\n      &lt;p&gt;No Warranty&lt;/p&gt;\n\n      &lt;p&gt;The Software and this license document are provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE\n         WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n      &lt;p&gt;Choice of Law&lt;/p&gt;\n\n      &lt;p&gt;This license is governed by the Laws of France.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/maranget/hevea/blob/master/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/maranget/hevea/blob/master/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:23Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/maranget/hevea/blob/master/LICENSE&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is a variant of QPL-1.0 with the choice of law changed to France. This variant appears to be generally used together with QPL-1.0-INRIA-2004-exception.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:QPL-1.0-INRIA-2004&quot;,
+        &quot;licenseText&quot;: &quot;                   THE Q PUBLIC LICENSE version 1.0\n\n              Copyright (C) 1999 Troll Tech AS, Norway.\n                  Everyone is permitted to copy and\n                  distribute this license document.\n\nThe intent of this license is to establish freedom to share and change\nthe software regulated by this license under the open source model.\n\nThis license applies to any software containing a notice placed by the\ncopyright holder saying that it may be distributed under the terms of\nthe Q Public License version 1.0. Such software is herein referred to\nas the Software. This license covers modification and distribution of\nthe Software, use of third-party application programs based on the\nSoftware, and development of free software which uses the Software.\n\n                            Granted Rights\n\n1. You are granted the non-exclusive rights set forth in this license\nprovided you agree to and comply with any and all conditions in this\nlicense. Whole or partial distribution of the Software, or software\nitems that link with the Software, in any form signifies acceptance of\nthis license.\n\n2. You may copy and distribute the Software in unmodified form\nprovided that the entire package, including - but not restricted to -\ncopyright, trademark notices and disclaimers, as released by the\ninitial developer of the Software, is distributed.\n\n3. You may make modifications to the Software and distribute your\nmodifications, in a form that is separate from the Software, such as\npatches. The following restrictions apply to modifications:\n\n      a. Modifications must not alter or remove any copyright notices\n      in the Software.\n\n      b. When modifications to the Software are released under this\n      license, a non-exclusive royalty-free right is granted to the\n      initial developer of the Software to distribute your\n      modification in future versions of the Software provided such\n      versions remain available under these terms in addition to any\n      other license(s) of the initial developer.\n\n4. You may distribute machine-executable forms of the Software or\nmachine-executable forms of modified versions of the Software,\nprovided that you meet these restrictions:\n\n      a. You must include this license document in the distribution.\n\n      b. You must ensure that all recipients of the machine-executable\n      forms are also able to receive the complete machine-readable\n      source code to the distributed Software, including all\n      modifications, without any charge beyond the costs of data\n      transfer, and place prominent notices in the distribution\n      explaining this.\n\n      c. You must ensure that all modifications included in the\n      machine-executable forms are available under the terms of this\n      license.\n\n5. You may use the original or modified versions of the Software to\ncompile, link and run application programs legally developed by you or\nby others.\n\n6. You may develop application programs, reusable components and other\nsoftware items that link with the original or modified versions of the\nSoftware. These items, when distributed, are subject to the following\nrequirements:\n\n      a. You must ensure that all recipients of machine-executable\n      forms of these items are also able to receive and use the\n      complete machine-readable source code to the items without any\n      charge beyond the costs of data transfer.\n\n      b. You must explicitly license all recipients of your items to\n      use and re-distribute original and modified versions of the\n      items in both machine-executable and source code forms. The\n      recipients must be able to do so without any charges whatsoever,\n      and they must be able to re-distribute to anyone they choose.\n\n      c. If the items are not available to the general public, and the\n      initial developer of the Software requests a copy of the items,\n      then you must supply one.\n\n                       Limitations of Liability\n\nIn no event shall the initial developers or copyright holders be\nliable for any damages whatsoever, including - but not restricted to -\nlost revenue or profits or other direct, indirect, special, incidental\nor consequential damages, even if they have been advised of the\npossibility of such damages, except to the extent invariable law, if\nany, provides otherwise.\n\n                             No Warranty\n\nThe Software and this license document are provided AS IS with NO\nWARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\n                            Choice of Law\n\nThis license is governed by the Laws of France.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;THE Q PUBLIC LICENSE version 1.0&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (C) 1999 Troll Tech AS, Norway.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Everyone is permitted to copy and distribute this license document.&lt;/p&gt;\n\n      &lt;p&gt;The intent of this license is to establish freedom to share and change the software regulated by this\n         license under the open source model.&lt;/p&gt;\n\n      &lt;p&gt;This license applies to any software containing a notice placed by the copyright holder saying that it\n         may be distributed under the terms of the Q Public License version 1.0. Such software is herein\n         referred to as the Software. This license covers modification and distribution of the Software, use of\n         third-party application programs based on the Software, and development of free software which uses\n         the Software.&lt;/p&gt;\n\n      &lt;p&gt;Granted Rights&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You are granted the non-exclusive rights set forth in this license provided you agree to and\n             comply with any and all conditions in this license. Whole or partial distribution of the\n             Software, or software items that link with the Software, in any form signifies acceptance of\n             this license.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may copy and distribute the Software in unmodified form provided that the entire package,\n             including - but not restricted to - copyright, trademark notices and disclaimers, as released\n             by the initial developer of the Software, is distributed.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may make modifications to the Software and distribute your modifications, in a form that is\n             separate from the Software, such as patches. The following restrictions apply to\n             modifications:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                Modifications must not alter or remove any copyright notices in the Software.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                When modifications to the Software are released under this license, a non-exclusive royalty-free\n                  right is granted to the initial developer of the Software to distribute your modification in\n                  future versions of the Software provided such versions remain available under these terms in\n                  addition to any other license(s) of the initial developer.\n              &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may distribute machine-executable forms of the Software or machine-executable forms of\n             modified versions of the Software, provided that you meet these restrictions:\n           \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                You must include this license document in the distribution.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                You must ensure that all recipients of the machine-executable forms are also able to receive the\n                 complete machine-readable source code to the distributed Software, including all\n                 modifications, without any charge beyond the costs of data transfer, and place prominent\n                 notices in the distribution explaining this.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c.&lt;/var&gt;\n                You must ensure that all modifications included in the machine-executable forms are available\n                   under the terms of this license.\n              &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          You may use the original or modified versions of the Software to compile, link and run\n             application programs legally developed by you or by others.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          You may develop application programs, reusable components and other software items that link with\n             the original or modified versions of the Software. These items, when distributed, are subject\n             to the following requirements:\n            \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a.&lt;/var&gt;\n                You must ensure that all recipients of machine-executable forms of these items are also able to\n                   receive and use the complete machine-readable source code to the items without any charge\n                   beyond the costs of data transfer.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b.&lt;/var&gt;\n                You must explicitly license all recipients of your items to use and re-distribute original and\n                   modified versions of the items in both machine-executable and source code forms. The\n                   recipients must be able to do so without any charges whatsoever, and they must be able to\n                   re-distribute to anyone they choose.\n              &lt;/li&gt;\n              \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c.&lt;/var&gt;\n                If the items are not available to the general public, and the initial developer of the Software\n                   requests a copy of the items, then you must supply one.\n              &lt;/li&gt;\n            \n&lt;/ul&gt;\n         &lt;/li&gt;\n        \n&lt;/ul&gt;\n      &lt;p&gt;Limitations of Liability&lt;/p&gt;\n\n      &lt;p&gt;In no event shall the initial developers or copyright holders be liable for any damages whatsoever,\n         including - but not restricted to - lost revenue or profits or other direct, indirect, special,\n         incidental or consequential damages, even if they have been advised of the possibility of such\n         damages, except to the extent invariable law, if any, provides otherwise.&lt;/p&gt;\n\n      &lt;p&gt;No Warranty&lt;/p&gt;\n\n      &lt;p&gt;The Software and this license document are provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE\n         WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n      &lt;p&gt;Choice of Law&lt;/p&gt;\n\n      &lt;p&gt;This license is governed by the Laws of France.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/maranget/hevea/blob/master/LICENSE&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;THE Q PUBLIC LICENSE version 1.0\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1999 Troll Tech AS, Norway.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nEveryone is permitted to copy and distribute this license document.\n\nThe intent of this license is to establish freedom to share and change the software regulated by this license under the open source model.\n\nThis license applies to any software containing a notice placed by the copyright holder saying that it may be distributed under the terms of the Q Public License version 1.0. Such software is herein referred to as the Software. This license covers modification and distribution of the Software, use of third-party application programs based on the Software, and development of free software which uses the Software.\n\nGranted Rights\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You are granted the non-exclusive rights set forth in this license provided you agree to and comply with any and all conditions in this license. Whole or partial distribution of the Software, or software items that link with the Software, in any form signifies acceptance of this license.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may copy and distribute the Software in unmodified form provided that the entire package, including - but not restricted to - copyright, trademark notices and disclaimers, as released by the initial developer of the Software, is distributed.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may make modifications to the Software and distribute your modifications, in a form that is separate from the Software, such as patches. The following restrictions apply to modifications:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Modifications must not alter or remove any copyright notices in the Software.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; When modifications to the Software are released under this license, a non-exclusive royalty-free right is granted to the initial developer of the Software to distribute your modification in future versions of the Software provided such versions remain available under these terms in addition to any other license(s) of the initial developer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may distribute machine-executable forms of the Software or machine-executable forms of modified versions of the Software, provided that you meet these restrictions:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You must include this license document in the distribution.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You must ensure that all recipients of the machine-executable forms are also able to receive the complete machine-readable source code to the distributed Software, including all modifications, without any charge beyond the costs of data transfer, and place prominent notices in the distribution explaining this.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You must ensure that all modifications included in the machine-executable forms are available under the terms of this license.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may use the original or modified versions of the Software to compile, link and run application programs legally developed by you or by others.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may develop application programs, reusable components and other software items that link with the original or modified versions of the Software. These items, when distributed, are subject to the following requirements:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You must ensure that all recipients of machine-executable forms of these items are also able to receive and use the complete machine-readable source code to the items without any charge beyond the costs of data transfer.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You must explicitly license all recipients of your items to use and re-distribute original and modified versions of the items in both machine-executable and source code forms. The recipients must be able to do so without any charges whatsoever, and they must be able to re-distribute to anyone they choose.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If the items are not available to the general public, and the initial developer of the Software requests a copy of the items, then you must supply one.\n\nLimitations of Liability\n\nIn no event shall the initial developers or copyright holders be liable for any damages whatsoever, including - but not restricted to - lost revenue or profits or other direct, indirect, special, incidental or consequential damages, even if they have been advised of the possibility of such damages, except to the extent invariable law, if any, provides otherwise.\n\nNo Warranty\n\nThe Software and this license document are provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nChoice of Law\n\nThis license is governed by the Laws of France.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/95eb7ffc5cdd59e83475b6d47a6bf38a">ScancodeData:95eb7ffc5cdd59e83475b6d47a6bf38a</a> for <a href="/?license=scancode:qpl-1.0-inria-2004"><span class="licensename"><span class="namespace">scancode:</span>qpl-1.0-inria-2004</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>qpl-1.0-inria-2004</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Q Public License 1.0 - INRIA 2004 variant</span></li><li><span class="licensename">Q Public License 1.0 - INRIA 2004 variant</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:95eb7ffc5cdd59e83475b6d47a6bf38a">[<a href="/fact/ScancodeData/95eb7ffc5cdd59e83475b6d47a6bf38a">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://github.com/maranget/hevea/blob/master/LICENSE</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>THE Q PUBLIC LICENSE version 1.0
+
+              Copyright (C) 1999 Troll Tech AS, Norway.
+                  Everyone is permitted to copy and
+                  distribute this license document.
+
+The intent of this license is to establish freedom to share and change
+the software regulated by this license under the open source model.
+
+This license applies to any software containing a notice placed by the
+copyright holder saying that it may be distributed under the terms of
+the Q Public License version 1.0. Such software is herein referred to
+as the Software. This license covers modification and distribution of
+the Software, use of third-party application programs based on the
+Software, and development of free software which uses the Software.
+
+                            Granted Rights
+
+1. You are granted the non-exclusive rights set forth in this license
+provided you agree to and comply with any and all conditions in this
+license. Whole or partial distribution of the Software, or software
+items that link with the Software, in any form signifies acceptance of
+this license.
+
+2. You may copy and distribute the Software in unmodified form
+provided that the entire package, including - but not restricted to -
+copyright, trademark notices and disclaimers, as released by the
+initial developer of the Software, is distributed.
+
+3. You may make modifications to the Software and distribute your
+modifications, in a form that is separate from the Software, such as
+patches. The following restrictions apply to modifications:
+
+      a. Modifications must not alter or remove any copyright notices
+      in the Software.
+
+      b. When modifications to the Software are released under this
+      license, a non-exclusive royalty-free right is granted to the
+      initial developer of the Software to distribute your
+      modification in future versions of the Software provided such
+      versions remain available under these terms in addition to any
+      other license(s) of the initial developer.
+
+4. You may distribute machine-executable forms of the Software or
+machine-executable forms of modified versions of the Software,
+provided that you meet these restrictions:
+
+      a. You must include this license document in the distribution.
+
+      b. You must ensure that all recipients of the machine-executable
+      forms are also able to receive the complete machine-readable
+      source code to the distributed Software, including all
+      modifications, without any charge beyond the costs of data
+      transfer, and place prominent notices in the distribution
+      explaining this.
+
+      c. You must ensure that all modifications included in the
+      machine-executable forms are available under the terms of this
+      license.
+
+5. You may use the original or modified versions of the Software to
+compile, link and run application programs legally developed by you or
+by others.
+
+6. You may develop application programs, reusable components and other
+software items that link with the original or modified versions of the
+Software. These items, when distributed, are subject to the following
+requirements:
+
+      a. You must ensure that all recipients of machine-executable
+      forms of these items are also able to receive and use the
+      complete machine-readable source code to the items without any
+      charge beyond the costs of data transfer.
+
+      b. You must explicitly license all recipients of your items to
+      use and re-distribute original and modified versions of the
+      items in both machine-executable and source code forms. The
+      recipients must be able to do so without any charges whatsoever,
+      and they must be able to re-distribute to anyone they choose.
+
+      c. If the items are not available to the general public, and the
+      initial developer of the Software requests a copy of the items,
+      then you must supply one.
+
+                       Limitations of Liability
+
+In no event shall the initial developers or copyright holders be
+liable for any damages whatsoever, including - but not restricted to -
+lost revenue or profits or other direct, indirect, special, incidental
+or consequential damages, even if they have been advised of the
+possibility of such damages, except to the extent invariable law, if
+any, provides otherwise.
+
+                             No Warranty
+
+The Software and this license document are provided AS IS with NO
+WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+                            Choice of Law
+
+This license is governed by the {{Laws of France}}.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:qpl-1.0-inria-2004&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;95eb7ffc5cdd59e83475b6d47a6bf38a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/maranget/hevea/blob/master/LICENSE&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;THE Q PUBLIC LICENSE version 1.0\n\n              Copyright (C) 1999 Troll Tech AS, Norway.\n                  Everyone is permitted to copy and\n                  distribute this license document.\n\nThe intent of this license is to establish freedom to share and change\nthe software regulated by this license under the open source model.\n\nThis license applies to any software containing a notice placed by the\ncopyright holder saying that it may be distributed under the terms of\nthe Q Public License version 1.0. Such software is herein referred to\nas the Software. This license covers modification and distribution of\nthe Software, use of third-party application programs based on the\nSoftware, and development of free software which uses the Software.\n\n                            Granted Rights\n\n1. You are granted the non-exclusive rights set forth in this license\nprovided you agree to and comply with any and all conditions in this\nlicense. Whole or partial distribution of the Software, or software\nitems that link with the Software, in any form signifies acceptance of\nthis license.\n\n2. You may copy and distribute the Software in unmodified form\nprovided that the entire package, including - but not restricted to -\ncopyright, trademark notices and disclaimers, as released by the\ninitial developer of the Software, is distributed.\n\n3. You may make modifications to the Software and distribute your\nmodifications, in a form that is separate from the Software, such as\npatches. The following restrictions apply to modifications:\n\n      a. Modifications must not alter or remove any copyright notices\n      in the Software.\n\n      b. When modifications to the Software are released under this\n      license, a non-exclusive royalty-free right is granted to the\n      initial developer of the Software to distribute your\n      modification in future versions of the Software provided such\n      versions remain available under these terms in addition to any\n      other license(s) of the initial developer.\n\n4. You may distribute machine-executable forms of the Software or\nmachine-executable forms of modified versions of the Software,\nprovided that you meet these restrictions:\n\n      a. You must include this license document in the distribution.\n\n      b. You must ensure that all recipients of the machine-executable\n      forms are also able to receive the complete machine-readable\n      source code to the distributed Software, including all\n      modifications, without any charge beyond the costs of data\n      transfer, and place prominent notices in the distribution\n      explaining this.\n\n      c. You must ensure that all modifications included in the\n      machine-executable forms are available under the terms of this\n      license.\n\n5. You may use the original or modified versions of the Software to\ncompile, link and run application programs legally developed by you or\nby others.\n\n6. You may develop application programs, reusable components and other\nsoftware items that link with the original or modified versions of the\nSoftware. These items, when distributed, are subject to the following\nrequirements:\n\n      a. You must ensure that all recipients of machine-executable\n      forms of these items are also able to receive and use the\n      complete machine-readable source code to the items without any\n      charge beyond the costs of data transfer.\n\n      b. You must explicitly license all recipients of your items to\n      use and re-distribute original and modified versions of the\n      items in both machine-executable and source code forms. The\n      recipients must be able to do so without any charges whatsoever,\n      and they must be able to re-distribute to anyone they choose.\n\n      c. If the items are not available to the general public, and the\n      initial developer of the Software requests a copy of the items,\n      then you must supply one.\n\n                       Limitations of Liability\n\nIn no event shall the initial developers or copyright holders be\nliable for any damages whatsoever, including - but not restricted to -\nlost revenue or profits or other direct, indirect, special, incidental\nor consequential damages, even if they have been advised of the\npossibility of such damages, except to the extent invariable law, if\nany, provides otherwise.\n\n                             No Warranty\n\nThe Software and this license document are provided AS IS with NO\nWARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\n                            Choice of Law\n\nThis license is governed by the {{Laws of France}}.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/maranget/hevea/blob/master/LICENSE&quot;,
+        &quot;_key&quot;: &quot;qpl-1.0-inria-2004&quot;,
+        &quot;_name&quot;: &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Trolltech&quot;,
+        &quot;_shortName&quot;: &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+        &quot;_spdxId&quot;: &quot;QPL-1.0-INRIA-2004&quot;,
+        &quot;_text&quot;: &quot;THE Q PUBLIC LICENSE version 1.0\n\n              Copyright (C) 1999 Troll Tech AS, Norway.\n                  Everyone is permitted to copy and\n                  distribute this license document.\n\nThe intent of this license is to establish freedom to share and change\nthe software regulated by this license under the open source model.\n\nThis license applies to any software containing a notice placed by the\ncopyright holder saying that it may be distributed under the terms of\nthe Q Public License version 1.0. Such software is herein referred to\nas the Software. This license covers modification and distribution of\nthe Software, use of third-party application programs based on the\nSoftware, and development of free software which uses the Software.\n\n                            Granted Rights\n\n1. You are granted the non-exclusive rights set forth in this license\nprovided you agree to and comply with any and all conditions in this\nlicense. Whole or partial distribution of the Software, or software\nitems that link with the Software, in any form signifies acceptance of\nthis license.\n\n2. You may copy and distribute the Software in unmodified form\nprovided that the entire package, including - but not restricted to -\ncopyright, trademark notices and disclaimers, as released by the\ninitial developer of the Software, is distributed.\n\n3. You may make modifications to the Software and distribute your\nmodifications, in a form that is separate from the Software, such as\npatches. The following restrictions apply to modifications:\n\n      a. Modifications must not alter or remove any copyright notices\n      in the Software.\n\n      b. When modifications to the Software are released under this\n      license, a non-exclusive royalty-free right is granted to the\n      initial developer of the Software to distribute your\n      modification in future versions of the Software provided such\n      versions remain available under these terms in addition to any\n      other license(s) of the initial developer.\n\n4. You may distribute machine-executable forms of the Software or\nmachine-executable forms of modified versions of the Software,\nprovided that you meet these restrictions:\n\n      a. You must include this license document in the distribution.\n\n      b. You must ensure that all recipients of the machine-executable\n      forms are also able to receive the complete machine-readable\n      source code to the distributed Software, including all\n      modifications, without any charge beyond the costs of data\n      transfer, and place prominent notices in the distribution\n      explaining this.\n\n      c. You must ensure that all modifications included in the\n      machine-executable forms are available under the terms of this\n      license.\n\n5. You may use the original or modified versions of the Software to\ncompile, link and run application programs legally developed by you or\nby others.\n\n6. You may develop application programs, reusable components and other\nsoftware items that link with the original or modified versions of the\nSoftware. These items, when distributed, are subject to the following\nrequirements:\n\n      a. You must ensure that all recipients of machine-executable\n      forms of these items are also able to receive and use the\n      complete machine-readable source code to the items without any\n      charge beyond the costs of data transfer.\n\n      b. You must explicitly license all recipients of your items to\n      use and re-distribute original and modified versions of the\n      items in both machine-executable and source code forms. The\n      recipients must be able to do so without any charges whatsoever,\n      and they must be able to re-distribute to anyone they choose.\n\n      c. If the items are not available to the general public, and the\n      initial developer of the Software requests a copy of the items,\n      then you must supply one.\n\n                       Limitations of Liability\n\nIn no event shall the initial developers or copyright holders be\nliable for any damages whatsoever, including - but not restricted to -\nlost revenue or profits or other direct, indirect, special, incidental\nor consequential damages, even if they have been advised of the\npossibility of such damages, except to the extent invariable law, if\nany, provides otherwise.\n\n                             No Warranty\n\nThe Software and this license document are provided AS IS with NO\nWARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN,\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\n                            Choice of Law\n\nThis license is governed by the {{Laws of France}}.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/7984d26be70d275c59b5f5300d18b72c">OrtLicenseCategorization:7984d26be70d275c59b5f5300d18b72c</a> for <a href="/?license=SPDX:QPL-1.0-INRIA-2004"><span class="licensename"><span class="namespace">SPDX:</span>QPL-1.0-INRIA-2004</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>QPL-1.0-INRIA-2004</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7984d26be70d275c59b5f5300d18b72c">[<a href="/fact/OrtLicenseCategorization/7984d26be70d275c59b5f5300d18b72c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7984d26be70d275c59b5f5300d18b72c">[<a href="/fact/OrtLicenseCategorization/7984d26be70d275c59b5f5300d18b72c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7984d26be70d275c59b5f5300d18b72c">[<a href="/fact/OrtLicenseCategorization/7984d26be70d275c59b5f5300d18b72c">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:QPL-1.0-INRIA-2004&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;7984d26be70d275c59b5f5300d18b72c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:QPL-1.0-INRIA-2004&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/bd39b9924789016c031f71a242f7b060">CavilLicenseChange:bd39b9924789016c031f71a242f7b060</a> for <a href="/?license=cavil:QPL-1.0-INRIA-2004"><span class="licensename"><span class="namespace">cavil:</span>QPL-1.0-INRIA-2004</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>QPL-1.0-INRIA-2004</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">QPL-1.0-INRIA-2004</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:QPL-1.0-INRIA-2004&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;QPL-1.0-INRIA-2004&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;bd39b9924789016c031f71a242f7b060&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;QPL-1.0-INRIA-2004&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:QPL-1.0-INRIA-2004&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/b3b3ccc8aa4030712f5643499850ec23">MetaeffektLicense:b3b3ccc8aa4030712f5643499850ec23</a> for <a href="/?license=metaeffekt:Q Public License 1.0 (INRIA 2004)"><span class="licensename"><span class="namespace">metaeffekt:</span>Q Public License 1.0 (INRIA 2004)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Q Public License 1.0 (INRIA 2004)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>QPL-1.0-INRIA-2004</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">Q Public License 1.0 (INRIA 2004)</span></li><li><span class="licensename">Q Public License 1.0 - INRIA 2004 (variant)</span></li><li><span class="licensename">Q Public License 1.0 - INRIA 2004 variant</span></li><li><span class="licensename">QPL</span></li><li><span class="licensename">QPL-1.0-INRIA-2004</span></li><li><span class="licensename"><span class="namespace">scancode:</span>qpl-1.0-inria-2004</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Q Public License 1.0 (INRIA 2004)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:QPL-1.0-INRIA-2004&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;QPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;QPL-1.0-INRIA-2004&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Q Public License 1.0 (INRIA 2004)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Q Public License 1.0 - INRIA 2004 (variant)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:qpl-1.0-inria-2004&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;b3b3ccc8aa4030712f5643499850ec23&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;QPL-1.0-INRIA-2004&quot;,
+            &quot;Q Public License 1.0 - INRIA 2004 variant&quot;,
+            &quot;Q Public License 1.0 (INRIA 2004)&quot;,
+            &quot;Q Public License 1.0 - INRIA 2004 (variant)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Q Public License 1.0 (INRIA 2004)&quot;,
+        &quot;_category&quot;: &quot;QPL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:qpl-1.0-inria-2004&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:QPL-1.0-INRIA-2004&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

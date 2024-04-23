@@ -1,0 +1,1159 @@
+<html><head><title>ldbcollector: spdx:Zend-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Zend-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseNames (13):</b><ul class="capsulUl clearfix"><li><span class="licensename">Zend Engine License 2.0</span></li><li><span class="licensename">Zend License 2.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Zend License 2.0</span></li><li><span class="licensename">Zend License v2.0</span></li><li><span class="licensename">Zend-2.0</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Zend-2.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Zend-2.0</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Zend-2.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Zend-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>zend-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Zend-2.0</span></li><li><span class="licensename">Zend20</span></li><li><span class="licensename"><span class="namespace">google:</span>Zend20</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Zend Engine License, version 2.00</span></li><li><span class="licensename">Zend</span></li><li><span class="licensename"><span class="namespace">fsf:</span>Zend</span></li><li><span class="licensename">Zend 2.0</span></li><li><span class="licensename">Zend License, Version 2.0</span></li><li><span class="licensename">Zend, Version 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:cf23e0da125f1cadd0cfeeaa70e86292">[<a href="/fact/BlueOakCouncil/cf23e0da125f1cadd0cfeeaa70e86292">BlueOakCouncil</a>]</span><span title="ScancodeData:e7dff884ce85ca493b5b363ca8f67d73">[<a href="/fact/ScancodeData/e7dff884ce85ca493b5b363ca8f67d73">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:71f56c676a4342160fef6302f7bacbc6">[<a href="/fact/SPDXLicense/71f56c676a4342160fef6302f7bacbc6">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:71f56c676a4342160fef6302f7bacbc6">[<a href="/fact/SPDXLicense/71f56c676a4342160fef6302f7bacbc6">SPDXLicense</a>]</span>)</span></li><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:ba92f2dd41567ce1923cc6be321e3740">[<a href="/fact/GoogleLicense/ba92f2dd41567ce1923cc6be321e3740">GoogleLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:e0988860467854f976977b2f130a8dc4">[<a href="/fact/FedoraEntry/e0988860467854f976977b2f130a8dc4">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:cf23e0da125f1cadd0cfeeaa70e86292">[<a href="/fact/BlueOakCouncil/cf23e0da125f1cadd0cfeeaa70e86292">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:d41769842b7eda7a15ee5b0bff6996af">[<a href="/fact/MetaeffektLicense/d41769842b7eda7a15ee5b0bff6996af">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c8562e8371f847ebbb22efde5d1c198">[<a href="/fact/OrtLicenseCategorization/0c8562e8371f847ebbb22efde5d1c198">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c8562e8371f847ebbb22efde5d1c198">[<a href="/fact/OrtLicenseCategorization/0c8562e8371f847ebbb22efde5d1c198">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This license requires a notice in certain advertisements for the product (typically those mentioning features of the licensed software) that the licensed software is being used.">OrtLicenseCategorization: <b>property:advertising-clause</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt" target="_blank">https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt</a></li><li><a href="https://spdx.org/licenses/Zend-2.0.html" target="_blank">https://spdx.org/licenses/Zend-2.0.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Zend Engine License, version 2.00
+Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:
+
+     1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+     2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+     3. The names &quot;Zend&quot; and &quot;Zend Engine&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.
+
+     4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.
+
+     5. Redistributions of any form whatsoever must retain the following acknowledgment: &quot;This product includes the Zend Engine, freely available at http://www.zend.com&quot;
+
+     6. All advertising materials mentioning features or use of this software must display the following acknowledgment: &quot;The Zend Engine is freely available at http://www.zend.com&quot;
+
+THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The Zend Engine License, version 2.00&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+      Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.&lt;br /&gt;
+
+      &lt;/var&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, is permitted provided that
+       the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+        Redistributions of source code must retain the above copyright notice, this list of conditions and
+           the following disclaimer.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+        Redistributions in binary form must reproduce the above copyright notice, this list of conditions and
+           the following disclaimer in the documentation and/or other materials provided with the
+           distribution.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+        The names &amp;quot;Zend&amp;quot; and &amp;quot;Zend Engine&amp;quot; must not be used to endorse or promote products derived from this
+           software without prior permission from Zend Technologies Ltd. For written permission, please
+           contact license@zend.com.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+        Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each
+           version will be given a distinguishing version number. Once covered code has been published under
+           a particular version of the license, you may always continue to use it under the terms of that
+           version. You may also choose to use such covered code under the terms of any subsequent version of
+           the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the
+           right to modify the terms applicable to covered code created under this License.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+        Redistributions of any form whatsoever must retain the following acknowledgment: &amp;quot;This product
+           includes the Zend Engine, freely available at http://www.zend.com&amp;quot;
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+        All advertising materials mentioning features or use of this software must display the following
+           acknowledgment: &amp;quot;The Zend Engine is freely available at http://www.zend.com&amp;quot;
+      &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED WARRANTIES,
+       INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+       PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT,
+       INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+       SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+       ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+       OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+       DAMAGE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>-------------------------------------------------------------------- 
+                The Zend Engine License, version 2.00
+Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.
+-------------------------------------------------------------------- 
+
+Redistribution and use in source and binary forms, with or without
+modification, is permitted provided that the following conditions
+are met:
+
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer. 
+ 
+  2. Redistributions in binary form must reproduce the above 
+     copyright notice, this list of conditions and the following 
+     disclaimer in the documentation and/or other materials provided
+     with the distribution.
+ 
+  3. The names &quot;Zend&quot; and &quot;Zend Engine&quot; must not be used to endorse
+     or promote products derived from this software without prior
+     permission from Zend Technologies Ltd. For written permission,
+     please contact license@zend.com. 
+ 
+  4. Zend Technologies Ltd. may publish revised and/or new versions
+     of the license from time to time. Each version will be given a
+     distinguishing version number.
+     Once covered code has been published under a particular version
+     of the license, you may always continue to use it under the
+     terms of that version. You may also choose to use such covered
+     code under the terms of any subsequent version of the license
+     published by Zend Technologies Ltd. No one other than Zend
+     Technologies Ltd. has the right to modify the terms applicable
+     to covered code created under this License.
+
+  5. Redistributions of any form whatsoever must retain the following
+     acknowledgment:
+     &quot;This product includes the Zend Engine, freely available at
+     http://www.zend.com&quot;
+
+  6. All advertising materials mentioning features or use of this
+     software must display the following acknowledgment:
+     &quot;The Zend Engine is freely available at http://www.zend.com&quot;
+
+THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND 
+ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ZEND
+TECHNOLOGIES LTD.  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+--------------------------------------------------------------------</pre></details></li><li><details><summary>Text:</summary><pre>The Zend Engine License, version 2.00 Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.
+
+
+
+Redistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   3. The names &quot;Zend&quot; and &quot;Zend Engine&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.
+
+   4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.
+
+   5. Redistributions of any form whatsoever must retain the following acknowledgment: &quot;This product includes the Zend Engine, freely available at http://www.zend.com&quot;
+
+   6. All advertising materials mentioning features or use of this software must display the following acknowledgment: &quot;The Zend Engine is freely available at http://www.zend.com&quot;
+
+THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/71f56c676a4342160fef6302f7bacbc6">SPDXLicense:71f56c676a4342160fef6302f7bacbc6</a> for <a href="/?license=spdx:Zend-2.0"><span class="licensename"><span class="namespace">spdx:</span>Zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Zend License v2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:71f56c676a4342160fef6302f7bacbc6">[<a href="/fact/SPDXLicense/71f56c676a4342160fef6302f7bacbc6">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:71f56c676a4342160fef6302f7bacbc6">[<a href="/fact/SPDXLicense/71f56c676a4342160fef6302f7bacbc6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt" target="_blank">https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Zend Engine License, version 2.00
+Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:
+
+     1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+     2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+     3. The names &quot;Zend&quot; and &quot;Zend Engine&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.
+
+     4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.
+
+     5. Redistributions of any form whatsoever must retain the following acknowledgment: &quot;This product includes the Zend Engine, freely available at http://www.zend.com&quot;
+
+     6. All advertising materials mentioning features or use of this software must display the following acknowledgment: &quot;The Zend Engine is freely available at http://www.zend.com&quot;
+
+THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The Zend Engine License, version 2.00&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+      Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.&lt;br /&gt;
+
+      &lt;/var&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, is permitted provided that
+       the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+        Redistributions of source code must retain the above copyright notice, this list of conditions and
+           the following disclaimer.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+        Redistributions in binary form must reproduce the above copyright notice, this list of conditions and
+           the following disclaimer in the documentation and/or other materials provided with the
+           distribution.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+        The names &amp;quot;Zend&amp;quot; and &amp;quot;Zend Engine&amp;quot; must not be used to endorse or promote products derived from this
+           software without prior permission from Zend Technologies Ltd. For written permission, please
+           contact license@zend.com.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+        Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each
+           version will be given a distinguishing version number. Once covered code has been published under
+           a particular version of the license, you may always continue to use it under the terms of that
+           version. You may also choose to use such covered code under the terms of any subsequent version of
+           the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the
+           right to modify the terms applicable to covered code created under this License.
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+        Redistributions of any form whatsoever must retain the following acknowledgment: &amp;quot;This product
+           includes the Zend Engine, freely available at http://www.zend.com&amp;quot;
+      &lt;/li&gt;
+         
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+        All advertising materials mentioning features or use of this software must display the following
+           acknowledgment: &amp;quot;The Zend Engine is freely available at http://www.zend.com&amp;quot;
+      &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED WARRANTIES,
+       INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+       PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT,
+       INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+       SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+       ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+       OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+       DAMAGE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Zend-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Zend License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;71f56c676a4342160fef6302f7bacbc6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The Zend Engine License, version 2.00\nCopyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:\n\n     1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n     2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n     3. The names \&quot;Zend\&quot; and \&quot;Zend Engine\&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.\n\n     4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.\n\n     5. Redistributions of any form whatsoever must retain the following acknowledgment: \&quot;This product includes the Zend Engine, freely available at http://www.zend.com\&quot;\n\n     6. All advertising materials mentioning features or use of this software must display the following acknowledgment: \&quot;The Zend Engine is freely available at http://www.zend.com\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The Zend Engine License, version 2.00&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n      Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.&lt;br /&gt;\n\n      &lt;/var&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, is permitted provided that\n       the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n        Redistributions of source code must retain the above copyright notice, this list of conditions and\n           the following disclaimer.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n        Redistributions in binary form must reproduce the above copyright notice, this list of conditions and\n           the following disclaimer in the documentation and/or other materials provided with the\n           distribution.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n        The names &amp;quot;Zend&amp;quot; and &amp;quot;Zend Engine&amp;quot; must not be used to endorse or promote products derived from this\n           software without prior permission from Zend Technologies Ltd. For written permission, please\n           contact license@zend.com.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n        Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each\n           version will be given a distinguishing version number. Once covered code has been published under\n           a particular version of the license, you may always continue to use it under the terms of that\n           version. You may also choose to use such covered code under the terms of any subsequent version of\n           the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the\n           right to modify the terms applicable to covered code created under this License.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n        Redistributions of any form whatsoever must retain the following acknowledgment: &amp;quot;This product\n           includes the Zend Engine, freely available at http://www.zend.com&amp;quot;\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n        All advertising materials mentioning features or use of this software must display the following\n           acknowledgment: &amp;quot;The Zend Engine is freely available at http://www.zend.com&amp;quot;\n      &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED WARRANTIES,\n       INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n       PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT,\n       INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n       SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n       ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR\n       OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n       DAMAGE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: false,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:36Z&quot;,
+                &quot;url&quot;: &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: true,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Zend-2.0&quot;,
+        &quot;licenseText&quot;: &quot;The Zend Engine License, version 2.00\nCopyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:\n\n     1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n     2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n     3. The names \&quot;Zend\&quot; and \&quot;Zend Engine\&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.\n\n     4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.\n\n     5. Redistributions of any form whatsoever must retain the following acknowledgment: \&quot;This product includes the Zend Engine, freely available at http://www.zend.com\&quot;\n\n     6. All advertising materials mentioning features or use of this software must display the following acknowledgment: \&quot;The Zend Engine is freely available at http://www.zend.com\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The Zend Engine License, version 2.00&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n      Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.&lt;br /&gt;\n\n      &lt;/var&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, is permitted provided that\n       the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n        Redistributions of source code must retain the above copyright notice, this list of conditions and\n           the following disclaimer.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n        Redistributions in binary form must reproduce the above copyright notice, this list of conditions and\n           the following disclaimer in the documentation and/or other materials provided with the\n           distribution.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n        The names &amp;quot;Zend&amp;quot; and &amp;quot;Zend Engine&amp;quot; must not be used to endorse or promote products derived from this\n           software without prior permission from Zend Technologies Ltd. For written permission, please\n           contact license@zend.com.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n        Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each\n           version will be given a distinguishing version number. Once covered code has been published under\n           a particular version of the license, you may always continue to use it under the terms of that\n           version. You may also choose to use such covered code under the terms of any subsequent version of\n           the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the\n           right to modify the terms applicable to covered code created under this License.\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n        Redistributions of any form whatsoever must retain the following acknowledgment: &amp;quot;This product\n           includes the Zend Engine, freely available at http://www.zend.com&amp;quot;\n      &lt;/li&gt;\n         \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n        All advertising materials mentioning features or use of this software must display the following\n           acknowledgment: &amp;quot;The Zend Engine is freely available at http://www.zend.com&amp;quot;\n      &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR IMPLIED WARRANTIES,\n       INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n       PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT,\n       INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n       SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n       ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR\n       OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n       DAMAGE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Zend License v2.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The Zend Engine License, version 2.00\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The names \&quot;Zend\&quot; and \&quot;Zend Engine\&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of any form whatsoever must retain the following acknowledgment: \&quot;This product includes the Zend Engine, freely available at http://www.zend.com\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All advertising materials mentioning features or use of this software must display the following acknowledgment: \&quot;The Zend Engine is freely available at http://www.zend.com\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/ba92f2dd41567ce1923cc6be321e3740">GoogleLicense:ba92f2dd41567ce1923cc6be321e3740</a> for <a href="/?license=google:Zend20"><span class="licensename"><span class="namespace">google:</span>Zend20</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>Zend20</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Zend-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:ba92f2dd41567ce1923cc6be321e3740">[<a href="/fact/GoogleLicense/ba92f2dd41567ce1923cc6be321e3740">GoogleLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:Zend20&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:Zend-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;ba92f2dd41567ce1923cc6be321e3740&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Google Policy Classification&quot;,
+                        &quot;notice&quot;,
+                        {
+                            &quot;contents&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:Zend20&quot;,
+        &quot;googleLicenseType&quot;: &quot;notice&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:Zend-2.0&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/e0988860467854f976977b2f130a8dc4">FedoraEntry:e0988860467854f976977b2f130a8dc4</a> for <a href="/?license=Fedora:Zend-2.0"><span class="licensename"><span class="namespace">Fedora:</span>Zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Zend</span></li><li><span class="licensename">Zend License v2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:e0988860467854f976977b2f130a8dc4">[<a href="/fact/FedoraEntry/e0988860467854f976977b2f130a8dc4">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Zend-2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Zend-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Zend License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Zend&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;e0988860467854f976977b2f130a8dc4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Zend&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Zend License v2.0&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Zend-2.0&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Zend-2.0&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/cf23e0da125f1cadd0cfeeaa70e86292">BlueOakCouncil:cf23e0da125f1cadd0cfeeaa70e86292</a> for <a href="/?license=BlueOak:Zend-2.0"><span class="licensename"><span class="namespace">BlueOak:</span>Zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Zend License v2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:cf23e0da125f1cadd0cfeeaa70e86292">[<a href="/fact/BlueOakCouncil/cf23e0da125f1cadd0cfeeaa70e86292">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:cf23e0da125f1cadd0cfeeaa70e86292">[<a href="/fact/BlueOakCouncil/cf23e0da125f1cadd0cfeeaa70e86292">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Zend-2.0.html" target="_blank">https://spdx.org/licenses/Zend-2.0.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:Zend-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Zend License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;cf23e0da125f1cadd0cfeeaa70e86292&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Zend-2.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;Zend-2.0&quot;,
+                &quot;_name&quot;: &quot;Zend License v2.0&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Zend-2.0.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e7dff884ce85ca493b5b363ca8f67d73">ScancodeData:e7dff884ce85ca493b5b363ca8f67d73</a> for <a href="/?license=scancode:zend-2.0"><span class="licensename"><span class="namespace">scancode:</span>zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>zend-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Zend Engine License 2.0</span></li><li><span class="licensename">Zend Engine License 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:e7dff884ce85ca493b5b363ca8f67d73">[<a href="/fact/ScancodeData/e7dff884ce85ca493b5b363ca8f67d73">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt" target="_blank">https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt</a></li></ul><h3>Other Statements</h3><ul><li>https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>-------------------------------------------------------------------- 
+                The Zend Engine License, version 2.00
+Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.
+-------------------------------------------------------------------- 
+
+Redistribution and use in source and binary forms, with or without
+modification, is permitted provided that the following conditions
+are met:
+
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer. 
+ 
+  2. Redistributions in binary form must reproduce the above 
+     copyright notice, this list of conditions and the following 
+     disclaimer in the documentation and/or other materials provided
+     with the distribution.
+ 
+  3. The names &quot;Zend&quot; and &quot;Zend Engine&quot; must not be used to endorse
+     or promote products derived from this software without prior
+     permission from Zend Technologies Ltd. For written permission,
+     please contact license@zend.com. 
+ 
+  4. Zend Technologies Ltd. may publish revised and/or new versions
+     of the license from time to time. Each version will be given a
+     distinguishing version number.
+     Once covered code has been published under a particular version
+     of the license, you may always continue to use it under the
+     terms of that version. You may also choose to use such covered
+     code under the terms of any subsequent version of the license
+     published by Zend Technologies Ltd. No one other than Zend
+     Technologies Ltd. has the right to modify the terms applicable
+     to covered code created under this License.
+
+  5. Redistributions of any form whatsoever must retain the following
+     acknowledgment:
+     &quot;This product includes the Zend Engine, freely available at
+     http://www.zend.com&quot;
+
+  6. All advertising materials mentioning features or use of this
+     software must display the following acknowledgment:
+     &quot;The Zend Engine is freely available at http://www.zend.com&quot;
+
+THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND 
+ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ZEND
+TECHNOLOGIES LTD.  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+--------------------------------------------------------------------</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:zend-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Zend Engine License 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Zend Engine License 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e7dff884ce85ca493b5b363ca8f67d73&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;-------------------------------------------------------------------- \n                The Zend Engine License, version 2.00\nCopyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.\n-------------------------------------------------------------------- \n\nRedistribution and use in source and binary forms, with or without\nmodification, is permitted provided that the following conditions\nare met:\n\n  1. Redistributions of source code must retain the above copyright\n     notice, this list of conditions and the following disclaimer. \n \n  2. Redistributions in binary form must reproduce the above \n     copyright notice, this list of conditions and the following \n     disclaimer in the documentation and/or other materials provided\n     with the distribution.\n \n  3. The names \&quot;Zend\&quot; and \&quot;Zend Engine\&quot; must not be used to endorse\n     or promote products derived from this software without prior\n     permission from Zend Technologies Ltd. For written permission,\n     please contact license@zend.com. \n \n  4. Zend Technologies Ltd. may publish revised and/or new versions\n     of the license from time to time. Each version will be given a\n     distinguishing version number.\n     Once covered code has been published under a particular version\n     of the license, you may always continue to use it under the\n     terms of that version. You may also choose to use such covered\n     code under the terms of any subsequent version of the license\n     published by Zend Technologies Ltd. No one other than Zend\n     Technologies Ltd. has the right to modify the terms applicable\n     to covered code created under this License.\n\n  5. Redistributions of any form whatsoever must retain the following\n     acknowledgment:\n     \&quot;This product includes the Zend Engine, freely available at\n     http://www.zend.com\&quot;\n\n  6. All advertising materials mentioning features or use of this\n     software must display the following acknowledgment:\n     \&quot;The Zend Engine is freely available at http://www.zend.com\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND \nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A \nPARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ZEND\nTECHNOLOGIES LTD.  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\nUSE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n--------------------------------------------------------------------&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;,
+        &quot;_key&quot;: &quot;zend-2.0&quot;,
+        &quot;_name&quot;: &quot;Zend Engine License 2.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Zend Technologies Ltd.&quot;,
+        &quot;_shortName&quot;: &quot;Zend Engine License 2.0&quot;,
+        &quot;_spdxId&quot;: &quot;Zend-2.0&quot;,
+        &quot;_text&quot;: &quot;-------------------------------------------------------------------- \n                The Zend Engine License, version 2.00\nCopyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.\n-------------------------------------------------------------------- \n\nRedistribution and use in source and binary forms, with or without\nmodification, is permitted provided that the following conditions\nare met:\n\n  1. Redistributions of source code must retain the above copyright\n     notice, this list of conditions and the following disclaimer. \n \n  2. Redistributions in binary form must reproduce the above \n     copyright notice, this list of conditions and the following \n     disclaimer in the documentation and/or other materials provided\n     with the distribution.\n \n  3. The names \&quot;Zend\&quot; and \&quot;Zend Engine\&quot; must not be used to endorse\n     or promote products derived from this software without prior\n     permission from Zend Technologies Ltd. For written permission,\n     please contact license@zend.com. \n \n  4. Zend Technologies Ltd. may publish revised and/or new versions\n     of the license from time to time. Each version will be given a\n     distinguishing version number.\n     Once covered code has been published under a particular version\n     of the license, you may always continue to use it under the\n     terms of that version. You may also choose to use such covered\n     code under the terms of any subsequent version of the license\n     published by Zend Technologies Ltd. No one other than Zend\n     Technologies Ltd. has the right to modify the terms applicable\n     to covered code created under this License.\n\n  5. Redistributions of any form whatsoever must retain the following\n     acknowledgment:\n     \&quot;This product includes the Zend Engine, freely available at\n     http://www.zend.com\&quot;\n\n  6. All advertising materials mentioning features or use of this\n     software must display the following acknowledgment:\n     \&quot;The Zend Engine is freely available at http://www.zend.com\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND \nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A \nPARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ZEND\nTECHNOLOGIES LTD.  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\nUSE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n--------------------------------------------------------------------&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/f4699659f62e97c2ed013818a8e59684">Fossology:f4699659f62e97c2ed013818a8e59684</a> for <a href="/?license=fossology:Zend-2.0"><span class="licensename"><span class="namespace">fossology:</span>Zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Zend License v2.0</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt" target="_blank">https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Zend Engine License, version 2.00 Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.
+
+
+
+Redistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   3. The names &quot;Zend&quot; and &quot;Zend Engine&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.
+
+   4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.
+
+   5. Redistributions of any form whatsoever must retain the following acknowledgment: &quot;This product includes the Zend Engine, freely available at http://www.zend.com&quot;
+
+   6. All advertising materials mentioning features or use of this software must display the following acknowledgment: &quot;The Zend Engine is freely available at http://www.zend.com&quot;
+
+THIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Zend-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Zend License v2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;f4699659f62e97c2ed013818a8e59684&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Zend Engine License, version 2.00 Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.\n\n\n\nRedistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   3. The names \&quot;Zend\&quot; and \&quot;Zend Engine\&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.\n\n   4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.\n\n   5. Redistributions of any form whatsoever must retain the following acknowledgment: \&quot;This product includes the Zend Engine, freely available at http://www.zend.com\&quot;\n\n   6. All advertising materials mentioning features or use of this software must display the following acknowledgment: \&quot;The Zend Engine is freely available at http://www.zend.com\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Zend License v2.0&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Zend-2.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The Zend Engine License, version 2.00 Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.\n\n\n\nRedistribution and use in source and binary forms, with or without modification, is permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   3. The names \&quot;Zend\&quot; and \&quot;Zend Engine\&quot; must not be used to endorse or promote products derived from this software without prior permission from Zend Technologies Ltd. For written permission, please contact license@zend.com.\n\n   4. Zend Technologies Ltd. may publish revised and/or new versions of the license from time to time. Each version will be given a distinguishing version number. Once covered code has been published under a particular version of the license, you may always continue to use it under the terms of that version. You may also choose to use such covered code under the terms of any subsequent version of the license published by Zend Technologies Ltd. No one other than Zend Technologies Ltd. has the right to modify the terms applicable to covered code created under this License.\n\n   5. Redistributions of any form whatsoever must retain the following acknowledgment: \&quot;This product includes the Zend Engine, freely available at http://www.zend.com\&quot;\n\n   6. All advertising materials mentioning features or use of this software must display the following acknowledgment: \&quot;The Zend Engine is freely available at http://www.zend.com\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ZEND TECHNOLOGIES LTD. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/0c8562e8371f847ebbb22efde5d1c198">OrtLicenseCategorization:0c8562e8371f847ebbb22efde5d1c198</a> for <a href="/?license=SPDX:Zend-2.0"><span class="licensename"><span class="namespace">SPDX:</span>Zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Zend-2.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c8562e8371f847ebbb22efde5d1c198">[<a href="/fact/OrtLicenseCategorization/0c8562e8371f847ebbb22efde5d1c198">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c8562e8371f847ebbb22efde5d1c198">[<a href="/fact/OrtLicenseCategorization/0c8562e8371f847ebbb22efde5d1c198">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Zend-2.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;0c8562e8371f847ebbb22efde5d1c198&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Zend-2.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b</a> for <a href="/?license=SPDX:Zend-2.0"><span class="licensename"><span class="namespace">SPDX:</span>Zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Zend-2.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This license requires a notice in certain advertisements for the product (typically those mentioning features of the licensed software) that the licensed software is being used.">OrtLicenseCategorization: <b>property:advertising-clause</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9680d444b433c8c24331842a3c2de45b">[<a href="/fact/OrtLicenseCategorization/9680d444b433c8c24331842a3c2de45b">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Zend-2.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9680d444b433c8c24331842a3c2de45b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:advertising-clause&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This license requires a notice in certain advertisements for the product (typically those mentioning features of the licensed software) that the licensed software is being used.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This license requires a notice in certain advertisements for the product (typically those mentioning features of the licensed software) that the licensed software is being used.&quot;,
+                &quot;name&quot;: &quot;property:advertising-clause&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Zend-2.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/19ba77f85f18e33dd126861e806e799b">CavilLicenseChange:19ba77f85f18e33dd126861e806e799b</a> for <a href="/?license=cavil:Zend-2.0"><span class="licensename"><span class="namespace">cavil:</span>Zend-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Zend-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Zend-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Zend-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;19ba77f85f18e33dd126861e806e799b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Zend-2.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Zend-2.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/d41769842b7eda7a15ee5b0bff6996af">MetaeffektLicense:d41769842b7eda7a15ee5b0bff6996af</a> for <a href="/?license=metaeffekt:Zend License 2.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Zend License 2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Zend License 2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Zend-2.0</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">The Zend Engine License, version 2.00</span></li><li><span class="licensename">Zend</span></li><li><span class="licensename">Zend 2.0</span></li><li><span class="licensename">Zend License 2.0</span></li><li><span class="licensename">Zend License, Version 2.0</span></li><li><span class="licensename">Zend, Version 2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>zend-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:d41769842b7eda7a15ee5b0bff6996af">[<a href="/fact/MetaeffektLicense/d41769842b7eda7a15ee5b0bff6996af">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Zend License 2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Zend-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Zend&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Zend, Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Zend 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Zend License, Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Zend License 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The Zend Engine License, version 2.00&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:zend-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;d41769842b7eda7a15ee5b0bff6996af&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Zend, Version 2.0&quot;,
+            &quot;Zend 2.0&quot;,
+            &quot;Zend License, Version 2.0&quot;,
+            &quot;Zend License 2.0&quot;,
+            &quot;The Zend Engine License, version 2.00&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Zend License 2.0&quot;,
+        &quot;_category&quot;: &quot;Zend&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:zend-2.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Zend-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

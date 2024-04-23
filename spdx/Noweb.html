@@ -1,0 +1,847 @@
+<html><head><title>ldbcollector: spdx:Noweb</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Noweb</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Noweb</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Noweb</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Noweb</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Noweb</span></li><li><span class="licensename"><span class="namespace">scancode:</span>noweb</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Noweb</span></li><li><span class="licensename">Noweb License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Noweb License</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb is copyright</span></li><li><span class="licensename">Noweb is protected by copyright</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:3fbeedf0993e4b05e89ad77585532beb">[<a href="/fact/ScancodeData/3fbeedf0993e4b05e89ad77585532beb">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e3fca45c77394be930aadd334d2bf2c9">[<a href="/fact/SPDXLicense/e3fca45c77394be930aadd334d2bf2c9">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b7ca86d068f4845716a650a1fec5a159">[<a href="/fact/FedoraEntry/b7ca86d068f4845716a650a1fec5a159">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:56c9a81fb4d3712615e9be3f86de5d6c">[<a href="/fact/MetaeffektLicense/56c9a81fb4d3712615e9be3f86de5d6c">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:df585c69fc3acf08416c7717f19996db">[<a href="/fact/OrtLicenseCategorization/df585c69fc3acf08416c7717f19996db">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:df585c69fc3acf08416c7717f19996db">[<a href="/fact/OrtLicenseCategorization/df585c69fc3acf08416c7717f19996db">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:df585c69fc3acf08416c7717f19996db">[<a href="/fact/OrtLicenseCategorization/df585c69fc3acf08416c7717f19996db">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that requires you to license modifications made into the same software module with the same license as the original open source software module. This also applies, if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.">OrtLicenseCategorization: <b>copyleft-module-level</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f29f894df46988df2db6f8f0527eca9c">[<a href="/fact/OrtLicenseCategorization/f29f894df46988df2db6f8f0527eca9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f29f894df46988df2db6f8f0527eca9c">[<a href="/fact/OrtLicenseCategorization/f29f894df46988df2db6f8f0527eca9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f29f894df46988df2db6f8f0527eca9c">[<a href="/fact/OrtLicenseCategorization/f29f894df46988df2db6f8f0527eca9c">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Noweb" target="_blank">https://fedoraproject.org/wiki/Licensing/Noweb</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing:Noweb?rd=Licensing/Noweb</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.
+
+Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.
+
+Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.
+
+You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.
+
+You may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected
+         by a ``copyleft&amp;apos;&amp;apos; agreement like the one used by the Free Software Foundation.&lt;/p&gt;
+
+      &lt;p&gt;Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in
+         part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and
+         create derived works, provided you retain this copyright notice, but the result may not be called
+         noweb without my written consent.&lt;/p&gt;
+
+      &lt;p&gt;You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.&lt;/p&gt;
+
+      &lt;p&gt;You may sell a derived work, provided that all source code for your derived work is available, at no
+         additional charge, to anyone who buys your derived work in any form. You must give permisson for said
+         source code to be used and modified under the terms of this license. You must state clearly that your
+         work uses or is based on noweb and that noweb is available free of change. You must also request that
+         bug reports on your work be reported to you.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Noweb is protected by copyright.  It is not public-domain
+software or shareware, and it is not protected by a ``copyleft&#39;&#39;
+agreement like the one used by the Free Software Foundation.
+
+Noweb is available free for any use in any field of endeavor.  You may
+redistribute noweb in whole or in part provided you acknowledge its
+source and include this COPYRIGHT file.  You may modify noweb and
+create derived works, provided you retain this copyright notice, but
+the result may not be called noweb without my written consent.  
+
+You may sell noweb if you wish.  For example, you may sell a CD-ROM
+including noweb.  
+
+You may sell a derived work, provided that all source code for your
+derived work is available, at no additional charge, to anyone who buys
+your derived work in any form.  You must give permisson for said
+source code to be used and modified under the terms of this license.
+You must state clearly that your work uses or is based on noweb and
+that noweb is available free of change.  You must also request that
+bug reports on your work be reported to you.</pre></details></li><li><details><summary>Text:</summary><pre>Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.
+
+Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.
+
+Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.
+
+You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.
+
+You may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e3fca45c77394be930aadd334d2bf2c9">SPDXLicense:e3fca45c77394be930aadd334d2bf2c9</a> for <a href="/?license=spdx:Noweb"><span class="licensename"><span class="namespace">spdx:</span>Noweb</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Noweb</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e3fca45c77394be930aadd334d2bf2c9">[<a href="/fact/SPDXLicense/e3fca45c77394be930aadd334d2bf2c9">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Noweb" target="_blank">https://fedoraproject.org/wiki/Licensing/Noweb</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.
+
+Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.
+
+Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.
+
+You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.
+
+You may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected
+         by a ``copyleft&amp;apos;&amp;apos; agreement like the one used by the Free Software Foundation.&lt;/p&gt;
+
+      &lt;p&gt;Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in
+         part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and
+         create derived works, provided you retain this copyright notice, but the result may not be called
+         noweb without my written consent.&lt;/p&gt;
+
+      &lt;p&gt;You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.&lt;/p&gt;
+
+      &lt;p&gt;You may sell a derived work, provided that all source code for your derived work is available, at no
+         additional charge, to anyone who buys your derived work in any form. You must give permisson for said
+         source code to be used and modified under the terms of this license. You must state clearly that your
+         work uses or is based on noweb and that noweb is available free of change. You must also request that
+         bug reports on your work be reported to you.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Noweb&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Noweb License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e3fca45c77394be930aadd334d2bf2c9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.\n\nNoweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.\n\nNoweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.\n\nYou may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.\n\nYou may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected\n         by a ``copyleft&amp;apos;&amp;apos; agreement like the one used by the Free Software Foundation.&lt;/p&gt;\n\n      &lt;p&gt;Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in\n         part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and\n         create derived works, provided you retain this copyright notice, but the result may not be called\n         noweb without my written consent.&lt;/p&gt;\n\n      &lt;p&gt;You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.&lt;/p&gt;\n\n      &lt;p&gt;You may sell a derived work, provided that all source code for your derived work is available, at no\n         additional charge, to anyone who buys your derived work in any form. You must give permisson for said\n         source code to be used and modified under the terms of this license. You must state clearly that your\n         work uses or is based on noweb and that noweb is available free of change. You must also request that\n         bug reports on your work be reported to you.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:04Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Noweb&quot;,
+        &quot;licenseText&quot;: &quot;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.\n\nNoweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.\n\nNoweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.\n\nYou may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.\n\nYou may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected\n         by a ``copyleft&amp;apos;&amp;apos; agreement like the one used by the Free Software Foundation.&lt;/p&gt;\n\n      &lt;p&gt;Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in\n         part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and\n         create derived works, provided you retain this copyright notice, but the result may not be called\n         noweb without my written consent.&lt;/p&gt;\n\n      &lt;p&gt;You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.&lt;/p&gt;\n\n      &lt;p&gt;You may sell a derived work, provided that all source code for your derived work is available, at no\n         additional charge, to anyone who buys your derived work in any form. You must give permisson for said\n         source code to be used and modified under the terms of this license. You must state clearly that your\n         work uses or is based on noweb and that noweb is available free of change. You must also request that\n         bug reports on your work be reported to you.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Noweb License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nNoweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.\n\nNoweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.\n\nYou may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.\n\nYou may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/b7ca86d068f4845716a650a1fec5a159">FedoraEntry:b7ca86d068f4845716a650a1fec5a159</a> for <a href="/?license=Fedora:Noweb"><span class="licensename"><span class="namespace">Fedora:</span>Noweb</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Noweb</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Noweb</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb</span></li><li><span class="licensename">Noweb License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b7ca86d068f4845716a650a1fec5a159">[<a href="/fact/FedoraEntry/b7ca86d068f4845716a650a1fec5a159">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Noweb" target="_blank">https://fedoraproject.org/wiki/Licensing/Noweb</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Noweb&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Noweb&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Noweb License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Noweb&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;b7ca86d068f4845716a650a1fec5a159&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Noweb&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Noweb License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Noweb&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Noweb&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/3fbeedf0993e4b05e89ad77585532beb">ScancodeData:3fbeedf0993e4b05e89ad77585532beb</a> for <a href="/?license=scancode:noweb"><span class="licensename"><span class="namespace">scancode:</span>noweb</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>noweb</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb License</span></li><li><span class="licensename">Noweb License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:3fbeedf0993e4b05e89ad77585532beb">[<a href="/fact/ScancodeData/3fbeedf0993e4b05e89ad77585532beb">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Noweb" target="_blank">https://fedoraproject.org/wiki/Licensing/Noweb</a></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing:Noweb?rd=Licensing/Noweb</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Noweb is protected by copyright.  It is not public-domain
+software or shareware, and it is not protected by a ``copyleft&#39;&#39;
+agreement like the one used by the Free Software Foundation.
+
+Noweb is available free for any use in any field of endeavor.  You may
+redistribute noweb in whole or in part provided you acknowledge its
+source and include this COPYRIGHT file.  You may modify noweb and
+create derived works, provided you retain this copyright notice, but
+the result may not be called noweb without my written consent.  
+
+You may sell noweb if you wish.  For example, you may sell a CD-ROM
+including noweb.  
+
+You may sell a derived work, provided that all source code for your
+derived work is available, at no additional charge, to anyone who buys
+your derived work in any form.  You must give permisson for said
+source code to be used and modified under the terms of this license.
+You must state clearly that your work uses or is based on noweb and
+that noweb is available free of change.  You must also request that
+bug reports on your work be reported to you.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:noweb&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Noweb License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Noweb License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;3fbeedf0993e4b05e89ad77585532beb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Noweb?rd=Licensing/Noweb&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Noweb is protected by copyright.  It is not public-domain\nsoftware or shareware, and it is not protected by a ``copyleft&#39;&#39;\nagreement like the one used by the Free Software Foundation.\n\nNoweb is available free for any use in any field of endeavor.  You may\nredistribute noweb in whole or in part provided you acknowledge its\nsource and include this COPYRIGHT file.  You may modify noweb and\ncreate derived works, provided you retain this copyright notice, but\nthe result may not be called noweb without my written consent.  \n\nYou may sell noweb if you wish.  For example, you may sell a CD-ROM\nincluding noweb.  \n\nYou may sell a derived work, provided that all source code for your\nderived work is available, at no additional charge, to anyone who buys\nyour derived work in any form.  You must give permisson for said\nsource code to be used and modified under the terms of this license.\nYou must state clearly that your work uses or is based on noweb and\nthat noweb is available free of change.  You must also request that\nbug reports on your work be reported to you.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Noweb?rd=Licensing/Noweb&quot;,
+        &quot;_key&quot;: &quot;noweb&quot;,
+        &quot;_name&quot;: &quot;Noweb License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+        ],
+        &quot;_owner&quot;: &quot;Norman Ramsey&quot;,
+        &quot;_shortName&quot;: &quot;Noweb License&quot;,
+        &quot;_spdxId&quot;: &quot;Noweb&quot;,
+        &quot;_text&quot;: &quot;Noweb is protected by copyright.  It is not public-domain\nsoftware or shareware, and it is not protected by a ``copyleft&#39;&#39;\nagreement like the one used by the Free Software Foundation.\n\nNoweb is available free for any use in any field of endeavor.  You may\nredistribute noweb in whole or in part provided you acknowledge its\nsource and include this COPYRIGHT file.  You may modify noweb and\ncreate derived works, provided you retain this copyright notice, but\nthe result may not be called noweb without my written consent.  \n\nYou may sell noweb if you wish.  For example, you may sell a CD-ROM\nincluding noweb.  \n\nYou may sell a derived work, provided that all source code for your\nderived work is available, at no additional charge, to anyone who buys\nyour derived work in any form.  You must give permisson for said\nsource code to be used and modified under the terms of this license.\nYou must state clearly that your work uses or is based on noweb and\nthat noweb is available free of change.  You must also request that\nbug reports on your work be reported to you.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/a21fcd6d0227c52d6e63dfb78def40b6">Fossology:a21fcd6d0227c52d6e63dfb78def40b6</a> for <a href="/?license=fossology:Noweb"><span class="licensename"><span class="namespace">fossology:</span>Noweb</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Noweb</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Noweb" target="_blank">https://fedoraproject.org/wiki/Licensing/Noweb</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.
+
+Noweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.
+
+Noweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.
+
+You may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.
+
+You may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Noweb&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Noweb License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;a21fcd6d0227c52d6e63dfb78def40b6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.\n\nNoweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.\n\nNoweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.\n\nYou may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.\n\nYou may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Noweb License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Noweb&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Noweb is copyright 1989-2000 by Norman Ramsey. All rights reserved.\n\nNoweb is protected by copyright. It is not public-domain software or shareware, and it is not protected by a ``copyleft&#39;&#39; agreement like the one used by the Free Software Foundation.\n\nNoweb is available free for any use in any field of endeavor. You may redistribute noweb in whole or in part provided you acknowledge its source and include this COPYRIGHT file. You may modify noweb and create derived works, provided you retain this copyright notice, but the result may not be called noweb without my written consent.\n\nYou may sell noweb if you wish. For example, you may sell a CD-ROM including noweb.\n\nYou may sell a derived work, provided that all source code for your derived work is available, at no additional charge, to anyone who buys your derived work in any form. You must give permisson for said source code to be used and modified under the terms of this license. You must state clearly that your work uses or is based on noweb and that noweb is available free of change. You must also request that bug reports on your work be reported to you.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Noweb&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/df585c69fc3acf08416c7717f19996db">OrtLicenseCategorization:df585c69fc3acf08416c7717f19996db</a> for <a href="/?license=SPDX:Noweb"><span class="licensename"><span class="namespace">SPDX:</span>Noweb</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Noweb</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:df585c69fc3acf08416c7717f19996db">[<a href="/fact/OrtLicenseCategorization/df585c69fc3acf08416c7717f19996db">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:df585c69fc3acf08416c7717f19996db">[<a href="/fact/OrtLicenseCategorization/df585c69fc3acf08416c7717f19996db">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:df585c69fc3acf08416c7717f19996db">[<a href="/fact/OrtLicenseCategorization/df585c69fc3acf08416c7717f19996db">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Noweb&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;df585c69fc3acf08416c7717f19996db&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Noweb&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/f29f894df46988df2db6f8f0527eca9c">OrtLicenseCategorization:f29f894df46988df2db6f8f0527eca9c</a> for <a href="/?license=SPDX:Noweb"><span class="licensename"><span class="namespace">SPDX:</span>Noweb</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Noweb</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that requires you to license modifications made into the same software module with the same license as the original open source software module. This also applies, if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.">OrtLicenseCategorization: <b>copyleft-module-level</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f29f894df46988df2db6f8f0527eca9c">[<a href="/fact/OrtLicenseCategorization/f29f894df46988df2db6f8f0527eca9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f29f894df46988df2db6f8f0527eca9c">[<a href="/fact/OrtLicenseCategorization/f29f894df46988df2db6f8f0527eca9c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f29f894df46988df2db6f8f0527eca9c">[<a href="/fact/OrtLicenseCategorization/f29f894df46988df2db6f8f0527eca9c">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Noweb&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f29f894df46988df2db6f8f0527eca9c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-module-level&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that requires you to license modifications made into the same software module with the same license as the original open source software module. This also applies, if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that requires you to license modifications made into the same software module with the same license as the original open source software module. This also applies, if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.&quot;,
+                &quot;name&quot;: &quot;copyleft-module-level&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Noweb&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/86df796021ccfbebca8d2e4748f23c4d">CavilLicenseChange:86df796021ccfbebca8d2e4748f23c4d</a> for <a href="/?license=cavil:Noweb"><span class="licensename"><span class="namespace">cavil:</span>Noweb</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Noweb</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Noweb&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Noweb&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;86df796021ccfbebca8d2e4748f23c4d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Noweb&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Noweb&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/56c9a81fb4d3712615e9be3f86de5d6c">MetaeffektLicense:56c9a81fb4d3712615e9be3f86de5d6c</a> for <a href="/?license=metaeffekt:Noweb License"><span class="licensename"><span class="namespace">metaeffekt:</span>Noweb License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Noweb License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Noweb</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Noweb</span></li><li><span class="licensename"><span class="namespace">scancode:</span>noweb</span></li><li><span class="licensename">Noweb is copyright</span></li><li><span class="licensename">Noweb is protected by copyright</span></li><li><span class="licensename">Noweb License</span></li><li><span class="licensename">NOWEB LICENSE</span></li><li><span class="licensename">NOWEB License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:56c9a81fb4d3712615e9be3f86de5d6c">[<a href="/fact/MetaeffektLicense/56c9a81fb4d3712615e9be3f86de5d6c">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Noweb License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Noweb&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Noweb&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Noweb License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NOWEB LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NOWEB License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Noweb is copyright&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Noweb is protected by copyright&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:noweb&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;56c9a81fb4d3712615e9be3f86de5d6c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Noweb License&quot;,
+            &quot;NOWEB LICENSE&quot;,
+            &quot;NOWEB License&quot;,
+            &quot;Noweb is copyright&quot;,
+            &quot;Noweb is protected by copyright&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Noweb License&quot;,
+        &quot;_category&quot;: &quot;Noweb&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:noweb&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Noweb&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,812 @@
+<html><head><title>ldbcollector: spdx:BSD-Inferno-Nettverk</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-Inferno-Nettverk</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Inferno-Nettverk</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD 3-Clause License (Inferno Nettverk)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 3-Clause License (Inferno Nettverk)</span></li><li><span class="licensename">BSD-Inferno-Nettverk</span></li><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Inferno-Nettverk</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Inferno-Nettverk</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-inferno-nettverk</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Inferno-Nettverk</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:e092eb793051b45de2ca003e7caf1d93">[<a href="/fact/ScancodeData/e092eb793051b45de2ca003e7caf1d93">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:6c2cb339fa23202cc8d69606a2499390">[<a href="/fact/SPDXLicense/6c2cb339fa23202cc8d69606a2499390">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5c9107c6e570792562ce8876f5afc5fd">[<a href="/fact/FedoraEntry/5c9107c6e570792562ce8876f5afc5fd">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4543eaa105a734680de3a5d9370b6f4">[<a href="/fact/OrtLicenseCategorization/c4543eaa105a734680de3a5d9370b6f4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4543eaa105a734680de3a5d9370b6f4">[<a href="/fact/OrtLicenseCategorization/c4543eaa105a734680de3a5d9370b6f4">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to BSD-4-Clause but it combines first two clauses and includes a request that improvements or extensions be sent to the author.<span class="provided-by">(provided by: <span title="SPDXLicense:6c2cb339fa23202cc8d69606a2499390">[<a href="/fact/SPDXLicense/6c2cb339fa23202cc8d69606a2499390">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.inet.no/dante/LICENSE" target="_blank">https://www.inet.no/dante/LICENSE</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>  Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
+                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+                2017, 2018, 2019, 2020
+       Inferno Nettverk A/S, Norway.  All rights reserved.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  1. The above copyright notice, this list of conditions and the following
+     disclaimer must appear in all copies of the software, derivative works
+     or modified versions, and any portions thereof, aswell as in all
+     supporting documentation.
+  2. All advertising materials mentioning features or use of this software
+     must display the following acknowledgement:
+       This product includes software developed by
+       Inferno Nettverk A/S, Norway.
+  3. The name of the author may not be used to endorse or promote products
+     derived from this software without specific prior written permission.
+ 
+  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+  Inferno Nettverk A/S requests users of this software to return to
+ 
+   Software Distribution Coordinator  or  sdc@inet.no
+   Inferno Nettverk A/S
+   Oslo Research Park
+   Gaustadalléen 21
+   NO-0349 Oslo
+   Norway
+ 
+  any improvements or extensions that they make and grant Inferno Nettverk A/S
+  the rights to redistribute these changes.
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+ Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
+                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+                2017, 2018, 2019, 2020
+       Inferno Nettverk A/S, Norway.  All rights reserved.
+ 
+        &lt;/var&gt;
+        &lt;p&gt;
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+        &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+          
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+  The above copyright notice, this list of conditions and the following
+  disclaimer must appear in all copies of the software, derivative works
+  or modified versions, and any portions thereof, aswell as in all
+  supporting documentation.
+          &lt;/li&gt;
+          
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+  All advertising materials mentioning features or use of this software
+  must display the following acknowledgement:&lt;br /&gt;
+
+      This product includes software developed by
+      Inferno Nettverk A/S, Norway.
+          &lt;/li&gt;
+          
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+  The name of the author may not be used to endorse or promote products
+  derived from this software without specific prior written permission.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+        &lt;p&gt;
+ 
+  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+  Inferno Nettverk A/S requests users of this software to return to
+        &lt;/p&gt;
+
+        &lt;p&gt;
+   Software Distribution Coordinator  or  sdc@inet.no&lt;br /&gt;
+
+   Inferno Nettverk A/S&lt;br /&gt;
+
+   Oslo Research Park&lt;br /&gt;
+
+   Gaustadalléen 21&lt;br /&gt;
+
+   NO-0349 Oslo&lt;br /&gt;
+
+   Norway
+        &lt;/p&gt;
+
+        &lt;p&gt;
+  any improvements or extensions that they make and grant Inferno Nettverk A/S
+  the rights to redistribute these changes.
+        &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. The above copyright notice, this list of conditions and the following
+    disclaimer must appear in all copies of the software, derivative works
+    or modified versions, and any portions thereof, aswell as in all
+    supporting documentation.
+2. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+      This product includes software developed by
+      Inferno Nettverk A/S, Norway.
+3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Inferno Nettverk A/S requests users of this software to return to
+
+  Software Distribution Coordinator  or  sdc@inet.no
+  Inferno Nettverk A/S
+  Oslo Research Park
+  Gaustadalléen 21
+  NO-0349 Oslo
+  Norway
+
+any improvements or extensions that they make and grant Inferno Nettverk A/S
+the rights to redistribute these changes.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/6c2cb339fa23202cc8d69606a2499390">SPDXLicense:6c2cb339fa23202cc8d69606a2499390</a> for <a href="/?license=spdx:BSD-Inferno-Nettverk"><span class="licensename"><span class="namespace">spdx:</span>BSD-Inferno-Nettverk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Inferno-Nettverk</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Inferno-Nettverk</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:6c2cb339fa23202cc8d69606a2499390">[<a href="/fact/SPDXLicense/6c2cb339fa23202cc8d69606a2499390">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to BSD-4-Clause but it combines first two clauses and includes a request that improvements or extensions be sent to the author.<span class="provided-by">(provided by: <span title="SPDXLicense:6c2cb339fa23202cc8d69606a2499390">[<a href="/fact/SPDXLicense/6c2cb339fa23202cc8d69606a2499390">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.inet.no/dante/LICENSE" target="_blank">https://www.inet.no/dante/LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>  Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
+                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+                2017, 2018, 2019, 2020
+       Inferno Nettverk A/S, Norway.  All rights reserved.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  1. The above copyright notice, this list of conditions and the following
+     disclaimer must appear in all copies of the software, derivative works
+     or modified versions, and any portions thereof, aswell as in all
+     supporting documentation.
+  2. All advertising materials mentioning features or use of this software
+     must display the following acknowledgement:
+       This product includes software developed by
+       Inferno Nettverk A/S, Norway.
+  3. The name of the author may not be used to endorse or promote products
+     derived from this software without specific prior written permission.
+ 
+  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+  Inferno Nettverk A/S requests users of this software to return to
+ 
+   Software Distribution Coordinator  or  sdc@inet.no
+   Inferno Nettverk A/S
+   Oslo Research Park
+   Gaustadalléen 21
+   NO-0349 Oslo
+   Norway
+ 
+  any improvements or extensions that they make and grant Inferno Nettverk A/S
+  the rights to redistribute these changes.
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+ Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
+                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+                2017, 2018, 2019, 2020
+       Inferno Nettverk A/S, Norway.  All rights reserved.
+ 
+        &lt;/var&gt;
+        &lt;p&gt;
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+        &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+          
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+  The above copyright notice, this list of conditions and the following
+  disclaimer must appear in all copies of the software, derivative works
+  or modified versions, and any portions thereof, aswell as in all
+  supporting documentation.
+          &lt;/li&gt;
+          
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+  All advertising materials mentioning features or use of this software
+  must display the following acknowledgement:&lt;br /&gt;
+
+      This product includes software developed by
+      Inferno Nettverk A/S, Norway.
+          &lt;/li&gt;
+          
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+  The name of the author may not be used to endorse or promote products
+  derived from this software without specific prior written permission.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+        &lt;p&gt;
+ 
+  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+  Inferno Nettverk A/S requests users of this software to return to
+        &lt;/p&gt;
+
+        &lt;p&gt;
+   Software Distribution Coordinator  or  sdc@inet.no&lt;br /&gt;
+
+   Inferno Nettverk A/S&lt;br /&gt;
+
+   Oslo Research Park&lt;br /&gt;
+
+   Gaustadalléen 21&lt;br /&gt;
+
+   NO-0349 Oslo&lt;br /&gt;
+
+   Norway
+        &lt;/p&gt;
+
+        &lt;p&gt;
+  any improvements or extensions that they make and grant Inferno Nettverk A/S
+  the rights to redistribute these changes.
+        &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Inferno-Nettverk&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;6c2cb339fa23202cc8d69606a2499390&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is similar to BSD-4-Clause but it combines first two clauses and includes a request that improvements or extensions be sent to the author.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;  Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,\n                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016\n                2017, 2018, 2019, 2020\n       Inferno Nettverk A/S, Norway.  All rights reserved.\n \n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n  1. The above copyright notice, this list of conditions and the following\n     disclaimer must appear in all copies of the software, derivative works\n     or modified versions, and any portions thereof, aswell as in all\n     supporting documentation.\n  2. All advertising materials mentioning features or use of this software\n     must display the following acknowledgement:\n       This product includes software developed by\n       Inferno Nettverk A/S, Norway.\n  3. The name of the author may not be used to endorse or promote products\n     derived from this software without specific prior written permission.\n \n  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR\n  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\n  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\n  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\n  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n \n  Inferno Nettverk A/S requests users of this software to return to\n \n   Software Distribution Coordinator  or  sdc@inet.no\n   Inferno Nettverk A/S\n   Oslo Research Park\n   Gaustadalléen 21\n   NO-0349 Oslo\n   Norway\n \n  any improvements or extensions that they make and grant Inferno Nettverk A/S\n  the rights to redistribute these changes.\n\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,\n                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016\n                2017, 2018, 2019, 2020\n       Inferno Nettverk A/S, Norway.  All rights reserved.\n \n        &lt;/var&gt;\n        &lt;p&gt;\n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n        &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n          \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n  The above copyright notice, this list of conditions and the following\n  disclaimer must appear in all copies of the software, derivative works\n  or modified versions, and any portions thereof, aswell as in all\n  supporting documentation.\n          &lt;/li&gt;\n          \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n  All advertising materials mentioning features or use of this software\n  must display the following acknowledgement:&lt;br /&gt;\n\n      This product includes software developed by\n      Inferno Nettverk A/S, Norway.\n          &lt;/li&gt;\n          \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n  The name of the author may not be used to endorse or promote products\n  derived from this software without specific prior written permission.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n        &lt;p&gt;\n \n  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR\n  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\n  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\n  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\n  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n  Inferno Nettverk A/S requests users of this software to return to\n        &lt;/p&gt;\n\n        &lt;p&gt;\n   Software Distribution Coordinator  or  sdc@inet.no&lt;br /&gt;\n\n   Inferno Nettverk A/S&lt;br /&gt;\n\n   Oslo Research Park&lt;br /&gt;\n\n   Gaustadalléen 21&lt;br /&gt;\n\n   NO-0349 Oslo&lt;br /&gt;\n\n   Norway\n        &lt;/p&gt;\n\n        &lt;p&gt;\n  any improvements or extensions that they make and grant Inferno Nettverk A/S\n  the rights to redistribute these changes.\n        &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.inet.no/dante/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.inet.no/dante/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:15Z&quot;,
+                &quot;url&quot;: &quot;https://www.inet.no/dante/LICENSE&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is similar to BSD-4-Clause but it combines first two clauses and includes a request that improvements or extensions be sent to the author.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:BSD-Inferno-Nettverk&quot;,
+        &quot;licenseText&quot;: &quot;  Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,\n                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016\n                2017, 2018, 2019, 2020\n       Inferno Nettverk A/S, Norway.  All rights reserved.\n \n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n  1. The above copyright notice, this list of conditions and the following\n     disclaimer must appear in all copies of the software, derivative works\n     or modified versions, and any portions thereof, aswell as in all\n     supporting documentation.\n  2. All advertising materials mentioning features or use of this software\n     must display the following acknowledgement:\n       This product includes software developed by\n       Inferno Nettverk A/S, Norway.\n  3. The name of the author may not be used to endorse or promote products\n     derived from this software without specific prior written permission.\n \n  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR\n  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\n  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\n  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\n  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n \n  Inferno Nettverk A/S requests users of this software to return to\n \n   Software Distribution Coordinator  or  sdc@inet.no\n   Inferno Nettverk A/S\n   Oslo Research Park\n   Gaustadalléen 21\n   NO-0349 Oslo\n   Norway\n \n  any improvements or extensions that they make and grant Inferno Nettverk A/S\n  the rights to redistribute these changes.\n\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,\n                2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016\n                2017, 2018, 2019, 2020\n       Inferno Nettverk A/S, Norway.  All rights reserved.\n \n        &lt;/var&gt;\n        &lt;p&gt;\n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n        &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n          \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n  The above copyright notice, this list of conditions and the following\n  disclaimer must appear in all copies of the software, derivative works\n  or modified versions, and any portions thereof, aswell as in all\n  supporting documentation.\n          &lt;/li&gt;\n          \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n  All advertising materials mentioning features or use of this software\n  must display the following acknowledgement:&lt;br /&gt;\n\n      This product includes software developed by\n      Inferno Nettverk A/S, Norway.\n          &lt;/li&gt;\n          \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n  The name of the author may not be used to endorse or promote products\n  derived from this software without specific prior written permission.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n        &lt;p&gt;\n \n  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR\n  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\n  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\n  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\n  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n  Inferno Nettverk A/S requests users of this software to return to\n        &lt;/p&gt;\n\n        &lt;p&gt;\n   Software Distribution Coordinator  or  sdc@inet.no&lt;br /&gt;\n\n   Inferno Nettverk A/S&lt;br /&gt;\n\n   Oslo Research Park&lt;br /&gt;\n\n   Gaustadalléen 21&lt;br /&gt;\n\n   NO-0349 Oslo&lt;br /&gt;\n\n   Norway\n        &lt;/p&gt;\n\n        &lt;p&gt;\n  any improvements or extensions that they make and grant Inferno Nettverk A/S\n  the rights to redistribute these changes.\n        &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.inet.no/dante/LICENSE&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016 2017, 2018, 2019, 2020 Inferno Nettverk A/S, Norway. All rights reserved.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The above copyright notice, this list of conditions and the following disclaimer must appear in all copies of the software, derivative works or modified versions, and any portions thereof, aswell as in all supporting documentation.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All advertising materials mentioning features or use of this software must display the following acknowledgement:\n\n   This product includes software developed by Inferno Nettverk A/S, Norway.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name of the author may not be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nInferno Nettverk A/S requests users of this software to return to\n\nSoftware Distribution Coordinator or sdc@inet.no\n\nInferno Nettverk A/S\n\nOslo Research Park\n\nGaustadalléen 21\n\nNO-0349 Oslo\n\nNorway\n\nany improvements or extensions that they make and grant Inferno Nettverk A/S the rights to redistribute these changes.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/5c9107c6e570792562ce8876f5afc5fd">FedoraEntry:5c9107c6e570792562ce8876f5afc5fd</a> for <a href="/?license=Fedora:BSD-Inferno-Nettverk"><span class="licensename"><span class="namespace">Fedora:</span>BSD-Inferno-Nettverk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Inferno-Nettverk</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Inferno-Nettverk</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5c9107c6e570792562ce8876f5afc5fd">[<a href="/fact/FedoraEntry/5c9107c6e570792562ce8876f5afc5fd">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BSD-Inferno-Nettverk&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Inferno-Nettverk&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;5c9107c6e570792562ce8876f5afc5fd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BSD-Inferno-Nettverk&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e092eb793051b45de2ca003e7caf1d93">ScancodeData:e092eb793051b45de2ca003e7caf1d93</a> for <a href="/?license=scancode:bsd-inferno-nettverk"><span class="licensename"><span class="namespace">scancode:</span>bsd-inferno-nettverk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bsd-inferno-nettverk</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Inferno-Nettverk</span></li><li><span class="licensename">BSD-Inferno-Nettverk</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:e092eb793051b45de2ca003e7caf1d93">[<a href="/fact/ScancodeData/e092eb793051b45de2ca003e7caf1d93">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.inet.no/dante/LICENSE" target="_blank">https://www.inet.no/dante/LICENSE</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. The above copyright notice, this list of conditions and the following
+    disclaimer must appear in all copies of the software, derivative works
+    or modified versions, and any portions thereof, aswell as in all
+    supporting documentation.
+2. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+      This product includes software developed by
+      Inferno Nettverk A/S, Norway.
+3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Inferno Nettverk A/S requests users of this software to return to
+
+  Software Distribution Coordinator  or  sdc@inet.no
+  Inferno Nettverk A/S
+  Oslo Research Park
+  Gaustadalléen 21
+  NO-0349 Oslo
+  Norway
+
+any improvements or extensions that they make and grant Inferno Nettverk A/S
+the rights to redistribute these changes.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bsd-inferno-nettverk&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e092eb793051b45de2ca003e7caf1d93&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.inet.no/dante/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. The above copyright notice, this list of conditions and the following\n    disclaimer must appear in all copies of the software, derivative works\n    or modified versions, and any portions thereof, aswell as in all\n    supporting documentation.\n2. All advertising materials mentioning features or use of this software\n    must display the following acknowledgement:\n      This product includes software developed by\n      Inferno Nettverk A/S, Norway.\n3. The name of the author may not be used to endorse or promote products\n    derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\nIN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\nTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nInferno Nettverk A/S requests users of this software to return to\n\n  Software Distribution Coordinator  or  sdc@inet.no\n  Inferno Nettverk A/S\n  Oslo Research Park\n  Gaustadalléen 21\n  NO-0349 Oslo\n  Norway\n\nany improvements or extensions that they make and grant Inferno Nettverk A/S\nthe rights to redistribute these changes.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;bsd-inferno-nettverk&quot;,
+        &quot;_name&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://www.inet.no/dante/LICENSE&quot;
+        ],
+        &quot;_owner&quot;: &quot;Inferno Nettverk&quot;,
+        &quot;_shortName&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+        &quot;_spdxId&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+        &quot;_text&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. The above copyright notice, this list of conditions and the following\n    disclaimer must appear in all copies of the software, derivative works\n    or modified versions, and any portions thereof, aswell as in all\n    supporting documentation.\n2. All advertising materials mentioning features or use of this software\n    must display the following acknowledgement:\n      This product includes software developed by\n      Inferno Nettverk A/S, Norway.\n3. The name of the author may not be used to endorse or promote products\n    derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\nIN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\nTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nInferno Nettverk A/S requests users of this software to return to\n\n  Software Distribution Coordinator  or  sdc@inet.no\n  Inferno Nettverk A/S\n  Oslo Research Park\n  Gaustadalléen 21\n  NO-0349 Oslo\n  Norway\n\nany improvements or extensions that they make and grant Inferno Nettverk A/S\nthe rights to redistribute these changes.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c4543eaa105a734680de3a5d9370b6f4">OrtLicenseCategorization:c4543eaa105a734680de3a5d9370b6f4</a> for <a href="/?license=SPDX:BSD-Inferno-Nettverk"><span class="licensename"><span class="namespace">SPDX:</span>BSD-Inferno-Nettverk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-Inferno-Nettverk</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4543eaa105a734680de3a5d9370b6f4">[<a href="/fact/OrtLicenseCategorization/c4543eaa105a734680de3a5d9370b6f4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c4543eaa105a734680de3a5d9370b6f4">[<a href="/fact/OrtLicenseCategorization/c4543eaa105a734680de3a5d9370b6f4">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-Inferno-Nettverk&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c4543eaa105a734680de3a5d9370b6f4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-Inferno-Nettverk&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/185e1be44df670debc3da753a2b82898">CavilLicenseChange:185e1be44df670debc3da753a2b82898</a> for <a href="/?license=cavil:BSD-Inferno-Nettverk"><span class="licensename"><span class="namespace">cavil:</span>BSD-Inferno-Nettverk</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Inferno-Nettverk</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Inferno-Nettverk</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:BSD-Inferno-Nettverk&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;185e1be44df670debc3da753a2b82898&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;BSD-Inferno-Nettverk&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:BSD-Inferno-Nettverk&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/6ca986c667e5798c1edbbac13c01be23">MetaeffektLicense:6ca986c667e5798c1edbbac13c01be23</a> for <a href="/?license=metaeffekt:BSD 3-Clause License (Inferno Nettverk)"><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 3-Clause License (Inferno Nettverk)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD 3-Clause License (Inferno Nettverk)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Inferno-Nettverk</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD</span></li><li><span class="licensename">BSD-Inferno-Nettverk</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-inferno-nettverk</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:BSD 3-Clause License (Inferno Nettverk)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Inferno-Nettverk&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD-Inferno-Nettverk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:bsd-inferno-nettverk&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;6ca986c667e5798c1edbbac13c01be23&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;BSD-Inferno-Nettverk&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:BSD 3-Clause License (Inferno Nettverk)&quot;,
+        &quot;_category&quot;: &quot;BSD&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:bsd-inferno-nettverk&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:BSD-Inferno-Nettverk&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

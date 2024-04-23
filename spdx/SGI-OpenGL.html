@@ -1,0 +1,587 @@
+<html><head><title>ldbcollector: spdx:SGI-OpenGL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:SGI-OpenGL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SGI-OpenGL</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">SGI OpenGL License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>SGI OpenGL License</span></li><li><span class="licensename">SGI-OpenGL</span></li><li><span class="licensename"><span class="namespace">cavil:</span>SGI-OpenGL</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>SGI-OpenGL</span></li><li><span class="licensename"><span class="namespace">spdx:</span>SGI-OpenGL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>x11-opengl</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c4721ef9d5f01a2d4591f8b7d002f441">[<a href="/fact/SPDXLicense/c4721ef9d5f01a2d4591f8b7d002f441">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8a0efe209ebd87b737d6afd8ca76baa9">[<a href="/fact/FedoraEntry/8a0efe209ebd87b737d6afd8ca76baa9">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b5139e87880c242593a3c45396a1f8c4">[<a href="/fact/OrtLicenseCategorization/b5139e87880c242593a3c45396a1f8c4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b5139e87880c242593a3c45396a1f8c4">[<a href="/fact/OrtLicenseCategorization/b5139e87880c242593a3c45396a1f8c4">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads" target="_blank">https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>(c) Copyright 1993, Silicon Graphics, Inc.
+ALL RIGHTS RESERVED
+Permission to use, copy, modify, and distribute this software for
+any purpose and without fee is hereby granted, provided that the above
+copyright notice appear in all copies and that both the copyright notice
+and this permission notice appear in supporting documentation, and that
+the name of Silicon Graphics, Inc. not be used in advertising
+or publicity pertaining to distribution of the software without specific,
+written prior permission.
+
+THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU &quot;AS-IS&quot;
+AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
+INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR
+FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON
+GRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,
+SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY
+KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,
+LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF
+THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE
+POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.
+
+US Government Users Restricted Rights
+Use, duplication, or disclosure by the Government is subject to
+restrictions set forth in FAR 52.227.19(c)(2) or subparagraph
+(c)(1)(ii) of the Rights in Technical Data and Computer Software
+clause at DFARS 252.227-7013 and/or in similar or successor
+clauses in the FAR or the DOD or NASA FAR Supplement.
+Unpublished-- rights reserved under the copyright laws of the
+United States.  Contractor/manufacturer is Silicon Graphics,
+Inc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.
+
+OpenGL(TM) is a trademark of Silicon Graphics, Inc.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+        &lt;p&gt;(c) Copyright 1993, Silicon Graphics, Inc.&lt;br /&gt;
+
+           ALL RIGHTS RESERVED&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, and distribute this software for
+        any purpose and without fee is hereby granted, provided that the above
+        copyright notice appear in all copies and that both the copyright notice
+        and this permission notice appear in supporting documentation, and that
+        the name of Silicon Graphics, Inc. not be used in advertising
+        or publicity pertaining to distribution of the software without specific,
+        written prior permission.&lt;/p&gt;
+
+      &lt;p&gt;THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU &amp;quot;AS-IS&amp;quot;
+        AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
+        INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR
+        FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON
+        GRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,
+        SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY
+        KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,
+        LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF
+        THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN
+        ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON
+        ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE
+        POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;
+
+      &lt;p&gt;US Government Users Restricted Rights&lt;br /&gt;
+
+        Use, duplication, or disclosure by the Government is subject to
+        restrictions set forth in FAR 52.227.19(c)(2) or subparagraph
+        (c)(1)(ii) of the Rights in Technical Data and Computer Software
+        clause at DFARS 252.227-7013 and/or in similar or successor
+        clauses in the FAR or the DOD or NASA FAR Supplement.
+        Unpublished-- rights reserved under the copyright laws of the
+        United States.  Contractor/manufacturer is Silicon Graphics,
+        Inc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.&lt;/p&gt;
+
+        &lt;p&gt;OpenGL(TM) is a trademark of Silicon Graphics, Inc.&lt;/p&gt;
+
+    </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/c4721ef9d5f01a2d4591f8b7d002f441">SPDXLicense:c4721ef9d5f01a2d4591f8b7d002f441</a> for <a href="/?license=spdx:SGI-OpenGL"><span class="licensename"><span class="namespace">spdx:</span>SGI-OpenGL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SGI-OpenGL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SGI OpenGL License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c4721ef9d5f01a2d4591f8b7d002f441">[<a href="/fact/SPDXLicense/c4721ef9d5f01a2d4591f8b7d002f441">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads" target="_blank">https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>(c) Copyright 1993, Silicon Graphics, Inc.
+ALL RIGHTS RESERVED
+Permission to use, copy, modify, and distribute this software for
+any purpose and without fee is hereby granted, provided that the above
+copyright notice appear in all copies and that both the copyright notice
+and this permission notice appear in supporting documentation, and that
+the name of Silicon Graphics, Inc. not be used in advertising
+or publicity pertaining to distribution of the software without specific,
+written prior permission.
+
+THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU &quot;AS-IS&quot;
+AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
+INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR
+FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON
+GRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,
+SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY
+KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,
+LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF
+THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE
+POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.
+
+US Government Users Restricted Rights
+Use, duplication, or disclosure by the Government is subject to
+restrictions set forth in FAR 52.227.19(c)(2) or subparagraph
+(c)(1)(ii) of the Rights in Technical Data and Computer Software
+clause at DFARS 252.227-7013 and/or in similar or successor
+clauses in the FAR or the DOD or NASA FAR Supplement.
+Unpublished-- rights reserved under the copyright laws of the
+United States.  Contractor/manufacturer is Silicon Graphics,
+Inc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.
+
+OpenGL(TM) is a trademark of Silicon Graphics, Inc.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+        &lt;p&gt;(c) Copyright 1993, Silicon Graphics, Inc.&lt;br /&gt;
+
+           ALL RIGHTS RESERVED&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, and distribute this software for
+        any purpose and without fee is hereby granted, provided that the above
+        copyright notice appear in all copies and that both the copyright notice
+        and this permission notice appear in supporting documentation, and that
+        the name of Silicon Graphics, Inc. not be used in advertising
+        or publicity pertaining to distribution of the software without specific,
+        written prior permission.&lt;/p&gt;
+
+      &lt;p&gt;THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU &amp;quot;AS-IS&amp;quot;
+        AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
+        INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR
+        FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON
+        GRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,
+        SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY
+        KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,
+        LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF
+        THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN
+        ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON
+        ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE
+        POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;
+
+      &lt;p&gt;US Government Users Restricted Rights&lt;br /&gt;
+
+        Use, duplication, or disclosure by the Government is subject to
+        restrictions set forth in FAR 52.227.19(c)(2) or subparagraph
+        (c)(1)(ii) of the Rights in Technical Data and Computer Software
+        clause at DFARS 252.227-7013 and/or in similar or successor
+        clauses in the FAR or the DOD or NASA FAR Supplement.
+        Unpublished-- rights reserved under the copyright laws of the
+        United States.  Contractor/manufacturer is Silicon Graphics,
+        Inc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.&lt;/p&gt;
+
+        &lt;p&gt;OpenGL(TM) is a trademark of Silicon Graphics, Inc.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:SGI-OpenGL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SGI OpenGL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;c4721ef9d5f01a2d4591f8b7d002f441&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;(c) Copyright 1993, Silicon Graphics, Inc.\nALL RIGHTS RESERVED\nPermission to use, copy, modify, and distribute this software for\nany purpose and without fee is hereby granted, provided that the above\ncopyright notice appear in all copies and that both the copyright notice\nand this permission notice appear in supporting documentation, and that\nthe name of Silicon Graphics, Inc. not be used in advertising\nor publicity pertaining to distribution of the software without specific,\nwritten prior permission.\n\nTHE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU \&quot;AS-IS\&quot;\nAND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,\nINCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR\nFITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON\nGRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,\nSPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY\nKIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,\nLOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF\nTHIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN\nADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE\nPOSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.\n\nUS Government Users Restricted Rights\nUse, duplication, or disclosure by the Government is subject to\nrestrictions set forth in FAR 52.227.19(c)(2) or subparagraph\n(c)(1)(ii) of the Rights in Technical Data and Computer Software\nclause at DFARS 252.227-7013 and/or in similar or successor\nclauses in the FAR or the DOD or NASA FAR Supplement.\nUnpublished-- rights reserved under the copyright laws of the\nUnited States.  Contractor/manufacturer is Silicon Graphics,\nInc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.\n\nOpenGL(TM) is a trademark of Silicon Graphics, Inc.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n        &lt;p&gt;(c) Copyright 1993, Silicon Graphics, Inc.&lt;br /&gt;\n\n           ALL RIGHTS RESERVED&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, and distribute this software for\n        any purpose and without fee is hereby granted, provided that the above\n        copyright notice appear in all copies and that both the copyright notice\n        and this permission notice appear in supporting documentation, and that\n        the name of Silicon Graphics, Inc. not be used in advertising\n        or publicity pertaining to distribution of the software without specific,\n        written prior permission.&lt;/p&gt;\n\n      &lt;p&gt;THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU &amp;quot;AS-IS&amp;quot;\n        AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,\n        INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR\n        FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON\n        GRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,\n        SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY\n        KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,\n        LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF\n        THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN\n        ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON\n        ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE\n        POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;\n\n      &lt;p&gt;US Government Users Restricted Rights&lt;br /&gt;\n\n        Use, duplication, or disclosure by the Government is subject to\n        restrictions set forth in FAR 52.227.19(c)(2) or subparagraph\n        (c)(1)(ii) of the Rights in Technical Data and Computer Software\n        clause at DFARS 252.227-7013 and/or in similar or successor\n        clauses in the FAR or the DOD or NASA FAR Supplement.\n        Unpublished-- rights reserved under the copyright laws of the\n        United States.  Contractor/manufacturer is Silicon Graphics,\n        Inc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.&lt;/p&gt;\n\n        &lt;p&gt;OpenGL(TM) is a trademark of Silicon Graphics, Inc.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:07Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:SGI-OpenGL&quot;,
+        &quot;licenseText&quot;: &quot;(c) Copyright 1993, Silicon Graphics, Inc.\nALL RIGHTS RESERVED\nPermission to use, copy, modify, and distribute this software for\nany purpose and without fee is hereby granted, provided that the above\ncopyright notice appear in all copies and that both the copyright notice\nand this permission notice appear in supporting documentation, and that\nthe name of Silicon Graphics, Inc. not be used in advertising\nor publicity pertaining to distribution of the software without specific,\nwritten prior permission.\n\nTHE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU \&quot;AS-IS\&quot;\nAND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,\nINCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR\nFITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON\nGRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,\nSPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY\nKIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,\nLOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF\nTHIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN\nADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE\nPOSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.\n\nUS Government Users Restricted Rights\nUse, duplication, or disclosure by the Government is subject to\nrestrictions set forth in FAR 52.227.19(c)(2) or subparagraph\n(c)(1)(ii) of the Rights in Technical Data and Computer Software\nclause at DFARS 252.227-7013 and/or in similar or successor\nclauses in the FAR or the DOD or NASA FAR Supplement.\nUnpublished-- rights reserved under the copyright laws of the\nUnited States.  Contractor/manufacturer is Silicon Graphics,\nInc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.\n\nOpenGL(TM) is a trademark of Silicon Graphics, Inc.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n        &lt;p&gt;(c) Copyright 1993, Silicon Graphics, Inc.&lt;br /&gt;\n\n           ALL RIGHTS RESERVED&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, and distribute this software for\n        any purpose and without fee is hereby granted, provided that the above\n        copyright notice appear in all copies and that both the copyright notice\n        and this permission notice appear in supporting documentation, and that\n        the name of Silicon Graphics, Inc. not be used in advertising\n        or publicity pertaining to distribution of the software without specific,\n        written prior permission.&lt;/p&gt;\n\n      &lt;p&gt;THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU &amp;quot;AS-IS&amp;quot;\n        AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,\n        INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR\n        FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON\n        GRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,\n        SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY\n        KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,\n        LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF\n        THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN\n        ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON\n        ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE\n        POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;\n\n      &lt;p&gt;US Government Users Restricted Rights&lt;br /&gt;\n\n        Use, duplication, or disclosure by the Government is subject to\n        restrictions set forth in FAR 52.227.19(c)(2) or subparagraph\n        (c)(1)(ii) of the Rights in Technical Data and Computer Software\n        clause at DFARS 252.227-7013 and/or in similar or successor\n        clauses in the FAR or the DOD or NASA FAR Supplement.\n        Unpublished-- rights reserved under the copyright laws of the\n        United States.  Contractor/manufacturer is Silicon Graphics,\n        Inc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.&lt;/p&gt;\n\n        &lt;p&gt;OpenGL(TM) is a trademark of Silicon Graphics, Inc.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;SGI OpenGL License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://gitlab.freedesktop.org/mesa/glw/-/blob/master/README?ref_type=heads&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;(c) Copyright 1993, Silicon Graphics, Inc.  ALL RIGHTS RESERVED  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this software for any purpose and without fee is hereby granted, provided that the above copyright notice appear in all copies and that both the copyright notice and this permission notice appear in supporting documentation, and that the name of Silicon Graphics, Inc. not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission.\n\nTHE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU \&quot;AS-IS\&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT, SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION, LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC. HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.\n\nUS Government Users Restricted Rights\n\nUse, duplication, or disclosure by the Government is subject to restrictions set forth in FAR 52.227.19(c)(2) or subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013 and/or in similar or successor clauses in the FAR or the DOD or NASA FAR Supplement. Unpublished-- rights reserved under the copyright laws of the United States. Contractor/manufacturer is Silicon Graphics, Inc., 2011 N. Shoreline Blvd., Mountain View, CA 94039-7311.\n\nOpenGL(TM) is a trademark of Silicon Graphics, Inc.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/8a0efe209ebd87b737d6afd8ca76baa9">FedoraEntry:8a0efe209ebd87b737d6afd8ca76baa9</a> for <a href="/?license=Fedora:SGI-OpenGL"><span class="licensename"><span class="namespace">Fedora:</span>SGI-OpenGL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>SGI-OpenGL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SGI-OpenGL</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8a0efe209ebd87b737d6afd8ca76baa9">[<a href="/fact/FedoraEntry/8a0efe209ebd87b737d6afd8ca76baa9">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:SGI-OpenGL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SGI-OpenGL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;8a0efe209ebd87b737d6afd8ca76baa9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;SGI-OpenGL&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:SGI-OpenGL&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/b5139e87880c242593a3c45396a1f8c4">OrtLicenseCategorization:b5139e87880c242593a3c45396a1f8c4</a> for <a href="/?license=SPDX:SGI-OpenGL"><span class="licensename"><span class="namespace">SPDX:</span>SGI-OpenGL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>SGI-OpenGL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b5139e87880c242593a3c45396a1f8c4">[<a href="/fact/OrtLicenseCategorization/b5139e87880c242593a3c45396a1f8c4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:b5139e87880c242593a3c45396a1f8c4">[<a href="/fact/OrtLicenseCategorization/b5139e87880c242593a3c45396a1f8c4">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:SGI-OpenGL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;b5139e87880c242593a3c45396a1f8c4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:SGI-OpenGL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/ab81a338e649545cf7f97ddbeae00165">CavilLicenseChange:ab81a338e649545cf7f97ddbeae00165</a> for <a href="/?license=cavil:SGI-OpenGL"><span class="licensename"><span class="namespace">cavil:</span>SGI-OpenGL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>SGI-OpenGL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">SGI-OpenGL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:SGI-OpenGL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SGI-OpenGL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;ab81a338e649545cf7f97ddbeae00165&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;SGI-OpenGL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:SGI-OpenGL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/c7fd80a78bad557d27a0924062cc9197">MetaeffektLicense:c7fd80a78bad557d27a0924062cc9197</a> for <a href="/?license=metaeffekt:SGI OpenGL License"><span class="licensename"><span class="namespace">metaeffekt:</span>SGI OpenGL License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>SGI OpenGL License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>SGI-OpenGL</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">SGI OpenGL License</span></li><li><span class="licensename">SGI-OpenGL</span></li><li><span class="licensename">SGI-OpenGL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-opengl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:SGI OpenGL License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:SGI-OpenGL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SGI-OpenGL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SGI-OpenGL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SGI OpenGL License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:x11-opengl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;c7fd80a78bad557d27a0924062cc9197&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;SGI-OpenGL&quot;,
+            &quot;SGI OpenGL License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:SGI OpenGL License&quot;,
+        &quot;_category&quot;: &quot;SGI-OpenGL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:x11-opengl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:SGI-OpenGL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

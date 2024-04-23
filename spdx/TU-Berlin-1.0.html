@@ -1,0 +1,836 @@
+<html><head><title>ldbcollector: spdx:TU-Berlin-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:TU-Berlin-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TU-Berlin-1.0</span></li></ul></li><li><b>other LicenseNames (19):</b><ul class="capsulUl clearfix"><li><span class="licensename">Technische Universitaet Berlin Attribution License 1.0</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>Technische Universitaet Berlin Attribution License 1.0</span></li><li><span class="licensename">Technische Universitaet Berlin License 1.0</span></li><li><span class="licensename">TU Berlin 1.0</span></li><li><span class="licensename">TU Berlin License 1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>TU Berlin License 1.0</span></li><li><span class="licensename">TU Berlin License, Version 1.0</span></li><li><span class="licensename">TU Berlin, Version 1.0</span></li><li><span class="licensename">tu-berlin</span></li><li><span class="licensename"><span class="namespace">scancode:</span>tu-berlin</span></li><li><span class="licensename">TU-Berlin 1.0</span></li><li><span class="licensename">TU-Berlin License, 1.0</span></li><li><span class="licensename">TU-Berlin License, Version 1.0</span></li><li><span class="licensename">TU-Berlin, Version 1.0</span></li><li><span class="licensename">TU-Berlin-1.0</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>TU-Berlin-1.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>TU-Berlin-1.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>TU-Berlin-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>TU-Berlin-1.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TU Berlin</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:e93d62d9d5e0149abf43700be67edad2">[<a href="/fact/BlueOakCouncil/e93d62d9d5e0149abf43700be67edad2">BlueOakCouncil</a>]</span><span title="ScancodeData:21ac3160313476ff7d02d1f7c8278548">[<a href="/fact/ScancodeData/21ac3160313476ff7d02d1f7c8278548">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:61a327f6e8b4cc74f5c955cf79994ddf">[<a href="/fact/SPDXLicense/61a327f6e8b4cc74f5c955cf79994ddf">SPDXLicense</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:e93d62d9d5e0149abf43700be67edad2">[<a href="/fact/BlueOakCouncil/e93d62d9d5e0149abf43700be67edad2">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:fae3e9f1d6c75c61e765cdf1c9ccf6a3">[<a href="/fact/MetaeffektLicense/fae3e9f1d6c75c61e765cdf1c9ccf6a3">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:01e4bb4835f5804be6761fcb5b0d5d52">[<a href="/fact/OrtLicenseCategorization/01e4bb4835f5804be6761fcb5b0d5d52">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:01e4bb4835f5804be6761fcb5b0d5d52">[<a href="/fact/OrtLicenseCategorization/01e4bb4835f5804be6761fcb5b0d5d52">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT" target="_blank">https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT</a></li><li><a href="https://spdx.org/licenses/TU-Berlin-1.0.html" target="_blank">https://spdx.org/licenses/TU-Berlin-1.0.html</a></li><li><a href="ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz" target="_blank">ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1992 by Jutta Degener and Carsten Bormann,
+Technische Universitaet Berlin
+
+Any use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+
+As a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest.
+
+Berlin, 15.09.1992
+Jutta Degener
+Carsten Bormann
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+        &lt;p&gt;Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,
+	      &lt;/p&gt;
+
+        &lt;p&gt;Technische Universitaet Berlin&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;
+        Any use of this software is permitted provided that this notice is not
+        removed and that neither the authors nor the Technische Universitaet Berlin
+        are deemed to have made any representations as to the suitability of this
+        software for any purpose nor are held responsible for any defects of
+        this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        As a matter of courtesy, the authors request to be informed about uses
+        this software has found, about bugs in this software, and about any
+        improvements that may be of general interest.
+      &lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;Berlin, &lt;var class=&quot;replaceable-license-text&quot;&gt; 28.11.1994&lt;/var&gt;&lt;/p&gt;
+
+        &lt;p&gt;Jutta Degener&lt;/p&gt;
+
+        &lt;p&gt;Carsten Bormann&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>Any use of this software is permitted provided that this notice is not
+removed and that neither the authors nor the Technische Universitaet Berlin
+are deemed to have made any representations as to the suitability of this
+software for any purpose nor are held responsible for any defects of
+this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+
+As a matter of courtesy, the authors request to be informed about uses
+this software has found, about bugs in this software, and about any
+improvements that may be of general interest.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,
+
+Technische Universitaet Berlin
+
+Any use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software. THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+
+As a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest. Berlin, 28.11.1994
+
+Jutta Degener
+
+Carsten Bormann</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/61a327f6e8b4cc74f5c955cf79994ddf">SPDXLicense:61a327f6e8b4cc74f5c955cf79994ddf</a> for <a href="/?license=spdx:TU-Berlin-1.0"><span class="licensename"><span class="namespace">spdx:</span>TU-Berlin-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TU-Berlin-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Technische Universitaet Berlin License 1.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:61a327f6e8b4cc74f5c955cf79994ddf">[<a href="/fact/SPDXLicense/61a327f6e8b4cc74f5c955cf79994ddf">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT" target="_blank">https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1992 by Jutta Degener and Carsten Bormann,
+Technische Universitaet Berlin
+
+Any use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+
+As a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest.
+
+Berlin, 15.09.1992
+Jutta Degener
+Carsten Bormann
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+        &lt;p&gt;Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,
+	      &lt;/p&gt;
+
+        &lt;p&gt;Technische Universitaet Berlin&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;
+        Any use of this software is permitted provided that this notice is not
+        removed and that neither the authors nor the Technische Universitaet Berlin
+        are deemed to have made any representations as to the suitability of this
+        software for any purpose nor are held responsible for any defects of
+        this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        As a matter of courtesy, the authors request to be informed about uses
+        this software has found, about bugs in this software, and about any
+        improvements that may be of general interest.
+      &lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;Berlin, &lt;var class=&quot;replaceable-license-text&quot;&gt; 28.11.1994&lt;/var&gt;&lt;/p&gt;
+
+        &lt;p&gt;Jutta Degener&lt;/p&gt;
+
+        &lt;p&gt;Carsten Bormann&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:TU-Berlin-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Technische Universitaet Berlin License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;61a327f6e8b4cc74f5c955cf79994ddf&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 1992 by Jutta Degener and Carsten Bormann,\nTechnische Universitaet Berlin\n\nAny use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest.\n\nBerlin, 15.09.1992\nJutta Degener\nCarsten Bormann\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n        &lt;p&gt;Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,\n\t      &lt;/p&gt;\n\n        &lt;p&gt;Technische Universitaet Berlin&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;\n        Any use of this software is permitted provided that this notice is not\n        removed and that neither the authors nor the Technische Universitaet Berlin\n        are deemed to have made any representations as to the suitability of this\n        software for any purpose nor are held responsible for any defects of\n        this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        As a matter of courtesy, the authors request to be informed about uses\n        this software has found, about bugs in this software, and about any\n        improvements that may be of general interest.\n      &lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;Berlin, &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 28.11.1994&lt;/var&gt;&lt;/p&gt;\n\n        &lt;p&gt;Jutta Degener&lt;/p&gt;\n\n        &lt;p&gt;Carsten Bormann&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:08Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:TU-Berlin-1.0&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 1992 by Jutta Degener and Carsten Bormann,\nTechnische Universitaet Berlin\n\nAny use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest.\n\nBerlin, 15.09.1992\nJutta Degener\nCarsten Bormann\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n        &lt;p&gt;Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,\n\t      &lt;/p&gt;\n\n        &lt;p&gt;Technische Universitaet Berlin&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;\n        Any use of this software is permitted provided that this notice is not\n        removed and that neither the authors nor the Technische Universitaet Berlin\n        are deemed to have made any representations as to the suitability of this\n        software for any purpose nor are held responsible for any defects of\n        this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        As a matter of courtesy, the authors request to be informed about uses\n        this software has found, about bugs in this software, and about any\n        improvements that may be of general interest.\n      &lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;Berlin, &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 28.11.1994&lt;/var&gt;&lt;/p&gt;\n\n        &lt;p&gt;Jutta Degener&lt;/p&gt;\n\n        &lt;p&gt;Carsten Bormann&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Technische Universitaet Berlin License 1.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,    Technische Universitaet Berlin  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nAny use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software. THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest.\n\n&lt;&lt;beginOptional&gt;&gt;Berlin, &lt;&lt;var;name=\&quot;footerDate\&quot;;original=\&quot;28.11.1994\&quot;;match=\&quot;.+\&quot;&gt;&gt;\n\nJutta Degener\n\nCarsten Bormann\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/e93d62d9d5e0149abf43700be67edad2">BlueOakCouncil:e93d62d9d5e0149abf43700be67edad2</a> for <a href="/?license=BlueOak:TU-Berlin-1.0"><span class="licensename"><span class="namespace">BlueOak:</span>TU-Berlin-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>TU-Berlin-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Technische Universitaet Berlin License 1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:e93d62d9d5e0149abf43700be67edad2">[<a href="/fact/BlueOakCouncil/e93d62d9d5e0149abf43700be67edad2">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:e93d62d9d5e0149abf43700be67edad2">[<a href="/fact/BlueOakCouncil/e93d62d9d5e0149abf43700be67edad2">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/TU-Berlin-1.0.html" target="_blank">https://spdx.org/licenses/TU-Berlin-1.0.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:TU-Berlin-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Technische Universitaet Berlin License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;e93d62d9d5e0149abf43700be67edad2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/TU-Berlin-1.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;TU-Berlin-1.0&quot;,
+                &quot;_name&quot;: &quot;Technische Universitaet Berlin License 1.0&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/TU-Berlin-1.0.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/21ac3160313476ff7d02d1f7c8278548">ScancodeData:21ac3160313476ff7d02d1f7c8278548</a> for <a href="/?license=scancode:tu-berlin"><span class="licensename"><span class="namespace">scancode:</span>tu-berlin</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>tu-berlin</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Technische Universitaet Berlin Attribution License 1.0</span></li><li><span class="licensename">TU Berlin License 1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:21ac3160313476ff7d02d1f7c8278548">[<a href="/fact/ScancodeData/21ac3160313476ff7d02d1f7c8278548">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz" target="_blank">ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz</a></li><li><a href="https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT" target="_blank">https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Any use of this software is permitted provided that this notice is not
+removed and that neither the authors nor the Technische Universitaet Berlin
+are deemed to have made any representations as to the suitability of this
+software for any purpose nor are held responsible for any defects of
+this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+
+As a matter of courtesy, the authors request to be informed about uses
+this software has found, about bugs in this software, and about any
+improvements that may be of general interest.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:tu-berlin&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TU Berlin License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Technische Universitaet Berlin Attribution License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;21ac3160313476ff7d02d1f7c8278548&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Any use of this software is permitted provided that this notice is not\nremoved and that neither the authors nor the Technische Universitaet Berlin\nare deemed to have made any representations as to the suitability of this\nsoftware for any purpose nor are held responsible for any defects of\nthis software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses\nthis software has found, about bugs in this software, and about any\nimprovements that may be of general interest.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;,
+        &quot;_key&quot;: &quot;tu-berlin&quot;,
+        &quot;_name&quot;: &quot;Technische Universitaet Berlin Attribution License 1.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz&quot;,
+            &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+        ],
+        &quot;_owner&quot;: &quot;Technische Universitaet Berlin&quot;,
+        &quot;_shortName&quot;: &quot;TU Berlin License 1.0&quot;,
+        &quot;_spdxId&quot;: &quot;TU-Berlin-1.0&quot;,
+        &quot;_text&quot;: &quot;Any use of this software is permitted provided that this notice is not\nremoved and that neither the authors nor the Technische Universitaet Berlin\nare deemed to have made any representations as to the suitability of this\nsoftware for any purpose nor are held responsible for any defects of\nthis software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses\nthis software has found, about bugs in this software, and about any\nimprovements that may be of general interest.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/14df2a6fd6a9fb264f1ceddd9f5093b3">Fossology:14df2a6fd6a9fb264f1ceddd9f5093b3</a> for <a href="/?license=fossology:TU-Berlin-1.0"><span class="licensename"><span class="namespace">fossology:</span>TU-Berlin-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>TU-Berlin-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Technische Universitaet Berlin License 1.0</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT" target="_blank">https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,
+
+Technische Universitaet Berlin
+
+Any use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software. THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+
+As a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest. Berlin, 28.11.1994
+
+Jutta Degener
+
+Carsten Bormann</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:TU-Berlin-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Technische Universitaet Berlin License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;14df2a6fd6a9fb264f1ceddd9f5093b3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,\n\nTechnische Universitaet Berlin\n\nAny use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software. THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest. Berlin, 28.11.1994\n\nJutta Degener\n\nCarsten Bormann&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Technische Universitaet Berlin License 1.0&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:TU-Berlin-1.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,\n\nTechnische Universitaet Berlin\n\nAny use of this software is permitted provided that this notice is not removed and that neither the authors nor the Technische Universitaet Berlin are deemed to have made any representations as to the suitability of this software for any purpose nor are held responsible for any defects of this software. THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses this software has found, about bugs in this software, and about any improvements that may be of general interest. Berlin, 28.11.1994\n\nJutta Degener\n\nCarsten Bormann&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/01e4bb4835f5804be6761fcb5b0d5d52">OrtLicenseCategorization:01e4bb4835f5804be6761fcb5b0d5d52</a> for <a href="/?license=SPDX:TU-Berlin-1.0"><span class="licensename"><span class="namespace">SPDX:</span>TU-Berlin-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>TU-Berlin-1.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:01e4bb4835f5804be6761fcb5b0d5d52">[<a href="/fact/OrtLicenseCategorization/01e4bb4835f5804be6761fcb5b0d5d52">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:01e4bb4835f5804be6761fcb5b0d5d52">[<a href="/fact/OrtLicenseCategorization/01e4bb4835f5804be6761fcb5b0d5d52">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:TU-Berlin-1.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;01e4bb4835f5804be6761fcb5b0d5d52&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:TU-Berlin-1.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/5daa350cdcfe4fc767816d453afef306">CavilLicenseChange:5daa350cdcfe4fc767816d453afef306</a> for <a href="/?license=cavil:TU-Berlin-1.0"><span class="licensename"><span class="namespace">cavil:</span>TU-Berlin-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>TU-Berlin-1.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TU-Berlin-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:TU-Berlin-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;5daa350cdcfe4fc767816d453afef306&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;TU-Berlin-1.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:TU-Berlin-1.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/fae3e9f1d6c75c61e765cdf1c9ccf6a3">MetaeffektLicense:fae3e9f1d6c75c61e765cdf1c9ccf6a3</a> for <a href="/?license=metaeffekt:TU Berlin License 1.0"><span class="licensename"><span class="namespace">metaeffekt:</span>TU Berlin License 1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>TU Berlin License 1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TU-Berlin-1.0</span></li></ul></li><li><b>other LicenseName Hints (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">TU Berlin</span></li><li><span class="licensename">TU Berlin 1.0</span></li><li><span class="licensename">TU Berlin License 1.0</span></li><li><span class="licensename">TU Berlin License, Version 1.0</span></li><li><span class="licensename">TU Berlin, Version 1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>tu-berlin</span></li><li><span class="licensename">TU-Berlin 1.0</span></li><li><span class="licensename">TU-Berlin License, 1.0</span></li><li><span class="licensename">TU-Berlin License, Version 1.0</span></li><li><span class="licensename">TU-Berlin, Version 1.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:fae3e9f1d6c75c61e765cdf1c9ccf6a3">[<a href="/fact/MetaeffektLicense/fae3e9f1d6c75c61e765cdf1c9ccf6a3">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:TU Berlin License 1.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:TU-Berlin-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TU Berlin&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin License, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin License, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin License, 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:tu-berlin&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;fae3e9f1d6c75c61e765cdf1c9ccf6a3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;TU Berlin, Version 1.0&quot;,
+            &quot;TU Berlin 1.0&quot;,
+            &quot;TU-Berlin, Version 1.0&quot;,
+            &quot;TU-Berlin 1.0&quot;,
+            &quot;TU Berlin License, Version 1.0&quot;,
+            &quot;TU Berlin License 1.0&quot;,
+            &quot;TU-Berlin License, Version 1.0&quot;,
+            &quot;TU-Berlin License, 1.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:TU Berlin License 1.0&quot;,
+        &quot;_category&quot;: &quot;TU Berlin&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:tu-berlin&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:TU-Berlin-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/a42c447b6e554c7b9562319ebfae8286">FossLicense:a42c447b6e554c7b9562319ebfae8286</a> for <a href="/?license=foss-license:Technische Universitaet Berlin Attribution License 1.0"><span class="licensename"><span class="namespace">foss-license:</span>Technische Universitaet Berlin Attribution License 1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>Technische Universitaet Berlin Attribution License 1.0</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">Technische Universitaet Berlin License 1.0</span></li><li><span class="licensename">TU Berlin 1.0</span></li><li><span class="licensename">TU Berlin License 1.0</span></li><li><span class="licensename">TU Berlin License, Version 1.0</span></li><li><span class="licensename">TU Berlin, Version 1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>tu-berlin</span></li><li><span class="licensename">TU-Berlin 1.0</span></li><li><span class="licensename">TU-Berlin License, 1.0</span></li><li><span class="licensename">TU-Berlin License, Version 1.0</span></li><li><span class="licensename">TU-Berlin, Version 1.0</span></li><li><span class="licensename">TU-Berlin-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:Technische Universitaet Berlin Attribution License 1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:tu-berlin&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Technische Universitaet Berlin License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin License 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU Berlin License, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin License, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TU-Berlin License, 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;a42c447b6e554c7b9562319ebfae8286&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;TU-Berlin-1.0&quot;,
+            &quot;Technische Universitaet Berlin License 1.0&quot;,
+            &quot;TU Berlin License 1.0&quot;,
+            &quot;TU Berlin, Version 1.0&quot;,
+            &quot;TU Berlin 1.0&quot;,
+            &quot;TU-Berlin, Version 1.0&quot;,
+            &quot;TU-Berlin 1.0&quot;,
+            &quot;TU Berlin License, Version 1.0&quot;,
+            &quot;TU-Berlin License, Version 1.0&quot;,
+            &quot;TU-Berlin License, 1.0&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;Technische Universitaet Berlin Attribution License 1.0&quot;,
+        &quot;scancode_key&quot;: &quot;tu-berlin&quot;,
+        &quot;spdxid&quot;: &quot;TU-Berlin-1.0&quot;,
+        &quot;text&quot;: &quot;Any use of this software is permitted provided that this notice is not\nremoved and that neither the authors nor the Technische Universitaet Berlin\nare deemed to have made any representations as to the suitability of this\nsoftware for any purpose nor are held responsible for any defects of\nthis software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses\nthis software has found, about bugs in this software, and about any\nimprovements that may be of general interest.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li></ul></body></html>

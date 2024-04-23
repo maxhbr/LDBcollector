@@ -1,0 +1,196 @@
+<html><head><title>ldbcollector: spdx:GFDLX-1.1-only</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:GFDLX-1.1-only</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GFDLX-1.1-only</span></li></ul></li><li><b>other LicenseNames (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">GFDLX-1.1-only</span></li><li><span class="licensename"><span class="namespace">osadl:</span>GFDLX-1.1-only</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GFDLX-1.1-only</span></li></ul></li></ul></div><div></div></div><h1>by Source</h1><ul><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLRule/42b3d7cafac64e067a54cc227131debc">OSADLRule:42b3d7cafac64e067a54cc227131debc</a> for <a href="/?license=osadl:GFDLX-1.1-only"><span class="licensename"><span class="namespace">osadl:</span>GFDLX-1.1-only</span></a></h3><pre>USE CASE Unmodified Delivery
+	YOU MUST Provide License text
+	YOU MUST Provide Copyright notice
+	YOU MUST Provide License notice
+	YOU MUST NOT Modify License
+	YOU MUST NOT Restrict Granted rights
+		ATTRIBUTE Using Technological measures
+	IF Text Delivery Of Over 100 Printed Copies AND Cover Texts Required
+		YOU MUST Use Covers With Cover Texts
+			ATTRIBUTE Viewable
+		YOU MUST Provide Publisher Attribution notice
+			ATTRIBUTE On Covers
+			ATTRIBUTE Viewable
+		YOU MUST Provide Title
+			ATTRIBUTE On Front cover
+			ATTRIBUTE All words equally Viewable
+		IF Copy Cannot Be Modified
+			EITHER
+				YOU MUST Include Modifiable copy
+					ATTRIBUTE Machine-readable
+			OR
+				YOU MUST Reference Modifiable copy
+					ATTRIBUTE Via Internet
+					ATTRIBUTE No charge
+					ATTRIBUTE Duration At least 1 year after Delivery
+USE CASE Modified Delivery
+	YOU MUST Refer To License text
+		REMARKS This section of the GFDL-1.1-only checklist was intentionally left blank, as the syntax and dictionary of the checklists project are overwhelmed by the excess and complexity of the conditions in this section.
+</pre><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>GFDLX-1.1-only</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GFDLX-1.1-only</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;osadl:GFDLX-1.1-only&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:GFDLX-1.1-only&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLRule&quot;,
+        &quot;42b3d7cafac64e067a54cc227131debc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;USE CASE Unmodified Delivery\n\tYOU MUST Provide License text\n\tYOU MUST Provide Copyright notice\n\tYOU MUST Provide License notice\n\tYOU MUST NOT Modify License\n\tYOU MUST NOT Restrict Granted rights\n\t\tATTRIBUTE Using Technological measures\n\tIF Text Delivery Of Over 100 Printed Copies AND Cover Texts Required\n\t\tYOU MUST Use Covers With Cover Texts\n\t\t\tATTRIBUTE Viewable\n\t\tYOU MUST Provide Publisher Attribution notice\n\t\t\tATTRIBUTE On Covers\n\t\t\tATTRIBUTE Viewable\n\t\tYOU MUST Provide Title\n\t\t\tATTRIBUTE On Front cover\n\t\t\tATTRIBUTE All words equally Viewable\n\t\tIF Copy Cannot Be Modified\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Modifiable copy\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tOR\n\t\t\t\tYOU MUST Reference Modifiable copy\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\tATTRIBUTE Duration At least 1 year after Delivery\nUSE CASE Modified Delivery\n\tYOU MUST Refer To License text\n\t\tREMARKS This section of the GFDL-1.1-only checklist was intentionally left blank, as the syntax and dictionary of the checklists project are overwhelmed by the excess and complexity of the conditions in this section.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseRule&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;osadlRule&quot;: &quot;USE CASE Unmodified Delivery\n\tYOU MUST Provide License text\n\tYOU MUST Provide Copyright notice\n\tYOU MUST Provide License notice\n\tYOU MUST NOT Modify License\n\tYOU MUST NOT Restrict Granted rights\n\t\tATTRIBUTE Using Technological measures\n\tIF Text Delivery Of Over 100 Printed Copies AND Cover Texts Required\n\t\tYOU MUST Use Covers With Cover Texts\n\t\t\tATTRIBUTE Viewable\n\t\tYOU MUST Provide Publisher Attribution notice\n\t\t\tATTRIBUTE On Covers\n\t\t\tATTRIBUTE Viewable\n\t\tYOU MUST Provide Title\n\t\t\tATTRIBUTE On Front cover\n\t\t\tATTRIBUTE All words equally Viewable\n\t\tIF Copy Cannot Be Modified\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Modifiable copy\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tOR\n\t\t\t\tYOU MUST Reference Modifiable copy\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\tATTRIBUTE Duration At least 1 year after Delivery\nUSE CASE Modified Delivery\n\tYOU MUST Refer To License text\n\t\tREMARKS This section of the GFDL-1.1-only checklist was intentionally left blank, as the syntax and dictionary of the checklists project are overwhelmed by the excess and complexity of the conditions in this section.\n&quot;,
+        &quot;spdxId&quot;: &quot;osadl:GFDLX-1.1-only&quot;
+    },
+    &quot;type&quot;: &quot;OSADLRule&quot;
+}</pre></details></li></ul></body></html>

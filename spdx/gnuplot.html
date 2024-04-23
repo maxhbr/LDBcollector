@@ -1,0 +1,935 @@
+<html><head><title>ldbcollector: spdx:gnuplot</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:gnuplot</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>gnuplot</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">gnuplot</span></li><li><span class="licensename"><span class="namespace">cavil:</span>gnuplot</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Gnuplot</span></li><li><span class="licensename"><span class="namespace">fossology:</span>gnuplot</span></li><li><span class="licensename"><span class="namespace">fsf:</span>gnuplot</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gnuplot</span></li><li><span class="licensename"><span class="namespace">spdx:</span>gnuplot</span></li><li><span class="licensename">gnuplot License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>gnuplot License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>SUSE-Gnuplot</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:def113f042df7ff2ac38fd7cca12377c">[<a href="/fact/ScancodeData/def113f042df7ff2ac38fd7cca12377c">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e76b6f3da67bad0d9dab5172ac267838">[<a href="/fact/SPDXLicense/e76b6f3da67bad0d9dab5172ac267838">SPDXLicense</a>]</span><span title="FSF:336999ed4b47b80da35360a1aa95aea0">[<a href="/fact/FSF/336999ed4b47b80da35360a1aa95aea0">FSF</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e76b6f3da67bad0d9dab5172ac267838">[<a href="/fact/SPDXLicense/e76b6f3da67bad0d9dab5172ac267838">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:87142e5e73083eaa63b924e6387bcc84">[<a href="/fact/FedoraEntry/87142e5e73083eaa63b924e6387bcc84">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9acbcebdd7a17c403d0ecf3a24532793">[<a href="/fact/OrtLicenseCategorization/9acbcebdd7a17c403d0ecf3a24532793">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9acbcebdd7a17c403d0ecf3a24532793">[<a href="/fact/OrtLicenseCategorization/9acbcebdd7a17c403d0ecf3a24532793">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9acbcebdd7a17c403d0ecf3a24532793">[<a href="/fact/OrtLicenseCategorization/9acbcebdd7a17c403d0ecf3a24532793">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Gnuplot" target="_blank">https://fedoraproject.org/wiki/Licensing/Gnuplot</a></li><li><a href="https://www.gnu.org/licenses/license-list.html#gnuplot" target="_blank">https://www.gnu.org/licenses/license-list.html#gnuplot</a></li><li><a href="http://directory.fsf.org/wiki/License:Gnuplot" target="_blank">http://directory.fsf.org/wiki/License:Gnuplot</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing:Gnuplot?rd=Licensing/Gnuplot</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley
+
+Permission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.
+
+Permission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you
+
+     1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,
+     2. add special version identification to distinguish your version in addition to the base release version number,
+     3. provide your name and address as the primary contact for the support of your modified version, and
+     4. retain our contact information in regard to use of the base software.
+
+Permission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.
+
+This software is provided &quot;as is&quot; without express or implied warranty to the extent permitted by applicable law.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, and distribute this software and its documentation for any purpose with or
+         without fee is hereby granted, provided that the above copyright notice appear in all copies and that
+         both that copyright notice and this permission notice appear in supporting documentation.&lt;/p&gt;
+
+      &lt;p&gt;Permission to modify the software is granted, but not the right to distribute the complete modified
+         source code. Modifications are to be distributed as patches to the released version. Permission to
+         distribute binaries produced by compiling modified sources is granted, provided you&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          distribute the corresponding source modifications from the released version in the form of a
+             patch file along with the binaries,
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          add special version identification to distinguish your version in addition to the base
+             release version number,
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          provide your name and address as the primary contact for the support of your modified version, and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          retain our contact information in regard to use of the base software.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Permission to distribute the released version of the source code along with corresponding source
+         modifications in the form of a patch file is granted with same provisions 2 through 4 for binary
+         distributions.&lt;/p&gt;
+
+      &lt;p&gt;This software is provided &amp;quot;as is&amp;quot; without express or implied warranty to the extent permitted
+         by applicable law.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, and distribute this software and its documentation for
+any purpose with or without fee is hereby granted, provided that the above
+copyright notice appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation.
+
+Permission to modify the software is granted, but not the right to distribute
+the complete modified source code. Modifications are to be distributed as
+patches to the released version. 
+
+Permission to distribute binaries produced by compiling modified sources is
+granted, provided you 
+
+     1. distribute the corresponding source modifications from the released
+        version in the form of a patch file along with the binaries, 
+     2. add special version identification to distinguish your version in
+        addition to the base release version number, 
+     3. provide your name and address as the primary contact for the support of
+        your modified version, and 
+     4. retain our contact information in regard to use of the base software. 
+
+Permission to distribute the released version of the source code along with
+corresponding source modifications in the form of a patch file is granted with
+same provisions 2 through 4 for binary distributions.
+
+This software is provided &quot;as is&quot; without express or implied warranty to the
+extent permitted by applicable law.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley
+
+Permission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.
+
+Permission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you
+
+   1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,
+
+   2. add special version identification to distinguish your version in addition to the base release version number,
+
+   3. provide your name and address as the primary contact for the support of your modified version, and
+
+   4. retain our contact information in regard to use of the base software.
+
+Permission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.
+
+This software is provided &quot;as is&quot; without express or implied warranty to the extent permitted by applicable law.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e76b6f3da67bad0d9dab5172ac267838">SPDXLicense:e76b6f3da67bad0d9dab5172ac267838</a> for <a href="/?license=spdx:gnuplot"><span class="licensename"><span class="namespace">spdx:</span>gnuplot</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>gnuplot</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">gnuplot License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e76b6f3da67bad0d9dab5172ac267838">[<a href="/fact/SPDXLicense/e76b6f3da67bad0d9dab5172ac267838">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e76b6f3da67bad0d9dab5172ac267838">[<a href="/fact/SPDXLicense/e76b6f3da67bad0d9dab5172ac267838">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Gnuplot" target="_blank">https://fedoraproject.org/wiki/Licensing/Gnuplot</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley
+
+Permission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.
+
+Permission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you
+
+     1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,
+     2. add special version identification to distinguish your version in addition to the base release version number,
+     3. provide your name and address as the primary contact for the support of your modified version, and
+     4. retain our contact information in regard to use of the base software.
+
+Permission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.
+
+This software is provided &quot;as is&quot; without express or implied warranty to the extent permitted by applicable law.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, and distribute this software and its documentation for any purpose with or
+         without fee is hereby granted, provided that the above copyright notice appear in all copies and that
+         both that copyright notice and this permission notice appear in supporting documentation.&lt;/p&gt;
+
+      &lt;p&gt;Permission to modify the software is granted, but not the right to distribute the complete modified
+         source code. Modifications are to be distributed as patches to the released version. Permission to
+         distribute binaries produced by compiling modified sources is granted, provided you&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          distribute the corresponding source modifications from the released version in the form of a
+             patch file along with the binaries,
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          add special version identification to distinguish your version in addition to the base
+             release version number,
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          provide your name and address as the primary contact for the support of your modified version, and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          retain our contact information in regard to use of the base software.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Permission to distribute the released version of the source code along with corresponding source
+         modifications in the form of a patch file is granted with same provisions 2 through 4 for binary
+         distributions.&lt;/p&gt;
+
+      &lt;p&gt;This software is provided &amp;quot;as is&amp;quot; without express or implied warranty to the extent permitted
+         by applicable law.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:gnuplot&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;gnuplot License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e76b6f3da67bad0d9dab5172ac267838&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you\n\n     1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,\n     2. add special version identification to distinguish your version in addition to the base release version number,\n     3. provide your name and address as the primary contact for the support of your modified version, and\n     4. retain our contact information in regard to use of the base software.\n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \&quot;as is\&quot; without express or implied warranty to the extent permitted by applicable law.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, and distribute this software and its documentation for any purpose with or\n         without fee is hereby granted, provided that the above copyright notice appear in all copies and that\n         both that copyright notice and this permission notice appear in supporting documentation.&lt;/p&gt;\n\n      &lt;p&gt;Permission to modify the software is granted, but not the right to distribute the complete modified\n         source code. Modifications are to be distributed as patches to the released version. Permission to\n         distribute binaries produced by compiling modified sources is granted, provided you&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          distribute the corresponding source modifications from the released version in the form of a\n             patch file along with the binaries,\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          add special version identification to distinguish your version in addition to the base\n             release version number,\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          provide your name and address as the primary contact for the support of your modified version, and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          retain our contact information in regard to use of the base software.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Permission to distribute the released version of the source code along with corresponding source\n         modifications in the form of a patch file is granted with same provisions 2 through 4 for binary\n         distributions.&lt;/p&gt;\n\n      &lt;p&gt;This software is provided &amp;quot;as is&amp;quot; without express or implied warranty to the extent permitted\n         by applicable law.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T04:59:59Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: true,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:gnuplot&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you\n\n     1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,\n     2. add special version identification to distinguish your version in addition to the base release version number,\n     3. provide your name and address as the primary contact for the support of your modified version, and\n     4. retain our contact information in regard to use of the base software.\n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \&quot;as is\&quot; without express or implied warranty to the extent permitted by applicable law.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, and distribute this software and its documentation for any purpose with or\n         without fee is hereby granted, provided that the above copyright notice appear in all copies and that\n         both that copyright notice and this permission notice appear in supporting documentation.&lt;/p&gt;\n\n      &lt;p&gt;Permission to modify the software is granted, but not the right to distribute the complete modified\n         source code. Modifications are to be distributed as patches to the released version. Permission to\n         distribute binaries produced by compiling modified sources is granted, provided you&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          distribute the corresponding source modifications from the released version in the form of a\n             patch file along with the binaries,\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          add special version identification to distinguish your version in addition to the base\n             release version number,\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          provide your name and address as the primary contact for the support of your modified version, and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          retain our contact information in regard to use of the base software.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Permission to distribute the released version of the source code along with corresponding source\n         modifications in the form of a patch file is granted with same provisions 2 through 4 for binary\n         distributions.&lt;/p&gt;\n\n      &lt;p&gt;This software is provided &amp;quot;as is&amp;quot; without express or implied warranty to the extent permitted\n         by applicable law.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;gnuplot License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; add special version identification to distinguish your version in addition to the base release version number,\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; provide your name and address as the primary contact for the support of your modified version, and\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; retain our contact information in regard to use of the base software.\n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \&quot;as is\&quot; without express or implied warranty to the extent permitted by applicable law.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/87142e5e73083eaa63b924e6387bcc84">FedoraEntry:87142e5e73083eaa63b924e6387bcc84</a> for <a href="/?license=Fedora:Gnuplot"><span class="licensename"><span class="namespace">Fedora:</span>Gnuplot</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Gnuplot</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Gnuplot</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">gnuplot</span></li><li><span class="licensename">gnuplot License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:87142e5e73083eaa63b924e6387bcc84">[<a href="/fact/FedoraEntry/87142e5e73083eaa63b924e6387bcc84">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Gnuplot" target="_blank">https://fedoraproject.org/wiki/Licensing/Gnuplot</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Gnuplot&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Gnuplot&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;gnuplot License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;gnuplot&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;87142e5e73083eaa63b924e6387bcc84&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;gnuplot&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;gnuplot License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Gnuplot&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Gnuplot&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/FSF">FSF</a>: <a href="/fact/FSF/336999ed4b47b80da35360a1aa95aea0">FSF:336999ed4b47b80da35360a1aa95aea0</a> for <a href="/?license=fsf:gnuplot"><span class="licensename"><span class="namespace">fsf:</span>gnuplot</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fsf:</span>gnuplot</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Gnuplot license</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>gnuplot</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="FSF:336999ed4b47b80da35360a1aa95aea0">[<a href="/fact/FSF/336999ed4b47b80da35360a1aa95aea0">FSF</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/license-list.html#gnuplot" target="_blank">https://www.gnu.org/licenses/license-list.html#gnuplot</a></li><li><a href="http://directory.fsf.org/wiki/License:Gnuplot" target="_blank">http://directory.fsf.org/wiki/License:Gnuplot</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fsf:gnuplot&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;Gnuplot license&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:gnuplot&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FSF&quot;,
+        &quot;336999ed4b47b80da35360a1aa95aea0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/license-list.html#gnuplot&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://directory.fsf.org/wiki/License:Gnuplot&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_id&quot;: &quot;fsf:gnuplot&quot;,
+        &quot;_identifiers&quot;: {
+            &quot;spdx&quot;: [
+                &quot;gnuplot&quot;
+            ]
+        },
+        &quot;_name&quot;: &quot;Gnuplot license&quot;,
+        &quot;_tags&quot;: [
+            &quot;libre&quot;
+        ],
+        &quot;_uris&quot;: [
+            &quot;https://www.gnu.org/licenses/license-list.html#gnuplot&quot;,
+            &quot;http://directory.fsf.org/wiki/License:Gnuplot&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;FSF&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/def113f042df7ff2ac38fd7cca12377c">ScancodeData:def113f042df7ff2ac38fd7cca12377c</a> for <a href="/?license=scancode:gnuplot"><span class="licensename"><span class="namespace">scancode:</span>gnuplot</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>gnuplot</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">gnuplot License</span></li><li><span class="licensename">gnuplot License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:def113f042df7ff2ac38fd7cca12377c">[<a href="/fact/ScancodeData/def113f042df7ff2ac38fd7cca12377c">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Gnuplot" target="_blank">https://fedoraproject.org/wiki/Licensing/Gnuplot</a></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing:Gnuplot?rd=Licensing/Gnuplot</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, and distribute this software and its documentation for
+any purpose with or without fee is hereby granted, provided that the above
+copyright notice appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation.
+
+Permission to modify the software is granted, but not the right to distribute
+the complete modified source code. Modifications are to be distributed as
+patches to the released version. 
+
+Permission to distribute binaries produced by compiling modified sources is
+granted, provided you 
+
+     1. distribute the corresponding source modifications from the released
+        version in the form of a patch file along with the binaries, 
+     2. add special version identification to distinguish your version in
+        addition to the base release version number, 
+     3. provide your name and address as the primary contact for the support of
+        your modified version, and 
+     4. retain our contact information in regard to use of the base software. 
+
+Permission to distribute the released version of the source code along with
+corresponding source modifications in the form of a patch file is granted with
+same provisions 2 through 4 for binary distributions.
+
+This software is provided &quot;as is&quot; without express or implied warranty to the
+extent permitted by applicable law.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:gnuplot&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;gnuplot License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;gnuplot License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;def113f042df7ff2ac38fd7cca12377c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Gnuplot?rd=Licensing/Gnuplot&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, and distribute this software and its documentation for\nany purpose with or without fee is hereby granted, provided that the above\ncopyright notice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute\nthe complete modified source code. Modifications are to be distributed as\npatches to the released version. \n\nPermission to distribute binaries produced by compiling modified sources is\ngranted, provided you \n\n     1. distribute the corresponding source modifications from the released\n        version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in\n        addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of\n        your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with\ncorresponding source modifications in the form of a patch file is granted with\nsame provisions 2 through 4 for binary distributions.\n\nThis software is provided \&quot;as is\&quot; without express or implied warranty to the\nextent permitted by applicable law.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Gnuplot?rd=Licensing/Gnuplot&quot;,
+        &quot;_key&quot;: &quot;gnuplot&quot;,
+        &quot;_name&quot;: &quot;gnuplot License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+        ],
+        &quot;_owner&quot;: &quot;GNU Project&quot;,
+        &quot;_shortName&quot;: &quot;gnuplot License&quot;,
+        &quot;_spdxId&quot;: &quot;gnuplot&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, and distribute this software and its documentation for\nany purpose with or without fee is hereby granted, provided that the above\ncopyright notice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute\nthe complete modified source code. Modifications are to be distributed as\npatches to the released version. \n\nPermission to distribute binaries produced by compiling modified sources is\ngranted, provided you \n\n     1. distribute the corresponding source modifications from the released\n        version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in\n        addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of\n        your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with\ncorresponding source modifications in the form of a patch file is granted with\nsame provisions 2 through 4 for binary distributions.\n\nThis software is provided \&quot;as is\&quot; without express or implied warranty to the\nextent permitted by applicable law.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/a07ad7c644b958557d90a08dc2c15099">Fossology:a07ad7c644b958557d90a08dc2c15099</a> for <a href="/?license=fossology:gnuplot"><span class="licensename"><span class="namespace">fossology:</span>gnuplot</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>gnuplot</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">gnuplot License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Gnuplot" target="_blank">https://fedoraproject.org/wiki/Licensing/Gnuplot</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley
+
+Permission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.
+
+Permission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you
+
+   1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,
+
+   2. add special version identification to distinguish your version in addition to the base release version number,
+
+   3. provide your name and address as the primary contact for the support of your modified version, and
+
+   4. retain our contact information in regard to use of the base software.
+
+Permission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.
+
+This software is provided &quot;as is&quot; without express or implied warranty to the extent permitted by applicable law.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:gnuplot&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;gnuplot License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;a07ad7c644b958557d90a08dc2c15099&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you\n\n   1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,\n\n   2. add special version identification to distinguish your version in addition to the base release version number,\n\n   3. provide your name and address as the primary contact for the support of your modified version, and\n\n   4. retain our contact information in regard to use of the base software.\n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \&quot;as is\&quot; without express or implied warranty to the extent permitted by applicable law.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;gnuplot License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:gnuplot&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you\n\n   1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries,\n\n   2. add special version identification to distinguish your version in addition to the base release version number,\n\n   3. provide your name and address as the primary contact for the support of your modified version, and\n\n   4. retain our contact information in regard to use of the base software.\n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \&quot;as is\&quot; without express or implied warranty to the extent permitted by applicable law.&quot;,
+        &quot;_rf_text_updatable&quot;: true,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Gnuplot&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/9acbcebdd7a17c403d0ecf3a24532793">OrtLicenseCategorization:9acbcebdd7a17c403d0ecf3a24532793</a> for <a href="/?license=SPDX:gnuplot"><span class="licensename"><span class="namespace">SPDX:</span>gnuplot</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>gnuplot</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9acbcebdd7a17c403d0ecf3a24532793">[<a href="/fact/OrtLicenseCategorization/9acbcebdd7a17c403d0ecf3a24532793">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9acbcebdd7a17c403d0ecf3a24532793">[<a href="/fact/OrtLicenseCategorization/9acbcebdd7a17c403d0ecf3a24532793">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9acbcebdd7a17c403d0ecf3a24532793">[<a href="/fact/OrtLicenseCategorization/9acbcebdd7a17c403d0ecf3a24532793">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:gnuplot&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9acbcebdd7a17c403d0ecf3a24532793&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:gnuplot&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/d1e3beee7e54d66f60521d1e6bbb58c8">CavilLicenseChange:d1e3beee7e54d66f60521d1e6bbb58c8</a> for <a href="/?license=cavil:gnuplot"><span class="licensename"><span class="namespace">cavil:</span>gnuplot</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>gnuplot</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">gnuplot</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:gnuplot&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;gnuplot&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;d1e3beee7e54d66f60521d1e6bbb58c8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;gnuplot&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:gnuplot&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/8219e9ffcc7e88f13b77bd1c1f138b8a">MetaeffektLicense:8219e9ffcc7e88f13b77bd1c1f138b8a</a> for <a href="/?license=metaeffekt:gnuplot License"><span class="licensename"><span class="namespace">metaeffekt:</span>gnuplot License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>gnuplot License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>gnuplot</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">gnuplot</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gnuplot</span></li><li><span class="licensename">gnuplot License</span></li><li><span class="licensename">GNUPLOT LICENSE</span></li><li><span class="licensename">GNUPLOT License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:gnuplot License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:gnuplot&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;gnuplot&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;gnuplot License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GNUPLOT LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GNUPLOT License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:gnuplot&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;8219e9ffcc7e88f13b77bd1c1f138b8a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;gnuplot License&quot;,
+            &quot;GNUPLOT LICENSE&quot;,
+            &quot;GNUPLOT License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:gnuplot License&quot;,
+        &quot;_category&quot;: &quot;gnuplot&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:gnuplot&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:gnuplot&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

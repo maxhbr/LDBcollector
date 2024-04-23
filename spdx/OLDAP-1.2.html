@@ -1,0 +1,1787 @@
+<html><head><title>ldbcollector: spdx:OLDAP-1.2</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:OLDAP-1.2</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-1.2</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP-1.2</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>OLDAP-1.2</span></li><li><span class="licensename"><span class="namespace">cavil:</span>OLDAP-1.2</span></li><li><span class="licensename"><span class="namespace">fossology:</span>OLDAP-1.2</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-1.2</span></li><li><span class="licensename">Open LDAP Public License v1.2</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Open LDAP Public License v1.2</span></li><li><span class="licensename">OpenLDAP Public License 1.2</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenLDAP Public License 1.2</span></li><li><span class="licensename">openldap-1.2</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openldap-1.2</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP</span></li><li><span class="licensename">OLDAP License, 1.2</span></li><li><span class="licensename">OLDAP License, Version 1.2</span></li><li><span class="licensename">OLDAP, 1.2</span></li><li><span class="licensename">OLDAP, Version 1.2</span></li><li><span class="licensename">The OpenLDAP Public License Version 1.2, 1 September 1998</span></li><li><span class="licensename">THIS WORK IS SUBJECT TO VERSION 1.2 OF THE OPENLDAP PUBLIC LICENSE</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:06d62b6d3caaa7c29c54f794b60ec43d">[<a href="/fact/BlueOakCouncil/06d62b6d3caaa7c29c54f794b60ec43d">BlueOakCouncil</a>]</span><span title="FOSSLight:1809c4eef5b04c5c8ff2f5d27ef199fb">[<a href="/fact/FOSSLight/1809c4eef5b04c5c8ff2f5d27ef199fb">FOSSLight</a>]</span>)</span></li><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:8eb5f146a6130e70dbab4e9fa3fd2743">[<a href="/fact/ScancodeData/8eb5f146a6130e70dbab4e9fa3fd2743">ScancodeData</a>]</span>)</span></li><li>WeaklyProtective<span class="provided-by">(provided by: <span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c2a767213712c4f9c4b595bd2c33130b">[<a href="/fact/SPDXLicense/c2a767213712c4f9c4b595bd2c33130b">SPDXLicense</a>]</span><span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:06d62b6d3caaa7c29c54f794b60ec43d">[<a href="/fact/BlueOakCouncil/06d62b6d3caaa7c29c54f794b60ec43d">BlueOakCouncil</a>]</span>)</span></li><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:334a1cb1696cd547d2ca1efcc2300d72">[<a href="/fact/OrtLicenseCategorization/334a1cb1696cd547d2ca1efcc2300d72">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:334a1cb1696cd547d2ca1efcc2300d72">[<a href="/fact/OrtLicenseCategorization/334a1cb1696cd547d2ca1efcc2300d72">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:334a1cb1696cd547d2ca1efcc2300d72">[<a href="/fact/OrtLicenseCategorization/334a1cb1696cd547d2ca1efcc2300d72">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was released 1 September 1998. This license was issued four time, but only with formatting differences.<span class="provided-by">(provided by: <span title="SPDXLicense:c2a767213712c4f9c4b595bd2c33130b">[<a href="/fact/SPDXLicense/c2a767213712c4f9c4b595bd2c33130b">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Per SPDX.org, this license was released 1 September 1998. This license was
+issued four time, but only with formatting differences.
+<span class="provided-by">(provided by: <span title="ScancodeData:8eb5f146a6130e70dbab4e9fa3fd2743">[<a href="/fact/ScancodeData/8eb5f146a6130e70dbab4e9fa3fd2743">ScancodeData</a>]</span>)</span></li><li><b>Fossology: </b>This license was released 1 September 1998. This license was issued four time, but only with formatting differences.<span class="provided-by">(provided by: <span title="Fossology:e02b68685961396fe3511ea2dda93929">[<a href="/fact/Fossology/e02b68685961396fe3511ea2dda93929">Fossology</a>]</span>)</span></li><li><b>HermineLicense: </b>&quot;OLDAP-1.2&quot; is of radical: OLDAP<span class="provided-by">(provided by: <span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7</a></li><li><a href="https://spdx.org/licenses/OLDAP-1.2.html" target="_blank">https://spdx.org/licenses/OLDAP-1.2.html</a></li></ul><h3>Other Statements</h3><ul><li>http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+Version 1.2, 1 September 1998
+
+Copyright 1998, The OpenLDAP Foundation. All Rights Reserved.
+
+Note: This license is derived from the &quot;Artistic License&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.
+
+PREAMBLE
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+     &quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+     &quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+     &quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+     &quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+     &quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+     &quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+
+     b) use the modified Package only within your corporation or organization.
+
+     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+
+     d) make other distribution arrangements with the Copyright Holder.
+
+4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+
+     b) accompany the distribution with the machine-readable source of the Package with your modifications.
+
+     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+
+     d) make other distribution arrangements with the Copyright Holder.
+
+5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.
+
+8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+9. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+The End
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The OpenLDAP Public License
+        &lt;br /&gt;
+
+Version 1.2, 1 September 1998
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1998, The OpenLDAP Foundation. All Rights Reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Note: This license is derived from the &amp;quot;Artistic License&amp;quot; as distributed with the Perl
+         Programming Language. As differences may exist, the complete license should be read.&lt;/p&gt;
+
+         &lt;p&gt;PREAMBLE&lt;/p&gt;
+
+         &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the
+         Copyright Holder maintains some semblance of artistic control over the development of the package,
+         while giving the users of the package the right to use and distribute the Package in a more-or-less
+         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Definitions:&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and
+         derivatives of that collection of files created through textual modification.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified
+         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication
+         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright
+         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees
+         involved in handling the item. It also means that recipients of the item may redistribute it under the
+         same conditions they received it.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You may make and give away verbatim copies of the source form of the Standard Version of this
+             Package without restriction, provided that you duplicate all of the original copyright notices
+             and associated disclaimers.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain
+             or from the Copyright Holder. A Package modified in such a way shall still be considered the
+             Standard Version.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may otherwise modify your copy of this Package in any way, provided that you insert a
+             prominent notice in each changed file stating how and when you changed that file, and provided
+             that you do at least ONE of the following:
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            place your modifications in the Public Domain or otherwise make them Freely Available, such
+               as by posting said modifications to Usenet or an equivalent medium, or placing the
+               modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright
+               Holder to include your modifications in the Standard Version of the Package.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            use the modified Package only within your corporation or organization.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            rename any non-standard executables so the names do not conflict with standard executables,
+               which must also be provided, and provide a separate manual page for each non-standard
+               executable that clearly documents how it differs from the Standard Version.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+            make other distribution arrangements with the Copyright Holder.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may distribute the programs of this Package in object code or executable form, provided that
+             you do at least ONE of the following:
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            distribute a Standard Version of the executables and library files, together with
+               instructions (in the manual page or equivalent) on where to get the Standard Version.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            accompany the distribution with the machine-readable source of the Package with your modifications.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            accompany any non-standard executables with their corresponding Standard Version executables,
+               giving the non-standard executables non-standard names, and clearly documenting the
+               differences in manual pages (or equivalent), together with instructions on where to get
+               the Standard Version.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+            make other distribution arrangements with the Copyright Holder.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          You may charge a reasonable copying fee for any distribution of this Package. You may charge any
+             fee you choose for support of this Package. You may not charge a fee for this Package itself.
+             However, you may distribute this Package in aggregate with other (possibly commercial)
+             programs as part of a larger (possibly commercial) software distribution provided that you do
+             not advertise this Package as a product of your own.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          The scripts and library files supplied as input to or produced as output from the programs of
+             this Package do not automatically fall under the copyright of this Package, but belong to
+             whomever generated them, and may be sold commercially, and may be aggregated with this
+             Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          C subroutines supplied by you and linked into this Package in order to emulate subroutines and
+             variables of the language defined by this Package shall not be considered part of this
+             Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not
+             change the language in any way that would cause it to fail the regression tests for the
+             language.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 8.&lt;/var&gt;
+          The name of the Copyright Holder may not be used to endorse or promote products derived from this
+             software without specific prior written permission.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 9.&lt;/var&gt;
+          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A
+             PARTICULAR PURPOSE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The End&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>The OpenLDAP Public License 
+
+Version 1.2, 1 September 1998 
+Copyright 1998, The OpenLDAP Foundation. 
+All Rights Reserved. 
+
+Note: 
+This license is derived from the &quot;Artistic License&quot; as distributed 
+with the Perl Programming Language. As differences may exist, 
+the complete license should be read. 
+
+PREAMBLE 
+
+The intent of this document is to state the conditions under which 
+a Package may be copied, such that the Copyright Holder maintains 
+some semblance of artistic control over the development of the 
+package, while giving the users of the package the right to use 
+and distribute the Package in a more-or-less customary fashion, 
+plus the right to make reasonable modifications. 
+
+Definitions: 
+
+&quot;Package&quot; refers to the collection of files distributed by the 
+Copyright Holder, and derivatives of that collection of files 
+created through textual modification. 
+
+&quot;Standard Version&quot; refers to such a Package if it has not been 
+modified, or has been modified in accordance with the wishes 
+of the Copyright Holder. 
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or 
+copyrights for the package. 
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing 
+this Package. 
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the 
+basis of media cost, duplication charges, time of people 
+involved, and so on. (You will not be required to justify it 
+to the Copyright Holder, but only to the computing community 
+at large as a market that must bear the fee.) 
+
+&quot;Freely Available&quot; means that no fee is charged for the item 
+itself, though there may be fees involved in handling the item. 
+It also means that recipients of the item may redistribute it 
+under the same conditions they received it. 
+
+1. You may make and give away verbatim copies of the source form 
+of the Standard Version of this Package without restriction, provided 
+that you duplicate all of the original copyright notices and 
+associated disclaimers. 
+
+2. You may apply bug fixes, portability fixes and other modifications 
+derived from the Public Domain or from the Copyright Holder. A 
+Package modified in such a way shall still be considered the Standard 
+Version. 
+
+3. You may otherwise modify your copy of this Package in any way, 
+provided that you insert a prominent notice in each changed file 
+stating how and when you changed that file, and provided that you 
+do at least ONE of the following: 
+
+a) place your modifications in the Public Domain or otherwise 
+make them Freely Available, such as by posting said modifications 
+to Usenet or an equivalent medium, or placing the modifications 
+on a major archive site such as uunet.uu.net, or by allowing 
+the Copyright Holder to include your modifications in the 
+Standard Version of the Package. 
+
+b) use the modified Package only within your corporation or 
+organization. 
+
+c) rename any non-standard executables so the names do not 
+conflict with standard executables, which must also be provided, 
+and provide a separate manual page for each non-standard 
+executable that clearly documents how it differs from the 
+Standard Version. 
+
+d) make other distribution arrangements with the Copyright 
+Holder. 
+
+4. You may distribute the programs of this Package in object code 
+or executable form, provided that you do at least ONE of the 
+following: 
+
+a) distribute a Standard Version of the executables and library 
+files, together with instructions (in the manual page or 
+equivalent) on where to get the Standard Version. 
+
+b) accompany the distribution with the machine-readable source 
+of the Package with your modifications. 
+
+c) accompany any non-standard executables with their corresponding 
+Standard Version executables, giving the non-standard executables 
+non-standard names, and clearly documenting the differences in 
+manual pages (or equivalent), together with instructions on 
+where to get the Standard Version. 
+
+d) make other distribution arrangements with the Copyright 
+Holder. 
+
+5. You may charge a reasonable copying fee for any distribution of 
+this Package. You may charge any fee you choose for support of 
+this Package. You may not charge a fee for this Package itself. 
+However, you may distribute this Package in aggregate with other 
+(possibly commercial) programs as part of a larger (possibly 
+commercial) software distribution provided that you do not advertise 
+this Package as a product of your own. 
+
+6. The scripts and library files supplied as input to or produced 
+as output from the programs of this Package do not automatically 
+fall under the copyright of this Package, but belong to whomever 
+generated them, and may be sold commercially, and may be aggregated 
+with this Package. 
+
+7. C subroutines supplied by you and linked into this Package in 
+order to emulate subroutines and variables of the language defined 
+by this Package shall not be considered part of this Package, but 
+are the equivalent of input as in Paragraph 6, provided these 
+subroutines do not change the language in any way that would cause 
+it to fail the regression tests for the language. 
+
+8. The name of the Copyright Holder may not be used to endorse or 
+promote products derived from this software without specific prior 
+written permission. 
+
+9. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR 
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED 
+WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
+
+The End</pre></details></li><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+
+Version 1.2, 1 September 1998 Copyright 1998, The OpenLDAP Foundation. All Rights Reserved. Note: This license is derived from the &quot;Artistic License&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.
+
+PREAMBLE
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+&quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+&quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+&quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+
+      b) use the modified Package only within your corporation or organization.
+
+      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+
+      b) accompany the distribution with the machine-readable source of the Package with your modifications.
+
+      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+   7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.
+
+   8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+   9. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/c2a767213712c4f9c4b595bd2c33130b">SPDXLicense:c2a767213712c4f9c4b595bd2c33130b</a> for <a href="/?license=spdx:OLDAP-1.2"><span class="licensename"><span class="namespace">spdx:</span>OLDAP-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v1.2</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c2a767213712c4f9c4b595bd2c33130b">[<a href="/fact/SPDXLicense/c2a767213712c4f9c4b595bd2c33130b">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was released 1 September 1998. This license was issued four time, but only with formatting differences.<span class="provided-by">(provided by: <span title="SPDXLicense:c2a767213712c4f9c4b595bd2c33130b">[<a href="/fact/SPDXLicense/c2a767213712c4f9c4b595bd2c33130b">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+Version 1.2, 1 September 1998
+
+Copyright 1998, The OpenLDAP Foundation. All Rights Reserved.
+
+Note: This license is derived from the &quot;Artistic License&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.
+
+PREAMBLE
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+     &quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+     &quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+     &quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+     &quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+     &quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+     &quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+
+     b) use the modified Package only within your corporation or organization.
+
+     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+
+     d) make other distribution arrangements with the Copyright Holder.
+
+4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+
+     b) accompany the distribution with the machine-readable source of the Package with your modifications.
+
+     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+
+     d) make other distribution arrangements with the Copyright Holder.
+
+5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.
+
+8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+9. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+The End
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The OpenLDAP Public License
+        &lt;br /&gt;
+
+Version 1.2, 1 September 1998
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1998, The OpenLDAP Foundation. All Rights Reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Note: This license is derived from the &amp;quot;Artistic License&amp;quot; as distributed with the Perl
+         Programming Language. As differences may exist, the complete license should be read.&lt;/p&gt;
+
+         &lt;p&gt;PREAMBLE&lt;/p&gt;
+
+         &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the
+         Copyright Holder maintains some semblance of artistic control over the development of the package,
+         while giving the users of the package the right to use and distribute the Package in a more-or-less
+         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Definitions:&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and
+         derivatives of that collection of files created through textual modification.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified
+         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication
+         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright
+         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees
+         involved in handling the item. It also means that recipients of the item may redistribute it under the
+         same conditions they received it.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You may make and give away verbatim copies of the source form of the Standard Version of this
+             Package without restriction, provided that you duplicate all of the original copyright notices
+             and associated disclaimers.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain
+             or from the Copyright Holder. A Package modified in such a way shall still be considered the
+             Standard Version.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may otherwise modify your copy of this Package in any way, provided that you insert a
+             prominent notice in each changed file stating how and when you changed that file, and provided
+             that you do at least ONE of the following:
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            place your modifications in the Public Domain or otherwise make them Freely Available, such
+               as by posting said modifications to Usenet or an equivalent medium, or placing the
+               modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright
+               Holder to include your modifications in the Standard Version of the Package.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            use the modified Package only within your corporation or organization.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            rename any non-standard executables so the names do not conflict with standard executables,
+               which must also be provided, and provide a separate manual page for each non-standard
+               executable that clearly documents how it differs from the Standard Version.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+            make other distribution arrangements with the Copyright Holder.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may distribute the programs of this Package in object code or executable form, provided that
+             you do at least ONE of the following:
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            distribute a Standard Version of the executables and library files, together with
+               instructions (in the manual page or equivalent) on where to get the Standard Version.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            accompany the distribution with the machine-readable source of the Package with your modifications.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            accompany any non-standard executables with their corresponding Standard Version executables,
+               giving the non-standard executables non-standard names, and clearly documenting the
+               differences in manual pages (or equivalent), together with instructions on where to get
+               the Standard Version.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+            make other distribution arrangements with the Copyright Holder.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          You may charge a reasonable copying fee for any distribution of this Package. You may charge any
+             fee you choose for support of this Package. You may not charge a fee for this Package itself.
+             However, you may distribute this Package in aggregate with other (possibly commercial)
+             programs as part of a larger (possibly commercial) software distribution provided that you do
+             not advertise this Package as a product of your own.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          The scripts and library files supplied as input to or produced as output from the programs of
+             this Package do not automatically fall under the copyright of this Package, but belong to
+             whomever generated them, and may be sold commercially, and may be aggregated with this
+             Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          C subroutines supplied by you and linked into this Package in order to emulate subroutines and
+             variables of the language defined by this Package shall not be considered part of this
+             Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not
+             change the language in any way that would cause it to fail the regression tests for the
+             language.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 8.&lt;/var&gt;
+          The name of the Copyright Holder may not be used to endorse or promote products derived from this
+             software without specific prior written permission.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 9.&lt;/var&gt;
+          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A
+             PARTICULAR PURPOSE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The End&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OLDAP-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;c2a767213712c4f9c4b595bd2c33130b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license was released 1 September 1998. This license was issued four time, but only with formatting differences.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The OpenLDAP Public License\nVersion 1.2, 1 September 1998\n\nCopyright 1998, The OpenLDAP Foundation. All Rights Reserved.\n\nNote: This license is derived from the \&quot;Artistic License\&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.\n\nPREAMBLE\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n     \&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n     \&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n     \&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n     \&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n     \&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n     \&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n     b) use the modified Package only within your corporation or organization.\n\n     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n     d) make other distribution arrangements with the Copyright Holder.\n\n4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n     b) accompany the distribution with the machine-readable source of the Package with your modifications.\n\n     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n     d) make other distribution arrangements with the Copyright Holder.\n\n5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.\n\n8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n9. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nThe End\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The OpenLDAP Public License\n        &lt;br /&gt;\n\nVersion 1.2, 1 September 1998\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1998, The OpenLDAP Foundation. All Rights Reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Note: This license is derived from the &amp;quot;Artistic License&amp;quot; as distributed with the Perl\n         Programming Language. As differences may exist, the complete license should be read.&lt;/p&gt;\n\n         &lt;p&gt;PREAMBLE&lt;/p&gt;\n\n         &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the\n         Copyright Holder maintains some semblance of artistic control over the development of the package,\n         while giving the users of the package the right to use and distribute the Package in a more-or-less\n         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Definitions:&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and\n         derivatives of that collection of files created through textual modification.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified\n         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication\n         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright\n         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees\n         involved in handling the item. It also means that recipients of the item may redistribute it under the\n         same conditions they received it.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You may make and give away verbatim copies of the source form of the Standard Version of this\n             Package without restriction, provided that you duplicate all of the original copyright notices\n             and associated disclaimers.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain\n             or from the Copyright Holder. A Package modified in such a way shall still be considered the\n             Standard Version.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may otherwise modify your copy of this Package in any way, provided that you insert a\n             prominent notice in each changed file stating how and when you changed that file, and provided\n             that you do at least ONE of the following:\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            place your modifications in the Public Domain or otherwise make them Freely Available, such\n               as by posting said modifications to Usenet or an equivalent medium, or placing the\n               modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright\n               Holder to include your modifications in the Standard Version of the Package.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            use the modified Package only within your corporation or organization.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            rename any non-standard executables so the names do not conflict with standard executables,\n               which must also be provided, and provide a separate manual page for each non-standard\n               executable that clearly documents how it differs from the Standard Version.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n            make other distribution arrangements with the Copyright Holder.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may distribute the programs of this Package in object code or executable form, provided that\n             you do at least ONE of the following:\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            distribute a Standard Version of the executables and library files, together with\n               instructions (in the manual page or equivalent) on where to get the Standard Version.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            accompany the distribution with the machine-readable source of the Package with your modifications.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            accompany any non-standard executables with their corresponding Standard Version executables,\n               giving the non-standard executables non-standard names, and clearly documenting the\n               differences in manual pages (or equivalent), together with instructions on where to get\n               the Standard Version.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n            make other distribution arrangements with the Copyright Holder.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          You may charge a reasonable copying fee for any distribution of this Package. You may charge any\n             fee you choose for support of this Package. You may not charge a fee for this Package itself.\n             However, you may distribute this Package in aggregate with other (possibly commercial)\n             programs as part of a larger (possibly commercial) software distribution provided that you do\n             not advertise this Package as a product of your own.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          The scripts and library files supplied as input to or produced as output from the programs of\n             this Package do not automatically fall under the copyright of this Package, but belong to\n             whomever generated them, and may be sold commercially, and may be aggregated with this\n             Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          C subroutines supplied by you and linked into this Package in order to emulate subroutines and\n             variables of the language defined by this Package shall not be considered part of this\n             Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not\n             change the language in any way that would cause it to fail the regression tests for the\n             language.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 8.&lt;/var&gt;\n          The name of the Copyright Holder may not be used to endorse or promote products derived from this\n             software without specific prior written permission.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 9.&lt;/var&gt;\n          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,\n             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A\n             PARTICULAR PURPOSE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The End&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:38Z&quot;,
+                &quot;url&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license was released 1 September 1998. This license was issued four time, but only with formatting differences.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:OLDAP-1.2&quot;,
+        &quot;licenseText&quot;: &quot;The OpenLDAP Public License\nVersion 1.2, 1 September 1998\n\nCopyright 1998, The OpenLDAP Foundation. All Rights Reserved.\n\nNote: This license is derived from the \&quot;Artistic License\&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.\n\nPREAMBLE\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n     \&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n     \&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n     \&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n     \&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n     \&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n     \&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n     b) use the modified Package only within your corporation or organization.\n\n     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n     d) make other distribution arrangements with the Copyright Holder.\n\n4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n     b) accompany the distribution with the machine-readable source of the Package with your modifications.\n\n     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n     d) make other distribution arrangements with the Copyright Holder.\n\n5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.\n\n8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n9. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nThe End\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The OpenLDAP Public License\n        &lt;br /&gt;\n\nVersion 1.2, 1 September 1998\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1998, The OpenLDAP Foundation. All Rights Reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Note: This license is derived from the &amp;quot;Artistic License&amp;quot; as distributed with the Perl\n         Programming Language. As differences may exist, the complete license should be read.&lt;/p&gt;\n\n         &lt;p&gt;PREAMBLE&lt;/p&gt;\n\n         &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the\n         Copyright Holder maintains some semblance of artistic control over the development of the package,\n         while giving the users of the package the right to use and distribute the Package in a more-or-less\n         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Definitions:&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and\n         derivatives of that collection of files created through textual modification.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified\n         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication\n         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright\n         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees\n         involved in handling the item. It also means that recipients of the item may redistribute it under the\n         same conditions they received it.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You may make and give away verbatim copies of the source form of the Standard Version of this\n             Package without restriction, provided that you duplicate all of the original copyright notices\n             and associated disclaimers.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain\n             or from the Copyright Holder. A Package modified in such a way shall still be considered the\n             Standard Version.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may otherwise modify your copy of this Package in any way, provided that you insert a\n             prominent notice in each changed file stating how and when you changed that file, and provided\n             that you do at least ONE of the following:\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            place your modifications in the Public Domain or otherwise make them Freely Available, such\n               as by posting said modifications to Usenet or an equivalent medium, or placing the\n               modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright\n               Holder to include your modifications in the Standard Version of the Package.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            use the modified Package only within your corporation or organization.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            rename any non-standard executables so the names do not conflict with standard executables,\n               which must also be provided, and provide a separate manual page for each non-standard\n               executable that clearly documents how it differs from the Standard Version.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n            make other distribution arrangements with the Copyright Holder.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may distribute the programs of this Package in object code or executable form, provided that\n             you do at least ONE of the following:\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            distribute a Standard Version of the executables and library files, together with\n               instructions (in the manual page or equivalent) on where to get the Standard Version.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            accompany the distribution with the machine-readable source of the Package with your modifications.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            accompany any non-standard executables with their corresponding Standard Version executables,\n               giving the non-standard executables non-standard names, and clearly documenting the\n               differences in manual pages (or equivalent), together with instructions on where to get\n               the Standard Version.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n            make other distribution arrangements with the Copyright Holder.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          You may charge a reasonable copying fee for any distribution of this Package. You may charge any\n             fee you choose for support of this Package. You may not charge a fee for this Package itself.\n             However, you may distribute this Package in aggregate with other (possibly commercial)\n             programs as part of a larger (possibly commercial) software distribution provided that you do\n             not advertise this Package as a product of your own.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          The scripts and library files supplied as input to or produced as output from the programs of\n             this Package do not automatically fall under the copyright of this Package, but belong to\n             whomever generated them, and may be sold commercially, and may be aggregated with this\n             Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          C subroutines supplied by you and linked into this Package in order to emulate subroutines and\n             variables of the language defined by this Package shall not be considered part of this\n             Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not\n             change the language in any way that would cause it to fail the regression tests for the\n             language.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 8.&lt;/var&gt;\n          The name of the Copyright Holder may not be used to endorse or promote products derived from this\n             software without specific prior written permission.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 9.&lt;/var&gt;\n          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,\n             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A\n             PARTICULAR PURPOSE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The End&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Open LDAP Public License v1.2&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The OpenLDAP Public License\n\nVersion 1.2, 1 September 1998\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1998, The OpenLDAP Foundation. All Rights Reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; Note: This license is derived from the \&quot;Artistic License\&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.\n\nPREAMBLE\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\n&lt;&lt;endOptional&gt;&gt;\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; use the modified Package only within your corporation or organization.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; make other distribution arrangements with the Copyright Holder.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; accompany the distribution with the machine-readable source of the Package with your modifications.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; make other distribution arrangements with the Copyright Holder.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;7.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;8.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;9.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;&lt;beginOptional&gt;&gt; The End\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/06d62b6d3caaa7c29c54f794b60ec43d">BlueOakCouncil:06d62b6d3caaa7c29c54f794b60ec43d</a> for <a href="/?license=BlueOak:OLDAP-1.2"><span class="licensename"><span class="namespace">BlueOak:</span>OLDAP-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>OLDAP-1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v1.2</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:06d62b6d3caaa7c29c54f794b60ec43d">[<a href="/fact/BlueOakCouncil/06d62b6d3caaa7c29c54f794b60ec43d">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:06d62b6d3caaa7c29c54f794b60ec43d">[<a href="/fact/BlueOakCouncil/06d62b6d3caaa7c29c54f794b60ec43d">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/OLDAP-1.2.html" target="_blank">https://spdx.org/licenses/OLDAP-1.2.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:OLDAP-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;06d62b6d3caaa7c29c54f794b60ec43d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/OLDAP-1.2.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;OLDAP-1.2&quot;,
+                &quot;_name&quot;: &quot;Open LDAP Public License v1.2&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/OLDAP-1.2.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/8eb5f146a6130e70dbab4e9fa3fd2743">ScancodeData:8eb5f146a6130e70dbab4e9fa3fd2743</a> for <a href="/?license=scancode:openldap-1.2"><span class="licensename"><span class="namespace">scancode:</span>openldap-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>openldap-1.2</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenLDAP Public License 1.2</span></li><li><span class="licensename">OpenLDAP Public License 1.2</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:8eb5f146a6130e70dbab4e9fa3fd2743">[<a href="/fact/ScancodeData/8eb5f146a6130e70dbab4e9fa3fd2743">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per SPDX.org, this license was released 1 September 1998. This license was
+issued four time, but only with formatting differences.
+<span class="provided-by">(provided by: <span title="ScancodeData:8eb5f146a6130e70dbab4e9fa3fd2743">[<a href="/fact/ScancodeData/8eb5f146a6130e70dbab4e9fa3fd2743">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7</a></li></ul><h3>Other Statements</h3><ul><li>http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License 
+
+Version 1.2, 1 September 1998 
+Copyright 1998, The OpenLDAP Foundation. 
+All Rights Reserved. 
+
+Note: 
+This license is derived from the &quot;Artistic License&quot; as distributed 
+with the Perl Programming Language. As differences may exist, 
+the complete license should be read. 
+
+PREAMBLE 
+
+The intent of this document is to state the conditions under which 
+a Package may be copied, such that the Copyright Holder maintains 
+some semblance of artistic control over the development of the 
+package, while giving the users of the package the right to use 
+and distribute the Package in a more-or-less customary fashion, 
+plus the right to make reasonable modifications. 
+
+Definitions: 
+
+&quot;Package&quot; refers to the collection of files distributed by the 
+Copyright Holder, and derivatives of that collection of files 
+created through textual modification. 
+
+&quot;Standard Version&quot; refers to such a Package if it has not been 
+modified, or has been modified in accordance with the wishes 
+of the Copyright Holder. 
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or 
+copyrights for the package. 
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing 
+this Package. 
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the 
+basis of media cost, duplication charges, time of people 
+involved, and so on. (You will not be required to justify it 
+to the Copyright Holder, but only to the computing community 
+at large as a market that must bear the fee.) 
+
+&quot;Freely Available&quot; means that no fee is charged for the item 
+itself, though there may be fees involved in handling the item. 
+It also means that recipients of the item may redistribute it 
+under the same conditions they received it. 
+
+1. You may make and give away verbatim copies of the source form 
+of the Standard Version of this Package without restriction, provided 
+that you duplicate all of the original copyright notices and 
+associated disclaimers. 
+
+2. You may apply bug fixes, portability fixes and other modifications 
+derived from the Public Domain or from the Copyright Holder. A 
+Package modified in such a way shall still be considered the Standard 
+Version. 
+
+3. You may otherwise modify your copy of this Package in any way, 
+provided that you insert a prominent notice in each changed file 
+stating how and when you changed that file, and provided that you 
+do at least ONE of the following: 
+
+a) place your modifications in the Public Domain or otherwise 
+make them Freely Available, such as by posting said modifications 
+to Usenet or an equivalent medium, or placing the modifications 
+on a major archive site such as uunet.uu.net, or by allowing 
+the Copyright Holder to include your modifications in the 
+Standard Version of the Package. 
+
+b) use the modified Package only within your corporation or 
+organization. 
+
+c) rename any non-standard executables so the names do not 
+conflict with standard executables, which must also be provided, 
+and provide a separate manual page for each non-standard 
+executable that clearly documents how it differs from the 
+Standard Version. 
+
+d) make other distribution arrangements with the Copyright 
+Holder. 
+
+4. You may distribute the programs of this Package in object code 
+or executable form, provided that you do at least ONE of the 
+following: 
+
+a) distribute a Standard Version of the executables and library 
+files, together with instructions (in the manual page or 
+equivalent) on where to get the Standard Version. 
+
+b) accompany the distribution with the machine-readable source 
+of the Package with your modifications. 
+
+c) accompany any non-standard executables with their corresponding 
+Standard Version executables, giving the non-standard executables 
+non-standard names, and clearly documenting the differences in 
+manual pages (or equivalent), together with instructions on 
+where to get the Standard Version. 
+
+d) make other distribution arrangements with the Copyright 
+Holder. 
+
+5. You may charge a reasonable copying fee for any distribution of 
+this Package. You may charge any fee you choose for support of 
+this Package. You may not charge a fee for this Package itself. 
+However, you may distribute this Package in aggregate with other 
+(possibly commercial) programs as part of a larger (possibly 
+commercial) software distribution provided that you do not advertise 
+this Package as a product of your own. 
+
+6. The scripts and library files supplied as input to or produced 
+as output from the programs of this Package do not automatically 
+fall under the copyright of this Package, but belong to whomever 
+generated them, and may be sold commercially, and may be aggregated 
+with this Package. 
+
+7. C subroutines supplied by you and linked into this Package in 
+order to emulate subroutines and variables of the language defined 
+by this Package shall not be considered part of this Package, but 
+are the equivalent of input as in Paragraph 6, provided these 
+subroutines do not change the language in any way that would cause 
+it to fail the regression tests for the language. 
+
+8. The name of the Copyright Holder may not be used to endorse or 
+promote products derived from this software without specific prior 
+written permission. 
+
+9. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR 
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED 
+WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
+
+The End</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:openldap-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenLDAP Public License 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenLDAP Public License 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;8eb5f146a6130e70dbab4e9fa3fd2743&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The OpenLDAP Public License \n\nVersion 1.2, 1 September 1998 \nCopyright 1998, The OpenLDAP Foundation. \nAll Rights Reserved. \n\nNote: \nThis license is derived from the \&quot;Artistic License\&quot; as distributed \nwith the Perl Programming Language. As differences may exist, \nthe complete license should be read. \n\nPREAMBLE \n\nThe intent of this document is to state the conditions under which \na Package may be copied, such that the Copyright Holder maintains \nsome semblance of artistic control over the development of the \npackage, while giving the users of the package the right to use \nand distribute the Package in a more-or-less customary fashion, \nplus the right to make reasonable modifications. \n\nDefinitions: \n\n\&quot;Package\&quot; refers to the collection of files distributed by the \nCopyright Holder, and derivatives of that collection of files \ncreated through textual modification. \n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been \nmodified, or has been modified in accordance with the wishes \nof the Copyright Holder. \n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or \ncopyrights for the package. \n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing \nthis Package. \n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the \nbasis of media cost, duplication charges, time of people \ninvolved, and so on. (You will not be required to justify it \nto the Copyright Holder, but only to the computing community \nat large as a market that must bear the fee.) \n\n\&quot;Freely Available\&quot; means that no fee is charged for the item \nitself, though there may be fees involved in handling the item. \nIt also means that recipients of the item may redistribute it \nunder the same conditions they received it. \n\n1. You may make and give away verbatim copies of the source form \nof the Standard Version of this Package without restriction, provided \nthat you duplicate all of the original copyright notices and \nassociated disclaimers. \n\n2. You may apply bug fixes, portability fixes and other modifications \nderived from the Public Domain or from the Copyright Holder. A \nPackage modified in such a way shall still be considered the Standard \nVersion. \n\n3. You may otherwise modify your copy of this Package in any way, \nprovided that you insert a prominent notice in each changed file \nstating how and when you changed that file, and provided that you \ndo at least ONE of the following: \n\na) place your modifications in the Public Domain or otherwise \nmake them Freely Available, such as by posting said modifications \nto Usenet or an equivalent medium, or placing the modifications \non a major archive site such as uunet.uu.net, or by allowing \nthe Copyright Holder to include your modifications in the \nStandard Version of the Package. \n\nb) use the modified Package only within your corporation or \norganization. \n\nc) rename any non-standard executables so the names do not \nconflict with standard executables, which must also be provided, \nand provide a separate manual page for each non-standard \nexecutable that clearly documents how it differs from the \nStandard Version. \n\nd) make other distribution arrangements with the Copyright \nHolder. \n\n4. You may distribute the programs of this Package in object code \nor executable form, provided that you do at least ONE of the \nfollowing: \n\na) distribute a Standard Version of the executables and library \nfiles, together with instructions (in the manual page or \nequivalent) on where to get the Standard Version. \n\nb) accompany the distribution with the machine-readable source \nof the Package with your modifications. \n\nc) accompany any non-standard executables with their corresponding \nStandard Version executables, giving the non-standard executables \nnon-standard names, and clearly documenting the differences in \nmanual pages (or equivalent), together with instructions on \nwhere to get the Standard Version. \n\nd) make other distribution arrangements with the Copyright \nHolder. \n\n5. You may charge a reasonable copying fee for any distribution of \nthis Package. You may charge any fee you choose for support of \nthis Package. You may not charge a fee for this Package itself. \nHowever, you may distribute this Package in aggregate with other \n(possibly commercial) programs as part of a larger (possibly \ncommercial) software distribution provided that you do not advertise \nthis Package as a product of your own. \n\n6. The scripts and library files supplied as input to or produced \nas output from the programs of this Package do not automatically \nfall under the copyright of this Package, but belong to whomever \ngenerated them, and may be sold commercially, and may be aggregated \nwith this Package. \n\n7. C subroutines supplied by you and linked into this Package in \norder to emulate subroutines and variables of the language defined \nby this Package shall not be considered part of this Package, but \nare the equivalent of input as in Paragraph 6, provided these \nsubroutines do not change the language in any way that would cause \nit to fail the regression tests for the language. \n\n8. The name of the Copyright Holder may not be used to endorse or \npromote products derived from this software without specific prior \nwritten permission. \n\n9. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR \nIMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED \nWARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nThe End&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;,
+        &quot;_key&quot;: &quot;openldap-1.2&quot;,
+        &quot;_name&quot;: &quot;OpenLDAP Public License 1.2&quot;,
+        &quot;_notes&quot;: &quot;Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;OpenLDAP Foundation&quot;,
+        &quot;_shortName&quot;: &quot;OpenLDAP Public License 1.2&quot;,
+        &quot;_spdxId&quot;: &quot;OLDAP-1.2&quot;,
+        &quot;_text&quot;: &quot;The OpenLDAP Public License \n\nVersion 1.2, 1 September 1998 \nCopyright 1998, The OpenLDAP Foundation. \nAll Rights Reserved. \n\nNote: \nThis license is derived from the \&quot;Artistic License\&quot; as distributed \nwith the Perl Programming Language. As differences may exist, \nthe complete license should be read. \n\nPREAMBLE \n\nThe intent of this document is to state the conditions under which \na Package may be copied, such that the Copyright Holder maintains \nsome semblance of artistic control over the development of the \npackage, while giving the users of the package the right to use \nand distribute the Package in a more-or-less customary fashion, \nplus the right to make reasonable modifications. \n\nDefinitions: \n\n\&quot;Package\&quot; refers to the collection of files distributed by the \nCopyright Holder, and derivatives of that collection of files \ncreated through textual modification. \n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been \nmodified, or has been modified in accordance with the wishes \nof the Copyright Holder. \n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or \ncopyrights for the package. \n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing \nthis Package. \n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the \nbasis of media cost, duplication charges, time of people \ninvolved, and so on. (You will not be required to justify it \nto the Copyright Holder, but only to the computing community \nat large as a market that must bear the fee.) \n\n\&quot;Freely Available\&quot; means that no fee is charged for the item \nitself, though there may be fees involved in handling the item. \nIt also means that recipients of the item may redistribute it \nunder the same conditions they received it. \n\n1. You may make and give away verbatim copies of the source form \nof the Standard Version of this Package without restriction, provided \nthat you duplicate all of the original copyright notices and \nassociated disclaimers. \n\n2. You may apply bug fixes, portability fixes and other modifications \nderived from the Public Domain or from the Copyright Holder. A \nPackage modified in such a way shall still be considered the Standard \nVersion. \n\n3. You may otherwise modify your copy of this Package in any way, \nprovided that you insert a prominent notice in each changed file \nstating how and when you changed that file, and provided that you \ndo at least ONE of the following: \n\na) place your modifications in the Public Domain or otherwise \nmake them Freely Available, such as by posting said modifications \nto Usenet or an equivalent medium, or placing the modifications \non a major archive site such as uunet.uu.net, or by allowing \nthe Copyright Holder to include your modifications in the \nStandard Version of the Package. \n\nb) use the modified Package only within your corporation or \norganization. \n\nc) rename any non-standard executables so the names do not \nconflict with standard executables, which must also be provided, \nand provide a separate manual page for each non-standard \nexecutable that clearly documents how it differs from the \nStandard Version. \n\nd) make other distribution arrangements with the Copyright \nHolder. \n\n4. You may distribute the programs of this Package in object code \nor executable form, provided that you do at least ONE of the \nfollowing: \n\na) distribute a Standard Version of the executables and library \nfiles, together with instructions (in the manual page or \nequivalent) on where to get the Standard Version. \n\nb) accompany the distribution with the machine-readable source \nof the Package with your modifications. \n\nc) accompany any non-standard executables with their corresponding \nStandard Version executables, giving the non-standard executables \nnon-standard names, and clearly documenting the differences in \nmanual pages (or equivalent), together with instructions on \nwhere to get the Standard Version. \n\nd) make other distribution arrangements with the Copyright \nHolder. \n\n5. You may charge a reasonable copying fee for any distribution of \nthis Package. You may charge any fee you choose for support of \nthis Package. You may not charge a fee for this Package itself. \nHowever, you may distribute this Package in aggregate with other \n(possibly commercial) programs as part of a larger (possibly \ncommercial) software distribution provided that you do not advertise \nthis Package as a product of your own. \n\n6. The scripts and library files supplied as input to or produced \nas output from the programs of this Package do not automatically \nfall under the copyright of this Package, but belong to whomever \ngenerated them, and may be sold commercially, and may be aggregated \nwith this Package. \n\n7. C subroutines supplied by you and linked into this Package in \norder to emulate subroutines and variables of the language defined \nby this Package shall not be considered part of this Package, but \nare the equivalent of input as in Paragraph 6, provided these \nsubroutines do not change the language in any way that would cause \nit to fail the regression tests for the language. \n\n8. The name of the Copyright Holder may not be used to endorse or \npromote products derived from this software without specific prior \nwritten permission. \n\n9. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR \nIMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED \nWARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nThe End&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/e02b68685961396fe3511ea2dda93929">Fossology:e02b68685961396fe3511ea2dda93929</a> for <a href="/?license=fossology:OLDAP-1.2"><span class="licensename"><span class="namespace">fossology:</span>OLDAP-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>OLDAP-1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v1.2</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license was released 1 September 1998. This license was issued four time, but only with formatting differences.<span class="provided-by">(provided by: <span title="Fossology:e02b68685961396fe3511ea2dda93929">[<a href="/fact/Fossology/e02b68685961396fe3511ea2dda93929">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+
+Version 1.2, 1 September 1998 Copyright 1998, The OpenLDAP Foundation. All Rights Reserved. Note: This license is derived from the &quot;Artistic License&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.
+
+PREAMBLE
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+&quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+&quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+&quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+
+      b) use the modified Package only within your corporation or organization.
+
+      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+
+      b) accompany the distribution with the machine-readable source of the Package with your modifications.
+
+      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+   7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.
+
+   8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+   9. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:OLDAP-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;e02b68685961396fe3511ea2dda93929&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license was released 1 September 1998. This license was issued four time, but only with formatting differences.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The OpenLDAP Public License\n\nVersion 1.2, 1 September 1998 Copyright 1998, The OpenLDAP Foundation. All Rights Reserved. Note: This license is derived from the \&quot;Artistic License\&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.\n\nPREAMBLE\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n      b) use the modified Package only within your corporation or organization.\n\n      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n      b) accompany the distribution with the machine-readable source of the Package with your modifications.\n\n      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n   7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.\n\n   8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n   9. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Open LDAP Public License v1.2&quot;,
+        &quot;_rf_notes&quot;: &quot;This license was released 1 September 1998. This license was issued four time, but only with formatting differences.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:OLDAP-1.2&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The OpenLDAP Public License\n\nVersion 1.2, 1 September 1998 Copyright 1998, The OpenLDAP Foundation. All Rights Reserved. Note: This license is derived from the \&quot;Artistic License\&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.\n\nPREAMBLE\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n      b) use the modified Package only within your corporation or organization.\n\n      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n      b) accompany the distribution with the machine-readable source of the Package with your modifications.\n\n      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n   7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.\n\n   8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n   9. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/334a1cb1696cd547d2ca1efcc2300d72">OrtLicenseCategorization:334a1cb1696cd547d2ca1efcc2300d72</a> for <a href="/?license=SPDX:OLDAP-1.2"><span class="licensename"><span class="namespace">SPDX:</span>OLDAP-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>OLDAP-1.2</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:334a1cb1696cd547d2ca1efcc2300d72">[<a href="/fact/OrtLicenseCategorization/334a1cb1696cd547d2ca1efcc2300d72">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:334a1cb1696cd547d2ca1efcc2300d72">[<a href="/fact/OrtLicenseCategorization/334a1cb1696cd547d2ca1efcc2300d72">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:334a1cb1696cd547d2ca1efcc2300d72">[<a href="/fact/OrtLicenseCategorization/334a1cb1696cd547d2ca1efcc2300d72">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:OLDAP-1.2&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;334a1cb1696cd547d2ca1efcc2300d72&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:OLDAP-1.2&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/01fa611da44c41092eeeb32d35812d7b">CavilLicenseChange:01fa611da44c41092eeeb32d35812d7b</a> for <a href="/?license=cavil:OLDAP-1.2"><span class="licensename"><span class="namespace">cavil:</span>OLDAP-1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>OLDAP-1.2</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP-1.2</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:OLDAP-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OLDAP-1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;01fa611da44c41092eeeb32d35812d7b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;OLDAP-1.2&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:OLDAP-1.2&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/bd6e9e2c05fe66936894a859f357c096">MetaeffektLicense:bd6e9e2c05fe66936894a859f357c096</a> for <a href="/?license=metaeffekt:OpenLDAP Public License 1.2"><span class="licensename"><span class="namespace">metaeffekt:</span>OpenLDAP Public License 1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenLDAP Public License 1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-1.2</span></li></ul></li><li><b>other LicenseName Hints (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP</span></li><li><span class="licensename">OLDAP License, 1.2</span></li><li><span class="licensename">OLDAP License, Version 1.2</span></li><li><span class="licensename">OLDAP, 1.2</span></li><li><span class="licensename">OLDAP, Version 1.2</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openldap-1.2</span></li><li><span class="licensename">The OpenLDAP Public License Version 1.2, 1 September 1998</span></li><li><span class="licensename">THIS WORK IS SUBJECT TO VERSION 1.2 OF THE OPENLDAP PUBLIC LICENSE</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:OpenLDAP Public License 1.2&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OLDAP-1.2&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OLDAP&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP, Version 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP, 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP License, Version 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP License, 1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The OpenLDAP Public License Version 1.2, 1 September 1998&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;THIS WORK IS SUBJECT TO VERSION 1.2 OF THE OPENLDAP PUBLIC LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:openldap-1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;bd6e9e2c05fe66936894a859f357c096&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;OLDAP, Version 1.2&quot;,
+            &quot;OLDAP, 1.2&quot;,
+            &quot;OLDAP License, Version 1.2&quot;,
+            &quot;OLDAP License, 1.2&quot;,
+            &quot;The OpenLDAP Public License Version 1.2, 1 September 1998&quot;,
+            &quot;THIS WORK IS SUBJECT TO VERSION 1.2 OF THE OPENLDAP PUBLIC LICENSE&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:OpenLDAP Public License 1.2&quot;,
+        &quot;_category&quot;: &quot;OLDAP&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:openldap-1.2&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:OLDAP-1.2&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HermineData">HermineData</a>: <a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2</a> for <a href="/?license=spdx:OLDAP-1.2"><span class="licensename"><span class="namespace">spdx:</span>OLDAP-1.2</span></a></h3><h4>Obligations</h4><ul><li><h5>Providing CSC to end user or specific actions</h5><pre>4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+    a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+    b) accompany the distribution with the machine-readable source of the Package with your modifications.
+    c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+    d) make other distribution arrangements with the Copyright Holder.</pre><p><strong>License:</strong><ul><li>OLDAP-1.2</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Providing CSC to end user</h5><p><strong>Description:</strong>Make the corresponding source code available (including modifications):
+-at the time of distribution of the software and on the same medium;
+-by including a written offer allowing others to obtain it;
+-by making it available online.</p><p><strong>Metacategory:</strong>Providing source code</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Marking modifications</h5><pre>3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file</pre><p><strong>License:</strong><ul><li>OLDAP-1.2</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Track and mention modifications in the source code</h5><p><strong>Description:</strong>Document all your modifications made in the source code of third-party Open Source components in order to clearly attribute each contribution.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>Altered</p></li><li><h5>Preserve License and notices in source code</h5><pre>1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.</pre><p><strong>License:</strong><ul><li>OLDAP-1.2</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Preserve legal mentions in source code</h5><p><strong>Description:</strong>Keep all legal notices and license texts intact in the Source Code, including in the headers.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Weak Copyleft or renaming</h5><pre>provided that you do at least ONE of the following:
+
+    a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+    b) use the modified Package only within your corporation or organization.
+    c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+    d) make other distribution arrangements with the Copyright Holder.</pre><p><strong>License:</strong><ul><li>OLDAP-1.2</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Weak Copyleft</h5><p><strong>Description:</strong>Some categories of derivative works or of works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.</p><p><strong>Metacategory:</strong>IP management</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>Altered</p></li><li><h5>No use of names for endorsement</h5><pre>8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.</pre><p><strong>License:</strong><ul><li>OLDAP-1.2</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Do not use project or contributor names for endorsement or promotion.</h5><p><strong>Description:</strong>Names of the project or associated persons (authors, contributors, etc.) are not to be used for commercial or promotional purposes.</p><p><strong>Metacategory:</strong>Communication constraints</p><p><strong>Passivity:</strong>Passive</p></li></ul></p><p><strong>Passivity:</strong>Passive</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v1.2</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HermineLicense: </b>&quot;OLDAP-1.2&quot; is of radical: OLDAP<span class="provided-by">(provided by: <span title="HermineLicense:faec9ff92fd08990813b8ecb0b55c3e2">[<a href="/fact/HermineLicense/faec9ff92fd08990813b8ecb0b55c3e2">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OLDAP-1.2&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v1.2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HermineLicense&quot;,
+        &quot;faec9ff92fd08990813b8ecb0b55c3e2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;WeaklyProtective&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;HermineLicense&quot;,
+                        &quot;We consider it is FOSS&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;\&quot;OLDAP-1.2\&quot; is of radical: OLDAP&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;autoupgrade&quot;: null,
+        &quot;comment&quot;: &quot;&quot;,
+        &quot;copyleft&quot;: &quot;Weak&quot;,
+        &quot;ethical_clause&quot;: false,
+        &quot;foss&quot;: &quot;Yes&quot;,
+        &quot;fsf_approved&quot;: null,
+        &quot;inspiration_spdx&quot;: &quot;&quot;,
+        &quot;law_choice&quot;: &quot;&quot;,
+        &quot;license_version&quot;: &quot;1.2&quot;,
+        &quot;long_name&quot;: &quot;Open LDAP Public License v1.2&quot;,
+        &quot;non_commercial&quot;: false,
+        &quot;non_tivoisation&quot;: false,
+        &quot;obligations&quot;: [
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Make the corresponding source code available (including modifications):\r\n-at the time of distribution of the software and on the same medium;\r\n-by including a written offer allowing others to obtain it;\r\n-by making it available online.&quot;,
+                        &quot;metacategory&quot;: &quot;ProvidingSourceCode&quot;,
+                        &quot;name&quot;: &quot;Providing CSC to end user&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-1.2&quot;
+                ],
+                &quot;name&quot;: &quot;Providing CSC to end user or specific actions&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\r\n\r\n    a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\r\n    b) accompany the distribution with the machine-readable source of the Package with your modifications.\r\n    c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Document all your modifications made in the source code of third-party Open Source components in order to clearly attribute each contribution.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Track and mention modifications in the source code&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-1.2&quot;
+                ],
+                &quot;name&quot;: &quot;Marking modifications&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;Altered&quot;,
+                &quot;verbatim&quot;: &quot;3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Keep all legal notices and license texts intact in the Source Code, including in the headers.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Preserve legal mentions in source code&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-1.2&quot;
+                ],
+                &quot;name&quot;: &quot;Preserve License and notices in source code&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Some categories of derivative works or of works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.&quot;,
+                        &quot;metacategory&quot;: &quot;IPManagement&quot;,
+                        &quot;name&quot;: &quot;Weak Copyleft&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-1.2&quot;
+                ],
+                &quot;name&quot;: &quot;Weak Copyleft or renaming&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;Altered&quot;,
+                &quot;verbatim&quot;: &quot;provided that you do at least ONE of the following:\r\n\r\n    a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\r\n    b) use the modified Package only within your corporation or organization.\r\n    c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Names of the project or associated persons (authors, contributors, etc.) are not to be used for commercial or promotional purposes.&quot;,
+                        &quot;metacategory&quot;: &quot;Communication&quot;,
+                        &quot;name&quot;: &quot;Do not use project or contributor names for endorsement or promotion.&quot;,
+                        &quot;passivity&quot;: &quot;Passive&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-1.2&quot;
+                ],
+                &quot;name&quot;: &quot;No use of names for endorsement&quot;,
+                &quot;passivity&quot;: &quot;Passive&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.&quot;
+            }
+        ],
+        &quot;osi_approved&quot;: false,
+        &quot;patent_grant&quot;: false,
+        &quot;radical&quot;: &quot;OLDAP&quot;,
+        &quot;spdx_id&quot;: &quot;OLDAP-1.2&quot;,
+        &quot;steward&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7&quot;,
+        &quot;verbatim&quot;: &quot;&quot;
+    },
+    &quot;type&quot;: &quot;HermineLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/1809c4eef5b04c5c8ff2f5d27ef199fb">FOSSLight:1809c4eef5b04c5c8ff2f5d27ef199fb</a> for <a href="/?license=fosslight:Open LDAP Public License v1.2"><span class="licensename"><span class="namespace">fosslight:</span>Open LDAP Public License v1.2</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Open LDAP Public License v1.2</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP-1.2</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:1809c4eef5b04c5c8ff2f5d27ef199fb">[<a href="/fact/FOSSLight/1809c4eef5b04c5c8ff2f5d27ef199fb">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Open LDAP Public License v1.2&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;OLDAP-1.2&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;1809c4eef5b04c5c8ff2f5d27ef199fb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;The OpenLDAP Public License\nVersion 1.2, 1 September 1998 \n\nCopyright 1998, The OpenLDAP Foundation. All Rights Reserved.\n\nNote: This license is derived from the \&quot;Artistic License\&quot; as distributed with the Perl Programming Language. As differences may exist, the complete license should be read.\n\nPREAMBLE\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n     \&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n     \&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n     \&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n     \&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n     \&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n     \&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n     b) use the modified Package only within your corporation or organization.\n\n     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n     d) make other distribution arrangements with the Copyright Holder.\n\n4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n     b) accompany the distribution with the machine-readable source of the Package with your modifications.\n\n     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n     d) make other distribution arrangements with the Copyright Holder.\n\n5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n7. C subroutines supplied by you and linked into this Package in order to emulate subroutines and variables of the language defined by this Package shall not be considered part of this Package, but are the equivalent of input as in Paragraph 6, provided these subroutines do not change the language in any way that would cause it to fail the regression tests for the language.\n\n8. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n9. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nThe End\n&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: null,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;OLDAP-1.2&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/OLDAP-1.2.html&quot;,
+            &quot;_fossLight_id&quot;: 109,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Open LDAP Public License v1.2&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li></ul></body></html>

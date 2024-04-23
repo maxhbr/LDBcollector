@@ -1,0 +1,1700 @@
+<html><head><title>ldbcollector: spdx:MulanPSL-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MulanPSL-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MulanPSL-1.0</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">Mulan Permissive Software License 1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Mulan Permissive Software License 1.0</span></li><li><span class="licensename">Mulan Permissive Software License, Version 1</span></li><li><span class="licensename">Mulan PSL v1</span></li><li><span class="licensename">MulanPSL-1.0</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>MulanPSL-1.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>MulanPSL-1.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>MulanPSL-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mulanpsl-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MulanPSL-1.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Mulan Permissive</span></li><li><span class="licensename">木兰宽松许可证, 第1版 木兰宽松许可证， 第1版</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:815b2bf2063ec98a625e2bf475483e40">[<a href="/fact/BlueOakCouncil/815b2bf2063ec98a625e2bf475483e40">BlueOakCouncil</a>]</span><span title="ScancodeData:2195e4dcd1718de963c92380b8218e9a">[<a href="/fact/ScancodeData/2195e4dcd1718de963c92380b8218e9a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:bb36de7d18b7f812bc3d5971b17098b7">[<a href="/fact/SPDXLicense/bb36de7d18b7f812bc3d5971b17098b7">SPDXLicense</a>]</span>)</span></li><li><span title="These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.">BlueOakCouncil: <b style="color: green;">Silver</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:815b2bf2063ec98a625e2bf475483e40">[<a href="/fact/BlueOakCouncil/815b2bf2063ec98a625e2bf475483e40">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fcd6240661037064c0147528c9e24d9a">[<a href="/fact/OrtLicenseCategorization/fcd6240661037064c0147528c9e24d9a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fcd6240661037064c0147528c9e24d9a">[<a href="/fact/OrtLicenseCategorization/fcd6240661037064c0147528c9e24d9a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.<span class="provided-by">(provided by: <span title="SPDXLicense:bb36de7d18b7f812bc3d5971b17098b7">[<a href="/fact/SPDXLicense/bb36de7d18b7f812bc3d5971b17098b7">SPDXLicense</a>]</span>)</span></li><li><b>Fossology: </b>Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.<span class="provided-by">(provided by: <span title="Fossology:31fdcf68cbd8e2f63dcba5eccfe6ac26">[<a href="/fact/Fossology/31fdcf68cbd8e2f63dcba5eccfe6ac26">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE" target="_blank">https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE</a></li><li><a href="https://license.coscl.org.cn/MulanPSL/" target="_blank">https://license.coscl.org.cn/MulanPSL/</a></li><li><a href="https://spdx.org/licenses/MulanPSL-1.0.html" target="_blank">https://spdx.org/licenses/MulanPSL-1.0.html</a></li></ul><h3>Other Statements</h3><ul><li>https://license.coscl.org.cn/MulanPSL/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>木兰宽松许可证, 第1版
+
+木兰宽松许可证， 第1版
+
+2019年8月 http://license.coscl.org.cn/MulanPSL
+
+您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：
+
+0.   定义
+
+“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。
+
+“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。
+
+“法人实体”是指提交贡献的机构及其“关联实体”。
+
+“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。
+
+“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。
+
+1.   授予版权许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。
+
+2.   授予专利许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。
+
+3.   无商标许可
+
+“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。
+
+4.   分发限制
+
+您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。
+
+5.   免责声明与责任限制
+
+“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。
+
+条款结束
+
+如何将木兰宽松许可证，第1版，应用到您的软件
+
+如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：
+
+1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；
+
+2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；
+
+3， 请将如下声明文本放入每个源文件的头部注释中。
+
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v1 for more details.
+Mulan Permissive Software License，Version 1
+
+Mulan Permissive Software License，Version 1 (Mulan PSL v1)
+
+August 2019 http://license.coscl.org.cn/MulanPSL
+
+Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:
+
+0. Definition
+
+Software means the program and related documents which are comprised of those Contribution and licensed under this License.
+
+Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.
+
+Legal Entity means the entity making a Contribution and all its Affiliates.
+
+Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.
+
+Contribution means the copyrightable work licensed by a particular Contributor under this License.
+
+1. Grant of Copyright License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.
+
+2. Grant of Patent License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.
+
+3. No Trademark License
+
+No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.
+
+4. Distribution Restriction
+
+You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.
+
+5. Disclaimer of Warranty and Limitation of Liability
+
+The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.
+
+End of the Terms and Conditions
+
+How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software
+
+To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:
+
+i. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;
+ii. Create a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;
+iii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.
+
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v1 for more details.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;木兰宽松许可证, 第1版&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;木兰宽松许可证， 第1版&lt;/p&gt;
+
+        &lt;p&gt;2019年8月 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;p&gt;您对&amp;quot;软件&amp;quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（&amp;quot;本许可证&amp;quot;）的如下条款的约束：&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt; 定义
+                &lt;p&gt;&amp;quot;软件&amp;quot;是指由&amp;quot;贡献&amp;quot;构成的许可在&amp;quot;本许可证&amp;quot;下的程序和相关文档的集合。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;贡献者&amp;quot;是指将受版权法保护的作品许可在&amp;quot;本许可证&amp;quot;下的自然人或&amp;quot;法人实体&amp;quot;。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;法人实体&amp;quot;是指提交贡献的机构及其&amp;quot;关联实体&amp;quot;。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;关联实体&amp;quot;是指，对&amp;quot;本许可证&amp;quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;贡献&amp;quot;是指由任一&amp;quot;贡献者&amp;quot;许可在&amp;quot;本许可证&amp;quot;下的受版权法保护的作品。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; 授予版权许可
+                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其&amp;quot;贡献&amp;quot;，不论修改与否。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; 授予专利许可
+
+                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其&amp;quot;贡献&amp;quot;或以其他方式转移其&amp;quot;贡献&amp;quot;。前述专利许可仅限于&amp;quot;贡献者&amp;quot;现在或将来拥有或控制的其&amp;quot;贡献&amp;quot;本身或其&amp;quot;贡献&amp;quot;与许可&amp;quot;贡献&amp;quot;时的&amp;quot;软件&amp;quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改&amp;quot;贡献&amp;quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的&amp;quot;关联实体&amp;quot;直接或间接地（包括通过代理、专利被许可人或受让人），就&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则&amp;quot;本许可证&amp;quot;授予您对&amp;quot;软件&amp;quot;的专利许可自您提起诉讼或发起维权行动之日终止。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; 无商标许可
+
+                &lt;p&gt;&amp;quot;本许可证&amp;quot;不提供对&amp;quot;贡献者&amp;quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; 分发限制
+
+                &lt;p&gt;您可以在任何媒介中将&amp;quot;软件&amp;quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供&amp;quot;本许可证&amp;quot;的副本，并保留&amp;quot;软件&amp;quot;中的版权、商标、专利及免责声明。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt; 免责声明与责任限制
+
+                &lt;p&gt;&amp;quot;软件&amp;quot;及其中的&amp;quot;贡献&amp;quot;在提供时不带任何明示或默示的担保。在任何情况下，&amp;quot;贡献者&amp;quot;或版权所有者不对任何人因使用&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。&lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;条款结束&lt;/p&gt;
+
+        &lt;p&gt;如何将木兰宽松许可证，第1版，应用到您的软件&lt;/p&gt;
+
+        &lt;p&gt;如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1，&lt;/var&gt; 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；&lt;/li&gt;
+
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2，&lt;/var&gt; 请您在软件包的一级目录下创建以&amp;quot;LICENSE&amp;quot;为名的文件，将整个许可证文本放入该文件中；&lt;/li&gt;
+
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3，&lt;/var&gt; 请将如下声明文本放入每个源文件的头部注释中。&lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;
+
+        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;
+
+            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+
+        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;
+
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1 (Mulan PSL v1)&lt;/p&gt;
+
+        &lt;p&gt;August 2019 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;p&gt;Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt; Definition
+
+                &lt;p&gt;Software means the program and related documents which are comprised of those Contribution and licensed under this License.&lt;/p&gt;
+
+                &lt;p&gt;Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.&lt;/p&gt;
+
+                &lt;p&gt;Legal Entity means the entity making a Contribution and all its Affiliates.&lt;/p&gt;
+
+                &lt;p&gt;Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &amp;apos;control&amp;apos; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.&lt;/p&gt;
+
+                &lt;p&gt;Contribution means the copyrightable work licensed by a particular Contributor under this License.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; Grant of Copyright License
+
+                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; Grant of Patent License
+
+                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&amp;apos; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; No Trademark License
+
+                &lt;p&gt;No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Distribution Restriction
+
+                &lt;p&gt;You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt; Disclaimer of Warranty and Limitation of Liability
+
+                &lt;p&gt;The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&amp;apos;s caused or based on which legal theory, even if advised of the possibility of such damages.&lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;End of the Terms and Conditions&lt;/p&gt;
+
+        &lt;p&gt;How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software&lt;/p&gt;
+
+        &lt;p&gt;To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; i.&lt;/var&gt; Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;&lt;/li&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; ii.&lt;/var&gt; Create a file named &amp;quot;LICENSE&amp;quot; which contains the whole context of this License in the first directory of your software package;&lt;/li&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; iii.&lt;/var&gt; Attach the statement to the appropriate annotated syntax at the beginning of each source file.&lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;
+
+        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;
+
+            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+
+        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>木兰宽松许可证, 第1版
+木兰宽松许可证， 第1版
+
+2019年8月 http://license.coscl.org.cn/MulanPSL
+
+您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：
+
+0.   定义
+
+“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。
+
+“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。
+
+“法人实体”是指提交贡献的机构及其“关联实体”。
+
+“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。
+
+“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。
+
+1.   授予版权许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。
+
+2.   授予专利许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。
+
+3.   无商标许可
+
+“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。
+
+4.   分发限制
+
+您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。
+
+5.   免责声明与责任限制
+
+“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。
+
+条款结束
+
+如何将木兰宽松许可证，第1版，应用到您的软件
+
+如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：
+
+1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；
+
+2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；
+
+3， 请将如下声明文本放入每个源文件的头部注释中。
+
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR
+PURPOSE.
+See the Mulan PSL v1 for more details.
+Mulan Permissive Software License，Version 1
+Mulan Permissive Software License，Version 1 (Mulan PSL v1)
+
+August 2019 http://license.coscl.org.cn/MulanPSL
+
+Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:
+
+0. Definition
+
+Software means the program and related documents which are comprised of those Contribution and licensed under this License.
+
+Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.
+
+Legal Entity means the entity making a Contribution and all its Affiliates.
+
+Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.
+
+Contribution means the copyrightable work licensed by a particular Contributor under this License.
+
+1. Grant of Copyright License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.
+
+2. Grant of Patent License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.
+
+3. No Trademark License
+
+No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.
+
+4. Distribution Restriction
+
+You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.
+
+5. Disclaimer of Warranty and Limitation of Liability
+
+The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.
+
+End of the Terms and Conditions
+
+How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software
+
+To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:
+
+Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;
+Create a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;
+Attach the statement to the appropriate annotated syntax at the beginning of each source file.
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR
+PURPOSE.
+See the Mulan PSL v1 for more details.
+</pre></details></li><li><details><summary>Text:</summary><pre>木兰宽松许可证, 第1版 木兰宽松许可证， 第1版
+
+2019年8月 http://license.coscl.org.cn/MulanPSL
+
+您对&quot;软件&quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（&quot;本许可证&quot;）的如下条款的约束：
+
+   0. 定义
+
+   &quot;软件&quot;是指由&quot;贡献&quot;构成的许可在&quot;本许可证&quot;下的程序和相关文档的集合。
+
+   &quot;贡献者&quot;是指将受版权法保护的作品许可在&quot;本许可证&quot;下的自然人或&quot;法人实体&quot;。
+
+   &quot;法人实体&quot;是指提交贡献的机构及其&quot;关联实体&quot;。
+
+   &quot;关联实体&quot;是指，对&quot;本许可证&quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。
+
+   &quot;贡献&quot;是指由任一&quot;贡献者&quot;许可在&quot;本许可证&quot;下的受版权法保护的作品。
+
+   1. 授予版权许可
+
+   每个&quot;贡献者&quot;根据&quot;本许可证&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其&quot;贡献&quot;，不论修改与否。
+
+   2. 授予专利许可
+
+   每个&quot;贡献者&quot;根据&quot;本许可证&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其&quot;贡献&quot;或以其他方式转移其&quot;贡献&quot;。前述专利许可仅限于&quot;贡献者&quot;现在或将来拥有或控制的其&quot;贡献&quot;本身或其&quot;贡献&quot;与许可&quot;贡献&quot;时的&quot;软件&quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改&quot;贡献&quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的&quot;关联实体&quot;直接或间接地（包括通过代理、专利被许可人或受让人），就&quot;软件&quot;或其中的&quot;贡献&quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则&quot;本许可证&quot;授予您对&quot;软件&quot;的专利许可自您提起诉讼或发起维权行动之日终止。
+
+   3. 无商标许可
+
+   &quot;本许可证&quot;不提供对&quot;贡献者&quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。
+
+   4. 分发限制
+
+   您可以在任何媒介中将&quot;软件&quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供&quot;本许可证&quot;的副本，并保留&quot;软件&quot;中的版权、商标、专利及免责声明。
+
+   5. 免责声明与责任限制
+
+   &quot;软件&quot;及其中的&quot;贡献&quot;在提供时不带任何明示或默示的担保。在任何情况下，&quot;贡献者&quot;或版权所有者不对任何人因使用&quot;软件&quot;或其中的&quot;贡献&quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。
+
+条款结束
+
+如何将木兰宽松许可证，第1版，应用到您的软件
+
+如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：
+
+   1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；
+
+   2， 请您在软件包的一级目录下创建以&quot;LICENSE&quot;为名的文件，将整个许可证文本放入该文件中；
+
+   3， 请将如下声明文本放入每个源文件的头部注释中。
+
+Copyright (c) [2019] [name of copyright holder]
+
+[Software Name] is licensed under the Mulan PSL v1.
+
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+
+You may obtain a copy of Mulan PSL v1 at:
+
+http://license.coscl.org.cn/MulanPSL
+
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+
+See the Mulan PSL v1 for more details. Mulan Permissive Software License，Version 1 Mulan Permissive Software License，Version 1 (Mulan PSL v1)
+
+August 2019 http://license.coscl.org.cn/MulanPSL
+
+Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:
+
+   0. Definition
+
+   Software means the program and related documents which are comprised of those Contribution and licensed under this License.
+
+   Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.
+
+   Legal Entity means the entity making a Contribution and all its Affiliates.
+
+   Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &#39;control&#39; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.
+
+   Contribution means the copyrightable work licensed by a particular Contributor under this License.
+
+   1. Grant of Copyright License
+
+   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.
+
+   2. Grant of Patent License
+
+   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&#39; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.
+
+   3. No Trademark License
+
+   No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.
+
+   4. Distribution Restriction
+
+   You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.
+
+   5. Disclaimer of Warranty and Limitation of Liability
+
+   The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&#39;s caused or based on which legal theory, even if advised of the possibility of such damages.
+
+End of the Terms and Conditions
+
+How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software
+
+To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:
+
+   i. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;
+
+   ii. Create a file named &quot;LICENSE&quot; which contains the whole context of this License in the first directory of your software package;
+
+   iii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.
+
+Copyright (c) [2019] [name of copyright holder]
+
+[Software Name] is licensed under the Mulan PSL v1.
+
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+
+You may obtain a copy of Mulan PSL v1 at:
+
+http://license.coscl.org.cn/MulanPSL
+
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+
+See the Mulan PSL v1 for more details.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/bb36de7d18b7f812bc3d5971b17098b7">SPDXLicense:bb36de7d18b7f812bc3d5971b17098b7</a> for <a href="/?license=spdx:MulanPSL-1.0"><span class="licensename"><span class="namespace">spdx:</span>MulanPSL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MulanPSL-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Mulan Permissive Software License, Version 1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:bb36de7d18b7f812bc3d5971b17098b7">[<a href="/fact/SPDXLicense/bb36de7d18b7f812bc3d5971b17098b7">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.<span class="provided-by">(provided by: <span title="SPDXLicense:bb36de7d18b7f812bc3d5971b17098b7">[<a href="/fact/SPDXLicense/bb36de7d18b7f812bc3d5971b17098b7">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE" target="_blank">https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE</a></li><li><a href="https://license.coscl.org.cn/MulanPSL/" target="_blank">https://license.coscl.org.cn/MulanPSL/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>木兰宽松许可证, 第1版
+
+木兰宽松许可证， 第1版
+
+2019年8月 http://license.coscl.org.cn/MulanPSL
+
+您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：
+
+0.   定义
+
+“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。
+
+“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。
+
+“法人实体”是指提交贡献的机构及其“关联实体”。
+
+“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。
+
+“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。
+
+1.   授予版权许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。
+
+2.   授予专利许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。
+
+3.   无商标许可
+
+“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。
+
+4.   分发限制
+
+您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。
+
+5.   免责声明与责任限制
+
+“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。
+
+条款结束
+
+如何将木兰宽松许可证，第1版，应用到您的软件
+
+如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：
+
+1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；
+
+2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；
+
+3， 请将如下声明文本放入每个源文件的头部注释中。
+
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v1 for more details.
+Mulan Permissive Software License，Version 1
+
+Mulan Permissive Software License，Version 1 (Mulan PSL v1)
+
+August 2019 http://license.coscl.org.cn/MulanPSL
+
+Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:
+
+0. Definition
+
+Software means the program and related documents which are comprised of those Contribution and licensed under this License.
+
+Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.
+
+Legal Entity means the entity making a Contribution and all its Affiliates.
+
+Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.
+
+Contribution means the copyrightable work licensed by a particular Contributor under this License.
+
+1. Grant of Copyright License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.
+
+2. Grant of Patent License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.
+
+3. No Trademark License
+
+No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.
+
+4. Distribution Restriction
+
+You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.
+
+5. Disclaimer of Warranty and Limitation of Liability
+
+The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.
+
+End of the Terms and Conditions
+
+How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software
+
+To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:
+
+i. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;
+ii. Create a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;
+iii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.
+
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v1 for more details.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;木兰宽松许可证, 第1版&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;木兰宽松许可证， 第1版&lt;/p&gt;
+
+        &lt;p&gt;2019年8月 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;p&gt;您对&amp;quot;软件&amp;quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（&amp;quot;本许可证&amp;quot;）的如下条款的约束：&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt; 定义
+                &lt;p&gt;&amp;quot;软件&amp;quot;是指由&amp;quot;贡献&amp;quot;构成的许可在&amp;quot;本许可证&amp;quot;下的程序和相关文档的集合。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;贡献者&amp;quot;是指将受版权法保护的作品许可在&amp;quot;本许可证&amp;quot;下的自然人或&amp;quot;法人实体&amp;quot;。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;法人实体&amp;quot;是指提交贡献的机构及其&amp;quot;关联实体&amp;quot;。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;关联实体&amp;quot;是指，对&amp;quot;本许可证&amp;quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。&lt;/p&gt;
+
+                &lt;p&gt;&amp;quot;贡献&amp;quot;是指由任一&amp;quot;贡献者&amp;quot;许可在&amp;quot;本许可证&amp;quot;下的受版权法保护的作品。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; 授予版权许可
+                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其&amp;quot;贡献&amp;quot;，不论修改与否。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; 授予专利许可
+
+                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其&amp;quot;贡献&amp;quot;或以其他方式转移其&amp;quot;贡献&amp;quot;。前述专利许可仅限于&amp;quot;贡献者&amp;quot;现在或将来拥有或控制的其&amp;quot;贡献&amp;quot;本身或其&amp;quot;贡献&amp;quot;与许可&amp;quot;贡献&amp;quot;时的&amp;quot;软件&amp;quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改&amp;quot;贡献&amp;quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的&amp;quot;关联实体&amp;quot;直接或间接地（包括通过代理、专利被许可人或受让人），就&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则&amp;quot;本许可证&amp;quot;授予您对&amp;quot;软件&amp;quot;的专利许可自您提起诉讼或发起维权行动之日终止。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; 无商标许可
+
+                &lt;p&gt;&amp;quot;本许可证&amp;quot;不提供对&amp;quot;贡献者&amp;quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; 分发限制
+
+                &lt;p&gt;您可以在任何媒介中将&amp;quot;软件&amp;quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供&amp;quot;本许可证&amp;quot;的副本，并保留&amp;quot;软件&amp;quot;中的版权、商标、专利及免责声明。&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt; 免责声明与责任限制
+
+                &lt;p&gt;&amp;quot;软件&amp;quot;及其中的&amp;quot;贡献&amp;quot;在提供时不带任何明示或默示的担保。在任何情况下，&amp;quot;贡献者&amp;quot;或版权所有者不对任何人因使用&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。&lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;条款结束&lt;/p&gt;
+
+        &lt;p&gt;如何将木兰宽松许可证，第1版，应用到您的软件&lt;/p&gt;
+
+        &lt;p&gt;如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1，&lt;/var&gt; 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；&lt;/li&gt;
+
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2，&lt;/var&gt; 请您在软件包的一级目录下创建以&amp;quot;LICENSE&amp;quot;为名的文件，将整个许可证文本放入该文件中；&lt;/li&gt;
+
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 3，&lt;/var&gt; 请将如下声明文本放入每个源文件的头部注释中。&lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;
+
+        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;
+
+            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+
+        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;
+
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1 (Mulan PSL v1)&lt;/p&gt;
+
+        &lt;p&gt;August 2019 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;p&gt;Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt; Definition
+
+                &lt;p&gt;Software means the program and related documents which are comprised of those Contribution and licensed under this License.&lt;/p&gt;
+
+                &lt;p&gt;Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.&lt;/p&gt;
+
+                &lt;p&gt;Legal Entity means the entity making a Contribution and all its Affiliates.&lt;/p&gt;
+
+                &lt;p&gt;Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &amp;apos;control&amp;apos; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.&lt;/p&gt;
+
+                &lt;p&gt;Contribution means the copyrightable work licensed by a particular Contributor under this License.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; Grant of Copyright License
+
+                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; Grant of Patent License
+
+                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&amp;apos; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; No Trademark License
+
+                &lt;p&gt;No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Distribution Restriction
+
+                &lt;p&gt;You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.&lt;/p&gt;
+
+            &lt;/li&gt;
+
+&lt;li&gt;
+                &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt; Disclaimer of Warranty and Limitation of Liability
+
+                &lt;p&gt;The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&amp;apos;s caused or based on which legal theory, even if advised of the possibility of such damages.&lt;/p&gt;
+
+            &lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;End of the Terms and Conditions&lt;/p&gt;
+
+        &lt;p&gt;How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software&lt;/p&gt;
+
+        &lt;p&gt;To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; i.&lt;/var&gt; Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;&lt;/li&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; ii.&lt;/var&gt; Create a file named &amp;quot;LICENSE&amp;quot; which contains the whole context of this License in the first directory of your software package;&lt;/li&gt;
+            
+&lt;li&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; iii.&lt;/var&gt; Attach the statement to the appropriate annotated syntax at the beginning of each source file.&lt;/li&gt;
+        
+&lt;/ul&gt;
+
+        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;
+
+        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;
+
+        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;
+
+            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;
+
+        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:MulanPSL-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;bb36de7d18b7f812bc3d5971b17098b7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;木兰宽松许可证, 第1版\n\n木兰宽松许可证， 第1版\n\n2019年8月 http://license.coscl.org.cn/MulanPSL\n\n您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：\n\n0.   定义\n\n“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。\n\n“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。\n\n“法人实体”是指提交贡献的机构及其“关联实体”。\n\n“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。\n\n“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。\n\n1.   授予版权许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。\n\n2.   授予专利许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。\n\n3.   无商标许可\n\n“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。\n\n4.   分发限制\n\n您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。\n\n5.   免责声明与责任限制\n\n“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。\n\n条款结束\n\n如何将木兰宽松许可证，第1版，应用到您的软件\n\n如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：\n\n1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；\n\n2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；\n\n3， 请将如下声明文本放入每个源文件的头部注释中。\n\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\nSee the Mulan PSL v1 for more details.\nMulan Permissive Software License，Version 1\n\nMulan Permissive Software License，Version 1 (Mulan PSL v1)\n\nAugust 2019 http://license.coscl.org.cn/MulanPSL\n\nYour reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:\n\n0. Definition\n\nSoftware means the program and related documents which are comprised of those Contribution and licensed under this License.\n\nContributor means the Individual or Legal Entity who licenses its copyrightable work under this License.\n\nLegal Entity means the entity making a Contribution and all its Affiliates.\n\nAffiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.\n\nContribution means the copyrightable work licensed by a particular Contributor under this License.\n\n1. Grant of Copyright License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.\n\n2. Grant of Patent License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.\n\n3. No Trademark License\n\nNo trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.\n\n4. Distribution Restriction\n\nYou may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.\n\n5. Disclaimer of Warranty and Limitation of Liability\n\nThe Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.\n\nEnd of the Terms and Conditions\n\nHow to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software\n\nTo apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:\n\ni. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;\nii. Create a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;\niii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.\n\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\nSee the Mulan PSL v1 for more details.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;木兰宽松许可证, 第1版&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;木兰宽松许可证， 第1版&lt;/p&gt;\n\n        &lt;p&gt;2019年8月 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;p&gt;您对&amp;quot;软件&amp;quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（&amp;quot;本许可证&amp;quot;）的如下条款的约束：&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt; 定义\n                &lt;p&gt;&amp;quot;软件&amp;quot;是指由&amp;quot;贡献&amp;quot;构成的许可在&amp;quot;本许可证&amp;quot;下的程序和相关文档的集合。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;贡献者&amp;quot;是指将受版权法保护的作品许可在&amp;quot;本许可证&amp;quot;下的自然人或&amp;quot;法人实体&amp;quot;。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;法人实体&amp;quot;是指提交贡献的机构及其&amp;quot;关联实体&amp;quot;。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;关联实体&amp;quot;是指，对&amp;quot;本许可证&amp;quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;贡献&amp;quot;是指由任一&amp;quot;贡献者&amp;quot;许可在&amp;quot;本许可证&amp;quot;下的受版权法保护的作品。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; 授予版权许可\n                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其&amp;quot;贡献&amp;quot;，不论修改与否。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; 授予专利许可\n\n                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其&amp;quot;贡献&amp;quot;或以其他方式转移其&amp;quot;贡献&amp;quot;。前述专利许可仅限于&amp;quot;贡献者&amp;quot;现在或将来拥有或控制的其&amp;quot;贡献&amp;quot;本身或其&amp;quot;贡献&amp;quot;与许可&amp;quot;贡献&amp;quot;时的&amp;quot;软件&amp;quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改&amp;quot;贡献&amp;quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的&amp;quot;关联实体&amp;quot;直接或间接地（包括通过代理、专利被许可人或受让人），就&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则&amp;quot;本许可证&amp;quot;授予您对&amp;quot;软件&amp;quot;的专利许可自您提起诉讼或发起维权行动之日终止。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; 无商标许可\n\n                &lt;p&gt;&amp;quot;本许可证&amp;quot;不提供对&amp;quot;贡献者&amp;quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; 分发限制\n\n                &lt;p&gt;您可以在任何媒介中将&amp;quot;软件&amp;quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供&amp;quot;本许可证&amp;quot;的副本，并保留&amp;quot;软件&amp;quot;中的版权、商标、专利及免责声明。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt; 免责声明与责任限制\n\n                &lt;p&gt;&amp;quot;软件&amp;quot;及其中的&amp;quot;贡献&amp;quot;在提供时不带任何明示或默示的担保。在任何情况下，&amp;quot;贡献者&amp;quot;或版权所有者不对任何人因使用&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。&lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;条款结束&lt;/p&gt;\n\n        &lt;p&gt;如何将木兰宽松许可证，第1版，应用到您的软件&lt;/p&gt;\n\n        &lt;p&gt;如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1，&lt;/var&gt; 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；&lt;/li&gt;\n\n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2，&lt;/var&gt; 请您在软件包的一级目录下创建以&amp;quot;LICENSE&amp;quot;为名的文件，将整个许可证文本放入该文件中；&lt;/li&gt;\n\n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3，&lt;/var&gt; 请将如下声明文本放入每个源文件的头部注释中。&lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;\n\n        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;\n\n            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n\n        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;\n\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1 (Mulan PSL v1)&lt;/p&gt;\n\n        &lt;p&gt;August 2019 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;p&gt;Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt; Definition\n\n                &lt;p&gt;Software means the program and related documents which are comprised of those Contribution and licensed under this License.&lt;/p&gt;\n\n                &lt;p&gt;Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.&lt;/p&gt;\n\n                &lt;p&gt;Legal Entity means the entity making a Contribution and all its Affiliates.&lt;/p&gt;\n\n                &lt;p&gt;Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &amp;apos;control&amp;apos; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.&lt;/p&gt;\n\n                &lt;p&gt;Contribution means the copyrightable work licensed by a particular Contributor under this License.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; Grant of Copyright License\n\n                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; Grant of Patent License\n\n                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&amp;apos; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; No Trademark License\n\n                &lt;p&gt;No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Distribution Restriction\n\n                &lt;p&gt;You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt; Disclaimer of Warranty and Limitation of Liability\n\n                &lt;p&gt;The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&amp;apos;s caused or based on which legal theory, even if advised of the possibility of such damages.&lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;End of the Terms and Conditions&lt;/p&gt;\n\n        &lt;p&gt;How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software&lt;/p&gt;\n\n        &lt;p&gt;To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; i.&lt;/var&gt; Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;&lt;/li&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; ii.&lt;/var&gt; Create a file named &amp;quot;LICENSE&amp;quot; which contains the whole context of this License in the first directory of your software package;&lt;/li&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; iii.&lt;/var&gt; Attach the statement to the appropriate annotated syntax at the beginning of each source file.&lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;\n\n        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;\n\n            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n\n        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://license.coscl.org.cn/MulanPSL/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://license.coscl.org.cn/MulanPSL/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:06:32Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE&quot;
+            },
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:06:33Z&quot;,
+                &quot;url&quot;: &quot;https://license.coscl.org.cn/MulanPSL/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:MulanPSL-1.0&quot;,
+        &quot;licenseText&quot;: &quot;木兰宽松许可证, 第1版\n\n木兰宽松许可证， 第1版\n\n2019年8月 http://license.coscl.org.cn/MulanPSL\n\n您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：\n\n0.   定义\n\n“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。\n\n“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。\n\n“法人实体”是指提交贡献的机构及其“关联实体”。\n\n“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。\n\n“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。\n\n1.   授予版权许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。\n\n2.   授予专利许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。\n\n3.   无商标许可\n\n“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。\n\n4.   分发限制\n\n您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。\n\n5.   免责声明与责任限制\n\n“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。\n\n条款结束\n\n如何将木兰宽松许可证，第1版，应用到您的软件\n\n如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：\n\n1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；\n\n2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；\n\n3， 请将如下声明文本放入每个源文件的头部注释中。\n\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\nSee the Mulan PSL v1 for more details.\nMulan Permissive Software License，Version 1\n\nMulan Permissive Software License，Version 1 (Mulan PSL v1)\n\nAugust 2019 http://license.coscl.org.cn/MulanPSL\n\nYour reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:\n\n0. Definition\n\nSoftware means the program and related documents which are comprised of those Contribution and licensed under this License.\n\nContributor means the Individual or Legal Entity who licenses its copyrightable work under this License.\n\nLegal Entity means the entity making a Contribution and all its Affiliates.\n\nAffiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.\n\nContribution means the copyrightable work licensed by a particular Contributor under this License.\n\n1. Grant of Copyright License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.\n\n2. Grant of Patent License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.\n\n3. No Trademark License\n\nNo trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.\n\n4. Distribution Restriction\n\nYou may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.\n\n5. Disclaimer of Warranty and Limitation of Liability\n\nThe Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.\n\nEnd of the Terms and Conditions\n\nHow to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software\n\nTo apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:\n\ni. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;\nii. Create a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;\niii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.\n\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\nSee the Mulan PSL v1 for more details.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;木兰宽松许可证, 第1版&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;木兰宽松许可证， 第1版&lt;/p&gt;\n\n        &lt;p&gt;2019年8月 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;p&gt;您对&amp;quot;软件&amp;quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（&amp;quot;本许可证&amp;quot;）的如下条款的约束：&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt; 定义\n                &lt;p&gt;&amp;quot;软件&amp;quot;是指由&amp;quot;贡献&amp;quot;构成的许可在&amp;quot;本许可证&amp;quot;下的程序和相关文档的集合。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;贡献者&amp;quot;是指将受版权法保护的作品许可在&amp;quot;本许可证&amp;quot;下的自然人或&amp;quot;法人实体&amp;quot;。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;法人实体&amp;quot;是指提交贡献的机构及其&amp;quot;关联实体&amp;quot;。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;关联实体&amp;quot;是指，对&amp;quot;本许可证&amp;quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。&lt;/p&gt;\n\n                &lt;p&gt;&amp;quot;贡献&amp;quot;是指由任一&amp;quot;贡献者&amp;quot;许可在&amp;quot;本许可证&amp;quot;下的受版权法保护的作品。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; 授予版权许可\n                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其&amp;quot;贡献&amp;quot;，不论修改与否。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; 授予专利许可\n\n                &lt;p&gt;每个&amp;quot;贡献者&amp;quot;根据&amp;quot;本许可证&amp;quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其&amp;quot;贡献&amp;quot;或以其他方式转移其&amp;quot;贡献&amp;quot;。前述专利许可仅限于&amp;quot;贡献者&amp;quot;现在或将来拥有或控制的其&amp;quot;贡献&amp;quot;本身或其&amp;quot;贡献&amp;quot;与许可&amp;quot;贡献&amp;quot;时的&amp;quot;软件&amp;quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改&amp;quot;贡献&amp;quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的&amp;quot;关联实体&amp;quot;直接或间接地（包括通过代理、专利被许可人或受让人），就&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则&amp;quot;本许可证&amp;quot;授予您对&amp;quot;软件&amp;quot;的专利许可自您提起诉讼或发起维权行动之日终止。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; 无商标许可\n\n                &lt;p&gt;&amp;quot;本许可证&amp;quot;不提供对&amp;quot;贡献者&amp;quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; 分发限制\n\n                &lt;p&gt;您可以在任何媒介中将&amp;quot;软件&amp;quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供&amp;quot;本许可证&amp;quot;的副本，并保留&amp;quot;软件&amp;quot;中的版权、商标、专利及免责声明。&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt; 免责声明与责任限制\n\n                &lt;p&gt;&amp;quot;软件&amp;quot;及其中的&amp;quot;贡献&amp;quot;在提供时不带任何明示或默示的担保。在任何情况下，&amp;quot;贡献者&amp;quot;或版权所有者不对任何人因使用&amp;quot;软件&amp;quot;或其中的&amp;quot;贡献&amp;quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。&lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;条款结束&lt;/p&gt;\n\n        &lt;p&gt;如何将木兰宽松许可证，第1版，应用到您的软件&lt;/p&gt;\n\n        &lt;p&gt;如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1，&lt;/var&gt; 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；&lt;/li&gt;\n\n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2，&lt;/var&gt; 请您在软件包的一级目录下创建以&amp;quot;LICENSE&amp;quot;为名的文件，将整个许可证文本放入该文件中；&lt;/li&gt;\n\n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3，&lt;/var&gt; 请将如下声明文本放入每个源文件的头部注释中。&lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;\n\n        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;\n\n            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n\n        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;\n\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;Mulan Permissive Software License，Version 1 (Mulan PSL v1)&lt;/p&gt;\n\n        &lt;p&gt;August 2019 http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n&lt;/div&gt;\n\n        &lt;p&gt;Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt; Definition\n\n                &lt;p&gt;Software means the program and related documents which are comprised of those Contribution and licensed under this License.&lt;/p&gt;\n\n                &lt;p&gt;Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.&lt;/p&gt;\n\n                &lt;p&gt;Legal Entity means the entity making a Contribution and all its Affiliates.&lt;/p&gt;\n\n                &lt;p&gt;Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &amp;apos;control&amp;apos; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.&lt;/p&gt;\n\n                &lt;p&gt;Contribution means the copyrightable work licensed by a particular Contributor under this License.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; Grant of Copyright License\n\n                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; Grant of Patent License\n\n                &lt;p&gt;Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&amp;apos; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; No Trademark License\n\n                &lt;p&gt;No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Distribution Restriction\n\n                &lt;p&gt;You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.&lt;/p&gt;\n\n            &lt;/li&gt;\n\n&lt;li&gt;\n                &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt; Disclaimer of Warranty and Limitation of Liability\n\n                &lt;p&gt;The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&amp;apos;s caused or based on which legal theory, even if advised of the possibility of such damages.&lt;/p&gt;\n\n            &lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;End of the Terms and Conditions&lt;/p&gt;\n\n        &lt;p&gt;How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software&lt;/p&gt;\n\n        &lt;p&gt;To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; i.&lt;/var&gt; Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;&lt;/li&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; ii.&lt;/var&gt; Create a file named &amp;quot;LICENSE&amp;quot; which contains the whole context of this License in the first directory of your software package;&lt;/li&gt;\n            \n&lt;li&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; iii.&lt;/var&gt; Attach the statement to the appropriate annotated syntax at the beginning of each source file.&lt;/li&gt;\n        \n&lt;/ul&gt;\n\n        &lt;p&gt;Copyright (c) [2019] [name of copyright holder]&lt;/p&gt;\n\n        &lt;p&gt;[Software Name] is licensed under the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You can use this software according to the terms and conditions of the Mulan PSL v1.&lt;/p&gt;\n\n        &lt;p&gt;You may obtain a copy of Mulan PSL v1 at:&lt;/p&gt;\n\n            &lt;p&gt;http://license.coscl.org.cn/MulanPSL&lt;/p&gt;\n\n        &lt;p&gt;THIS SOFTWARE IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n        &lt;p&gt;See the Mulan PSL v1 for more details.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://license.coscl.org.cn/MulanPSL/&quot;,
+            &quot;https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;木兰宽松许可证, 第1版\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; 木兰宽松许可证， 第1版\n\n2019年8月 http://license.coscl.org.cn/MulanPSL\n\n&lt;&lt;endOptional&gt;&gt;\n\n您对\&quot;软件\&quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（\&quot;本许可证\&quot;）的如下条款的约束：\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 定义\n\n   \&quot;软件\&quot;是指由\&quot;贡献\&quot;构成的许可在\&quot;本许可证\&quot;下的程序和相关文档的集合。\n\n   \&quot;贡献者\&quot;是指将受版权法保护的作品许可在\&quot;本许可证\&quot;下的自然人或\&quot;法人实体\&quot;。\n\n   \&quot;法人实体\&quot;是指提交贡献的机构及其\&quot;关联实体\&quot;。\n\n   \&quot;关联实体\&quot;是指，对\&quot;本许可证\&quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。\n\n   \&quot;贡献\&quot;是指由任一\&quot;贡献者\&quot;许可在\&quot;本许可证\&quot;下的受版权法保护的作品。\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 授予版权许可\n\n   每个\&quot;贡献者\&quot;根据\&quot;本许可证\&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其\&quot;贡献\&quot;，不论修改与否。\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 授予专利许可\n\n   每个\&quot;贡献者\&quot;根据\&quot;本许可证\&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其\&quot;贡献\&quot;或以其他方式转移其\&quot;贡献\&quot;。前述专利许可仅限于\&quot;贡献者\&quot;现在或将来拥有或控制的其\&quot;贡献\&quot;本身或其\&quot;贡献\&quot;与许可\&quot;贡献\&quot;时的\&quot;软件\&quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改\&quot;贡献\&quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的\&quot;关联实体\&quot;直接或间接地（包括通过代理、专利被许可人或受让人），就\&quot;软件\&quot;或其中的\&quot;贡献\&quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则\&quot;本许可证\&quot;授予您对\&quot;软件\&quot;的专利许可自您提起诉讼或发起维权行动之日终止。\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 无商标许可\n\n   \&quot;本许可证\&quot;不提供对\&quot;贡献者\&quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 分发限制\n\n   您可以在任何媒介中将\&quot;软件\&quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供\&quot;本许可证\&quot;的副本，并保留\&quot;软件\&quot;中的版权、商标、专利及免责声明。\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 免责声明与责任限制\n\n   \&quot;软件\&quot;及其中的\&quot;贡献\&quot;在提供时不带任何明示或默示的担保。在任何情况下，\&quot;贡献者\&quot;或版权所有者不对任何人因使用\&quot;软件\&quot;或其中的\&quot;贡献\&quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。\n\n条款结束\n\n如何将木兰宽松许可证，第1版，应用到您的软件\n\n如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1，\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2，\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 请您在软件包的一级目录下创建以\&quot;LICENSE\&quot;为名的文件，将整个许可证文本放入该文件中；\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3，\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; 请将如下声明文本放入每个源文件的头部注释中。\n\nCopyright (c) [2019] [name of copyright holder]\n\n[Software Name] is licensed under the Mulan PSL v1.\n\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\n\nYou may obtain a copy of Mulan PSL v1 at:\n\nhttp://license.coscl.org.cn/MulanPSL\n\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\n\nSee the Mulan PSL v1 for more details.\n\n&lt;&lt;beginOptional&gt;&gt;Mulan Permissive Software License，Version 1\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; Mulan Permissive Software License，Version 1 (Mulan PSL v1)\n\nAugust 2019 http://license.coscl.org.cn/MulanPSL\n\n&lt;&lt;endOptional&gt;&gt;\n\nYour reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Definition\n\n   Software means the program and related documents which are comprised of those Contribution and licensed under this License.\n\n   Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.\n\n   Legal Entity means the entity making a Contribution and all its Affiliates.\n\n   Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &#39;control&#39; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.\n\n   Contribution means the copyrightable work licensed by a particular Contributor under this License.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Grant of Copyright License\n\n   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Grant of Patent License\n\n   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&#39; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; No Trademark License\n\n   No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Distribution Restriction\n\n   You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Disclaimer of Warranty and Limitation of Liability\n\n   The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&#39;s caused or based on which legal theory, even if advised of the possibility of such damages.\n\nEnd of the Terms and Conditions\n\nHow to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software\n\nTo apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;i.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;ii.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Create a file named \&quot;LICENSE\&quot; which contains the whole context of this License in the first directory of your software package;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;iii.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Attach the statement to the appropriate annotated syntax at the beginning of each source file.\n\nCopyright (c) [2019] [name of copyright holder]\n\n[Software Name] is licensed under the Mulan PSL v1.\n\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\n\nYou may obtain a copy of Mulan PSL v1 at:\n\nhttp://license.coscl.org.cn/MulanPSL\n\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\n\nSee the Mulan PSL v1 for more details.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/815b2bf2063ec98a625e2bf475483e40">BlueOakCouncil:815b2bf2063ec98a625e2bf475483e40</a> for <a href="/?license=BlueOak:MulanPSL-1.0"><span class="licensename"><span class="namespace">BlueOak:</span>MulanPSL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>MulanPSL-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Mulan Permissive Software License, Version 1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:815b2bf2063ec98a625e2bf475483e40">[<a href="/fact/BlueOakCouncil/815b2bf2063ec98a625e2bf475483e40">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.">BlueOakCouncil: <b style="color: green;">Silver</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:815b2bf2063ec98a625e2bf475483e40">[<a href="/fact/BlueOakCouncil/815b2bf2063ec98a625e2bf475483e40">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/MulanPSL-1.0.html" target="_blank">https://spdx.org/licenses/MulanPSL-1.0.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:MulanPSL-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;815b2bf2063ec98a625e2bf475483e40&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Silver&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/MulanPSL-1.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Silver&quot;,
+            &quot;These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.&quot;,
+            {
+                &quot;_id&quot;: &quot;MulanPSL-1.0&quot;,
+                &quot;_name&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/MulanPSL-1.0.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/2195e4dcd1718de963c92380b8218e9a">ScancodeData:2195e4dcd1718de963c92380b8218e9a</a> for <a href="/?license=scancode:mulanpsl-1.0"><span class="licensename"><span class="namespace">scancode:</span>mulanpsl-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>mulanpsl-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Mulan Permissive Software License, Version 1</span></li><li><span class="licensename">Mulan PSL v1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:2195e4dcd1718de963c92380b8218e9a">[<a href="/fact/ScancodeData/2195e4dcd1718de963c92380b8218e9a">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE" target="_blank">https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE</a></li></ul><h3>Other Statements</h3><ul><li>https://license.coscl.org.cn/MulanPSL/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>木兰宽松许可证, 第1版
+木兰宽松许可证， 第1版
+
+2019年8月 http://license.coscl.org.cn/MulanPSL
+
+您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：
+
+0.   定义
+
+“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。
+
+“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。
+
+“法人实体”是指提交贡献的机构及其“关联实体”。
+
+“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。
+
+“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。
+
+1.   授予版权许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。
+
+2.   授予专利许可
+
+每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。
+
+3.   无商标许可
+
+“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。
+
+4.   分发限制
+
+您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。
+
+5.   免责声明与责任限制
+
+“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。
+
+条款结束
+
+如何将木兰宽松许可证，第1版，应用到您的软件
+
+如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：
+
+1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；
+
+2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；
+
+3， 请将如下声明文本放入每个源文件的头部注释中。
+
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR
+PURPOSE.
+See the Mulan PSL v1 for more details.
+Mulan Permissive Software License，Version 1
+Mulan Permissive Software License，Version 1 (Mulan PSL v1)
+
+August 2019 http://license.coscl.org.cn/MulanPSL
+
+Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:
+
+0. Definition
+
+Software means the program and related documents which are comprised of those Contribution and licensed under this License.
+
+Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.
+
+Legal Entity means the entity making a Contribution and all its Affiliates.
+
+Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.
+
+Contribution means the copyrightable work licensed by a particular Contributor under this License.
+
+1. Grant of Copyright License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.
+
+2. Grant of Patent License
+
+Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.
+
+3. No Trademark License
+
+No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.
+
+4. Distribution Restriction
+
+You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.
+
+5. Disclaimer of Warranty and Limitation of Liability
+
+The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.
+
+End of the Terms and Conditions
+
+How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software
+
+To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:
+
+Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;
+Create a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;
+Attach the statement to the appropriate annotated syntax at the beginning of each source file.
+Copyright (c) [2019] [name of copyright holder]
+[Software Name] is licensed under the Mulan PSL v1.
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+You may obtain a copy of Mulan PSL v1 at:
+    http://license.coscl.org.cn/MulanPSL
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR
+PURPOSE.
+See the Mulan PSL v1 for more details.
+</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:mulanpsl-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Mulan PSL v1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;2195e4dcd1718de963c92380b8218e9a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://license.coscl.org.cn/MulanPSL/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;木兰宽松许可证, 第1版\n木兰宽松许可证， 第1版\n\n2019年8月 http://license.coscl.org.cn/MulanPSL\n\n您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：\n\n0.   定义\n\n“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。\n\n“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。\n\n“法人实体”是指提交贡献的机构及其“关联实体”。\n\n“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。\n\n“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。\n\n1.   授予版权许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。\n\n2.   授予专利许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。\n\n3.   无商标许可\n\n“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。\n\n4.   分发限制\n\n您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。\n\n5.   免责声明与责任限制\n\n“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。\n\n条款结束\n\n如何将木兰宽松许可证，第1版，应用到您的软件\n\n如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：\n\n1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；\n\n2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；\n\n3， 请将如下声明文本放入每个源文件的头部注释中。\n\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR\nPURPOSE.\nSee the Mulan PSL v1 for more details.\nMulan Permissive Software License，Version 1\nMulan Permissive Software License，Version 1 (Mulan PSL v1)\n\nAugust 2019 http://license.coscl.org.cn/MulanPSL\n\nYour reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:\n\n0. Definition\n\nSoftware means the program and related documents which are comprised of those Contribution and licensed under this License.\n\nContributor means the Individual or Legal Entity who licenses its copyrightable work under this License.\n\nLegal Entity means the entity making a Contribution and all its Affiliates.\n\nAffiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.\n\nContribution means the copyrightable work licensed by a particular Contributor under this License.\n\n1. Grant of Copyright License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.\n\n2. Grant of Patent License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.\n\n3. No Trademark License\n\nNo trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.\n\n4. Distribution Restriction\n\nYou may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.\n\n5. Disclaimer of Warranty and Limitation of Liability\n\nThe Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.\n\nEnd of the Terms and Conditions\n\nHow to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software\n\nTo apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:\n\nFill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;\nCreate a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;\nAttach the statement to the appropriate annotated syntax at the beginning of each source file.\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR\nPURPOSE.\nSee the Mulan PSL v1 for more details.\n&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://license.coscl.org.cn/MulanPSL/&quot;,
+        &quot;_key&quot;: &quot;mulanpsl-1.0&quot;,
+        &quot;_name&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;COSCL - China Open Source Cloud League&quot;,
+        &quot;_shortName&quot;: &quot;Mulan PSL v1&quot;,
+        &quot;_spdxId&quot;: &quot;MulanPSL-1.0&quot;,
+        &quot;_text&quot;: &quot;木兰宽松许可证, 第1版\n木兰宽松许可证， 第1版\n\n2019年8月 http://license.coscl.org.cn/MulanPSL\n\n您对“软件”的复制、使用、修改及分发受木兰宽松许可证，第1版（“本许可证”）的如下条款的约束：\n\n0.   定义\n\n“软件”是指由“贡献”构成的许可在“本许可证”下的程序和相关文档的集合。\n\n“贡献者”是指将受版权法保护的作品许可在“本许可证”下的自然人或“法人实体”。\n\n“法人实体”是指提交贡献的机构及其“关联实体”。\n\n“关联实体”是指，对“本许可证”下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。\n\n“贡献”是指由任一“贡献者”许可在“本许可证”下的受版权法保护的作品。\n\n1.   授予版权许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其“贡献”，不论修改与否。\n\n2.   授予专利许可\n\n每个“贡献者”根据“本许可证”授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与许可“贡献”时的“软件”结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如您或您的“关联实体”直接或间接地（包括通过代理、专利被许可人或受让人），就“软件”或其中的“贡献”对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则“本许可证”授予您对“软件”的专利许可自您提起诉讼或发起维权行动之日终止。\n\n3.   无商标许可\n\n“本许可证”不提供对“贡献者”的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。\n\n4.   分发限制\n\n您可以在任何媒介中将“软件”以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供“本许可证”的副本，并保留“软件”中的版权、商标、专利及免责声明。\n\n5.   免责声明与责任限制\n\n“软件”及其中的“贡献”在提供时不带任何明示或默示的担保。在任何情况下，“贡献者”或版权所有者不对任何人因使用“软件”或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。\n\n条款结束\n\n如何将木兰宽松许可证，第1版，应用到您的软件\n\n如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：\n\n1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；\n\n2， 请您在软件包的一级目录下创建以“LICENSE”为名的文件，将整个许可证文本放入该文件中；\n\n3， 请将如下声明文本放入每个源文件的头部注释中。\n\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR\nPURPOSE.\nSee the Mulan PSL v1 for more details.\nMulan Permissive Software License，Version 1\nMulan Permissive Software License，Version 1 (Mulan PSL v1)\n\nAugust 2019 http://license.coscl.org.cn/MulanPSL\n\nYour reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:\n\n0. Definition\n\nSoftware means the program and related documents which are comprised of those Contribution and licensed under this License.\n\nContributor means the Individual or Legal Entity who licenses its copyrightable work under this License.\n\nLegal Entity means the entity making a Contribution and all its Affiliates.\n\nAffiliates means entities that control, or are controlled by, or are under common control with a party to this License, ‘control’ means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.\n\nContribution means the copyrightable work licensed by a particular Contributor under this License.\n\n1. Grant of Copyright License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.\n\n2. Grant of Patent License\n\nSubject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others’ modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.\n\n3. No Trademark License\n\nNo trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.\n\n4. Distribution Restriction\n\nYou may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.\n\n5. Disclaimer of Warranty and Limitation of Liability\n\nThe Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages, including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it’s caused or based on which legal theory, even if advised of the possibility of such damages.\n\nEnd of the Terms and Conditions\n\nHow to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software\n\nTo apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:\n\nFill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;\nCreate a file named “LICENSE” which contains the whole context of this License in the first directory of your software package;\nAttach the statement to the appropriate annotated syntax at the beginning of each source file.\nCopyright (c) [2019] [name of copyright holder]\n[Software Name] is licensed under the Mulan PSL v1.\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\nYou may obtain a copy of Mulan PSL v1 at:\n    http://license.coscl.org.cn/MulanPSL\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR\nPURPOSE.\nSee the Mulan PSL v1 for more details.\n&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/31fdcf68cbd8e2f63dcba5eccfe6ac26">Fossology:31fdcf68cbd8e2f63dcba5eccfe6ac26</a> for <a href="/?license=fossology:MulanPSL-1.0"><span class="licensename"><span class="namespace">fossology:</span>MulanPSL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>MulanPSL-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Mulan Permissive Software License, Version 1</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.<span class="provided-by">(provided by: <span title="Fossology:31fdcf68cbd8e2f63dcba5eccfe6ac26">[<a href="/fact/Fossology/31fdcf68cbd8e2f63dcba5eccfe6ac26">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://license.coscl.org.cn/MulanPSL/" target="_blank">https://license.coscl.org.cn/MulanPSL/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>木兰宽松许可证, 第1版 木兰宽松许可证， 第1版
+
+2019年8月 http://license.coscl.org.cn/MulanPSL
+
+您对&quot;软件&quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（&quot;本许可证&quot;）的如下条款的约束：
+
+   0. 定义
+
+   &quot;软件&quot;是指由&quot;贡献&quot;构成的许可在&quot;本许可证&quot;下的程序和相关文档的集合。
+
+   &quot;贡献者&quot;是指将受版权法保护的作品许可在&quot;本许可证&quot;下的自然人或&quot;法人实体&quot;。
+
+   &quot;法人实体&quot;是指提交贡献的机构及其&quot;关联实体&quot;。
+
+   &quot;关联实体&quot;是指，对&quot;本许可证&quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。
+
+   &quot;贡献&quot;是指由任一&quot;贡献者&quot;许可在&quot;本许可证&quot;下的受版权法保护的作品。
+
+   1. 授予版权许可
+
+   每个&quot;贡献者&quot;根据&quot;本许可证&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其&quot;贡献&quot;，不论修改与否。
+
+   2. 授予专利许可
+
+   每个&quot;贡献者&quot;根据&quot;本许可证&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其&quot;贡献&quot;或以其他方式转移其&quot;贡献&quot;。前述专利许可仅限于&quot;贡献者&quot;现在或将来拥有或控制的其&quot;贡献&quot;本身或其&quot;贡献&quot;与许可&quot;贡献&quot;时的&quot;软件&quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改&quot;贡献&quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的&quot;关联实体&quot;直接或间接地（包括通过代理、专利被许可人或受让人），就&quot;软件&quot;或其中的&quot;贡献&quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则&quot;本许可证&quot;授予您对&quot;软件&quot;的专利许可自您提起诉讼或发起维权行动之日终止。
+
+   3. 无商标许可
+
+   &quot;本许可证&quot;不提供对&quot;贡献者&quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。
+
+   4. 分发限制
+
+   您可以在任何媒介中将&quot;软件&quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供&quot;本许可证&quot;的副本，并保留&quot;软件&quot;中的版权、商标、专利及免责声明。
+
+   5. 免责声明与责任限制
+
+   &quot;软件&quot;及其中的&quot;贡献&quot;在提供时不带任何明示或默示的担保。在任何情况下，&quot;贡献者&quot;或版权所有者不对任何人因使用&quot;软件&quot;或其中的&quot;贡献&quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。
+
+条款结束
+
+如何将木兰宽松许可证，第1版，应用到您的软件
+
+如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：
+
+   1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；
+
+   2， 请您在软件包的一级目录下创建以&quot;LICENSE&quot;为名的文件，将整个许可证文本放入该文件中；
+
+   3， 请将如下声明文本放入每个源文件的头部注释中。
+
+Copyright (c) [2019] [name of copyright holder]
+
+[Software Name] is licensed under the Mulan PSL v1.
+
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+
+You may obtain a copy of Mulan PSL v1 at:
+
+http://license.coscl.org.cn/MulanPSL
+
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+
+See the Mulan PSL v1 for more details. Mulan Permissive Software License，Version 1 Mulan Permissive Software License，Version 1 (Mulan PSL v1)
+
+August 2019 http://license.coscl.org.cn/MulanPSL
+
+Your reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:
+
+   0. Definition
+
+   Software means the program and related documents which are comprised of those Contribution and licensed under this License.
+
+   Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.
+
+   Legal Entity means the entity making a Contribution and all its Affiliates.
+
+   Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &#39;control&#39; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.
+
+   Contribution means the copyrightable work licensed by a particular Contributor under this License.
+
+   1. Grant of Copyright License
+
+   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.
+
+   2. Grant of Patent License
+
+   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&#39; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.
+
+   3. No Trademark License
+
+   No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.
+
+   4. Distribution Restriction
+
+   You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.
+
+   5. Disclaimer of Warranty and Limitation of Liability
+
+   The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&#39;s caused or based on which legal theory, even if advised of the possibility of such damages.
+
+End of the Terms and Conditions
+
+How to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software
+
+To apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:
+
+   i. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;
+
+   ii. Create a file named &quot;LICENSE&quot; which contains the whole context of this License in the first directory of your software package;
+
+   iii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.
+
+Copyright (c) [2019] [name of copyright holder]
+
+[Software Name] is licensed under the Mulan PSL v1.
+
+You can use this software according to the terms and conditions of the Mulan PSL v1.
+
+You may obtain a copy of Mulan PSL v1 at:
+
+http://license.coscl.org.cn/MulanPSL
+
+THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+
+See the Mulan PSL v1 for more details.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:MulanPSL-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;31fdcf68cbd8e2f63dcba5eccfe6ac26&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://license.coscl.org.cn/MulanPSL/&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;木兰宽松许可证, 第1版 木兰宽松许可证， 第1版\n\n2019年8月 http://license.coscl.org.cn/MulanPSL\n\n您对\&quot;软件\&quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（\&quot;本许可证\&quot;）的如下条款的约束：\n\n   0. 定义\n\n   \&quot;软件\&quot;是指由\&quot;贡献\&quot;构成的许可在\&quot;本许可证\&quot;下的程序和相关文档的集合。\n\n   \&quot;贡献者\&quot;是指将受版权法保护的作品许可在\&quot;本许可证\&quot;下的自然人或\&quot;法人实体\&quot;。\n\n   \&quot;法人实体\&quot;是指提交贡献的机构及其\&quot;关联实体\&quot;。\n\n   \&quot;关联实体\&quot;是指，对\&quot;本许可证\&quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。\n\n   \&quot;贡献\&quot;是指由任一\&quot;贡献者\&quot;许可在\&quot;本许可证\&quot;下的受版权法保护的作品。\n\n   1. 授予版权许可\n\n   每个\&quot;贡献者\&quot;根据\&quot;本许可证\&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其\&quot;贡献\&quot;，不论修改与否。\n\n   2. 授予专利许可\n\n   每个\&quot;贡献者\&quot;根据\&quot;本许可证\&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其\&quot;贡献\&quot;或以其他方式转移其\&quot;贡献\&quot;。前述专利许可仅限于\&quot;贡献者\&quot;现在或将来拥有或控制的其\&quot;贡献\&quot;本身或其\&quot;贡献\&quot;与许可\&quot;贡献\&quot;时的\&quot;软件\&quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改\&quot;贡献\&quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的\&quot;关联实体\&quot;直接或间接地（包括通过代理、专利被许可人或受让人），就\&quot;软件\&quot;或其中的\&quot;贡献\&quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则\&quot;本许可证\&quot;授予您对\&quot;软件\&quot;的专利许可自您提起诉讼或发起维权行动之日终止。\n\n   3. 无商标许可\n\n   \&quot;本许可证\&quot;不提供对\&quot;贡献者\&quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。\n\n   4. 分发限制\n\n   您可以在任何媒介中将\&quot;软件\&quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供\&quot;本许可证\&quot;的副本，并保留\&quot;软件\&quot;中的版权、商标、专利及免责声明。\n\n   5. 免责声明与责任限制\n\n   \&quot;软件\&quot;及其中的\&quot;贡献\&quot;在提供时不带任何明示或默示的担保。在任何情况下，\&quot;贡献者\&quot;或版权所有者不对任何人因使用\&quot;软件\&quot;或其中的\&quot;贡献\&quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。\n\n条款结束\n\n如何将木兰宽松许可证，第1版，应用到您的软件\n\n如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：\n\n   1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；\n\n   2， 请您在软件包的一级目录下创建以\&quot;LICENSE\&quot;为名的文件，将整个许可证文本放入该文件中；\n\n   3， 请将如下声明文本放入每个源文件的头部注释中。\n\nCopyright (c) [2019] [name of copyright holder]\n\n[Software Name] is licensed under the Mulan PSL v1.\n\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\n\nYou may obtain a copy of Mulan PSL v1 at:\n\nhttp://license.coscl.org.cn/MulanPSL\n\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\n\nSee the Mulan PSL v1 for more details. Mulan Permissive Software License，Version 1 Mulan Permissive Software License，Version 1 (Mulan PSL v1)\n\nAugust 2019 http://license.coscl.org.cn/MulanPSL\n\nYour reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:\n\n   0. Definition\n\n   Software means the program and related documents which are comprised of those Contribution and licensed under this License.\n\n   Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.\n\n   Legal Entity means the entity making a Contribution and all its Affiliates.\n\n   Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &#39;control&#39; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.\n\n   Contribution means the copyrightable work licensed by a particular Contributor under this License.\n\n   1. Grant of Copyright License\n\n   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.\n\n   2. Grant of Patent License\n\n   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&#39; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.\n\n   3. No Trademark License\n\n   No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.\n\n   4. Distribution Restriction\n\n   You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.\n\n   5. Disclaimer of Warranty and Limitation of Liability\n\n   The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&#39;s caused or based on which legal theory, even if advised of the possibility of such damages.\n\nEnd of the Terms and Conditions\n\nHow to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software\n\nTo apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:\n\n   i. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;\n\n   ii. Create a file named \&quot;LICENSE\&quot; which contains the whole context of this License in the first directory of your software package;\n\n   iii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.\n\nCopyright (c) [2019] [name of copyright holder]\n\n[Software Name] is licensed under the Mulan PSL v1.\n\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\n\nYou may obtain a copy of Mulan PSL v1 at:\n\nhttp://license.coscl.org.cn/MulanPSL\n\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\n\nSee the Mulan PSL v1 for more details.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Mulan Permissive Software License, Version 1&quot;,
+        &quot;_rf_notes&quot;: &quot;Both the Chinese and English translations of this license have been included in the markup, because current examples of use appear to include both translations in license documents.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:MulanPSL-1.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;木兰宽松许可证, 第1版 木兰宽松许可证， 第1版\n\n2019年8月 http://license.coscl.org.cn/MulanPSL\n\n您对\&quot;软件\&quot;的复制、使用、修改及分发受木兰宽松许可证，第1版（\&quot;本许可证\&quot;）的如下条款的约束：\n\n   0. 定义\n\n   \&quot;软件\&quot;是指由\&quot;贡献\&quot;构成的许可在\&quot;本许可证\&quot;下的程序和相关文档的集合。\n\n   \&quot;贡献者\&quot;是指将受版权法保护的作品许可在\&quot;本许可证\&quot;下的自然人或\&quot;法人实体\&quot;。\n\n   \&quot;法人实体\&quot;是指提交贡献的机构及其\&quot;关联实体\&quot;。\n\n   \&quot;关联实体\&quot;是指，对\&quot;本许可证\&quot;下的一方而言，控制、受控制或与其共同受控制的机构，此处的控制是指有受控方或共同受控方至少50%直接或间接的投票权、资金或其他有价证券。\n\n   \&quot;贡献\&quot;是指由任一\&quot;贡献者\&quot;许可在\&quot;本许可证\&quot;下的受版权法保护的作品。\n\n   1. 授予版权许可\n\n   每个\&quot;贡献者\&quot;根据\&quot;本许可证\&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的版权许可，您可以复制、使用、修改、分发其\&quot;贡献\&quot;，不论修改与否。\n\n   2. 授予专利许可\n\n   每个\&quot;贡献者\&quot;根据\&quot;本许可证\&quot;授予您永久性的、全球性的、免费的、非独占的、不可撤销的（根据本条规定撤销除外）专利许可，供您制造、委托制造、使用、许诺销售、销售、进口其\&quot;贡献\&quot;或以其他方式转移其\&quot;贡献\&quot;。前述专利许可仅限于\&quot;贡献者\&quot;现在或将来拥有或控制的其\&quot;贡献\&quot;本身或其\&quot;贡献\&quot;与许可\&quot;贡献\&quot;时的\&quot;软件\&quot;结合而将必然会侵犯的专利权利要求，不包括仅因您或他人修改\&quot;贡献\&quot;或其他结合而将必然会侵犯到的专利权利要求。如您或您的\&quot;关联实体\&quot;直接或间接地（包括通过代理、专利被许可人或受让人），就\&quot;软件\&quot;或其中的\&quot;贡献\&quot;对任何人发起专利侵权诉讼（包括反诉或交叉诉讼）或其他专利维权行动，指控其侵犯专利权，则\&quot;本许可证\&quot;授予您对\&quot;软件\&quot;的专利许可自您提起诉讼或发起维权行动之日终止。\n\n   3. 无商标许可\n\n   \&quot;本许可证\&quot;不提供对\&quot;贡献者\&quot;的商品名称、商标、服务标志或产品名称的商标许可，但您为满足第4条规定的声明义务而必须使用除外。\n\n   4. 分发限制\n\n   您可以在任何媒介中将\&quot;软件\&quot;以源程序形式或可执行形式重新分发，不论修改与否，但您必须向接收者提供\&quot;本许可证\&quot;的副本，并保留\&quot;软件\&quot;中的版权、商标、专利及免责声明。\n\n   5. 免责声明与责任限制\n\n   \&quot;软件\&quot;及其中的\&quot;贡献\&quot;在提供时不带任何明示或默示的担保。在任何情况下，\&quot;贡献者\&quot;或版权所有者不对任何人因使用\&quot;软件\&quot;或其中的\&quot;贡献\&quot;而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论,即使其曾被建议有此种损失的可能性。\n\n条款结束\n\n如何将木兰宽松许可证，第1版，应用到您的软件\n\n如果您希望将木兰宽松许可证，第1版，应用到您的新软件，为了方便接收者查阅，建议您完成如下三步：\n\n   1， 请您补充如下声明中的空白，包括软件名、软件的首次发表年份以及您作为版权人的名字；\n\n   2， 请您在软件包的一级目录下创建以\&quot;LICENSE\&quot;为名的文件，将整个许可证文本放入该文件中；\n\n   3， 请将如下声明文本放入每个源文件的头部注释中。\n\nCopyright (c) [2019] [name of copyright holder]\n\n[Software Name] is licensed under the Mulan PSL v1.\n\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\n\nYou may obtain a copy of Mulan PSL v1 at:\n\nhttp://license.coscl.org.cn/MulanPSL\n\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\n\nSee the Mulan PSL v1 for more details. Mulan Permissive Software License，Version 1 Mulan Permissive Software License，Version 1 (Mulan PSL v1)\n\nAugust 2019 http://license.coscl.org.cn/MulanPSL\n\nYour reproduction, use, modification and distribution of the Software shall be subject to Mulan PSL v1 (this License) with following terms and conditions:\n\n   0. Definition\n\n   Software means the program and related documents which are comprised of those Contribution and licensed under this License.\n\n   Contributor means the Individual or Legal Entity who licenses its copyrightable work under this License.\n\n   Legal Entity means the entity making a Contribution and all its Affiliates.\n\n   Affiliates means entities that control, or are controlled by, or are under common control with a party to this License, &#39;control&#39; means direct or indirect ownership of at least fifty percent (50%) of the voting power, capital or other securities of controlled or commonly controlled entity.\n\n   Contribution means the copyrightable work licensed by a particular Contributor under this License.\n\n   1. Grant of Copyright License\n\n   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable copyright license to reproduce, use, modify, or distribute its Contribution, with modification or not.\n\n   2. Grant of Patent License\n\n   Subject to the terms and conditions of this License, each Contributor hereby grants to you a perpetual, worldwide, royalty-free, non-exclusive, irrevocable (except for revocation under this Section) patent license to make, have made, use, offer for sale, sell, import or otherwise transfer its Contribution where such patent license is only limited to the patent claims owned or controlled by such Contributor now or in future which will be necessarily infringed by its Contribution alone, or by combination of the Contribution with the Software to which the Contribution was contributed, excluding of any patent claims solely be infringed by your or others&#39; modification or other combinations. If you or your Affiliates directly or indirectly (including through an agent, patent licensee or assignee）, institute patent litigation (including a cross claim or counterclaim in a litigation) or other patent enforcement activities against any individual or entity by alleging that the Software or any Contribution in it infringes patents, then any patent license granted to you under this License for the Software shall terminate as of the date such litigation or activity is filed or taken.\n\n   3. No Trademark License\n\n   No trademark license is granted to use the trade names, trademarks, service marks, or product names of Contributor, except as required to fulfill notice requirements in section 4.\n\n   4. Distribution Restriction\n\n   You may distribute the Software in any medium with or without modification, whether in source or executable forms, provided that you provide recipients with a copy of this License and retain copyright, patent, trademark and disclaimer statements in the Software.\n\n   5. Disclaimer of Warranty and Limitation of Liability\n\n   The Software and Contribution in it are provided without warranties of any kind, either express or implied. In no event shall any Contributor or copyright holder be liable to you for any damages,including, but not limited to any direct, or indirect, special or consequential damages arising from your use or inability to use the Software or the Contribution in it, no matter how it&#39;s caused or based on which legal theory, even if advised of the possibility of such damages.\n\nEnd of the Terms and Conditions\n\nHow to apply the Mulan Permissive Software License，Version 1 (Mulan PSL v1) to your software\n\nTo apply the Mulan PSL v1 to your work, for easy identification by recipients, you are suggested to complete following three steps:\n\n   i. Fill in the blanks in following statement, including insert your software name, the year of the first publication of your software, and your name identified as the copyright owner;\n\n   ii. Create a file named \&quot;LICENSE\&quot; which contains the whole context of this License in the first directory of your software package;\n\n   iii. Attach the statement to the appropriate annotated syntax at the beginning of each source file.\n\nCopyright (c) [2019] [name of copyright holder]\n\n[Software Name] is licensed under the Mulan PSL v1.\n\nYou can use this software according to the terms and conditions of the Mulan PSL v1.\n\nYou may obtain a copy of Mulan PSL v1 at:\n\nhttp://license.coscl.org.cn/MulanPSL\n\nTHIS SOFTWARE IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.\n\nSee the Mulan PSL v1 for more details.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://license.coscl.org.cn/MulanPSL/&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/fcd6240661037064c0147528c9e24d9a">OrtLicenseCategorization:fcd6240661037064c0147528c9e24d9a</a> for <a href="/?license=SPDX:MulanPSL-1.0"><span class="licensename"><span class="namespace">SPDX:</span>MulanPSL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MulanPSL-1.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fcd6240661037064c0147528c9e24d9a">[<a href="/fact/OrtLicenseCategorization/fcd6240661037064c0147528c9e24d9a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fcd6240661037064c0147528c9e24d9a">[<a href="/fact/OrtLicenseCategorization/fcd6240661037064c0147528c9e24d9a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MulanPSL-1.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;fcd6240661037064c0147528c9e24d9a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MulanPSL-1.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/2a32b541a6e33d310c755ef2c12944ed">CavilLicenseChange:2a32b541a6e33d310c755ef2c12944ed</a> for <a href="/?license=cavil:MulanPSL-1.0"><span class="licensename"><span class="namespace">cavil:</span>MulanPSL-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>MulanPSL-1.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MulanPSL-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:MulanPSL-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MulanPSL-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;2a32b541a6e33d310c755ef2c12944ed&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;MulanPSL-1.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:MulanPSL-1.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/af457372dc251833396b6552b3679f14">MetaeffektLicense:af457372dc251833396b6552b3679f14</a> for <a href="/?license=metaeffekt:Mulan Permissive Software License 1.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Mulan Permissive Software License 1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Mulan Permissive Software License 1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MulanPSL-1.0</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Mulan Permissive</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mulanpsl-1.0</span></li><li><span class="licensename">木兰宽松许可证, 第1版 木兰宽松许可证， 第1版</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Mulan Permissive Software License 1.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MulanPSL-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Mulan Permissive&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;木兰宽松许可证, 第1版 木兰宽松许可证， 第1版&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:mulanpsl-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;af457372dc251833396b6552b3679f14&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;木兰宽松许可证, 第1版 木兰宽松许可证， 第1版&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Mulan Permissive Software License 1.0&quot;,
+        &quot;_category&quot;: &quot;Mulan Permissive&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:mulanpsl-1.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:MulanPSL-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

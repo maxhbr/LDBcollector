@@ -1,0 +1,1007 @@
+<html><head><title>ldbcollector: spdx:NLPL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:NLPL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NLPL</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">NLPL</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>NLPL</span></li><li><span class="licensename"><span class="namespace">cavil:</span>NLPL</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>NLPL</span></li><li><span class="licensename"><span class="namespace">fossology:</span>NLPL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>nlpl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NLPL</span></li><li><span class="licensename">No Limit Public License</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>No Limit Public License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>No Limit Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:f936e795b40932fb8c4f801ea409bcf9">[<a href="/fact/BlueOakCouncil/f936e795b40932fb8c4f801ea409bcf9">BlueOakCouncil</a>]</span>)</span></li><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:735b135e50fc61548f7fd5023f10d178">[<a href="/fact/ScancodeData/735b135e50fc61548f7fd5023f10d178">ScancodeData</a>]</span>)</span></li><li>StronglyProtective<span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:943e93441a8e8099e6a07cb49416c434">[<a href="/fact/SPDXLicense/943e93441a8e8099e6a07cb49416c434">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b5e6599847a4f240b501a62e54a8c5ed">[<a href="/fact/FedoraEntry/b5e6599847a4f240b501a62e54a8c5ed">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:f936e795b40932fb8c4f801ea409bcf9">[<a href="/fact/BlueOakCouncil/f936e795b40932fb8c4f801ea409bcf9">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:fe1edb0467c39d894185c45136265c4e">[<a href="/fact/MetaeffektLicense/fe1edb0467c39d894185c45136265c4e">MetaeffektLicense</a>]</span>)</span></li><li><span title="">ifrOSS Classification: <b style="">Sonstige Lizenzen mit strengem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li><li><span title="Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten Lizenzen sind deswegen aber nicht schon unbedingt &quot;GPL-kompatibel&quot;.">ifrOSS Classification: <b style="">Lizenzen mit strengem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c70da7494d80921699629e722f9cb1d">[<a href="/fact/OrtLicenseCategorization/0c70da7494d80921699629e722f9cb1d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c70da7494d80921699629e722f9cb1d">[<a href="/fact/OrtLicenseCategorization/0c70da7494d80921699629e722f9cb1d">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, there is a certain irony in a Frenchman writing a license that
+isn&#39;t wholly applicable in France, due to Moral Rights. But I digress. This
+license is basically the same as the WTFPL (with slightly less profanity).
+It is Free and GPL-Compatible. A copy of the license text was taken from
+http://imapsync.lamiral.info/COPYING on 2012-07-09.
+<span class="provided-by">(provided by: <span title="ScancodeData:735b135e50fc61548f7fd5023f10d178">[<a href="/fact/ScancodeData/735b135e50fc61548f7fd5023f10d178">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/NLPL" target="_blank">https://fedoraproject.org/wiki/Licensing/NLPL</a></li><li><a href="https://spdx.org/licenses/NLPL.html" target="_blank">https://spdx.org/licenses/NLPL.html</a></li><li><a href="http://imapsync.lamiral.info/COPYING" target="_blank">http://imapsync.lamiral.info/COPYING</a></li><li><a href="http://imapsync.lamiral.info/NOLIMIT" target="_blank">http://imapsync.lamiral.info/NOLIMIT</a></li><li><a href="http://spdx.org/licenses/NLPL" target="_blank">http://spdx.org/licenses/NLPL</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/NLPL</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NO LIMIT PUBLIC LICENSE
+     Version 0, June 2012
+
+Gilles LAMIRAL
+La Billais
+35580 Baulon
+France
+
+NO LIMIT PUBLIC LICENSE
+
+Terms and conditions for copying, distribution, modification
+or anything else.
+
+     0. No limit to do anything with this work and this license.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;
+
+         &lt;p&gt;Version 0, June 2012&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Gilles LAMIRAL&lt;/p&gt;
+
+         &lt;p&gt;La Billais&lt;/p&gt;
+
+         &lt;p&gt;35580 Baulon&lt;/p&gt;
+
+         &lt;p&gt;France&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Terms and conditions for copying, distribution, modification or anything else.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+          No limit to do anything with this work and this license.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>NO LIMIT PUBLIC LICENSE
+           Version 0, June 2012
+
+Gilles LAMIRAL
+La Billais
+35580 Baulon
+France
+
+                 NO LIMIT PUBLIC LICENSE
+Terms and conditions for copying, distribution, modification
+or anything else.
+
+  0. No limit to do anything with this work and this license.</pre></details></li><li><details><summary>Text:</summary><pre>NO LIMIT PUBLIC LICENSE
+
+Version 0, June 2012 Gilles LAMIRAL
+
+La Billais
+
+35580 Baulon
+
+France NO LIMIT PUBLIC LICENSE
+
+Terms and conditions for copying, distribution, modification or anything else.
+
+   0. No limit to do anything with this work and this license.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/943e93441a8e8099e6a07cb49416c434">SPDXLicense:943e93441a8e8099e6a07cb49416c434</a> for <a href="/?license=spdx:NLPL"><span class="licensename"><span class="namespace">spdx:</span>NLPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NLPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">No Limit Public License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:943e93441a8e8099e6a07cb49416c434">[<a href="/fact/SPDXLicense/943e93441a8e8099e6a07cb49416c434">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/NLPL" target="_blank">https://fedoraproject.org/wiki/Licensing/NLPL</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NO LIMIT PUBLIC LICENSE
+     Version 0, June 2012
+
+Gilles LAMIRAL
+La Billais
+35580 Baulon
+France
+
+NO LIMIT PUBLIC LICENSE
+
+Terms and conditions for copying, distribution, modification
+or anything else.
+
+     0. No limit to do anything with this work and this license.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;
+
+         &lt;p&gt;Version 0, June 2012&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Gilles LAMIRAL&lt;/p&gt;
+
+         &lt;p&gt;La Billais&lt;/p&gt;
+
+         &lt;p&gt;35580 Baulon&lt;/p&gt;
+
+         &lt;p&gt;France&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Terms and conditions for copying, distribution, modification or anything else.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+          No limit to do anything with this work and this license.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NLPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;No Limit Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;943e93441a8e8099e6a07cb49416c434&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;NO LIMIT PUBLIC LICENSE\n     Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\nNO LIMIT PUBLIC LICENSE\n\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n     0. No limit to do anything with this work and this license.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;\n\n         &lt;p&gt;Version 0, June 2012&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Gilles LAMIRAL&lt;/p&gt;\n\n         &lt;p&gt;La Billais&lt;/p&gt;\n\n         &lt;p&gt;35580 Baulon&lt;/p&gt;\n\n         &lt;p&gt;France&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Terms and conditions for copying, distribution, modification or anything else.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n          No limit to do anything with this work and this license.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:03Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:NLPL&quot;,
+        &quot;licenseText&quot;: &quot;NO LIMIT PUBLIC LICENSE\n     Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\nNO LIMIT PUBLIC LICENSE\n\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n     0. No limit to do anything with this work and this license.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;\n\n         &lt;p&gt;Version 0, June 2012&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Gilles LAMIRAL&lt;/p&gt;\n\n         &lt;p&gt;La Billais&lt;/p&gt;\n\n         &lt;p&gt;35580 Baulon&lt;/p&gt;\n\n         &lt;p&gt;France&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;NO LIMIT PUBLIC LICENSE&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Terms and conditions for copying, distribution, modification or anything else.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n          No limit to do anything with this work and this license.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;No Limit Public License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;NO LIMIT PUBLIC LICENSE\n\nVersion 0, June 2012\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; Gilles LAMIRAL\n\nLa Billais\n\n35580 Baulon\n\nFrance\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; NO LIMIT PUBLIC LICENSE\n\n&lt;&lt;endOptional&gt;&gt;\n\nTerms and conditions for copying, distribution, modification or anything else.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; No limit to do anything with this work and this license.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/b5e6599847a4f240b501a62e54a8c5ed">FedoraEntry:b5e6599847a4f240b501a62e54a8c5ed</a> for <a href="/?license=Fedora:NLPL"><span class="licensename"><span class="namespace">Fedora:</span>NLPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>NLPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NLPL</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">NLPL</span></li><li><span class="licensename">No Limit Public License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:b5e6599847a4f240b501a62e54a8c5ed">[<a href="/fact/FedoraEntry/b5e6599847a4f240b501a62e54a8c5ed">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/NLPL" target="_blank">https://fedoraproject.org/wiki/Licensing/NLPL</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:NLPL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NLPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;No Limit Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NLPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;b5e6599847a4f240b501a62e54a8c5ed&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;NLPL&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;No Limit Public License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;NLPL&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:NLPL&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/f936e795b40932fb8c4f801ea409bcf9">BlueOakCouncil:f936e795b40932fb8c4f801ea409bcf9</a> for <a href="/?license=BlueOak:NLPL"><span class="licensename"><span class="namespace">BlueOak:</span>NLPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>NLPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">No Limit Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:f936e795b40932fb8c4f801ea409bcf9">[<a href="/fact/BlueOakCouncil/f936e795b40932fb8c4f801ea409bcf9">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:f936e795b40932fb8c4f801ea409bcf9">[<a href="/fact/BlueOakCouncil/f936e795b40932fb8c4f801ea409bcf9">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/NLPL.html" target="_blank">https://spdx.org/licenses/NLPL.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:NLPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;No Limit Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;f936e795b40932fb8c4f801ea409bcf9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/NLPL.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;NLPL&quot;,
+                &quot;_name&quot;: &quot;No Limit Public License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/NLPL.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/735b135e50fc61548f7fd5023f10d178">ScancodeData:735b135e50fc61548f7fd5023f10d178</a> for <a href="/?license=scancode:nlpl"><span class="licensename"><span class="namespace">scancode:</span>nlpl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>nlpl</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">NLPL</span></li><li><span class="licensename">No Limit Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:735b135e50fc61548f7fd5023f10d178">[<a href="/fact/ScancodeData/735b135e50fc61548f7fd5023f10d178">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, there is a certain irony in a Frenchman writing a license that
+isn&#39;t wholly applicable in France, due to Moral Rights. But I digress. This
+license is basically the same as the WTFPL (with slightly less profanity).
+It is Free and GPL-Compatible. A copy of the license text was taken from
+http://imapsync.lamiral.info/COPYING on 2012-07-09.
+<span class="provided-by">(provided by: <span title="ScancodeData:735b135e50fc61548f7fd5023f10d178">[<a href="/fact/ScancodeData/735b135e50fc61548f7fd5023f10d178">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://imapsync.lamiral.info/COPYING" target="_blank">http://imapsync.lamiral.info/COPYING</a></li><li><a href="http://imapsync.lamiral.info/NOLIMIT" target="_blank">http://imapsync.lamiral.info/NOLIMIT</a></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/NLPL</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NO LIMIT PUBLIC LICENSE
+           Version 0, June 2012
+
+Gilles LAMIRAL
+La Billais
+35580 Baulon
+France
+
+                 NO LIMIT PUBLIC LICENSE
+Terms and conditions for copying, distribution, modification
+or anything else.
+
+  0. No limit to do anything with this work and this license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:nlpl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NLPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;No Limit Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;735b135e50fc61548f7fd5023f10d178&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn&#39;t wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://imapsync.lamiral.info/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://imapsync.lamiral.info/NOLIMIT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;,
+        &quot;_key&quot;: &quot;nlpl&quot;,
+        &quot;_name&quot;: &quot;No Limit Public License&quot;,
+        &quot;_notes&quot;: &quot;Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn&#39;t wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Gilles Lamiral&quot;,
+        &quot;_shortName&quot;: &quot;NLPL&quot;,
+        &quot;_spdxId&quot;: &quot;NLPL&quot;,
+        &quot;_text&quot;: &quot;NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://imapsync.lamiral.info/COPYING&quot;,
+            &quot;http://imapsync.lamiral.info/NOLIMIT&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/0c6e18910ffc20b3f4e325a9a81abb62">Fossology:0c6e18910ffc20b3f4e325a9a81abb62</a> for <a href="/?license=fossology:NLPL"><span class="licensename"><span class="namespace">fossology:</span>NLPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>NLPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">No Limit Public License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/NLPL" target="_blank">https://fedoraproject.org/wiki/Licensing/NLPL</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>NO LIMIT PUBLIC LICENSE
+
+Version 0, June 2012 Gilles LAMIRAL
+
+La Billais
+
+35580 Baulon
+
+France NO LIMIT PUBLIC LICENSE
+
+Terms and conditions for copying, distribution, modification or anything else.
+
+   0. No limit to do anything with this work and this license.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:NLPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;No Limit Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;0c6e18910ffc20b3f4e325a9a81abb62&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;NO LIMIT PUBLIC LICENSE\n\nVersion 0, June 2012 Gilles LAMIRAL\n\nLa Billais\n\n35580 Baulon\n\nFrance NO LIMIT PUBLIC LICENSE\n\nTerms and conditions for copying, distribution, modification or anything else.\n\n   0. No limit to do anything with this work and this license.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;No Limit Public License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:NLPL&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;NO LIMIT PUBLIC LICENSE\n\nVersion 0, June 2012 Gilles LAMIRAL\n\nLa Billais\n\n35580 Baulon\n\nFrance NO LIMIT PUBLIC LICENSE\n\nTerms and conditions for copying, distribution, modification or anything else.\n\n   0. No limit to do anything with this work and this license.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/NLPL&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/0c70da7494d80921699629e722f9cb1d">OrtLicenseCategorization:0c70da7494d80921699629e722f9cb1d</a> for <a href="/?license=SPDX:NLPL"><span class="licensename"><span class="namespace">SPDX:</span>NLPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NLPL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c70da7494d80921699629e722f9cb1d">[<a href="/fact/OrtLicenseCategorization/0c70da7494d80921699629e722f9cb1d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0c70da7494d80921699629e722f9cb1d">[<a href="/fact/OrtLicenseCategorization/0c70da7494d80921699629e722f9cb1d">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NLPL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;0c70da7494d80921699629e722f9cb1d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NLPL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/31f7ddb029c3818e0c9631c6900cb844">CavilLicenseChange:31f7ddb029c3818e0c9631c6900cb844</a> for <a href="/?license=cavil:NLPL"><span class="licensename"><span class="namespace">cavil:</span>NLPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>NLPL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NLPL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:NLPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NLPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;31f7ddb029c3818e0c9631c6900cb844&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;NLPL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:NLPL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/fe1edb0467c39d894185c45136265c4e">MetaeffektLicense:fe1edb0467c39d894185c45136265c4e</a> for <a href="/?license=metaeffekt:No Limit Public License"><span class="licensename"><span class="namespace">metaeffekt:</span>No Limit Public License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>No Limit Public License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NLPL</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">NLPL</span></li><li><span class="licensename">NLPL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>nlpl</span></li><li><span class="licensename">NO LIMIT PUBLIC LICENSE</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:fe1edb0467c39d894185c45136265c4e">[<a href="/fact/MetaeffektLicense/fe1edb0467c39d894185c45136265c4e">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:No Limit Public License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NLPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NLPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NO LIMIT PUBLIC LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NLPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:nlpl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;fe1edb0467c39d894185c45136265c4e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;NO LIMIT PUBLIC LICENSE&quot;,
+            &quot;NLPL&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:No Limit Public License&quot;,
+        &quot;_category&quot;: &quot;NLPL&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:nlpl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:NLPL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e</a> for <a href="/?license=ifrOSS:No Limit Public License"><span class="licensename"><span class="namespace">ifrOSS:</span>No Limit Public License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>No Limit Public License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">No Limit Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>StronglyProtective<span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">ifrOSS Classification: <b style="">Sonstige Lizenzen mit strengem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li><li><span title="Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten Lizenzen sind deswegen aber nicht schon unbedingt &quot;GPL-kompatibel&quot;.">ifrOSS Classification: <b style="">Lizenzen mit strengem Copyleft-Effekt</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:cf92676cf3532e2640607e9b2dc19b7e">[<a href="/fact/ifrOSS License/cf92676cf3532e2640607e9b2dc19b7e">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://spdx.org/licenses/NLPL" target="_blank">http://spdx.org/licenses/NLPL</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:No Limit Public License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;No Limit Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;cf92676cf3532e2640607e9b2dc19b7e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://spdx.org/licenses/NLPL&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: [
+                                &quot;ifrOSS Classification&quot;,
+                                &quot;Sonstige Lizenzen mit strengem Copyleft-Effekt&quot;,
+                                {
+                                    &quot;contents&quot;: &quot;&quot;,
+                                    &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                }
+                            ],
+                            &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                        },
+                        &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                    },
+                    &quot;tag&quot;: &quot;LicenseRating&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: [
+                            {
+                                &quot;contents&quot;: [
+                                    {
+                                        &quot;contents&quot;: {
+                                            &quot;contents&quot;: {
+                                                &quot;contents&quot;: [
+                                                    &quot;ifrOSS Classification&quot;,
+                                                    &quot;Lizenzen mit strengem Copyleft-Effekt&quot;,
+                                                    {
+                                                        &quot;contents&quot;: &quot;Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten Lizenzen sind deswegen aber nicht schon unbedingt \&quot;GPL-kompatibel\&quot;.&quot;,
+                                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                                    }
+                                                ],
+                                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                            },
+                                            &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                                        },
+                                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                                    },
+                                    [
+                                        {
+                                            &quot;contents&quot;: {
+                                                &quot;tag&quot;: &quot;StronglyProtective&quot;
+                                            },
+                                            &quot;tag&quot;: &quot;LicenseType&quot;
+                                        }
+                                    ]
+                                ],
+                                &quot;tag&quot;: &quot;SubStatements&quot;
+                            },
+                            [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;contents&quot;: {
+                                            &quot;contents&quot;: [
+                                                &quot;ifrOSS Classification&quot;,
+                                                &quot;Open Source Lizenzen&quot;,
+                                                {
+                                                    &quot;contents&quot;: &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;,
+                                                    &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                                }
+                                            ],
+                                            &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                        },
+                                        &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;LicenseRating&quot;
+                                }
+                            ]
+                        ],
+                        &quot;tag&quot;: &quot;SubStatements&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Source Lizenzen&quot;,
+                &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;
+            ],
+            [
+                &quot;Lizenzen mit strengem Copyleft-Effekt&quot;,
+                &quot;Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten Lizenzen sind deswegen aber nicht schon unbedingt \&quot;GPL-kompatibel\&quot;.&quot;
+            ],
+            [
+                &quot;Sonstige Lizenzen mit strengem Copyleft-Effekt&quot;,
+                &quot;&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:No Limit Public License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;No Limit Public License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;http://spdx.org/licenses/NLPL&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

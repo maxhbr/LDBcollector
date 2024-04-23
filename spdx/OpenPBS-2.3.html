@@ -1,0 +1,1200 @@
+<html><head><title>ldbcollector: spdx:OpenPBS-2.3</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:OpenPBS-2.3</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenPBS-2.3</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenPBS 2.3</span></li><li><span class="licensename">OpenPBS Software License 2.3</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenPBS Software License 2.3</span></li><li><span class="licensename">OpenPBS Software License v2.3</span></li><li><span class="licensename">OpenPBS v2.3 Software License</span></li><li><span class="licensename">OpenPBS-2.3</span></li><li><span class="licensename"><span class="namespace">cavil:</span>OpenPBS-2.3</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>OpenPBS-2.3</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openpbs-2.3</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OpenPBS-2.3</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//fedoraproject.org/wiki/Licensing/OpenPBS</span></li><li><span class="licensename">OpenPBS</span></li><li><span class="licensename">OpenPBS (Portable Batch System) v2.3 Software License</span></li><li><span class="licensename">OpenPBS Software License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:829ca1b303db973f47e03ee1dfcb82f4">[<a href="/fact/ScancodeData/829ca1b303db973f47e03ee1dfcb82f4">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:1287fcc8e5dd81fb5910538ff07e6140">[<a href="/fact/SPDXLicense/1287fcc8e5dd81fb5910538ff07e6140">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:fa0c68342eb8c92058af5bf2ab643ce7">[<a href="/fact/FedoraEntry/fa0c68342eb8c92058af5bf2ab643ce7">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2136bc624e974832b1fe1382b9ad1bc0">[<a href="/fact/OrtLicenseCategorization/2136bc624e974832b1fe1382b9ad1bc0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2136bc624e974832b1fe1382b9ad1bc0">[<a href="/fact/OrtLicenseCategorization/2136bc624e974832b1fe1382b9ad1bc0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2136bc624e974832b1fe1382b9ad1bc0">[<a href="/fact/OrtLicenseCategorization/2136bc624e974832b1fe1382b9ad1bc0">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt" target="_blank">https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt</a></li><li><a href="https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt" target="_blank">https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt</a></li><li><a href="https://fedoraproject.org/wiki/Licensing:OpenPBS" target="_blank">https://fedoraproject.org/wiki/Licensing:OpenPBS</a></li><li><a href="http://fedoraproject.org/wiki/Licensing/OpenPBS" target="_blank">http://fedoraproject.org/wiki/Licensing/OpenPBS</a></li><li><a href="www.OpenPBS.org" target="_blank">www.OpenPBS.org</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://fedoraproject.org/wiki/Licensing/OpenPBS</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>
+        OpenPBS (Portable Batch System) v2.3 Software License
+
+Copyright (c) 1999-2000 Veridian Information Solutions, Inc.
+All rights reserved.
+
+---------------------------------------------------------------------------
+For a license to use or redistribute the OpenPBS software under conditions
+other than those described below, or to purchase support for this software,
+please contact Veridian Systems, PBS Products Department (&quot;Licensor&quot;) at:
+
+   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org
+                       877 902-4PBS (US toll-free)
+---------------------------------------------------------------------------
+
+This license covers use of the OpenPBS v2.3 software (the &quot;Software&quot;) at
+your site or location, and, for certain users, redistribution of the
+Software to other sites and locations.  Use and redistribution of
+OpenPBS v2.3 in source and binary forms, with or without modification,
+are permitted provided that all of the following conditions are met.
+After December 31, 2001, only conditions 3-6 must be met:
+
+1. Commercial and/or non-commercial use of the Software is permitted
+   provided a current software registration is on file at www.OpenPBS.org.
+   If use of this software contributes to a publication, product, or
+   service, proper attribution must be given; see www.OpenPBS.org/credit.html
+
+2. Redistribution in any form is only permitted for non-commercial,
+   non-profit purposes.  There can be no charge for the Software or any
+   software incorporating the Software.  Further, there can be no
+   expectation of revenue generated as a consequence of redistributing
+   the Software.
+
+3. Any Redistribution of source code must retain the above copyright notice
+   and the acknowledgment contained in paragraph 6, this list of conditions
+   and the disclaimer contained in paragraph 7.
+
+4. Any Redistribution in binary form must reproduce the above copyright
+   notice and the acknowledgment contained in paragraph 6, this list of
+   conditions and the disclaimer contained in paragraph 7 in the
+   documentation and/or other materials provided with the distribution.
+
+5. Redistributions in any form must be accompanied by information on how to
+   obtain complete source code for the OpenPBS software and any
+   modifications and/or additions to the OpenPBS software.  The source code
+   must either be included in the distribution or be available for no more
+   than the cost of distribution plus a nominal fee, and all modifications
+   and additions to the Software must be freely redistributable by any party
+   (including Licensor) without restriction.
+
+6. All advertising materials mentioning features or use of the Software must
+   display the following acknowledgment:
+
+    &quot;This product includes software developed by NASA Ames Research Center,
+    Lawrence Livermore National Laboratory, and Veridian Information Solutions,
+    Inc.  Visit www.OpenPBS.org for OpenPBS software support,
+    products, and information.&quot;
+
+7. DISCLAIMER OF WARRANTY
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT
+ARE EXPRESSLY DISCLAIMED.
+
+IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE
+U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of the Commonwealth of Virginia,
+without reference to its choice of law rules.
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            OpenPBS (Portable Batch System) v2.3 Software License
+         &lt;/var&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;Copyright (c) 1999-2000 Veridian Information
+               Solutions, Inc. All rights reserved.&lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            ---------------------------------------------------------------------------
+            &lt;p&gt;
+               For a license to use or redistribute the OpenPBS software
+               under conditions other than those described below, or
+               to purchase support for this software, please contact
+               Veridian Systems, PBS Products Department (&amp;quot;Licensor&amp;quot;) at:
+            &lt;/p&gt;
+
+            &lt;p&gt;
+               www.OpenPBS.org +1 650 967-4675
+               sales@OpenPBS.org 877 902-4PBS (US toll-free)
+            &lt;/p&gt;
+
+            ---------------------------------------------------------------------------
+         &lt;/div&gt;
+         &lt;p&gt;
+            This license covers use of the OpenPBS v2.3 software (the
+            &amp;quot;Software&amp;quot;) at your site or location, and, for certain
+            users, redistribution of the Software to other sites and
+            locations. Use and redistribution of OpenPBS v2.3 in source
+            and binary forms, with or without modification, are permitted
+            provided that all of the following conditions are met.
+            After December 31, 2001, only conditions 3-6 must be met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+            &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+                  Commercial and/or non-commercial use of the Software
+                  is permitted provided a current software registration
+                  is on file at www.OpenPBS.org. If use of this software
+                  contributes to a publication, product, or service, proper
+                  attribution must be given; see www.OpenPBS.org/credit.html
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+                  Redistribution in any form is only permitted for
+                  non-commercial, non-profit purposes. There can be no
+                  charge for the Software or any software incorporating the
+                  Software. Further, there can be no expectation of revenue
+                  generated as a consequence of redistributing the Software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+              &lt;p&gt; &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+                  Any Redistribution of source code must retain
+                  the above copyright notice and the acknowledgment
+                  contained in paragraph 6, this list of conditions
+                  and the disclaimer contained in paragraph 7.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               &lt;p&gt;
+                  Any Redistribution in binary form must reproduce the
+                  above copyright notice and the acknowledgment contained
+                  in paragraph 6, this list of conditions and the
+                  disclaimer contained in paragraph 7 in the documentation
+                  and/or other materials provided with the distribution.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions in any form must be accompanied by information
+                  on how to obtain complete source code for the OpenPBS
+                  software and any modifications and/or additions to the
+                  OpenPBS software. The source code must either be included in
+                  the distribution or be available for no more than the cost
+                  of distribution plus a nominal fee, and all modifications
+                  and additions to the Software must be freely redistributable
+                  by any party (including Licensor) without restriction.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+                  All advertising materials mentioning features or use of
+                  the Software must display the following acknowledgment:
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  &amp;quot;This product includes software developed by NASA Ames
+                  Research Center, Lawrence Livermore National Laboratory, and
+                  Veridian Information Solutions, Inc. Visit www.OpenPBS.org
+                  for OpenPBS software support, products, and information.&amp;quot;
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+                  DISCLAIMER OF WARRANTY
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY
+                  OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES,
+                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+                  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+                  AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES,
+            OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR
+            ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This license will be governed by the laws of the Commonwealth
+            of Virginia, without reference to its choice of law rules.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>OpenPBS (Portable Batch System) v2.3 Software License
+
+Copyright (c) 1999-2000 Veridian Information Solutions, Inc.
+All rights reserved.
+
+---------------------------------------------------------------------------
+For a license to use or redistribute the OpenPBS software under conditions
+other than those described below, or to purchase support for this software,
+please contact Veridian Systems, PBS Products Department (&quot;Licensor&quot;) at:
+
+   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org
+                       877 902-4PBS (US toll-free)
+---------------------------------------------------------------------------
+
+This license covers use of the OpenPBS v2.3 software (the &quot;Software&quot;) at
+your site or location, and, for certain users, redistribution of the
+Software to other sites and locations.  Use and redistribution of
+OpenPBS v2.3 in source and binary forms, with or without modification,
+are permitted provided that all of the following conditions are met.
+After December 31, 2001, only conditions 3-6 must be met:
+
+1. Commercial and/or non-commercial use of the Software is permitted
+   provided a current software registration is on file at www.OpenPBS.org.
+   If use of this software contributes to a publication, product, or
+   service, proper attribution must be given; see www.OpenPBS.org/credit.html
+
+2. Redistribution in any form is only permitted for non-commercial,
+   non-profit purposes.  There can be no charge for the Software or any
+   software incorporating the Software.  Further, there can be no
+   expectation of revenue generated as a consequence of redistributing
+   the Software.
+
+3. Any Redistribution of source code must retain the above copyright notice
+   and the acknowledgment contained in paragraph 6, this list of conditions
+   and the disclaimer contained in paragraph 7.
+
+4. Any Redistribution in binary form must reproduce the above copyright
+   notice and the acknowledgment contained in paragraph 6, this list of
+   conditions and the disclaimer contained in paragraph 7 in the
+   documentation and/or other materials provided with the distribution.
+
+5. Redistributions in any form must be accompanied by information on how to
+   obtain complete source code for the OpenPBS software and any
+   modifications and/or additions to the OpenPBS software.  The source code
+   must either be included in the distribution or be available for no more
+   than the cost of distribution plus a nominal fee, and all modifications
+   and additions to the Software must be freely redistributable by any party
+   (including Licensor) without restriction.
+
+6. All advertising materials mentioning features or use of the Software must
+   display the following acknowledgment:
+
+    &quot;This product includes software developed by NASA Ames Research Center,
+    Lawrence Livermore National Laboratory, and Veridian Information Solutions,
+    Inc.  Visit www.OpenPBS.org for OpenPBS software support,
+    products, and information.&quot;
+
+7. DISCLAIMER OF WARRANTY
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT
+ARE EXPRESSLY DISCLAIMED.
+
+IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE
+U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of the Commonwealth of Virginia,
+without reference to its choice of law rules.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/1287fcc8e5dd81fb5910538ff07e6140">SPDXLicense:1287fcc8e5dd81fb5910538ff07e6140</a> for <a href="/?license=spdx:OpenPBS-2.3"><span class="licensename"><span class="namespace">spdx:</span>OpenPBS-2.3</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenPBS-2.3</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenPBS v2.3 Software License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:1287fcc8e5dd81fb5910538ff07e6140">[<a href="/fact/SPDXLicense/1287fcc8e5dd81fb5910538ff07e6140">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt" target="_blank">https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt</a></li><li><a href="https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt" target="_blank">https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>
+        OpenPBS (Portable Batch System) v2.3 Software License
+
+Copyright (c) 1999-2000 Veridian Information Solutions, Inc.
+All rights reserved.
+
+---------------------------------------------------------------------------
+For a license to use or redistribute the OpenPBS software under conditions
+other than those described below, or to purchase support for this software,
+please contact Veridian Systems, PBS Products Department (&quot;Licensor&quot;) at:
+
+   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org
+                       877 902-4PBS (US toll-free)
+---------------------------------------------------------------------------
+
+This license covers use of the OpenPBS v2.3 software (the &quot;Software&quot;) at
+your site or location, and, for certain users, redistribution of the
+Software to other sites and locations.  Use and redistribution of
+OpenPBS v2.3 in source and binary forms, with or without modification,
+are permitted provided that all of the following conditions are met.
+After December 31, 2001, only conditions 3-6 must be met:
+
+1. Commercial and/or non-commercial use of the Software is permitted
+   provided a current software registration is on file at www.OpenPBS.org.
+   If use of this software contributes to a publication, product, or
+   service, proper attribution must be given; see www.OpenPBS.org/credit.html
+
+2. Redistribution in any form is only permitted for non-commercial,
+   non-profit purposes.  There can be no charge for the Software or any
+   software incorporating the Software.  Further, there can be no
+   expectation of revenue generated as a consequence of redistributing
+   the Software.
+
+3. Any Redistribution of source code must retain the above copyright notice
+   and the acknowledgment contained in paragraph 6, this list of conditions
+   and the disclaimer contained in paragraph 7.
+
+4. Any Redistribution in binary form must reproduce the above copyright
+   notice and the acknowledgment contained in paragraph 6, this list of
+   conditions and the disclaimer contained in paragraph 7 in the
+   documentation and/or other materials provided with the distribution.
+
+5. Redistributions in any form must be accompanied by information on how to
+   obtain complete source code for the OpenPBS software and any
+   modifications and/or additions to the OpenPBS software.  The source code
+   must either be included in the distribution or be available for no more
+   than the cost of distribution plus a nominal fee, and all modifications
+   and additions to the Software must be freely redistributable by any party
+   (including Licensor) without restriction.
+
+6. All advertising materials mentioning features or use of the Software must
+   display the following acknowledgment:
+
+    &quot;This product includes software developed by NASA Ames Research Center,
+    Lawrence Livermore National Laboratory, and Veridian Information Solutions,
+    Inc.  Visit www.OpenPBS.org for OpenPBS software support,
+    products, and information.&quot;
+
+7. DISCLAIMER OF WARRANTY
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT
+ARE EXPRESSLY DISCLAIMED.
+
+IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE
+U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of the Commonwealth of Virginia,
+without reference to its choice of law rules.
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            OpenPBS (Portable Batch System) v2.3 Software License
+         &lt;/var&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;Copyright (c) 1999-2000 Veridian Information
+               Solutions, Inc. All rights reserved.&lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            ---------------------------------------------------------------------------
+            &lt;p&gt;
+               For a license to use or redistribute the OpenPBS software
+               under conditions other than those described below, or
+               to purchase support for this software, please contact
+               Veridian Systems, PBS Products Department (&amp;quot;Licensor&amp;quot;) at:
+            &lt;/p&gt;
+
+            &lt;p&gt;
+               www.OpenPBS.org +1 650 967-4675
+               sales@OpenPBS.org 877 902-4PBS (US toll-free)
+            &lt;/p&gt;
+
+            ---------------------------------------------------------------------------
+         &lt;/div&gt;
+         &lt;p&gt;
+            This license covers use of the OpenPBS v2.3 software (the
+            &amp;quot;Software&amp;quot;) at your site or location, and, for certain
+            users, redistribution of the Software to other sites and
+            locations. Use and redistribution of OpenPBS v2.3 in source
+            and binary forms, with or without modification, are permitted
+            provided that all of the following conditions are met.
+            After December 31, 2001, only conditions 3-6 must be met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+            &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+                  Commercial and/or non-commercial use of the Software
+                  is permitted provided a current software registration
+                  is on file at www.OpenPBS.org. If use of this software
+                  contributes to a publication, product, or service, proper
+                  attribution must be given; see www.OpenPBS.org/credit.html
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+                  Redistribution in any form is only permitted for
+                  non-commercial, non-profit purposes. There can be no
+                  charge for the Software or any software incorporating the
+                  Software. Further, there can be no expectation of revenue
+                  generated as a consequence of redistributing the Software.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+              &lt;p&gt; &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+                  Any Redistribution of source code must retain
+                  the above copyright notice and the acknowledgment
+                  contained in paragraph 6, this list of conditions
+                  and the disclaimer contained in paragraph 7.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               &lt;p&gt;
+                  Any Redistribution in binary form must reproduce the
+                  above copyright notice and the acknowledgment contained
+                  in paragraph 6, this list of conditions and the
+                  disclaimer contained in paragraph 7 in the documentation
+                  and/or other materials provided with the distribution.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions in any form must be accompanied by information
+                  on how to obtain complete source code for the OpenPBS
+                  software and any modifications and/or additions to the
+                  OpenPBS software. The source code must either be included in
+                  the distribution or be available for no more than the cost
+                  of distribution plus a nominal fee, and all modifications
+                  and additions to the Software must be freely redistributable
+                  by any party (including Licensor) without restriction.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+                  All advertising materials mentioning features or use of
+                  the Software must display the following acknowledgment:
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  &amp;quot;This product includes software developed by NASA Ames
+                  Research Center, Lawrence Livermore National Laboratory, and
+                  Veridian Information Solutions, Inc. Visit www.OpenPBS.org
+                  for OpenPBS software support, products, and information.&amp;quot;
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+                  DISCLAIMER OF WARRANTY
+               &lt;/p&gt;
+
+               &lt;p&gt;
+                  THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY
+                  OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES,
+                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+                  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+                  AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES,
+            OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR
+            ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This license will be governed by the laws of the Commonwealth
+            of Virginia, without reference to its choice of law rules.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OpenPBS-2.3&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenPBS v2.3 Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;1287fcc8e5dd81fb5910538ff07e6140&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;\n        OpenPBS (Portable Batch System) v2.3 Software License\n\nCopyright (c) 1999-2000 Veridian Information Solutions, Inc.\nAll rights reserved.\n\n---------------------------------------------------------------------------\nFor a license to use or redistribute the OpenPBS software under conditions\nother than those described below, or to purchase support for this software,\nplease contact Veridian Systems, PBS Products Department (\&quot;Licensor\&quot;) at:\n\n   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org\n                       877 902-4PBS (US toll-free)\n---------------------------------------------------------------------------\n\nThis license covers use of the OpenPBS v2.3 software (the \&quot;Software\&quot;) at\nyour site or location, and, for certain users, redistribution of the\nSoftware to other sites and locations.  Use and redistribution of\nOpenPBS v2.3 in source and binary forms, with or without modification,\nare permitted provided that all of the following conditions are met.\nAfter December 31, 2001, only conditions 3-6 must be met:\n\n1. Commercial and/or non-commercial use of the Software is permitted\n   provided a current software registration is on file at www.OpenPBS.org.\n   If use of this software contributes to a publication, product, or\n   service, proper attribution must be given; see www.OpenPBS.org/credit.html\n\n2. Redistribution in any form is only permitted for non-commercial,\n   non-profit purposes.  There can be no charge for the Software or any\n   software incorporating the Software.  Further, there can be no\n   expectation of revenue generated as a consequence of redistributing\n   the Software.\n\n3. Any Redistribution of source code must retain the above copyright notice\n   and the acknowledgment contained in paragraph 6, this list of conditions\n   and the disclaimer contained in paragraph 7.\n\n4. Any Redistribution in binary form must reproduce the above copyright\n   notice and the acknowledgment contained in paragraph 6, this list of\n   conditions and the disclaimer contained in paragraph 7 in the\n   documentation and/or other materials provided with the distribution.\n\n5. Redistributions in any form must be accompanied by information on how to\n   obtain complete source code for the OpenPBS software and any\n   modifications and/or additions to the OpenPBS software.  The source code\n   must either be included in the distribution or be available for no more\n   than the cost of distribution plus a nominal fee, and all modifications\n   and additions to the Software must be freely redistributable by any party\n   (including Licensor) without restriction.\n\n6. All advertising materials mentioning features or use of the Software must\n   display the following acknowledgment:\n\n    \&quot;This product includes software developed by NASA Ames Research Center,\n    Lawrence Livermore National Laboratory, and Veridian Information Solutions,\n    Inc.  Visit www.OpenPBS.org for OpenPBS software support,\n    products, and information.\&quot;\n\n7. DISCLAIMER OF WARRANTY\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT\nARE EXPRESSLY DISCLAIMED.\n\nIN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE\nU.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of the Commonwealth of Virginia,\nwithout reference to its choice of law rules.\n\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            OpenPBS (Portable Batch System) v2.3 Software License\n         &lt;/var&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;Copyright (c) 1999-2000 Veridian Information\n               Solutions, Inc. All rights reserved.&lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            ---------------------------------------------------------------------------\n            &lt;p&gt;\n               For a license to use or redistribute the OpenPBS software\n               under conditions other than those described below, or\n               to purchase support for this software, please contact\n               Veridian Systems, PBS Products Department (&amp;quot;Licensor&amp;quot;) at:\n            &lt;/p&gt;\n\n            &lt;p&gt;\n               www.OpenPBS.org +1 650 967-4675\n               sales@OpenPBS.org 877 902-4PBS (US toll-free)\n            &lt;/p&gt;\n\n            ---------------------------------------------------------------------------\n         &lt;/div&gt;\n         &lt;p&gt;\n            This license covers use of the OpenPBS v2.3 software (the\n            &amp;quot;Software&amp;quot;) at your site or location, and, for certain\n            users, redistribution of the Software to other sites and\n            locations. Use and redistribution of OpenPBS v2.3 in source\n            and binary forms, with or without modification, are permitted\n            provided that all of the following conditions are met.\n            After December 31, 2001, only conditions 3-6 must be met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n            &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n                  Commercial and/or non-commercial use of the Software\n                  is permitted provided a current software registration\n                  is on file at www.OpenPBS.org. If use of this software\n                  contributes to a publication, product, or service, proper\n                  attribution must be given; see www.OpenPBS.org/credit.html\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n                  Redistribution in any form is only permitted for\n                  non-commercial, non-profit purposes. There can be no\n                  charge for the Software or any software incorporating the\n                  Software. Further, there can be no expectation of revenue\n                  generated as a consequence of redistributing the Software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n              &lt;p&gt; &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n                  Any Redistribution of source code must retain\n                  the above copyright notice and the acknowledgment\n                  contained in paragraph 6, this list of conditions\n                  and the disclaimer contained in paragraph 7.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               &lt;p&gt;\n                  Any Redistribution in binary form must reproduce the\n                  above copyright notice and the acknowledgment contained\n                  in paragraph 6, this list of conditions and the\n                  disclaimer contained in paragraph 7 in the documentation\n                  and/or other materials provided with the distribution.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions in any form must be accompanied by information\n                  on how to obtain complete source code for the OpenPBS\n                  software and any modifications and/or additions to the\n                  OpenPBS software. The source code must either be included in\n                  the distribution or be available for no more than the cost\n                  of distribution plus a nominal fee, and all modifications\n                  and additions to the Software must be freely redistributable\n                  by any party (including Licensor) without restriction.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n                  All advertising materials mentioning features or use of\n                  the Software must display the following acknowledgment:\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  &amp;quot;This product includes software developed by NASA Ames\n                  Research Center, Lawrence Livermore National Laboratory, and\n                  Veridian Information Solutions, Inc. Visit www.OpenPBS.org\n                  for OpenPBS software support, products, and information.&amp;quot;\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n                  DISCLAIMER OF WARRANTY\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY\n                  OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES,\n                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n                  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n                  AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES,\n            OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR\n            ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\n            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;\n            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This license will be governed by the laws of the Commonwealth\n            of Virginia, without reference to its choice of law rules.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:24Z&quot;,
+                &quot;url&quot;: &quot;https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:24Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:OpenPBS-2.3&quot;,
+        &quot;licenseText&quot;: &quot;\n        OpenPBS (Portable Batch System) v2.3 Software License\n\nCopyright (c) 1999-2000 Veridian Information Solutions, Inc.\nAll rights reserved.\n\n---------------------------------------------------------------------------\nFor a license to use or redistribute the OpenPBS software under conditions\nother than those described below, or to purchase support for this software,\nplease contact Veridian Systems, PBS Products Department (\&quot;Licensor\&quot;) at:\n\n   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org\n                       877 902-4PBS (US toll-free)\n---------------------------------------------------------------------------\n\nThis license covers use of the OpenPBS v2.3 software (the \&quot;Software\&quot;) at\nyour site or location, and, for certain users, redistribution of the\nSoftware to other sites and locations.  Use and redistribution of\nOpenPBS v2.3 in source and binary forms, with or without modification,\nare permitted provided that all of the following conditions are met.\nAfter December 31, 2001, only conditions 3-6 must be met:\n\n1. Commercial and/or non-commercial use of the Software is permitted\n   provided a current software registration is on file at www.OpenPBS.org.\n   If use of this software contributes to a publication, product, or\n   service, proper attribution must be given; see www.OpenPBS.org/credit.html\n\n2. Redistribution in any form is only permitted for non-commercial,\n   non-profit purposes.  There can be no charge for the Software or any\n   software incorporating the Software.  Further, there can be no\n   expectation of revenue generated as a consequence of redistributing\n   the Software.\n\n3. Any Redistribution of source code must retain the above copyright notice\n   and the acknowledgment contained in paragraph 6, this list of conditions\n   and the disclaimer contained in paragraph 7.\n\n4. Any Redistribution in binary form must reproduce the above copyright\n   notice and the acknowledgment contained in paragraph 6, this list of\n   conditions and the disclaimer contained in paragraph 7 in the\n   documentation and/or other materials provided with the distribution.\n\n5. Redistributions in any form must be accompanied by information on how to\n   obtain complete source code for the OpenPBS software and any\n   modifications and/or additions to the OpenPBS software.  The source code\n   must either be included in the distribution or be available for no more\n   than the cost of distribution plus a nominal fee, and all modifications\n   and additions to the Software must be freely redistributable by any party\n   (including Licensor) without restriction.\n\n6. All advertising materials mentioning features or use of the Software must\n   display the following acknowledgment:\n\n    \&quot;This product includes software developed by NASA Ames Research Center,\n    Lawrence Livermore National Laboratory, and Veridian Information Solutions,\n    Inc.  Visit www.OpenPBS.org for OpenPBS software support,\n    products, and information.\&quot;\n\n7. DISCLAIMER OF WARRANTY\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT\nARE EXPRESSLY DISCLAIMED.\n\nIN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE\nU.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of the Commonwealth of Virginia,\nwithout reference to its choice of law rules.\n\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            OpenPBS (Portable Batch System) v2.3 Software License\n         &lt;/var&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;Copyright (c) 1999-2000 Veridian Information\n               Solutions, Inc. All rights reserved.&lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            ---------------------------------------------------------------------------\n            &lt;p&gt;\n               For a license to use or redistribute the OpenPBS software\n               under conditions other than those described below, or\n               to purchase support for this software, please contact\n               Veridian Systems, PBS Products Department (&amp;quot;Licensor&amp;quot;) at:\n            &lt;/p&gt;\n\n            &lt;p&gt;\n               www.OpenPBS.org +1 650 967-4675\n               sales@OpenPBS.org 877 902-4PBS (US toll-free)\n            &lt;/p&gt;\n\n            ---------------------------------------------------------------------------\n         &lt;/div&gt;\n         &lt;p&gt;\n            This license covers use of the OpenPBS v2.3 software (the\n            &amp;quot;Software&amp;quot;) at your site or location, and, for certain\n            users, redistribution of the Software to other sites and\n            locations. Use and redistribution of OpenPBS v2.3 in source\n            and binary forms, with or without modification, are permitted\n            provided that all of the following conditions are met.\n            After December 31, 2001, only conditions 3-6 must be met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n            &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n                  Commercial and/or non-commercial use of the Software\n                  is permitted provided a current software registration\n                  is on file at www.OpenPBS.org. If use of this software\n                  contributes to a publication, product, or service, proper\n                  attribution must be given; see www.OpenPBS.org/credit.html\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n                  Redistribution in any form is only permitted for\n                  non-commercial, non-profit purposes. There can be no\n                  charge for the Software or any software incorporating the\n                  Software. Further, there can be no expectation of revenue\n                  generated as a consequence of redistributing the Software.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n              &lt;p&gt; &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n                  Any Redistribution of source code must retain\n                  the above copyright notice and the acknowledgment\n                  contained in paragraph 6, this list of conditions\n                  and the disclaimer contained in paragraph 7.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               &lt;p&gt;\n                  Any Redistribution in binary form must reproduce the\n                  above copyright notice and the acknowledgment contained\n                  in paragraph 6, this list of conditions and the\n                  disclaimer contained in paragraph 7 in the documentation\n                  and/or other materials provided with the distribution.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions in any form must be accompanied by information\n                  on how to obtain complete source code for the OpenPBS\n                  software and any modifications and/or additions to the\n                  OpenPBS software. The source code must either be included in\n                  the distribution or be available for no more than the cost\n                  of distribution plus a nominal fee, and all modifications\n                  and additions to the Software must be freely redistributable\n                  by any party (including Licensor) without restriction.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n                  All advertising materials mentioning features or use of\n                  the Software must display the following acknowledgment:\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  &amp;quot;This product includes software developed by NASA Ames\n                  Research Center, Lawrence Livermore National Laboratory, and\n                  Veridian Information Solutions, Inc. Visit www.OpenPBS.org\n                  for OpenPBS software support, products, and information.&amp;quot;\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n                  DISCLAIMER OF WARRANTY\n               &lt;/p&gt;\n\n               &lt;p&gt;\n                  THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY\n                  OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES,\n                  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\n                  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,\n                  AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES,\n            OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR\n            ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n            CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\n            OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;\n            OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n            LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This license will be governed by the laws of the Commonwealth\n            of Virginia, without reference to its choice of law rules.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;OpenPBS v2.3 Software License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt&quot;,
+            &quot;https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;OpenPBS (Portable Batch System) v2.3 Software License&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1999-2000 Veridian Information Solutions, Inc. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; ---------------------------------------------------------------------------\n\nFor a license to use or redistribute the OpenPBS software under conditions other than those described below, or to purchase support for this software, please contact Veridian Systems, PBS Products Department (\&quot;Licensor\&quot;) at:\n\nwww.OpenPBS.org +1 650 967-4675 sales@OpenPBS.org 877 902-4PBS (US toll-free)\n\n---------------------------------------------------------------------------&lt;&lt;endOptional&gt;&gt;\n\nThis license covers use of the OpenPBS v2.3 software (the \&quot;Software\&quot;) at your site or location, and, for certain users, redistribution of the Software to other sites and locations. Use and redistribution of OpenPBS v2.3 in source and binary forms, with or without modification, are permitted provided that all of the following conditions are met. After December 31, 2001, only conditions 3-6 must be met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Commercial and/or non-commercial use of the Software is permitted provided a current software registration is on file at www.OpenPBS.org. If use of this software contributes to a publication, product, or service, proper attribution must be given; see www.OpenPBS.org/credit.html\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistribution in any form is only permitted for non-commercial, non-profit purposes. There can be no charge for the Software or any software incorporating the Software. Further, there can be no expectation of revenue generated as a consequence of redistributing the Software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Any Redistribution of source code must retain the above copyright notice and the acknowledgment contained in paragraph 6, this list of conditions and the disclaimer contained in paragraph 7.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Any Redistribution in binary form must reproduce the above copyright notice and the acknowledgment contained in paragraph 6, this list of conditions and the disclaimer contained in paragraph 7 in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Redistributions in any form must be accompanied by information on how to obtain complete source code for the OpenPBS software and any modifications and/or additions to the OpenPBS software. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and all modifications and additions to the Software must be freely redistributable by any party (including Licensor) without restriction.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All advertising materials mentioning features or use of the Software must display the following acknowledgment:\n\n   \&quot;This product includes software developed by NASA Ames Research Center, Lawrence Livermore National Laboratory, and Veridian Information Solutions, Inc. Visit www.OpenPBS.org for OpenPBS software support, products, and information.\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;7.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; DISCLAIMER OF WARRANTY\n\n   THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED.\n\nIN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of the Commonwealth of Virginia, without reference to its choice of law rules.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/fa0c68342eb8c92058af5bf2ab643ce7">FedoraEntry:fa0c68342eb8c92058af5bf2ab643ce7</a> for <a href="/?license=Fedora:OpenPBS-2.3"><span class="licensename"><span class="namespace">Fedora:</span>OpenPBS-2.3</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>OpenPBS-2.3</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenPBS-2.3</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenPBS</span></li><li><span class="licensename">OpenPBS (Portable Batch System) v2.3 Software License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:fa0c68342eb8c92058af5bf2ab643ce7">[<a href="/fact/FedoraEntry/fa0c68342eb8c92058af5bf2ab643ce7">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing:OpenPBS" target="_blank">https://fedoraproject.org/wiki/Licensing:OpenPBS</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:OpenPBS-2.3&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OpenPBS-2.3&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenPBS (Portable Batch System) v2.3 Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenPBS&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;fa0c68342eb8c92058af5bf2ab643ce7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:OpenPBS&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;OpenPBS&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;OpenPBS (Portable Batch System) v2.3 Software License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;OpenPBS-2.3&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:OpenPBS-2.3&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing:OpenPBS&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/829ca1b303db973f47e03ee1dfcb82f4">ScancodeData:829ca1b303db973f47e03ee1dfcb82f4</a> for <a href="/?license=scancode:openpbs-2.3"><span class="licensename"><span class="namespace">scancode:</span>openpbs-2.3</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>openpbs-2.3</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenPBS 2.3</span></li><li><span class="licensename">OpenPBS Software License v2.3</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:829ca1b303db973f47e03ee1dfcb82f4">[<a href="/fact/ScancodeData/829ca1b303db973f47e03ee1dfcb82f4">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://fedoraproject.org/wiki/Licensing/OpenPBS" target="_blank">http://fedoraproject.org/wiki/Licensing/OpenPBS</a></li><li><a href="www.OpenPBS.org" target="_blank">www.OpenPBS.org</a></li><li><a href="https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt" target="_blank">https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt</a></li><li><a href="https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt" target="_blank">https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt</a></li></ul><h3>Other Statements</h3><ul><li>http://fedoraproject.org/wiki/Licensing/OpenPBS</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>OpenPBS (Portable Batch System) v2.3 Software License
+
+Copyright (c) 1999-2000 Veridian Information Solutions, Inc.
+All rights reserved.
+
+---------------------------------------------------------------------------
+For a license to use or redistribute the OpenPBS software under conditions
+other than those described below, or to purchase support for this software,
+please contact Veridian Systems, PBS Products Department (&quot;Licensor&quot;) at:
+
+   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org
+                       877 902-4PBS (US toll-free)
+---------------------------------------------------------------------------
+
+This license covers use of the OpenPBS v2.3 software (the &quot;Software&quot;) at
+your site or location, and, for certain users, redistribution of the
+Software to other sites and locations.  Use and redistribution of
+OpenPBS v2.3 in source and binary forms, with or without modification,
+are permitted provided that all of the following conditions are met.
+After December 31, 2001, only conditions 3-6 must be met:
+
+1. Commercial and/or non-commercial use of the Software is permitted
+   provided a current software registration is on file at www.OpenPBS.org.
+   If use of this software contributes to a publication, product, or
+   service, proper attribution must be given; see www.OpenPBS.org/credit.html
+
+2. Redistribution in any form is only permitted for non-commercial,
+   non-profit purposes.  There can be no charge for the Software or any
+   software incorporating the Software.  Further, there can be no
+   expectation of revenue generated as a consequence of redistributing
+   the Software.
+
+3. Any Redistribution of source code must retain the above copyright notice
+   and the acknowledgment contained in paragraph 6, this list of conditions
+   and the disclaimer contained in paragraph 7.
+
+4. Any Redistribution in binary form must reproduce the above copyright
+   notice and the acknowledgment contained in paragraph 6, this list of
+   conditions and the disclaimer contained in paragraph 7 in the
+   documentation and/or other materials provided with the distribution.
+
+5. Redistributions in any form must be accompanied by information on how to
+   obtain complete source code for the OpenPBS software and any
+   modifications and/or additions to the OpenPBS software.  The source code
+   must either be included in the distribution or be available for no more
+   than the cost of distribution plus a nominal fee, and all modifications
+   and additions to the Software must be freely redistributable by any party
+   (including Licensor) without restriction.
+
+6. All advertising materials mentioning features or use of the Software must
+   display the following acknowledgment:
+
+    &quot;This product includes software developed by NASA Ames Research Center,
+    Lawrence Livermore National Laboratory, and Veridian Information Solutions,
+    Inc.  Visit www.OpenPBS.org for OpenPBS software support,
+    products, and information.&quot;
+
+7. DISCLAIMER OF WARRANTY
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT
+ARE EXPRESSLY DISCLAIMED.
+
+IN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE
+U.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+This license will be governed by the laws of the Commonwealth of Virginia,
+without reference to its choice of law rules.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:openpbs-2.3&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenPBS 2.3&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenPBS Software License v2.3&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;829ca1b303db973f47e03ee1dfcb82f4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://fedoraproject.org/wiki/Licensing/OpenPBS&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://fedoraproject.org/wiki/Licensing/OpenPBS&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;www.OpenPBS.org&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;OpenPBS (Portable Batch System) v2.3 Software License\n\nCopyright (c) 1999-2000 Veridian Information Solutions, Inc.\nAll rights reserved.\n\n---------------------------------------------------------------------------\nFor a license to use or redistribute the OpenPBS software under conditions\nother than those described below, or to purchase support for this software,\nplease contact Veridian Systems, PBS Products Department (\&quot;Licensor\&quot;) at:\n\n   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org\n                       877 902-4PBS (US toll-free)\n---------------------------------------------------------------------------\n\nThis license covers use of the OpenPBS v2.3 software (the \&quot;Software\&quot;) at\nyour site or location, and, for certain users, redistribution of the\nSoftware to other sites and locations.  Use and redistribution of\nOpenPBS v2.3 in source and binary forms, with or without modification,\nare permitted provided that all of the following conditions are met.\nAfter December 31, 2001, only conditions 3-6 must be met:\n\n1. Commercial and/or non-commercial use of the Software is permitted\n   provided a current software registration is on file at www.OpenPBS.org.\n   If use of this software contributes to a publication, product, or\n   service, proper attribution must be given; see www.OpenPBS.org/credit.html\n\n2. Redistribution in any form is only permitted for non-commercial,\n   non-profit purposes.  There can be no charge for the Software or any\n   software incorporating the Software.  Further, there can be no\n   expectation of revenue generated as a consequence of redistributing\n   the Software.\n\n3. Any Redistribution of source code must retain the above copyright notice\n   and the acknowledgment contained in paragraph 6, this list of conditions\n   and the disclaimer contained in paragraph 7.\n\n4. Any Redistribution in binary form must reproduce the above copyright\n   notice and the acknowledgment contained in paragraph 6, this list of\n   conditions and the disclaimer contained in paragraph 7 in the\n   documentation and/or other materials provided with the distribution.\n\n5. Redistributions in any form must be accompanied by information on how to\n   obtain complete source code for the OpenPBS software and any\n   modifications and/or additions to the OpenPBS software.  The source code\n   must either be included in the distribution or be available for no more\n   than the cost of distribution plus a nominal fee, and all modifications\n   and additions to the Software must be freely redistributable by any party\n   (including Licensor) without restriction.\n\n6. All advertising materials mentioning features or use of the Software must\n   display the following acknowledgment:\n\n    \&quot;This product includes software developed by NASA Ames Research Center,\n    Lawrence Livermore National Laboratory, and Veridian Information Solutions,\n    Inc.  Visit www.OpenPBS.org for OpenPBS software support,\n    products, and information.\&quot;\n\n7. DISCLAIMER OF WARRANTY\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT\nARE EXPRESSLY DISCLAIMED.\n\nIN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE\nU.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of the Commonwealth of Virginia,\nwithout reference to its choice of law rules.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://fedoraproject.org/wiki/Licensing/OpenPBS&quot;,
+        &quot;_key&quot;: &quot;openpbs-2.3&quot;,
+        &quot;_name&quot;: &quot;OpenPBS Software License v2.3&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;www.OpenPBS.org&quot;,
+            &quot;https://github.com/adaptivecomputing/torque/blob/master/PBS_License.txt&quot;,
+            &quot;https://www.mcs.anl.gov/research/projects/openpbs/PBS_License.txt&quot;
+        ],
+        &quot;_owner&quot;: &quot;Fedora&quot;,
+        &quot;_shortName&quot;: &quot;OpenPBS 2.3&quot;,
+        &quot;_spdxId&quot;: &quot;OpenPBS-2.3&quot;,
+        &quot;_text&quot;: &quot;OpenPBS (Portable Batch System) v2.3 Software License\n\nCopyright (c) 1999-2000 Veridian Information Solutions, Inc.\nAll rights reserved.\n\n---------------------------------------------------------------------------\nFor a license to use or redistribute the OpenPBS software under conditions\nother than those described below, or to purchase support for this software,\nplease contact Veridian Systems, PBS Products Department (\&quot;Licensor\&quot;) at:\n\n   www.OpenPBS.org  +1 650 967-4675                  sales@OpenPBS.org\n                       877 902-4PBS (US toll-free)\n---------------------------------------------------------------------------\n\nThis license covers use of the OpenPBS v2.3 software (the \&quot;Software\&quot;) at\nyour site or location, and, for certain users, redistribution of the\nSoftware to other sites and locations.  Use and redistribution of\nOpenPBS v2.3 in source and binary forms, with or without modification,\nare permitted provided that all of the following conditions are met.\nAfter December 31, 2001, only conditions 3-6 must be met:\n\n1. Commercial and/or non-commercial use of the Software is permitted\n   provided a current software registration is on file at www.OpenPBS.org.\n   If use of this software contributes to a publication, product, or\n   service, proper attribution must be given; see www.OpenPBS.org/credit.html\n\n2. Redistribution in any form is only permitted for non-commercial,\n   non-profit purposes.  There can be no charge for the Software or any\n   software incorporating the Software.  Further, there can be no\n   expectation of revenue generated as a consequence of redistributing\n   the Software.\n\n3. Any Redistribution of source code must retain the above copyright notice\n   and the acknowledgment contained in paragraph 6, this list of conditions\n   and the disclaimer contained in paragraph 7.\n\n4. Any Redistribution in binary form must reproduce the above copyright\n   notice and the acknowledgment contained in paragraph 6, this list of\n   conditions and the disclaimer contained in paragraph 7 in the\n   documentation and/or other materials provided with the distribution.\n\n5. Redistributions in any form must be accompanied by information on how to\n   obtain complete source code for the OpenPBS software and any\n   modifications and/or additions to the OpenPBS software.  The source code\n   must either be included in the distribution or be available for no more\n   than the cost of distribution plus a nominal fee, and all modifications\n   and additions to the Software must be freely redistributable by any party\n   (including Licensor) without restriction.\n\n6. All advertising materials mentioning features or use of the Software must\n   display the following acknowledgment:\n\n    \&quot;This product includes software developed by NASA Ames Research Center,\n    Lawrence Livermore National Laboratory, and Veridian Information Solutions,\n    Inc.  Visit www.OpenPBS.org for OpenPBS software support,\n    products, and information.\&quot;\n\n7. DISCLAIMER OF WARRANTY\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND. ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT\nARE EXPRESSLY DISCLAIMED.\n\nIN NO EVENT SHALL VERIDIAN CORPORATION, ITS AFFILIATED COMPANIES, OR THE\nU.S. GOVERNMENT OR ANY OF ITS AGENCIES BE LIABLE FOR ANY DIRECT OR INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis license will be governed by the laws of the Commonwealth of Virginia,\nwithout reference to its choice of law rules.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://fedoraproject.org/wiki/Licensing/OpenPBS&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/2136bc624e974832b1fe1382b9ad1bc0">OrtLicenseCategorization:2136bc624e974832b1fe1382b9ad1bc0</a> for <a href="/?license=SPDX:OpenPBS-2.3"><span class="licensename"><span class="namespace">SPDX:</span>OpenPBS-2.3</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>OpenPBS-2.3</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2136bc624e974832b1fe1382b9ad1bc0">[<a href="/fact/OrtLicenseCategorization/2136bc624e974832b1fe1382b9ad1bc0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2136bc624e974832b1fe1382b9ad1bc0">[<a href="/fact/OrtLicenseCategorization/2136bc624e974832b1fe1382b9ad1bc0">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:2136bc624e974832b1fe1382b9ad1bc0">[<a href="/fact/OrtLicenseCategorization/2136bc624e974832b1fe1382b9ad1bc0">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:OpenPBS-2.3&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;2136bc624e974832b1fe1382b9ad1bc0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:OpenPBS-2.3&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/bb9ef3b83b9885b5b902cde130a278c4">CavilLicenseChange:bb9ef3b83b9885b5b902cde130a278c4</a> for <a href="/?license=cavil:OpenPBS-2.3"><span class="licensename"><span class="namespace">cavil:</span>OpenPBS-2.3</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>OpenPBS-2.3</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenPBS-2.3</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:OpenPBS-2.3&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenPBS-2.3&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;bb9ef3b83b9885b5b902cde130a278c4&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;OpenPBS-2.3&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:OpenPBS-2.3&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/8a46c1d421e9bce556d4e92911d19b40">MetaeffektLicense:8a46c1d421e9bce556d4e92911d19b40</a> for <a href="/?license=metaeffekt:OpenPBS Software License 2.3"><span class="licensename"><span class="namespace">metaeffekt:</span>OpenPBS Software License 2.3</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenPBS Software License 2.3</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenPBS-2.3</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//fedoraproject.org/wiki/Licensing/OpenPBS</span></li><li><span class="licensename">OpenPBS (Portable Batch System) v2.3 Software License</span></li><li><span class="licensename">OpenPBS Software License</span></li><li><span class="licensename">OpenPBS Software License 2.3</span></li><li><span class="licensename">OpenPBS Software License v2.3</span></li><li><span class="licensename">OpenPBS v2.3 Software License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openpbs-2.3</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:OpenPBS Software License 2.3&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OpenPBS-2.3&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenPBS Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://fedoraproject.org/wiki/Licensing/OpenPBS&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenPBS Software License v2.3&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenPBS (Portable Batch System) v2.3 Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenPBS Software License 2.3&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenPBS v2.3 Software License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:openpbs-2.3&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;8a46c1d421e9bce556d4e92911d19b40&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;http://fedoraproject.org/wiki/Licensing/OpenPBS&quot;,
+            &quot;OpenPBS Software License v2.3&quot;,
+            &quot;OpenPBS (Portable Batch System) v2.3 Software License&quot;,
+            &quot;OpenPBS Software License 2.3&quot;,
+            &quot;OpenPBS v2.3 Software License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:OpenPBS Software License 2.3&quot;,
+        &quot;_category&quot;: &quot;OpenPBS Software License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:openpbs-2.3&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:OpenPBS-2.3&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

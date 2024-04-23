@@ -1,0 +1,550 @@
+<html><head><title>ldbcollector: spdx:eCos-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:eCos-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>eCos-2.0</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">eCos license version 2.0</span></li><li><span class="licensename">eCos-2.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>eCos-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>eCos-2.0</span></li><li><span class="licensename">eCos2.0</span></li><li><span class="licensename"><span class="namespace">fsf:</span>eCos2.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GPL-2.0+ WITH eCos-exception-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2d69eaf2c3682fc2ebf2eeae95d1d4b5">[<a href="/fact/SPDXLicense/2d69eaf2c3682fc2ebf2eeae95d1d4b5">SPDXLicense</a>]</span><span title="FSF:5820271add7b1c732b4c3a96d9149dfd">[<a href="/fact/FSF/5820271add7b1c732b4c3a96d9149dfd">FSF</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2d69eaf2c3682fc2ebf2eeae95d1d4b5">[<a href="/fact/SPDXLicense/2d69eaf2c3682fc2ebf2eeae95d1d4b5">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">FSF: <b>gpl-2-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:5820271add7b1c732b4c3a96d9149dfd">[<a href="/fact/FSF/5820271add7b1c732b4c3a96d9149dfd">FSF</a>]</span>)</span></li><li><span title="">FSF: <b>gpl-3-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:5820271add7b1c732b4c3a96d9149dfd">[<a href="/fact/FSF/5820271add7b1c732b4c3a96d9149dfd">FSF</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>DEPRECATED: Use license expression including main license, &quot;WITH&quot; operator, and identifier: eCos-exception-2.0<span class="provided-by">(provided by: <span title="SPDXLicense:2d69eaf2c3682fc2ebf2eeae95d1d4b5">[<a href="/fact/SPDXLicense/2d69eaf2c3682fc2ebf2eeae95d1d4b5">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/ecos-license.html" target="_blank">https://www.gnu.org/licenses/ecos-license.html</a></li><li><a href="https://www.gnu.org/licenses/license-list.html#eCos2.0" target="_blank">https://www.gnu.org/licenses/license-list.html#eCos2.0</a></li><li><a href="http://directory.fsf.org/wiki/License:ECos2.0" target="_blank">http://directory.fsf.org/wiki/License:ECos2.0</a></li></ul><h3>Other Statements</h3><ul><li>spdx:eCos-2.0 is a deprecated LicenseId</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The eCos license version 2.0
+
+This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.
+
+eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.
+
+eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.
+
+This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.
+
+Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------
+
+####ECOSGPLCOPYRIGHTEND####
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;var class=&quot;optional-license-text&quot;&gt; The eCos license version 2.0&lt;/var&gt;
+
+	     &lt;p&gt;This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.&lt;/p&gt;
+
+	     &lt;p&gt;eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.&lt;/p&gt;
+
+	     &lt;p&gt;eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p&gt;
+
+	     &lt;p&gt;You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.&lt;/p&gt;
+
+	     &lt;p&gt;As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.&lt;/p&gt;
+
+	     &lt;p&gt;This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.&lt;/p&gt;
+
+	     &lt;p&gt;Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------&lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+	        &lt;p&gt;####ECOSGPLCOPYRIGHTEND####&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>The eCos license version 2.0
+
+This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.
+
+eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.
+
+eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.
+
+This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.
+
+Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ ------------------------------------------- ####ECOSGPLCOPYRIGHTEND####</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/2d69eaf2c3682fc2ebf2eeae95d1d4b5">SPDXLicense:2d69eaf2c3682fc2ebf2eeae95d1d4b5</a> for <a href="/?license=spdx:eCos-2.0"><span class="licensename"><span class="namespace">spdx:</span>eCos-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>eCos-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">eCos license version 2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2d69eaf2c3682fc2ebf2eeae95d1d4b5">[<a href="/fact/SPDXLicense/2d69eaf2c3682fc2ebf2eeae95d1d4b5">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2d69eaf2c3682fc2ebf2eeae95d1d4b5">[<a href="/fact/SPDXLicense/2d69eaf2c3682fc2ebf2eeae95d1d4b5">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>DEPRECATED: Use license expression including main license, &quot;WITH&quot; operator, and identifier: eCos-exception-2.0<span class="provided-by">(provided by: <span title="SPDXLicense:2d69eaf2c3682fc2ebf2eeae95d1d4b5">[<a href="/fact/SPDXLicense/2d69eaf2c3682fc2ebf2eeae95d1d4b5">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/ecos-license.html" target="_blank">https://www.gnu.org/licenses/ecos-license.html</a></li></ul><h3>Other Statements</h3><ul><li>spdx:eCos-2.0 is a deprecated LicenseId</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The eCos license version 2.0
+
+This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.
+
+eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.
+
+eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.
+
+This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.
+
+Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------
+
+####ECOSGPLCOPYRIGHTEND####
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;var class=&quot;optional-license-text&quot;&gt; The eCos license version 2.0&lt;/var&gt;
+
+	     &lt;p&gt;This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.&lt;/p&gt;
+
+	     &lt;p&gt;eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.&lt;/p&gt;
+
+	     &lt;p&gt;eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p&gt;
+
+	     &lt;p&gt;You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.&lt;/p&gt;
+
+	     &lt;p&gt;As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.&lt;/p&gt;
+
+	     &lt;p&gt;This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.&lt;/p&gt;
+
+	     &lt;p&gt;Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------&lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+	        &lt;p&gt;####ECOSGPLCOPYRIGHTEND####&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:eCos-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;eCos license version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;2d69eaf2c3682fc2ebf2eeae95d1d4b5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;spdx:eCos-2.0 is a deprecated LicenseId&quot;,
+            &quot;tag&quot;: &quot;LicenseStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;DEPRECATED: Use license expression including main license, \&quot;WITH\&quot; operator, and identifier: eCos-exception-2.0&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The eCos license version 2.0\n\nThis file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.\n\neCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.\n\neCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAs a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.\n\nThis exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.\n\nAlternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------\n\n####ECOSGPLCOPYRIGHTEND####\n\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;var class=\&quot;optional-license-text\&quot;&gt; The eCos license version 2.0&lt;/var&gt;\n\n\t     &lt;p&gt;This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.&lt;/p&gt;\n\n\t     &lt;p&gt;eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.&lt;/p&gt;\n\n\t     &lt;p&gt;eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p&gt;\n\n\t     &lt;p&gt;You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.&lt;/p&gt;\n\n\t     &lt;p&gt;As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.&lt;/p&gt;\n\n\t     &lt;p&gt;This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.&lt;/p&gt;\n\n\t     &lt;p&gt;Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------&lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n\t        &lt;p&gt;####ECOSGPLCOPYRIGHTEND####&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/ecos-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/ecos-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:50Z&quot;,
+                &quot;url&quot;: &quot;https://www.gnu.org/licenses/ecos-license.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: true,
+        &quot;isFsfLibre&quot;: true,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;DEPRECATED: Use license expression including main license, \&quot;WITH\&quot; operator, and identifier: eCos-exception-2.0&quot;,
+        &quot;licenseId&quot;: &quot;spdx:eCos-2.0&quot;,
+        &quot;licenseText&quot;: &quot;The eCos license version 2.0\n\nThis file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.\n\neCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.\n\neCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAs a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.\n\nThis exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.\n\nAlternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------\n\n####ECOSGPLCOPYRIGHTEND####\n\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;var class=\&quot;optional-license-text\&quot;&gt; The eCos license version 2.0&lt;/var&gt;\n\n\t     &lt;p&gt;This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.&lt;/p&gt;\n\n\t     &lt;p&gt;eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.&lt;/p&gt;\n\n\t     &lt;p&gt;eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p&gt;\n\n\t     &lt;p&gt;You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.&lt;/p&gt;\n\n\t     &lt;p&gt;As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.&lt;/p&gt;\n\n\t     &lt;p&gt;This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.&lt;/p&gt;\n\n\t     &lt;p&gt;Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------&lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n\t        &lt;p&gt;####ECOSGPLCOPYRIGHTEND####&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;eCos license version 2.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.gnu.org/licenses/ecos-license.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The eCos license version 2.0&lt;&lt;endOptional&gt;&gt;\n\nThis file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.\n\neCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.\n\neCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAs a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.\n\nThis exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.\n\nAlternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ -------------------------------------------\n\n&lt;&lt;beginOptional&gt;&gt;####ECOSGPLCOPYRIGHTEND####\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FSF">FSF</a>: <a href="/fact/FSF/5820271add7b1c732b4c3a96d9149dfd">FSF:5820271add7b1c732b4c3a96d9149dfd</a> for <a href="/?license=fsf:eCos2.0"><span class="licensename"><span class="namespace">fsf:</span>eCos2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fsf:</span>eCos2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">eCos license version 2.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>eCos-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GPL-2.0+ WITH eCos-exception-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="FSF:5820271add7b1c732b4c3a96d9149dfd">[<a href="/fact/FSF/5820271add7b1c732b4c3a96d9149dfd">FSF</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">FSF: <b>gpl-2-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:5820271add7b1c732b4c3a96d9149dfd">[<a href="/fact/FSF/5820271add7b1c732b4c3a96d9149dfd">FSF</a>]</span>)</span></li><li><span title="">FSF: <b>gpl-3-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:5820271add7b1c732b4c3a96d9149dfd">[<a href="/fact/FSF/5820271add7b1c732b4c3a96d9149dfd">FSF</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/license-list.html#eCos2.0" target="_blank">https://www.gnu.org/licenses/license-list.html#eCos2.0</a></li><li><a href="http://directory.fsf.org/wiki/License:ECos2.0" target="_blank">http://directory.fsf.org/wiki/License:ECos2.0</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fsf:eCos2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;eCos license version 2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:GPL-2.0+ WITH eCos-exception-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;spdx:eCos-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FSF&quot;,
+        &quot;5820271add7b1c732b4c3a96d9149dfd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/license-list.html#eCos2.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://directory.fsf.org/wiki/License:ECos2.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;FSF&quot;,
+                    &quot;gpl-2-compatible&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;FSF&quot;,
+                    &quot;gpl-3-compatible&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_id&quot;: &quot;fsf:eCos2.0&quot;,
+        &quot;_identifiers&quot;: {
+            &quot;spdx&quot;: [
+                &quot;GPL-2.0+ WITH eCos-exception-2.0&quot;,
+                &quot;eCos-2.0&quot;
+            ]
+        },
+        &quot;_name&quot;: &quot;eCos license version 2.0&quot;,
+        &quot;_tags&quot;: [
+            &quot;gpl-2-compatible&quot;,
+            &quot;gpl-3-compatible&quot;,
+            &quot;libre&quot;
+        ],
+        &quot;_uris&quot;: [
+            &quot;https://www.gnu.org/licenses/license-list.html#eCos2.0&quot;,
+            &quot;http://directory.fsf.org/wiki/License:ECos2.0&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;FSF&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/2c91b4d4d25adcd8a19175968759f4dd">Fossology:2c91b4d4d25adcd8a19175968759f4dd</a> for <a href="/?license=fossology:eCos-2.0"><span class="licensename"><span class="namespace">fossology:</span>eCos-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>eCos-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">eCos license version 2.0</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/ecos-license.html" target="_blank">https://www.gnu.org/licenses/ecos-license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The eCos license version 2.0
+
+This file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.
+
+eCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.
+
+eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.
+
+This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.
+
+Alternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ ------------------------------------------- ####ECOSGPLCOPYRIGHTEND####</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:eCos-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;eCos license version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;2c91b4d4d25adcd8a19175968759f4dd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://www.gnu.org/licenses/ecos-license.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The eCos license version 2.0\n\nThis file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.\n\neCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.\n\neCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAs a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.\n\nThis exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.\n\nAlternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ ------------------------------------------- ####ECOSGPLCOPYRIGHTEND####&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;eCos license version 2.0&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:eCos-2.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The eCos license version 2.0\n\nThis file is part of eCos, the Embedded Configurable Operating System. Copyright (C) 1998, 1999, 2000, 2001, 2002 Red Hat, Inc.\n\neCos is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.\n\neCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAs a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.\n\nThis exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.\n\nAlternative licenses for eCos may be arranged by contacting Red Hat, Inc. at http://sources.redhat.com/ecos/ecos-license/ ------------------------------------------- ####ECOSGPLCOPYRIGHTEND####&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://www.gnu.org/licenses/ecos-license.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li></ul></body></html>

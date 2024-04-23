@@ -1,0 +1,571 @@
+<html><head><title>ldbcollector: spdx:HPND-Kevlin-Henney</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-Kevlin-Henney</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Kevlin-Henney</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - Kevlin Henney variant</span></li><li><span class="licensename">HPND-Kevlin-Henney</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-Kevlin-Henney</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Kevlin-Henney</span></li><li><span class="licensename">Kevlin Henney License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Kevlin Henney License</span></li><li><span class="licensename">kevlin-henney</span></li><li><span class="licensename"><span class="namespace">scancode:</span>kevlin-henney</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer (Kevlin Henney)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:c07fcef2abce422c795a3a5393a33818">[<a href="/fact/ScancodeData/c07fcef2abce422c795a3a5393a33818">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:16e1fbb9cc263ca979bbd58901a8f3d3">[<a href="/fact/SPDXLicense/16e1fbb9cc263ca979bbd58901a8f3d3">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:597946896980745b4bfad0a55a0cbb87">[<a href="/fact/FedoraEntry/597946896980745b4bfad0a55a0cbb87">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7df30b43abcc4056334a4ed8005a2701">[<a href="/fact/OrtLicenseCategorization/7df30b43abcc4056334a4ed8005a2701">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7df30b43abcc4056334a4ed8005a2701">[<a href="/fact/OrtLicenseCategorization/7df30b43abcc4056334a4ed8005a2701">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to HPND-Pbmplus but varies the order of hereby granted/without fee and has a different notice clause.<span class="provided-by">(provided by: <span title="SPDXLicense:16e1fbb9cc263ca979bbd58901a8f3d3">[<a href="/fact/SPDXLicense/16e1fbb9cc263ca979bbd58901a8f3d3">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140" target="_blank">https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose is hereby granted without fee, provided
+that this copyright and permissions notice appear in all copies and
+derivatives.
+
+This software is supplied &quot;as is&quot; without express or implied warranty.
+
+But that said, if there are any problems please get in touch.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+               Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this
+            software and its documentation for any purpose is hereby
+            granted without fee, provided that this copyright and
+            permissions notice appear in all copies and derivatives.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This software is supplied &amp;quot;as is&amp;quot;
+            without express or implied warranty.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            But that said, if there are any problems please get in touch.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose is hereby granted without fee, provided
+that this copyright and permissions notice appear in all copies and
+derivatives.
+
+This software is supplied &quot;as is&quot; without express or implied warranty.
+
+But that said, if there are any problems please get in touch.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/16e1fbb9cc263ca979bbd58901a8f3d3">SPDXLicense:16e1fbb9cc263ca979bbd58901a8f3d3</a> for <a href="/?license=spdx:HPND-Kevlin-Henney"><span class="licensename"><span class="namespace">spdx:</span>HPND-Kevlin-Henney</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Kevlin-Henney</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - Kevlin Henney variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:16e1fbb9cc263ca979bbd58901a8f3d3">[<a href="/fact/SPDXLicense/16e1fbb9cc263ca979bbd58901a8f3d3">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is similar to HPND-Pbmplus but varies the order of hereby granted/without fee and has a different notice clause.<span class="provided-by">(provided by: <span title="SPDXLicense:16e1fbb9cc263ca979bbd58901a8f3d3">[<a href="/fact/SPDXLicense/16e1fbb9cc263ca979bbd58901a8f3d3">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140" target="_blank">https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose is hereby granted without fee, provided
+that this copyright and permissions notice appear in all copies and
+derivatives.
+
+This software is supplied &quot;as is&quot; without express or implied warranty.
+
+But that said, if there are any problems please get in touch.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+               Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this
+            software and its documentation for any purpose is hereby
+            granted without fee, provided that this copyright and
+            permissions notice appear in all copies and derivatives.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            This software is supplied &amp;quot;as is&amp;quot;
+            without express or implied warranty.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            But that said, if there are any problems please get in touch.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-Kevlin-Henney&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - Kevlin Henney variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;16e1fbb9cc263ca979bbd58901a8f3d3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is similar to HPND-Pbmplus but varies the order of hereby granted/without fee and has a different notice clause.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.\n\nPermission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat this copyright and permissions notice appear in all copies and\nderivatives.\n\nThis software is supplied \&quot;as is\&quot; without express or implied warranty.\n\nBut that said, if there are any problems please get in touch.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n               Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this\n            software and its documentation for any purpose is hereby\n            granted without fee, provided that this copyright and\n            permissions notice appear in all copies and derivatives.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This software is supplied &amp;quot;as is&amp;quot;\n            without express or implied warranty.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            But that said, if there are any problems please get in touch.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:04Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is similar to HPND-Pbmplus but varies the order of hereby granted/without fee and has a different notice clause.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-Kevlin-Henney&quot;,
+        &quot;licenseText&quot;: &quot;Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.\n\nPermission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat this copyright and permissions notice appear in all copies and\nderivatives.\n\nThis software is supplied \&quot;as is\&quot; without express or implied warranty.\n\nBut that said, if there are any problems please get in touch.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n               Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this\n            software and its documentation for any purpose is hereby\n            granted without fee, provided that this copyright and\n            permissions notice appear in all copies and derivatives.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            This software is supplied &amp;quot;as is&amp;quot;\n            without express or implied warranty.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            But that said, if there are any problems please get in touch.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Historical Permission Notice and Disclaimer - Kevlin Henney variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright Kevlin Henney, 1997, 2003, 2012. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose is hereby granted without fee, provided that this copyright and permissions notice appear in all copies and derivatives.\n\nThis software is supplied \&quot;as is\&quot; without express or implied warranty.\n\nBut that said, if there are any problems please get in touch.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/597946896980745b4bfad0a55a0cbb87">FedoraEntry:597946896980745b4bfad0a55a0cbb87</a> for <a href="/?license=Fedora:HPND-Kevlin-Henney"><span class="licensename"><span class="namespace">Fedora:</span>HPND-Kevlin-Henney</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-Kevlin-Henney</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Kevlin-Henney</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:597946896980745b4bfad0a55a0cbb87">[<a href="/fact/FedoraEntry/597946896980745b4bfad0a55a0cbb87">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HPND-Kevlin-Henney&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-Kevlin-Henney&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;597946896980745b4bfad0a55a0cbb87&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HPND-Kevlin-Henney&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HPND-Kevlin-Henney&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/c07fcef2abce422c795a3a5393a33818">ScancodeData:c07fcef2abce422c795a3a5393a33818</a> for <a href="/?license=scancode:kevlin-henney"><span class="licensename"><span class="namespace">scancode:</span>kevlin-henney</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>kevlin-henney</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Kevlin Henney License</span></li><li><span class="licensename">Kevlin Henney License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:c07fcef2abce422c795a3a5393a33818">[<a href="/fact/ScancodeData/c07fcef2abce422c795a3a5393a33818">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140" target="_blank">https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose is hereby granted without fee, provided
+that this copyright and permissions notice appear in all copies and
+derivatives.
+
+This software is supplied &quot;as is&quot; without express or implied warranty.
+
+But that said, if there are any problems please get in touch.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:kevlin-henney&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Kevlin Henney License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Kevlin Henney License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;c07fcef2abce422c795a3a5393a33818&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat this copyright and permissions notice appear in all copies and\nderivatives.\n\nThis software is supplied \&quot;as is\&quot; without express or implied warranty.\n\nBut that said, if there are any problems please get in touch.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;kevlin-henney&quot;,
+        &quot;_name&quot;: &quot;Kevlin Henney License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/mruby/mruby/blob/83d12f8d52522cdb7c8cc46fad34821359f453e6/mrbgems/mruby-dir/src/Win/dirent.c#L127-L140&quot;
+        ],
+        &quot;_owner&quot;: &quot;Kevlin Henney&quot;,
+        &quot;_shortName&quot;: &quot;Kevlin Henney License&quot;,
+        &quot;_spdxId&quot;: &quot;HPND-Kevlin-Henney&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat this copyright and permissions notice appear in all copies and\nderivatives.\n\nThis software is supplied \&quot;as is\&quot; without express or implied warranty.\n\nBut that said, if there are any problems please get in touch.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/7df30b43abcc4056334a4ed8005a2701">OrtLicenseCategorization:7df30b43abcc4056334a4ed8005a2701</a> for <a href="/?license=SPDX:HPND-Kevlin-Henney"><span class="licensename"><span class="namespace">SPDX:</span>HPND-Kevlin-Henney</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-Kevlin-Henney</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7df30b43abcc4056334a4ed8005a2701">[<a href="/fact/OrtLicenseCategorization/7df30b43abcc4056334a4ed8005a2701">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7df30b43abcc4056334a4ed8005a2701">[<a href="/fact/OrtLicenseCategorization/7df30b43abcc4056334a4ed8005a2701">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-Kevlin-Henney&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;7df30b43abcc4056334a4ed8005a2701&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-Kevlin-Henney&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/8168b6f122aa8309175bf4096cc8b2e8">MetaeffektLicense:8168b6f122aa8309175bf4096cc8b2e8</a> for <a href="/?license=metaeffekt:Kevlin Henney License"><span class="licensename"><span class="namespace">metaeffekt:</span>Kevlin Henney License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Kevlin Henney License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Kevlin-Henney</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer (Kevlin Henney)</span></li><li><span class="licensename">Historical Permission Notice and Disclaimer - Kevlin Henney variant</span></li><li><span class="licensename">HPND-Kevlin-Henney</span></li><li><span class="licensename">Kevlin Henney License</span></li><li><span class="licensename">kevlin-henney</span></li><li><span class="licensename"><span class="namespace">scancode:</span>kevlin-henney</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Kevlin Henney License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-Kevlin-Henney&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Kevlin Henney License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;kevlin-henney&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND-Kevlin-Henney&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - Kevlin Henney variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer (Kevlin Henney)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:kevlin-henney&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;8168b6f122aa8309175bf4096cc8b2e8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;kevlin-henney&quot;,
+            &quot;HPND-Kevlin-Henney&quot;,
+            &quot;Historical Permission Notice and Disclaimer - Kevlin Henney variant&quot;,
+            &quot;Historical Permission Notice and Disclaimer (Kevlin Henney)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Kevlin Henney License&quot;,
+        &quot;_category&quot;: &quot;Kevlin Henney License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:kevlin-henney&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:HPND-Kevlin-Henney&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

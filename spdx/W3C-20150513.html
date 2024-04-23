@@ -1,0 +1,2116 @@
+<html><head><title>ldbcollector: spdx:W3C-20150513</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:W3C-20150513</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseNames (12):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C License (2015-05-13)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>W3C License (2015-05-13)</span></li><li><span class="licensename">W3C Software Notice and Document License (2015-05-13)</span></li><li><span class="licensename">W3C-20150513</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>W3C-20150513</span></li><li><span class="licensename"><span class="namespace">cavil:</span>W3C-20150513</span></li><li><span class="licensename"><span class="namespace">eclipse:</span>W3C-20150513</span></li><li><span class="licensename"><span class="namespace">fossology:</span>W3C-20150513</span></li><li><span class="licensename"><span class="namespace">osadl:</span>W3C-20150513</span></li><li><span class="licensename"><span class="namespace">spdx:</span>W3C-20150513</span></li><li><span class="licensename">W3C20150513</span></li><li><span class="licensename"><span class="namespace">google:</span>W3C20150513</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C</span></li><li><span class="licensename"><span class="namespace">osi:</span>W3C</span></li><li><span class="licensename">W3C 20150513</span></li><li><span class="licensename">W3C License, 20150513</span></li><li><span class="licensename">W3C License, Version 20150513</span></li><li><span class="licensename">W3C, Version 20150513</span></li><li><span class="licensename"><span class="namespace">scancode:</span>w3c-software-doc-20150513</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:61e73cd90ae6125c5e5f89508d41e8ca">[<a href="/fact/BlueOakCouncil/61e73cd90ae6125c5e5f89508d41e8ca">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f1bf2f967c61ed47f296d4af5b6c5a85">[<a href="/fact/SPDXLicense/f1bf2f967c61ed47f296d4af5b6c5a85">SPDXLicense</a>]</span>)</span></li><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:d565d2aee3364b18985c61be31d24e94">[<a href="/fact/GoogleLicense/d565d2aee3364b18985c61be31d24e94">GoogleLicense</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:61e73cd90ae6125c5e5f89508d41e8ca">[<a href="/fact/BlueOakCouncil/61e73cd90ae6125c5e5f89508d41e8ca">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:54bb95e4086d34d1785c260b266b8737">[<a href="/fact/MetaeffektLicense/54bb95e4086d34d1785c260b266b8737">MetaeffektLicense</a>]</span>)</span></li><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:505b6b3b5041a9d9a237f7d4bdd24183">[<a href="/fact/EclipseLicense/505b6b3b5041a9d9a237f7d4bdd24183">EclipseLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:00a38c239a40dad5ca78798f45882226">[<a href="/fact/OrtLicenseCategorization/00a38c239a40dad5ca78798f45882226">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:00a38c239a40dad5ca78798f45882226">[<a href="/fact/OrtLicenseCategorization/00a38c239a40dad5ca78798f45882226">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f387d60792a3009d14993d937348df41">[<a href="/fact/OrtLicenseCategorization/f387d60792a3009d14993d937348df41">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f387d60792a3009d14993d937348df41">[<a href="/fact/OrtLicenseCategorization/f387d60792a3009d14993d937348df41">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f387d60792a3009d14993d937348df41">[<a href="/fact/OrtLicenseCategorization/f387d60792a3009d14993d937348df41">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting &quot;work&quot; for instances of &quot;software and its documentation.&quot; It moves &quot;notice of changes or modifications to the files&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.<span class="provided-by">(provided by: <span title="SPDXLicense:f1bf2f967c61ed47f296d4af5b6c5a85">[<a href="/fact/SPDXLicense/f1bf2f967c61ed47f296d4af5b6c5a85">SPDXLicense</a>]</span>)</span></li><li><b>Fossology: </b>This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting &quot;work&quot; for instances of &quot;software and its documentation.&quot; It moves &quot;notice of changes or modifications to the files&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.<span class="provided-by">(provided by: <span title="Fossology:043680241d9fcbb0cdd735dfccb8f436">[<a href="/fact/Fossology/043680241d9fcbb0cdd735dfccb8f436">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" target="_blank">https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document</a></li><li><a href="https://spdx.org/licenses/W3C-20150513.html" target="_blank">https://spdx.org/licenses/W3C-20150513.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This work is being provided by the copyright holders under the following license.
+
+License
+By obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.
+
+Permission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:
+
+     • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.
+     • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.
+     • Notice of any changes or modifications, through a copyright statement on the new code or document such as &quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).&quot;
+
+Disclaimers
+THIS WORK IS PROVIDED &quot;AS IS,&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.
+
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;This work is being provided by the copyright holders under the
+         following license.&lt;/p&gt;
+
+      &lt;p&gt;License
+        &lt;br /&gt;
+
+By obtaining and/or copying this work, you (the licensee)
+             agree that you have read, understood, and will comply
+             with the following terms and conditions.
+      &lt;/p&gt;
+
+      &lt;p&gt;Permission to copy, modify, and distribute this work, with or
+         without modification, for any purpose and without fee or
+         royalty is hereby granted, provided that you include the
+         following on ALL copies of the work or portions thereof,
+         including modifications:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; •&lt;/var&gt;
+          The full text of this NOTICE in a location viewable to
+             users of the redistributed or derivative work.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; •&lt;/var&gt;
+          Any pre-existing intellectual property disclaimers,
+             notices, or terms and conditions. If none exist, the
+             W3C Software and Document Short Notice should be
+             included.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; •&lt;/var&gt;
+          Notice of any changes or modifications, through a
+             copyright statement on the new code or document such
+             as &amp;quot;This software or document includes material copied
+             from or derived from [title and URI of the W3C
+             document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM,
+             Keio, Beihang).&amp;quot;
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Disclaimers
+        &lt;br /&gt;
+
+THIS WORK IS PROVIDED &amp;quot;AS IS,&amp;quot; AND COPYRIGHT HOLDERS MAKE
+             NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED,
+             INCLUDING BUT NOT LIMITED TO, WARRANTIES OF
+             MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE
+             OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT
+             INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,
+             TRADEMARKS OR OTHER RIGHTS.
+      &lt;/p&gt;
+
+      &lt;p&gt;COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT,
+         SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE
+         SOFTWARE OR DOCUMENT.&lt;/p&gt;
+
+      &lt;p&gt;The name and trademarks of copyright holders may NOT be used in
+         advertising or publicity pertaining to the work without
+         specific, written prior permission. Title to copyright in this
+         work will at all times remain with copyright holders.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>This work is being provided by the copyright holders under the following license.
+
+License
+
+By obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.
+
+Permission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:
+
+   • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.
+
+   • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.
+
+   • Notice of any changes or modifications, through a copyright statement on the new code or document such as &quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).&quot;
+
+Disclaimers
+
+THIS WORK IS PROVIDED &quot;AS IS,&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.
+
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/f1bf2f967c61ed47f296d4af5b6c5a85">SPDXLicense:f1bf2f967c61ed47f296d4af5b6c5a85</a> for <a href="/?license=spdx:W3C-20150513"><span class="licensename"><span class="namespace">spdx:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C Software Notice and Document License (2015-05-13)</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f1bf2f967c61ed47f296d4af5b6c5a85">[<a href="/fact/SPDXLicense/f1bf2f967c61ed47f296d4af5b6c5a85">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting &quot;work&quot; for instances of &quot;software and its documentation.&quot; It moves &quot;notice of changes or modifications to the files&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.<span class="provided-by">(provided by: <span title="SPDXLicense:f1bf2f967c61ed47f296d4af5b6c5a85">[<a href="/fact/SPDXLicense/f1bf2f967c61ed47f296d4af5b6c5a85">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" target="_blank">https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This work is being provided by the copyright holders under the following license.
+
+License
+By obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.
+
+Permission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:
+
+     • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.
+     • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.
+     • Notice of any changes or modifications, through a copyright statement on the new code or document such as &quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).&quot;
+
+Disclaimers
+THIS WORK IS PROVIDED &quot;AS IS,&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.
+
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;This work is being provided by the copyright holders under the
+         following license.&lt;/p&gt;
+
+      &lt;p&gt;License
+        &lt;br /&gt;
+
+By obtaining and/or copying this work, you (the licensee)
+             agree that you have read, understood, and will comply
+             with the following terms and conditions.
+      &lt;/p&gt;
+
+      &lt;p&gt;Permission to copy, modify, and distribute this work, with or
+         without modification, for any purpose and without fee or
+         royalty is hereby granted, provided that you include the
+         following on ALL copies of the work or portions thereof,
+         including modifications:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; •&lt;/var&gt;
+          The full text of this NOTICE in a location viewable to
+             users of the redistributed or derivative work.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; •&lt;/var&gt;
+          Any pre-existing intellectual property disclaimers,
+             notices, or terms and conditions. If none exist, the
+             W3C Software and Document Short Notice should be
+             included.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; •&lt;/var&gt;
+          Notice of any changes or modifications, through a
+             copyright statement on the new code or document such
+             as &amp;quot;This software or document includes material copied
+             from or derived from [title and URI of the W3C
+             document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM,
+             Keio, Beihang).&amp;quot;
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Disclaimers
+        &lt;br /&gt;
+
+THIS WORK IS PROVIDED &amp;quot;AS IS,&amp;quot; AND COPYRIGHT HOLDERS MAKE
+             NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED,
+             INCLUDING BUT NOT LIMITED TO, WARRANTIES OF
+             MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE
+             OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT
+             INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,
+             TRADEMARKS OR OTHER RIGHTS.
+      &lt;/p&gt;
+
+      &lt;p&gt;COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT,
+         SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE
+         SOFTWARE OR DOCUMENT.&lt;/p&gt;
+
+      &lt;p&gt;The name and trademarks of copyright holders may NOT be used in
+         advertising or publicity pertaining to the work without
+         specific, written prior permission. Title to copyright in this
+         work will at all times remain with copyright holders.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:W3C-20150513&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;W3C Software Notice and Document License (2015-05-13)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;f1bf2f967c61ed47f296d4af5b6c5a85&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting \&quot;work\&quot; for instances of \&quot;software and its documentation.\&quot; It moves \&quot;notice of changes or modifications to the files\&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This work is being provided by the copyright holders under the following license.\n\nLicense\nBy obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:\n\n     • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.\n     • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.\n     • Notice of any changes or modifications, through a copyright statement on the new code or document such as \&quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).\&quot;\n\nDisclaimers\nTHIS WORK IS PROVIDED \&quot;AS IS,\&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;This work is being provided by the copyright holders under the\n         following license.&lt;/p&gt;\n\n      &lt;p&gt;License\n        &lt;br /&gt;\n\nBy obtaining and/or copying this work, you (the licensee)\n             agree that you have read, understood, and will comply\n             with the following terms and conditions.\n      &lt;/p&gt;\n\n      &lt;p&gt;Permission to copy, modify, and distribute this work, with or\n         without modification, for any purpose and without fee or\n         royalty is hereby granted, provided that you include the\n         following on ALL copies of the work or portions thereof,\n         including modifications:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; •&lt;/var&gt;\n          The full text of this NOTICE in a location viewable to\n             users of the redistributed or derivative work.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; •&lt;/var&gt;\n          Any pre-existing intellectual property disclaimers,\n             notices, or terms and conditions. If none exist, the\n             W3C Software and Document Short Notice should be\n             included.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; •&lt;/var&gt;\n          Notice of any changes or modifications, through a\n             copyright statement on the new code or document such\n             as &amp;quot;This software or document includes material copied\n             from or derived from [title and URI of the W3C\n             document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM,\n             Keio, Beihang).&amp;quot;\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Disclaimers\n        &lt;br /&gt;\n\nTHIS WORK IS PROVIDED &amp;quot;AS IS,&amp;quot; AND COPYRIGHT HOLDERS MAKE\n             NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED,\n             INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\n             MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE\n             OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT\n             INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\n             TRADEMARKS OR OTHER RIGHTS.\n      &lt;/p&gt;\n\n      &lt;p&gt;COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT,\n         SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE\n         SOFTWARE OR DOCUMENT.&lt;/p&gt;\n\n      &lt;p&gt;The name and trademarks of copyright holders may NOT be used in\n         advertising or publicity pertaining to the work without\n         specific, written prior permission. Title to copyright in this\n         work will at all times remain with copyright holders.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:38Z&quot;,
+                &quot;url&quot;: &quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting \&quot;work\&quot; for instances of \&quot;software and its documentation.\&quot; It moves \&quot;notice of changes or modifications to the files\&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:W3C-20150513&quot;,
+        &quot;licenseText&quot;: &quot;This work is being provided by the copyright holders under the following license.\n\nLicense\nBy obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:\n\n     • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.\n     • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.\n     • Notice of any changes or modifications, through a copyright statement on the new code or document such as \&quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).\&quot;\n\nDisclaimers\nTHIS WORK IS PROVIDED \&quot;AS IS,\&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;This work is being provided by the copyright holders under the\n         following license.&lt;/p&gt;\n\n      &lt;p&gt;License\n        &lt;br /&gt;\n\nBy obtaining and/or copying this work, you (the licensee)\n             agree that you have read, understood, and will comply\n             with the following terms and conditions.\n      &lt;/p&gt;\n\n      &lt;p&gt;Permission to copy, modify, and distribute this work, with or\n         without modification, for any purpose and without fee or\n         royalty is hereby granted, provided that you include the\n         following on ALL copies of the work or portions thereof,\n         including modifications:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; •&lt;/var&gt;\n          The full text of this NOTICE in a location viewable to\n             users of the redistributed or derivative work.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; •&lt;/var&gt;\n          Any pre-existing intellectual property disclaimers,\n             notices, or terms and conditions. If none exist, the\n             W3C Software and Document Short Notice should be\n             included.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; •&lt;/var&gt;\n          Notice of any changes or modifications, through a\n             copyright statement on the new code or document such\n             as &amp;quot;This software or document includes material copied\n             from or derived from [title and URI of the W3C\n             document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM,\n             Keio, Beihang).&amp;quot;\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Disclaimers\n        &lt;br /&gt;\n\nTHIS WORK IS PROVIDED &amp;quot;AS IS,&amp;quot; AND COPYRIGHT HOLDERS MAKE\n             NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED,\n             INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\n             MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE\n             OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT\n             INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\n             TRADEMARKS OR OTHER RIGHTS.\n      &lt;/p&gt;\n\n      &lt;p&gt;COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT,\n         SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE\n         SOFTWARE OR DOCUMENT.&lt;/p&gt;\n\n      &lt;p&gt;The name and trademarks of copyright holders may NOT be used in\n         advertising or publicity pertaining to the work without\n         specific, written prior permission. Title to copyright in this\n         work will at all times remain with copyright holders.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;W3C Software Notice and Document License (2015-05-13)&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;This work is being provided by the copyright holders under the following license.\n\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;•\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;•\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;•\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Notice of any changes or modifications, through a copyright statement on the new code or document such as \&quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).\&quot;\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \&quot;AS IS,\&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/d565d2aee3364b18985c61be31d24e94">GoogleLicense:d565d2aee3364b18985c61be31d24e94</a> for <a href="/?license=google:W3C20150513"><span class="licensename"><span class="namespace">google:</span>W3C20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>W3C20150513</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>W3C-20150513</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:d565d2aee3364b18985c61be31d24e94">[<a href="/fact/GoogleLicense/d565d2aee3364b18985c61be31d24e94">GoogleLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:W3C20150513&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:W3C-20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;d565d2aee3364b18985c61be31d24e94&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Google Policy Classification&quot;,
+                        &quot;notice&quot;,
+                        {
+                            &quot;contents&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:W3C20150513&quot;,
+        &quot;googleLicenseType&quot;: &quot;notice&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:W3C-20150513&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/61e73cd90ae6125c5e5f89508d41e8ca">BlueOakCouncil:61e73cd90ae6125c5e5f89508d41e8ca</a> for <a href="/?license=BlueOak:W3C-20150513"><span class="licensename"><span class="namespace">BlueOak:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C Software Notice and Document License (2015-05-13)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:61e73cd90ae6125c5e5f89508d41e8ca">[<a href="/fact/BlueOakCouncil/61e73cd90ae6125c5e5f89508d41e8ca">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:61e73cd90ae6125c5e5f89508d41e8ca">[<a href="/fact/BlueOakCouncil/61e73cd90ae6125c5e5f89508d41e8ca">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/W3C-20150513.html" target="_blank">https://spdx.org/licenses/W3C-20150513.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:W3C-20150513&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;W3C Software Notice and Document License (2015-05-13)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;61e73cd90ae6125c5e5f89508d41e8ca&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/W3C-20150513.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;W3C-20150513&quot;,
+                &quot;_name&quot;: &quot;W3C Software Notice and Document License (2015-05-13)&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/W3C-20150513.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLRule/b2b3938b3670066f3ed2c902f0d301a1">OSADLRule:b2b3938b3670066f3ed2c902f0d301a1</a> for <a href="/?license=osadl:W3C-20150513"><span class="licensename"><span class="namespace">osadl:</span>W3C-20150513</span></a></h3><pre>USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide License text
+		ATTRIBUTE Viewable
+	YOU MUST Provide Legal notices
+	IF No Legal notices
+		YOU MUST Provide &quot;W3C Software and Document Short&amp;#160;Notice&quot; &lt;a href=&quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-short-notice.html&quot;&gt;https&amp;#58;//www.w3.org/Consortium/Legal/2015/copyright-software-short-notice.html&lt;/a&gt;
+	IF Software modification
+		YOU MUST Provide Copyright notices
+	YOU MUST NOT Promote
+</pre><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>W3C-20150513</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;osadl:W3C-20150513&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:W3C-20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLRule&quot;,
+        &quot;b2b3938b3670066f3ed2c902f0d301a1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide License text\n\t\tATTRIBUTE Viewable\n\tYOU MUST Provide Legal notices\n\tIF No Legal notices\n\t\tYOU MUST Provide \&quot;W3C Software and Document Short&amp;#160;Notice\&quot; &lt;a href=\&quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-short-notice.html\&quot;&gt;https&amp;#58;//www.w3.org/Consortium/Legal/2015/copyright-software-short-notice.html&lt;/a&gt;\n\tIF Software modification\n\t\tYOU MUST Provide Copyright notices\n\tYOU MUST NOT Promote\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseRule&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide License text\n\t\tATTRIBUTE Viewable\n\tYOU MUST Provide Legal notices\n\tIF No Legal notices\n\t\tYOU MUST Provide \&quot;W3C Software and Document Short&amp;#160;Notice\&quot; &lt;a href=\&quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-short-notice.html\&quot;&gt;https&amp;#58;//www.w3.org/Consortium/Legal/2015/copyright-software-short-notice.html&lt;/a&gt;\n\tIF Software modification\n\t\tYOU MUST Provide Copyright notices\n\tYOU MUST NOT Promote\n&quot;,
+        &quot;spdxId&quot;: &quot;osadl:W3C-20150513&quot;
+    },
+    &quot;type&quot;: &quot;OSADLRule&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLMatrix/b0433146271c14dfd89e4d7587d83f20">OSADLMatrix:b0433146271c14dfd89e4d7587d83f20</a> for <a href="/?license=osadl:W3C-20150513"><span class="licensename"><span class="namespace">osadl:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>W3C-20150513</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;osadl:W3C-20150513&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLMatrix&quot;,
+        &quot;b0433146271c14dfd89e4d7587d83f20&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;0BSD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;blessing&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC0-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;curl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;EFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.2&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFAP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFUL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLR&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLRWD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FTL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;HPND&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IBM-pibs&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ICU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IJG&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ImageMagick&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Info-ZIP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;IPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ISC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;JasPer-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Libpng&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libpng-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libtiff&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Minpack&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MirOS&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT-CMU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;MS-PL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MS-RL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NBPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NCSA&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NTP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;OpenSSL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;OSL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PHP-3.01&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PostgreSQL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Python-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Qhull&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;RSA-MD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Saxpath&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;Sleepycat&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SMLNJ&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-short&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SunPro&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unlicense&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;UPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-19980720&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Same&quot;,
+                    &quot;_explanation&quot;: &quot;n.a.&quot;,
+                    &quot;_other&quot;: &quot;W3C-20150513&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;WTFPL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;X11&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;XFree86-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Zlib&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ZPL-2.0&quot;
+                }
+            ],
+            &quot;tag&quot;: &quot;LicenseCompatibilities&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_name&quot;: &quot;osadl:W3C-20150513&quot;,
+        &quot;compatibilities&quot;: [
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;0BSD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;blessing&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC0-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;curl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;EFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.2&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFAP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFUL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLR&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLRWD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FTL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;HPND&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IBM-pibs&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ICU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IJG&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ImageMagick&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Info-ZIP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;IPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ISC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;JasPer-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Libpng&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libpng-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libtiff&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Minpack&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MirOS&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT-CMU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;MS-PL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MS-RL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NBPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NCSA&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NTP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;OpenSSL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;OSL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PHP-3.01&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PostgreSQL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Python-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Qhull&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;RSA-MD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Saxpath&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the W3C-20150513 license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;Sleepycat&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SMLNJ&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-short&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SunPro&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unlicense&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;UPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-19980720&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Same&quot;,
+                &quot;_explanation&quot;: &quot;n.a.&quot;,
+                &quot;_other&quot;: &quot;W3C-20150513&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the WTFPL license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;WTFPL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;X11&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;XFree86-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Zlib&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the W3C-20150513 license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ZPL-2.0&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;OSADLMatrix&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/043680241d9fcbb0cdd735dfccb8f436">Fossology:043680241d9fcbb0cdd735dfccb8f436</a> for <a href="/?license=fossology:W3C-20150513"><span class="licensename"><span class="namespace">fossology:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C Software Notice and Document License (2015-05-13)</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting &quot;work&quot; for instances of &quot;software and its documentation.&quot; It moves &quot;notice of changes or modifications to the files&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.<span class="provided-by">(provided by: <span title="Fossology:043680241d9fcbb0cdd735dfccb8f436">[<a href="/fact/Fossology/043680241d9fcbb0cdd735dfccb8f436">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" target="_blank">https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This work is being provided by the copyright holders under the following license.
+
+License
+
+By obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.
+
+Permission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:
+
+   • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.
+
+   • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.
+
+   • Notice of any changes or modifications, through a copyright statement on the new code or document such as &quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).&quot;
+
+Disclaimers
+
+THIS WORK IS PROVIDED &quot;AS IS,&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.
+
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:W3C-20150513&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;W3C Software Notice and Document License (2015-05-13)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;043680241d9fcbb0cdd735dfccb8f436&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting \&quot;work\&quot; for instances of \&quot;software and its documentation.\&quot; It moves \&quot;notice of changes or modifications to the files\&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This work is being provided by the copyright holders under the following license.\n\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:\n\n   • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.\n\n   • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.\n\n   • Notice of any changes or modifications, through a copyright statement on the new code or document such as \&quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).\&quot;\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \&quot;AS IS,\&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;W3C Software Notice and Document License (2015-05-13)&quot;,
+        &quot;_rf_notes&quot;: &quot;This license takes effect 13 May, 2015.This version makes clear that the license is applicable to both software and text, by changing the name and substituting \&quot;work\&quot; for instances of \&quot;software and its documentation.\&quot; It moves \&quot;notice of changes or modifications to the files\&quot; to the copyright notice, to make clear that the license is compatible with other liberal licenses.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:W3C-20150513&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;This work is being provided by the copyright holders under the following license.\n\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the work or portions thereof, including modifications:\n\n   • The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.\n\n   • Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.\n\n   • Notice of any changes or modifications, through a copyright statement on the new code or document such as \&quot;This software or document includes material copied from or derived from [title and URI of the W3C document]. Copyright (c) [YEAR] W3C® (MIT, ERCIM, Keio, Beihang).\&quot;\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \&quot;AS IS,\&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. Title to copyright in this work will at all times remain with copyright holders.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/00a38c239a40dad5ca78798f45882226">OrtLicenseCategorization:00a38c239a40dad5ca78798f45882226</a> for <a href="/?license=SPDX:W3C-20150513"><span class="licensename"><span class="namespace">SPDX:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>W3C-20150513</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:00a38c239a40dad5ca78798f45882226">[<a href="/fact/OrtLicenseCategorization/00a38c239a40dad5ca78798f45882226">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:00a38c239a40dad5ca78798f45882226">[<a href="/fact/OrtLicenseCategorization/00a38c239a40dad5ca78798f45882226">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:W3C-20150513&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;00a38c239a40dad5ca78798f45882226&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:W3C-20150513&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/f387d60792a3009d14993d937348df41">OrtLicenseCategorization:f387d60792a3009d14993d937348df41</a> for <a href="/?license=SPDX:W3C-20150513"><span class="licensename"><span class="namespace">SPDX:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>W3C-20150513</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f387d60792a3009d14993d937348df41">[<a href="/fact/OrtLicenseCategorization/f387d60792a3009d14993d937348df41">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f387d60792a3009d14993d937348df41">[<a href="/fact/OrtLicenseCategorization/f387d60792a3009d14993d937348df41">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f387d60792a3009d14993d937348df41">[<a href="/fact/OrtLicenseCategorization/f387d60792a3009d14993d937348df41">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:W3C-20150513&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f387d60792a3009d14993d937348df41&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:W3C-20150513&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/26676c88c112504548ad000cba7c890e">CavilLicenseChange:26676c88c112504548ad000cba7c890e</a> for <a href="/?license=cavil:W3C-20150513"><span class="licensename"><span class="namespace">cavil:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C-20150513</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:W3C-20150513&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;W3C-20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;26676c88c112504548ad000cba7c890e&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;W3C-20150513&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:W3C-20150513&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/54bb95e4086d34d1785c260b266b8737">MetaeffektLicense:54bb95e4086d34d1785c260b266b8737</a> for <a href="/?license=metaeffekt:W3C License (2015-05-13)"><span class="licensename"><span class="namespace">metaeffekt:</span>W3C License (2015-05-13)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>W3C License (2015-05-13)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C</span></li><li><span class="licensename"><span class="namespace">osi:</span>W3C</span></li><li><span class="licensename">W3C 20150513</span></li><li><span class="licensename">W3C License, 20150513</span></li><li><span class="licensename">W3C License, Version 20150513</span></li><li><span class="licensename">W3C, Version 20150513</span></li><li><span class="licensename"><span class="namespace">scancode:</span>w3c-software-doc-20150513</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:54bb95e4086d34d1785c260b266b8737">[<a href="/fact/MetaeffektLicense/54bb95e4086d34d1785c260b266b8737">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:W3C License (2015-05-13)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:W3C-20150513&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;W3C&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;W3C, Version 20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;W3C 20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;W3C License, Version 20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;W3C License, 20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:w3c-software-doc-20150513&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;osi:W3C&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;54bb95e4086d34d1785c260b266b8737&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;W3C, Version 20150513&quot;,
+            &quot;W3C 20150513&quot;,
+            &quot;W3C License, Version 20150513&quot;,
+            &quot;W3C License, 20150513&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:W3C License (2015-05-13)&quot;,
+        &quot;_category&quot;: &quot;W3C&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:w3c-software-doc-20150513&quot;,
+            &quot;osi:W3C&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:W3C-20150513&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Eclipse">Eclipse</a>: <a href="/fact/EclipseLicense/505b6b3b5041a9d9a237f7d4bdd24183">EclipseLicense:505b6b3b5041a9d9a237f7d4bdd24183</a> for <a href="/?license=eclipse:W3C-20150513"><span class="licensename"><span class="namespace">eclipse:</span>W3C-20150513</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">eclipse:</span>W3C-20150513</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">W3C Software Notice and Document License (2015-05-13)</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:505b6b3b5041a9d9a237f7d4bdd24183">[<a href="/fact/EclipseLicense/505b6b3b5041a9d9a237f7d4bdd24183">EclipseLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;eclipse:W3C-20150513&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;W3C Software Notice and Document License (2015-05-13)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;EclipseLicense&quot;,
+        &quot;505b6b3b5041a9d9a237f7d4bdd24183&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;EclipseLicense&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. &quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;eclipse:W3C-20150513&quot;,
+            &quot;W3C Software Notice and Document License (2015-05-13)&quot;
+        ],
+        &quot;tag&quot;: &quot;ApprovedLicense&quot;
+    },
+    &quot;type&quot;: &quot;EclipseLicense&quot;
+}</pre></details></li></ul></body></html>

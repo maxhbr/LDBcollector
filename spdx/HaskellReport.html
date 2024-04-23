@@ -1,0 +1,673 @@
+<html><head><title>ldbcollector: spdx:HaskellReport</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:HaskellReport</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HaskellReport</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">Haskell Language Report License</span></li><li><span class="licensename">Haskell Report License</span></li><li><span class="licensename">haskell-report</span></li><li><span class="licensename"><span class="namespace">scancode:</span>haskell-report</span></li><li><span class="licensename">HaskellReport</span></li><li><span class="licensename"><span class="namespace">cavil:</span>HaskellReport</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HaskellReport</span></li><li><span class="licensename"><span class="namespace">fossology:</span>HaskellReport</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HaskellReport</span></li><li><span class="licensename">HaskellReport License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>HaskellReport License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:57ddc6b5625f2ee1a435a96025318b9a">[<a href="/fact/ScancodeData/57ddc6b5625f2ee1a435a96025318b9a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c8e27c177a19767540e97ddc90db2301">[<a href="/fact/SPDXLicense/c8e27c177a19767540e97ddc90db2301">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d02913c482e99fd483bf30a03d3ac741">[<a href="/fact/FedoraEntry/d02913c482e99fd483bf30a03d3ac741">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05f88ca3355b8d99548cd34aa0e37561">[<a href="/fact/OrtLicenseCategorization/05f88ca3355b8d99548cd34aa0e37561">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05f88ca3355b8d99548cd34aa0e37561">[<a href="/fact/OrtLicenseCategorization/05f88ca3355b8d99548cd34aa0e37561">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Code derived from the document &quot;Report on the Programming Language
+Haskell 2010&quot;, is distributed under the following license:
+
+Copyright (c) 2010 Simon Marlow
+
+The authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Code derived from the document &amp;quot;Report on the Programming Language
+        &lt;br /&gt;
+
+Haskell 2010&amp;quot;, is distributed under the following license:
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; Copyright (c) 2010 Simon Marlow&lt;/var&gt;
+      &lt;/p&gt;
+
+      &lt;p&gt;The authors intend this Report to belong to the entire Haskell community, and so we grant permission to
+         copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this
+         Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided
+         that the modified version is clearly presented as such, and that it does not claim to be a definition
+         of the Haskell 2010 Language.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>The authors intend this Report to belong to the entire Haskell community, and
+so we grant permission to copy and distribute it for any purpose, provided that
+it is reproduced in its entirety, including this Notice.  Modified versions of
+this Report may also be copied and distributed for any purpose, provided that
+the modified version is clearly presented as such, and that it does not claim
+to be a definition of the Haskell 2010 Language.</pre></details></li><li><details><summary>Text:</summary><pre>Code derived from the document &quot;Report on the Programming Language
+
+Haskell 2010&quot;, is distributed under the following license:
+
+Copyright (c) 2010 Simon Marlow
+
+The authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/c8e27c177a19767540e97ddc90db2301">SPDXLicense:c8e27c177a19767540e97ddc90db2301</a> for <a href="/?license=spdx:HaskellReport"><span class="licensename"><span class="namespace">spdx:</span>HaskellReport</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HaskellReport</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Haskell Language Report License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:c8e27c177a19767540e97ddc90db2301">[<a href="/fact/SPDXLicense/c8e27c177a19767540e97ddc90db2301">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Code derived from the document &quot;Report on the Programming Language
+Haskell 2010&quot;, is distributed under the following license:
+
+Copyright (c) 2010 Simon Marlow
+
+The authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;Code derived from the document &amp;quot;Report on the Programming Language
+        &lt;br /&gt;
+
+Haskell 2010&amp;quot;, is distributed under the following license:
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        &lt;var class=&quot;replaceable-license-text&quot;&gt; Copyright (c) 2010 Simon Marlow&lt;/var&gt;
+      &lt;/p&gt;
+
+      &lt;p&gt;The authors intend this Report to belong to the entire Haskell community, and so we grant permission to
+         copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this
+         Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided
+         that the modified version is clearly presented as such, and that it does not claim to be a definition
+         of the Haskell 2010 Language.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HaskellReport&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Haskell Language Report License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;c8e27c177a19767540e97ddc90db2301&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Code derived from the document \&quot;Report on the Programming Language\nHaskell 2010\&quot;, is distributed under the following license:\n\nCopyright (c) 2010 Simon Marlow\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;Code derived from the document &amp;quot;Report on the Programming Language\n        &lt;br /&gt;\n\nHaskell 2010&amp;quot;, is distributed under the following license:\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Copyright (c) 2010 Simon Marlow&lt;/var&gt;\n      &lt;/p&gt;\n\n      &lt;p&gt;The authors intend this Report to belong to the entire Haskell community, and so we grant permission to\n         copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this\n         Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided\n         that the modified version is clearly presented as such, and that it does not claim to be a definition\n         of the Haskell 2010 Language.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:13:02Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:HaskellReport&quot;,
+        &quot;licenseText&quot;: &quot;Code derived from the document \&quot;Report on the Programming Language\nHaskell 2010\&quot;, is distributed under the following license:\n\nCopyright (c) 2010 Simon Marlow\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;Code derived from the document &amp;quot;Report on the Programming Language\n        &lt;br /&gt;\n\nHaskell 2010&amp;quot;, is distributed under the following license:\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Copyright (c) 2010 Simon Marlow&lt;/var&gt;\n      &lt;/p&gt;\n\n      &lt;p&gt;The authors intend this Report to belong to the entire Haskell community, and so we grant permission to\n         copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this\n         Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided\n         that the modified version is clearly presented as such, and that it does not claim to be a definition\n         of the Haskell 2010 Language.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Haskell Language Report License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Code derived from the document \&quot;Report on the Programming Language\n\nHaskell 2010\&quot;, is distributed under the following license:\n\n&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2010 Simon Marlow\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/d02913c482e99fd483bf30a03d3ac741">FedoraEntry:d02913c482e99fd483bf30a03d3ac741</a> for <a href="/?license=Fedora:HaskellReport"><span class="licensename"><span class="namespace">Fedora:</span>HaskellReport</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HaskellReport</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HaskellReport</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Haskell Language Report License</span></li><li><span class="licensename">HaskellReport</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d02913c482e99fd483bf30a03d3ac741">[<a href="/fact/FedoraEntry/d02913c482e99fd483bf30a03d3ac741">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HaskellReport&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HaskellReport&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Haskell Language Report License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HaskellReport&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;d02913c482e99fd483bf30a03d3ac741&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;HaskellReport&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Haskell Language Report License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HaskellReport&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HaskellReport&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/57ddc6b5625f2ee1a435a96025318b9a">ScancodeData:57ddc6b5625f2ee1a435a96025318b9a</a> for <a href="/?license=scancode:haskell-report"><span class="licensename"><span class="namespace">scancode:</span>haskell-report</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>haskell-report</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Haskell Language Report License</span></li><li><span class="licensename">Haskell Report License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:57ddc6b5625f2ee1a435a96025318b9a">[<a href="/fact/ScancodeData/57ddc6b5625f2ee1a435a96025318b9a">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The authors intend this Report to belong to the entire Haskell community, and
+so we grant permission to copy and distribute it for any purpose, provided that
+it is reproduced in its entirety, including this Notice.  Modified versions of
+this Report may also be copied and distributed for any purpose, provided that
+the modified version is clearly presented as such, and that it does not claim
+to be a definition of the Haskell 2010 Language.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:haskell-report&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Haskell Report License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Haskell Language Report License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;57ddc6b5625f2ee1a435a96025318b9a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The authors intend this Report to belong to the entire Haskell community, and\nso we grant permission to copy and distribute it for any purpose, provided that\nit is reproduced in its entirety, including this Notice.  Modified versions of\nthis Report may also be copied and distributed for any purpose, provided that\nthe modified version is clearly presented as such, and that it does not claim\nto be a definition of the Haskell 2010 Language.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;,
+        &quot;_key&quot;: &quot;haskell-report&quot;,
+        &quot;_name&quot;: &quot;Haskell Language Report License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Simon Marlow&quot;,
+        &quot;_shortName&quot;: &quot;Haskell Report License&quot;,
+        &quot;_spdxId&quot;: &quot;HaskellReport&quot;,
+        &quot;_text&quot;: &quot;The authors intend this Report to belong to the entire Haskell community, and\nso we grant permission to copy and distribute it for any purpose, provided that\nit is reproduced in its entirety, including this Notice.  Modified versions of\nthis Report may also be copied and distributed for any purpose, provided that\nthe modified version is clearly presented as such, and that it does not claim\nto be a definition of the Haskell 2010 Language.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/ecac6f7f245f9a077a102cb54ad060bd">Fossology:ecac6f7f245f9a077a102cb54ad060bd</a> for <a href="/?license=fossology:HaskellReport"><span class="licensename"><span class="namespace">fossology:</span>HaskellReport</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>HaskellReport</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Haskell Language Report License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License" target="_blank">https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Code derived from the document &quot;Report on the Programming Language
+
+Haskell 2010&quot;, is distributed under the following license:
+
+Copyright (c) 2010 Simon Marlow
+
+The authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:HaskellReport&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Haskell Language Report License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;ecac6f7f245f9a077a102cb54ad060bd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Code derived from the document \&quot;Report on the Programming Language\n\nHaskell 2010\&quot;, is distributed under the following license:\n\nCopyright (c) 2010 Simon Marlow\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Haskell Language Report License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:HaskellReport&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Code derived from the document \&quot;Report on the Programming Language\n\nHaskell 2010\&quot;, is distributed under the following license:\n\nCopyright (c) 2010 Simon Marlow\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice. Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/05f88ca3355b8d99548cd34aa0e37561">OrtLicenseCategorization:05f88ca3355b8d99548cd34aa0e37561</a> for <a href="/?license=SPDX:HaskellReport"><span class="licensename"><span class="namespace">SPDX:</span>HaskellReport</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HaskellReport</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05f88ca3355b8d99548cd34aa0e37561">[<a href="/fact/OrtLicenseCategorization/05f88ca3355b8d99548cd34aa0e37561">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05f88ca3355b8d99548cd34aa0e37561">[<a href="/fact/OrtLicenseCategorization/05f88ca3355b8d99548cd34aa0e37561">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HaskellReport&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;05f88ca3355b8d99548cd34aa0e37561&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HaskellReport&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/3d4d96bb5ad058dfdcb4a4eccd147be4">CavilLicenseChange:3d4d96bb5ad058dfdcb4a4eccd147be4</a> for <a href="/?license=cavil:HaskellReport"><span class="licensename"><span class="namespace">cavil:</span>HaskellReport</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>HaskellReport</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HaskellReport</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:HaskellReport&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HaskellReport&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;3d4d96bb5ad058dfdcb4a4eccd147be4&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;HaskellReport&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:HaskellReport&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/04a7106d53e45973d007ea9547b1c5ff">MetaeffektLicense:04a7106d53e45973d007ea9547b1c5ff</a> for <a href="/?license=metaeffekt:HaskellReport License"><span class="licensename"><span class="namespace">metaeffekt:</span>HaskellReport License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>HaskellReport License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HaskellReport</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>haskell-report</span></li><li><span class="licensename">HaskellReport</span></li><li><span class="licensename">HaskellReport License</span></li><li><span class="licensename">HASKELLREPORT LICENSE</span></li><li><span class="licensename">HASKELLREPORT License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:HaskellReport License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HaskellReport&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HaskellReport&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HaskellReport License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HASKELLREPORT LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HASKELLREPORT License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:haskell-report&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;04a7106d53e45973d007ea9547b1c5ff&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;HaskellReport License&quot;,
+            &quot;HASKELLREPORT LICENSE&quot;,
+            &quot;HASKELLREPORT License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:HaskellReport License&quot;,
+        &quot;_category&quot;: &quot;HaskellReport&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:haskell-report&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:HaskellReport&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

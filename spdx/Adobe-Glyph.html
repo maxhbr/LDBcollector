@@ -1,0 +1,893 @@
+<html><head><title>ldbcollector: spdx:Adobe-Glyph</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Adobe-Glyph</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Adobe Glyph License</span></li><li><span class="licensename">Adobe Glyph List License</span></li><li><span class="licensename">Adobe-Glyph</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Adobe-Glyph</span></li><li><span class="licensename"><span class="namespace">eclipse:</span>Adobe-Glyph</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Adobe-Glyph</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Adobe-Glyph</span></li><li><span class="licensename"><span class="namespace">scancode:</span>adobe-glyph</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph</span></li><li><span class="licensename">Adobe-Glyph License</span></li><li><span class="licensename">MIT</span></li><li><span class="licensename">mit-license</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:655d1a52375b1b019d40bf1083d64322">[<a href="/fact/ScancodeData/655d1a52375b1b019d40bf1083d64322">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:16a16500ca5fac6be1a8c9a1db594672">[<a href="/fact/SPDXLicense/16a16500ca5fac6be1a8c9a1db594672">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:dd1752409a43364fc364c0eea1616c06">[<a href="/fact/FedoraEntry/dd1752409a43364fc364c0eea1616c06">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a12728cf473e43023990beb0899a84a9">[<a href="/fact/MetaeffektLicense/a12728cf473e43023990beb0899a84a9">MetaeffektLicense</a>]</span>)</span></li><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:5d083d8808f7ac7d51e5b29466c1a98c">[<a href="/fact/EclipseLicense/5d083d8808f7ac7d51e5b29466c1a98c">EclipseLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d027da4c01ff5114957019b7e2969b8a">[<a href="/fact/OrtLicenseCategorization/d027da4c01ff5114957019b7e2969b8a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d027da4c01ff5114957019b7e2969b8a">[<a href="/fact/OrtLicenseCategorization/d027da4c01ff5114957019b7e2969b8a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9997f9eece8709a527950fe9c6e60ee8">[<a href="/fact/OrtLicenseCategorization/9997f9eece8709a527950fe9c6e60ee8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9997f9eece8709a527950fe9c6e60ee8">[<a href="/fact/OrtLicenseCategorization/9997f9eece8709a527950fe9c6e60ee8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9997f9eece8709a527950fe9c6e60ee8">[<a href="/fact/OrtLicenseCategorization/9997f9eece8709a527950fe9c6e60ee8">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:
+
+     - No modification, editing or other alteration of this document is allowed; and
+     - The above copyright notice and this permission notice shall be included in all copies of the documentation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.
+
+Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an &quot;AS IS&quot; basis.Ê Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file
+         to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit
+         others to do the same, provided that:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+          No modification, editing or other alteration of this document is allowed; and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+          The above copyright notice and this permission notice shall be included in all copies of the
+             documentation.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file,
+         to create their own derivative works from the content of this document to use, copy, publish,
+         distribute, sublicense, and/or sell the derivative works, and to permit others to do the same,
+         provided that the derived work is not represented as being a copy or version of this document.&lt;/p&gt;
+
+      &lt;p&gt;Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental,
+         special, consequential, or other similar damages, whether based on tort (including without limitation
+         negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been
+         advised or had reason to know of the possibility of such damages.&lt;var class=&quot;replaceable-license-text&quot;&gt; &lt;/var&gt; The Adobe
+         materials are provided on an &amp;quot;AS IS&amp;quot; basis.&lt;var class=&quot;replaceable-license-text&quot;&gt; &lt;/var&gt; Adobe specifically disclaims all
+         express, statutory, or implied warranties relating to the Adobe materials, including but not limited
+         to those concerning merchantability or fitness for a particular purpose or non-infringement of any
+         third party rights regarding the Adobe materials.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that: 
+     - No modification, editing or other alteration of this document is allowed; and 
+     - The above copyright notice and this permission notice shall be included in all copies of the documentation. 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document. 
+
+Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an &quot;AS IS&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:
+
+   - No modification, editing or other alteration of this document is allowed; and
+
+   - The above copyright notice and this permission notice shall be included in all copies of the documentation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.
+
+Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an &quot;AS IS&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/16a16500ca5fac6be1a8c9a1db594672">SPDXLicense:16a16500ca5fac6be1a8c9a1db594672</a> for <a href="/?license=spdx:Adobe-Glyph"><span class="licensename"><span class="namespace">spdx:</span>Adobe-Glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph List License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:16a16500ca5fac6be1a8c9a1db594672">[<a href="/fact/SPDXLicense/16a16500ca5fac6be1a8c9a1db594672">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:
+
+     - No modification, editing or other alteration of this document is allowed; and
+     - The above copyright notice and this permission notice shall be included in all copies of the documentation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.
+
+Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an &quot;AS IS&quot; basis.Ê Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file
+         to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit
+         others to do the same, provided that:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+          No modification, editing or other alteration of this document is allowed; and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+          The above copyright notice and this permission notice shall be included in all copies of the
+             documentation.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file,
+         to create their own derivative works from the content of this document to use, copy, publish,
+         distribute, sublicense, and/or sell the derivative works, and to permit others to do the same,
+         provided that the derived work is not represented as being a copy or version of this document.&lt;/p&gt;
+
+      &lt;p&gt;Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental,
+         special, consequential, or other similar damages, whether based on tort (including without limitation
+         negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been
+         advised or had reason to know of the possibility of such damages.&lt;var class=&quot;replaceable-license-text&quot;&gt; &lt;/var&gt; The Adobe
+         materials are provided on an &amp;quot;AS IS&amp;quot; basis.&lt;var class=&quot;replaceable-license-text&quot;&gt; &lt;/var&gt; Adobe specifically disclaims all
+         express, statutory, or implied warranties relating to the Adobe materials, including but not limited
+         to those concerning merchantability or fitness for a particular purpose or non-infringement of any
+         third party rights regarding the Adobe materials.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Adobe-Glyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph List License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;16a16500ca5fac6be1a8c9a1db594672&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:\n\n     - No modification, editing or other alteration of this document is allowed; and\n     - The above copyright notice and this permission notice shall be included in all copies of the documentation.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.\n\nAdobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an \&quot;AS IS\&quot; basis.Ê Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file\n         to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit\n         others to do the same, provided that:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n          No modification, editing or other alteration of this document is allowed; and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n          The above copyright notice and this permission notice shall be included in all copies of the\n             documentation.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file,\n         to create their own derivative works from the content of this document to use, copy, publish,\n         distribute, sublicense, and/or sell the derivative works, and to permit others to do the same,\n         provided that the derived work is not represented as being a copy or version of this document.&lt;/p&gt;\n\n      &lt;p&gt;Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental,\n         special, consequential, or other similar damages, whether based on tort (including without limitation\n         negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been\n         advised or had reason to know of the possibility of such damages.&lt;var class=\&quot;replaceable-license-text\&quot;&gt; &lt;/var&gt; The Adobe\n         materials are provided on an &amp;quot;AS IS&amp;quot; basis.&lt;var class=\&quot;replaceable-license-text\&quot;&gt; &lt;/var&gt; Adobe specifically disclaims all\n         express, statutory, or implied warranties relating to the Adobe materials, including but not limited\n         to those concerning merchantability or fitness for a particular purpose or non-infringement of any\n         third party rights regarding the Adobe materials.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:06Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Adobe-Glyph&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:\n\n     - No modification, editing or other alteration of this document is allowed; and\n     - The above copyright notice and this permission notice shall be included in all copies of the documentation.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.\n\nAdobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an \&quot;AS IS\&quot; basis.Ê Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file\n         to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit\n         others to do the same, provided that:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n          No modification, editing or other alteration of this document is allowed; and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n          The above copyright notice and this permission notice shall be included in all copies of the\n             documentation.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file,\n         to create their own derivative works from the content of this document to use, copy, publish,\n         distribute, sublicense, and/or sell the derivative works, and to permit others to do the same,\n         provided that the derived work is not represented as being a copy or version of this document.&lt;/p&gt;\n\n      &lt;p&gt;Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental,\n         special, consequential, or other similar damages, whether based on tort (including without limitation\n         negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been\n         advised or had reason to know of the possibility of such damages.&lt;var class=\&quot;replaceable-license-text\&quot;&gt; &lt;/var&gt; The Adobe\n         materials are provided on an &amp;quot;AS IS&amp;quot; basis.&lt;var class=\&quot;replaceable-license-text\&quot;&gt; &lt;/var&gt; Adobe specifically disclaims all\n         express, statutory, or implied warranties relating to the Adobe materials, including but not limited\n         to those concerning merchantability or fitness for a particular purpose or non-infringement of any\n         third party rights regarding the Adobe materials.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Adobe Glyph List License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;-\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; No modification, editing or other alteration of this document is allowed; and\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;-\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The above copyright notice and this permission notice shall be included in all copies of the documentation.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.\n\nAdobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. &lt;&lt;var;name=\&quot;eCircumflex1\&quot;;original=\&quot;\&quot;;match=\&quot;Ê?\&quot;&gt;&gt; The Adobe materials are provided on an \&quot;AS IS\&quot; basis. &lt;&lt;var;name=\&quot;eCircumflex2\&quot;;original=\&quot;\&quot;;match=\&quot;Ê?\&quot;&gt;&gt; Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/dd1752409a43364fc364c0eea1616c06">FedoraEntry:dd1752409a43364fc364c0eea1616c06</a> for <a href="/?license=Fedora:Adobe-Glyph"><span class="licensename"><span class="namespace">Fedora:</span>Adobe-Glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph List License</span></li><li><span class="licensename">MIT</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:dd1752409a43364fc364c0eea1616c06">[<a href="/fact/FedoraEntry/dd1752409a43364fc364c0eea1616c06">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Adobe-Glyph&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Adobe-Glyph&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph List License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;dd1752409a43364fc364c0eea1616c06&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MIT&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Adobe Glyph List License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Adobe-Glyph&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Adobe-Glyph&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/655d1a52375b1b019d40bf1083d64322">ScancodeData:655d1a52375b1b019d40bf1083d64322</a> for <a href="/?license=scancode:adobe-glyph"><span class="licensename"><span class="namespace">scancode:</span>adobe-glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>adobe-glyph</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph License</span></li><li><span class="licensename">Adobe Glyph License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:655d1a52375b1b019d40bf1083d64322">[<a href="/fact/ScancodeData/655d1a52375b1b019d40bf1083d64322">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that: 
+     - No modification, editing or other alteration of this document is allowed; and 
+     - The above copyright notice and this permission notice shall be included in all copies of the documentation. 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document. 
+
+Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an &quot;AS IS&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:adobe-glyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;655d1a52375b1b019d40bf1083d64322&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that: \n     - No modification, editing or other alteration of this document is allowed; and \n     - The above copyright notice and this permission notice shall be included in all copies of the documentation. \n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document. \n\nAdobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an \&quot;AS IS\&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;,
+        &quot;_key&quot;: &quot;adobe-glyph&quot;,
+        &quot;_name&quot;: &quot;Adobe Glyph License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Adobe Systems&quot;,
+        &quot;_shortName&quot;: &quot;Adobe Glyph License&quot;,
+        &quot;_spdxId&quot;: &quot;Adobe-Glyph&quot;,
+        &quot;_text&quot;: &quot;Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that: \n     - No modification, editing or other alteration of this document is allowed; and \n     - The above copyright notice and this permission notice shall be included in all copies of the documentation. \n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document. \n\nAdobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an \&quot;AS IS\&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/91f3ebf51dc48b668e47bc784239d9aa">Fossology:91f3ebf51dc48b668e47bc784239d9aa</a> for <a href="/?license=fossology:Adobe-Glyph"><span class="licensename"><span class="namespace">fossology:</span>Adobe-Glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph List License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph" target="_blank">https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:
+
+   - No modification, editing or other alteration of this document is allowed; and
+
+   - The above copyright notice and this permission notice shall be included in all copies of the documentation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.
+
+Adobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an &quot;AS IS&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Adobe-Glyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph List License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;91f3ebf51dc48b668e47bc784239d9aa&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:\n\n   - No modification, editing or other alteration of this document is allowed; and\n\n   - The above copyright notice and this permission notice shall be included in all copies of the documentation.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.\n\nAdobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an \&quot;AS IS\&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Adobe Glyph List License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Adobe-Glyph&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright (c) 1997,1998,2002,2007 Adobe Systems Incorporated\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that:\n\n   - No modification, editing or other alteration of this document is allowed; and\n\n   - The above copyright notice and this permission notice shall be included in all copies of the documentation.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this documentation file, to create their own derivative works from the content of this document to use, copy, publish, distribute, sublicense, and/or sell the derivative works, and to permit others to do the same, provided that the derived work is not represented as being a copy or version of this document.\n\nAdobe shall not be liable to any party for any loss of revenue or profit or for indirect, incidental, special, consequential, or other similar damages, whether based on tort (including without limitation negligence or strict liability), contract or other legal or equitable grounds even if Adobe has been advised or had reason to know of the possibility of such damages. The Adobe materials are provided on an \&quot;AS IS\&quot; basis. Adobe specifically disclaims all express, statutory, or implied warranties relating to the Adobe materials, including but not limited to those concerning merchantability or fitness for a particular purpose or non-infringement of any third party rights regarding the Adobe materials.&quot;,
+        &quot;_rf_text_updatable&quot;: true,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/d027da4c01ff5114957019b7e2969b8a">OrtLicenseCategorization:d027da4c01ff5114957019b7e2969b8a</a> for <a href="/?license=SPDX:Adobe-Glyph"><span class="licensename"><span class="namespace">SPDX:</span>Adobe-Glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Adobe-Glyph</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d027da4c01ff5114957019b7e2969b8a">[<a href="/fact/OrtLicenseCategorization/d027da4c01ff5114957019b7e2969b8a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d027da4c01ff5114957019b7e2969b8a">[<a href="/fact/OrtLicenseCategorization/d027da4c01ff5114957019b7e2969b8a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Adobe-Glyph&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d027da4c01ff5114957019b7e2969b8a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Adobe-Glyph&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/9997f9eece8709a527950fe9c6e60ee8">OrtLicenseCategorization:9997f9eece8709a527950fe9c6e60ee8</a> for <a href="/?license=SPDX:Adobe-Glyph"><span class="licensename"><span class="namespace">SPDX:</span>Adobe-Glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Adobe-Glyph</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9997f9eece8709a527950fe9c6e60ee8">[<a href="/fact/OrtLicenseCategorization/9997f9eece8709a527950fe9c6e60ee8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9997f9eece8709a527950fe9c6e60ee8">[<a href="/fact/OrtLicenseCategorization/9997f9eece8709a527950fe9c6e60ee8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9997f9eece8709a527950fe9c6e60ee8">[<a href="/fact/OrtLicenseCategorization/9997f9eece8709a527950fe9c6e60ee8">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Adobe-Glyph&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9997f9eece8709a527950fe9c6e60ee8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Adobe-Glyph&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/d7cee42b3c37e48028cd2f915e18d541">CavilLicenseChange:d7cee42b3c37e48028cd2f915e18d541</a> for <a href="/?license=cavil:Adobe-Glyph"><span class="licensename"><span class="namespace">cavil:</span>Adobe-Glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe-Glyph</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Adobe-Glyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Adobe-Glyph&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;d7cee42b3c37e48028cd2f915e18d541&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Adobe-Glyph&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Adobe-Glyph&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/a12728cf473e43023990beb0899a84a9">MetaeffektLicense:a12728cf473e43023990beb0899a84a9</a> for <a href="/?license=metaeffekt:Adobe Glyph License"><span class="licensename"><span class="namespace">metaeffekt:</span>Adobe Glyph License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Adobe Glyph License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseName Hints (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph</span></li><li><span class="licensename">Adobe Glyph License</span></li><li><span class="licensename">ADOBE GLYPH LICENSE</span></li><li><span class="licensename">ADOBE GLYPH License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>adobe-glyph</span></li><li><span class="licensename">Adobe-Glyph License</span></li><li><span class="licensename">ADOBE-GLYPH LICENSE</span></li><li><span class="licensename">ADOBE-GLYPH License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a12728cf473e43023990beb0899a84a9">[<a href="/fact/MetaeffektLicense/a12728cf473e43023990beb0899a84a9">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Adobe Glyph License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Adobe-Glyph&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ADOBE GLYPH LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ADOBE GLYPH License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Adobe-Glyph License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ADOBE-GLYPH LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ADOBE-GLYPH License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:adobe-glyph&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;a12728cf473e43023990beb0899a84a9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Adobe Glyph License&quot;,
+            &quot;ADOBE GLYPH LICENSE&quot;,
+            &quot;ADOBE GLYPH License&quot;,
+            &quot;Adobe-Glyph License&quot;,
+            &quot;ADOBE-GLYPH LICENSE&quot;,
+            &quot;ADOBE-GLYPH License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Adobe Glyph License&quot;,
+        &quot;_category&quot;: &quot;Adobe Glyph&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:adobe-glyph&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Adobe-Glyph&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Eclipse">Eclipse</a>: <a href="/fact/EclipseLicense/5d083d8808f7ac7d51e5b29466c1a98c">EclipseLicense:5d083d8808f7ac7d51e5b29466c1a98c</a> for <a href="/?license=eclipse:Adobe-Glyph"><span class="licensename"><span class="namespace">eclipse:</span>Adobe-Glyph</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">eclipse:</span>Adobe-Glyph</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Adobe Glyph List License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:5d083d8808f7ac7d51e5b29466c1a98c">[<a href="/fact/EclipseLicense/5d083d8808f7ac7d51e5b29466c1a98c">EclipseLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;eclipse:Adobe-Glyph&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Adobe Glyph List License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;EclipseLicense&quot;,
+        &quot;5d083d8808f7ac7d51e5b29466c1a98c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;EclipseLicense&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. &quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;eclipse:Adobe-Glyph&quot;,
+            &quot;Adobe Glyph List License&quot;
+        ],
+        &quot;tag&quot;: &quot;ApprovedLicense&quot;
+    },
+    &quot;type&quot;: &quot;EclipseLicense&quot;
+}</pre></details></li></ul></body></html>

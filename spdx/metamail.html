@@ -1,0 +1,603 @@
+<html><head><title>ldbcollector: spdx:metamail</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:metamail</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>metamail</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">metamail</span></li><li><span class="licensename"><span class="namespace">cavil:</span>metamail</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>metamail</span></li><li><span class="licensename"><span class="namespace">scancode:</span>metamail</span></li><li><span class="licensename"><span class="namespace">spdx:</span>metamail</span></li><li><span class="licensename">metamail License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>metamail License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bellcore License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:7fd166a0d3c5f2cc02282523f3f8b6b8">[<a href="/fact/ScancodeData/7fd166a0d3c5f2cc02282523f3f8b6b8">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:684461fba1c3b8d503761ea846291eea">[<a href="/fact/SPDXLicense/684461fba1c3b8d503761ea846291eea">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:3fc3b262a93a570ce788d69ea739886e">[<a href="/fact/FedoraEntry/3fc3b262a93a570ce788d69ea739886e">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:d75e25d5d5c14a1a8647692fa2874df1">[<a href="/fact/MetaeffektLicense/d75e25d5d5c14a1a8647692fa2874df1">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:062938e9d98d68be59d607fbac9ec25f">[<a href="/fact/OrtLicenseCategorization/062938e9d98d68be59d607fbac9ec25f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:062938e9d98d68be59d607fbac9ec25f">[<a href="/fact/OrtLicenseCategorization/062938e9d98d68be59d607fbac9ec25f">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12" target="_blank">https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)
+
+Permission to use, copy, modify, and distribute this material
+for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice
+appear in all copies, and that the name of Bellcore not be
+used in advertising or publicity pertaining to this
+material without the specific, prior written permission
+of an authorized representative of Bellcore.	BELLCORE
+MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY
+OF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED &quot;AS IS&quot;,
+WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+	       Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this material
+            for any purpose and without fee is hereby granted, provided
+            that the above copyright notice and this permission notice
+            appear in all copies, and that the name of Bellcore not be
+            used in advertising or publicity pertaining to this
+            material without the specific, prior written permission
+            of an authorized representative of Bellcore. BELLCORE
+            MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY
+            OF THIS MATERIAL FOR ANY PURPOSE. IT IS PROVIDED &amp;quot;AS IS&amp;quot;,
+            WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this material
+for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice
+appear in all copies, and that the name of Bellcore not be
+used in advertising or publicity pertaining to this
+material without the specific, prior written permission
+of an authorized representative of Bellcore.	BELLCORE
+MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY
+OF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED &quot;AS IS&quot;,
+WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/684461fba1c3b8d503761ea846291eea">SPDXLicense:684461fba1c3b8d503761ea846291eea</a> for <a href="/?license=spdx:metamail"><span class="licensename"><span class="namespace">spdx:</span>metamail</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>metamail</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">metamail License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:684461fba1c3b8d503761ea846291eea">[<a href="/fact/SPDXLicense/684461fba1c3b8d503761ea846291eea">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12" target="_blank">https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)
+
+Permission to use, copy, modify, and distribute this material
+for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice
+appear in all copies, and that the name of Bellcore not be
+used in advertising or publicity pertaining to this
+material without the specific, prior written permission
+of an authorized representative of Bellcore.	BELLCORE
+MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY
+OF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED &quot;AS IS&quot;,
+WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+	       Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify, and distribute this material
+            for any purpose and without fee is hereby granted, provided
+            that the above copyright notice and this permission notice
+            appear in all copies, and that the name of Bellcore not be
+            used in advertising or publicity pertaining to this
+            material without the specific, prior written permission
+            of an authorized representative of Bellcore. BELLCORE
+            MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY
+            OF THIS MATERIAL FOR ANY PURPOSE. IT IS PROVIDED &amp;quot;AS IS&amp;quot;,
+            WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:metamail&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;metamail License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;684461fba1c3b8d503761ea846291eea&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)\n\nPermission to use, copy, modify, and distribute this material\nfor any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice\nappear in all copies, and that the name of Bellcore not be\nused in advertising or publicity pertaining to this\nmaterial without the specific, prior written permission\nof an authorized representative of Bellcore.\tBELLCORE\nMAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY\nOF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED \&quot;AS IS\&quot;,\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n\t       Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this material\n            for any purpose and without fee is hereby granted, provided\n            that the above copyright notice and this permission notice\n            appear in all copies, and that the name of Bellcore not be\n            used in advertising or publicity pertaining to this\n            material without the specific, prior written permission\n            of an authorized representative of Bellcore. BELLCORE\n            MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY\n            OF THIS MATERIAL FOR ANY PURPOSE. IT IS PROVIDED &amp;quot;AS IS&amp;quot;,\n            WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:13:00Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:metamail&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)\n\nPermission to use, copy, modify, and distribute this material\nfor any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice\nappear in all copies, and that the name of Bellcore not be\nused in advertising or publicity pertaining to this\nmaterial without the specific, prior written permission\nof an authorized representative of Bellcore.\tBELLCORE\nMAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY\nOF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED \&quot;AS IS\&quot;,\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n\t       Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify, and distribute this material\n            for any purpose and without fee is hereby granted, provided\n            that the above copyright notice and this permission notice\n            appear in all copies, and that the name of Bellcore not be\n            used in advertising or publicity pertaining to this\n            material without the specific, prior written permission\n            of an authorized representative of Bellcore. BELLCORE\n            MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY\n            OF THIS MATERIAL FOR ANY PURPOSE. IT IS PROVIDED &amp;quot;AS IS&amp;quot;,\n            WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;metamail License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this material for any purpose and without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies, and that the name of Bellcore not be used in advertising or publicity pertaining to this material without the specific, prior written permission of an authorized representative of Bellcore. BELLCORE MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY OF THIS MATERIAL FOR ANY PURPOSE. IT IS PROVIDED \&quot;AS IS\&quot;, WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/3fc3b262a93a570ce788d69ea739886e">FedoraEntry:3fc3b262a93a570ce788d69ea739886e</a> for <a href="/?license=Fedora:metamail"><span class="licensename"><span class="namespace">Fedora:</span>metamail</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>metamail</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>metamail</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:3fc3b262a93a570ce788d69ea739886e">[<a href="/fact/FedoraEntry/3fc3b262a93a570ce788d69ea739886e">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:metamail&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:metamail&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;3fc3b262a93a570ce788d69ea739886e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;metamail&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:metamail&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/7fd166a0d3c5f2cc02282523f3f8b6b8">ScancodeData:7fd166a0d3c5f2cc02282523f3f8b6b8</a> for <a href="/?license=scancode:metamail"><span class="licensename"><span class="namespace">scancode:</span>metamail</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>metamail</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">metamail License</span></li><li><span class="licensename">metamail License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:7fd166a0d3c5f2cc02282523f3f8b6b8">[<a href="/fact/ScancodeData/7fd166a0d3c5f2cc02282523f3f8b6b8">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12" target="_blank">https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this material
+for any purpose and without fee is hereby granted, provided
+that the above copyright notice and this permission notice
+appear in all copies, and that the name of Bellcore not be
+used in advertising or publicity pertaining to this
+material without the specific, prior written permission
+of an authorized representative of Bellcore.	BELLCORE
+MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY
+OF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED &quot;AS IS&quot;,
+WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:metamail&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;metamail License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;metamail License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;7fd166a0d3c5f2cc02282523f3f8b6b8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, and distribute this material\nfor any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice\nappear in all copies, and that the name of Bellcore not be\nused in advertising or publicity pertaining to this\nmaterial without the specific, prior written permission\nof an authorized representative of Bellcore.\tBELLCORE\nMAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY\nOF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED \&quot;AS IS\&quot;,\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;metamail&quot;,
+        &quot;_name&quot;: &quot;metamail License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/Dual-Life/mime-base64/blob/master/Base64.xs#L12&quot;
+        ],
+        &quot;_owner&quot;: &quot;Bellcore&quot;,
+        &quot;_shortName&quot;: &quot;metamail License&quot;,
+        &quot;_spdxId&quot;: &quot;metamail&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, and distribute this material\nfor any purpose and without fee is hereby granted, provided\nthat the above copyright notice and this permission notice\nappear in all copies, and that the name of Bellcore not be\nused in advertising or publicity pertaining to this\nmaterial without the specific, prior written permission\nof an authorized representative of Bellcore.\tBELLCORE\nMAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY\nOF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED \&quot;AS IS\&quot;,\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/062938e9d98d68be59d607fbac9ec25f">OrtLicenseCategorization:062938e9d98d68be59d607fbac9ec25f</a> for <a href="/?license=SPDX:metamail"><span class="licensename"><span class="namespace">SPDX:</span>metamail</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>metamail</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:062938e9d98d68be59d607fbac9ec25f">[<a href="/fact/OrtLicenseCategorization/062938e9d98d68be59d607fbac9ec25f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:062938e9d98d68be59d607fbac9ec25f">[<a href="/fact/OrtLicenseCategorization/062938e9d98d68be59d607fbac9ec25f">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:metamail&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;062938e9d98d68be59d607fbac9ec25f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:metamail&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/0fbd993e86ea8593b146cfb4b9b66d56">CavilLicenseChange:0fbd993e86ea8593b146cfb4b9b66d56</a> for <a href="/?license=cavil:metamail"><span class="licensename"><span class="namespace">cavil:</span>metamail</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>metamail</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">metamail</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:metamail&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;metamail&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;0fbd993e86ea8593b146cfb4b9b66d56&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;metamail&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:metamail&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/d75e25d5d5c14a1a8647692fa2874df1">MetaeffektLicense:d75e25d5d5c14a1a8647692fa2874df1</a> for <a href="/?license=metaeffekt:metamail License"><span class="licensename"><span class="namespace">metaeffekt:</span>metamail License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>metamail License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>metamail</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Bellcore License</span></li><li><span class="licensename">metamail</span></li><li><span class="licensename"><span class="namespace">scancode:</span>metamail</span></li><li><span class="licensename">metamail License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:d75e25d5d5c14a1a8647692fa2874df1">[<a href="/fact/MetaeffektLicense/d75e25d5d5c14a1a8647692fa2874df1">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:metamail License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:metamail&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;metamail&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Bellcore License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;metamail License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:metamail&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;d75e25d5d5c14a1a8647692fa2874df1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Bellcore License&quot;,
+            &quot;metamail License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:metamail License&quot;,
+        &quot;_category&quot;: &quot;metamail&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:metamail&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:metamail&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

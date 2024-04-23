@@ -1,0 +1,2723 @@
+<html><head><title>ldbcollector: spdx:WTFPL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:WTFPL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (34):</b><ul class="capsulUl clearfix"><li><span class="licensename">DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE</span></li><li><span class="licensename">Do What The F*ck You Want To Public License</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Do What The F*ck You Want To Public License</span></li><li><span class="licensename">Do What The Firetruck You Want To Public License</span></li><li><span class="licensename">DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</span></li><li><span class="licensename">Do What The Fuck You Want To Public License (WTFPL) 2</span></li><li><span class="licensename">Do What The Fuck You Want To Public License, Version 2</span></li><li><span class="licensename">Do What you Want</span></li><li><span class="licensename">DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1</span></li><li><span class="licensename">DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0</span></li><li><span class="licensename">http://sam.zoy.org/wtfpl/</span></li><li><span class="licensename">http://www.wtfpl.net/about/</span></li><li><span class="licensename">scancode://wtfpl-2.0</span></li><li><span class="licensename">scancode:wtfpl-2.0</span></li><li><span class="licensename">WTF Public License 2.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>WTF Public License 2.0</span></li><li><span class="licensename">WTFPL</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">cal:</span>wtfpl</span></li><li><span class="licensename"><span class="namespace">cavil:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">eclipse:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">fossology:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">fsf:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">google:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">osadl:</span>WTFPL</span></li><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li><li><span class="licensename">WTFPL 2.0</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>WTFPL 2.0</span></li><li><span class="licensename">WTFPL, Version 2</span></li><li><span class="licensename">wtfpl-2.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>WTFPL-2.0</span></li><li><span class="licensename"><span class="namespace">osi:</span>WTFPL-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>wtfpl-2.0</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//sam.zoy.org/wtfpl/</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.wtfpl.net/about/</span></li><li><span class="licensename">SUSE-WTFPL-2.0</span></li><li><span class="licensename">WTF Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:31c2301045d845ed8e129e406c92a817">[<a href="/fact/BlueOakCouncil/31c2301045d845ed8e129e406c92a817">BlueOakCouncil</a>]</span><span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span><span title="FOSSLight:7827893443f53b171a800a1ecf639f0a">[<a href="/fact/FOSSLight/7827893443f53b171a800a1ecf639f0a">FOSSLight</a>]</span>)</span></li><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:324b982413d9298ae51c4356711b65e8">[<a href="/fact/ScancodeData/324b982413d9298ae51c4356711b65e8">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:912c57655becacb05b75494ae542a113">[<a href="/fact/SPDXLicense/912c57655becacb05b75494ae542a113">SPDXLicense</a>]</span><span title="FSF:87b7d3911a0ac3e99bd698fa2649a8c2">[<a href="/fact/FSF/87b7d3911a0ac3e99bd698fa2649a8c2">FSF</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:912c57655becacb05b75494ae542a113">[<a href="/fact/SPDXLicense/912c57655becacb05b75494ae542a113">SPDXLicense</a>]</span><span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:0f78d88cec6e4a63034fab562e6116ab">[<a href="/fact/FedoraEntry/0f78d88cec6e4a63034fab562e6116ab">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:31c2301045d845ed8e129e406c92a817">[<a href="/fact/BlueOakCouncil/31c2301045d845ed8e129e406c92a817">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:454d97134e90b475a8aa1399b6aedde4">[<a href="/fact/MetaeffektLicense/454d97134e90b475a8aa1399b6aedde4">MetaeffektLicense</a>]</span>)</span></li><li><span title="">HermineLicense: <b style="color: green;">FOSS - deduced</b></span><span class="provided-by">(provided by: <span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span>)</span></li><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:98638f68940942c84b06a63acdecdfb9">[<a href="/fact/EclipseLicense/98638f68940942c84b06a63acdecdfb9">EclipseLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">FSF: <b>gpl-2-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:87b7d3911a0ac3e99bd698fa2649a8c2">[<a href="/fact/FSF/87b7d3911a0ac3e99bd698fa2649a8c2">FSF</a>]</span>)</span></li><li><span title="">FSF: <b>gpl-3-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:87b7d3911a0ac3e99bd698fa2649a8c2">[<a href="/fact/FSF/87b7d3911a0ac3e99bd698fa2649a8c2">FSF</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:379b2c46a79db15bbcbb0adb27738de7">[<a href="/fact/OrtLicenseCategorization/379b2c46a79db15bbcbb0adb27738de7">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:379b2c46a79db15bbcbb0adb27738de7">[<a href="/fact/OrtLicenseCategorization/379b2c46a79db15bbcbb0adb27738de7">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:229c2e6a5d2044a20b7be0c44fb0eb1d">[<a href="/fact/OrtLicenseCategorization/229c2e6a5d2044a20b7be0c44fb0eb1d">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ChooseALicense: </b>The easiest license out there. It gives the user permissions to do whatever they want with your code.<span class="provided-by">(provided by: <span title="ChooseALicense:eb8d08660724f539f9ef205766b21ef1">[<a href="/fact/ChooseALicense/eb8d08660724f539f9ef205766b21ef1">ChooseALicense</a>]</span>)</span></li><li><b>ChooseALicense: </b>How to apply this license:
+Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.<span class="provided-by">(provided by: <span title="ChooseALicense:eb8d08660724f539f9ef205766b21ef1">[<a href="/fact/ChooseALicense/eb8d08660724f539f9ef205766b21ef1">ChooseALicense</a>]</span>)</span></li><li><b>HermineLicense: </b>&quot;WTFPL&quot; is of radical: WTFPL<span class="provided-by">(provided by: <span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">http://sam.zoy.org/wtfpl/COPYING</a></li><li><a href="http://www.wtfpl.net/about/" target="_blank">http://www.wtfpl.net/about/</a></li><li><a href="https://spdx.org/licenses/WTFPL.html" target="_blank">https://spdx.org/licenses/WTFPL.html</a></li><li><a href="https://www.gnu.org/licenses/license-list.html#WTFPL" target="_blank">https://www.gnu.org/licenses/license-list.html#WTFPL</a></li><li><a href="http://fedoraproject.org/wiki/Licensing/WTFPL" target="_blank">http://fedoraproject.org/wiki/Licensing/WTFPL</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://sam.zoy.org/wtfpl/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;
+
+Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+        &lt;br /&gt;
+
+Version 2, December 2004
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Copyright (C) 2004 Sam Hocevar &amp;lt;sam@hocevar.net&amp;gt;&lt;/p&gt;
+
+      &lt;p&gt;Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and
+         changing it is allowed as long as the name is changed.&lt;/p&gt;
+
+      &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+        &lt;br /&gt;
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+          You just DO WHAT THE FUCK YOU WANT TO.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2004 Sam Hocevar
+  14 rue de Plaisance, 75014 Paris, France
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.</pre></details></li><li><details><summary>Text:</summary><pre>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+
+Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;
+
+Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+   0. You just DO WHAT THE FUCK YOU WANT TO.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/912c57655becacb05b75494ae542a113">SPDXLicense:912c57655becacb05b75494ae542a113</a> for <a href="/?license=spdx:WTFPL"><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Do What The F*ck You Want To Public License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:912c57655becacb05b75494ae542a113">[<a href="/fact/SPDXLicense/912c57655becacb05b75494ae542a113">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:912c57655becacb05b75494ae542a113">[<a href="/fact/SPDXLicense/912c57655becacb05b75494ae542a113">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">http://sam.zoy.org/wtfpl/COPYING</a></li><li><a href="http://www.wtfpl.net/about/" target="_blank">http://www.wtfpl.net/about/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;
+
+Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+        &lt;br /&gt;
+
+Version 2, December 2004
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Copyright (C) 2004 Sam Hocevar &amp;lt;sam@hocevar.net&amp;gt;&lt;/p&gt;
+
+      &lt;p&gt;Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and
+         changing it is allowed as long as the name is changed.&lt;/p&gt;
+
+      &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+        &lt;br /&gt;
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+          You just DO WHAT THE FUCK YOU WANT TO.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;912c57655becacb05b75494ae542a113&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\nVersion 2, December 2004\n\nCopyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;\n\nEveryone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.\n\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n        &lt;br /&gt;\n\nVersion 2, December 2004\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Copyright (C) 2004 Sam Hocevar &amp;lt;sam@hocevar.net&amp;gt;&lt;/p&gt;\n\n      &lt;p&gt;Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and\n         changing it is allowed as long as the name is changed.&lt;/p&gt;\n\n      &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n        &lt;br /&gt;\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n          You just DO WHAT THE FUCK YOU WANT TO.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.wtfpl.net/about/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.wtfpl.net/about/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:42Z&quot;,
+                &quot;url&quot;: &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+            },
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:42Z&quot;,
+                &quot;url&quot;: &quot;http://www.wtfpl.net/about/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: true,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:WTFPL&quot;,
+        &quot;licenseText&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\nVersion 2, December 2004\n\nCopyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;\n\nEveryone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.\n\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n        &lt;br /&gt;\n\nVersion 2, December 2004\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Copyright (C) 2004 Sam Hocevar &amp;lt;sam@hocevar.net&amp;gt;&lt;/p&gt;\n\n      &lt;p&gt;Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and\n         changing it is allowed as long as the name is changed.&lt;/p&gt;\n\n      &lt;p&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n        &lt;br /&gt;\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n          You just DO WHAT THE FUCK YOU WANT TO.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.wtfpl.net/about/&quot;,
+            &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n\nVersion 2, December 2004\n\n&lt;&lt;endOptional&gt;&gt;\n\nCopyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;\n\nEveryone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.\n\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You just DO WHAT THE FUCK YOU WANT TO.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/ea0a495904373d7b41d6a2d8a87728e6">GoogleLicense:ea0a495904373d7b41d6a2d8a87728e6</a> for <a href="/?license=google:WTFPL"><span class="licensename"><span class="namespace">google:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;ea0a495904373d7b41d6a2d8a87728e6&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:WTFPL&quot;,
+        &quot;googleLicenseType&quot;: &quot;forbidden&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;forbidden - Licenses that are forbidden to be used.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:WTFPL&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/0f78d88cec6e4a63034fab562e6116ab">FedoraEntry:0f78d88cec6e4a63034fab562e6116ab</a> for <a href="/?license=Fedora:WTFPL"><span class="licensename"><span class="namespace">Fedora:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Do What The F*ck You Want To Public License</span></li><li><span class="licensename">WTFPL</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:0f78d88cec6e4a63034fab562e6116ab">[<a href="/fact/FedoraEntry/0f78d88cec6e4a63034fab562e6116ab">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:WTFPL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;0f78d88cec6e4a63034fab562e6116ab&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;WTFPL&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Do What The F*ck You Want To Public License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;WTFPL&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:WTFPL&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/31c2301045d845ed8e129e406c92a817">BlueOakCouncil:31c2301045d845ed8e129e406c92a817</a> for <a href="/?license=BlueOak:WTFPL"><span class="licensename"><span class="namespace">BlueOak:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Do What The F*ck You Want To Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:31c2301045d845ed8e129e406c92a817">[<a href="/fact/BlueOakCouncil/31c2301045d845ed8e129e406c92a817">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:31c2301045d845ed8e129e406c92a817">[<a href="/fact/BlueOakCouncil/31c2301045d845ed8e129e406c92a817">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/WTFPL.html" target="_blank">https://spdx.org/licenses/WTFPL.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;31c2301045d845ed8e129e406c92a817&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/WTFPL.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;WTFPL&quot;,
+                &quot;_name&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/WTFPL.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLRule/f9f65420a8d0876a860778f814d6cedb">OSADLRule:f9f65420a8d0876a860778f814d6cedb</a> for <a href="/?license=osadl:WTFPL"><span class="licensename"><span class="namespace">osadl:</span>WTFPL</span></a></h3><pre>USE CASE Source code delivery OR Binary delivery
+</pre><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;osadl:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLRule&quot;,
+        &quot;f9f65420a8d0876a860778f814d6cedb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseRule&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    },
+                    {
+                        &quot;contents&quot;: null,
+                        &quot;tag&quot;: &quot;MaybeStatement&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n&quot;,
+        &quot;spdxId&quot;: &quot;osadl:WTFPL&quot;
+    },
+    &quot;type&quot;: &quot;OSADLRule&quot;
+}</pre></details></li><li><h3><a href="/source/OSADL">OSADL</a>: <a href="/fact/OSADLMatrix/f3814edad2361fbad6183a9799e8f3e4">OSADLMatrix:f3814edad2361fbad6183a9799e8f3e4</a> for <a href="/?license=osadl:WTFPL"><span class="licensename"><span class="namespace">osadl:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">osadl:</span>WTFPL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;osadl:WTFPL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OSADLMatrix&quot;,
+        &quot;f3814edad2361fbad6183a9799e8f3e4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;0BSD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-2.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;AFL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Apache-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Artistic-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;blessing&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;BSL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;CC0-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CDDL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;CPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;curl&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ECL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;EFL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;EUPL-1.2&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFAP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFUL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLR&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FSFULLRWD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;FTL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;HPND&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IBM-pibs&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ICU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;IJG&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ImageMagick&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Info-ZIP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;IPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ISC&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;JasPer-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Libpng&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libpng-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;libtiff&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Minpack&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MirOS&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;MIT-CMU&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;MS-PL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;MS-RL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NBPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NCSA&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;NTP&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                    &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                    &quot;_other&quot;: &quot;OpenSSL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;OSL-3.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PHP-3.01&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;PostgreSQL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Python-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Qhull&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;RSA-MD&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Saxpath&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;No&quot;,
+                    &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                    &quot;_other&quot;: &quot;Sleepycat&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SMLNJ&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SSH-short&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;SunPro&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Unlicense&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;UPL-1.0&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-19980720&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;W3C-20150513&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Same&quot;,
+                    &quot;_explanation&quot;: &quot;n.a.&quot;,
+                    &quot;_other&quot;: &quot;WTFPL&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;X11&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;XFree86-1.1&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;Zlib&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+                },
+                {
+                    &quot;_compatibility&quot;: &quot;Yes&quot;,
+                    &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                    &quot;_other&quot;: &quot;ZPL-2.0&quot;
+                }
+            ],
+            &quot;tag&quot;: &quot;LicenseCompatibilities&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_name&quot;: &quot;osadl:WTFPL&quot;,
+        &quot;compatibilities&quot;: [
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the 0BSD license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;0BSD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-2.1 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-2.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the AFL-3.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;AFL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the AGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;AGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-1.1 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Apache-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Apache-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-1.0-Perl license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-1.0-Perl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Artistic-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Artistic-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Bitstream-Vera license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Bitstream-Vera&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the blessing license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;blessing&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-1-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-1-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-2-Clause-Patent license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-2-Clause-Patent&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-3-Clause-Open-MPI license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-3-Clause-Open-MPI&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-4-Clause-UC license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-4-Clause-UC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSD-Source-Code license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSD-Source-Code&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the BSL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;BSL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.5 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the bzip2-1.0.6 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;bzip2-1.0.6&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-2.5 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-2.5&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC-BY-3.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC-BY-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the CC0-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;CC0-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CDDL-1.1 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CDDL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the CPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;CPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the curl license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;curl&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ECL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ECL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the EFL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;EFL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the EUPL-1.2 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;EUPL-1.2&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFAP license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFAP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFUL license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFUL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLR license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLR&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FSFULLRWD license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FSFULLRWD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the FTL license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;FTL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-1.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-1.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-only WITH Classpath-exception-2.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-only WITH Classpath-exception-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the GPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;GPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the HPND license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;HPND&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IBM-pibs license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IBM-pibs&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ICU license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ICU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the IJG license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;IJG&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ImageMagick license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ImageMagick&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Info-ZIP license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Info-ZIP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the IPL-1.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;IPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ISC license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ISC&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the JasPer-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;JasPer-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-2.1-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-2.1-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-only license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-only&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the LGPL-3.0-or-later license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;LGPL-3.0-or-later&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Libpng license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Libpng&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libpng-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libpng-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the libtiff license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;libtiff&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-info-zip-2003-05 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-info-zip-2003-05&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the LicenseRef-scancode-ppp license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;LicenseRef-scancode-ppp&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Minpack license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Minpack&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MirOS license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MirOS&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the MIT-CMU license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;MIT-CMU&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-1.1 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MPL-2.0-no-copyleft-exception license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MPL-2.0-no-copyleft-exception&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases. Interpretation: It is unclear whether &amp;quot;any portion of the software&amp;quot; assumes code changes and additions that also must be distributed &amp;quot;only under this license&amp;quot;. In addition, a &amp;quot;license that complies with this license&amp;quot; may or may not be interpreted as a copyleft clause. If not, the copyleft condition would depend on the mode of delivery which would require a case-by-case assessment. Therefore, a general recommendation on the compatibility of the MS-PL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;MS-PL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the MS-RL license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;MS-RL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NBPL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NBPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NCSA license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NCSA&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the NTP license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;NTP&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the OLDAP-2.8 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;OLDAP-2.8&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Unknown&quot;,
+                &quot;_explanation&quot;: &quot;The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases. Interpretation: The final statement of the appended SSLeay License &amp;quot;The licence and distribution terms for any publically available version or derivative of this code cannot be changed&amp;quot; normally must be interpreted as a copyleft clause, but there is no general consensus on this interpretation. Therefore, a recommendation on the compatibility of the OpenSSL license can only be given for selected cases.&quot;,
+                &quot;_other&quot;: &quot;OpenSSL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the OSL-3.0 license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;OSL-3.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PHP-3.01 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PHP-3.01&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the PostgreSQL license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;PostgreSQL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Python-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Python-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Qhull license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Qhull&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the RSA-MD license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;RSA-MD&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Saxpath license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Saxpath&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SGI-B-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SGI-B-2.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;No&quot;,
+                &quot;_explanation&quot;: &quot;Software under a copyleft license such as the Sleepycat license normally cannot be redistributed under a non-copyleft license such as the WTFPL license, except if it were explicitly permitted in the licenses.&quot;,
+                &quot;_other&quot;: &quot;Sleepycat&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SMLNJ license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SMLNJ&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-OpenSSH license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-OpenSSH&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SSH-short license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SSH-short&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the SunPro license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;SunPro&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2015 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2015&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unicode-DFS-2016 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unicode-DFS-2016&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Unlicense license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Unlicense&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the UPL-1.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;UPL-1.0&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-19980720 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-19980720&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the W3C-20150513 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;W3C-20150513&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Same&quot;,
+                &quot;_explanation&quot;: &quot;n.a.&quot;,
+                &quot;_other&quot;: &quot;WTFPL&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the X11 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;X11&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the XFree86-1.1 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;XFree86-1.1&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the Zlib license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;Zlib&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the zlib-acknowledgement license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;zlib-acknowledgement&quot;
+            },
+            {
+                &quot;_compatibility&quot;: &quot;Yes&quot;,
+                &quot;_explanation&quot;: &quot;Non-copyleft licenses such as the ZPL-2.0 license and the WTFPL license are generally considered mutually compatible.&quot;,
+                &quot;_other&quot;: &quot;ZPL-2.0&quot;
+            }
+        ]
+    },
+    &quot;type&quot;: &quot;OSADLMatrix&quot;
+}</pre></details></li><li><h3><a href="/source/FSF">FSF</a>: <a href="/fact/FSF/87b7d3911a0ac3e99bd698fa2649a8c2">FSF:87b7d3911a0ac3e99bd698fa2649a8c2</a> for <a href="/?license=fsf:WTFPL"><span class="licensename"><span class="namespace">fsf:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fsf:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">WTFPL, Version 2</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="FSF:87b7d3911a0ac3e99bd698fa2649a8c2">[<a href="/fact/FSF/87b7d3911a0ac3e99bd698fa2649a8c2">FSF</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">FSF: <b>gpl-2-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:87b7d3911a0ac3e99bd698fa2649a8c2">[<a href="/fact/FSF/87b7d3911a0ac3e99bd698fa2649a8c2">FSF</a>]</span>)</span></li><li><span title="">FSF: <b>gpl-3-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:87b7d3911a0ac3e99bd698fa2649a8c2">[<a href="/fact/FSF/87b7d3911a0ac3e99bd698fa2649a8c2">FSF</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/license-list.html#WTFPL" target="_blank">https://www.gnu.org/licenses/license-list.html#WTFPL</a></li><li><a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">http://sam.zoy.org/wtfpl/COPYING</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fsf:WTFPL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;WTFPL, Version 2&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FSF&quot;,
+        &quot;87b7d3911a0ac3e99bd698fa2649a8c2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/license-list.html#WTFPL&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;FSF&quot;,
+                    &quot;gpl-2-compatible&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;FSF&quot;,
+                    &quot;gpl-3-compatible&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_id&quot;: &quot;fsf:WTFPL&quot;,
+        &quot;_identifiers&quot;: {
+            &quot;spdx&quot;: [
+                &quot;WTFPL&quot;
+            ]
+        },
+        &quot;_name&quot;: &quot;WTFPL, Version 2&quot;,
+        &quot;_tags&quot;: [
+            &quot;gpl-2-compatible&quot;,
+            &quot;gpl-3-compatible&quot;,
+            &quot;libre&quot;
+        ],
+        &quot;_uris&quot;: [
+            &quot;https://www.gnu.org/licenses/license-list.html#WTFPL&quot;,
+            &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;FSF&quot;
+}</pre></details></li><li><h3><a href="/source/ChooseALicense">ChooseALicense</a>: <a href="/fact/ChooseALicense/eb8d08660724f539f9ef205766b21ef1">ChooseALicense:eb8d08660724f539f9ef205766b21ef1</a> for <a href="/?license=cal:wtfpl"><span class="licensename"><span class="namespace">cal:</span>wtfpl</span></a></h3><span>The easiest license out there. It gives the user permissions to do whatever they want with your code.</span><h5>Permissions</h5><ul><li>commercial-use</li><li>modifications</li><li>distribution</li><li>private-use</li></ul><h5>Conditions</h5><ul></ul><h5>Limitations</h5><ul></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cal:</span>wtfpl</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Do What The F*ck You Want To Public License</span></li><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>ChooseALicense: </b>The easiest license out there. It gives the user permissions to do whatever they want with your code.<span class="provided-by">(provided by: <span title="ChooseALicense:eb8d08660724f539f9ef205766b21ef1">[<a href="/fact/ChooseALicense/eb8d08660724f539f9ef205766b21ef1">ChooseALicense</a>]</span>)</span></li><li><b>ChooseALicense: </b>How to apply this license:
+Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.<span class="provided-by">(provided by: <span title="ChooseALicense:eb8d08660724f539f9ef205766b21ef1">[<a href="/fact/ChooseALicense/eb8d08660724f539f9ef205766b21ef1">ChooseALicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;cal:wtfpl&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ChooseALicense&quot;,
+        &quot;eb8d08660724f539f9ef205766b21ef1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;ChooseALicense&quot;,
+                        &quot;The easiest license out there. It gives the user permissions to do whatever they want with your code.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;ChooseALicense&quot;,
+                        &quot;How to apply this license:\nCreate a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;_conditions&quot;: [],
+                &quot;_limitations&quot;: [],
+                &quot;_permissions&quot;: [
+                    &quot;commercial-use&quot;,
+                    &quot;modifications&quot;,
+                    &quot;distribution&quot;,
+                    &quot;private-use&quot;
+                ],
+                &quot;_restrictions&quot;: []
+            },
+            &quot;tag&quot;: &quot;LicensePCLR&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_cal_conditions&quot;: [],
+        &quot;_cal_limitations&quot;: [],
+        &quot;_cal_permissions&quot;: [
+            &quot;commercial-use&quot;,
+            &quot;modifications&quot;,
+            &quot;distribution&quot;,
+            &quot;private-use&quot;
+        ],
+        &quot;_description&quot;: &quot;The easiest license out there. It gives the user permissions to do whatever they want with your code.&quot;,
+        &quot;_featured&quot;: null,
+        &quot;_hidden&quot;: null,
+        &quot;_how&quot;: &quot;Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.&quot;,
+        &quot;_id&quot;: &quot;cal:wtfpl&quot;,
+        &quot;_name&quot;: null,
+        &quot;_nickname&quot;: null,
+        &quot;_spdxId&quot;: &quot;spdx:WTFPL&quot;,
+        &quot;_title&quot;: &quot;Do What The F*ck You Want To Public License&quot;
+    },
+    &quot;type&quot;: &quot;ChooseALicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/324b982413d9298ae51c4356711b65e8">ScancodeData:324b982413d9298ae51c4356711b65e8</a> for <a href="/?license=scancode:wtfpl-2.0"><span class="licensename"><span class="namespace">scancode:</span>wtfpl-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>wtfpl-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">WTFPL 2.0</span></li><li><span class="licensename">WTFPL 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:324b982413d9298ae51c4356711b65e8">[<a href="/fact/ScancodeData/324b982413d9298ae51c4356711b65e8">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">http://sam.zoy.org/wtfpl/COPYING</a></li><li><a href="http://fedoraproject.org/wiki/Licensing/WTFPL" target="_blank">http://fedoraproject.org/wiki/Licensing/WTFPL</a></li><li><a href="http://www.wtfpl.net/about/" target="_blank">http://www.wtfpl.net/about/</a></li></ul><h3>Other Statements</h3><ul><li>http://sam.zoy.org/wtfpl/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2004 Sam Hocevar
+  14 rue de Plaisance, 75014 Paris, France
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:wtfpl-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;WTFPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTFPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;324b982413d9298ae51c4356711b65e8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://sam.zoy.org/wtfpl/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://fedoraproject.org/wiki/Licensing/WTFPL&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.wtfpl.net/about/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n                    Version 2, December 2004\n\n Copyright (C) 2004 Sam Hocevar\n  14 rue de Plaisance, 75014 Paris, France\n Everyone is permitted to copy and distribute verbatim or modified\n copies of this license document, and changing it is allowed as long\n as the name is changed.\n\n            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://sam.zoy.org/wtfpl/&quot;,
+        &quot;_key&quot;: &quot;wtfpl-2.0&quot;,
+        &quot;_name&quot;: &quot;WTFPL 2.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://fedoraproject.org/wiki/Licensing/WTFPL&quot;,
+            &quot;http://www.wtfpl.net/about/&quot;
+        ],
+        &quot;_owner&quot;: &quot;Sam Hocevar&quot;,
+        &quot;_shortName&quot;: &quot;WTFPL 2.0&quot;,
+        &quot;_spdxId&quot;: &quot;WTFPL&quot;,
+        &quot;_text&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n                    Version 2, December 2004\n\n Copyright (C) 2004 Sam Hocevar\n  14 rue de Plaisance, 75014 Paris, France\n Everyone is permitted to copy and distribute verbatim or modified\n copies of this license document, and changing it is allowed as long\n as the name is changed.\n\n            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/544d0f2c6b1931898d4dc71a19511f7b">Fossology:544d0f2c6b1931898d4dc71a19511f7b</a> for <a href="/?license=fossology:WTFPL"><span class="licensename"><span class="namespace">fossology:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Do What The F*ck You Want To Public License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">http://sam.zoy.org/wtfpl/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+
+Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;
+
+Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+   0. You just DO WHAT THE FUCK YOU WANT TO.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;544d0f2c6b1931898d4dc71a19511f7b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n\nVersion 2, December 2004\n\nCopyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;\n\nEveryone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.\n\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n   0. You just DO WHAT THE FUCK YOU WANT TO.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:WTFPL&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n\nVersion 2, December 2004\n\nCopyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;\n\nEveryone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.\n\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n   0. You just DO WHAT THE FUCK YOU WANT TO.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/379b2c46a79db15bbcbb0adb27738de7">OrtLicenseCategorization:379b2c46a79db15bbcbb0adb27738de7</a> for <a href="/?license=SPDX:WTFPL"><span class="licensename"><span class="namespace">SPDX:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>WTFPL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:379b2c46a79db15bbcbb0adb27738de7">[<a href="/fact/OrtLicenseCategorization/379b2c46a79db15bbcbb0adb27738de7">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:379b2c46a79db15bbcbb0adb27738de7">[<a href="/fact/OrtLicenseCategorization/379b2c46a79db15bbcbb0adb27738de7">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:WTFPL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;379b2c46a79db15bbcbb0adb27738de7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:WTFPL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/229c2e6a5d2044a20b7be0c44fb0eb1d">OrtLicenseCategorization:229c2e6a5d2044a20b7be0c44fb0eb1d</a> for <a href="/?license=SPDX:WTFPL"><span class="licensename"><span class="namespace">SPDX:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>WTFPL</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:229c2e6a5d2044a20b7be0c44fb0eb1d">[<a href="/fact/OrtLicenseCategorization/229c2e6a5d2044a20b7be0c44fb0eb1d">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:WTFPL&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;229c2e6a5d2044a20b7be0c44fb0eb1d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;contents&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                &quot;name&quot;: &quot;public-domain&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:WTFPL&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/2ec6a55d00e17e5707af65c51dc68c3f">CavilLicenseChange:2ec6a55d00e17e5707af65c51dc68c3f</a> for <a href="/?license=cavil:WTFPL"><span class="licensename"><span class="namespace">cavil:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>WTFPL</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">SUSE-WTFPL-2.0</span></li><li><span class="licensename">WTFPL</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;SUSE-WTFPL-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;2ec6a55d00e17e5707af65c51dc68c3f&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;SUSE-WTFPL-2.0&quot;,
+            &quot;WTFPL&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:WTFPL&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/454d97134e90b475a8aa1399b6aedde4">MetaeffektLicense:454d97134e90b475a8aa1399b6aedde4</a> for <a href="/?license=metaeffekt:WTFPL-2.0"><span class="licensename"><span class="namespace">metaeffekt:</span>WTFPL-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>WTFPL-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>WTF Public License 2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li><li><b>other LicenseName Hints (13):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//sam.zoy.org/wtfpl/</span></li><li><span class="licensename"><span class="namespace">http:</span>//www.wtfpl.net/about/</span></li><li><span class="licensename">DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE</span></li><li><span class="licensename">DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</span></li><li><span class="licensename">Do What The Fuck You Want To Public License, Version 2</span></li><li><span class="licensename">Do What you Want</span></li><li><span class="licensename">DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1</span></li><li><span class="licensename">DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0</span></li><li><span class="licensename">WTF Public License</span></li><li><span class="licensename">WTFPL</span></li><li><span class="licensename">WTFPL</span></li><li><span class="licensename"><span class="namespace">osi:</span>WTFPL-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>wtfpl-2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:454d97134e90b475a8aa1399b6aedde4">[<a href="/fact/MetaeffektLicense/454d97134e90b475a8aa1399b6aedde4">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:WTFPL-2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:WTF Public License 2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTF Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Do What The Fuck You Want To Public License, Version 2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Do What you Want&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.wtfpl.net/about/&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://sam.zoy.org/wtfpl/&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:wtfpl-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;osi:WTFPL-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;454d97134e90b475a8aa1399b6aedde4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;WTF Public License&quot;,
+            &quot;WTFPL&quot;,
+            &quot;DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE&quot;,
+            &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE&quot;,
+            &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1&quot;,
+            &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0&quot;,
+            &quot;Do What The Fuck You Want To Public License, Version 2&quot;,
+            &quot;Do What you Want&quot;,
+            &quot;http://www.wtfpl.net/about/&quot;,
+            &quot;http://sam.zoy.org/wtfpl/&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:WTF Public License 2.0&quot;,
+        &quot;_category&quot;: &quot;WTFPL&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:wtfpl-2.0&quot;,
+            &quot;osi:WTFPL-2.0&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:WTFPL-2.0&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:WTFPL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HermineData">HermineData</a>: <a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense:27908d4b41080998e4b38b6af9c95d4a</a> for <a href="/?license=spdx:WTFPL"><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></a></h3><h4>Obligations</h4><ul></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Do What The F*ck You Want To Public License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">HermineLicense: <b style="color: green;">FOSS - deduced</b></span><span class="provided-by">(provided by: <span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HermineLicense: </b>&quot;WTFPL&quot; is of radical: WTFPL<span class="provided-by">(provided by: <span title="HermineLicense:27908d4b41080998e4b38b6af9c95d4a">[<a href="/fact/HermineLicense/27908d4b41080998e4b38b6af9c95d4a">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">http://sam.zoy.org/wtfpl/COPYING</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HermineLicense&quot;,
+        &quot;27908d4b41080998e4b38b6af9c95d4a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;HermineLicense&quot;,
+                        &quot;FOSS - deduced&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://sam.zoy.org/wtfpl/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;\&quot;WTFPL\&quot; is of radical: WTFPL&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;autoupgrade&quot;: null,
+        &quot;comment&quot;: &quot;&quot;,
+        &quot;copyleft&quot;: &quot;None&quot;,
+        &quot;ethical_clause&quot;: false,
+        &quot;foss&quot;: &quot;Yes-Auto&quot;,
+        &quot;fsf_approved&quot;: true,
+        &quot;inspiration_spdx&quot;: &quot;&quot;,
+        &quot;law_choice&quot;: &quot;&quot;,
+        &quot;license_version&quot;: &quot;2.0&quot;,
+        &quot;long_name&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+        &quot;non_commercial&quot;: false,
+        &quot;non_tivoisation&quot;: false,
+        &quot;obligations&quot;: [],
+        &quot;osi_approved&quot;: false,
+        &quot;patent_grant&quot;: false,
+        &quot;radical&quot;: &quot;WTFPL&quot;,
+        &quot;spdx_id&quot;: &quot;WTFPL&quot;,
+        &quot;steward&quot;: &quot;Sam Hocevar&quot;,
+        &quot;url&quot;: &quot;http://sam.zoy.org/wtfpl/COPYING&quot;,
+        &quot;verbatim&quot;: &quot;&quot;
+    },
+    &quot;type&quot;: &quot;HermineLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/b08299cff1169549c2d5021fa30fa923">FossLicense:b08299cff1169549c2d5021fa30fa923</a> for <a href="/?license=foss-license:WTFPL 2.0"><span class="licensename"><span class="namespace">foss-license:</span>WTFPL 2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>WTFPL 2.0</span></li></ul></li><li><b>other LicenseNames (18):</b><ul class="capsulUl clearfix"><li><span class="licensename">DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE</span></li><li><span class="licensename">Do What The F*ck You Want To Public License</span></li><li><span class="licensename">DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</span></li><li><span class="licensename">Do What The Fuck You Want To Public License (WTFPL) 2</span></li><li><span class="licensename">Do What The Fuck You Want To Public License, Version 2</span></li><li><span class="licensename">Do What you Want</span></li><li><span class="licensename">DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1</span></li><li><span class="licensename">DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0</span></li><li><span class="licensename">http://sam.zoy.org/wtfpl/</span></li><li><span class="licensename">http://www.wtfpl.net/about/</span></li><li><span class="licensename">scancode://wtfpl-2.0</span></li><li><span class="licensename">scancode:wtfpl-2.0</span></li><li><span class="licensename">WTF Public License 2.0</span></li><li><span class="licensename">WTFPL</span></li><li><span class="licensename">wtfpl</span></li><li><span class="licensename">WTFPL 2.0</span></li><li><span class="licensename">WTFPL-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>wtfpl-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:WTFPL 2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:wtfpl-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTFPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Do What The F*ck You Want To Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;wtfpl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTF Public License 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTFPL-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://wtfpl-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;WTFPL 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Do What The Fuck You Want To Public License (WTFPL) 2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Do What The Fuck You Want To Public License, Version 2&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Do What you Want&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://www.wtfpl.net/about/&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://sam.zoy.org/wtfpl/&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:wtfpl-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;b08299cff1169549c2d5021fa30fa923&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;WTFPL&quot;,
+            &quot;Do What The F*ck You Want To Public License&quot;,
+            &quot;wtfpl&quot;,
+            &quot;WTF Public License 2.0&quot;,
+            &quot;WTFPL-2.0&quot;,
+            &quot;scancode://wtfpl-2.0&quot;,
+            &quot;WTFPL 2.0&quot;,
+            &quot;Do What The Fuck You Want To Public License (WTFPL) 2&quot;,
+            &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE&quot;,
+            &quot;DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE&quot;,
+            &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1&quot;,
+            &quot;DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0&quot;,
+            &quot;Do What The Fuck You Want To Public License, Version 2&quot;,
+            &quot;Do What you Want&quot;,
+            &quot;http://www.wtfpl.net/about/&quot;,
+            &quot;http://sam.zoy.org/wtfpl/&quot;,
+            &quot;scancode:wtfpl-2.0&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;WTFPL 2.0&quot;,
+        &quot;scancode_key&quot;: &quot;wtfpl-2.0&quot;,
+        &quot;spdxid&quot;: &quot;WTFPL&quot;,
+        &quot;text&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n                    Version 2, December 2004\n\n Copyright (C) 2004 Sam Hocevar\n  14 rue de Plaisance, 75014 Paris, France\n Everyone is permitted to copy and distribute verbatim or modified\n copies of this license document, and changing it is allowed as long\n as the name is changed.\n\n            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/7827893443f53b171a800a1ecf639f0a">FOSSLight:7827893443f53b171a800a1ecf639f0a</a> for <a href="/?license=fosslight:Do What The F*ck You Want To Public License"><span class="licensename"><span class="namespace">fosslight:</span>Do What The F*ck You Want To Public License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Do What The F*ck You Want To Public License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">WTFPL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:7827893443f53b171a800a1ecf639f0a">[<a href="/fact/FOSSLight/7827893443f53b171a800a1ecf639f0a">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Do What The F*ck You Want To Public License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;WTFPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;7827893443f53b171a800a1ecf639f0a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\nVersion 2, December 2004\n\nCopyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;\n\nEveryone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.\n\nDO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: false,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: &quot;&quot;,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;WTFPL&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/WTFPL.html&quot;,
+            &quot;_fossLight_id&quot;: 148,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Do What The F*ck You Want To Public License&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li><li><h3><a href="/source/Eclipse">Eclipse</a>: <a href="/fact/EclipseLicense/98638f68940942c84b06a63acdecdfb9">EclipseLicense:98638f68940942c84b06a63acdecdfb9</a> for <a href="/?license=eclipse:WTFPL"><span class="licensename"><span class="namespace">eclipse:</span>WTFPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">eclipse:</span>WTFPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Do What The Firetruck You Want To Public License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. ">EclipseLicense: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="EclipseLicense:98638f68940942c84b06a63acdecdfb9">[<a href="/fact/EclipseLicense/98638f68940942c84b06a63acdecdfb9">EclipseLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;eclipse:WTFPL&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Do What The Firetruck You Want To Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;EclipseLicense&quot;,
+        &quot;98638f68940942c84b06a63acdecdfb9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;EclipseLicense&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;This approved license list enumerates the licenses that the Eclipse Foundation has approved for third-party content used by its projects. Inclusion in this list does not imply that the Eclipse Foundation has determined that every one of these licenses can be used by your Eclipse Foundation project. That is, the licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other. &quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;eclipse:WTFPL&quot;,
+            &quot;Do What The Firetruck You Want To Public License&quot;
+        ],
+        &quot;tag&quot;: &quot;ApprovedLicense&quot;
+    },
+    &quot;type&quot;: &quot;EclipseLicense&quot;
+}</pre></details></li></ul></body></html>

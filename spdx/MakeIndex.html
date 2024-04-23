@@ -1,0 +1,760 @@
+<html><head><title>ldbcollector: spdx:MakeIndex</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MakeIndex</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MakeIndex</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">MakeIndex</span></li><li><span class="licensename"><span class="namespace">cavil:</span>MakeIndex</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>MakeIndex</span></li><li><span class="licensename"><span class="namespace">fossology:</span>MakeIndex</span></li><li><span class="licensename"><span class="namespace">scancode:</span>makeindex</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MakeIndex</span></li><li><span class="licensename">MakeIndex License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>MakeIndex License</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MakeIndex Distribution Notice</span></li><li><span class="licensename">SUSE-MakeIndex</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:925799ebd0e1bd935b612cf913fea337">[<a href="/fact/SPDXLicense/925799ebd0e1bd935b612cf913fea337">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:675dbebff2a96fca0e5523b9e0ccaeb3">[<a href="/fact/FedoraEntry/675dbebff2a96fca0e5523b9e0ccaeb3">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dece6aa66cb2665e2fde530d6157165b">[<a href="/fact/OrtLicenseCategorization/dece6aa66cb2665e2fde530d6157165b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dece6aa66cb2665e2fde530d6157165b">[<a href="/fact/OrtLicenseCategorization/dece6aa66cb2665e2fde530d6157165b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dece6aa66cb2665e2fde530d6157165b">[<a href="/fact/OrtLicenseCategorization/dece6aa66cb2665e2fde530d6157165b">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MakeIndex" target="_blank">https://fedoraproject.org/wiki/Licensing/MakeIndex</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>MakeIndex Distribution Notice
+
+11/11/1989
+
+Copyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.
+Copyright (C) 1988 by Olivetti Research Center
+Copyright (C) 1987 by Regents of the University of California
+
+Author:
+     Pehong Chen (phc@renoir.berkeley.edu)
+     Chen &amp; Harrison International Systems, Inc.
+     Palo Alto, California
+     USA
+
+Permission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs.  Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.
+
+Permission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above.  Ports of this program to other systems not supported in the distribution are also considered modified versions.  All modified versions should be reported back to the author.
+
+This program is distributed with no warranty of any sort.  No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;MakeIndex Distribution Notice&lt;/p&gt;
+
+         &lt;p&gt;11/11/1989&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (C) 1989 by Chen &amp;amp; Harrison International Systems, Inc.
+        &lt;br /&gt;
+
+Copyright (C) 1988 by Olivetti Research Center
+        &lt;br /&gt;
+
+Copyright (C) 1987 by Regents of the University of California
+      &lt;/p&gt;
+
+         &lt;p&gt;Author:
+        &lt;br /&gt;
+
+Pehong Chen (phc@renoir.berkeley.edu)
+        &lt;br /&gt;
+
+Chen &amp;amp; Harrison International Systems, Inc.
+        &lt;br /&gt;
+
+Palo Alto, California
+        &lt;br /&gt;
+
+USA
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission is hereby granted to make and distribute original copies of this program provided that the
+         copyright notice and this permission notice are preserved and provided that the recipient is not asked
+         to waive or limit his right to redistribute copies as allowed by this permission notice and provided
+         that anyone who receives an executable form of this program is granted access to a machine-readable
+         form of the source code for this program at a cost not greater than reasonable reproduction, shipping,
+         and handling costs. Executable forms of this program distributed without the source code must be
+         accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient
+         how to obtain the source code.&lt;/p&gt;
+
+      &lt;p&gt;Permission is granted to distribute modified versions of all or part of this program under the conditions
+         above with the additional requirement that the entire modified work must be covered by a permission
+         notice identical to this permission notice. Anything distributed with and usable only in conjunction
+         with something derived from this program, whose useful purpose is to extend or adapt or add
+         capabilities to this program, is to be considered a modified version of this program under the
+         requirement above. Ports of this program to other systems not supported in the distribution are also
+         considered modified versions. All modified versions should be reported back to the author.&lt;/p&gt;
+
+      &lt;p&gt;This program is distributed with no warranty of any sort. No contributor accepts responsibility for the
+         consequences of using this program or for whether it serves any particular purpose.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>MakeIndex Distribution Notice
+
+11/11/1989 Copyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.
+
+Copyright (C) 1988 by Olivetti Research Center
+
+Copyright (C) 1987 by Regents of the University of California
+
+Author:
+
+Pehong Chen (phc@renoir.berkeley.edu)
+
+Chen &amp; Harrison International Systems, Inc.
+
+Palo Alto, California
+
+USA
+
+Permission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs. Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.
+
+Permission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above. Ports of this program to other systems not supported in the distribution are also considered modified versions. All modified versions should be reported back to the author.
+
+This program is distributed with no warranty of any sort. No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/925799ebd0e1bd935b612cf913fea337">SPDXLicense:925799ebd0e1bd935b612cf913fea337</a> for <a href="/?license=spdx:MakeIndex"><span class="licensename"><span class="namespace">spdx:</span>MakeIndex</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MakeIndex</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MakeIndex License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:925799ebd0e1bd935b612cf913fea337">[<a href="/fact/SPDXLicense/925799ebd0e1bd935b612cf913fea337">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MakeIndex" target="_blank">https://fedoraproject.org/wiki/Licensing/MakeIndex</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>MakeIndex Distribution Notice
+
+11/11/1989
+
+Copyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.
+Copyright (C) 1988 by Olivetti Research Center
+Copyright (C) 1987 by Regents of the University of California
+
+Author:
+     Pehong Chen (phc@renoir.berkeley.edu)
+     Chen &amp; Harrison International Systems, Inc.
+     Palo Alto, California
+     USA
+
+Permission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs.  Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.
+
+Permission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above.  Ports of this program to other systems not supported in the distribution are also considered modified versions.  All modified versions should be reported back to the author.
+
+This program is distributed with no warranty of any sort.  No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;MakeIndex Distribution Notice&lt;/p&gt;
+
+         &lt;p&gt;11/11/1989&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (C) 1989 by Chen &amp;amp; Harrison International Systems, Inc.
+        &lt;br /&gt;
+
+Copyright (C) 1988 by Olivetti Research Center
+        &lt;br /&gt;
+
+Copyright (C) 1987 by Regents of the University of California
+      &lt;/p&gt;
+
+         &lt;p&gt;Author:
+        &lt;br /&gt;
+
+Pehong Chen (phc@renoir.berkeley.edu)
+        &lt;br /&gt;
+
+Chen &amp;amp; Harrison International Systems, Inc.
+        &lt;br /&gt;
+
+Palo Alto, California
+        &lt;br /&gt;
+
+USA
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission is hereby granted to make and distribute original copies of this program provided that the
+         copyright notice and this permission notice are preserved and provided that the recipient is not asked
+         to waive or limit his right to redistribute copies as allowed by this permission notice and provided
+         that anyone who receives an executable form of this program is granted access to a machine-readable
+         form of the source code for this program at a cost not greater than reasonable reproduction, shipping,
+         and handling costs. Executable forms of this program distributed without the source code must be
+         accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient
+         how to obtain the source code.&lt;/p&gt;
+
+      &lt;p&gt;Permission is granted to distribute modified versions of all or part of this program under the conditions
+         above with the additional requirement that the entire modified work must be covered by a permission
+         notice identical to this permission notice. Anything distributed with and usable only in conjunction
+         with something derived from this program, whose useful purpose is to extend or adapt or add
+         capabilities to this program, is to be considered a modified version of this program under the
+         requirement above. Ports of this program to other systems not supported in the distribution are also
+         considered modified versions. All modified versions should be reported back to the author.&lt;/p&gt;
+
+      &lt;p&gt;This program is distributed with no warranty of any sort. No contributor accepts responsibility for the
+         consequences of using this program or for whether it serves any particular purpose.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:MakeIndex&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MakeIndex License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;925799ebd0e1bd935b612cf913fea337&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;MakeIndex Distribution Notice\n\n11/11/1989\n\nCopyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.\nCopyright (C) 1988 by Olivetti Research Center\nCopyright (C) 1987 by Regents of the University of California\n\nAuthor:\n     Pehong Chen (phc@renoir.berkeley.edu)\n     Chen &amp; Harrison International Systems, Inc.\n     Palo Alto, California\n     USA\n\nPermission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs.  Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.\n\nPermission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above.  Ports of this program to other systems not supported in the distribution are also considered modified versions.  All modified versions should be reported back to the author.\n\nThis program is distributed with no warranty of any sort.  No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;MakeIndex Distribution Notice&lt;/p&gt;\n\n         &lt;p&gt;11/11/1989&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (C) 1989 by Chen &amp;amp; Harrison International Systems, Inc.\n        &lt;br /&gt;\n\nCopyright (C) 1988 by Olivetti Research Center\n        &lt;br /&gt;\n\nCopyright (C) 1987 by Regents of the University of California\n      &lt;/p&gt;\n\n         &lt;p&gt;Author:\n        &lt;br /&gt;\n\nPehong Chen (phc@renoir.berkeley.edu)\n        &lt;br /&gt;\n\nChen &amp;amp; Harrison International Systems, Inc.\n        &lt;br /&gt;\n\nPalo Alto, California\n        &lt;br /&gt;\n\nUSA\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission is hereby granted to make and distribute original copies of this program provided that the\n         copyright notice and this permission notice are preserved and provided that the recipient is not asked\n         to waive or limit his right to redistribute copies as allowed by this permission notice and provided\n         that anyone who receives an executable form of this program is granted access to a machine-readable\n         form of the source code for this program at a cost not greater than reasonable reproduction, shipping,\n         and handling costs. Executable forms of this program distributed without the source code must be\n         accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient\n         how to obtain the source code.&lt;/p&gt;\n\n      &lt;p&gt;Permission is granted to distribute modified versions of all or part of this program under the conditions\n         above with the additional requirement that the entire modified work must be covered by a permission\n         notice identical to this permission notice. Anything distributed with and usable only in conjunction\n         with something derived from this program, whose useful purpose is to extend or adapt or add\n         capabilities to this program, is to be considered a modified version of this program under the\n         requirement above. Ports of this program to other systems not supported in the distribution are also\n         considered modified versions. All modified versions should be reported back to the author.&lt;/p&gt;\n\n      &lt;p&gt;This program is distributed with no warranty of any sort. No contributor accepts responsibility for the\n         consequences of using this program or for whether it serves any particular purpose.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:19Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:MakeIndex&quot;,
+        &quot;licenseText&quot;: &quot;MakeIndex Distribution Notice\n\n11/11/1989\n\nCopyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.\nCopyright (C) 1988 by Olivetti Research Center\nCopyright (C) 1987 by Regents of the University of California\n\nAuthor:\n     Pehong Chen (phc@renoir.berkeley.edu)\n     Chen &amp; Harrison International Systems, Inc.\n     Palo Alto, California\n     USA\n\nPermission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs.  Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.\n\nPermission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above.  Ports of this program to other systems not supported in the distribution are also considered modified versions.  All modified versions should be reported back to the author.\n\nThis program is distributed with no warranty of any sort.  No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;MakeIndex Distribution Notice&lt;/p&gt;\n\n         &lt;p&gt;11/11/1989&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (C) 1989 by Chen &amp;amp; Harrison International Systems, Inc.\n        &lt;br /&gt;\n\nCopyright (C) 1988 by Olivetti Research Center\n        &lt;br /&gt;\n\nCopyright (C) 1987 by Regents of the University of California\n      &lt;/p&gt;\n\n         &lt;p&gt;Author:\n        &lt;br /&gt;\n\nPehong Chen (phc@renoir.berkeley.edu)\n        &lt;br /&gt;\n\nChen &amp;amp; Harrison International Systems, Inc.\n        &lt;br /&gt;\n\nPalo Alto, California\n        &lt;br /&gt;\n\nUSA\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission is hereby granted to make and distribute original copies of this program provided that the\n         copyright notice and this permission notice are preserved and provided that the recipient is not asked\n         to waive or limit his right to redistribute copies as allowed by this permission notice and provided\n         that anyone who receives an executable form of this program is granted access to a machine-readable\n         form of the source code for this program at a cost not greater than reasonable reproduction, shipping,\n         and handling costs. Executable forms of this program distributed without the source code must be\n         accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient\n         how to obtain the source code.&lt;/p&gt;\n\n      &lt;p&gt;Permission is granted to distribute modified versions of all or part of this program under the conditions\n         above with the additional requirement that the entire modified work must be covered by a permission\n         notice identical to this permission notice. Anything distributed with and usable only in conjunction\n         with something derived from this program, whose useful purpose is to extend or adapt or add\n         capabilities to this program, is to be considered a modified version of this program under the\n         requirement above. Ports of this program to other systems not supported in the distribution are also\n         considered modified versions. All modified versions should be reported back to the author.&lt;/p&gt;\n\n      &lt;p&gt;This program is distributed with no warranty of any sort. No contributor accepts responsibility for the\n         consequences of using this program or for whether it serves any particular purpose.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;MakeIndex License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;MakeIndex Distribution Notice\n\n11/11/1989\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.  Copyright (C) 1988 by Olivetti Research Center  Copyright (C) 1987 by Regents of the University of California    Author:  Pehong Chen (phc@renoir.berkeley.edu)  Chen &amp; Harrison International Systems, Inc.  Palo Alto, California  USA  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs. Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.\n\nPermission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above. Ports of this program to other systems not supported in the distribution are also considered modified versions. All modified versions should be reported back to the author.\n\nThis program is distributed with no warranty of any sort. No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/675dbebff2a96fca0e5523b9e0ccaeb3">FedoraEntry:675dbebff2a96fca0e5523b9e0ccaeb3</a> for <a href="/?license=Fedora:MakeIndex"><span class="licensename"><span class="namespace">Fedora:</span>MakeIndex</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>MakeIndex</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MakeIndex</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MakeIndex</span></li><li><span class="licensename">MakeIndex License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:675dbebff2a96fca0e5523b9e0ccaeb3">[<a href="/fact/FedoraEntry/675dbebff2a96fca0e5523b9e0ccaeb3">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MakeIndex" target="_blank">https://fedoraproject.org/wiki/Licensing/MakeIndex</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:MakeIndex&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MakeIndex&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MakeIndex License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MakeIndex&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;675dbebff2a96fca0e5523b9e0ccaeb3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MakeIndex&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;MakeIndex License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;MakeIndex&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:MakeIndex&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/228c4eeb9a722957d02081151a601243">Fossology:228c4eeb9a722957d02081151a601243</a> for <a href="/?license=fossology:MakeIndex"><span class="licensename"><span class="namespace">fossology:</span>MakeIndex</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>MakeIndex</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MakeIndex License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/MakeIndex" target="_blank">https://fedoraproject.org/wiki/Licensing/MakeIndex</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>MakeIndex Distribution Notice
+
+11/11/1989 Copyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.
+
+Copyright (C) 1988 by Olivetti Research Center
+
+Copyright (C) 1987 by Regents of the University of California
+
+Author:
+
+Pehong Chen (phc@renoir.berkeley.edu)
+
+Chen &amp; Harrison International Systems, Inc.
+
+Palo Alto, California
+
+USA
+
+Permission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs. Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.
+
+Permission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above. Ports of this program to other systems not supported in the distribution are also considered modified versions. All modified versions should be reported back to the author.
+
+This program is distributed with no warranty of any sort. No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:MakeIndex&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MakeIndex License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;228c4eeb9a722957d02081151a601243&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;MakeIndex Distribution Notice\n\n11/11/1989 Copyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.\n\nCopyright (C) 1988 by Olivetti Research Center\n\nCopyright (C) 1987 by Regents of the University of California\n\nAuthor:\n\nPehong Chen (phc@renoir.berkeley.edu)\n\nChen &amp; Harrison International Systems, Inc.\n\nPalo Alto, California\n\nUSA\n\nPermission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs. Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.\n\nPermission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above. Ports of this program to other systems not supported in the distribution are also considered modified versions. All modified versions should be reported back to the author.\n\nThis program is distributed with no warranty of any sort. No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;MakeIndex License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:MakeIndex&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;MakeIndex Distribution Notice\n\n11/11/1989 Copyright (C) 1989 by Chen &amp; Harrison International Systems, Inc.\n\nCopyright (C) 1988 by Olivetti Research Center\n\nCopyright (C) 1987 by Regents of the University of California\n\nAuthor:\n\nPehong Chen (phc@renoir.berkeley.edu)\n\nChen &amp; Harrison International Systems, Inc.\n\nPalo Alto, California\n\nUSA\n\nPermission is hereby granted to make and distribute original copies of this program provided that the copyright notice and this permission notice are preserved and provided that the recipient is not asked to waive or limit his right to redistribute copies as allowed by this permission notice and provided that anyone who receives an executable form of this program is granted access to a machine-readable form of the source code for this program at a cost not greater than reasonable reproduction, shipping, and handling costs. Executable forms of this program distributed without the source code must be accompanied by a conspicuous copy of this permission notice and a statement that tells the recipient how to obtain the source code.\n\nPermission is granted to distribute modified versions of all or part of this program under the conditions above with the additional requirement that the entire modified work must be covered by a permission notice identical to this permission notice. Anything distributed with and usable only in conjunction with something derived from this program, whose useful purpose is to extend or adapt or add capabilities to this program, is to be considered a modified version of this program under the requirement above. Ports of this program to other systems not supported in the distribution are also considered modified versions. All modified versions should be reported back to the author.\n\nThis program is distributed with no warranty of any sort. No contributor accepts responsibility for the consequences of using this program or for whether it serves any particular purpose.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/MakeIndex&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/dece6aa66cb2665e2fde530d6157165b">OrtLicenseCategorization:dece6aa66cb2665e2fde530d6157165b</a> for <a href="/?license=SPDX:MakeIndex"><span class="licensename"><span class="namespace">SPDX:</span>MakeIndex</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MakeIndex</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dece6aa66cb2665e2fde530d6157165b">[<a href="/fact/OrtLicenseCategorization/dece6aa66cb2665e2fde530d6157165b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dece6aa66cb2665e2fde530d6157165b">[<a href="/fact/OrtLicenseCategorization/dece6aa66cb2665e2fde530d6157165b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:dece6aa66cb2665e2fde530d6157165b">[<a href="/fact/OrtLicenseCategorization/dece6aa66cb2665e2fde530d6157165b">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MakeIndex&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;dece6aa66cb2665e2fde530d6157165b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MakeIndex&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/14d9575713f6208f0a5a70357d500450">CavilLicenseChange:14d9575713f6208f0a5a70357d500450</a> for <a href="/?license=cavil:MakeIndex"><span class="licensename"><span class="namespace">cavil:</span>MakeIndex</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>MakeIndex</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MakeIndex</span></li><li><span class="licensename">SUSE-MakeIndex</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:MakeIndex&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MakeIndex&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;SUSE-MakeIndex&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;14d9575713f6208f0a5a70357d500450&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;MakeIndex&quot;,
+            &quot;SUSE-MakeIndex&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:MakeIndex&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/42f146ee3ff78d6e8fc35e7ea9c974ca">MetaeffektLicense:42f146ee3ff78d6e8fc35e7ea9c974ca</a> for <a href="/?license=metaeffekt:MakeIndex License"><span class="licensename"><span class="namespace">metaeffekt:</span>MakeIndex License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>MakeIndex License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MakeIndex</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">MakeIndex</span></li><li><span class="licensename"><span class="namespace">scancode:</span>makeindex</span></li><li><span class="licensename">MakeIndex Distribution Notice</span></li><li><span class="licensename">MakeIndex License</span></li><li><span class="licensename">MAKEINDEX LICENSE</span></li><li><span class="licensename">MAKEINDEX License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:MakeIndex License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MakeIndex&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MakeIndex&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MakeIndex License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MAKEINDEX LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MAKEINDEX License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MakeIndex Distribution Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:makeindex&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;42f146ee3ff78d6e8fc35e7ea9c974ca&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;MakeIndex License&quot;,
+            &quot;MAKEINDEX LICENSE&quot;,
+            &quot;MAKEINDEX License&quot;,
+            &quot;MakeIndex Distribution Notice&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:MakeIndex License&quot;,
+        &quot;_category&quot;: &quot;MakeIndex&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:makeindex&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:MakeIndex&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

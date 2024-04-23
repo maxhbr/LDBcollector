@@ -1,0 +1,1806 @@
+<html><head><title>ldbcollector: spdx:BSD-Protection</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BSD-Protection</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseNames (12):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection License</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>BSD Protection License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD Protection License</span></li><li><span class="licensename">BSD-Protection</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>BSD-Protection</span></li><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Protection</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Protection</span></li><li><span class="licensename"><span class="namespace">fossology:</span>BSD-Protection</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-protection</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Protection</span></li><li><span class="licensename">BSDProtection</span></li><li><span class="licensename"><span class="namespace">google:</span>BSDProtection</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>StronglyProtective<span class="provided-by">(provided by: <span title="BlueOakCouncil:a5c875935bfc35f674ba9ead90dd368d">[<a href="/fact/BlueOakCouncil/a5c875935bfc35f674ba9ead90dd368d">BlueOakCouncil</a>]</span>)</span></li><li>Copyleft<span class="provided-by">(provided by: <span title="BlueOakCouncil:a5c875935bfc35f674ba9ead90dd368d">[<a href="/fact/BlueOakCouncil/a5c875935bfc35f674ba9ead90dd368d">BlueOakCouncil</a>]</span><span title="ScancodeData:530d07ca49116ddd5c393692fd9ca177">[<a href="/fact/ScancodeData/530d07ca49116ddd5c393692fd9ca177">ScancodeData</a>]</span>)</span></li><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:a484a5de8a2dfb244f69d6fc47dfd02a">[<a href="/fact/FOSSLight/a484a5de8a2dfb244f69d6fc47dfd02a">FOSSLight</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7c0f9b52a64284732a0179c763b25201">[<a href="/fact/SPDXLicense/7c0f9b52a64284732a0179c763b25201">SPDXLicense</a>]</span>)</span></li><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:866590dcab3018665de050bc8a7c5eb9">[<a href="/fact/GoogleLicense/866590dcab3018665de050bc8a7c5eb9">GoogleLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6935e7bb33286fd29f5e2258bf50a8e6">[<a href="/fact/FedoraEntry/6935e7bb33286fd29f5e2258bf50a8e6">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e224966aef220f20abe19e971f11e7d4">[<a href="/fact/OrtLicenseCategorization/e224966aef220f20abe19e971f11e7d4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e224966aef220f20abe19e971f11e7d4">[<a href="/fact/OrtLicenseCategorization/e224966aef220f20abe19e971f11e7d4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e224966aef220f20abe19e971f11e7d4">[<a href="/fact/OrtLicenseCategorization/e224966aef220f20abe19e971f11e7d4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that requires you to license modifications, as well as any code that ends up in the same binary (including static linking and module modifications), as well as other code that is part of the same work, with the same strong copyleft license. Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.">OrtLicenseCategorization: <b>copyleft-strong</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD_Protection_License" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD_Protection_License</a></li><li><a href="https://spdx.org/licenses/BSD-Protection" target="_blank">https://spdx.org/licenses/BSD-Protection</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/BSD_Protection_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>BSD Protection License
+February 2002
+
+Preamble
+--------
+
+The Berkeley Software Distribution (&quot;BSD&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.
+
+This is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).
+
+With the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of &quot;GPL-tainted&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the &quot;tainted&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such &quot;GPL-taint&quot;.
+
+In addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.
+
+For the above reasons, we put forth this &quot;BSD Protection License&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.
+
+The precise terms and conditions for copying, distribution, and modification follow.
+
+BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+----------------------------------------------------------------
+
+0. Definitions.
+
+     a) &quot;Program&quot;, below, refers to any program or work distributed under the terms of this license.
+     b) A &quot;work based on the Program&quot;, below, refers to either the Program or any derivative work under copyright law.
+     c) &quot;Modification&quot;, below, refers to the act of creating derivative works.
+     d) &quot;You&quot;, below, refers to each licensee.
+
+1. Scope.
+This license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.
+
+2. Verbatim copies.
+You may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.
+
+3. Modification and redistribution under closed license.
+You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+     b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.
+     c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.
+
+4. Modification and redistribution under open license.
+You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+     b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.
+     c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
+
+5. Implied acceptance.
+You may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.
+
+6. NO WARRANTY.
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;BSD Protection License
+        &lt;br /&gt;
+
+February 2002
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Preamble
+        &lt;br /&gt;
+
+--------
+      &lt;/p&gt;
+
+         &lt;p&gt;The Berkeley Software Distribution (&amp;quot;BSD&amp;quot;) license has proven very effective over the years at
+         allowing for a wide spread of work throughout both commercial and non-commercial products. For
+         programmers whose primary intention is to improve the general quality of available software, it is
+         arguable that there is no better license than the BSD license, as it permits improvements to be used
+         wherever they will help, without idealogical or metallic constraint.&lt;/p&gt;
+
+         &lt;p&gt;This is of particular value to those who produce reference implementations of proposed standards: The
+         case of TCP/IP clearly illustrates that freely and universally available implementations leads the
+         rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network
+         models).&lt;/p&gt;
+
+         &lt;p&gt;With the rapid proliferation of software licensed under the GNU General Public License, however, the
+         continued success of this role is called into question. Given that the inclusion of a few lines of
+         &amp;quot;GPL-tainted&amp;quot; work into a larger body of work will result in restricted distribution -- and
+         given that further work will likely build upon the &amp;quot;tainted&amp;quot; portions, making them difficult
+         to remove at a future date -- there are inevitable circumstances where authors would, in order to
+         protect their goal of providing for the widespread usage of their work, wish to guard against such
+         &amp;quot;GPL-taint&amp;quot;.&lt;/p&gt;
+
+         &lt;p&gt;In addition, one can imagine that companies which operate by producing and selling (possibly
+         closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor.
+         While under existing licenses this would mean not releasing their code under any form of open license,
+         if a license existed under which they could incorporate any improvements back into their own
+         (commercial) products then they might be far more willing to provide for non-closed distribution.&lt;/p&gt;
+
+         &lt;p&gt;For the above reasons, we put forth this &amp;quot;BSD Protection License&amp;quot;: A license designed to retain
+         the freedom granted by the BSD license to use licensed works in a wide variety of settings, both
+         non-commercial and commercial, while protecting the work from having future contributors restrict that
+         freedom.&lt;/p&gt;
+
+         &lt;p&gt;The precise terms and conditions for copying, distribution, and modification follow.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;
+
+      &lt;var class=&quot;optional-license-text&quot;&gt; ----------------------------------------------------------------&lt;/var&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+          Definitions.
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            &amp;quot;Program&amp;quot;, below, refers to any program or work distributed under the terms of this
+               license.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            A &amp;quot;work based on the Program&amp;quot;, below, refers to either the Program or any
+               derivative work under copyright law.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            &amp;quot;Modification&amp;quot;, below, refers to the act of creating derivative works.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+            &amp;quot;You&amp;quot;, below, refers to each licensee.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Scope.
+            &lt;br /&gt;
+
+   This license governs the copying, distribution, and modification of the Program. Other
+                 activities are outside the scope of this license; The act of running the Program is
+                 not restricted, and the output from the Program is covered only if its contents
+                 constitute a work based on the Program.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Verbatim copies.
+            &lt;br /&gt;
+
+   You may copy and distribute verbatim copies of the Program as you receive it, in any
+                 medium, provided that you conspicuously and appropriately publish on each copy an
+                 appropriate copyright notice; keep intact all the notices that refer to this License
+                 and to the absence of any warranty; and give any other recipients of the Program a
+                 copy of this License along with the Program.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Modification and redistribution under closed license.
+            &lt;br /&gt;
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative
+                 works, provided that you meet the following conditions:
+
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            The copyright notice and disclaimer on the Program must be reproduced and included in the
+               source code, documentation, and/or other materials provided in a manner in which such
+               notices are normally distributed.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            The derivative work must be clearly identified as such, in order that it may not be confused
+               with the original work.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            The license under which the derivative work is distributed must expressly prohibit the
+               distribution of further derivative works.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          Modification and redistribution under open license.
+            &lt;br /&gt;
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative
+                 works, provided that you meet the following conditions:
+
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            The copyright notice and disclaimer on the Program must be reproduced and included in the
+               source code, documentation, and/or other materials provided in a manner in which such
+               notices are normally distributed.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            You must clearly indicate the nature and date of any changes made to the Program. The full
+               details need not necessarily be included in the individual modified files, provided that
+               each modified file is clearly marked as such and instructions are included on where the
+               full details of the modifications may be found.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            You must cause any work that you distribute or publish, that in whole or in part contains or
+               is derived from the Program or any part thereof, to be licensed as a whole at no charge to
+               all third parties under the terms of this License.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Implied acceptance.
+            &lt;br /&gt;
+
+   You may not copy or distribute the Program or any derivative works except as expressly
+                 provided under this license. Consequently, any such action will be taken as implied
+                 acceptance of the terms of this license.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          NO WARRANTY.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+         LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+         DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+         REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+         EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING,
+         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+         BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+         LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+         DAMAGES.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>BSD Protection License
+February 2002
+
+Preamble
+--------
+
+The Berkeley Software Distribution (&quot;BSD&quot;) license has proven very effective
+over the years at allowing for a wide spread of work throughout both
+commercial and non-commercial products.  For programmers whose primary
+intention is to improve the general quality of available software, it is
+arguable that there is no better license than the BSD license, as it
+permits improvements to be used wherever they will help, without
+idealogical or metallic constraint.
+
+This is of particular value to those who produce reference
+implementations of proposed standards: The case of TCP/IP clearly
+illustrates that freely and universally available implementations leads
+the rapid acceptance of standards -- often even being used instead of a
+de jure standard (eg, OSI network models).
+
+With the rapid proliferation of software licensed under the GNU General
+Public License, however, the continued success of this role is called
+into question.  Given that the inclusion of a few lines of &quot;GPL-tainted&quot;
+work into a larger body of work will result in restricted distribution
+-- and given that further work will likely build upon the &quot;tainted&quot;
+portions, making them difficult to remove at a future date -- there are
+inevitable circumstances where authors would, in order to protect their
+goal of providing for the widespread usage of their work, wish to guard
+against such &quot;GPL-taint&quot;.
+
+In addition, one can imagine that companies which operate by producing
+and selling (possibly closed-source) code would wish to protect
+themselves against the rise of a GPL-licensed competitor.  While under
+existing licenses this would mean not releasing their code under any
+form of open license, if a license existed under which they could
+incorporate any improvements back into their own (commercial) products
+then they might be far more willing to provide for non-closed distribution.
+
+For the above reasons, we put forth this &quot;BSD Protection License&quot;: A
+license designed to retain the freedom granted by the BSD license to use
+licensed works in a wide variety of settings, both non-commercial and
+commercial, while protecting the work from having future contributors
+restrict that freedom.
+
+The precise terms and conditions for copying, distribution, and
+modification follow.
+
+BSD PROTECTION LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+----------------------------------------------------------------
+
+0. Definitions.
+   a) &quot;Program&quot;, below, refers to any program or work distributed under
+      the terms of this license.
+   b) A &quot;work based on the Program&quot;, below, refers to either the Program
+      or any derivative work under copyright law.
+   c) &quot;Modification&quot;, below, refers to the act of creating derivative
+      works.
+   d) &quot;You&quot;, below, refers to each licensee.
+
+1. Scope.
+   This license governs the copying, distribution, and modification of
+   the Program.  Other activities are outside the scope of this
+   license; The act of running the Program is not restricted, and the
+   output from the Program is covered only if its contents constitute a
+   work based on the Program.
+
+2. Verbatim copies.
+   You may copy and distribute verbatim copies of the Program as you
+   receive it, in any medium, provided that you conspicuously and
+   appropriately publish on each copy an appropriate copyright notice;
+   keep intact all the notices that refer to this License and to the
+   absence of any warranty; and give any other recipients of the
+   Program a copy of this License along with the Program.
+
+3. Modification and redistribution under closed license.
+   You may modify your copy or copies of the Program, and distribute
+   the resulting derivative works, provided that you meet the
+   following conditions:
+   a) The copyright notice and disclaimer on the Program must be
+      reproduced and included in the source code, documentation, and/or
+      other materials provided in a manner in which such notices are
+      normally distributed.
+   b) The derivative work must be clearly identified as such, in order
+      that it may not be confused with the original work.
+   c) The license under which the derivative work is distributed must
+      expressly prohibit the distribution of further derivative works.
+
+4. Modification and redistribution under open license.
+   You may modify your copy or copies of the Program, and distribute
+   the resulting derivative works, provided that you meet the
+   following conditions:
+   a) The copyright notice and disclaimer on the Program must be
+      reproduced and included in the source code, documentation, and/or
+      other materials provided in a manner in which such notices are
+      normally distributed.
+   b) You must clearly indicate the nature and date of any changes made
+      to the Program.  The full details need not necessarily be
+      included in the individual modified files, provided that each
+      modified file is clearly marked as such and instructions are
+      included on where the full details of the modifications may be
+      found.
+   c) You must cause any work that you distribute or publish, that in
+      whole or in part contains or is derived from the Program or any
+      part thereof, to be licensed as a whole at no charge to all third
+      parties under the terms of this License.
+
+5. Implied acceptance.
+   You may not copy or distribute the Program or any derivative works
+   except as expressly provided under this license.  Consequently, any
+   such action will be taken as implied acceptance of the terms of this
+   license.
+
+6. NO WARRANTY.
+   THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED
+   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+   DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER
+   PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED
+   ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+   EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR
+   INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO,
+   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN
+   IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+   SUCH DAMAGES.</pre></details></li><li><details><summary>Text:</summary><pre>BSD Protection License
+
+February 2002 Preamble
+
+--------
+
+The Berkeley Software Distribution (&quot;BSD&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.
+
+This is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).
+
+With the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of &quot;GPL-tainted&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the &quot;tainted&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such &quot;GPL-taint&quot;.
+
+In addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.
+
+For the above reasons, we put forth this &quot;BSD Protection License&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.
+
+The precise terms and conditions for copying, distribution, and modification follow.
+
+BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION ----------------------------------------------------------------
+
+   0. Definitions.
+
+      a) &quot;Program&quot;, below, refers to any program or work distributed under the terms of this license.
+
+      b) A &quot;work based on the Program&quot;, below, refers to either the Program or any derivative work under copyright law.
+
+      c) &quot;Modification&quot;, below, refers to the act of creating derivative works.
+
+      d) &quot;You&quot;, below, refers to each licensee.
+
+   1. Scope.
+
+   This license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.
+
+   2. Verbatim copies.
+
+   You may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.
+
+   3. Modification and redistribution under closed license.
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+
+      b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.
+
+      c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.
+
+   4. Modification and redistribution under open license.
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+
+      b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.
+
+      c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
+
+   5. Implied acceptance.
+
+   You may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.
+
+   6. NO WARRANTY.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/7c0f9b52a64284732a0179c763b25201">SPDXLicense:7c0f9b52a64284732a0179c763b25201</a> for <a href="/?license=spdx:BSD-Protection"><span class="licensename"><span class="namespace">spdx:</span>BSD-Protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7c0f9b52a64284732a0179c763b25201">[<a href="/fact/SPDXLicense/7c0f9b52a64284732a0179c763b25201">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD_Protection_License" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD_Protection_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>BSD Protection License
+February 2002
+
+Preamble
+--------
+
+The Berkeley Software Distribution (&quot;BSD&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.
+
+This is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).
+
+With the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of &quot;GPL-tainted&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the &quot;tainted&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such &quot;GPL-taint&quot;.
+
+In addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.
+
+For the above reasons, we put forth this &quot;BSD Protection License&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.
+
+The precise terms and conditions for copying, distribution, and modification follow.
+
+BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+----------------------------------------------------------------
+
+0. Definitions.
+
+     a) &quot;Program&quot;, below, refers to any program or work distributed under the terms of this license.
+     b) A &quot;work based on the Program&quot;, below, refers to either the Program or any derivative work under copyright law.
+     c) &quot;Modification&quot;, below, refers to the act of creating derivative works.
+     d) &quot;You&quot;, below, refers to each licensee.
+
+1. Scope.
+This license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.
+
+2. Verbatim copies.
+You may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.
+
+3. Modification and redistribution under closed license.
+You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+     b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.
+     c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.
+
+4. Modification and redistribution under open license.
+You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+     b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.
+     c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
+
+5. Implied acceptance.
+You may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.
+
+6. NO WARRANTY.
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;BSD Protection License
+        &lt;br /&gt;
+
+February 2002
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Preamble
+        &lt;br /&gt;
+
+--------
+      &lt;/p&gt;
+
+         &lt;p&gt;The Berkeley Software Distribution (&amp;quot;BSD&amp;quot;) license has proven very effective over the years at
+         allowing for a wide spread of work throughout both commercial and non-commercial products. For
+         programmers whose primary intention is to improve the general quality of available software, it is
+         arguable that there is no better license than the BSD license, as it permits improvements to be used
+         wherever they will help, without idealogical or metallic constraint.&lt;/p&gt;
+
+         &lt;p&gt;This is of particular value to those who produce reference implementations of proposed standards: The
+         case of TCP/IP clearly illustrates that freely and universally available implementations leads the
+         rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network
+         models).&lt;/p&gt;
+
+         &lt;p&gt;With the rapid proliferation of software licensed under the GNU General Public License, however, the
+         continued success of this role is called into question. Given that the inclusion of a few lines of
+         &amp;quot;GPL-tainted&amp;quot; work into a larger body of work will result in restricted distribution -- and
+         given that further work will likely build upon the &amp;quot;tainted&amp;quot; portions, making them difficult
+         to remove at a future date -- there are inevitable circumstances where authors would, in order to
+         protect their goal of providing for the widespread usage of their work, wish to guard against such
+         &amp;quot;GPL-taint&amp;quot;.&lt;/p&gt;
+
+         &lt;p&gt;In addition, one can imagine that companies which operate by producing and selling (possibly
+         closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor.
+         While under existing licenses this would mean not releasing their code under any form of open license,
+         if a license existed under which they could incorporate any improvements back into their own
+         (commercial) products then they might be far more willing to provide for non-closed distribution.&lt;/p&gt;
+
+         &lt;p&gt;For the above reasons, we put forth this &amp;quot;BSD Protection License&amp;quot;: A license designed to retain
+         the freedom granted by the BSD license to use licensed works in a wide variety of settings, both
+         non-commercial and commercial, while protecting the work from having future contributors restrict that
+         freedom.&lt;/p&gt;
+
+         &lt;p&gt;The precise terms and conditions for copying, distribution, and modification follow.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;
+
+      &lt;var class=&quot;optional-license-text&quot;&gt; ----------------------------------------------------------------&lt;/var&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 0.&lt;/var&gt;
+          Definitions.
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            &amp;quot;Program&amp;quot;, below, refers to any program or work distributed under the terms of this
+               license.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            A &amp;quot;work based on the Program&amp;quot;, below, refers to either the Program or any
+               derivative work under copyright law.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            &amp;quot;Modification&amp;quot;, below, refers to the act of creating derivative works.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+            &amp;quot;You&amp;quot;, below, refers to each licensee.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Scope.
+            &lt;br /&gt;
+
+   This license governs the copying, distribution, and modification of the Program. Other
+                 activities are outside the scope of this license; The act of running the Program is
+                 not restricted, and the output from the Program is covered only if its contents
+                 constitute a work based on the Program.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Verbatim copies.
+            &lt;br /&gt;
+
+   You may copy and distribute verbatim copies of the Program as you receive it, in any
+                 medium, provided that you conspicuously and appropriately publish on each copy an
+                 appropriate copyright notice; keep intact all the notices that refer to this License
+                 and to the absence of any warranty; and give any other recipients of the Program a
+                 copy of this License along with the Program.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Modification and redistribution under closed license.
+            &lt;br /&gt;
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative
+                 works, provided that you meet the following conditions:
+
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            The copyright notice and disclaimer on the Program must be reproduced and included in the
+               source code, documentation, and/or other materials provided in a manner in which such
+               notices are normally distributed.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            The derivative work must be clearly identified as such, in order that it may not be confused
+               with the original work.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            The license under which the derivative work is distributed must expressly prohibit the
+               distribution of further derivative works.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          Modification and redistribution under open license.
+            &lt;br /&gt;
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative
+                 works, provided that you meet the following conditions:
+
+        &lt;/li&gt;
+	
+&lt;li&gt;
+	
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+            The copyright notice and disclaimer on the Program must be reproduced and included in the
+               source code, documentation, and/or other materials provided in a manner in which such
+               notices are normally distributed.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+            You must clearly indicate the nature and date of any changes made to the Program. The full
+               details need not necessarily be included in the individual modified files, provided that
+               each modified file is clearly marked as such and instructions are included on where the
+               full details of the modifications may be found.
+          &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+            You must cause any work that you distribute or publish, that in whole or in part contains or
+               is derived from the Program or any part thereof, to be licensed as a whole at no charge to
+               all third parties under the terms of this License.
+          &lt;/li&gt;
+        
+&lt;/ul&gt;
+	&lt;/li&gt;
+	
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Implied acceptance.
+            &lt;br /&gt;
+
+   You may not copy or distribute the Program or any derivative works except as expressly
+                 provided under this license. Consequently, any such action will be taken as implied
+                 acceptance of the terms of this license.
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          NO WARRANTY.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+         LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+         DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+         REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+         EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING,
+         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+         BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+         LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+         DAMAGES.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BSD-Protection&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;7c0f9b52a64284732a0179c763b25201&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License\nFebruary 2002\n\nPreamble\n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.\n\nThis is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the \&quot;tainted\&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and modification follow.\n\nBSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n----------------------------------------------------------------\n\n0. Definitions.\n\n     a) \&quot;Program\&quot;, below, refers to any program or work distributed under the terms of this license.\n     b) A \&quot;work based on the Program\&quot;, below, refers to either the Program or any derivative work under copyright law.\n     c) \&quot;Modification\&quot;, below, refers to the act of creating derivative works.\n     d) \&quot;You\&quot;, below, refers to each licensee.\n\n1. Scope.\nThis license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.\n\n2. Verbatim copies.\nYou may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.\n\n3. Modification and redistribution under closed license.\nYou may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n     b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.\n     c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.\n\n4. Modification and redistribution under open license.\nYou may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n     b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.\n     c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.\n\n5. Implied acceptance.\nYou may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.\n\n6. NO WARRANTY.\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;BSD Protection License\n        &lt;br /&gt;\n\nFebruary 2002\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Preamble\n        &lt;br /&gt;\n\n--------\n      &lt;/p&gt;\n\n         &lt;p&gt;The Berkeley Software Distribution (&amp;quot;BSD&amp;quot;) license has proven very effective over the years at\n         allowing for a wide spread of work throughout both commercial and non-commercial products. For\n         programmers whose primary intention is to improve the general quality of available software, it is\n         arguable that there is no better license than the BSD license, as it permits improvements to be used\n         wherever they will help, without idealogical or metallic constraint.&lt;/p&gt;\n\n         &lt;p&gt;This is of particular value to those who produce reference implementations of proposed standards: The\n         case of TCP/IP clearly illustrates that freely and universally available implementations leads the\n         rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network\n         models).&lt;/p&gt;\n\n         &lt;p&gt;With the rapid proliferation of software licensed under the GNU General Public License, however, the\n         continued success of this role is called into question. Given that the inclusion of a few lines of\n         &amp;quot;GPL-tainted&amp;quot; work into a larger body of work will result in restricted distribution -- and\n         given that further work will likely build upon the &amp;quot;tainted&amp;quot; portions, making them difficult\n         to remove at a future date -- there are inevitable circumstances where authors would, in order to\n         protect their goal of providing for the widespread usage of their work, wish to guard against such\n         &amp;quot;GPL-taint&amp;quot;.&lt;/p&gt;\n\n         &lt;p&gt;In addition, one can imagine that companies which operate by producing and selling (possibly\n         closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor.\n         While under existing licenses this would mean not releasing their code under any form of open license,\n         if a license existed under which they could incorporate any improvements back into their own\n         (commercial) products then they might be far more willing to provide for non-closed distribution.&lt;/p&gt;\n\n         &lt;p&gt;For the above reasons, we put forth this &amp;quot;BSD Protection License&amp;quot;: A license designed to retain\n         the freedom granted by the BSD license to use licensed works in a wide variety of settings, both\n         non-commercial and commercial, while protecting the work from having future contributors restrict that\n         freedom.&lt;/p&gt;\n\n         &lt;p&gt;The precise terms and conditions for copying, distribution, and modification follow.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;\n\n      &lt;var class=\&quot;optional-license-text\&quot;&gt; ----------------------------------------------------------------&lt;/var&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n          Definitions.\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            &amp;quot;Program&amp;quot;, below, refers to any program or work distributed under the terms of this\n               license.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            A &amp;quot;work based on the Program&amp;quot;, below, refers to either the Program or any\n               derivative work under copyright law.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            &amp;quot;Modification&amp;quot;, below, refers to the act of creating derivative works.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n            &amp;quot;You&amp;quot;, below, refers to each licensee.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Scope.\n            &lt;br /&gt;\n\n   This license governs the copying, distribution, and modification of the Program. Other\n                 activities are outside the scope of this license; The act of running the Program is\n                 not restricted, and the output from the Program is covered only if its contents\n                 constitute a work based on the Program.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Verbatim copies.\n            &lt;br /&gt;\n\n   You may copy and distribute verbatim copies of the Program as you receive it, in any\n                 medium, provided that you conspicuously and appropriately publish on each copy an\n                 appropriate copyright notice; keep intact all the notices that refer to this License\n                 and to the absence of any warranty; and give any other recipients of the Program a\n                 copy of this License along with the Program.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Modification and redistribution under closed license.\n            &lt;br /&gt;\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative\n                 works, provided that you meet the following conditions:\n\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            The copyright notice and disclaimer on the Program must be reproduced and included in the\n               source code, documentation, and/or other materials provided in a manner in which such\n               notices are normally distributed.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            The derivative work must be clearly identified as such, in order that it may not be confused\n               with the original work.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            The license under which the derivative work is distributed must expressly prohibit the\n               distribution of further derivative works.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          Modification and redistribution under open license.\n            &lt;br /&gt;\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative\n                 works, provided that you meet the following conditions:\n\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            The copyright notice and disclaimer on the Program must be reproduced and included in the\n               source code, documentation, and/or other materials provided in a manner in which such\n               notices are normally distributed.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            You must clearly indicate the nature and date of any changes made to the Program. The full\n               details need not necessarily be included in the individual modified files, provided that\n               each modified file is clearly marked as such and instructions are included on where the\n               full details of the modifications may be found.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            You must cause any work that you distribute or publish, that in whole or in part contains or\n               is derived from the Program or any part thereof, to be licensed as a whole at no charge to\n               all third parties under the terms of this License.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Implied acceptance.\n            &lt;br /&gt;\n\n   You may not copy or distribute the Program or any derivative works except as expressly\n                 provided under this license. Consequently, any such action will be taken as implied\n                 acceptance of the terms of this license.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          NO WARRANTY.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n         LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n         DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\n         REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n         EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING,\n         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\n         BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n         LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH\n         DAMAGES.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:01:24Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:BSD-Protection&quot;,
+        &quot;licenseText&quot;: &quot;BSD Protection License\nFebruary 2002\n\nPreamble\n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.\n\nThis is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the \&quot;tainted\&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and modification follow.\n\nBSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n----------------------------------------------------------------\n\n0. Definitions.\n\n     a) \&quot;Program\&quot;, below, refers to any program or work distributed under the terms of this license.\n     b) A \&quot;work based on the Program\&quot;, below, refers to either the Program or any derivative work under copyright law.\n     c) \&quot;Modification\&quot;, below, refers to the act of creating derivative works.\n     d) \&quot;You\&quot;, below, refers to each licensee.\n\n1. Scope.\nThis license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.\n\n2. Verbatim copies.\nYou may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.\n\n3. Modification and redistribution under closed license.\nYou may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n     b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.\n     c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.\n\n4. Modification and redistribution under open license.\nYou may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n     b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.\n     c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.\n\n5. Implied acceptance.\nYou may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.\n\n6. NO WARRANTY.\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;BSD Protection License\n        &lt;br /&gt;\n\nFebruary 2002\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Preamble\n        &lt;br /&gt;\n\n--------\n      &lt;/p&gt;\n\n         &lt;p&gt;The Berkeley Software Distribution (&amp;quot;BSD&amp;quot;) license has proven very effective over the years at\n         allowing for a wide spread of work throughout both commercial and non-commercial products. For\n         programmers whose primary intention is to improve the general quality of available software, it is\n         arguable that there is no better license than the BSD license, as it permits improvements to be used\n         wherever they will help, without idealogical or metallic constraint.&lt;/p&gt;\n\n         &lt;p&gt;This is of particular value to those who produce reference implementations of proposed standards: The\n         case of TCP/IP clearly illustrates that freely and universally available implementations leads the\n         rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network\n         models).&lt;/p&gt;\n\n         &lt;p&gt;With the rapid proliferation of software licensed under the GNU General Public License, however, the\n         continued success of this role is called into question. Given that the inclusion of a few lines of\n         &amp;quot;GPL-tainted&amp;quot; work into a larger body of work will result in restricted distribution -- and\n         given that further work will likely build upon the &amp;quot;tainted&amp;quot; portions, making them difficult\n         to remove at a future date -- there are inevitable circumstances where authors would, in order to\n         protect their goal of providing for the widespread usage of their work, wish to guard against such\n         &amp;quot;GPL-taint&amp;quot;.&lt;/p&gt;\n\n         &lt;p&gt;In addition, one can imagine that companies which operate by producing and selling (possibly\n         closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor.\n         While under existing licenses this would mean not releasing their code under any form of open license,\n         if a license existed under which they could incorporate any improvements back into their own\n         (commercial) products then they might be far more willing to provide for non-closed distribution.&lt;/p&gt;\n\n         &lt;p&gt;For the above reasons, we put forth this &amp;quot;BSD Protection License&amp;quot;: A license designed to retain\n         the freedom granted by the BSD license to use licensed works in a wide variety of settings, both\n         non-commercial and commercial, while protecting the work from having future contributors restrict that\n         freedom.&lt;/p&gt;\n\n         &lt;p&gt;The precise terms and conditions for copying, distribution, and modification follow.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION&lt;/p&gt;\n\n      &lt;var class=\&quot;optional-license-text\&quot;&gt; ----------------------------------------------------------------&lt;/var&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 0.&lt;/var&gt;\n          Definitions.\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            &amp;quot;Program&amp;quot;, below, refers to any program or work distributed under the terms of this\n               license.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            A &amp;quot;work based on the Program&amp;quot;, below, refers to either the Program or any\n               derivative work under copyright law.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            &amp;quot;Modification&amp;quot;, below, refers to the act of creating derivative works.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n            &amp;quot;You&amp;quot;, below, refers to each licensee.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Scope.\n            &lt;br /&gt;\n\n   This license governs the copying, distribution, and modification of the Program. Other\n                 activities are outside the scope of this license; The act of running the Program is\n                 not restricted, and the output from the Program is covered only if its contents\n                 constitute a work based on the Program.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Verbatim copies.\n            &lt;br /&gt;\n\n   You may copy and distribute verbatim copies of the Program as you receive it, in any\n                 medium, provided that you conspicuously and appropriately publish on each copy an\n                 appropriate copyright notice; keep intact all the notices that refer to this License\n                 and to the absence of any warranty; and give any other recipients of the Program a\n                 copy of this License along with the Program.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Modification and redistribution under closed license.\n            &lt;br /&gt;\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative\n                 works, provided that you meet the following conditions:\n\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            The copyright notice and disclaimer on the Program must be reproduced and included in the\n               source code, documentation, and/or other materials provided in a manner in which such\n               notices are normally distributed.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            The derivative work must be clearly identified as such, in order that it may not be confused\n               with the original work.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            The license under which the derivative work is distributed must expressly prohibit the\n               distribution of further derivative works.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          Modification and redistribution under open license.\n            &lt;br /&gt;\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative\n                 works, provided that you meet the following conditions:\n\n        &lt;/li&gt;\n\t\n&lt;li&gt;\n\t\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n            The copyright notice and disclaimer on the Program must be reproduced and included in the\n               source code, documentation, and/or other materials provided in a manner in which such\n               notices are normally distributed.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n            You must clearly indicate the nature and date of any changes made to the Program. The full\n               details need not necessarily be included in the individual modified files, provided that\n               each modified file is clearly marked as such and instructions are included on where the\n               full details of the modifications may be found.\n          &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n            You must cause any work that you distribute or publish, that in whole or in part contains or\n               is derived from the Program or any part thereof, to be licensed as a whole at no charge to\n               all third parties under the terms of this License.\n          &lt;/li&gt;\n        \n&lt;/ul&gt;\n\t&lt;/li&gt;\n\t\n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Implied acceptance.\n            &lt;br /&gt;\n\n   You may not copy or distribute the Program or any derivative works except as expressly\n                 provided under this license. Consequently, any such action will be taken as implied\n                 acceptance of the terms of this license.\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          NO WARRANTY.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n         LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n         DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\n         REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n         EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING,\n         BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\n         BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n         LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH\n         DAMAGES.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;BSD Protection License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;BSD Protection License\n\nFebruary 2002\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; Preamble\n\n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.\n\nThis is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the \&quot;tainted\&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and modification follow.\n\n&lt;&lt;endOptional&gt;&gt;\n\nBSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n\n&lt;&lt;beginOptional&gt;&gt;----------------------------------------------------------------&lt;&lt;endOptional&gt;&gt;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;0.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Definitions.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; \&quot;Program\&quot;, below, refers to any program or work distributed under the terms of this license.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; A \&quot;work based on the Program\&quot;, below, refers to either the Program or any derivative work under copyright law.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; \&quot;Modification\&quot;, below, refers to the act of creating derivative works.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; \&quot;You\&quot;, below, refers to each licensee.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Scope.\n\n   This license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Verbatim copies.\n\n   You may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Modification and redistribution under closed license.\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The derivative work must be clearly identified as such, in order that it may not be confused with the original work.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Modification and redistribution under open license.\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Implied acceptance.\n\n   You may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; NO WARRANTY.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/866590dcab3018665de050bc8a7c5eb9">GoogleLicense:866590dcab3018665de050bc8a7c5eb9</a> for <a href="/?license=google:BSDProtection"><span class="licensename"><span class="namespace">google:</span>BSDProtection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>BSDProtection</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Protection</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:866590dcab3018665de050bc8a7c5eb9">[<a href="/fact/GoogleLicense/866590dcab3018665de050bc8a7c5eb9">GoogleLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:BSDProtection&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:BSD-Protection&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;866590dcab3018665de050bc8a7c5eb9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Google Policy Classification&quot;,
+                        &quot;notice&quot;,
+                        {
+                            &quot;contents&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:BSDProtection&quot;,
+        &quot;googleLicenseType&quot;: &quot;notice&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:BSD-Protection&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/6935e7bb33286fd29f5e2258bf50a8e6">FedoraEntry:6935e7bb33286fd29f5e2258bf50a8e6</a> for <a href="/?license=Fedora:BSD-Protection"><span class="licensename"><span class="namespace">Fedora:</span>BSD-Protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection</span></li><li><span class="licensename">BSD Protection License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6935e7bb33286fd29f5e2258bf50a8e6">[<a href="/fact/FedoraEntry/6935e7bb33286fd29f5e2258bf50a8e6">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD_Protection_License" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD_Protection_License</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BSD-Protection&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Protection&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD Protection&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;6935e7bb33286fd29f5e2258bf50a8e6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;BSD Protection&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;BSD Protection License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BSD-Protection&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BSD-Protection&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/a5c875935bfc35f674ba9ead90dd368d">BlueOakCouncil:a5c875935bfc35f674ba9ead90dd368d</a> for <a href="/?license=BlueOak:BSD-Protection"><span class="licensename"><span class="namespace">BlueOak:</span>BSD-Protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>StronglyProtective<span class="provided-by">(provided by: <span title="BlueOakCouncil:a5c875935bfc35f674ba9ead90dd368d">[<a href="/fact/BlueOakCouncil/a5c875935bfc35f674ba9ead90dd368d">BlueOakCouncil</a>]</span>)</span></li><li>Copyleft<span class="provided-by">(provided by: <span title="BlueOakCouncil:a5c875935bfc35f674ba9ead90dd368d">[<a href="/fact/BlueOakCouncil/a5c875935bfc35f674ba9ead90dd368d">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/BSD-Protection" target="_blank">https://spdx.org/licenses/BSD-Protection</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;BlueOak:BSD-Protection&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;a5c875935bfc35f674ba9ead90dd368d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: {
+                        &quot;tag&quot;: &quot;StronglyProtective&quot;
+                    },
+                    &quot;tag&quot;: &quot;LicenseType&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;tag&quot;: &quot;Copyleft&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseType&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/BSD-Protection&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;strong&quot;,
+            &quot;BSD Protection License&quot;,
+            {
+                &quot;_id&quot;: &quot;BSD-Protection&quot;,
+                &quot;_name&quot;: &quot;BSD Protection License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/BSD-Protection&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCCopyleft&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/530d07ca49116ddd5c393692fd9ca177">ScancodeData:530d07ca49116ddd5c393692fd9ca177</a> for <a href="/?license=scancode:bsd-protection"><span class="licensename"><span class="namespace">scancode:</span>bsd-protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bsd-protection</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection License</span></li><li><span class="licensename">BSD Protection License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Copyleft<span class="provided-by">(provided by: <span title="ScancodeData:530d07ca49116ddd5c393692fd9ca177">[<a href="/fact/ScancodeData/530d07ca49116ddd5c393692fd9ca177">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD_Protection_License" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD_Protection_License</a></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/BSD_Protection_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>BSD Protection License
+February 2002
+
+Preamble
+--------
+
+The Berkeley Software Distribution (&quot;BSD&quot;) license has proven very effective
+over the years at allowing for a wide spread of work throughout both
+commercial and non-commercial products.  For programmers whose primary
+intention is to improve the general quality of available software, it is
+arguable that there is no better license than the BSD license, as it
+permits improvements to be used wherever they will help, without
+idealogical or metallic constraint.
+
+This is of particular value to those who produce reference
+implementations of proposed standards: The case of TCP/IP clearly
+illustrates that freely and universally available implementations leads
+the rapid acceptance of standards -- often even being used instead of a
+de jure standard (eg, OSI network models).
+
+With the rapid proliferation of software licensed under the GNU General
+Public License, however, the continued success of this role is called
+into question.  Given that the inclusion of a few lines of &quot;GPL-tainted&quot;
+work into a larger body of work will result in restricted distribution
+-- and given that further work will likely build upon the &quot;tainted&quot;
+portions, making them difficult to remove at a future date -- there are
+inevitable circumstances where authors would, in order to protect their
+goal of providing for the widespread usage of their work, wish to guard
+against such &quot;GPL-taint&quot;.
+
+In addition, one can imagine that companies which operate by producing
+and selling (possibly closed-source) code would wish to protect
+themselves against the rise of a GPL-licensed competitor.  While under
+existing licenses this would mean not releasing their code under any
+form of open license, if a license existed under which they could
+incorporate any improvements back into their own (commercial) products
+then they might be far more willing to provide for non-closed distribution.
+
+For the above reasons, we put forth this &quot;BSD Protection License&quot;: A
+license designed to retain the freedom granted by the BSD license to use
+licensed works in a wide variety of settings, both non-commercial and
+commercial, while protecting the work from having future contributors
+restrict that freedom.
+
+The precise terms and conditions for copying, distribution, and
+modification follow.
+
+BSD PROTECTION LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+----------------------------------------------------------------
+
+0. Definitions.
+   a) &quot;Program&quot;, below, refers to any program or work distributed under
+      the terms of this license.
+   b) A &quot;work based on the Program&quot;, below, refers to either the Program
+      or any derivative work under copyright law.
+   c) &quot;Modification&quot;, below, refers to the act of creating derivative
+      works.
+   d) &quot;You&quot;, below, refers to each licensee.
+
+1. Scope.
+   This license governs the copying, distribution, and modification of
+   the Program.  Other activities are outside the scope of this
+   license; The act of running the Program is not restricted, and the
+   output from the Program is covered only if its contents constitute a
+   work based on the Program.
+
+2. Verbatim copies.
+   You may copy and distribute verbatim copies of the Program as you
+   receive it, in any medium, provided that you conspicuously and
+   appropriately publish on each copy an appropriate copyright notice;
+   keep intact all the notices that refer to this License and to the
+   absence of any warranty; and give any other recipients of the
+   Program a copy of this License along with the Program.
+
+3. Modification and redistribution under closed license.
+   You may modify your copy or copies of the Program, and distribute
+   the resulting derivative works, provided that you meet the
+   following conditions:
+   a) The copyright notice and disclaimer on the Program must be
+      reproduced and included in the source code, documentation, and/or
+      other materials provided in a manner in which such notices are
+      normally distributed.
+   b) The derivative work must be clearly identified as such, in order
+      that it may not be confused with the original work.
+   c) The license under which the derivative work is distributed must
+      expressly prohibit the distribution of further derivative works.
+
+4. Modification and redistribution under open license.
+   You may modify your copy or copies of the Program, and distribute
+   the resulting derivative works, provided that you meet the
+   following conditions:
+   a) The copyright notice and disclaimer on the Program must be
+      reproduced and included in the source code, documentation, and/or
+      other materials provided in a manner in which such notices are
+      normally distributed.
+   b) You must clearly indicate the nature and date of any changes made
+      to the Program.  The full details need not necessarily be
+      included in the individual modified files, provided that each
+      modified file is clearly marked as such and instructions are
+      included on where the full details of the modifications may be
+      found.
+   c) You must cause any work that you distribute or publish, that in
+      whole or in part contains or is derived from the Program or any
+      part thereof, to be licensed as a whole at no charge to all third
+      parties under the terms of this License.
+
+5. Implied acceptance.
+   You may not copy or distribute the Program or any derivative works
+   except as expressly provided under this license.  Consequently, any
+   such action will be taken as implied acceptance of the terms of this
+   license.
+
+6. NO WARRANTY.
+   THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED
+   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+   DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER
+   PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED
+   ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+   EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR
+   INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO,
+   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN
+   IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+   SUCH DAMAGES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bsd-protection&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;530d07ca49116ddd5c393692fd9ca177&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Copyleft&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;BSD Protection License\nFebruary 2002\n\nPreamble\n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective\nover the years at allowing for a wide spread of work throughout both\ncommercial and non-commercial products.  For programmers whose primary\nintention is to improve the general quality of available software, it is\narguable that there is no better license than the BSD license, as it\npermits improvements to be used wherever they will help, without\nidealogical or metallic constraint.\n\nThis is of particular value to those who produce reference\nimplementations of proposed standards: The case of TCP/IP clearly\nillustrates that freely and universally available implementations leads\nthe rapid acceptance of standards -- often even being used instead of a\nde jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General\nPublic License, however, the continued success of this role is called\ninto question.  Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot;\nwork into a larger body of work will result in restricted distribution\n-- and given that further work will likely build upon the \&quot;tainted\&quot;\nportions, making them difficult to remove at a future date -- there are\ninevitable circumstances where authors would, in order to protect their\ngoal of providing for the widespread usage of their work, wish to guard\nagainst such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing\nand selling (possibly closed-source) code would wish to protect\nthemselves against the rise of a GPL-licensed competitor.  While under\nexisting licenses this would mean not releasing their code under any\nform of open license, if a license existed under which they could\nincorporate any improvements back into their own (commercial) products\nthen they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A\nlicense designed to retain the freedom granted by the BSD license to use\nlicensed works in a wide variety of settings, both non-commercial and\ncommercial, while protecting the work from having future contributors\nrestrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and\nmodification follow.\n\nBSD PROTECTION LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n----------------------------------------------------------------\n\n0. Definitions.\n   a) \&quot;Program\&quot;, below, refers to any program or work distributed under\n      the terms of this license.\n   b) A \&quot;work based on the Program\&quot;, below, refers to either the Program\n      or any derivative work under copyright law.\n   c) \&quot;Modification\&quot;, below, refers to the act of creating derivative\n      works.\n   d) \&quot;You\&quot;, below, refers to each licensee.\n\n1. Scope.\n   This license governs the copying, distribution, and modification of\n   the Program.  Other activities are outside the scope of this\n   license; The act of running the Program is not restricted, and the\n   output from the Program is covered only if its contents constitute a\n   work based on the Program.\n\n2. Verbatim copies.\n   You may copy and distribute verbatim copies of the Program as you\n   receive it, in any medium, provided that you conspicuously and\n   appropriately publish on each copy an appropriate copyright notice;\n   keep intact all the notices that refer to this License and to the\n   absence of any warranty; and give any other recipients of the\n   Program a copy of this License along with the Program.\n\n3. Modification and redistribution under closed license.\n   You may modify your copy or copies of the Program, and distribute\n   the resulting derivative works, provided that you meet the\n   following conditions:\n   a) The copyright notice and disclaimer on the Program must be\n      reproduced and included in the source code, documentation, and/or\n      other materials provided in a manner in which such notices are\n      normally distributed.\n   b) The derivative work must be clearly identified as such, in order\n      that it may not be confused with the original work.\n   c) The license under which the derivative work is distributed must\n      expressly prohibit the distribution of further derivative works.\n\n4. Modification and redistribution under open license.\n   You may modify your copy or copies of the Program, and distribute\n   the resulting derivative works, provided that you meet the\n   following conditions:\n   a) The copyright notice and disclaimer on the Program must be\n      reproduced and included in the source code, documentation, and/or\n      other materials provided in a manner in which such notices are\n      normally distributed.\n   b) You must clearly indicate the nature and date of any changes made\n      to the Program.  The full details need not necessarily be\n      included in the individual modified files, provided that each\n      modified file is clearly marked as such and instructions are\n      included on where the full details of the modifications may be\n      found.\n   c) You must cause any work that you distribute or publish, that in\n      whole or in part contains or is derived from the Program or any\n      part thereof, to be licensed as a whole at no charge to all third\n      parties under the terms of this License.\n\n5. Implied acceptance.\n   You may not copy or distribute the Program or any derivative works\n   except as expressly provided under this license.  Consequently, any\n   such action will be taken as implied acceptance of the terms of this\n   license.\n\n6. NO WARRANTY.\n   THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED\n   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n   DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER\n   PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED\n   ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n   EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR\n   INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO,\n   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN\n   IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\n   SUCH DAMAGES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;,
+        &quot;_key&quot;: &quot;bsd-protection&quot;,
+        &quot;_name&quot;: &quot;BSD Protection License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;FreeBSD&quot;,
+        &quot;_shortName&quot;: &quot;BSD Protection License&quot;,
+        &quot;_spdxId&quot;: &quot;BSD-Protection&quot;,
+        &quot;_text&quot;: &quot;BSD Protection License\nFebruary 2002\n\nPreamble\n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective\nover the years at allowing for a wide spread of work throughout both\ncommercial and non-commercial products.  For programmers whose primary\nintention is to improve the general quality of available software, it is\narguable that there is no better license than the BSD license, as it\npermits improvements to be used wherever they will help, without\nidealogical or metallic constraint.\n\nThis is of particular value to those who produce reference\nimplementations of proposed standards: The case of TCP/IP clearly\nillustrates that freely and universally available implementations leads\nthe rapid acceptance of standards -- often even being used instead of a\nde jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General\nPublic License, however, the continued success of this role is called\ninto question.  Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot;\nwork into a larger body of work will result in restricted distribution\n-- and given that further work will likely build upon the \&quot;tainted\&quot;\nportions, making them difficult to remove at a future date -- there are\ninevitable circumstances where authors would, in order to protect their\ngoal of providing for the widespread usage of their work, wish to guard\nagainst such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing\nand selling (possibly closed-source) code would wish to protect\nthemselves against the rise of a GPL-licensed competitor.  While under\nexisting licenses this would mean not releasing their code under any\nform of open license, if a license existed under which they could\nincorporate any improvements back into their own (commercial) products\nthen they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A\nlicense designed to retain the freedom granted by the BSD license to use\nlicensed works in a wide variety of settings, both non-commercial and\ncommercial, while protecting the work from having future contributors\nrestrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and\nmodification follow.\n\nBSD PROTECTION LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION\n----------------------------------------------------------------\n\n0. Definitions.\n   a) \&quot;Program\&quot;, below, refers to any program or work distributed under\n      the terms of this license.\n   b) A \&quot;work based on the Program\&quot;, below, refers to either the Program\n      or any derivative work under copyright law.\n   c) \&quot;Modification\&quot;, below, refers to the act of creating derivative\n      works.\n   d) \&quot;You\&quot;, below, refers to each licensee.\n\n1. Scope.\n   This license governs the copying, distribution, and modification of\n   the Program.  Other activities are outside the scope of this\n   license; The act of running the Program is not restricted, and the\n   output from the Program is covered only if its contents constitute a\n   work based on the Program.\n\n2. Verbatim copies.\n   You may copy and distribute verbatim copies of the Program as you\n   receive it, in any medium, provided that you conspicuously and\n   appropriately publish on each copy an appropriate copyright notice;\n   keep intact all the notices that refer to this License and to the\n   absence of any warranty; and give any other recipients of the\n   Program a copy of this License along with the Program.\n\n3. Modification and redistribution under closed license.\n   You may modify your copy or copies of the Program, and distribute\n   the resulting derivative works, provided that you meet the\n   following conditions:\n   a) The copyright notice and disclaimer on the Program must be\n      reproduced and included in the source code, documentation, and/or\n      other materials provided in a manner in which such notices are\n      normally distributed.\n   b) The derivative work must be clearly identified as such, in order\n      that it may not be confused with the original work.\n   c) The license under which the derivative work is distributed must\n      expressly prohibit the distribution of further derivative works.\n\n4. Modification and redistribution under open license.\n   You may modify your copy or copies of the Program, and distribute\n   the resulting derivative works, provided that you meet the\n   following conditions:\n   a) The copyright notice and disclaimer on the Program must be\n      reproduced and included in the source code, documentation, and/or\n      other materials provided in a manner in which such notices are\n      normally distributed.\n   b) You must clearly indicate the nature and date of any changes made\n      to the Program.  The full details need not necessarily be\n      included in the individual modified files, provided that each\n      modified file is clearly marked as such and instructions are\n      included on where the full details of the modifications may be\n      found.\n   c) You must cause any work that you distribute or publish, that in\n      whole or in part contains or is derived from the Program or any\n      part thereof, to be licensed as a whole at no charge to all third\n      parties under the terms of this License.\n\n5. Implied acceptance.\n   You may not copy or distribute the Program or any derivative works\n   except as expressly provided under this license.  Consequently, any\n   such action will be taken as implied acceptance of the terms of this\n   license.\n\n6. NO WARRANTY.\n   THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED\n   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n   DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER\n   PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED\n   ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n   EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR\n   INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO,\n   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN\n   IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\n   SUCH DAMAGES.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/4f626c01f23f221ef681264425479523">Fossology:4f626c01f23f221ef681264425479523</a> for <a href="/?license=fossology:BSD-Protection"><span class="licensename"><span class="namespace">fossology:</span>BSD-Protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD_Protection_License" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD_Protection_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>BSD Protection License
+
+February 2002 Preamble
+
+--------
+
+The Berkeley Software Distribution (&quot;BSD&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.
+
+This is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).
+
+With the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of &quot;GPL-tainted&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the &quot;tainted&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such &quot;GPL-taint&quot;.
+
+In addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.
+
+For the above reasons, we put forth this &quot;BSD Protection License&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.
+
+The precise terms and conditions for copying, distribution, and modification follow.
+
+BSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION ----------------------------------------------------------------
+
+   0. Definitions.
+
+      a) &quot;Program&quot;, below, refers to any program or work distributed under the terms of this license.
+
+      b) A &quot;work based on the Program&quot;, below, refers to either the Program or any derivative work under copyright law.
+
+      c) &quot;Modification&quot;, below, refers to the act of creating derivative works.
+
+      d) &quot;You&quot;, below, refers to each licensee.
+
+   1. Scope.
+
+   This license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.
+
+   2. Verbatim copies.
+
+   You may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.
+
+   3. Modification and redistribution under closed license.
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+
+      b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.
+
+      c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.
+
+   4. Modification and redistribution under open license.
+
+   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:
+
+      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.
+
+      b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.
+
+      c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
+
+   5. Implied acceptance.
+
+   You may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.
+
+   6. NO WARRANTY.
+
+THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:BSD-Protection&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;4f626c01f23f221ef681264425479523&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;BSD Protection License\n\nFebruary 2002 Preamble\n\n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.\n\nThis is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the \&quot;tainted\&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and modification follow.\n\nBSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION ----------------------------------------------------------------\n\n   0. Definitions.\n\n      a) \&quot;Program\&quot;, below, refers to any program or work distributed under the terms of this license.\n\n      b) A \&quot;work based on the Program\&quot;, below, refers to either the Program or any derivative work under copyright law.\n\n      c) \&quot;Modification\&quot;, below, refers to the act of creating derivative works.\n\n      d) \&quot;You\&quot;, below, refers to each licensee.\n\n   1. Scope.\n\n   This license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.\n\n   2. Verbatim copies.\n\n   You may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.\n\n   3. Modification and redistribution under closed license.\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n\n      b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.\n\n      c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.\n\n   4. Modification and redistribution under open license.\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n\n      b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.\n\n      c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.\n\n   5. Implied acceptance.\n\n   You may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.\n\n   6. NO WARRANTY.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;BSD Protection License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:BSD-Protection&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;BSD Protection License\n\nFebruary 2002 Preamble\n\n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.\n\nThis is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the \&quot;tainted\&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and modification follow.\n\nBSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION ----------------------------------------------------------------\n\n   0. Definitions.\n\n      a) \&quot;Program\&quot;, below, refers to any program or work distributed under the terms of this license.\n\n      b) A \&quot;work based on the Program\&quot;, below, refers to either the Program or any derivative work under copyright law.\n\n      c) \&quot;Modification\&quot;, below, refers to the act of creating derivative works.\n\n      d) \&quot;You\&quot;, below, refers to each licensee.\n\n   1. Scope.\n\n   This license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.\n\n   2. Verbatim copies.\n\n   You may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.\n\n   3. Modification and redistribution under closed license.\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n\n      b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work.\n\n      c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.\n\n   4. Modification and redistribution under open license.\n\n   You may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions:\n\n      a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed.\n\n      b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found.\n\n      c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.\n\n   5. Implied acceptance.\n\n   You may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.\n\n   6. NO WARRANTY.\n\nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/e224966aef220f20abe19e971f11e7d4">OrtLicenseCategorization:e224966aef220f20abe19e971f11e7d4</a> for <a href="/?license=SPDX:BSD-Protection"><span class="licensename"><span class="namespace">SPDX:</span>BSD-Protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-Protection</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e224966aef220f20abe19e971f11e7d4">[<a href="/fact/OrtLicenseCategorization/e224966aef220f20abe19e971f11e7d4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e224966aef220f20abe19e971f11e7d4">[<a href="/fact/OrtLicenseCategorization/e224966aef220f20abe19e971f11e7d4">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e224966aef220f20abe19e971f11e7d4">[<a href="/fact/OrtLicenseCategorization/e224966aef220f20abe19e971f11e7d4">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-Protection&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;e224966aef220f20abe19e971f11e7d4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-Protection&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998</a> for <a href="/?license=SPDX:BSD-Protection"><span class="licensename"><span class="namespace">SPDX:</span>BSD-Protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BSD-Protection</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that requires you to license modifications, as well as any code that ends up in the same binary (including static linking and module modifications), as well as other code that is part of the same work, with the same strong copyleft license. Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.">OrtLicenseCategorization: <b>copyleft-strong</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d4907617b88233fa03c016066c1e9998">[<a href="/fact/OrtLicenseCategorization/d4907617b88233fa03c016066c1e9998">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BSD-Protection&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d4907617b88233fa03c016066c1e9998&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-strong&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that requires you to license modifications, as well as any code that ends up in the same binary (including static linking and module modifications), as well as other code that is part of the same work, with the same strong copyleft license. Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:distribute-source-code&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that requires you to license modifications, as well as any code that ends up in the same binary (including static linking and module modifications), as well as other code that is part of the same work, with the same strong copyleft license. Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.&quot;,
+                &quot;name&quot;: &quot;copyleft-strong&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                &quot;name&quot;: &quot;property:distribute-source-code&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BSD-Protection&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/9bba2d5107f05203464c8580c73c357d">CavilLicenseChange:9bba2d5107f05203464c8580c73c357d</a> for <a href="/?license=cavil:BSD-Protection"><span class="licensename"><span class="namespace">cavil:</span>BSD-Protection</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Protection</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:BSD-Protection&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD-Protection&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;9bba2d5107f05203464c8580c73c357d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;BSD-Protection&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:BSD-Protection&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/d73d807c2683abadfa8d4485b7d488ab">MetaeffektLicense:d73d807c2683abadfa8d4485b7d488ab</a> for <a href="/?license=metaeffekt:BSD Protection License"><span class="licensename"><span class="namespace">metaeffekt:</span>BSD Protection License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>BSD Protection License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BSD-Protection</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD Protection</span></li><li><span class="licensename">BSD Protection License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsd-protection</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:BSD Protection License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BSD-Protection&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BSD Protection&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;BSD Protection License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:bsd-protection&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;d73d807c2683abadfa8d4485b7d488ab&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;BSD Protection License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:BSD Protection License&quot;,
+        &quot;_category&quot;: &quot;BSD Protection&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:bsd-protection&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:BSD-Protection&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/a484a5de8a2dfb244f69d6fc47dfd02a">FOSSLight:a484a5de8a2dfb244f69d6fc47dfd02a</a> for <a href="/?license=fosslight:BSD Protection License"><span class="licensename"><span class="namespace">fosslight:</span>BSD Protection License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>BSD Protection License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Protection</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:a484a5de8a2dfb244f69d6fc47dfd02a">[<a href="/fact/FOSSLight/a484a5de8a2dfb244f69d6fc47dfd02a">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:BSD Protection License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;BSD-Protection&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;a484a5de8a2dfb244f69d6fc47dfd02a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;?? ? ??? ? License ??? ?????. ?, Open Source License? ????? BSD-Protection?? ???? ???.\nCopyright and license notice are required when distributing the software. But, to distribute the software under open source license, it has to be BSD-Protection&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;BSD Protection License \nFebruary 2002\n\nPreamble \n--------\n\nThe Berkeley Software Distribution (\&quot;BSD\&quot;) license has proven very effective over the years at allowing for a wide spread of work throughout both commercial and non-commercial products. For programmers whose primary intention is to improve the general quality of available software, it is arguable that there is no better license than the BSD license, as it permits improvements to be used wherever they will help, without idealogical or metallic constraint.\n\nThis is of particular value to those who produce reference implementations of proposed standards: The case of TCP/IP clearly illustrates that freely and universally available implementations leads the rapid acceptance of standards -- often even being used instead of a de jure standard (eg, OSI network models).\n\nWith the rapid proliferation of software licensed under the GNU General Public License, however, the continued success of this role is called into question. Given that the inclusion of a few lines of \&quot;GPL-tainted\&quot; work into a larger body of work will result in restricted distribution -- and given that further work will likely build upon the \&quot;tainted\&quot; portions, making them difficult to remove at a future date -- there are inevitable circumstances where authors would, in order to protect their goal of providing for the widespread usage of their work, wish to guard against such \&quot;GPL-taint\&quot;.\n\nIn addition, one can imagine that companies which operate by producing and selling (possibly closed-source) code would wish to protect themselves against the rise of a GPL-licensed competitor. While under existing licenses this would mean not releasing their code under any form of open license, if a license existed under which they could incorporate any improvements back into their own (commercial) products then they might be far more willing to provide for non-closed distribution.\n\nFor the above reasons, we put forth this \&quot;BSD Protection License\&quot;: A license designed to retain the freedom granted by the BSD license to use licensed works in a wide variety of settings, both non-commercial and commercial, while protecting the work from having future contributors restrict that freedom.\n\nThe precise terms and conditions for copying, distribution, and modification follow.\n\nBSD PROTECTION LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION \n----------------------------------------------------------------\n\n0. Definitions. \n\n     a) \&quot;Program\&quot;, below, refers to any program or work distributed under the terms of this license. \n     b) A \&quot;work based on the Program\&quot;, below, refers to either the Program or any derivative work under copyright law. \n     c) \&quot;Modification\&quot;, below, refers to the act of creating derivative works. \n     d) \&quot;You\&quot;, below, refers to each licensee.\n\n1. Scope. \nThis license governs the copying, distribution, and modification of the Program. Other activities are outside the scope of this license; The act of running the Program is not restricted, and the output from the Program is covered only if its contents constitute a work based on the Program.\n\n2. Verbatim copies. \nYou may copy and distribute verbatim copies of the Program as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.\n\n3. Modification and redistribution under closed license. \nYou may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions: \n\n     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed. \n     b) The derivative work must be clearly identified as such, in order that it may not be confused with the original work. \n     c) The license under which the derivative work is distributed must expressly prohibit the distribution of further derivative works.\n\n4. Modification and redistribution under open license. \nYou may modify your copy or copies of the Program, and distribute the resulting derivative works, provided that you meet the following conditions: \n\n     a) The copyright notice and disclaimer on the Program must be reproduced and included in the source code, documentation, and/or other materials provided in a manner in which such notices are normally distributed. \n     b) You must clearly indicate the nature and date of any changes made to the Program. The full details need not necessarily be included in the individual modified files, provided that each modified file is clearly marked as such and instructions are included on where the full details of the modifications may be found. \n     c) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.\n\n5. Implied acceptance. \nYou may not copy or distribute the Program or any derivative works except as expressly provided under this license. Consequently, any such action will be taken as implied acceptance of the terms of this license.\n\n6. NO WARRANTY. \nTHIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: &quot;7&quot;,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;BSD-Protection&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/BSD-Protection.html&quot;,
+            &quot;_fossLight_id&quot;: 26,
+            &quot;_fossLight_name&quot;: &quot;fosslight:BSD Protection License&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li></ul></body></html>

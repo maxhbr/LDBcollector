@@ -1,0 +1,420 @@
+<html><head><title>ldbcollector: spdx:Qwt-exception-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Qwt-exception-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Qwt-exception-1.0</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qwt exception 1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qwt Exception 1.0</span></li><li><span class="licensename">Qwt exception to LGPL 2.1</span></li><li><span class="licensename">qwt-exception-1.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Qwt-exception-1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qwt-Exception-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>qwt-exception-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Qwt-exception-1.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qwt Exception</span></li><li><span class="licensename">Qwt License Version 1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:dae6d352ef6659a03d76cc9cb8d2df02">[<a href="/fact/ScancodeData/dae6d352ef6659a03d76cc9cb8d2df02">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>Fossology: </b>Specified to be associated with LGPL-2.1. On Fedora List as &quot;Qwt License 1.0&quot;.<span class="provided-by">(provided by: <span title="Fossology:a6200d99e2f5d08844adcb2d4b26ff22">[<a href="/fact/Fossology/a6200d99e2f5d08844adcb2d4b26ff22">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.gnu.org/licenses/lgpl-2.1.txt" target="_blank">http://www.gnu.org/licenses/lgpl-2.1.txt</a></li><li><a href="http://qwt.sourceforge.net/qwtlicense.html" target="_blank">http://qwt.sourceforge.net/qwtlicense.html</a></li></ul><h3>Other Statements</h3><ul><li>http://qwt.sourceforge.net/qwtlicense.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Qwt License
+Version 1.0, January 1, 2003
+The Qwt library and included programs are provided under the terms
+of the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following
+exceptions:
+
+    1. Widgets that are subclassed from Qwt widgets do not
+       constitute a derivative work.
+
+    2. Static linking of applications and widgets to the
+       Qwt library does not constitute a derivative work
+       and does not require the author to provide source
+       code for the application or widget, use the shared
+       Qwt libraries, or link their applications or
+       widgets against a user-supplied version of Qwt.
+       If you link the application or widget to a modified
+       version of Qwt, then the changes to Qwt must be 
+       provided under the terms of the LGPL in sections
+       1, 2, and 4.
+
+    3. You do not have to provide a copy of the Qwt license
+       with programs that are linked to the Qwt library, nor
+       do you have to identify the Qwt license in your
+       program or documentation as required by section 6
+       of the LGPL.
+       However, programs must still identify their use of Qwt.
+       The following example statement can be included in user
+       documentation to satisfy this requirement:
+           [program/widget] is based in part on the work of
+           the Qwt project (http://qwt.sf.net).</pre></details></li><li><details><summary>Text:</summary><pre>Qwt License Version 1.0,
+
+January 1, 2003
+
+The Qwt library and included programs are provided under the terms of the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following exceptions:
+
+   1. Widgets that are subclassed from Qwt widgets do not constitute a derivative work.
+
+   2. Static linking of applications and widgets to the Qwt library does not constitute a derivative work and does not require the author to provide source code for the application or widget, use the shared Qwt libraries, or link their applications or widgets against a user-supplied version of Qwt. If you link the application or widget to a modified version of Qwt, then the changes to Qwt must be provided under the terms of the LGPL in sections 1, 2, and 4.
+
+   3. You do not have to provide a copy of the Qwt license with programs that are linked to the Qwt library, nor do you have to identify the Qwt license in your program or documentation as required by section 6 of the LGPL.
+
+However, programs must still identify their use of Qwt. The following example statement can be included in user documentation to satisfy this requirement: [program/widget] is based in part on the work of the Qwt project (http://qwt.sf.net).&quot;</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/dae6d352ef6659a03d76cc9cb8d2df02">ScancodeData:dae6d352ef6659a03d76cc9cb8d2df02</a> for <a href="/?license=scancode:qwt-exception-1.0"><span class="licensename"><span class="namespace">scancode:</span>qwt-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>qwt-exception-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qwt exception to LGPL 2.1</span></li><li><span class="licensename">Qwt exception to LGPL 2.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:dae6d352ef6659a03d76cc9cb8d2df02">[<a href="/fact/ScancodeData/dae6d352ef6659a03d76cc9cb8d2df02">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.gnu.org/licenses/lgpl-2.1.txt" target="_blank">http://www.gnu.org/licenses/lgpl-2.1.txt</a></li></ul><h3>Other Statements</h3><ul><li>http://qwt.sourceforge.net/qwtlicense.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Qwt License
+Version 1.0, January 1, 2003
+The Qwt library and included programs are provided under the terms
+of the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following
+exceptions:
+
+    1. Widgets that are subclassed from Qwt widgets do not
+       constitute a derivative work.
+
+    2. Static linking of applications and widgets to the
+       Qwt library does not constitute a derivative work
+       and does not require the author to provide source
+       code for the application or widget, use the shared
+       Qwt libraries, or link their applications or
+       widgets against a user-supplied version of Qwt.
+       If you link the application or widget to a modified
+       version of Qwt, then the changes to Qwt must be 
+       provided under the terms of the LGPL in sections
+       1, 2, and 4.
+
+    3. You do not have to provide a copy of the Qwt license
+       with programs that are linked to the Qwt library, nor
+       do you have to identify the Qwt license in your
+       program or documentation as required by section 6
+       of the LGPL.
+       However, programs must still identify their use of Qwt.
+       The following example statement can be included in user
+       documentation to satisfy this requirement:
+           [program/widget] is based in part on the work of
+           the Qwt project (http://qwt.sf.net).</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:qwt-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Qwt exception to LGPL 2.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Qwt exception to LGPL 2.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;dae6d352ef6659a03d76cc9cb8d2df02&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://qwt.sourceforge.net/qwtlicense.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/lgpl-2.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Qwt License\nVersion 1.0, January 1, 2003\nThe Qwt library and included programs are provided under the terms\nof the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following\nexceptions:\n\n    1. Widgets that are subclassed from Qwt widgets do not\n       constitute a derivative work.\n\n    2. Static linking of applications and widgets to the\n       Qwt library does not constitute a derivative work\n       and does not require the author to provide source\n       code for the application or widget, use the shared\n       Qwt libraries, or link their applications or\n       widgets against a user-supplied version of Qwt.\n       If you link the application or widget to a modified\n       version of Qwt, then the changes to Qwt must be \n       provided under the terms of the LGPL in sections\n       1, 2, and 4.\n\n    3. You do not have to provide a copy of the Qwt license\n       with programs that are linked to the Qwt library, nor\n       do you have to identify the Qwt license in your\n       program or documentation as required by section 6\n       of the LGPL.\n       However, programs must still identify their use of Qwt.\n       The following example statement can be included in user\n       documentation to satisfy this requirement:\n           [program/widget] is based in part on the work of\n           the Qwt project (http://qwt.sf.net).&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://qwt.sourceforge.net/qwtlicense.html&quot;,
+        &quot;_key&quot;: &quot;qwt-exception-1.0&quot;,
+        &quot;_name&quot;: &quot;Qwt exception to LGPL 2.1&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.gnu.org/licenses/lgpl-2.1.txt&quot;
+        ],
+        &quot;_owner&quot;: &quot;Qwt Project&quot;,
+        &quot;_shortName&quot;: &quot;Qwt exception to LGPL 2.1&quot;,
+        &quot;_spdxId&quot;: &quot;Qwt-exception-1.0&quot;,
+        &quot;_text&quot;: &quot;Qwt License\nVersion 1.0, January 1, 2003\nThe Qwt library and included programs are provided under the terms\nof the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following\nexceptions:\n\n    1. Widgets that are subclassed from Qwt widgets do not\n       constitute a derivative work.\n\n    2. Static linking of applications and widgets to the\n       Qwt library does not constitute a derivative work\n       and does not require the author to provide source\n       code for the application or widget, use the shared\n       Qwt libraries, or link their applications or\n       widgets against a user-supplied version of Qwt.\n       If you link the application or widget to a modified\n       version of Qwt, then the changes to Qwt must be \n       provided under the terms of the LGPL in sections\n       1, 2, and 4.\n\n    3. You do not have to provide a copy of the Qwt license\n       with programs that are linked to the Qwt library, nor\n       do you have to identify the Qwt license in your\n       program or documentation as required by section 6\n       of the LGPL.\n       However, programs must still identify their use of Qwt.\n       The following example statement can be included in user\n       documentation to satisfy this requirement:\n           [program/widget] is based in part on the work of\n           the Qwt project (http://qwt.sf.net).&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/a6200d99e2f5d08844adcb2d4b26ff22">Fossology:a6200d99e2f5d08844adcb2d4b26ff22</a> for <a href="/?license=fossology:Qwt-exception-1.0"><span class="licensename"><span class="namespace">fossology:</span>Qwt-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Qwt-exception-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qwt exception 1.0</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>Specified to be associated with LGPL-2.1. On Fedora List as &quot;Qwt License 1.0&quot;.<span class="provided-by">(provided by: <span title="Fossology:a6200d99e2f5d08844adcb2d4b26ff22">[<a href="/fact/Fossology/a6200d99e2f5d08844adcb2d4b26ff22">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://qwt.sourceforge.net/qwtlicense.html" target="_blank">http://qwt.sourceforge.net/qwtlicense.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Qwt License Version 1.0,
+
+January 1, 2003
+
+The Qwt library and included programs are provided under the terms of the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following exceptions:
+
+   1. Widgets that are subclassed from Qwt widgets do not constitute a derivative work.
+
+   2. Static linking of applications and widgets to the Qwt library does not constitute a derivative work and does not require the author to provide source code for the application or widget, use the shared Qwt libraries, or link their applications or widgets against a user-supplied version of Qwt. If you link the application or widget to a modified version of Qwt, then the changes to Qwt must be provided under the terms of the LGPL in sections 1, 2, and 4.
+
+   3. You do not have to provide a copy of the Qwt license with programs that are linked to the Qwt library, nor do you have to identify the Qwt license in your program or documentation as required by section 6 of the LGPL.
+
+However, programs must still identify their use of Qwt. The following example statement can be included in user documentation to satisfy this requirement: [program/widget] is based in part on the work of the Qwt project (http://qwt.sf.net).&quot;</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Qwt-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Qwt exception 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;a6200d99e2f5d08844adcb2d4b26ff22&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://qwt.sourceforge.net/qwtlicense.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;Specified to be associated with LGPL-2.1. On Fedora List as \&quot;Qwt License 1.0\&quot;.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Qwt License Version 1.0,\n\nJanuary 1, 2003\n\nThe Qwt library and included programs are provided under the terms of the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following exceptions:\n\n   1. Widgets that are subclassed from Qwt widgets do not constitute a derivative work.\n\n   2. Static linking of applications and widgets to the Qwt library does not constitute a derivative work and does not require the author to provide source code for the application or widget, use the shared Qwt libraries, or link their applications or widgets against a user-supplied version of Qwt. If you link the application or widget to a modified version of Qwt, then the changes to Qwt must be provided under the terms of the LGPL in sections 1, 2, and 4.\n\n   3. You do not have to provide a copy of the Qwt license with programs that are linked to the Qwt library, nor do you have to identify the Qwt license in your program or documentation as required by section 6 of the LGPL.\n\nHowever, programs must still identify their use of Qwt. The following example statement can be included in user documentation to satisfy this requirement: [program/widget] is based in part on the work of the Qwt project (http://qwt.sf.net).\&quot;&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Qwt exception 1.0&quot;,
+        &quot;_rf_notes&quot;: &quot;Specified to be associated with LGPL-2.1. On Fedora List as \&quot;Qwt License 1.0\&quot;.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Qwt-exception-1.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Qwt License Version 1.0,\n\nJanuary 1, 2003\n\nThe Qwt library and included programs are provided under the terms of the GNU LESSER GENERAL PUBLIC LICENSE (LGPL) with the following exceptions:\n\n   1. Widgets that are subclassed from Qwt widgets do not constitute a derivative work.\n\n   2. Static linking of applications and widgets to the Qwt library does not constitute a derivative work and does not require the author to provide source code for the application or widget, use the shared Qwt libraries, or link their applications or widgets against a user-supplied version of Qwt. If you link the application or widget to a modified version of Qwt, then the changes to Qwt must be provided under the terms of the LGPL in sections 1, 2, and 4.\n\n   3. You do not have to provide a copy of the Qwt license with programs that are linked to the Qwt library, nor do you have to identify the Qwt license in your program or documentation as required by section 6 of the LGPL.\n\nHowever, programs must still identify their use of Qwt. The following example statement can be included in user documentation to satisfy this requirement: [program/widget] is based in part on the work of the Qwt project (http://qwt.sf.net).\&quot;&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://qwt.sourceforge.net/qwtlicense.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/0db275ca3d9d542bb59277e5b495f531">MetaeffektLicense:0db275ca3d9d542bb59277e5b495f531</a> for <a href="/?license=metaeffekt:Qwt-Exception-1.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Qwt-Exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qwt-Exception-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Qwt Exception 1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Qwt-exception-1.0</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Qwt Exception</span></li><li><span class="licensename">Qwt License Version 1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>qwt-exception-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Qwt-Exception-1.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Qwt Exception 1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:Qwt-exception-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Qwt Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Qwt License Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:qwt-exception-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;0db275ca3d9d542bb59277e5b495f531&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Qwt License Version 1.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Qwt Exception 1.0&quot;,
+        &quot;_category&quot;: &quot;Qwt Exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:qwt-exception-1.0&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:Qwt-Exception-1.0&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Qwt-exception-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,911 @@
+<html><head><title>ldbcollector: spdx:CC-PDDC</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:CC-PDDC</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDDC</span></li></ul></li><li><b>other LicenseNames (16):</b><ul class="capsulUl clearfix"><li><span class="licensename">cc-pd</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cc-pd</span></li><li><span class="licensename">CC-PDDC</span></li><li><span class="licensename"><span class="namespace">cavil:</span>CC-PDDC</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>CC-PDDC</span></li><li><span class="licensename"><span class="namespace">fossology:</span>CC-PDDC</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDDC</span></li><li><span class="licensename">Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification</span></li><li><span class="licensename"><span class="namespace">hitachi:</span>Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification</span></li><li><span class="licensename">Creative Commons PDDC</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Creative Commons PDDC</span></li><li><span class="licensename">Creative Commons Public Domain Certification</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>Creative Commons Public Domain Certification</span></li><li><span class="licensename">Creative Commons Public Domain Dedication and Certification</span></li><li><span class="licensename">scancode://cc-pd</span></li><li><span class="licensename">scancode:cc-pd</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AOP Public Domain License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:e4666985f6e9b39ee45cfb5397f9e75d">[<a href="/fact/ScancodeData/e4666985f6e9b39ee45cfb5397f9e75d">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:49bc4fa7ea9f7411dfcefde5ad097e1f">[<a href="/fact/SPDXLicense/49bc4fa7ea9f7411dfcefde5ad097e1f">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:84620cedcffd230cb057cdbd4395b77a">[<a href="/fact/FedoraEntry/84620cedcffd230cb057cdbd4395b77a">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:250a382c1171d859bfe9ec19222fbe3d">[<a href="/fact/MetaeffektLicense/250a382c1171d859bfe9ec19222fbe3d">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:49ec588a4a919f42e8493f912637a75e">[<a href="/fact/OrtLicenseCategorization/49ec588a4a919f42e8493f912637a75e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:49ec588a4a919f42e8493f912637a75e">[<a href="/fact/OrtLicenseCategorization/49ec588a4a919f42e8493f912637a75e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6b34af0416b2e446856ed9689a6fde7a">[<a href="/fact/OrtLicenseCategorization/6b34af0416b2e446856ed9689a6fde7a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HitachiOpenLicense: </b>http://creativecommons.org/licenses/publicdomain/<span class="provided-by">(provided by: <span title="HitachiOpenLicense:5365feefa5595d41f8464c03bff9e8c8">[<a href="/fact/HitachiOpenLicense/5365feefa5595d41f8464c03bff9e8c8">HitachiOpenLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://creativecommons.org/licenses/publicdomain/" target="_blank">https://creativecommons.org/licenses/publicdomain/</a></li><li><a href="http://creativecommons.org/licenses/publicdomain/" target="_blank">http://creativecommons.org/licenses/publicdomain/</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://creativecommons.org/licenses/publicdomain/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>
+The person or persons who have associated work with this document (the &quot;Dedicator&quot; or &quot;Certifier&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the &quot;Work&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a &quot;dedicator&quot; below.
+
+A certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.
+
+Dedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.
+
+Dedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;p&gt;
+The person or persons who have associated work with this document
+(the &amp;quot;Dedicator&amp;quot; or &amp;quot;Certifier&amp;quot;) hereby either (a) certifies that, to the best
+of his knowledge, the work of authorship identified is in the public domain of
+the country from which the work is published, or (b) hereby dedicates whatever
+copyright the dedicators holds in the work of authorship identified below
+(the &amp;quot;Work&amp;quot;) to the public domain. A certifier, moreover, dedicates any
+copyright interest he may have in the associated work, and for these purposes,
+is described as a &amp;quot;dedicator&amp;quot; below.&lt;/p&gt;
+
+            &lt;p&gt;A certifier has taken reasonable steps to verify the copyright status of this
+work. Certifier recognizes that his good faith efforts may not shield him from
+liability if in fact the work certified is not in the public domain.&lt;/p&gt;
+
+            &lt;p&gt;Dedicator makes this dedication for the benefit of the public at large and to
+the detriment of the Dedicator&amp;apos;s heirs and successors. Dedicator intends this
+dedication to be an overt act of relinquishment in perpetuity of all present
+and future rights under copyright law, whether vested or contingent, in the
+Work. Dedicator understands that such relinquishment of all rights includes the
+relinquishment of all rights to enforce (by lawsuit or otherwise) those
+copyrights in the Work.&lt;/p&gt;
+
+            &lt;p&gt;
+Dedicator recognizes that, once placed in the public domain, the Work may be
+freely reproduced, distributed, transmitted, used, modified, built upon, or
+otherwise exploited by anyone for any purpose, commercial or non-commercial,
+and in any way, including by methods that have not yet been invented or
+conceived.&lt;/p&gt;
+
+        </pre></details></li><li><details><summary>Text:</summary><pre>The person or persons who have associated work with this document (the &quot;Dedicator&quot; or &quot;Certifier&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the &quot;Work&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a &quot;dedicator&quot; below.
+
+A certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.
+
+Dedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.
+
+Dedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/49bc4fa7ea9f7411dfcefde5ad097e1f">SPDXLicense:49bc4fa7ea9f7411dfcefde5ad097e1f</a> for <a href="/?license=spdx:CC-PDDC"><span class="licensename"><span class="namespace">spdx:</span>CC-PDDC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDDC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Creative Commons Public Domain Dedication and Certification</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:49bc4fa7ea9f7411dfcefde5ad097e1f">[<a href="/fact/SPDXLicense/49bc4fa7ea9f7411dfcefde5ad097e1f">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://creativecommons.org/licenses/publicdomain/" target="_blank">https://creativecommons.org/licenses/publicdomain/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>
+The person or persons who have associated work with this document (the &quot;Dedicator&quot; or &quot;Certifier&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the &quot;Work&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a &quot;dedicator&quot; below.
+
+A certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.
+
+Dedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.
+
+Dedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;p&gt;
+The person or persons who have associated work with this document
+(the &amp;quot;Dedicator&amp;quot; or &amp;quot;Certifier&amp;quot;) hereby either (a) certifies that, to the best
+of his knowledge, the work of authorship identified is in the public domain of
+the country from which the work is published, or (b) hereby dedicates whatever
+copyright the dedicators holds in the work of authorship identified below
+(the &amp;quot;Work&amp;quot;) to the public domain. A certifier, moreover, dedicates any
+copyright interest he may have in the associated work, and for these purposes,
+is described as a &amp;quot;dedicator&amp;quot; below.&lt;/p&gt;
+
+            &lt;p&gt;A certifier has taken reasonable steps to verify the copyright status of this
+work. Certifier recognizes that his good faith efforts may not shield him from
+liability if in fact the work certified is not in the public domain.&lt;/p&gt;
+
+            &lt;p&gt;Dedicator makes this dedication for the benefit of the public at large and to
+the detriment of the Dedicator&amp;apos;s heirs and successors. Dedicator intends this
+dedication to be an overt act of relinquishment in perpetuity of all present
+and future rights under copyright law, whether vested or contingent, in the
+Work. Dedicator understands that such relinquishment of all rights includes the
+relinquishment of all rights to enforce (by lawsuit or otherwise) those
+copyrights in the Work.&lt;/p&gt;
+
+            &lt;p&gt;
+Dedicator recognizes that, once placed in the public domain, the Work may be
+freely reproduced, distributed, transmitted, used, modified, built upon, or
+otherwise exploited by anyone for any purpose, commercial or non-commercial,
+and in any way, including by methods that have not yet been invented or
+conceived.&lt;/p&gt;
+
+        </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:CC-PDDC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;49bc4fa7ea9f7411dfcefde5ad097e1f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;\nThe person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n            &lt;p&gt;\nThe person or persons who have associated work with this document\n(the &amp;quot;Dedicator&amp;quot; or &amp;quot;Certifier&amp;quot;) hereby either (a) certifies that, to the best\nof his knowledge, the work of authorship identified is in the public domain of\nthe country from which the work is published, or (b) hereby dedicates whatever\ncopyright the dedicators holds in the work of authorship identified below\n(the &amp;quot;Work&amp;quot;) to the public domain. A certifier, moreover, dedicates any\ncopyright interest he may have in the associated work, and for these purposes,\nis described as a &amp;quot;dedicator&amp;quot; below.&lt;/p&gt;\n\n            &lt;p&gt;A certifier has taken reasonable steps to verify the copyright status of this\nwork. Certifier recognizes that his good faith efforts may not shield him from\nliability if in fact the work certified is not in the public domain.&lt;/p&gt;\n\n            &lt;p&gt;Dedicator makes this dedication for the benefit of the public at large and to\nthe detriment of the Dedicator&amp;apos;s heirs and successors. Dedicator intends this\ndedication to be an overt act of relinquishment in perpetuity of all present\nand future rights under copyright law, whether vested or contingent, in the\nWork. Dedicator understands that such relinquishment of all rights includes the\nrelinquishment of all rights to enforce (by lawsuit or otherwise) those\ncopyrights in the Work.&lt;/p&gt;\n\n            &lt;p&gt;\nDedicator recognizes that, once placed in the public domain, the Work may be\nfreely reproduced, distributed, transmitted, used, modified, built upon, or\notherwise exploited by anyone for any purpose, commercial or non-commercial,\nand in any way, including by methods that have not yet been invented or\nconceived.&lt;/p&gt;\n\n        &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:11:19Z&quot;,
+                &quot;url&quot;: &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:CC-PDDC&quot;,
+        &quot;licenseText&quot;: &quot;\nThe person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n            &lt;p&gt;\nThe person or persons who have associated work with this document\n(the &amp;quot;Dedicator&amp;quot; or &amp;quot;Certifier&amp;quot;) hereby either (a) certifies that, to the best\nof his knowledge, the work of authorship identified is in the public domain of\nthe country from which the work is published, or (b) hereby dedicates whatever\ncopyright the dedicators holds in the work of authorship identified below\n(the &amp;quot;Work&amp;quot;) to the public domain. A certifier, moreover, dedicates any\ncopyright interest he may have in the associated work, and for these purposes,\nis described as a &amp;quot;dedicator&amp;quot; below.&lt;/p&gt;\n\n            &lt;p&gt;A certifier has taken reasonable steps to verify the copyright status of this\nwork. Certifier recognizes that his good faith efforts may not shield him from\nliability if in fact the work certified is not in the public domain.&lt;/p&gt;\n\n            &lt;p&gt;Dedicator makes this dedication for the benefit of the public at large and to\nthe detriment of the Dedicator&amp;apos;s heirs and successors. Dedicator intends this\ndedication to be an overt act of relinquishment in perpetuity of all present\nand future rights under copyright law, whether vested or contingent, in the\nWork. Dedicator understands that such relinquishment of all rights includes the\nrelinquishment of all rights to enforce (by lawsuit or otherwise) those\ncopyrights in the Work.&lt;/p&gt;\n\n            &lt;p&gt;\nDedicator recognizes that, once placed in the public domain, the Work may be\nfreely reproduced, distributed, transmitted, used, modified, built upon, or\notherwise exploited by anyone for any purpose, commercial or non-commercial,\nand in any way, including by methods that have not yet been invented or\nconceived.&lt;/p&gt;\n\n        &quot;,
+        &quot;name&quot;: &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/84620cedcffd230cb057cdbd4395b77a">FedoraEntry:84620cedcffd230cb057cdbd4395b77a</a> for <a href="/?license=Fedora:CC-PDDC"><span class="licensename"><span class="namespace">Fedora:</span>CC-PDDC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>CC-PDDC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDDC</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Creative Commons Public Domain Dedication and Certification</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:84620cedcffd230cb057cdbd4395b77a">[<a href="/fact/FedoraEntry/84620cedcffd230cb057cdbd4395b77a">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://creativecommons.org/licenses/publicdomain/" target="_blank">https://creativecommons.org/licenses/publicdomain/</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:CC-PDDC&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CC-PDDC&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;84620cedcffd230cb057cdbd4395b77a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [
+                &quot;Creative Commons Public Domain Dedication and Certification&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;CC-PDDC&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:CC-PDDC&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e4666985f6e9b39ee45cfb5397f9e75d">ScancodeData:e4666985f6e9b39ee45cfb5397f9e75d</a> for <a href="/?license=scancode:cc-pd"><span class="licensename"><span class="namespace">scancode:</span>cc-pd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>cc-pd</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">CC-PD</span></li><li><span class="licensename">Creative Commons Public Domain Certification</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:e4666985f6e9b39ee45cfb5397f9e75d">[<a href="/fact/ScancodeData/e4666985f6e9b39ee45cfb5397f9e75d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://creativecommons.org/licenses/publicdomain/" target="_blank">http://creativecommons.org/licenses/publicdomain/</a></li></ul><h3>Other Statements</h3><ul><li>https://creativecommons.org/licenses/publicdomain/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The person or persons who have associated work with this document (the &quot;Dedicator&quot; or &quot;Certifier&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the &quot;Work&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a &quot;dedicator&quot; below.
+
+A certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.
+
+Dedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.
+
+Dedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:cc-pd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CC-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Public Domain Certification&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e4666985f6e9b39ee45cfb5397f9e75d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://creativecommons.org/licenses/publicdomain/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://creativecommons.org/licenses/publicdomain/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://creativecommons.org/licenses/publicdomain/&quot;,
+        &quot;_key&quot;: &quot;cc-pd&quot;,
+        &quot;_name&quot;: &quot;Creative Commons Public Domain Certification&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Creative Commons&quot;,
+        &quot;_shortName&quot;: &quot;CC-PD&quot;,
+        &quot;_spdxId&quot;: &quot;CC-PDDC&quot;,
+        &quot;_text&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://creativecommons.org/licenses/publicdomain/&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/2f2b307e1144af48195998e58d290e83">Fossology:2f2b307e1144af48195998e58d290e83</a> for <a href="/?license=fossology:CC-PDDC"><span class="licensename"><span class="namespace">fossology:</span>CC-PDDC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>CC-PDDC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Creative Commons Public Domain Dedication and Certification</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://creativecommons.org/licenses/publicdomain/" target="_blank">https://creativecommons.org/licenses/publicdomain/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The person or persons who have associated work with this document (the &quot;Dedicator&quot; or &quot;Certifier&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the &quot;Work&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a &quot;dedicator&quot; below.
+
+A certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.
+
+Dedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.
+
+Dedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:CC-PDDC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;2f2b307e1144af48195998e58d290e83&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:CC-PDDC&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://creativecommons.org/licenses/publicdomain/&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/49ec588a4a919f42e8493f912637a75e">OrtLicenseCategorization:49ec588a4a919f42e8493f912637a75e</a> for <a href="/?license=SPDX:CC-PDDC"><span class="licensename"><span class="namespace">SPDX:</span>CC-PDDC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>CC-PDDC</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:49ec588a4a919f42e8493f912637a75e">[<a href="/fact/OrtLicenseCategorization/49ec588a4a919f42e8493f912637a75e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:49ec588a4a919f42e8493f912637a75e">[<a href="/fact/OrtLicenseCategorization/49ec588a4a919f42e8493f912637a75e">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:CC-PDDC&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;49ec588a4a919f42e8493f912637a75e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:CC-PDDC&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/6b34af0416b2e446856ed9689a6fde7a">OrtLicenseCategorization:6b34af0416b2e446856ed9689a6fde7a</a> for <a href="/?license=SPDX:CC-PDDC"><span class="licensename"><span class="namespace">SPDX:</span>CC-PDDC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>CC-PDDC</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:6b34af0416b2e446856ed9689a6fde7a">[<a href="/fact/OrtLicenseCategorization/6b34af0416b2e446856ed9689a6fde7a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:CC-PDDC&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;6b34af0416b2e446856ed9689a6fde7a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;contents&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                &quot;name&quot;: &quot;public-domain&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:CC-PDDC&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/14b556d68810d5e151ba648742a3a822">CavilLicenseChange:14b556d68810d5e151ba648742a3a822</a> for <a href="/?license=cavil:CC-PDDC"><span class="licensename"><span class="namespace">cavil:</span>CC-PDDC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>CC-PDDC</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CC-PDDC</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:CC-PDDC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CC-PDDC&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;14b556d68810d5e151ba648742a3a822&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;CC-PDDC&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:CC-PDDC&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/250a382c1171d859bfe9ec19222fbe3d">MetaeffektLicense:250a382c1171d859bfe9ec19222fbe3d</a> for <a href="/?license=metaeffekt:Creative Commons PDDC"><span class="licensename"><span class="namespace">metaeffekt:</span>Creative Commons PDDC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Creative Commons PDDC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CC-PDDC</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">AOP Public Domain License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cc-pd</span></li><li><span class="licensename">CC-PDDC</span></li><li><span class="licensename">CC-PDDC</span></li><li><span class="licensename">Creative Commons Public Domain Dedication and Certification</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:250a382c1171d859bfe9ec19222fbe3d">[<a href="/fact/MetaeffektLicense/250a382c1171d859bfe9ec19222fbe3d">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Creative Commons PDDC&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CC-PDDC&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CC-PDDC&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CC-PDDC&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AOP Public Domain License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:cc-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;250a382c1171d859bfe9ec19222fbe3d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;CC-PDDC&quot;,
+            &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+            &quot;AOP Public Domain License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Creative Commons PDDC&quot;,
+        &quot;_category&quot;: &quot;CC-PDDC&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:cc-pd&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:CC-PDDC&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/c032d9f4a3acfc7a4c13d2487fc0deab">FossLicense:c032d9f4a3acfc7a4c13d2487fc0deab</a> for <a href="/?license=foss-license:Creative Commons Public Domain Certification"><span class="licensename"><span class="namespace">foss-license:</span>Creative Commons Public Domain Certification</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>Creative Commons Public Domain Certification</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">CC-PD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cc-pd</span></li><li><span class="licensename">Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification</span></li><li><span class="licensename">Creative Commons Public Domain Dedication and Certification</span></li><li><span class="licensename">scancode://cc-pd</span></li><li><span class="licensename">scancode:cc-pd</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:Creative Commons Public Domain Certification&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:cc-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://cc-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CC-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:cc-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;c032d9f4a3acfc7a4c13d2487fc0deab&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;Creative Commons Public Domain Dedication and Certification&quot;,
+            &quot;Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification&quot;,
+            &quot;scancode://cc-pd&quot;,
+            &quot;CC-PD&quot;,
+            &quot;scancode:cc-pd&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;Creative Commons Public Domain Certification&quot;,
+        &quot;scancode_key&quot;: &quot;cc-pd&quot;,
+        &quot;spdxid&quot;: &quot;CC-PDDC&quot;,
+        &quot;text&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HitachiOpenLicense">HitachiOpenLicense</a>: <a href="/fact/HitachiOpenLicense/5365feefa5595d41f8464c03bff9e8c8">HitachiOpenLicense:5365feefa5595d41f8464c03bff9e8c8</a> for <a href="/?license=hitachi:Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification"><span class="licensename"><span class="namespace">hitachi:</span>Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification</span></a></h3><h4>Summary:</h4><span>http://creativecommons.org/licenses/publicdomain/</span><h4>Permissions:</h4><ul><li><h5>Description:</h5><span>The work shall be in the public domain.</span><h5>Actions:</h5><ul><li><b>Transmit the work.</b>: <br><span></span></li><li><b>Use of copyrighted material</b>: <br><span></span></li><li><b>Modify the work.</b>: <br><span></span></li><li><b>Distribute the work</b>: <br><span></span></li><li><b>Making use of copyrighted material</b>: <br><span></span></li></ul><h5>Conditions:</h5><span>None</span></li></ul><h4>Notices:</h4><ul><li><h5>Description:</h5><span>Check the copyright status when handling copyrighted material.</span><h5>Content:</h5><span>When certifying a work as belonging to the public domain, take reasonable steps to verify the copyright status of the work to see if it can be treated as belonging to the public domain.</span></li><li><h5>Content:</h5><span>If you own your work as belonging to the public domain, you permanently relinquish all present and future rights under copyright law to that work.</span></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">hitachi:</span>Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>HitachiOpenLicense: </b>http://creativecommons.org/licenses/publicdomain/<span class="provided-by">(provided by: <span title="HitachiOpenLicense:5365feefa5595d41f8464c03bff9e8c8">[<a href="/fact/HitachiOpenLicense/5365feefa5595d41f8464c03bff9e8c8">HitachiOpenLicense</a>]</span>)</span></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The person or persons who have associated work with this document (the &quot;Dedicator&quot; or &quot;Certifier&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the &quot;Work&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a &quot;dedicator&quot; below.
+
+A certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.
+
+Dedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.
+
+Dedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;hitachi:Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HitachiOpenLicense&quot;,
+        &quot;5365feefa5595d41f8464c03bff9e8c8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HitachiOpenLicense&quot;,
+                    &quot;http://creativecommons.org/licenses/publicdomain/&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;content&quot;: &quot;The person or persons who have associated work with this document (the \&quot;Dedicator\&quot; or \&quot;Certifier\&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the \&quot;Work\&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a \&quot;dedicator\&quot; below.\n\nA certifier has taken reasonable steps to verify the copyright status of this work. Certifier recognizes that his good faith efforts may not shield him from liability if in fact the work certified is not in the public domain.\n\nDedicator makes this dedication for the benefit of the public at large and to the detriment of the Dedicator&#39;s heirs and successors. Dedicator intends this dedication to be an overt act of relinquishment in perpetuity of all present and future rights under copyright law, whether vested or contingent, in the Work. Dedicator understands that such relinquishment of all rights includes the relinquishment of all rights to enforce (by lawsuit or otherwise) those copyrights in the Work.\n\nDedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.&quot;,
+        &quot;name&quot;: &quot;hitachi:Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification&quot;,
+        &quot;notices&quot;: [
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;When certifying a work as belonging to the public domain, take reasonable steps to verify the copyright status of the work to see if it can be treated as belonging to the public domain.&quot;,
+                    &quot;description&quot;: &quot;Check the copyright status when handling copyrighted material.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            },
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;If you own your work as belonging to the public domain, you permanently relinquish all present and future rights under copyright law to that work.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            }
+        ],
+        &quot;permissions&quot;: [
+            {
+                &quot;_str&quot;: &quot;Description: The work shall be in the public domain.\nActions:\n- Ol Transmit the work.\n- Ol Use of copyrighted material\n- Ol Modify the work.\n- Ol Distribute the work\n- Ol Making use of copyrighted material\n\nConditions: None\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Transmit the work.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use of copyrighted material&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Modify the work.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribute the work&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Making use of copyrighted material&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: null,
+                &quot;description&quot;: &quot;The work shall be in the public domain.&quot;
+            }
+        ],
+        &quot;summary&quot;: &quot;http://creativecommons.org/licenses/publicdomain/&quot;
+    },
+    &quot;type&quot;: &quot;HitachiOpenLicense&quot;
+}</pre></details></li></ul></body></html>

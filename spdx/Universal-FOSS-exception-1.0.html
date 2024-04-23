@@ -1,0 +1,455 @@
+<html><head><title>ldbcollector: spdx:Universal-FOSS-exception-1.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Universal-FOSS-exception-1.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Universal-FOSS-exception-1.0</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">Universal FOSS Exception 1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Universal FOSS Exception 1.0</span></li><li><span class="licensename">Universal FOSS Exception v1.0</span></li><li><span class="licensename">Universal FOSS Exception, Version 1.0</span></li><li><span class="licensename">universal-foss-exception-1.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Universal-FOSS-exception-1.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Universal-FOSS-Exception-1.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>universal-foss-exception-1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Universal-FOSS-exception-1.0</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//spdx.org/licenses/universal-foss-exception-1.0</span></li><li><span class="licensename">The Universal FOSS Exception, Version 1.0</span></li><li><span class="licensename">Universal FOSS Exception</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:7fe8c9222e6ee4d2b8076ed1f245f742">[<a href="/fact/ScancodeData/7fe8c9222e6ee4d2b8076ed1f245f742">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://oss.oracle.com/licenses/universal-foss-exception/" target="_blank">https://oss.oracle.com/licenses/universal-foss-exception/</a></li></ul><h3>Other Statements</h3><ul><li>https://oss.oracle.com/licenses/universal-foss-exception/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Universal FOSS Exception, Version 1.0
+
+In addition to the rights set forth in the other license(s) included in the
+distribution for this software, data, and/or documentation (collectively the
+&quot;Software,&quot; and such licenses collectively with this additional permission the
+&quot;Software License&quot;), the copyright holders wish to facilitate interoperability
+with other software, data, and/or documentation distributed with complete
+corresponding source under a license that is OSI-approved and/or categorized by
+the FSF as free (collectively &quot;Other FOSS&quot;). We therefore hereby grant the
+following additional permission with respect to the use and distribution of the
+Software with Other FOSS, and the constants, function signatures, data
+structures and other invocation methods used to run or interact with each of
+them (as to each, such software&#39;s &quot;Interfaces&quot;):
+
+   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of
+   the Other FOSS, be copied into, used and distributed in the Other FOSS in
+   order to enable interoperability, without requiring a change to the license
+   of the Other FOSS other than as to any Interfaces of the Software embedded
+   therein. The Software&#39;s Interfaces remain at all times under the Software
+   License, including without limitation as used in the Other FOSS (which upon
+   any such use also then contains a portion of the Software under the Software
+   License).
+
+   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license
+   of the Other FOSS, be copied into, used and distributed in the Software in
+   order to enable interoperability, without requiring that such Interfaces be
+   licensed under the terms of the Software License or otherwise altering their
+   original terms, if this does not require any portion of the Software other
+   than such Interfaces to be licensed under the terms other than the Software
+   License.
+
+   (iii) If only Interfaces and no other code is copied between the Software and
+   the Other FOSS in either direction, the use and/or distribution of the
+   Software with the Other FOSS shall not be deemed to require that the Other
+   FOSS be licensed under the license of the Software, other than as to any
+   Interfaces of the Software copied into the Other FOSS. This includes, by way
+   of example and without limitation, statically or dynamically linking the
+   Software together with Other FOSS after enabling interoperability using the
+   Interfaces of one or both, and distributing the resulting combination under
+   different licenses for the respective portions thereof.
+
+For avoidance of doubt, a license which is OSI-approved or categorized by the
+FSF as free, includes, for the purpose of this permission, such licenses with
+additional permissions, and any license that has previously been so-approved or
+categorized as free, even if now deprecated or otherwise no longer recognized as
+approved or free. Nothing in this additional permission grants any right to
+distribute any portion of the Software on terms other than those of the Software
+License or grants any additional permission of any kind for use or distribution
+of the Software in conjunction with software other than Other FOSS.</pre></details></li><li><details><summary>Text:</summary><pre>The Universal FOSS Exception, Version 1.0
+
+In addition to the rights set forth in the other license(s) included in the distribution for this software, data, and/or documentation (collectively the &quot;Software,&quot; and such licenses collectively with this additional permission the &quot;Software License&quot;), the copyright holders wish to facilitate interoperability with other software, data, and/or documentation distributed with complete corresponding source under a license that is OSI-approved and/or categorized by the FSF as free (collectively &quot;Other FOSS&quot;). We therefore hereby grant the following additional permission with respect to the use and distribution of the Software with Other FOSS, and the constants, function signatures, data structures and other invocation methods used to run or interact with each of them (as to each, such software&#39;s &quot;Interfaces&quot;):
+
+   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Other FOSS in order to enable interoperability, without requiring a change to the license of the Other FOSS other than as to any Interfaces of the Software embedded therein. The Software&#39;s Interfaces remain at all times under the Software License, including without limitation as used in the Other FOSS (which upon any such use also then contains a portion of the Software under the Software License).
+
+   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Software in order to enable interoperability, without requiring that such Interfaces be licensed under the terms of the Software License or otherwise altering their original terms, if this does not require any portion of the Software other than such Interfaces to be licensed under the terms other than the Software License.
+
+   (iii) If only Interfaces and no other code is copied between the Software and the Other FOSS in either direction, the use and/or distribution of the Software with the Other FOSS shall not be deemed to require that the Other FOSS be licensed under the license of the Software, other than as to any Interfaces of the Software copied into the Other FOSS. This includes, by way of example and without limitation, statically or dynamically linking the Software together with Other FOSS after enabling interoperability using the Interfaces of one or both, and distributing the resulting combination under different licenses for the respective portions thereof.
+
+For avoidance of doubt, a license which is OSI-approved or categorized by the FSF as free, includes, for the purpose of this permission, such licenses with additional permissions, and any license that has previously been so-approved or categorized as free, even if now deprecated or otherwise no longer recognized as approved or free. Nothing in this additional permission grants any right to distribute any portion of the Software on terms other than those of the Software License or grants any additional permission of any kind for use or distribution of the Software in conjunction with software other than Other FOSS.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/7fe8c9222e6ee4d2b8076ed1f245f742">ScancodeData:7fe8c9222e6ee4d2b8076ed1f245f742</a> for <a href="/?license=scancode:universal-foss-exception-1.0"><span class="licensename"><span class="namespace">scancode:</span>universal-foss-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>universal-foss-exception-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Universal FOSS Exception v1.0</span></li><li><span class="licensename">Universal FOSS Exception v1.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:7fe8c9222e6ee4d2b8076ed1f245f742">[<a href="/fact/ScancodeData/7fe8c9222e6ee4d2b8076ed1f245f742">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://oss.oracle.com/licenses/universal-foss-exception/" target="_blank">https://oss.oracle.com/licenses/universal-foss-exception/</a></li></ul><h3>Other Statements</h3><ul><li>https://oss.oracle.com/licenses/universal-foss-exception/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Universal FOSS Exception, Version 1.0
+
+In addition to the rights set forth in the other license(s) included in the
+distribution for this software, data, and/or documentation (collectively the
+&quot;Software,&quot; and such licenses collectively with this additional permission the
+&quot;Software License&quot;), the copyright holders wish to facilitate interoperability
+with other software, data, and/or documentation distributed with complete
+corresponding source under a license that is OSI-approved and/or categorized by
+the FSF as free (collectively &quot;Other FOSS&quot;). We therefore hereby grant the
+following additional permission with respect to the use and distribution of the
+Software with Other FOSS, and the constants, function signatures, data
+structures and other invocation methods used to run or interact with each of
+them (as to each, such software&#39;s &quot;Interfaces&quot;):
+
+   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of
+   the Other FOSS, be copied into, used and distributed in the Other FOSS in
+   order to enable interoperability, without requiring a change to the license
+   of the Other FOSS other than as to any Interfaces of the Software embedded
+   therein. The Software&#39;s Interfaces remain at all times under the Software
+   License, including without limitation as used in the Other FOSS (which upon
+   any such use also then contains a portion of the Software under the Software
+   License).
+
+   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license
+   of the Other FOSS, be copied into, used and distributed in the Software in
+   order to enable interoperability, without requiring that such Interfaces be
+   licensed under the terms of the Software License or otherwise altering their
+   original terms, if this does not require any portion of the Software other
+   than such Interfaces to be licensed under the terms other than the Software
+   License.
+
+   (iii) If only Interfaces and no other code is copied between the Software and
+   the Other FOSS in either direction, the use and/or distribution of the
+   Software with the Other FOSS shall not be deemed to require that the Other
+   FOSS be licensed under the license of the Software, other than as to any
+   Interfaces of the Software copied into the Other FOSS. This includes, by way
+   of example and without limitation, statically or dynamically linking the
+   Software together with Other FOSS after enabling interoperability using the
+   Interfaces of one or both, and distributing the resulting combination under
+   different licenses for the respective portions thereof.
+
+For avoidance of doubt, a license which is OSI-approved or categorized by the
+FSF as free, includes, for the purpose of this permission, such licenses with
+additional permissions, and any license that has previously been so-approved or
+categorized as free, even if now deprecated or otherwise no longer recognized as
+approved or free. Nothing in this additional permission grants any right to
+distribute any portion of the Software on terms other than those of the Software
+License or grants any additional permission of any kind for use or distribution
+of the Software in conjunction with software other than Other FOSS.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:universal-foss-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Universal FOSS Exception v1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Universal FOSS Exception v1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;7fe8c9222e6ee4d2b8076ed1f245f742&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://oss.oracle.com/licenses/universal-foss-exception/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://oss.oracle.com/licenses/universal-foss-exception/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Universal FOSS Exception, Version 1.0\n\nIn addition to the rights set forth in the other license(s) included in the\ndistribution for this software, data, and/or documentation (collectively the\n\&quot;Software,\&quot; and such licenses collectively with this additional permission the\n\&quot;Software License\&quot;), the copyright holders wish to facilitate interoperability\nwith other software, data, and/or documentation distributed with complete\ncorresponding source under a license that is OSI-approved and/or categorized by\nthe FSF as free (collectively \&quot;Other FOSS\&quot;). We therefore hereby grant the\nfollowing additional permission with respect to the use and distribution of the\nSoftware with Other FOSS, and the constants, function signatures, data\nstructures and other invocation methods used to run or interact with each of\nthem (as to each, such software&#39;s \&quot;Interfaces\&quot;):\n\n   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of\n   the Other FOSS, be copied into, used and distributed in the Other FOSS in\n   order to enable interoperability, without requiring a change to the license\n   of the Other FOSS other than as to any Interfaces of the Software embedded\n   therein. The Software&#39;s Interfaces remain at all times under the Software\n   License, including without limitation as used in the Other FOSS (which upon\n   any such use also then contains a portion of the Software under the Software\n   License).\n\n   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license\n   of the Other FOSS, be copied into, used and distributed in the Software in\n   order to enable interoperability, without requiring that such Interfaces be\n   licensed under the terms of the Software License or otherwise altering their\n   original terms, if this does not require any portion of the Software other\n   than such Interfaces to be licensed under the terms other than the Software\n   License.\n\n   (iii) If only Interfaces and no other code is copied between the Software and\n   the Other FOSS in either direction, the use and/or distribution of the\n   Software with the Other FOSS shall not be deemed to require that the Other\n   FOSS be licensed under the license of the Software, other than as to any\n   Interfaces of the Software copied into the Other FOSS. This includes, by way\n   of example and without limitation, statically or dynamically linking the\n   Software together with Other FOSS after enabling interoperability using the\n   Interfaces of one or both, and distributing the resulting combination under\n   different licenses for the respective portions thereof.\n\nFor avoidance of doubt, a license which is OSI-approved or categorized by the\nFSF as free, includes, for the purpose of this permission, such licenses with\nadditional permissions, and any license that has previously been so-approved or\ncategorized as free, even if now deprecated or otherwise no longer recognized as\napproved or free. Nothing in this additional permission grants any right to\ndistribute any portion of the Software on terms other than those of the Software\nLicense or grants any additional permission of any kind for use or distribution\nof the Software in conjunction with software other than Other FOSS.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://oss.oracle.com/licenses/universal-foss-exception/&quot;,
+        &quot;_key&quot;: &quot;universal-foss-exception-1.0&quot;,
+        &quot;_name&quot;: &quot;Universal FOSS Exception v1.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://oss.oracle.com/licenses/universal-foss-exception/&quot;
+        ],
+        &quot;_owner&quot;: &quot;Oracle Corporation&quot;,
+        &quot;_shortName&quot;: &quot;Universal FOSS Exception v1.0&quot;,
+        &quot;_spdxId&quot;: &quot;Universal-FOSS-exception-1.0&quot;,
+        &quot;_text&quot;: &quot;The Universal FOSS Exception, Version 1.0\n\nIn addition to the rights set forth in the other license(s) included in the\ndistribution for this software, data, and/or documentation (collectively the\n\&quot;Software,\&quot; and such licenses collectively with this additional permission the\n\&quot;Software License\&quot;), the copyright holders wish to facilitate interoperability\nwith other software, data, and/or documentation distributed with complete\ncorresponding source under a license that is OSI-approved and/or categorized by\nthe FSF as free (collectively \&quot;Other FOSS\&quot;). We therefore hereby grant the\nfollowing additional permission with respect to the use and distribution of the\nSoftware with Other FOSS, and the constants, function signatures, data\nstructures and other invocation methods used to run or interact with each of\nthem (as to each, such software&#39;s \&quot;Interfaces\&quot;):\n\n   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of\n   the Other FOSS, be copied into, used and distributed in the Other FOSS in\n   order to enable interoperability, without requiring a change to the license\n   of the Other FOSS other than as to any Interfaces of the Software embedded\n   therein. The Software&#39;s Interfaces remain at all times under the Software\n   License, including without limitation as used in the Other FOSS (which upon\n   any such use also then contains a portion of the Software under the Software\n   License).\n\n   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license\n   of the Other FOSS, be copied into, used and distributed in the Software in\n   order to enable interoperability, without requiring that such Interfaces be\n   licensed under the terms of the Software License or otherwise altering their\n   original terms, if this does not require any portion of the Software other\n   than such Interfaces to be licensed under the terms other than the Software\n   License.\n\n   (iii) If only Interfaces and no other code is copied between the Software and\n   the Other FOSS in either direction, the use and/or distribution of the\n   Software with the Other FOSS shall not be deemed to require that the Other\n   FOSS be licensed under the license of the Software, other than as to any\n   Interfaces of the Software copied into the Other FOSS. This includes, by way\n   of example and without limitation, statically or dynamically linking the\n   Software together with Other FOSS after enabling interoperability using the\n   Interfaces of one or both, and distributing the resulting combination under\n   different licenses for the respective portions thereof.\n\nFor avoidance of doubt, a license which is OSI-approved or categorized by the\nFSF as free, includes, for the purpose of this permission, such licenses with\nadditional permissions, and any license that has previously been so-approved or\ncategorized as free, even if now deprecated or otherwise no longer recognized as\napproved or free. Nothing in this additional permission grants any right to\ndistribute any portion of the Software on terms other than those of the Software\nLicense or grants any additional permission of any kind for use or distribution\nof the Software in conjunction with software other than Other FOSS.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/c748815f428fa8edbebe81a12359573e">Fossology:c748815f428fa8edbebe81a12359573e</a> for <a href="/?license=fossology:Universal-FOSS-exception-1.0"><span class="licensename"><span class="namespace">fossology:</span>Universal-FOSS-exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Universal-FOSS-exception-1.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Universal FOSS Exception, Version 1.0</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://oss.oracle.com/licenses/universal-foss-exception/" target="_blank">https://oss.oracle.com/licenses/universal-foss-exception/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Universal FOSS Exception, Version 1.0
+
+In addition to the rights set forth in the other license(s) included in the distribution for this software, data, and/or documentation (collectively the &quot;Software,&quot; and such licenses collectively with this additional permission the &quot;Software License&quot;), the copyright holders wish to facilitate interoperability with other software, data, and/or documentation distributed with complete corresponding source under a license that is OSI-approved and/or categorized by the FSF as free (collectively &quot;Other FOSS&quot;). We therefore hereby grant the following additional permission with respect to the use and distribution of the Software with Other FOSS, and the constants, function signatures, data structures and other invocation methods used to run or interact with each of them (as to each, such software&#39;s &quot;Interfaces&quot;):
+
+   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Other FOSS in order to enable interoperability, without requiring a change to the license of the Other FOSS other than as to any Interfaces of the Software embedded therein. The Software&#39;s Interfaces remain at all times under the Software License, including without limitation as used in the Other FOSS (which upon any such use also then contains a portion of the Software under the Software License).
+
+   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Software in order to enable interoperability, without requiring that such Interfaces be licensed under the terms of the Software License or otherwise altering their original terms, if this does not require any portion of the Software other than such Interfaces to be licensed under the terms other than the Software License.
+
+   (iii) If only Interfaces and no other code is copied between the Software and the Other FOSS in either direction, the use and/or distribution of the Software with the Other FOSS shall not be deemed to require that the Other FOSS be licensed under the license of the Software, other than as to any Interfaces of the Software copied into the Other FOSS. This includes, by way of example and without limitation, statically or dynamically linking the Software together with Other FOSS after enabling interoperability using the Interfaces of one or both, and distributing the resulting combination under different licenses for the respective portions thereof.
+
+For avoidance of doubt, a license which is OSI-approved or categorized by the FSF as free, includes, for the purpose of this permission, such licenses with additional permissions, and any license that has previously been so-approved or categorized as free, even if now deprecated or otherwise no longer recognized as approved or free. Nothing in this additional permission grants any right to distribute any portion of the Software on terms other than those of the Software License or grants any additional permission of any kind for use or distribution of the Software in conjunction with software other than Other FOSS.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Universal-FOSS-exception-1.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Universal FOSS Exception, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;c748815f428fa8edbebe81a12359573e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://oss.oracle.com/licenses/universal-foss-exception/&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Universal FOSS Exception, Version 1.0\n\nIn addition to the rights set forth in the other license(s) included in the distribution for this software, data, and/or documentation (collectively the \&quot;Software,\&quot; and such licenses collectively with this additional permission the \&quot;Software License\&quot;), the copyright holders wish to facilitate interoperability with other software, data, and/or documentation distributed with complete corresponding source under a license that is OSI-approved and/or categorized by the FSF as free (collectively \&quot;Other FOSS\&quot;). We therefore hereby grant the following additional permission with respect to the use and distribution of the Software with Other FOSS, and the constants, function signatures, data structures and other invocation methods used to run or interact with each of them (as to each, such software&#39;s \&quot;Interfaces\&quot;):\n\n   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Other FOSS in order to enable interoperability, without requiring a change to the license of the Other FOSS other than as to any Interfaces of the Software embedded therein. The Software&#39;s Interfaces remain at all times under the Software License, including without limitation as used in the Other FOSS (which upon any such use also then contains a portion of the Software under the Software License).\n\n   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Software in order to enable interoperability, without requiring that such Interfaces be licensed under the terms of the Software License or otherwise altering their original terms, if this does not require any portion of the Software other than such Interfaces to be licensed under the terms other than the Software License.\n\n   (iii) If only Interfaces and no other code is copied between the Software and the Other FOSS in either direction, the use and/or distribution of the Software with the Other FOSS shall not be deemed to require that the Other FOSS be licensed under the license of the Software, other than as to any Interfaces of the Software copied into the Other FOSS. This includes, by way of example and without limitation, statically or dynamically linking the Software together with Other FOSS after enabling interoperability using the Interfaces of one or both, and distributing the resulting combination under different licenses for the respective portions thereof.\n\nFor avoidance of doubt, a license which is OSI-approved or categorized by the FSF as free, includes, for the purpose of this permission, such licenses with additional permissions, and any license that has previously been so-approved or categorized as free, even if now deprecated or otherwise no longer recognized as approved or free. Nothing in this additional permission grants any right to distribute any portion of the Software on terms other than those of the Software License or grants any additional permission of any kind for use or distribution of the Software in conjunction with software other than Other FOSS.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Universal FOSS Exception, Version 1.0&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Universal-FOSS-exception-1.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The Universal FOSS Exception, Version 1.0\n\nIn addition to the rights set forth in the other license(s) included in the distribution for this software, data, and/or documentation (collectively the \&quot;Software,\&quot; and such licenses collectively with this additional permission the \&quot;Software License\&quot;), the copyright holders wish to facilitate interoperability with other software, data, and/or documentation distributed with complete corresponding source under a license that is OSI-approved and/or categorized by the FSF as free (collectively \&quot;Other FOSS\&quot;). We therefore hereby grant the following additional permission with respect to the use and distribution of the Software with Other FOSS, and the constants, function signatures, data structures and other invocation methods used to run or interact with each of them (as to each, such software&#39;s \&quot;Interfaces\&quot;):\n\n   (i) The Software&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Other FOSS in order to enable interoperability, without requiring a change to the license of the Other FOSS other than as to any Interfaces of the Software embedded therein. The Software&#39;s Interfaces remain at all times under the Software License, including without limitation as used in the Other FOSS (which upon any such use also then contains a portion of the Software under the Software License).\n\n   (ii) The Other FOSS&#39;s Interfaces may, to the extent permitted by the license of the Other FOSS, be copied into, used and distributed in the Software in order to enable interoperability, without requiring that such Interfaces be licensed under the terms of the Software License or otherwise altering their original terms, if this does not require any portion of the Software other than such Interfaces to be licensed under the terms other than the Software License.\n\n   (iii) If only Interfaces and no other code is copied between the Software and the Other FOSS in either direction, the use and/or distribution of the Software with the Other FOSS shall not be deemed to require that the Other FOSS be licensed under the license of the Software, other than as to any Interfaces of the Software copied into the Other FOSS. This includes, by way of example and without limitation, statically or dynamically linking the Software together with Other FOSS after enabling interoperability using the Interfaces of one or both, and distributing the resulting combination under different licenses for the respective portions thereof.\n\nFor avoidance of doubt, a license which is OSI-approved or categorized by the FSF as free, includes, for the purpose of this permission, such licenses with additional permissions, and any license that has previously been so-approved or categorized as free, even if now deprecated or otherwise no longer recognized as approved or free. Nothing in this additional permission grants any right to distribute any portion of the Software on terms other than those of the Software License or grants any additional permission of any kind for use or distribution of the Software in conjunction with software other than Other FOSS.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://oss.oracle.com/licenses/universal-foss-exception/&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/23499747cea0193a3f6a706e0e8e714b">MetaeffektLicense:23499747cea0193a3f6a706e0e8e714b</a> for <a href="/?license=metaeffekt:Universal-FOSS-Exception-1.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Universal-FOSS-Exception-1.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Universal-FOSS-Exception-1.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Universal FOSS Exception 1.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Universal-FOSS-exception-1.0</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//spdx.org/licenses/universal-foss-exception-1.0</span></li><li><span class="licensename">The Universal FOSS Exception, Version 1.0</span></li><li><span class="licensename">the Universal FOSS Exception, Version 1.0</span></li><li><span class="licensename">Universal FOSS Exception</span></li><li><span class="licensename"><span class="namespace">scancode:</span>universal-foss-exception-1.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Universal-FOSS-Exception-1.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Universal FOSS Exception 1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:Universal-FOSS-exception-1.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Universal FOSS Exception&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://spdx.org/licenses/universal-foss-exception-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The Universal FOSS Exception, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;the Universal FOSS Exception, Version 1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:universal-foss-exception-1.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;23499747cea0193a3f6a706e0e8e714b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;https://spdx.org/licenses/universal-foss-exception-1.0&quot;,
+            &quot;The Universal FOSS Exception, Version 1.0&quot;,
+            &quot;the Universal FOSS Exception, Version 1.0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Universal FOSS Exception 1.0&quot;,
+        &quot;_category&quot;: &quot;Universal FOSS Exception&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:universal-foss-exception-1.0&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:Universal-FOSS-Exception-1.0&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Universal-FOSS-exception-1.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

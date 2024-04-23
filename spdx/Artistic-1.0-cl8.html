@@ -1,0 +1,1862 @@
+<html><head><title>ldbcollector: spdx:Artistic-1.0-cl8</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Artistic-1.0-cl8</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseNames (12):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic 1.0 w/clause 8</span></li><li><span class="licensename">Artistic License 1.0 (cl8)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Artistic License 1.0 (cl8)</span></li><li><span class="licensename">Artistic License 1.0 w/clause 8</span></li><li><span class="licensename">Artistic-1.0-cl8</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Artistic-1.0-cl8</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Artistic-1.0-cl8</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Artistic-1.0-cl8</span></li><li><span class="licensename"><span class="namespace">scancode:</span>artistic-1.0-cl8</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></li><li><span class="licensename">Artistic10cl8</span></li><li><span class="licensename"><span class="namespace">google:</span>Artistic10cl8</span></li></ul></li><li><b>other LicenseName Hints (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic 1.0 cl8</span></li><li><span class="licensename">Artistic 1.0 License cl8</span></li><li><span class="licensename">Artistic 1.0 License, Version cl8</span></li><li><span class="licensename">Artistic 1.0, Version cl8</span></li><li><span class="licensename">Artistic License</span></li><li><span class="licensename">Artistic-1.0 cl8</span></li><li><span class="licensename">Artistic-1.0 License cl8</span></li><li><span class="licensename">Artistic-1.0 License, Version cl8</span></li><li><span class="licensename">Artistic-1.0, Version cl8</span></li><li><span class="licensename"><span class="namespace">osi:</span>Artistic-1.0-Perl</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:b0ad7605cd6e667597c4453b48107ec3">[<a href="/fact/BlueOakCouncil/b0ad7605cd6e667597c4453b48107ec3">BlueOakCouncil</a>]</span>)</span></li><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:d90962ec33e85049920b50513f20e23d">[<a href="/fact/ScancodeData/d90962ec33e85049920b50513f20e23d">ScancodeData</a>]</span>)</span></li><li>WeaklyProtective<span class="provided-by">(provided by: <span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f137a51001d0138cec5a0946bcfa9130">[<a href="/fact/SPDXLicense/f137a51001d0138cec5a0946bcfa9130">SPDXLicense</a>]</span><span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:2c7db799c6d2ce29684aacd42fa71ba8">[<a href="/fact/GoogleLicense/2c7db799c6d2ce29684aacd42fa71ba8">GoogleLicense</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:b0ad7605cd6e667597c4453b48107ec3">[<a href="/fact/BlueOakCouncil/b0ad7605cd6e667597c4453b48107ec3">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:46b14525aa545ce1109ea0ac0de59d99">[<a href="/fact/MetaeffektLicense/46b14525aa545ce1109ea0ac0de59d99">MetaeffektLicense</a>]</span>)</span></li><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ca0a2a7b25f45c29de571a9a64b941a1">[<a href="/fact/OrtLicenseCategorization/ca0a2a7b25f45c29de571a9a64b941a1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ca0a2a7b25f45c29de571a9a64b941a1">[<a href="/fact/OrtLicenseCategorization/ca0a2a7b25f45c29de571a9a64b941a1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ca0a2a7b25f45c29de571a9a64b941a1">[<a href="/fact/OrtLicenseCategorization/ca0a2a7b25f45c29de571a9a64b941a1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.">OrtLicenseCategorization: <b>copyleft-file-level</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.">OrtLicenseCategorization: <b>property:modification-related-obligations</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.<span class="provided-by">(provided by: <span title="SPDXLicense:f137a51001d0138cec5a0946bcfa9130">[<a href="/fact/SPDXLicense/f137a51001d0138cec5a0946bcfa9130">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Per SPDX.org, this license was superseded by v2.0 This is Artistic License
+1.0 as found on OSI site, including clause 8.
+<span class="provided-by">(provided by: <span title="ScancodeData:d90962ec33e85049920b50513f20e23d">[<a href="/fact/ScancodeData/d90962ec33e85049920b50513f20e23d">ScancodeData</a>]</span>)</span></li><li><b>Fossology: </b>This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.<span class="provided-by">(provided by: <span title="Fossology:634e10f62c051e3f763334556f7619a2">[<a href="/fact/Fossology/634e10f62c051e3f763334556f7619a2">Fossology</a>]</span>)</span></li><li><b>HermineLicense: </b>&quot;Artistic-1.0-cl8&quot; is of radical: Artistic<span class="provided-by">(provided by: <span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/Artistic-1.0" target="_blank">https://opensource.org/licenses/Artistic-1.0</a></li><li><a href="https://spdx.org/licenses/Artistic-1.0-cl8.html" target="_blank">https://spdx.org/licenses/Artistic-1.0-cl8.html</a></li><li>OSI: <a href="http://opensource.org/licenses/Artistic-1.0" target="_blank">http://opensource.org/licenses/Artistic-1.0</a></li><li><a href="http://spdx.org/licenses/Artistic-1.0-cl8" target="_blank">http://spdx.org/licenses/Artistic-1.0-cl8</a></li><li><a href="http://www.gnu.org/licenses/license-list.html#ArtisticLicense" target="_blank">http://www.gnu.org/licenses/license-list.html#ArtisticLicense</a></li></ul><h3>Other Statements</h3><ul><li>http://spdx.org/licenses/Artistic-1.0-cl8</li><li>http://opensource.org/licenses/Artistic-1.0</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Artistic License
+
+Preamble
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+     &quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+     &quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+     &quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+     &quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+     &quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+     &quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+     b) use the modified Package only within your corporation or organization.
+     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+     d) make other distribution arrangements with the Copyright Holder.
+
+4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+     b) accompany the distribution with the machine-readable source of the Package with your modifications.
+     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+     d) make other distribution arrangements with the Copyright Holder.
+
+5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.
+
+8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.
+
+9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+10. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+The End
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The Artistic License&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Preamble&lt;/p&gt;
+
+      &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the
+         Copyright Holder maintains some semblance of artistic control over the development of the package,
+         while giving the users of the package the right to use and distribute the Package in a more-or-less
+         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;
+
+      &lt;p&gt;Definitions:&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and
+         derivatives of that collection of files created through textual modification.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified
+         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication
+         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright
+         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees
+         involved in handling the item. It also means that recipients of the item may redistribute it under the
+         same conditions they received it.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You may make and give away verbatim copies of the source form of the Standard Version of this
+             Package without restriction, provided that you duplicate all of the original copyright notices
+             and associated disclaimers.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain
+             or from the Copyright Holder. A Package modified in such a way shall still be considered the
+             Standard Version.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may otherwise modify your copy of this Package in any way, provided that you insert a
+             prominent notice in each changed file stating how and when you changed that file, and provided
+             that you do at least ONE of the following:
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+              place your modifications in the Public Domain or otherwise make them Freely Available, such
+                 as by posting said modifications to Usenet or an equivalent medium, or placing the
+                 modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright
+                 Holder to include your modifications in the Standard Version of the Package.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+              use the modified Package only within your corporation or organization.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+              rename any non-standard executables so the names do not conflict with standard executables,
+                 which must also be provided, and provide a separate manual page for each non-standard
+                 executable that clearly documents how it differs from the Standard Version.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+              make other distribution arrangements with the Copyright Holder.
+            &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may distribute the programs of this Package in object code or executable form, provided that
+             you do at least ONE of the following:
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+              distribute a Standard Version of the executables and library files, together with
+                 instructions (in the manual page or equivalent) on where to get the Standard Version.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+              accompany the distribution with the machine-readable source of the Package with your modifications.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+              accompany any non-standard executables with their corresponding Standard Version executables,
+                 giving the non-standard executables non-standard names, and clearly documenting the
+                 differences in manual pages (or equivalent), together with instructions on where to get
+                 the Standard Version.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+              make other distribution arrangements with the Copyright Holder.
+            &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          You may charge a reasonable copying fee for any distribution of this Package. You may charge any
+             fee you choose for support of this Package. You may not charge a fee for this Package itself.
+             However, you may distribute this Package in aggregate with other (possibly commercial)
+             programs as part of a larger (possibly commercial) software distribution provided that you do
+             not advertise this Package as a product of your own.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          The scripts and library files supplied as input to or produced as output from the programs of
+             this Package do not automatically fall under the copyright of this Package, but belong to
+             whomever generated them, and may be sold commercially, and may be aggregated with this
+             Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          C or perl subroutines supplied by you and linked into this Package shall not be considered part
+             of this Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 8.&lt;/var&gt;
+          Aggregation of this Package with a commercial distribution is always permitted provided that
+             the use of this Package is embedded; that is, when no overt attempt is made to make this
+             Package&amp;apos;s interfaces visible to the end user of the commercial distribution. Such use
+             shall not be construed as a distribution of this Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 9.&lt;/var&gt;
+          The name of the Copyright Holder may not be used to endorse or promote products derived from this
+             software without specific prior written permission.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 10.&lt;/var&gt;
+          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A
+             PARTICULAR PURPOSE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The End&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>Preamble
+
+The intent of this document is to state the conditions under which a Package may
+be copied, such that the Copyright Holder maintains some semblance of artistic
+control over the development of the package, while giving the users of the
+package the right to use and distribute the Package in a more-or-less customary
+fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+&quot;Package&quot; refers to the collection of files distributed by the Copyright Holder,
+and derivatives of that collection of files created through textual modification.
+
+&quot;Standard Version&quot; refers to such a Package if it has not been modified, or has
+been modified in accordance with the wishes of the Copyright Holder.
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the
+package.
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost,
+duplication charges, time of people involved, and so on. (You will not be
+required to justify it to the Copyright Holder, but only to the computing
+community at large as a market that must bear the fee.)
+
+&quot;Freely Available&quot; means that no fee is charged for the item itself, though
+there may be fees involved in handling the item. It also means that recipients
+of the item may redistribute it under the same conditions they received it.
+
+1. You may make and give away verbatim copies of the source form of the Standard
+Version of this Package without restriction, provided that you duplicate all of
+the original copyright notices and associated disclaimers.
+
+2. You may apply bug fixes, portability fixes and other modifications derived
+from the Public Domain or from the Copyright Holder. A Package modified in such
+a way shall still be considered the Standard Version.
+
+3. You may otherwise modify your copy of this Package in any way, provided that
+you insert a prominent notice in each changed file stating how and when you
+changed that file, and provided that you do at least ONE of the following:
+
+a) place your modifications in the Public Domain or otherwise make them Freely
+Available, such as by posting said modifications to Usenet or an equivalent
+medium, or placing the modifications on a major archive site such as ftp.uu.net,
+or by allowing the Copyright Holder to include your modifications in the
+Standard Version of the Package.
+
+b) use the modified Package only within your corporation or organization.
+
+c) rename any non-standard executables so the names do not conflict with
+standard executables, which must also be provided, and provide a separate manual
+page for each non-standard executable that clearly documents how it differs from
+the Standard Version.
+
+d) make other distribution arrangements with the Copyright Holder.
+
+4. You may distribute the programs of this Package in object code or executable
+form, provided that you do at least ONE of the following:
+
+a) distribute a Standard Version of the executables and library files, together
+with instructions (in the manual page or equivalent) on where to get the
+Standard Version.
+
+b) accompany the distribution with the machine-readable source of the Package
+with your modifications.
+
+c) accompany any non-standard executables with their corresponding Standard
+Version executables, giving the non-standard executables non-standard names, and
+clearly documenting the differences in manual pages (or equivalent), together
+with instructions on where to get the Standard Version.
+
+d) make other distribution arrangements with the Copyright Holder.
+
+5. You may charge a reasonable copying fee for any distribution of this Package.
+You may charge any fee you choose for support of this Package. You may not
+charge a fee for this Package itself. However, you may distribute this Package
+in aggregate with other (possibly commercial) programs as part of a larger
+(possibly commercial) software distribution provided that you do not advertise
+this Package as a product of your own.
+
+6. The scripts and library files supplied as input to or produced as output from
+the programs of this Package do not automatically fall under the copyright of
+this Package, but belong to whomever generated them, and may be sold
+commercially, and may be aggregated with this Package.
+
+7. C or perl subroutines supplied by you and linked into this Package shall not
+be considered part of this Package.
+
+8.Aggregation of this Package with a commercial distribution is always permitted
+provided that the use of this Package is embedded; that is, when no overt
+attempt is made to make this Package&#39;s interfaces visible to the end user of the
+commercial distribution. Such use shall not be construed as a distribution of
+this Package.
+
+9. The name of the Copyright Holder may not be used to endorse or promote
+products derived from this software without specific prior written permission.
+
+10. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+The End</pre></details></li><li><details><summary>Text:</summary><pre>The Artistic License
+
+Preamble
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+&quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+&quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+&quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+
+      b) use the modified Package only within your corporation or organization.
+
+      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+
+      b) accompany the distribution with the machine-readable source of the Package with your modifications.
+
+      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+   7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.
+
+   8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.
+
+   9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+   10. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/f137a51001d0138cec5a0946bcfa9130">SPDXLicense:f137a51001d0138cec5a0946bcfa9130</a> for <a href="/?license=spdx:Artistic-1.0-cl8"><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic License 1.0 w/clause 8</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f137a51001d0138cec5a0946bcfa9130">[<a href="/fact/SPDXLicense/f137a51001d0138cec5a0946bcfa9130">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.<span class="provided-by">(provided by: <span title="SPDXLicense:f137a51001d0138cec5a0946bcfa9130">[<a href="/fact/SPDXLicense/f137a51001d0138cec5a0946bcfa9130">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/Artistic-1.0" target="_blank">https://opensource.org/licenses/Artistic-1.0</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Artistic License
+
+Preamble
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+     &quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+     &quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+     &quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+     &quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+     &quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+     &quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+     b) use the modified Package only within your corporation or organization.
+     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+     d) make other distribution arrangements with the Copyright Holder.
+
+4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+     b) accompany the distribution with the machine-readable source of the Package with your modifications.
+     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+     d) make other distribution arrangements with the Copyright Holder.
+
+5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.
+
+8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.
+
+9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+10. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+The End
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The Artistic License&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Preamble&lt;/p&gt;
+
+      &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the
+         Copyright Holder maintains some semblance of artistic control over the development of the package,
+         while giving the users of the package the right to use and distribute the Package in a more-or-less
+         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;
+
+      &lt;p&gt;Definitions:&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and
+         derivatives of that collection of files created through textual modification.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified
+         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication
+         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright
+         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;
+
+      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees
+         involved in handling the item. It also means that recipients of the item may redistribute it under the
+         same conditions they received it.&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You may make and give away verbatim copies of the source form of the Standard Version of this
+             Package without restriction, provided that you duplicate all of the original copyright notices
+             and associated disclaimers.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain
+             or from the Copyright Holder. A Package modified in such a way shall still be considered the
+             Standard Version.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may otherwise modify your copy of this Package in any way, provided that you insert a
+             prominent notice in each changed file stating how and when you changed that file, and provided
+             that you do at least ONE of the following:
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+              place your modifications in the Public Domain or otherwise make them Freely Available, such
+                 as by posting said modifications to Usenet or an equivalent medium, or placing the
+                 modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright
+                 Holder to include your modifications in the Standard Version of the Package.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+              use the modified Package only within your corporation or organization.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+              rename any non-standard executables so the names do not conflict with standard executables,
+                 which must also be provided, and provide a separate manual page for each non-standard
+                 executable that clearly documents how it differs from the Standard Version.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+              make other distribution arrangements with the Copyright Holder.
+            &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may distribute the programs of this Package in object code or executable form, provided that
+             you do at least ONE of the following:
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+              distribute a Standard Version of the executables and library files, together with
+                 instructions (in the manual page or equivalent) on where to get the Standard Version.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+              accompany the distribution with the machine-readable source of the Package with your modifications.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+              accompany any non-standard executables with their corresponding Standard Version executables,
+                 giving the non-standard executables non-standard names, and clearly documenting the
+                 differences in manual pages (or equivalent), together with instructions on where to get
+                 the Standard Version.
+            &lt;/li&gt;
+               
+&lt;li&gt;
+                  &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+              make other distribution arrangements with the Copyright Holder.
+            &lt;/li&gt;
+            
+&lt;/ul&gt;
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          You may charge a reasonable copying fee for any distribution of this Package. You may charge any
+             fee you choose for support of this Package. You may not charge a fee for this Package itself.
+             However, you may distribute this Package in aggregate with other (possibly commercial)
+             programs as part of a larger (possibly commercial) software distribution provided that you do
+             not advertise this Package as a product of your own.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          The scripts and library files supplied as input to or produced as output from the programs of
+             this Package do not automatically fall under the copyright of this Package, but belong to
+             whomever generated them, and may be sold commercially, and may be aggregated with this
+             Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 7.&lt;/var&gt;
+          C or perl subroutines supplied by you and linked into this Package shall not be considered part
+             of this Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 8.&lt;/var&gt;
+          Aggregation of this Package with a commercial distribution is always permitted provided that
+             the use of this Package is embedded; that is, when no overt attempt is made to make this
+             Package&amp;apos;s interfaces visible to the end user of the commercial distribution. Such use
+             shall not be construed as a distribution of this Package.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 9.&lt;/var&gt;
+          The name of the Copyright Holder may not be used to endorse or promote products derived from this
+             software without specific prior written permission.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 10.&lt;/var&gt;
+          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A
+             PARTICULAR PURPOSE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The End&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Artistic-1.0-cl8&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;f137a51001d0138cec5a0946bcfa9130&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The Artistic License\n\nPreamble\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n     \&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n     \&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n     \&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n     \&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n     \&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n     \&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n     b) use the modified Package only within your corporation or organization.\n     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n     d) make other distribution arrangements with the Copyright Holder.\n\n4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n     b) accompany the distribution with the machine-readable source of the Package with your modifications.\n     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n     d) make other distribution arrangements with the Copyright Holder.\n\n5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.\n\n8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.\n\n9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n10. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nThe End\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The Artistic License&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Preamble&lt;/p&gt;\n\n      &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the\n         Copyright Holder maintains some semblance of artistic control over the development of the package,\n         while giving the users of the package the right to use and distribute the Package in a more-or-less\n         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;\n\n      &lt;p&gt;Definitions:&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and\n         derivatives of that collection of files created through textual modification.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified\n         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication\n         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright\n         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees\n         involved in handling the item. It also means that recipients of the item may redistribute it under the\n         same conditions they received it.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You may make and give away verbatim copies of the source form of the Standard Version of this\n             Package without restriction, provided that you duplicate all of the original copyright notices\n             and associated disclaimers.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain\n             or from the Copyright Holder. A Package modified in such a way shall still be considered the\n             Standard Version.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may otherwise modify your copy of this Package in any way, provided that you insert a\n             prominent notice in each changed file stating how and when you changed that file, and provided\n             that you do at least ONE of the following:\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n              place your modifications in the Public Domain or otherwise make them Freely Available, such\n                 as by posting said modifications to Usenet or an equivalent medium, or placing the\n                 modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright\n                 Holder to include your modifications in the Standard Version of the Package.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n              use the modified Package only within your corporation or organization.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n              rename any non-standard executables so the names do not conflict with standard executables,\n                 which must also be provided, and provide a separate manual page for each non-standard\n                 executable that clearly documents how it differs from the Standard Version.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n              make other distribution arrangements with the Copyright Holder.\n            &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may distribute the programs of this Package in object code or executable form, provided that\n             you do at least ONE of the following:\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n              distribute a Standard Version of the executables and library files, together with\n                 instructions (in the manual page or equivalent) on where to get the Standard Version.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n              accompany the distribution with the machine-readable source of the Package with your modifications.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n              accompany any non-standard executables with their corresponding Standard Version executables,\n                 giving the non-standard executables non-standard names, and clearly documenting the\n                 differences in manual pages (or equivalent), together with instructions on where to get\n                 the Standard Version.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n              make other distribution arrangements with the Copyright Holder.\n            &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          You may charge a reasonable copying fee for any distribution of this Package. You may charge any\n             fee you choose for support of this Package. You may not charge a fee for this Package itself.\n             However, you may distribute this Package in aggregate with other (possibly commercial)\n             programs as part of a larger (possibly commercial) software distribution provided that you do\n             not advertise this Package as a product of your own.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          The scripts and library files supplied as input to or produced as output from the programs of\n             this Package do not automatically fall under the copyright of this Package, but belong to\n             whomever generated them, and may be sold commercially, and may be aggregated with this\n             Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          C or perl subroutines supplied by you and linked into this Package shall not be considered part\n             of this Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 8.&lt;/var&gt;\n          Aggregation of this Package with a commercial distribution is always permitted provided that\n             the use of this Package is embedded; that is, when no overt attempt is made to make this\n             Package&amp;apos;s interfaces visible to the end user of the commercial distribution. Such use\n             shall not be construed as a distribution of this Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 9.&lt;/var&gt;\n          The name of the Copyright Holder may not be used to endorse or promote products derived from this\n             software without specific prior written permission.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 10.&lt;/var&gt;\n          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,\n             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A\n             PARTICULAR PURPOSE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The End&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:09Z&quot;,
+                &quot;url&quot;: &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: true,
+        &quot;licenseComments&quot;: &quot;This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:Artistic-1.0-cl8&quot;,
+        &quot;licenseText&quot;: &quot;The Artistic License\n\nPreamble\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n     \&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n     \&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n     \&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n     \&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n     \&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n     \&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n     b) use the modified Package only within your corporation or organization.\n     c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n     d) make other distribution arrangements with the Copyright Holder.\n\n4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n     a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n     b) accompany the distribution with the machine-readable source of the Package with your modifications.\n     c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n     d) make other distribution arrangements with the Copyright Holder.\n\n5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.\n\n8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.\n\n9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n10. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nThe End\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The Artistic License&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Preamble&lt;/p&gt;\n\n      &lt;p&gt;The intent of this document is to state the conditions under which a Package may be copied, such that the\n         Copyright Holder maintains some semblance of artistic control over the development of the package,\n         while giving the users of the package the right to use and distribute the Package in a more-or-less\n         customary fashion, plus the right to make reasonable modifications.&lt;/p&gt;\n\n      &lt;p&gt;Definitions:&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Package&amp;quot; refers to the collection of files distributed by the Copyright Holder, and\n         derivatives of that collection of files created through textual modification.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Standard Version&amp;quot; refers to such a Package if it has not been modified, or has been modified\n         in accordance with the wishes of the Copyright Holder.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Copyright Holder&amp;quot; is whoever is named in the copyright or copyrights for the package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;You&amp;quot; is you, if you&amp;apos;re thinking about copying or distributing this Package.&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Reasonable copying fee&amp;quot; is whatever you can justify on the basis of media cost, duplication\n         charges, time of people involved, and so on. (You will not be required to justify it to the Copyright\n         Holder, but only to the computing community at large as a market that must bear the fee.)&lt;/p&gt;\n\n      &lt;p&gt;&amp;quot;Freely Available&amp;quot; means that no fee is charged for the item itself, though there may be fees\n         involved in handling the item. It also means that recipients of the item may redistribute it under the\n         same conditions they received it.&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You may make and give away verbatim copies of the source form of the Standard Version of this\n             Package without restriction, provided that you duplicate all of the original copyright notices\n             and associated disclaimers.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may apply bug fixes, portability fixes and other modifications derived from the Public Domain\n             or from the Copyright Holder. A Package modified in such a way shall still be considered the\n             Standard Version.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may otherwise modify your copy of this Package in any way, provided that you insert a\n             prominent notice in each changed file stating how and when you changed that file, and provided\n             that you do at least ONE of the following:\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n              place your modifications in the Public Domain or otherwise make them Freely Available, such\n                 as by posting said modifications to Usenet or an equivalent medium, or placing the\n                 modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright\n                 Holder to include your modifications in the Standard Version of the Package.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n              use the modified Package only within your corporation or organization.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n              rename any non-standard executables so the names do not conflict with standard executables,\n                 which must also be provided, and provide a separate manual page for each non-standard\n                 executable that clearly documents how it differs from the Standard Version.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n              make other distribution arrangements with the Copyright Holder.\n            &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may distribute the programs of this Package in object code or executable form, provided that\n             you do at least ONE of the following:\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n              distribute a Standard Version of the executables and library files, together with\n                 instructions (in the manual page or equivalent) on where to get the Standard Version.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n              accompany the distribution with the machine-readable source of the Package with your modifications.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n              accompany any non-standard executables with their corresponding Standard Version executables,\n                 giving the non-standard executables non-standard names, and clearly documenting the\n                 differences in manual pages (or equivalent), together with instructions on where to get\n                 the Standard Version.\n            &lt;/li&gt;\n               \n&lt;li&gt;\n                  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n              make other distribution arrangements with the Copyright Holder.\n            &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          You may charge a reasonable copying fee for any distribution of this Package. You may charge any\n             fee you choose for support of this Package. You may not charge a fee for this Package itself.\n             However, you may distribute this Package in aggregate with other (possibly commercial)\n             programs as part of a larger (possibly commercial) software distribution provided that you do\n             not advertise this Package as a product of your own.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          The scripts and library files supplied as input to or produced as output from the programs of\n             this Package do not automatically fall under the copyright of this Package, but belong to\n             whomever generated them, and may be sold commercially, and may be aggregated with this\n             Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 7.&lt;/var&gt;\n          C or perl subroutines supplied by you and linked into this Package shall not be considered part\n             of this Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 8.&lt;/var&gt;\n          Aggregation of this Package with a commercial distribution is always permitted provided that\n             the use of this Package is embedded; that is, when no overt attempt is made to make this\n             Package&amp;apos;s interfaces visible to the end user of the commercial distribution. Such use\n             shall not be construed as a distribution of this Package.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 9.&lt;/var&gt;\n          The name of the Copyright Holder may not be used to endorse or promote products derived from this\n             software without specific prior written permission.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 10.&lt;/var&gt;\n          THIS PACKAGE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,\n             INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A\n             PARTICULAR PURPOSE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The End&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The Artistic License\n\n&lt;&lt;endOptional&gt;&gt;\n\nPreamble\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; use the modified Package only within your corporation or organization.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; make other distribution arrangements with the Copyright Holder.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; accompany the distribution with the machine-readable source of the Package with your modifications.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; make other distribution arrangements with the Copyright Holder.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;7.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;8.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;9.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;10.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;&lt;beginOptional&gt;&gt; The End\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/2c7db799c6d2ce29684aacd42fa71ba8">GoogleLicense:2c7db799c6d2ce29684aacd42fa71ba8</a> for <a href="/?license=google:Artistic10cl8"><span class="licensename"><span class="namespace">google:</span>Artistic10cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>Artistic10cl8</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:2c7db799c6d2ce29684aacd42fa71ba8">[<a href="/fact/GoogleLicense/2c7db799c6d2ce29684aacd42fa71ba8">GoogleLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:Artistic10cl8&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:Artistic-1.0-cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;2c7db799c6d2ce29684aacd42fa71ba8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Google Policy Classification&quot;,
+                        &quot;notice&quot;,
+                        {
+                            &quot;contents&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:Artistic10cl8&quot;,
+        &quot;googleLicenseType&quot;: &quot;notice&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:Artistic-1.0-cl8&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/b0ad7605cd6e667597c4453b48107ec3">BlueOakCouncil:b0ad7605cd6e667597c4453b48107ec3</a> for <a href="/?license=BlueOak:Artistic-1.0-cl8"><span class="licensename"><span class="namespace">BlueOak:</span>Artistic-1.0-cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic License 1.0 w/clause 8</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:b0ad7605cd6e667597c4453b48107ec3">[<a href="/fact/BlueOakCouncil/b0ad7605cd6e667597c4453b48107ec3">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:b0ad7605cd6e667597c4453b48107ec3">[<a href="/fact/BlueOakCouncil/b0ad7605cd6e667597c4453b48107ec3">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Artistic-1.0-cl8.html" target="_blank">https://spdx.org/licenses/Artistic-1.0-cl8.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:Artistic-1.0-cl8&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;b0ad7605cd6e667597c4453b48107ec3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Artistic-1.0-cl8.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;Artistic-1.0-cl8&quot;,
+                &quot;_name&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Artistic-1.0-cl8.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/d90962ec33e85049920b50513f20e23d">ScancodeData:d90962ec33e85049920b50513f20e23d</a> for <a href="/?license=scancode:artistic-1.0-cl8"><span class="licensename"><span class="namespace">scancode:</span>artistic-1.0-cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic 1.0 w/clause 8</span></li><li><span class="licensename">Artistic License 1.0 w/clause 8</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:d90962ec33e85049920b50513f20e23d">[<a href="/fact/ScancodeData/d90962ec33e85049920b50513f20e23d">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per SPDX.org, this license was superseded by v2.0 This is Artistic License
+1.0 as found on OSI site, including clause 8.
+<span class="provided-by">(provided by: <span title="ScancodeData:d90962ec33e85049920b50513f20e23d">[<a href="/fact/ScancodeData/d90962ec33e85049920b50513f20e23d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li>OSI: <a href="http://opensource.org/licenses/Artistic-1.0" target="_blank">http://opensource.org/licenses/Artistic-1.0</a></li><li><a href="http://spdx.org/licenses/Artistic-1.0-cl8" target="_blank">http://spdx.org/licenses/Artistic-1.0-cl8</a></li><li><a href="http://www.gnu.org/licenses/license-list.html#ArtisticLicense" target="_blank">http://www.gnu.org/licenses/license-list.html#ArtisticLicense</a></li><li><a href="https://opensource.org/licenses/Artistic-1.0" target="_blank">https://opensource.org/licenses/Artistic-1.0</a></li></ul><h3>Other Statements</h3><ul><li>http://spdx.org/licenses/Artistic-1.0-cl8</li><li>http://opensource.org/licenses/Artistic-1.0</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Preamble
+
+The intent of this document is to state the conditions under which a Package may
+be copied, such that the Copyright Holder maintains some semblance of artistic
+control over the development of the package, while giving the users of the
+package the right to use and distribute the Package in a more-or-less customary
+fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+&quot;Package&quot; refers to the collection of files distributed by the Copyright Holder,
+and derivatives of that collection of files created through textual modification.
+
+&quot;Standard Version&quot; refers to such a Package if it has not been modified, or has
+been modified in accordance with the wishes of the Copyright Holder.
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the
+package.
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost,
+duplication charges, time of people involved, and so on. (You will not be
+required to justify it to the Copyright Holder, but only to the computing
+community at large as a market that must bear the fee.)
+
+&quot;Freely Available&quot; means that no fee is charged for the item itself, though
+there may be fees involved in handling the item. It also means that recipients
+of the item may redistribute it under the same conditions they received it.
+
+1. You may make and give away verbatim copies of the source form of the Standard
+Version of this Package without restriction, provided that you duplicate all of
+the original copyright notices and associated disclaimers.
+
+2. You may apply bug fixes, portability fixes and other modifications derived
+from the Public Domain or from the Copyright Holder. A Package modified in such
+a way shall still be considered the Standard Version.
+
+3. You may otherwise modify your copy of this Package in any way, provided that
+you insert a prominent notice in each changed file stating how and when you
+changed that file, and provided that you do at least ONE of the following:
+
+a) place your modifications in the Public Domain or otherwise make them Freely
+Available, such as by posting said modifications to Usenet or an equivalent
+medium, or placing the modifications on a major archive site such as ftp.uu.net,
+or by allowing the Copyright Holder to include your modifications in the
+Standard Version of the Package.
+
+b) use the modified Package only within your corporation or organization.
+
+c) rename any non-standard executables so the names do not conflict with
+standard executables, which must also be provided, and provide a separate manual
+page for each non-standard executable that clearly documents how it differs from
+the Standard Version.
+
+d) make other distribution arrangements with the Copyright Holder.
+
+4. You may distribute the programs of this Package in object code or executable
+form, provided that you do at least ONE of the following:
+
+a) distribute a Standard Version of the executables and library files, together
+with instructions (in the manual page or equivalent) on where to get the
+Standard Version.
+
+b) accompany the distribution with the machine-readable source of the Package
+with your modifications.
+
+c) accompany any non-standard executables with their corresponding Standard
+Version executables, giving the non-standard executables non-standard names, and
+clearly documenting the differences in manual pages (or equivalent), together
+with instructions on where to get the Standard Version.
+
+d) make other distribution arrangements with the Copyright Holder.
+
+5. You may charge a reasonable copying fee for any distribution of this Package.
+You may charge any fee you choose for support of this Package. You may not
+charge a fee for this Package itself. However, you may distribute this Package
+in aggregate with other (possibly commercial) programs as part of a larger
+(possibly commercial) software distribution provided that you do not advertise
+this Package as a product of your own.
+
+6. The scripts and library files supplied as input to or produced as output from
+the programs of this Package do not automatically fall under the copyright of
+this Package, but belong to whomever generated them, and may be sold
+commercially, and may be aggregated with this Package.
+
+7. C or perl subroutines supplied by you and linked into this Package shall not
+be considered part of this Package.
+
+8.Aggregation of this Package with a commercial distribution is always permitted
+provided that the use of this Package is embedded; that is, when no overt
+attempt is made to make this Package&#39;s interfaces visible to the end user of the
+commercial distribution. Such use shall not be construed as a distribution of
+this Package.
+
+9. The name of the Copyright Holder may not be used to endorse or promote
+products derived from this software without specific prior written permission.
+
+10. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+The End</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:artistic-1.0-cl8&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Artistic 1.0 w/clause 8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;d90962ec33e85049920b50513f20e23d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://spdx.org/licenses/Artistic-1.0-cl8&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://opensource.org/licenses/Artistic-1.0&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                &quot;OSI&quot;,
+                &quot;http://opensource.org/licenses/Artistic-1.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://spdx.org/licenses/Artistic-1.0-cl8&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/license-list.html#ArtisticLicense&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Preamble\n\nThe intent of this document is to state the conditions under which a Package may\nbe copied, such that the Copyright Holder maintains some semblance of artistic\ncontrol over the development of the package, while giving the users of the\npackage the right to use and distribute the Package in a more-or-less customary\nfashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder,\nand derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has\nbeen modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the\npackage.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost,\nduplication charges, time of people involved, and so on. (You will not be\nrequired to justify it to the Copyright Holder, but only to the computing\ncommunity at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though\nthere may be fees involved in handling the item. It also means that recipients\nof the item may redistribute it under the same conditions they received it.\n\n1. You may make and give away verbatim copies of the source form of the Standard\nVersion of this Package without restriction, provided that you duplicate all of\nthe original copyright notices and associated disclaimers.\n\n2. You may apply bug fixes, portability fixes and other modifications derived\nfrom the Public Domain or from the Copyright Holder. A Package modified in such\na way shall still be considered the Standard Version.\n\n3. You may otherwise modify your copy of this Package in any way, provided that\nyou insert a prominent notice in each changed file stating how and when you\nchanged that file, and provided that you do at least ONE of the following:\n\na) place your modifications in the Public Domain or otherwise make them Freely\nAvailable, such as by posting said modifications to Usenet or an equivalent\nmedium, or placing the modifications on a major archive site such as ftp.uu.net,\nor by allowing the Copyright Holder to include your modifications in the\nStandard Version of the Package.\n\nb) use the modified Package only within your corporation or organization.\n\nc) rename any non-standard executables so the names do not conflict with\nstandard executables, which must also be provided, and provide a separate manual\npage for each non-standard executable that clearly documents how it differs from\nthe Standard Version.\n\nd) make other distribution arrangements with the Copyright Holder.\n\n4. You may distribute the programs of this Package in object code or executable\nform, provided that you do at least ONE of the following:\n\na) distribute a Standard Version of the executables and library files, together\nwith instructions (in the manual page or equivalent) on where to get the\nStandard Version.\n\nb) accompany the distribution with the machine-readable source of the Package\nwith your modifications.\n\nc) accompany any non-standard executables with their corresponding Standard\nVersion executables, giving the non-standard executables non-standard names, and\nclearly documenting the differences in manual pages (or equivalent), together\nwith instructions on where to get the Standard Version.\n\nd) make other distribution arrangements with the Copyright Holder.\n\n5. You may charge a reasonable copying fee for any distribution of this Package.\nYou may charge any fee you choose for support of this Package. You may not\ncharge a fee for this Package itself. However, you may distribute this Package\nin aggregate with other (possibly commercial) programs as part of a larger\n(possibly commercial) software distribution provided that you do not advertise\nthis Package as a product of your own.\n\n6. The scripts and library files supplied as input to or produced as output from\nthe programs of this Package do not automatically fall under the copyright of\nthis Package, but belong to whomever generated them, and may be sold\ncommercially, and may be aggregated with this Package.\n\n7. C or perl subroutines supplied by you and linked into this Package shall not\nbe considered part of this Package.\n\n8.Aggregation of this Package with a commercial distribution is always permitted\nprovided that the use of this Package is embedded; that is, when no overt\nattempt is made to make this Package&#39;s interfaces visible to the end user of the\ncommercial distribution. Such use shall not be construed as a distribution of\nthis Package.\n\n9. The name of the Copyright Holder may not be used to endorse or promote\nproducts derived from this software without specific prior written permission.\n\n10. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\nMERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nThe End&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://spdx.org/licenses/Artistic-1.0-cl8&quot;,
+        &quot;_key&quot;: &quot;artistic-1.0-cl8&quot;,
+        &quot;_name&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+        &quot;_notes&quot;: &quot;Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n&quot;,
+        &quot;_osiUrl&quot;: &quot;http://opensource.org/licenses/Artistic-1.0&quot;,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.gnu.org/licenses/license-list.html#ArtisticLicense&quot;,
+            &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+        ],
+        &quot;_owner&quot;: &quot;OSI - Open Source Initiative&quot;,
+        &quot;_shortName&quot;: &quot;Artistic 1.0 w/clause 8&quot;,
+        &quot;_spdxId&quot;: &quot;Artistic-1.0-cl8&quot;,
+        &quot;_text&quot;: &quot;Preamble\n\nThe intent of this document is to state the conditions under which a Package may\nbe copied, such that the Copyright Holder maintains some semblance of artistic\ncontrol over the development of the package, while giving the users of the\npackage the right to use and distribute the Package in a more-or-less customary\nfashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder,\nand derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has\nbeen modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the\npackage.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost,\nduplication charges, time of people involved, and so on. (You will not be\nrequired to justify it to the Copyright Holder, but only to the computing\ncommunity at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though\nthere may be fees involved in handling the item. It also means that recipients\nof the item may redistribute it under the same conditions they received it.\n\n1. You may make and give away verbatim copies of the source form of the Standard\nVersion of this Package without restriction, provided that you duplicate all of\nthe original copyright notices and associated disclaimers.\n\n2. You may apply bug fixes, portability fixes and other modifications derived\nfrom the Public Domain or from the Copyright Holder. A Package modified in such\na way shall still be considered the Standard Version.\n\n3. You may otherwise modify your copy of this Package in any way, provided that\nyou insert a prominent notice in each changed file stating how and when you\nchanged that file, and provided that you do at least ONE of the following:\n\na) place your modifications in the Public Domain or otherwise make them Freely\nAvailable, such as by posting said modifications to Usenet or an equivalent\nmedium, or placing the modifications on a major archive site such as ftp.uu.net,\nor by allowing the Copyright Holder to include your modifications in the\nStandard Version of the Package.\n\nb) use the modified Package only within your corporation or organization.\n\nc) rename any non-standard executables so the names do not conflict with\nstandard executables, which must also be provided, and provide a separate manual\npage for each non-standard executable that clearly documents how it differs from\nthe Standard Version.\n\nd) make other distribution arrangements with the Copyright Holder.\n\n4. You may distribute the programs of this Package in object code or executable\nform, provided that you do at least ONE of the following:\n\na) distribute a Standard Version of the executables and library files, together\nwith instructions (in the manual page or equivalent) on where to get the\nStandard Version.\n\nb) accompany the distribution with the machine-readable source of the Package\nwith your modifications.\n\nc) accompany any non-standard executables with their corresponding Standard\nVersion executables, giving the non-standard executables non-standard names, and\nclearly documenting the differences in manual pages (or equivalent), together\nwith instructions on where to get the Standard Version.\n\nd) make other distribution arrangements with the Copyright Holder.\n\n5. You may charge a reasonable copying fee for any distribution of this Package.\nYou may charge any fee you choose for support of this Package. You may not\ncharge a fee for this Package itself. However, you may distribute this Package\nin aggregate with other (possibly commercial) programs as part of a larger\n(possibly commercial) software distribution provided that you do not advertise\nthis Package as a product of your own.\n\n6. The scripts and library files supplied as input to or produced as output from\nthe programs of this Package do not automatically fall under the copyright of\nthis Package, but belong to whomever generated them, and may be sold\ncommercially, and may be aggregated with this Package.\n\n7. C or perl subroutines supplied by you and linked into this Package shall not\nbe considered part of this Package.\n\n8.Aggregation of this Package with a commercial distribution is always permitted\nprovided that the use of this Package is embedded; that is, when no overt\nattempt is made to make this Package&#39;s interfaces visible to the end user of the\ncommercial distribution. Such use shall not be construed as a distribution of\nthis Package.\n\n9. The name of the Copyright Holder may not be used to endorse or promote\nproducts derived from this software without specific prior written permission.\n\n10. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF\nMERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n\nThe End&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://spdx.org/licenses/Artistic-1.0-cl8&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/634e10f62c051e3f763334556f7619a2">Fossology:634e10f62c051e3f763334556f7619a2</a> for <a href="/?license=fossology:Artistic-1.0-cl8"><span class="licensename"><span class="namespace">fossology:</span>Artistic-1.0-cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic License 1.0 w/clause 8</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.<span class="provided-by">(provided by: <span title="Fossology:634e10f62c051e3f763334556f7619a2">[<a href="/fact/Fossology/634e10f62c051e3f763334556f7619a2">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/Artistic-1.0" target="_blank">https://opensource.org/licenses/Artistic-1.0</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The Artistic License
+
+Preamble
+
+The intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.
+
+Definitions:
+
+&quot;Package&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.
+
+&quot;Standard Version&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.
+
+&quot;Copyright Holder&quot; is whoever is named in the copyright or copyrights for the package.
+
+&quot;You&quot; is you, if you&#39;re thinking about copying or distributing this Package.
+
+&quot;Reasonable copying fee&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)
+
+&quot;Freely Available&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.
+
+   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.
+
+   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:
+
+      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+
+      b) use the modified Package only within your corporation or organization.
+
+      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+
+      b) accompany the distribution with the machine-readable source of the Package with your modifications.
+
+      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+
+      d) make other distribution arrangements with the Copyright Holder.
+
+   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.
+
+   7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.
+
+   8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.
+
+   9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+   10. THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Artistic-1.0-cl8&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;634e10f62c051e3f763334556f7619a2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The Artistic License\n\nPreamble\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n      b) use the modified Package only within your corporation or organization.\n\n      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n      b) accompany the distribution with the machine-readable source of the Package with your modifications.\n\n      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n   7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.\n\n   8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.\n\n   9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n   10. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+        &quot;_rf_notes&quot;: &quot;This license was superseded by v2.0. This is Artistic License 1.0 as found on OSI site, including clause 8.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Artistic-1.0-cl8&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The Artistic License\n\nPreamble\n\nThe intent of this document is to state the conditions under which a Package may be copied, such that the Copyright Holder maintains some semblance of artistic control over the development of the package, while giving the users of the package the right to use and distribute the Package in a more-or-less customary fashion, plus the right to make reasonable modifications.\n\nDefinitions:\n\n\&quot;Package\&quot; refers to the collection of files distributed by the Copyright Holder, and derivatives of that collection of files created through textual modification.\n\n\&quot;Standard Version\&quot; refers to such a Package if it has not been modified, or has been modified in accordance with the wishes of the Copyright Holder.\n\n\&quot;Copyright Holder\&quot; is whoever is named in the copyright or copyrights for the package.\n\n\&quot;You\&quot; is you, if you&#39;re thinking about copying or distributing this Package.\n\n\&quot;Reasonable copying fee\&quot; is whatever you can justify on the basis of media cost, duplication charges, time of people involved, and so on. (You will not be required to justify it to the Copyright Holder, but only to the computing community at large as a market that must bear the fee.)\n\n\&quot;Freely Available\&quot; means that no fee is charged for the item itself, though there may be fees involved in handling the item. It also means that recipients of the item may redistribute it under the same conditions they received it.\n\n   1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   2. You may apply bug fixes, portability fixes and other modifications derived from the Public Domain or from the Copyright Holder. A Package modified in such a way shall still be considered the Standard Version.\n\n   3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file, and provided that you do at least ONE of the following:\n\n      a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\n\n      b) use the modified Package only within your corporation or organization.\n\n      c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\n\n      a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\n\n      b) accompany the distribution with the machine-readable source of the Package with your modifications.\n\n      c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\n\n      d) make other distribution arrangements with the Copyright Holder.\n\n   5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\n\n   6. The scripts and library files supplied as input to or produced as output from the programs of this Package do not automatically fall under the copyright of this Package, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this Package.\n\n   7. C or perl subroutines supplied by you and linked into this Package shall not be considered part of this Package.\n\n   8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.\n\n   9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.\n\n   10. THIS PACKAGE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. The End&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/ca0a2a7b25f45c29de571a9a64b941a1">OrtLicenseCategorization:ca0a2a7b25f45c29de571a9a64b941a1</a> for <a href="/?license=SPDX:Artistic-1.0-cl8"><span class="licensename"><span class="namespace">SPDX:</span>Artistic-1.0-cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Artistic-1.0-cl8</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ca0a2a7b25f45c29de571a9a64b941a1">[<a href="/fact/OrtLicenseCategorization/ca0a2a7b25f45c29de571a9a64b941a1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ca0a2a7b25f45c29de571a9a64b941a1">[<a href="/fact/OrtLicenseCategorization/ca0a2a7b25f45c29de571a9a64b941a1">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:ca0a2a7b25f45c29de571a9a64b941a1">[<a href="/fact/OrtLicenseCategorization/ca0a2a7b25f45c29de571a9a64b941a1">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Artistic-1.0-cl8&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;ca0a2a7b25f45c29de571a9a64b941a1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Artistic-1.0-cl8&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6</a> for <a href="/?license=SPDX:Artistic-1.0-cl8"><span class="licensename"><span class="namespace">SPDX:</span>Artistic-1.0-cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Artistic-1.0-cl8</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.">OrtLicenseCategorization: <b>copyleft-file-level</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.">OrtLicenseCategorization: <b>property:modification-related-obligations</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:603479befe765dc7fda4d3bde0ae3bf6">[<a href="/fact/OrtLicenseCategorization/603479befe765dc7fda4d3bde0ae3bf6">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Artistic-1.0-cl8&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;603479befe765dc7fda4d3bde0ae3bf6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-file-level&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:distribute-source-code&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:modification-related-obligations&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.&quot;,
+                &quot;name&quot;: &quot;copyleft-file-level&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                &quot;name&quot;: &quot;property:distribute-source-code&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This property indicates that the license contains obligations that are triggered by modifying the licensed content. The scope of obligations could vary, but typically it is about somehow making sure that the recipients of the modified content don&#39;t attribute the modifications to the wrong author and/or that the unmodified content is available to the recipients. The obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this property, but also some others.&quot;,
+                &quot;name&quot;: &quot;property:modification-related-obligations&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Artistic-1.0-cl8&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/fcfef29607462b326453a77154745f02">CavilLicenseChange:fcfef29607462b326453a77154745f02</a> for <a href="/?license=cavil:Artistic-1.0-cl8"><span class="licensename"><span class="namespace">cavil:</span>Artistic-1.0-cl8</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic-1.0-cl8</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Artistic-1.0-cl8&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Artistic-1.0-cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;fcfef29607462b326453a77154745f02&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Artistic-1.0-cl8&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Artistic-1.0-cl8&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/46b14525aa545ce1109ea0ac0de59d99">MetaeffektLicense:46b14525aa545ce1109ea0ac0de59d99</a> for <a href="/?license=metaeffekt:Artistic License 1.0 (cl8)"><span class="licensename"><span class="namespace">metaeffekt:</span>Artistic License 1.0 (cl8)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Artistic License 1.0 (cl8)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseName Hints (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic 1.0 cl8</span></li><li><span class="licensename">Artistic 1.0 License cl8</span></li><li><span class="licensename">Artistic 1.0 License, Version cl8</span></li><li><span class="licensename">Artistic 1.0, Version cl8</span></li><li><span class="licensename">Artistic License</span></li><li><span class="licensename">Artistic-1.0 cl8</span></li><li><span class="licensename">Artistic-1.0 License cl8</span></li><li><span class="licensename">Artistic-1.0 License, Version cl8</span></li><li><span class="licensename">Artistic-1.0, Version cl8</span></li><li><span class="licensename"><span class="namespace">scancode:</span>artistic-1.0-cl8</span></li><li><span class="licensename"><span class="namespace">osi:</span>Artistic-1.0-Perl</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:46b14525aa545ce1109ea0ac0de59d99">[<a href="/fact/MetaeffektLicense/46b14525aa545ce1109ea0ac0de59d99">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Artistic License 1.0 (cl8)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Artistic-1.0-cl8&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Artistic License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic 1.0, Version cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic 1.0 cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic-1.0, Version cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic-1.0 cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic 1.0 License, Version cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic 1.0 License cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic-1.0 License, Version cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Artistic-1.0 License cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:artistic-1.0-cl8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;osi:Artistic-1.0-Perl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;46b14525aa545ce1109ea0ac0de59d99&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Artistic 1.0, Version cl8&quot;,
+            &quot;Artistic 1.0 cl8&quot;,
+            &quot;Artistic-1.0, Version cl8&quot;,
+            &quot;Artistic-1.0 cl8&quot;,
+            &quot;Artistic 1.0 License, Version cl8&quot;,
+            &quot;Artistic 1.0 License cl8&quot;,
+            &quot;Artistic-1.0 License, Version cl8&quot;,
+            &quot;Artistic-1.0 License cl8&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Artistic License 1.0 (cl8)&quot;,
+        &quot;_category&quot;: &quot;Artistic License&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:artistic-1.0-cl8&quot;,
+            &quot;osi:Artistic-1.0-Perl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Artistic-1.0-cl8&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HermineData">HermineData</a>: <a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense:50733ecf5e129b7756be3abb2562599c</a> for <a href="/?license=spdx:Artistic-1.0-cl8"><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></a></h3><h4>Obligations</h4><ul><li><h5>Providing CSC to end user or specific actions</h5><pre>4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:
+
+    a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.
+    b) accompany the distribution with the machine-readable source of the Package with your modifications.
+    c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.
+    d) make other distribution arrangements with the Copyright Holder.</pre><p><strong>License:</strong><ul><li>Artistic-1.0-cl8</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Providing CSC to end user</h5><p><strong>Description:</strong>Make the corresponding source code available (including modifications):
+-at the time of distribution of the software and on the same medium;
+-by including a written offer allowing others to obtain it;
+-by making it available online.</p><p><strong>Metacategory:</strong>Providing source code</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Preserve License and notices in source code</h5><pre>1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.</pre><p><strong>License:</strong><ul><li>Artistic-1.0-cl8</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Preserve legal mentions in source code</h5><p><strong>Description:</strong>Keep all legal notices and license texts intact in the Source Code, including in the headers.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Marking modifications in source code</h5><pre>3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file,</pre><p><strong>License:</strong><ul><li>Artistic-1.0-cl8</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Track and mention modifications in the source code</h5><p><strong>Description:</strong>Document all your modifications made in the source code of third-party Open Source components in order to clearly attribute each contribution.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>Altered</p></li><li><h5>Don&#39;t charge a fee for this Package itself.</h5><pre>5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.</pre><p><strong>License:</strong><ul><li>Artistic-1.0-cl8</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Don&#39;t sell the software in itself</h5><p><strong>Description:</strong>You can&#39;t ask for a fee for the right to use the software, but it is possible to charge for access to the software a reasonable amount or to sell a larger work that includes the software, but not the software in itself.</p><p><strong>Metacategory:</strong>License agreement</p><p><strong>Passivity:</strong>Passive</p></li></ul></p><p><strong>Passivity:</strong>Passive</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Weak Copyleft or renaming</h5><pre>3. You may otherwise modify your copy of this Package in any way[...] provided that you do at least ONE of the following:
+
+    a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.
+    b) use the modified Package only within your corporation or organization.
+    c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.
+    d) make other distribution arrangements with the Copyright Holder.
+
+5.[...] However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.
+
+8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.</pre><p><strong>License:</strong><ul><li>Artistic-1.0-cl8</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Weak Copyleft</h5><p><strong>Description:</strong>Some categories of derivative works or of works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.</p><p><strong>Metacategory:</strong>IP management</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>Altered</p></li><li><h5>No use of names for endorsement</h5><pre>9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.</pre><p><strong>License:</strong><ul><li>Artistic-1.0-cl8</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Do not use project or contributor names for endorsement or promotion.</h5><p><strong>Description:</strong>Names of the project or associated persons (authors, contributors, etc.) are not to be used for commercial or promotional purposes.</p><p><strong>Metacategory:</strong>Communication constraints</p><p><strong>Passivity:</strong>Passive</p></li></ul></p><p><strong>Passivity:</strong>Passive</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Artistic-1.0-cl8</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Artistic License 1.0 w/clause 8</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HermineLicense: </b>&quot;Artistic-1.0-cl8&quot; is of radical: Artistic<span class="provided-by">(provided by: <span title="HermineLicense:50733ecf5e129b7756be3abb2562599c">[<a href="/fact/HermineLicense/50733ecf5e129b7756be3abb2562599c">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://opensource.org/licenses/Artistic-1.0" target="_blank">https://opensource.org/licenses/Artistic-1.0</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Artistic-1.0-cl8&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HermineLicense&quot;,
+        &quot;50733ecf5e129b7756be3abb2562599c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;WeaklyProtective&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;HermineLicense&quot;,
+                        &quot;We consider it is FOSS&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://opensource.org/licenses/Artistic-1.0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;\&quot;Artistic-1.0-cl8\&quot; is of radical: Artistic&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;autoupgrade&quot;: null,
+        &quot;comment&quot;: &quot;&quot;,
+        &quot;copyleft&quot;: &quot;Weak&quot;,
+        &quot;ethical_clause&quot;: false,
+        &quot;foss&quot;: &quot;Yes&quot;,
+        &quot;fsf_approved&quot;: null,
+        &quot;inspiration_spdx&quot;: &quot;&quot;,
+        &quot;law_choice&quot;: &quot;&quot;,
+        &quot;license_version&quot;: &quot;1.0&quot;,
+        &quot;long_name&quot;: &quot;Artistic License 1.0 w/clause 8&quot;,
+        &quot;non_commercial&quot;: false,
+        &quot;non_tivoisation&quot;: false,
+        &quot;obligations&quot;: [
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Make the corresponding source code available (including modifications):\r\n-at the time of distribution of the software and on the same medium;\r\n-by including a written offer allowing others to obtain it;\r\n-by making it available online.&quot;,
+                        &quot;metacategory&quot;: &quot;ProvidingSourceCode&quot;,
+                        &quot;name&quot;: &quot;Providing CSC to end user&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Artistic-1.0-cl8&quot;
+                ],
+                &quot;name&quot;: &quot;Providing CSC to end user or specific actions&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\r\n\r\n    a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\r\n    b) accompany the distribution with the machine-readable source of the Package with your modifications.\r\n    c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Keep all legal notices and license texts intact in the Source Code, including in the headers.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Preserve legal mentions in source code&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Artistic-1.0-cl8&quot;
+                ],
+                &quot;name&quot;: &quot;Preserve License and notices in source code&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Document all your modifications made in the source code of third-party Open Source components in order to clearly attribute each contribution.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Track and mention modifications in the source code&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Artistic-1.0-cl8&quot;
+                ],
+                &quot;name&quot;: &quot;Marking modifications in source code&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;Altered&quot;,
+                &quot;verbatim&quot;: &quot;3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file,&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;You can&#39;t ask for a fee for the right to use the software, but it is possible to charge for access to the software a reasonable amount or to sell a larger work that includes the software, but not the software in itself.&quot;,
+                        &quot;metacategory&quot;: &quot;LicenseAgreement&quot;,
+                        &quot;name&quot;: &quot;Don&#39;t sell the software in itself&quot;,
+                        &quot;passivity&quot;: &quot;Passive&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Artistic-1.0-cl8&quot;
+                ],
+                &quot;name&quot;: &quot;Don&#39;t charge a fee for this Package itself.&quot;,
+                &quot;passivity&quot;: &quot;Passive&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Some categories of derivative works or of works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.&quot;,
+                        &quot;metacategory&quot;: &quot;IPManagement&quot;,
+                        &quot;name&quot;: &quot;Weak Copyleft&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Artistic-1.0-cl8&quot;
+                ],
+                &quot;name&quot;: &quot;Weak Copyleft or renaming&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;Altered&quot;,
+                &quot;verbatim&quot;: &quot;3. You may otherwise modify your copy of this Package in any way[...] provided that you do at least ONE of the following:\r\n\r\n    a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\r\n    b) use the modified Package only within your corporation or organization.\r\n    c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.\r\n\r\n5.[...] However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\r\n\r\n8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package&#39;s interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Names of the project or associated persons (authors, contributors, etc.) are not to be used for commercial or promotional purposes.&quot;,
+                        &quot;metacategory&quot;: &quot;Communication&quot;,
+                        &quot;name&quot;: &quot;Do not use project or contributor names for endorsement or promotion.&quot;,
+                        &quot;passivity&quot;: &quot;Passive&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Artistic-1.0-cl8&quot;
+                ],
+                &quot;name&quot;: &quot;No use of names for endorsement&quot;,
+                &quot;passivity&quot;: &quot;Passive&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.&quot;
+            }
+        ],
+        &quot;osi_approved&quot;: true,
+        &quot;patent_grant&quot;: false,
+        &quot;radical&quot;: &quot;Artistic&quot;,
+        &quot;spdx_id&quot;: &quot;Artistic-1.0-cl8&quot;,
+        &quot;steward&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;https://opensource.org/licenses/Artistic-1.0&quot;,
+        &quot;verbatim&quot;: &quot;&quot;
+    },
+    &quot;type&quot;: &quot;HermineLicense&quot;
+}</pre></details></li></ul></body></html>

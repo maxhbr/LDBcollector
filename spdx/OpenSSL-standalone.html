@@ -1,0 +1,624 @@
+<html><head><title>ldbcollector: spdx:OpenSSL-standalone</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:OpenSSL-standalone</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenSSL-standalone</span></li></ul></li><li><b>other LicenseNames (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenSSL License (standalone)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenSSL License (standalone)</span></li><li><span class="licensename">OpenSSL License - standalone</span></li><li><span class="licensename">OpenSSL-standalone</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OpenSSL-standalone</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenSSL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openssl</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:1f15515d235fc345efcfa6d425161b3f">[<a href="/fact/SPDXLicense/1f15515d235fc345efcfa6d425161b3f">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:90ce7dcbc18feb6efa0fc749aa62696f">[<a href="/fact/OrtLicenseCategorization/90ce7dcbc18feb6efa0fc749aa62696f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:90ce7dcbc18feb6efa0fc749aa62696f">[<a href="/fact/OrtLicenseCategorization/90ce7dcbc18feb6efa0fc749aa62696f">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is the first license in the OpenSSL two-license stack as a standalone option.<span class="provided-by">(provided by: <span title="SPDXLicense:1f15515d235fc345efcfa6d425161b3f">[<a href="/fact/SPDXLicense/1f15515d235fc345efcfa6d425161b3f">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm" target="_blank">https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm</a></li><li><a href="https://library.netapp.com/ecm/ecm_download_file/ECMP1196395" target="_blank">https://library.netapp.com/ecm/ecm_download_file/ECMP1196395</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+ 
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+ 
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the
+     distribution.
+ 
+  3. All advertising materials mentioning features or use of this
+     software must display the following acknowledgment:
+     &quot;This product includes software developed by the OpenSSL Project
+     for use in the OpenSSL Toolkit. (http://www.openssl.org/)&quot;
+ 
+  4. The names &quot;OpenSSL Toolkit&quot; and &quot;OpenSSL Project&quot; must not be used to
+     endorse or promote products derived from this software without
+     prior written permission. For written permission, please contact
+     openssl-core@openssl.org.
+ 
+  5. Products derived from this software may not be called &quot;OpenSSL&quot;
+     nor may &quot;OpenSSL&quot; appear in their names without prior written
+     permission of the OpenSSL Project.
+ 
+  6. Redistributions of any form whatsoever must retain the following
+     acknowledgment:
+     &quot;This product includes software developed by the OpenSSL Project
+     for use in the OpenSSL Toolkit (http://www.openssl.org/)&quot;
+ 
+  THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY
+  EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
+  ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+  OF THE POSSIBILITY OF SUCH DAMAGE.
+  ====================================================================
+ 
+  This product includes cryptographic software written by Eric Young
+  (eay@cryptsoft.com).  This product includes software written by Tim
+  Hudson (tjh@cryptsoft.com).
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;
+               OpenSSL License
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+               Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               Redistributions of source code must retain the above copyright
+               notice, this list of conditions and the following disclaimer.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               Redistributions in binary form must reproduce the
+               above copyright notice, this list of conditions and
+               the following disclaimer in the documentation and/or
+               other materials provided with the distribution.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               All advertising materials mentioning features or use of this
+               software must display the following acknowledgment: &amp;quot;This
+               product includes software developed by the OpenSSL Project
+               for use in the OpenSSL Toolkit. (http://www.openssl.org/)&amp;quot;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               The names &amp;quot;OpenSSL Toolkit&amp;quot; and &amp;quot;OpenSSL Project&amp;quot; must not
+               be used to endorse or promote products derived from this
+               software without prior written permission. For written
+               permission, please contact openssl-core@openssl.org.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+               Products derived from this software may not be called
+               &amp;quot;OpenSSL&amp;quot; nor may &amp;quot;OpenSSL&amp;quot; appear in their names
+               without prior written permission of the OpenSSL Project.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+               Redistributions of any form whatsoever must retain
+               the following acknowledgment: &amp;quot;This product includes
+               software developed by the OpenSSL Project for use
+               in the OpenSSL Toolkit (http://www.openssl.org/)&amp;quot;
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&amp;apos;&amp;apos; AND
+            ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+            TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+            A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+            OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+            INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+            DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+         &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;This product includes cryptographic software written 
+            by Eric Young (eay@cryptsoft.com).  This product includes software 
+            written by Tim Hudson (tjh@cryptsoft.com).&lt;/p&gt;
+&lt;/div&gt;
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/1f15515d235fc345efcfa6d425161b3f">SPDXLicense:1f15515d235fc345efcfa6d425161b3f</a> for <a href="/?license=spdx:OpenSSL-standalone"><span class="licensename"><span class="namespace">spdx:</span>OpenSSL-standalone</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenSSL-standalone</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenSSL License - standalone</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:1f15515d235fc345efcfa6d425161b3f">[<a href="/fact/SPDXLicense/1f15515d235fc345efcfa6d425161b3f">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is the first license in the OpenSSL two-license stack as a standalone option.<span class="provided-by">(provided by: <span title="SPDXLicense:1f15515d235fc345efcfa6d425161b3f">[<a href="/fact/SPDXLicense/1f15515d235fc345efcfa6d425161b3f">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm" target="_blank">https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm</a></li><li><a href="https://library.netapp.com/ecm/ecm_download_file/ECMP1196395" target="_blank">https://library.netapp.com/ecm/ecm_download_file/ECMP1196395</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+ 
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+ 
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the
+     distribution.
+ 
+  3. All advertising materials mentioning features or use of this
+     software must display the following acknowledgment:
+     &quot;This product includes software developed by the OpenSSL Project
+     for use in the OpenSSL Toolkit. (http://www.openssl.org/)&quot;
+ 
+  4. The names &quot;OpenSSL Toolkit&quot; and &quot;OpenSSL Project&quot; must not be used to
+     endorse or promote products derived from this software without
+     prior written permission. For written permission, please contact
+     openssl-core@openssl.org.
+ 
+  5. Products derived from this software may not be called &quot;OpenSSL&quot;
+     nor may &quot;OpenSSL&quot; appear in their names without prior written
+     permission of the OpenSSL Project.
+ 
+  6. Redistributions of any form whatsoever must retain the following
+     acknowledgment:
+     &quot;This product includes software developed by the OpenSSL Project
+     for use in the OpenSSL Toolkit (http://www.openssl.org/)&quot;
+ 
+  THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY
+  EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
+  ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+  OF THE POSSIBILITY OF SUCH DAMAGE.
+  ====================================================================
+ 
+  This product includes cryptographic software written by Eric Young
+  (eay@cryptsoft.com).  This product includes software written by Tim
+  Hudson (tjh@cryptsoft.com).
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;div class=&quot;optional-license-text&quot;&gt; 
+            &lt;p&gt;
+               OpenSSL License
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;
+               Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.
+            &lt;/p&gt;
+
+         &lt;/div&gt;
+         &lt;p&gt;
+            Redistribution and use in source and binary
+            forms, with or without modification, are permitted
+            provided that the following conditions are met:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               Redistributions of source code must retain the above copyright
+               notice, this list of conditions and the following disclaimer.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               Redistributions in binary form must reproduce the
+               above copyright notice, this list of conditions and
+               the following disclaimer in the documentation and/or
+               other materials provided with the distribution.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               All advertising materials mentioning features or use of this
+               software must display the following acknowledgment: &amp;quot;This
+               product includes software developed by the OpenSSL Project
+               for use in the OpenSSL Toolkit. (http://www.openssl.org/)&amp;quot;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+               The names &amp;quot;OpenSSL Toolkit&amp;quot; and &amp;quot;OpenSSL Project&amp;quot; must not
+               be used to endorse or promote products derived from this
+               software without prior written permission. For written
+               permission, please contact openssl-core@openssl.org.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+               Products derived from this software may not be called
+               &amp;quot;OpenSSL&amp;quot; nor may &amp;quot;OpenSSL&amp;quot; appear in their names
+               without prior written permission of the OpenSSL Project.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+               Redistributions of any form whatsoever must retain
+               the following acknowledgment: &amp;quot;This product includes
+               software developed by the OpenSSL Project for use
+               in the OpenSSL Toolkit (http://www.openssl.org/)&amp;quot;
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&amp;apos;&amp;apos; AND
+            ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+            TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+            A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+            OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+            INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+            DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+         &lt;div class=&quot;optional-license-text&quot;&gt; &lt;p&gt;This product includes cryptographic software written 
+            by Eric Young (eay@cryptsoft.com).  This product includes software 
+            written by Tim Hudson (tjh@cryptsoft.com).&lt;/p&gt;
+&lt;/div&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OpenSSL-standalone&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenSSL License - standalone&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;1f15515d235fc345efcfa6d425161b3f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is the first license in the OpenSSL two-license stack as a standalone option.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.\n \n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n \n  1. Redistributions of source code must retain the above copyright\n     notice, this list of conditions and the following disclaimer.\n \n  2. Redistributions in binary form must reproduce the above copyright\n     notice, this list of conditions and the following disclaimer in\n     the documentation and/or other materials provided with the\n     distribution.\n \n  3. All advertising materials mentioning features or use of this\n     software must display the following acknowledgment:\n     \&quot;This product includes software developed by the OpenSSL Project\n     for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n \n  4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n     endorse or promote products derived from this software without\n     prior written permission. For written permission, please contact\n     openssl-core@openssl.org.\n \n  5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n     nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n     permission of the OpenSSL Project.\n \n  6. Redistributions of any form whatsoever must retain the following\n     acknowledgment:\n     \&quot;This product includes software developed by the OpenSSL Project\n     for use in the OpenSSL Toolkit (http://www.openssl.org/)\&quot;\n \n  THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\n  EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n  PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\n  ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\n  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\n  OF THE POSSIBILITY OF SUCH DAMAGE.\n  ====================================================================\n \n  This product includes cryptographic software written by Eric Young\n  (eay@cryptsoft.com).  This product includes software written by Tim\n  Hudson (tjh@cryptsoft.com).\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;\n               OpenSSL License\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n               Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               Redistributions of source code must retain the above copyright\n               notice, this list of conditions and the following disclaimer.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               Redistributions in binary form must reproduce the\n               above copyright notice, this list of conditions and\n               the following disclaimer in the documentation and/or\n               other materials provided with the distribution.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               All advertising materials mentioning features or use of this\n               software must display the following acknowledgment: &amp;quot;This\n               product includes software developed by the OpenSSL Project\n               for use in the OpenSSL Toolkit. (http://www.openssl.org/)&amp;quot;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               The names &amp;quot;OpenSSL Toolkit&amp;quot; and &amp;quot;OpenSSL Project&amp;quot; must not\n               be used to endorse or promote products derived from this\n               software without prior written permission. For written\n               permission, please contact openssl-core@openssl.org.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n               Products derived from this software may not be called\n               &amp;quot;OpenSSL&amp;quot; nor may &amp;quot;OpenSSL&amp;quot; appear in their names\n               without prior written permission of the OpenSSL Project.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n               Redistributions of any form whatsoever must retain\n               the following acknowledgment: &amp;quot;This product includes\n               software developed by the OpenSSL Project for use\n               in the OpenSSL Toolkit (http://www.openssl.org/)&amp;quot;\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&amp;apos;&amp;apos; AND\n            ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\n            TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n            A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE\n            OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT,\n            INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n            DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\n            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;This product includes cryptographic software written \n            by Eric Young (eay@cryptsoft.com).  This product includes software \n            written by Tim Hudson (tjh@cryptsoft.com).&lt;/p&gt;\n&lt;/div&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://library.netapp.com/ecm/ecm_download_file/ECMP1196395&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://library.netapp.com/ecm/ecm_download_file/ECMP1196395&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:57Z&quot;,
+                &quot;url&quot;: &quot;https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:58Z&quot;,
+                &quot;url&quot;: &quot;https://library.netapp.com/ecm/ecm_download_file/ECMP1196395&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is the first license in the OpenSSL two-license stack as a standalone option.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:OpenSSL-standalone&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.\n \n  Redistribution and use in source and binary forms, with or without\n  modification, are permitted provided that the following conditions\n  are met:\n \n  1. Redistributions of source code must retain the above copyright\n     notice, this list of conditions and the following disclaimer.\n \n  2. Redistributions in binary form must reproduce the above copyright\n     notice, this list of conditions and the following disclaimer in\n     the documentation and/or other materials provided with the\n     distribution.\n \n  3. All advertising materials mentioning features or use of this\n     software must display the following acknowledgment:\n     \&quot;This product includes software developed by the OpenSSL Project\n     for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n \n  4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n     endorse or promote products derived from this software without\n     prior written permission. For written permission, please contact\n     openssl-core@openssl.org.\n \n  5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n     nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n     permission of the OpenSSL Project.\n \n  6. Redistributions of any form whatsoever must retain the following\n     acknowledgment:\n     \&quot;This product includes software developed by the OpenSSL Project\n     for use in the OpenSSL Toolkit (http://www.openssl.org/)\&quot;\n \n  THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\n  EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n  PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\n  ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\n  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\n  OF THE POSSIBILITY OF SUCH DAMAGE.\n  ====================================================================\n \n  This product includes cryptographic software written by Eric Young\n  (eay@cryptsoft.com).  This product includes software written by Tim\n  Hudson (tjh@cryptsoft.com).\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; \n            &lt;p&gt;\n               OpenSSL License\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;\n               Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.\n            &lt;/p&gt;\n\n         &lt;/div&gt;\n         &lt;p&gt;\n            Redistribution and use in source and binary\n            forms, with or without modification, are permitted\n            provided that the following conditions are met:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               Redistributions of source code must retain the above copyright\n               notice, this list of conditions and the following disclaimer.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               Redistributions in binary form must reproduce the\n               above copyright notice, this list of conditions and\n               the following disclaimer in the documentation and/or\n               other materials provided with the distribution.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               All advertising materials mentioning features or use of this\n               software must display the following acknowledgment: &amp;quot;This\n               product includes software developed by the OpenSSL Project\n               for use in the OpenSSL Toolkit. (http://www.openssl.org/)&amp;quot;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n               The names &amp;quot;OpenSSL Toolkit&amp;quot; and &amp;quot;OpenSSL Project&amp;quot; must not\n               be used to endorse or promote products derived from this\n               software without prior written permission. For written\n               permission, please contact openssl-core@openssl.org.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n               Products derived from this software may not be called\n               &amp;quot;OpenSSL&amp;quot; nor may &amp;quot;OpenSSL&amp;quot; appear in their names\n               without prior written permission of the OpenSSL Project.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n               Redistributions of any form whatsoever must retain\n               the following acknowledgment: &amp;quot;This product includes\n               software developed by the OpenSSL Project for use\n               in the OpenSSL Toolkit (http://www.openssl.org/)&amp;quot;\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&amp;apos;&amp;apos; AND\n            ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\n            TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n            A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE\n            OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT,\n            INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n            DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\n            GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n            INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n            WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n            NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n            THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n         &lt;div class=\&quot;optional-license-text\&quot;&gt; &lt;p&gt;This product includes cryptographic software written \n            by Eric Young (eay@cryptsoft.com).  This product includes software \n            written by Tim Hudson (tjh@cryptsoft.com).&lt;/p&gt;\n&lt;/div&gt;\n      &quot;,
+        &quot;name&quot;: &quot;OpenSSL License - standalone&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://library.netapp.com/ecm/ecm_download_file/ECMP1196395&quot;,
+            &quot;https://hstechdocs.helpsystems.com/manuals/globalscape/archive/cuteftp6/open_ssl_license_agreement.htm&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;OpenSSL License\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All advertising materials mentioning features or use of this software must display the following acknowledgment: \&quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact openssl-core@openssl.org.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Products derived from this software may not be called \&quot;OpenSSL\&quot; nor may \&quot;OpenSSL\&quot; appear in their names without prior written permission of the OpenSSL Project.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of any form whatsoever must retain the following acknowledgment: \&quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&lt;&lt;beginOptional&gt;&gt;This product includes cryptographic software written by Eric Young (eay@cryptsoft.com). This product includes software written by Tim Hudson (tjh@cryptsoft.com).\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/90ce7dcbc18feb6efa0fc749aa62696f">OrtLicenseCategorization:90ce7dcbc18feb6efa0fc749aa62696f</a> for <a href="/?license=SPDX:OpenSSL-standalone"><span class="licensename"><span class="namespace">SPDX:</span>OpenSSL-standalone</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>OpenSSL-standalone</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:90ce7dcbc18feb6efa0fc749aa62696f">[<a href="/fact/OrtLicenseCategorization/90ce7dcbc18feb6efa0fc749aa62696f">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:90ce7dcbc18feb6efa0fc749aa62696f">[<a href="/fact/OrtLicenseCategorization/90ce7dcbc18feb6efa0fc749aa62696f">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:OpenSSL-standalone&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;90ce7dcbc18feb6efa0fc749aa62696f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:OpenSSL-standalone&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/72c9ee5298a5a6102623a6231db58f60">MetaeffektLicense:72c9ee5298a5a6102623a6231db58f60</a> for <a href="/?license=metaeffekt:OpenSSL License (standalone)"><span class="licensename"><span class="namespace">metaeffekt:</span>OpenSSL License (standalone)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenSSL License (standalone)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OpenSSL-standalone</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenSSL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openssl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:OpenSSL License (standalone)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OpenSSL-standalone&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenSSL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:openssl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;72c9ee5298a5a6102623a6231db58f60&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:OpenSSL License (standalone)&quot;,
+        &quot;_category&quot;: &quot;OpenSSL&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:openssl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:OpenSSL-standalone&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

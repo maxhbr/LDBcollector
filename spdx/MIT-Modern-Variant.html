@@ -1,0 +1,762 @@
+<html><head><title>ldbcollector: spdx:MIT-Modern-Variant</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MIT-Modern-Variant</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT License Modern Variant</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>MIT License Modern Variant</span></li><li><span class="licensename">MIT-Modern-Variant</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>MIT-Modern-Variant</span></li><li><span class="licensename"><span class="namespace">cavil:</span>MIT-Modern-Variant</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>MIT-Modern-Variant</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//fedoraproject.org/wiki/Licensing:MIT#Modern_Variants</span></li><li><span class="licensename"><span class="namespace">https:</span>//pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html</span></li><li><span class="licensename"><span class="namespace">https:</span>//ptolemy.berkeley.edu/copyright.htm</span></li><li><span class="licensename">13.1Modern Variants</span></li><li><span class="licensename">MIT</span></li><li><span class="licensename">mit-license</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:de4dac17045d06a9ab03351d9f7d72c3">[<a href="/fact/BlueOakCouncil/de4dac17045d06a9ab03351d9f7d72c3">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4efe5e73ab04acbc10cb1c6f13f472a2">[<a href="/fact/SPDXLicense/4efe5e73ab04acbc10cb1c6f13f472a2">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8862b4688bb7c6bc862ac590d2fd0ec0">[<a href="/fact/FedoraEntry/8862b4688bb7c6bc862ac590d2fd0ec0">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.">BlueOakCouncil: <b style="color: green;">Silver</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:de4dac17045d06a9ab03351d9f7d72c3">[<a href="/fact/BlueOakCouncil/de4dac17045d06a9ab03351d9f7d72c3">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:f0468ca01f2ee6673f1af9f76a45343f">[<a href="/fact/MetaeffektLicense/f0468ca01f2ee6673f1af9f76a45343f">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0fcb75199de39b1468f943b40f8fcbd9">[<a href="/fact/OrtLicenseCategorization/0fcb75199de39b1468f943b40f8fcbd9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0fcb75199de39b1468f943b40f8fcbd9">[<a href="/fact/OrtLicenseCategorization/0fcb75199de39b1468f943b40f8fcbd9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:64210bad67dbd193d461650c9d8244c2">[<a href="/fact/OrtLicenseCategorization/64210bad67dbd193d461650c9d8244c2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:64210bad67dbd193d461650c9d8244c2">[<a href="/fact/OrtLicenseCategorization/64210bad67dbd193d461650c9d8244c2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:64210bad67dbd193d461650c9d8244c2">[<a href="/fact/OrtLicenseCategorization/64210bad67dbd193d461650c9d8244c2">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is labeled as &quot;Modern Variant&quot; based on its corresponding listing on the Fedora licensing wiki page.<span class="provided-by">(provided by: <span title="SPDXLicense:4efe5e73ab04acbc10cb1c6f13f472a2">[<a href="/fact/SPDXLicense/4efe5e73ab04acbc10cb1c6f13f472a2">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants</a></li><li><a href="https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html" target="_blank">https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html</a></li><li><a href="https://ptolemy.berkeley.edu/copyright.htm" target="_blank">https://ptolemy.berkeley.edu/copyright.htm</a></li><li><a href="https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants</a></li><li><a href="https://spdx.org/licenses/MIT-Modern-Variant.html" target="_blank">https://spdx.org/licenses/MIT-Modern-Variant.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, without written agreement and without
+license or royalty fees, to use, copy, modify, and distribute this
+software and its documentation for any purpose, provided that the
+above copyright notice and the following two paragraphs appear in
+all copies of this software.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE TO ANY PARTY FOR
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
+IF THE COPYRIGHT HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+THE COPYRIGHT HOLDER SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+ON AN &quot;AS IS&quot; BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
+PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;Copyright © 1990-2021 The Regents of the University of California. All rights reserved.&lt;/p&gt;
+
+        &lt;/div&gt;
+
+        &lt;p&gt;
+            Permission is hereby granted, without written agreement and without license or royalty fees, to use, 
+            copy, modify, and distribute this software and its documentation for any purpose, provided that the
+            above copyright notice and the following two paragraphs appear in all copies of this software.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            IN NO EVENT SHALL &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; BE LIABLE
+            TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+            USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt;
+            HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; SPECIFICALLY DISCLAIMS ANY
+            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+            A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN &amp;quot;AS IS&amp;quot; BASIS, AND
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; HAS NO OBLIGATION TO PROVIDE
+            MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+        &lt;/p&gt;
+
+    </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/4efe5e73ab04acbc10cb1c6f13f472a2">SPDXLicense:4efe5e73ab04acbc10cb1c6f13f472a2</a> for <a href="/?license=spdx:MIT-Modern-Variant"><span class="licensename"><span class="namespace">spdx:</span>MIT-Modern-Variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT License Modern Variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4efe5e73ab04acbc10cb1c6f13f472a2">[<a href="/fact/SPDXLicense/4efe5e73ab04acbc10cb1c6f13f472a2">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is labeled as &quot;Modern Variant&quot; based on its corresponding listing on the Fedora licensing wiki page.<span class="provided-by">(provided by: <span title="SPDXLicense:4efe5e73ab04acbc10cb1c6f13f472a2">[<a href="/fact/SPDXLicense/4efe5e73ab04acbc10cb1c6f13f472a2">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants</a></li><li><a href="https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html" target="_blank">https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html</a></li><li><a href="https://ptolemy.berkeley.edu/copyright.htm" target="_blank">https://ptolemy.berkeley.edu/copyright.htm</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission is hereby granted, without written agreement and without
+license or royalty fees, to use, copy, modify, and distribute this
+software and its documentation for any purpose, provided that the
+above copyright notice and the following two paragraphs appear in
+all copies of this software.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE TO ANY PARTY FOR
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
+IF THE COPYRIGHT HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+THE COPYRIGHT HOLDER SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+ON AN &quot;AS IS&quot; BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
+PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+            &lt;p&gt;Copyright © 1990-2021 The Regents of the University of California. All rights reserved.&lt;/p&gt;
+
+        &lt;/div&gt;
+
+        &lt;p&gt;
+            Permission is hereby granted, without written agreement and without license or royalty fees, to use, 
+            copy, modify, and distribute this software and its documentation for any purpose, provided that the
+            above copyright notice and the following two paragraphs appear in all copies of this software.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            IN NO EVENT SHALL &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; BE LIABLE
+            TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+            USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt;
+            HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; SPECIFICALLY DISCLAIMS ANY
+            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+            A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN &amp;quot;AS IS&amp;quot; BASIS, AND
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; HAS NO OBLIGATION TO PROVIDE
+            MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+        &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:MIT-Modern-Variant&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT License Modern Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;4efe5e73ab04acbc10cb1c6f13f472a2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is labeled as \&quot;Modern Variant\&quot; based on its corresponding listing on the Fedora licensing wiki page.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Permission is hereby granted, without written agreement and without\nlicense or royalty fees, to use, copy, modify, and distribute this\nsoftware and its documentation for any purpose, provided that the\nabove copyright notice and the following two paragraphs appear in\nall copies of this software.\n\nIN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE TO ANY PARTY FOR\nDIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES\nARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN\nIF THE COPYRIGHT HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH\nDAMAGE.\n\nTHE COPYRIGHT HOLDER SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING,\nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS\nON AN \&quot;AS IS\&quot; BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO\nPROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;Copyright © 1990-2021 The Regents of the University of California. All rights reserved.&lt;/p&gt;\n\n        &lt;/div&gt;\n\n        &lt;p&gt;\n            Permission is hereby granted, without written agreement and without license or royalty fees, to use, \n            copy, modify, and distribute this software and its documentation for any purpose, provided that the\n            above copyright notice and the following two paragraphs appear in all copies of this software.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n            IN NO EVENT SHALL &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; BE LIABLE\n            TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\n            USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt;\n            HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; SPECIFICALLY DISCLAIMS ANY\n            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n            A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN &amp;quot;AS IS&amp;quot; BASIS, AND\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; HAS NO OBLIGATION TO PROVIDE\n            MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n        &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://ptolemy.berkeley.edu/copyright.htm&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://ptolemy.berkeley.edu/copyright.htm&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:48Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:49Z&quot;,
+                &quot;url&quot;: &quot;https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:12:49Z&quot;,
+                &quot;url&quot;: &quot;https://ptolemy.berkeley.edu/copyright.htm&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: true,
+        &quot;licenseComments&quot;: &quot;This license is labeled as \&quot;Modern Variant\&quot; based on its corresponding listing on the Fedora licensing wiki page.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:MIT-Modern-Variant&quot;,
+        &quot;licenseText&quot;: &quot;Permission is hereby granted, without written agreement and without\nlicense or royalty fees, to use, copy, modify, and distribute this\nsoftware and its documentation for any purpose, provided that the\nabove copyright notice and the following two paragraphs appear in\nall copies of this software.\n\nIN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE TO ANY PARTY FOR\nDIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES\nARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN\nIF THE COPYRIGHT HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH\nDAMAGE.\n\nTHE COPYRIGHT HOLDER SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING,\nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS\nON AN \&quot;AS IS\&quot; BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO\nPROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n            &lt;p&gt;Copyright © 1990-2021 The Regents of the University of California. All rights reserved.&lt;/p&gt;\n\n        &lt;/div&gt;\n\n        &lt;p&gt;\n            Permission is hereby granted, without written agreement and without license or royalty fees, to use, \n            copy, modify, and distribute this software and its documentation for any purpose, provided that the\n            above copyright notice and the following two paragraphs appear in all copies of this software.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n            IN NO EVENT SHALL &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; BE LIABLE\n            TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\n            USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt;\n            HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; SPECIFICALLY DISCLAIMS ANY\n            WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n            A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN &amp;quot;AS IS&amp;quot; BASIS, AND\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; THE UNIVERSITY OF CALIFORNIA&lt;/var&gt; HAS NO OBLIGATION TO PROVIDE\n            MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n        &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;MIT License Modern Variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants&quot;,
+            &quot;https://ptolemy.berkeley.edu/copyright.htm&quot;,
+            &quot;https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright © 1990-2021 The Regents of the University of California. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission is hereby granted, without written agreement and without license or royalty fees, to use, copy, modify, and distribute this software and its documentation for any purpose, provided that the above copyright notice and the following two paragraphs appear in all copies of this software.\n\nIN NO EVENT SHALL &lt;&lt;var;name=\&quot;copyrightHolder0\&quot;;original=\&quot;THE UNIVERSITY OF CALIFORNIA\&quot;;match=\&quot;.+\&quot;&gt;&gt; BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF &lt;&lt;var;name=\&quot;copyrightHolder1\&quot;;original=\&quot;THE UNIVERSITY OF CALIFORNIA\&quot;;match=\&quot;.+\&quot;&gt;&gt; HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&lt;&lt;var;name=\&quot;copyrightHolder2\&quot;;original=\&quot;THE UNIVERSITY OF CALIFORNIA\&quot;;match=\&quot;.+\&quot;&gt;&gt; SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN \&quot;AS IS\&quot; BASIS, AND &lt;&lt;var;name=\&quot;copyrightHolder3\&quot;;original=\&quot;THE UNIVERSITY OF CALIFORNIA\&quot;;match=\&quot;.+\&quot;&gt;&gt; HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/8862b4688bb7c6bc862ac590d2fd0ec0">FedoraEntry:8862b4688bb7c6bc862ac590d2fd0ec0</a> for <a href="/?license=Fedora:MIT-Modern-Variant"><span class="licensename"><span class="namespace">Fedora:</span>MIT-Modern-Variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">13.1Modern Variants</span></li><li><span class="licensename">MIT</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8862b4688bb7c6bc862ac590d2fd0ec0">[<a href="/fact/FedoraEntry/8862b4688bb7c6bc862ac590d2fd0ec0">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants" target="_blank">https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:MIT-Modern-Variant&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MIT-Modern-Variant&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;13.1Modern Variants&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;8862b4688bb7c6bc862ac590d2fd0ec0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MIT&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;13.1Modern Variants&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;MIT-Modern-Variant&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:MIT-Modern-Variant&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/de4dac17045d06a9ab03351d9f7d72c3">BlueOakCouncil:de4dac17045d06a9ab03351d9f7d72c3</a> for <a href="/?license=BlueOak:MIT-Modern-Variant"><span class="licensename"><span class="namespace">BlueOak:</span>MIT-Modern-Variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT License Modern Variant</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:de4dac17045d06a9ab03351d9f7d72c3">[<a href="/fact/BlueOakCouncil/de4dac17045d06a9ab03351d9f7d72c3">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.">BlueOakCouncil: <b style="color: green;">Silver</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:de4dac17045d06a9ab03351d9f7d72c3">[<a href="/fact/BlueOakCouncil/de4dac17045d06a9ab03351d9f7d72c3">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/MIT-Modern-Variant.html" target="_blank">https://spdx.org/licenses/MIT-Modern-Variant.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:MIT-Modern-Variant&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT License Modern Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;de4dac17045d06a9ab03351d9f7d72c3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Silver&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/MIT-Modern-Variant.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Silver&quot;,
+            &quot;These licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices.&quot;,
+            {
+                &quot;_id&quot;: &quot;MIT-Modern-Variant&quot;,
+                &quot;_name&quot;: &quot;MIT License Modern Variant&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/MIT-Modern-Variant.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/0fcb75199de39b1468f943b40f8fcbd9">OrtLicenseCategorization:0fcb75199de39b1468f943b40f8fcbd9</a> for <a href="/?license=SPDX:MIT-Modern-Variant"><span class="licensename"><span class="namespace">SPDX:</span>MIT-Modern-Variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MIT-Modern-Variant</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0fcb75199de39b1468f943b40f8fcbd9">[<a href="/fact/OrtLicenseCategorization/0fcb75199de39b1468f943b40f8fcbd9">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0fcb75199de39b1468f943b40f8fcbd9">[<a href="/fact/OrtLicenseCategorization/0fcb75199de39b1468f943b40f8fcbd9">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MIT-Modern-Variant&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;0fcb75199de39b1468f943b40f8fcbd9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MIT-Modern-Variant&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/64210bad67dbd193d461650c9d8244c2">OrtLicenseCategorization:64210bad67dbd193d461650c9d8244c2</a> for <a href="/?license=SPDX:MIT-Modern-Variant"><span class="licensename"><span class="namespace">SPDX:</span>MIT-Modern-Variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MIT-Modern-Variant</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:64210bad67dbd193d461650c9d8244c2">[<a href="/fact/OrtLicenseCategorization/64210bad67dbd193d461650c9d8244c2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:64210bad67dbd193d461650c9d8244c2">[<a href="/fact/OrtLicenseCategorization/64210bad67dbd193d461650c9d8244c2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:64210bad67dbd193d461650c9d8244c2">[<a href="/fact/OrtLicenseCategorization/64210bad67dbd193d461650c9d8244c2">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MIT-Modern-Variant&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;64210bad67dbd193d461650c9d8244c2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MIT-Modern-Variant&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/9a41842eb7a2302a042bf51058f02a52">CavilLicenseChange:9a41842eb7a2302a042bf51058f02a52</a> for <a href="/?license=cavil:MIT-Modern-Variant"><span class="licensename"><span class="namespace">cavil:</span>MIT-Modern-Variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT-Modern-Variant</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:MIT-Modern-Variant&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT-Modern-Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;9a41842eb7a2302a042bf51058f02a52&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;MIT-Modern-Variant&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:MIT-Modern-Variant&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/f0468ca01f2ee6673f1af9f76a45343f">MetaeffektLicense:f0468ca01f2ee6673f1af9f76a45343f</a> for <a href="/?license=metaeffekt:MIT License Modern Variant"><span class="licensename"><span class="namespace">metaeffekt:</span>MIT License Modern Variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>MIT License Modern Variant</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-Modern-Variant</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//fedoraproject.org/wiki/Licensing:MIT#Modern_Variants</span></li><li><span class="licensename"><span class="namespace">https:</span>//pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html</span></li><li><span class="licensename"><span class="namespace">https:</span>//ptolemy.berkeley.edu/copyright.htm</span></li><li><span class="licensename">MIT License Modern Variant</span></li><li><span class="licensename">MIT-Modern-Variant</span></li><li><span class="licensename">MIT-Modern-Variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:f0468ca01f2ee6673f1af9f76a45343f">[<a href="/fact/MetaeffektLicense/f0468ca01f2ee6673f1af9f76a45343f">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:MIT License Modern Variant&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MIT-Modern-Variant&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT-Modern-Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT-Modern-Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT License Modern Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://ptolemy.berkeley.edu/copyright.htm&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;f0468ca01f2ee6673f1af9f76a45343f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;MIT-Modern-Variant&quot;,
+            &quot;MIT License Modern Variant&quot;,
+            &quot;https://fedoraproject.org/wiki/Licensing:MIT#Modern_Variants&quot;,
+            &quot;https://ptolemy.berkeley.edu/copyright.htm&quot;,
+            &quot;https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:MIT License Modern Variant&quot;,
+        &quot;_category&quot;: &quot;MIT-Modern-Variant&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:MIT-Modern-Variant&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

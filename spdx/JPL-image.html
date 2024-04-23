@@ -1,0 +1,886 @@
+<html><head><title>ldbcollector: spdx:JPL-image</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:JPL-image</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>JPL-image</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">JPL Image Use Policy</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>JPL Image Use Policy</span></li><li><span class="licensename">JPL-image</span></li><li><span class="licensename"><span class="namespace">cavil:</span>JPL-image</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>JPL-image</span></li><li><span class="licensename"><span class="namespace">scancode:</span>jpl-image</span></li><li><span class="licensename"><span class="namespace">spdx:</span>JPL-image</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">JPL image</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Source-available&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:628c1534bb775268ef6ff34ca15730ba">[<a href="/fact/ScancodeData/628c1534bb775268ef6ff34ca15730ba">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:707f5e8f0122a4e46c34ee9983954d77">[<a href="/fact/SPDXLicense/707f5e8f0122a4e46c34ee9983954d77">SPDXLicense</a>]</span>)</span></li><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:61c851947a2df255f4c19bfc091ba244">[<a href="/fact/FedoraEntry/61c851947a2df255f4c19bfc091ba244">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>source-available</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05d8da2372d764c8db85a75fc865ea1b">[<a href="/fact/OrtLicenseCategorization/05d8da2372d764c8db85a75fc865ea1b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05d8da2372d764c8db85a75fc865ea1b">[<a href="/fact/OrtLicenseCategorization/05d8da2372d764c8db85a75fc865ea1b">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.jpl.nasa.gov/jpl-image-use-policy" target="_blank">https://www.jpl.nasa.gov/jpl-image-use-policy</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li><li>https://www.jpl.nasa.gov/jpl-image-use-policy</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>JPL Image Use Policy
+
+Unless otherwise noted, images and video on JPL public web sites (public sites ending with a jpl.nasa.gov address) may be used for any purpose without prior permission, subject to the special cases noted below. Publishers who wish to have authorization may print this page and retain it for their records; JPL does not issue image permissions on an image by image basis.
+
+By electing to download the material from this web site the user agrees:
+
+1. that Caltech makes no representations or warranties with respect to ownership of copyrights in the images, and does not represent others who may claim to be authors or owners of copyright of any of the images, and makes no warranties as to the quality of the images. Caltech shall not be responsible for any loss or expenses resulting from the use of the images, and you release and hold Caltech harmless from all liability arising from such use.
+2. to use a credit line in connection with images. Unless otherwise noted in the caption information for an image, the credit line should be &quot;Courtesy NASA/JPL-Caltech.&quot;
+3. that the endorsement of any product or service by Caltech, JPL or NASA must not be claimed or implied.
+
+Special Cases:
+
+* Prior written approval must be obtained to use the NASA insignia logo (the blue &quot;meatball&quot; insignia), the NASA logotype (the red &quot;worm&quot; logo) and the NASA seal. These images may not be used by persons who are not NASA employees or on products (including Web pages) that are not NASA sponsored. In addition, no image may be used to explicitly or implicitly suggest endorsement by NASA, JPL or Caltech of commercial goods or services. Requests to use NASA logos may be directed to Bert Ulrich, Public Services Division, NASA Headquarters, Code POS, Washington, DC 20546, telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.
+
+* Prior written approval must be obtained to use the JPL logo (stylized JPL letters in red or other colors). Requests to use the JPL logo may be directed to the Institutional Communications Office, email instcomm@jpl.nasa.gov.
+
+* If an image includes an identifiable person, using the image for commercial purposes may infringe that person&#39;s right of privacy or publicity, and permission should be obtained from the person. NASA and JPL generally do not permit likenesses of current employees to appear on commercial products. For more information, consult the NASA and JPL points of contact listed above.
+
+* JPL/Caltech contractors and vendors who wish to use JPL images in advertising or public relation materials should direct requests to the Institutional Communications Office, email instcomm@jpl.nasa.gov.
+
+* Some image and video materials on JPL public web sites are owned by organizations other than JPL or NASA. These owners have agreed to make their images and video available for journalistic, educational and personal uses, but restrictions are placed on commercial uses. To obtain permission for commercial use, contact the copyright owner listed in each image caption. Ownership of images and video by parties other than JPL and NASA is noted in the caption material with each image.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            JPL Image Use Policy
+         &lt;/var&gt;
+         &lt;p&gt;
+            Unless otherwise noted, images and video on JPL public web sites
+            (public sites ending with a jpl.nasa.gov address) may be used
+            for any purpose without prior permission, subject to the special
+            cases noted below. Publishers who wish to have authorization
+            may print this page and retain it for their records; JPL
+            does not issue image permissions on an image by image basis.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            By electing to download the material
+            from this web site the user agrees:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               that Caltech makes no representations or warranties with respect
+               to ownership of copyrights in the images, and does not represent
+               others who may claim to be authors or owners of copyright of any
+               of the images, and makes no warranties as to the quality of the
+               images. Caltech shall not be responsible for any loss or expenses
+               resulting from the use of the images, and you release and hold
+               Caltech harmless from all liability arising from such use.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               to use a credit line in connection with images. Unless
+               otherwise noted in the caption information for an image,
+               the credit line should be &amp;quot;Courtesy NASA/JPL-Caltech.&amp;quot;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               that the endorsement of any product or service by
+               Caltech, JPL or NASA must not be claimed or implied.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            Special Cases:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+               &lt;p&gt;
+                  Prior written approval must be obtained to use the NASA
+                  insignia logo (the blue &amp;quot;meatball&amp;quot; insignia), the NASA
+                  logotype (the red &amp;quot;worm&amp;quot; logo) and the NASA seal. These
+                  images may not be used by persons who are not NASA employees
+                  or on products (including Web pages) that are not NASA
+                  sponsored. In addition, no image may be used to explicitly
+                  or implicitly suggest endorsement by NASA, JPL or Caltech of
+                  commercial goods or services. Requests to use NASA logos may
+                  be directed to Bert Ulrich, Public Services Division, NASA
+                  Headquarters, Code POS, Washington, DC 20546, telephone (202)
+                  358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+               &lt;p&gt;
+                  Prior written approval must be obtained to use the JPL logo
+                  (stylized JPL letters in red or other colors). Requests
+                  to use the JPL logo may be directed to the Institutional
+                  Communications Office, email instcomm@jpl.nasa.gov.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+                  If an image includes an identifiable person, using the
+                  image for commercial purposes may infringe that person&amp;apos;s
+                  right of privacy or publicity, and permission should
+                  be obtained from the person. NASA and JPL generally do
+                  not permit likenesses of current employees to appear
+                  on commercial products. For more information, consult
+                  the NASA and JPL points of contact listed above.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+                  JPL/Caltech contractors and vendors who wish to
+                  use JPL images in advertising or public relation
+                  materials should direct requests to the Institutional
+                  Communications Office, email instcomm@jpl.nasa.gov.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+                  Some image and video materials on JPL public web sites
+                  are owned by organizations other than JPL or NASA.
+                  These owners have agreed to make their images and video
+                  available for journalistic, educational and personal
+                  uses, but restrictions are placed on commercial uses.
+                  To obtain permission for commercial use, contact the
+                  copyright owner listed in each image caption. Ownership
+                  of images and video by parties other than JPL and
+                  NASA is noted in the caption material with each image.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>JPL Image Use Policy
+
+Unless otherwise noted, images and video on JPL public web sites
+(public sites ending with a jpl.nasa.gov address) may be used
+for any purpose without prior permission, subject to the special
+cases noted below. Publishers who wish to have authorization may
+print this page and retain it for their records; JPL does not
+issue image permissions on an image by image basis.
+
+By electing to download the material from this web site the user agrees:
+
+1. that Caltech makes no representations or warranties with respect to
+   ownership of copyrights in the images, and does not represent others
+   who may claim to be authors or owners of copyright of any of the images,
+   and makes no warranties as to the quality of the images. Caltech shall
+   not be responsible for any loss or expenses resulting from the use of
+   the images, and you release and hold Caltech harmless from all liability
+   arising from such use.
+2. to use a credit line in connection with images. Unless otherwise noted
+   in the caption information for an image, the credit line should be
+   &quot;Courtesy NASA/JPL-Caltech.&quot;
+3. that the endorsement of any product or service by Caltech, JPL or NASA
+   must not be claimed or implied.
+
+Special Cases:
+
+* Prior written approval must be obtained to use the NASA insignia logo
+  (the blue &quot;meatball&quot; insignia), the NASA logotype (the red &quot;worm&quot; logo)
+  and the NASA seal. These images may not be used by persons who are not
+  NASA employees or on products (including Web pages) that are not NASA
+  sponsored. In addition, no image may be used to explicitly or implicitly
+  suggest endorsement by NASA, JPL or Caltech of commercial goods or services.
+  Requests to use NASA logos may be directed to Bert Ulrich, Public Services
+  Division, NASA Headquarters, Code POS, Washington, DC 20546,
+  telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.
+
+* Prior written approval must be obtained to use the JPL logo
+  (stylized JPL letters in red or other colors). Requests to use the JPL logo
+  may be directed to the Institutional Communications Office,
+  email instcomm@jpl.nasa.gov.
+
+* If an image includes an identifiable person, using the image for commercial
+  purposes may infringe that person&#39;s right of privacy or publicity,
+  and permission should be obtained from the person. NASA and JPL generally
+  do not permit likenesses of current employees to appear on commercial products.
+  For more information, consult the NASA and JPL points of contact listed above.
+
+* JPL/Caltech contractors and vendors who wish to use JPL images in advertising
+  or public relation materials should direct requests to the Institutional
+  Communications Office, email instcomm@jpl.nasa.gov.
+
+* Some image and video materials on JPL public web sites are owned by organizations
+other than JPL or NASA. These owners have agreed to make their images and video
+available for journalistic, educational and personal uses, but restrictions are
+placed on commercial uses. To obtain permission for commercial use, contact the
+copyright owner listed in each image caption. Ownership of images and video by
+parties other than JPL and NASA is noted in the caption material with each image.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/707f5e8f0122a4e46c34ee9983954d77">SPDXLicense:707f5e8f0122a4e46c34ee9983954d77</a> for <a href="/?license=spdx:JPL-image"><span class="licensename"><span class="namespace">spdx:</span>JPL-image</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>JPL-image</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">JPL Image Use Policy</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:707f5e8f0122a4e46c34ee9983954d77">[<a href="/fact/SPDXLicense/707f5e8f0122a4e46c34ee9983954d77">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.jpl.nasa.gov/jpl-image-use-policy" target="_blank">https://www.jpl.nasa.gov/jpl-image-use-policy</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>JPL Image Use Policy
+
+Unless otherwise noted, images and video on JPL public web sites (public sites ending with a jpl.nasa.gov address) may be used for any purpose without prior permission, subject to the special cases noted below. Publishers who wish to have authorization may print this page and retain it for their records; JPL does not issue image permissions on an image by image basis.
+
+By electing to download the material from this web site the user agrees:
+
+1. that Caltech makes no representations or warranties with respect to ownership of copyrights in the images, and does not represent others who may claim to be authors or owners of copyright of any of the images, and makes no warranties as to the quality of the images. Caltech shall not be responsible for any loss or expenses resulting from the use of the images, and you release and hold Caltech harmless from all liability arising from such use.
+2. to use a credit line in connection with images. Unless otherwise noted in the caption information for an image, the credit line should be &quot;Courtesy NASA/JPL-Caltech.&quot;
+3. that the endorsement of any product or service by Caltech, JPL or NASA must not be claimed or implied.
+
+Special Cases:
+
+* Prior written approval must be obtained to use the NASA insignia logo (the blue &quot;meatball&quot; insignia), the NASA logotype (the red &quot;worm&quot; logo) and the NASA seal. These images may not be used by persons who are not NASA employees or on products (including Web pages) that are not NASA sponsored. In addition, no image may be used to explicitly or implicitly suggest endorsement by NASA, JPL or Caltech of commercial goods or services. Requests to use NASA logos may be directed to Bert Ulrich, Public Services Division, NASA Headquarters, Code POS, Washington, DC 20546, telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.
+
+* Prior written approval must be obtained to use the JPL logo (stylized JPL letters in red or other colors). Requests to use the JPL logo may be directed to the Institutional Communications Office, email instcomm@jpl.nasa.gov.
+
+* If an image includes an identifiable person, using the image for commercial purposes may infringe that person&#39;s right of privacy or publicity, and permission should be obtained from the person. NASA and JPL generally do not permit likenesses of current employees to appear on commercial products. For more information, consult the NASA and JPL points of contact listed above.
+
+* JPL/Caltech contractors and vendors who wish to use JPL images in advertising or public relation materials should direct requests to the Institutional Communications Office, email instcomm@jpl.nasa.gov.
+
+* Some image and video materials on JPL public web sites are owned by organizations other than JPL or NASA. These owners have agreed to make their images and video available for journalistic, educational and personal uses, but restrictions are placed on commercial uses. To obtain permission for commercial use, contact the copyright owner listed in each image caption. Ownership of images and video by parties other than JPL and NASA is noted in the caption material with each image.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; 
+            JPL Image Use Policy
+         &lt;/var&gt;
+         &lt;p&gt;
+            Unless otherwise noted, images and video on JPL public web sites
+            (public sites ending with a jpl.nasa.gov address) may be used
+            for any purpose without prior permission, subject to the special
+            cases noted below. Publishers who wish to have authorization
+            may print this page and retain it for their records; JPL
+            does not issue image permissions on an image by image basis.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            By electing to download the material
+            from this web site the user agrees:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+               that Caltech makes no representations or warranties with respect
+               to ownership of copyrights in the images, and does not represent
+               others who may claim to be authors or owners of copyright of any
+               of the images, and makes no warranties as to the quality of the
+               images. Caltech shall not be responsible for any loss or expenses
+               resulting from the use of the images, and you release and hold
+               Caltech harmless from all liability arising from such use.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+               to use a credit line in connection with images. Unless
+               otherwise noted in the caption information for an image,
+               the credit line should be &amp;quot;Courtesy NASA/JPL-Caltech.&amp;quot;
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+               that the endorsement of any product or service by
+               Caltech, JPL or NASA must not be claimed or implied.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            Special Cases:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+               &lt;p&gt;
+                  Prior written approval must be obtained to use the NASA
+                  insignia logo (the blue &amp;quot;meatball&amp;quot; insignia), the NASA
+                  logotype (the red &amp;quot;worm&amp;quot; logo) and the NASA seal. These
+                  images may not be used by persons who are not NASA employees
+                  or on products (including Web pages) that are not NASA
+                  sponsored. In addition, no image may be used to explicitly
+                  or implicitly suggest endorsement by NASA, JPL or Caltech of
+                  commercial goods or services. Requests to use NASA logos may
+                  be directed to Bert Ulrich, Public Services Division, NASA
+                  Headquarters, Code POS, Washington, DC 20546, telephone (202)
+                  358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+               &lt;p&gt;
+                  Prior written approval must be obtained to use the JPL logo
+                  (stylized JPL letters in red or other colors). Requests
+                  to use the JPL logo may be directed to the Institutional
+                  Communications Office, email instcomm@jpl.nasa.gov.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+                  If an image includes an identifiable person, using the
+                  image for commercial purposes may infringe that person&amp;apos;s
+                  right of privacy or publicity, and permission should
+                  be obtained from the person. NASA and JPL generally do
+                  not permit likenesses of current employees to appear
+                  on commercial products. For more information, consult
+                  the NASA and JPL points of contact listed above.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+                  JPL/Caltech contractors and vendors who wish to
+                  use JPL images in advertising or public relation
+                  materials should direct requests to the Institutional
+                  Communications Office, email instcomm@jpl.nasa.gov.
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+                  Some image and video materials on JPL public web sites
+                  are owned by organizations other than JPL or NASA.
+                  These owners have agreed to make their images and video
+                  available for journalistic, educational and personal
+                  uses, but restrictions are placed on commercial uses.
+                  To obtain permission for commercial use, contact the
+                  copyright owner listed in each image caption. Ownership
+                  of images and video by parties other than JPL and
+                  NASA is noted in the caption material with each image.
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:JPL-image&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;JPL Image Use Policy&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;707f5e8f0122a4e46c34ee9983954d77&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;JPL Image Use Policy\n\nUnless otherwise noted, images and video on JPL public web sites (public sites ending with a jpl.nasa.gov address) may be used for any purpose without prior permission, subject to the special cases noted below. Publishers who wish to have authorization may print this page and retain it for their records; JPL does not issue image permissions on an image by image basis.\n\nBy electing to download the material from this web site the user agrees:\n\n1. that Caltech makes no representations or warranties with respect to ownership of copyrights in the images, and does not represent others who may claim to be authors or owners of copyright of any of the images, and makes no warranties as to the quality of the images. Caltech shall not be responsible for any loss or expenses resulting from the use of the images, and you release and hold Caltech harmless from all liability arising from such use.\n2. to use a credit line in connection with images. Unless otherwise noted in the caption information for an image, the credit line should be \&quot;Courtesy NASA/JPL-Caltech.\&quot;\n3. that the endorsement of any product or service by Caltech, JPL or NASA must not be claimed or implied.\n\nSpecial Cases:\n\n* Prior written approval must be obtained to use the NASA insignia logo (the blue \&quot;meatball\&quot; insignia), the NASA logotype (the red \&quot;worm\&quot; logo) and the NASA seal. These images may not be used by persons who are not NASA employees or on products (including Web pages) that are not NASA sponsored. In addition, no image may be used to explicitly or implicitly suggest endorsement by NASA, JPL or Caltech of commercial goods or services. Requests to use NASA logos may be directed to Bert Ulrich, Public Services Division, NASA Headquarters, Code POS, Washington, DC 20546, telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.\n\n* Prior written approval must be obtained to use the JPL logo (stylized JPL letters in red or other colors). Requests to use the JPL logo may be directed to the Institutional Communications Office, email instcomm@jpl.nasa.gov.\n\n* If an image includes an identifiable person, using the image for commercial purposes may infringe that person&#39;s right of privacy or publicity, and permission should be obtained from the person. NASA and JPL generally do not permit likenesses of current employees to appear on commercial products. For more information, consult the NASA and JPL points of contact listed above.\n\n* JPL/Caltech contractors and vendors who wish to use JPL images in advertising or public relation materials should direct requests to the Institutional Communications Office, email instcomm@jpl.nasa.gov.\n\n* Some image and video materials on JPL public web sites are owned by organizations other than JPL or NASA. These owners have agreed to make their images and video available for journalistic, educational and personal uses, but restrictions are placed on commercial uses. To obtain permission for commercial use, contact the copyright owner listed in each image caption. Ownership of images and video by parties other than JPL and NASA is noted in the caption material with each image.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            JPL Image Use Policy\n         &lt;/var&gt;\n         &lt;p&gt;\n            Unless otherwise noted, images and video on JPL public web sites\n            (public sites ending with a jpl.nasa.gov address) may be used\n            for any purpose without prior permission, subject to the special\n            cases noted below. Publishers who wish to have authorization\n            may print this page and retain it for their records; JPL\n            does not issue image permissions on an image by image basis.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            By electing to download the material\n            from this web site the user agrees:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               that Caltech makes no representations or warranties with respect\n               to ownership of copyrights in the images, and does not represent\n               others who may claim to be authors or owners of copyright of any\n               of the images, and makes no warranties as to the quality of the\n               images. Caltech shall not be responsible for any loss or expenses\n               resulting from the use of the images, and you release and hold\n               Caltech harmless from all liability arising from such use.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               to use a credit line in connection with images. Unless\n               otherwise noted in the caption information for an image,\n               the credit line should be &amp;quot;Courtesy NASA/JPL-Caltech.&amp;quot;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               that the endorsement of any product or service by\n               Caltech, JPL or NASA must not be claimed or implied.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            Special Cases:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n               &lt;p&gt;\n                  Prior written approval must be obtained to use the NASA\n                  insignia logo (the blue &amp;quot;meatball&amp;quot; insignia), the NASA\n                  logotype (the red &amp;quot;worm&amp;quot; logo) and the NASA seal. These\n                  images may not be used by persons who are not NASA employees\n                  or on products (including Web pages) that are not NASA\n                  sponsored. In addition, no image may be used to explicitly\n                  or implicitly suggest endorsement by NASA, JPL or Caltech of\n                  commercial goods or services. Requests to use NASA logos may\n                  be directed to Bert Ulrich, Public Services Division, NASA\n                  Headquarters, Code POS, Washington, DC 20546, telephone (202)\n                  358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n               &lt;p&gt;\n                  Prior written approval must be obtained to use the JPL logo\n                  (stylized JPL letters in red or other colors). Requests\n                  to use the JPL logo may be directed to the Institutional\n                  Communications Office, email instcomm@jpl.nasa.gov.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n                  If an image includes an identifiable person, using the\n                  image for commercial purposes may infringe that person&amp;apos;s\n                  right of privacy or publicity, and permission should\n                  be obtained from the person. NASA and JPL generally do\n                  not permit likenesses of current employees to appear\n                  on commercial products. For more information, consult\n                  the NASA and JPL points of contact listed above.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n                  JPL/Caltech contractors and vendors who wish to\n                  use JPL images in advertising or public relation\n                  materials should direct requests to the Institutional\n                  Communications Office, email instcomm@jpl.nasa.gov.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n                  Some image and video materials on JPL public web sites\n                  are owned by organizations other than JPL or NASA.\n                  These owners have agreed to make their images and video\n                  available for journalistic, educational and personal\n                  uses, but restrictions are placed on commercial uses.\n                  To obtain permission for commercial use, contact the\n                  copyright owner listed in each image caption. Ownership\n                  of images and video by parties other than JPL and\n                  NASA is noted in the caption material with each image.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:07:03Z&quot;,
+                &quot;url&quot;: &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:JPL-image&quot;,
+        &quot;licenseText&quot;: &quot;JPL Image Use Policy\n\nUnless otherwise noted, images and video on JPL public web sites (public sites ending with a jpl.nasa.gov address) may be used for any purpose without prior permission, subject to the special cases noted below. Publishers who wish to have authorization may print this page and retain it for their records; JPL does not issue image permissions on an image by image basis.\n\nBy electing to download the material from this web site the user agrees:\n\n1. that Caltech makes no representations or warranties with respect to ownership of copyrights in the images, and does not represent others who may claim to be authors or owners of copyright of any of the images, and makes no warranties as to the quality of the images. Caltech shall not be responsible for any loss or expenses resulting from the use of the images, and you release and hold Caltech harmless from all liability arising from such use.\n2. to use a credit line in connection with images. Unless otherwise noted in the caption information for an image, the credit line should be \&quot;Courtesy NASA/JPL-Caltech.\&quot;\n3. that the endorsement of any product or service by Caltech, JPL or NASA must not be claimed or implied.\n\nSpecial Cases:\n\n* Prior written approval must be obtained to use the NASA insignia logo (the blue \&quot;meatball\&quot; insignia), the NASA logotype (the red \&quot;worm\&quot; logo) and the NASA seal. These images may not be used by persons who are not NASA employees or on products (including Web pages) that are not NASA sponsored. In addition, no image may be used to explicitly or implicitly suggest endorsement by NASA, JPL or Caltech of commercial goods or services. Requests to use NASA logos may be directed to Bert Ulrich, Public Services Division, NASA Headquarters, Code POS, Washington, DC 20546, telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.\n\n* Prior written approval must be obtained to use the JPL logo (stylized JPL letters in red or other colors). Requests to use the JPL logo may be directed to the Institutional Communications Office, email instcomm@jpl.nasa.gov.\n\n* If an image includes an identifiable person, using the image for commercial purposes may infringe that person&#39;s right of privacy or publicity, and permission should be obtained from the person. NASA and JPL generally do not permit likenesses of current employees to appear on commercial products. For more information, consult the NASA and JPL points of contact listed above.\n\n* JPL/Caltech contractors and vendors who wish to use JPL images in advertising or public relation materials should direct requests to the Institutional Communications Office, email instcomm@jpl.nasa.gov.\n\n* Some image and video materials on JPL public web sites are owned by organizations other than JPL or NASA. These owners have agreed to make their images and video available for journalistic, educational and personal uses, but restrictions are placed on commercial uses. To obtain permission for commercial use, contact the copyright owner listed in each image caption. Ownership of images and video by parties other than JPL and NASA is noted in the caption material with each image.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            JPL Image Use Policy\n         &lt;/var&gt;\n         &lt;p&gt;\n            Unless otherwise noted, images and video on JPL public web sites\n            (public sites ending with a jpl.nasa.gov address) may be used\n            for any purpose without prior permission, subject to the special\n            cases noted below. Publishers who wish to have authorization\n            may print this page and retain it for their records; JPL\n            does not issue image permissions on an image by image basis.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            By electing to download the material\n            from this web site the user agrees:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n               that Caltech makes no representations or warranties with respect\n               to ownership of copyrights in the images, and does not represent\n               others who may claim to be authors or owners of copyright of any\n               of the images, and makes no warranties as to the quality of the\n               images. Caltech shall not be responsible for any loss or expenses\n               resulting from the use of the images, and you release and hold\n               Caltech harmless from all liability arising from such use.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n               to use a credit line in connection with images. Unless\n               otherwise noted in the caption information for an image,\n               the credit line should be &amp;quot;Courtesy NASA/JPL-Caltech.&amp;quot;\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n               that the endorsement of any product or service by\n               Caltech, JPL or NASA must not be claimed or implied.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            Special Cases:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n               &lt;p&gt;\n                  Prior written approval must be obtained to use the NASA\n                  insignia logo (the blue &amp;quot;meatball&amp;quot; insignia), the NASA\n                  logotype (the red &amp;quot;worm&amp;quot; logo) and the NASA seal. These\n                  images may not be used by persons who are not NASA employees\n                  or on products (including Web pages) that are not NASA\n                  sponsored. In addition, no image may be used to explicitly\n                  or implicitly suggest endorsement by NASA, JPL or Caltech of\n                  commercial goods or services. Requests to use NASA logos may\n                  be directed to Bert Ulrich, Public Services Division, NASA\n                  Headquarters, Code POS, Washington, DC 20546, telephone (202)\n                  358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n               &lt;p&gt;\n                  Prior written approval must be obtained to use the JPL logo\n                  (stylized JPL letters in red or other colors). Requests\n                  to use the JPL logo may be directed to the Institutional\n                  Communications Office, email instcomm@jpl.nasa.gov.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n                  If an image includes an identifiable person, using the\n                  image for commercial purposes may infringe that person&amp;apos;s\n                  right of privacy or publicity, and permission should\n                  be obtained from the person. NASA and JPL generally do\n                  not permit likenesses of current employees to appear\n                  on commercial products. For more information, consult\n                  the NASA and JPL points of contact listed above.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n                  JPL/Caltech contractors and vendors who wish to\n                  use JPL images in advertising or public relation\n                  materials should direct requests to the Institutional\n                  Communications Office, email instcomm@jpl.nasa.gov.\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n                  Some image and video materials on JPL public web sites\n                  are owned by organizations other than JPL or NASA.\n                  These owners have agreed to make their images and video\n                  available for journalistic, educational and personal\n                  uses, but restrictions are placed on commercial uses.\n                  To obtain permission for commercial use, contact the\n                  copyright owner listed in each image caption. Ownership\n                  of images and video by parties other than JPL and\n                  NASA is noted in the caption material with each image.\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n      &quot;,
+        &quot;name&quot;: &quot;JPL Image Use Policy&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;JPL Image Use Policy&lt;&lt;endOptional&gt;&gt;\n\nUnless otherwise noted, images and video on JPL public web sites (public sites ending with a jpl.nasa.gov address) may be used for any purpose without prior permission, subject to the special cases noted below. Publishers who wish to have authorization may print this page and retain it for their records; JPL does not issue image permissions on an image by image basis.\n\nBy electing to download the material from this web site the user agrees:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; that Caltech makes no representations or warranties with respect to ownership of copyrights in the images, and does not represent others who may claim to be authors or owners of copyright of any of the images, and makes no warranties as to the quality of the images. Caltech shall not be responsible for any loss or expenses resulting from the use of the images, and you release and hold Caltech harmless from all liability arising from such use.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; to use a credit line in connection with images. Unless otherwise noted in the caption information for an image, the credit line should be \&quot;Courtesy NASA/JPL-Caltech.\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; that the endorsement of any product or service by Caltech, JPL or NASA must not be claimed or implied.\n\nSpecial Cases:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Prior written approval must be obtained to use the NASA insignia logo (the blue \&quot;meatball\&quot; insignia), the NASA logotype (the red \&quot;worm\&quot; logo) and the NASA seal. These images may not be used by persons who are not NASA employees or on products (including Web pages) that are not NASA sponsored. In addition, no image may be used to explicitly or implicitly suggest endorsement by NASA, JPL or Caltech of commercial goods or services. Requests to use NASA logos may be directed to Bert Ulrich, Public Services Division, NASA Headquarters, Code POS, Washington, DC 20546, telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Prior written approval must be obtained to use the JPL logo (stylized JPL letters in red or other colors). Requests to use the JPL logo may be directed to the Institutional Communications Office, email instcomm@jpl.nasa.gov.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; If an image includes an identifiable person, using the image for commercial purposes may infringe that person&#39;s right of privacy or publicity, and permission should be obtained from the person. NASA and JPL generally do not permit likenesses of current employees to appear on commercial products. For more information, consult the NASA and JPL points of contact listed above.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; JPL/Caltech contractors and vendors who wish to use JPL images in advertising or public relation materials should direct requests to the Institutional Communications Office, email instcomm@jpl.nasa.gov.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Some image and video materials on JPL public web sites are owned by organizations other than JPL or NASA. These owners have agreed to make their images and video available for journalistic, educational and personal uses, but restrictions are placed on commercial uses. To obtain permission for commercial use, contact the copyright owner listed in each image caption. Ownership of images and video by parties other than JPL and NASA is noted in the caption material with each image.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/61c851947a2df255f4c19bfc091ba244">FedoraEntry:61c851947a2df255f4c19bfc091ba244</a> for <a href="/?license=Fedora:JPL-image"><span class="licensename"><span class="namespace">Fedora:</span>JPL-image</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>JPL-image</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>JPL-image</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">Fedora: <b style="">allowed-content</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:61c851947a2df255f4c19bfc091ba244">[<a href="/fact/FedoraEntry/61c851947a2df255f4c19bfc091ba244">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.jpl.nasa.gov/jpl-image-use-policy" target="_blank">https://www.jpl.nasa.gov/jpl-image-use-policy</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-content&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:JPL-image&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:JPL-image&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;61c851947a2df255f4c19bfc091ba244&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed-content\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed-content&quot;,
+                                    {
+                                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;JPL-image&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:JPL-image&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed-content&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/628c1534bb775268ef6ff34ca15730ba">ScancodeData:628c1534bb775268ef6ff34ca15730ba</a> for <a href="/?license=scancode:jpl-image"><span class="licensename"><span class="namespace">scancode:</span>jpl-image</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>jpl-image</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">JPL Image Use Policy</span></li><li><span class="licensename">JPL Image Use Policy</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Source-available&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:628c1534bb775268ef6ff34ca15730ba">[<a href="/fact/ScancodeData/628c1534bb775268ef6ff34ca15730ba">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://www.jpl.nasa.gov/jpl-image-use-policy</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>JPL Image Use Policy
+
+Unless otherwise noted, images and video on JPL public web sites
+(public sites ending with a jpl.nasa.gov address) may be used
+for any purpose without prior permission, subject to the special
+cases noted below. Publishers who wish to have authorization may
+print this page and retain it for their records; JPL does not
+issue image permissions on an image by image basis.
+
+By electing to download the material from this web site the user agrees:
+
+1. that Caltech makes no representations or warranties with respect to
+   ownership of copyrights in the images, and does not represent others
+   who may claim to be authors or owners of copyright of any of the images,
+   and makes no warranties as to the quality of the images. Caltech shall
+   not be responsible for any loss or expenses resulting from the use of
+   the images, and you release and hold Caltech harmless from all liability
+   arising from such use.
+2. to use a credit line in connection with images. Unless otherwise noted
+   in the caption information for an image, the credit line should be
+   &quot;Courtesy NASA/JPL-Caltech.&quot;
+3. that the endorsement of any product or service by Caltech, JPL or NASA
+   must not be claimed or implied.
+
+Special Cases:
+
+* Prior written approval must be obtained to use the NASA insignia logo
+  (the blue &quot;meatball&quot; insignia), the NASA logotype (the red &quot;worm&quot; logo)
+  and the NASA seal. These images may not be used by persons who are not
+  NASA employees or on products (including Web pages) that are not NASA
+  sponsored. In addition, no image may be used to explicitly or implicitly
+  suggest endorsement by NASA, JPL or Caltech of commercial goods or services.
+  Requests to use NASA logos may be directed to Bert Ulrich, Public Services
+  Division, NASA Headquarters, Code POS, Washington, DC 20546,
+  telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.
+
+* Prior written approval must be obtained to use the JPL logo
+  (stylized JPL letters in red or other colors). Requests to use the JPL logo
+  may be directed to the Institutional Communications Office,
+  email instcomm@jpl.nasa.gov.
+
+* If an image includes an identifiable person, using the image for commercial
+  purposes may infringe that person&#39;s right of privacy or publicity,
+  and permission should be obtained from the person. NASA and JPL generally
+  do not permit likenesses of current employees to appear on commercial products.
+  For more information, consult the NASA and JPL points of contact listed above.
+
+* JPL/Caltech contractors and vendors who wish to use JPL images in advertising
+  or public relation materials should direct requests to the Institutional
+  Communications Office, email instcomm@jpl.nasa.gov.
+
+* Some image and video materials on JPL public web sites are owned by organizations
+other than JPL or NASA. These owners have agreed to make their images and video
+available for journalistic, educational and personal uses, but restrictions are
+placed on commercial uses. To obtain permission for commercial use, contact the
+copyright owner listed in each image caption. Ownership of images and video by
+parties other than JPL and NASA is noted in the caption material with each image.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:jpl-image&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;JPL Image Use Policy&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;JPL Image Use Policy&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;628c1534bb775268ef6ff34ca15730ba&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Source-available&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;JPL Image Use Policy\n\nUnless otherwise noted, images and video on JPL public web sites\n(public sites ending with a jpl.nasa.gov address) may be used\nfor any purpose without prior permission, subject to the special\ncases noted below. Publishers who wish to have authorization may\nprint this page and retain it for their records; JPL does not\nissue image permissions on an image by image basis.\n\nBy electing to download the material from this web site the user agrees:\n\n1. that Caltech makes no representations or warranties with respect to\n   ownership of copyrights in the images, and does not represent others\n   who may claim to be authors or owners of copyright of any of the images,\n   and makes no warranties as to the quality of the images. Caltech shall\n   not be responsible for any loss or expenses resulting from the use of\n   the images, and you release and hold Caltech harmless from all liability\n   arising from such use.\n2. to use a credit line in connection with images. Unless otherwise noted\n   in the caption information for an image, the credit line should be\n   \&quot;Courtesy NASA/JPL-Caltech.\&quot;\n3. that the endorsement of any product or service by Caltech, JPL or NASA\n   must not be claimed or implied.\n\nSpecial Cases:\n\n* Prior written approval must be obtained to use the NASA insignia logo\n  (the blue \&quot;meatball\&quot; insignia), the NASA logotype (the red \&quot;worm\&quot; logo)\n  and the NASA seal. These images may not be used by persons who are not\n  NASA employees or on products (including Web pages) that are not NASA\n  sponsored. In addition, no image may be used to explicitly or implicitly\n  suggest endorsement by NASA, JPL or Caltech of commercial goods or services.\n  Requests to use NASA logos may be directed to Bert Ulrich, Public Services\n  Division, NASA Headquarters, Code POS, Washington, DC 20546,\n  telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.\n\n* Prior written approval must be obtained to use the JPL logo\n  (stylized JPL letters in red or other colors). Requests to use the JPL logo\n  may be directed to the Institutional Communications Office,\n  email instcomm@jpl.nasa.gov.\n\n* If an image includes an identifiable person, using the image for commercial\n  purposes may infringe that person&#39;s right of privacy or publicity,\n  and permission should be obtained from the person. NASA and JPL generally\n  do not permit likenesses of current employees to appear on commercial products.\n  For more information, consult the NASA and JPL points of contact listed above.\n\n* JPL/Caltech contractors and vendors who wish to use JPL images in advertising\n  or public relation materials should direct requests to the Institutional\n  Communications Office, email instcomm@jpl.nasa.gov.\n\n* Some image and video materials on JPL public web sites are owned by organizations\nother than JPL or NASA. These owners have agreed to make their images and video\navailable for journalistic, educational and personal uses, but restrictions are\nplaced on commercial uses. To obtain permission for commercial use, contact the\ncopyright owner listed in each image caption. Ownership of images and video by\nparties other than JPL and NASA is noted in the caption material with each image.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Source-available&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.jpl.nasa.gov/jpl-image-use-policy&quot;,
+        &quot;_key&quot;: &quot;jpl-image&quot;,
+        &quot;_name&quot;: &quot;JPL Image Use Policy&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Nasa Jet Propulsion Laboratory&quot;,
+        &quot;_shortName&quot;: &quot;JPL Image Use Policy&quot;,
+        &quot;_spdxId&quot;: &quot;JPL-image&quot;,
+        &quot;_text&quot;: &quot;JPL Image Use Policy\n\nUnless otherwise noted, images and video on JPL public web sites\n(public sites ending with a jpl.nasa.gov address) may be used\nfor any purpose without prior permission, subject to the special\ncases noted below. Publishers who wish to have authorization may\nprint this page and retain it for their records; JPL does not\nissue image permissions on an image by image basis.\n\nBy electing to download the material from this web site the user agrees:\n\n1. that Caltech makes no representations or warranties with respect to\n   ownership of copyrights in the images, and does not represent others\n   who may claim to be authors or owners of copyright of any of the images,\n   and makes no warranties as to the quality of the images. Caltech shall\n   not be responsible for any loss or expenses resulting from the use of\n   the images, and you release and hold Caltech harmless from all liability\n   arising from such use.\n2. to use a credit line in connection with images. Unless otherwise noted\n   in the caption information for an image, the credit line should be\n   \&quot;Courtesy NASA/JPL-Caltech.\&quot;\n3. that the endorsement of any product or service by Caltech, JPL or NASA\n   must not be claimed or implied.\n\nSpecial Cases:\n\n* Prior written approval must be obtained to use the NASA insignia logo\n  (the blue \&quot;meatball\&quot; insignia), the NASA logotype (the red \&quot;worm\&quot; logo)\n  and the NASA seal. These images may not be used by persons who are not\n  NASA employees or on products (including Web pages) that are not NASA\n  sponsored. In addition, no image may be used to explicitly or implicitly\n  suggest endorsement by NASA, JPL or Caltech of commercial goods or services.\n  Requests to use NASA logos may be directed to Bert Ulrich, Public Services\n  Division, NASA Headquarters, Code POS, Washington, DC 20546,\n  telephone (202) 358-1713, fax (202) 358-4331, email bert.ulrich@hq.nasa.gov.\n\n* Prior written approval must be obtained to use the JPL logo\n  (stylized JPL letters in red or other colors). Requests to use the JPL logo\n  may be directed to the Institutional Communications Office,\n  email instcomm@jpl.nasa.gov.\n\n* If an image includes an identifiable person, using the image for commercial\n  purposes may infringe that person&#39;s right of privacy or publicity,\n  and permission should be obtained from the person. NASA and JPL generally\n  do not permit likenesses of current employees to appear on commercial products.\n  For more information, consult the NASA and JPL points of contact listed above.\n\n* JPL/Caltech contractors and vendors who wish to use JPL images in advertising\n  or public relation materials should direct requests to the Institutional\n  Communications Office, email instcomm@jpl.nasa.gov.\n\n* Some image and video materials on JPL public web sites are owned by organizations\nother than JPL or NASA. These owners have agreed to make their images and video\navailable for journalistic, educational and personal uses, but restrictions are\nplaced on commercial uses. To obtain permission for commercial use, contact the\ncopyright owner listed in each image caption. Ownership of images and video by\nparties other than JPL and NASA is noted in the caption material with each image.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/05d8da2372d764c8db85a75fc865ea1b">OrtLicenseCategorization:05d8da2372d764c8db85a75fc865ea1b</a> for <a href="/?license=SPDX:JPL-image"><span class="licensename"><span class="namespace">SPDX:</span>JPL-image</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>JPL-image</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>source-available</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05d8da2372d764c8db85a75fc865ea1b">[<a href="/fact/OrtLicenseCategorization/05d8da2372d764c8db85a75fc865ea1b">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:05d8da2372d764c8db85a75fc865ea1b">[<a href="/fact/OrtLicenseCategorization/05d8da2372d764c8db85a75fc865ea1b">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:JPL-image&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;05d8da2372d764c8db85a75fc865ea1b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;source-available&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;source-available&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:JPL-image&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/e94db043b7aea5f3585cc4d882c49510">CavilLicenseChange:e94db043b7aea5f3585cc4d882c49510</a> for <a href="/?license=cavil:JPL-image"><span class="licensename"><span class="namespace">cavil:</span>JPL-image</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>JPL-image</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">JPL-image</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:JPL-image&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;JPL-image&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;e94db043b7aea5f3585cc4d882c49510&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;JPL-image&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:JPL-image&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/8557c4437d3b765587928e0e1869340a">MetaeffektLicense:8557c4437d3b765587928e0e1869340a</a> for <a href="/?license=metaeffekt:JPL Image Use Policy"><span class="licensename"><span class="namespace">metaeffekt:</span>JPL Image Use Policy</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>JPL Image Use Policy</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>JPL-image</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">JPL image</span></li><li><span class="licensename">JPL Image Use Policy</span></li><li><span class="licensename">JPL-image</span></li><li><span class="licensename"><span class="namespace">scancode:</span>jpl-image</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:JPL Image Use Policy&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:JPL-image&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;JPL image&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;JPL-image&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;JPL Image Use Policy&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:jpl-image&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;8557c4437d3b765587928e0e1869340a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;JPL-image&quot;,
+            &quot;JPL Image Use Policy&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:JPL Image Use Policy&quot;,
+        &quot;_category&quot;: &quot;JPL image&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:jpl-image&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:JPL-image&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

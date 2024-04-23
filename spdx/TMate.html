@@ -1,0 +1,1413 @@
+<html><head><title>ldbcollector: spdx:TMate</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:TMate</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TMate</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">TMate</span></li><li><span class="licensename"><span class="namespace">cavil:</span>TMate</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>TMate</span></li><li><span class="licensename"><span class="namespace">fossology:</span>TMate</span></li><li><span class="licensename"><span class="namespace">scancode:</span>tmate</span></li><li><span class="licensename"><span class="namespace">spdx:</span>TMate</span></li><li><span class="licensename">TMate License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>TMate License</span></li><li><span class="licensename">TMate Open Source License</span></li><li><span class="licensename"><span class="namespace">hitachi:</span>TMate Open Source License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//svnkit.com/license.html</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Copyleft<span class="provided-by">(provided by: <span title="ScancodeData:08ae049a0557705acf36701dd2987d6a">[<a href="/fact/ScancodeData/08ae049a0557705acf36701dd2987d6a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:42573f3e93988b5a18bbf87da0809fdb">[<a href="/fact/SPDXLicense/42573f3e93988b5a18bbf87da0809fdb">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:2b9a46172964b422d1f481e4602efb08">[<a href="/fact/FedoraEntry/2b9a46172964b422d1f481e4602efb08">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:5b53f54c133444a879eb803c9754fce2">[<a href="/fact/MetaeffektLicense/5b53f54c133444a879eb803c9754fce2">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e1e2d7b0992e68fdb6d9a4348a707340">[<a href="/fact/OrtLicenseCategorization/e1e2d7b0992e68fdb6d9a4348a707340">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e1e2d7b0992e68fdb6d9a4348a707340">[<a href="/fact/OrtLicenseCategorization/e1e2d7b0992e68fdb6d9a4348a707340">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e1e2d7b0992e68fdb6d9a4348a707340">[<a href="/fact/OrtLicenseCategorization/e1e2d7b0992e68fdb6d9a4348a707340">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="A proprietary-free license may not require a commercial license, but has specific terms and conditions which the project is obligated to follow. Some of these terms and conditions are provided with or in the code or in clickable downloaded licenses. Examples are the Sun Binary Code License Agreement or a freely offered BSP.">OrtLicenseCategorization: <b>proprietary-free</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HitachiOpenLicense: </b>https://svnkit.com/license.html<span class="provided-by">(provided by: <span title="HitachiOpenLicense:0851c2042700f6e75dd3892432c19fab">[<a href="/fact/HitachiOpenLicense/0851c2042700f6e75dd3892432c19fab">HitachiOpenLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://svnkit.com/license.html" target="_blank">http://svnkit.com/license.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://svnkit.com/licensing.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The TMate Open Source License.
+
+This license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file
+
+Copyright (c) 2004-2012 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+     * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+     * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.
+
+     * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The TMate Open Source License.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;This license applies to all portions of TMate SVNKit library, which are not externally-maintained
+         libraries (e.g. Ganymed SSH library).&lt;/p&gt;
+
+         &lt;p&gt;All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class
+         are covered by the license in JAVAHL-LICENSE file&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2004-2012 TMate Software. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the following disclaimer.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions in any form must be accompanied by information on how to obtain complete source
+             code for the software that uses SVNKit and any accompanying software that uses the software
+             that uses SVNKit. The source code must either be included in the distribution or be available
+             for no more than the cost of distribution plus a nominal fee, and must be freely
+             redistributable under reasonable conditions. For an executable file, complete source code
+             means the source code for all modules it contains. It does not include source code for modules
+             or files that typically accompany the major components of the operating system on which the
+             executable file runs.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistribution in any form without redistributing source code for software that uses SVNKit is
+             possible only when such redistribution is explictly permitted by TMate Software. Please,
+             contact TMate Software at support@svnkit.com to get such permission.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+         BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR
+         NON-INFRINGEMENT, ARE DISCLAIMED.&lt;/p&gt;
+
+      &lt;p&gt;IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+         CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>This license applies to all portions of TMate SVNKit library, which 
+are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl
+except SvnClient class are covered by the license in JAVAHL-LICENSE file
+
+Copyright (c) 2004-2009 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, 
+      this list of conditions and the following disclaimer.
+      
+    * Redistributions in binary form must reproduce the above copyright notice, 
+      this list of conditions and the following disclaimer in the documentation 
+      and/or other materials provided with the distribution.
+      
+    * Redistributions in any form must be accompanied by information on how to 
+      obtain complete source code for the software that uses SVNKit and any 
+      accompanying software that uses the software that uses SVNKit. The source 
+      code must either be included in the distribution or be available for no 
+      more than the cost of distribution plus a nominal fee, and must be freely 
+      redistributable under reasonable conditions. For an executable file, complete 
+      source code means the source code for all modules it contains. It does not 
+      include source code for modules or files that typically accompany the major 
+      components of the operating system on which the executable file runs.
+      
+    * Redistribution in any form without redistributing source code for software 
+      that uses SVNKit is possible only when such redistribution is explictly permitted 
+      by TMate Software. Please, contact TMate Software at support@svnkit.com to 
+      get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE 
+DISCLAIMED. 
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li><li><details><summary>Text:</summary><pre>The TMate Open Source License. This license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file Copyright (c) 2004-2012 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.
+
+   * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li><li><details><summary>Text:</summary><pre>The TMate Open Source License.
+
+This license applies to all portions of TMate SVNKit library, which 
+are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl
+except SvnClient class are covered by the license in JAVAHL-LICENSE file
+
+Copyright (c) 2004-2012 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, 
+      this list of conditions and the following disclaimer.
+      
+    * Redistributions in binary form must reproduce the above copyright notice, 
+      this list of conditions and the following disclaimer in the documentation 
+      and/or other materials provided with the distribution.
+      
+    * Redistributions in any form must be accompanied by information on how to 
+      obtain complete source code for the software that uses SVNKit and any 
+      accompanying software that uses the software that uses SVNKit. The source 
+      code must either be included in the distribution or be available for no 
+      more than the cost of distribution plus a nominal fee, and must be freely 
+      redistributable under reasonable conditions. For an executable file, complete 
+      source code means the source code for all modules it contains. It does not 
+      include source code for modules or files that typically accompany the major 
+      components of the operating system on which the executable file runs.
+      
+    * Redistribution in any form without redistributing source code for software 
+      that uses SVNKit is possible only when such redistribution is explictly permitted 
+      by TMate Software. Please, contact TMate Software at support@svnkit.com to 
+      get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE 
+DISCLAIMED. 
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/42573f3e93988b5a18bbf87da0809fdb">SPDXLicense:42573f3e93988b5a18bbf87da0809fdb</a> for <a href="/?license=spdx:TMate"><span class="licensename"><span class="namespace">spdx:</span>TMate</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TMate</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TMate Open Source License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:42573f3e93988b5a18bbf87da0809fdb">[<a href="/fact/SPDXLicense/42573f3e93988b5a18bbf87da0809fdb">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://svnkit.com/license.html" target="_blank">http://svnkit.com/license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The TMate Open Source License.
+
+This license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file
+
+Copyright (c) 2004-2012 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+     * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+     * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.
+
+     * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The TMate Open Source License.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;This license applies to all portions of TMate SVNKit library, which are not externally-maintained
+         libraries (e.g. Ganymed SSH library).&lt;/p&gt;
+
+         &lt;p&gt;All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class
+         are covered by the license in JAVAHL-LICENSE file&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2004-2012 TMate Software. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the following disclaimer.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions in any form must be accompanied by information on how to obtain complete source
+             code for the software that uses SVNKit and any accompanying software that uses the software
+             that uses SVNKit. The source code must either be included in the distribution or be available
+             for no more than the cost of distribution plus a nominal fee, and must be freely
+             redistributable under reasonable conditions. For an executable file, complete source code
+             means the source code for all modules it contains. It does not include source code for modules
+             or files that typically accompany the major components of the operating system on which the
+             executable file runs.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistribution in any form without redistributing source code for software that uses SVNKit is
+             possible only when such redistribution is explictly permitted by TMate Software. Please,
+             contact TMate Software at support@svnkit.com to get such permission.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+         BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR
+         NON-INFRINGEMENT, ARE DISCLAIMED.&lt;/p&gt;
+
+      &lt;p&gt;IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+         CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:TMate&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TMate Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;42573f3e93988b5a18bbf87da0809fdb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The TMate Open Source License.\n\nThis license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2012 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n     * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n     * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.\n\n     * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.\n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The TMate Open Source License.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;This license applies to all portions of TMate SVNKit library, which are not externally-maintained\n         libraries (e.g. Ganymed SSH library).&lt;/p&gt;\n\n         &lt;p&gt;All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class\n         are covered by the license in JAVAHL-LICENSE file&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2004-2012 TMate Software. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided\n         that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the following disclaimer.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions in any form must be accompanied by information on how to obtain complete source\n             code for the software that uses SVNKit and any accompanying software that uses the software\n             that uses SVNKit. The source code must either be included in the distribution or be available\n             for no more than the cost of distribution plus a nominal fee, and must be freely\n             redistributable under reasonable conditions. For an executable file, complete source code\n             means the source code for all modules it contains. It does not include source code for modules\n             or files that typically accompany the major components of the operating system on which the\n             executable file runs.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistribution in any form without redistributing source code for software that uses SVNKit is\n             possible only when such redistribution is explictly permitted by TMate Software. Please,\n             contact TMate Software at support@svnkit.com to get such permission.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,\n         BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n         NON-INFRINGEMENT, ARE DISCLAIMED.&lt;/p&gt;\n\n      &lt;p&gt;IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n         CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\n         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://svnkit.com/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://svnkit.com/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:58Z&quot;,
+                &quot;url&quot;: &quot;http://svnkit.com/license.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:TMate&quot;,
+        &quot;licenseText&quot;: &quot;The TMate Open Source License.\n\nThis license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2012 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n     * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n     * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.\n\n     * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.\n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The TMate Open Source License.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;This license applies to all portions of TMate SVNKit library, which are not externally-maintained\n         libraries (e.g. Ganymed SSH library).&lt;/p&gt;\n\n         &lt;p&gt;All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class\n         are covered by the license in JAVAHL-LICENSE file&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2004-2012 TMate Software. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in source and binary forms, with or without modification, are permitted provided\n         that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the following disclaimer.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions in any form must be accompanied by information on how to obtain complete source\n             code for the software that uses SVNKit and any accompanying software that uses the software\n             that uses SVNKit. The source code must either be included in the distribution or be available\n             for no more than the cost of distribution plus a nominal fee, and must be freely\n             redistributable under reasonable conditions. For an executable file, complete source code\n             means the source code for all modules it contains. It does not include source code for modules\n             or files that typically accompany the major components of the operating system on which the\n             executable file runs.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistribution in any form without redistributing source code for software that uses SVNKit is\n             possible only when such redistribution is explictly permitted by TMate Software. Please,\n             contact TMate Software at support@svnkit.com to get such permission.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,\n         BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n         NON-INFRINGEMENT, ARE DISCLAIMED.&lt;/p&gt;\n\n      &lt;p&gt;IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n         CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\n         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;TMate Open Source License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://svnkit.com/license.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The TMate Open Source License.\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; This license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2004-2012 TMate Software. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.\n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/2b9a46172964b422d1f481e4602efb08">FedoraEntry:2b9a46172964b422d1f481e4602efb08</a> for <a href="/?license=Fedora:TMate"><span class="licensename"><span class="namespace">Fedora:</span>TMate</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>TMate</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TMate</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">TMate</span></li><li><span class="licensename">TMate Open Source License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:2b9a46172964b422d1f481e4602efb08">[<a href="/fact/FedoraEntry/2b9a46172964b422d1f481e4602efb08">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://svnkit.com/license.html" target="_blank">http://svnkit.com/license.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:TMate&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:TMate&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TMate Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TMate&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;2b9a46172964b422d1f481e4602efb08&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://svnkit.com/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;TMate&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;TMate Open Source License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;TMate&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:TMate&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;http://svnkit.com/license.html&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/08ae049a0557705acf36701dd2987d6a">ScancodeData:08ae049a0557705acf36701dd2987d6a</a> for <a href="/?license=scancode:tmate"><span class="licensename"><span class="namespace">scancode:</span>tmate</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>tmate</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">TMate Open Source License</span></li><li><span class="licensename">TMate Open Source License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Copyleft<span class="provided-by">(provided by: <span title="ScancodeData:08ae049a0557705acf36701dd2987d6a">[<a href="/fact/ScancodeData/08ae049a0557705acf36701dd2987d6a">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://svnkit.com/license.html" target="_blank">http://svnkit.com/license.html</a></li></ul><h3>Other Statements</h3><ul><li>http://svnkit.com/licensing.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This license applies to all portions of TMate SVNKit library, which 
+are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl
+except SvnClient class are covered by the license in JAVAHL-LICENSE file
+
+Copyright (c) 2004-2009 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, 
+      this list of conditions and the following disclaimer.
+      
+    * Redistributions in binary form must reproduce the above copyright notice, 
+      this list of conditions and the following disclaimer in the documentation 
+      and/or other materials provided with the distribution.
+      
+    * Redistributions in any form must be accompanied by information on how to 
+      obtain complete source code for the software that uses SVNKit and any 
+      accompanying software that uses the software that uses SVNKit. The source 
+      code must either be included in the distribution or be available for no 
+      more than the cost of distribution plus a nominal fee, and must be freely 
+      redistributable under reasonable conditions. For an executable file, complete 
+      source code means the source code for all modules it contains. It does not 
+      include source code for modules or files that typically accompany the major 
+      components of the operating system on which the executable file runs.
+      
+    * Redistribution in any form without redistributing source code for software 
+      that uses SVNKit is possible only when such redistribution is explictly permitted 
+      by TMate Software. Please, contact TMate Software at support@svnkit.com to 
+      get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE 
+DISCLAIMED. 
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:tmate&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TMate Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TMate Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;08ae049a0557705acf36701dd2987d6a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Copyleft&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://svnkit.com/licensing.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://svnkit.com/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2009 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://svnkit.com/licensing.html&quot;,
+        &quot;_key&quot;: &quot;tmate&quot;,
+        &quot;_name&quot;: &quot;TMate Open Source License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;SVNKit (TMate)&quot;,
+        &quot;_shortName&quot;: &quot;TMate Open Source License&quot;,
+        &quot;_spdxId&quot;: &quot;TMate&quot;,
+        &quot;_text&quot;: &quot;This license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2009 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://svnkit.com/license.html&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/7b178436d47d1c7cbf5e12cbc78eb178">Fossology:7b178436d47d1c7cbf5e12cbc78eb178</a> for <a href="/?license=fossology:TMate"><span class="licensename"><span class="namespace">fossology:</span>TMate</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>TMate</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TMate Open Source License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="http://svnkit.com/license.html" target="_blank">http://svnkit.com/license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The TMate Open Source License. This license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file Copyright (c) 2004-2012 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.
+
+   * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:TMate&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TMate Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;7b178436d47d1c7cbf5e12cbc78eb178&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://svnkit.com/license.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The TMate Open Source License. This license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file Copyright (c) 2004-2012 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.\n\n   * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.\n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;TMate Open Source License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:TMate&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The TMate Open Source License. This license applies to all portions of TMate SVNKit library, which are not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl except SvnClient class are covered by the license in JAVAHL-LICENSE file Copyright (c) 2004-2012 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   * Redistributions in any form must be accompanied by information on how to obtain complete source code for the software that uses SVNKit and any accompanying software that uses the software that uses SVNKit. The source code must either be included in the distribution or be available for no more than the cost of distribution plus a nominal fee, and must be freely redistributable under reasonable conditions. For an executable file, complete source code means the source code for all modules it contains. It does not include source code for modules or files that typically accompany the major components of the operating system on which the executable file runs.\n\n   * Redistribution in any form without redistributing source code for software that uses SVNKit is possible only when such redistribution is explictly permitted by TMate Software. Please, contact TMate Software at support@svnkit.com to get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE DISCLAIMED.\n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_rf_text_updatable&quot;: true,
+        &quot;_rf_url&quot;: &quot;http://svnkit.com/license.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/e1e2d7b0992e68fdb6d9a4348a707340">OrtLicenseCategorization:e1e2d7b0992e68fdb6d9a4348a707340</a> for <a href="/?license=SPDX:TMate"><span class="licensename"><span class="namespace">SPDX:</span>TMate</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>TMate</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e1e2d7b0992e68fdb6d9a4348a707340">[<a href="/fact/OrtLicenseCategorization/e1e2d7b0992e68fdb6d9a4348a707340">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e1e2d7b0992e68fdb6d9a4348a707340">[<a href="/fact/OrtLicenseCategorization/e1e2d7b0992e68fdb6d9a4348a707340">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:e1e2d7b0992e68fdb6d9a4348a707340">[<a href="/fact/OrtLicenseCategorization/e1e2d7b0992e68fdb6d9a4348a707340">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:TMate&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;e1e2d7b0992e68fdb6d9a4348a707340&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:TMate&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e</a> for <a href="/?license=SPDX:TMate"><span class="licensename"><span class="namespace">SPDX:</span>TMate</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>TMate</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="A proprietary-free license may not require a commercial license, but has specific terms and conditions which the project is obligated to follow. Some of these terms and conditions are provided with or in the code or in clickable downloaded licenses. Examples are the Sun Binary Code License Agreement or a freely offered BSP.">OrtLicenseCategorization: <b>proprietary-free</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1721c5791b58e5bffcee09b564a2219e">[<a href="/fact/OrtLicenseCategorization/1721c5791b58e5bffcee09b564a2219e">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:TMate&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;1721c5791b58e5bffcee09b564a2219e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;proprietary-free&quot;,
+                    {
+                        &quot;contents&quot;: &quot;A proprietary-free license may not require a commercial license, but has specific terms and conditions which the project is obligated to follow. Some of these terms and conditions are provided with or in the code or in clickable downloaded licenses. Examples are the Sun Binary Code License Agreement or a freely offered BSP.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:distribute-source-code&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;A proprietary-free license may not require a commercial license, but has specific terms and conditions which the project is obligated to follow. Some of these terms and conditions are provided with or in the code or in clickable downloaded licenses. Examples are the Sun Binary Code License Agreement or a freely offered BSP.&quot;,
+                &quot;name&quot;: &quot;proprietary-free&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                &quot;name&quot;: &quot;property:distribute-source-code&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:TMate&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/44253ead3617c920b6e9a97ef0703bb3">CavilLicenseChange:44253ead3617c920b6e9a97ef0703bb3</a> for <a href="/?license=cavil:TMate"><span class="licensename"><span class="namespace">cavil:</span>TMate</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>TMate</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">TMate</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:TMate&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TMate&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;44253ead3617c920b6e9a97ef0703bb3&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;TMate&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:TMate&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/5b53f54c133444a879eb803c9754fce2">MetaeffektLicense:5b53f54c133444a879eb803c9754fce2</a> for <a href="/?license=metaeffekt:TMate License"><span class="licensename"><span class="namespace">metaeffekt:</span>TMate License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>TMate License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>TMate</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">http:</span>//svnkit.com/license.html</span></li><li><span class="licensename">TMate</span></li><li><span class="licensename"><span class="namespace">scancode:</span>tmate</span></li><li><span class="licensename">TMate License</span></li><li><span class="licensename">TMATE LICENSE</span></li><li><span class="licensename">TMATE License</span></li><li><span class="licensename">TMate Open Source License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:5b53f54c133444a879eb803c9754fce2">[<a href="/fact/MetaeffektLicense/5b53f54c133444a879eb803c9754fce2">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:TMate License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:TMate&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;TMate&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TMate License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TMATE LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TMATE License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;TMate Open Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;http://svnkit.com/license.html&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:tmate&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;5b53f54c133444a879eb803c9754fce2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;TMate License&quot;,
+            &quot;TMATE LICENSE&quot;,
+            &quot;TMATE License&quot;,
+            &quot;TMate Open Source License&quot;,
+            &quot;http://svnkit.com/license.html&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:TMate License&quot;,
+        &quot;_category&quot;: &quot;TMate&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:tmate&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:TMate&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HitachiOpenLicense">HitachiOpenLicense</a>: <a href="/fact/HitachiOpenLicense/0851c2042700f6e75dd3892432c19fab">HitachiOpenLicense:0851c2042700f6e75dd3892432c19fab</a> for <a href="/?license=hitachi:TMate Open Source License"><span class="licensename"><span class="namespace">hitachi:</span>TMate Open Source License</span></a></h3><h4>Summary:</h4><span>https://svnkit.com/license.html</span><h4>Permissions:</h4><ul><li><h5>Actions:</h5><ul><li><b>Use the obtained source code without modification</b>: <br><span>Use the fetched code as it is.</span></li><li><b>Modify the obtained source code.</b>: <br><span></span></li><li><b>Using Modified Source Code</b>: <br><span></span></li><li><b>Use the retrieved binaries</b>: <br><span>Use the fetched binary as it is.</span></li><li><b>Use binaries generated from modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><span>None</span></li><li><h5>Description:</h5><span>The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.</span><h5>Actions:</h5><ul><li><b>Distribute the obtained source code without modification</b>: <br><span>Redistribute the code as it was obtained</span></li><li><b>Distribution of Modified Source Code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Include a copyright notice, list of terms and conditions, and disclaimer included in the license<br></li><li><b>OR</b><ul><li><b>OBLIGATION</b>: Attach the source code of the software that uses the software in question.<br></li><li><b>OBLIGATION</b>: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.<br></li><li><b>OBLIGATION</b>: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.<br></li></ul></li><li><b>OR</b><ul><li><b>OBLIGATION</b>: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.<br></li><li><b>OBLIGATION</b>: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available<br></li><li><b>OBLIGATION</b>: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.<br></li></ul></li></ul></li><li><h5>Description:</h5><span>The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.</span><h5>Actions:</h5><ul><li><b>Distribute the fetched binaries</b>: <br><span>Redistribute the fetched binaries as they are</span></li><li><b>Distribute the generated binaries from modified source code</b>: <br><span></span></li></ul><h5>Conditions:</h5><b>AND</b><ul><li><b>OBLIGATION</b>: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license<br></li><li><b>OR</b><ul><li><b>OBLIGATION</b>: Attach the source code corresponding to the software in question.<br></li><li><b>OBLIGATION</b>: Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.<br></li></ul></li><li><b>OR</b><ul><li><b>OBLIGATION</b>: Attach the source code of the software that uses the software in question.<br></li><li><b>OBLIGATION</b>: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.<br></li><li><b>OBLIGATION</b>: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.<br></li></ul></li><li><b>OR</b><ul><li><b>OBLIGATION</b>: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.<br></li><li><b>OBLIGATION</b>: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available<br></li><li><b>OBLIGATION</b>: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.<br></li></ul></li></ul></li></ul><h4>Notices:</h4><ul><li><h5>Description:</h5><span>There is no guarantee.</span><h5>Content:</h5><span>the software is provided by the copyright holder &quot;as-is&quot; and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. The warranties include, but are not limited to, the implied warranties of commercial applicability, fitness for a particular purpose, and non-infringement.</span></li><li><h5>Content:</h5><span>The copyright holder may be liable for direct, indirect, and incidental damages arising from the use of the software, regardless of the cause of the damage, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if he or she has been advised of the possibility of such damages. in no event shall you be liable for any damages, incidental, special, exemplary, or consequential damages (including, but not limited to, compensation for procurement of substitute or substitute services, loss of use, loss of data, loss of profits, or business interruption) </span></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">hitachi:</span>TMate Open Source License</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>HitachiOpenLicense: </b>https://svnkit.com/license.html<span class="provided-by">(provided by: <span title="HitachiOpenLicense:0851c2042700f6e75dd3892432c19fab">[<a href="/fact/HitachiOpenLicense/0851c2042700f6e75dd3892432c19fab">HitachiOpenLicense</a>]</span>)</span></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The TMate Open Source License.
+
+This license applies to all portions of TMate SVNKit library, which 
+are not externally-maintained libraries (e.g. Ganymed SSH library).
+
+All the source code and compiled classes in package org.tigris.subversion.javahl
+except SvnClient class are covered by the license in JAVAHL-LICENSE file
+
+Copyright (c) 2004-2012 TMate Software. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, 
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, 
+      this list of conditions and the following disclaimer.
+      
+    * Redistributions in binary form must reproduce the above copyright notice, 
+      this list of conditions and the following disclaimer in the documentation 
+      and/or other materials provided with the distribution.
+      
+    * Redistributions in any form must be accompanied by information on how to 
+      obtain complete source code for the software that uses SVNKit and any 
+      accompanying software that uses the software that uses SVNKit. The source 
+      code must either be included in the distribution or be available for no 
+      more than the cost of distribution plus a nominal fee, and must be freely 
+      redistributable under reasonable conditions. For an executable file, complete 
+      source code means the source code for all modules it contains. It does not 
+      include source code for modules or files that typically accompany the major 
+      components of the operating system on which the executable file runs.
+      
+    * Redistribution in any form without redistributing source code for software 
+      that uses SVNKit is possible only when such redistribution is explictly permitted 
+      by TMate Software. Please, contact TMate Software at support@svnkit.com to 
+      get such permission.
+
+THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE 
+DISCLAIMED. 
+
+IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;hitachi:TMate Open Source License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HitachiOpenLicense&quot;,
+        &quot;0851c2042700f6e75dd3892432c19fab&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: &quot;The TMate Open Source License.\n\nThis license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2012 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HitachiOpenLicense&quot;,
+                    &quot;https://svnkit.com/license.html&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;content&quot;: &quot;The TMate Open Source License.\n\nThis license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2012 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;name&quot;: &quot;hitachi:TMate Open Source License&quot;,
+        &quot;notices&quot;: [
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;the software is provided by the copyright holder \&quot;as-is\&quot; and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. The warranties include, but are not limited to, the implied warranties of commercial applicability, fitness for a particular purpose, and non-infringement.&quot;,
+                    &quot;description&quot;: &quot;There is no guarantee.&quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            },
+            {
+                &quot;contents&quot;: {
+                    &quot;content&quot;: &quot;The copyright holder may be liable for direct, indirect, and incidental damages arising from the use of the software, regardless of the cause of the damage, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if he or she has been advised of the possibility of such damages. in no event shall you be liable for any damages, incidental, special, exemplary, or consequential damages (including, but not limited to, compensation for procurement of substitute or substitute services, loss of use, loss of data, loss of profits, or business interruption) &quot;
+                },
+                &quot;tag&quot;: &quot;Ol&quot;
+            }
+        ],
+        &quot;permissions&quot;: [
+            {
+                &quot;_str&quot;: &quot;Actions:\n- Ol Use the obtained source code without modification (Use the fetched code as it is.)\n- Ol Modify the obtained source code.\n- Ol Using Modified Source Code\n- Ol Use the retrieved binaries (Use the fetched binary as it is.)\n- Ol Use binaries generated from modified source code\n\nConditions: None\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Use the fetched binary as it is.&quot;,
+                            &quot;name&quot;: &quot;Use the retrieved binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Use binaries generated from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: null
+            },
+            {
+                &quot;_str&quot;: &quot;Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.\nActions:\n- Ol Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Ol Distribution of Modified Source Code\n\nConditions:\nAND\n  Ol OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OR\n    Ol OBLIGATION: Attach the source code of the software that uses the software in question.\n    Ol OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    Ol OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    Ol OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    Ol OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    Ol OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;name&quot;: &quot;Distribute the obtained source code without modification&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a copyright notice, list of terms and conditions, and disclaimer included in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;OR&quot;: [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Attach the source code of the software that uses the software in question.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                }
+                            ]
+                        },
+                        {
+                            &quot;OR&quot;: [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                }
+                            ]
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.&quot;
+            },
+            {
+                &quot;_str&quot;: &quot;Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.\nActions:\n- Ol Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Ol Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  Ol OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OR\n    Ol OBLIGATION: Attach the source code corresponding to the software in question.\n    Ol OBLIGATION: Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.\n  OR\n    Ol OBLIGATION: Attach the source code of the software that uses the software in question.\n    Ol OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    Ol OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    Ol OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    Ol OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    Ol OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n&quot;,
+                &quot;actions&quot;: [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;description&quot;: &quot;Redistribute the fetched binaries as they are&quot;,
+                            &quot;name&quot;: &quot;Distribute the fetched binaries&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    },
+                    {
+                        &quot;contents&quot;: {
+                            &quot;name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
+                        },
+                        &quot;tag&quot;: &quot;Ol&quot;
+                    }
+                ],
+                &quot;conditions&quot;: {
+                    &quot;AND&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;name&quot;: &quot;Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license&quot;,
+                                &quot;type&quot;: &quot;OBLIGATION&quot;
+                            },
+                            &quot;tag&quot;: &quot;Ol&quot;
+                        },
+                        {
+                            &quot;OR&quot;: [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Attach the source code corresponding to the software in question.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                }
+                            ]
+                        },
+                        {
+                            &quot;OR&quot;: [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Attach the source code of the software that uses the software in question.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                }
+                            ]
+                        },
+                        {
+                            &quot;OR&quot;: [
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                },
+                                {
+                                    &quot;contents&quot;: {
+                                        &quot;name&quot;: &quot;Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.&quot;,
+                                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                                    },
+                                    &quot;tag&quot;: &quot;Ol&quot;
+                                }
+                            ]
+                        }
+                    ]
+                },
+                &quot;description&quot;: &quot;The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.&quot;
+            }
+        ],
+        &quot;summary&quot;: &quot;https://svnkit.com/license.html&quot;
+    },
+    &quot;type&quot;: &quot;HitachiOpenLicense&quot;
+}</pre></details></li></ul></body></html>

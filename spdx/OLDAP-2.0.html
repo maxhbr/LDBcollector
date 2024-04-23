@@ -1,0 +1,1153 @@
+<html><head><title>ldbcollector: spdx:OLDAP-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:OLDAP-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-2.0</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP-2.0</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>OLDAP-2.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>OLDAP-2.0</span></li><li><span class="licensename"><span class="namespace">fossology:</span>OLDAP-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-2.0</span></li><li><span class="licensename">Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></li><li><span class="licensename">OpenLDAP Public License 2.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenLDAP Public License 2.0</span></li><li><span class="licensename">openldap-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openldap-2.0</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP</span></li><li><span class="licensename">OLDAP License, 2.0</span></li><li><span class="licensename">OLDAP License, Version 2.0</span></li><li><span class="licensename">OLDAP, 2.0</span></li><li><span class="licensename">OLDAP, Version 2.0</span></li><li><span class="licensename">The OpenLDAP Public License Version 2.0, 7 June 1999</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:76dcb10ee9f8d1f875cb7329765b5b76">[<a href="/fact/BlueOakCouncil/76dcb10ee9f8d1f875cb7329765b5b76">BlueOakCouncil</a>]</span><span title="ScancodeData:429f921af2a273e56f5902f7f7308d61">[<a href="/fact/ScancodeData/429f921af2a273e56f5902f7f7308d61">ScancodeData</a>]</span><span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span><span title="FOSSLight:5893596eedae6463b9d5021d3be79e34">[<a href="/fact/FOSSLight/5893596eedae6463b9d5021d3be79e34">FOSSLight</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b05fc8d20d3ff8eaba944f8666d73a6a">[<a href="/fact/SPDXLicense/b05fc8d20d3ff8eaba944f8666d73a6a">SPDXLicense</a>]</span><span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:76dcb10ee9f8d1f875cb7329765b5b76">[<a href="/fact/BlueOakCouncil/76dcb10ee9f8d1f875cb7329765b5b76">BlueOakCouncil</a>]</span>)</span></li><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fc08cfd1cb36104e035a7e8c9a7fc359">[<a href="/fact/OrtLicenseCategorization/fc08cfd1cb36104e035a7e8c9a7fc359">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fc08cfd1cb36104e035a7e8c9a7fc359">[<a href="/fact/OrtLicenseCategorization/fc08cfd1cb36104e035a7e8c9a7fc359">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was released 7 June 1999.<span class="provided-by">(provided by: <span title="SPDXLicense:b05fc8d20d3ff8eaba944f8666d73a6a">[<a href="/fact/SPDXLicense/b05fc8d20d3ff8eaba944f8666d73a6a">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Per SPDX.org, this license was released 7 June 1999.<span class="provided-by">(provided by: <span title="ScancodeData:429f921af2a273e56f5902f7f7308d61">[<a href="/fact/ScancodeData/429f921af2a273e56f5902f7f7308d61">ScancodeData</a>]</span>)</span></li><li><b>Fossology: </b>This license was released 7 June 1999.<span class="provided-by">(provided by: <span title="Fossology:8232d0d759f4da2f3d90fb1a3269750b">[<a href="/fact/Fossology/8232d0d759f4da2f3d90fb1a3269750b">Fossology</a>]</span>)</span></li><li><b>HermineLicense: </b>&quot;OLDAP-2.0&quot; is of radical: OLDAP<span class="provided-by">(provided by: <span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea</a></li><li><a href="https://spdx.org/licenses/OLDAP-2.0.html" target="_blank">https://spdx.org/licenses/OLDAP-2.0.html</a></li></ul><h3>Other Statements</h3><ul><li>http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+Version 2.0, 7 June 1999
+
+Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.
+
+Redistribution and use of this software and associated documentation (&quot;Software&quot;), with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. The name &quot;OpenLDAP&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.
+
+4. Products derived from this Software may not be called &quot;OpenLDAP&quot; nor may &quot;OpenLDAP&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.
+
+5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).
+
+THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The OpenLDAP Public License
+        &lt;br /&gt;
+
+Version 2.0, 7 June 1999
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use of this software and associated documentation (&amp;quot;Software&amp;quot;), with or without
+         modification, are permitted provided that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Redistributions of source code must retain copyright statements and notices. Redistributions must
+             also contain a copy of this document.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          The name &amp;quot;OpenLDAP&amp;quot; must not be used to endorse or promote products derived from this Software
+             without prior written permission of the OpenLDAP Foundation. For written permission, please
+             contact foundation@openldap.org.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          Products derived from this Software may not be called &amp;quot;OpenLDAP&amp;quot; nor may &amp;quot;OpenLDAP&amp;quot; appear in
+             their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a
+             registered trademark of the OpenLDAP Foundation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR
+         IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+         FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS
+         CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+         DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+         DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+         CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+         USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>The OpenLDAP Public License 
+
+Version 2.0, 7 June 1999 
+Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. 
+All Rights Reserved. 
+
+Redistribution and use of this software and associated documentation 
+(&quot;Software&quot;), with or without modification, are permitted provided 
+that the following conditions are met: 
+
+1. Redistributions of source code must retain copyright 
+statements and notices. Redistributions must also contain a 
+copy of this document. 
+
+2. Redistributions in binary form must reproduce the 
+above copyright notice, this list of conditions and the 
+following disclaimer in the documentation and/or other 
+materials provided with the distribution. 
+
+3. The name &quot;OpenLDAP&quot; must not be used to endorse or promote 
+products derived from this Software without prior written 
+permission of the OpenLDAP Foundation. For written permission, 
+please contact foundation@openldap.org. 
+
+4. Products derived from this Software may not be called &quot;OpenLDAP&quot; 
+nor may &quot;OpenLDAP&quot; appear in their names without prior written 
+permission of the OpenLDAP Foundation. OpenLDAP is a registered 
+trademark of the OpenLDAP Foundation. 
+
+5. Due credit should be given to the OpenLDAP Project 
+(http://www.openldap.org/). 
+
+THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS 
+``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT 
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL 
+THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+
+Version 2.0, 7 June 1999 Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.
+
+Redistribution and use of this software and associated documentation (&quot;Software&quot;), with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   3. The name &quot;OpenLDAP&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.
+
+   4. Products derived from this Software may not be called &quot;OpenLDAP&quot; nor may &quot;OpenLDAP&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.
+
+   5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).
+
+THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/b05fc8d20d3ff8eaba944f8666d73a6a">SPDXLicense:b05fc8d20d3ff8eaba944f8666d73a6a</a> for <a href="/?license=spdx:OLDAP-2.0"><span class="licensename"><span class="namespace">spdx:</span>OLDAP-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b05fc8d20d3ff8eaba944f8666d73a6a">[<a href="/fact/SPDXLicense/b05fc8d20d3ff8eaba944f8666d73a6a">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license was released 7 June 1999.<span class="provided-by">(provided by: <span title="SPDXLicense:b05fc8d20d3ff8eaba944f8666d73a6a">[<a href="/fact/SPDXLicense/b05fc8d20d3ff8eaba944f8666d73a6a">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+Version 2.0, 7 June 1999
+
+Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.
+
+Redistribution and use of this software and associated documentation (&quot;Software&quot;), with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. The name &quot;OpenLDAP&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.
+
+4. Products derived from this Software may not be called &quot;OpenLDAP&quot; nor may &quot;OpenLDAP&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.
+
+5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).
+
+THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The OpenLDAP Public License
+        &lt;br /&gt;
+
+Version 2.0, 7 June 1999
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use of this software and associated documentation (&amp;quot;Software&amp;quot;), with or without
+         modification, are permitted provided that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Redistributions of source code must retain copyright statements and notices. Redistributions must
+             also contain a copy of this document.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          The name &amp;quot;OpenLDAP&amp;quot; must not be used to endorse or promote products derived from this Software
+             without prior written permission of the OpenLDAP Foundation. For written permission, please
+             contact foundation@openldap.org.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          Products derived from this Software may not be called &amp;quot;OpenLDAP&amp;quot; nor may &amp;quot;OpenLDAP&amp;quot; appear in
+             their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a
+             registered trademark of the OpenLDAP Foundation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR
+         IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+         FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS
+         CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+         DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+         DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+         CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+         USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OLDAP-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;b05fc8d20d3ff8eaba944f8666d73a6a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license was released 7 June 1999.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The OpenLDAP Public License\nVersion 2.0, 7 June 1999\n\nCopyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.\n\nRedistribution and use of this software and associated documentation (\&quot;Software\&quot;), with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.\n\n4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; nor may \&quot;OpenLDAP\&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\n5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The OpenLDAP Public License\n        &lt;br /&gt;\n\nVersion 2.0, 7 June 1999\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use of this software and associated documentation (&amp;quot;Software&amp;quot;), with or without\n         modification, are permitted provided that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Redistributions of source code must retain copyright statements and notices. Redistributions must\n             also contain a copy of this document.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          The name &amp;quot;OpenLDAP&amp;quot; must not be used to endorse or promote products derived from this Software\n             without prior written permission of the OpenLDAP Foundation. For written permission, please\n             contact foundation@openldap.org.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          Products derived from this Software may not be called &amp;quot;OpenLDAP&amp;quot; nor may &amp;quot;OpenLDAP&amp;quot; appear in\n             their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a\n             registered trademark of the OpenLDAP Foundation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR\n         IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\n         FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS\n         CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n         DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n         DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n         CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\n         USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:08Z&quot;,
+                &quot;url&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license was released 7 June 1999.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:OLDAP-2.0&quot;,
+        &quot;licenseText&quot;: &quot;The OpenLDAP Public License\nVersion 2.0, 7 June 1999\n\nCopyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.\n\nRedistribution and use of this software and associated documentation (\&quot;Software\&quot;), with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.\n\n4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; nor may \&quot;OpenLDAP\&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\n5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The OpenLDAP Public License\n        &lt;br /&gt;\n\nVersion 2.0, 7 June 1999\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use of this software and associated documentation (&amp;quot;Software&amp;quot;), with or without\n         modification, are permitted provided that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Redistributions of source code must retain copyright statements and notices. Redistributions must\n             also contain a copy of this document.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          The name &amp;quot;OpenLDAP&amp;quot; must not be used to endorse or promote products derived from this Software\n             without prior written permission of the OpenLDAP Foundation. For written permission, please\n             contact foundation@openldap.org.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          Products derived from this Software may not be called &amp;quot;OpenLDAP&amp;quot; nor may &amp;quot;OpenLDAP&amp;quot; appear in\n             their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a\n             registered trademark of the OpenLDAP Foundation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&amp;apos;&amp;apos; AND ANY EXPRESSED OR\n         IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\n         FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS\n         CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n         DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\n         DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n         CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\n         USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The OpenLDAP Public License\n\nVersion 2.0, 7 June 1999\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use of this software and associated documentation (\&quot;Software\&quot;), with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Products derived from this Software may not be called \&quot;OpenLDAP\&quot; nor may \&quot;OpenLDAP\&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/76dcb10ee9f8d1f875cb7329765b5b76">BlueOakCouncil:76dcb10ee9f8d1f875cb7329765b5b76</a> for <a href="/?license=BlueOak:OLDAP-2.0"><span class="licensename"><span class="namespace">BlueOak:</span>OLDAP-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>OLDAP-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:76dcb10ee9f8d1f875cb7329765b5b76">[<a href="/fact/BlueOakCouncil/76dcb10ee9f8d1f875cb7329765b5b76">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:76dcb10ee9f8d1f875cb7329765b5b76">[<a href="/fact/BlueOakCouncil/76dcb10ee9f8d1f875cb7329765b5b76">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/OLDAP-2.0.html" target="_blank">https://spdx.org/licenses/OLDAP-2.0.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:OLDAP-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;76dcb10ee9f8d1f875cb7329765b5b76&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/OLDAP-2.0.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;OLDAP-2.0&quot;,
+                &quot;_name&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/OLDAP-2.0.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/429f921af2a273e56f5902f7f7308d61">ScancodeData:429f921af2a273e56f5902f7f7308d61</a> for <a href="/?license=scancode:openldap-2.0"><span class="licensename"><span class="namespace">scancode:</span>openldap-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>openldap-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">OpenLDAP Public License 2.0</span></li><li><span class="licensename">OpenLDAP Public License 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:429f921af2a273e56f5902f7f7308d61">[<a href="/fact/ScancodeData/429f921af2a273e56f5902f7f7308d61">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per SPDX.org, this license was released 7 June 1999.<span class="provided-by">(provided by: <span title="ScancodeData:429f921af2a273e56f5902f7f7308d61">[<a href="/fact/ScancodeData/429f921af2a273e56f5902f7f7308d61">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea</a></li></ul><h3>Other Statements</h3><ul><li>http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License 
+
+Version 2.0, 7 June 1999 
+Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. 
+All Rights Reserved. 
+
+Redistribution and use of this software and associated documentation 
+(&quot;Software&quot;), with or without modification, are permitted provided 
+that the following conditions are met: 
+
+1. Redistributions of source code must retain copyright 
+statements and notices. Redistributions must also contain a 
+copy of this document. 
+
+2. Redistributions in binary form must reproduce the 
+above copyright notice, this list of conditions and the 
+following disclaimer in the documentation and/or other 
+materials provided with the distribution. 
+
+3. The name &quot;OpenLDAP&quot; must not be used to endorse or promote 
+products derived from this Software without prior written 
+permission of the OpenLDAP Foundation. For written permission, 
+please contact foundation@openldap.org. 
+
+4. Products derived from this Software may not be called &quot;OpenLDAP&quot; 
+nor may &quot;OpenLDAP&quot; appear in their names without prior written 
+permission of the OpenLDAP Foundation. OpenLDAP is a registered 
+trademark of the OpenLDAP Foundation. 
+
+5. Due credit should be given to the OpenLDAP Project 
+(http://www.openldap.org/). 
+
+THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS 
+``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT 
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL 
+THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:openldap-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OpenLDAP Public License 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OpenLDAP Public License 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;429f921af2a273e56f5902f7f7308d61&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per SPDX.org, this license was released 7 June 1999.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The OpenLDAP Public License \n\nVersion 2.0, 7 June 1999 \nCopyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. \nAll Rights Reserved. \n\nRedistribution and use of this software and associated documentation \n(\&quot;Software\&quot;), with or without modification, are permitted provided \nthat the following conditions are met: \n\n1. Redistributions of source code must retain copyright \nstatements and notices. Redistributions must also contain a \ncopy of this document. \n\n2. Redistributions in binary form must reproduce the \nabove copyright notice, this list of conditions and the \nfollowing disclaimer in the documentation and/or other \nmaterials provided with the distribution. \n\n3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote \nproducts derived from this Software without prior written \npermission of the OpenLDAP Foundation. For written permission, \nplease contact foundation@openldap.org. \n\n4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; \nnor may \&quot;OpenLDAP\&quot; appear in their names without prior written \npermission of the OpenLDAP Foundation. OpenLDAP is a registered \ntrademark of the OpenLDAP Foundation. \n\n5. Due credit should be given to the OpenLDAP Project \n(http://www.openldap.org/). \n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS \n``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT \nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND \nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL \nTHE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, \nINDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR \nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) \nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, \nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) \nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED \nOF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;,
+        &quot;_key&quot;: &quot;openldap-2.0&quot;,
+        &quot;_name&quot;: &quot;OpenLDAP Public License 2.0&quot;,
+        &quot;_notes&quot;: &quot;Per SPDX.org, this license was released 7 June 1999.&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;OpenLDAP Foundation&quot;,
+        &quot;_shortName&quot;: &quot;OpenLDAP Public License 2.0&quot;,
+        &quot;_spdxId&quot;: &quot;OLDAP-2.0&quot;,
+        &quot;_text&quot;: &quot;The OpenLDAP Public License \n\nVersion 2.0, 7 June 1999 \nCopyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. \nAll Rights Reserved. \n\nRedistribution and use of this software and associated documentation \n(\&quot;Software\&quot;), with or without modification, are permitted provided \nthat the following conditions are met: \n\n1. Redistributions of source code must retain copyright \nstatements and notices. Redistributions must also contain a \ncopy of this document. \n\n2. Redistributions in binary form must reproduce the \nabove copyright notice, this list of conditions and the \nfollowing disclaimer in the documentation and/or other \nmaterials provided with the distribution. \n\n3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote \nproducts derived from this Software without prior written \npermission of the OpenLDAP Foundation. For written permission, \nplease contact foundation@openldap.org. \n\n4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; \nnor may \&quot;OpenLDAP\&quot; appear in their names without prior written \npermission of the OpenLDAP Foundation. OpenLDAP is a registered \ntrademark of the OpenLDAP Foundation. \n\n5. Due credit should be given to the OpenLDAP Project \n(http://www.openldap.org/). \n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS \n``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT \nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND \nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL \nTHE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, \nINDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR \nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) \nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, \nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) \nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED \nOF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/8232d0d759f4da2f3d90fb1a3269750b">Fossology:8232d0d759f4da2f3d90fb1a3269750b</a> for <a href="/?license=fossology:OLDAP-2.0"><span class="licensename"><span class="namespace">fossology:</span>OLDAP-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>OLDAP-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license was released 7 June 1999.<span class="provided-by">(provided by: <span title="Fossology:8232d0d759f4da2f3d90fb1a3269750b">[<a href="/fact/Fossology/8232d0d759f4da2f3d90fb1a3269750b">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The OpenLDAP Public License
+
+Version 2.0, 7 June 1999 Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.
+
+Redistribution and use of this software and associated documentation (&quot;Software&quot;), with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   3. The name &quot;OpenLDAP&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.
+
+   4. Products derived from this Software may not be called &quot;OpenLDAP&quot; nor may &quot;OpenLDAP&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.
+
+   5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).
+
+THIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:OLDAP-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;8232d0d759f4da2f3d90fb1a3269750b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license was released 7 June 1999.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The OpenLDAP Public License\n\nVersion 2.0, 7 June 1999 Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.\n\nRedistribution and use of this software and associated documentation (\&quot;Software\&quot;), with or without modification, are permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.\n\n   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.\n\n   4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; nor may \&quot;OpenLDAP\&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\n   5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+        &quot;_rf_notes&quot;: &quot;This license was released 7 June 1999.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:OLDAP-2.0&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;The OpenLDAP Public License\n\nVersion 2.0, 7 June 1999 Copyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.\n\nRedistribution and use of this software and associated documentation (\&quot;Software\&quot;), with or without modification, are permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.\n\n   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.\n\n   4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; nor may \&quot;OpenLDAP\&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\n   5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/fc08cfd1cb36104e035a7e8c9a7fc359">OrtLicenseCategorization:fc08cfd1cb36104e035a7e8c9a7fc359</a> for <a href="/?license=SPDX:OLDAP-2.0"><span class="licensename"><span class="namespace">SPDX:</span>OLDAP-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>OLDAP-2.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fc08cfd1cb36104e035a7e8c9a7fc359">[<a href="/fact/OrtLicenseCategorization/fc08cfd1cb36104e035a7e8c9a7fc359">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:fc08cfd1cb36104e035a7e8c9a7fc359">[<a href="/fact/OrtLicenseCategorization/fc08cfd1cb36104e035a7e8c9a7fc359">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:OLDAP-2.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;fc08cfd1cb36104e035a7e8c9a7fc359&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:OLDAP-2.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/292899c0a9a95294d0050431ba28986f">CavilLicenseChange:292899c0a9a95294d0050431ba28986f</a> for <a href="/?license=cavil:OLDAP-2.0"><span class="licensename"><span class="namespace">cavil:</span>OLDAP-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>OLDAP-2.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:OLDAP-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OLDAP-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;292899c0a9a95294d0050431ba28986f&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;OLDAP-2.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:OLDAP-2.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/8b144b5b99cc41d36f5322e59d615dc7">MetaeffektLicense:8b144b5b99cc41d36f5322e59d615dc7</a> for <a href="/?license=metaeffekt:OpenLDAP Public License 2.0"><span class="licensename"><span class="namespace">metaeffekt:</span>OpenLDAP Public License 2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>OpenLDAP Public License 2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-2.0</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP</span></li><li><span class="licensename">OLDAP License, 2.0</span></li><li><span class="licensename">OLDAP License, Version 2.0</span></li><li><span class="licensename">OLDAP, 2.0</span></li><li><span class="licensename">OLDAP, Version 2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>openldap-2.0</span></li><li><span class="licensename">The OpenLDAP Public License Version 2.0, 7 June 1999</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:OpenLDAP Public License 2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:OLDAP-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;OLDAP&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP, Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP, 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP License, Version 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;OLDAP License, 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;The OpenLDAP Public License Version 2.0, 7 June 1999&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:openldap-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;8b144b5b99cc41d36f5322e59d615dc7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;OLDAP, Version 2.0&quot;,
+            &quot;OLDAP, 2.0&quot;,
+            &quot;OLDAP License, Version 2.0&quot;,
+            &quot;OLDAP License, 2.0&quot;,
+            &quot;The OpenLDAP Public License Version 2.0, 7 June 1999&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:OpenLDAP Public License 2.0&quot;,
+        &quot;_category&quot;: &quot;OLDAP&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:openldap-2.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:OLDAP-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HermineData">HermineData</a>: <a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense:1060d2addf8d0091d36474226efe6ca3</a> for <a href="/?license=spdx:OLDAP-2.0"><span class="licensename"><span class="namespace">spdx:</span>OLDAP-2.0</span></a></h3><h4>Obligations</h4><ul><li><h5>License and notices in documentation</h5><pre>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).</pre><p><strong>License:</strong><ul><li>OLDAP-2.0</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Reproduce license and legal mentions in documentation</h5><p><strong>Description:</strong>Reproduce within the documentation the complete text of the licenses, copyright notices and other texts related to involved Intellectual Property.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Preserve License and notices in source code</h5><pre>1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.</pre><p><strong>License:</strong><ul><li>OLDAP-2.0</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Preserve legal mentions in source code</h5><p><strong>Description:</strong>Keep all legal notices and license texts intact in the Source Code, including in the headers.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>No use of names for endorsment</h5><pre>3. The name &quot;OpenLDAP&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.</pre><p><strong>License:</strong><ul><li>OLDAP-2.0</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Do not use project or contributor names for endorsement or promotion.</h5><p><strong>Description:</strong>Names of the project or associated persons (authors, contributors, etc.) are not to be used for commercial or promotional purposes.</p><p><strong>Metacategory:</strong>Communication constraints</p><p><strong>Passivity:</strong>Passive</p></li></ul></p><p><strong>Passivity:</strong>Passive</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Respect trademarks</h5><pre>4. Products derived from this Software may not be called &quot;OpenLDAP&quot; nor may &quot;OpenLDAP&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.</pre><p><strong>License:</strong><ul><li>OLDAP-2.0</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Respect trademarks</h5><p><strong>Description:</strong>Don’t use elements of the project that may be covered by Trademark Law (project name, logo) except as required for reasonable and customary use in describing the origin of the program.</p><p><strong>Metacategory:</strong>Communication constraints</p><p><strong>Passivity:</strong>Passive</p></li></ul></p><p><strong>Passivity:</strong>Passive</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>OLDAP-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">HermineLicense: <b style="color: green;">We consider it is FOSS</b></span><span class="provided-by">(provided by: <span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HermineLicense: </b>&quot;OLDAP-2.0&quot; is of radical: OLDAP<span class="provided-by">(provided by: <span title="HermineLicense:1060d2addf8d0091d36474226efe6ca3">[<a href="/fact/HermineLicense/1060d2addf8d0091d36474226efe6ca3">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea" target="_blank">http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:OLDAP-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HermineLicense&quot;,
+        &quot;1060d2addf8d0091d36474226efe6ca3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;HermineLicense&quot;,
+                        &quot;We consider it is FOSS&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;\&quot;OLDAP-2.0\&quot; is of radical: OLDAP&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;autoupgrade&quot;: null,
+        &quot;comment&quot;: &quot;&quot;,
+        &quot;copyleft&quot;: &quot;None&quot;,
+        &quot;ethical_clause&quot;: false,
+        &quot;foss&quot;: &quot;Yes&quot;,
+        &quot;fsf_approved&quot;: null,
+        &quot;inspiration_spdx&quot;: &quot;&quot;,
+        &quot;law_choice&quot;: &quot;&quot;,
+        &quot;license_version&quot;: &quot;2.0&quot;,
+        &quot;long_name&quot;: &quot;Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+        &quot;non_commercial&quot;: false,
+        &quot;non_tivoisation&quot;: false,
+        &quot;obligations&quot;: [
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Reproduce within the documentation the complete text of the licenses, copyright notices and other texts related to involved Intellectual Property.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Reproduce license and legal mentions in documentation&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-2.0&quot;
+                ],
+                &quot;name&quot;: &quot;License and notices in documentation&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\r\n\r\n5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Keep all legal notices and license texts intact in the Source Code, including in the headers.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Preserve legal mentions in source code&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-2.0&quot;
+                ],
+                &quot;name&quot;: &quot;Preserve License and notices in source code&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Names of the project or associated persons (authors, contributors, etc.) are not to be used for commercial or promotional purposes.&quot;,
+                        &quot;metacategory&quot;: &quot;Communication&quot;,
+                        &quot;name&quot;: &quot;Do not use project or contributor names for endorsement or promotion.&quot;,
+                        &quot;passivity&quot;: &quot;Passive&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-2.0&quot;
+                ],
+                &quot;name&quot;: &quot;No use of names for endorsment&quot;,
+                &quot;passivity&quot;: &quot;Passive&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Don’t use elements of the project that may be covered by Trademark Law (project name, logo) except as required for reasonable and customary use in describing the origin of the program.&quot;,
+                        &quot;metacategory&quot;: &quot;Communication&quot;,
+                        &quot;name&quot;: &quot;Respect trademarks&quot;,
+                        &quot;passivity&quot;: &quot;Passive&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;OLDAP-2.0&quot;
+                ],
+                &quot;name&quot;: &quot;Respect trademarks&quot;,
+                &quot;passivity&quot;: &quot;Passive&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; nor may \&quot;OpenLDAP\&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.&quot;
+            }
+        ],
+        &quot;osi_approved&quot;: false,
+        &quot;patent_grant&quot;: false,
+        &quot;radical&quot;: &quot;OLDAP&quot;,
+        &quot;spdx_id&quot;: &quot;OLDAP-2.0&quot;,
+        &quot;steward&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea&quot;,
+        &quot;verbatim&quot;: &quot;&quot;
+    },
+    &quot;type&quot;: &quot;HermineLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/5893596eedae6463b9d5021d3be79e34">FOSSLight:5893596eedae6463b9d5021d3be79e34</a> for <a href="/?license=fosslight:Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)"><span class="licensename"><span class="namespace">fosslight:</span>Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">OLDAP-2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:5893596eedae6463b9d5021d3be79e34">[<a href="/fact/FOSSLight/5893596eedae6463b9d5021d3be79e34">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;OLDAP-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;5893596eedae6463b9d5021d3be79e34&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;The OpenLDAP Public License\nVersion 2.0, 7 June 1999 \n\nCopyright 1999, The OpenLDAP Foundation, Redwood City, California, USA. All Rights Reserved.\n\nRedistribution and use of this software and associated documentation (\&quot;Software\&quot;), with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. The name \&quot;OpenLDAP\&quot; must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation. For written permission, please contact foundation@openldap.org.\n\n4. Products derived from this Software may not be called \&quot;OpenLDAP\&quot; nor may \&quot;OpenLDAP\&quot; appear in their names without prior written permission of the OpenLDAP Foundation. OpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\n5. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: null,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;OLDAP-2.0&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/OLDAP-2.0.html&quot;,
+            &quot;_fossLight_id&quot;: 102,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li></ul></body></html>

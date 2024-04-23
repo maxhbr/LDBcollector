@@ -1,0 +1,821 @@
+<html><head><title>ldbcollector: spdx:IEC-Code-Components-EULA</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:IEC-Code-Components-EULA</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>IEC-Code-Components-EULA</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">IEC    Code Components End-user licence agreement</span></li><li><span class="licensename">IEC CC EULA</span></li><li><span class="licensename">IEC Code Components End-user licence agreement</span></li><li><span class="licensename">IEC Code Components End-user License Agreement</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>IEC Code Components End-user License Agreement</span></li><li><span class="licensename">IEC-Code-Components-EULA</span></li><li><span class="licensename"><span class="namespace">cavil:</span>IEC-Code-Components-EULA</span></li><li><span class="licensename"><span class="namespace">scancode:</span>iec-code-components-eula</span></li><li><span class="licensename"><span class="namespace">spdx:</span>IEC-Code-Components-EULA</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">IEC Code Components EULA</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:2931987fee7537effc9bbca538173f1b">[<a href="/fact/ScancodeData/2931987fee7537effc9bbca538173f1b">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:213739c0558715df549619f0720f0086">[<a href="/fact/SPDXLicense/213739c0558715df549619f0720f0086">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:67b54e9e50421eb90b47eb474628d894">[<a href="/fact/OrtLicenseCategorization/67b54e9e50421eb90b47eb474628d894">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:67b54e9e50421eb90b47eb474628d894">[<a href="/fact/OrtLicenseCategorization/67b54e9e50421eb90b47eb474628d894">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.iec.ch/CCv1" target="_blank">https://www.iec.ch/CCv1</a></li><li><a href="https://www.iec.ch/copyright" target="_blank">https://www.iec.ch/copyright</a></li><li><a href="https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf" target="_blank">https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf</a></li></ul><h3>Other Statements</h3><ul><li>https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>IEC Code Components End-user licence agreement
+
+Code Components in IEC standards (International Standards, Technical Specifications or
+Technical Reports) which have been identified and approved for licensing, are licensed subject to
+the following conditions:
+
+- Redistributions of software must retain the Copyright Notice, this list of conditions and the
+disclaimer below (“Disclaimer”).
+- The software license extends to modifications permitted under the relevant IEC standard.
+- The software license extends to clarifications and corrections approved by IEC.
+- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or
+promote products derived from this software without specific prior written permission. The
+relevant IEC standard may be referenced when claiming compliance with the relevant IEC
+standard.
+- The user of Code Components shall attribute each such Code Component to IEC and identify
+the IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC
+[insert standard reference number:publication year] within modifications permitted in the
+relevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself
+or any other reasonable location.
+
+Code Components means components included in IEC standards that are intended to be directly
+processed by a computer and also includes any text found between the markers &lt;CODE
+BEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code
+Component.
+
+The Disclaimer is:
+EACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE
+COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; IEC Code Components End-user licence
+         agreement&lt;/var&gt;
+         &lt;p&gt;
+            Code Components in IEC standards (International Standards,
+            Technical Specifications or Technical Reports) which
+            have been identified and approved for licensing,
+            are licensed subject to the following conditions:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of software must retain the
+                  Copyright Notice, this list of conditions
+                  and the disclaimer below (&amp;quot;Disclaimer&amp;quot;).
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  The software license extends to modifications
+                  permitted under the relevant IEC standard.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  The software license extends to clarifications
+                  and corrections approved by IEC.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  Neither the name of IEC, nor the names of specific
+                  contributors, may be used to endorse or promote products
+                  derived from this software without specific prior written
+                  permission. The relevant IEC standard may be referenced
+                  when claiming compliance with the relevant IEC standard.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  The user of Code Components shall attribute each such Code
+                  Component to IEC and identify the IEC standard from which
+                  it is taken. Such attribution (e.g., &amp;quot;This code was derived
+                  from IEC [insert standard reference number:publication
+                  year] within modifications permitted in the relevant IEC
+                  standard. Please reproduce this note if possible.&amp;quot;), may be
+                  placed in the code itself or any other reasonable location.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            Code Components means components included in IEC standards
+            that are intended to be directly processed by a computer
+            and also includes any text found between the markers
+            &amp;lt;CODE BEGINS&amp;gt; and &amp;lt;CODE ENDS&amp;gt;, or otherwise
+            clearly labeled in this standard as a Code Component.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The Disclaimer is: EACH OF THE CODE COMPONENTS IS PROVIDED BY
+            THE COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS
+            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+            PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+            OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+            SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+            NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+            LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+            HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+            CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+            OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE
+            COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>IEC Code Components End-user licence agreement
+
+Code Components in IEC standards (International Standards, Technical Specifications or
+Technical Reports) which have been identified and approved for licensing, are licensed subject to
+the following conditions:
+
+- Redistributions of software must retain the Copyright Notice, this list of conditions and the
+disclaimer below (“Disclaimer”).
+- The software license extends to modifications permitted under the relevant IEC standard.
+- The software license extends to clarifications and corrections approved by IEC.
+- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or
+promote products derived from this software without specific prior written permission. The
+relevant IEC standard may be referenced when claiming compliance with the relevant IEC
+standard.
+- The user of Code Components shall attribute each such Code Component to IEC and identify
+the IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC
+[insert standard reference number:publication year] within modifications permitted in the
+relevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself
+or any other reasonable location.
+
+Code Components means components included in IEC standards that are intended to be directly
+processed by a computer and also includes any text found between the markers &lt;CODE
+BEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code
+Component.
+
+The Disclaimer is:
+EACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE
+COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/213739c0558715df549619f0720f0086">SPDXLicense:213739c0558715df549619f0720f0086</a> for <a href="/?license=spdx:IEC-Code-Components-EULA"><span class="licensename"><span class="namespace">spdx:</span>IEC-Code-Components-EULA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>IEC-Code-Components-EULA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">IEC    Code Components End-user licence agreement</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:213739c0558715df549619f0720f0086">[<a href="/fact/SPDXLicense/213739c0558715df549619f0720f0086">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.iec.ch/CCv1" target="_blank">https://www.iec.ch/CCv1</a></li><li><a href="https://www.iec.ch/copyright" target="_blank">https://www.iec.ch/copyright</a></li><li><a href="https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf" target="_blank">https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>IEC Code Components End-user licence agreement
+
+Code Components in IEC standards (International Standards, Technical Specifications or
+Technical Reports) which have been identified and approved for licensing, are licensed subject to
+the following conditions:
+
+- Redistributions of software must retain the Copyright Notice, this list of conditions and the
+disclaimer below (“Disclaimer”).
+- The software license extends to modifications permitted under the relevant IEC standard.
+- The software license extends to clarifications and corrections approved by IEC.
+- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or
+promote products derived from this software without specific prior written permission. The
+relevant IEC standard may be referenced when claiming compliance with the relevant IEC
+standard.
+- The user of Code Components shall attribute each such Code Component to IEC and identify
+the IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC
+[insert standard reference number:publication year] within modifications permitted in the
+relevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself
+or any other reasonable location.
+
+Code Components means components included in IEC standards that are intended to be directly
+processed by a computer and also includes any text found between the markers &lt;CODE
+BEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code
+Component.
+
+The Disclaimer is:
+EACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE
+COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;optional-license-text&quot;&gt; IEC Code Components End-user licence
+         agreement&lt;/var&gt;
+         &lt;p&gt;
+            Code Components in IEC standards (International Standards,
+            Technical Specifications or Technical Reports) which
+            have been identified and approved for licensing,
+            are licensed subject to the following conditions:
+         &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  Redistributions of software must retain the
+                  Copyright Notice, this list of conditions
+                  and the disclaimer below (&amp;quot;Disclaimer&amp;quot;).
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  The software license extends to modifications
+                  permitted under the relevant IEC standard.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  The software license extends to clarifications
+                  and corrections approved by IEC.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  Neither the name of IEC, nor the names of specific
+                  contributors, may be used to endorse or promote products
+                  derived from this software without specific prior written
+                  permission. The relevant IEC standard may be referenced
+                  when claiming compliance with the relevant IEC standard.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+            
+&lt;li&gt;
+               &lt;var class=&quot;replaceable-license-text&quot;&gt; -&lt;/var&gt;
+               &lt;p&gt;
+                  The user of Code Components shall attribute each such Code
+                  Component to IEC and identify the IEC standard from which
+                  it is taken. Such attribution (e.g., &amp;quot;This code was derived
+                  from IEC [insert standard reference number:publication
+                  year] within modifications permitted in the relevant IEC
+                  standard. Please reproduce this note if possible.&amp;quot;), may be
+                  placed in the code itself or any other reasonable location.
+               &lt;/p&gt;
+
+            &lt;/li&gt;
+         
+&lt;/ul&gt;
+         &lt;p&gt;
+            Code Components means components included in IEC standards
+            that are intended to be directly processed by a computer
+            and also includes any text found between the markers
+            &amp;lt;CODE BEGINS&amp;gt; and &amp;lt;CODE ENDS&amp;gt;, or otherwise
+            clearly labeled in this standard as a Code Component.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The Disclaimer is: EACH OF THE CODE COMPONENTS IS PROVIDED BY
+            THE COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS
+            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+            PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+            OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+            SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+            NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+            LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+            HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+            CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+            OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE
+            COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:IEC-Code-Components-EULA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;IEC    Code Components End-user licence agreement&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;213739c0558715df549619f0720f0086&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;IEC Code Components End-user licence agreement\n\nCode Components in IEC standards (International Standards, Technical Specifications or\nTechnical Reports) which have been identified and approved for licensing, are licensed subject to\nthe following conditions:\n\n- Redistributions of software must retain the Copyright Notice, this list of conditions and the\ndisclaimer below (“Disclaimer”).\n- The software license extends to modifications permitted under the relevant IEC standard.\n- The software license extends to clarifications and corrections approved by IEC.\n- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or\npromote products derived from this software without specific prior written permission. The\nrelevant IEC standard may be referenced when claiming compliance with the relevant IEC\nstandard.\n- The user of Code Components shall attribute each such Code Component to IEC and identify\nthe IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC\n[insert standard reference number:publication year] within modifications permitted in the\nrelevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself\nor any other reasonable location.\n\nCode Components means components included in IEC standards that are intended to be directly\nprocessed by a computer and also includes any text found between the markers &lt;CODE\nBEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code\nComponent.\n\nThe Disclaimer is:\nEACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND\nCONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT\nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\nPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER\nOR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE\nCOMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; IEC Code Components End-user licence\n         agreement&lt;/var&gt;\n         &lt;p&gt;\n            Code Components in IEC standards (International Standards,\n            Technical Specifications or Technical Reports) which\n            have been identified and approved for licensing,\n            are licensed subject to the following conditions:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of software must retain the\n                  Copyright Notice, this list of conditions\n                  and the disclaimer below (&amp;quot;Disclaimer&amp;quot;).\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  The software license extends to modifications\n                  permitted under the relevant IEC standard.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  The software license extends to clarifications\n                  and corrections approved by IEC.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  Neither the name of IEC, nor the names of specific\n                  contributors, may be used to endorse or promote products\n                  derived from this software without specific prior written\n                  permission. The relevant IEC standard may be referenced\n                  when claiming compliance with the relevant IEC standard.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  The user of Code Components shall attribute each such Code\n                  Component to IEC and identify the IEC standard from which\n                  it is taken. Such attribution (e.g., &amp;quot;This code was derived\n                  from IEC [insert standard reference number:publication\n                  year] within modifications permitted in the relevant IEC\n                  standard. Please reproduce this note if possible.&amp;quot;), may be\n                  placed in the code itself or any other reasonable location.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            Code Components means components included in IEC standards\n            that are intended to be directly processed by a computer\n            and also includes any text found between the markers\n            &amp;lt;CODE BEGINS&amp;gt; and &amp;lt;CODE ENDS&amp;gt;, or otherwise\n            clearly labeled in this standard as a Code Component.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The Disclaimer is: EACH OF THE CODE COMPONENTS IS PROVIDED BY\n            THE COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS\n            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n            PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER\n            OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n            SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n            NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n            LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n            HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n            CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\n            OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE\n            COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/CCv1&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/copyright&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/CCv1&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/copyright&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:11:46Z&quot;,
+                &quot;url&quot;: &quot;https://www.iec.ch/CCv1&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:11:47Z&quot;,
+                &quot;url&quot;: &quot;https://www.iec.ch/copyright&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:11:48Z&quot;,
+                &quot;url&quot;: &quot;https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:IEC-Code-Components-EULA&quot;,
+        &quot;licenseText&quot;: &quot;IEC Code Components End-user licence agreement\n\nCode Components in IEC standards (International Standards, Technical Specifications or\nTechnical Reports) which have been identified and approved for licensing, are licensed subject to\nthe following conditions:\n\n- Redistributions of software must retain the Copyright Notice, this list of conditions and the\ndisclaimer below (“Disclaimer”).\n- The software license extends to modifications permitted under the relevant IEC standard.\n- The software license extends to clarifications and corrections approved by IEC.\n- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or\npromote products derived from this software without specific prior written permission. The\nrelevant IEC standard may be referenced when claiming compliance with the relevant IEC\nstandard.\n- The user of Code Components shall attribute each such Code Component to IEC and identify\nthe IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC\n[insert standard reference number:publication year] within modifications permitted in the\nrelevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself\nor any other reasonable location.\n\nCode Components means components included in IEC standards that are intended to be directly\nprocessed by a computer and also includes any text found between the markers &lt;CODE\nBEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code\nComponent.\n\nThe Disclaimer is:\nEACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND\nCONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT\nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\nPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER\nOR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE\nCOMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; IEC Code Components End-user licence\n         agreement&lt;/var&gt;\n         &lt;p&gt;\n            Code Components in IEC standards (International Standards,\n            Technical Specifications or Technical Reports) which\n            have been identified and approved for licensing,\n            are licensed subject to the following conditions:\n         &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  Redistributions of software must retain the\n                  Copyright Notice, this list of conditions\n                  and the disclaimer below (&amp;quot;Disclaimer&amp;quot;).\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  The software license extends to modifications\n                  permitted under the relevant IEC standard.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  The software license extends to clarifications\n                  and corrections approved by IEC.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  Neither the name of IEC, nor the names of specific\n                  contributors, may be used to endorse or promote products\n                  derived from this software without specific prior written\n                  permission. The relevant IEC standard may be referenced\n                  when claiming compliance with the relevant IEC standard.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n            \n&lt;li&gt;\n               &lt;var class=\&quot;replaceable-license-text\&quot;&gt; -&lt;/var&gt;\n               &lt;p&gt;\n                  The user of Code Components shall attribute each such Code\n                  Component to IEC and identify the IEC standard from which\n                  it is taken. Such attribution (e.g., &amp;quot;This code was derived\n                  from IEC [insert standard reference number:publication\n                  year] within modifications permitted in the relevant IEC\n                  standard. Please reproduce this note if possible.&amp;quot;), may be\n                  placed in the code itself or any other reasonable location.\n               &lt;/p&gt;\n\n            &lt;/li&gt;\n         \n&lt;/ul&gt;\n         &lt;p&gt;\n            Code Components means components included in IEC standards\n            that are intended to be directly processed by a computer\n            and also includes any text found between the markers\n            &amp;lt;CODE BEGINS&amp;gt; and &amp;lt;CODE ENDS&amp;gt;, or otherwise\n            clearly labeled in this standard as a Code Component.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The Disclaimer is: EACH OF THE CODE COMPONENTS IS PROVIDED BY\n            THE COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS\n            OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n            PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER\n            OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\n            SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n            NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n            LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n            HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n            CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\n            OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE\n            COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;IEC    Code Components End-user licence agreement&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf&quot;,
+            &quot;https://www.iec.ch/CCv1&quot;,
+            &quot;https://www.iec.ch/copyright&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;IEC Code Components End-user licence agreement&lt;&lt;endOptional&gt;&gt;\n\nCode Components in IEC standards (International Standards, Technical Specifications or Technical Reports) which have been identified and approved for licensing, are licensed subject to the following conditions:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;-\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Redistributions of software must retain the Copyright Notice, this list of conditions and the disclaimer below (\&quot;Disclaimer\&quot;).\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;-\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   The software license extends to modifications permitted under the relevant IEC standard.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;-\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   The software license extends to clarifications and corrections approved by IEC.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;-\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   Neither the name of IEC, nor the names of specific contributors, may be used to endorse or promote products derived from this software without specific prior written permission. The relevant IEC standard may be referenced when claiming compliance with the relevant IEC standard.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;-\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt;\n\n   The user of Code Components shall attribute each such Code Component to IEC and identify the IEC standard from which it is taken. Such attribution (e.g., \&quot;This code was derived from IEC [insert standard reference number:publication year] within modifications permitted in the relevant IEC standard. Please reproduce this note if possible.\&quot;), may be placed in the code itself or any other reasonable location.\n\nCode Components means components included in IEC standards that are intended to be directly processed by a computer and also includes any text found between the markers &lt;CODE BEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code Component.\n\nThe Disclaimer is: EACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/2931987fee7537effc9bbca538173f1b">ScancodeData:2931987fee7537effc9bbca538173f1b</a> for <a href="/?license=scancode:iec-code-components-eula"><span class="licensename"><span class="namespace">scancode:</span>iec-code-components-eula</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>iec-code-components-eula</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">IEC CC EULA</span></li><li><span class="licensename">IEC Code Components End-user licence agreement</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:2931987fee7537effc9bbca538173f1b">[<a href="/fact/ScancodeData/2931987fee7537effc9bbca538173f1b">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.iec.ch/CCv1" target="_blank">https://www.iec.ch/CCv1</a></li><li><a href="https://www.iec.ch/copyright" target="_blank">https://www.iec.ch/copyright</a></li></ul><h3>Other Statements</h3><ul><li>https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>IEC Code Components End-user licence agreement
+
+Code Components in IEC standards (International Standards, Technical Specifications or
+Technical Reports) which have been identified and approved for licensing, are licensed subject to
+the following conditions:
+
+- Redistributions of software must retain the Copyright Notice, this list of conditions and the
+disclaimer below (“Disclaimer”).
+- The software license extends to modifications permitted under the relevant IEC standard.
+- The software license extends to clarifications and corrections approved by IEC.
+- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or
+promote products derived from this software without specific prior written permission. The
+relevant IEC standard may be referenced when claiming compliance with the relevant IEC
+standard.
+- The user of Code Components shall attribute each such Code Component to IEC and identify
+the IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC
+[insert standard reference number:publication year] within modifications permitted in the
+relevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself
+or any other reasonable location.
+
+Code Components means components included in IEC standards that are intended to be directly
+processed by a computer and also includes any text found between the markers &lt;CODE
+BEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code
+Component.
+
+The Disclaimer is:
+EACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE
+COMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:iec-code-components-eula&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;IEC CC EULA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;IEC Code Components End-user licence agreement&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;2931987fee7537effc9bbca538173f1b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/CCv1&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.iec.ch/copyright&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;IEC Code Components End-user licence agreement\n\nCode Components in IEC standards (International Standards, Technical Specifications or\nTechnical Reports) which have been identified and approved for licensing, are licensed subject to\nthe following conditions:\n\n- Redistributions of software must retain the Copyright Notice, this list of conditions and the\ndisclaimer below (“Disclaimer”).\n- The software license extends to modifications permitted under the relevant IEC standard.\n- The software license extends to clarifications and corrections approved by IEC.\n- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or\npromote products derived from this software without specific prior written permission. The\nrelevant IEC standard may be referenced when claiming compliance with the relevant IEC\nstandard.\n- The user of Code Components shall attribute each such Code Component to IEC and identify\nthe IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC\n[insert standard reference number:publication year] within modifications permitted in the\nrelevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself\nor any other reasonable location.\n\nCode Components means components included in IEC standards that are intended to be directly\nprocessed by a computer and also includes any text found between the markers &lt;CODE\nBEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code\nComponent.\n\nThe Disclaimer is:\nEACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND\nCONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT\nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\nPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER\nOR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE\nCOMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.iec.ch/webstore/custserv/pdf/CC-EULA.pdf&quot;,
+        &quot;_key&quot;: &quot;iec-code-components-eula&quot;,
+        &quot;_name&quot;: &quot;IEC Code Components End-user licence agreement&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://www.iec.ch/CCv1&quot;,
+            &quot;https://www.iec.ch/copyright&quot;
+        ],
+        &quot;_owner&quot;: &quot;IEC&quot;,
+        &quot;_shortName&quot;: &quot;IEC CC EULA&quot;,
+        &quot;_spdxId&quot;: &quot;IEC-Code-Components-EULA&quot;,
+        &quot;_text&quot;: &quot;IEC Code Components End-user licence agreement\n\nCode Components in IEC standards (International Standards, Technical Specifications or\nTechnical Reports) which have been identified and approved for licensing, are licensed subject to\nthe following conditions:\n\n- Redistributions of software must retain the Copyright Notice, this list of conditions and the\ndisclaimer below (“Disclaimer”).\n- The software license extends to modifications permitted under the relevant IEC standard.\n- The software license extends to clarifications and corrections approved by IEC.\n- Neither the name of IEC, nor the names of specific contributors, may be used to endorse or\npromote products derived from this software without specific prior written permission. The\nrelevant IEC standard may be referenced when claiming compliance with the relevant IEC\nstandard.\n- The user of Code Components shall attribute each such Code Component to IEC and identify\nthe IEC standard from which it is taken. Such attribution (e.g., “This code was derived from IEC\n[insert standard reference number:publication year] within modifications permitted in the\nrelevant IEC standard. Please reproduce this note if possible.”), may be placed in the code itself\nor any other reasonable location.\n\nCode Components means components included in IEC standards that are intended to be directly\nprocessed by a computer and also includes any text found between the markers &lt;CODE\nBEGINS&gt; and &lt;CODE ENDS&gt;, or otherwise clearly labeled in this standard as a Code\nComponent.\n\nThe Disclaimer is:\nEACH OF THE CODE COMPONENTS IS PROVIDED BY THE COPYRIGHT HOLDERS AND\nCONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT\nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\nPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER\nOR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE CODE\nCOMPONENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/67b54e9e50421eb90b47eb474628d894">OrtLicenseCategorization:67b54e9e50421eb90b47eb474628d894</a> for <a href="/?license=SPDX:IEC-Code-Components-EULA"><span class="licensename"><span class="namespace">SPDX:</span>IEC-Code-Components-EULA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>IEC-Code-Components-EULA</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:67b54e9e50421eb90b47eb474628d894">[<a href="/fact/OrtLicenseCategorization/67b54e9e50421eb90b47eb474628d894">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:67b54e9e50421eb90b47eb474628d894">[<a href="/fact/OrtLicenseCategorization/67b54e9e50421eb90b47eb474628d894">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:IEC-Code-Components-EULA&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;67b54e9e50421eb90b47eb474628d894&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:IEC-Code-Components-EULA&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/01c8245dca608e3d775b02c1d6650941">CavilLicenseChange:01c8245dca608e3d775b02c1d6650941</a> for <a href="/?license=cavil:IEC-Code-Components-EULA"><span class="licensename"><span class="namespace">cavil:</span>IEC-Code-Components-EULA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>IEC-Code-Components-EULA</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">IEC-Code-Components-EULA</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:IEC-Code-Components-EULA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;IEC-Code-Components-EULA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;01c8245dca608e3d775b02c1d6650941&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;IEC-Code-Components-EULA&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:IEC-Code-Components-EULA&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/ea8ebe2a00deade5467c553c360ffd69">MetaeffektLicense:ea8ebe2a00deade5467c553c360ffd69</a> for <a href="/?license=metaeffekt:IEC Code Components End-user License Agreement"><span class="licensename"><span class="namespace">metaeffekt:</span>IEC Code Components End-user License Agreement</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>IEC Code Components End-user License Agreement</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>IEC-Code-Components-EULA</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">IEC Code Components End-user licence agreement</span></li><li><span class="licensename">IEC Code Components End-user License Agreement</span></li><li><span class="licensename">IEC Code Components EULA</span></li><li><span class="licensename">IEC-Code-Components-EULA</span></li><li><span class="licensename"><span class="namespace">scancode:</span>iec-code-components-eula</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:IEC Code Components End-user License Agreement&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:IEC-Code-Components-EULA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;IEC Code Components EULA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;IEC-Code-Components-EULA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;IEC Code Components End-user licence agreement&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;IEC Code Components End-user License Agreement&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:iec-code-components-eula&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;ea8ebe2a00deade5467c553c360ffd69&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;IEC-Code-Components-EULA&quot;,
+            &quot;IEC Code Components End-user licence agreement&quot;,
+            &quot;IEC Code Components End-user License Agreement&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:IEC Code Components End-user License Agreement&quot;,
+        &quot;_category&quot;: &quot;IEC Code Components EULA&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:iec-code-components-eula&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:IEC-Code-Components-EULA&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,516 @@
+<html><head><title>ldbcollector: spdx:hdparm</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:hdparm</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>hdparm</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">hdparm</span></li><li><span class="licensename"><span class="namespace">cavil:</span>hdparm</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>hdparm</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hdparm</span></li><li><span class="licensename"><span class="namespace">spdx:</span>hdparm</span></li><li><span class="licensename">hdparm License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>PT-hdparm</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d4ef376db6913618a7fe96d4c3d6087c">[<a href="/fact/ScancodeData/d4ef376db6913618a7fe96d4c3d6087c">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:de02210ae70d42383915c7aed733a81d">[<a href="/fact/SPDXLicense/de02210ae70d42383915c7aed733a81d">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d49939c6b7abf1aa3bb3d8fa654f9e06">[<a href="/fact/FedoraEntry/d49939c6b7abf1aa3bb3d8fa654f9e06">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1f1fdf07e31720d1b9be03902f5396c5">[<a href="/fact/OrtLicenseCategorization/1f1fdf07e31720d1b9be03902f5396c5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1f1fdf07e31720d1b9be03902f5396c5">[<a href="/fact/OrtLicenseCategorization/1f1fdf07e31720d1b9be03902f5396c5">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT" target="_blank">https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>BSD-Style Open Source License:
+
+You may freely use, modify, and redistribute the hdparm program,
+as either binary or source, or both.
+
+The only condition is that my name and copyright notice
+remain in the source code as-is.
+
+Mark Lord (mlord@pobox.com)
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            BSD-Style Open Source License:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            You may freely use, modify, and redistribute the
+            hdparm program, as either binary or source, or both.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The only condition is that my name and copyright
+            notice remain in the source code as-is.
+         &lt;/p&gt;
+
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;
+            Mark Lord (mlord@pobox.com)
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li><li><details><summary>Text:</summary><pre>You may freely use, modify, and redistribute the hdparm program, as either
+binary or source, or both.
+
+The only condition is that my name and copyright notice remain in the source
+code as-is.
+
+Mark Lord (mlord@pobox.com)</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/de02210ae70d42383915c7aed733a81d">SPDXLicense:de02210ae70d42383915c7aed733a81d</a> for <a href="/?license=spdx:hdparm"><span class="licensename"><span class="namespace">spdx:</span>hdparm</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>hdparm</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">hdparm License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:de02210ae70d42383915c7aed733a81d">[<a href="/fact/SPDXLicense/de02210ae70d42383915c7aed733a81d">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT" target="_blank">https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>BSD-Style Open Source License:
+
+You may freely use, modify, and redistribute the hdparm program,
+as either binary or source, or both.
+
+The only condition is that my name and copyright notice
+remain in the source code as-is.
+
+Mark Lord (mlord@pobox.com)
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;p&gt;
+            BSD-Style Open Source License:
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            You may freely use, modify, and redistribute the
+            hdparm program, as either binary or source, or both.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            The only condition is that my name and copyright
+            notice remain in the source code as-is.
+         &lt;/p&gt;
+
+         &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;
+            Mark Lord (mlord@pobox.com)
+         &lt;/p&gt;
+
+         &lt;/div&gt;
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:hdparm&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;hdparm License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;de02210ae70d42383915c7aed733a81d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;BSD-Style Open Source License:\n\nYou may freely use, modify, and redistribute the hdparm program,\nas either binary or source, or both.\n\nThe only condition is that my name and copyright notice\nremain in the source code as-is.\n\nMark Lord (mlord@pobox.com)\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;p&gt;\n            BSD-Style Open Source License:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            You may freely use, modify, and redistribute the\n            hdparm program, as either binary or source, or both.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The only condition is that my name and copyright\n            notice remain in the source code as-is.\n         &lt;/p&gt;\n\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;\n            Mark Lord (mlord@pobox.com)\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:36Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:hdparm&quot;,
+        &quot;licenseText&quot;: &quot;BSD-Style Open Source License:\n\nYou may freely use, modify, and redistribute the hdparm program,\nas either binary or source, or both.\n\nThe only condition is that my name and copyright notice\nremain in the source code as-is.\n\nMark Lord (mlord@pobox.com)\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;p&gt;\n            BSD-Style Open Source License:\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            You may freely use, modify, and redistribute the\n            hdparm program, as either binary or source, or both.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            The only condition is that my name and copyright\n            notice remain in the source code as-is.\n         &lt;/p&gt;\n\n         &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;\n            Mark Lord (mlord@pobox.com)\n         &lt;/p&gt;\n\n         &lt;/div&gt;\n      &quot;,
+        &quot;name&quot;: &quot;hdparm License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;BSD-Style Open Source License:\n\nYou may freely use, modify, and redistribute the hdparm program, as either binary or source, or both.\n\nThe only condition is that my name and copyright notice remain in the source code as-is.\n\n&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Mark Lord (mlord@pobox.com)  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/d49939c6b7abf1aa3bb3d8fa654f9e06">FedoraEntry:d49939c6b7abf1aa3bb3d8fa654f9e06</a> for <a href="/?license=Fedora:hdparm"><span class="licensename"><span class="namespace">Fedora:</span>hdparm</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>hdparm</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>hdparm</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:d49939c6b7abf1aa3bb3d8fa654f9e06">[<a href="/fact/FedoraEntry/d49939c6b7abf1aa3bb3d8fa654f9e06">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:hdparm&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:hdparm&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;d49939c6b7abf1aa3bb3d8fa654f9e06&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;hdparm&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:hdparm&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/d4ef376db6913618a7fe96d4c3d6087c">ScancodeData:d4ef376db6913618a7fe96d4c3d6087c</a> for <a href="/?license=scancode:hdparm"><span class="licensename"><span class="namespace">scancode:</span>hdparm</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>hdparm</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">HDPARM License</span></li><li><span class="licensename">HDPARM License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:d4ef376db6913618a7fe96d4c3d6087c">[<a href="/fact/ScancodeData/d4ef376db6913618a7fe96d4c3d6087c">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT" target="_blank">https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>You may freely use, modify, and redistribute the hdparm program, as either
+binary or source, or both.
+
+The only condition is that my name and copyright notice remain in the source
+code as-is.
+
+Mark Lord (mlord@pobox.com)</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:hdparm&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HDPARM License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HDPARM License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;d4ef376db6913618a7fe96d4c3d6087c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;You may freely use, modify, and redistribute the hdparm program, as either\nbinary or source, or both.\n\nThe only condition is that my name and copyright notice remain in the source\ncode as-is.\n\nMark Lord (mlord@pobox.com)&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;hdparm&quot;,
+        &quot;_name&quot;: &quot;HDPARM License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/Distrotech/hdparm/blob/4517550db29a91420fb2b020349523b1b4512df2/LICENSE.TXT&quot;
+        ],
+        &quot;_owner&quot;: &quot;Mark Lord&quot;,
+        &quot;_shortName&quot;: &quot;HDPARM License&quot;,
+        &quot;_spdxId&quot;: &quot;hdparm&quot;,
+        &quot;_text&quot;: &quot;You may freely use, modify, and redistribute the hdparm program, as either\nbinary or source, or both.\n\nThe only condition is that my name and copyright notice remain in the source\ncode as-is.\n\nMark Lord (mlord@pobox.com)&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/1f1fdf07e31720d1b9be03902f5396c5">OrtLicenseCategorization:1f1fdf07e31720d1b9be03902f5396c5</a> for <a href="/?license=SPDX:hdparm"><span class="licensename"><span class="namespace">SPDX:</span>hdparm</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>hdparm</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1f1fdf07e31720d1b9be03902f5396c5">[<a href="/fact/OrtLicenseCategorization/1f1fdf07e31720d1b9be03902f5396c5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1f1fdf07e31720d1b9be03902f5396c5">[<a href="/fact/OrtLicenseCategorization/1f1fdf07e31720d1b9be03902f5396c5">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:hdparm&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;1f1fdf07e31720d1b9be03902f5396c5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:hdparm&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/daa4ac239e34925637acc8edfed7a7e7">CavilLicenseChange:daa4ac239e34925637acc8edfed7a7e7</a> for <a href="/?license=cavil:hdparm"><span class="licensename"><span class="namespace">cavil:</span>hdparm</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>hdparm</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">hdparm</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:hdparm&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;hdparm&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;daa4ac239e34925637acc8edfed7a7e7&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;hdparm&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:hdparm&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li></ul></body></html>

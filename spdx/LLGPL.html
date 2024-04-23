@@ -1,0 +1,461 @@
+<html><head><title>ldbcollector: spdx:LLGPL</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:LLGPL</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LLGPL</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Lisp Lesser General Public License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Lisp Lesser General Public License</span></li><li><span class="licensename">Lisp Lesser General Public License (LLPGL)</span></li><li><span class="licensename">LLGPL</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>LLGPL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>llgpl</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LLGPL</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Lisp Lesser General Public Licence)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:e5fdbccab3ff75f216683117f3264f91">[<a href="/fact/ScancodeData/e5fdbccab3ff75f216683117f3264f91">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:f5d7c65ab584ce5e49e758368fafa7d0">[<a href="/fact/FedoraEntry/f5d7c65ab584ce5e49e758368fafa7d0">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://opensource.franz.com/preamble.html" target="_blank">http://opensource.franz.com/preamble.html</a></li><li><a href="http://www.gnu.org/licenses/lgpl-2.1.txt" target="_blank">http://www.gnu.org/licenses/lgpl-2.1.txt</a></li><li><a href="https://github.com/franzinc" target="_blank">https://github.com/franzinc</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://opensource.franz.com/preamble.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The concept of the GNU Lesser General Public License version 2.1
+(&quot;LGPL&quot;) has been adopted to govern the use and distribution of above-
+mentioned application. However, the LGPL uses terminology that is more
+appropriate for a program written in C than one written in Lisp.
+Nevertheless, the LGPL can still be applied to a Lisp program if certain
+clarifications are made. This document details those clarifications.
+Accordingly, the license for the open-source Lisp applications consists
+of this document plus the LGPL. Wherever there is a conflict between
+this document and the LGPL, this document takes precedence over the
+LGPL.
+
+A &quot;Library&quot; in Lisp is a collection of Lisp functions, data and foreign
+modules. The form of the Library can be Lisp source code (for processing
+by an interpreter) or object code (usually the result of compilation of
+source code or built with some other mechanisms). Foreign modules are
+object code in a form that can be linked into a Lisp executable. When we
+speak of functions we do so in the most general way to include, in
+addition, methods and unnamed functions. Lisp &quot;data&quot; is also a general
+term that includes the data structures resulting from defining Lisp
+classes. A Lisp application may include the same set of Lisp objects as
+does a Library, but this does not mean that the application is
+necessarily a &quot;work based on the Library&quot; it contains.
+
+The Library consists of everything in the distribution file set before
+any modifications are made to the files. If any of the functions or
+classes in the Library are redefined in other files, then those
+redefinitions ARE considered a work based on the Library. If additional
+methods are added to generic functions in the Library, those additional
+methods are NOT considered a work based on the Library. If Library
+classes are subclassed, these subclasses are NOT considered a work based
+on the Library. If the Library is modified to explicitly call other
+functions that are neither part of Lisp itself nor an available add-on
+module to Lisp, then the functions called by the modified Library ARE
+considered a work based on the Library. The goal is to ensure that the
+Library will compile and run without getting undefined function errors.
+
+It is permitted to add proprietary source code to the Library, but it
+must be done in a way such that the Library will still run without that
+proprietary code present. Section 5 of the LGPL distinguishes between
+the case of a library being dynamically linked at runtime and one being
+statically linked at build time. Section 5 of the LGPL states that the
+former results in an executable that is a &quot;work that uses the Library.&quot;
+Section 5 of the LGPL states that the latter results in one that is a
+&quot;derivative of the Library&quot;, which is therefore covered by the LGPL.
+Since Lisp only offers one choice, which is to link the Library into an
+executable at build time, we declare that, for the purpose applying the
+LGPL to the Library, an executable that results from linking a &quot;work
+that uses the Library&quot; with the Library is considered a &quot;work that uses
+the Library&quot; and is therefore NOT covered by the LGPL.
+
+Because of this declaration, section 6 of LGPL is not applicable to the
+Library. However, in connection with each distribution of this
+executable, you must also deliver, in accordance with the terms and
+conditions of the LGPL, the source code of Library (or your derivative
+thereof) that is incorporated into this executable.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/f5d7c65ab584ce5e49e758368fafa7d0">FedoraEntry:f5d7c65ab584ce5e49e758368fafa7d0</a> for <a href="/?license=Fedora:LLGPL"><span class="licensename"><span class="namespace">Fedora:</span>LLGPL</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>LLGPL</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LLGPL</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">LLGPL</span></li><li><span class="licensename">LLGPL</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:f5d7c65ab584ce5e49e758368fafa7d0">[<a href="/fact/FedoraEntry/f5d7c65ab584ce5e49e758368fafa7d0">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://opensource.franz.com/preamble.html" target="_blank">http://opensource.franz.com/preamble.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:LLGPL&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:LLGPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LLGPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;LLGPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;f5d7c65ab584ce5e49e758368fafa7d0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://opensource.franz.com/preamble.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;LLGPL&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;LLGPL&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;LLGPL&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:LLGPL&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;http://opensource.franz.com/preamble.html&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e5fdbccab3ff75f216683117f3264f91">ScancodeData:e5fdbccab3ff75f216683117f3264f91</a> for <a href="/?license=scancode:llgpl"><span class="licensename"><span class="namespace">scancode:</span>llgpl</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>llgpl</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Lisp Lesser General Public License (LLPGL)</span></li><li><span class="licensename">LLGPL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:e5fdbccab3ff75f216683117f3264f91">[<a href="/fact/ScancodeData/e5fdbccab3ff75f216683117f3264f91">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.gnu.org/licenses/lgpl-2.1.txt" target="_blank">http://www.gnu.org/licenses/lgpl-2.1.txt</a></li><li><a href="https://github.com/franzinc" target="_blank">https://github.com/franzinc</a></li></ul><h3>Other Statements</h3><ul><li>http://opensource.franz.com/preamble.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The concept of the GNU Lesser General Public License version 2.1
+(&quot;LGPL&quot;) has been adopted to govern the use and distribution of above-
+mentioned application. However, the LGPL uses terminology that is more
+appropriate for a program written in C than one written in Lisp.
+Nevertheless, the LGPL can still be applied to a Lisp program if certain
+clarifications are made. This document details those clarifications.
+Accordingly, the license for the open-source Lisp applications consists
+of this document plus the LGPL. Wherever there is a conflict between
+this document and the LGPL, this document takes precedence over the
+LGPL.
+
+A &quot;Library&quot; in Lisp is a collection of Lisp functions, data and foreign
+modules. The form of the Library can be Lisp source code (for processing
+by an interpreter) or object code (usually the result of compilation of
+source code or built with some other mechanisms). Foreign modules are
+object code in a form that can be linked into a Lisp executable. When we
+speak of functions we do so in the most general way to include, in
+addition, methods and unnamed functions. Lisp &quot;data&quot; is also a general
+term that includes the data structures resulting from defining Lisp
+classes. A Lisp application may include the same set of Lisp objects as
+does a Library, but this does not mean that the application is
+necessarily a &quot;work based on the Library&quot; it contains.
+
+The Library consists of everything in the distribution file set before
+any modifications are made to the files. If any of the functions or
+classes in the Library are redefined in other files, then those
+redefinitions ARE considered a work based on the Library. If additional
+methods are added to generic functions in the Library, those additional
+methods are NOT considered a work based on the Library. If Library
+classes are subclassed, these subclasses are NOT considered a work based
+on the Library. If the Library is modified to explicitly call other
+functions that are neither part of Lisp itself nor an available add-on
+module to Lisp, then the functions called by the modified Library ARE
+considered a work based on the Library. The goal is to ensure that the
+Library will compile and run without getting undefined function errors.
+
+It is permitted to add proprietary source code to the Library, but it
+must be done in a way such that the Library will still run without that
+proprietary code present. Section 5 of the LGPL distinguishes between
+the case of a library being dynamically linked at runtime and one being
+statically linked at build time. Section 5 of the LGPL states that the
+former results in an executable that is a &quot;work that uses the Library.&quot;
+Section 5 of the LGPL states that the latter results in one that is a
+&quot;derivative of the Library&quot;, which is therefore covered by the LGPL.
+Since Lisp only offers one choice, which is to link the Library into an
+executable at build time, we declare that, for the purpose applying the
+LGPL to the Library, an executable that results from linking a &quot;work
+that uses the Library&quot; with the Library is considered a &quot;work that uses
+the Library&quot; and is therefore NOT covered by the LGPL.
+
+Because of this declaration, section 6 of LGPL is not applicable to the
+Library. However, in connection with each distribution of this
+executable, you must also deliver, in accordance with the terms and
+conditions of the LGPL, the source code of Library (or your derivative
+thereof) that is incorporated into this executable.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:llgpl&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LLGPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Lisp Lesser General Public License (LLPGL)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e5fdbccab3ff75f216683117f3264f91&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://opensource.franz.com/preamble.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/lgpl-2.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/franzinc&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The concept of the GNU Lesser General Public License version 2.1\n(\&quot;LGPL\&quot;) has been adopted to govern the use and distribution of above-\nmentioned application. However, the LGPL uses terminology that is more\nappropriate for a program written in C than one written in Lisp.\nNevertheless, the LGPL can still be applied to a Lisp program if certain\nclarifications are made. This document details those clarifications.\nAccordingly, the license for the open-source Lisp applications consists\nof this document plus the LGPL. Wherever there is a conflict between\nthis document and the LGPL, this document takes precedence over the\nLGPL.\n\nA \&quot;Library\&quot; in Lisp is a collection of Lisp functions, data and foreign\nmodules. The form of the Library can be Lisp source code (for processing\nby an interpreter) or object code (usually the result of compilation of\nsource code or built with some other mechanisms). Foreign modules are\nobject code in a form that can be linked into a Lisp executable. When we\nspeak of functions we do so in the most general way to include, in\naddition, methods and unnamed functions. Lisp \&quot;data\&quot; is also a general\nterm that includes the data structures resulting from defining Lisp\nclasses. A Lisp application may include the same set of Lisp objects as\ndoes a Library, but this does not mean that the application is\nnecessarily a \&quot;work based on the Library\&quot; it contains.\n\nThe Library consists of everything in the distribution file set before\nany modifications are made to the files. If any of the functions or\nclasses in the Library are redefined in other files, then those\nredefinitions ARE considered a work based on the Library. If additional\nmethods are added to generic functions in the Library, those additional\nmethods are NOT considered a work based on the Library. If Library\nclasses are subclassed, these subclasses are NOT considered a work based\non the Library. If the Library is modified to explicitly call other\nfunctions that are neither part of Lisp itself nor an available add-on\nmodule to Lisp, then the functions called by the modified Library ARE\nconsidered a work based on the Library. The goal is to ensure that the\nLibrary will compile and run without getting undefined function errors.\n\nIt is permitted to add proprietary source code to the Library, but it\nmust be done in a way such that the Library will still run without that\nproprietary code present. Section 5 of the LGPL distinguishes between\nthe case of a library being dynamically linked at runtime and one being\nstatically linked at build time. Section 5 of the LGPL states that the\nformer results in an executable that is a \&quot;work that uses the Library.\&quot;\nSection 5 of the LGPL states that the latter results in one that is a\n\&quot;derivative of the Library\&quot;, which is therefore covered by the LGPL.\nSince Lisp only offers one choice, which is to link the Library into an\nexecutable at build time, we declare that, for the purpose applying the\nLGPL to the Library, an executable that results from linking a \&quot;work\nthat uses the Library\&quot; with the Library is considered a \&quot;work that uses\nthe Library\&quot; and is therefore NOT covered by the LGPL.\n\nBecause of this declaration, section 6 of LGPL is not applicable to the\nLibrary. However, in connection with each distribution of this\nexecutable, you must also deliver, in accordance with the terms and\nconditions of the LGPL, the source code of Library (or your derivative\nthereof) that is incorporated into this executable.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://opensource.franz.com/preamble.html&quot;,
+        &quot;_key&quot;: &quot;llgpl&quot;,
+        &quot;_name&quot;: &quot;Lisp Lesser General Public License (LLPGL)&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.gnu.org/licenses/lgpl-2.1.txt&quot;,
+            &quot;https://github.com/franzinc&quot;
+        ],
+        &quot;_owner&quot;: &quot;Franz Inc&quot;,
+        &quot;_shortName&quot;: &quot;LLGPL&quot;,
+        &quot;_spdxId&quot;: &quot;LLGPL&quot;,
+        &quot;_text&quot;: &quot;The concept of the GNU Lesser General Public License version 2.1\n(\&quot;LGPL\&quot;) has been adopted to govern the use and distribution of above-\nmentioned application. However, the LGPL uses terminology that is more\nappropriate for a program written in C than one written in Lisp.\nNevertheless, the LGPL can still be applied to a Lisp program if certain\nclarifications are made. This document details those clarifications.\nAccordingly, the license for the open-source Lisp applications consists\nof this document plus the LGPL. Wherever there is a conflict between\nthis document and the LGPL, this document takes precedence over the\nLGPL.\n\nA \&quot;Library\&quot; in Lisp is a collection of Lisp functions, data and foreign\nmodules. The form of the Library can be Lisp source code (for processing\nby an interpreter) or object code (usually the result of compilation of\nsource code or built with some other mechanisms). Foreign modules are\nobject code in a form that can be linked into a Lisp executable. When we\nspeak of functions we do so in the most general way to include, in\naddition, methods and unnamed functions. Lisp \&quot;data\&quot; is also a general\nterm that includes the data structures resulting from defining Lisp\nclasses. A Lisp application may include the same set of Lisp objects as\ndoes a Library, but this does not mean that the application is\nnecessarily a \&quot;work based on the Library\&quot; it contains.\n\nThe Library consists of everything in the distribution file set before\nany modifications are made to the files. If any of the functions or\nclasses in the Library are redefined in other files, then those\nredefinitions ARE considered a work based on the Library. If additional\nmethods are added to generic functions in the Library, those additional\nmethods are NOT considered a work based on the Library. If Library\nclasses are subclassed, these subclasses are NOT considered a work based\non the Library. If the Library is modified to explicitly call other\nfunctions that are neither part of Lisp itself nor an available add-on\nmodule to Lisp, then the functions called by the modified Library ARE\nconsidered a work based on the Library. The goal is to ensure that the\nLibrary will compile and run without getting undefined function errors.\n\nIt is permitted to add proprietary source code to the Library, but it\nmust be done in a way such that the Library will still run without that\nproprietary code present. Section 5 of the LGPL distinguishes between\nthe case of a library being dynamically linked at runtime and one being\nstatically linked at build time. Section 5 of the LGPL states that the\nformer results in an executable that is a \&quot;work that uses the Library.\&quot;\nSection 5 of the LGPL states that the latter results in one that is a\n\&quot;derivative of the Library\&quot;, which is therefore covered by the LGPL.\nSince Lisp only offers one choice, which is to link the Library into an\nexecutable at build time, we declare that, for the purpose applying the\nLGPL to the Library, an executable that results from linking a \&quot;work\nthat uses the Library\&quot; with the Library is considered a \&quot;work that uses\nthe Library\&quot; and is therefore NOT covered by the LGPL.\n\nBecause of this declaration, section 6 of LGPL is not applicable to the\nLibrary. However, in connection with each distribution of this\nexecutable, you must also deliver, in accordance with the terms and\nconditions of the LGPL, the source code of Library (or your derivative\nthereof) that is incorporated into this executable.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/32bdc2d2aa78c858f9ec2fbef2f99483">MetaeffektLicense:32bdc2d2aa78c858f9ec2fbef2f99483</a> for <a href="/?license=metaeffekt:Lisp Lesser General Public License"><span class="licensename"><span class="namespace">metaeffekt:</span>Lisp Lesser General Public License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Lisp Lesser General Public License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LLGPL</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Lisp Lesser General Public Licence)</span></li><li><span class="licensename">Lisp Lesser General Public License</span></li><li><span class="licensename">LLGPL</span></li><li><span class="licensename"><span class="namespace">scancode:</span>llgpl</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Lisp Lesser General Public License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:LLGPL&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Lisp Lesser General Public License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Lisp Lesser General Public Licence)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;LLGPL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:llgpl&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;32bdc2d2aa78c858f9ec2fbef2f99483&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Lisp Lesser General Public Licence)&quot;,
+            &quot;LLGPL&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Lisp Lesser General Public License&quot;,
+        &quot;_category&quot;: &quot;Lisp Lesser General Public License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:llgpl&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:LLGPL&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

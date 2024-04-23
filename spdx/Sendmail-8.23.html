@@ -1,0 +1,1129 @@
+<html><head><title>ldbcollector: spdx:Sendmail-8.23</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Sendmail-8.23</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail License 8.23</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Sendmail License 8.23</span></li><li><span class="licensename">Sendmail-8.23</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Sendmail-8.23</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Sendmail-8.23</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Sendmail-8.23</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sendmail-8.23</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail</span></li><li><span class="licensename">Sendmail 8.23</span></li><li><span class="licensename">Sendmail License</span></li><li><span class="licensename">Sendmail, Version 8.23</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:99016e6dca767eb214a581854988a355">[<a href="/fact/ScancodeData/99016e6dca767eb214a581854988a355">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:5f34cd6a6879ac48c86be8784bb596f9">[<a href="/fact/SPDXLicense/5f34cd6a6879ac48c86be8784bb596f9">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:fa473d91e16c3393743429a4f73f53d9">[<a href="/fact/FedoraEntry/fa473d91e16c3393743429a4f73f53d9">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:87b75ea9ca6ebb5f877f1d51ea776e36">[<a href="/fact/OrtLicenseCategorization/87b75ea9ca6ebb5f877f1d51ea776e36">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:87b75ea9ca6ebb5f877f1d51ea776e36">[<a href="/fact/OrtLicenseCategorization/87b75ea9ca6ebb5f877f1d51ea776e36">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:87b75ea9ca6ebb5f877f1d51ea776e36">[<a href="/fact/OrtLicenseCategorization/87b75ea9ca6ebb5f877f1d51ea776e36">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.proofpoint.com/sites/default/files/sendmail-license.pdf" target="_blank">https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</a></li><li><a href="https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf" target="_blank">https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</a></li><li><a href="http://www.sendmail.org/ftp/LICENSE" target="_blank">http://www.sendmail.org/ftp/LICENSE</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>SENDMAIL LICENSE
+
+The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.
+
+License Terms:
+
+Use, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:
+
+1. Redistributions qualify as &quot;freeware&quot; or &quot;Open Source Software&quot; under one of the following terms:
+
+     (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.
+
+     (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution &quot;Source Code&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.
+
+2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.
+
+3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language:
+&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&quot;
+
+4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name &quot;sendmail&quot; is a trademark of Proofpoint, Inc.
+
+5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:
+
+     (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.
+
+     (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+          (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+          (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+          (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;SENDMAIL LICENSE&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The following license terms and conditions apply, unless a redistribution agreement or other license is
+         obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by
+         electronic mail at sendmail-license@proofpoint.com.&lt;/p&gt;
+
+         &lt;p&gt;License Terms:&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Use, Modification and Redistribution (including distribution of any modified or derived work) in source
+         and binary forms is permitted only if each of the following conditions is met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Redistributions qualify as &amp;quot;freeware&amp;quot; or &amp;quot;Open Source Software&amp;quot; under one of the following terms:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (a)&lt;/var&gt;
+          Redistributions are made at no charge beyond the reasonable cost of materials and delivery.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (b)&lt;/var&gt;
+          Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to
+             provide a copy of the Source Code for up to three years at the cost of materials and delivery.
+             Such redistributions must allow further use, modification, and redistribution of the Source
+             Code under substantially the same terms as this license. For the purposes of redistribution
+             &amp;quot;Source Code&amp;quot; means the complete compilable and linkable source code of sendmail and associated
+             libraries and utilities in the sendmail distribution including all modifications.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistributions of Source Code must retain the copyright notices as they appear in each Source
+             Code file, these license terms, and the disclaimer/limitation of liability set forth as
+             paragraph 6 below.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the
+             disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or
+             other materials provided with the distribution. For the purposes of binary distribution the
+             &amp;quot;Copyright Notice&amp;quot; refers to the following language:
+            &lt;br /&gt;
+
+   &amp;quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&amp;quot;
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          Neither the name of Proofpoint, Inc. nor the University of California nor names of their
+             contributors may be used to endorse or promote products derived from this software without
+             specific prior written permission. The name &amp;quot;sendmail&amp;quot; is a trademark of Proofpoint, Inc.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          All redistributions must comply with the conditions imposed by the University of California on
+             certain embedded code, which copyright Notice and conditions for redistribution are as
+             follows:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (a)&lt;/var&gt;
+          Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (b)&lt;/var&gt;
+          Redistribution and use in source and binary forms, with or without modification, are permitted
+             provided that the following conditions are met:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (i)&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the following disclaimer.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (ii)&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (iii)&lt;/var&gt;
+          Neither the name of the University nor the names of its contributors may be used to endorse or
+             promote products derived from this software without specific prior written permission.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS
+             &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+             WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+             SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE
+             FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+             BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+             PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+             CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+             OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>SENDMAIL LICENSE 
+The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com. 
+
+License Terms: 
+
+Use, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met: 
+
+1. Redistributions qualify as &quot;freeware&quot; or &quot;Open Source Software&quot; under one of the following terms:
+
+Redistributions are made at no charge beyond the reasonable cost ofmaterials and delivery.
+
+Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution &quot;Source Code&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications. 
+
+2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below. 
+
+3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&quot; 
+
+4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name &quot;sendmail&quot; is a trademark of Proofpoint, Inc. 
+
+5. All redistributions must comply with the conditions imposed by theUniversity of California on certain embedded code, which copyrightNotice and conditions for redistribution are as follows:
+
+(a) Copyright (c) 1988, 1993 The Regents of the University ofCalifornia. All rights reserved.
+
+(b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the abovec opyright notice, this list of conditions and the following 
+disclaimer in the documentation and/or other materials provided with the distribution.
+
+(c) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUTNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ONANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OFTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+
+$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1</pre></details></li><li><details><summary>Text:</summary><pre>SENDMAIL LICENSE The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.
+
+License Terms:
+
+Use, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:
+
+   1. Redistributions qualify as &quot;freeware&quot; or &quot;Open Source Software&quot; under one of the following terms:
+
+   (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.
+
+   (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution &quot;Source Code&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.
+
+   2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.
+
+   3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language:
+
+   &quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&quot;
+
+   4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name &quot;sendmail&quot; is a trademark of Proofpoint, Inc.
+
+   5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:
+
+   (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.
+
+   (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+   6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/5f34cd6a6879ac48c86be8784bb596f9">SPDXLicense:5f34cd6a6879ac48c86be8784bb596f9</a> for <a href="/?license=spdx:Sendmail-8.23"><span class="licensename"><span class="namespace">spdx:</span>Sendmail-8.23</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail License 8.23</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:5f34cd6a6879ac48c86be8784bb596f9">[<a href="/fact/SPDXLicense/5f34cd6a6879ac48c86be8784bb596f9">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.proofpoint.com/sites/default/files/sendmail-license.pdf" target="_blank">https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</a></li><li><a href="https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf" target="_blank">https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>SENDMAIL LICENSE
+
+The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.
+
+License Terms:
+
+Use, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:
+
+1. Redistributions qualify as &quot;freeware&quot; or &quot;Open Source Software&quot; under one of the following terms:
+
+     (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.
+
+     (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution &quot;Source Code&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.
+
+2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.
+
+3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language:
+&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&quot;
+
+4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name &quot;sendmail&quot; is a trademark of Proofpoint, Inc.
+
+5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:
+
+     (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.
+
+     (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+          (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+          (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+          (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;SENDMAIL LICENSE&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The following license terms and conditions apply, unless a redistribution agreement or other license is
+         obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by
+         electronic mail at sendmail-license@proofpoint.com.&lt;/p&gt;
+
+         &lt;p&gt;License Terms:&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Use, Modification and Redistribution (including distribution of any modified or derived work) in source
+         and binary forms is permitted only if each of the following conditions is met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          Redistributions qualify as &amp;quot;freeware&amp;quot; or &amp;quot;Open Source Software&amp;quot; under one of the following terms:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (a)&lt;/var&gt;
+          Redistributions are made at no charge beyond the reasonable cost of materials and delivery.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (b)&lt;/var&gt;
+          Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to
+             provide a copy of the Source Code for up to three years at the cost of materials and delivery.
+             Such redistributions must allow further use, modification, and redistribution of the Source
+             Code under substantially the same terms as this license. For the purposes of redistribution
+             &amp;quot;Source Code&amp;quot; means the complete compilable and linkable source code of sendmail and associated
+             libraries and utilities in the sendmail distribution including all modifications.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          Redistributions of Source Code must retain the copyright notices as they appear in each Source
+             Code file, these license terms, and the disclaimer/limitation of liability set forth as
+             paragraph 6 below.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the
+             disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or
+             other materials provided with the distribution. For the purposes of binary distribution the
+             &amp;quot;Copyright Notice&amp;quot; refers to the following language:
+            &lt;br /&gt;
+
+   &amp;quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&amp;quot;
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          Neither the name of Proofpoint, Inc. nor the University of California nor names of their
+             contributors may be used to endorse or promote products derived from this software without
+             specific prior written permission. The name &amp;quot;sendmail&amp;quot; is a trademark of Proofpoint, Inc.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          All redistributions must comply with the conditions imposed by the University of California on
+             certain embedded code, which copyright Notice and conditions for redistribution are as
+             follows:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (a)&lt;/var&gt;
+          Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (b)&lt;/var&gt;
+          Redistribution and use in source and binary forms, with or without modification, are permitted
+             provided that the following conditions are met:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (i)&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the following disclaimer.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (ii)&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (iii)&lt;/var&gt;
+          Neither the name of the University nor the names of its contributors may be used to endorse or
+             promote products derived from this software without specific prior written permission.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS
+             &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+             WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+             SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE
+             FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+             BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+             PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+             CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+             OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Sendmail-8.23&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail License 8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;5f34cd6a6879ac48c86be8784bb596f9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;SENDMAIL LICENSE\n\nThe following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.\n\nLicense Terms:\n\nUse, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:\n\n1. Redistributions qualify as \&quot;freeware\&quot; or \&quot;Open Source Software\&quot; under one of the following terms:\n\n     (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.\n\n     (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.\n\n2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.\n\n3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language:\n\&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.\&quot;\n\n4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name \&quot;sendmail\&quot; is a trademark of Proofpoint, Inc.\n\n5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:\n\n     (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.\n\n     (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n          (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n          (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n          (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;SENDMAIL LICENSE&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The following license terms and conditions apply, unless a redistribution agreement or other license is\n         obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by\n         electronic mail at sendmail-license@proofpoint.com.&lt;/p&gt;\n\n         &lt;p&gt;License Terms:&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Use, Modification and Redistribution (including distribution of any modified or derived work) in source\n         and binary forms is permitted only if each of the following conditions is met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Redistributions qualify as &amp;quot;freeware&amp;quot; or &amp;quot;Open Source Software&amp;quot; under one of the following terms:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (a)&lt;/var&gt;\n          Redistributions are made at no charge beyond the reasonable cost of materials and delivery.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (b)&lt;/var&gt;\n          Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to\n             provide a copy of the Source Code for up to three years at the cost of materials and delivery.\n             Such redistributions must allow further use, modification, and redistribution of the Source\n             Code under substantially the same terms as this license. For the purposes of redistribution\n             &amp;quot;Source Code&amp;quot; means the complete compilable and linkable source code of sendmail and associated\n             libraries and utilities in the sendmail distribution including all modifications.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistributions of Source Code must retain the copyright notices as they appear in each Source\n             Code file, these license terms, and the disclaimer/limitation of liability set forth as\n             paragraph 6 below.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the\n             disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or\n             other materials provided with the distribution. For the purposes of binary distribution the\n             &amp;quot;Copyright Notice&amp;quot; refers to the following language:\n            &lt;br /&gt;\n\n   &amp;quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&amp;quot;\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          Neither the name of Proofpoint, Inc. nor the University of California nor names of their\n             contributors may be used to endorse or promote products derived from this software without\n             specific prior written permission. The name &amp;quot;sendmail&amp;quot; is a trademark of Proofpoint, Inc.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          All redistributions must comply with the conditions imposed by the University of California on\n             certain embedded code, which copyright Notice and conditions for redistribution are as\n             follows:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (a)&lt;/var&gt;\n          Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (b)&lt;/var&gt;\n          Redistribution and use in source and binary forms, with or without modification, are permitted\n             provided that the following conditions are met:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (i)&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the following disclaimer.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (ii)&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (iii)&lt;/var&gt;\n          Neither the name of the University nor the names of its contributors may be used to endorse or\n             promote products derived from this software without specific prior written permission.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS\n             &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n             WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\n             SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE\n             FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\n             BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n             PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n             CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\n             OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:58Z&quot;,
+                &quot;url&quot;: &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            },
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: false,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:58Z&quot;,
+                &quot;url&quot;: &quot;https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:Sendmail-8.23&quot;,
+        &quot;licenseText&quot;: &quot;SENDMAIL LICENSE\n\nThe following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.\n\nLicense Terms:\n\nUse, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:\n\n1. Redistributions qualify as \&quot;freeware\&quot; or \&quot;Open Source Software\&quot; under one of the following terms:\n\n     (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.\n\n     (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.\n\n2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.\n\n3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language:\n\&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.\&quot;\n\n4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name \&quot;sendmail\&quot; is a trademark of Proofpoint, Inc.\n\n5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:\n\n     (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.\n\n     (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n          (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n          (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n          (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;SENDMAIL LICENSE&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The following license terms and conditions apply, unless a redistribution agreement or other license is\n         obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by\n         electronic mail at sendmail-license@proofpoint.com.&lt;/p&gt;\n\n         &lt;p&gt;License Terms:&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Use, Modification and Redistribution (including distribution of any modified or derived work) in source\n         and binary forms is permitted only if each of the following conditions is met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          Redistributions qualify as &amp;quot;freeware&amp;quot; or &amp;quot;Open Source Software&amp;quot; under one of the following terms:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (a)&lt;/var&gt;\n          Redistributions are made at no charge beyond the reasonable cost of materials and delivery.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (b)&lt;/var&gt;\n          Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to\n             provide a copy of the Source Code for up to three years at the cost of materials and delivery.\n             Such redistributions must allow further use, modification, and redistribution of the Source\n             Code under substantially the same terms as this license. For the purposes of redistribution\n             &amp;quot;Source Code&amp;quot; means the complete compilable and linkable source code of sendmail and associated\n             libraries and utilities in the sendmail distribution including all modifications.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          Redistributions of Source Code must retain the copyright notices as they appear in each Source\n             Code file, these license terms, and the disclaimer/limitation of liability set forth as\n             paragraph 6 below.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the\n             disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or\n             other materials provided with the distribution. For the purposes of binary distribution the\n             &amp;quot;Copyright Notice&amp;quot; refers to the following language:\n            &lt;br /&gt;\n\n   &amp;quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&amp;quot;\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          Neither the name of Proofpoint, Inc. nor the University of California nor names of their\n             contributors may be used to endorse or promote products derived from this software without\n             specific prior written permission. The name &amp;quot;sendmail&amp;quot; is a trademark of Proofpoint, Inc.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          All redistributions must comply with the conditions imposed by the University of California on\n             certain embedded code, which copyright Notice and conditions for redistribution are as\n             follows:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (a)&lt;/var&gt;\n          Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (b)&lt;/var&gt;\n          Redistribution and use in source and binary forms, with or without modification, are permitted\n             provided that the following conditions are met:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (i)&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the following disclaimer.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (ii)&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the following disclaimer in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (iii)&lt;/var&gt;\n          Neither the name of the University nor the names of its contributors may be used to endorse or\n             promote products derived from this software without specific prior written permission.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS\n             &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n             WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\n             SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE\n             FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\n             BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n             PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n             CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\n             OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Sendmail License 8.23&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;,
+            &quot;https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;SENDMAIL LICENSE\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.\n\nLicense Terms:\n\n&lt;&lt;endOptional&gt;&gt;\n\nUse, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions qualify as \&quot;freeware\&quot; or \&quot;Open Source Software\&quot; under one of the following terms:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions are made at no charge beyond the reasonable cost of materials and delivery.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language:\n\n   \&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.\&quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name \&quot;sendmail\&quot; is a trademark of Proofpoint, Inc.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(i)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(ii)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(iii)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&lt;&lt;beginOptional&gt;&gt; $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/fa473d91e16c3393743429a4f73f53d9">FedoraEntry:fa473d91e16c3393743429a4f73f53d9</a> for <a href="/?license=Fedora:Sendmail-8.23"><span class="licensename"><span class="namespace">Fedora:</span>Sendmail-8.23</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail</span></li><li><span class="licensename">Sendmail License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:fa473d91e16c3393743429a4f73f53d9">[<a href="/fact/FedoraEntry/fa473d91e16c3393743429a4f73f53d9">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.sendmail.org/ftp/LICENSE" target="_blank">http://www.sendmail.org/ftp/LICENSE</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Sendmail-8.23&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Sendmail-8.23&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;fa473d91e16c3393743429a4f73f53d9&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.sendmail.org/ftp/LICENSE&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Sendmail&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Sendmail License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Sendmail-8.23&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Sendmail-8.23&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;http://www.sendmail.org/ftp/LICENSE&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/99016e6dca767eb214a581854988a355">ScancodeData:99016e6dca767eb214a581854988a355</a> for <a href="/?license=scancode:sendmail-8.23"><span class="licensename"><span class="namespace">scancode:</span>sendmail-8.23</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>sendmail-8.23</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail License 8.23</span></li><li><span class="licensename">Sendmail License 8.23</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:99016e6dca767eb214a581854988a355">[<a href="/fact/ScancodeData/99016e6dca767eb214a581854988a355">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.proofpoint.com/sites/default/files/sendmail-license.pdf" target="_blank">https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</a></li><li><a href="https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf" target="_blank">https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</a></li></ul><h3>Other Statements</h3><ul><li>https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>SENDMAIL LICENSE 
+The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com. 
+
+License Terms: 
+
+Use, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met: 
+
+1. Redistributions qualify as &quot;freeware&quot; or &quot;Open Source Software&quot; under one of the following terms:
+
+Redistributions are made at no charge beyond the reasonable cost ofmaterials and delivery.
+
+Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution &quot;Source Code&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications. 
+
+2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below. 
+
+3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language: &quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&quot; 
+
+4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name &quot;sendmail&quot; is a trademark of Proofpoint, Inc. 
+
+5. All redistributions must comply with the conditions imposed by theUniversity of California on certain embedded code, which copyrightNotice and conditions for redistribution are as follows:
+
+(a) Copyright (c) 1988, 1993 The Regents of the University ofCalifornia. All rights reserved.
+
+(b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the abovec opyright notice, this list of conditions and the following 
+disclaimer in the documentation and/or other materials provided with the distribution.
+
+(c) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+
+6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUTNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ONANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OFTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+
+$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:sendmail-8.23&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail License 8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail License 8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;99016e6dca767eb214a581854988a355&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;SENDMAIL LICENSE \nThe following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com. \n\nLicense Terms: \n\nUse, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met: \n\n1. Redistributions qualify as \&quot;freeware\&quot; or \&quot;Open Source Software\&quot; under one of the following terms:\n\nRedistributions are made at no charge beyond the reasonable cost ofmaterials and delivery.\n\nRedistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications. \n\n2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below. \n\n3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.\&quot; \n\n4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name \&quot;sendmail\&quot; is a trademark of Proofpoint, Inc. \n\n5. All redistributions must comply with the conditions imposed by theUniversity of California on certain embedded code, which copyrightNotice and conditions for redistribution are as follows:\n\n(a) Copyright (c) 1988, 1993 The Regents of the University ofCalifornia. All rights reserved.\n\n(b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the abovec opyright notice, this list of conditions and the following \ndisclaimer in the documentation and/or other materials provided with the distribution.\n\n(c) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. \n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUTNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ONANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OFTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. \n\n$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;,
+        &quot;_key&quot;: &quot;sendmail-8.23&quot;,
+        &quot;_name&quot;: &quot;Sendmail License 8.23&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;,
+            &quot;https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+        ],
+        &quot;_owner&quot;: &quot;Sendmail&quot;,
+        &quot;_shortName&quot;: &quot;Sendmail License 8.23&quot;,
+        &quot;_spdxId&quot;: &quot;Sendmail-8.23&quot;,
+        &quot;_text&quot;: &quot;SENDMAIL LICENSE \nThe following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com. \n\nLicense Terms: \n\nUse, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met: \n\n1. Redistributions qualify as \&quot;freeware\&quot; or \&quot;Open Source Software\&quot; under one of the following terms:\n\nRedistributions are made at no charge beyond the reasonable cost ofmaterials and delivery.\n\nRedistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications. \n\n2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below. \n\n3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language: \&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.\&quot; \n\n4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name \&quot;sendmail\&quot; is a trademark of Proofpoint, Inc. \n\n5. All redistributions must comply with the conditions imposed by theUniversity of California on certain embedded code, which copyrightNotice and conditions for redistribution are as follows:\n\n(a) Copyright (c) 1988, 1993 The Regents of the University ofCalifornia. All rights reserved.\n\n(b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the abovec opyright notice, this list of conditions and the following \ndisclaimer in the documentation and/or other materials provided with the distribution.\n\n(c) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. \n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUTNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ONANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OFTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. \n\n$Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/036e2a8eaa6e0c6c11f5e05565b39ef0">Fossology:036e2a8eaa6e0c6c11f5e05565b39ef0</a> for <a href="/?license=fossology:Sendmail-8.23"><span class="licensename"><span class="namespace">fossology:</span>Sendmail-8.23</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail License 8.23</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://www.proofpoint.com/sites/default/files/sendmail-license.pdf" target="_blank">https://www.proofpoint.com/sites/default/files/sendmail-license.pdf</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>SENDMAIL LICENSE The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.
+
+License Terms:
+
+Use, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:
+
+   1. Redistributions qualify as &quot;freeware&quot; or &quot;Open Source Software&quot; under one of the following terms:
+
+   (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.
+
+   (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution &quot;Source Code&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.
+
+   2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.
+
+   3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the &quot;Copyright Notice&quot; refers to the following language:
+
+   &quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.&quot;
+
+   4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name &quot;sendmail&quot; is a trademark of Proofpoint, Inc.
+
+   5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:
+
+   (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.
+
+   (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+   6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Sendmail-8.23&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail License 8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;036e2a8eaa6e0c6c11f5e05565b39ef0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;SENDMAIL LICENSE The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.\n\nLicense Terms:\n\nUse, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:\n\n   1. Redistributions qualify as \&quot;freeware\&quot; or \&quot;Open Source Software\&quot; under one of the following terms:\n\n   (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.\n\n   (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.\n\n   2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.\n\n   3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language:\n\n   \&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.\&quot;\n\n   4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name \&quot;sendmail\&quot; is a trademark of Proofpoint, Inc.\n\n   5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:\n\n   (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.\n\n   (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n   6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Sendmail License 8.23&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Sendmail-8.23&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;SENDMAIL LICENSE The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com.\n\nLicense Terms:\n\nUse, Modification and Redistribution (including distribution of any modified or derived work) in source and binary forms is permitted only if each of the following conditions is met:\n\n   1. Redistributions qualify as \&quot;freeware\&quot; or \&quot;Open Source Software\&quot; under one of the following terms:\n\n   (a) Redistributions are made at no charge beyond the reasonable cost of materials and delivery.\n\n   (b) Redistributions are accompanied by a copy of the Source Code or by an irrevocable offer to provide a copy of the Source Code for up to three years at the cost of materials and delivery. Such redistributions must allow further use, modification, and redistribution of the Source Code under substantially the same terms as this license. For the purposes of redistribution \&quot;Source Code\&quot; means the complete compilable and linkable source code of sendmail and associated libraries and utilities in the sendmail distribution including all modifications.\n\n   2. Redistributions of Source Code must retain the copyright notices as they appear in each Source Code file, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below.\n\n   3. Redistributions in binary form must reproduce the Copyright Notice, these license terms, and the disclaimer/limitation of liability set forth as paragraph 6 below, in the documentation and/or other materials provided with the distribution. For the purposes of binary distribution the \&quot;Copyright Notice\&quot; refers to the following language:\n\n   \&quot;Copyright (c) 1998-2014 Proofpoint, Inc. All rights reserved.\&quot;\n\n   4. Neither the name of Proofpoint, Inc. nor the University of California nor names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. The name \&quot;sendmail\&quot; is a trademark of Proofpoint, Inc.\n\n   5. All redistributions must comply with the conditions imposed by the University of California on certain embedded code, which copyright Notice and conditions for redistribution are as follows:\n\n   (a) Copyright (c) 1988, 1993 The Regents of the University of California. All rights reserved.\n\n   (b) Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   (i) Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n   (ii) Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n   (iii) Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n   6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY SENDMAIL, INC. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document 139848.1&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://www.proofpoint.com/sites/default/files/sendmail-license.pdf&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/87b75ea9ca6ebb5f877f1d51ea776e36">OrtLicenseCategorization:87b75ea9ca6ebb5f877f1d51ea776e36</a> for <a href="/?license=SPDX:Sendmail-8.23"><span class="licensename"><span class="namespace">SPDX:</span>Sendmail-8.23</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Sendmail-8.23</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:87b75ea9ca6ebb5f877f1d51ea776e36">[<a href="/fact/OrtLicenseCategorization/87b75ea9ca6ebb5f877f1d51ea776e36">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:87b75ea9ca6ebb5f877f1d51ea776e36">[<a href="/fact/OrtLicenseCategorization/87b75ea9ca6ebb5f877f1d51ea776e36">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:87b75ea9ca6ebb5f877f1d51ea776e36">[<a href="/fact/OrtLicenseCategorization/87b75ea9ca6ebb5f877f1d51ea776e36">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Sendmail-8.23&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;87b75ea9ca6ebb5f877f1d51ea776e36&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Sendmail-8.23&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/97168be249466c925ba8b8c0a1b4f22c">CavilLicenseChange:97168be249466c925ba8b8c0a1b4f22c</a> for <a href="/?license=cavil:Sendmail-8.23"><span class="licensename"><span class="namespace">cavil:</span>Sendmail-8.23</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail-8.23</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Sendmail-8.23&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail-8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;97168be249466c925ba8b8c0a1b4f22c&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;Sendmail-8.23&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Sendmail-8.23&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/6cb5381f1834e8e58422f503dc5ded05">MetaeffektLicense:6cb5381f1834e8e58422f503dc5ded05</a> for <a href="/?license=metaeffekt:Sendmail License 8.23"><span class="licensename"><span class="namespace">metaeffekt:</span>Sendmail License 8.23</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Sendmail License 8.23</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Sendmail-8.23</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Sendmail</span></li><li><span class="licensename">Sendmail 8.23</span></li><li><span class="licensename">Sendmail, Version 8.23</span></li><li><span class="licensename"><span class="namespace">scancode:</span>sendmail-8.23</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Sendmail License 8.23&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Sendmail-8.23&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Sendmail&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail, Version 8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Sendmail 8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:sendmail-8.23&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;6cb5381f1834e8e58422f503dc5ded05&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Sendmail, Version 8.23&quot;,
+            &quot;Sendmail 8.23&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Sendmail License 8.23&quot;,
+        &quot;_category&quot;: &quot;Sendmail&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:sendmail-8.23&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Sendmail-8.23&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,789 @@
+<html><head><title>ldbcollector: spdx:CDLA-Permissive-2.0</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:CDLA-Permissive-2.0</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CDLA-Permissive-2.0</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">CDLA Permissive 2.0</span></li><li><span class="licensename">CDLA-Permissive-2.0</span></li><li><span class="licensename"><span class="namespace">cavil:</span>CDLA-Permissive-2.0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cdla-permissive-2.0</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CDLA-Permissive-2.0</span></li><li><span class="licensename">Community Data License Agreement Permissive 2.0</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Community Data License Agreement Permissive 2.0</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//cdla.dev/permissive-2-0</span></li><li><span class="licensename">Community Data License Agreement Permissive</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:023c43c7bb6652291e654d6603c9d86c">[<a href="/fact/ScancodeData/023c43c7bb6652291e654d6603c9d86c">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e66fcb206b121c0204e666f60d9088c5">[<a href="/fact/SPDXLicense/e66fcb206b121c0204e666f60d9088c5">SPDXLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:643404c6361682ed97447a50035911a3">[<a href="/fact/OrtLicenseCategorization/643404c6361682ed97447a50035911a3">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:643404c6361682ed97447a50035911a3">[<a href="/fact/OrtLicenseCategorization/643404c6361682ed97447a50035911a3">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://cdla.dev/permissive-2-0" target="_blank">https://cdla.dev/permissive-2-0</a></li><li><a href="https://raw.githubusercontent.com/Community-Data-License-Agreements/Releases/main/CDLA-Permissive-2.0.txt" target="_blank">https://raw.githubusercontent.com/Community-Data-License-Agreements/Releases/main/CDLA-Permissive-2.0.txt</a></li></ul><h3>Other Statements</h3><ul><li>https://cdla.dev/permissive-2-0/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Community Data License Agreement - Permissive - Version 2.0
+
+This is the Community Data License Agreement - Permissive, Version 2.0 (the &quot;agreement&quot;). Data Provider(s) and Data Recipient(s) agree as follows:
+
+1. Provision of the Data
+
+1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.
+
+1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.
+
+2. Conditions for Sharing Data
+
+2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.
+
+3. No Restrictions on Results
+
+3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.
+
+4. No Warranty; Limitation of Liability
+
+4.1. All Data Recipients receive the Data subject to the following terms:
+
+THE DATA IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+5. Definitions
+
+5.1. &quot;Data&quot; means the material received by a Data Recipient under this agreement.
+
+5.2. &quot;Data Provider&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.
+
+5.3. &quot;Data Recipient&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.
+
+5.4. &quot;Results&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;optional-license-text&quot;&gt; 
+                &lt;p&gt;Community Data License Agreement - Permissive - Version 2.0&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;p&gt;This is the Community Data License Agreement - Permissive, Version 2.0 (the &amp;quot;agreement&amp;quot;). Data Provider(s) and Data Recipient(s) agree as follows:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+                    Provision of the Data
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.1.&lt;/var&gt;
+                            A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.2.&lt;/var&gt;
+                            This agreement does not impose any restriction on a Data Recipient&amp;apos;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+                    Conditions for Sharing Data
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.1.&lt;/var&gt;
+                            A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+                    No Restrictions on Results
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.1.&lt;/var&gt;
+                            This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+                    No Warranty; Limitation of Liability
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.1.&lt;/var&gt;
+                            All Data Recipients receive the Data subject to the following terms:
+                            &lt;p&gt;THE DATA IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+                            &lt;p&gt;NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&lt;/p&gt;
+
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+                    Definitions
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.1.&lt;/var&gt;
+                            &amp;quot;Data&amp;quot; means the material received by a Data Recipient under this agreement.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.2.&lt;/var&gt;
+                            &amp;quot;Data Provider&amp;quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&amp;apos;s agreement to its terms.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.3.&lt;/var&gt;
+                            &amp;quot;Data Recipient&amp;quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.4.&lt;/var&gt;
+                            &amp;quot;Results&amp;quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&amp;apos; insights.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+        </pre></details></li><li><details><summary>Text:</summary><pre>Community Data License Agreement - Permissive - Version 2.0
+
+This is the Community Data License Agreement - Permissive, Version 2.0 (the &quot;agreement&quot;). Data Provider(s) and Data Recipient(s) agree as follows:
+
+1. Provision of the Data
+
+1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.
+
+1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.
+
+2. Conditions for Sharing Data
+
+2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.
+
+3. No Restrictions on Results
+
+3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.
+
+4. No Warranty; Limitation of Liability
+
+4.1. All Data Recipients receive the Data subject to the following terms:
+
+THE DATA IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+5. Definitions
+
+5.1. &quot;Data&quot; means the material received by a Data Recipient under this agreement.
+
+5.2. &quot;Data Provider&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.
+
+5.3. &quot;Data Recipient&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.
+
+5.4. &quot;Results&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e66fcb206b121c0204e666f60d9088c5">SPDXLicense:e66fcb206b121c0204e666f60d9088c5</a> for <a href="/?license=spdx:CDLA-Permissive-2.0"><span class="licensename"><span class="namespace">spdx:</span>CDLA-Permissive-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CDLA-Permissive-2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Community Data License Agreement Permissive 2.0</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e66fcb206b121c0204e666f60d9088c5">[<a href="/fact/SPDXLicense/e66fcb206b121c0204e666f60d9088c5">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://cdla.dev/permissive-2-0" target="_blank">https://cdla.dev/permissive-2-0</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Community Data License Agreement - Permissive - Version 2.0
+
+This is the Community Data License Agreement - Permissive, Version 2.0 (the &quot;agreement&quot;). Data Provider(s) and Data Recipient(s) agree as follows:
+
+1. Provision of the Data
+
+1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.
+
+1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.
+
+2. Conditions for Sharing Data
+
+2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.
+
+3. No Restrictions on Results
+
+3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.
+
+4. No Warranty; Limitation of Liability
+
+4.1. All Data Recipients receive the Data subject to the following terms:
+
+THE DATA IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+5. Definitions
+
+5.1. &quot;Data&quot; means the material received by a Data Recipient under this agreement.
+
+5.2. &quot;Data Provider&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.
+
+5.3. &quot;Data Recipient&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.
+
+5.4. &quot;Results&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;optional-license-text&quot;&gt; 
+                &lt;p&gt;Community Data License Agreement - Permissive - Version 2.0&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;p&gt;This is the Community Data License Agreement - Permissive, Version 2.0 (the &amp;quot;agreement&amp;quot;). Data Provider(s) and Data Recipient(s) agree as follows:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+                    Provision of the Data
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.1.&lt;/var&gt;
+                            A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.2.&lt;/var&gt;
+                            This agreement does not impose any restriction on a Data Recipient&amp;apos;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+                    Conditions for Sharing Data
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.1.&lt;/var&gt;
+                            A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+                    No Restrictions on Results
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.1.&lt;/var&gt;
+                            This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+                    No Warranty; Limitation of Liability
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.1.&lt;/var&gt;
+                            All Data Recipients receive the Data subject to the following terms:
+                            &lt;p&gt;THE DATA IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;
+
+                            &lt;p&gt;NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&lt;/p&gt;
+
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+                
+&lt;li&gt;
+                    &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+                    Definitions
+                    
+&lt;ul style=&quot;list-style:none&quot;&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.1.&lt;/var&gt;
+                            &amp;quot;Data&amp;quot; means the material received by a Data Recipient under this agreement.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.2.&lt;/var&gt;
+                            &amp;quot;Data Provider&amp;quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&amp;apos;s agreement to its terms.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.3.&lt;/var&gt;
+                            &amp;quot;Data Recipient&amp;quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.
+                        &lt;/li&gt;
+                        
+&lt;li&gt;
+                            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.4.&lt;/var&gt;
+                            &amp;quot;Results&amp;quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&amp;apos; insights.
+                        &lt;/li&gt;
+                    
+&lt;/ul&gt;
+                &lt;/li&gt;
+            
+&lt;/ul&gt;
+        </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:CDLA-Permissive-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Community Data License Agreement Permissive 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e66fcb206b121c0204e666f60d9088c5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Community Data License Agreement - Permissive - Version 2.0\n\nThis is the Community Data License Agreement - Permissive, Version 2.0 (the \&quot;agreement\&quot;). Data Provider(s) and Data Recipient(s) agree as follows:\n\n1. Provision of the Data\n\n1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.\n\n1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.\n\n2. Conditions for Sharing Data\n\n2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.\n\n3. No Restrictions on Results\n\n3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.\n\n4. No Warranty; Limitation of Liability\n\n4.1. All Data Recipients receive the Data subject to the following terms:\n\nTHE DATA IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nNO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n5. Definitions\n\n5.1. \&quot;Data\&quot; means the material received by a Data Recipient under this agreement.\n\n5.2. \&quot;Data Provider\&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.\n\n5.3. \&quot;Data Recipient\&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.\n\n5.4. \&quot;Results\&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n            &lt;div class=\&quot;optional-license-text\&quot;&gt; \n                &lt;p&gt;Community Data License Agreement - Permissive - Version 2.0&lt;/p&gt;\n\n            &lt;/div&gt;\n\n            &lt;p&gt;This is the Community Data License Agreement - Permissive, Version 2.0 (the &amp;quot;agreement&amp;quot;). Data Provider(s) and Data Recipient(s) agree as follows:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n                    Provision of the Data\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.1.&lt;/var&gt;\n                            A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.2.&lt;/var&gt;\n                            This agreement does not impose any restriction on a Data Recipient&amp;apos;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n                    Conditions for Sharing Data\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.1.&lt;/var&gt;\n                            A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n                    No Restrictions on Results\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.1.&lt;/var&gt;\n                            This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n                    No Warranty; Limitation of Liability\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.1.&lt;/var&gt;\n                            All Data Recipients receive the Data subject to the following terms:\n                            &lt;p&gt;THE DATA IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n                            &lt;p&gt;NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&lt;/p&gt;\n\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n                    Definitions\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.1.&lt;/var&gt;\n                            &amp;quot;Data&amp;quot; means the material received by a Data Recipient under this agreement.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.2.&lt;/var&gt;\n                            &amp;quot;Data Provider&amp;quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&amp;apos;s agreement to its terms.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.3.&lt;/var&gt;\n                            &amp;quot;Data Recipient&amp;quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.4.&lt;/var&gt;\n                            &amp;quot;Results&amp;quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&amp;apos; insights.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://cdla.dev/permissive-2-0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://cdla.dev/permissive-2-0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:17Z&quot;,
+                &quot;url&quot;: &quot;https://cdla.dev/permissive-2-0&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:CDLA-Permissive-2.0&quot;,
+        &quot;licenseText&quot;: &quot;Community Data License Agreement - Permissive - Version 2.0\n\nThis is the Community Data License Agreement - Permissive, Version 2.0 (the \&quot;agreement\&quot;). Data Provider(s) and Data Recipient(s) agree as follows:\n\n1. Provision of the Data\n\n1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.\n\n1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.\n\n2. Conditions for Sharing Data\n\n2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.\n\n3. No Restrictions on Results\n\n3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.\n\n4. No Warranty; Limitation of Liability\n\n4.1. All Data Recipients receive the Data subject to the following terms:\n\nTHE DATA IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nNO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n5. Definitions\n\n5.1. \&quot;Data\&quot; means the material received by a Data Recipient under this agreement.\n\n5.2. \&quot;Data Provider\&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.\n\n5.3. \&quot;Data Recipient\&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.\n\n5.4. \&quot;Results\&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n            &lt;div class=\&quot;optional-license-text\&quot;&gt; \n                &lt;p&gt;Community Data License Agreement - Permissive - Version 2.0&lt;/p&gt;\n\n            &lt;/div&gt;\n\n            &lt;p&gt;This is the Community Data License Agreement - Permissive, Version 2.0 (the &amp;quot;agreement&amp;quot;). Data Provider(s) and Data Recipient(s) agree as follows:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n                    Provision of the Data\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.1.&lt;/var&gt;\n                            A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.2.&lt;/var&gt;\n                            This agreement does not impose any restriction on a Data Recipient&amp;apos;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n                    Conditions for Sharing Data\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.1.&lt;/var&gt;\n                            A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n                    No Restrictions on Results\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.1.&lt;/var&gt;\n                            This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n                    No Warranty; Limitation of Liability\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.1.&lt;/var&gt;\n                            All Data Recipients receive the Data subject to the following terms:\n                            &lt;p&gt;THE DATA IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;\n\n                            &lt;p&gt;NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&lt;/p&gt;\n\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n                \n&lt;li&gt;\n                    &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n                    Definitions\n                    \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.1.&lt;/var&gt;\n                            &amp;quot;Data&amp;quot; means the material received by a Data Recipient under this agreement.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.2.&lt;/var&gt;\n                            &amp;quot;Data Provider&amp;quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&amp;apos;s agreement to its terms.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.3.&lt;/var&gt;\n                            &amp;quot;Data Recipient&amp;quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.\n                        &lt;/li&gt;\n                        \n&lt;li&gt;\n                            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.4.&lt;/var&gt;\n                            &amp;quot;Results&amp;quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&amp;apos; insights.\n                        &lt;/li&gt;\n                    \n&lt;/ul&gt;\n                &lt;/li&gt;\n            \n&lt;/ul&gt;\n        &quot;,
+        &quot;name&quot;: &quot;Community Data License Agreement Permissive 2.0&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://cdla.dev/permissive-2-0&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Community Data License Agreement - Permissive - Version 2.0\n\n&lt;&lt;endOptional&gt;&gt;\n\nThis is the Community Data License Agreement - Permissive, Version 2.0 (the \&quot;agreement\&quot;). Data Provider(s) and Data Recipient(s) agree as follows:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Provision of the Data\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Conditions for Sharing Data\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; No Restrictions on Results\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; No Warranty; Limitation of Liability\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All Data Recipients receive the Data subject to the following terms:\n\n      THE DATA IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\n      NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Definitions\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; \&quot;Data\&quot; means the material received by a Data Recipient under this agreement.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; \&quot;Data Provider\&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; \&quot;Data Recipient\&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.\n\n      &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; \&quot;Results\&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/023c43c7bb6652291e654d6603c9d86c">ScancodeData:023c43c7bb6652291e654d6603c9d86c</a> for <a href="/?license=scancode:cdla-permissive-2.0"><span class="licensename"><span class="namespace">scancode:</span>cdla-permissive-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>cdla-permissive-2.0</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">CDLA Permissive 2.0</span></li><li><span class="licensename">Community Data License Agreement Permissive 2.0</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:023c43c7bb6652291e654d6603c9d86c">[<a href="/fact/ScancodeData/023c43c7bb6652291e654d6603c9d86c">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://raw.githubusercontent.com/Community-Data-License-Agreements/Releases/main/CDLA-Permissive-2.0.txt" target="_blank">https://raw.githubusercontent.com/Community-Data-License-Agreements/Releases/main/CDLA-Permissive-2.0.txt</a></li><li><a href="https://cdla.dev/permissive-2-0" target="_blank">https://cdla.dev/permissive-2-0</a></li></ul><h3>Other Statements</h3><ul><li>https://cdla.dev/permissive-2-0/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Community Data License Agreement - Permissive - Version 2.0
+
+This is the Community Data License Agreement - Permissive, Version 2.0 (the &quot;agreement&quot;). Data Provider(s) and Data Recipient(s) agree as follows:
+
+1. Provision of the Data
+
+1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.
+
+1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.
+
+2. Conditions for Sharing Data
+
+2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.
+
+3. No Restrictions on Results
+
+3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.
+
+4. No Warranty; Limitation of Liability
+
+4.1. All Data Recipients receive the Data subject to the following terms:
+
+THE DATA IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+5. Definitions
+
+5.1. &quot;Data&quot; means the material received by a Data Recipient under this agreement.
+
+5.2. &quot;Data Provider&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.
+
+5.3. &quot;Data Recipient&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.
+
+5.4. &quot;Results&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:cdla-permissive-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CDLA Permissive 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Community Data License Agreement Permissive 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;023c43c7bb6652291e654d6603c9d86c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://cdla.dev/permissive-2-0/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://raw.githubusercontent.com/Community-Data-License-Agreements/Releases/main/CDLA-Permissive-2.0.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://cdla.dev/permissive-2-0&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Community Data License Agreement - Permissive - Version 2.0\n\nThis is the Community Data License Agreement - Permissive, Version 2.0 (the \&quot;agreement\&quot;). Data Provider(s) and Data Recipient(s) agree as follows:\n\n1. Provision of the Data\n\n1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.\n\n1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.\n\n2. Conditions for Sharing Data\n\n2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.\n\n3. No Restrictions on Results\n\n3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.\n\n4. No Warranty; Limitation of Liability\n\n4.1. All Data Recipients receive the Data subject to the following terms:\n\nTHE DATA IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nNO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n5. Definitions\n\n5.1. \&quot;Data\&quot; means the material received by a Data Recipient under this agreement.\n\n5.2. \&quot;Data Provider\&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.\n\n5.3. \&quot;Data Recipient\&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.\n\n5.4. \&quot;Results\&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://cdla.dev/permissive-2-0/&quot;,
+        &quot;_key&quot;: &quot;cdla-permissive-2.0&quot;,
+        &quot;_name&quot;: &quot;Community Data License Agreement Permissive 2.0&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://cdla.dev/permissive-2-0&quot;
+        ],
+        &quot;_owner&quot;: &quot;Linux Foundation&quot;,
+        &quot;_shortName&quot;: &quot;CDLA Permissive 2.0&quot;,
+        &quot;_spdxId&quot;: &quot;CDLA-Permissive-2.0&quot;,
+        &quot;_text&quot;: &quot;Community Data License Agreement - Permissive - Version 2.0\n\nThis is the Community Data License Agreement - Permissive, Version 2.0 (the \&quot;agreement\&quot;). Data Provider(s) and Data Recipient(s) agree as follows:\n\n1. Provision of the Data\n\n1.1. A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.\n\n1.2. This agreement does not impose any restriction on a Data Recipient&#39;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.\n\n2. Conditions for Sharing Data\n\n2.1. A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.\n\n3. No Restrictions on Results\n\n3.1. This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.\n\n4. No Warranty; Limitation of Liability\n\n4.1. All Data Recipients receive the Data subject to the following terms:\n\nTHE DATA IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n\nNO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n5. Definitions\n\n5.1. \&quot;Data\&quot; means the material received by a Data Recipient under this agreement.\n\n5.2. \&quot;Data Provider\&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&#39;s agreement to its terms.\n\n5.3. \&quot;Data Recipient\&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.\n\n5.4. \&quot;Results\&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&#39; insights.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://raw.githubusercontent.com/Community-Data-License-Agreements/Releases/main/CDLA-Permissive-2.0.txt&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/643404c6361682ed97447a50035911a3">OrtLicenseCategorization:643404c6361682ed97447a50035911a3</a> for <a href="/?license=SPDX:CDLA-Permissive-2.0"><span class="licensename"><span class="namespace">SPDX:</span>CDLA-Permissive-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>CDLA-Permissive-2.0</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:643404c6361682ed97447a50035911a3">[<a href="/fact/OrtLicenseCategorization/643404c6361682ed97447a50035911a3">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:643404c6361682ed97447a50035911a3">[<a href="/fact/OrtLicenseCategorization/643404c6361682ed97447a50035911a3">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:CDLA-Permissive-2.0&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;643404c6361682ed97447a50035911a3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:CDLA-Permissive-2.0&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/83499ad888efad18e3fa2bb440b877e1">CavilLicenseChange:83499ad888efad18e3fa2bb440b877e1</a> for <a href="/?license=cavil:CDLA-Permissive-2.0"><span class="licensename"><span class="namespace">cavil:</span>CDLA-Permissive-2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>CDLA-Permissive-2.0</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CDLA-Permissive-2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:CDLA-Permissive-2.0&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CDLA-Permissive-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;83499ad888efad18e3fa2bb440b877e1&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;CDLA-Permissive-2.0&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:CDLA-Permissive-2.0&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/a0f2684564a19a0716d2ae94ae850169">MetaeffektLicense:a0f2684564a19a0716d2ae94ae850169</a> for <a href="/?license=metaeffekt:Community Data License Agreement Permissive 2.0"><span class="licensename"><span class="namespace">metaeffekt:</span>Community Data License Agreement Permissive 2.0</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Community Data License Agreement Permissive 2.0</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CDLA-Permissive-2.0</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//cdla.dev/permissive-2-0</span></li><li><span class="licensename"><span class="namespace">scancode:</span>cdla-permissive-2.0</span></li><li><span class="licensename">Community Data License Agreement Permissive</span></li><li><span class="licensename">Community Data License Agreement Permissive 2.0</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Community Data License Agreement Permissive 2.0&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CDLA-Permissive-2.0&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Community Data License Agreement Permissive&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Community Data License Agreement Permissive 2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://cdla.dev/permissive-2-0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:cdla-permissive-2.0&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;a0f2684564a19a0716d2ae94ae850169&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Community Data License Agreement Permissive 2.0&quot;,
+            &quot;https://cdla.dev/permissive-2-0&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Community Data License Agreement Permissive 2.0&quot;,
+        &quot;_category&quot;: &quot;Community Data License Agreement Permissive&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:cdla-permissive-2.0&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:CDLA-Permissive-2.0&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,1025 @@
+<html><head><title>ldbcollector: spdx:MIT-open-group</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:MIT-open-group</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-open-group</span></li></ul></li><li><b>other LicenseNames (18):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT Open Group</span></li><li><span class="licensename">MIT Open Group variant</span></li><li><span class="licensename">MIT-open-group</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>MIT-open-group</span></li><li><span class="licensename"><span class="namespace">cavil:</span>MIT-open-group</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>MIT-open-group</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mit-open-group</span></li><li><span class="licensename"><span class="namespace">spdx:</span>MIT-open-group</span></li><li><span class="licensename">scancode://x11-opengroup</span></li><li><span class="licensename">scancode:mit-open-group</span></li><li><span class="licensename">X11 Open Group</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>X11 Open Group</span></li><li><span class="licensename">X11-Open Group</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>X11-Open Group</span></li><li><span class="licensename">x11-opengroup</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-opengroup</span></li><li><span class="licensename">X11-Style (Open Group)</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>X11-Style (Open Group)</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li><li><span class="licensename">mit-license</span></li><li><span class="licensename">X11</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:71f14ded3515d6bfb3e1f93810cae320">[<a href="/fact/BlueOakCouncil/71f14ded3515d6bfb3e1f93810cae320">BlueOakCouncil</a>]</span><span title="ScancodeData:3dd2bc067a304493fa0bca540c0ac6fb">[<a href="/fact/ScancodeData/3dd2bc067a304493fa0bca540c0ac6fb">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:6efb82cf83a26e019abb05c7e540ccca">[<a href="/fact/SPDXLicense/6efb82cf83a26e019abb05c7e540ccca">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:7e443f7bfa726b32ef4024175479e5a5">[<a href="/fact/FedoraEntry/7e443f7bfa726b32ef4024175479e5a5">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:71f14ded3515d6bfb3e1f93810cae320">[<a href="/fact/BlueOakCouncil/71f14ded3515d6bfb3e1f93810cae320">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:cbe7dedeb134a077d02469e9d03da6c3">[<a href="/fact/MetaeffektLicense/cbe7dedeb134a077d02469e9d03da6c3">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c10f90865fcdc02324e57d085fb815be">[<a href="/fact/OrtLicenseCategorization/c10f90865fcdc02324e57d085fb815be">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c10f90865fcdc02324e57d085fb815be">[<a href="/fact/OrtLicenseCategorization/c10f90865fcdc02324e57d085fb815be">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:5ec978f1c0ffc78af13817c14260591d">[<a href="/fact/OrtLicenseCategorization/5ec978f1c0ffc78af13817c14260591d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:5ec978f1c0ffc78af13817c14260591d">[<a href="/fact/OrtLicenseCategorization/5ec978f1c0ffc78af13817c14260591d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:5ec978f1c0ffc78af13817c14260591d">[<a href="/fact/OrtLicenseCategorization/5ec978f1c0ffc78af13817c14260591d">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING</a></li><li><a href="https://spdx.org/licenses/MIT-open-group.html" target="_blank">https://spdx.org/licenses/MIT-open-group.html</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c" target="_blank">https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c</a></li><li><a href="http://www.xfree86.org/current/LICENSE5.html" target="_blank">http://www.xfree86.org/current/LICENSE5.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://www.xfree86.org/current/LICENSE5.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright &lt;yyyy, yyyy&gt; The Open Group
+
+Permission to use, copy, modify, distribute, and sell this software and
+its documentation for any purpose is hereby granted without fee,
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of The Open Group
+shall not be used in advertising or otherwise to promote the sale, use
+or other dealings in this Software without prior written authorization
+from The Open Group.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;Copyright &amp;lt;yyyy, yyyy&amp;gt; The Open Group&lt;/p&gt;
+
+            &lt;/div&gt;
+            &lt;p&gt;Permission to use, copy, modify, distribute, and sell this
+                software and its documentation for any purpose is hereby granted
+                without fee, provided that the above copyright notice appear in
+                all copies and that both that copyright notice and this
+                permission notice appear in supporting documentation.
+            &lt;/p&gt;
+
+            &lt;p&gt;The above copyright notice and this permission notice shall be
+                included in all copies or substantial portions of the Software.
+            &lt;/p&gt;
+
+            &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND,
+                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                NONINFRINGEMENT. IN NO EVENT SHALL BE LIABLE FOR ANY CLAIM,
+                DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+                TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+                THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            &lt;/p&gt;
+
+            &lt;p&gt;Except as contained in this notice, the name of &lt;var class=&quot;replaceable-license-text&quot;&gt;  The Open Group&lt;/var&gt;
+                shall not be used in advertising or otherwise to promote the
+                sale, use or other dealings in this Software without prior
+                written authorization from &lt;var class=&quot;replaceable-license-text&quot;&gt; The Open Group&lt;/var&gt;.
+            &lt;/p&gt;
+
+        </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, distribute, and sell this software and
+its documentation for any purpose is hereby granted without fee,
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of copyright holders
+shall not be used in advertising or otherwise to promote the sale, use
+or other dealings in this Software without prior written authorization
+from the copyright holders.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/6efb82cf83a26e019abb05c7e540ccca">SPDXLicense:6efb82cf83a26e019abb05c7e540ccca</a> for <a href="/?license=spdx:MIT-open-group"><span class="licensename"><span class="namespace">spdx:</span>MIT-open-group</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-open-group</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT Open Group variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:6efb82cf83a26e019abb05c7e540ccca">[<a href="/fact/SPDXLicense/6efb82cf83a26e019abb05c7e540ccca">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright &lt;yyyy, yyyy&gt; The Open Group
+
+Permission to use, copy, modify, distribute, and sell this software and
+its documentation for any purpose is hereby granted without fee,
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of The Open Group
+shall not be used in advertising or otherwise to promote the sale, use
+or other dealings in this Software without prior written authorization
+from The Open Group.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+            &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;Copyright &amp;lt;yyyy, yyyy&amp;gt; The Open Group&lt;/p&gt;
+
+            &lt;/div&gt;
+            &lt;p&gt;Permission to use, copy, modify, distribute, and sell this
+                software and its documentation for any purpose is hereby granted
+                without fee, provided that the above copyright notice appear in
+                all copies and that both that copyright notice and this
+                permission notice appear in supporting documentation.
+            &lt;/p&gt;
+
+            &lt;p&gt;The above copyright notice and this permission notice shall be
+                included in all copies or substantial portions of the Software.
+            &lt;/p&gt;
+
+            &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND,
+                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                NONINFRINGEMENT. IN NO EVENT SHALL BE LIABLE FOR ANY CLAIM,
+                DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+                TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+                THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            &lt;/p&gt;
+
+            &lt;p&gt;Except as contained in this notice, the name of &lt;var class=&quot;replaceable-license-text&quot;&gt;  The Open Group&lt;/var&gt;
+                shall not be used in advertising or otherwise to promote the
+                sale, use or other dealings in this Software without prior
+                written authorization from &lt;var class=&quot;replaceable-license-text&quot;&gt; The Open Group&lt;/var&gt;.
+            &lt;/p&gt;
+
+        </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:MIT-open-group&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT Open Group variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;6efb82cf83a26e019abb05c7e540ccca&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright &lt;yyyy, yyyy&gt; The Open Group\n\nPermission to use, copy, modify, distribute, and sell this software and\nits documentation for any purpose is hereby granted without fee,\nprovided that the above copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL BE LIABLE FOR ANY CLAIM, DAMAGES\nOR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom The Open Group.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n            &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;Copyright &amp;lt;yyyy, yyyy&amp;gt; The Open Group&lt;/p&gt;\n\n            &lt;/div&gt;\n            &lt;p&gt;Permission to use, copy, modify, distribute, and sell this\n                software and its documentation for any purpose is hereby granted\n                without fee, provided that the above copyright notice appear in\n                all copies and that both that copyright notice and this\n                permission notice appear in supporting documentation.\n            &lt;/p&gt;\n\n            &lt;p&gt;The above copyright notice and this permission notice shall be\n                included in all copies or substantial portions of the Software.\n            &lt;/p&gt;\n\n            &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND,\n                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\n                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n                NONINFRINGEMENT. IN NO EVENT SHALL BE LIABLE FOR ANY CLAIM,\n                DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\n                TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH\n                THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n            &lt;/p&gt;\n\n            &lt;p&gt;Except as contained in this notice, the name of &lt;var class=\&quot;replaceable-license-text\&quot;&gt;  The Open Group&lt;/var&gt;\n                shall not be used in advertising or otherwise to promote the\n                sale, use or other dealings in this Software without prior\n                written authorization from &lt;var class=\&quot;replaceable-license-text\&quot;&gt; The Open Group&lt;/var&gt;.\n            &lt;/p&gt;\n\n        &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:06:59Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:07:00Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 3,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:07:02Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:07:04Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:MIT-open-group&quot;,
+        &quot;licenseText&quot;: &quot;Copyright &lt;yyyy, yyyy&gt; The Open Group\n\nPermission to use, copy, modify, distribute, and sell this software and\nits documentation for any purpose is hereby granted without fee,\nprovided that the above copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL BE LIABLE FOR ANY CLAIM, DAMAGES\nOR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of The Open Group\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom The Open Group.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n            &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;Copyright &amp;lt;yyyy, yyyy&amp;gt; The Open Group&lt;/p&gt;\n\n            &lt;/div&gt;\n            &lt;p&gt;Permission to use, copy, modify, distribute, and sell this\n                software and its documentation for any purpose is hereby granted\n                without fee, provided that the above copyright notice appear in\n                all copies and that both that copyright notice and this\n                permission notice appear in supporting documentation.\n            &lt;/p&gt;\n\n            &lt;p&gt;The above copyright notice and this permission notice shall be\n                included in all copies or substantial portions of the Software.\n            &lt;/p&gt;\n\n            &lt;p&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND,\n                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\n                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n                NONINFRINGEMENT. IN NO EVENT SHALL BE LIABLE FOR ANY CLAIM,\n                DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\n                TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH\n                THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n            &lt;/p&gt;\n\n            &lt;p&gt;Except as contained in this notice, the name of &lt;var class=\&quot;replaceable-license-text\&quot;&gt;  The Open Group&lt;/var&gt;\n                shall not be used in advertising or otherwise to promote the\n                sale, use or other dealings in this Software without prior\n                written authorization from &lt;var class=\&quot;replaceable-license-text\&quot;&gt; The Open Group&lt;/var&gt;.\n            &lt;/p&gt;\n\n        &quot;,
+        &quot;name&quot;: &quot;MIT Open Group variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright &lt;yyyy, yyyy&gt; The Open Group  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of &lt;&lt;var;name=\&quot;name1\&quot;;original=\&quot;The Open Group\&quot;;match=\&quot;.+\&quot;&gt;&gt; shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from &lt;&lt;var;name=\&quot;name2\&quot;;original=\&quot;The Open Group\&quot;;match=\&quot;.+\&quot;&gt;&gt; .\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/7e443f7bfa726b32ef4024175479e5a5">FedoraEntry:7e443f7bfa726b32ef4024175479e5a5</a> for <a href="/?license=Fedora:MIT-open-group"><span class="licensename"><span class="namespace">Fedora:</span>MIT-open-group</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>MIT-open-group</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-open-group</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:7e443f7bfa726b32ef4024175479e5a5">[<a href="/fact/FedoraEntry/7e443f7bfa726b32ef4024175479e5a5">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/MIT-open-group.html" target="_blank">https://spdx.org/licenses/MIT-open-group.html</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c" target="_blank">https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:MIT-open-group&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:MIT-open-group&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;7e443f7bfa726b32ef4024175479e5a5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/MIT-open-group.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MIT&quot;
+            ],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;MIT-open-group&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:MIT-open-group&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://spdx.org/licenses/MIT-open-group.html&quot;,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/71f14ded3515d6bfb3e1f93810cae320">BlueOakCouncil:71f14ded3515d6bfb3e1f93810cae320</a> for <a href="/?license=BlueOak:MIT-open-group"><span class="licensename"><span class="namespace">BlueOak:</span>MIT-open-group</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>MIT-open-group</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT Open Group Variant</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:71f14ded3515d6bfb3e1f93810cae320">[<a href="/fact/BlueOakCouncil/71f14ded3515d6bfb3e1f93810cae320">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:71f14ded3515d6bfb3e1f93810cae320">[<a href="/fact/BlueOakCouncil/71f14ded3515d6bfb3e1f93810cae320">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/MIT-open-group.html" target="_blank">https://spdx.org/licenses/MIT-open-group.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:MIT-open-group&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT Open Group Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;71f14ded3515d6bfb3e1f93810cae320&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/MIT-open-group.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;MIT-open-group&quot;,
+                &quot;_name&quot;: &quot;MIT Open Group Variant&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/MIT-open-group.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/3dd2bc067a304493fa0bca540c0ac6fb">ScancodeData:3dd2bc067a304493fa0bca540c0ac6fb</a> for <a href="/?license=scancode:x11-opengroup"><span class="licensename"><span class="namespace">scancode:</span>x11-opengroup</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>x11-opengroup</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">X11-Style (Open Group)</span></li><li><span class="licensename">X11-Style (Open Group)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:3dd2bc067a304493fa0bca540c0ac6fb">[<a href="/fact/ScancodeData/3dd2bc067a304493fa0bca540c0ac6fb">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.xfree86.org/current/LICENSE5.html" target="_blank">http://www.xfree86.org/current/LICENSE5.html</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING</a></li><li><a href="https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING" target="_blank">https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>http://www.xfree86.org/current/LICENSE5.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, distribute, and sell this software and
+its documentation for any purpose is hereby granted without fee,
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of copyright holders
+shall not be used in advertising or otherwise to promote the sale, use
+or other dealings in this Software without prior written authorization
+from the copyright holders.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:x11-opengroup&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;X11-Style (Open Group)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11-Style (Open Group)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;3dd2bc067a304493fa0bca540c0ac6fb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.xfree86.org/current/LICENSE5.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.xfree86.org/current/LICENSE5.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and\nits documentation for any purpose is hereby granted without fee,\nprovided that the above copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of copyright holders\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom the copyright holders.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.xfree86.org/current/LICENSE5.html&quot;,
+        &quot;_key&quot;: &quot;x11-opengroup&quot;,
+        &quot;_name&quot;: &quot;X11-Style (Open Group)&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://gitlab.freedesktop.org/xorg/app/iceauth/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/app/xvinfo/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/app/xsetroot/-/blob/master/COPYING&quot;,
+            &quot;https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING&quot;
+        ],
+        &quot;_owner&quot;: &quot;Open Group&quot;,
+        &quot;_shortName&quot;: &quot;X11-Style (Open Group)&quot;,
+        &quot;_spdxId&quot;: &quot;MIT-open-group&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and\nits documentation for any purpose is hereby granted without fee,\nprovided that the above copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of copyright holders\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom the copyright holders.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.xfree86.org/current/LICENSE5.html&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/c10f90865fcdc02324e57d085fb815be">OrtLicenseCategorization:c10f90865fcdc02324e57d085fb815be</a> for <a href="/?license=SPDX:MIT-open-group"><span class="licensename"><span class="namespace">SPDX:</span>MIT-open-group</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MIT-open-group</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c10f90865fcdc02324e57d085fb815be">[<a href="/fact/OrtLicenseCategorization/c10f90865fcdc02324e57d085fb815be">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c10f90865fcdc02324e57d085fb815be">[<a href="/fact/OrtLicenseCategorization/c10f90865fcdc02324e57d085fb815be">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MIT-open-group&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c10f90865fcdc02324e57d085fb815be&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MIT-open-group&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/5ec978f1c0ffc78af13817c14260591d">OrtLicenseCategorization:5ec978f1c0ffc78af13817c14260591d</a> for <a href="/?license=SPDX:MIT-open-group"><span class="licensename"><span class="namespace">SPDX:</span>MIT-open-group</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>MIT-open-group</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:5ec978f1c0ffc78af13817c14260591d">[<a href="/fact/OrtLicenseCategorization/5ec978f1c0ffc78af13817c14260591d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:5ec978f1c0ffc78af13817c14260591d">[<a href="/fact/OrtLicenseCategorization/5ec978f1c0ffc78af13817c14260591d">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:5ec978f1c0ffc78af13817c14260591d">[<a href="/fact/OrtLicenseCategorization/5ec978f1c0ffc78af13817c14260591d">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:MIT-open-group&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;5ec978f1c0ffc78af13817c14260591d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:MIT-open-group&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/a114cc4f0c9dfab12784e98117c8b290">CavilLicenseChange:a114cc4f0c9dfab12784e98117c8b290</a> for <a href="/?license=cavil:MIT-open-group"><span class="licensename"><span class="namespace">cavil:</span>MIT-open-group</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>MIT-open-group</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT-open-group</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:MIT-open-group&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT-open-group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;a114cc4f0c9dfab12784e98117c8b290&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;MIT-open-group&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:MIT-open-group&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/cbe7dedeb134a077d02469e9d03da6c3">MetaeffektLicense:cbe7dedeb134a077d02469e9d03da6c3</a> for <a href="/?license=metaeffekt:X11-Open Group"><span class="licensename"><span class="namespace">metaeffekt:</span>X11-Open Group</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>X11-Open Group</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>MIT-open-group</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>X11 Open Group</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT Open Group variant</span></li><li><span class="licensename">mit-open-group</span></li><li><span class="licensename">MIT-open-group</span></li><li><span class="licensename">X11</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-opengroup</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:cbe7dedeb134a077d02469e9d03da6c3">[<a href="/fact/MetaeffektLicense/cbe7dedeb134a077d02469e9d03da6c3">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:X11-Open Group&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:X11 Open Group&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:MIT-open-group&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;X11&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;mit-open-group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT-open-group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT Open Group variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:x11-opengroup&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;cbe7dedeb134a077d02469e9d03da6c3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;mit-open-group&quot;,
+            &quot;MIT-open-group&quot;,
+            &quot;MIT Open Group variant&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:X11 Open Group&quot;,
+        &quot;_category&quot;: &quot;X11&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:x11-opengroup&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:X11-Open Group&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:MIT-open-group&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/d1b49d5835b775178ef40890b176cd0a">FossLicense:d1b49d5835b775178ef40890b176cd0a</a> for <a href="/?license=foss-license:X11-Style (Open Group)"><span class="licensename"><span class="namespace">foss-license:</span>X11-Style (Open Group)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>X11-Style (Open Group)</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT Open Group</span></li><li><span class="licensename">MIT Open Group Variant</span></li><li><span class="licensename">MIT Open Group variant</span></li><li><span class="licensename">MIT-open-group</span></li><li><span class="licensename">MIT-Open-Group</span></li><li><span class="licensename">mit-open-group</span></li><li><span class="licensename"><span class="namespace">scancode:</span>mit-open-group</span></li><li><span class="licensename">scancode://x11-opengroup</span></li><li><span class="licensename">scancode:mit-open-group</span></li><li><span class="licensename">X11-Style (Open Group)</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:X11-Style (Open Group)&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:mit-open-group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT-open-group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT Open Group Variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT Open Group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT-Open-Group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT Open Group variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://x11-opengroup&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;X11-Style (Open Group)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;mit-open-group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:mit-open-group&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;d1b49d5835b775178ef40890b176cd0a&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;MIT-open-group&quot;,
+            &quot;MIT Open Group Variant&quot;,
+            &quot;MIT Open Group&quot;,
+            &quot;MIT-Open-Group&quot;,
+            &quot;MIT Open Group variant&quot;,
+            &quot;scancode://x11-opengroup&quot;,
+            &quot;X11-Style (Open Group)&quot;,
+            &quot;mit-open-group&quot;,
+            &quot;scancode:mit-open-group&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;X11-Style (Open Group)&quot;,
+        &quot;scancode_key&quot;: &quot;mit-open-group&quot;,
+        &quot;spdxid&quot;: &quot;MIT-open-group&quot;,
+        &quot;text&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and\nits documentation for any purpose is hereby granted without fee,\nprovided that the above copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of copyright holders\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom the copyright holders.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li></ul></body></html>

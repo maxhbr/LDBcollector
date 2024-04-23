@@ -1,0 +1,819 @@
+<html><head><title>ldbcollector: spdx:HPND-sell-variant</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-sell-variant</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant</span></li></ul></li><li><b>other LicenseNames (12):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - sell variant</span></li><li><span class="licensename">historical-sell-variant</span></li><li><span class="licensename"><span class="namespace">scancode:</span>historical-sell-variant</span></li><li><span class="licensename">HPND-sell-variant</span></li><li><span class="licensename"><span class="namespace">cavil:</span>HPND-sell-variant</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-sell-variant</span></li><li><span class="licensename"><span class="namespace">fossology:</span>HPND-sell-variant</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant</span></li><li><span class="licensename">Permission Terms (HPND; sell)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (HPND; sell)</span></li><li><span class="licensename">PT-Var035</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>PT-Var035</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li><li><span class="licensename">MIT Old Style</span></li><li><span class="licensename">mit-license</span></li><li><span class="licensename">Permission</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-keith-packard</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:f9ab997e1b831d27ba6be9433f740970">[<a href="/fact/ScancodeData/f9ab997e1b831d27ba6be9433f740970">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3b5269806fab0fcb5acc5b234c9cee76">[<a href="/fact/SPDXLicense/3b5269806fab0fcb5acc5b234c9cee76">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:87e524979361d112a4ec7dcf14c4ef73">[<a href="/fact/FedoraEntry/87e524979361d112a4ec7dcf14c4ef73">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:694bf134b31bd1667fc224e3b94a7035">[<a href="/fact/OrtLicenseCategorization/694bf134b31bd1667fc224e3b94a7035">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:694bf134b31bd1667fc224e3b94a7035">[<a href="/fact/OrtLicenseCategorization/694bf134b31bd1667fc224e3b94a7035">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c6c446a2ec2188a22ec821114d8d2b2a">[<a href="/fact/OrtLicenseCategorization/c6c446a2ec2188a22ec821114d8d2b2a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c6c446a2ec2188a22ec821114d8d2b2a">[<a href="/fact/OrtLicenseCategorization/c6c446a2ec2188a22ec821114d8d2b2a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c6c446a2ec2188a22ec821114d8d2b2a">[<a href="/fact/OrtLicenseCategorization/c6c446a2ec2188a22ec821114d8d2b2a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to &quot;sell&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.<span class="provided-by">(provided by: <span title="SPDXLicense:3b5269806fab0fcb5acc5b234c9cee76">[<a href="/fact/SPDXLicense/3b5269806fab0fcb5acc5b234c9cee76">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>this is actually the same as the x11-keith-packard<span class="provided-by">(provided by: <span title="ScancodeData:f9ab997e1b831d27ba6be9433f740970">[<a href="/fact/ScancodeData/f9ab997e1b831d27ba6be9433f740970">ScancodeData</a>]</span>)</span></li><li><b>Fossology: </b>This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to &quot;sell&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.<span class="provided-by">(provided by: <span title="Fossology:4f85af10b476f82ce5f2a00a7856dd84">[<a href="/fact/Fossology/4f85af10b476f82ce5f2a00a7856dd84">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19" target="_blank">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1993 by OpenVision Technologies, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software
+and its documentation for any purpose is hereby granted without fee,
+provided that the above copyright notice appears in all copies and
+that both that copyright notice and this permission notice appear in
+supporting documentation, and that the name of OpenVision not be used
+in advertising or publicity pertaining to distribution of the software
+without specific, written prior permission. OpenVision makes no
+representations about the suitability of this software for any
+purpose.  It is provided &quot;as is&quot; without express or implied warranty.
+
+OPENVISION DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+EVENT SHALL OPENVISION BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, distribute&lt;var class=&quot;optional-license-text&quot;&gt;,&lt;/var&gt; and sell this software and its documentation for any purpose
+         is hereby granted without fee, provided that the above copyright notice  &lt;var class=&quot;replaceable-license-text&quot;&gt; appears&lt;/var&gt; in all copies&lt;var class=&quot;optional-license-text&quot;&gt;, &lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; and&lt;/var&gt; that both &lt;var class=&quot;replaceable-license-text&quot;&gt; that&lt;/var&gt; copyright notice
+         and this permission notice appear in supporting documentation&lt;var class=&quot;optional-license-text&quot;&gt;, and that the &lt;var class=&quot;replaceable-license-text&quot;&gt; name&lt;/var&gt; &lt;var class=&quot;optional-license-text&quot;&gt; of&lt;/var&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;or related entities&amp;gt;&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; is&lt;/var&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written
+         prior permission &lt;/var&gt;. &lt;var class=&quot;optional-license-text&quot;&gt; 
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=&quot;replaceable-license-text&quot;&gt; makes&lt;/var&gt; no representations
+         about the suitability of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.&lt;/var&gt;
+      &lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=&quot;replaceable-license-text&quot;&gt; DISCLAIMS&lt;/var&gt; ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+           ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS&lt;var class=&quot;replaceable-license-text&quot;&gt; .&lt;/var&gt; IN NO EVENT SHALL
+           &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES
+           OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+           NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided that the
+above copyright notice appears in all copies, and that both that the copyright
+notice and this permission notice appear in supporting documentation , and that
+the name of copyright holder or related entities not be used in advertising
+or publicity pertaining to distribution of the software without specific,
+written prior permission.
+
+copyright holder makes no representations about the suitability of this software
+for any purpose. It is provided &quot;as is&quot; without express or implied warranty.
+
+copyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></details></li><li><details><summary>Text:</summary><pre>&lt;copyright notice&gt;
+
+Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appears in all copies, and that both that the copyright notice and this permission notice appear in supporting documentation, and that the name of &lt;copyright holder&gt; &lt;or related entities&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission . &lt;copyright holder&gt; makes no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty. &lt;copyright holder&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS . IN NO EVENT SHALL &lt;copyright holder&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/3b5269806fab0fcb5acc5b234c9cee76">SPDXLicense:3b5269806fab0fcb5acc5b234c9cee76</a> for <a href="/?license=spdx:HPND-sell-variant"><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - sell variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:3b5269806fab0fcb5acc5b234c9cee76">[<a href="/fact/SPDXLicense/3b5269806fab0fcb5acc5b234c9cee76">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to &quot;sell&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.<span class="provided-by">(provided by: <span title="SPDXLicense:3b5269806fab0fcb5acc5b234c9cee76">[<a href="/fact/SPDXLicense/3b5269806fab0fcb5acc5b234c9cee76">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19" target="_blank">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright 1993 by OpenVision Technologies, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software
+and its documentation for any purpose is hereby granted without fee,
+provided that the above copyright notice appears in all copies and
+that both that copyright notice and this permission notice appear in
+supporting documentation, and that the name of OpenVision not be used
+in advertising or publicity pertaining to distribution of the software
+without specific, written prior permission. OpenVision makes no
+representations about the suitability of this software for any
+purpose.  It is provided &quot;as is&quot; without express or implied warranty.
+
+OPENVISION DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+EVENT SHALL OPENVISION BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Permission to use, copy, modify, distribute&lt;var class=&quot;optional-license-text&quot;&gt;,&lt;/var&gt; and sell this software and its documentation for any purpose
+         is hereby granted without fee, provided that the above copyright notice  &lt;var class=&quot;replaceable-license-text&quot;&gt; appears&lt;/var&gt; in all copies&lt;var class=&quot;optional-license-text&quot;&gt;, &lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; and&lt;/var&gt; that both &lt;var class=&quot;replaceable-license-text&quot;&gt; that&lt;/var&gt; copyright notice
+         and this permission notice appear in supporting documentation&lt;var class=&quot;optional-license-text&quot;&gt;, and that the &lt;var class=&quot;replaceable-license-text&quot;&gt; name&lt;/var&gt; &lt;var class=&quot;optional-license-text&quot;&gt; of&lt;/var&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;or related entities&amp;gt;&lt;/var&gt;
+         &lt;var class=&quot;optional-license-text&quot;&gt; is&lt;/var&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written
+         prior permission &lt;/var&gt;. &lt;var class=&quot;optional-license-text&quot;&gt; 
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=&quot;replaceable-license-text&quot;&gt; makes&lt;/var&gt; no representations
+         about the suitability of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.&lt;/var&gt;
+      &lt;/p&gt;
+
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=&quot;replaceable-license-text&quot;&gt; DISCLAIMS&lt;/var&gt; ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+           ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS&lt;var class=&quot;replaceable-license-text&quot;&gt; .&lt;/var&gt; IN NO EVENT SHALL
+           &lt;var class=&quot;replaceable-license-text&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES
+           OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+           NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;
+
+      &lt;/div&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-sell-variant&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;3b5269806fab0fcb5acc5b234c9cee76&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to \&quot;sell\&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright 1993 by OpenVision Technologies, Inc.\n\nPermission to use, copy, modify, distribute, and sell this software\nand its documentation for any purpose is hereby granted without fee,\nprovided that the above copyright notice appears in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation, and that the name of OpenVision not be used\nin advertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission. OpenVision makes no\nrepresentations about the suitability of this software for any\npurpose.  It is provided \&quot;as is\&quot; without express or implied warranty.\n\nOPENVISION DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO\nEVENT SHALL OPENVISION BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF\nUSE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR\nOTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\nPERFORMANCE OF THIS SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, distribute&lt;var class=\&quot;optional-license-text\&quot;&gt;,&lt;/var&gt; and sell this software and its documentation for any purpose\n         is hereby granted without fee, provided that the above copyright notice  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; appears&lt;/var&gt; in all copies&lt;var class=\&quot;optional-license-text\&quot;&gt;, &lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; and&lt;/var&gt; that both &lt;var class=\&quot;replaceable-license-text\&quot;&gt; that&lt;/var&gt; copyright notice\n         and this permission notice appear in supporting documentation&lt;var class=\&quot;optional-license-text\&quot;&gt;, and that the &lt;var class=\&quot;replaceable-license-text\&quot;&gt; name&lt;/var&gt; &lt;var class=\&quot;optional-license-text\&quot;&gt; of&lt;/var&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;or related entities&amp;gt;&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; is&lt;/var&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written\n         prior permission &lt;/var&gt;. &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=\&quot;replaceable-license-text\&quot;&gt; makes&lt;/var&gt; no representations\n         about the suitability of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.&lt;/var&gt;\n      &lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=\&quot;replaceable-license-text\&quot;&gt; DISCLAIMS&lt;/var&gt; ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING\n           ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS&lt;var class=\&quot;replaceable-license-text\&quot;&gt; .&lt;/var&gt; IN NO EVENT SHALL\n           &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\n           OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\n           NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:58Z&quot;,
+                &quot;url&quot;: &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to \&quot;sell\&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-sell-variant&quot;,
+        &quot;licenseText&quot;: &quot;Copyright 1993 by OpenVision Technologies, Inc.\n\nPermission to use, copy, modify, distribute, and sell this software\nand its documentation for any purpose is hereby granted without fee,\nprovided that the above copyright notice appears in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation, and that the name of OpenVision not be used\nin advertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission. OpenVision makes no\nrepresentations about the suitability of this software for any\npurpose.  It is provided \&quot;as is\&quot; without express or implied warranty.\n\nOPENVISION DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO\nEVENT SHALL OPENVISION BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF\nUSE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR\nOTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\nPERFORMANCE OF THIS SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;&amp;lt;copyright notice&amp;gt;&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Permission to use, copy, modify, distribute&lt;var class=\&quot;optional-license-text\&quot;&gt;,&lt;/var&gt; and sell this software and its documentation for any purpose\n         is hereby granted without fee, provided that the above copyright notice  &lt;var class=\&quot;replaceable-license-text\&quot;&gt; appears&lt;/var&gt; in all copies&lt;var class=\&quot;optional-license-text\&quot;&gt;, &lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; and&lt;/var&gt; that both &lt;var class=\&quot;replaceable-license-text\&quot;&gt; that&lt;/var&gt; copyright notice\n         and this permission notice appear in supporting documentation&lt;var class=\&quot;optional-license-text\&quot;&gt;, and that the &lt;var class=\&quot;replaceable-license-text\&quot;&gt; name&lt;/var&gt; &lt;var class=\&quot;optional-license-text\&quot;&gt; of&lt;/var&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;or related entities&amp;gt;&lt;/var&gt;\n         &lt;var class=\&quot;optional-license-text\&quot;&gt; is&lt;/var&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written\n         prior permission &lt;/var&gt;. &lt;var class=\&quot;optional-license-text\&quot;&gt; \n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=\&quot;replaceable-license-text\&quot;&gt; makes&lt;/var&gt; no representations\n         about the suitability of this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express or implied warranty.&lt;/var&gt;\n      &lt;/p&gt;\n\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; &lt;var class=\&quot;replaceable-license-text\&quot;&gt; DISCLAIMS&lt;/var&gt; ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING\n           ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS&lt;var class=\&quot;replaceable-license-text\&quot;&gt; .&lt;/var&gt; IN NO EVENT SHALL\n           &lt;var class=\&quot;replaceable-license-text\&quot;&gt; &amp;lt;copyright holder&amp;gt;&lt;/var&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\n           OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\n           NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&lt;/p&gt;\n\n      &lt;/div&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;&lt;copyright notice&gt;  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, distribute&lt;&lt;beginOptional&gt;&gt;,&lt;&lt;endOptional&gt;&gt;and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice &lt;&lt;var;name=\&quot;appear\&quot;;original=\&quot;appears\&quot;;match=\&quot;appear|appears\&quot;&gt;&gt; in all copies&lt;&lt;beginOptional&gt;&gt;, &lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; and&lt;&lt;endOptional&gt;&gt; that both &lt;&lt;var;name=\&quot;that\&quot;;original=\&quot;that\&quot;;match=\&quot;that|the\&quot;&gt;&gt; copyright notice and this permission notice appear in supporting documentation&lt;&lt;beginOptional&gt;&gt;, and that the &lt;&lt;var;name=\&quot;name\&quot;;original=\&quot;name\&quot;;match=\&quot;name|names\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; of&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyrightHolder0\&quot;;original=\&quot;&lt;copyright holder&gt;\&quot;;match=\&quot;.*\&quot;&gt;&gt; &lt;&lt;var;name=\&quot;orRelated\&quot;;original=\&quot;&lt;or related entities&gt;\&quot;;match=\&quot;.*\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; is&lt;&lt;endOptional&gt;&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission &lt;&lt;endOptional&gt;&gt; .&lt;&lt;beginOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyrightHolder1\&quot;;original=\&quot;&lt;copyright holder&gt;\&quot;;match=\&quot;.*\&quot;&gt;&gt; &lt;&lt;var;name=\&quot;make\&quot;;original=\&quot;makes\&quot;;match=\&quot;make|makes\&quot;&gt;&gt; no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.&lt;&lt;endOptional&gt;&gt;\n\n&lt;&lt;beginOptional&gt;&gt;&lt;&lt;var;name=\&quot;copyrightHolder2\&quot;;original=\&quot;&lt;copyright holder&gt;\&quot;;match=\&quot;.*\&quot;&gt;&gt; &lt;&lt;var;name=\&quot;disclaim\&quot;;original=\&quot;DISCLAIMS\&quot;;match=\&quot;DISCLAIM|DISCLAIMS\&quot;&gt;&gt; ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS &lt;&lt;var;name=\&quot;period\&quot;;original=\&quot;.\&quot;;match=\&quot;[.,]*\&quot;&gt;&gt; IN NO EVENT SHALL &lt;&lt;var;name=\&quot;copyrightHolder3\&quot;;original=\&quot;&lt;copyright holder&gt;\&quot;;match=\&quot;.*\&quot;&gt;&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n\n&lt;&lt;endOptional&gt;&gt;&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/87e524979361d112a4ec7dcf14c4ef73">FedoraEntry:87e524979361d112a4ec7dcf14c4ef73</a> for <a href="/?license=Fedora:HPND-sell-variant"><span class="licensename"><span class="namespace">Fedora:</span>HPND-sell-variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-sell-variant</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">MIT</span></li><li><span class="licensename">MIT Old Style</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:87e524979361d112a4ec7dcf14c4ef73">[<a href="/fact/FedoraEntry/87e524979361d112a4ec7dcf14c4ef73">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HPND-sell-variant&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-sell-variant&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;MIT Old Style&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;MIT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;87e524979361d112a4ec7dcf14c4ef73&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;MIT&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;MIT Old Style&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HPND-sell-variant&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HPND-sell-variant&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/f9ab997e1b831d27ba6be9433f740970">ScancodeData:f9ab997e1b831d27ba6be9433f740970</a> for <a href="/?license=scancode:historical-sell-variant"><span class="licensename"><span class="namespace">scancode:</span>historical-sell-variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>historical-sell-variant</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - sell variant</span></li><li><span class="licensename">Historical Permission Notice and Disclaimer - sell variant</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:f9ab997e1b831d27ba6be9433f740970">[<a href="/fact/ScancodeData/f9ab997e1b831d27ba6be9433f740970">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>this is actually the same as the x11-keith-packard<span class="provided-by">(provided by: <span title="ScancodeData:f9ab997e1b831d27ba6be9433f740970">[<a href="/fact/ScancodeData/f9ab997e1b831d27ba6be9433f740970">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19" target="_blank">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided that the
+above copyright notice appears in all copies, and that both that the copyright
+notice and this permission notice appear in supporting documentation , and that
+the name of copyright holder or related entities not be used in advertising
+or publicity pertaining to distribution of the software without specific,
+written prior permission.
+
+copyright holder makes no representations about the suitability of this software
+for any purpose. It is provided &quot;as is&quot; without express or implied warranty.
+
+copyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:historical-sell-variant&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;f9ab997e1b831d27ba6be9433f740970&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;this is actually the same as the x11-keith-packard&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that the\nabove copyright notice appears in all copies, and that both that the copyright\nnotice and this permission notice appear in supporting documentation , and that\nthe name of copyright holder or related entities not be used in advertising\nor publicity pertaining to distribution of the software without specific,\nwritten prior permission.\n\ncopyright holder makes no representations about the suitability of this software\nfor any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n\ncopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.\nIN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS\nACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;historical-sell-variant&quot;,
+        &quot;_name&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+        &quot;_notes&quot;: &quot;this is actually the same as the x11-keith-packard&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+        ],
+        &quot;_owner&quot;: &quot;Unspecified&quot;,
+        &quot;_shortName&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+        &quot;_spdxId&quot;: null,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that the\nabove copyright notice appears in all copies, and that both that the copyright\nnotice and this permission notice appear in supporting documentation , and that\nthe name of copyright holder or related entities not be used in advertising\nor publicity pertaining to distribution of the software without specific,\nwritten prior permission.\n\ncopyright holder makes no representations about the suitability of this software\nfor any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n\ncopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.\nIN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS\nACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/4f85af10b476f82ce5f2a00a7856dd84">Fossology:4f85af10b476f82ce5f2a00a7856dd84</a> for <a href="/?license=fossology:HPND-sell-variant"><span class="licensename"><span class="namespace">fossology:</span>HPND-sell-variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>HPND-sell-variant</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - sell variant</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to &quot;sell&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.<span class="provided-by">(provided by: <span title="Fossology:4f85af10b476f82ce5f2a00a7856dd84">[<a href="/fact/Fossology/4f85af10b476f82ce5f2a00a7856dd84">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19" target="_blank">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>&lt;copyright notice&gt;
+
+Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appears in all copies, and that both that the copyright notice and this permission notice appear in supporting documentation, and that the name of &lt;copyright holder&gt; &lt;or related entities&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission . &lt;copyright holder&gt; makes no representations about the suitability of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty. &lt;copyright holder&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS . IN NO EVENT SHALL &lt;copyright holder&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:HPND-sell-variant&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;4f85af10b476f82ce5f2a00a7856dd84&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to \&quot;sell\&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;&lt;copyright notice&gt;\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appears in all copies, and that both that the copyright notice and this permission notice appear in supporting documentation, and that the name of &lt;copyright holder&gt; &lt;or related entities&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission . &lt;copyright holder&gt; makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty. &lt;copyright holder&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS . IN NO EVENT SHALL &lt;copyright holder&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Historical Permission Notice and Disclaimer - sell variant&quot;,
+        &quot;_rf_notes&quot;: &quot;This license is a variant of HPND (https://spdx.org/licenses/HPND.html). This variant explicitly includes the permission to \&quot;sell\&quot; the software, which is not explicitly referenced in the HPND template, and makes a few other minor changes. It otherwise retains the optional templated formatting from HPND.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:HPND-sell-variant&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;&lt;copyright notice&gt;\n\nPermission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appears in all copies, and that both that the copyright notice and this permission notice appear in supporting documentation, and that the name of &lt;copyright holder&gt; &lt;or related entities&gt; not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission . &lt;copyright holder&gt; makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty. &lt;copyright holder&gt; DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS . IN NO EVENT SHALL &lt;copyright holder&gt; BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/694bf134b31bd1667fc224e3b94a7035">OrtLicenseCategorization:694bf134b31bd1667fc224e3b94a7035</a> for <a href="/?license=SPDX:HPND-sell-variant"><span class="licensename"><span class="namespace">SPDX:</span>HPND-sell-variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-sell-variant</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:694bf134b31bd1667fc224e3b94a7035">[<a href="/fact/OrtLicenseCategorization/694bf134b31bd1667fc224e3b94a7035">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:694bf134b31bd1667fc224e3b94a7035">[<a href="/fact/OrtLicenseCategorization/694bf134b31bd1667fc224e3b94a7035">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-sell-variant&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;694bf134b31bd1667fc224e3b94a7035&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-sell-variant&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/c6c446a2ec2188a22ec821114d8d2b2a">OrtLicenseCategorization:c6c446a2ec2188a22ec821114d8d2b2a</a> for <a href="/?license=SPDX:HPND-sell-variant"><span class="licensename"><span class="namespace">SPDX:</span>HPND-sell-variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-sell-variant</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c6c446a2ec2188a22ec821114d8d2b2a">[<a href="/fact/OrtLicenseCategorization/c6c446a2ec2188a22ec821114d8d2b2a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c6c446a2ec2188a22ec821114d8d2b2a">[<a href="/fact/OrtLicenseCategorization/c6c446a2ec2188a22ec821114d8d2b2a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:c6c446a2ec2188a22ec821114d8d2b2a">[<a href="/fact/OrtLicenseCategorization/c6c446a2ec2188a22ec821114d8d2b2a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-sell-variant&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;c6c446a2ec2188a22ec821114d8d2b2a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-sell-variant&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/bc0365daef195e7e0b12db6ce439de63">CavilLicenseChange:bc0365daef195e7e0b12db6ce439de63</a> for <a href="/?license=cavil:HPND-sell-variant"><span class="licensename"><span class="namespace">cavil:</span>HPND-sell-variant</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>HPND-sell-variant</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND-sell-variant</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:HPND-sell-variant&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND-sell-variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;bc0365daef195e7e0b12db6ce439de63&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;HPND-sell-variant&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:HPND-sell-variant&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/4910a41bb9a1e91aa5e2b1c736c11ac8">MetaeffektLicense:4910a41bb9a1e91aa5e2b1c736c11ac8</a> for <a href="/?license=metaeffekt:PT-Var035"><span class="licensename"><span class="namespace">metaeffekt:</span>PT-Var035</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>PT-Var035</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-sell-variant</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (HPND; sell)</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>historical-sell-variant</span></li><li><span class="licensename">Permission</span></li><li><span class="licensename"><span class="namespace">scancode:</span>x11-keith-packard</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:PT-Var035&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Permission Terms (HPND; sell)&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-sell-variant&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Permission&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:historical-sell-variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:x11-keith-packard&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;4910a41bb9a1e91aa5e2b1c736c11ac8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Permission Terms (HPND; sell)&quot;,
+        &quot;_category&quot;: &quot;Permission&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:historical-sell-variant&quot;,
+            &quot;scancode:x11-keith-packard&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:PT-Var035&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:HPND-sell-variant&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,1956 @@
+<html><head><title>ldbcollector: spdx:Ruby</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:Ruby</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (14):</b><ul class="capsulUl clearfix"><li><span class="licensename">License of Ruby</span></li><li><span class="licensename">Ruby</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>Ruby</span></li><li><span class="licensename"><span class="namespace">cavil:</span>Ruby</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>Ruby</span></li><li><span class="licensename"><span class="namespace">fossology:</span>Ruby</span></li><li><span class="licensename"><span class="namespace">fsf:</span>Ruby</span></li><li><span class="licensename"><span class="namespace">google:</span>Ruby</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ruby</span></li><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li><li><span class="licensename">Ruby License</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Ruby License</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>Ruby License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Ruby License</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL-2.0+ or Ruby</span></li><li><span class="licensename">GPLv2+ or Ruby</span></li><li><span class="licensename">RubyLicense</span></li><li><span class="licensename">same as ruby&#39;s</span></li><li><span class="licensename">under Ruby</span></li><li><span class="licensename">under the Ruby</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:2523254dc68ea3d059a01f76b98310a3">[<a href="/fact/BlueOakCouncil/2523254dc68ea3d059a01f76b98310a3">BlueOakCouncil</a>]</span><span title="ifrOSS License:0b8d8d6b69f6eb120da909b18797a384">[<a href="/fact/ifrOSS License/0b8d8d6b69f6eb120da909b18797a384">ifrOSS License</a>]</span>)</span></li><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:789df199b15915bfeded9331dc505cc4">[<a href="/fact/ScancodeData/789df199b15915bfeded9331dc505cc4">ScancodeData</a>]</span>)</span></li><li>WeaklyProtective<span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span><span title="FOSSLight:7ed4337b88e7de61459ead4eb050f32b">[<a href="/fact/FOSSLight/7ed4337b88e7de61459ead4eb050f32b">FOSSLight</a>]</span><span title="ifrOSS License:9faa428857cb09ad6b2a3191278d138d">[<a href="/fact/ifrOSS License/9faa428857cb09ad6b2a3191278d138d">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">[<a href="/fact/SPDXLicense/73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">SPDXLicense</a>]</span><span title="FSF:eaeb10340082b520f8b4e964d0787c94">[<a href="/fact/FSF/eaeb10340082b520f8b4e964d0787c94">FSF</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">[<a href="/fact/SPDXLicense/73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">SPDXLicense</a>]</span><span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li><li><span title="reciprocal - These licenses allow usage of software made available under such licenses freely in *unmodified* form. If the third-party source code is modified in any way these modifications to the original third-party source code must be made available.">Google Policy Classification: <b style="">reciprocal</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:37aa1b989165025210956283e7054fc7">[<a href="/fact/GoogleLicense/37aa1b989165025210956283e7054fc7">GoogleLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5a4e9fcd4e3919cd4e5a16b04f75fe76">[<a href="/fact/FedoraEntry/5a4e9fcd4e3919cd4e5a16b04f75fe76">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:2523254dc68ea3d059a01f76b98310a3">[<a href="/fact/BlueOakCouncil/2523254dc68ea3d059a01f76b98310a3">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:ba30765e38033dabbdaa348bf3d20389">[<a href="/fact/MetaeffektLicense/ba30765e38033dabbdaa348bf3d20389">MetaeffektLicense</a>]</span>)</span></li><li><span title="">HermineLicense: <b style="color: green;">FOSS - deduced</b></span><span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:0b8d8d6b69f6eb120da909b18797a384">[<a href="/fact/ifrOSS License/0b8d8d6b69f6eb120da909b18797a384">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:0b8d8d6b69f6eb120da909b18797a384">[<a href="/fact/ifrOSS License/0b8d8d6b69f6eb120da909b18797a384">ifrOSS License</a>]</span><span title="ifrOSS License:9faa428857cb09ad6b2a3191278d138d">[<a href="/fact/ifrOSS License/9faa428857cb09ad6b2a3191278d138d">ifrOSS License</a>]</span>)</span></li><li><span title="Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können.">ifrOSS Classification: <b style="">Lizenzen mit Wahlmöglichkeiten</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:9faa428857cb09ad6b2a3191278d138d">[<a href="/fact/ifrOSS License/9faa428857cb09ad6b2a3191278d138d">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">FSF: <b>gpl-2-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:eaeb10340082b520f8b4e964d0787c94">[<a href="/fact/FSF/eaeb10340082b520f8b4e964d0787c94">FSF</a>]</span>)</span></li><li><span title="">FSF: <b>gpl-3-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:eaeb10340082b520f8b4e964d0787c94">[<a href="/fact/FSF/eaeb10340082b520f8b4e964d0787c94">FSF</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:bfe0e8f36c879d19d079caaa70e7b2b5">[<a href="/fact/OrtLicenseCategorization/bfe0e8f36c879d19d079caaa70e7b2b5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:bfe0e8f36c879d19d079caaa70e7b2b5">[<a href="/fact/OrtLicenseCategorization/bfe0e8f36c879d19d079caaa70e7b2b5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:bfe0e8f36c879d19d079caaa70e7b2b5">[<a href="/fact/OrtLicenseCategorization/bfe0e8f36c879d19d079caaa70e7b2b5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.">OrtLicenseCategorization: <b>copyleft-file-level</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.<span class="provided-by">(provided by: <span title="SPDXLicense:73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">[<a href="/fact/SPDXLicense/73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>This version of the Ruby license is the latest found in the dual license
+COPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed
+project that allows the choice of this license and another. The other
+license choice has changed over time (from GPL originally, to BSD-2-Clause
+currently), so one needs to be aware of that change. The Ruby License
+itself is un-versioned, but has varied a bit over the years, the last
+substantive variation being in 2002.
+<span class="provided-by">(provided by: <span title="ScancodeData:789df199b15915bfeded9331dc505cc4">[<a href="/fact/ScancodeData/789df199b15915bfeded9331dc505cc4">ScancodeData</a>]</span>)</span></li><li><b>Fossology: </b>Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.<span class="provided-by">(provided by: <span title="Fossology:b2cbf3ae41e7e6c06c51c647f0d3695b">[<a href="/fact/Fossology/b2cbf3ae41e7e6c06c51c647f0d3695b">Fossology</a>]</span>)</span></li><li><b>HermineLicense: </b>As mentionned in the preambule, Ruby is dual licensed, BSD-2-Clause or Ruby license. There is no reason to use the Ruby license.
+Older versions were  dual licensed with GPL (see https://enterprise.dejacode.com/licenses/public/ruby/?_list_filters=q%3Druby#license-text )<span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li><li><b>HermineLicense: </b>&quot;Ruby&quot; is of radical: Ruby<span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.ruby-lang.org/en/about/license.txt" target="_blank">https://www.ruby-lang.org/en/about/license.txt</a></li><li><a href="http://www.ruby-lang.org/en/LICENSE.txt" target="_blank">http://www.ruby-lang.org/en/LICENSE.txt</a></li><li><a href="https://spdx.org/licenses/Ruby.html" target="_blank">https://spdx.org/licenses/Ruby.html</a></li><li><a href="https://www.gnu.org/licenses/license-list.html#Ruby" target="_blank">https://www.gnu.org/licenses/license-list.html#Ruby</a></li><li><a href="http://directory.fsf.org/wiki/License:Ruby" target="_blank">http://directory.fsf.org/wiki/License:Ruby</a></li><li><a href="https://git.ruby-lang.org/ruby.git/commit/COPYING?id=2cd6800fd8437b1f862f3f5c44db877159271d17" target="_blank">https://git.ruby-lang.org/ruby.git/commit/COPYING?id=2cd6800fd8437b1f862f3f5c44db877159271d17</a></li><li><a href="https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING" target="_blank">https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING</a></li><li><a href="http://www.ruby-lang.org/en/about/license.txt" target="_blank">http://www.ruby-lang.org/en/about/license.txt</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://www.ruby-lang.org/en/LICENSE.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:
+
+     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.
+
+     b) use the modified software only within your corporation or organization.
+
+     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+     d) make other distribution arrangements with the author.
+
+3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:
+
+     a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.
+
+     b) accompany the distribution with the machine-readable source of the software.
+
+     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+     d) make other distribution arrangements with the author.
+
+4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.
+
+For the list of those files and their copying conditions, see the file LEGAL.
+
+5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.
+
+6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You may make and give away verbatim copies of the source form of the software without
+             restriction, provided that you duplicate all of the original copyright notices and associated
+             disclaimers.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may modify your copy of the software in any way, provided that you do at least ONE of the
+             following:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+          place your modifications in the Public Domain or otherwise make them Freely Available, such as by
+             posting said modifications to Usenet or an equivalent medium, or by allowing the author to
+             include your modifications in the software.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+          use the modified software only within your corporation or organization.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+          give non-standard binaries non-standard names, with instructions on where to get the original
+             software distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+          make other distribution arrangements with the author.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may distribute the software in object code or binary form, provided that you do at least ONE
+             of the following:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+          distribute the binaries and library files of the software, together with instructions (in the
+             manual page or equivalent) on where to get the original distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+          accompany the distribution with the machine-readable source of the software.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+          give non-standard binaries non-standard names, with instructions on where to get the original
+             software distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+          make other distribution arrangements with the author.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may modify and include the part of the software into any other software (possibly
+             commercial). But some files in the distribution are not written by the author, so that they
+             are not under these terms.
+          &lt;p&gt;For the list of those files and their copying conditions, see the file LEGAL.&lt;/p&gt;
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          The scripts and library files supplied as input to or produced as output from the software do not
+             automatically fall under the copyright of the software, but belong to whomever generated them,
+             and may be sold commercially, and may be aggregated with this software.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+             WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+             PURPOSE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>  1. You may make and give away verbatim copies of the source form of the
+     software without restriction, provided that you duplicate all of the
+     original copyright notices and associated disclaimers.
+
+  2. You may modify your copy of the software in any way, provided that
+     you do at least ONE of the following:
+
+       a) place your modifications in the Public Domain or otherwise
+          make them Freely Available, such as by posting said
+          modifications to Usenet or an equivalent medium, or by allowing
+          the author to include your modifications in the software.
+
+       b) use the modified software only within your corporation or
+          organization.
+
+       c) give non-standard binaries non-standard names, with
+          instructions on where to get the original software distribution.
+
+       d) make other distribution arrangements with the author.
+
+  3. You may distribute the software in object code or binary form,
+     provided that you do at least ONE of the following:
+
+       a) distribute the binaries and library files of the software,
+          together with instructions (in the manual page or equivalent)
+          on where to get the original distribution.
+
+       b) accompany the distribution with the machine-readable source of
+          the software.
+
+       c) give non-standard binaries non-standard names, with
+          instructions on where to get the original software distribution.
+
+       d) make other distribution arrangements with the author.
+
+  4. You may modify and include the part of the software into any other
+     software (possibly commercial).  But some files in the distribution
+     are not written by the author, so that they are not under these terms.
+
+     For the list of those files and their copying conditions, see the
+     file LEGAL.
+
+  5. The scripts and library files supplied as input to or produced as
+     output from the software do not automatically fall under the
+     copyright of the software, but belong to whomever generated them,
+     and may be sold commercially, and may be aggregated with this
+     software.
+
+  6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR
+     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+     PURPOSE.</pre></details></li><li><details><summary>Text:</summary><pre>
+
+   1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+   2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:
+
+   a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.
+
+   b) use the modified software only within your corporation or organization.
+
+   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+   d) make other distribution arrangements with the author.
+
+   3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:
+
+   a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.
+
+   b) accompany the distribution with the machine-readable source of the software.
+
+   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+   d) make other distribution arrangements with the author.
+
+   4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.
+
+   For the list of those files and their copying conditions, see the file LEGAL.
+
+   5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.
+
+   6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">SPDXLicense:73e3a0ad4f7cea9d89b9f5b7d1f7bbb5</a> for <a href="/?license=spdx:Ruby"><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">[<a href="/fact/SPDXLicense/73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">[<a href="/fact/SPDXLicense/73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.<span class="provided-by">(provided by: <span title="SPDXLicense:73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">[<a href="/fact/SPDXLicense/73e3a0ad4f7cea9d89b9f5b7d1f7bbb5">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.ruby-lang.org/en/about/license.txt" target="_blank">https://www.ruby-lang.org/en/about/license.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:
+
+     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.
+
+     b) use the modified software only within your corporation or organization.
+
+     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+     d) make other distribution arrangements with the author.
+
+3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:
+
+     a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.
+
+     b) accompany the distribution with the machine-readable source of the software.
+
+     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+     d) make other distribution arrangements with the author.
+
+4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.
+
+For the list of those files and their copying conditions, see the file LEGAL.
+
+5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.
+
+6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          You may make and give away verbatim copies of the source form of the software without
+             restriction, provided that you duplicate all of the original copyright notices and associated
+             disclaimers.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+          You may modify your copy of the software in any way, provided that you do at least ONE of the
+             following:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+          place your modifications in the Public Domain or otherwise make them Freely Available, such as by
+             posting said modifications to Usenet or an equivalent medium, or by allowing the author to
+             include your modifications in the software.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+          use the modified software only within your corporation or organization.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+          give non-standard binaries non-standard names, with instructions on where to get the original
+             software distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+          make other distribution arrangements with the author.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt;
+          You may distribute the software in object code or binary form, provided that you do at least ONE
+             of the following:
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; a)&lt;/var&gt;
+          distribute the binaries and library files of the software, together with instructions (in the
+             manual page or equivalent) on where to get the original distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; b)&lt;/var&gt;
+          accompany the distribution with the machine-readable source of the software.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; c)&lt;/var&gt;
+          give non-standard binaries non-standard names, with instructions on where to get the original
+             software distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; d)&lt;/var&gt;
+          make other distribution arrangements with the author.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt;
+          You may modify and include the part of the software into any other software (possibly
+             commercial). But some files in the distribution are not written by the author, so that they
+             are not under these terms.
+          &lt;p&gt;For the list of those files and their copying conditions, see the file LEGAL.&lt;/p&gt;
+
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 5.&lt;/var&gt;
+          The scripts and library files supplied as input to or produced as output from the software do not
+             automatically fall under the copyright of the software, but belong to whomever generated them,
+             and may be sold commercially, and may be aggregated with this software.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 6.&lt;/var&gt;
+          THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+             WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+             PURPOSE.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Ruby&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;73e3a0ad4f7cea9d89b9f5b7d1f7bbb5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:\n\n     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.\n\n     b) use the modified software only within your corporation or organization.\n\n     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n     d) make other distribution arrangements with the author.\n\n3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:\n\n     a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.\n\n     b) accompany the distribution with the machine-readable source of the software.\n\n     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n     d) make other distribution arrangements with the author.\n\n4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.\n\nFor the list of those files and their copying conditions, see the file LEGAL.\n\n5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.\n\n6. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You may make and give away verbatim copies of the source form of the software without\n             restriction, provided that you duplicate all of the original copyright notices and associated\n             disclaimers.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may modify your copy of the software in any way, provided that you do at least ONE of the\n             following:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n          place your modifications in the Public Domain or otherwise make them Freely Available, such as by\n             posting said modifications to Usenet or an equivalent medium, or by allowing the author to\n             include your modifications in the software.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n          use the modified software only within your corporation or organization.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n          give non-standard binaries non-standard names, with instructions on where to get the original\n             software distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n          make other distribution arrangements with the author.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may distribute the software in object code or binary form, provided that you do at least ONE\n             of the following:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n          distribute the binaries and library files of the software, together with instructions (in the\n             manual page or equivalent) on where to get the original distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n          accompany the distribution with the machine-readable source of the software.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n          give non-standard binaries non-standard names, with instructions on where to get the original\n             software distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n          make other distribution arrangements with the author.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may modify and include the part of the software into any other software (possibly\n             commercial). But some files in the distribution are not written by the author, so that they\n             are not under these terms.\n          &lt;p&gt;For the list of those files and their copying conditions, see the file LEGAL.&lt;/p&gt;\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          The scripts and library files supplied as input to or produced as output from the software do not\n             automatically fall under the copyright of the software, but belong to whomever generated them,\n             and may be sold commercially, and may be aggregated with this software.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,\n             WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n             PURPOSE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.ruby-lang.org/en/about/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.ruby-lang.org/en/about/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:04Z&quot;,
+                &quot;url&quot;: &quot;https://www.ruby-lang.org/en/about/license.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: true,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:Ruby&quot;,
+        &quot;licenseText&quot;: &quot;1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:\n\n     a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.\n\n     b) use the modified software only within your corporation or organization.\n\n     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n     d) make other distribution arrangements with the author.\n\n3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:\n\n     a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.\n\n     b) accompany the distribution with the machine-readable source of the software.\n\n     c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n     d) make other distribution arrangements with the author.\n\n4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.\n\nFor the list of those files and their copying conditions, see the file LEGAL.\n\n5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.\n\n6. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          You may make and give away verbatim copies of the source form of the software without\n             restriction, provided that you duplicate all of the original copyright notices and associated\n             disclaimers.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n          You may modify your copy of the software in any way, provided that you do at least ONE of the\n             following:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n          place your modifications in the Public Domain or otherwise make them Freely Available, such as by\n             posting said modifications to Usenet or an equivalent medium, or by allowing the author to\n             include your modifications in the software.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n          use the modified software only within your corporation or organization.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n          give non-standard binaries non-standard names, with instructions on where to get the original\n             software distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n          make other distribution arrangements with the author.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt;\n          You may distribute the software in object code or binary form, provided that you do at least ONE\n             of the following:\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      \n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; a)&lt;/var&gt;\n          distribute the binaries and library files of the software, together with instructions (in the\n             manual page or equivalent) on where to get the original distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; b)&lt;/var&gt;\n          accompany the distribution with the machine-readable source of the software.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; c)&lt;/var&gt;\n          give non-standard binaries non-standard names, with instructions on where to get the original\n             software distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; d)&lt;/var&gt;\n          make other distribution arrangements with the author.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt;\n          You may modify and include the part of the software into any other software (possibly\n             commercial). But some files in the distribution are not written by the author, so that they\n             are not under these terms.\n          &lt;p&gt;For the list of those files and their copying conditions, see the file LEGAL.&lt;/p&gt;\n\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 5.&lt;/var&gt;\n          The scripts and library files supplied as input to or produced as output from the software do not\n             automatically fall under the copyright of the software, but belong to whomever generated them,\n             and may be sold commercially, and may be aggregated with this software.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 6.&lt;/var&gt;\n          THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,\n             WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n             PURPOSE.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;Ruby License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.ruby-lang.org/en/about/license.txt&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may modify your copy of the software in any way, provided that you do at least ONE of the following:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; use the modified software only within your corporation or organization.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; make other distribution arrangements with the author.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may distribute the software in object code or binary form, provided that you do at least ONE of the following:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; accompany the distribution with the machine-readable source of the software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;c)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;d)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; make other distribution arrangements with the author.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.\n\n   For the list of those files and their copying conditions, see the file LEGAL.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;5.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;6.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/37aa1b989165025210956283e7054fc7">GoogleLicense:37aa1b989165025210956283e7054fc7</a> for <a href="/?license=google:Ruby"><span class="licensename"><span class="namespace">google:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="reciprocal - These licenses allow usage of software made available under such licenses freely in *unmodified* form. If the third-party source code is modified in any way these modifications to the original third-party source code must be made available.">Google Policy Classification: <b style="">reciprocal</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:37aa1b989165025210956283e7054fc7">[<a href="/fact/GoogleLicense/37aa1b989165025210956283e7054fc7">GoogleLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:Ruby&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;37aa1b989165025210956283e7054fc7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Google Policy Classification&quot;,
+                        &quot;reciprocal&quot;,
+                        {
+                            &quot;contents&quot;: &quot;reciprocal - These licenses allow usage of software made available under such licenses freely in *unmodified* form. If the third-party source code is modified in any way these modifications to the original third-party source code must be made available.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:Ruby&quot;,
+        &quot;googleLicenseType&quot;: &quot;reciprocal&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;reciprocal - These licenses allow usage of software made available under such licenses freely in *unmodified* form. If the third-party source code is modified in any way these modifications to the original third-party source code must be made available.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:Ruby&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/5a4e9fcd4e3919cd4e5a16b04f75fe76">FedoraEntry:5a4e9fcd4e3919cd4e5a16b04f75fe76</a> for <a href="/?license=Fedora:Ruby"><span class="licensename"><span class="namespace">Fedora:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby</span></li><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5a4e9fcd4e3919cd4e5a16b04f75fe76">[<a href="/fact/FedoraEntry/5a4e9fcd4e3919cd4e5a16b04f75fe76">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.ruby-lang.org/en/LICENSE.txt" target="_blank">http://www.ruby-lang.org/en/LICENSE.txt</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:Ruby&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Ruby&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;5a4e9fcd4e3919cd4e5a16b04f75fe76&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;Ruby&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Ruby License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;Ruby&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:Ruby&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/2523254dc68ea3d059a01f76b98310a3">BlueOakCouncil:2523254dc68ea3d059a01f76b98310a3</a> for <a href="/?license=BlueOak:Ruby"><span class="licensename"><span class="namespace">BlueOak:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:2523254dc68ea3d059a01f76b98310a3">[<a href="/fact/BlueOakCouncil/2523254dc68ea3d059a01f76b98310a3">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:2523254dc68ea3d059a01f76b98310a3">[<a href="/fact/BlueOakCouncil/2523254dc68ea3d059a01f76b98310a3">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/Ruby.html" target="_blank">https://spdx.org/licenses/Ruby.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:Ruby&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;2523254dc68ea3d059a01f76b98310a3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/Ruby.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;Ruby&quot;,
+                &quot;_name&quot;: &quot;Ruby License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/Ruby.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/FSF">FSF</a>: <a href="/fact/FSF/eaeb10340082b520f8b4e964d0787c94">FSF:eaeb10340082b520f8b4e964d0787c94</a> for <a href="/?license=fsf:Ruby"><span class="licensename"><span class="namespace">fsf:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fsf:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">License of Ruby</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="FSF:eaeb10340082b520f8b4e964d0787c94">[<a href="/fact/FSF/eaeb10340082b520f8b4e964d0787c94">FSF</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">FSF: <b>gpl-2-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:eaeb10340082b520f8b4e964d0787c94">[<a href="/fact/FSF/eaeb10340082b520f8b4e964d0787c94">FSF</a>]</span>)</span></li><li><span title="">FSF: <b>gpl-3-compatible</b></span><span class="provided-by">(provided by: <span title="FSF:eaeb10340082b520f8b4e964d0787c94">[<a href="/fact/FSF/eaeb10340082b520f8b4e964d0787c94">FSF</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.gnu.org/licenses/license-list.html#Ruby" target="_blank">https://www.gnu.org/licenses/license-list.html#Ruby</a></li><li><a href="http://directory.fsf.org/wiki/License:Ruby" target="_blank">http://directory.fsf.org/wiki/License:Ruby</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fsf:Ruby&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;License of Ruby&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FSF&quot;,
+        &quot;eaeb10340082b520f8b4e964d0787c94&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.gnu.org/licenses/license-list.html#Ruby&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://directory.fsf.org/wiki/License:Ruby&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;FSF&quot;,
+                    &quot;gpl-2-compatible&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;FSF&quot;,
+                    &quot;gpl-3-compatible&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_id&quot;: &quot;fsf:Ruby&quot;,
+        &quot;_identifiers&quot;: {
+            &quot;spdx&quot;: [
+                &quot;Ruby&quot;
+            ]
+        },
+        &quot;_name&quot;: &quot;License of Ruby&quot;,
+        &quot;_tags&quot;: [
+            &quot;gpl-2-compatible&quot;,
+            &quot;gpl-3-compatible&quot;,
+            &quot;libre&quot;
+        ],
+        &quot;_uris&quot;: [
+            &quot;https://www.gnu.org/licenses/license-list.html#Ruby&quot;,
+            &quot;http://directory.fsf.org/wiki/License:Ruby&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;FSF&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/789df199b15915bfeded9331dc505cc4">ScancodeData:789df199b15915bfeded9331dc505cc4</a> for <a href="/?license=scancode:ruby"><span class="licensename"><span class="namespace">scancode:</span>ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ruby</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby License</span></li><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:789df199b15915bfeded9331dc505cc4">[<a href="/fact/ScancodeData/789df199b15915bfeded9331dc505cc4">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This version of the Ruby license is the latest found in the dual license
+COPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed
+project that allows the choice of this license and another. The other
+license choice has changed over time (from GPL originally, to BSD-2-Clause
+currently), so one needs to be aware of that change. The Ruby License
+itself is un-versioned, but has varied a bit over the years, the last
+substantive variation being in 2002.
+<span class="provided-by">(provided by: <span title="ScancodeData:789df199b15915bfeded9331dc505cc4">[<a href="/fact/ScancodeData/789df199b15915bfeded9331dc505cc4">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.ruby-lang.org/en/LICENSE.txt" target="_blank">http://www.ruby-lang.org/en/LICENSE.txt</a></li><li><a href="https://git.ruby-lang.org/ruby.git/commit/COPYING?id=2cd6800fd8437b1f862f3f5c44db877159271d17" target="_blank">https://git.ruby-lang.org/ruby.git/commit/COPYING?id=2cd6800fd8437b1f862f3f5c44db877159271d17</a></li><li><a href="https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING" target="_blank">https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>http://www.ruby-lang.org/en/LICENSE.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>  1. You may make and give away verbatim copies of the source form of the
+     software without restriction, provided that you duplicate all of the
+     original copyright notices and associated disclaimers.
+
+  2. You may modify your copy of the software in any way, provided that
+     you do at least ONE of the following:
+
+       a) place your modifications in the Public Domain or otherwise
+          make them Freely Available, such as by posting said
+          modifications to Usenet or an equivalent medium, or by allowing
+          the author to include your modifications in the software.
+
+       b) use the modified software only within your corporation or
+          organization.
+
+       c) give non-standard binaries non-standard names, with
+          instructions on where to get the original software distribution.
+
+       d) make other distribution arrangements with the author.
+
+  3. You may distribute the software in object code or binary form,
+     provided that you do at least ONE of the following:
+
+       a) distribute the binaries and library files of the software,
+          together with instructions (in the manual page or equivalent)
+          on where to get the original distribution.
+
+       b) accompany the distribution with the machine-readable source of
+          the software.
+
+       c) give non-standard binaries non-standard names, with
+          instructions on where to get the original software distribution.
+
+       d) make other distribution arrangements with the author.
+
+  4. You may modify and include the part of the software into any other
+     software (possibly commercial).  But some files in the distribution
+     are not written by the author, so that they are not under these terms.
+
+     For the list of those files and their copying conditions, see the
+     file LEGAL.
+
+  5. The scripts and library files supplied as input to or produced as
+     output from the software do not automatically fall under the
+     copyright of the software, but belong to whomever generated them,
+     and may be sold commercially, and may be aggregated with this
+     software.
+
+  6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR
+     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+     PURPOSE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ruby&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;789df199b15915bfeded9331dc505cc4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://git.ruby-lang.org/ruby.git/commit/COPYING?id=2cd6800fd8437b1f862f3f5c44db877159271d17&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;  1. You may make and give away verbatim copies of the source form of the\n     software without restriction, provided that you duplicate all of the\n     original copyright notices and associated disclaimers.\n\n  2. You may modify your copy of the software in any way, provided that\n     you do at least ONE of the following:\n\n       a) place your modifications in the Public Domain or otherwise\n          make them Freely Available, such as by posting said\n          modifications to Usenet or an equivalent medium, or by allowing\n          the author to include your modifications in the software.\n\n       b) use the modified software only within your corporation or\n          organization.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  3. You may distribute the software in object code or binary form,\n     provided that you do at least ONE of the following:\n\n       a) distribute the binaries and library files of the software,\n          together with instructions (in the manual page or equivalent)\n          on where to get the original distribution.\n\n       b) accompany the distribution with the machine-readable source of\n          the software.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  4. You may modify and include the part of the software into any other\n     software (possibly commercial).  But some files in the distribution\n     are not written by the author, so that they are not under these terms.\n\n     For the list of those files and their copying conditions, see the\n     file LEGAL.\n\n  5. The scripts and library files supplied as input to or produced as\n     output from the software do not automatically fall under the\n     copyright of the software, but belong to whomever generated them,\n     and may be sold commercially, and may be aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n     PURPOSE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;,
+        &quot;_key&quot;: &quot;ruby&quot;,
+        &quot;_name&quot;: &quot;Ruby License&quot;,
+        &quot;_notes&quot;: &quot;This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://git.ruby-lang.org/ruby.git/commit/COPYING?id=2cd6800fd8437b1f862f3f5c44db877159271d17&quot;,
+            &quot;https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING&quot;
+        ],
+        &quot;_owner&quot;: &quot;Ruby&quot;,
+        &quot;_shortName&quot;: &quot;Ruby License&quot;,
+        &quot;_spdxId&quot;: &quot;Ruby&quot;,
+        &quot;_text&quot;: &quot;  1. You may make and give away verbatim copies of the source form of the\n     software without restriction, provided that you duplicate all of the\n     original copyright notices and associated disclaimers.\n\n  2. You may modify your copy of the software in any way, provided that\n     you do at least ONE of the following:\n\n       a) place your modifications in the Public Domain or otherwise\n          make them Freely Available, such as by posting said\n          modifications to Usenet or an equivalent medium, or by allowing\n          the author to include your modifications in the software.\n\n       b) use the modified software only within your corporation or\n          organization.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  3. You may distribute the software in object code or binary form,\n     provided that you do at least ONE of the following:\n\n       a) distribute the binaries and library files of the software,\n          together with instructions (in the manual page or equivalent)\n          on where to get the original distribution.\n\n       b) accompany the distribution with the machine-readable source of\n          the software.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  4. You may modify and include the part of the software into any other\n     software (possibly commercial).  But some files in the distribution\n     are not written by the author, so that they are not under these terms.\n\n     For the list of those files and their copying conditions, see the\n     file LEGAL.\n\n  5. The scripts and library files supplied as input to or produced as\n     output from the software do not automatically fall under the\n     copyright of the software, but belong to whomever generated them,\n     and may be sold commercially, and may be aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n     PURPOSE.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/b2cbf3ae41e7e6c06c51c647f0d3695b">Fossology:b2cbf3ae41e7e6c06c51c647f0d3695b</a> for <a href="/?license=fossology:Ruby"><span class="licensename"><span class="namespace">fossology:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.<span class="provided-by">(provided by: <span title="Fossology:b2cbf3ae41e7e6c06c51c647f0d3695b">[<a href="/fact/Fossology/b2cbf3ae41e7e6c06c51c647f0d3695b">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.ruby-lang.org/en/LICENSE.txt" target="_blank">http://www.ruby-lang.org/en/LICENSE.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>
+
+   1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.
+
+   2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:
+
+   a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.
+
+   b) use the modified software only within your corporation or organization.
+
+   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+   d) make other distribution arrangements with the author.
+
+   3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:
+
+   a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.
+
+   b) accompany the distribution with the machine-readable source of the software.
+
+   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.
+
+   d) make other distribution arrangements with the author.
+
+   4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.
+
+   For the list of those files and their copying conditions, see the file LEGAL.
+
+   5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.
+
+   6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:Ruby&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;b2cbf3ae41e7e6c06c51c647f0d3695b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;\n\n   1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:\n\n   a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.\n\n   b) use the modified software only within your corporation or organization.\n\n   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n   d) make other distribution arrangements with the author.\n\n   3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:\n\n   a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.\n\n   b) accompany the distribution with the machine-readable source of the software.\n\n   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n   d) make other distribution arrangements with the author.\n\n   4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.\n\n   For the list of those files and their copying conditions, see the file LEGAL.\n\n   5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.\n\n   6. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Ruby License&quot;,
+        &quot;_rf_notes&quot;: &quot;Ruby is disjunctively licensed project that allows the choice of this license and another. The other license choice has changed over time (from GPL originally, to BSD-2-Clause currently), so one needs to be aware of that change. The Ruby License itself is un-versioned, but has varied a bit over the years, the last substantive variation being in 2002.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:Ruby&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;\n\n   1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n   2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:\n\n   a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.\n\n   b) use the modified software only within your corporation or organization.\n\n   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n   d) make other distribution arrangements with the author.\n\n   3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:\n\n   a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.\n\n   b) accompany the distribution with the machine-readable source of the software.\n\n   c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n\n   d) make other distribution arrangements with the author.\n\n   4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.\n\n   For the list of those files and their copying conditions, see the file LEGAL.\n\n   5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.\n\n   6. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/bfe0e8f36c879d19d079caaa70e7b2b5">OrtLicenseCategorization:bfe0e8f36c879d19d079caaa70e7b2b5</a> for <a href="/?license=SPDX:Ruby"><span class="licensename"><span class="namespace">SPDX:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Ruby</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:bfe0e8f36c879d19d079caaa70e7b2b5">[<a href="/fact/OrtLicenseCategorization/bfe0e8f36c879d19d079caaa70e7b2b5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:bfe0e8f36c879d19d079caaa70e7b2b5">[<a href="/fact/OrtLicenseCategorization/bfe0e8f36c879d19d079caaa70e7b2b5">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:bfe0e8f36c879d19d079caaa70e7b2b5">[<a href="/fact/OrtLicenseCategorization/bfe0e8f36c879d19d079caaa70e7b2b5">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Ruby&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;bfe0e8f36c879d19d079caaa70e7b2b5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Ruby&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2</a> for <a href="/?license=SPDX:Ruby"><span class="licensename"><span class="namespace">SPDX:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>Ruby</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.">OrtLicenseCategorization: <b>copyleft-file-level</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.">OrtLicenseCategorization: <b>property:distribute-source-code</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:1a66d67334fc81fd6617bed9924c1ae2">[<a href="/fact/OrtLicenseCategorization/1a66d67334fc81fd6617bed9924c1ae2">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:Ruby&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;1a66d67334fc81fd6617bed9924c1ae2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-file-level&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:distribute-source-code&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that requires you to license modifications made into the same file with the same license as the original open source file. This also applies, if you add code from this file to your own file. Example: MPL-2.0.&quot;,
+                &quot;name&quot;: &quot;copyleft-file-level&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This property indicates that the license requires that the source code of the OSS is either distributed, or offered to distribute, in connection with the software delivery.&quot;,
+                &quot;name&quot;: &quot;property:distribute-source-code&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:Ruby&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/fe5be734ca5339d5c6d54fb5fd40cdd5">CavilLicenseChange:fe5be734ca5339d5c6d54fb5fd40cdd5</a> for <a href="/?license=cavil:Ruby"><span class="licensename"><span class="namespace">cavil:</span>Ruby</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>Ruby</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">GPL-2.0+ or Ruby</span></li><li><span class="licensename">GPLv2+ or Ruby</span></li><li><span class="licensename">Ruby</span></li><li><span class="licensename">same as ruby&#39;s</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:Ruby&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GPL-2.0+ or Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GPLv2+ or Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;same as ruby&#39;s&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;fe5be734ca5339d5c6d54fb5fd40cdd5&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;GPL-2.0+ or Ruby&quot;,
+            &quot;GPLv2+ or Ruby&quot;,
+            &quot;Ruby&quot;,
+            &quot;same as ruby&#39;s&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:Ruby&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/ba30765e38033dabbdaa348bf3d20389">MetaeffektLicense:ba30765e38033dabbdaa348bf3d20389</a> for <a href="/?license=metaeffekt:Ruby License"><span class="licensename"><span class="namespace">metaeffekt:</span>Ruby License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Ruby License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ruby</span></li><li><span class="licensename">Ruby License</span></li><li><span class="licensename">RubyLicense</span></li><li><span class="licensename">under Ruby</span></li><li><span class="licensename">under the Ruby</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:ba30765e38033dabbdaa348bf3d20389">[<a href="/fact/MetaeffektLicense/ba30765e38033dabbdaa348bf3d20389">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Ruby License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:Ruby&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;RubyLicense&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;under the Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;under Ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ruby&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;ba30765e38033dabbdaa348bf3d20389&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Ruby License&quot;,
+            &quot;RubyLicense&quot;,
+            &quot;under the Ruby&quot;,
+            &quot;under Ruby&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Ruby License&quot;,
+        &quot;_category&quot;: &quot;Ruby&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ruby&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:Ruby&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/HermineData">HermineData</a>: <a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0</a> for <a href="/?license=spdx:Ruby"><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></a></h3><h4>Obligations</h4><ul><li><h5>Preserve License and notices in source code</h5><pre>1. You may make and give away verbatim copies of the source form of the
+     software without restriction, provided that you duplicate all of the
+     original copyright notices and associated disclaimers.</pre><p><strong>License:</strong><ul><li>Ruby</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Preserve legal mentions in source code</h5><p><strong>Description:</strong>Keep all legal notices and license texts intact in the Source Code, including in the headers.</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>Unmodified</p></li><li><h5>Mention where to get original software in documentation</h5><pre>3. You may distribute the software in object code or binary form,
+     provided that you do at least ONE of the following:
+
+       a) distribute the binaries and library files of the software,
+	  together with instructions (in the manual page or equivalent)
+	  on where to get the original distribution.</pre><p><strong>License:</strong><ul><li>Ruby</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Add specific legal mentions in the documentation</h5><p><strong>Description:</strong>Include specific mentions/attributions/ statements or warnings in the documentation. For instance : &quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).&quot;</p><p><strong>Metacategory:</strong>Mentions</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>AlteredUnmodified</p></li><li><h5>Publication under some free license or renaming</h5><pre>2. You may modify your copy of the software in any way, provided that
+     you do at least ONE of the following:
+
+       a) place your modifications in the Public Domain or otherwise
+          make them Freely Available, such as by posting said
+	  modifications to Usenet or an equivalent medium, or by allowing
+	  the author to include your modifications in the software.
+
+       b) use the modified software only within your corporation or
+          organization.
+
+       c) give non-standard binaries non-standard names, with
+          instructions on where to get the original software distribution.
+
+       d) make other distribution arrangements with the author.</pre><p><strong>License:</strong><ul><li>Ruby</li></ul></p><p><strong>Generics:</strong><ul><li><h5>Weak Copyleft</h5><p><strong>Description:</strong>Some categories of derivative works or of works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.</p><p><strong>Metacategory:</strong>IP management</p><p><strong>Passivity:</strong>Active</p></li></ul></p><p><strong>Passivity:</strong>Active</p><p><strong>Trigger explanation:</strong>DistributionSourceDistributionNonSource</p><p><strong>Trigger modification:</strong>Altered</p></li></ul><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>Ruby</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">HermineLicense: <b style="color: green;">FOSS - deduced</b></span><span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>HermineLicense: </b>As mentionned in the preambule, Ruby is dual licensed, BSD-2-Clause or Ruby license. There is no reason to use the Ruby license.
+Older versions were  dual licensed with GPL (see https://enterprise.dejacode.com/licenses/public/ruby/?_list_filters=q%3Druby#license-text )<span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li><li><b>HermineLicense: </b>&quot;Ruby&quot; is of radical: Ruby<span class="provided-by">(provided by: <span title="HermineLicense:8a813ce4ba73de4c9aea7c528c69ffb0">[<a href="/fact/HermineLicense/8a813ce4ba73de4c9aea7c528c69ffb0">HermineLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.ruby-lang.org/en/LICENSE.txt" target="_blank">http://www.ruby-lang.org/en/LICENSE.txt</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:Ruby&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;HermineLicense&quot;,
+        &quot;8a813ce4ba73de4c9aea7c528c69ffb0&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;WeaklyProtective&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;HermineLicense&quot;,
+                        &quot;FOSS - deduced&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;As mentionned in the preambule, Ruby is dual licensed, BSD-2-Clause or Ruby license. There is no reason to use the Ruby license.\r\nOlder versions were  dual licensed with GPL (see https://enterprise.dejacode.com/licenses/public/ruby/?_list_filters=q%3Druby#license-text )&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;HermineLicense&quot;,
+                    &quot;\&quot;Ruby\&quot; is of radical: Ruby&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;autoupgrade&quot;: false,
+        &quot;comment&quot;: &quot;As mentionned in the preambule, Ruby is dual licensed, BSD-2-Clause or Ruby license. There is no reason to use the Ruby license.\r\nOlder versions were  dual licensed with GPL (see https://enterprise.dejacode.com/licenses/public/ruby/?_list_filters=q%3Druby#license-text )&quot;,
+        &quot;copyleft&quot;: &quot;Weak&quot;,
+        &quot;ethical_clause&quot;: null,
+        &quot;foss&quot;: &quot;Yes-Auto&quot;,
+        &quot;fsf_approved&quot;: true,
+        &quot;inspiration_spdx&quot;: &quot;&quot;,
+        &quot;law_choice&quot;: &quot;&quot;,
+        &quot;license_version&quot;: &quot;&quot;,
+        &quot;long_name&quot;: &quot;Ruby License&quot;,
+        &quot;non_commercial&quot;: null,
+        &quot;non_tivoisation&quot;: null,
+        &quot;obligations&quot;: [
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Keep all legal notices and license texts intact in the Source Code, including in the headers.&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Preserve legal mentions in source code&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Ruby&quot;
+                ],
+                &quot;name&quot;: &quot;Preserve License and notices in source code&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;Unmodified&quot;,
+                &quot;verbatim&quot;: &quot;1. You may make and give away verbatim copies of the source form of the\r\n     software without restriction, provided that you duplicate all of the\r\n     original copyright notices and associated disclaimers.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Include specific mentions/attributions/ statements or warnings in the documentation. For instance : \&quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\&quot;&quot;,
+                        &quot;metacategory&quot;: &quot;Mentions&quot;,
+                        &quot;name&quot;: &quot;Add specific legal mentions in the documentation&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Ruby&quot;
+                ],
+                &quot;name&quot;: &quot;Mention where to get original software in documentation&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;AlteredUnmodified&quot;,
+                &quot;verbatim&quot;: &quot;3. You may distribute the software in object code or binary form,\r\n     provided that you do at least ONE of the following:\r\n\r\n       a) distribute the binaries and library files of the software,\r\n\t  together with instructions (in the manual page or equivalent)\r\n\t  on where to get the original distribution.&quot;
+            },
+            {
+                &quot;generic&quot;: [
+                    {
+                        &quot;description&quot;: &quot;Some categories of derivative works or of works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.&quot;,
+                        &quot;metacategory&quot;: &quot;IPManagement&quot;,
+                        &quot;name&quot;: &quot;Weak Copyleft&quot;,
+                        &quot;passivity&quot;: &quot;Active&quot;
+                    }
+                ],
+                &quot;license&quot;: [
+                    &quot;Ruby&quot;
+                ],
+                &quot;name&quot;: &quot;Publication under some free license or renaming&quot;,
+                &quot;passivity&quot;: &quot;Active&quot;,
+                &quot;trigger_expl&quot;: &quot;DistributionSourceDistributionNonSource&quot;,
+                &quot;trigger_mdf&quot;: &quot;Altered&quot;,
+                &quot;verbatim&quot;: &quot;2. You may modify your copy of the software in any way, provided that\r\n     you do at least ONE of the following:\r\n\r\n       a) place your modifications in the Public Domain or otherwise\r\n          make them Freely Available, such as by posting said\r\n\t  modifications to Usenet or an equivalent medium, or by allowing\r\n\t  the author to include your modifications in the software.\r\n\r\n       b) use the modified software only within your corporation or\r\n          organization.\r\n\r\n       c) give non-standard binaries non-standard names, with\r\n          instructions on where to get the original software distribution.\r\n\r\n       d) make other distribution arrangements with the author.&quot;
+            }
+        ],
+        &quot;osi_approved&quot;: false,
+        &quot;patent_grant&quot;: null,
+        &quot;radical&quot;: &quot;Ruby&quot;,
+        &quot;spdx_id&quot;: &quot;Ruby&quot;,
+        &quot;steward&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;,
+        &quot;verbatim&quot;: &quot;&quot;
+    },
+    &quot;type&quot;: &quot;HermineLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/7ed4337b88e7de61459ead4eb050f32b">FOSSLight:7ed4337b88e7de61459ead4eb050f32b</a> for <a href="/?license=fosslight:Ruby License"><span class="licensename"><span class="namespace">fosslight:</span>Ruby License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Ruby License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="FOSSLight:7ed4337b88e7de61459ead4eb050f32b">[<a href="/fact/FOSSLight/7ed4337b88e7de61459ead4eb050f32b">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Ruby License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;Ruby&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;7ed4337b88e7de61459ead4eb050f32b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;WeaklyProtective&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:\n a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.\n b) use the modified software only within your corporation or organization.\n c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n d) make other distribution arrangements with the author.\n\n3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:\n a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.\n b) accompany the distribution with the machine-readable source of the software.\n c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n d) make other distribution arrangements with the author.&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;1. You may make and give away verbatim copies of the source form of the software without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.\n\n2. You may modify your copy of the software in any way, provided that you do at least ONE of the following:\n a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or by allowing the author to include your modifications in the software.\n b) use the modified software only within your corporation or organization.\n c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n d) make other distribution arrangements with the author.\n\n3. You may distribute the software in object code or binary form, provided that you do at least ONE of the following:\n a) distribute the binaries and library files of the software, together with instructions (in the manual page or equivalent) on where to get the original distribution.\n b) accompany the distribution with the machine-readable source of the software.\n c) give non-standard binaries non-standard names, with instructions on where to get the original software distribution.\n d) make other distribution arrangements with the author.\n\n4. You may modify and include the part of the software into any other software (possibly commercial). But some files in the distribution are not written by the author, so that they are not under these terms.\nFor the list of those files and their copying conditions, see the file LEGAL.\n\n5. The scripts and library files supplied as input to or produced as output from the software do not automatically fall under the copyright of the software, but belong to whomever generated them, and may be sold commercially, and may be aggregated with this software.\n\n6. THIS SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: &quot;&quot;,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;Ruby&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/Ruby.html&quot;,
+            &quot;_fossLight_id&quot;: 592,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Ruby License&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Weak_Copyleft&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/0b8d8d6b69f6eb120da909b18797a384">ifrOSS License:0b8d8d6b69f6eb120da909b18797a384</a> for <a href="/?license=ifrOSS:Ruby License"><span class="licensename"><span class="namespace">ifrOSS:</span>Ruby License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>Ruby License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ifrOSS License:0b8d8d6b69f6eb120da909b18797a384">[<a href="/fact/ifrOSS License/0b8d8d6b69f6eb120da909b18797a384">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.">ifrOSS Classification: <b style="">Lizenzen ohne Copyleft-Effekt (&quot;Permissive Licenses&quot;)</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:0b8d8d6b69f6eb120da909b18797a384">[<a href="/fact/ifrOSS License/0b8d8d6b69f6eb120da909b18797a384">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:0b8d8d6b69f6eb120da909b18797a384">[<a href="/fact/ifrOSS License/0b8d8d6b69f6eb120da909b18797a384">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.ruby-lang.org/en/LICENSE.txt" target="_blank">http://www.ruby-lang.org/en/LICENSE.txt</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:Ruby License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;0b8d8d6b69f6eb120da909b18797a384&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: {
+                                    &quot;contents&quot;: [
+                                        &quot;ifrOSS Classification&quot;,
+                                        &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                                        {
+                                            &quot;contents&quot;: &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;,
+                                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                        }
+                                    ],
+                                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                },
+                                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                            },
+                            &quot;tag&quot;: &quot;LicenseRating&quot;
+                        },
+                        [
+                            {
+                                &quot;contents&quot;: {
+                                    &quot;tag&quot;: &quot;Permissive&quot;
+                                },
+                                &quot;tag&quot;: &quot;LicenseType&quot;
+                            }
+                        ]
+                    ],
+                    &quot;tag&quot;: &quot;SubStatements&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;ifrOSS Classification&quot;,
+                                    &quot;Open Source Lizenzen&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Source Lizenzen&quot;,
+                &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;
+            ],
+            [
+                &quot;Lizenzen ohne Copyleft-Effekt (\&quot;Permissive Licenses\&quot;)&quot;,
+                &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:Ruby License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;Ruby License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;http://www.ruby-lang.org/en/LICENSE.txt&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/9faa428857cb09ad6b2a3191278d138d">ifrOSS License:9faa428857cb09ad6b2a3191278d138d</a> for <a href="/?license=ifrOSS:Ruby License"><span class="licensename"><span class="namespace">ifrOSS:</span>Ruby License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>Ruby License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Ruby License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>WeaklyProtective<span class="provided-by">(provided by: <span title="ifrOSS License:9faa428857cb09ad6b2a3191278d138d">[<a href="/fact/ifrOSS License/9faa428857cb09ad6b2a3191278d138d">ifrOSS License</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können.">ifrOSS Classification: <b style="">Lizenzen mit Wahlmöglichkeiten</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:9faa428857cb09ad6b2a3191278d138d">[<a href="/fact/ifrOSS License/9faa428857cb09ad6b2a3191278d138d">ifrOSS License</a>]</span>)</span></li><li><span title="Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit &quot;Einordnung unklar&quot; gekennzeichnet.
+">ifrOSS Classification: <b style="color: green;">Open Source Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:9faa428857cb09ad6b2a3191278d138d">[<a href="/fact/ifrOSS License/9faa428857cb09ad6b2a3191278d138d">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.ruby-lang.org/en/about/license.txt" target="_blank">http://www.ruby-lang.org/en/about/license.txt</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:Ruby License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Ruby License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;9faa428857cb09ad6b2a3191278d138d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.ruby-lang.org/en/about/license.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: [
+                        {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: {
+                                    &quot;contents&quot;: [
+                                        &quot;ifrOSS Classification&quot;,
+                                        &quot;Lizenzen mit Wahlmöglichkeiten&quot;,
+                                        {
+                                            &quot;contents&quot;: &quot;Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können.&quot;,
+                                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                        }
+                                    ],
+                                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                                },
+                                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                            },
+                            &quot;tag&quot;: &quot;LicenseRating&quot;
+                        },
+                        [
+                            {
+                                &quot;contents&quot;: {
+                                    &quot;tag&quot;: &quot;WeaklyProtective&quot;
+                                },
+                                &quot;tag&quot;: &quot;LicenseType&quot;
+                            }
+                        ]
+                    ],
+                    &quot;tag&quot;: &quot;SubStatements&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;ifrOSS Classification&quot;,
+                                    &quot;Open Source Lizenzen&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Source Lizenzen&quot;,
+                &quot;Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie\nwerden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:\n\n* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)\n* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)\n* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)\n* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)\n* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)\n\nSoftware unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit \&quot;Einordnung unklar\&quot; gekennzeichnet.\n&quot;
+            ],
+            [
+                &quot;Lizenzen mit Wahlmöglichkeiten&quot;,
+                &quot;Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:Ruby License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;Ruby License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;http://www.ruby-lang.org/en/about/license.txt&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

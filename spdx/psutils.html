@@ -1,0 +1,1048 @@
+<html><head><title>ldbcollector: spdx:psutils</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:psutils</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>psutils</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">PS Utilities License</span></li><li><span class="licensename">psutils</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>psutils</span></li><li><span class="licensename"><span class="namespace">cavil:</span>psutils</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>psutils</span></li><li><span class="licensename"><span class="namespace">fossology:</span>psutils</span></li><li><span class="licensename"><span class="namespace">scancode:</span>psutils</span></li><li><span class="licensename"><span class="namespace">spdx:</span>psutils</span></li><li><span class="licensename">psutils License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>psutils License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">PS Utilities Package</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:c33d4f56834f270922228f390b1385eb">[<a href="/fact/BlueOakCouncil/c33d4f56834f270922228f390b1385eb">BlueOakCouncil</a>]</span><span title="ScancodeData:f13cd36176bb5d7d442ced085c5e304a">[<a href="/fact/ScancodeData/f13cd36176bb5d7d442ced085c5e304a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e88bb24ed373df98dde2e2e066cec940">[<a href="/fact/SPDXLicense/e88bb24ed373df98dde2e2e066cec940">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8bc6cbc142b849d677fdc032f7833b87">[<a href="/fact/FedoraEntry/8bc6cbc142b849d677fdc032f7833b87">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:c33d4f56834f270922228f390b1385eb">[<a href="/fact/BlueOakCouncil/c33d4f56834f270922228f390b1385eb">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d08e31c5b999dc61d3a2f096b2abd99e">[<a href="/fact/OrtLicenseCategorization/d08e31c5b999dc61d3a2f096b2abd99e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d08e31c5b999dc61d3a2f096b2abd99e">[<a href="/fact/OrtLicenseCategorization/d08e31c5b999dc61d3a2f096b2abd99e">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/psutils" target="_blank">https://fedoraproject.org/wiki/Licensing/psutils</a></li><li><a href="https://spdx.org/licenses/psutils.html" target="_blank">https://spdx.org/licenses/psutils.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>PS Utilities Package
+
+The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.
+
+LICENSE          Makefile.msc     Makefile.nt	   Makefile.os2
+Makefile.unix    README           config.h         descrip.mms
+epsffit.c        epsffit.man	  extractres.man   extractres.pl
+fixdlsrps.man    fixdlsrps.pl     fixfmps.man	   fixfmps.pl
+fixmacps.man     fixmacps.pl	  fixpsditps.man   fixpsditps.pl
+fixpspps.man     fixpspps.pl	  fixscribeps.man  fixscribeps.pl
+fixtpps.man	 fixtpps.pl	  fixwfwps.man     fixwfwps.pl
+fixwpps.man	 fixwpps.pl	  fixwwps.man	   fixwwps.pl
+getafm           getafm.man	  includeres.man   includeres.pl
+maketext         patchlev.h	  psbook.c         psbook.man
+pserror.c        pserror.h        psmerge.man	   psmerge.pl
+psnup.c          psnup.man        psresize.c	   psresize.man
+psselect.c	 psselect.man     psspec.c         psspec.h
+pstops.c         pstops.man	  psutil.c         psutil.h
+showchar
+
+They may be copied and used for any purpose (including distribution as part of a for-profit product), provided:
+
+1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.
+
+2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.
+
+3) These programs are provided &quot;as-is&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.
+
+Basically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;PS Utilities Package&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.&lt;/p&gt;
+
+         &lt;p&gt;LICENSE Makefile.msc Makefile.nt Makefile.os2
+        &lt;br /&gt;
+
+Makefile.unix README config.h descrip.mms
+        &lt;br /&gt;
+
+epsffit.c epsffit.man extractres.man extractres.pl
+        &lt;br /&gt;
+
+fixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl
+        &lt;br /&gt;
+
+fixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl
+        &lt;br /&gt;
+
+fixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl
+        &lt;br /&gt;
+
+fixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl
+        &lt;br /&gt;
+
+fixwpps.man fixwpps.pl fixwwps.man fixwwps.pl
+        &lt;br /&gt;
+
+getafm getafm.man includeres.man includeres.pl
+        &lt;br /&gt;
+
+maketext patchlev.h psbook.c psbook.man
+        &lt;br /&gt;
+
+pserror.c pserror.h psmerge.man psmerge.pl
+        &lt;br /&gt;
+
+psnup.c psnup.man psresize.c psresize.man
+        &lt;br /&gt;
+
+psselect.c psselect.man psspec.c psspec.h
+        &lt;br /&gt;
+
+pstops.c pstops.man psutil.c psutil.h
+        &lt;br /&gt;
+
+showchar
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;They may be copied and used for any purpose (including distribution as part of a for-profit product),
+         provided:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1)&lt;/var&gt;
+          The original attribution of the programs is clearly displayed in the product and/or
+             documentation, even if the programs are modified and/or renamed as part of the product.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2)&lt;/var&gt;
+          The original source code of the programs is provided free of charge (except for reasonable
+             distribution costs). For a definition of reasonable distribution costs, see the Gnu General
+             Public License or Larry Wall&amp;apos;s Artistic License (provided with the Perl 4 kit). The GPL and
+             Artistic License in NO WAY affect this license; they are merely used as examples of the spirit
+             in which it is intended.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3)&lt;/var&gt;
+          These programs are provided &amp;quot;as-is&amp;quot;. No warranty or guarantee of their fitness for any particular
+             task is provided. Use of these programs is completely at your own risk.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Basically, I don&amp;apos;t mind how you use the programs so long as you acknowledge the author, and give people
+         the originals if they want them.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>PS Utilities Package
+
+The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.
+
+LICENSE Makefile.msc Makefile.nt Makefile.os2
+Makefile.unix README config.h descrip.mms
+epsffit.c epsffit.man extractres.man extractres.pl
+fixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl
+fixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl
+fixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl
+fixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl
+fixwpps.man fixwpps.pl fixwwps.man fixwwps.pl
+getafm getafm.man includeres.man includeres.pl
+maketext patchlev.h psbook.c psbook.man
+pserror.c pserror.h psmerge.man psmerge.pl
+psnup.c psnup.man psresize.c psresize.man
+psselect.c psselect.man psspec.c psspec.h
+pstops.c pstops.man psutil.c psutil.h
+showchar
+
+They may be copied and used for any purpose (including distribution as part of a for-profit product), provided:
+
+1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.
+
+2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.
+
+3) These programs are provided &quot;as-is&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.
+
+Basically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.</pre></details></li><li><details><summary>Text:</summary><pre>PS Utilities Package The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.
+
+LICENSE Makefile.msc Makefile.nt Makefile.os2
+
+Makefile.unix README config.h descrip.mms
+
+epsffit.c epsffit.man extractres.man extractres.pl
+
+fixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl
+
+fixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl
+
+fixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl
+
+fixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl
+
+fixwpps.man fixwpps.pl fixwwps.man fixwwps.pl
+
+getafm getafm.man includeres.man includeres.pl
+
+maketext patchlev.h psbook.c psbook.man
+
+pserror.c pserror.h psmerge.man psmerge.pl
+
+psnup.c psnup.man psresize.c psresize.man
+
+psselect.c psselect.man psspec.c psspec.h
+
+pstops.c pstops.man psutil.c psutil.h
+
+showchar
+
+They may be copied and used for any purpose (including distribution as part of a for-profit product), provided:
+
+   1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.
+
+   2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.
+
+   3) These programs are provided &quot;as-is&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.
+
+Basically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e88bb24ed373df98dde2e2e066cec940">SPDXLicense:e88bb24ed373df98dde2e2e066cec940</a> for <a href="/?license=spdx:psutils"><span class="licensename"><span class="namespace">spdx:</span>psutils</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>psutils</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">psutils License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e88bb24ed373df98dde2e2e066cec940">[<a href="/fact/SPDXLicense/e88bb24ed373df98dde2e2e066cec940">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/psutils" target="_blank">https://fedoraproject.org/wiki/Licensing/psutils</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>PS Utilities Package
+
+The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.
+
+LICENSE          Makefile.msc     Makefile.nt	   Makefile.os2
+Makefile.unix    README           config.h         descrip.mms
+epsffit.c        epsffit.man	  extractres.man   extractres.pl
+fixdlsrps.man    fixdlsrps.pl     fixfmps.man	   fixfmps.pl
+fixmacps.man     fixmacps.pl	  fixpsditps.man   fixpsditps.pl
+fixpspps.man     fixpspps.pl	  fixscribeps.man  fixscribeps.pl
+fixtpps.man	 fixtpps.pl	  fixwfwps.man     fixwfwps.pl
+fixwpps.man	 fixwpps.pl	  fixwwps.man	   fixwwps.pl
+getafm           getafm.man	  includeres.man   includeres.pl
+maketext         patchlev.h	  psbook.c         psbook.man
+pserror.c        pserror.h        psmerge.man	   psmerge.pl
+psnup.c          psnup.man        psresize.c	   psresize.man
+psselect.c	 psselect.man     psspec.c         psspec.h
+pstops.c         pstops.man	  psutil.c         psutil.h
+showchar
+
+They may be copied and used for any purpose (including distribution as part of a for-profit product), provided:
+
+1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.
+
+2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.
+
+3) These programs are provided &quot;as-is&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.
+
+Basically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;PS Utilities Package&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.&lt;/p&gt;
+
+         &lt;p&gt;LICENSE Makefile.msc Makefile.nt Makefile.os2
+        &lt;br /&gt;
+
+Makefile.unix README config.h descrip.mms
+        &lt;br /&gt;
+
+epsffit.c epsffit.man extractres.man extractres.pl
+        &lt;br /&gt;
+
+fixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl
+        &lt;br /&gt;
+
+fixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl
+        &lt;br /&gt;
+
+fixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl
+        &lt;br /&gt;
+
+fixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl
+        &lt;br /&gt;
+
+fixwpps.man fixwpps.pl fixwwps.man fixwwps.pl
+        &lt;br /&gt;
+
+getafm getafm.man includeres.man includeres.pl
+        &lt;br /&gt;
+
+maketext patchlev.h psbook.c psbook.man
+        &lt;br /&gt;
+
+pserror.c pserror.h psmerge.man psmerge.pl
+        &lt;br /&gt;
+
+psnup.c psnup.man psresize.c psresize.man
+        &lt;br /&gt;
+
+psselect.c psselect.man psspec.c psspec.h
+        &lt;br /&gt;
+
+pstops.c pstops.man psutil.c psutil.h
+        &lt;br /&gt;
+
+showchar
+      &lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;They may be copied and used for any purpose (including distribution as part of a for-profit product),
+         provided:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1)&lt;/var&gt;
+          The original attribution of the programs is clearly displayed in the product and/or
+             documentation, even if the programs are modified and/or renamed as part of the product.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2)&lt;/var&gt;
+          The original source code of the programs is provided free of charge (except for reasonable
+             distribution costs). For a definition of reasonable distribution costs, see the Gnu General
+             Public License or Larry Wall&amp;apos;s Artistic License (provided with the Perl 4 kit). The GPL and
+             Artistic License in NO WAY affect this license; they are merely used as examples of the spirit
+             in which it is intended.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 3)&lt;/var&gt;
+          These programs are provided &amp;quot;as-is&amp;quot;. No warranty or guarantee of their fitness for any particular
+             task is provided. Use of these programs is completely at your own risk.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Basically, I don&amp;apos;t mind how you use the programs so long as you acknowledge the author, and give people
+         the originals if they want them.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:psutils&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;psutils License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e88bb24ed373df98dde2e2e066cec940&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE          Makefile.msc     Makefile.nt\t   Makefile.os2\nMakefile.unix    README           config.h         descrip.mms\nepsffit.c        epsffit.man\t  extractres.man   extractres.pl\nfixdlsrps.man    fixdlsrps.pl     fixfmps.man\t   fixfmps.pl\nfixmacps.man     fixmacps.pl\t  fixpsditps.man   fixpsditps.pl\nfixpspps.man     fixpspps.pl\t  fixscribeps.man  fixscribeps.pl\nfixtpps.man\t fixtpps.pl\t  fixwfwps.man     fixwfwps.pl\nfixwpps.man\t fixwpps.pl\t  fixwwps.man\t   fixwwps.pl\ngetafm           getafm.man\t  includeres.man   includeres.pl\nmaketext         patchlev.h\t  psbook.c         psbook.man\npserror.c        pserror.h        psmerge.man\t   psmerge.pl\npsnup.c          psnup.man        psresize.c\t   psresize.man\npsselect.c\t psselect.man     psspec.c         psspec.h\npstops.c         pstops.man\t  psutil.c         psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \&quot;as-is\&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;PS Utilities Package&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.&lt;/p&gt;\n\n         &lt;p&gt;LICENSE Makefile.msc Makefile.nt Makefile.os2\n        &lt;br /&gt;\n\nMakefile.unix README config.h descrip.mms\n        &lt;br /&gt;\n\nepsffit.c epsffit.man extractres.man extractres.pl\n        &lt;br /&gt;\n\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\n        &lt;br /&gt;\n\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\n        &lt;br /&gt;\n\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\n        &lt;br /&gt;\n\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\n        &lt;br /&gt;\n\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\n        &lt;br /&gt;\n\ngetafm getafm.man includeres.man includeres.pl\n        &lt;br /&gt;\n\nmaketext patchlev.h psbook.c psbook.man\n        &lt;br /&gt;\n\npserror.c pserror.h psmerge.man psmerge.pl\n        &lt;br /&gt;\n\npsnup.c psnup.man psresize.c psresize.man\n        &lt;br /&gt;\n\npsselect.c psselect.man psspec.c psspec.h\n        &lt;br /&gt;\n\npstops.c pstops.man psutil.c psutil.h\n        &lt;br /&gt;\n\nshowchar\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;They may be copied and used for any purpose (including distribution as part of a for-profit product),\n         provided:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1)&lt;/var&gt;\n          The original attribution of the programs is clearly displayed in the product and/or\n             documentation, even if the programs are modified and/or renamed as part of the product.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2)&lt;/var&gt;\n          The original source code of the programs is provided free of charge (except for reasonable\n             distribution costs). For a definition of reasonable distribution costs, see the Gnu General\n             Public License or Larry Wall&amp;apos;s Artistic License (provided with the Perl 4 kit). The GPL and\n             Artistic License in NO WAY affect this license; they are merely used as examples of the spirit\n             in which it is intended.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3)&lt;/var&gt;\n          These programs are provided &amp;quot;as-is&amp;quot;. No warranty or guarantee of their fitness for any particular\n             task is provided. Use of these programs is completely at your own risk.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Basically, I don&amp;apos;t mind how you use the programs so long as you acknowledge the author, and give people\n         the originals if they want them.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:00Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:psutils&quot;,
+        &quot;licenseText&quot;: &quot;PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE          Makefile.msc     Makefile.nt\t   Makefile.os2\nMakefile.unix    README           config.h         descrip.mms\nepsffit.c        epsffit.man\t  extractres.man   extractres.pl\nfixdlsrps.man    fixdlsrps.pl     fixfmps.man\t   fixfmps.pl\nfixmacps.man     fixmacps.pl\t  fixpsditps.man   fixpsditps.pl\nfixpspps.man     fixpspps.pl\t  fixscribeps.man  fixscribeps.pl\nfixtpps.man\t fixtpps.pl\t  fixwfwps.man     fixwfwps.pl\nfixwpps.man\t fixwpps.pl\t  fixwwps.man\t   fixwwps.pl\ngetafm           getafm.man\t  includeres.man   includeres.pl\nmaketext         patchlev.h\t  psbook.c         psbook.man\npserror.c        pserror.h        psmerge.man\t   psmerge.pl\npsnup.c          psnup.man        psresize.c\t   psresize.man\npsselect.c\t psselect.man     psspec.c         psspec.h\npstops.c         pstops.man\t  psutil.c         psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \&quot;as-is\&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;PS Utilities Package&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.&lt;/p&gt;\n\n         &lt;p&gt;LICENSE Makefile.msc Makefile.nt Makefile.os2\n        &lt;br /&gt;\n\nMakefile.unix README config.h descrip.mms\n        &lt;br /&gt;\n\nepsffit.c epsffit.man extractres.man extractres.pl\n        &lt;br /&gt;\n\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\n        &lt;br /&gt;\n\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\n        &lt;br /&gt;\n\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\n        &lt;br /&gt;\n\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\n        &lt;br /&gt;\n\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\n        &lt;br /&gt;\n\ngetafm getafm.man includeres.man includeres.pl\n        &lt;br /&gt;\n\nmaketext patchlev.h psbook.c psbook.man\n        &lt;br /&gt;\n\npserror.c pserror.h psmerge.man psmerge.pl\n        &lt;br /&gt;\n\npsnup.c psnup.man psresize.c psresize.man\n        &lt;br /&gt;\n\npsselect.c psselect.man psspec.c psspec.h\n        &lt;br /&gt;\n\npstops.c pstops.man psutil.c psutil.h\n        &lt;br /&gt;\n\nshowchar\n      &lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;They may be copied and used for any purpose (including distribution as part of a for-profit product),\n         provided:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1)&lt;/var&gt;\n          The original attribution of the programs is clearly displayed in the product and/or\n             documentation, even if the programs are modified and/or renamed as part of the product.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2)&lt;/var&gt;\n          The original source code of the programs is provided free of charge (except for reasonable\n             distribution costs). For a definition of reasonable distribution costs, see the Gnu General\n             Public License or Larry Wall&amp;apos;s Artistic License (provided with the Perl 4 kit). The GPL and\n             Artistic License in NO WAY affect this license; they are merely used as examples of the spirit\n             in which it is intended.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3)&lt;/var&gt;\n          These programs are provided &amp;quot;as-is&amp;quot;. No warranty or guarantee of their fitness for any particular\n             task is provided. Use of these programs is completely at your own risk.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Basically, I don&amp;apos;t mind how you use the programs so long as you acknowledge the author, and give people\n         the originals if they want them.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;psutils License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;PS Utilities Package\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.    LICENSE Makefile.msc Makefile.nt Makefile.os2  Makefile.unix README config.h descrip.mms  epsffit.c epsffit.man extractres.man extractres.pl  fixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl  fixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl  fixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl  fixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl  fixwpps.man fixwpps.pl fixwwps.man fixwwps.pl  getafm getafm.man includeres.man includeres.pl  maketext patchlev.h psbook.c psbook.man  pserror.c pserror.h psmerge.man psmerge.pl  psnup.c psnup.man psresize.c psresize.man  psselect.c psselect.man psspec.c psspec.h  pstops.c pstops.man psutil.c psutil.h  showchar  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; These programs are provided \&quot;as-is\&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/8bc6cbc142b849d677fdc032f7833b87">FedoraEntry:8bc6cbc142b849d677fdc032f7833b87</a> for <a href="/?license=Fedora:psutils"><span class="licensename"><span class="namespace">Fedora:</span>psutils</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>psutils</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>psutils</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">psutils</span></li><li><span class="licensename">psutils License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8bc6cbc142b849d677fdc032f7833b87">[<a href="/fact/FedoraEntry/8bc6cbc142b849d677fdc032f7833b87">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/psutils" target="_blank">https://fedoraproject.org/wiki/Licensing/psutils</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:psutils&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:psutils&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;psutils License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;psutils&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;8bc6cbc142b849d677fdc032f7833b87&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;psutils&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;psutils License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;psutils&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:psutils&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/c33d4f56834f270922228f390b1385eb">BlueOakCouncil:c33d4f56834f270922228f390b1385eb</a> for <a href="/?license=BlueOak:psutils"><span class="licensename"><span class="namespace">BlueOak:</span>psutils</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>psutils</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">psutils License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:c33d4f56834f270922228f390b1385eb">[<a href="/fact/BlueOakCouncil/c33d4f56834f270922228f390b1385eb">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:c33d4f56834f270922228f390b1385eb">[<a href="/fact/BlueOakCouncil/c33d4f56834f270922228f390b1385eb">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/psutils.html" target="_blank">https://spdx.org/licenses/psutils.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:psutils&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;psutils License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;c33d4f56834f270922228f390b1385eb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/psutils.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;psutils&quot;,
+                &quot;_name&quot;: &quot;psutils License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/psutils.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/f13cd36176bb5d7d442ced085c5e304a">ScancodeData:f13cd36176bb5d7d442ced085c5e304a</a> for <a href="/?license=scancode:psutils"><span class="licensename"><span class="namespace">scancode:</span>psutils</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>psutils</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">PS Utilities License</span></li><li><span class="licensename">PS Utilities License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:f13cd36176bb5d7d442ced085c5e304a">[<a href="/fact/ScancodeData/f13cd36176bb5d7d442ced085c5e304a">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/psutils" target="_blank">https://fedoraproject.org/wiki/Licensing/psutils</a></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>PS Utilities Package
+
+The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.
+
+LICENSE Makefile.msc Makefile.nt Makefile.os2
+Makefile.unix README config.h descrip.mms
+epsffit.c epsffit.man extractres.man extractres.pl
+fixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl
+fixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl
+fixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl
+fixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl
+fixwpps.man fixwpps.pl fixwwps.man fixwwps.pl
+getafm getafm.man includeres.man includeres.pl
+maketext patchlev.h psbook.c psbook.man
+pserror.c pserror.h psmerge.man psmerge.pl
+psnup.c psnup.man psresize.c psresize.man
+psselect.c psselect.man psspec.c psspec.h
+pstops.c pstops.man psutil.c psutil.h
+showchar
+
+They may be copied and used for any purpose (including distribution as part of a for-profit product), provided:
+
+1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.
+
+2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.
+
+3) These programs are provided &quot;as-is&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.
+
+Basically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:psutils&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;PS Utilities License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;PS Utilities License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;f13cd36176bb5d7d442ced085c5e304a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\nMakefile.unix README config.h descrip.mms\nepsffit.c epsffit.man extractres.man extractres.pl\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\ngetafm getafm.man includeres.man includeres.pl\nmaketext patchlev.h psbook.c psbook.man\npserror.c pserror.h psmerge.man psmerge.pl\npsnup.c psnup.man psresize.c psresize.man\npsselect.c psselect.man psspec.c psspec.h\npstops.c pstops.man psutil.c psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \&quot;as-is\&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils&quot;,
+        &quot;_key&quot;: &quot;psutils&quot;,
+        &quot;_name&quot;: &quot;PS Utilities License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+        ],
+        &quot;_owner&quot;: &quot;Angus J. C. Duggan&quot;,
+        &quot;_shortName&quot;: &quot;PS Utilities License&quot;,
+        &quot;_spdxId&quot;: &quot;psutils&quot;,
+        &quot;_text&quot;: &quot;PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\nMakefile.unix README config.h descrip.mms\nepsffit.c epsffit.man extractres.man extractres.pl\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\ngetafm getafm.man includeres.man includeres.pl\nmaketext patchlev.h psbook.c psbook.man\npserror.c pserror.h psmerge.man psmerge.pl\npsnup.c psnup.man psresize.c psresize.man\npsselect.c psselect.man psspec.c psspec.h\npstops.c pstops.man psutil.c psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \&quot;as-is\&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/149c2bd8d0e212e76645dcd21aa070e4">Fossology:149c2bd8d0e212e76645dcd21aa070e4</a> for <a href="/?license=fossology:psutils"><span class="licensename"><span class="namespace">fossology:</span>psutils</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>psutils</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">psutils License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/psutils" target="_blank">https://fedoraproject.org/wiki/Licensing/psutils</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>PS Utilities Package The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.
+
+LICENSE Makefile.msc Makefile.nt Makefile.os2
+
+Makefile.unix README config.h descrip.mms
+
+epsffit.c epsffit.man extractres.man extractres.pl
+
+fixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl
+
+fixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl
+
+fixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl
+
+fixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl
+
+fixwpps.man fixwpps.pl fixwwps.man fixwwps.pl
+
+getafm getafm.man includeres.man includeres.pl
+
+maketext patchlev.h psbook.c psbook.man
+
+pserror.c pserror.h psmerge.man psmerge.pl
+
+psnup.c psnup.man psresize.c psresize.man
+
+psselect.c psselect.man psspec.c psspec.h
+
+pstops.c pstops.man psutil.c psutil.h
+
+showchar
+
+They may be copied and used for any purpose (including distribution as part of a for-profit product), provided:
+
+   1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.
+
+   2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.
+
+   3) These programs are provided &quot;as-is&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.
+
+Basically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:psutils&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;psutils License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;149c2bd8d0e212e76645dcd21aa070e4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;PS Utilities Package The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\n\nMakefile.unix README config.h descrip.mms\n\nepsffit.c epsffit.man extractres.man extractres.pl\n\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\n\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\n\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\n\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\n\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\n\ngetafm getafm.man includeres.man includeres.pl\n\nmaketext patchlev.h psbook.c psbook.man\n\npserror.c pserror.h psmerge.man psmerge.pl\n\npsnup.c psnup.man psresize.c psresize.man\n\npsselect.c psselect.man psspec.c psspec.h\n\npstops.c pstops.man psutil.c psutil.h\n\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n   1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n   2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n   3) These programs are provided \&quot;as-is\&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;psutils License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:psutils&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;PS Utilities Package The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\n\nMakefile.unix README config.h descrip.mms\n\nepsffit.c epsffit.man extractres.man extractres.pl\n\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\n\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\n\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\n\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\n\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\n\ngetafm getafm.man includeres.man includeres.pl\n\nmaketext patchlev.h psbook.c psbook.man\n\npserror.c pserror.h psmerge.man psmerge.pl\n\npsnup.c psnup.man psresize.c psresize.man\n\npsselect.c psselect.man psspec.c psspec.h\n\npstops.c pstops.man psutil.c psutil.h\n\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n   1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n   2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall&#39;s Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n   3) These programs are provided \&quot;as-is\&quot;. No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don&#39;t mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/psutils&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/d08e31c5b999dc61d3a2f096b2abd99e">OrtLicenseCategorization:d08e31c5b999dc61d3a2f096b2abd99e</a> for <a href="/?license=SPDX:psutils"><span class="licensename"><span class="namespace">SPDX:</span>psutils</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>psutils</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d08e31c5b999dc61d3a2f096b2abd99e">[<a href="/fact/OrtLicenseCategorization/d08e31c5b999dc61d3a2f096b2abd99e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d08e31c5b999dc61d3a2f096b2abd99e">[<a href="/fact/OrtLicenseCategorization/d08e31c5b999dc61d3a2f096b2abd99e">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:psutils&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d08e31c5b999dc61d3a2f096b2abd99e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:psutils&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/7caf3ca81bb23cf8e408290f346b2683">CavilLicenseChange:7caf3ca81bb23cf8e408290f346b2683</a> for <a href="/?license=cavil:psutils"><span class="licensename"><span class="namespace">cavil:</span>psutils</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>psutils</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">psutils</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:psutils&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;psutils&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;7caf3ca81bb23cf8e408290f346b2683&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;psutils&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:psutils&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/4f6244132b9d6a84d85e301a148f689d">MetaeffektLicense:4f6244132b9d6a84d85e301a148f689d</a> for <a href="/?license=metaeffekt:psutils License"><span class="licensename"><span class="namespace">metaeffekt:</span>psutils License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>psutils License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>psutils</span></li></ul></li><li><b>other LicenseName Hints (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">PS Utilities Package</span></li><li><span class="licensename">psutils</span></li><li><span class="licensename"><span class="namespace">scancode:</span>psutils</span></li><li><span class="licensename">psutils License</span></li><li><span class="licensename">PSUTILS LICENSE</span></li><li><span class="licensename">PSUTILS License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:psutils License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:psutils&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;psutils&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;psutils License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;PSUTILS LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;PSUTILS License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;PS Utilities Package&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:psutils&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;4f6244132b9d6a84d85e301a148f689d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;psutils License&quot;,
+            &quot;PSUTILS LICENSE&quot;,
+            &quot;PSUTILS License&quot;,
+            &quot;PS Utilities Package&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:psutils License&quot;,
+        &quot;_category&quot;: &quot;psutils&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:psutils&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:psutils&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

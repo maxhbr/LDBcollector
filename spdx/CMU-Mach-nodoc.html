@@ -1,0 +1,500 @@
+<html><head><title>ldbcollector: spdx:CMU-Mach-nodoc</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:CMU-Mach-nodoc</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CMU-Mach-nodoc</span></li></ul></li><li><b>other LicenseNames (6):</b><ul class="capsulUl clearfix"><li><span class="licensename">CMU    Mach - no notices-in-documentation variant</span></li><li><span class="licensename">CMU-Mach-nodoc</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>CMU-Mach-nodoc</span></li><li><span class="licensename"><span class="namespace">spdx:</span>CMU-Mach-nodoc</span></li><li><span class="licensename">Permission Terms (NRL)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (NRL)</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>nrl-permission</span></li><li><span class="licensename">Permission</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0b7c77ed30fa43907bf6e2568b6187d6">[<a href="/fact/SPDXLicense/0b7c77ed30fa43907bf6e2568b6187d6">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:a0942dc284d5593a3a7d6af855d460c3">[<a href="/fact/FedoraEntry/a0942dc284d5593a3a7d6af855d460c3">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d5108e4d79b207983b991948f7955f30">[<a href="/fact/OrtLicenseCategorization/d5108e4d79b207983b991948f7955f30">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d5108e4d79b207983b991948f7955f30">[<a href="/fact/OrtLicenseCategorization/d5108e4d79b207983b991948f7955f30">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar to CMU-Mach but omits the obligation that both notices appear in supporting documentation and omits the request to return improvements or extensions back to the copyright holder.<span class="provided-by">(provided by: <span title="SPDXLicense:0b7c77ed30fa43907bf6e2568b6187d6">[<a href="/fact/SPDXLicense/0b7c77ed30fa43907bf6e2568b6187d6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html" target="_blank">https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html</a></li><li><a href="https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728" target="_blank">https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)
+
+Permission to use, copy, modify and distribute this software and
+its documentation is hereby granted, provided that both the
+copyright notice and this permission notice appear in all copies of
+the software, derivative works or modified versions, and any
+portions thereof.
+
+NRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS &quot;AS IS&quot; CONDITION AND
+DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES WHATSOEVER
+RESULTING FROM THE USE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)
+         &lt;/var&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify and distribute this
+            software and its documentation is hereby granted, provided
+            that both the copyright notice and this permission
+            notice appear in all copies of the software, derivative
+            works or modified versions, and any portions thereof.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            NRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS &amp;quot;AS IS&amp;quot;
+            CONDITION AND DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY
+            DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/0b7c77ed30fa43907bf6e2568b6187d6">SPDXLicense:0b7c77ed30fa43907bf6e2568b6187d6</a> for <a href="/?license=spdx:CMU-Mach-nodoc"><span class="licensename"><span class="namespace">spdx:</span>CMU-Mach-nodoc</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CMU-Mach-nodoc</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">CMU    Mach - no notices-in-documentation variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:0b7c77ed30fa43907bf6e2568b6187d6">[<a href="/fact/SPDXLicense/0b7c77ed30fa43907bf6e2568b6187d6">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This is similar to CMU-Mach but omits the obligation that both notices appear in supporting documentation and omits the request to return improvements or extensions back to the copyright holder.<span class="provided-by">(provided by: <span title="SPDXLicense:0b7c77ed30fa43907bf6e2568b6187d6">[<a href="/fact/SPDXLicense/0b7c77ed30fa43907bf6e2568b6187d6">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html" target="_blank">https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html</a></li><li><a href="https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728" target="_blank">https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)
+
+Permission to use, copy, modify and distribute this software and
+its documentation is hereby granted, provided that both the
+copyright notice and this permission notice appear in all copies of
+the software, derivative works or modified versions, and any
+portions thereof.
+
+NRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS &quot;AS IS&quot; CONDITION AND
+DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES WHATSOEVER
+RESULTING FROM THE USE OF THIS SOFTWARE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+            Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)
+         &lt;/var&gt;
+         &lt;p&gt;
+            Permission to use, copy, modify and distribute this
+            software and its documentation is hereby granted, provided
+            that both the copyright notice and this permission
+            notice appear in all copies of the software, derivative
+            works or modified versions, and any portions thereof.
+         &lt;/p&gt;
+
+         &lt;p&gt;
+            NRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS &amp;quot;AS IS&amp;quot;
+            CONDITION AND DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY
+            DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:CMU-Mach-nodoc&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;CMU    Mach - no notices-in-documentation variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;0b7c77ed30fa43907bf6e2568b6187d6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This is similar to CMU-Mach but omits the obligation that both notices appear in supporting documentation and omits the request to return improvements or extensions back to the copyright holder.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)\n\nPermission to use, copy, modify and distribute this software and\nits documentation is hereby granted, provided that both the\ncopyright notice and this permission notice appear in all copies of\nthe software, derivative works or modified versions, and any\nportions thereof.\n\nNRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS \&quot;AS IS\&quot; CONDITION AND\nDISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES WHATSOEVER\nRESULTING FROM THE USE OF THIS SOFTWARE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)\n         &lt;/var&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify and distribute this\n            software and its documentation is hereby granted, provided\n            that both the copyright notice and this permission\n            notice appear in all copies of the software, derivative\n            works or modified versions, and any portions thereof.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            NRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS &amp;quot;AS IS&amp;quot;\n            CONDITION AND DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY\n            DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:34Z&quot;,
+                &quot;url&quot;: &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:34Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This is similar to CMU-Mach but omits the obligation that both notices appear in supporting documentation and omits the request to return improvements or extensions back to the copyright holder.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:CMU-Mach-nodoc&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)\n\nPermission to use, copy, modify and distribute this software and\nits documentation is hereby granted, provided that both the\ncopyright notice and this permission notice appear in all copies of\nthe software, derivative works or modified versions, and any\nportions thereof.\n\nNRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS \&quot;AS IS\&quot; CONDITION AND\nDISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES WHATSOEVER\nRESULTING FROM THE USE OF THIS SOFTWARE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n            Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)\n         &lt;/var&gt;\n         &lt;p&gt;\n            Permission to use, copy, modify and distribute this\n            software and its documentation is hereby granted, provided\n            that both the copyright notice and this permission\n            notice appear in all copies of the software, derivative\n            works or modified versions, and any portions thereof.\n         &lt;/p&gt;\n\n         &lt;p&gt;\n            NRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS &amp;quot;AS IS&amp;quot;\n            CONDITION AND DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY\n            DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;CMU    Mach - no notices-in-documentation variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/krb5/krb5/blob/krb5-1.21.2-final/NOTICE#L718-L728&quot;,
+            &quot;https://web.mit.edu/kerberos/krb5-1.21/doc/mitK5license.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 2002 Naval Research Laboratory (NRL/CCS)\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify and distribute this software and its documentation is hereby granted, provided that both the copyright notice and this permission notice appear in all copies of the software, derivative works or modified versions, and any portions thereof.\n\nNRL ALLOWS FREE USE OF THIS SOFTWARE IN ITS \&quot;AS IS\&quot; CONDITION AND DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/a0942dc284d5593a3a7d6af855d460c3">FedoraEntry:a0942dc284d5593a3a7d6af855d460c3</a> for <a href="/?license=Fedora:CMU-Mach-nodoc"><span class="licensename"><span class="namespace">Fedora:</span>CMU-Mach-nodoc</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>CMU-Mach-nodoc</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CMU-Mach-nodoc</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:a0942dc284d5593a3a7d6af855d460c3">[<a href="/fact/FedoraEntry/a0942dc284d5593a3a7d6af855d460c3">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:CMU-Mach-nodoc&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CMU-Mach-nodoc&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;a0942dc284d5593a3a7d6af855d460c3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;CMU-Mach-nodoc&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:CMU-Mach-nodoc&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/d5108e4d79b207983b991948f7955f30">OrtLicenseCategorization:d5108e4d79b207983b991948f7955f30</a> for <a href="/?license=SPDX:CMU-Mach-nodoc"><span class="licensename"><span class="namespace">SPDX:</span>CMU-Mach-nodoc</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>CMU-Mach-nodoc</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d5108e4d79b207983b991948f7955f30">[<a href="/fact/OrtLicenseCategorization/d5108e4d79b207983b991948f7955f30">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d5108e4d79b207983b991948f7955f30">[<a href="/fact/OrtLicenseCategorization/d5108e4d79b207983b991948f7955f30">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:CMU-Mach-nodoc&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d5108e4d79b207983b991948f7955f30&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:CMU-Mach-nodoc&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/80431cf0329eb8329e9ae57dc48c3be0">MetaeffektLicense:80431cf0329eb8329e9ae57dc48c3be0</a> for <a href="/?license=metaeffekt:Permission Terms (NRL)"><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (NRL)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (NRL)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>CMU-Mach-nodoc</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">CMU    Mach - no notices-in-documentation variant</span></li><li><span class="licensename">CMU-Mach-nodoc</span></li><li><span class="licensename"><span class="namespace">scancode:</span>nrl-permission</span></li><li><span class="licensename">Permission</span></li><li><span class="licensename">Permission Terms (NRL)</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Permission Terms (NRL)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:CMU-Mach-nodoc&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Permission&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Permission Terms (NRL)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CMU-Mach-nodoc&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;CMU    Mach - no notices-in-documentation variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:nrl-permission&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;80431cf0329eb8329e9ae57dc48c3be0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Permission Terms (NRL)&quot;,
+            &quot;CMU-Mach-nodoc&quot;,
+            &quot;CMU    Mach - no notices-in-documentation variant&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Permission Terms (NRL)&quot;,
+        &quot;_category&quot;: &quot;Permission&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:nrl-permission&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:CMU-Mach-nodoc&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

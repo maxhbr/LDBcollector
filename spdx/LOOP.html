@@ -1,0 +1,977 @@
+<html><head><title>ldbcollector: spdx:LOOP</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:LOOP</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LOOP</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Common Lisp LOOP License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Common Lisp LOOP License</span></li><li><span class="licensename">LOOP</span></li><li><span class="licensename"><span class="namespace">cavil:</span>LOOP</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>LOOP</span></li><li><span class="licensename"><span class="namespace">scancode:</span>loop</span></li><li><span class="licensename"><span class="namespace">spdx:</span>LOOP</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:5f2bbc1e54be5b4976c853aed2dff810">[<a href="/fact/ScancodeData/5f2bbc1e54be5b4976c853aed2dff810">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:297eebb642a8e0e2c4feaa2e065e4828">[<a href="/fact/SPDXLicense/297eebb642a8e0e2c4feaa2e065e4828">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:2f6a78c256c648329b05807355b4cc4e">[<a href="/fact/FedoraEntry/2f6a78c256c648329b05807355b4cc4e">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f94bb068f204803462d37b89e6df299a">[<a href="/fact/OrtLicenseCategorization/f94bb068f204803462d37b89e6df299a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f94bb068f204803462d37b89e6df299a">[<a href="/fact/OrtLicenseCategorization/f94bb068f204803462d37b89e6df299a">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>The two paragraphs of license text here is identical except MIT/Symbolics
+and we are adding another generic-loop license for the common text.
+<span class="provided-by">(provided by: <span title="ScancodeData:5f2bbc1e54be5b4976c853aed2dff810">[<a href="/fact/ScancodeData/5f2bbc1e54be5b4976c853aed2dff810">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp" target="_blank">https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp</a></li><li><a href="https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp" target="_blank">https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp</a></li><li><a href="http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre" target="_blank">http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre</a></li><li><a href="https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp" target="_blank">https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp</a></li><li><a href="https://github.com/cl-adams/adams/blob/master/LICENSE.md" target="_blank">https://github.com/cl-adams/adams/blob/master/LICENSE.md</a></li><li><a href="https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp" target="_blank">https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the M.I.T. copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.  The names &quot;M.I.T.&quot; and &quot;Massachusetts
+Institute of Technology&quot; may not be used in advertising or publicity
+pertaining to distribution of the software without specific, written
+prior permission.  Notice must be given in supporting documentation that
+copying distribution is by permission of M.I.T.  M.I.T. makes no
+representations about the suitability of this software for any purpose.
+It is provided &quot;as is&quot; without express or implied warranty.
+
+Massachusetts Institute of Technology
+77 Massachusetts Avenue
+Cambridge, Massachusetts  02139
+United States of America
++1-617-253-1000
+
+Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the Symbolics copyright notice appear in all copies and
+that both that copyright notice and this permission notice appear in
+supporting documentation.  The name &quot;Symbolics&quot; may not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.  Notice must be given in
+supporting documentation that copying distribution is by permission of
+Symbolics.  Symbolics makes no representations about the suitability of
+this software for any purpose.  It is provided &quot;as is&quot; without express
+or implied warranty.
+
+Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,
+and Zetalisp are registered trademarks of Symbolics, Inc.
+
+Symbolics, Inc.
+8 New England Executive Park, East
+Burlington, Massachusetts  01803
+United States of America
++1-617-221-1000
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;
+        Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.
+	All Rights Reserved.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Permission to use, copy, modify and distribute this software and its
+        documentation for any purpose and without fee is hereby granted,
+        provided that the M.I.T. copyright notice appear in all copies and that
+        both that copyright notice and this permission notice appear in
+        supporting documentation.  The names &amp;quot;M.I.T.&amp;quot; and &amp;quot;Massachusetts
+        Institute of Technology&amp;quot; may not be used in advertising or publicity
+        pertaining to distribution of the software without specific, written
+        prior permission.  Notice must be given in supporting documentation that
+        copying distribution is by permission of M.I.T.  M.I.T. makes no
+        representations about the suitability of this software for any purpose.
+        It is provided &amp;quot;as is&amp;quot; without express or implied warranty.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Massachusetts Institute of Technology&lt;br /&gt;
+
+        77 Massachusetts Avenue&lt;br /&gt;
+
+        Cambridge, Massachusetts  02139&lt;br /&gt;
+
+        United States of America&lt;br /&gt;
+
+        +1-617-253-1000
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.
+        All Rights Reserved.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Permission to use, copy, modify and distribute this software and its
+        documentation for any purpose and without fee is hereby granted,
+        provided that the Symbolics copyright notice appear in all copies and
+        that both that copyright notice and this permission notice appear in
+        supporting documentation.  The name &amp;quot;Symbolics&amp;quot; may not be used in
+        advertising or publicity pertaining to distribution of the software
+        without specific, written prior permission.  Notice must be given in
+        supporting documentation that copying distribution is by permission of
+        Symbolics.  Symbolics makes no representations about the suitability of
+        this software for any purpose.  It is provided &amp;quot;as is&amp;quot; without express
+        or implied warranty.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,
+        and Zetalisp are registered trademarks of Symbolics, Inc.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Symbolics, Inc.&lt;br /&gt;
+
+        8 New England Executive Park, East&lt;br /&gt;
+
+        Burlington, Massachusetts  01803&lt;br /&gt;
+
+        United States of America&lt;br /&gt;
+
+        +1-617-221-1000
+      &lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the M.I.T. copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.  The names &quot;M.I.T.&quot; and &quot;Massachusetts
+Institute of Technology&quot; may not be used in advertising or publicity
+pertaining to distribution of the software without specific, written
+prior permission.  Notice must be given in supporting documentation that
+copying distribution is by permission of M.I.T.  M.I.T. makes no
+representations about the suitability of this software for any purpose.
+It is provided &quot;as is&quot; without express or implied warranty.
+
+Massachusetts Institute of Technology
+77 Massachusetts Avenue
+Cambridge, Massachusetts  02139
+United States of America
++1-617-253-1000
+
+Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the Symbolics copyright notice appear in all copies and
+that both that copyright notice and this permission notice appear in
+supporting documentation.  The name &quot;Symbolics&quot; may not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.  Notice must be given in
+supporting documentation that copying distribution is by permission of
+Symbolics.  Symbolics makes no representations about the suitability of
+this software for any purpose.  It is provided &quot;as is&quot; without express
+or implied warranty.
+
+Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,
+and Zetalisp are registered trademarks of Symbolics, Inc.
+
+Symbolics, Inc.
+8 New England Executive Park, East
+Burlington, Massachusetts  01803
+United States of America
++1-617-221-1000</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/297eebb642a8e0e2c4feaa2e065e4828">SPDXLicense:297eebb642a8e0e2c4feaa2e065e4828</a> for <a href="/?license=spdx:LOOP"><span class="licensename"><span class="namespace">spdx:</span>LOOP</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LOOP</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Common Lisp LOOP License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:297eebb642a8e0e2c4feaa2e065e4828">[<a href="/fact/SPDXLicense/297eebb642a8e0e2c4feaa2e065e4828">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp" target="_blank">https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp</a></li><li><a href="https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp" target="_blank">https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp</a></li><li><a href="http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre" target="_blank">http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre</a></li><li><a href="https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp" target="_blank">https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp</a></li><li><a href="https://github.com/cl-adams/adams/blob/master/LICENSE.md" target="_blank">https://github.com/cl-adams/adams/blob/master/LICENSE.md</a></li><li><a href="https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp" target="_blank">https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the M.I.T. copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.  The names &quot;M.I.T.&quot; and &quot;Massachusetts
+Institute of Technology&quot; may not be used in advertising or publicity
+pertaining to distribution of the software without specific, written
+prior permission.  Notice must be given in supporting documentation that
+copying distribution is by permission of M.I.T.  M.I.T. makes no
+representations about the suitability of this software for any purpose.
+It is provided &quot;as is&quot; without express or implied warranty.
+
+Massachusetts Institute of Technology
+77 Massachusetts Avenue
+Cambridge, Massachusetts  02139
+United States of America
++1-617-253-1000
+
+Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the Symbolics copyright notice appear in all copies and
+that both that copyright notice and this permission notice appear in
+supporting documentation.  The name &quot;Symbolics&quot; may not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.  Notice must be given in
+supporting documentation that copying distribution is by permission of
+Symbolics.  Symbolics makes no representations about the suitability of
+this software for any purpose.  It is provided &quot;as is&quot; without express
+or implied warranty.
+
+Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,
+and Zetalisp are registered trademarks of Symbolics, Inc.
+
+Symbolics, Inc.
+8 New England Executive Park, East
+Burlington, Massachusetts  01803
+United States of America
++1-617-221-1000
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;
+        Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.
+	All Rights Reserved.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Permission to use, copy, modify and distribute this software and its
+        documentation for any purpose and without fee is hereby granted,
+        provided that the M.I.T. copyright notice appear in all copies and that
+        both that copyright notice and this permission notice appear in
+        supporting documentation.  The names &amp;quot;M.I.T.&amp;quot; and &amp;quot;Massachusetts
+        Institute of Technology&amp;quot; may not be used in advertising or publicity
+        pertaining to distribution of the software without specific, written
+        prior permission.  Notice must be given in supporting documentation that
+        copying distribution is by permission of M.I.T.  M.I.T. makes no
+        representations about the suitability of this software for any purpose.
+        It is provided &amp;quot;as is&amp;quot; without express or implied warranty.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Massachusetts Institute of Technology&lt;br /&gt;
+
+        77 Massachusetts Avenue&lt;br /&gt;
+
+        Cambridge, Massachusetts  02139&lt;br /&gt;
+
+        United States of America&lt;br /&gt;
+
+        +1-617-253-1000
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.
+        All Rights Reserved.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Permission to use, copy, modify and distribute this software and its
+        documentation for any purpose and without fee is hereby granted,
+        provided that the Symbolics copyright notice appear in all copies and
+        that both that copyright notice and this permission notice appear in
+        supporting documentation.  The name &amp;quot;Symbolics&amp;quot; may not be used in
+        advertising or publicity pertaining to distribution of the software
+        without specific, written prior permission.  Notice must be given in
+        supporting documentation that copying distribution is by permission of
+        Symbolics.  Symbolics makes no representations about the suitability of
+        this software for any purpose.  It is provided &amp;quot;as is&amp;quot; without express
+        or implied warranty.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,
+        and Zetalisp are registered trademarks of Symbolics, Inc.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Symbolics, Inc.&lt;br /&gt;
+
+        8 New England Executive Park, East&lt;br /&gt;
+
+        Burlington, Massachusetts  01803&lt;br /&gt;
+
+        United States of America&lt;br /&gt;
+
+        +1-617-221-1000
+      &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:LOOP&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Common Lisp LOOP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;297eebb642a8e0e2c4feaa2e065e4828&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the M.I.T. copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.  The names \&quot;M.I.T.\&quot; and \&quot;Massachusetts\nInstitute of Technology\&quot; may not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.  Notice must be given in supporting documentation that\ncopying distribution is by permission of M.I.T.  M.I.T. makes no\nrepresentations about the suitability of this software for any purpose.\nIt is provided \&quot;as is\&quot; without express or implied warranty.\n\nMassachusetts Institute of Technology\n77 Massachusetts Avenue\nCambridge, Massachusetts  02139\nUnited States of America\n+1-617-253-1000\n\nPortions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the Symbolics copyright notice appear in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation.  The name \&quot;Symbolics\&quot; may not be used in\nadvertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission.  Notice must be given in\nsupporting documentation that copying distribution is by permission of\nSymbolics.  Symbolics makes no representations about the suitability of\nthis software for any purpose.  It is provided \&quot;as is\&quot; without express\nor implied warranty.\n\nSymbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,\nand Zetalisp are registered trademarks of Symbolics, Inc.\n\nSymbolics, Inc.\n8 New England Executive Park, East\nBurlington, Massachusetts  01803\nUnited States of America\n+1-617-221-1000\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;\n        Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.\n\tAll Rights Reserved.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Permission to use, copy, modify and distribute this software and its\n        documentation for any purpose and without fee is hereby granted,\n        provided that the M.I.T. copyright notice appear in all copies and that\n        both that copyright notice and this permission notice appear in\n        supporting documentation.  The names &amp;quot;M.I.T.&amp;quot; and &amp;quot;Massachusetts\n        Institute of Technology&amp;quot; may not be used in advertising or publicity\n        pertaining to distribution of the software without specific, written\n        prior permission.  Notice must be given in supporting documentation that\n        copying distribution is by permission of M.I.T.  M.I.T. makes no\n        representations about the suitability of this software for any purpose.\n        It is provided &amp;quot;as is&amp;quot; without express or implied warranty.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Massachusetts Institute of Technology&lt;br /&gt;\n\n        77 Massachusetts Avenue&lt;br /&gt;\n\n        Cambridge, Massachusetts  02139&lt;br /&gt;\n\n        United States of America&lt;br /&gt;\n\n        +1-617-253-1000\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.\n        All Rights Reserved.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Permission to use, copy, modify and distribute this software and its\n        documentation for any purpose and without fee is hereby granted,\n        provided that the Symbolics copyright notice appear in all copies and\n        that both that copyright notice and this permission notice appear in\n        supporting documentation.  The name &amp;quot;Symbolics&amp;quot; may not be used in\n        advertising or publicity pertaining to distribution of the software\n        without specific, written prior permission.  Notice must be given in\n        supporting documentation that copying distribution is by permission of\n        Symbolics.  Symbolics makes no representations about the suitability of\n        this software for any purpose.  It is provided &amp;quot;as is&amp;quot; without express\n        or implied warranty.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,\n        and Zetalisp are registered trademarks of Symbolics, Inc.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Symbolics, Inc.&lt;br /&gt;\n\n        8 New England Executive Park, East&lt;br /&gt;\n\n        Burlington, Massachusetts  01803&lt;br /&gt;\n\n        United States of America&lt;br /&gt;\n\n        +1-617-221-1000\n      &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/cl-adams/adams/blob/master/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/cl-adams/adams/blob/master/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:12Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 2,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:14Z&quot;,
+                &quot;url&quot;: &quot;https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:16Z&quot;,
+                &quot;url&quot;: &quot;http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 4,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:18Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 3,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:18Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/cl-adams/adams/blob/master/LICENSE.md&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 5,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:19Z&quot;,
+                &quot;url&quot;: &quot;https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:LOOP&quot;,
+        &quot;licenseText&quot;: &quot;Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the M.I.T. copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.  The names \&quot;M.I.T.\&quot; and \&quot;Massachusetts\nInstitute of Technology\&quot; may not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.  Notice must be given in supporting documentation that\ncopying distribution is by permission of M.I.T.  M.I.T. makes no\nrepresentations about the suitability of this software for any purpose.\nIt is provided \&quot;as is\&quot; without express or implied warranty.\n\nMassachusetts Institute of Technology\n77 Massachusetts Avenue\nCambridge, Massachusetts  02139\nUnited States of America\n+1-617-253-1000\n\nPortions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the Symbolics copyright notice appear in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation.  The name \&quot;Symbolics\&quot; may not be used in\nadvertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission.  Notice must be given in\nsupporting documentation that copying distribution is by permission of\nSymbolics.  Symbolics makes no representations about the suitability of\nthis software for any purpose.  It is provided \&quot;as is\&quot; without express\nor implied warranty.\n\nSymbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,\nand Zetalisp are registered trademarks of Symbolics, Inc.\n\nSymbolics, Inc.\n8 New England Executive Park, East\nBurlington, Massachusetts  01803\nUnited States of America\n+1-617-221-1000\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;\n        Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.\n\tAll Rights Reserved.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Permission to use, copy, modify and distribute this software and its\n        documentation for any purpose and without fee is hereby granted,\n        provided that the M.I.T. copyright notice appear in all copies and that\n        both that copyright notice and this permission notice appear in\n        supporting documentation.  The names &amp;quot;M.I.T.&amp;quot; and &amp;quot;Massachusetts\n        Institute of Technology&amp;quot; may not be used in advertising or publicity\n        pertaining to distribution of the software without specific, written\n        prior permission.  Notice must be given in supporting documentation that\n        copying distribution is by permission of M.I.T.  M.I.T. makes no\n        representations about the suitability of this software for any purpose.\n        It is provided &amp;quot;as is&amp;quot; without express or implied warranty.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Massachusetts Institute of Technology&lt;br /&gt;\n\n        77 Massachusetts Avenue&lt;br /&gt;\n\n        Cambridge, Massachusetts  02139&lt;br /&gt;\n\n        United States of America&lt;br /&gt;\n\n        +1-617-253-1000\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.\n        All Rights Reserved.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Permission to use, copy, modify and distribute this software and its\n        documentation for any purpose and without fee is hereby granted,\n        provided that the Symbolics copyright notice appear in all copies and\n        that both that copyright notice and this permission notice appear in\n        supporting documentation.  The name &amp;quot;Symbolics&amp;quot; may not be used in\n        advertising or publicity pertaining to distribution of the software\n        without specific, written prior permission.  Notice must be given in\n        supporting documentation that copying distribution is by permission of\n        Symbolics.  Symbolics makes no representations about the suitability of\n        this software for any purpose.  It is provided &amp;quot;as is&amp;quot; without express\n        or implied warranty.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,\n        and Zetalisp are registered trademarks of Symbolics, Inc.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Symbolics, Inc.&lt;br /&gt;\n\n        8 New England Executive Park, East&lt;br /&gt;\n\n        Burlington, Massachusetts  01803&lt;br /&gt;\n\n        United States of America&lt;br /&gt;\n\n        +1-617-221-1000\n      &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Common Lisp LOOP License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp&quot;,
+            &quot;http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre&quot;,
+            &quot;https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp&quot;,
+            &quot;https://github.com/cl-adams/adams/blob/master/LICENSE.md&quot;,
+            &quot;https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp&quot;,
+            &quot;https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology. All Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the M.I.T. copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. The names \&quot;M.I.T.\&quot; and \&quot;Massachusetts Institute of Technology\&quot; may not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. Notice must be given in supporting documentation that copying distribution is by permission of M.I.T. M.I.T. makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n\nMassachusetts Institute of Technology\n\n77 Massachusetts Avenue\n\nCambridge, Massachusetts 02139\n\nUnited States of America\n\n+1-617-253-1000\n\nPortions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc. All Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the Symbolics copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. The name \&quot;Symbolics\&quot; may not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. Notice must be given in supporting documentation that copying distribution is by permission of Symbolics. Symbolics makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n\nSymbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera, and Zetalisp are registered trademarks of Symbolics, Inc.\n\nSymbolics, Inc.\n\n8 New England Executive Park, East\n\nBurlington, Massachusetts 01803\n\nUnited States of America\n\n+1-617-221-1000\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/2f6a78c256c648329b05807355b4cc4e">FedoraEntry:2f6a78c256c648329b05807355b4cc4e</a> for <a href="/?license=Fedora:LOOP"><span class="licensename"><span class="namespace">Fedora:</span>LOOP</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>LOOP</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LOOP</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:2f6a78c256c648329b05807355b4cc4e">[<a href="/fact/FedoraEntry/2f6a78c256c648329b05807355b4cc4e">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:LOOP&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:LOOP&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;2f6a78c256c648329b05807355b4cc4e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;LOOP&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:LOOP&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/5f2bbc1e54be5b4976c853aed2dff810">ScancodeData:5f2bbc1e54be5b4976c853aed2dff810</a> for <a href="/?license=scancode:loop"><span class="licensename"><span class="namespace">scancode:</span>loop</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>loop</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Common Lisp LOOP License</span></li><li><span class="licensename">Common Lisp LOOP License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:5f2bbc1e54be5b4976c853aed2dff810">[<a href="/fact/ScancodeData/5f2bbc1e54be5b4976c853aed2dff810">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>The two paragraphs of license text here is identical except MIT/Symbolics
+and we are adding another generic-loop license for the common text.
+<span class="provided-by">(provided by: <span title="ScancodeData:5f2bbc1e54be5b4976c853aed2dff810">[<a href="/fact/ScancodeData/5f2bbc1e54be5b4976c853aed2dff810">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre" target="_blank">http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre</a></li><li><a href="https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp" target="_blank">https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp</a></li><li><a href="https://github.com/cl-adams/adams/blob/master/LICENSE.md" target="_blank">https://github.com/cl-adams/adams/blob/master/LICENSE.md</a></li><li><a href="https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp" target="_blank">https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp</a></li><li><a href="https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp" target="_blank">https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp</a></li></ul><h3>Other Statements</h3><ul><li>https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the M.I.T. copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.  The names &quot;M.I.T.&quot; and &quot;Massachusetts
+Institute of Technology&quot; may not be used in advertising or publicity
+pertaining to distribution of the software without specific, written
+prior permission.  Notice must be given in supporting documentation that
+copying distribution is by permission of M.I.T.  M.I.T. makes no
+representations about the suitability of this software for any purpose.
+It is provided &quot;as is&quot; without express or implied warranty.
+
+Massachusetts Institute of Technology
+77 Massachusetts Avenue
+Cambridge, Massachusetts  02139
+United States of America
++1-617-253-1000
+
+Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the Symbolics copyright notice appear in all copies and
+that both that copyright notice and this permission notice appear in
+supporting documentation.  The name &quot;Symbolics&quot; may not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.  Notice must be given in
+supporting documentation that copying distribution is by permission of
+Symbolics.  Symbolics makes no representations about the suitability of
+this software for any purpose.  It is provided &quot;as is&quot; without express
+or implied warranty.
+
+Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,
+and Zetalisp are registered trademarks of Symbolics, Inc.
+
+Symbolics, Inc.
+8 New England Executive Park, East
+Burlington, Massachusetts  01803
+United States of America
++1-617-221-1000</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:loop&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Common Lisp LOOP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Common Lisp LOOP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;5f2bbc1e54be5b4976c853aed2dff810&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;The two paragraphs of license text here is identical except MIT/Symbolics\nand we are adding another generic-loop license for the common text.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/cl-adams/adams/blob/master/LICENSE.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the M.I.T. copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.  The names \&quot;M.I.T.\&quot; and \&quot;Massachusetts\nInstitute of Technology\&quot; may not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.  Notice must be given in supporting documentation that\ncopying distribution is by permission of M.I.T.  M.I.T. makes no\nrepresentations about the suitability of this software for any purpose.\nIt is provided \&quot;as is\&quot; without express or implied warranty.\n\nMassachusetts Institute of Technology\n77 Massachusetts Avenue\nCambridge, Massachusetts  02139\nUnited States of America\n+1-617-253-1000\n\nPortions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the Symbolics copyright notice appear in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation.  The name \&quot;Symbolics\&quot; may not be used in\nadvertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission.  Notice must be given in\nsupporting documentation that copying distribution is by permission of\nSymbolics.  Symbolics makes no representations about the suitability of\nthis software for any purpose.  It is provided \&quot;as is\&quot; without express\nor implied warranty.\n\nSymbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,\nand Zetalisp are registered trademarks of Symbolics, Inc.\n\nSymbolics, Inc.\n8 New England Executive Park, East\nBurlington, Massachusetts  01803\nUnited States of America\n+1-617-221-1000&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/loop.lsp&quot;,
+        &quot;_key&quot;: &quot;loop&quot;,
+        &quot;_name&quot;: &quot;Common Lisp LOOP License&quot;,
+        &quot;_notes&quot;: &quot;The two paragraphs of license text here is identical except MIT/Symbolics\nand we are adding another generic-loop license for the common text.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://git.savannah.gnu.org/cgit/gcl.git/tree/gcl/lsp/gcl_loop.lsp?h=Version_2_6_13pre&quot;,
+            &quot;https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/src/code/loop.lisp&quot;,
+            &quot;https://github.com/cl-adams/adams/blob/master/LICENSE.md&quot;,
+            &quot;https://github.com/blakemcbride/eclipse-lisp/blob/master/lisp/loop.lisp&quot;,
+            &quot;https://gitlab.common-lisp.net/cmucl/cmucl/-/blob/master/src/code/loop.lisp&quot;
+        ],
+        &quot;_owner&quot;: &quot;Symbolics&quot;,
+        &quot;_shortName&quot;: &quot;Common Lisp LOOP License&quot;,
+        &quot;_spdxId&quot;: &quot;LOOP&quot;,
+        &quot;_text&quot;: &quot;Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the M.I.T. copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.  The names \&quot;M.I.T.\&quot; and \&quot;Massachusetts\nInstitute of Technology\&quot; may not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.  Notice must be given in supporting documentation that\ncopying distribution is by permission of M.I.T.  M.I.T. makes no\nrepresentations about the suitability of this software for any purpose.\nIt is provided \&quot;as is\&quot; without express or implied warranty.\n\nMassachusetts Institute of Technology\n77 Massachusetts Avenue\nCambridge, Massachusetts  02139\nUnited States of America\n+1-617-253-1000\n\nPortions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.\nAll Rights Reserved.\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the Symbolics copyright notice appear in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation.  The name \&quot;Symbolics\&quot; may not be used in\nadvertising or publicity pertaining to distribution of the software\nwithout specific, written prior permission.  Notice must be given in\nsupporting documentation that copying distribution is by permission of\nSymbolics.  Symbolics makes no representations about the suitability of\nthis software for any purpose.  It is provided \&quot;as is\&quot; without express\nor implied warranty.\n\nSymbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,\nand Zetalisp are registered trademarks of Symbolics, Inc.\n\nSymbolics, Inc.\n8 New England Executive Park, East\nBurlington, Massachusetts  01803\nUnited States of America\n+1-617-221-1000&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/f94bb068f204803462d37b89e6df299a">OrtLicenseCategorization:f94bb068f204803462d37b89e6df299a</a> for <a href="/?license=SPDX:LOOP"><span class="licensename"><span class="namespace">SPDX:</span>LOOP</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>LOOP</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f94bb068f204803462d37b89e6df299a">[<a href="/fact/OrtLicenseCategorization/f94bb068f204803462d37b89e6df299a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f94bb068f204803462d37b89e6df299a">[<a href="/fact/OrtLicenseCategorization/f94bb068f204803462d37b89e6df299a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:LOOP&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f94bb068f204803462d37b89e6df299a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:LOOP&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/fbacff11280dbcf298bd9a62ebee7849">CavilLicenseChange:fbacff11280dbcf298bd9a62ebee7849</a> for <a href="/?license=cavil:LOOP"><span class="licensename"><span class="namespace">cavil:</span>LOOP</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>LOOP</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">LOOP</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:LOOP&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LOOP&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;fbacff11280dbcf298bd9a62ebee7849&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;LOOP&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:LOOP&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/86aeed643b3b60a59cce011e1412a2b0">MetaeffektLicense:86aeed643b3b60a59cce011e1412a2b0</a> for <a href="/?license=metaeffekt:Common Lisp LOOP License"><span class="licensename"><span class="namespace">metaeffekt:</span>Common Lisp LOOP License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Common Lisp LOOP License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>LOOP</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">Common Lisp LOOP License</span></li><li><span class="licensename">LOOP</span></li><li><span class="licensename"><span class="namespace">scancode:</span>loop</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Common Lisp LOOP License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:LOOP&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;LOOP&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Common Lisp LOOP License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:loop&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;86aeed643b3b60a59cce011e1412a2b0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Common Lisp LOOP License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Common Lisp LOOP License&quot;,
+        &quot;_category&quot;: &quot;LOOP&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:loop&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:LOOP&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

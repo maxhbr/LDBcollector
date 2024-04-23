@@ -1,0 +1,932 @@
+<html><head><title>ldbcollector: spdx:FreeBSD-DOC</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:FreeBSD-DOC</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>FreeBSD-DOC</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">BSD-Doc</span></li><li><span class="licensename"><span class="namespace">fossology:</span>BSD-Doc</span></li><li><span class="licensename">FreeBSD Doc License</span></li><li><span class="licensename">FreeBSD Documentation License</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>FreeBSD Documentation License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>FreeBSD Documentation License</span></li><li><span class="licensename">FreeBSD-DOC</span></li><li><span class="licensename"><span class="namespace">cavil:</span>FreeBSD-DOC</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>FreeBSD-DOC</span></li><li><span class="licensename"><span class="namespace">scancode:</span>freebsd-doc</span></li><li><span class="licensename"><span class="namespace">spdx:</span>FreeBSD-DOC</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">FBSDDL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:e590082a996911ad940a71818ff1558a">[<a href="/fact/ScancodeData/e590082a996911ad940a71818ff1558a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8f2f0ccdf5e9b2afb3df5e543e5fd51a">[<a href="/fact/SPDXLicense/8f2f0ccdf5e9b2afb3df5e543e5fd51a">SPDXLicense</a>]</span>)</span></li><li><span title="">Fedora: <b style="">allowed-documentation</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8f5dc79a5e29ed6b9cd391db41dcb891">[<a href="/fact/FedoraEntry/8f5dc79a5e29ed6b9cd391db41dcb891">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:455e1912199bdc3f6096ea1322684e5b">[<a href="/fact/MetaeffektLicense/455e1912199bdc3f6096ea1322684e5b">MetaeffektLicense</a>]</span>)</span></li><li><span title="Die im Folgenden aufgeführten Lizenzen versuchen, den Grundgedanken, der der Freien Software zu Grunde liegt, auch auf andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content Definition besteht, sind die Lizenzen sehr heterogen.">ifrOSS Classification: <b style="">Open Content Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:5b4df2870b56ec068d8ecd6b34e9fbb5">[<a href="/fact/ifrOSS License/5b4df2870b56ec068d8ecd6b34e9fbb5">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f41eda06f9ea63d142916fb228dc99c7">[<a href="/fact/OrtLicenseCategorization/f41eda06f9ea63d142916fb228dc99c7">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f41eda06f9ea63d142916fb228dc99c7">[<a href="/fact/OrtLicenseCategorization/f41eda06f9ea63d142916fb228dc99c7">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.freebsd.org/copyright/freebsd-doc-license/" target="_blank">https://www.freebsd.org/copyright/freebsd-doc-license/</a></li><li><a href="https://www.freebsd.org/copyright/freebsd-doc-license.html" target="_blank">https://www.freebsd.org/copyright/freebsd-doc-license.html</a></li><li><a href="https://github.com/jponge/izpack-full-svn-history-copy/blob/7a521ccd6ce0dd1a0664eaae12fd5bba5571d231/izpack-launcher/tags/release-1.0/doc/COPYING" target="_blank">https://github.com/jponge/izpack-full-svn-history-copy/blob/7a521ccd6ce0dd1a0664eaae12fd5bba5571d231/izpack-launcher/tags/release-1.0/doc/COPYING</a></li><li><a href="https://github.com/bastienleonard/pysfml-cython/blob/c71194988ba90678cbc4c9e6fd3e03f53ac4c2e4/doc/sphinx/source/licenses.rst" target="_blank">https://github.com/bastienleonard/pysfml-cython/blob/c71194988ba90678cbc4c9e6fd3e03f53ac4c2e4/doc/sphinx/source/licenses.rst</a></li><li><a href="https://github.com/pabloriera/ofxKCoreN/blob/f2c6e01b6eeca384f38008520195f2e2481181e3/src/ofxKCoreN.h" target="_blank">https://github.com/pabloriera/ofxKCoreN/blob/f2c6e01b6eeca384f38008520195f2e2481181e3/src/ofxKCoreN.h</a></li><li><a href="https://github.com/open-mpi/docs/blob/master/README.md" target="_blank">https://github.com/open-mpi/docs/blob/master/README.md</a></li><li><a href="https://en.wikipedia.org/wiki/FreeBSD_Documentation_License" target="_blank">https://en.wikipedia.org/wiki/FreeBSD_Documentation_License</a></li><li><a href="http://www.freebsd.org/copyright/freebsd-doc-license.html" target="_blank">http://www.freebsd.org/copyright/freebsd-doc-license.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-documentation&quot;]</li><li>https://www.freebsd.org/copyright/freebsd-doc-license.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The FreeBSD Documentation License
+
+Copyright 1994-2021 The FreeBSD Project. All rights reserved.
+
+Redistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:
+
+    1. Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.
+
+    2. Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Manual Pages
+
+Some FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:
+
+    The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.
+
+    In the following statement, the phrase &quot;this text&quot; refers to portions of the system documentation.
+
+    Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.
+
+    This notice shall appear on any product containing this material.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The FreeBSD Documentation License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1994-2021 The FreeBSD Project. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Redistribution and use in source (SGML DocBook) and &amp;apos;compiled&amp;apos; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+            Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+            Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+      &lt;p&gt;Manual Pages&lt;/p&gt;
+
+      &lt;p&gt;Some FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology - Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            In the following statement, the phrase &amp;quot;this text&amp;quot; refers to portions of the system documentation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            This notice shall appear on any product containing this material.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution and use in source and &#39;compiled&#39; forms with or without
+modification, are permitted provided that the following conditions are met:
+
+    Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer as the first lines of this
+    file unmodified.
+
+    Redistributions in compiled form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY THE PROJECT &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+SHALL THE PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE</pre></details></li><li><details><summary>Text:</summary><pre>The FreeBSD Documentation License
+
+Copyright 1994-2010 The FreeBSD Project. All rights reserved.
+
+Redistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.
+
+Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/8f2f0ccdf5e9b2afb3df5e543e5fd51a">SPDXLicense:8f2f0ccdf5e9b2afb3df5e543e5fd51a</a> for <a href="/?license=spdx:FreeBSD-DOC"><span class="licensename"><span class="namespace">spdx:</span>FreeBSD-DOC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>FreeBSD-DOC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">FreeBSD Documentation License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:8f2f0ccdf5e9b2afb3df5e543e5fd51a">[<a href="/fact/SPDXLicense/8f2f0ccdf5e9b2afb3df5e543e5fd51a">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.freebsd.org/copyright/freebsd-doc-license/" target="_blank">https://www.freebsd.org/copyright/freebsd-doc-license/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The FreeBSD Documentation License
+
+Copyright 1994-2021 The FreeBSD Project. All rights reserved.
+
+Redistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:
+
+    1. Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.
+
+    2. Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Manual Pages
+
+Some FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:
+
+    The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.
+
+    In the following statement, the phrase &quot;this text&quot; refers to portions of the system documentation.
+
+    Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.
+
+    This notice shall appear on any product containing this material.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The FreeBSD Documentation License&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright 1994-2021 The FreeBSD Project. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;Redistribution and use in source (SGML DocBook) and &amp;apos;compiled&amp;apos; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+            Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt;
+            Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+      &lt;p&gt;Manual Pages&lt;/p&gt;
+
+      &lt;p&gt;Some FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology - Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            In the following statement, the phrase &amp;quot;this text&amp;quot; refers to portions of the system documentation.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            This notice shall appear on any product containing this material.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:FreeBSD-DOC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;8f2f0ccdf5e9b2afb3df5e543e5fd51a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;The FreeBSD Documentation License\n\nCopyright 1994-2021 The FreeBSD Project. All rights reserved.\n\nRedistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:\n\n    1. Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.\n\n    2. Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nManual Pages\n\nSome FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:\n\n    The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.\n\n    In the following statement, the phrase \&quot;this text\&quot; refers to portions of the system documentation.\n\n    Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.\n\n    This notice shall appear on any product containing this material.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The FreeBSD Documentation License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1994-2021 The FreeBSD Project. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Redistribution and use in source (SGML DocBook) and &amp;apos;compiled&amp;apos; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n            Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n            Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n      &lt;p&gt;Manual Pages&lt;/p&gt;\n\n      &lt;p&gt;Some FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology - Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            In the following statement, the phrase &amp;quot;this text&amp;quot; refers to portions of the system documentation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            This notice shall appear on any product containing this material.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.freebsd.org/copyright/freebsd-doc-license/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.freebsd.org/copyright/freebsd-doc-license/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:11Z&quot;,
+                &quot;url&quot;: &quot;https://www.freebsd.org/copyright/freebsd-doc-license/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:FreeBSD-DOC&quot;,
+        &quot;licenseText&quot;: &quot;The FreeBSD Documentation License\n\nCopyright 1994-2021 The FreeBSD Project. All rights reserved.\n\nRedistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:\n\n    1. Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.\n\n    2. Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nManual Pages\n\nSome FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:\n\n    The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.\n\n    In the following statement, the phrase \&quot;this text\&quot; refers to portions of the system documentation.\n\n    Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.\n\n    This notice shall appear on any product containing this material.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The FreeBSD Documentation License&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright 1994-2021 The FreeBSD Project. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;Redistribution and use in source (SGML DocBook) and &amp;apos;compiled&amp;apos; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n            Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt;\n            Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &amp;quot;AS IS&amp;quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n      &lt;p&gt;Manual Pages&lt;/p&gt;\n\n      &lt;p&gt;Some FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology - Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            In the following statement, the phrase &amp;quot;this text&amp;quot; refers to portions of the system documentation.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            This notice shall appear on any product containing this material.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;FreeBSD Documentation License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.freebsd.org/copyright/freebsd-doc-license/&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;The FreeBSD Documentation License\n\n&lt;&lt;endOptional&gt;&gt; &lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright 1994-2021 The FreeBSD Project. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nManual Pages\n\nSome FreeBSD manual pages contain text from the IEEE Std 1003.1, 2004 Edition, Standard for Information Technology - Portable Operating System Interface (POSIX®) specification. These manual pages are subject to the following terms:\n\n   The Institute of Electrical and Electronics Engineers and The Open Group, have given us permission to reprint portions of their documentation.\n\n   In the following statement, the phrase \&quot;this text\&quot; refers to portions of the system documentation.\n\n   Portions of this text are reprinted and reproduced in electronic form in the FreeBSD manual pages, from IEEE Std 1003.1, 2004 Edition, Standard for Information Technology — Portable Operating System Interface (POSIX), The Open Group Base Specifications Issue 6, Copyright© 2001-2004 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group. In the event of any discrepancy between these versions and the original IEEE and The Open Group Standard, the original IEEE and The Open Group Standard is the referee document. The original Standard can be obtained online at https://www.opengroup.org/membership/forums/platform/unix.\n\n   This notice shall appear on any product containing this material.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/8f5dc79a5e29ed6b9cd391db41dcb891">FedoraEntry:8f5dc79a5e29ed6b9cd391db41dcb891</a> for <a href="/?license=Fedora:FreeBSD-DOC"><span class="licensename"><span class="namespace">Fedora:</span>FreeBSD-DOC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>FreeBSD-DOC</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>FreeBSD-DOC</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">FBSDDL</span></li><li><span class="licensename">FreeBSD Documentation License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">Fedora: <b style="">allowed-documentation</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:8f5dc79a5e29ed6b9cd391db41dcb891">[<a href="/fact/FedoraEntry/8f5dc79a5e29ed6b9cd391db41dcb891">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed-documentation&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:FreeBSD-DOC&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:FreeBSD-DOC&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;FBSDDL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;8f5dc79a5e29ed6b9cd391db41dcb891&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed-documentation\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed-documentation&quot;,
+                                    {
+                                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;FBSDDL&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;FreeBSD Documentation License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;FreeBSD-DOC&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:FreeBSD-DOC&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed-documentation&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e590082a996911ad940a71818ff1558a">ScancodeData:e590082a996911ad940a71818ff1558a</a> for <a href="/?license=scancode:freebsd-doc"><span class="licensename"><span class="namespace">scancode:</span>freebsd-doc</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>freebsd-doc</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">FreeBSD Doc License</span></li><li><span class="licensename">FreeBSD Doc License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:e590082a996911ad940a71818ff1558a">[<a href="/fact/ScancodeData/e590082a996911ad940a71818ff1558a">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.freebsd.org/copyright/freebsd-doc-license.html" target="_blank">https://www.freebsd.org/copyright/freebsd-doc-license.html</a></li><li><a href="https://github.com/jponge/izpack-full-svn-history-copy/blob/7a521ccd6ce0dd1a0664eaae12fd5bba5571d231/izpack-launcher/tags/release-1.0/doc/COPYING" target="_blank">https://github.com/jponge/izpack-full-svn-history-copy/blob/7a521ccd6ce0dd1a0664eaae12fd5bba5571d231/izpack-launcher/tags/release-1.0/doc/COPYING</a></li><li><a href="https://github.com/bastienleonard/pysfml-cython/blob/c71194988ba90678cbc4c9e6fd3e03f53ac4c2e4/doc/sphinx/source/licenses.rst" target="_blank">https://github.com/bastienleonard/pysfml-cython/blob/c71194988ba90678cbc4c9e6fd3e03f53ac4c2e4/doc/sphinx/source/licenses.rst</a></li><li><a href="https://github.com/pabloriera/ofxKCoreN/blob/f2c6e01b6eeca384f38008520195f2e2481181e3/src/ofxKCoreN.h" target="_blank">https://github.com/pabloriera/ofxKCoreN/blob/f2c6e01b6eeca384f38008520195f2e2481181e3/src/ofxKCoreN.h</a></li><li><a href="https://github.com/open-mpi/docs/blob/master/README.md" target="_blank">https://github.com/open-mpi/docs/blob/master/README.md</a></li><li><a href="https://en.wikipedia.org/wiki/FreeBSD_Documentation_License" target="_blank">https://en.wikipedia.org/wiki/FreeBSD_Documentation_License</a></li><li><a href="https://www.freebsd.org/copyright/freebsd-doc-license/" target="_blank">https://www.freebsd.org/copyright/freebsd-doc-license/</a></li></ul><h3>Other Statements</h3><ul><li>https://www.freebsd.org/copyright/freebsd-doc-license.html</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution and use in source and &#39;compiled&#39; forms with or without
+modification, are permitted provided that the following conditions are met:
+
+    Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer as the first lines of this
+    file unmodified.
+
+    Redistributions in compiled form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY THE PROJECT &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+SHALL THE PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:freebsd-doc&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Doc License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Doc License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e590082a996911ad940a71818ff1558a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.freebsd.org/copyright/freebsd-doc-license.html&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.freebsd.org/copyright/freebsd-doc-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/jponge/izpack-full-svn-history-copy/blob/7a521ccd6ce0dd1a0664eaae12fd5bba5571d231/izpack-launcher/tags/release-1.0/doc/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/bastienleonard/pysfml-cython/blob/c71194988ba90678cbc4c9e6fd3e03f53ac4c2e4/doc/sphinx/source/licenses.rst&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/pabloriera/ofxKCoreN/blob/f2c6e01b6eeca384f38008520195f2e2481181e3/src/ofxKCoreN.h&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/open-mpi/docs/blob/master/README.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://en.wikipedia.org/wiki/FreeBSD_Documentation_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.freebsd.org/copyright/freebsd-doc-license/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution and use in source and &#39;compiled&#39; forms with or without\nmodification, are permitted provided that the following conditions are met:\n\n    Redistributions of source code must retain the above copyright notice, this\n    list of conditions and the following disclaimer as the first lines of this\n    file unmodified.\n\n    Redistributions in compiled form must reproduce the above copyright notice,\n    this list of conditions and the following disclaimer in the documentation\n    and/or other materials provided with the distribution.\n\nTHIS DOCUMENTATION IS PROVIDED BY THE PROJECT \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL THE PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.freebsd.org/copyright/freebsd-doc-license.html&quot;,
+        &quot;_key&quot;: &quot;freebsd-doc&quot;,
+        &quot;_name&quot;: &quot;FreeBSD Doc License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://en.wikipedia.org/wiki/FreeBSD_Documentation_License&quot;,
+            &quot;https://www.freebsd.org/copyright/freebsd-doc-license/&quot;
+        ],
+        &quot;_owner&quot;: &quot;FreeBSD&quot;,
+        &quot;_shortName&quot;: &quot;FreeBSD Doc License&quot;,
+        &quot;_spdxId&quot;: &quot;FreeBSD-DOC&quot;,
+        &quot;_text&quot;: &quot;Redistribution and use in source and &#39;compiled&#39; forms with or without\nmodification, are permitted provided that the following conditions are met:\n\n    Redistributions of source code must retain the above copyright notice, this\n    list of conditions and the following disclaimer as the first lines of this\n    file unmodified.\n\n    Redistributions in compiled form must reproduce the above copyright notice,\n    this list of conditions and the following disclaimer in the documentation\n    and/or other materials provided with the distribution.\n\nTHIS DOCUMENTATION IS PROVIDED BY THE PROJECT \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL THE PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://www.freebsd.org/copyright/freebsd-doc-license.html&quot;,
+            &quot;https://github.com/jponge/izpack-full-svn-history-copy/blob/7a521ccd6ce0dd1a0664eaae12fd5bba5571d231/izpack-launcher/tags/release-1.0/doc/COPYING&quot;,
+            &quot;https://github.com/bastienleonard/pysfml-cython/blob/c71194988ba90678cbc4c9e6fd3e03f53ac4c2e4/doc/sphinx/source/licenses.rst&quot;,
+            &quot;https://github.com/pabloriera/ofxKCoreN/blob/f2c6e01b6eeca384f38008520195f2e2481181e3/src/ofxKCoreN.h&quot;,
+            &quot;https://github.com/open-mpi/docs/blob/master/README.md&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/e9e0b953d1451e0b7168bb6077005929">Fossology:e9e0b953d1451e0b7168bb6077005929</a> for <a href="/?license=fossology:BSD-Doc"><span class="licensename"><span class="namespace">fossology:</span>BSD-Doc</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>BSD-Doc</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">FreeBSD Documentation License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="http://www.freebsd.org/copyright/freebsd-doc-license.html" target="_blank">http://www.freebsd.org/copyright/freebsd-doc-license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>The FreeBSD Documentation License
+
+Copyright 1994-2010 The FreeBSD Project. All rights reserved.
+
+Redistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.
+
+Redistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:BSD-Doc&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;e9e0b953d1451e0b7168bb6077005929&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://www.freebsd.org/copyright/freebsd-doc-license.html&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;The FreeBSD Documentation License\n\nCopyright 1994-2010 The FreeBSD Project. All rights reserved.\n\nRedistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.\n\nRedistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;FreeBSD Documentation License&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:BSD-Doc&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: false,
+        &quot;_rf_text&quot;: &quot;The FreeBSD Documentation License\n\nCopyright 1994-2010 The FreeBSD Project. All rights reserved.\n\nRedistribution and use in source (SGML DocBook) and &#39;compiled&#39; forms (SGML, HTML, PDF, PostScript, RTF and so forth) with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code (SGML DocBook) must retain the above copyright notice, this list of conditions and the following disclaimer as the first lines of this file unmodified.\n\nRedistributions in compiled form (transformed to other DTDs, converted to PDF, PostScript, RTF and other formats) must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://www.freebsd.org/copyright/freebsd-doc-license.html&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/f41eda06f9ea63d142916fb228dc99c7">OrtLicenseCategorization:f41eda06f9ea63d142916fb228dc99c7</a> for <a href="/?license=SPDX:FreeBSD-DOC"><span class="licensename"><span class="namespace">SPDX:</span>FreeBSD-DOC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>FreeBSD-DOC</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f41eda06f9ea63d142916fb228dc99c7">[<a href="/fact/OrtLicenseCategorization/f41eda06f9ea63d142916fb228dc99c7">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:f41eda06f9ea63d142916fb228dc99c7">[<a href="/fact/OrtLicenseCategorization/f41eda06f9ea63d142916fb228dc99c7">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:FreeBSD-DOC&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;f41eda06f9ea63d142916fb228dc99c7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:FreeBSD-DOC&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/b7b2c229574072d3403e5f9234eee198">CavilLicenseChange:b7b2c229574072d3403e5f9234eee198</a> for <a href="/?license=cavil:FreeBSD-DOC"><span class="licensename"><span class="namespace">cavil:</span>FreeBSD-DOC</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>FreeBSD-DOC</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">FreeBSD-DOC</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:FreeBSD-DOC&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD-DOC&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;b7b2c229574072d3403e5f9234eee198&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;FreeBSD-DOC&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:FreeBSD-DOC&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/455e1912199bdc3f6096ea1322684e5b">MetaeffektLicense:455e1912199bdc3f6096ea1322684e5b</a> for <a href="/?license=metaeffekt:FreeBSD Documentation License"><span class="licensename"><span class="namespace">metaeffekt:</span>FreeBSD Documentation License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>FreeBSD Documentation License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>FreeBSD-DOC</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">FreeBSD Doc License</span></li><li><span class="licensename">FreeBSD Documentation License</span></li><li><span class="licensename"><span class="namespace">scancode:</span>freebsd-doc</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:455e1912199bdc3f6096ea1322684e5b">[<a href="/fact/MetaeffektLicense/455e1912199bdc3f6096ea1322684e5b">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:FreeBSD Documentation License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:FreeBSD-DOC&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Doc License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:freebsd-doc&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;455e1912199bdc3f6096ea1322684e5b&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;FreeBSD Documentation License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:FreeBSD Documentation License&quot;,
+        &quot;_category&quot;: &quot;FreeBSD Doc License&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:freebsd-doc&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:FreeBSD-DOC&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/5b4df2870b56ec068d8ecd6b34e9fbb5">ifrOSS License:5b4df2870b56ec068d8ecd6b34e9fbb5</a> for <a href="/?license=ifrOSS:FreeBSD Documentation License"><span class="licensename"><span class="namespace">ifrOSS:</span>FreeBSD Documentation License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>FreeBSD Documentation License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">FreeBSD Documentation License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Die im Folgenden aufgeführten Lizenzen versuchen, den Grundgedanken, der der Freien Software zu Grunde liegt, auch auf andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content Definition besteht, sind die Lizenzen sehr heterogen.">ifrOSS Classification: <b style="">Open Content Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:5b4df2870b56ec068d8ecd6b34e9fbb5">[<a href="/fact/ifrOSS License/5b4df2870b56ec068d8ecd6b34e9fbb5">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.freebsd.org/copyright/freebsd-doc-license.html" target="_blank">http://www.freebsd.org/copyright/freebsd-doc-license.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:FreeBSD Documentation License&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;FreeBSD Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;5b4df2870b56ec068d8ecd6b34e9fbb5&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.freebsd.org/copyright/freebsd-doc-license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;ifrOSS Classification&quot;,
+                        &quot;Open Content Lizenzen&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Die im Folgenden aufgeführten Lizenzen versuchen, den Grundgedanken, der der Freien Software zu Grunde liegt, auch auf andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content Definition besteht, sind die Lizenzen sehr heterogen.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Open Content Lizenzen&quot;,
+                &quot;Die im Folgenden aufgeführten Lizenzen versuchen, den Grundgedanken, der der Freien Software zu Grunde liegt, auch auf andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content Definition besteht, sind die Lizenzen sehr heterogen.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:FreeBSD Documentation License&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;FreeBSD Documentation License&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;http://www.freebsd.org/copyright/freebsd-doc-license.html&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,727 @@
+<html><head><title>ldbcollector: spdx:GCR-docs</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:GCR-docs</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GCR-docs</span></li></ul></li><li><b>other LicenseNames (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">GCR-docs</span></li><li><span class="licensename"><span class="namespace">cavil:</span>GCR-docs</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>GCR-docs</span></li><li><span class="licensename"><span class="namespace">scancode:</span>gcr-docs</span></li><li><span class="licensename"><span class="namespace">spdx:</span>GCR-docs</span></li><li><span class="licensename">Gnome GCR Documentation License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Gnome GCR Documentation License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:74fff469e35ede0c2990a1a1f3643a8d">[<a href="/fact/ScancodeData/74fff469e35ede0c2990a1a1f3643a8d">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7323bcc0a044553fbf8f3619954042ef">[<a href="/fact/SPDXLicense/7323bcc0a044553fbf8f3619954042ef">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:4b4d3baae6c5178b5e68ceb0bca4d436">[<a href="/fact/FedoraEntry/4b4d3baae6c5178b5e68ceb0bca4d436">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:482cd651db022a1a5c61a10a5b69abdb">[<a href="/fact/OrtLicenseCategorization/482cd651db022a1a5c61a10a5b69abdb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:482cd651db022a1a5c61a10a5b69abdb">[<a href="/fact/OrtLicenseCategorization/482cd651db022a1a5c61a10a5b69abdb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:482cd651db022a1a5c61a10a5b69abdb">[<a href="/fact/OrtLicenseCategorization/482cd651db022a1a5c61a10a5b69abdb">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/GNOME/gcr/blob/master/docs/COPYING" target="_blank">https://github.com/GNOME/gcr/blob/master/docs/COPYING</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This work may be reproduced and distributed in whole or in part, in
+any medium, physical or electronic, so as long as this copyright
+notice remains intact and unchanged on all copies.  Commercial
+redistribution is permitted and encouraged, but you may not
+redistribute, in whole or in part, under terms more restrictive than
+those under which you received it. If you redistribute a modified or
+translated version of this work, you must also make the source code to
+the modified or translated version available in electronic form
+without charge.  However, mere aggregation as part of a larger work
+shall not count as a modification for this purpose.
+
+All code examples in this work are placed into the public domain,
+and may be used, modified and redistributed without restriction.
+
+BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE WORK &quot;AS IS&quot; WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY REPAIR OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+WORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;p&gt;
+                This work may be reproduced and distributed in whole or in part,
+                in any medium, physical or electronic, so as long as this
+                copyright notice remains intact and unchanged on all
+                copies. Commercial redistribution is permitted and
+                encouraged, but you may not redistribute, in whole
+                or in part, under terms more restrictive than those
+                under which you received it. If you redistribute a modified
+                or translated version of this work, you must also make the
+                source code to the modified or translated version
+                available in electronic form without charge.
+                However, mere aggregation as part of a larger work
+                shall not count as a modification for this purpose.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                All code examples in this work are placed into the
+                public domain, and may be used, modified and
+                redistributed without restriction.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE
+                IS NO WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED
+                BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN
+                WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+                PROVIDE THE WORK &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND,
+                EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                PARTICULAR PURPOSE. SHOULD THE WORK PROVE DEFECTIVE,
+                YOU ASSUME THE COST OF ALL NECESSARY REPAIR OR
+                CORRECTION.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                IN NO EVENT UNLESS REQUIRED BY
+                APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT
+                HOLDER,
+                OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE WORK
+                AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+                GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+                OUT
+                OF THE USE OR INABILITY TO USE THE WORK, EVEN IF SUCH HOLDER OR
+                OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>This work may be reproduced and distributed in whole or in part, in
+any medium, physical or electronic, so as long as this copyright
+notice remains intact and unchanged on all copies.  Commercial
+redistribution is permitted and encouraged, but you may not
+redistribute, in whole or in part, under terms more restrictive than
+those under which you received it. If you redistribute a modified or
+translated version of this work, you must also make the source code to
+the modified or translated version available in electronic form
+without charge.  However, mere aggregation as part of a larger work
+shall not count as a modification for this purpose.
+
+All code examples in this work are placed into the public domain,
+and may be used, modified and redistributed without restriction.
+
+BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE WORK &quot;AS IS&quot; WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY REPAIR OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+WORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/7323bcc0a044553fbf8f3619954042ef">SPDXLicense:7323bcc0a044553fbf8f3619954042ef</a> for <a href="/?license=spdx:GCR-docs"><span class="licensename"><span class="namespace">spdx:</span>GCR-docs</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GCR-docs</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Gnome GCR Documentation License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:7323bcc0a044553fbf8f3619954042ef">[<a href="/fact/SPDXLicense/7323bcc0a044553fbf8f3619954042ef">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/GNOME/gcr/blob/master/docs/COPYING" target="_blank">https://github.com/GNOME/gcr/blob/master/docs/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This work may be reproduced and distributed in whole or in part, in
+any medium, physical or electronic, so as long as this copyright
+notice remains intact and unchanged on all copies.  Commercial
+redistribution is permitted and encouraged, but you may not
+redistribute, in whole or in part, under terms more restrictive than
+those under which you received it. If you redistribute a modified or
+translated version of this work, you must also make the source code to
+the modified or translated version available in electronic form
+without charge.  However, mere aggregation as part of a larger work
+shall not count as a modification for this purpose.
+
+All code examples in this work are placed into the public domain,
+and may be used, modified and redistributed without restriction.
+
+BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE WORK &quot;AS IS&quot; WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY REPAIR OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+WORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;p&gt;
+                This work may be reproduced and distributed in whole or in part,
+                in any medium, physical or electronic, so as long as this
+                copyright notice remains intact and unchanged on all
+                copies. Commercial redistribution is permitted and
+                encouraged, but you may not redistribute, in whole
+                or in part, under terms more restrictive than those
+                under which you received it. If you redistribute a modified
+                or translated version of this work, you must also make the
+                source code to the modified or translated version
+                available in electronic form without charge.
+                However, mere aggregation as part of a larger work
+                shall not count as a modification for this purpose.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                All code examples in this work are placed into the
+                public domain, and may be used, modified and
+                redistributed without restriction.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE
+                IS NO WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED
+                BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN
+                WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+                PROVIDE THE WORK &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND,
+                EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+                PARTICULAR PURPOSE. SHOULD THE WORK PROVE DEFECTIVE,
+                YOU ASSUME THE COST OF ALL NECESSARY REPAIR OR
+                CORRECTION.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                IN NO EVENT UNLESS REQUIRED BY
+                APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT
+                HOLDER,
+                OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE WORK
+                AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+                GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+                OUT
+                OF THE USE OR INABILITY TO USE THE WORK, EVEN IF SUCH HOLDER OR
+                OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:GCR-docs&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Gnome GCR Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;7323bcc0a044553fbf8f3619954042ef&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This work may be reproduced and distributed in whole or in part, in\nany medium, physical or electronic, so as long as this copyright\nnotice remains intact and unchanged on all copies.  Commercial\nredistribution is permitted and encouraged, but you may not\nredistribute, in whole or in part, under terms more restrictive than\nthose under which you received it. If you redistribute a modified or\ntranslated version of this work, you must also make the source code to\nthe modified or translated version available in electronic form\nwithout charge.  However, mere aggregation as part of a larger work\nshall not count as a modification for this purpose.\n\nAll code examples in this work are placed into the public domain,\nand may be used, modified and redistributed without restriction.\n\nBECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO\nWARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.\nEXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR\nOTHER PARTIES PROVIDE THE WORK \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY\nKIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME\nTHE COST OF ALL NECESSARY REPAIR OR CORRECTION.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN\nWRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY\nAND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU\nFOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE\nWORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;p&gt;\n                This work may be reproduced and distributed in whole or in part,\n                in any medium, physical or electronic, so as long as this\n                copyright notice remains intact and unchanged on all\n                copies. Commercial redistribution is permitted and\n                encouraged, but you may not redistribute, in whole\n                or in part, under terms more restrictive than those\n                under which you received it. If you redistribute a modified\n                or translated version of this work, you must also make the\n                source code to the modified or translated version\n                available in electronic form without charge.\n                However, mere aggregation as part of a larger work\n                shall not count as a modification for this purpose.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                All code examples in this work are placed into the\n                public domain, and may be used, modified and\n                redistributed without restriction.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE\n                IS NO WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED\n                BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN\n                WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\n                PROVIDE THE WORK &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND,\n                EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\n                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n                PARTICULAR PURPOSE. SHOULD THE WORK PROVE DEFECTIVE,\n                YOU ASSUME THE COST OF ALL NECESSARY REPAIR OR\n                CORRECTION.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                IN NO EVENT UNLESS REQUIRED BY\n                APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT\n                HOLDER,\n                OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE WORK\n                AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\n                GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\n                OUT\n                OF THE USE OR INABILITY TO USE THE WORK, EVEN IF SUCH HOLDER OR\n                OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/GNOME/gcr/blob/master/docs/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/GNOME/gcr/blob/master/docs/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:05Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/GNOME/gcr/blob/master/docs/COPYING&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:GCR-docs&quot;,
+        &quot;licenseText&quot;: &quot;This work may be reproduced and distributed in whole or in part, in\nany medium, physical or electronic, so as long as this copyright\nnotice remains intact and unchanged on all copies.  Commercial\nredistribution is permitted and encouraged, but you may not\nredistribute, in whole or in part, under terms more restrictive than\nthose under which you received it. If you redistribute a modified or\ntranslated version of this work, you must also make the source code to\nthe modified or translated version available in electronic form\nwithout charge.  However, mere aggregation as part of a larger work\nshall not count as a modification for this purpose.\n\nAll code examples in this work are placed into the public domain,\nand may be used, modified and redistributed without restriction.\n\nBECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO\nWARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.\nEXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR\nOTHER PARTIES PROVIDE THE WORK \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY\nKIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME\nTHE COST OF ALL NECESSARY REPAIR OR CORRECTION.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN\nWRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY\nAND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU\nFOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE\nWORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;p&gt;\n                This work may be reproduced and distributed in whole or in part,\n                in any medium, physical or electronic, so as long as this\n                copyright notice remains intact and unchanged on all\n                copies. Commercial redistribution is permitted and\n                encouraged, but you may not redistribute, in whole\n                or in part, under terms more restrictive than those\n                under which you received it. If you redistribute a modified\n                or translated version of this work, you must also make the\n                source code to the modified or translated version\n                available in electronic form without charge.\n                However, mere aggregation as part of a larger work\n                shall not count as a modification for this purpose.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                All code examples in this work are placed into the\n                public domain, and may be used, modified and\n                redistributed without restriction.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE\n                IS NO WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED\n                BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN\n                WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\n                PROVIDE THE WORK &amp;quot;AS IS&amp;quot; WITHOUT WARRANTY OF ANY KIND,\n                EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\n                IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\n                PARTICULAR PURPOSE. SHOULD THE WORK PROVE DEFECTIVE,\n                YOU ASSUME THE COST OF ALL NECESSARY REPAIR OR\n                CORRECTION.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                IN NO EVENT UNLESS REQUIRED BY\n                APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT\n                HOLDER,\n                OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE WORK\n                AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\n                GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\n                OUT\n                OF THE USE OR INABILITY TO USE THE WORK, EVEN IF SUCH HOLDER OR\n                OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Gnome GCR Documentation License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/GNOME/gcr/blob/master/docs/COPYING&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;This work may be reproduced and distributed in whole or in part, in any medium, physical or electronic, so as long as this copyright notice remains intact and unchanged on all copies. Commercial redistribution is permitted and encouraged, but you may not redistribute, in whole or in part, under terms more restrictive than those under which you received it. If you redistribute a modified or translated version of this work, you must also make the source code to the modified or translated version available in electronic form without charge. However, mere aggregation as part of a larger work shall not count as a modification for this purpose.\n\nAll code examples in this work are placed into the public domain, and may be used, modified and redistributed without restriction.\n\nBECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE WORK \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY REPAIR OR CORRECTION.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE WORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/4b4d3baae6c5178b5e68ceb0bca4d436">FedoraEntry:4b4d3baae6c5178b5e68ceb0bca4d436</a> for <a href="/?license=Fedora:GCR-docs"><span class="licensename"><span class="namespace">Fedora:</span>GCR-docs</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>GCR-docs</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GCR-docs</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:4b4d3baae6c5178b5e68ceb0bca4d436">[<a href="/fact/FedoraEntry/4b4d3baae6c5178b5e68ceb0bca4d436">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:GCR-docs&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:GCR-docs&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;4b4d3baae6c5178b5e68ceb0bca4d436&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;GCR-docs&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:GCR-docs&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/74fff469e35ede0c2990a1a1f3643a8d">ScancodeData:74fff469e35ede0c2990a1a1f3643a8d</a> for <a href="/?license=scancode:gcr-docs"><span class="licensename"><span class="namespace">scancode:</span>gcr-docs</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>gcr-docs</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Gnome GCR Documentation License</span></li><li><span class="licensename">Gnome GCR Documentation License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Copyleft Limited&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:74fff469e35ede0c2990a1a1f3643a8d">[<a href="/fact/ScancodeData/74fff469e35ede0c2990a1a1f3643a8d">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/GNOME/gcr/blob/master/docs/COPYING" target="_blank">https://github.com/GNOME/gcr/blob/master/docs/COPYING</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This work may be reproduced and distributed in whole or in part, in
+any medium, physical or electronic, so as long as this copyright
+notice remains intact and unchanged on all copies.  Commercial
+redistribution is permitted and encouraged, but you may not
+redistribute, in whole or in part, under terms more restrictive than
+those under which you received it. If you redistribute a modified or
+translated version of this work, you must also make the source code to
+the modified or translated version available in electronic form
+without charge.  However, mere aggregation as part of a larger work
+shall not count as a modification for this purpose.
+
+All code examples in this work are placed into the public domain,
+and may be used, modified and redistributed without restriction.
+
+BECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE WORK &quot;AS IS&quot; WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY REPAIR OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+WORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:gcr-docs&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Gnome GCR Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Gnome GCR Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;74fff469e35ede0c2990a1a1f3643a8d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Copyleft Limited&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/GNOME/gcr/blob/master/docs/COPYING&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This work may be reproduced and distributed in whole or in part, in\nany medium, physical or electronic, so as long as this copyright\nnotice remains intact and unchanged on all copies.  Commercial\nredistribution is permitted and encouraged, but you may not\nredistribute, in whole or in part, under terms more restrictive than\nthose under which you received it. If you redistribute a modified or\ntranslated version of this work, you must also make the source code to\nthe modified or translated version available in electronic form\nwithout charge.  However, mere aggregation as part of a larger work\nshall not count as a modification for this purpose.\n\nAll code examples in this work are placed into the public domain,\nand may be used, modified and redistributed without restriction.\n\nBECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO\nWARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.\nEXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR\nOTHER PARTIES PROVIDE THE WORK \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY\nKIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME\nTHE COST OF ALL NECESSARY REPAIR OR CORRECTION.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN\nWRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY\nAND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU\nFOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE\nWORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Copyleft Limited&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;gcr-docs&quot;,
+        &quot;_name&quot;: &quot;Gnome GCR Documentation License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/GNOME/gcr/blob/master/docs/COPYING&quot;
+        ],
+        &quot;_owner&quot;: &quot;GNOME Project&quot;,
+        &quot;_shortName&quot;: &quot;Gnome GCR Documentation License&quot;,
+        &quot;_spdxId&quot;: &quot;GCR-docs&quot;,
+        &quot;_text&quot;: &quot;This work may be reproduced and distributed in whole or in part, in\nany medium, physical or electronic, so as long as this copyright\nnotice remains intact and unchanged on all copies.  Commercial\nredistribution is permitted and encouraged, but you may not\nredistribute, in whole or in part, under terms more restrictive than\nthose under which you received it. If you redistribute a modified or\ntranslated version of this work, you must also make the source code to\nthe modified or translated version available in electronic form\nwithout charge.  However, mere aggregation as part of a larger work\nshall not count as a modification for this purpose.\n\nAll code examples in this work are placed into the public domain,\nand may be used, modified and redistributed without restriction.\n\nBECAUSE THIS WORK IS LICENSED FREE OF CHARGE, THERE IS NO\nWARRANTY FOR THE WORK, TO THE EXTENT PERMITTED BY APPLICABLE LAW.\nEXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR\nOTHER PARTIES PROVIDE THE WORK \&quot;AS IS\&quot; WITHOUT WARRANTY OF ANY\nKIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME\nTHE COST OF ALL NECESSARY REPAIR OR CORRECTION.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN\nWRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY\nAND/OR REDISTRIBUTE THE WORK AS PERMITTED ABOVE, BE LIABLE TO YOU\nFOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE\nWORK, EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/482cd651db022a1a5c61a10a5b69abdb">OrtLicenseCategorization:482cd651db022a1a5c61a10a5b69abdb</a> for <a href="/?license=SPDX:GCR-docs"><span class="licensename"><span class="namespace">SPDX:</span>GCR-docs</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>GCR-docs</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>copyleft-limited</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:482cd651db022a1a5c61a10a5b69abdb">[<a href="/fact/OrtLicenseCategorization/482cd651db022a1a5c61a10a5b69abdb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:482cd651db022a1a5c61a10a5b69abdb">[<a href="/fact/OrtLicenseCategorization/482cd651db022a1a5c61a10a5b69abdb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-source-code-offer-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:482cd651db022a1a5c61a10a5b69abdb">[<a href="/fact/OrtLicenseCategorization/482cd651db022a1a5c61a10a5b69abdb">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:GCR-docs&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;482cd651db022a1a5c61a10a5b69abdb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;copyleft-limited&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-source-code-offer-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;copyleft-limited&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-source-code-offer-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:GCR-docs&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/5fdf23128db89a70da906e7445e5c70d">CavilLicenseChange:5fdf23128db89a70da906e7445e5c70d</a> for <a href="/?license=cavil:GCR-docs"><span class="licensename"><span class="namespace">cavil:</span>GCR-docs</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>GCR-docs</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">GCR-docs</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:GCR-docs&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GCR-docs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;5fdf23128db89a70da906e7445e5c70d&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;GCR-docs&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:GCR-docs&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/51b2cb1e918342db06a544aa9336f159">MetaeffektLicense:51b2cb1e918342db06a544aa9336f159</a> for <a href="/?license=metaeffekt:Gnome GCR Documentation License"><span class="licensename"><span class="namespace">metaeffekt:</span>Gnome GCR Documentation License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Gnome GCR Documentation License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>GCR-docs</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">GCR-docs</span></li><li><span class="licensename">GCR-docs</span></li><li><span class="licensename">Gnome GCR Documentation License</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Gnome GCR Documentation License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:GCR-docs&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;GCR-docs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;GCR-docs&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Gnome GCR Documentation License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;51b2cb1e918342db06a544aa9336f159&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;GCR-docs&quot;,
+            &quot;Gnome GCR Documentation License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Gnome GCR Documentation License&quot;,
+        &quot;_category&quot;: &quot;GCR-docs&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:GCR-docs&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

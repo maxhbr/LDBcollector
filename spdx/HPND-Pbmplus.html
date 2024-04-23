@@ -1,0 +1,595 @@
+<html><head><title>ldbcollector: spdx:HPND-Pbmplus</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-Pbmplus</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Pbmplus</span></li></ul></li><li><b>other LicenseNames (10):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Pbmplus variant</span></li><li><span class="licensename">Historical Permission Notice and Disclaimer - Pbmplus variant</span></li><li><span class="licensename">Historical Permission Notice and Disclaimer Pbmplus variant</span></li><li><span class="licensename">HPND-Pbmplus</span></li><li><span class="licensename"><span class="namespace">cavil:</span>HPND-Pbmplus</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-Pbmplus</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-pbmplus</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Pbmplus</span></li><li><span class="licensename">Permission Terms (Pbmplus)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (Pbmplus)</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer (Pbmplus)</span></li><li><span class="licensename">Open Group Permissions</span></li><li><span class="licensename">Permission</span></li><li><span class="licensename">Permission Terms (variant 032)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:faaff7a8e100c92ea7295771fa5ae585">[<a href="/fact/ScancodeData/faaff7a8e100c92ea7295771fa5ae585">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f73815eac3dc0ecd3840aa6a3c200089">[<a href="/fact/SPDXLicense/f73815eac3dc0ecd3840aa6a3c200089">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:f1ef733cbca7a4a9829f065e8f0d9b8f">[<a href="/fact/FedoraEntry/f1ef733cbca7a4a9829f065e8f0d9b8f">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:835279a5805a3b1607f8b149ffa37874">[<a href="/fact/OrtLicenseCategorization/835279a5805a3b1607f8b149ffa37874">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:835279a5805a3b1607f8b149ffa37874">[<a href="/fact/OrtLicenseCategorization/835279a5805a3b1607f8b149ffa37874">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is nearly a match for HPND, but omits first sentence of third clause regarding no reps, and only includes the second sentence regarding &quot;as is&quot;. In the original HPND that entire clause is optional.<span class="provided-by">(provided by: <span title="SPDXLicense:f73815eac3dc0ecd3840aa6a3c200089">[<a href="/fact/SPDXLicense/f73815eac3dc0ecd3840aa6a3c200089">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>This was previously the text of libpbm LICENSE and wrongly assigned
+spdx_license_key as xlock
+<span class="provided-by">(provided by: <span title="ScancodeData:faaff7a8e100c92ea7295771fa5ae585">[<a href="/fact/ScancodeData/faaff7a8e100c92ea7295771fa5ae585">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8" target="_blank">https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>http://web.mit.edu/tex/fontutil/fontutils-0.6/pbm/libpbm1.c</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1991 by Jef Poskanzer.
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation.  This software is provided &quot;as is&quot; without express or
+implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+                Copyright (C) 1991 by Jef Poskanzer.
+        &lt;/var&gt;
+
+         &lt;p&gt;
+                Permission to use, copy, modify, and distribute this software
+                and its documentation for any purpose and without fee is hereby
+                granted, provided that the above copyright notice appear in all copies
+                and that both that copyright notice and this permission
+                notice appear in supporting documentation. This software
+                is provided &amp;quot;as is&amp;quot; without express or implied warranty.
+         &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation.  This software is provided &quot;as is&quot; without express or
+implied warranty.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/f73815eac3dc0ecd3840aa6a3c200089">SPDXLicense:f73815eac3dc0ecd3840aa6a3c200089</a> for <a href="/?license=spdx:HPND-Pbmplus"><span class="licensename"><span class="namespace">spdx:</span>HPND-Pbmplus</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Pbmplus</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer - Pbmplus variant</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:f73815eac3dc0ecd3840aa6a3c200089">[<a href="/fact/SPDXLicense/f73815eac3dc0ecd3840aa6a3c200089">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is nearly a match for HPND, but omits first sentence of third clause regarding no reps, and only includes the second sentence regarding &quot;as is&quot;. In the original HPND that entire clause is optional.<span class="provided-by">(provided by: <span title="SPDXLicense:f73815eac3dc0ecd3840aa6a3c200089">[<a href="/fact/SPDXLicense/f73815eac3dc0ecd3840aa6a3c200089">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8" target="_blank">https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1991 by Jef Poskanzer.
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation.  This software is provided &quot;as is&quot; without express or
+implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 
+                Copyright (C) 1991 by Jef Poskanzer.
+        &lt;/var&gt;
+
+         &lt;p&gt;
+                Permission to use, copy, modify, and distribute this software
+                and its documentation for any purpose and without fee is hereby
+                granted, provided that the above copyright notice appear in all copies
+                and that both that copyright notice and this permission
+                notice appear in supporting documentation. This software
+                is provided &amp;quot;as is&amp;quot; without express or implied warranty.
+         &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-Pbmplus&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - Pbmplus variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;f73815eac3dc0ecd3840aa6a3c200089&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is nearly a match for HPND, but omits first sentence of third clause regarding no reps, and only includes the second sentence regarding \&quot;as is\&quot;. In the original HPND that entire clause is optional.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 1991 by Jef Poskanzer.\n\nPermission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.  This software is provided \&quot;as is\&quot; without express or\nimplied warranty.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n                Copyright (C) 1991 by Jef Poskanzer.\n        &lt;/var&gt;\n\n         &lt;p&gt;\n                Permission to use, copy, modify, and distribute this software\n                and its documentation for any purpose and without fee is hereby\n                granted, provided that the above copyright notice appear in all copies\n                and that both that copyright notice and this permission\n                notice appear in supporting documentation. This software\n                is provided &amp;quot;as is&amp;quot; without express or implied warranty.\n         &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:08:53Z&quot;,
+                &quot;url&quot;: &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is nearly a match for HPND, but omits first sentence of third clause regarding no reps, and only includes the second sentence regarding \&quot;as is\&quot;. In the original HPND that entire clause is optional.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-Pbmplus&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 1991 by Jef Poskanzer.\n\nPermission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.  This software is provided \&quot;as is\&quot; without express or\nimplied warranty.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n                Copyright (C) 1991 by Jef Poskanzer.\n        &lt;/var&gt;\n\n         &lt;p&gt;\n                Permission to use, copy, modify, and distribute this software\n                and its documentation for any purpose and without fee is hereby\n                granted, provided that the above copyright notice appear in all copies\n                and that both that copyright notice and this permission\n                notice appear in supporting documentation. This software\n                is provided &amp;quot;as is&amp;quot; without express or implied warranty.\n         &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;Historical Permission Notice and Disclaimer - Pbmplus variant&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1991 by Jef Poskanzer.\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. This software is provided \&quot;as is\&quot; without express or implied warranty.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/f1ef733cbca7a4a9829f065e8f0d9b8f">FedoraEntry:f1ef733cbca7a4a9829f065e8f0d9b8f</a> for <a href="/?license=Fedora:HPND-Pbmplus"><span class="licensename"><span class="namespace">Fedora:</span>HPND-Pbmplus</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-Pbmplus</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Pbmplus</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:f1ef733cbca7a4a9829f065e8f0d9b8f">[<a href="/fact/FedoraEntry/f1ef733cbca7a4a9829f065e8f0d9b8f">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HPND-Pbmplus&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-Pbmplus&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;f1ef733cbca7a4a9829f065e8f0d9b8f&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HPND-Pbmplus&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HPND-Pbmplus&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/faaff7a8e100c92ea7295771fa5ae585">ScancodeData:faaff7a8e100c92ea7295771fa5ae585</a> for <a href="/?license=scancode:hpnd-pbmplus"><span class="licensename"><span class="namespace">scancode:</span>hpnd-pbmplus</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-pbmplus</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Pbmplus variant</span></li><li><span class="licensename">Historical Permission Notice and Disclaimer Pbmplus variant</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:faaff7a8e100c92ea7295771fa5ae585">[<a href="/fact/ScancodeData/faaff7a8e100c92ea7295771fa5ae585">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This was previously the text of libpbm LICENSE and wrongly assigned
+spdx_license_key as xlock
+<span class="provided-by">(provided by: <span title="ScancodeData:faaff7a8e100c92ea7295771fa5ae585">[<a href="/fact/ScancodeData/faaff7a8e100c92ea7295771fa5ae585">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8" target="_blank">https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8</a></li></ul><h3>Other Statements</h3><ul><li>http://web.mit.edu/tex/fontutil/fontutils-0.6/pbm/libpbm1.c</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation.  This software is provided &quot;as is&quot; without express or
+implied warranty.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:hpnd-pbmplus&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Historical Pbmplus variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer Pbmplus variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;faaff7a8e100c92ea7295771fa5ae585&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://web.mit.edu/tex/fontutil/fontutils-0.6/pbm/libpbm1.c&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;This was previously the text of libpbm LICENSE and wrongly assigned\nspdx_license_key as xlock\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.  This software is provided \&quot;as is\&quot; without express or\nimplied warranty.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://web.mit.edu/tex/fontutil/fontutils-0.6/pbm/libpbm1.c&quot;,
+        &quot;_key&quot;: &quot;hpnd-pbmplus&quot;,
+        &quot;_name&quot;: &quot;Historical Permission Notice and Disclaimer Pbmplus variant&quot;,
+        &quot;_notes&quot;: &quot;This was previously the text of libpbm LICENSE and wrongly assigned\nspdx_license_key as xlock\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/netpbm.c#l8&quot;
+        ],
+        &quot;_owner&quot;: &quot;ACME Labs&quot;,
+        &quot;_shortName&quot;: &quot;Historical Pbmplus variant&quot;,
+        &quot;_spdxId&quot;: &quot;HPND-Pbmplus&quot;,
+        &quot;_text&quot;: &quot;Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided\nthat the above copyright notice appear in all copies and that both that\ncopyright notice and this permission notice appear in supporting\ndocumentation.  This software is provided \&quot;as is\&quot; without express or\nimplied warranty.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/835279a5805a3b1607f8b149ffa37874">OrtLicenseCategorization:835279a5805a3b1607f8b149ffa37874</a> for <a href="/?license=SPDX:HPND-Pbmplus"><span class="licensename"><span class="namespace">SPDX:</span>HPND-Pbmplus</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-Pbmplus</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:835279a5805a3b1607f8b149ffa37874">[<a href="/fact/OrtLicenseCategorization/835279a5805a3b1607f8b149ffa37874">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:835279a5805a3b1607f8b149ffa37874">[<a href="/fact/OrtLicenseCategorization/835279a5805a3b1607f8b149ffa37874">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-Pbmplus&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;835279a5805a3b1607f8b149ffa37874&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-Pbmplus&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/fe2c83b70525ac4ff30386cfd8939177">CavilLicenseChange:fe2c83b70525ac4ff30386cfd8939177</a> for <a href="/?license=cavil:HPND-Pbmplus"><span class="licensename"><span class="namespace">cavil:</span>HPND-Pbmplus</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>HPND-Pbmplus</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND-Pbmplus</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:HPND-Pbmplus&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND-Pbmplus&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;fe2c83b70525ac4ff30386cfd8939177&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;HPND-Pbmplus&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:HPND-Pbmplus&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/7c22a0d48d8f1afc59f46b32354731bc">MetaeffektLicense:7c22a0d48d8f1afc59f46b32354731bc</a> for <a href="/?license=metaeffekt:Permission Terms (Pbmplus)"><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (Pbmplus)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Permission Terms (Pbmplus)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-Pbmplus</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">Historical Permission Notice and Disclaimer (Pbmplus)</span></li><li><span class="licensename">Historical Permission Notice and Disclaimer - Pbmplus variant</span></li><li><span class="licensename">HPND-Pbmplus</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-pbmplus</span></li><li><span class="licensename">Open Group Permissions</span></li><li><span class="licensename">Permission</span></li><li><span class="licensename">Permission Terms (variant 032)</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Permission Terms (Pbmplus)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-Pbmplus&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Permission&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Open Group Permissions&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Permission Terms (variant 032)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND-Pbmplus&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer - Pbmplus variant&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Historical Permission Notice and Disclaimer (Pbmplus)&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:hpnd-pbmplus&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;7c22a0d48d8f1afc59f46b32354731bc&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Open Group Permissions&quot;,
+            &quot;Permission Terms (variant 032)&quot;,
+            &quot;HPND-Pbmplus&quot;,
+            &quot;Historical Permission Notice and Disclaimer - Pbmplus variant&quot;,
+            &quot;Historical Permission Notice and Disclaimer (Pbmplus)&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Permission Terms (Pbmplus)&quot;,
+        &quot;_category&quot;: &quot;Permission&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:hpnd-pbmplus&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:HPND-Pbmplus&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,682 @@
+<html><head><title>ldbcollector: spdx:pnmstitch</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:pnmstitch</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>pnmstitch</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">pnmstitch</span></li><li><span class="licensename"><span class="namespace">cavil:</span>pnmstitch</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>pnmstitch</span></li><li><span class="licensename"><span class="namespace">scancode:</span>pnmstitch</span></li><li><span class="licensename"><span class="namespace">spdx:</span>pnmstitch</span></li><li><span class="licensename">pnmstitch License</span></li><li><span class="licensename">Redistribution Terms (pnmstitch)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Redistribution Terms (pnmstitch)</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">RT</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:e8212e012b587531de322f4561d20542">[<a href="/fact/ScancodeData/e8212e012b587531de322f4561d20542">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:293950c742e3e5a3981eb76a2f9f6d93">[<a href="/fact/SPDXLicense/293950c742e3e5a3981eb76a2f9f6d93">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:aa31017f4625dc8cb385c875fada8404">[<a href="/fact/FedoraEntry/aa31017f4625dc8cb385c875fada8404">FedoraEntry</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d1e2c71ff3f60a85beb916ac776ce423">[<a href="/fact/OrtLicenseCategorization/d1e2c71ff3f60a85beb916ac776ce423">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d1e2c71ff3f60a85beb916ac776ce423">[<a href="/fact/OrtLicenseCategorization/d1e2c71ff3f60a85beb916ac776ce423">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This is the same as bsd-dpt.RULE with ` Mark Salyzyn` added.<span class="provided-by">(provided by: <span title="ScancodeData:e8212e012b587531de322f4561d20542">[<a href="/fact/ScancodeData/e8212e012b587531de322f4561d20542">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2" target="_blank">https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2002 Mark Salyzyn
+All rights reserved.
+
+TERMS AND CONDITIONS OF USE
+
+Redistribution and use in source form, with or without modification, are
+permitted provided that redistributions of source code must retain the
+above copyright notice, this list of conditions and the following
+disclaimer.
+
+This software is provided `as is&#39; by Mark Salyzyn and any express or implied
+warranties, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose, are disclaimed. In no
+event shall Mark Salyzyn be liable for any direct, indirect, incidental,
+special, exemplary or consequential damages (including, but not limited to,
+procurement of substitute goods or services; loss of use, data, or profits;
+or business interruptions) however caused and on any theory of liability,
+whether in contract, strict liability, or tort (including negligence or
+otherwise) arising in any way out of the use of this software, even if
+advised of the possibility of such damage.
+
+Any restrictions or encumberances added to this source code or derivitives,
+is prohibited.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;
+                        Copyright (c) 2002 Mark Salyzyn
+                        &lt;br /&gt;
+
+All rights reserved.
+                &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;optional-license-text&quot;&gt; 
+                &lt;p&gt;
+                        TERMS AND CONDITIONS OF USE
+                &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;p&gt;
+                Redistribution and use in source form, with or
+                without modification, are permitted provided
+                that redistributions of source code must retain the above
+                copyright notice, this list of conditions and the following
+                disclaimer.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                This software is provided `as is&amp;apos; by &lt;var class=&quot;replaceable-license-text&quot;&gt; Mark Salyzyn&lt;/var&gt;
+                and any express or implied warranties, including, but not
+                limited to, the implied warranties of merchantability and
+                fitness for a particular purpose, are disclaimed. In no event
+                shall &lt;var class=&quot;replaceable-license-text&quot;&gt; Mark Salyzyn&lt;/var&gt; be liable for any direct, indirect,
+                incidental, special, exemplary or consequential damages
+                (including, but not limited to, procurement of substitute goods
+                or services; loss of use, data, or profits; or business
+                interruptions) however caused and on any theory of liability,
+                whether in contract, strict liability, or tort (including
+                negligence or otherwise) arising in any way out of the use of
+                this software, even if advised of the possibility of such
+                damage.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Any restrictions or encumberances added to this source code or
+                derivitives, is prohibited.
+        &lt;/p&gt;
+
+      </pre></details></li><li><details><summary>Text:</summary><pre>TERMS AND CONDITIONS OF USE
+
+Redistribution and use in source form, with or without modification, are
+permitted provided that redistributions of source code must retain the
+above copyright notice, this list of conditions and the following
+disclaimer.
+
+This software is provided `as is&#39; by Mark Salyzyn and any express or implied
+warranties, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose, are disclaimed. In no
+event shall Mark Salyzyn be liable for any direct, indirect, incidental,
+special, exemplary or consequential damages (including, but not limited to,
+procurement of substitute goods or services; loss of use, data, or profits;
+or business interruptions) however caused and on any theory of liability,
+whether in contract, strict liability, or tort (including negligence or
+otherwise) arising in any way out of the use of this software, even if
+advised of the possibility of such damage.
+
+Any restrictions or encumberances added to this source code or derivitives,
+is prohibited.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/293950c742e3e5a3981eb76a2f9f6d93">SPDXLicense:293950c742e3e5a3981eb76a2f9f6d93</a> for <a href="/?license=spdx:pnmstitch"><span class="licensename"><span class="namespace">spdx:</span>pnmstitch</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>pnmstitch</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">pnmstitch License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:293950c742e3e5a3981eb76a2f9f6d93">[<a href="/fact/SPDXLicense/293950c742e3e5a3981eb76a2f9f6d93">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2" target="_blank">https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2002 Mark Salyzyn
+All rights reserved.
+
+TERMS AND CONDITIONS OF USE
+
+Redistribution and use in source form, with or without modification, are
+permitted provided that redistributions of source code must retain the
+above copyright notice, this list of conditions and the following
+disclaimer.
+
+This software is provided `as is&#39; by Mark Salyzyn and any express or implied
+warranties, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose, are disclaimed. In no
+event shall Mark Salyzyn be liable for any direct, indirect, incidental,
+special, exemplary or consequential damages (including, but not limited to,
+procurement of substitute goods or services; loss of use, data, or profits;
+or business interruptions) however caused and on any theory of liability,
+whether in contract, strict liability, or tort (including negligence or
+otherwise) arising in any way out of the use of this software, even if
+advised of the possibility of such damage.
+
+Any restrictions or encumberances added to this source code or derivitives,
+is prohibited.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+        &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+                &lt;p&gt;
+                        Copyright (c) 2002 Mark Salyzyn
+                        &lt;br /&gt;
+
+All rights reserved.
+                &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;optional-license-text&quot;&gt; 
+                &lt;p&gt;
+                        TERMS AND CONDITIONS OF USE
+                &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;p&gt;
+                Redistribution and use in source form, with or
+                without modification, are permitted provided
+                that redistributions of source code must retain the above
+                copyright notice, this list of conditions and the following
+                disclaimer.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                This software is provided `as is&amp;apos; by &lt;var class=&quot;replaceable-license-text&quot;&gt; Mark Salyzyn&lt;/var&gt;
+                and any express or implied warranties, including, but not
+                limited to, the implied warranties of merchantability and
+                fitness for a particular purpose, are disclaimed. In no event
+                shall &lt;var class=&quot;replaceable-license-text&quot;&gt; Mark Salyzyn&lt;/var&gt; be liable for any direct, indirect,
+                incidental, special, exemplary or consequential damages
+                (including, but not limited to, procurement of substitute goods
+                or services; loss of use, data, or profits; or business
+                interruptions) however caused and on any theory of liability,
+                whether in contract, strict liability, or tort (including
+                negligence or otherwise) arising in any way out of the use of
+                this software, even if advised of the possibility of such
+                damage.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+                Any restrictions or encumberances added to this source code or
+                derivitives, is prohibited.
+        &lt;/p&gt;
+
+      </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:pnmstitch&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;pnmstitch License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;293950c742e3e5a3981eb76a2f9f6d93&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 2002 Mark Salyzyn\nAll rights reserved.\n\nTERMS AND CONDITIONS OF USE\n\nRedistribution and use in source form, with or without modification, are\npermitted provided that redistributions of source code must retain the\nabove copyright notice, this list of conditions and the following\ndisclaimer.\n\nThis software is provided `as is&#39; by Mark Salyzyn and any express or implied\nwarranties, including, but not limited to, the implied warranties of\nmerchantability and fitness for a particular purpose, are disclaimed. In no\nevent shall Mark Salyzyn be liable for any direct, indirect, incidental,\nspecial, exemplary or consequential damages (including, but not limited to,\nprocurement of substitute goods or services; loss of use, data, or profits;\nor business interruptions) however caused and on any theory of liability,\nwhether in contract, strict liability, or tort (including negligence or\notherwise) arising in any way out of the use of this software, even if\nadvised of the possibility of such damage.\n\nAny restrictions or encumberances added to this source code or derivitives,\nis prohibited.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n        &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;\n                        Copyright (c) 2002 Mark Salyzyn\n                        &lt;br /&gt;\n\nAll rights reserved.\n                &lt;/p&gt;\n\n        &lt;/div&gt;\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; \n                &lt;p&gt;\n                        TERMS AND CONDITIONS OF USE\n                &lt;/p&gt;\n\n        &lt;/div&gt;\n        &lt;p&gt;\n                Redistribution and use in source form, with or\n                without modification, are permitted provided\n                that redistributions of source code must retain the above\n                copyright notice, this list of conditions and the following\n                disclaimer.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                This software is provided `as is&amp;apos; by &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Mark Salyzyn&lt;/var&gt;\n                and any express or implied warranties, including, but not\n                limited to, the implied warranties of merchantability and\n                fitness for a particular purpose, are disclaimed. In no event\n                shall &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Mark Salyzyn&lt;/var&gt; be liable for any direct, indirect,\n                incidental, special, exemplary or consequential damages\n                (including, but not limited to, procurement of substitute goods\n                or services; loss of use, data, or profits; or business\n                interruptions) however caused and on any theory of liability,\n                whether in contract, strict liability, or tort (including\n                negligence or otherwise) arising in any way out of the use of\n                this software, even if advised of the possibility of such\n                damage.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Any restrictions or encumberances added to this source code or\n                derivitives, is prohibited.\n        &lt;/p&gt;\n\n      &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:04:05Z&quot;,
+                &quot;url&quot;: &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:pnmstitch&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 2002 Mark Salyzyn\nAll rights reserved.\n\nTERMS AND CONDITIONS OF USE\n\nRedistribution and use in source form, with or without modification, are\npermitted provided that redistributions of source code must retain the\nabove copyright notice, this list of conditions and the following\ndisclaimer.\n\nThis software is provided `as is&#39; by Mark Salyzyn and any express or implied\nwarranties, including, but not limited to, the implied warranties of\nmerchantability and fitness for a particular purpose, are disclaimed. In no\nevent shall Mark Salyzyn be liable for any direct, indirect, incidental,\nspecial, exemplary or consequential damages (including, but not limited to,\nprocurement of substitute goods or services; loss of use, data, or profits;\nor business interruptions) however caused and on any theory of liability,\nwhether in contract, strict liability, or tort (including negligence or\notherwise) arising in any way out of the use of this software, even if\nadvised of the possibility of such damage.\n\nAny restrictions or encumberances added to this source code or derivitives,\nis prohibited.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n        &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n                &lt;p&gt;\n                        Copyright (c) 2002 Mark Salyzyn\n                        &lt;br /&gt;\n\nAll rights reserved.\n                &lt;/p&gt;\n\n        &lt;/div&gt;\n        &lt;div class=\&quot;optional-license-text\&quot;&gt; \n                &lt;p&gt;\n                        TERMS AND CONDITIONS OF USE\n                &lt;/p&gt;\n\n        &lt;/div&gt;\n        &lt;p&gt;\n                Redistribution and use in source form, with or\n                without modification, are permitted provided\n                that redistributions of source code must retain the above\n                copyright notice, this list of conditions and the following\n                disclaimer.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                This software is provided `as is&amp;apos; by &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Mark Salyzyn&lt;/var&gt;\n                and any express or implied warranties, including, but not\n                limited to, the implied warranties of merchantability and\n                fitness for a particular purpose, are disclaimed. In no event\n                shall &lt;var class=\&quot;replaceable-license-text\&quot;&gt; Mark Salyzyn&lt;/var&gt; be liable for any direct, indirect,\n                incidental, special, exemplary or consequential damages\n                (including, but not limited to, procurement of substitute goods\n                or services; loss of use, data, or profits; or business\n                interruptions) however caused and on any theory of liability,\n                whether in contract, strict liability, or tort (including\n                negligence or otherwise) arising in any way out of the use of\n                this software, even if advised of the possibility of such\n                damage.\n        &lt;/p&gt;\n\n        &lt;p&gt;\n                Any restrictions or encumberances added to this source code or\n                derivitives, is prohibited.\n        &lt;/p&gt;\n\n      &quot;,
+        &quot;name&quot;: &quot;pnmstitch License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2002 Mark Salyzyn  All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;&lt;&lt;beginOptional&gt;&gt; TERMS AND CONDITIONS OF USE\n\n&lt;&lt;endOptional&gt;&gt;\n\nRedistribution and use in source form, with or without modification, are permitted provided that redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\nThis software is provided `as is&#39; by &lt;&lt;var;name=\&quot;author\&quot;;original=\&quot;Mark Salyzyn\&quot;;match=\&quot;.+\&quot;&gt;&gt; and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose, are disclaimed. In no event shall &lt;&lt;var;name=\&quot;author\&quot;;original=\&quot;Mark Salyzyn\&quot;;match=\&quot;.+\&quot;&gt;&gt; be liable for any direct, indirect, incidental, special, exemplary or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruptions) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.\n\nAny restrictions or encumberances added to this source code or derivitives, is prohibited.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/aa31017f4625dc8cb385c875fada8404">FedoraEntry:aa31017f4625dc8cb385c875fada8404</a> for <a href="/?license=Fedora:pnmstitch"><span class="licensename"><span class="namespace">Fedora:</span>pnmstitch</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>pnmstitch</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>pnmstitch</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:aa31017f4625dc8cb385c875fada8404">[<a href="/fact/FedoraEntry/aa31017f4625dc8cb385c875fada8404">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:pnmstitch&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:pnmstitch&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;aa31017f4625dc8cb385c875fada8404&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;pnmstitch&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:pnmstitch&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/e8212e012b587531de322f4561d20542">ScancodeData:e8212e012b587531de322f4561d20542</a> for <a href="/?license=scancode:pnmstitch"><span class="licensename"><span class="namespace">scancode:</span>pnmstitch</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>pnmstitch</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">pnmstitch License</span></li><li><span class="licensename">pnmstitch License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:e8212e012b587531de322f4561d20542">[<a href="/fact/ScancodeData/e8212e012b587531de322f4561d20542">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>This is the same as bsd-dpt.RULE with ` Mark Salyzyn` added.<span class="provided-by">(provided by: <span title="ScancodeData:e8212e012b587531de322f4561d20542">[<a href="/fact/ScancodeData/e8212e012b587531de322f4561d20542">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2" target="_blank">https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>TERMS AND CONDITIONS OF USE
+
+Redistribution and use in source form, with or without modification, are
+permitted provided that redistributions of source code must retain the
+above copyright notice, this list of conditions and the following
+disclaimer.
+
+This software is provided `as is&#39; by Mark Salyzyn and any express or implied
+warranties, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose, are disclaimed. In no
+event shall Mark Salyzyn be liable for any direct, indirect, incidental,
+special, exemplary or consequential damages (including, but not limited to,
+procurement of substitute goods or services; loss of use, data, or profits;
+or business interruptions) however caused and on any theory of liability,
+whether in contract, strict liability, or tort (including negligence or
+otherwise) arising in any way out of the use of this software, even if
+advised of the possibility of such damage.
+
+Any restrictions or encumberances added to this source code or derivitives,
+is prohibited.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:pnmstitch&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;pnmstitch License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;pnmstitch License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;e8212e012b587531de322f4561d20542&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;This is the same as bsd-dpt.RULE with ` Mark Salyzyn` added.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;TERMS AND CONDITIONS OF USE\n\nRedistribution and use in source form, with or without modification, are\npermitted provided that redistributions of source code must retain the\nabove copyright notice, this list of conditions and the following\ndisclaimer.\n\nThis software is provided `as is&#39; by Mark Salyzyn and any express or implied\nwarranties, including, but not limited to, the implied warranties of\nmerchantability and fitness for a particular purpose, are disclaimed. In no\nevent shall Mark Salyzyn be liable for any direct, indirect, incidental,\nspecial, exemplary or consequential damages (including, but not limited to,\nprocurement of substitute goods or services; loss of use, data, or profits;\nor business interruptions) however caused and on any theory of liability,\nwhether in contract, strict liability, or tort (including negligence or\notherwise) arising in any way out of the use of this software, even if\nadvised of the possibility of such damage.\n\nAny restrictions or encumberances added to this source code or derivitives,\nis prohibited.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: null,
+        &quot;_key&quot;: &quot;pnmstitch&quot;,
+        &quot;_name&quot;: &quot;pnmstitch License&quot;,
+        &quot;_notes&quot;: &quot;This is the same as bsd-dpt.RULE with ` Mark Salyzyn` added.&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://sourceforge.net/p/netpbm/code/HEAD/tree/super_stable/editor/pnmstitch.c#l2&quot;
+        ],
+        &quot;_owner&quot;: &quot;pnmstitch Project&quot;,
+        &quot;_shortName&quot;: &quot;pnmstitch License&quot;,
+        &quot;_spdxId&quot;: &quot;pnmstitch&quot;,
+        &quot;_text&quot;: &quot;TERMS AND CONDITIONS OF USE\n\nRedistribution and use in source form, with or without modification, are\npermitted provided that redistributions of source code must retain the\nabove copyright notice, this list of conditions and the following\ndisclaimer.\n\nThis software is provided `as is&#39; by Mark Salyzyn and any express or implied\nwarranties, including, but not limited to, the implied warranties of\nmerchantability and fitness for a particular purpose, are disclaimed. In no\nevent shall Mark Salyzyn be liable for any direct, indirect, incidental,\nspecial, exemplary or consequential damages (including, but not limited to,\nprocurement of substitute goods or services; loss of use, data, or profits;\nor business interruptions) however caused and on any theory of liability,\nwhether in contract, strict liability, or tort (including negligence or\notherwise) arising in any way out of the use of this software, even if\nadvised of the possibility of such damage.\n\nAny restrictions or encumberances added to this source code or derivitives,\nis prohibited.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/d1e2c71ff3f60a85beb916ac776ce423">OrtLicenseCategorization:d1e2c71ff3f60a85beb916ac776ce423</a> for <a href="/?license=SPDX:pnmstitch"><span class="licensename"><span class="namespace">SPDX:</span>pnmstitch</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>pnmstitch</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d1e2c71ff3f60a85beb916ac776ce423">[<a href="/fact/OrtLicenseCategorization/d1e2c71ff3f60a85beb916ac776ce423">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d1e2c71ff3f60a85beb916ac776ce423">[<a href="/fact/OrtLicenseCategorization/d1e2c71ff3f60a85beb916ac776ce423">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:pnmstitch&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d1e2c71ff3f60a85beb916ac776ce423&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:pnmstitch&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/581d332c6472fb7c7e7aca5ac6f81ff8">CavilLicenseChange:581d332c6472fb7c7e7aca5ac6f81ff8</a> for <a href="/?license=cavil:pnmstitch"><span class="licensename"><span class="namespace">cavil:</span>pnmstitch</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>pnmstitch</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">pnmstitch</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:pnmstitch&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;pnmstitch&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;581d332c6472fb7c7e7aca5ac6f81ff8&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;pnmstitch&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:pnmstitch&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/5da9864f84969e7332de401ebeab6248">MetaeffektLicense:5da9864f84969e7332de401ebeab6248</a> for <a href="/?license=metaeffekt:Redistribution Terms (pnmstitch)"><span class="licensename"><span class="namespace">metaeffekt:</span>Redistribution Terms (pnmstitch)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Redistribution Terms (pnmstitch)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>pnmstitch</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>pnmstitch</span></li><li><span class="licensename">pnmstitch License</span></li><li><span class="licensename">RT</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Redistribution Terms (pnmstitch)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:pnmstitch&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;RT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;pnmstitch License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:pnmstitch&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;5da9864f84969e7332de401ebeab6248&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;pnmstitch License&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Redistribution Terms (pnmstitch)&quot;,
+        &quot;_category&quot;: &quot;RT&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:pnmstitch&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:pnmstitch&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

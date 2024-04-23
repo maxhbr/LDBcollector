@@ -1,0 +1,1242 @@
+<html><head><title>ldbcollector: spdx:BUSL-1.1</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:BUSL-1.1</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BUSL-1.1</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">bsl-1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsl-1.1</span></li><li><span class="licensename">Business Source License 1.1</span></li><li><span class="licensename"><span class="namespace">ifrOSS:</span>Business Source License 1.1</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Business Source License 1.1</span></li><li><span class="licensename">Business-Source-1.1</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Business-Source-1.1</span></li><li><span class="licensename">BUSL-1.1</span></li><li><span class="licensename"><span class="namespace">cavil:</span>BUSL-1.1</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>BUSL-1.1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BUSL-1.1</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//github.com/getsentry/sentry/blob/master/LICENSE</span></li><li><span class="licensename">Business Source License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Source-available&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:87f208087a63f72e4f95fa375a50e43a">[<a href="/fact/ScancodeData/87f208087a63f72e4f95fa375a50e43a">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:38466f1e029813fd50535776ac1c1886">[<a href="/fact/SPDXLicense/38466f1e029813fd50535776ac1c1886">SPDXLicense</a>]</span>)</span></li><li><span title="Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed.">Fedora: <b style="color: red;">not-allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:59b9d2d4fe5afbbcaa5824ce90fdc030">[<a href="/fact/FedoraEntry/59b9d2d4fe5afbbcaa5824ce90fdc030">FedoraEntry</a>]</span>)</span></li><li><span title="Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.">ifrOSS Classification: <b style="color: red;">Sonstige (non-free) Software Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:aa03e00926b7f79eec2f20ff73527a56">[<a href="/fact/ifrOSS License/aa03e00926b7f79eec2f20ff73527a56">ifrOSS License</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>source-available</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7779b852d31ff2959618a95efba0aec8">[<a href="/fact/OrtLicenseCategorization/7779b852d31ff2959618a95efba0aec8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7779b852d31ff2959618a95efba0aec8">[<a href="/fact/OrtLicenseCategorization/7779b852d31ff2959618a95efba0aec8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="A license for third-party proprietary content offered under a direct commercial license between a supplier and a customer.">OrtLicenseCategorization: <b>commercial</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0dcb50eb15d23735df58b5a562ef513e">[<a href="/fact/OrtLicenseCategorization/0dcb50eb15d23735df58b5a562ef513e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0dcb50eb15d23735df58b5a562ef513e">[<a href="/fact/OrtLicenseCategorization/0dcb50eb15d23735df58b5a562ef513e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0dcb50eb15d23735df58b5a562ef513e">[<a href="/fact/OrtLicenseCategorization/0dcb50eb15d23735df58b5a562ef513e">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>The Business Source License (this document, or the “License”) is not an Open Source license. However, the Licensed Work will eventually be made available under an Open Source License, as stated in this License. This is a paramaterized license. The license parameters are: restrictions on usage, a change date, and the open source license that will govern usage of the software after the change date.<span class="provided-by">(provided by: <span title="SPDXLicense:38466f1e029813fd50535776ac1c1886">[<a href="/fact/SPDXLicense/38466f1e029813fd50535776ac1c1886">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://mariadb.com/bsl11/" target="_blank">https://mariadb.com/bsl11/</a></li><li><a href="https://mariadb.com/bsl-faq-adopting/" target="_blank">https://mariadb.com/bsl-faq-adopting/</a></li><li><a href="https://mariadb.com/products/mariadb-enterprise" target="_blank">https://mariadb.com/products/mariadb-enterprise</a></li><li><a href="https://www.hashicorp.com/bsl" target="_blank">https://www.hashicorp.com/bsl</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;not-allowed&quot;]</li><li>https://mariadb.com/bsl11/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Business Source License 1.1
+
+License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.
+&quot;Business Source License&quot; is a trademark of MariaDB Corporation Ab.
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative
+works, redistribute, and make non-production use of the Licensed Work. The
+Licensor may make an Additional Use Grant, above, permitting limited
+production use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly
+available distribution of a specific version of the Licensed Work under this
+License, whichever comes first, the Licensor hereby grants you rights under
+the terms of the Change License, and the rights granted in the paragraph
+above terminate.
+
+If your use of the Licensed Work does not comply with the requirements
+currently in effect as described in this License, you must purchase a
+commercial license from the Licensor, its affiliated entities, or authorized
+resellers, or you must refrain from using the Licensed Work.
+
+All copies of the original and modified Licensed Work, and derivative works
+of the Licensed Work, are subject to this License. This License applies
+separately for each version of the Licensed Work and the Change Date may vary
+for each version of the Licensed Work released by Licensor.
+
+You must conspicuously display this License on each original or modified copy
+of the Licensed Work. If you receive the Licensed Work in original or
+modified form from a third party, the terms and conditions set forth in this
+License apply to your use of that work.
+
+Any use of the Licensed Work in violation of this License will automatically
+terminate your rights under this License for the current and all other
+versions of the Licensed Work.
+
+This License does not grant you any right in any trademark or logo of
+Licensor or its affiliates (provided that you may use a trademark or logo of
+Licensor as expressly required by this License).
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON
+AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,
+EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND
+TITLE.
+
+MariaDB hereby grants you permission to use this License’s text to license
+your works, and to refer to it using the trademark “Business Source License”,
+as long as you comply with the Covenants of Licensor below.
+
+Covenants of Licensor
+
+In consideration of the right to use this License’s text and the “Business
+Source License” name and trademark, Licensor covenants to MariaDB, and to all
+other recipients of the licensed work to be provided by Licensor:
+
+1. To specify as the Change License the GPL Version 2.0 or any later version,
+   or a license that is compatible with GPL Version 2.0 or a later version,
+   where “compatible” means that software provided under the Change License can
+   be included in a program with software provided under GPL Version 2.0 or a
+   later version. Licensor may specify additional Change Licenses without
+   limitation.
+
+2. To either: (a) specify an additional grant of rights to use that does not
+   impose any additional restriction on the right granted in this License, as
+   the Additional Use Grant; or (b) insert the text “None”.
+
+3. To specify a Change Date.
+
+4. Not to modify this License in any other way.
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;var class=&quot;optional-license-text&quot;&gt; 
+        Business Source License 1.1
+      &lt;/var&gt;
+      &lt;p&gt;
+        License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.
+        &amp;quot;Business Source License&amp;quot; is a trademark of MariaDB Corporation Ab.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Terms
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        The Licensor hereby grants you the right to copy, modify, create derivative
+        works, redistribute, and make non-production use of the Licensed Work. The
+        Licensor may make an Additional Use Grant, above, permitting limited
+        production use.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Effective on the Change Date, or the fourth anniversary of the first publicly
+        available distribution of a specific version of the Licensed Work under this
+        License, whichever comes first, the Licensor hereby grants you rights under
+        the terms of the Change License, and the rights granted in the paragraph
+        above terminate.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        If your use of the Licensed Work does not comply with the requirements
+        currently in effect as described in this License, you must purchase a
+        commercial license from the Licensor, its affiliated entities, or authorized
+        resellers, or you must refrain from using the Licensed Work.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        All copies of the original and modified Licensed Work, and derivative works
+        of the Licensed Work, are subject to this License. This License applies
+        separately for each version of the Licensed Work and the Change Date may vary
+        for each version of the Licensed Work released by Licensor.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        You must conspicuously display this License on each original or modified copy
+        of the Licensed Work. If you receive the Licensed Work in original or
+        modified form from a third party, the terms and conditions set forth in this
+        License apply to your use of that work.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Any use of the Licensed Work in violation of this License will automatically
+        terminate your rights under this License for the current and all other
+        versions of the Licensed Work.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        This License does not grant you any right in any trademark or logo of
+        Licensor or its affiliates (provided that you may use a trademark or logo of
+        Licensor as expressly required by this License).
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON
+        AN &amp;quot;AS IS&amp;quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,
+        EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND
+        TITLE.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        MariaDB hereby grants you permission to use this License&amp;apos;s text to license
+        your works, and to refer to it using the trademark &amp;quot;Business Source License&amp;quot;,
+        as long as you comply with the Covenants of Licensor below.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Covenants of Licensor
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        In consideration of the right to use this License&amp;apos;s text and the &amp;quot;Business
+        Source License&amp;quot; name and trademark, Licensor covenants to MariaDB, and to all
+        other recipients of the licensed work to be provided by Licensor:
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; To specify as the Change License the GPL Version 2.0 or
+         any later version, or a license that is compatible with GPL Version 2.0 or
+         a later version, where &amp;quot;compatible&amp;quot; means that software provided under the
+         Change License can be included in a program with software provided under GPL
+         Version 2.0 or a later version. Licensor may specify additional Change
+         Licenses without limitation.
+       &lt;/li&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; To either: (a) specify an additional grant of rights to
+         use that does not impose any additional restriction on the right granted in
+         this License, as the Additional Use Grant; or (b) insert the text &amp;quot;None&amp;quot;.
+       &lt;/li&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; To specify a Change Date.
+       &lt;/li&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Not to modify this License in any other way.
+       &lt;/li&gt;
+      
+&lt;/ul&gt;
+   </pre></details></li><li><details><summary>Text:</summary><pre>Business Source License 1.1
+License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved. &quot;Business Source License&quot; is a trademark of MariaDB Corporation Ab.
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. The Licensor may make an Additional Use Grant, above, permitting limited production use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly available distribution of a specific version of the Licensed Work under this License, whichever comes first, the Licensor hereby grants you rights under the terms of the Change License, and the rights granted in the paragraph above terminate.
+
+If your use of the Licensed Work does not comply with the requirements currently in effect as described in this License, you must purchase a commercial license from the Licensor, its affiliated entities, or authorized resellers, or you must refrain from using the Licensed Work.
+
+All copies of the original and modified Licensed Work, and derivative works of the Licensed Work, are subject to this License. This License applies separately for each version of the Licensed Work and the Change Date may vary for each version of the Licensed Work released by Licensor.
+
+You must conspicuously display this License on each original or modified copy of the Licensed Work. If you receive the Licensed Work in original or modified form from a third party, the terms and conditions set forth in this License apply to your use of that work.
+
+Any use of the Licensed Work in violation of this License will automatically terminate your rights under this License for the current and all other versions of the Licensed Work.
+
+This License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN &quot;AS IS&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
+
+MariaDB hereby grants you permission to use this License&#39;s text to license your works, and to refer to it using the trademark &quot;Business Source License&quot;, as long as you comply with the Covenants of Licensor below.
+
+Covenants of Licensor
+
+In consideration of the right to use this License&#39;s text and the &quot;Business Source License&quot; name and trademark, Licensor covenants to MariaDB, and to all other recipients of the licensed work to be provided by Licensor:
+
+1. To specify as the Change License the GPL Version 2.0 or any later version, or a license that is compatible with GPL Version 2.0 or a later version, where &quot;compatible&quot; means that software provided under the Change License can be included in a program with software provided under GPL Version 2.0 or a later version. Licensor may specify additional Change Licenses without limitation.
+2. To either: (a) specify an additional grant of rights to use that does not impose any additional restriction on the right granted in this License, as the Additional Use Grant; or (b) insert the text &quot;None&quot;.
+3. To specify a Change Date.
+4. Not to modify this License in any other way.
+</pre></details></li><li><details><summary>Text:</summary><pre>Business Source License 1.1
+
+License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.
+&quot;Business Source License&quot; is a trademark of MariaDB Corporation Ab.
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative
+works, redistribute, and make non-production use of the Licensed Work. The
+Licensor may make an Additional Use Grant, above, permitting limited production
+use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly
+available distribution of a specific version of the Licensed Work under this
+License, whichever comes first, the Licensor hereby grants you rights under the
+terms of the Change License, and the rights granted in the paragraph above
+terminate.
+
+If your use of the Licensed Work does not comply with the requirements currently
+in effect as described in this License, you must purchase a commercial license
+from the Licensor, its affiliated entities, or authorized resellers, or you must
+refrain from using the Licensed Work.
+
+All copies of the original and modified Licensed Work, and derivative works of
+the Licensed Work, are subject to this License. This License applies separately
+for each version of the Licensed Work and the Change Date may vary for each
+version of the Licensed Work released by Licensor.
+
+You must conspicuously display this License on each original or modified copy of
+the Licensed Work. If you receive the Licensed Work in original or modified form
+from a third party, the terms and conditions set forth in this License apply to
+your use of that work.
+
+Any use of the Licensed Work in violation of this License will automatically
+terminate your rights under this License for the current and all other versions
+of the Licensed Work.
+
+This License does not grant you any right in any trademark or logo of Licensor
+or its affiliates (provided that you may use a trademark or logo of Licensor as
+expressly required by this License).
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN
+&quot;AS IS&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS
+OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.MariaDB hereby
+grants you permission to use this License’s text to license your works, and to
+refer to it using the trademark &quot;Business Source License&quot;, as long as you comply
+with the Covenants of Licensor below.
+
+Covenants of Licensor
+
+In consideration of the right to use this License’s text and the &quot;Business
+Source License&quot; name and trademark, Licensor covenants to MariaDB, and to all
+other recipients of the licensed work to be provided by Licensor:
+
+    1. To specify as the Change License the GPL Version 2.0 or any later
+    version, or a license that is compatible with GPL Version 2.0 or a later
+    version, where &quot;compatible&quot; means that software provided under the Change
+    License can be included in a program with software provided under GPL
+    Version 2.0 or a later version. Licensor may specify additional Change
+    Licenses without limitation.
+
+    2. To either: (a) specify an additional grant of rights to use that does not
+    impose any additional restriction on the right granted in this License, as
+    the Additional Use Grant; or (b) insert the text &quot;None&quot;.
+
+    3. To specify a Change Date.
+
+    4. Not to modify this License in any other way.
+
+Notice
+
+The Business Source License (this document, or the &quot;License&quot;) is not an Open
+Source license. However, the Licensed Work will eventually be made available
+under an Open Source License, as stated in this License.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/38466f1e029813fd50535776ac1c1886">SPDXLicense:38466f1e029813fd50535776ac1c1886</a> for <a href="/?license=spdx:BUSL-1.1"><span class="licensename"><span class="namespace">spdx:</span>BUSL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BUSL-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Business Source License 1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:38466f1e029813fd50535776ac1c1886">[<a href="/fact/SPDXLicense/38466f1e029813fd50535776ac1c1886">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>The Business Source License (this document, or the “License”) is not an Open Source license. However, the Licensed Work will eventually be made available under an Open Source License, as stated in this License. This is a paramaterized license. The license parameters are: restrictions on usage, a change date, and the open source license that will govern usage of the software after the change date.<span class="provided-by">(provided by: <span title="SPDXLicense:38466f1e029813fd50535776ac1c1886">[<a href="/fact/SPDXLicense/38466f1e029813fd50535776ac1c1886">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://mariadb.com/bsl11/" target="_blank">https://mariadb.com/bsl11/</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Business Source License 1.1
+
+License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.
+&quot;Business Source License&quot; is a trademark of MariaDB Corporation Ab.
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative
+works, redistribute, and make non-production use of the Licensed Work. The
+Licensor may make an Additional Use Grant, above, permitting limited
+production use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly
+available distribution of a specific version of the Licensed Work under this
+License, whichever comes first, the Licensor hereby grants you rights under
+the terms of the Change License, and the rights granted in the paragraph
+above terminate.
+
+If your use of the Licensed Work does not comply with the requirements
+currently in effect as described in this License, you must purchase a
+commercial license from the Licensor, its affiliated entities, or authorized
+resellers, or you must refrain from using the Licensed Work.
+
+All copies of the original and modified Licensed Work, and derivative works
+of the Licensed Work, are subject to this License. This License applies
+separately for each version of the Licensed Work and the Change Date may vary
+for each version of the Licensed Work released by Licensor.
+
+You must conspicuously display this License on each original or modified copy
+of the Licensed Work. If you receive the Licensed Work in original or
+modified form from a third party, the terms and conditions set forth in this
+License apply to your use of that work.
+
+Any use of the Licensed Work in violation of this License will automatically
+terminate your rights under this License for the current and all other
+versions of the Licensed Work.
+
+This License does not grant you any right in any trademark or logo of
+Licensor or its affiliates (provided that you may use a trademark or logo of
+Licensor as expressly required by this License).
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON
+AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,
+EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND
+TITLE.
+
+MariaDB hereby grants you permission to use this License’s text to license
+your works, and to refer to it using the trademark “Business Source License”,
+as long as you comply with the Covenants of Licensor below.
+
+Covenants of Licensor
+
+In consideration of the right to use this License’s text and the “Business
+Source License” name and trademark, Licensor covenants to MariaDB, and to all
+other recipients of the licensed work to be provided by Licensor:
+
+1. To specify as the Change License the GPL Version 2.0 or any later version,
+   or a license that is compatible with GPL Version 2.0 or a later version,
+   where “compatible” means that software provided under the Change License can
+   be included in a program with software provided under GPL Version 2.0 or a
+   later version. Licensor may specify additional Change Licenses without
+   limitation.
+
+2. To either: (a) specify an additional grant of rights to use that does not
+   impose any additional restriction on the right granted in this License, as
+   the Additional Use Grant; or (b) insert the text “None”.
+
+3. To specify a Change Date.
+
+4. Not to modify this License in any other way.
+
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;var class=&quot;optional-license-text&quot;&gt; 
+        Business Source License 1.1
+      &lt;/var&gt;
+      &lt;p&gt;
+        License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.
+        &amp;quot;Business Source License&amp;quot; is a trademark of MariaDB Corporation Ab.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Terms
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        The Licensor hereby grants you the right to copy, modify, create derivative
+        works, redistribute, and make non-production use of the Licensed Work. The
+        Licensor may make an Additional Use Grant, above, permitting limited
+        production use.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Effective on the Change Date, or the fourth anniversary of the first publicly
+        available distribution of a specific version of the Licensed Work under this
+        License, whichever comes first, the Licensor hereby grants you rights under
+        the terms of the Change License, and the rights granted in the paragraph
+        above terminate.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        If your use of the Licensed Work does not comply with the requirements
+        currently in effect as described in this License, you must purchase a
+        commercial license from the Licensor, its affiliated entities, or authorized
+        resellers, or you must refrain from using the Licensed Work.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        All copies of the original and modified Licensed Work, and derivative works
+        of the Licensed Work, are subject to this License. This License applies
+        separately for each version of the Licensed Work and the Change Date may vary
+        for each version of the Licensed Work released by Licensor.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        You must conspicuously display this License on each original or modified copy
+        of the Licensed Work. If you receive the Licensed Work in original or
+        modified form from a third party, the terms and conditions set forth in this
+        License apply to your use of that work.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Any use of the Licensed Work in violation of this License will automatically
+        terminate your rights under this License for the current and all other
+        versions of the Licensed Work.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        This License does not grant you any right in any trademark or logo of
+        Licensor or its affiliates (provided that you may use a trademark or logo of
+        Licensor as expressly required by this License).
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON
+        AN &amp;quot;AS IS&amp;quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,
+        EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND
+        TITLE.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        MariaDB hereby grants you permission to use this License&amp;apos;s text to license
+        your works, and to refer to it using the trademark &amp;quot;Business Source License&amp;quot;,
+        as long as you comply with the Covenants of Licensor below.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        Covenants of Licensor
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        In consideration of the right to use this License&amp;apos;s text and the &amp;quot;Business
+        Source License&amp;quot; name and trademark, Licensor covenants to MariaDB, and to all
+        other recipients of the licensed work to be provided by Licensor:
+      &lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt; To specify as the Change License the GPL Version 2.0 or
+         any later version, or a license that is compatible with GPL Version 2.0 or
+         a later version, where &amp;quot;compatible&amp;quot; means that software provided under the
+         Change License can be included in a program with software provided under GPL
+         Version 2.0 or a later version. Licensor may specify additional Change
+         Licenses without limitation.
+       &lt;/li&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.&lt;/var&gt; To either: (a) specify an additional grant of rights to
+         use that does not impose any additional restriction on the right granted in
+         this License, as the Additional Use Grant; or (b) insert the text &amp;quot;None&amp;quot;.
+       &lt;/li&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 3.&lt;/var&gt; To specify a Change Date.
+       &lt;/li&gt;
+       
+&lt;li&gt;
+         &lt;var class=&quot;replaceable-license-text&quot;&gt; 4.&lt;/var&gt; Not to modify this License in any other way.
+       &lt;/li&gt;
+      
+&lt;/ul&gt;
+   </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:BUSL-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Business Source License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;38466f1e029813fd50535776ac1c1886&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;The Business Source License (this document, or the “License”) is not an Open Source license. However, the Licensed Work will eventually be made available under an Open Source License, as stated in this License. This is a paramaterized license. The license parameters are: restrictions on usage, a change date, and the open source license that will govern usage of the software after the change date.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Business Source License 1.1\n\nLicense text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.\n\&quot;Business Source License\&quot; is a trademark of MariaDB Corporation Ab.\n\nTerms\n\nThe Licensor hereby grants you the right to copy, modify, create derivative\nworks, redistribute, and make non-production use of the Licensed Work. The\nLicensor may make an Additional Use Grant, above, permitting limited\nproduction use.\n\nEffective on the Change Date, or the fourth anniversary of the first publicly\navailable distribution of a specific version of the Licensed Work under this\nLicense, whichever comes first, the Licensor hereby grants you rights under\nthe terms of the Change License, and the rights granted in the paragraph\nabove terminate.\n\nIf your use of the Licensed Work does not comply with the requirements\ncurrently in effect as described in this License, you must purchase a\ncommercial license from the Licensor, its affiliated entities, or authorized\nresellers, or you must refrain from using the Licensed Work.\n\nAll copies of the original and modified Licensed Work, and derivative works\nof the Licensed Work, are subject to this License. This License applies\nseparately for each version of the Licensed Work and the Change Date may vary\nfor each version of the Licensed Work released by Licensor.\n\nYou must conspicuously display this License on each original or modified copy\nof the Licensed Work. If you receive the Licensed Work in original or\nmodified form from a third party, the terms and conditions set forth in this\nLicense apply to your use of that work.\n\nAny use of the Licensed Work in violation of this License will automatically\nterminate your rights under this License for the current and all other\nversions of the Licensed Work.\n\nThis License does not grant you any right in any trademark or logo of\nLicensor or its affiliates (provided that you may use a trademark or logo of\nLicensor as expressly required by this License).\n\nTO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON\nAN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,\nEXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND\nTITLE.\n\nMariaDB hereby grants you permission to use this License’s text to license\nyour works, and to refer to it using the trademark “Business Source License”,\nas long as you comply with the Covenants of Licensor below.\n\nCovenants of Licensor\n\nIn consideration of the right to use this License’s text and the “Business\nSource License” name and trademark, Licensor covenants to MariaDB, and to all\nother recipients of the licensed work to be provided by Licensor:\n\n1. To specify as the Change License the GPL Version 2.0 or any later version,\n   or a license that is compatible with GPL Version 2.0 or a later version,\n   where “compatible” means that software provided under the Change License can\n   be included in a program with software provided under GPL Version 2.0 or a\n   later version. Licensor may specify additional Change Licenses without\n   limitation.\n\n2. To either: (a) specify an additional grant of rights to use that does not\n   impose any additional restriction on the right granted in this License, as\n   the Additional Use Grant; or (b) insert the text “None”.\n\n3. To specify a Change Date.\n\n4. Not to modify this License in any other way.\n\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;var class=\&quot;optional-license-text\&quot;&gt; \n        Business Source License 1.1\n      &lt;/var&gt;\n      &lt;p&gt;\n        License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.\n        &amp;quot;Business Source License&amp;quot; is a trademark of MariaDB Corporation Ab.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Terms\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        The Licensor hereby grants you the right to copy, modify, create derivative\n        works, redistribute, and make non-production use of the Licensed Work. The\n        Licensor may make an Additional Use Grant, above, permitting limited\n        production use.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Effective on the Change Date, or the fourth anniversary of the first publicly\n        available distribution of a specific version of the Licensed Work under this\n        License, whichever comes first, the Licensor hereby grants you rights under\n        the terms of the Change License, and the rights granted in the paragraph\n        above terminate.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        If your use of the Licensed Work does not comply with the requirements\n        currently in effect as described in this License, you must purchase a\n        commercial license from the Licensor, its affiliated entities, or authorized\n        resellers, or you must refrain from using the Licensed Work.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        All copies of the original and modified Licensed Work, and derivative works\n        of the Licensed Work, are subject to this License. This License applies\n        separately for each version of the Licensed Work and the Change Date may vary\n        for each version of the Licensed Work released by Licensor.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        You must conspicuously display this License on each original or modified copy\n        of the Licensed Work. If you receive the Licensed Work in original or\n        modified form from a third party, the terms and conditions set forth in this\n        License apply to your use of that work.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Any use of the Licensed Work in violation of this License will automatically\n        terminate your rights under this License for the current and all other\n        versions of the Licensed Work.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        This License does not grant you any right in any trademark or logo of\n        Licensor or its affiliates (provided that you may use a trademark or logo of\n        Licensor as expressly required by this License).\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON\n        AN &amp;quot;AS IS&amp;quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,\n        EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF\n        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND\n        TITLE.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        MariaDB hereby grants you permission to use this License&amp;apos;s text to license\n        your works, and to refer to it using the trademark &amp;quot;Business Source License&amp;quot;,\n        as long as you comply with the Covenants of Licensor below.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Covenants of Licensor\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        In consideration of the right to use this License&amp;apos;s text and the &amp;quot;Business\n        Source License&amp;quot; name and trademark, Licensor covenants to MariaDB, and to all\n        other recipients of the licensed work to be provided by Licensor:\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; To specify as the Change License the GPL Version 2.0 or\n         any later version, or a license that is compatible with GPL Version 2.0 or\n         a later version, where &amp;quot;compatible&amp;quot; means that software provided under the\n         Change License can be included in a program with software provided under GPL\n         Version 2.0 or a later version. Licensor may specify additional Change\n         Licenses without limitation.\n       &lt;/li&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; To either: (a) specify an additional grant of rights to\n         use that does not impose any additional restriction on the right granted in\n         this License, as the Additional Use Grant; or (b) insert the text &amp;quot;None&amp;quot;.\n       &lt;/li&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; To specify a Change Date.\n       &lt;/li&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Not to modify this License in any other way.\n       &lt;/li&gt;\n      \n&lt;/ul&gt;\n   &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://mariadb.com/bsl11/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://mariadb.com/bsl11/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:02Z&quot;,
+                &quot;url&quot;: &quot;https://mariadb.com/bsl11/&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;The Business Source License (this document, or the “License”) is not an Open Source license. However, the Licensed Work will eventually be made available under an Open Source License, as stated in this License. This is a paramaterized license. The license parameters are: restrictions on usage, a change date, and the open source license that will govern usage of the software after the change date.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:BUSL-1.1&quot;,
+        &quot;licenseText&quot;: &quot;Business Source License 1.1\n\nLicense text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.\n\&quot;Business Source License\&quot; is a trademark of MariaDB Corporation Ab.\n\nTerms\n\nThe Licensor hereby grants you the right to copy, modify, create derivative\nworks, redistribute, and make non-production use of the Licensed Work. The\nLicensor may make an Additional Use Grant, above, permitting limited\nproduction use.\n\nEffective on the Change Date, or the fourth anniversary of the first publicly\navailable distribution of a specific version of the Licensed Work under this\nLicense, whichever comes first, the Licensor hereby grants you rights under\nthe terms of the Change License, and the rights granted in the paragraph\nabove terminate.\n\nIf your use of the Licensed Work does not comply with the requirements\ncurrently in effect as described in this License, you must purchase a\ncommercial license from the Licensor, its affiliated entities, or authorized\nresellers, or you must refrain from using the Licensed Work.\n\nAll copies of the original and modified Licensed Work, and derivative works\nof the Licensed Work, are subject to this License. This License applies\nseparately for each version of the Licensed Work and the Change Date may vary\nfor each version of the Licensed Work released by Licensor.\n\nYou must conspicuously display this License on each original or modified copy\nof the Licensed Work. If you receive the Licensed Work in original or\nmodified form from a third party, the terms and conditions set forth in this\nLicense apply to your use of that work.\n\nAny use of the Licensed Work in violation of this License will automatically\nterminate your rights under this License for the current and all other\nversions of the Licensed Work.\n\nThis License does not grant you any right in any trademark or logo of\nLicensor or its affiliates (provided that you may use a trademark or logo of\nLicensor as expressly required by this License).\n\nTO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON\nAN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,\nEXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND\nTITLE.\n\nMariaDB hereby grants you permission to use this License’s text to license\nyour works, and to refer to it using the trademark “Business Source License”,\nas long as you comply with the Covenants of Licensor below.\n\nCovenants of Licensor\n\nIn consideration of the right to use this License’s text and the “Business\nSource License” name and trademark, Licensor covenants to MariaDB, and to all\nother recipients of the licensed work to be provided by Licensor:\n\n1. To specify as the Change License the GPL Version 2.0 or any later version,\n   or a license that is compatible with GPL Version 2.0 or a later version,\n   where “compatible” means that software provided under the Change License can\n   be included in a program with software provided under GPL Version 2.0 or a\n   later version. Licensor may specify additional Change Licenses without\n   limitation.\n\n2. To either: (a) specify an additional grant of rights to use that does not\n   impose any additional restriction on the right granted in this License, as\n   the Additional Use Grant; or (b) insert the text “None”.\n\n3. To specify a Change Date.\n\n4. Not to modify this License in any other way.\n\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;var class=\&quot;optional-license-text\&quot;&gt; \n        Business Source License 1.1\n      &lt;/var&gt;\n      &lt;p&gt;\n        License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.\n        &amp;quot;Business Source License&amp;quot; is a trademark of MariaDB Corporation Ab.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Terms\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        The Licensor hereby grants you the right to copy, modify, create derivative\n        works, redistribute, and make non-production use of the Licensed Work. The\n        Licensor may make an Additional Use Grant, above, permitting limited\n        production use.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Effective on the Change Date, or the fourth anniversary of the first publicly\n        available distribution of a specific version of the Licensed Work under this\n        License, whichever comes first, the Licensor hereby grants you rights under\n        the terms of the Change License, and the rights granted in the paragraph\n        above terminate.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        If your use of the Licensed Work does not comply with the requirements\n        currently in effect as described in this License, you must purchase a\n        commercial license from the Licensor, its affiliated entities, or authorized\n        resellers, or you must refrain from using the Licensed Work.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        All copies of the original and modified Licensed Work, and derivative works\n        of the Licensed Work, are subject to this License. This License applies\n        separately for each version of the Licensed Work and the Change Date may vary\n        for each version of the Licensed Work released by Licensor.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        You must conspicuously display this License on each original or modified copy\n        of the Licensed Work. If you receive the Licensed Work in original or\n        modified form from a third party, the terms and conditions set forth in this\n        License apply to your use of that work.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Any use of the Licensed Work in violation of this License will automatically\n        terminate your rights under this License for the current and all other\n        versions of the Licensed Work.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        This License does not grant you any right in any trademark or logo of\n        Licensor or its affiliates (provided that you may use a trademark or logo of\n        Licensor as expressly required by this License).\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON\n        AN &amp;quot;AS IS&amp;quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS,\n        EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF\n        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND\n        TITLE.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        MariaDB hereby grants you permission to use this License&amp;apos;s text to license\n        your works, and to refer to it using the trademark &amp;quot;Business Source License&amp;quot;,\n        as long as you comply with the Covenants of Licensor below.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        Covenants of Licensor\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        In consideration of the right to use this License&amp;apos;s text and the &amp;quot;Business\n        Source License&amp;quot; name and trademark, Licensor covenants to MariaDB, and to all\n        other recipients of the licensed work to be provided by Licensor:\n      &lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt; To specify as the Change License the GPL Version 2.0 or\n         any later version, or a license that is compatible with GPL Version 2.0 or\n         a later version, where &amp;quot;compatible&amp;quot; means that software provided under the\n         Change License can be included in a program with software provided under GPL\n         Version 2.0 or a later version. Licensor may specify additional Change\n         Licenses without limitation.\n       &lt;/li&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.&lt;/var&gt; To either: (a) specify an additional grant of rights to\n         use that does not impose any additional restriction on the right granted in\n         this License, as the Additional Use Grant; or (b) insert the text &amp;quot;None&amp;quot;.\n       &lt;/li&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 3.&lt;/var&gt; To specify a Change Date.\n       &lt;/li&gt;\n       \n&lt;li&gt;\n         &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 4.&lt;/var&gt; Not to modify this License in any other way.\n       &lt;/li&gt;\n      \n&lt;/ul&gt;\n   &quot;,
+        &quot;name&quot;: &quot;Business Source License 1.1&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://mariadb.com/bsl11/&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Business Source License 1.1&lt;&lt;endOptional&gt;&gt;\n\nLicense text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved. \&quot;Business Source License\&quot; is a trademark of MariaDB Corporation Ab.\n\nTerms\n\nThe Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. The Licensor may make an Additional Use Grant, above, permitting limited production use.\n\nEffective on the Change Date, or the fourth anniversary of the first publicly available distribution of a specific version of the Licensed Work under this License, whichever comes first, the Licensor hereby grants you rights under the terms of the Change License, and the rights granted in the paragraph above terminate.\n\nIf your use of the Licensed Work does not comply with the requirements currently in effect as described in this License, you must purchase a commercial license from the Licensor, its affiliated entities, or authorized resellers, or you must refrain from using the Licensed Work.\n\nAll copies of the original and modified Licensed Work, and derivative works of the Licensed Work, are subject to this License. This License applies separately for each version of the Licensed Work and the Change Date may vary for each version of the Licensed Work released by Licensor.\n\nYou must conspicuously display this License on each original or modified copy of the Licensed Work. If you receive the Licensed Work in original or modified form from a third party, the terms and conditions set forth in this License apply to your use of that work.\n\nAny use of the Licensed Work in violation of this License will automatically terminate your rights under this License for the current and all other versions of the Licensed Work.\n\nThis License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).\n\nTO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.\n\nMariaDB hereby grants you permission to use this License&#39;s text to license your works, and to refer to it using the trademark \&quot;Business Source License\&quot;, as long as you comply with the Covenants of Licensor below.\n\nCovenants of Licensor\n\nIn consideration of the right to use this License&#39;s text and the \&quot;Business Source License\&quot; name and trademark, Licensor covenants to MariaDB, and to all other recipients of the licensed work to be provided by Licensor:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; To specify as the Change License the GPL Version 2.0 or any later version, or a license that is compatible with GPL Version 2.0 or a later version, where \&quot;compatible\&quot; means that software provided under the Change License can be included in a program with software provided under GPL Version 2.0 or a later version. Licensor may specify additional Change Licenses without limitation.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; To either: (a) specify an additional grant of rights to use that does not impose any additional restriction on the right granted in this License, as the Additional Use Grant; or (b) insert the text \&quot;None\&quot;.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;3.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; To specify a Change Date.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;4.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Not to modify this License in any other way.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/59b9d2d4fe5afbbcaa5824ce90fdc030">FedoraEntry:59b9d2d4fe5afbbcaa5824ce90fdc030</a> for <a href="/?license=Fedora:BUSL-1.1"><span class="licensename"><span class="namespace">Fedora:</span>BUSL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>BUSL-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>BUSL-1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed.">Fedora: <b style="color: red;">not-allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:59b9d2d4fe5afbbcaa5824ce90fdc030">[<a href="/fact/FedoraEntry/59b9d2d4fe5afbbcaa5824ce90fdc030">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;not-allowed&quot;]</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Business Source License 1.1
+License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved. &quot;Business Source License&quot; is a trademark of MariaDB Corporation Ab.
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. The Licensor may make an Additional Use Grant, above, permitting limited production use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly available distribution of a specific version of the Licensed Work under this License, whichever comes first, the Licensor hereby grants you rights under the terms of the Change License, and the rights granted in the paragraph above terminate.
+
+If your use of the Licensed Work does not comply with the requirements currently in effect as described in this License, you must purchase a commercial license from the Licensor, its affiliated entities, or authorized resellers, or you must refrain from using the Licensed Work.
+
+All copies of the original and modified Licensed Work, and derivative works of the Licensed Work, are subject to this License. This License applies separately for each version of the Licensed Work and the Change Date may vary for each version of the Licensed Work released by Licensor.
+
+You must conspicuously display this License on each original or modified copy of the Licensed Work. If you receive the Licensed Work in original or modified form from a third party, the terms and conditions set forth in this License apply to your use of that work.
+
+Any use of the Licensed Work in violation of this License will automatically terminate your rights under this License for the current and all other versions of the Licensed Work.
+
+This License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN &quot;AS IS&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
+
+MariaDB hereby grants you permission to use this License&#39;s text to license your works, and to refer to it using the trademark &quot;Business Source License&quot;, as long as you comply with the Covenants of Licensor below.
+
+Covenants of Licensor
+
+In consideration of the right to use this License&#39;s text and the &quot;Business Source License&quot; name and trademark, Licensor covenants to MariaDB, and to all other recipients of the licensed work to be provided by Licensor:
+
+1. To specify as the Change License the GPL Version 2.0 or any later version, or a license that is compatible with GPL Version 2.0 or a later version, where &quot;compatible&quot; means that software provided under the Change License can be included in a program with software provided under GPL Version 2.0 or a later version. Licensor may specify additional Change Licenses without limitation.
+2. To either: (a) specify an additional grant of rights to use that does not impose any additional restriction on the right granted in this License, as the Additional Use Grant; or (b) insert the text &quot;None&quot;.
+3. To specify a Change Date.
+4. Not to modify this License in any other way.
+</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:BUSL-1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:BUSL-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;59b9d2d4fe5afbbcaa5824ce90fdc030&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;not-allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;not-allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Business Source License 1.1\nLicense text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved. \&quot;Business Source License\&quot; is a trademark of MariaDB Corporation Ab.\n\nTerms\n\nThe Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. The Licensor may make an Additional Use Grant, above, permitting limited production use.\n\nEffective on the Change Date, or the fourth anniversary of the first publicly available distribution of a specific version of the Licensed Work under this License, whichever comes first, the Licensor hereby grants you rights under the terms of the Change License, and the rights granted in the paragraph above terminate.\n\nIf your use of the Licensed Work does not comply with the requirements currently in effect as described in this License, you must purchase a commercial license from the Licensor, its affiliated entities, or authorized resellers, or you must refrain from using the Licensed Work.\n\nAll copies of the original and modified Licensed Work, and derivative works of the Licensed Work, are subject to this License. This License applies separately for each version of the Licensed Work and the Change Date may vary for each version of the Licensed Work released by Licensor.\n\nYou must conspicuously display this License on each original or modified copy of the Licensed Work. If you receive the Licensed Work in original or modified form from a third party, the terms and conditions set forth in this License apply to your use of that work.\n\nAny use of the Licensed Work in violation of this License will automatically terminate your rights under this License for the current and all other versions of the Licensed Work.\n\nThis License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).\n\nTO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.\n\nMariaDB hereby grants you permission to use this License&#39;s text to license your works, and to refer to it using the trademark \&quot;Business Source License\&quot;, as long as you comply with the Covenants of Licensor below.\n\nCovenants of Licensor\n\nIn consideration of the right to use this License&#39;s text and the \&quot;Business Source License\&quot; name and trademark, Licensor covenants to MariaDB, and to all other recipients of the licensed work to be provided by Licensor:\n\n1. To specify as the Change License the GPL Version 2.0 or any later version, or a license that is compatible with GPL Version 2.0 or a later version, where \&quot;compatible\&quot; means that software provided under the Change License can be included in a program with software provided under GPL Version 2.0 or a later version. Licensor may specify additional Change Licenses without limitation.\n2. To either: (a) specify an additional grant of rights to use that does not impose any additional restriction on the right granted in this License, as the Additional Use Grant; or (b) insert the text \&quot;None\&quot;.\n3. To specify a Change Date.\n4. Not to modify this License in any other way.\n&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;BUSL-1.1&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:BUSL-1.1&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;not-allowed&quot;
+            ],
+            &quot;_text&quot;: &quot;Business Source License 1.1\nLicense text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved. \&quot;Business Source License\&quot; is a trademark of MariaDB Corporation Ab.\n\nTerms\n\nThe Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. The Licensor may make an Additional Use Grant, above, permitting limited production use.\n\nEffective on the Change Date, or the fourth anniversary of the first publicly available distribution of a specific version of the Licensed Work under this License, whichever comes first, the Licensor hereby grants you rights under the terms of the Change License, and the rights granted in the paragraph above terminate.\n\nIf your use of the Licensed Work does not comply with the requirements currently in effect as described in this License, you must purchase a commercial license from the Licensor, its affiliated entities, or authorized resellers, or you must refrain from using the Licensed Work.\n\nAll copies of the original and modified Licensed Work, and derivative works of the Licensed Work, are subject to this License. This License applies separately for each version of the Licensed Work and the Change Date may vary for each version of the Licensed Work released by Licensor.\n\nYou must conspicuously display this License on each original or modified copy of the Licensed Work. If you receive the Licensed Work in original or modified form from a third party, the terms and conditions set forth in this License apply to your use of that work.\n\nAny use of the Licensed Work in violation of this License will automatically terminate your rights under this License for the current and all other versions of the Licensed Work.\n\nThis License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).\n\nTO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN \&quot;AS IS\&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.\n\nMariaDB hereby grants you permission to use this License&#39;s text to license your works, and to refer to it using the trademark \&quot;Business Source License\&quot;, as long as you comply with the Covenants of Licensor below.\n\nCovenants of Licensor\n\nIn consideration of the right to use this License&#39;s text and the \&quot;Business Source License\&quot; name and trademark, Licensor covenants to MariaDB, and to all other recipients of the licensed work to be provided by Licensor:\n\n1. To specify as the Change License the GPL Version 2.0 or any later version, or a license that is compatible with GPL Version 2.0 or a later version, where \&quot;compatible\&quot; means that software provided under the Change License can be included in a program with software provided under GPL Version 2.0 or a later version. Licensor may specify additional Change Licenses without limitation.\n2. To either: (a) specify an additional grant of rights to use that does not impose any additional restriction on the right granted in this License, as the Additional Use Grant; or (b) insert the text \&quot;None\&quot;.\n3. To specify a Change Date.\n4. Not to modify this License in any other way.\n&quot;,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/87f208087a63f72e4f95fa375a50e43a">ScancodeData:87f208087a63f72e4f95fa375a50e43a</a> for <a href="/?license=scancode:bsl-1.1"><span class="licensename"><span class="namespace">scancode:</span>bsl-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>bsl-1.1</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Business Source License 1.1</span></li><li><span class="licensename">Business Source License 1.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Source-available&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:87f208087a63f72e4f95fa375a50e43a">[<a href="/fact/ScancodeData/87f208087a63f72e4f95fa375a50e43a">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://mariadb.com/bsl-faq-adopting/" target="_blank">https://mariadb.com/bsl-faq-adopting/</a></li><li><a href="https://mariadb.com/products/mariadb-enterprise" target="_blank">https://mariadb.com/products/mariadb-enterprise</a></li><li><a href="https://www.hashicorp.com/bsl" target="_blank">https://www.hashicorp.com/bsl</a></li></ul><h3>Other Statements</h3><ul><li>https://mariadb.com/bsl11/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Business Source License 1.1
+
+License text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.
+&quot;Business Source License&quot; is a trademark of MariaDB Corporation Ab.
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative
+works, redistribute, and make non-production use of the Licensed Work. The
+Licensor may make an Additional Use Grant, above, permitting limited production
+use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly
+available distribution of a specific version of the Licensed Work under this
+License, whichever comes first, the Licensor hereby grants you rights under the
+terms of the Change License, and the rights granted in the paragraph above
+terminate.
+
+If your use of the Licensed Work does not comply with the requirements currently
+in effect as described in this License, you must purchase a commercial license
+from the Licensor, its affiliated entities, or authorized resellers, or you must
+refrain from using the Licensed Work.
+
+All copies of the original and modified Licensed Work, and derivative works of
+the Licensed Work, are subject to this License. This License applies separately
+for each version of the Licensed Work and the Change Date may vary for each
+version of the Licensed Work released by Licensor.
+
+You must conspicuously display this License on each original or modified copy of
+the Licensed Work. If you receive the Licensed Work in original or modified form
+from a third party, the terms and conditions set forth in this License apply to
+your use of that work.
+
+Any use of the Licensed Work in violation of this License will automatically
+terminate your rights under this License for the current and all other versions
+of the Licensed Work.
+
+This License does not grant you any right in any trademark or logo of Licensor
+or its affiliates (provided that you may use a trademark or logo of Licensor as
+expressly required by this License).
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN
+&quot;AS IS&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS
+OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.MariaDB hereby
+grants you permission to use this License’s text to license your works, and to
+refer to it using the trademark &quot;Business Source License&quot;, as long as you comply
+with the Covenants of Licensor below.
+
+Covenants of Licensor
+
+In consideration of the right to use this License’s text and the &quot;Business
+Source License&quot; name and trademark, Licensor covenants to MariaDB, and to all
+other recipients of the licensed work to be provided by Licensor:
+
+    1. To specify as the Change License the GPL Version 2.0 or any later
+    version, or a license that is compatible with GPL Version 2.0 or a later
+    version, where &quot;compatible&quot; means that software provided under the Change
+    License can be included in a program with software provided under GPL
+    Version 2.0 or a later version. Licensor may specify additional Change
+    Licenses without limitation.
+
+    2. To either: (a) specify an additional grant of rights to use that does not
+    impose any additional restriction on the right granted in this License, as
+    the Additional Use Grant; or (b) insert the text &quot;None&quot;.
+
+    3. To specify a Change Date.
+
+    4. Not to modify this License in any other way.
+
+Notice
+
+The Business Source License (this document, or the &quot;License&quot;) is not an Open
+Source license. However, the Licensed Work will eventually be made available
+under an Open Source License, as stated in this License.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:bsl-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Business Source License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Business Source License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;87f208087a63f72e4f95fa375a50e43a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Source-available&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://mariadb.com/bsl11/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://mariadb.com/bsl-faq-adopting/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://mariadb.com/products/mariadb-enterprise&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.hashicorp.com/bsl&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Business Source License 1.1\n\nLicense text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.\n\&quot;Business Source License\&quot; is a trademark of MariaDB Corporation Ab.\n\nTerms\n\nThe Licensor hereby grants you the right to copy, modify, create derivative\nworks, redistribute, and make non-production use of the Licensed Work. The\nLicensor may make an Additional Use Grant, above, permitting limited production\nuse.\n\nEffective on the Change Date, or the fourth anniversary of the first publicly\navailable distribution of a specific version of the Licensed Work under this\nLicense, whichever comes first, the Licensor hereby grants you rights under the\nterms of the Change License, and the rights granted in the paragraph above\nterminate.\n\nIf your use of the Licensed Work does not comply with the requirements currently\nin effect as described in this License, you must purchase a commercial license\nfrom the Licensor, its affiliated entities, or authorized resellers, or you must\nrefrain from using the Licensed Work.\n\nAll copies of the original and modified Licensed Work, and derivative works of\nthe Licensed Work, are subject to this License. This License applies separately\nfor each version of the Licensed Work and the Change Date may vary for each\nversion of the Licensed Work released by Licensor.\n\nYou must conspicuously display this License on each original or modified copy of\nthe Licensed Work. If you receive the Licensed Work in original or modified form\nfrom a third party, the terms and conditions set forth in this License apply to\nyour use of that work.\n\nAny use of the Licensed Work in violation of this License will automatically\nterminate your rights under this License for the current and all other versions\nof the Licensed Work.\n\nThis License does not grant you any right in any trademark or logo of Licensor\nor its affiliates (provided that you may use a trademark or logo of Licensor as\nexpressly required by this License).\n\nTO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN\n\&quot;AS IS\&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS\nOR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.MariaDB hereby\ngrants you permission to use this License’s text to license your works, and to\nrefer to it using the trademark \&quot;Business Source License\&quot;, as long as you comply\nwith the Covenants of Licensor below.\n\nCovenants of Licensor\n\nIn consideration of the right to use this License’s text and the \&quot;Business\nSource License\&quot; name and trademark, Licensor covenants to MariaDB, and to all\nother recipients of the licensed work to be provided by Licensor:\n\n    1. To specify as the Change License the GPL Version 2.0 or any later\n    version, or a license that is compatible with GPL Version 2.0 or a later\n    version, where \&quot;compatible\&quot; means that software provided under the Change\n    License can be included in a program with software provided under GPL\n    Version 2.0 or a later version. Licensor may specify additional Change\n    Licenses without limitation.\n\n    2. To either: (a) specify an additional grant of rights to use that does not\n    impose any additional restriction on the right granted in this License, as\n    the Additional Use Grant; or (b) insert the text \&quot;None\&quot;.\n\n    3. To specify a Change Date.\n\n    4. Not to modify this License in any other way.\n\nNotice\n\nThe Business Source License (this document, or the \&quot;License\&quot;) is not an Open\nSource license. However, the Licensed Work will eventually be made available\nunder an Open Source License, as stated in this License.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Source-available&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://mariadb.com/bsl11/&quot;,
+        &quot;_key&quot;: &quot;bsl-1.1&quot;,
+        &quot;_name&quot;: &quot;Business Source License 1.1&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://mariadb.com/bsl-faq-adopting/&quot;,
+            &quot;https://mariadb.com/products/mariadb-enterprise&quot;,
+            &quot;https://www.hashicorp.com/bsl&quot;
+        ],
+        &quot;_owner&quot;: &quot;MariaDB&quot;,
+        &quot;_shortName&quot;: &quot;Business Source License 1.1&quot;,
+        &quot;_spdxId&quot;: &quot;BUSL-1.1&quot;,
+        &quot;_text&quot;: &quot;Business Source License 1.1\n\nLicense text copyright © 2017 MariaDB Corporation Ab, All Rights Reserved.\n\&quot;Business Source License\&quot; is a trademark of MariaDB Corporation Ab.\n\nTerms\n\nThe Licensor hereby grants you the right to copy, modify, create derivative\nworks, redistribute, and make non-production use of the Licensed Work. The\nLicensor may make an Additional Use Grant, above, permitting limited production\nuse.\n\nEffective on the Change Date, or the fourth anniversary of the first publicly\navailable distribution of a specific version of the Licensed Work under this\nLicense, whichever comes first, the Licensor hereby grants you rights under the\nterms of the Change License, and the rights granted in the paragraph above\nterminate.\n\nIf your use of the Licensed Work does not comply with the requirements currently\nin effect as described in this License, you must purchase a commercial license\nfrom the Licensor, its affiliated entities, or authorized resellers, or you must\nrefrain from using the Licensed Work.\n\nAll copies of the original and modified Licensed Work, and derivative works of\nthe Licensed Work, are subject to this License. This License applies separately\nfor each version of the Licensed Work and the Change Date may vary for each\nversion of the Licensed Work released by Licensor.\n\nYou must conspicuously display this License on each original or modified copy of\nthe Licensed Work. If you receive the Licensed Work in original or modified form\nfrom a third party, the terms and conditions set forth in this License apply to\nyour use of that work.\n\nAny use of the Licensed Work in violation of this License will automatically\nterminate your rights under this License for the current and all other versions\nof the Licensed Work.\n\nThis License does not grant you any right in any trademark or logo of Licensor\nor its affiliates (provided that you may use a trademark or logo of Licensor as\nexpressly required by this License).\n\nTO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN\n\&quot;AS IS\&quot; BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS\nOR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.MariaDB hereby\ngrants you permission to use this License’s text to license your works, and to\nrefer to it using the trademark \&quot;Business Source License\&quot;, as long as you comply\nwith the Covenants of Licensor below.\n\nCovenants of Licensor\n\nIn consideration of the right to use this License’s text and the \&quot;Business\nSource License\&quot; name and trademark, Licensor covenants to MariaDB, and to all\nother recipients of the licensed work to be provided by Licensor:\n\n    1. To specify as the Change License the GPL Version 2.0 or any later\n    version, or a license that is compatible with GPL Version 2.0 or a later\n    version, where \&quot;compatible\&quot; means that software provided under the Change\n    License can be included in a program with software provided under GPL\n    Version 2.0 or a later version. Licensor may specify additional Change\n    Licenses without limitation.\n\n    2. To either: (a) specify an additional grant of rights to use that does not\n    impose any additional restriction on the right granted in this License, as\n    the Additional Use Grant; or (b) insert the text \&quot;None\&quot;.\n\n    3. To specify a Change Date.\n\n    4. Not to modify this License in any other way.\n\nNotice\n\nThe Business Source License (this document, or the \&quot;License\&quot;) is not an Open\nSource license. However, the Licensed Work will eventually be made available\nunder an Open Source License, as stated in this License.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/7779b852d31ff2959618a95efba0aec8">OrtLicenseCategorization:7779b852d31ff2959618a95efba0aec8</a> for <a href="/?license=SPDX:BUSL-1.1"><span class="licensename"><span class="namespace">SPDX:</span>BUSL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BUSL-1.1</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>source-available</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7779b852d31ff2959618a95efba0aec8">[<a href="/fact/OrtLicenseCategorization/7779b852d31ff2959618a95efba0aec8">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:7779b852d31ff2959618a95efba0aec8">[<a href="/fact/OrtLicenseCategorization/7779b852d31ff2959618a95efba0aec8">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BUSL-1.1&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;7779b852d31ff2959618a95efba0aec8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;source-available&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;source-available&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BUSL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/0dcb50eb15d23735df58b5a562ef513e">OrtLicenseCategorization:0dcb50eb15d23735df58b5a562ef513e</a> for <a href="/?license=SPDX:BUSL-1.1"><span class="licensename"><span class="namespace">SPDX:</span>BUSL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>BUSL-1.1</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="A license for third-party proprietary content offered under a direct commercial license between a supplier and a customer.">OrtLicenseCategorization: <b>commercial</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0dcb50eb15d23735df58b5a562ef513e">[<a href="/fact/OrtLicenseCategorization/0dcb50eb15d23735df58b5a562ef513e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0dcb50eb15d23735df58b5a562ef513e">[<a href="/fact/OrtLicenseCategorization/0dcb50eb15d23735df58b5a562ef513e">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:0dcb50eb15d23735df58b5a562ef513e">[<a href="/fact/OrtLicenseCategorization/0dcb50eb15d23735df58b5a562ef513e">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:BUSL-1.1&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;0dcb50eb15d23735df58b5a562ef513e&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;commercial&quot;,
+                    {
+                        &quot;contents&quot;: &quot;A license for third-party proprietary content offered under a direct commercial license between a supplier and a customer.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;A license for third-party proprietary content offered under a direct commercial license between a supplier and a customer.&quot;,
+                &quot;name&quot;: &quot;commercial&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:BUSL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/713a44f8d6e5ee936d184ce2c8b8524b">CavilLicenseChange:713a44f8d6e5ee936d184ce2c8b8524b</a> for <a href="/?license=cavil:BUSL-1.1"><span class="licensename"><span class="namespace">cavil:</span>BUSL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>BUSL-1.1</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">BUSL-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:BUSL-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;BUSL-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;713a44f8d6e5ee936d184ce2c8b8524b&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;BUSL-1.1&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:BUSL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/5a09c40c904c0c0c18ca5a98a9cd4c43">MetaeffektLicense:5a09c40c904c0c0c18ca5a98a9cd4c43</a> for <a href="/?license=metaeffekt:Business-Source-1.1"><span class="licensename"><span class="namespace">metaeffekt:</span>Business-Source-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Business-Source-1.1</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Business Source License 1.1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>BUSL-1.1</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">https:</span>//github.com/getsentry/sentry/blob/master/LICENSE</span></li><li><span class="licensename"><span class="namespace">scancode:</span>bsl-1.1</span></li><li><span class="licensename">Business Source License</span></li><li><span class="licensename">Business Source License 1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Business-Source-1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;metaeffekt:Business Source License 1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        },
+                        {
+                            &quot;contents&quot;: &quot;spdx:BUSL-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Business Source License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Business Source License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;https://github.com/getsentry/sentry/blob/master/LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:bsl-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;5a09c40c904c0c0c18ca5a98a9cd4c43&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;Business Source License 1.1&quot;,
+            &quot;https://github.com/getsentry/sentry/blob/master/LICENSE&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Business Source License 1.1&quot;,
+        &quot;_category&quot;: &quot;Business Source License&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:bsl-1.1&quot;
+        ],
+        &quot;_shortName&quot;: &quot;metaeffekt:Business-Source-1.1&quot;,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:BUSL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/ifrOSS">ifrOSS</a>: <a href="/fact/ifrOSS License/aa03e00926b7f79eec2f20ff73527a56">ifrOSS License:aa03e00926b7f79eec2f20ff73527a56</a> for <a href="/?license=ifrOSS:Business Source License 1.1"><span class="licensename"><span class="namespace">ifrOSS:</span>Business Source License 1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">ifrOSS:</span>Business Source License 1.1</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Business Source License 1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.">ifrOSS Classification: <b style="color: red;">Sonstige (non-free) Software Lizenzen</b></span><span class="provided-by">(provided by: <span title="ifrOSS License:aa03e00926b7f79eec2f20ff73527a56">[<a href="/fact/ifrOSS License/aa03e00926b7f79eec2f20ff73527a56">ifrOSS License</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://mariadb.com/bsl11/" target="_blank">https://mariadb.com/bsl11/</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;ifrOSS:Business Source License 1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Business Source License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ifrOSS License&quot;,
+        &quot;aa03e00926b7f79eec2f20ff73527a56&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://mariadb.com/bsl11/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;ifrOSS Classification&quot;,
+                        &quot;Sonstige (non-free) Software Lizenzen&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;ifrossCategoriesWithDescription&quot;: [
+            [
+                &quot;Sonstige (non-free) Software Lizenzen&quot;,
+                &quot;Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder geben sich den Anschein, Freie Software zu sein, ohne die Anforderungen der Definition Freier Software oder der Open-Source-Definition zu erfüllen. Einige von ihnen sind nicht-kommerzielle Lizenzen, die im Gegensatz zu Open-Source-Lizenzen die kommerzielle Weiterverbreitung verbieten.&quot;
+            ]
+        ],
+        &quot;ifrossLicenseName&quot;: &quot;ifrOSS:Business Source License 1.1&quot;,
+        &quot;ifrossLicenseNameShortened&quot;: &quot;Business Source License 1.1&quot;,
+        &quot;ifrossLicenseUrl&quot;: &quot;https://mariadb.com/bsl11/&quot;
+    },
+    &quot;type&quot;: &quot;ifrOSS License&quot;
+}</pre></details></li></ul></body></html>

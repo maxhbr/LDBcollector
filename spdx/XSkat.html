@@ -1,0 +1,851 @@
+<html><head><title>ldbcollector: spdx:XSkat</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:XSkat</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>XSkat</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">XSkat</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>XSkat</span></li><li><span class="licensename"><span class="namespace">cavil:</span>XSkat</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>XSkat</span></li><li><span class="licensename"><span class="namespace">fossology:</span>XSkat</span></li><li><span class="licensename"><span class="namespace">scancode:</span>xskat</span></li><li><span class="licensename"><span class="namespace">spdx:</span>XSkat</span></li><li><span class="licensename">XSkat License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>XSkat License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">under XSkat</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:763de34bf89a93e9f8080d8fb822ccf6">[<a href="/fact/BlueOakCouncil/763de34bf89a93e9f8080d8fb822ccf6">BlueOakCouncil</a>]</span><span title="ScancodeData:a347cec6c0593db2d88f6dd8243e52da">[<a href="/fact/ScancodeData/a347cec6c0593db2d88f6dd8243e52da">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:23f98f4f98993b42c896363379289b50">[<a href="/fact/SPDXLicense/23f98f4f98993b42c896363379289b50">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:a23b62a43bd65cd4b998c4aca9d6cfc2">[<a href="/fact/FedoraEntry/a23b62a43bd65cd4b998c4aca9d6cfc2">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:763de34bf89a93e9f8080d8fb822ccf6">[<a href="/fact/BlueOakCouncil/763de34bf89a93e9f8080d8fb822ccf6">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:bc62163008b31591957922792e8213bc">[<a href="/fact/MetaeffektLicense/bc62163008b31591957922792e8213bc">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:aa7a9f8b65d0cc9124d1dcd31ea6aca6">[<a href="/fact/OrtLicenseCategorization/aa7a9f8b65d0cc9124d1dcd31ea6aca6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:aa7a9f8b65d0cc9124d1dcd31ea6aca6">[<a href="/fact/OrtLicenseCategorization/aa7a9f8b65d0cc9124d1dcd31ea6aca6">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license is Free only when clause 2.b is used. It is always
+GPL-incompatible. Packagers using code under this license in Fedora should
+note that while the RPM changelog is sufficient to meet one requirement of
+clause 2.b (to &quot;clearly state who last changed the program&quot;), the Release
+field in the RPM is not enough to meet the other requirement of clause 2.b.
+Packagers can meet the other requirement by simply adding a .0 to the end
+of the upstream version in the RPM package. You need to do this, and not
+simply use the regular NVR to fulfill 2.b, because the license explicitly
+specifies the versioning schema x.y.z, which is different from how RPM
+displays it (x.y-z). Just add a dummy .0 to the end of the version then
+increment the Release field like any other package.
+<span class="provided-by">(provided by: <span title="ScancodeData:a347cec6c0593db2d88f6dd8243e52da">[<a href="/fact/ScancodeData/a347cec6c0593db2d88f6dd8243e52da">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/XSkat_License" target="_blank">https://fedoraproject.org/wiki/Licensing/XSkat_License</a></li><li><a href="https://spdx.org/licenses/XSkat" target="_blank">https://spdx.org/licenses/XSkat</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/XSkat_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This program is free software; you can redistribute it freely.
+Use it at your own risk; there is NO WARRANTY.
+
+Redistribution of modified versions is permitted provided that the following conditions are met:
+
+1. All copyright &amp; permission notices are preserved.
+
+2.a) Only changes required for packaging or porting are made.
+     or
+2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;This program is free software; you can redistribute it freely.
+        &lt;br /&gt;
+
+Use it at your own risk; there is NO WARRANTY.
+      &lt;/p&gt;
+
+      &lt;p&gt;Redistribution of modified versions is permitted provided that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          All copyright &amp;amp; permission notices are preserved.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.a)&lt;/var&gt;
+          Only changes required for packaging or porting are made.&lt;br /&gt;
+
+   or
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.b)&lt;/var&gt;
+          It is clearly stated who last changed the program. The program is renamed or the version
+             number is of the form x.y.z, where x.y is the version of the original program and z is an
+             arbitrary suffix.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li><li><details><summary>Text:</summary><pre>This program is free software; you can redistribute it freely.
+Use it at your own risk; there is NO WARRANTY.
+
+Redistribution of modified versions is permitted provided that the following
+conditions are met:
+
+1. All copyright &amp; permission notices are preserved.
+
+2.a) Only changes required for packaging or porting are made. 
+or
+2.b) It is clearly stated who last changed the program. The program is renamed
+or the version number is of the form x.y.z, where x.y is the version of the
+original program and z is an arbitrary suffix.</pre></details></li><li><details><summary>Text:</summary><pre>This program is free software; you can redistribute it freely.
+
+Use it at your own risk; there is NO WARRANTY.
+
+Redistribution of modified versions is permitted provided that the following conditions are met:
+
+   1. All copyright &amp; permission notices are preserved.
+
+   2.a) Only changes required for packaging or porting are made.
+
+   or
+
+   2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/23f98f4f98993b42c896363379289b50">SPDXLicense:23f98f4f98993b42c896363379289b50</a> for <a href="/?license=spdx:XSkat"><span class="licensename"><span class="namespace">spdx:</span>XSkat</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>XSkat</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">XSkat License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:23f98f4f98993b42c896363379289b50">[<a href="/fact/SPDXLicense/23f98f4f98993b42c896363379289b50">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/XSkat_License" target="_blank">https://fedoraproject.org/wiki/Licensing/XSkat_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This program is free software; you can redistribute it freely.
+Use it at your own risk; there is NO WARRANTY.
+
+Redistribution of modified versions is permitted provided that the following conditions are met:
+
+1. All copyright &amp; permission notices are preserved.
+
+2.a) Only changes required for packaging or porting are made.
+     or
+2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;p&gt;This program is free software; you can redistribute it freely.
+        &lt;br /&gt;
+
+Use it at your own risk; there is NO WARRANTY.
+      &lt;/p&gt;
+
+      &lt;p&gt;Redistribution of modified versions is permitted provided that the following conditions are met:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 1.&lt;/var&gt;
+          All copyright &amp;amp; permission notices are preserved.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.a)&lt;/var&gt;
+          Only changes required for packaging or porting are made.&lt;br /&gt;
+
+   or
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; 2.b)&lt;/var&gt;
+          It is clearly stated who last changed the program. The program is renamed or the version
+             number is of the form x.y.z, where x.y is the version of the original program and z is an
+             arbitrary suffix.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:XSkat&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;XSkat License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;23f98f4f98993b42c896363379289b50&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;This program is free software; you can redistribute it freely.\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following conditions are met:\n\n1. All copyright &amp; permission notices are preserved.\n\n2.a) Only changes required for packaging or porting are made.\n     or\n2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;p&gt;This program is free software; you can redistribute it freely.\n        &lt;br /&gt;\n\nUse it at your own risk; there is NO WARRANTY.\n      &lt;/p&gt;\n\n      &lt;p&gt;Redistribution of modified versions is permitted provided that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          All copyright &amp;amp; permission notices are preserved.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.a)&lt;/var&gt;\n          Only changes required for packaging or porting are made.&lt;br /&gt;\n\n   or\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.b)&lt;/var&gt;\n          It is clearly stated who last changed the program. The program is renamed or the version\n             number is of the form x.y.z, where x.y is the version of the original program and z is an\n             arbitrary suffix.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:10:34Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:XSkat&quot;,
+        &quot;licenseText&quot;: &quot;This program is free software; you can redistribute it freely.\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following conditions are met:\n\n1. All copyright &amp; permission notices are preserved.\n\n2.a) Only changes required for packaging or porting are made.\n     or\n2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;p&gt;This program is free software; you can redistribute it freely.\n        &lt;br /&gt;\n\nUse it at your own risk; there is NO WARRANTY.\n      &lt;/p&gt;\n\n      &lt;p&gt;Redistribution of modified versions is permitted provided that the following conditions are met:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 1.&lt;/var&gt;\n          All copyright &amp;amp; permission notices are preserved.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.a)&lt;/var&gt;\n          Only changes required for packaging or porting are made.&lt;br /&gt;\n\n   or\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; 2.b)&lt;/var&gt;\n          It is clearly stated who last changed the program. The program is renamed or the version\n             number is of the form x.y.z, where x.y is the version of the original program and z is an\n             arbitrary suffix.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n    &quot;,
+        &quot;name&quot;: &quot;XSkat License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;This program is free software; you can redistribute it freely.\n\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following conditions are met:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;1.\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; All copyright &amp; permission notices are preserved.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.a)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Only changes required for packaging or porting are made.\n\n   or\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;2.b)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/a23b62a43bd65cd4b998c4aca9d6cfc2">FedoraEntry:a23b62a43bd65cd4b998c4aca9d6cfc2</a> for <a href="/?license=Fedora:XSkat"><span class="licensename"><span class="namespace">Fedora:</span>XSkat</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>XSkat</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>XSkat</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">XSkat</span></li><li><span class="licensename">XSkat License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:a23b62a43bd65cd4b998c4aca9d6cfc2">[<a href="/fact/FedoraEntry/a23b62a43bd65cd4b998c4aca9d6cfc2">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:XSkat&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:XSkat&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;XSkat License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;XSkat&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;a23b62a43bd65cd4b998c4aca9d6cfc2&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;XSkat&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;XSkat License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;XSkat&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:XSkat&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/763de34bf89a93e9f8080d8fb822ccf6">BlueOakCouncil:763de34bf89a93e9f8080d8fb822ccf6</a> for <a href="/?license=BlueOak:XSkat"><span class="licensename"><span class="namespace">BlueOak:</span>XSkat</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>XSkat</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">XSkat License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:763de34bf89a93e9f8080d8fb822ccf6">[<a href="/fact/BlueOakCouncil/763de34bf89a93e9f8080d8fb822ccf6">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:763de34bf89a93e9f8080d8fb822ccf6">[<a href="/fact/BlueOakCouncil/763de34bf89a93e9f8080d8fb822ccf6">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/XSkat" target="_blank">https://spdx.org/licenses/XSkat</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:XSkat&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;XSkat License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;763de34bf89a93e9f8080d8fb822ccf6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/XSkat&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;XSkat&quot;,
+                &quot;_name&quot;: &quot;XSkat License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/XSkat&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/a347cec6c0593db2d88f6dd8243e52da">ScancodeData:a347cec6c0593db2d88f6dd8243e52da</a> for <a href="/?license=scancode:xskat"><span class="licensename"><span class="namespace">scancode:</span>xskat</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>xskat</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">XSkat License</span></li><li><span class="licensename">XSkat License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:a347cec6c0593db2d88f6dd8243e52da">[<a href="/fact/ScancodeData/a347cec6c0593db2d88f6dd8243e52da">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per Fedora, this license is Free only when clause 2.b is used. It is always
+GPL-incompatible. Packagers using code under this license in Fedora should
+note that while the RPM changelog is sufficient to meet one requirement of
+clause 2.b (to &quot;clearly state who last changed the program&quot;), the Release
+field in the RPM is not enough to meet the other requirement of clause 2.b.
+Packagers can meet the other requirement by simply adding a .0 to the end
+of the upstream version in the RPM package. You need to do this, and not
+simply use the regular NVR to fulfill 2.b, because the license explicitly
+specifies the versioning schema x.y.z, which is different from how RPM
+displays it (x.y-z). Just add a dummy .0 to the end of the version then
+increment the Release field like any other package.
+<span class="provided-by">(provided by: <span title="ScancodeData:a347cec6c0593db2d88f6dd8243e52da">[<a href="/fact/ScancodeData/a347cec6c0593db2d88f6dd8243e52da">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/XSkat_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This program is free software; you can redistribute it freely.
+Use it at your own risk; there is NO WARRANTY.
+
+Redistribution of modified versions is permitted provided that the following
+conditions are met:
+
+1. All copyright &amp; permission notices are preserved.
+
+2.a) Only changes required for packaging or porting are made. 
+or
+2.b) It is clearly stated who last changed the program. The program is renamed
+or the version number is of the form x.y.z, where x.y is the version of the
+original program and z is an arbitrary suffix.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:xskat&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;XSkat License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;XSkat License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;a347cec6c0593db2d88f6dd8243e52da&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per Fedora, this license is Free only when clause 2.b is used. It is always\nGPL-incompatible. Packagers using code under this license in Fedora should\nnote that while the RPM changelog is sufficient to meet one requirement of\nclause 2.b (to \&quot;clearly state who last changed the program\&quot;), the Release\nfield in the RPM is not enough to meet the other requirement of clause 2.b.\nPackagers can meet the other requirement by simply adding a .0 to the end\nof the upstream version in the RPM package. You need to do this, and not\nsimply use the regular NVR to fulfill 2.b, because the license explicitly\nspecifies the versioning schema x.y.z, which is different from how RPM\ndisplays it (x.y-z). Just add a dummy .0 to the end of the version then\nincrement the Release field like any other package.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This program is free software; you can redistribute it freely.\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following\nconditions are met:\n\n1. All copyright &amp; permission notices are preserved.\n\n2.a) Only changes required for packaging or porting are made. \nor\n2.b) It is clearly stated who last changed the program. The program is renamed\nor the version number is of the form x.y.z, where x.y is the version of the\noriginal program and z is an arbitrary suffix.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;,
+        &quot;_key&quot;: &quot;xskat&quot;,
+        &quot;_name&quot;: &quot;XSkat License&quot;,
+        &quot;_notes&quot;: &quot;Per Fedora, this license is Free only when clause 2.b is used. It is always\nGPL-incompatible. Packagers using code under this license in Fedora should\nnote that while the RPM changelog is sufficient to meet one requirement of\nclause 2.b (to \&quot;clearly state who last changed the program\&quot;), the Release\nfield in the RPM is not enough to meet the other requirement of clause 2.b.\nPackagers can meet the other requirement by simply adding a .0 to the end\nof the upstream version in the RPM package. You need to do this, and not\nsimply use the regular NVR to fulfill 2.b, because the license explicitly\nspecifies the versioning schema x.y.z, which is different from how RPM\ndisplays it (x.y-z). Just add a dummy .0 to the end of the version then\nincrement the Release field like any other package.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;XSkat&quot;,
+        &quot;_shortName&quot;: &quot;XSkat License&quot;,
+        &quot;_spdxId&quot;: &quot;XSkat&quot;,
+        &quot;_text&quot;: &quot;This program is free software; you can redistribute it freely.\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following\nconditions are met:\n\n1. All copyright &amp; permission notices are preserved.\n\n2.a) Only changes required for packaging or porting are made. \nor\n2.b) It is clearly stated who last changed the program. The program is renamed\nor the version number is of the form x.y.z, where x.y is the version of the\noriginal program and z is an arbitrary suffix.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/534c988193c800756da5498e891a4e32">Fossology:534c988193c800756da5498e891a4e32</a> for <a href="/?license=fossology:XSkat"><span class="licensename"><span class="namespace">fossology:</span>XSkat</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>XSkat</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">XSkat License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/XSkat_License" target="_blank">https://fedoraproject.org/wiki/Licensing/XSkat_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>This program is free software; you can redistribute it freely.
+
+Use it at your own risk; there is NO WARRANTY.
+
+Redistribution of modified versions is permitted provided that the following conditions are met:
+
+   1. All copyright &amp; permission notices are preserved.
+
+   2.a) Only changes required for packaging or porting are made.
+
+   or
+
+   2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:XSkat&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;XSkat License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;534c988193c800756da5498e891a4e32&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;This program is free software; you can redistribute it freely.\n\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following conditions are met:\n\n   1. All copyright &amp; permission notices are preserved.\n\n   2.a) Only changes required for packaging or porting are made.\n\n   or\n\n   2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;XSkat License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:XSkat&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;This program is free software; you can redistribute it freely.\n\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following conditions are met:\n\n   1. All copyright &amp; permission notices are preserved.\n\n   2.a) Only changes required for packaging or porting are made.\n\n   or\n\n   2.b) It is clearly stated who last changed the program. The program is renamed or the version number is of the form x.y.z, where x.y is the version of the original program and z is an arbitrary suffix.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/XSkat_License&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/aa7a9f8b65d0cc9124d1dcd31ea6aca6">OrtLicenseCategorization:aa7a9f8b65d0cc9124d1dcd31ea6aca6</a> for <a href="/?license=SPDX:XSkat"><span class="licensename"><span class="namespace">SPDX:</span>XSkat</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>XSkat</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:aa7a9f8b65d0cc9124d1dcd31ea6aca6">[<a href="/fact/OrtLicenseCategorization/aa7a9f8b65d0cc9124d1dcd31ea6aca6">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:aa7a9f8b65d0cc9124d1dcd31ea6aca6">[<a href="/fact/OrtLicenseCategorization/aa7a9f8b65d0cc9124d1dcd31ea6aca6">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:XSkat&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;aa7a9f8b65d0cc9124d1dcd31ea6aca6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:XSkat&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/453c467d43e37688836c1a0ee6890884">CavilLicenseChange:453c467d43e37688836c1a0ee6890884</a> for <a href="/?license=cavil:XSkat"><span class="licensename"><span class="namespace">cavil:</span>XSkat</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>XSkat</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">XSkat</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:XSkat&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;XSkat&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;453c467d43e37688836c1a0ee6890884&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;XSkat&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:XSkat&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/bc62163008b31591957922792e8213bc">MetaeffektLicense:bc62163008b31591957922792e8213bc</a> for <a href="/?license=metaeffekt:XSkat License"><span class="licensename"><span class="namespace">metaeffekt:</span>XSkat License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>XSkat License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>XSkat</span></li></ul></li><li><b>other LicenseName Hints (7):</b><ul class="capsulUl clearfix"><li><span class="licensename">under XSkat</span></li><li><span class="licensename">under XSKAT</span></li><li><span class="licensename">XSkat</span></li><li><span class="licensename"><span class="namespace">scancode:</span>xskat</span></li><li><span class="licensename">XSkat License</span></li><li><span class="licensename">XSKAT LICENSE</span></li><li><span class="licensename">XSKAT License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:bc62163008b31591957922792e8213bc">[<a href="/fact/MetaeffektLicense/bc62163008b31591957922792e8213bc">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:XSkat License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:XSkat&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;XSkat&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;XSkat License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;XSKAT LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;XSKAT License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;under XSkat&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;under XSKAT&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:xskat&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;bc62163008b31591957922792e8213bc&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;XSkat License&quot;,
+            &quot;XSKAT LICENSE&quot;,
+            &quot;XSKAT License&quot;,
+            &quot;under XSkat&quot;,
+            &quot;under XSKAT&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:XSkat License&quot;,
+        &quot;_category&quot;: &quot;XSkat&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:xskat&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:XSkat&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

@@ -1,0 +1,649 @@
+<html><head><title>ldbcollector: spdx:HPND-export-US</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:HPND-export-US</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND (US government export control warning)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>HPND (US government export control warning)</span></li><li><span class="licensename">HPND with US Government export control warning</span></li><li><span class="licensename">HPND-export-US</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>HPND-export-US</span></li><li><span class="licensename"><span class="namespace">cavil:</span>HPND-export-US</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-export-US</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us</span></li><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:dbe8bd43d7f8c9e797b2e2a2d531a329">[<a href="/fact/BlueOakCouncil/dbe8bd43d7f8c9e797b2e2a2d531a329">BlueOakCouncil</a>]</span>)</span></li><li>UnknownLicenseType (Just &quot;Free Restricted&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:f77652838edcea500b6e449cd97d7bcd">[<a href="/fact/ScancodeData/f77652838edcea500b6e449cd97d7bcd">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2f84220079b5783ab5ddf00235178799">[<a href="/fact/SPDXLicense/2f84220079b5783ab5ddf00235178799">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:2bf75610e51bcf858f9e9190b76f7da4">[<a href="/fact/FedoraEntry/2bf75610e51bcf858f9e9190b76f7da4">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:dbe8bd43d7f8c9e797b2e2a2d531a329">[<a href="/fact/BlueOakCouncil/dbe8bd43d7f8c9e797b2e2a2d531a329">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>free-restricted</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:58985082cfb9c997d342f52418658ebb">[<a href="/fact/OrtLicenseCategorization/58985082cfb9c997d342f52418658ebb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:58985082cfb9c997d342f52418658ebb">[<a href="/fact/OrtLicenseCategorization/58985082cfb9c997d342f52418658ebb">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is found in the Kermit project. It is similar to HPND, with an additional initial statement regarding export control laws.<span class="provided-by">(provided by: <span title="SPDXLicense:2f84220079b5783ab5ddf00235178799">[<a href="/fact/SPDXLicense/2f84220079b5783ab5ddf00235178799">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.kermitproject.org/ck90.html#source" target="_blank">https://www.kermitproject.org/ck90.html#source</a></li><li><a href="https://spdx.org/licenses/HPND-export-US" target="_blank">https://spdx.org/licenses/HPND-export-US</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://www.kermitproject.org/ck90.html#source</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1990 by the Massachusetts Institute of Technology
+
+Export of this software from the United States of America may  require a specific license from the United States Government.  It is the responsibility of any person or organization contemplating  export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to use, copy, modify, and  distribute this software and its documentation for any purpose and  without fee is hereby granted, provided that the above copyright  notice appear in all copies and that both that copyright notice and  this permission notice appear in supporting documentation, and that  the name of M.I.T. not be used in advertising or publicity pertaining  to distribution of the software without specific, written prior  permission. M.I.T. makes no representations about the suitability of  this software for any purpose. It is provided &quot;as is&quot; without express  or implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+		&lt;var class=&quot;replaceable-license-text&quot;&gt; 
+		Copyright (C) 1990 by the Massachusetts Institute of Technology
+		&lt;/var&gt;
+
+		&lt;p&gt;Export of this software from the United States of America may
+		require a specific license from the United States Government.
+		It is the responsibility of any person or organization contemplating
+		export to obtain such a license before exporting.&lt;/p&gt;
+
+		&lt;p&gt;WITHIN THAT CONSTRAINT, permission to use, copy, modify, and
+		distribute this software and its documentation for any purpose and
+		without fee is hereby granted, provided that the above copyright
+		notice appear in all copies and that both that copyright notice and
+		this permission notice appear in supporting documentation, and that
+		the name of M.I.T. not be used in advertising or publicity pertaining
+		to distribution of the software without specific, written prior
+		permission. M.I.T. makes no representations about the suitability of
+		this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express
+		or implied warranty.&lt;/p&gt;
+
+		</pre></details></li><li><details><summary>Text:</summary><pre>Export of this software from the United States of America may
+require a specific license from the United States Government.
+It is the responsibility of any person or organization contemplating
+export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to use, copy, modify, and
+distribute this software and its documentation for any purpose and
+without fee is hereby granted, provided that the above copyright
+notice appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation, and that
+the name of M.I.T. not be used in advertising or publicity pertaining
+to distribution of the software without specific, written prior
+permission. M.I.T. makes no representations about the suitability of
+this software for any purpose. It is provided &quot;as is&quot; without express
+or implied warranty.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/2f84220079b5783ab5ddf00235178799">SPDXLicense:2f84220079b5783ab5ddf00235178799</a> for <a href="/?license=spdx:HPND-export-US"><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND with US Government export control warning</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:2f84220079b5783ab5ddf00235178799">[<a href="/fact/SPDXLicense/2f84220079b5783ab5ddf00235178799">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license is found in the Kermit project. It is similar to HPND, with an additional initial statement regarding export control laws.<span class="provided-by">(provided by: <span title="SPDXLicense:2f84220079b5783ab5ddf00235178799">[<a href="/fact/SPDXLicense/2f84220079b5783ab5ddf00235178799">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://www.kermitproject.org/ck90.html#source" target="_blank">https://www.kermitproject.org/ck90.html#source</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (C) 1990 by the Massachusetts Institute of Technology
+
+Export of this software from the United States of America may  require a specific license from the United States Government.  It is the responsibility of any person or organization contemplating  export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to use, copy, modify, and  distribute this software and its documentation for any purpose and  without fee is hereby granted, provided that the above copyright  notice appear in all copies and that both that copyright notice and  this permission notice appear in supporting documentation, and that  the name of M.I.T. not be used in advertising or publicity pertaining  to distribution of the software without specific, written prior  permission. M.I.T. makes no representations about the suitability of  this software for any purpose. It is provided &quot;as is&quot; without express  or implied warranty.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+		&lt;var class=&quot;replaceable-license-text&quot;&gt; 
+		Copyright (C) 1990 by the Massachusetts Institute of Technology
+		&lt;/var&gt;
+
+		&lt;p&gt;Export of this software from the United States of America may
+		require a specific license from the United States Government.
+		It is the responsibility of any person or organization contemplating
+		export to obtain such a license before exporting.&lt;/p&gt;
+
+		&lt;p&gt;WITHIN THAT CONSTRAINT, permission to use, copy, modify, and
+		distribute this software and its documentation for any purpose and
+		without fee is hereby granted, provided that the above copyright
+		notice appear in all copies and that both that copyright notice and
+		this permission notice appear in supporting documentation, and that
+		the name of M.I.T. not be used in advertising or publicity pertaining
+		to distribution of the software without specific, written prior
+		permission. M.I.T. makes no representations about the suitability of
+		this software for any purpose. It is provided &amp;quot;as is&amp;quot; without express
+		or implied warranty.&lt;/p&gt;
+
+		</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:HPND-export-US&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND with US Government export control warning&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;2f84220079b5783ab5ddf00235178799&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license is found in the Kermit project. It is similar to HPND, with an additional initial statement regarding export control laws.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (C) 1990 by the Massachusetts Institute of Technology\n\nExport of this software from the United States of America may  require a specific license from the United States Government.  It is the responsibility of any person or organization contemplating  export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to use, copy, modify, and  distribute this software and its documentation for any purpose and  without fee is hereby granted, provided that the above copyright  notice appear in all copies and that both that copyright notice and  this permission notice appear in supporting documentation, and that  the name of M.I.T. not be used in advertising or publicity pertaining  to distribution of the software without specific, written prior  permission. M.I.T. makes no representations about the suitability of  this software for any purpose. It is provided \&quot;as is\&quot; without express  or implied warranty.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n\t\tCopyright (C) 1990 by the Massachusetts Institute of Technology\n\t\t&lt;/var&gt;\n\n\t\t&lt;p&gt;Export of this software from the United States of America may\n\t\trequire a specific license from the United States Government.\n\t\tIt is the responsibility of any person or organization contemplating\n\t\texport to obtain such a license before exporting.&lt;/p&gt;\n\n\t\t&lt;p&gt;WITHIN THAT CONSTRAINT, permission to use, copy, modify, and\n\t\tdistribute this software and its documentation for any purpose and\n\t\twithout fee is hereby granted, provided that the above copyright\n\t\tnotice appear in all copies and that both that copyright notice and\n\t\tthis permission notice appear in supporting documentation, and that\n\t\tthe name of M.I.T. not be used in advertising or publicity pertaining\n\t\tto distribution of the software without specific, written prior\n\t\tpermission. M.I.T. makes no representations about the suitability of\n\t\tthis software for any purpose. It is provided &amp;quot;as is&amp;quot; without express\n\t\tor implied warranty.&lt;/p&gt;\n\n\t\t&quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.kermitproject.org/ck90.html#source&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://www.kermitproject.org/ck90.html#source&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:02:04Z&quot;,
+                &quot;url&quot;: &quot;https://www.kermitproject.org/ck90.html#source&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;This license is found in the Kermit project. It is similar to HPND, with an additional initial statement regarding export control laws.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:HPND-export-US&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (C) 1990 by the Massachusetts Institute of Technology\n\nExport of this software from the United States of America may  require a specific license from the United States Government.  It is the responsibility of any person or organization contemplating  export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to use, copy, modify, and  distribute this software and its documentation for any purpose and  without fee is hereby granted, provided that the above copyright  notice appear in all copies and that both that copyright notice and  this permission notice appear in supporting documentation, and that  the name of M.I.T. not be used in advertising or publicity pertaining  to distribution of the software without specific, written prior  permission. M.I.T. makes no representations about the suitability of  this software for any purpose. It is provided \&quot;as is\&quot; without express  or implied warranty.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n\t\t&lt;var class=\&quot;replaceable-license-text\&quot;&gt; \n\t\tCopyright (C) 1990 by the Massachusetts Institute of Technology\n\t\t&lt;/var&gt;\n\n\t\t&lt;p&gt;Export of this software from the United States of America may\n\t\trequire a specific license from the United States Government.\n\t\tIt is the responsibility of any person or organization contemplating\n\t\texport to obtain such a license before exporting.&lt;/p&gt;\n\n\t\t&lt;p&gt;WITHIN THAT CONSTRAINT, permission to use, copy, modify, and\n\t\tdistribute this software and its documentation for any purpose and\n\t\twithout fee is hereby granted, provided that the above copyright\n\t\tnotice appear in all copies and that both that copyright notice and\n\t\tthis permission notice appear in supporting documentation, and that\n\t\tthe name of M.I.T. not be used in advertising or publicity pertaining\n\t\tto distribution of the software without specific, written prior\n\t\tpermission. M.I.T. makes no representations about the suitability of\n\t\tthis software for any purpose. It is provided &amp;quot;as is&amp;quot; without express\n\t\tor implied warranty.&lt;/p&gt;\n\n\t\t&quot;,
+        &quot;name&quot;: &quot;HPND with US Government export control warning&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://www.kermitproject.org/ck90.html#source&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (C) 1990 by the Massachusetts Institute of Technology\&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nExport of this software from the United States of America may require a specific license from the United States Government. It is the responsibility of any person or organization contemplating export to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to use, copy, modify, and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation, and that the name of M.I.T. not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission. M.I.T. makes no representations about the suitability of this software for any purpose. It is provided \&quot;as is\&quot; without express or implied warranty.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/2bf75610e51bcf858f9e9190b76f7da4">FedoraEntry:2bf75610e51bcf858f9e9190b76f7da4</a> for <a href="/?license=Fedora:HPND-export-US"><span class="licensename"><span class="namespace">Fedora:</span>HPND-export-US</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>HPND-export-US</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:2bf75610e51bcf858f9e9190b76f7da4">[<a href="/fact/FedoraEntry/2bf75610e51bcf858f9e9190b76f7da4">FedoraEntry</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:HPND-export-US&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-export-US&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;2bf75610e51bcf858f9e9190b76f7da4&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;HPND-export-US&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:HPND-export-US&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: []
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/dbe8bd43d7f8c9e797b2e2a2d531a329">BlueOakCouncil:dbe8bd43d7f8c9e797b2e2a2d531a329</a> for <a href="/?license=BlueOak:HPND-export-US"><span class="licensename"><span class="namespace">BlueOak:</span>HPND-export-US</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>HPND-export-US</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND with US Government export control warning</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:dbe8bd43d7f8c9e797b2e2a2d531a329">[<a href="/fact/BlueOakCouncil/dbe8bd43d7f8c9e797b2e2a2d531a329">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.">BlueOakCouncil: <b style="color: red;">Lead</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:dbe8bd43d7f8c9e797b2e2a2d531a329">[<a href="/fact/BlueOakCouncil/dbe8bd43d7f8c9e797b2e2a2d531a329">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/HPND-export-US" target="_blank">https://spdx.org/licenses/HPND-export-US</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:HPND-export-US&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND with US Government export control warning&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;dbe8bd43d7f8c9e797b2e2a2d531a329&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Lead&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/HPND-export-US&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Lead&quot;,
+            &quot;These licenses lack one or more essential elements of permissive open software licenses or impose unusually burdensome requirements.  Many use unclear, jocular, or incomplete language.&quot;,
+            {
+                &quot;_id&quot;: &quot;HPND-export-US&quot;,
+                &quot;_name&quot;: &quot;HPND with US Government export control warning&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/HPND-export-US&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/f77652838edcea500b6e449cd97d7bcd">ScancodeData:f77652838edcea500b6e449cd97d7bcd</a> for <a href="/?license=scancode:hpnd-export-us"><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND with US Government export control warning</span></li><li><span class="licensename">HPND with US Government export control warning</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>UnknownLicenseType (Just &quot;Free Restricted&quot;)<span class="provided-by">(provided by: <span title="ScancodeData:f77652838edcea500b6e449cd97d7bcd">[<a href="/fact/ScancodeData/f77652838edcea500b6e449cd97d7bcd">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://www.kermitproject.org/ck90.html#source</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Export of this software from the United States of America may
+require a specific license from the United States Government.
+It is the responsibility of any person or organization contemplating
+export to obtain such a license before exporting.
+
+WITHIN THAT CONSTRAINT, permission to use, copy, modify, and
+distribute this software and its documentation for any purpose and
+without fee is hereby granted, provided that the above copyright
+notice appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation, and that
+the name of M.I.T. not be used in advertising or publicity pertaining
+to distribution of the software without specific, written prior
+permission. M.I.T. makes no representations about the suitability of
+this software for any purpose. It is provided &quot;as is&quot; without express
+or implied warranty.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:hpnd-export-us&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND with US Government export control warning&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND with US Government export control warning&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;f77652838edcea500b6e449cd97d7bcd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;Free Restricted&quot;,
+                &quot;tag&quot;: &quot;UnknownLicenseType&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://www.kermitproject.org/ck90.html#source&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Export of this software from the United States of America may\nrequire a specific license from the United States Government.\nIt is the responsibility of any person or organization contemplating\nexport to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to use, copy, modify, and\ndistribute this software and its documentation for any purpose and\nwithout fee is hereby granted, provided that the above copyright\nnotice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation, and that\nthe name of M.I.T. not be used in advertising or publicity pertaining\nto distribution of the software without specific, written prior\npermission. M.I.T. makes no representations about the suitability of\nthis software for any purpose. It is provided \&quot;as is\&quot; without express\nor implied warranty.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Free Restricted&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://www.kermitproject.org/ck90.html#source&quot;,
+        &quot;_key&quot;: &quot;hpnd-export-us&quot;,
+        &quot;_name&quot;: &quot;HPND with US Government export control warning&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;MIT&quot;,
+        &quot;_shortName&quot;: &quot;HPND with US Government export control warning&quot;,
+        &quot;_spdxId&quot;: &quot;HPND-export-US&quot;,
+        &quot;_text&quot;: &quot;Export of this software from the United States of America may\nrequire a specific license from the United States Government.\nIt is the responsibility of any person or organization contemplating\nexport to obtain such a license before exporting.\n\nWITHIN THAT CONSTRAINT, permission to use, copy, modify, and\ndistribute this software and its documentation for any purpose and\nwithout fee is hereby granted, provided that the above copyright\nnotice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation, and that\nthe name of M.I.T. not be used in advertising or publicity pertaining\nto distribution of the software without specific, written prior\npermission. M.I.T. makes no representations about the suitability of\nthis software for any purpose. It is provided \&quot;as is\&quot; without express\nor implied warranty.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/58985082cfb9c997d342f52418658ebb">OrtLicenseCategorization:58985082cfb9c997d342f52418658ebb</a> for <a href="/?license=SPDX:HPND-export-US"><span class="licensename"><span class="namespace">SPDX:</span>HPND-export-US</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>HPND-export-US</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>free-restricted</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:58985082cfb9c997d342f52418658ebb">[<a href="/fact/OrtLicenseCategorization/58985082cfb9c997d342f52418658ebb">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:58985082cfb9c997d342f52418658ebb">[<a href="/fact/OrtLicenseCategorization/58985082cfb9c997d342f52418658ebb">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:HPND-export-US&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;58985082cfb9c997d342f52418658ebb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;free-restricted&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;free-restricted&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:HPND-export-US&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/7325e6a10b08b914a27ab1eaa6d78832">CavilLicenseChange:7325e6a10b08b914a27ab1eaa6d78832</a> for <a href="/?license=cavil:HPND-export-US"><span class="licensename"><span class="namespace">cavil:</span>HPND-export-US</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>HPND-export-US</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND-export-US</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:HPND-export-US&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND-export-US&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;7325e6a10b08b914a27ab1eaa6d78832&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;HPND-export-US&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:HPND-export-US&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/5c55f01f3d1f04b4cd40723b7b1b3515">MetaeffektLicense:5c55f01f3d1f04b4cd40723b7b1b3515</a> for <a href="/?license=metaeffekt:HPND (US government export control warning)"><span class="licensename"><span class="namespace">metaeffekt:</span>HPND (US government export control warning)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>HPND (US government export control warning)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>HPND-export-US</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">HPND with US Government export control warning</span></li><li><span class="licensename">HPND-export-US</span></li><li><span class="licensename">HPND-export-US</span></li><li><span class="licensename"><span class="namespace">scancode:</span>hpnd-export-us</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:HPND (US government export control warning)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:HPND-export-US&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;HPND-export-US&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND-export-US&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;HPND with US Government export control warning&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:hpnd-export-us&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;5c55f01f3d1f04b4cd40723b7b1b3515&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;HPND-export-US&quot;,
+            &quot;HPND with US Government export control warning&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:HPND (US government export control warning)&quot;,
+        &quot;_category&quot;: &quot;HPND-export-US&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:hpnd-export-us&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:HPND-export-US&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

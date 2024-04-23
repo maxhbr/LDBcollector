@@ -1,0 +1,831 @@
+<html><head><title>ldbcollector: spdx:NIST-PD</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:NIST-PD</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Public Domain Notice</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Public Domain Notice</span></li><li><span class="licensename">NIST-PD</span></li><li><span class="licensename"><span class="namespace">cavil:</span>NIST-PD</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>NIST-PD</span></li><li><span class="licensename"><span class="namespace">fossology:</span>NIST-PD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>nist-pd</span></li><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Public Domain Notice (with license fallback)</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:34f1e7de11afb7cb20a33d278c11f8c6">[<a href="/fact/ScancodeData/34f1e7de11afb7cb20a33d278c11f8c6">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4d8be15b9dc689c3240be88fad2c775a">[<a href="/fact/SPDXLicense/4d8be15b9dc689c3240be88fad2c775a">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5d82fa0dd4bde98875d37630039a4832">[<a href="/fact/FedoraEntry/5d82fa0dd4bde98875d37630039a4832">FedoraEntry</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:3feea3e39001706b987d26b3ceec27ae">[<a href="/fact/MetaeffektLicense/3feea3e39001706b987d26b3ceec27ae">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4344ec04269fb965b4234ed033a33197">[<a href="/fact/OrtLicenseCategorization/4344ec04269fb965b4234ed033a33197">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4344ec04269fb965b4234ed033a33197">[<a href="/fact/OrtLicenseCategorization/4344ec04269fb965b4234ed033a33197">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:031a95217a07d5bde59300bc3200be69">[<a href="/fact/OrtLicenseCategorization/031a95217a07d5bde59300bc3200be69">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt" target="_blank">https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt</a></li><li><a href="https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md" target="_blank">https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md</a></li><li><a href="https://spdx.org/licenses/NIST-PD.html" target="_blank">https://spdx.org/licenses/NIST-PD.html</a></li><li><a href="https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md#conditions-of-use" target="_blank">https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md#conditions-of-use</a></li><li><a href="https://github.com/usnistgov/jsip" target="_blank">https://github.com/usnistgov/jsip</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://github.com/usnistgov/jsip/blob/master/README#L122</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Terms Of Use
+
+This software was developed by employees of the National Institute of Standards
+and Technology (NIST), and others. This software has been contributed to the
+public domain. Pursuant to title 15 Untied States Code Section 105, works of
+NIST employees are not subject to copyright protection in the United States and
+are considered to be in the public domain. As a result, a formal license is
+not needed to use this software.
+
+This software is provided &quot;AS IS.&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS,
+IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA
+ACCURACY. NIST does not warrant or make any representations regarding the use
+of the software or the results thereof, including but not limited to the
+correctness, accuracy, reliability or usefulness of this software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; Terms Of Use&lt;/var&gt;&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;
+        This software was developed by employees of the National Institute of
+        Standards and Technology (NIST), and others.
+        This software has been contributed to the public domain.
+        Pursuant to title 15 Untied States Code Section 105, works of NIST
+        employees are not subject to copyright protection in the United States
+        and are considered to be in the public domain.
+        As a result, a formal license is not needed to use this software.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        This software is provided &amp;quot;AS IS.&amp;quot;
+        NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED
+        OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT
+        AND DATA ACCURACY.  NIST does not warrant or make any representations
+        regarding the use of the software or the results thereof, including but
+        not limited to the correctness, accuracy, reliability or usefulness of
+        this software.
+      &lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Conditions Of Use
+
+This software was developed by employees of the National Institute of
+Standards and Technology (NIST), an agency of the Federal Government.
+Pursuant to title 15 Untied States Code Section 105, works of NIST
+employees are not subject to copyright protection in the United States
+and are considered to be in the public domain.  As a result, a formal
+license is not needed to use the software.
+
+This software is provided by NIST as a service and is expressly
+provided &quot;AS IS.&quot;  NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED
+OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT
+AND DATA ACCURACY.  NIST does not warrant or make any representations
+regarding the use of the software or the results thereof, including but
+not limited to the correctness, accuracy, reliability or usefulness of
+the software.
+
+Permission to use this software is contingent upon your acceptance
+of the terms of this agreement</pre></details></li><li><details><summary>Text:</summary><pre>Terms Of Use
+
+This software was developed by employees of the National Institute of Standards and Technology (NIST), and others. This software has been contributed to the public domain. Pursuant to title 15 Untied States Code Section 105, works of NIST employees are not subject to copyright protection in the United States and are considered to be in the public domain. As a result, a formal license is not needed to use this software.
+
+This software is provided &quot;AS IS.&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST does not warrant or make any representations regarding the use of the software or the results thereof, including but not limited to the correctness, accuracy, reliability or usefulness of this software.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/4d8be15b9dc689c3240be88fad2c775a">SPDXLicense:4d8be15b9dc689c3240be88fad2c775a</a> for <a href="/?license=spdx:NIST-PD"><span class="licensename"><span class="namespace">spdx:</span>NIST-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Public Domain Notice</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:4d8be15b9dc689c3240be88fad2c775a">[<a href="/fact/SPDXLicense/4d8be15b9dc689c3240be88fad2c775a">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt" target="_blank">https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt</a></li><li><a href="https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md" target="_blank">https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Terms Of Use
+
+This software was developed by employees of the National Institute of Standards
+and Technology (NIST), and others. This software has been contributed to the
+public domain. Pursuant to title 15 Untied States Code Section 105, works of
+NIST employees are not subject to copyright protection in the United States and
+are considered to be in the public domain. As a result, a formal license is
+not needed to use this software.
+
+This software is provided &quot;AS IS.&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS,
+IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA
+ACCURACY. NIST does not warrant or make any representations regarding the use
+of the software or the results thereof, including but not limited to the
+correctness, accuracy, reliability or usefulness of this software.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+        &lt;p&gt;&lt;var class=&quot;replaceable-license-text&quot;&gt; Terms Of Use&lt;/var&gt;&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;p&gt;
+        This software was developed by employees of the National Institute of
+        Standards and Technology (NIST), and others.
+        This software has been contributed to the public domain.
+        Pursuant to title 15 Untied States Code Section 105, works of NIST
+        employees are not subject to copyright protection in the United States
+        and are considered to be in the public domain.
+        As a result, a formal license is not needed to use this software.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        This software is provided &amp;quot;AS IS.&amp;quot;
+        NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED
+        OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT
+        AND DATA ACCURACY.  NIST does not warrant or make any representations
+        regarding the use of the software or the results thereof, including but
+        not limited to the correctness, accuracy, reliability or usefulness of
+        this software.
+      &lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:NIST-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;4d8be15b9dc689c3240be88fad2c775a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Terms Of Use\n\nThis software was developed by employees of the National Institute of Standards\nand Technology (NIST), and others. This software has been contributed to the\npublic domain. Pursuant to title 15 Untied States Code Section 105, works of\nNIST employees are not subject to copyright protection in the United States and\nare considered to be in the public domain. As a result, a formal license is\nnot needed to use this software.\n\nThis software is provided \&quot;AS IS.\&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS,\nIMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA\nACCURACY. NIST does not warrant or make any representations regarding the use\nof the software or the results thereof, including but not limited to the\ncorrectness, accuracy, reliability or usefulness of this software.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; Terms Of Use&lt;/var&gt;&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;\n        This software was developed by employees of the National Institute of\n        Standards and Technology (NIST), and others.\n        This software has been contributed to the public domain.\n        Pursuant to title 15 Untied States Code Section 105, works of NIST\n        employees are not subject to copyright protection in the United States\n        and are considered to be in the public domain.\n        As a result, a formal license is not needed to use this software.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        This software is provided &amp;quot;AS IS.&amp;quot;\n        NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED\n        OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF\n        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT\n        AND DATA ACCURACY.  NIST does not warrant or make any representations\n        regarding the use of the software or the results thereof, including but\n        not limited to the correctness, accuracy, reliability or usefulness of\n        this software.\n      &lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:01Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:05:01Z&quot;,
+                &quot;url&quot;: &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:NIST-PD&quot;,
+        &quot;licenseText&quot;: &quot;Terms Of Use\n\nThis software was developed by employees of the National Institute of Standards\nand Technology (NIST), and others. This software has been contributed to the\npublic domain. Pursuant to title 15 Untied States Code Section 105, works of\nNIST employees are not subject to copyright protection in the United States and\nare considered to be in the public domain. As a result, a formal license is\nnot needed to use this software.\n\nThis software is provided \&quot;AS IS.\&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS,\nIMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA\nACCURACY. NIST does not warrant or make any representations regarding the use\nof the software or the results thereof, including but not limited to the\ncorrectness, accuracy, reliability or usefulness of this software.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n        &lt;p&gt;&lt;var class=\&quot;replaceable-license-text\&quot;&gt; Terms Of Use&lt;/var&gt;&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;p&gt;\n        This software was developed by employees of the National Institute of\n        Standards and Technology (NIST), and others.\n        This software has been contributed to the public domain.\n        Pursuant to title 15 Untied States Code Section 105, works of NIST\n        employees are not subject to copyright protection in the United States\n        and are considered to be in the public domain.\n        As a result, a formal license is not needed to use this software.\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        This software is provided &amp;quot;AS IS.&amp;quot;\n        NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED\n        OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF\n        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT\n        AND DATA ACCURACY.  NIST does not warrant or make any representations\n        regarding the use of the software or the results thereof, including but\n        not limited to the correctness, accuracy, reliability or usefulness of\n        this software.\n      &lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;NIST Public Domain Notice&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;,
+            &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;&lt;&lt;var;name=\&quot;title\&quot;;original=\&quot;Terms Of Use\&quot;;match=\&quot;(Conditions|Terms) [oO]f [uU]se\&quot;&gt;&gt;\n\n&lt;&lt;endOptional&gt;&gt;\n\nThis software was developed by employees of the National Institute of Standards and Technology (NIST), and others. This software has been contributed to the public domain. Pursuant to title 15 Untied States Code Section 105, works of NIST employees are not subject to copyright protection in the United States and are considered to be in the public domain. As a result, a formal license is not needed to use this software.\n\nThis software is provided \&quot;AS IS.\&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST does not warrant or make any representations regarding the use of the software or the results thereof, including but not limited to the correctness, accuracy, reliability or usefulness of this software.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/5d82fa0dd4bde98875d37630039a4832">FedoraEntry:5d82fa0dd4bde98875d37630039a4832</a> for <a href="/?license=Fedora:NIST-PD"><span class="licensename"><span class="namespace">Fedora:</span>NIST-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>NIST-PD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:5d82fa0dd4bde98875d37630039a4832">[<a href="/fact/FedoraEntry/5d82fa0dd4bde98875d37630039a4832">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/NIST-PD.html" target="_blank">https://spdx.org/licenses/NIST-PD.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:NIST-PD&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NIST-PD&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;5d82fa0dd4bde98875d37630039a4832&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/NIST-PD.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [],
+            &quot;_legacy_names&quot;: [],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;NIST-PD&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:NIST-PD&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://spdx.org/licenses/NIST-PD.html&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/34f1e7de11afb7cb20a33d278c11f8c6">ScancodeData:34f1e7de11afb7cb20a33d278c11f8c6</a> for <a href="/?license=scancode:nist-pd"><span class="licensename"><span class="namespace">scancode:</span>nist-pd</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>nist-pd</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Public Domain Notice</span></li><li><span class="licensename">NIST Public Domain Notice</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:34f1e7de11afb7cb20a33d278c11f8c6">[<a href="/fact/ScancodeData/34f1e7de11afb7cb20a33d278c11f8c6">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md#conditions-of-use" target="_blank">https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md#conditions-of-use</a></li><li><a href="https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt" target="_blank">https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt</a></li><li><a href="https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md" target="_blank">https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md</a></li><li><a href="https://github.com/usnistgov/jsip" target="_blank">https://github.com/usnistgov/jsip</a></li></ul><h3>Other Statements</h3><ul><li>https://github.com/usnistgov/jsip/blob/master/README#L122</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Conditions Of Use
+
+This software was developed by employees of the National Institute of
+Standards and Technology (NIST), an agency of the Federal Government.
+Pursuant to title 15 Untied States Code Section 105, works of NIST
+employees are not subject to copyright protection in the United States
+and are considered to be in the public domain.  As a result, a formal
+license is not needed to use the software.
+
+This software is provided by NIST as a service and is expressly
+provided &quot;AS IS.&quot;  NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED
+OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT
+AND DATA ACCURACY.  NIST does not warrant or make any representations
+regarding the use of the software or the results thereof, including but
+not limited to the correctness, accuracy, reliability or usefulness of
+the software.
+
+Permission to use this software is contingent upon your acceptance
+of the terms of this agreement</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:nist-pd&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;34f1e7de11afb7cb20a33d278c11f8c6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://github.com/usnistgov/jsip/blob/master/README#L122&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md#conditions-of-use&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://github.com/usnistgov/jsip&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Conditions Of Use\n\nThis software was developed by employees of the National Institute of\nStandards and Technology (NIST), an agency of the Federal Government.\nPursuant to title 15 Untied States Code Section 105, works of NIST\nemployees are not subject to copyright protection in the United States\nand are considered to be in the public domain.  As a result, a formal\nlicense is not needed to use the software.\n\nThis software is provided by NIST as a service and is expressly\nprovided \&quot;AS IS.\&quot;  NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED\nOR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT\nAND DATA ACCURACY.  NIST does not warrant or make any representations\nregarding the use of the software or the results thereof, including but\nnot limited to the correctness, accuracy, reliability or usefulness of\nthe software.\n\nPermission to use this software is contingent upon your acceptance\nof the terms of this agreement&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://github.com/usnistgov/jsip/blob/master/README#L122&quot;,
+        &quot;_key&quot;: &quot;nist-pd&quot;,
+        &quot;_name&quot;: &quot;NIST Public Domain Notice&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md&quot;,
+            &quot;https://github.com/usnistgov/jsip&quot;
+        ],
+        &quot;_owner&quot;: &quot;NIST&quot;,
+        &quot;_shortName&quot;: &quot;NIST Public Domain Notice&quot;,
+        &quot;_spdxId&quot;: &quot;NIST-PD&quot;,
+        &quot;_text&quot;: &quot;Conditions Of Use\n\nThis software was developed by employees of the National Institute of\nStandards and Technology (NIST), an agency of the Federal Government.\nPursuant to title 15 Untied States Code Section 105, works of NIST\nemployees are not subject to copyright protection in the United States\nand are considered to be in the public domain.  As a result, a formal\nlicense is not needed to use the software.\n\nThis software is provided by NIST as a service and is expressly\nprovided \&quot;AS IS.\&quot;  NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED\nOR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT\nAND DATA ACCURACY.  NIST does not warrant or make any representations\nregarding the use of the software or the results thereof, including but\nnot limited to the correctness, accuracy, reliability or usefulness of\nthe software.\n\nPermission to use this software is contingent upon your acceptance\nof the terms of this agreement&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md#conditions-of-use&quot;,
+            &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/dc9ead21419ac2af3f861d54a81d78eb">Fossology:dc9ead21419ac2af3f861d54a81d78eb</a> for <a href="/?license=fossology:NIST-PD"><span class="licensename"><span class="namespace">fossology:</span>NIST-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>NIST-PD</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Public Domain Notice</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt" target="_blank">https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Terms Of Use
+
+This software was developed by employees of the National Institute of Standards and Technology (NIST), and others. This software has been contributed to the public domain. Pursuant to title 15 Untied States Code Section 105, works of NIST employees are not subject to copyright protection in the United States and are considered to be in the public domain. As a result, a formal license is not needed to use this software.
+
+This software is provided &quot;AS IS.&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST does not warrant or make any representations regarding the use of the software or the results thereof, including but not limited to the correctness, accuracy, reliability or usefulness of this software.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:NIST-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;dc9ead21419ac2af3f861d54a81d78eb&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Terms Of Use\n\nThis software was developed by employees of the National Institute of Standards and Technology (NIST), and others. This software has been contributed to the public domain. Pursuant to title 15 Untied States Code Section 105, works of NIST employees are not subject to copyright protection in the United States and are considered to be in the public domain. As a result, a formal license is not needed to use this software.\n\nThis software is provided \&quot;AS IS.\&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST does not warrant or make any representations regarding the use of the software or the results thereof, including but not limited to the correctness, accuracy, reliability or usefulness of this software.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;NIST Public Domain Notice&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:NIST-PD&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Terms Of Use\n\nThis software was developed by employees of the National Institute of Standards and Technology (NIST), and others. This software has been contributed to the public domain. Pursuant to title 15 Untied States Code Section 105, works of NIST employees are not subject to copyright protection in the United States and are considered to be in the public domain. As a result, a formal license is not needed to use this software.\n\nThis software is provided \&quot;AS IS.\&quot; NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST does not warrant or make any representations regarding the use of the software or the results thereof, including but not limited to the correctness, accuracy, reliability or usefulness of this software.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/4344ec04269fb965b4234ed033a33197">OrtLicenseCategorization:4344ec04269fb965b4234ed033a33197</a> for <a href="/?license=SPDX:NIST-PD"><span class="licensename"><span class="namespace">SPDX:</span>NIST-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NIST-PD</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4344ec04269fb965b4234ed033a33197">[<a href="/fact/OrtLicenseCategorization/4344ec04269fb965b4234ed033a33197">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:4344ec04269fb965b4234ed033a33197">[<a href="/fact/OrtLicenseCategorization/4344ec04269fb965b4234ed033a33197">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NIST-PD&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;4344ec04269fb965b4234ed033a33197&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NIST-PD&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/031a95217a07d5bde59300bc3200be69">OrtLicenseCategorization:031a95217a07d5bde59300bc3200be69</a> for <a href="/?license=SPDX:NIST-PD"><span class="licensename"><span class="namespace">SPDX:</span>NIST-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>NIST-PD</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:031a95217a07d5bde59300bc3200be69">[<a href="/fact/OrtLicenseCategorization/031a95217a07d5bde59300bc3200be69">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:NIST-PD&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;031a95217a07d5bde59300bc3200be69&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;contents&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;A dedication by which a work is placed into the public domain without any explicit obligations, but which may have a notice that must be kept with the work per project policy. The match maybe to software, code examples on a website, published public domain specifications or another type of publication.&quot;,
+                &quot;name&quot;: &quot;public-domain&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:NIST-PD&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/8135c8fe09960816307848b920438532">CavilLicenseChange:8135c8fe09960816307848b920438532</a> for <a href="/?license=cavil:NIST-PD"><span class="licensename"><span class="namespace">cavil:</span>NIST-PD</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>NIST-PD</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST-PD</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:NIST-PD&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;8135c8fe09960816307848b920438532&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;NIST-PD&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:NIST-PD&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/3feea3e39001706b987d26b3ceec27ae">MetaeffektLicense:3feea3e39001706b987d26b3ceec27ae</a> for <a href="/?license=metaeffekt:NIST Public Domain Notice"><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Public Domain Notice</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>NIST Public Domain Notice</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>NIST-PD</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">NIST Public Domain Notice</span></li><li><span class="licensename">NIST Public Domain Notice</span></li><li><span class="licensename">nist-pd</span></li><li><span class="licensename">NIST-PD</span></li><li><span class="licensename"><span class="namespace">scancode:</span>nist-pd</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:3feea3e39001706b987d26b3ceec27ae">[<a href="/fact/MetaeffektLicense/3feea3e39001706b987d26b3ceec27ae">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:NIST Public Domain Notice&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:NIST-PD&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;NIST Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;nist-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST-PD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;NIST Public Domain Notice&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:nist-pd&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;3feea3e39001706b987d26b3ceec27ae&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;nist-pd&quot;,
+            &quot;NIST-PD&quot;,
+            &quot;NIST Public Domain Notice&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:NIST Public Domain Notice&quot;,
+        &quot;_category&quot;: &quot;NIST Public Domain Notice&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:nist-pd&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:NIST-PD&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>
