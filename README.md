@@ -24,6 +24,9 @@ This is a rewrite of the old ldbcollector, which is found  in the branch v1.
 
 This rewrite is not yet stable and for stable use the old version is prefered.
 
+## Licensing
+The code writen for this project is licensed under BSD-3-Clause. The data in `./data` is licensed under the respective licenses.
+
 # Sources and Outputs
 
 ```mermaid
@@ -47,6 +50,8 @@ graph LR;
     Scancode["scancode-licensedb.aboutcode.org"]--->LDBcollector;
     SPDX["spdx.org/licenses"]---->LDBcollector;
     Warpr["github.com/warpr/licensedb"]--->LDBcollector;
+    Hermine["gitlab.com/hermine-project/hermine-data"]---->LDBcollector;
+    FossLicenses["github.com/hesa/foss-licenses"]--->LDBcollector;
 
     Curation["Manual Curations"]-->LDBcollector;
 
