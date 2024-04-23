@@ -51,14 +51,15 @@ writeSvgByNS outDir selectedNS = do
               _ -> False
           )
           allLicenseNames
-  if True
-    then do
-      numCaps <- lift $ getNumCapabilities
-      graph <- MTL.get 
-      lift $ withTaskGroup (max 1 (numCaps - 3)) $ \group -> do 
-          _ <- mapConcurrently group (runLicenseGraphM' graph . writeFilesByName outDir) (V.toList filteredLicenses)
-          return ()
-    else V.mapM_ (writeFilesByName outDir) filteredLicenses
+  timedLGM ("writing " ++ show (V.length filteredLicenses) ++ " licenses of NS=" ++ T.unpack selectedNS) $ do
+    if True
+      then do
+        numCaps <- lift $ getNumCapabilities
+        graph <- MTL.get 
+        lift $ withTaskGroup (max 1 (numCaps - 3)) $ \group -> do 
+            _ <- mapConcurrently group (runLicenseGraphM' graph . writeFilesByName outDir) (V.toList filteredLicenses)
+            return ()
+      else V.mapM_ (writeFilesByName outDir) filteredLicenses
 
 curation :: Vector CurationItem
 curation =

@@ -29,7 +29,7 @@ startContainer() {
 dumpTable() {
     tablename="$1"
 
-    dumpCMD="exec mysqldump "
+    dumpCMD="exec mariadb-dump "
     dumpARGS="-uroot -pmy-secret-pw"
     dumpARGS="$dumpARGS --skip-create-options"
     dumpARGS="$dumpARGS --compatible=ansi"
