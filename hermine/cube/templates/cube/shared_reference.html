@@ -28,15 +28,19 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if licenses.total %}
     <table class="is-flex">
       <tr>
-        <th>Total</th>
+        <th>Total in local data</th>
         <th>{{ licenses.total }}</th>
+      </tr>
+      <tr>
+        <th>Synced with shared data</th>
+        <td>{{ licenses.identical }}</td>
       </tr>
       <tr>
         <th>Different from shared data</th>
         <td>{{ licenses.diff }}</td>
       </tr>
       <tr>
-        <th>Absent from shared data</th>
+        <th>Only in local (absent from shared data)</th>
         <td>{{ licenses.only_local }}</td>
       </tr>
     </table>
@@ -72,15 +76,19 @@ SPDX-License-Identifier: AGPL-3.0-only
   <h3>Generic obligations</h3>
   <table class="is-flex">
     <tr>
-      <th>Total</th>
+      <th>Total in local data</th>
       <th>{{ generics.total }}</th>
+    </tr>
+    <tr>
+      <th>Synced with shared data</th>
+      <td>{{ generics.identical }}</td>
     </tr>
     <tr>
       <th>Different from shared data</th>
       <td>{{ generics.diff }}</td>
     </tr>
     <tr>
-      <th>Absent from shared data</th>
+      <th>Only in local (absent from shared data) </th>
       <td>{{ generics.only_local }}</td>
     </tr>
   </table>
