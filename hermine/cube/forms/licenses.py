@@ -42,6 +42,7 @@ class CopyReferenceLicensesForm(Form):
         # Copy missing generics
         for generic in missing_generics:
             generic.id = None
+            generic._state.db = "default"
             generic.save(using="default")
 
         # Copy licenses then their obligations
@@ -72,6 +73,7 @@ class CopyReferenceGenericsForm(Form):
         # Copy missing generics
         for generic in missing_generics:
             generic.id = None
+            generic._state.db = "default"
             generic.save(using="default")
 
 
