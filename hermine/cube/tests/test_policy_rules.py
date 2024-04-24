@@ -4,7 +4,15 @@
 from django.test import TestCase
 from semantic_version import SimpleSpec
 
-from cube.models import Release, LicenseCuration, LicenseChoice, License, Derogation
+from cube.models import (
+    Release,
+    LicenseCuration,
+    LicenseChoice,
+    License,
+    Derogation,
+    Category,
+    Product,
+)
 from cube.utils.release_validation import (
     apply_curations,
     propagate_choices,
@@ -348,6 +356,25 @@ class LicensePolicyTestCase(TestCase):
             self.release
         ).values()
         self.assertEqual(len(unknown), 1)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 1)
+
+    def test_multiple_categories_matching_derogation(self):
+        categories = (
+            Category.objects.create(name="test"),
+            Category.objects.create(name="test2"),
+        )
+        Product.objects.get(id=1).categories.set(categories)
+        Derogation.objects.create(
+            category=categories[0],
+            license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 0)
         self.assertEqual(len(context), 0)
         self.assertEqual(len(never), 0)
         self.assertEqual(len(lic), 1)

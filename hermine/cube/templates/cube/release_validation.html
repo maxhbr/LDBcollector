@@ -502,8 +502,8 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ derogation.justification|default:"No justification given"|truncatewords:13 }}...
             </td>
             <td>
-              {% if perms.cube.change_derogation %}<a href="{% url "admin:cube_derogation_change" derogation.id %}" title="Edit this usage"><span class="icon"><i class="fas fa-edit"></i></span></a>{% endif %}
-              {% if perms.cube.delete_derogation %} | <a href="{% url "admin:cube_derogation_delete" derogation.id %}" title="Delete this usage"><span class="icon"><i class="fas fa-trash"></i></span></a>{% endif %}
+              {% if perms.cube.change_derogation %}<a href="{% url "admin:cube_derogation_change" derogation.id %}" title="Edit this derogation"><span class="icon"><i class="fas fa-edit"></i></span></a>{% endif %}
+              {% if perms.cube.delete_derogation %} | <a href="{% url "admin:cube_derogation_delete" derogation.id %}" title="Delete this derogation"><span class="icon"><i class="fas fa-trash"></i></span></a>{% endif %}
             </td>
           </tr>
         {% endfor %}
