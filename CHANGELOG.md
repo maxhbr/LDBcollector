@@ -1,5 +1,40 @@
 # Changelog
 
+## 0.3.2
+BUGFIXES:
+* Add hlink to projects in dashboard ([d367c3e](https://gitlab.com/hermine-project/hermine/commit/d367c3e))
+* Categories widget in product forms ([e41e235](https://gitlab.com/hermine-project/hermine/commit/e41e235)), closes [#284](https://gitlab.com/hermine-project/hermine/issues/284)
+* Checking many-to-many relationships in check_liscenses_against_policy duplicates usages ([ee81971](https://gitlab.com/hermine-project/hermine/commit/ee81971))
+* Copy generics ([3cf6c16](https://gitlab.com/hermine-project/hermine/commit/3cf6c16))
+* Display empty progress bar ([69d7bb6](https://gitlab.com/hermine-project/hermine/commit/69d7bb6)), closes [#213](https://gitlab.com/hermine-project/hermine/issues/213)
+* Ensure we don't use external primary key value on import ([da91ef9](https://gitlab.com/hermine-project/hermine/commit/da91ef9))
+* Wrong statistics on shared database page ([6c8370c](https://gitlab.com/hermine-project/hermine/commit/6c8370c))
+* Adapt form layout to div not table ([7641cfd](https://gitlab.com/hermine-project/hermine/commit/7641cfd)), closes [#287](https://gitlab.com/hermine-project/hermine/issues/287)
+* Add link to Dashboard in breadcrumbs ([61c524e](https://gitlab.com/hermine-project/hermine/commit/61c524e))
+* Display purl type in component list ([4862f03](https://gitlab.com/hermine-project/hermine/commit/4862f03))
+* Restore value for model ([17d66c9](https://gitlab.com/hermine-project/hermine/commit/17d66c9))
+
+FEATURES:
+* Add number of scopes in summary ([148f27c](https://gitlab.com/hermine-project/hermine/commit/148f27c))
+* Change license comment field label ([85f0421](https://gitlab.com/hermine-project/hermine/commit/85f0421)), closes [#225](https://gitlab.com/hermine-project/hermine/issues/225)
+* Duplicate obligations with licenses ([d2ab406](https://gitlab.com/hermine-project/hermine/commit/d2ab406))
+* New shared data page ([39753c0](https://gitlab.com/hermine-project/hermine/commit/39753c0))
+* Pagination on top and bottom of lists ([9eecd30](https://gitlab.com/hermine-project/hermine/commit/9eecd30)), closes [#241](https://gitlab.com/hermine-project/hermine/issues/241)
+* Replace text field by select for scope field on derogation forms ([22a3faf](https://gitlab.com/hermine-project/hermine/commit/22a3faf))
+* Use purl name when available ([5503e61](https://gitlab.com/hermine-project/hermine/commit/5503e61))
+
+MISC:
+* HERMINE_ prefix for compose config ([510abd6](https://gitlab.com/hermine-project/hermine/commit/510abd6))
+* Add docker composer version warning to doc ([0617fca](https://gitlab.com/hermine-project/hermine/commit/0617fca))
+* Clarify .gitignore ([f19bc16](https://gitlab.com/hermine-project/hermine/commit/f19bc16))
+* Eable error logging in prod ([65b9424](https://gitlab.com/hermine-project/hermine/commit/65b9424))
+* Logging config ([884843b](https://gitlab.com/hermine-project/hermine/commit/884843b))
+* Reuse linting ([879aad3](https://gitlab.com/hermine-project/hermine/commit/879aad3))
+* Djhtml linting ([ef85f45](https://gitlab.com/hermine-project/hermine/commit/ef85f45))
+* Document dev container ([5a09973](https://gitlab.com/hermine-project/hermine/commit/5a09973))
+* Tun devcontainer settings ([97d896d](https://gitlab.com/hermine-project/hermine/commit/97d896d))
+
+
 ## 0.3.1
 MISC:
 * Update Django to 5.0.3
