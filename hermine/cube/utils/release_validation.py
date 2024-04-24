@@ -2,6 +2,7 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
+from itertools import groupby
 
 from django.db.models import (
     Count,
@@ -179,17 +180,21 @@ def check_licenses_against_policy(release: Release):
                 ).values("pk")[:1]
             )
         )
-        .all()
     )
 
-    for usage in usages:
+    # Because of the way sql JOIN query operates, usages are duplicated
+    # for each license_chosen or categories. They are all identical objets,
+    # except some have a derogation and some don't.
+    for pk, usages in groupby(usages, key=lambda u: u.id):
+        usages = list(usages)
+        usage = usages[0]
         for license in usage.licenses_chosen.all():
             involved_lic.add(license)
 
             if license.allowed == License.ALLOWED_ALWAYS:
                 continue
 
-            if usage.derogation is not None:
+            if any(u.derogation is not None for u in usages):
                 license_derogations = list(
                     Derogation.objects.for_usage(usage).filter(license=license)
                 )
