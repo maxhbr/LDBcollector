@@ -619,14 +619,9 @@ class SharedReferenceView(
         licenses = list(License.objects.all())
         context["licenses"] = {
             "total": len(licenses),
-            "diff": len([lic for lic in licenses if lic.reference_diff]),
-            "only_local": License.objects.exclude(
-                spdx_id__in=list(
-                    License.objects.using("shared")
-                    .all()
-                    .values_list("spdx_id", flat=True)
-                )
-            ).count(),
+            "identical": len([lic for lic in licenses if lic.reference_diff == 0]),
+            "diff": len([lic for lic in licenses if lic.reference_diff > 0]),
+            "only_local": len([lic for lic in licenses if lic.reference_diff < 0]),
             "only_shared": License.objects.using("shared")
             .exclude(spdx_id__in=(lic.spdx_id for lic in licenses))
             .count(),
@@ -635,12 +630,9 @@ class SharedReferenceView(
         generics = list(Generic.objects.all())
         context["generics"] = {
             "total": len(generics),
-            "diff": len([gen for gen in generics if gen.reference_diff]),
-            "only_local": Generic.objects.exclude(
-                name__in=list(
-                    Generic.objects.using("shared").all().values_list("name", flat=True)
-                )
-            ).count(),
+            "identical": len([gen for gen in generics if gen.reference_diff == 0]),
+            "diff": len([gen for gen in generics if gen.reference_diff > 0]),
+            "only_local": len([gen for gen in generics if gen.reference_diff < 0]),
             "only_shared": Generic.objects.using("shared")
             .exclude(name__in=(gen.name for gen in generics))
             .count(),
