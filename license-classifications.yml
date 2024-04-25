@@ -848,6 +848,14 @@ categorizations:
       - "include-in-notice-file"
       - "property:creativecommons"
 
+  # https://spdx.org/licenses/CC-BY-NC-SA-2.0-UK.html
+  - id: "CC-BY-SA-2.0-UK"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
   - id: "CC-BY-SA-2.5"
     categories:
       - "copyleft-strong"
@@ -1442,6 +1450,14 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/HTMLTIDY.html
+  - id: "HTMLTIDY"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
 
   # https://spdx.org/licenses/HPND.html
   - id: "HPND"
@@ -2550,6 +2566,14 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # https://scancode-licensedb.aboutcode.org/adobe-postscript.html
+  - id: "LicenseRef-scancode-adobe-postscript"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+
   - id: "LicenseRef-scancode-afpl-9.0"
     categories:
       - "free-restricted"
@@ -2999,12 +3023,14 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/ldap-sdk-free-use.html
   - id: "LicenseRef-scancode-ldap-sdk-free-use"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:modification-related-obligations"
 
   - id: "LicenseRef-scancode-ldpgpl-1a"
     categories:
@@ -3254,6 +3280,11 @@ categorizations:
 
   # https://scancode-licensedb.aboutcode.org/other-permissive.html
   - id: "LicenseRef-scancode-other-permissive"
+    categories:
+      - "permissive"
+
+  # https://scancode-licensedb.aboutcode.org/paulo-soares.html
+  - id: "LicenseRef-scancode-paulo-soares"
     categories:
       - "permissive"
 
@@ -3664,6 +3695,13 @@ categorizations:
 
   # https://spdx.org/licenses/MIT-open-group.html
   - id: "MIT-open-group"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MIT-Wu.html
+  - id: "MIT-Wu"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
