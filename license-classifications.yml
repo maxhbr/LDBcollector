@@ -140,7 +140,9 @@ categories:
 
   - name: "property:nuclear-restriction"
     description: >-
-      This property denies the use of the software in a nuclear facility.
+      This property denies the use of the software in a nuclear facility. A mere warranty clause
+      that does not deny use in a nuclear facility, is not considered a restriction under this
+      property.
 
   - name: "property:patent-clause"
     description: >-
@@ -496,7 +498,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
-      - "property:nuclear-restriction"
 
   - id: "BSD-3-Clause-Open-MPI"
     categories:
