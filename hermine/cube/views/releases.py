@@ -33,13 +33,7 @@ from cube.importers import (
     SBOMImportFailure,
     add_product_history,
 )
-from cube.models import (
-    Release,
-    Usage,
-    Generic,
-    History,
-    Product
-)
+from cube.models import Release, Usage, Generic, History, Product
 from cube.utils.licenses import (
     get_usages_obligations,
     get_generic_usages,
@@ -120,7 +114,13 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
             ################### Added by JEMAI Ahmed [Issue 207]#############################""
-            add_product_history(self.request.FILES["file"],str(self.request.FILES["file"]).split(".")[-1],form.cleaned_data.get("linking"), self.request.user,self.object)
+            add_product_history(
+                self.request.FILES["file"],
+                str(self.request.FILES["file"]).split(".")[-1],
+                form.cleaned_data.get("linking"),
+                self.request.user,
+                self.object,
+            )
             #########################################
         except SBOMImportFailure as e:
             form.add_error("file", e)
@@ -142,14 +142,15 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
         return super().form_valid(form)
 
-############ Added bu JEMAI Ahmed [Issue 207]#################
+    ############ Added bu JEMAI Ahmed [Issue 207]#################
     def get_context_data(self, **kwargs: Any):
-
-        context=super().get_context_data(**kwargs)
-        history_model_data = History.objects.filter(related_release = self.object)
-        context['history_model_data'] = history_model_data
+        context = super().get_context_data(**kwargs)
+        history_model_data = History.objects.filter(related_release=self.object)
+        context["history_model_data"] = history_model_data
 
         return context
+
+
 ########################################
 class ReleaseObligationsView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView

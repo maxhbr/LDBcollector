@@ -466,16 +466,21 @@ def parse_spdx_file(spdx_file: File):
 
     return parse_file(spdx_file.name)
 
+
 #########  Added by ahmed jemai [Issue 207] #########
 
-def add_product_history(file_name,file_format,file_component_link, file_author, related_release):
-   
+
+def add_product_history(
+    file_name, file_format, file_component_link, file_author, related_release
+):
     history = History.objects.create(
-     file_name = file_name,
-     file_format = file_format,
-     file_component_link = file_component_link,
-     importation_date = datetime.now(),
-     importation_author = file_author,
-     related_release = related_release
+        file_name=file_name,
+        file_format=file_format,
+        file_component_link=file_component_link,
+        importation_date=datetime.now(),
+        importation_author=file_author,
+        related_release=related_release,
     )
+
+
 ##########################################

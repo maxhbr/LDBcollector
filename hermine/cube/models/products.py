@@ -126,11 +126,12 @@ class Exploitation(models.Model):
 class History(models.Model):
     file_name = models.CharField(max_length=200, blank=True)
     file_format = models.CharField(max_length=10, blank=True)
-    file_component_link = models.CharField(max_length=20,blank=True)
+    file_component_link = models.CharField(max_length=20, blank=True)
     importation_date = models.DateTimeField(max_length=20, blank=True)
     importation_author = models.ForeignKey(User, on_delete=models.PROTECT, blank=True)
-    related_release = models.ForeignKey(Release, on_delete=models.PROTECT, blank=True,default=1)
-    
+    related_release = models.ForeignKey(
+        Release, on_delete=models.PROTECT, blank=True, default=1
+    )
+
     def __str__(self) -> str:
         return super().__str__(self)
-     
