@@ -18,6 +18,7 @@
         "BSD-Original",
         "BSD with advertising",
         "BSD 4-Clause",
-        "scancode:bsd-original"
+        "scancode:bsd-original",
+        "Original BSD license"
     ]
 }
