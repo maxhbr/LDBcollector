@@ -61,19 +61,25 @@
             ],
             "problem": "There are couple of versions of the CPL license (0.5 and 1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
-        "GNU General Public License": {
-            "aliases": [
-                "GPL",
-                "GNU GPL"
-            ],
-            "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
-        },
         "GCC Runtime Library exception": {
             "aliases": [
                 "GCC exception",
                 "GCC Exception"
             ],
             "problem": "This exception has different version (2.0, '2.0 with note' and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "GNU": {
+            "aliases": [
+            ],
+            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
+        },
+        "GNU General Public License": {
+            "aliases": [
+                "GPL",
+                "GNU GPL",
+                "GPL+"
+            ],
+            "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
         "GNU Lesser General Public License": {
             "aliases": [
@@ -88,11 +94,6 @@
                 "LGPLv2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
-        },
-        "GNU": {
-            "aliases": [
-            ],
-            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
         },
         "Mozille Public License": {
             "aliases": [
