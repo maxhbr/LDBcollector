@@ -58,6 +58,7 @@ library
       Ldbcollector.Source.OSLC
       Ldbcollector.Source.Scancode
       Ldbcollector.Source.SPDX
+      Ldbcollector.Source.TLDR
       Ldbcollector.Source.Warpr
       MyPrelude
   other-modules:

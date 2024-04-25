@@ -27,6 +27,7 @@ import Ldbcollector.Source.OSI
 import Ldbcollector.Source.OSLC
 import Ldbcollector.Source.SPDX
 import Ldbcollector.Source.Scancode
+import Ldbcollector.Source.TLDR
 import Ldbcollector.Source.Warpr
 
 applySources :: Vector CurationItem -> LicenseGraphM ()
@@ -57,6 +58,7 @@ applySources curation = do
           applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv"),
           applySource (EclipseOrgLegal "./data/eclipse.org-legal-licenses.json"),
           applySource (Ifross "./data/ifrOSS-ifrOSS.yaml"),
+          applySource (TLDRLicenseNamings "data/tldrlegal/tldrLicenses.csv"),
           applySource (Curation curation)
         ]
   mapM_ (id) sources
