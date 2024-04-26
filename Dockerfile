@@ -26,7 +26,7 @@ RUN npm run build
 FROM python:3.12-slim-bullseye as runtime
 
 ARG INSTALL_PATH=/opt/hermine
-ARG POETRY_VERSION=1.6.1
+ARG POETRY_VERSION=1.8.2
 ARG GUNICORN_VERSION=21.2.0
 
 ENV \
