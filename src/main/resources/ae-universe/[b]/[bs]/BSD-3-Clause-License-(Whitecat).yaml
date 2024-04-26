@@ -2,7 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "BSD 2-Clause License (copyright holder variant; retain first lines)"
+canonicalName: "BSD 3-Clause License (Whitecat)"
 category: "BSD"
-spdxIdentifier: "BSD-2-clause-first-lines"
+shortName: "BSD-3-Clause-Whitecat"
 
+alternativeNames:
+  - "Whitecat License"
+
+otherIds: 
+  - "scancode:whitecat"

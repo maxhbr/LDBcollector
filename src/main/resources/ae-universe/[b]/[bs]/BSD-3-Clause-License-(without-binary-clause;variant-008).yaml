@@ -4,10 +4,11 @@
 
 canonicalName: "BSD 3-Clause License (without binary clause; variant 008)"
 category: "BSD"
-shortName: "BSD-3-Clause-without-binary-008"
+spdxIdentifier: "BSD-Source-beginning-file"
 
 alternativeNames:
   - "BSD 1-Clause License (do not endorse)"
+  - "BSD Source Code Attribution - beginning of file variant"
 
 otherIds: 
   - "scancode:bsd-top"

@@ -4,9 +4,14 @@
 
 canonicalName: "BSD 2-Clause License (Simplified Darwin)"
 category: "BSD 2-Clause Simplified Darwin"
-shortName: "BSD-2-Clause-Simplified-Darwin"
+spdxIdentifier: "BSD-2-Clause-Darwin"
 
 openCoDEStatus: "approved"
+
+alternativeNames:
+  - "BSD 2-Clause License (Simplified Darwin)"
+  - "BSD-2-Clause-Darwin"
+  - "BSD 2-Clause - Ian Darwin variant"
 
 otherIds: 
   - "scancode:bsd-simplified-darwin"
