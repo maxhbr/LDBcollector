@@ -498,7 +498,7 @@ class FossLicenses:
 
         """
         # List all aliases that exist
-        return self.license_db[AMBIG_TAG]
+        return self.license_db[AMBIG_TAG]['ambiguities']
 
     def known_symbols(self):
         """Returns a list of all all known license symbols.
@@ -511,7 +511,7 @@ class FossLicenses:
         """
         _symbols = set()
 
-        ambiguities = self.ambiguities_list()['ambiguities']
+        ambiguities = self.ambiguities_list()
         for ambig in ambiguities:
             _symbols.add(ambig)
             _symbols.update(set(ambiguities[ambig]['aliases']))
