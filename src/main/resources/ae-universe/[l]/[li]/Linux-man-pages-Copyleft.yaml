@@ -12,3 +12,5 @@ alternativeNames:
   - "Linux man-pages Copyleft"
   - "https://www.kernel.org/doc/man-pages/licenses.html"
 
+otherIds: 
+  - "scancode:linux-man-pages-copyleft-var"

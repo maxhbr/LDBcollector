@@ -11,4 +11,5 @@ type: "exception"
 alternativeNames:
   - "GCC Runtime Library exception 2.0"
   - "Linking Exception (GPL; variant 027)"
+  - "Linking-Exception-GPL-027"
 
