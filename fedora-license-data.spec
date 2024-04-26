@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.45
+Version:        1.46
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,15 @@ make check-grammar
 
 
 %changelog
+* Fri Apr 26 2024 Miroslav Suchý <msuchy@redhat.com> 1.46-1
+- rename LicenseRef-Catharon to Catharon
+- add NCL license
+- add HPND-UC-export-US license
+- Add GPL-2.0-only_WITH_cryptsetup-OpenSSL-exception
+- add Sun-PPP-2000 license
+- add BSD-2-clause-first-lines license
+- add pkgconf license
+
 * Fri Apr 12 2024 Miroslav Suchý <msuchy@redhat.com> 1.45-1
 - Update public-domain-text.txt for OpenCTM
 - lark-parser was renamed to lark, allow both
