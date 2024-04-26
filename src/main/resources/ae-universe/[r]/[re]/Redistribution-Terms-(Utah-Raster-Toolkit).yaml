@@ -2,11 +2,16 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Redistribution Terms (variant 012)"
+canonicalName: "Redistribution Terms (Utah Raster Toolkit)"
 category: "RT"
-shortName: "RT-Var012"
+shortName: "RT-Utah-Raster-Tolkit"
+spdxIdentifier: "URT-RLE"
 
 openCoDEStatus: "approved"
 
+alternativeNames:
+  - "Utah Raster Toolkit Run Length Encoded License"
+
 otherIds: 
   - "OpenCoDE:RT-Var012"
+  - "scancode:urt-rle"
