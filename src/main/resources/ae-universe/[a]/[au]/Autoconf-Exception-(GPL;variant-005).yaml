@@ -5,13 +5,17 @@
 canonicalName: "Autoconf Exception (GPL; variant 005)"
 category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL-005"
+spdxIdentifier: "Autoconf-exception-macro"
 
 type: "exception"
 
 alternativeNames:
+  - "Autoconf Exception (GPL; variant 005)"
   - "Autoconf Macro Exception"
   - "Autoconf-Macro-Exception"
   - "autoconf-macro-exception"
+  - "Autoconf-exception-macro"
+  - "Autoconf macro exception"
 
 otherIds: 
   - "scancode:autoconf-macro-exception"

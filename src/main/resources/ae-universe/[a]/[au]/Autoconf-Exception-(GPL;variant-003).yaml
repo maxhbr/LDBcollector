@@ -5,8 +5,14 @@
 canonicalName: "Autoconf Exception (GPL; variant 003)"
 category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL-003"
+spdxIdentifier: "Autoconf-exception-generic-3.0"
 
 type: "exception"
+
+alternativeNames:
+  - "Autoconf Exception (GPL; variant 003)"
+  - "Autoconf-exception-3.0"
+  - "Autoconf exception 3.0"
 
 otherIds: 
   - "scancode:autoconf-simple-exception"

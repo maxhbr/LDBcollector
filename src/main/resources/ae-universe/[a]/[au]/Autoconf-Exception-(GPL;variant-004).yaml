@@ -5,11 +5,15 @@
 canonicalName: "Autoconf Exception (GPL; variant 004)"
 category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL-004"
+spdxIdentifier: "Autoconf-exception-generic"
 
 type: "exception"
 
 alternativeNames:
+  - "Autoconf Exception (GPL; variant 004)"
   - "autoconf-simple-exception-2.0"
+  - "Autoconf-exception-generic"
+  - "Autoconf generic exception"
 
 otherIds: 
   - "scancode:autoconf-simple-exception-2.0"
