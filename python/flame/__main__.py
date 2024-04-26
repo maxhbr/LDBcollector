@@ -117,20 +117,25 @@ def get_parser():
     parser_a.set_defaults(which='aliases', func=aliases)
     parser_a.add_argument('--include-license', '-il', type=str, dest='include_license', help='List only the aliases for licenses containing the given string (case insensitive)', default=None)
 
+    # ambiguities
+    parser_os = subparsers.add_parser(
+        'ambiguities', help='Display all ambiguities')
+    parser_os.set_defaults(which='ambiguities', func=ambiguities)
+
     # compatbilities
     parser_cs = subparsers.add_parser(
         'compats', help='Display all compatibilities')
     parser_cs.set_defaults(which='compats', func=compats)
 
-    # operators
-    parser_os = subparsers.add_parser(
-        'operators', help='Display all operators')
-    parser_os.set_defaults(which='operators', func=operators)
-
     # licenses
     parser_cs = subparsers.add_parser(
         'licenses', help='show all licenses')
     parser_cs.set_defaults(which='licenses', func=licenses)
+
+    # operators
+    parser_os = subparsers.add_parser(
+        'operators', help='Display all operators')
+    parser_os.set_defaults(which='operators', func=operators)
 
     # unknown
     parser_u = subparsers.add_parser(
@@ -143,6 +148,10 @@ def get_parser():
 def parse():
 
     return get_parser().parse_args()
+
+def ambiguities(fl, formatter, args):
+    all_ambiguities = fl.ambiguities_list()
+    return formatter.format_ambiguities(all_ambiguities)
 
 def operators(fl, formatter, args):
     all_op = fl.operators()
