@@ -214,7 +214,7 @@ class OutputFormatter():
         :type all_aliases: list
         :param verbose: provide additional information
         :type verbose: boolean
-        :raise FlameException: if all_compats is not valid
+        :raise FlameException: if compats is not valid
         :return: formatted string
         :rtype: str
 
@@ -237,7 +237,7 @@ class OutputFormatter():
         :type operators: list
         :param verbose: provide additional information
         :type verbose: boolean
-        :raise FlameException: if all_compats is not valid
+        :raise FlameException: if operators is not valid
         :return: formatted string
         :rtype: str
 
@@ -248,6 +248,29 @@ class OutputFormatter():
         >>> operators = fl.operators()
         >>> formatter = OutputFormatterFactory.formatter("TEXT")
         >>> formatted = formatter.format_operators(operators)
+
+        """
+        return None, None
+
+    def format_ambiguities(self, ambiguities, verbose=False):
+        """
+        Return a formatted string of the existing ambiguities
+
+        :param operators: A list of ambiguites.
+        :type operators: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if ambiguites is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> ambiguities = fl.ambiguities_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_ambiguities(ambiguities)
 
         """
         return None, None
@@ -285,6 +308,9 @@ class JsonOutputFormatter(OutputFormatter):
     def format_operators(self, operators, verbose=False):
         return json.dumps(operators), None
 
+    def format_ambiguities(self, ambiguities, verbose=False):
+        return json.dumps(ambiguities), None
+
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
@@ -313,6 +339,9 @@ class YamlOutputFormatter(OutputFormatter):
 
     def format_operators(self, operators, verbose=False):
         return yaml.safe_dump(operators), None
+
+    def format_ambiguities(self, ambiguities, verbose=False):
+        return yaml.safe_dump(ambiguities), None
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -376,6 +405,12 @@ class TextOutputFormatter(OutputFormatter):
 
     def format_operators(self, operators, verbose=False):
         return '\n'.join([f'{k} -> {v}' for k, v in operators.items()]), None
+
+    def format_ambiguities(self, ambiguities, verbose=False):
+        ret = []
+        for k, v in ambiguities.items():
+            ret += [f'{a} -> {k}' for a in v['aliases']]
+        return '\n'.join(ret), None
 
     def format_error(self, error, verbose=False):
         return f'Error: {error}', None
