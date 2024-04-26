@@ -106,6 +106,18 @@ py-release: check clean build
 	@echo "To upload: "
 	@echo "twine upload --repository foss-flame --verbose  dist/*"
 
+stats:
+	@echo -n "licenses:     "
+	@PYTHONPATH=./python ./python/flame/__main__.py licenses | wc -l
+	@echo -n "aliases:      "
+	@PYTHONPATH=./python ./python/flame/__main__.py aliases | wc -l
+	@echo -n "compats:      "
+	@PYTHONPATH=./python ./python/flame/__main__.py compats | wc -l
+	@echo -n "operators:    "
+	@PYTHONPATH=./python ./python/flame/__main__.py operators | wc -l
+	@echo -n "ambiguities:  "
+	@PYTHONPATH=./python ./python/flame/__main__.py ambiguities | wc -l
+
 clean:
 	find . -name "*~"    | xargs rm -fr
 	find . -name "*.pyc" | xargs rm -fr
