@@ -4,5 +4,9 @@
 
 canonicalName: "Three Part Table License"
 category: "Three Part Table"
-shortName: "Three-Part-Table"
+spdxIdentifier: "threeparttable"
+
+alternativeNames:
+  - "Three Part Table License"
+  - "threeparttable License"
 

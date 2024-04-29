@@ -2,9 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "MIT License (variant 003)"
-category: "MIT"
-shortName: "MIT-Var003"
+canonicalName: "Permission Terms (Nettrek)"
+category: "Permission"
+shortName: "PT-Nettrek"
 
-otherIds: 
-  - "scancode:x11-fsf"

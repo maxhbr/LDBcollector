@@ -2,14 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Spherepack License"
-category: "Spherepack"
-shortName: "Spherepack"
-
-openCoDEStatus: "approved"
+canonicalName: "Vtiger Public License 1.2"
+category: "Vtiger Public"
+shortName: "VPL-1.2"
 
 alternativeNames:
-  - "Spherepack License"
+  - "Vtiger Public License v1.2"
 
 otherIds: 
-  - "scancode:fftpack-2004"
+  - "scancode:vpl-1.2"

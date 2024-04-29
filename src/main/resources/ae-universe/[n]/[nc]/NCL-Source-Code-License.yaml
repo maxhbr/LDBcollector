@@ -2,15 +2,15 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "X11-Style (Adobe)"
-category: "X11-Style (Adobe)"
-shortName: "X11-Adobe"
+canonicalName: "NCL Source Code License"
+category: "NCL Source Code"
+spdxIdentifier: "NCL"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
-  - "X11-Style (Adobe)"
-  - "X11-Adobe"
+  - "Spherepack License"
+  - "NCL Source Code License"
 
 otherIds: 
-  - "scancode:x11-adobe"
+  - "scancode:fftpack-2004"

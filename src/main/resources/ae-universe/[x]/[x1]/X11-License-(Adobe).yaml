@@ -2,12 +2,15 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "W3C Document License"
-category: "W3C"
-shortName: "W3C-Document"
+canonicalName: "X11 License (Adobe)"
+category: "X11"
+shortName: "X11-Adobe"
+
+openCoDEStatus: "approved"
 
 alternativeNames:
-  - "W3C Document License"
+  - "X11-Style (Adobe)"
+  - "X11-Adobe"
 
 otherIds: 
-  - "scancode:w3c-docs-20021231"
+  - "scancode:x11-adobe"

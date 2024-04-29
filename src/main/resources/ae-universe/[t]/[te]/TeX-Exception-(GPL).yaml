@@ -5,11 +5,15 @@
 canonicalName: "TeX Exception (GPL)"
 category: "GPL TeX Exception"
 shortName: "TeX-Exception-GPL"
+spdxIdentifier: "Texinfo-exception"
 
 type: "exception"
 
 alternativeNames:
   - "TeX Exception (to GPL 3.0)"
+  - "TeX Exception (GPL)"
+  - "Texinfo-exception"
+  - "Texinfo exception"
 
 otherIds: 
   - "scancode:tex-exception"

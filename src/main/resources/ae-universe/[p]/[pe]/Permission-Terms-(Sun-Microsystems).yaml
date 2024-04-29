@@ -4,5 +4,10 @@
 
 canonicalName: "Permission Terms (Sun Microsystems)"
 category: "Permission"
-shortName: "PT-Sun"
+spdxIdentifier: "Sun-PPP-2000"
+
+alternativeNames:
+  - "Permission Terms (Sun Microsystems)"
+  - "Sun PPP License (2000)"
+  - "Sun-PPP-2000"
 

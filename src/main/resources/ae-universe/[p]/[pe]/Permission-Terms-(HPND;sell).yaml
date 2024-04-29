@@ -8,5 +8,4 @@ shortName: "PT-Var035"
 spdxIdentifier: "HPND-sell-variant"
 
 otherIds: 
-  - "scancode:historical-sell-variant"
   - "scancode:x11-keith-packard"

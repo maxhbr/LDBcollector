@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Morbig IEEE Std 1003.1 Usage"
+category: "Morbig IEEE Std 1003.1"
+shortName: "Morbig-IEEE-1003.1-Usage"
+
+alternativeNames:
+  - "Morbig IEEE Std Usage"
+  - "IEEE Std 1003.1 Text Usage"
+
+otherIds: 
+  - "scancode:morbig-ieee-std-usage"

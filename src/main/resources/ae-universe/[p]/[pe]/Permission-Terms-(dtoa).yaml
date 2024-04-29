@@ -2,9 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Permission Terms (property; variant 001)"
+canonicalName: "Permission Terms (dtoa)"
 category: "Permission"
-shortName: "PT-P-001"
+spdxIdentifier: "dtoa"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "David M. Gay dtoa License"
 
 otherIds: 
-  - "scancode:amd-historical"
+  - "scancode:x11-lucent"

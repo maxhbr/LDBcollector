@@ -5,7 +5,9 @@
 canonicalName: "XZoom License"
 category: "XZoom License"
 shortName: "XZoom"
+spdxIdentifier: "xzoom"
 
 alternativeNames:
   - "XZoom License"
+  - "xzoom License"
 

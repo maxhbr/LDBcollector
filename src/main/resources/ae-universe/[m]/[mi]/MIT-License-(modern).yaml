@@ -2,8 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "MIT License Modern Variant"
-category: "MIT-Modern-Variant"
+canonicalName: "MIT License (modern)"
+category: "MIT Modern"
+shortName: "MIT-modern"
 spdxIdentifier: "MIT-Modern-Variant"
 
 openCoDEStatus: "approved"
@@ -15,3 +16,5 @@ alternativeNames:
   - "https://ptolemy.berkeley.edu/copyright.htm"
   - "https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html"
 
+otherIds: 
+  - "scancode:mit-modern"

@@ -4,12 +4,13 @@
 
 canonicalName: "X11-Style (OAR)"
 category: "X11-Style (OAR)"
-shortName: "X11-OAR"
+spdxIdentifier: "OAR"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "X11-Style (OAR)"
+  - "OAR License"
 
 otherIds: 
   - "scancode:x11-oar"

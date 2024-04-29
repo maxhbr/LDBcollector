@@ -5,11 +5,14 @@
 canonicalName: "Object Form MIT Exception"
 category: "Object Form MIT Exception"
 shortName: "Object-Form-MIT-Exception"
+spdxIdentifier: "fmt-exception"
 
 type: "exception"
 
 alternativeNames:
-  - "As an exception, if, as a result of your compiling your source code, portions of this Software are embedded into a machine-executable object form of such source code, you may redistribute such embedded portions in such object form without including the above copyright and permission notices"
+  - "Object Form MIT Exception"
+  - "fmt-exception"
+  - "fmt exception"
 
 otherIds: 
   - "scancode:object-form-exception-to-mit"

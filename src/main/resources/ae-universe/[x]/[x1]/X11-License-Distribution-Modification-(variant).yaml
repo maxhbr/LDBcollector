@@ -13,3 +13,5 @@ alternativeNames:
   - "X11 License Distribution Modification Variant"
   - "X11 License Distribution Modification (variant)"
 
+otherIds: 
+  - "scancode:x11-fsf"

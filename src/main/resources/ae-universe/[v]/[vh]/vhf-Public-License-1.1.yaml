@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "David M. Gay dtoa License"
-category: "dtoa"
-spdxIdentifier: "dtoa"
-
-openCoDEStatus: "approved"
+canonicalName: "vhf Public License 1.1"
+category: "vhf Public"
+shortName: "vhf-PL-1.1"
 
 alternativeNames:
-  - "David M. Gay dtoa License"
+  - "vhfPL"
+  - "vhf Public License"
 
+otherIds: 
+  - "scancode:vhfpl-1.1"
