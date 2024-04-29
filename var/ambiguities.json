@@ -103,6 +103,17 @@
                 "MPLv1"
             ],
             "problem": "This license has different version (1.0, 1.1 and 2.0). Without a version number clearly distinguishing the versions it is not possible to determine which of the versions is meant."
+        },
+        "Python Software Foundation License": {
+            "aliases": [
+                "PSF",
+                "PSFL",
+                "Python",
+                "Python Software Foundation License",
+                "PSF LICENSE AGREEMENT",
+                "PSF License"
+            ],
+            "problem": "This license has different version (2.0 and 2.0.1). Without a version number clearly distinguishing the versions it is not possible to determine which of the versions is meant."
         }
     }
 }
