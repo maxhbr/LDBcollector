@@ -56,6 +56,8 @@ check_license_schema:
 check-reuse: clean
 	reuse --suppress-deprecation lint
 
+lint: check-reuse py-lint
+
 license: check_license_files 
 
 .PHONY: python check-py-cli
