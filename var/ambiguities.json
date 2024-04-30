@@ -61,6 +61,12 @@
             ],
             "problem": "There are couple of versions of the CPL license (0.5 and 1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
+        "Eiffel Forum License": {
+            "aliases": [
+                "License :: OSI Approved :: Eiffel Forum License",
+            ],
+            "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
         "GCC Runtime Library exception": {
             "aliases": [
                 "GCC exception",
