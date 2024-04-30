@@ -155,6 +155,9 @@ check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
 
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
+check_presence EFL-1.0 " -e 1.0 -e 1" " -e 2"
+check_presence EFL-2.0 " -e 2.0 -e 2" " -e 1"
+
 check_presence EPL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EPL-2.0 " -e 2.0 -e 2" " -e 1"
 
@@ -176,7 +179,7 @@ check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2"
 
 check_presence IJG " -i -e ijg -e independent -e jpeg " ""
 
-check_presence LGPL-2.0-only " -e 2.0 " " -e 3  -e later"
+check_presence LGPL-2.0-only " -e 2.0 -e 2 " " -e 3  -e later"
 check_presence LGPL-2.1-only " -e 2.1 " " -e 3  -e later"
 check_presence LGPL-3.0-only " -e 3 " " -e 2  -e later"
 
