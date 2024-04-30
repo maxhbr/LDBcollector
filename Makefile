@@ -58,7 +58,7 @@ check-reuse: clean
 
 lint: check-reuse py-lint
 
-license: check_license_files 
+license: check_license_files check-py-cli
 
 .PHONY: python check-py-cli
 python: py-test py-sort py-lint check-py-cli py-doctest py-doc
