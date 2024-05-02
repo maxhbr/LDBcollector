@@ -45,7 +45,7 @@ ENV \
 WORKDIR $INSTALL_PATH
 
 # debug
-RUN apt-get update && apt-get install -y postgresql-client net-tools
+RUN apt-get update && apt-get install -y postgresql-client net-tools && rm -rf /var/lib/apt/lists/*
 
 # install poetry and dependencies
 ARG OPTIONAL_PIP_INSTALL=""
