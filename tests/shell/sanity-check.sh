@@ -203,6 +203,10 @@ check_presence OFL-1.1 " -e 1.1" " -e 1.0"
 check_presence TU-Berlin-1.0 " -e 1" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
+check_presence W3C " -i -e w3c -e w3.org " " -e 1998 -e 2015 "
+check_presence W3C-19980720 " 1998 " " -e 2015 "
+check_presence W3C-20150513 " 2015 " " -e 1998 "
+
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT'" 
 
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
