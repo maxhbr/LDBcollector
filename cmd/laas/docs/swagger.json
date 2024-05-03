@@ -873,6 +873,36 @@
                 }
             }
         },
+        "/obligations/export": {
+            "get": {
+                "description": "Export all obligations as a json file",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Export all obligations as a json file",
+                "operationId": "ExportObligations",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.ObligationJSONFileFormat"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Failed to fetch obligations",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/obligations/import": {
             "post": {
                 "security": [
@@ -1814,6 +1844,72 @@
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.ObligationJSONFileFormat": {
+            "type": "object",
+            "required": [
+                "active",
+                "classification",
+                "comment",
+                "modifications",
+                "shortnames",
+                "text",
+                "text_updatable",
+                "topic",
+                "type"
+            ],
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "classification": {
+                    "type": "string",
+                    "enum": [
+                        "green",
+                        "white",
+                        "yellow",
+                        "red"
+                    ]
+                },
+                "comment": {
+                    "type": "string",
+                    "example": "This is a comment."
+                },
+                "modifications": {
+                    "type": "boolean"
+                },
+                "shortnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "GPL-2.0-only",
+                        "GPL-2.0-or-later"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "example": "Source code be made available when distributing the software."
+                },
+                "text_updatable": {
+                    "type": "boolean"
+                },
+                "topic": {
+                    "description": "binding:\"required\" tag cannot be used as is works only for request body",
+                    "type": "string",
+                    "example": "copyleft"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "obligation",
+                        "restriction",
+                        "risk",
+                        "right"
+                    ]
                 }
             }
         },

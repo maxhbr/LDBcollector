@@ -345,6 +345,57 @@ definitions:
         example: 200
         type: integer
     type: object
+  models.ObligationJSONFileFormat:
+    properties:
+      active:
+        type: boolean
+      classification:
+        enum:
+        - green
+        - white
+        - yellow
+        - red
+        type: string
+      comment:
+        example: This is a comment.
+        type: string
+      modifications:
+        type: boolean
+      shortnames:
+        example:
+        - GPL-2.0-only
+        - GPL-2.0-or-later
+        items:
+          type: string
+        type: array
+      text:
+        example: Source code be made available when distributing the software.
+        type: string
+      text_updatable:
+        type: boolean
+      topic:
+        description: binding:"required" tag cannot be used as is works only for request
+          body
+        example: copyleft
+        type: string
+      type:
+        enum:
+        - obligation
+        - restriction
+        - risk
+        - right
+        type: string
+    required:
+    - active
+    - classification
+    - comment
+    - modifications
+    - shortnames
+    - text
+    - text_updatable
+    - topic
+    - type
+    type: object
   models.ObligationMapResponse:
     properties:
       data:
@@ -1256,6 +1307,26 @@ paths:
       security:
       - ApiKeyAuth: []
       summary: Fetches audits corresponding to an obligation
+      tags:
+      - Obligations
+  /obligations/export:
+    get:
+      description: Export all obligations as a json file
+      operationId: ExportObligations
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.ObligationJSONFileFormat'
+            type: array
+        "500":
+          description: Failed to fetch obligations
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Export all obligations as a json file
       tags:
       - Obligations
   /obligations/import:

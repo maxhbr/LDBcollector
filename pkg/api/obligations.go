@@ -15,6 +15,7 @@ import (
 	"net/http"
 	"path/filepath"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/fossology/LicenseDb/pkg/db"
@@ -483,7 +484,7 @@ func GetObligationAudits(c *gin.Context) {
 //	@Tags			Obligations
 //	@Accept			multipart/form-data
 //	@Produce		json
-//	@Param			file	formData	file true "obligations json file list"
+//	@Param			file	formData	file	true	"obligations json file list"
 //	@Success		200		{object}	models.ImportObligationsResponse{data=[]models.ObligationImportStatus}
 //	@Failure		400		{object}	models.LicenseError	"input file must be present"
 //	@Failure		500		{object}	models.LicenseError	"Internal server error"
@@ -517,7 +518,7 @@ func ImportObligations(c *gin.Context) {
 		return
 	}
 
-	var obligations []models.ObligationImport
+	var obligations []models.ObligationJSONFileFormat
 	decoder := json.NewDecoder(file)
 	if err := decoder.Decode(&obligations); err != nil {
 		er := models.LicenseError{
@@ -620,6 +621,77 @@ func ImportObligations(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, res)
+}
+
+// ExportObligations gives users all obligations as a json file.
+//
+//	@Summary		Export all obligations as a json file
+//	@Description	Export all obligations as a json file
+//	@Id				ExportObligations
+//	@Tags			Obligations
+//	@Produce		json
+//	@Success		200	{array}		models.ObligationJSONFileFormat
+//	@Failure		500	{object}	models.LicenseError	"Failed to fetch obligations"
+//	@Router			/obligations/export [get]
+func ExportObligations(c *gin.Context) {
+	var obligations []models.Obligation
+	var obligationsJSONFileFormat []models.ObligationJSONFileFormat
+
+	if err := db.DB.Model(&models.Obligation{}).Find(&obligations).Error; err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "Failed to fetch obligations",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+
+	for _, obligation := range obligations {
+		var obligationMaps []models.ObligationMap
+		if err := db.DB.Model(&obligationMaps).Preload("LicenseDB").Where(models.ObligationMap{ObligationPk: obligation.Id}).Find(&obligationMaps).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to fetch obligations",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return
+		}
+
+		var shortnames []string
+		for _, obMap := range obligationMaps {
+			shortnames = append(shortnames, obMap.LicenseDB.Shortname)
+		}
+
+		obJSONFileFormat := models.ObligationJSONFileFormat{
+			Topic:          obligation.Topic,
+			Type:           obligation.Type,
+			Text:           obligation.Text,
+			Shortnames:     shortnames,
+			TextUpdatable:  obligation.TextUpdatable,
+			Active:         obligation.Active,
+			Modifications:  obligation.Modifications,
+			Comment:        obligation.Comment,
+			Classification: obligation.Classification,
+		}
+
+		obligationsJSONFileFormat = append(obligationsJSONFileFormat, obJSONFileFormat)
+	}
+
+	fileName := strings.Map(func(r rune) rune {
+		if r == '+' || r == ':' {
+			return '_'
+		}
+		return r
+	}, fmt.Sprintf("obligations-export-%s.json", time.Now().Format(time.RFC3339)))
+
+	c.Header("Content-Disposition", fmt.Sprintf("attachment; filename=%s", fileName))
+	c.JSON(http.StatusOK, &obligationsJSONFileFormat)
 }
 
 // addChangelogsForObligationUpdate adds changelogs for the updated fields on obligation update
