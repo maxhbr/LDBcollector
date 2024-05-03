@@ -418,6 +418,41 @@
                 }
             }
         },
+        "/licenses/export": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Export all licenses as a json file",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Export all licenses as a json file",
+                "operationId": "ExportLicenses",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.ExportLicenseDB"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Failed to fetch Licenses",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/licenses/import": {
             "post": {
                 "security": [
@@ -1506,6 +1541,83 @@
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.ExportLicenseDB": {
+            "type": "object",
+            "properties": {
+                "external_ref": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                },
+                "marydone": {
+                    "type": "boolean"
+                },
+                "rf_FSFfree": {
+                    "type": "boolean"
+                },
+                "rf_Fedora": {
+                    "type": "string"
+                },
+                "rf_GPLv2compatible": {
+                    "type": "boolean"
+                },
+                "rf_GPLv3compatible": {
+                    "type": "boolean"
+                },
+                "rf_OSIapproved": {
+                    "type": "boolean"
+                },
+                "rf_active": {
+                    "type": "boolean"
+                },
+                "rf_add_date": {
+                    "type": "string",
+                    "example": "2023-12-01T18:10:25.00+05:30"
+                },
+                "rf_copyleft": {
+                    "type": "boolean"
+                },
+                "rf_detector_type": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "rf_flag": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "rf_fullname": {
+                    "type": "string",
+                    "example": "MIT License"
+                },
+                "rf_notes": {
+                    "type": "string",
+                    "example": "This license has been superseded."
+                },
+                "rf_risk": {
+                    "type": "integer"
+                },
+                "rf_shortname": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "rf_source": {
+                    "type": "string"
+                },
+                "rf_spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "rf_text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                },
+                "rf_text_updatable": {
+                    "type": "boolean"
+                },
+                "rf_url": {
+                    "type": "string",
+                    "example": "https://opensource.org/licenses/MIT"
                 }
             }
         },

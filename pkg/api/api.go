@@ -71,6 +71,7 @@ func Router() *gin.Engine {
 		{
 			licenses.GET("", FilterLicense)
 			licenses.GET(":shortname", GetLicense)
+			licenses.GET("export", ExportLicenses)
 		}
 		search := unAuthorizedv1.Group("/search")
 		{
