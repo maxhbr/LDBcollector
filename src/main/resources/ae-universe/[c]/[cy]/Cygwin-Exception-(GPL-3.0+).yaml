@@ -2,12 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Cygwin License"
-category: "Cygwin"
-shortName: "Cygwin"
+canonicalName: "Cygwin Exception (GPL 3.0+)"
+category: "Cygwin Exception"
+shortName: "Cygwin-Exception-GPL-3.0+"
 
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "GPL-3.0-or-later"
+
+type: "exception"
 
 alternativeNames:
   - "Cygwin License"
@@ -16,3 +18,5 @@ alternativeNames:
   - "ftp://ftp.nstream.pl/Rozne/iperf-2.0.5-2-win32/doc/cygwin.html"
   - "<http://gnu.org/licenses/>"
 
+otherIds: 
+  - "scancode:cygwin-exception-3.0"

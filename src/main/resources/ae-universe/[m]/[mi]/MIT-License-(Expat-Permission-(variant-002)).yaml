@@ -2,9 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "BSD 2-Clause License (variant 015)"
-category: "BSD"
-shortName: "BSD-2-Clause-015"
+canonicalName: "MIT License (Expat Permission (variant 002))"
+category: "MIT"
+shortName: "MIT-Expat-Permission-002"
 
-otherIds: 
-  - "scancode:bsd-2-clause-freebsd"
