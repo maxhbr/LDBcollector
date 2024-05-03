@@ -7,6 +7,9 @@ category: "vsftpd-openssl-exception"
 shortName: "vsftpd-OpenSSL-Exception"
 spdxIdentifier: "vsftpd-openssl-exception"
 
+canonicalNameHistory:
+  - "vsftpd OpenSSL exception"
+
 type: "exception"
 
 alternativeNames:

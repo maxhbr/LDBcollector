@@ -7,6 +7,9 @@ category: "libpri-OpenH323-exception"
 shortName: "libpri-OpenH323-Exception"
 spdxIdentifier: "libpri-OpenH323-exception"
 
+canonicalNameHistory:
+  - "libpri OpenH323 exception"
+
 type: "exception"
 
 alternativeNames:
