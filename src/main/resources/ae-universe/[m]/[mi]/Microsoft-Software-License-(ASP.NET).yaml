@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (ASP.NET)"
 category: "Microsoft Software"
 shortName: "MS-Software-ASP-NET"
 
+canonicalNameHistory:
+  - "Microsoft ASP.NET Software License"
+
 alternativeNames:
   - "Microsoft ASP.NET Software License"
   - "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_TRK.htm"

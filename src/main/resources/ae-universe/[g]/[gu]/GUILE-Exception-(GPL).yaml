@@ -6,6 +6,9 @@ canonicalName: "GUILE Exception (GPL)"
 category: "GPL GUILE Exception"
 shortName: "GUILE-Exception-GPL"
 
+canonicalNameHistory:
+  - "GUILE Exception"
+
 type: "exception"
 
 alternativeNames:

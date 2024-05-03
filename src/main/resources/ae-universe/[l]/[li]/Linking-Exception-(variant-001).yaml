@@ -7,6 +7,9 @@ category: "Linking Exception"
 shortName: "Linking-Exception-001"
 spdxIdentifier: "i2p-gpl-java-exception"
 
+canonicalNameHistory:
+  - "i2p GPL+Java Exception"
+
 type: "exception"
 
 otherIds: 

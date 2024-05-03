@@ -6,3 +6,6 @@ canonicalName: "BSD 2-Clause License (variant 008)"
 category: "BSD"
 shortName: "BSD-2-Clause-008"
 
+canonicalNameHistory:
+  - "BSD 2-Clause License Var008"
+

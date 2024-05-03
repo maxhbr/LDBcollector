@@ -6,6 +6,10 @@ canonicalName: "Text Tabs Wrap License"
 category: "TTWL Tabs"
 spdxIdentifier: "TTWL"
 
+canonicalNameHistory:
+  - "TTWL Tabs"
+  - "Text-Tabs+Wrap License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

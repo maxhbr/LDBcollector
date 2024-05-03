@@ -6,6 +6,9 @@ canonicalName: "Morbig IEEE Std 1003.1 Usage"
 category: "Morbig IEEE Std 1003.1"
 shortName: "Morbig-IEEE-1003.1-Usage"
 
+canonicalNameHistory:
+  - "IEEE Std 1003.1 Text Usage"
+
 alternativeNames:
   - "Morbig IEEE Std Usage"
   - "IEEE Std 1003.1 Text Usage"

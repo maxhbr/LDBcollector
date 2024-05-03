@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (AGPL; variant 001)"
 category: "AGPL Linking Exception"
 shortName: "Linking-Exception-AGPL-001"
 
+canonicalNameHistory:
+  - "OpenSSL Exception (agpl)"
+
 type: "exception"
 
 alternativeNames:

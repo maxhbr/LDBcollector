@@ -6,5 +6,8 @@ canonicalName: "Microsoft Limited Public License"
 category: "MS-LPL"
 spdxIdentifier: "MS-LPL"
 
+canonicalNameHistory:
+  - "Microsoft LimitedPublic License"
+
 otherIds: 
   - "scancode:ms-lpl"

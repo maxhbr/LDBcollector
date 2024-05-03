@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 024)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-024"
 
+canonicalNameHistory:
+  - "OpenSSL Exception (GPL)"
+
 type: "exception"
 
 otherIds: 

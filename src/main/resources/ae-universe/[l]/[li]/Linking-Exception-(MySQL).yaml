@@ -6,6 +6,10 @@ canonicalName: "Linking Exception (MySQL)"
 category: "MySQL Linking Exception"
 shortName: "Linking-Exception-MySQL"
 
+canonicalNameHistory:
+  - "MySQL linking exception 2018"
+  - "MySQL Linking Exception 2018"
+
 type: "exception"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (with source modification clause)"
 category: "BSD"
 shortName: "BSD-3-Clause-mark-modification"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (mark modification)"
+
 openCoDEStatus: "approved"
 
 otherIds: 

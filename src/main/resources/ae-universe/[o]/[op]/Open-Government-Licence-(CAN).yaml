@@ -6,6 +6,9 @@ canonicalName: "Open Government Licence (CAN)"
 category: "OGL"
 spdxIdentifier: "OGL-Canada-2.0"
 
+canonicalNameHistory:
+  - "Open Government Licence - Canada"
+
 alternativeNames:
   - "OGL-Canada-2.0"
   - "Open Government Licence - Canada"

@@ -6,5 +6,8 @@ canonicalName: "NXP Semiconductors Permission"
 category: "NXP Semiconductors"
 shortName: "NXP-Semiconductors-Permission"
 
+canonicalNameHistory:
+  - "NXP Microcontroller Permission"
+
 otherIds: 
   - "scancode:nxp-microcontroller-proprietary"

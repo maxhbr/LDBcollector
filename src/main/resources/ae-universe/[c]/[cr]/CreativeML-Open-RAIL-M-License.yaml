@@ -6,5 +6,8 @@ canonicalName: "CreativeML Open RAIL-M License"
 category: "CreativeML Open RAIL-M"
 shortName: "CreativeML-Open-RAIL-M"
 
+canonicalNameHistory:
+  - "Stable Diffusion License 2022-08-22"
+
 otherIds: 
   - "scancode:stable-diffusion-2022-08-22"

@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 010)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-010"
 
+canonicalNameHistory:
+  - "Cyrus SASL Exception"
+
 type: "exception"
 
 alternativeNames:

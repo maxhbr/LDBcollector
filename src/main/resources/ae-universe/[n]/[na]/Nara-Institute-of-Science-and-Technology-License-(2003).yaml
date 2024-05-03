@@ -6,6 +6,10 @@ canonicalName: "Nara Institute of Science and Technology License (2003)"
 category: "NAIST"
 spdxIdentifier: "NAIST-2003"
 
+canonicalNameHistory:
+  - "IPADIC Permission Terms"
+  - "NAIST Terms"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

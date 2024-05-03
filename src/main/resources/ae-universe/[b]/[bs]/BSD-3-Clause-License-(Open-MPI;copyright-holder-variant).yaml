@@ -6,5 +6,8 @@ canonicalName: "BSD 3-Clause License (Open MPI; copyright holder variant)"
 category: "BSD"
 shortName: "BSD-3-Clause-Open-MPI-copyright-holder-variant"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (Open MPI; copyright variant)"
+
 otherIds: 
   - "scancode:bsd-3-clause-open-mpi"

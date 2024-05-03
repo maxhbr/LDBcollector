@@ -7,6 +7,9 @@ category: "GPL Bootloader Distribution Exception"
 shortName: "Bootloader-Distribution-Exception-GPL"
 spdxIdentifier: "Bootloader-exception"
 
+canonicalNameHistory:
+  - "Bootloader Distribution Exception"
+
 type: "exception"
 
 alternativeNames:

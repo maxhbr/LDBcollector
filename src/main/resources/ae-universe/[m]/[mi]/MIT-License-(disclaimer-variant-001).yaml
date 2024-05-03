@@ -6,5 +6,8 @@ canonicalName: "MIT License (disclaimer variant 001)"
 category: "MIT"
 shortName: "MIT-disclaimer-variant-001"
 
+canonicalNameHistory:
+  - "MIT License (disclaimer variant)"
+
 otherIds: 
   - "osi:MIT"

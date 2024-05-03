@@ -6,6 +6,9 @@ canonicalName: "BSD 2-Clause License (variant 014)"
 category: "BSD"
 shortName: "BSD-2-Clause-014"
 
+canonicalNameHistory:
+  - "FreeBSD unmodified first lines License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "Restricted Artificial Intelligence License 1.0"
 category: "RAIL"
 shortName: "RAIL-1.0"
 
+canonicalNameHistory:
+  - "Restricted Artificial Intelligence License (RAIL) (version; 1.0)"
+
 osiStatus: "rejected"
 osiCategory: "uncategorized"
 

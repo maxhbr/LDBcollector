@@ -6,6 +6,9 @@ canonicalName: "SGI GLX Public License 1.0"
 category: "SGI GLX Public License"
 shortName: "SGI-GLX-1.0"
 
+canonicalNameHistory:
+  - "GLX Public License 1.0"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

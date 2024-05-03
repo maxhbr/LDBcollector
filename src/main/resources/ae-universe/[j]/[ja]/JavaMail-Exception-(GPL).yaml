@@ -7,6 +7,9 @@ category: "GPL JavaMail Exception"
 shortName: "JavaMail-Exception-GPL"
 spdxIdentifier: "gnu-javamail-exception"
 
+canonicalNameHistory:
+  - "GNU JavaMail Exception"
+
 type: "exception"
 
 alternativeNames:

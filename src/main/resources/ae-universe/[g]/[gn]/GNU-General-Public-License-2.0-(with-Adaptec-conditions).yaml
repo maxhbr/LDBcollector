@@ -6,6 +6,9 @@ canonicalName: "GNU General Public License 2.0 (with Adaptec conditions)"
 category: "GPL-Adaptec"
 shortName: "GP-2.0-Adaptec"
 
+canonicalNameHistory:
+  - "GPL 2.0 plus Adaptec conditions"
+
 alternativeNames:
   - "gpl-2.0-adaptec"
 

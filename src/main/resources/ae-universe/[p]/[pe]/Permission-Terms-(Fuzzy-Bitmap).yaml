@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (Fuzzy Bitmap)"
 category: "Permission"
 spdxIdentifier: "FBM"
 
+canonicalNameHistory:
+  - "Permission Terms (variant 126)"
+
 alternativeNames:
   - "Fuzzy Bitmap License"
 

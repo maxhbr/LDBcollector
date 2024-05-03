@@ -6,6 +6,10 @@ canonicalName: "BSD 3-Clause License (without binary clause; variant 001)"
 category: "BSD"
 shortName: "BSD-3-Clause-without-binary-001"
 
+canonicalNameHistory:
+  - "Paul Mackerras Simplified License"
+  - "BSD 3-Clause License (without second clause)"
+
 alternativeNames:
   - "Paul Mackerras Simplified License"
 

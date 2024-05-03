@@ -6,3 +6,6 @@ canonicalName: "BATM Advanced Communications License"
 category: "BATM"
 shortName: "BATM-Advanced-Communication"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (BATM advanced communications)"
+

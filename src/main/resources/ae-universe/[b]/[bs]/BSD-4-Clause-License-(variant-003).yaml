@@ -6,3 +6,6 @@ canonicalName: "BSD 4-Clause License (variant 003)"
 category: "BSD"
 shortName: "BSD-4-Clause-RTFM"
 
+canonicalNameHistory:
+  - "BSD 4-Clause License Var003"
+

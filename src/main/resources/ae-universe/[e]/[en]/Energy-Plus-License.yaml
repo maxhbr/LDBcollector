@@ -6,6 +6,9 @@ canonicalName: "Energy Plus License"
 category: "Energy Plus"
 shortName: "Energy-Plus"
 
+canonicalNameHistory:
+  - "BSD Alike (Energy Plus)"
+
 alternativeNames:
   - "BSD Alike (Energy Plus)"
 

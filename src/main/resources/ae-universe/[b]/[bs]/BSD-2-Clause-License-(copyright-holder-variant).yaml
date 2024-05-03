@@ -6,3 +6,6 @@ canonicalName: "BSD 2-Clause License (copyright holder variant)"
 category: "BSD"
 shortName: "BSD-2-Clause-copyright"
 
+canonicalNameHistory:
+  - "BSD 2-Clause License (copyright variant)"
+

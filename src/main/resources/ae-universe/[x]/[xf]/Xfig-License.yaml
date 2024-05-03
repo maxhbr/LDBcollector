@@ -6,6 +6,10 @@ canonicalName: "Xfig License"
 category: "Xfig"
 spdxIdentifier: "Xfig"
 
+canonicalNameHistory:
+  - "MIT Xfig Variant"
+  - "Permission Terms (variant 124)"
+
 alternativeNames:
   - "Xfig License"
 

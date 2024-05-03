@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (SSPL)"
 category: "SSPL Linking Exception"
 shortName: "Linking-Exception-SSPL"
 
+canonicalNameHistory:
+  - "OpenSSL Exception (MongoDB SSPL)"
+
 type: "exception"
 
 alternativeNames:

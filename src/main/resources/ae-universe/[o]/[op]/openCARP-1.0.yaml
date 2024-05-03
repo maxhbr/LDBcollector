@@ -6,6 +6,9 @@ canonicalName: "openCARP 1.0"
 category: "openCARP"
 shortName: "opencarp-1.0"
 
+canonicalNameHistory:
+  - "openCARP v1.0"
+
 alternativeNames:
   - "openCARP v1.0"
   - "openCARP 1.0"

@@ -6,6 +6,9 @@ canonicalName: "MIT SIPB License (variant 001)"
 category: "MIT"
 shortName: "MIT-SIPB-001"
 
+canonicalNameHistory:
+  - "MIT SIPB License Var001"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "NTP"
 

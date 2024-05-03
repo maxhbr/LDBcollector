@@ -6,6 +6,9 @@ canonicalName: "EPSG Geodetic Parameter Dataset Terms of Use"
 category: "EPSG"
 shortName: "EPSG-Geodetic-Parameter-Dataset"
 
+canonicalNameHistory:
+  - "EPSG database distribution license"
+
 alternativeNames:
   - "EPSG Geodetic Parameter Dataset Terms of Use"
   - "use of the data (from the EPSG web site)"

@@ -6,6 +6,9 @@ canonicalName: "Broadcom Confidential"
 category: "Broadcom Confidential"
 shortName: "Broadcom-Confidential"
 
+canonicalNameHistory:
+  - "Broadcom Proprietary"
+
 alternativeNames:
   - "broadcom-confidential"
   - "Broadcom Confidential"

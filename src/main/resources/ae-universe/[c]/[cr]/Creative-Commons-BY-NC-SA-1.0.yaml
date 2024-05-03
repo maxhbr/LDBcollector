@@ -6,6 +6,10 @@ canonicalName: "Creative Commons BY-NC-SA 1.0"
 category: "CC-BY-NC-SA"
 spdxIdentifier: "CC-BY-NC-SA-1.0"
 
+canonicalNameHistory:
+  - "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic"
+  - "Creative Commons BY-NC-SA 1.0 (generic)"
+
 openCoDEStatus: "not approved"
 
 osiStatus: "ineligible"

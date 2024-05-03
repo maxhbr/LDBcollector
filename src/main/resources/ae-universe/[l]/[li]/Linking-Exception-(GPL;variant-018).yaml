@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 018)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-018"
 
+canonicalNameHistory:
+  - "QT Library Exception"
+
 type: "exception"
 
 otherIds: 

@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 028)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-028"
 
+canonicalNameHistory:
+  - "GPL 2.0 with libgit2 exception"
+
 type: "exception"
 
 alternativeNames:

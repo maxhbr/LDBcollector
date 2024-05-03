@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (NuGet Based Package Manager)"
 category: "Microsoft Software License"
 shortName: "MS-Software-NuGet-Package-Manager"
 
+canonicalNameHistory:
+  - "Microsoft NuGet-Based Package Manager License"
+
 alternativeNames:
   - "Microsoft NuGet-Based Package Manager License"
 

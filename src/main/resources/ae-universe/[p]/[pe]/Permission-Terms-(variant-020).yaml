@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 020)"
 category: "Permission"
 shortName: "PT-Var020"
 
+canonicalNameHistory:
+  - "Permission Terms Var020"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "HP-1986"
 

@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 069)"
 category: "Permission"
 shortName: "PT-Var069"
 
+canonicalNameHistory:
+  - "Permission Terms Var069"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "MIT"
 

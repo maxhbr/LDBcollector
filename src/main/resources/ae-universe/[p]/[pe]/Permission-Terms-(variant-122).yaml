@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 122)"
 category: "Permission"
 shortName: "PT-Var122"
 
+canonicalNameHistory:
+  - "MIT Old Style License (sparse)"
+
 alternativeNames:
   - "mit-old-style-sparse"
 

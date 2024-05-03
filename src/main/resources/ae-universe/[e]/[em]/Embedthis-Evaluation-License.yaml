@@ -6,5 +6,8 @@ canonicalName: "Embedthis Evaluation License"
 category: "Embedthis Evaluation"
 shortName: "Embedthis-Evaluation"
 
+canonicalNameHistory:
+  - "EmbedThis Evaluation License"
+
 otherIds: 
   - "scancode:embedthis-evaluation"

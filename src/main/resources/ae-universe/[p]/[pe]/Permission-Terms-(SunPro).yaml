@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (SunPro)"
 category: "Permission"
 spdxIdentifier: "SunPro"
 
+canonicalNameHistory:
+  - "Permission Terms (Sun)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

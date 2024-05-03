@@ -6,6 +6,9 @@ canonicalName: "MIT License (Expat)"
 category: "MIT"
 shortName: "MIT-Expat"
 
+canonicalNameHistory:
+  - "Expat License"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "MIT"
 

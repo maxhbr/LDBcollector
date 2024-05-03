@@ -6,6 +6,9 @@ canonicalName: "BSD (undefined)"
 category: "BSD"
 shortName: "BSD-?"
 
+canonicalNameHistory:
+  - "BSD alike"
+
 unspecific: true
 
 alternativeNames:

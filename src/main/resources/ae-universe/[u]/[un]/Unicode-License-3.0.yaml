@@ -6,6 +6,9 @@ canonicalName: "Unicode License 3.0"
 category: "Unicode License"
 spdxIdentifier: "Unicode-3.0"
 
+canonicalNameHistory:
+  - "Unicode License v3"
+
 alternativeNames:
   - "Unicode-3.0"
   - "Unicode License v3"

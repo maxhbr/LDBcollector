@@ -6,6 +6,9 @@ canonicalName: "LAB Public License"
 category: "LAB"
 shortName: "LAB-PL"
 
+canonicalNameHistory:
+  - "LAB Public License proposal"
+
 osiStatus: "unclear"
 
 alternativeNames:

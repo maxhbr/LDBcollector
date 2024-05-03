@@ -6,6 +6,9 @@ canonicalName: "Functional Source License 1.0 (MIT)"
 category: "Functional Source"
 shortName: "Functional-Source-1.0-MIT"
 
+canonicalNameHistory:
+  - "Functional Source License 1.0 (MIT Change)"
+
 alternativeNames:
   - "Functional Source License, Version 1.0, MIT Change License"
 

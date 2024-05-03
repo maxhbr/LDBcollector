@@ -6,6 +6,9 @@ canonicalName: "GNU Compile Exception"
 category: "GNU Compile Exception"
 spdxIdentifier: "GNU-compiler-exception"
 
+canonicalNameHistory:
+  - "GNU IO Library Exception 2.0"
+
 type: "exception"
 
 alternativeNames:

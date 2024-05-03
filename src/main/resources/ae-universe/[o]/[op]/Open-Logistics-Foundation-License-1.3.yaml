@@ -6,6 +6,9 @@ canonicalName: "Open Logistics Foundation License 1.3"
 category: "OLFL"
 spdxIdentifier: "OLFL-1.3"
 
+canonicalNameHistory:
+  - "Open Logistics Foundation License (version; 1.3)"
+
 osiStatus: "approved"
 osiCategory: "special purpose"
 

@@ -6,5 +6,8 @@ canonicalName: "LZMA SDK License 9.11 to 9.20"
 category: "Public Domain"
 spdxIdentifier: "LZMA-SDK-9.11-to-9.20"
 
+canonicalNameHistory:
+  - "LZMA SDK License (versions 9.11 to 9.20)"
+
 otherIds: 
   - "scancode:lzma-sdk-9.11-to-9.20"

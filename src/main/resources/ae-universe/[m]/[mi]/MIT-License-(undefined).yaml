@@ -6,6 +6,9 @@ canonicalName: "MIT License (undefined)"
 category: "MIT"
 shortName: "MIT-alike"
 
+canonicalNameHistory:
+  - "MIT alike"
+
 unspecific: true
 
 alternativeNames:

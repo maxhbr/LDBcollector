@@ -6,6 +6,9 @@ canonicalName: "Trolltech Exception 1.2 (GPL)"
 category: "GPL Trolltech Exception"
 shortName: "Trolltech-Exception-1.2-GPL"
 
+canonicalNameHistory:
+  - "Trolltech Exception 1.2"
+
 type: "exception"
 
 alternativeNames:

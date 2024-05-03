@@ -6,6 +6,10 @@ canonicalName: "W3C Software Notice and License (2002-12-31)"
 category: "W3C"
 spdxIdentifier: "W3C"
 
+canonicalNameHistory:
+  - "W3C Software Notice and License (2002)"
+  - "W3C"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

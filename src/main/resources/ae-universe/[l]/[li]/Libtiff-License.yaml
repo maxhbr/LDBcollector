@@ -6,6 +6,9 @@ canonicalName: "Libtiff License"
 category: "BSD"
 spdxIdentifier: "libtiff"
 
+canonicalNameHistory:
+  - "Permission Terms (SL)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

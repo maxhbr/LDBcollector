@@ -6,6 +6,9 @@ canonicalName: "Historical Permission Notice and Disclaimer (with MIT disclaimer
 category: "HPND-MIT-disclaimer"
 spdxIdentifier: "HPND-MIT-disclaimer"
 
+canonicalNameHistory:
+  - "Historical Permission Notice and Disclaimer with MIT disclaimer"
+
 alternativeNames:
   - "HPND-MIT-disclaimer"
   - "Historical Permission Notice and Disclaimer with MIT disclaimer"

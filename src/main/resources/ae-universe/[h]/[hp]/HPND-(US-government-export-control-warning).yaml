@@ -6,6 +6,9 @@ canonicalName: "HPND (US government export control warning)"
 category: "HPND-export-US"
 spdxIdentifier: "HPND-export-US"
 
+canonicalNameHistory:
+  - "HPND with US Government export control warning"
+
 alternativeNames:
   - "HPND-export-US"
   - "HPND with US Government export control warning"

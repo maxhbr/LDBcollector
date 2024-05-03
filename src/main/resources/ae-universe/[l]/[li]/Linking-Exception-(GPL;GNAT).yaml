@@ -7,6 +7,14 @@ category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-GNAT"
 spdxIdentifier: "GNAT-exception"
 
+canonicalNameHistory:
+  - "Ada Linking Exception"
+  - "GNAT Exception"
+  - "Linking Exception (GPL; variant 001)"
+  - "GNAT-exception"
+  - "GNAT exception"
+  - "GNAT-Exception"
+
 type: "exception"
 
 alternativeNames:

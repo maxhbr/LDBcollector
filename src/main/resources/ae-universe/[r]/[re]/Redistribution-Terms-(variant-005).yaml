@@ -6,5 +6,8 @@ canonicalName: "Redistribution Terms (variant 005)"
 category: "RT"
 shortName: "RT-Var5"
 
+canonicalNameHistory:
+  - "Redistribution Terms Var5"
+
 otherIds: 
   - "scancode:delorie-historical"

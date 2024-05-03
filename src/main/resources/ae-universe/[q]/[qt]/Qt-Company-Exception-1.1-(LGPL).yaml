@@ -7,6 +7,9 @@ category: "LGPL Qt Exception"
 shortName: "Qt-Exception-1.1-LGPL"
 spdxIdentifier: "Qt-LGPL-exception-1.1"
 
+canonicalNameHistory:
+  - "Qt LGPL Exception 1.1"
+
 type: "exception"
 
 alternativeNames:

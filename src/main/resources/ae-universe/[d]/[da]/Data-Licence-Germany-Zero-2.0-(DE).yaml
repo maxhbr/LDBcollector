@@ -6,6 +6,10 @@ canonicalName: "Data Licence Germany Zero 2.0 (DE)"
 category: "DL-DE-ZERO-2.0"
 spdxIdentifier: "DL-DE-ZERO-2.0"
 
+canonicalNameHistory:
+  - "Data licence Germany – zero – version 2.0"
+  - "Data licence Germany – zero – 2.0"
+
 alternativeNames:
   - "DL-DE-ZERO-2.0"
   - "Data licence Germany – zero – version 2.0"

@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (independent module)"
 category: "Independent Linking Exception"
 shortName: "Linking-Exception-Independent"
 
+canonicalNameHistory:
+  - "Independent Module Linking Exception"
+
 type: "exception"
 
 alternativeNames:

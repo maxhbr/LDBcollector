@@ -7,6 +7,10 @@ category: "Apache LLVM Exception"
 shortName: "LLVM-Exception-Apache"
 spdxIdentifier: "LLVM-exception"
 
+canonicalNameHistory:
+  - "LLVM exception"
+  - "LLVM Exception"
+
 type: "exception"
 
 alternativeNames:

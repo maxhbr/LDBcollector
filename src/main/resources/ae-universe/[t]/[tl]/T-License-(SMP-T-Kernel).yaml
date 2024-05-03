@@ -6,5 +6,8 @@ canonicalName: "T-License (SMP T-Kernel)"
 category: "T-License"
 shortName: "T-License-SMP-T-Kernel"
 
+canonicalNameHistory:
+  - "T-License for SMP T-Kernel"
+
 otherIds: 
   - "scancode:t-license-smp-t-kernel"

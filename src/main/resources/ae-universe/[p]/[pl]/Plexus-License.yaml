@@ -6,6 +6,9 @@ canonicalName: "Plexus License"
 category: "Plexus"
 spdxIdentifier: "Plexus"
 
+canonicalNameHistory:
+  - "Apache Due Credit Variant"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

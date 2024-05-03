@@ -6,6 +6,9 @@ canonicalName: "Linux man-pages - 1 paragraph"
 category: "Linux-man-pages-1-para"
 spdxIdentifier: "Linux-man-pages-1-para"
 
+canonicalNameHistory:
+  - "Linux man-pages One Paragraph"
+
 alternativeNames:
   - "Linux-man-pages-one-para"
   - "Linux man-pages One Paragraph"

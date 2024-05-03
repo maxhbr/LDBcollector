@@ -6,5 +6,8 @@ canonicalName: "T-License (AMP T-Kernel)"
 category: "T-License"
 shortName: "T-License-AMP-T-Kernel"
 
+canonicalNameHistory:
+  - "T-License for AMP T-Kernel"
+
 otherIds: 
   - "scancode:t-license-amp-t-kernel"

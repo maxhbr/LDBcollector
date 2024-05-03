@@ -7,6 +7,9 @@ category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL-005"
 spdxIdentifier: "Autoconf-exception-macro"
 
+canonicalNameHistory:
+  - "Autoconf Macro Exception"
+
 type: "exception"
 
 alternativeNames:

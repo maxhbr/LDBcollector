@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (check-cvs)"
 category: "Permission"
 spdxIdentifier: "check-cvs"
 
+canonicalNameHistory:
+  - "Permission Terms (variant 127)"
+
 alternativeNames:
   - "check-cvs License"
   - "Permission is granted to copy and/or distribute this file, with or without modifications, provided this notice is preserved"

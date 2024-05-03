@@ -6,6 +6,10 @@ canonicalName: "BSD 4-Clause License (without endorsement clause; variant 001)"
 category: "BSD"
 shortName: "BSD-4-Clause-without-endorsement-001"
 
+canonicalNameHistory:
+  - "BSD 2-Clause License (with advertizing clause) var-001"
+  - "BSD 2-Clause License (with advertizing clause; variant 001)"
+
 openCoDEStatus: "approved"
 
 otherIds: 

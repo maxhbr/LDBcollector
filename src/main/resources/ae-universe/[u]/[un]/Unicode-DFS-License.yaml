@@ -6,6 +6,9 @@ canonicalName: "Unicode DFS License"
 category: "Unicode DFS"
 shortName: "Unicode-DFS"
 
+canonicalNameHistory:
+  - "Unicode DFS License 2008"
+
 alternativeNames:
   - "Unicode DFS, Version 2008"
   - "Unicode DFS, 2008"

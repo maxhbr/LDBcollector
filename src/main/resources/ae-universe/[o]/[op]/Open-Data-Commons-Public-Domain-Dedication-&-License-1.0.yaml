@@ -6,6 +6,9 @@ canonicalName: "Open Data Commons Public Domain Dedication & License 1.0"
 category: "PDDL"
 spdxIdentifier: "PDDL-1.0"
 
+canonicalNameHistory:
+  - "PDDL 1.0"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

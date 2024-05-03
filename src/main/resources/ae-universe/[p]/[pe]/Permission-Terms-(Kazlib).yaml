@@ -6,6 +6,10 @@ canonicalName: "Permission Terms (Kazlib)"
 category: "Permission"
 spdxIdentifier: "Kazlib"
 
+canonicalNameHistory:
+  - "Permission Terms Var081"
+  - "Permission Terms (variant 081)"
+
 alternativeNames:
   - "Kazlib License"
 

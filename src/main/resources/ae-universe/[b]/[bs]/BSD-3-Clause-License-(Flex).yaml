@@ -6,6 +6,10 @@ canonicalName: "BSD 3-Clause License (Flex)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-flex"
 
+canonicalNameHistory:
+  - "BSD 3-Clause Flex variant"
+  - "BSD 3-Clause (Flex)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

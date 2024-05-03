@@ -6,6 +6,9 @@ canonicalName: "SGI CID Font Code Public License 1.0"
 category: "SGI CID Font Code Public License"
 shortName: "SGI-CID-1.0"
 
+canonicalNameHistory:
+  - "CID Font Code Public License 1.0"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

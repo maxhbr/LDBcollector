@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (NVIDIA)"
 category: "NVIDIA Permission"
 shortName: "NVIDIA-PT"
 
+canonicalNameHistory:
+  - "NVIDIA Permission Terms"
+
 alternativeNames:
   - "NVIDIA Permission"
 

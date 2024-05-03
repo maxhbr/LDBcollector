@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL"
 
+canonicalNameHistory:
+  - "Linking exception to GPL 2.0+"
+
 type: "exception"
 
 otherIds: 

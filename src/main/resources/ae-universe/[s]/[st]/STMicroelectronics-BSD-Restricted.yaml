@@ -6,6 +6,9 @@ canonicalName: "STMicroelectronics BSD Restricted"
 category: "STMicroelectronics BSD"
 shortName: "STM-BSD-Restricted"
 
+canonicalNameHistory:
+  - "STMicro BSD Restricted"
+
 alternativeNames:
   - "st-bsd-restricted"
 

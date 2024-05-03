@@ -6,6 +6,9 @@ canonicalName: "BSD 2-Clause License"
 category: "BSD"
 spdxIdentifier: "BSD-2-Clause"
 
+canonicalNameHistory:
+  - "BSD-2-Clause"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

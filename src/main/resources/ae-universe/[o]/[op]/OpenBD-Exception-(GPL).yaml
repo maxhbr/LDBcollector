@@ -6,6 +6,9 @@ canonicalName: "OpenBD Exception (GPL)"
 category: "GPL OpenBD Exception"
 shortName: "OpenBD-Exception-GPL"
 
+canonicalNameHistory:
+  - "OpenBD Exception (GPL 3.0)"
+
 type: "exception"
 
 otherIds: 

@@ -6,6 +6,9 @@ canonicalName: "NXP Semiconductors Disclaimer"
 category: "NXP Semiconductors"
 shortName: "NXP-Semiconductors-Disclaimer"
 
+canonicalNameHistory:
+  - "NXP Warranty Disclaimer"
+
 alternativeNames:
   - "NXP Warranty Disclaimer"
 

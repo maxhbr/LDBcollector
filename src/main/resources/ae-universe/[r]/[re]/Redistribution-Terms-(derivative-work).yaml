@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (derivative work)"
 category: "RT"
 shortName: "RT-derivative-work"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (Tcpdump Group)"
+
 alternativeNames:
   - "bsd-new-derivative"
 

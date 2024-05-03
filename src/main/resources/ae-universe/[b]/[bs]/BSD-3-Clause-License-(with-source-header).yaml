@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (with source header)"
 category: "BSD"
 shortName: "BSD-3-Clause-source-header"
 
+canonicalNameHistory:
+  - "BSD Mylex License"
+
 alternativeNames:
   - "BSD Mylex License"
 

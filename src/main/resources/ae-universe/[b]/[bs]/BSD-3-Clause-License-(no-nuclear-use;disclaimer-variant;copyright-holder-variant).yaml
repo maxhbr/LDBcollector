@@ -6,5 +6,8 @@ canonicalName: "BSD 3-Clause License (no nuclear use; disclaimer variant; copyri
 category: "BSD"
 shortName: "BSD-3-Clause-No-Nuclear-Copyright-Variant"
 
+canonicalNameHistory:
+  - "BSD 3-Clause No Nuclear License (copyright variant)"
+
 otherIds: 
   - "scancode:oracle-code-samples-bsd"

@@ -7,6 +7,9 @@ category: "Sendmail"
 shortName: "Sendmail-8.16"
 spdxIdentifier: "Sendmail"
 
+canonicalNameHistory:
+  - "Sendmail License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (ASP.NET Web Pages Templates)"
 category: "Microsoft Software"
 shortName: "MS-Software-ASP-NET-Web-Pages-Templates"
 
+canonicalNameHistory:
+  - "Microsoft ASP.NET Web Pages Templates License"
+
 alternativeNames:
   - "Microsoft ASP.NET Web Pages Templates License"
 

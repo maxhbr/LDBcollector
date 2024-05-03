@@ -6,3 +6,8 @@ canonicalName: "BSD 3-Clause License (copyright holder variant)"
 category: "BSD"
 shortName: "BSD-3-Clause-copyright-holder"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (copyright variant)"
+  - "BSD 3-Clause License (copyright holder  variant)"
+  - "BSD 3-Clause License (NumPy)"
+

@@ -6,6 +6,9 @@ canonicalName: "Microsoft Pre-Release Software License (ASP.NET tools)"
 category: "Microsoft Pre-Release Software"
 shortName: "MS-Pre-Release-Software-ASP-NET-Tools"
 
+canonicalNameHistory:
+  - "Microsoft ASP.NET Tools Pre-Release License"
+
 alternativeNames:
   - "Microsoft ASP.NET Tools Pre-Release License"
 

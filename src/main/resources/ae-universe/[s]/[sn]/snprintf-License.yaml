@@ -6,6 +6,10 @@ canonicalName: "snprintf License"
 category: "snprintf"
 spdxIdentifier: "snprintf"
 
+canonicalNameHistory:
+  - "Patrick Powell License"
+  - "SNPRINTF License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

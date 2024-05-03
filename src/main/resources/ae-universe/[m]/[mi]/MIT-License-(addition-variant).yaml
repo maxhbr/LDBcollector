@@ -6,6 +6,9 @@ canonicalName: "MIT License (addition variant)"
 category: "MIT"
 spdxIdentifier: "MIT-Wu"
 
+canonicalNameHistory:
+  - "MIT Addition License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

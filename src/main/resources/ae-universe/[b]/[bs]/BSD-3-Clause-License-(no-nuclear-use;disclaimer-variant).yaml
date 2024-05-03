@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (no nuclear use; disclaimer variant)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-No-Nuclear-License"
 
+canonicalNameHistory:
+  - "BSD 3-Clause No Nuclear License"
+
 openCoDEStatus: "not approved"
 
 alternativeNames:

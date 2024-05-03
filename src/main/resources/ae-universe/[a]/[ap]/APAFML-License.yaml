@@ -6,6 +6,9 @@ canonicalName: "APAFML License"
 category: "APAFML"
 spdxIdentifier: "APAFML"
 
+canonicalNameHistory:
+  - "APAFML"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

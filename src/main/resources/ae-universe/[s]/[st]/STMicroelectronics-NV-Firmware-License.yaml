@@ -6,6 +6,9 @@ canonicalName: "STMicroelectronics NV Firmware License"
 category: "STMicroelectronics NV"
 shortName: "STM-NV-Firmware"
 
+canonicalNameHistory:
+  - "ST Microelectronics NV Firmware License"
+
 alternativeNames:
   - "ST Microelectronics NV Firmware License"
 

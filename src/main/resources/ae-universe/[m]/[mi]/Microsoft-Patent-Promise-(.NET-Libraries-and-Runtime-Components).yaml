@@ -6,6 +6,9 @@ canonicalName: "Microsoft Patent Promise (.NET Libraries and Runtime Components)
 category: "Microsoft Patent Promise"
 shortName: "MS-Patent-Promise"
 
+canonicalNameHistory:
+  - "Microsoft Patent Promise for .NET Libraries and Runtime Components"
+
 alternativeNames:
   - "Microsoft Patent Promise for .NET Libraries and Runtime Components"
 

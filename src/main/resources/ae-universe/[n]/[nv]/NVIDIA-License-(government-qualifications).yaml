@@ -6,6 +6,9 @@ canonicalName: "NVIDIA License (government qualifications)"
 category: "NVIDIA License Government Qualifications"
 shortName: "NVIDIA-Gov"
 
+canonicalNameHistory:
+  - "NVIDIA License with Government Qualifications"
+
 alternativeNames:
   - "nvidia-gov"
 

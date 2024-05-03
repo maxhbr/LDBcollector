@@ -6,6 +6,9 @@ canonicalName: "Brian Gladman 3-Clause License"
 category: "Brian Gladman 3-Clause License"
 spdxIdentifier: "Brian-Gladman-3-Clause"
 
+canonicalNameHistory:
+  - "BSD alike (AES)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

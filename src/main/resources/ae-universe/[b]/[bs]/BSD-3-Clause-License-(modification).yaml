@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (modification)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-Modification"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License Modification"
+
 openCoDEStatus: "approved"
 
 otherIds: 

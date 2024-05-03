@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (AGPL)"
 category: "AGPL Linking Exception"
 shortName: "Linking-Exception-AGPL"
 
+canonicalNameHistory:
+  - "AGPL 3.0 Linking Exception"
+
 type: "exception"
 
 otherIds: 

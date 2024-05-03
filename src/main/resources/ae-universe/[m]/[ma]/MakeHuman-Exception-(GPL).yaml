@@ -6,6 +6,9 @@ canonicalName: "MakeHuman Exception (GPL)"
 category: "GPL MakeHuman Exception"
 shortName: "MakeHuman-Exception-GPL"
 
+canonicalNameHistory:
+  - "MakeHuman Exception"
+
 type: "exception"
 
 alternativeNames:

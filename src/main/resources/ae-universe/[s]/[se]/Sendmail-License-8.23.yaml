@@ -6,6 +6,9 @@ canonicalName: "Sendmail License 8.23"
 category: "Sendmail"
 spdxIdentifier: "Sendmail-8.23"
 
+canonicalNameHistory:
+  - "Sendmail 8.23"
+
 alternativeNames:
   - "Sendmail, Version 8.23"
   - "Sendmail 8.23"

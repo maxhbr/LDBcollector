@@ -6,3 +6,7 @@ canonicalName: "BSD 3-Clause License (without binary clause; variant 007)"
 category: "BSD"
 shortName: "BSD-3-Clause-without-binary-007"
 
+canonicalNameHistory:
+  - "Redistribution Terms Var9"
+  - "Redistribution Terms (variant 009)"
+

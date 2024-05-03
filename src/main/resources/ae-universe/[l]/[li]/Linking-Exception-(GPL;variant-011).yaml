@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 011)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-011"
 
+canonicalNameHistory:
+  - "DUNE Exception"
+
 type: "exception"
 
 alternativeNames:

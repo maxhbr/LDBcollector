@@ -6,6 +6,9 @@ canonicalName: "FOSS License Exception 1.0"
 category: "FOSS Exception"
 shortName: "FOSS-Exception-1.0"
 
+canonicalNameHistory:
+  - "FOSS License Exception"
+
 type: "exception"
 
 otherIds: 

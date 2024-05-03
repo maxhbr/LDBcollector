@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (LGPL Clause 6)"
 category: "Linking Exception LGPL"
 shortName: "Linking-Exception-LGPL-clause-6"
 
+canonicalNameHistory:
+  - "Clause 6 Exception to LGPL 2.1"
+
 type: "exception"
 
 alternativeNames:

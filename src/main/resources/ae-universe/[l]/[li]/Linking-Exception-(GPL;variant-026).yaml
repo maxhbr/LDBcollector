@@ -7,6 +7,9 @@ category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-026"
 spdxIdentifier: "eCos-exception-2.0"
 
+canonicalNameHistory:
+  - "eCos Exception 2.0"
+
 type: "exception"
 
 otherIds: 

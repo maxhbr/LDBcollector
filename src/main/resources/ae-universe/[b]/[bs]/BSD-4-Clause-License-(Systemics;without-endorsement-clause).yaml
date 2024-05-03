@@ -7,6 +7,9 @@ category: "BSD"
 shortName: "BSD-4-Clause-Systemics-without-endorsement"
 spdxIdentifier: "BSD-Systemics"
 
+canonicalNameHistory:
+  - "Systemics BSD variant license"
+
 alternativeNames:
   - "BSD-Systemics"
   - "Systemics BSD variant license"

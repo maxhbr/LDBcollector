@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 016)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-016"
 
+canonicalNameHistory:
+  - "NAnt Exception"
+
 type: "exception"
 
 alternativeNames:

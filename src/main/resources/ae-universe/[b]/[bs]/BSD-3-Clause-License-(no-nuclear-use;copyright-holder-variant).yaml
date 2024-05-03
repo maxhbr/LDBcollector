@@ -6,3 +6,6 @@ canonicalName: "BSD 3-Clause License (no nuclear use; copyright holder variant)"
 category: "BSD"
 shortName: "BSD-3-Clause-No-Nuclear-Use-Acknowledgement-2014-Copyright-Variant"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (no-nuclear use acknowledgement 2014; copyright variant)"
+

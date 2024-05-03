@@ -6,6 +6,10 @@ canonicalName: "Linking Exception (independent module; variant 002)"
 category: "Independent Linking Exception"
 shortName: "Linking-Exception-Independent-002"
 
+canonicalNameHistory:
+  - "ZeroMQ Exception"
+  - "Linking Exception (independent mondule; variant 002)"
+
 type: "exception"
 
 alternativeNames:

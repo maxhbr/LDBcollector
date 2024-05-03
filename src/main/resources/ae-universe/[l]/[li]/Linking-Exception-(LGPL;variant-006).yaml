@@ -6,5 +6,8 @@ canonicalName: "Linking Exception (LGPL; variant 006)"
 category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-006"
 
+canonicalNameHistory:
+  - "GCC Runtime Library Exception 2.0 (to LGPL)"
+
 type: "exception"
 

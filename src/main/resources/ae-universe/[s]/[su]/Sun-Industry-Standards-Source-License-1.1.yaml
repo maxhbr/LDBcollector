@@ -6,6 +6,9 @@ canonicalName: "Sun Industry Standards Source License 1.1"
 category: "SISSL"
 spdxIdentifier: "SISSL"
 
+canonicalNameHistory:
+  - "SISSL 1.1"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

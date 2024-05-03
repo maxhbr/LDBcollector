@@ -6,6 +6,10 @@ canonicalName: "Permission Terms (variant 129)"
 category: "Permission"
 shortName: "PT-Var129"
 
+canonicalNameHistory:
+  - "Permission Terms (Southampton IT Innovation Centre)"
+  - "X11 License (variant 003)"
+
 openCoDEStatus: "not approved"
 
 otherIds: 

@@ -6,5 +6,9 @@ canonicalName: "BSD 3-Clause License (variant 049)"
 category: "BSD"
 shortName: "BSD-3-Clause-049"
 
+canonicalNameHistory:
+  - "HDF5 License"
+  - "BSD 3-Clause License (HDF5)"
+
 otherIds: 
   - "scancode:hdf5"

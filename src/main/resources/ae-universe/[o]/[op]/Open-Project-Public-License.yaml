@@ -6,6 +6,9 @@ canonicalName: "Open Project Public License"
 category: "OPPL"
 shortName: "OPPL"
 
+canonicalNameHistory:
+  - "Open Project Public License (OPPL)"
+
 osiStatus: "unclear"
 
 alternativeNames:

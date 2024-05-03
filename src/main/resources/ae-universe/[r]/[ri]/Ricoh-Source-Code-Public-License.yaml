@@ -6,6 +6,9 @@ canonicalName: "Ricoh Source Code Public License"
 category: "Ricoh License"
 spdxIdentifier: "RSCPL"
 
+canonicalNameHistory:
+  - "RSCPL"
+
 osiStatus: "approved"
 osiCategory: "non-reusable"
 

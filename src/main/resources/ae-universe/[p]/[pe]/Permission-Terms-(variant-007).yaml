@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 007)"
 category: "Permission"
 shortName: "PT-Var007"
 
+canonicalNameHistory:
+  - "Permission Terms Var007"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "NTP"
 

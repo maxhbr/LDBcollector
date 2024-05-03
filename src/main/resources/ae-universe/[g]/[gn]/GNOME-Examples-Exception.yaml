@@ -6,6 +6,9 @@ canonicalName: "GNOME Examples Exception"
 category: "GNOME-Examples-Exception"
 spdxIdentifier: "GNOME-examples-exception"
 
+canonicalNameHistory:
+  - "GNOME examples exception"
+
 type: "exception"
 
 alternativeNames:

@@ -6,5 +6,8 @@ canonicalName: "BSD 3-Clause License (variant 038)"
 category: "BSD"
 shortName: "BSD-3-Clause-038"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License Var038"
+
 otherIds: 
   - "scancode:bsd-3-clause-jtag"

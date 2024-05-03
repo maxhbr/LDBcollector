@@ -6,6 +6,9 @@ canonicalName: "Liferay DXP EULA 2.0.0 (2023-06)"
 category: "Liferay-DXP-EULA"
 shortName: "liferay-dxp-eula-2.0.0-2023-06"
 
+canonicalNameHistory:
+  - "Liferay-DXP-EULA-2.0.0-2023-06"
+
 alternativeNames:
   - "Liferay-DXP-EULA-2.0.0-2023-06"
   - "Liferay DXP EULA 2.0.0 (2023-06)"

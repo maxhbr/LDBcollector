@@ -6,6 +6,9 @@ canonicalName: "AutoOpts Exception (GPL)"
 category: "GPL AutoOpts Exception"
 shortName: "AutoOpts-Exception-GPL"
 
+canonicalNameHistory:
+  - "AutoOpts Exception GPL 2.0"
+
 type: "exception"
 
 alternativeNames:

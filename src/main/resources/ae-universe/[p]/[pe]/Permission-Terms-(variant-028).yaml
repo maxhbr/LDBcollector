@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 028)"
 category: "Permission"
 shortName: "PT-Var028"
 
+canonicalNameHistory:
+  - "Permission Terms Var028"
+
 openCoDEStatus: "approved"
 
 otherIds: 

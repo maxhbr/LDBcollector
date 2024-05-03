@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 007)"
 category: "RT"
 shortName: "RT-Var7"
 
+canonicalNameHistory:
+  - "Redistribution Terms Var7"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "BSD-4.3TAHOE"
 

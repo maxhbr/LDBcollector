@@ -6,3 +6,6 @@ canonicalName: "BSD 5-Clause License (without binary clause)"
 category: "BSD"
 shortName: "BSD-5-Clause-without-binary"
 
+canonicalNameHistory:
+  - "BSD 5-Clause License (missing second clause)"
+

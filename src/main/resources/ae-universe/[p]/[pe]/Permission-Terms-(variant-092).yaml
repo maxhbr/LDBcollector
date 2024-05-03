@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (variant 092)"
 category: "Permission"
 shortName: "PT-Var092"
 
+canonicalNameHistory:
+  - "Permission Terms Var092"
+
 otherIds: 
   - "scancode:bsd-credit"

@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 023)"
 category: "RT"
 shortName: "RT-Var023"
 
+canonicalNameHistory:
+  - "BSD Brian Clapper License"
+
 alternativeNames:
   - "BSD Brian Clapper License"
 

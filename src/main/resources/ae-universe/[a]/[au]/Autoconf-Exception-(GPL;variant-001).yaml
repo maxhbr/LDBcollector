@@ -6,5 +6,9 @@ canonicalName: "Autoconf Exception (GPL; variant 001)"
 category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL-001"
 
+canonicalNameHistory:
+  - "Autoconf Exception 2.0 Var001"
+  - "Autoconf Exception 2.0 (variant 001)"
+
 type: "exception"
 

@@ -6,6 +6,9 @@ canonicalName: "PowerVR Tools Software License"
 category: "PowerVR Tools"
 shortName: "PowerVR-Tools-Software"
 
+canonicalNameHistory:
+  - "PowerVR Tools EULA"
+
 alternativeNames:
   - "PowerVR Tools EULA"
 

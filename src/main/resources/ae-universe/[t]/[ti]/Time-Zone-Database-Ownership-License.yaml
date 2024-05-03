@@ -6,3 +6,6 @@ canonicalName: "Time Zone Database Ownership License"
 category: "TZ Database"
 shortName: "TZ-Database-Ownership"
 
+canonicalNameHistory:
+  - "Time Zone Database Ownership Notice"
+

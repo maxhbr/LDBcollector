@@ -6,6 +6,9 @@ canonicalName: "BSD 2-Clause License (patent)"
 category: "BSD Patent"
 spdxIdentifier: "BSD-2-Clause-Patent"
 
+canonicalNameHistory:
+  - "BSD 2-Clause Patent License"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

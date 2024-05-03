@@ -6,6 +6,9 @@ canonicalName: "CDDL 1.0"
 category: "CDDL"
 spdxIdentifier: "CDDL-1.0"
 
+canonicalNameHistory:
+  - "Common Development and Distribution License 1.0"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

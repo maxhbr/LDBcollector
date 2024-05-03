@@ -6,6 +6,10 @@ canonicalName: "MUSL Permission"
 category: "MUSL Permission"
 shortName: "MUSL-Permission"
 
+canonicalNameHistory:
+  - "MUSL Attribution Exception"
+  - "Linking Exception (MUSL)"
+
 type: "modifier"
 
 alternativeNames:

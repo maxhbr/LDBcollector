@@ -7,6 +7,9 @@ category: "GPL Bison Exception"
 shortName: "Bison-Exception-GPL"
 spdxIdentifier: "Bison-exception-2.2"
 
+canonicalNameHistory:
+  - "Bison Exception 2.2"
+
 type: "exception"
 
 alternativeNames:

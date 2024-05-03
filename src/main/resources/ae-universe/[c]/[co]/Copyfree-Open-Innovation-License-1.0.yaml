@@ -6,6 +6,9 @@ canonicalName: "Copyfree Open Innovation License 1.0"
 category: "Copyfree Open Innovation License"
 spdxIdentifier: "COIL-1.0"
 
+canonicalNameHistory:
+  - "Copyfree Open Innovation License"
+
 alternativeNames:
   - "Copyfree Open Innovation License"
   - "https://coil.apotheon.org/plaintext/01.0.txt"

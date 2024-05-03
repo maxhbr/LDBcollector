@@ -6,6 +6,9 @@ canonicalName: "Ralink Firmware License"
 category: "Ralink Firmware"
 shortName: "Ralink-Firmware"
 
+canonicalNameHistory:
+  - "Mediatek Firmware License"
+
 alternativeNames:
   - "Mediatek Firmware License"
 

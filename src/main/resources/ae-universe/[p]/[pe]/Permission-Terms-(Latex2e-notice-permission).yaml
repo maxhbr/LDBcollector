@@ -6,6 +6,10 @@ canonicalName: "Permission Terms (Latex2e notice permission)"
 category: "Permission"
 spdxIdentifier: "Latex2e-translated-notice"
 
+canonicalNameHistory:
+  - "Permission Terms Var042"
+  - "Permission Terms (variant 042)"
+
 alternativeNames:
   - "PT-Var042"
   - "Permission Terms (variant 042)"

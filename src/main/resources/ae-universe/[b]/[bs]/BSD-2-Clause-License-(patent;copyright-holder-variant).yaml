@@ -6,3 +6,6 @@ canonicalName: "BSD 2-Clause License (patent; copyright holder variant)"
 category: "BSD Patent"
 shortName: "BSD-2-Clause-Patent-copyright"
 
+canonicalNameHistory:
+  - "BSD 2-Clause Patent License (copyright variant)"
+

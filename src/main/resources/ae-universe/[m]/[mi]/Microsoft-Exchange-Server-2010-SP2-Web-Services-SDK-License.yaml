@@ -6,6 +6,9 @@ canonicalName: "Microsoft Exchange Server 2010 SP2 Web Services SDK License"
 category: "Microsoft Exchange Server 2010 SP2 Web Services SDK"
 shortName: "MS-Exchange-Server-2010-SP2-SDK"
 
+canonicalNameHistory:
+  - "Microsoft Exchange Server 2010 SP2 Web Services SDK"
+
 alternativeNames:
   - "Microsoft Exchange Server 2010 SP2 Web Services SDK"
 

@@ -6,6 +6,10 @@ canonicalName: "WordNet License"
 category: "WordNet License"
 shortName: "WordNet"
 
+canonicalNameHistory:
+  - "WordNet License (undefinded)"
+  - "WordNet License 1.6"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

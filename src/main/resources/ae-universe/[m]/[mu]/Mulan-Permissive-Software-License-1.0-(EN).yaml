@@ -6,5 +6,9 @@ canonicalName: "Mulan Permissive Software License 1.0 (EN)"
 category: "Mulan Permissive"
 shortName: "Mulan-Permissive-1.0-en"
 
+canonicalNameHistory:
+  - "Mulan Permissive Software License 1 (English)"
+  - "Mulan Permissive Software License 1.0 (English)"
+
 otherIds: 
   - "scancode:mulanpsl-1.0-en"

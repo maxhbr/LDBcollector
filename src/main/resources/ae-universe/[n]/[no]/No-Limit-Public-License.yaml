@@ -6,6 +6,9 @@ canonicalName: "No Limit Public License"
 category: "NLPL"
 spdxIdentifier: "NLPL"
 
+canonicalNameHistory:
+  - "NLPL"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

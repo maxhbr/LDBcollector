@@ -6,6 +6,9 @@ canonicalName: "Clarified Artistic License"
 category: "ClArtistic"
 spdxIdentifier: "ClArtistic"
 
+canonicalNameHistory:
+  - "ClArtistic License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

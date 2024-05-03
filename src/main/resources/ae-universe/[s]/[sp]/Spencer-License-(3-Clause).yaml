@@ -6,6 +6,9 @@ canonicalName: "Spencer License (3-Clause)"
 category: "Spencer"
 spdxIdentifier: "Spencer-86"
 
+canonicalNameHistory:
+  - "Regexp License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 100)"
 category: "Permission"
 shortName: "PT-Var100"
 
+canonicalNameHistory:
+  - "Permission Terms Var100"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "Spencer-86"
 

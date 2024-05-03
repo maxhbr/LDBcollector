@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 022)"
 category: "RT"
 shortName: "RT-Var022"
 
+canonicalNameHistory:
+  - "BSD Artwork License"
+
 alternativeNames:
   - "bsd-artwork"
 

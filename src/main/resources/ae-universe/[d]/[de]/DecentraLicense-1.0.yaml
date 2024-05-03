@@ -6,6 +6,9 @@ canonicalName: "DecentraLicense 1.0"
 category: "DCL"
 shortName: "DCL-1.0"
 
+canonicalNameHistory:
+  - "DecentraLicense v1.0"
+
 alternativeNames:
   - "DecentraLicense version 1.0"
 

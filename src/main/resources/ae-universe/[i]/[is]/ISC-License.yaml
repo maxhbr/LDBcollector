@@ -6,6 +6,10 @@ canonicalName: "ISC License"
 category: "ISC"
 spdxIdentifier: "ISC"
 
+canonicalNameHistory:
+  - "Permission Terms Var033"
+  - "Permission Terms Var068"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (independent module; variant 001)"
 category: "Independent Linking Exception"
 shortName: "Linking-Exception-Independent-001"
 
+canonicalNameHistory:
+  - "Broadcom Linking Exception"
+
 type: "exception"
 
 alternativeNames:

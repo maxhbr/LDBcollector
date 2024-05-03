@@ -6,3 +6,9 @@ canonicalName: "Adobe Proprietary Notice"
 category: "Adobe Proprietary"
 shortName: "Adobe-Proprietary-Notice"
 
+canonicalNameHistory:
+  - "Adobe Confidential Licenses"
+  - "Adobe-Confidential-Licenses"
+  - "Adobe-Confidential"
+  - "Adobe Proprietary License"
+

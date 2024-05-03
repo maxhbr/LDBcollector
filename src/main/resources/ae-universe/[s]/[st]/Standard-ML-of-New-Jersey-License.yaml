@@ -6,6 +6,10 @@ canonicalName: "Standard ML of New Jersey License"
 category: "SMLNJ"
 spdxIdentifier: "SMLNJ"
 
+canonicalNameHistory:
+  - "SMLNJ License"
+  - "StandardML NJ License"
+
 alternativeNames:
   - "SMLNJ License"
   - "SMLNJ LICENSE"

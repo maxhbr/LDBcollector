@@ -7,6 +7,9 @@ category: "GPl Linking Exception"
 shortName: "Linking-Exception-GPL-015"
 spdxIdentifier: "mif-exception"
 
+canonicalNameHistory:
+  - "Macros and Inline Functions Exception"
+
 type: "exception"
 
 alternativeNames:

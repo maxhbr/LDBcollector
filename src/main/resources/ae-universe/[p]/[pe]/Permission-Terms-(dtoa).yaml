@@ -6,6 +6,10 @@ canonicalName: "Permission Terms (dtoa)"
 category: "Permission"
 spdxIdentifier: "dtoa"
 
+canonicalNameHistory:
+  - "Permission Terms Var019"
+  - "Permission Terms (variant 019)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

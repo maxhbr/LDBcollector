@@ -7,6 +7,9 @@ category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-012"
 spdxIdentifier: "Fawkes-Runtime-exception"
 
+canonicalNameHistory:
+  - "Fawkes Runtime Exception"
+
 type: "exception"
 
 alternativeNames:

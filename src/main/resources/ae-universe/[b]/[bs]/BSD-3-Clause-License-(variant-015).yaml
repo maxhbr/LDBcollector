@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (variant 015)"
 category: "BSD"
 shortName: "BSD-3-Clause-015"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License Var015"
+
 openCoDEStatus: "approved"
 
 otherIds: 

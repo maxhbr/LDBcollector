@@ -7,5 +7,12 @@ category: "Permission"
 shortName: "PT-Var035"
 spdxIdentifier: "HPND-sell-variant"
 
+canonicalNameHistory:
+  - "Permission Terms Var035"
+  - "Permission Terms (variant 079)"
+  - "Permission Terms (HPND sell)"
+  - "Historical Permission Notice and Disclaimer - sell variant"
+  - "Permission Terms (variant 035)"
+
 otherIds: 
   - "scancode:x11-keith-packard"

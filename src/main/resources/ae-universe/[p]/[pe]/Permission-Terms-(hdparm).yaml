@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (hdparm)"
 category: "Permission"
 shortName: "PT-hdparm"
 
+canonicalNameHistory:
+  - "Permission Terms (hpdarm)"
+
 alternativeNames:
   - "Permission Terms (hdparm)"
 

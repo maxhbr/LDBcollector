@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (Tigra Calendar 3.2)"
 category: "Permission"
 shortName: "PT-Tigra-Calendar-3.2"
 
+canonicalNameHistory:
+  - "Tigra Calendar License 3.2"
+
 alternativeNames:
   - "http://www.softcomplex.com/products/tigra_calendar/"
   - "Tigra Calendar v3.2 License"

@@ -6,6 +6,9 @@ canonicalName: "CeCILL Free Software License Agreement 1.0 (FR)"
 category: "CeCILL"
 spdxIdentifier: "CECILL-1.0"
 
+canonicalNameHistory:
+  - "canonicalName: CeCILL Free Software License Agreement 1.0"
+
 alternativeNames:
   - "CeCILL Free Software License Agreement v1.0"
   - "CECILL-1.0"

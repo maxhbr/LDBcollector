@@ -7,6 +7,9 @@ category: "Apache Runtime Library Exception"
 shortName: "Runtime-Library-Exception-Apache"
 spdxIdentifier: "Swift-exception"
 
+canonicalNameHistory:
+  - "Swift Exception"
+
 type: "exception"
 
 alternativeNames:

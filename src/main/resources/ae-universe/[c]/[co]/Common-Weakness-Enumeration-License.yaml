@@ -6,6 +6,10 @@ canonicalName: "Common Weakness Enumeration License"
 category: "CWE"
 shortName: "CWE-ToU"
 
+canonicalNameHistory:
+  - "Common Weakness Enumeration ToU License"
+  - "Common Weaness Enumeration ToU License"
+
 alternativeNames:
   - "Common Weakness Enumeration ToU License"
 

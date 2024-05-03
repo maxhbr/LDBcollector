@@ -6,3 +6,6 @@ canonicalName: "BSD 2-Clause License (copyright holder variant; retain first lin
 category: "BSD"
 spdxIdentifier: "BSD-2-clause-first-lines"
 
+canonicalNameHistory:
+  - "BSD 2-Clause License (copyright holder variant; variant 001)"
+

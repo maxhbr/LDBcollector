@@ -7,6 +7,9 @@ category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL"
 spdxIdentifier: "LGPL-3.0-linking-exception"
 
+canonicalNameHistory:
+  - "LGPL-3.0 Linking Exception"
+
 type: "exception"
 
 otherIds: 

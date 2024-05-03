@@ -6,6 +6,9 @@ canonicalName: "GCC Compiler Exception"
 category: "GCC Compiler Exception"
 shortName: "GCC-Compiler-Exception"
 
+canonicalNameHistory:
+  - "GCC Compiler Exception 2.0"
+
 type: "exception"
 
 alternativeNames:

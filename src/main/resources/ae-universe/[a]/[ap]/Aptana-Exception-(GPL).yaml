@@ -6,6 +6,9 @@ canonicalName: "Aptana Exception (GPL)"
 category: "GPL Aptana Exception"
 shortName: "Aptana-Exception-GPL"
 
+canonicalNameHistory:
+  - "Aptana Exception 3.0"
+
 type: "exception"
 
 alternativeNames:

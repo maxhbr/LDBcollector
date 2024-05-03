@@ -7,6 +7,10 @@ category: "GPL TeX Exception"
 shortName: "TeX-Exception-GPL"
 spdxIdentifier: "Texinfo-exception"
 
+canonicalNameHistory:
+  - "TeX Exception (to GPL 3.0)"
+  - "TeX Exception"
+
 type: "exception"
 
 alternativeNames:

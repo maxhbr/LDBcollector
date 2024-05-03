@@ -6,6 +6,9 @@ canonicalName: "Source Distribution License"
 category: "SDL"
 shortName: "SDL"
 
+canonicalNameHistory:
+  - "Source Distribution License (SDL)"
+
 osiStatus: "unclear"
 
 alternativeNames:

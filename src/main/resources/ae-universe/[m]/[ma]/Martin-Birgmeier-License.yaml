@@ -6,6 +6,9 @@ canonicalName: "Martin Birgmeier License"
 category: "Martin Bergmeier License"
 spdxIdentifier: "Martin-Birgmeier"
 
+canonicalNameHistory:
+  - "Martin Bergmeier License"
+
 alternativeNames:
   - "martin-birgmeier"
 

@@ -7,6 +7,9 @@ category: "GPL Qt Exception"
 shortName: "Qt-Exception-1.0-GPL"
 spdxIdentifier: "Qt-GPL-exception-1.0"
 
+canonicalNameHistory:
+  - "Qt GPL Exception 1.0"
+
 type: "exception"
 
 alternativeNames:

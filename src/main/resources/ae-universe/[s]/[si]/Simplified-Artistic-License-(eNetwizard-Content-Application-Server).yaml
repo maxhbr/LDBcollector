@@ -6,5 +6,9 @@ canonicalName: "Simplified Artistic License (eNetwizard Content Application Serv
 category: "Simplified Artistic License"
 shortName: "Simplified Artistic License (eNetwizard Content Application Server)"
 
+canonicalNameHistory:
+  - "Simplified Artistic License"
+  - "Simplified Artistic License (eNetwizard Content Management Server)"
+
 osiStatus: "unclear"
 

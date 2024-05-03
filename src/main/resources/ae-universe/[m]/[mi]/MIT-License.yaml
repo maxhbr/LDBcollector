@@ -6,6 +6,9 @@ canonicalName: "MIT License"
 category: "MIT"
 spdxIdentifier: "MIT"
 
+canonicalNameHistory:
+  - "Permission Terms (variant 048)"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

@@ -6,6 +6,9 @@ canonicalName: "Q Public License 1.0"
 category: "QPL"
 spdxIdentifier: "QPL-1.0"
 
+canonicalNameHistory:
+  - "QPL 1.0"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

@@ -6,6 +6,9 @@ canonicalName: "Sun Proprietary Notice (Java Sources)"
 category: "Sun Proprietary Notice"
 shortName: "Sun-Proprietary-JDK"
 
+canonicalNameHistory:
+  - "Sun proprietary notice for Java sources"
+
 alternativeNames:
   - "Sun proprietary notice for Java sources"
   - "SUN PROPRIETARY/CONFIDENTIAL"

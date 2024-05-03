@@ -6,6 +6,10 @@ canonicalName: "BSD 3-Clause License (no military use)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-No-Military-License"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License Var041"
+  - "BSD 3-Clause License (variant 041)"
+
 openCoDEStatus: "not approved"
 
 otherIds: 

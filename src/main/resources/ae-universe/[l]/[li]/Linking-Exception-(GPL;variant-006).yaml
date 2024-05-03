@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 006)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-006"
 
+canonicalNameHistory:
+  - "OpenSSH Linking Exception"
+
 type: "exception"
 
 alternativeNames:

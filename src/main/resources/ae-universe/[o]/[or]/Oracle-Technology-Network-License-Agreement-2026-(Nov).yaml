@@ -6,6 +6,9 @@ canonicalName: "Oracle Technology Network License Agreement 2026 (Nov)"
 category: "OTN"
 shortName: "OTN-Distribution"
 
+canonicalNameHistory:
+  - "Oracle Technology Network Distribution License Agreement"
+
 alternativeNames:
   - "OTND License"
 

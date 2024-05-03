@@ -6,5 +6,8 @@ canonicalName: "BSD 3-Clause License (GPL addition)"
 category: "BSD"
 shortName: "BSD-3-Clause-GPL-addition"
 
+canonicalNameHistory:
+  - "BSD 3-Clause (GPL addition)"
+
 otherIds: 
   - "scancode:bsd-top-gpl-addition"

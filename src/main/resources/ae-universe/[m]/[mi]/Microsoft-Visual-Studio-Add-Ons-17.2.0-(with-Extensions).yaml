@@ -6,6 +6,9 @@ canonicalName: "Microsoft Visual Studio Add-Ons 17.2.0 (with Extensions)"
 category: "Microsoft Visual Studio Add-Ons"
 shortName: "MS-VS-Addons-Ext-17.2.0"
 
+canonicalNameHistory:
+  - "Microsoft Visual Studio Add-Ons and Extensions 17.2.0"
+
 alternativeNames:
   - "Microsoft Visual Studio Add-Ons and Extensions 17.2.0"
   - "MICROSOFT VISUAL STUDIO ADD-ONs and EXTENSIONS"

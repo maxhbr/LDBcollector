@@ -7,6 +7,9 @@ category: "Etalab"
 shortName: "Etalab-2.0-FR"
 spdxIdentifier: "etalab-2.0"
 
+canonicalNameHistory:
+  - "Etalab Open License 2.0"
+
 alternativeNames:
   - "Etalab Open License 2.0"
   - "etalab-2.0"

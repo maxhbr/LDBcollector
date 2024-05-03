@@ -6,6 +6,9 @@ canonicalName: "Mini-XML Exception (LGPL)"
 category: "LGPL Mini-XML Exception"
 shortName: "Mini-XML-Exception-LGPL"
 
+canonicalNameHistory:
+  - "Mini-XML Exception 2.0"
+
 type: "exception"
 
 alternativeNames:

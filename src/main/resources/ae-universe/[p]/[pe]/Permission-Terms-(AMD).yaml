@@ -6,6 +6,10 @@ canonicalName: "Permission Terms (AMD)"
 category: "Permission"
 spdxIdentifier: "AMD-newlib"
 
+canonicalNameHistory:
+  - "Permission Terms PVar19"
+  - "Permission Terms (property; variant 001)"
+
 alternativeNames:
   - "AMD newlib License"
 

@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (LGPL; variant 007)"
 category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-007"
 
+canonicalNameHistory:
+  - "Spell Checker Exception (LGPL)"
+
 type: "exception"
 
 otherIds: 

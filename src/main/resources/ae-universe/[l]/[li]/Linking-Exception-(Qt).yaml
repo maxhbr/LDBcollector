@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (Qt)"
 category: "Linking Exception-Qt"
 shortName: "Linking-Exception-Qt"
 
+canonicalNameHistory:
+  - "Qt KDE Linking Exception"
+
 type: "exception"
 
 alternativeNames:

@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (variant 088)"
 category: "Permission"
 shortName: "PT-Var088"
 
+canonicalNameHistory:
+  - "Permission Terms Var088"
+
 otherIds: 
   - "scancode:x11-opengroup"

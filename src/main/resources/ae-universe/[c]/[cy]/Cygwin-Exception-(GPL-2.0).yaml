@@ -6,6 +6,10 @@ canonicalName: "Cygwin Exception (GPL 2.0)"
 category: "Cygwin Exception"
 shortName: "Cygwin-Exception-2.0"
 
+canonicalNameHistory:
+  - "Cygwin exception to GPL 2.0"
+  - "Cygwin Exception (GPL)"
+
 type: "exception"
 
 alternativeNames:

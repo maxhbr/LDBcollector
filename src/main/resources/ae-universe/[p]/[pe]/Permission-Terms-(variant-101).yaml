@@ -6,3 +6,6 @@ canonicalName: "Permission Terms (variant 101)"
 category: "Permission"
 shortName: "PT-Var101"
 
+canonicalNameHistory:
+  - "Permission Terms Var101"
+

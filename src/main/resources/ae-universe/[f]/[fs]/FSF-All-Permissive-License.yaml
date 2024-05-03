@@ -6,6 +6,9 @@ canonicalName: "FSF All Permissive License"
 category: "FSFAP"
 spdxIdentifier: "FSFAP"
 
+canonicalNameHistory:
+  - "Permission Terms (GAP)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

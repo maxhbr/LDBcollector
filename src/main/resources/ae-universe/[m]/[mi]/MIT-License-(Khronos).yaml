@@ -7,6 +7,9 @@ category: "MIT"
 shortName: "MIT-Khronos"
 spdxIdentifier: "MIT-Khronos-old"
 
+canonicalNameHistory:
+  - "MIT License (Materials)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

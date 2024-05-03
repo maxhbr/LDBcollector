@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (LGPL; variant 010)"
 category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-010"
 
+canonicalNameHistory:
+  - "OpenSSL Exception (lgpl)"
+
 type: "exception"
 
 otherIds: 

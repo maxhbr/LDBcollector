@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (variant 048)"
 category: "BSD"
 shortName: "BSD-3-Clause-048"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (without disclaimer)"
+
 alternativeNames:
   - "BSD 3-Clause License (without disclaimer)"
 

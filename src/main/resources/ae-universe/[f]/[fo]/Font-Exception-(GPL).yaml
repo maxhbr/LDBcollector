@@ -7,6 +7,9 @@ category: "GPL Font Exception"
 shortName: "Font-Exception-GPL"
 spdxIdentifier: "Font-exception-2.0"
 
+canonicalNameHistory:
+  - "Font Exception 2.0"
+
 type: "exception"
 
 otherIds: 

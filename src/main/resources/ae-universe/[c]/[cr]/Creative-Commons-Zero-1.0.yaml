@@ -6,6 +6,9 @@ canonicalName: "Creative Commons Zero 1.0"
 category: "CC0"
 spdxIdentifier: "CC0-1.0"
 
+canonicalNameHistory:
+  - "CC0 Universal 1.0"
+
 openCoDEStatus: "approved"
 
 osiStatus: "withdrawn"

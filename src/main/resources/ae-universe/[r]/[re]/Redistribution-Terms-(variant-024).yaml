@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 024)"
 category: "RT"
 shortName: "RT-Var024"
 
+canonicalNameHistory:
+  - "BSD-Original-UC-1986 License"
+
 alternativeNames:
   - "bsd-original-uc-1986"
 

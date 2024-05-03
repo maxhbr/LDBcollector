@@ -6,6 +6,9 @@ canonicalName: "Microsoft Supplemental EULA (Office System Programs)"
 category: "Microsoft Office System Programs Software EULA"
 shortName: "MS-Office-System-Programs-EULA"
 
+canonicalNameHistory:
+  - "Microsoft Office System Programs Software EULA"
+
 alternativeNames:
   - "Microsoft Office System Programs Software EULA"
 

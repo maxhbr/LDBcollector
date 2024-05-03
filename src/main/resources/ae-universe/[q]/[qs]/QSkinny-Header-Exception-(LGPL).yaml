@@ -6,6 +6,9 @@ canonicalName: "QSkinny Header Exception (LGPL)"
 category: "QSkinny Header Exception"
 shortName: "QSkinny-Header-Exception-LGPL"
 
+canonicalNameHistory:
+  - "QSkinny Exception to LGPL 2.1"
+
 type: "exception"
 
 alternativeNames:

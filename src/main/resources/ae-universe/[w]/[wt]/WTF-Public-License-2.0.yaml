@@ -7,6 +7,9 @@ category: "WTFPL"
 shortName: "WTFPL-2.0"
 spdxIdentifier: "WTFPL"
 
+canonicalNameHistory:
+  - "WTF Public License"
+
 openCoDEStatus: "approved"
 
 osiStatus: "submitted"

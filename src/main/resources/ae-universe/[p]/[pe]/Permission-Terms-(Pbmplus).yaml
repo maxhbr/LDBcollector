@@ -6,6 +6,11 @@ canonicalName: "Permission Terms (Pbmplus)"
 category: "Permission"
 spdxIdentifier: "HPND-Pbmplus"
 
+canonicalNameHistory:
+  - "Permission Terms Var032"
+  - "Open Group Permissions"
+  - "Permission Terms (variant 032)"
+
 alternativeNames:
   - "Open Group Permissions"
   - "Permission Terms (variant 032)"

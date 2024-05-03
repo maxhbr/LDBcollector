@@ -6,6 +6,9 @@ canonicalName: "Ekiga Exception (GPL 2.0 or later)"
 category: "Ekiga"
 shortName: "Ekiga-Exception-2.0-Plus"
 
+canonicalNameHistory:
+  - "Ekiga exception to GPL 2.0 or later"
+
 type: "exception"
 
 alternativeNames:

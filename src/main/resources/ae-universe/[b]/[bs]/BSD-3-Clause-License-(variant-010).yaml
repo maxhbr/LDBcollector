@@ -6,3 +6,6 @@ canonicalName: "BSD 3-Clause License (variant 010)"
 category: "BSD"
 shortName: "BSD-3-Clause-010"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License Var010"
+

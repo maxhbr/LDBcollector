@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (JGraph)"
 category: "BSD-3-Clause-JGraph"
 shortName: "BSD-3-Clause-JGraph"
 
+canonicalNameHistory:
+  - "BSD 3-Clause (JGraph)"
+
 alternativeNames:
   - "JGraph License"
 

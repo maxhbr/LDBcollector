@@ -7,6 +7,9 @@ category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-003"
 spdxIdentifier: "OCaml-LGPL-linking-exception"
 
+canonicalNameHistory:
+  - "OCaml LGPL Linking Exception"
+
 type: "exception"
 
 otherIds: 

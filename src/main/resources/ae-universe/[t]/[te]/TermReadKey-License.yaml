@@ -6,6 +6,9 @@ canonicalName: "TermReadKey License"
 category: "TermReadKey"
 spdxIdentifier: "TermReadKey"
 
+canonicalNameHistory:
+  - "Term Readkey License"
+
 alternativeNames:
   - "Term Readkey License"
   - "TermReadKey License"

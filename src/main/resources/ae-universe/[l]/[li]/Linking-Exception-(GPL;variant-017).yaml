@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 017)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-017"
 
+canonicalNameHistory:
+  - "QCAD Exception"
+
 type: "exception"
 
 alternativeNames:

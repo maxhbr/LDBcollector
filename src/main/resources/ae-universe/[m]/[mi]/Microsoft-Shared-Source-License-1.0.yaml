@@ -6,6 +6,9 @@ canonicalName: "Microsoft Shared Source License 1.0"
 category: "Microsoft Invisible Computing EULA"
 shortName: "MS-Invisible-EULA-1.0"
 
+canonicalNameHistory:
+  - "Microsoft Invisible Computing EULA 1.0"
+
 alternativeNames:
   - "Microsoft Invisible Computing EULA 1.0"
   - "MICROSOFT SHARED SOURCE LICENSE Version 1.0"

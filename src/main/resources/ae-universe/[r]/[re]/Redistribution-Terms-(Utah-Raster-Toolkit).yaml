@@ -7,6 +7,10 @@ category: "RT"
 shortName: "RT-Utah-Raster-Tolkit"
 spdxIdentifier: "URT-RLE"
 
+canonicalNameHistory:
+  - "Redistribution Terms (source provision; no warranty)"
+  - "Redistribution Terms (variant 012)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

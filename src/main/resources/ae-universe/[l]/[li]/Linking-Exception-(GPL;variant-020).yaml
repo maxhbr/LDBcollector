@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 020)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-020"
 
+canonicalNameHistory:
+  - "SANE Short Exception"
+
 type: "exception"
 
 otherIds: 

@@ -6,3 +6,6 @@ canonicalName: "Redistribution Terms (variant 020)"
 category: "RT"
 shortName: "RT-Var020"
 
+canonicalNameHistory:
+  - "BSD License (only 3rd Clause)"
+

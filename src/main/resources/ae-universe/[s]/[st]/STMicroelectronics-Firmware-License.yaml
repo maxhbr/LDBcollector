@@ -6,6 +6,9 @@ canonicalName: "STMicroelectronics Firmware License"
 category: "STMicroelectronics"
 shortName: "STM-Firmware"
 
+canonicalNameHistory:
+  - "ST Microelectronics Firmware License"
+
 alternativeNames:
   - "ST Microelectronics Firmware License"
 

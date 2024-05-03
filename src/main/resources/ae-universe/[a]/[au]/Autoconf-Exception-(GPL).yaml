@@ -7,6 +7,9 @@ category: "GPL Autoconf Exception"
 shortName: "Autoconf-Exception-GPL"
 spdxIdentifier: "Autoconf-exception-2.0"
 
+canonicalNameHistory:
+  - "Autoconf Exception 2.0"
+
 type: "exception"
 
 otherIds: 

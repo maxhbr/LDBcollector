@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (pnmstitch)"
 category: "RT"
 spdxIdentifier: "pnmstitch"
 
+canonicalNameHistory:
+  - "Redistribution Terms (variant 030)"
+
 alternativeNames:
   - "pnmstitch License"
 

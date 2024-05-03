@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (sRGB)"
 category: "Permission"
 shortName: "PT-no-advertising-no-warranty-no-representation"
 
+canonicalNameHistory:
+  - "Permission Terms (sRGB; no advertising; no warranty; no representation)"
+
 otherIds: 
   - "scancode:srgb"

@@ -6,6 +6,9 @@ canonicalName: "Expat SunSoft Restriction"
 category: "Expat Restriction"
 shortName: "Expat-SunSoft-Restriction"
 
+canonicalNameHistory:
+  - "Expat SunSoft Exception"
+
 type: "restriction"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "Opera EULA 2018"
 category: "Opera EULA"
 shortName: "Opera-EULA-2018"
 
+canonicalNameHistory:
+  - "Opera EULA for Computers"
+
 alternativeNames:
   - "Opera EULA for Computers"
 

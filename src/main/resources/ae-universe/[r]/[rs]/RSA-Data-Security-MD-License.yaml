@@ -6,6 +6,9 @@ canonicalName: "RSA Data Security MD License"
 category: "RSA Data Security MD"
 shortName: "RSA-DS-MD"
 
+canonicalNameHistory:
+  - "RSA MD License"
+
 alternativeNames:
   - "RSA MD License"
   - "RSA MD LICENSE"

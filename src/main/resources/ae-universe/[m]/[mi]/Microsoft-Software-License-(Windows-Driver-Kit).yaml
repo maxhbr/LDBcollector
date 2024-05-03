@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (Windows Driver Kit)"
 category: "Microsoft Software"
 shortName: "MS-Windows-Driver-Kit"
 
+canonicalNameHistory:
+  - "Microsoft Windows Driver Kit License"
+
 alternativeNames:
   - "Microsoft Windows Driver Kit License"
 

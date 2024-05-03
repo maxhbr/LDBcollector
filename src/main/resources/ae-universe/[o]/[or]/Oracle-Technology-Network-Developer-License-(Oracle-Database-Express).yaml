@@ -6,6 +6,9 @@ canonicalName: "Oracle Technology Network Developer License (Oracle Database Exp
 category: "OTN"
 shortName: "OTN-Database-Express"
 
+canonicalNameHistory:
+  - "Oracle Technology Network Oracle Express License Agreement"
+
 alternativeNames:
   - "Oracle Technology Network Developer License Terms for Oracle Database Express Edition"
   - "Oracle Database 11 g Express Edition License Agreement"

@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (Sun Source)"
 category: "Permission"
 shortName: "PT-Sun-Source"
 
+canonicalNameHistory:
+  - "Permission Terms (SUN)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

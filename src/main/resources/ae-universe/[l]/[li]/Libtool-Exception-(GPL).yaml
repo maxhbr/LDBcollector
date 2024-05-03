@@ -7,6 +7,9 @@ category: "GPL Libtool Exception"
 shortName: "Libtool-Exception-GPL"
 spdxIdentifier: "Libtool-exception"
 
+canonicalNameHistory:
+  - "Libtool Exception"
+
 type: "exception"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 014)"
 category: "RT"
 shortName: "RT-Var014"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (missing liability disclaimer)"
+
 alternativeNames:
   - "BSD 3-Clause License (missing liability disclaimer)"
 

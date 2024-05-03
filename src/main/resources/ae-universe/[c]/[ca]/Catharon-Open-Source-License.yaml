@@ -6,6 +6,9 @@ canonicalName: "Catharon Open Source License"
 category: "Catharon"
 spdxIdentifier: "Catharon"
 
+canonicalNameHistory:
+  - "Catheron Open Source License"
+
 alternativeNames:
   - "Catharon License"
   - "Catharon LICENSE"

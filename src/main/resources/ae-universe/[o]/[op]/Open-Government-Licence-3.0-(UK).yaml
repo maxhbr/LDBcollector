@@ -6,6 +6,9 @@ canonicalName: "Open Government Licence 3.0 (UK)"
 category: "OGL UK"
 spdxIdentifier: "OGL-UK-3.0"
 
+canonicalNameHistory:
+  - "Open Government Licence 3.0"
+
 alternativeNames:
   - "Open Government Licence v3.0"
   - "OGL-UK-3.0"

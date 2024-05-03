@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 055)"
 category: "Permission"
 shortName: "PT-Var055"
 
+canonicalNameHistory:
+  - "Permission Terms Var055"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "ISC"
 

@@ -6,6 +6,9 @@ canonicalName: "SFL License"
 category: "SFL"
 spdxIdentifier: "iMatix"
 
+canonicalNameHistory:
+  - "iMatix License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "BSD 4-Clause License (variant 001)"
 category: "BSD"
 shortName: "BSD-4-Clause-001"
 
+canonicalNameHistory:
+  - "BSD 4-Clause License Var001"
+
 openCoDEStatus: "approved"
 
 otherIds: 

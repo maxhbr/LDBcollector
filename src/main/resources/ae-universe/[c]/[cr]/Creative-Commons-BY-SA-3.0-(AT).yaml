@@ -6,6 +6,9 @@ canonicalName: "Creative Commons BY-SA 3.0 (AT)"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-3.0-AT"
 
+canonicalNameHistory:
+  - "Creative Commons Attribution Share Alike 3.0 Austria"
+
 openCoDEStatus: "approved"
 
 osiStatus: "pending"

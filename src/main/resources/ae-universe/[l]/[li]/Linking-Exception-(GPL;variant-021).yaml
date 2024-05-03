@@ -6,5 +6,8 @@ canonicalName: "Linking Exception (GPL; variant 021)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-021"
 
+canonicalNameHistory:
+  - "Server Handler Exception"
+
 type: "exception"
 

@@ -7,6 +7,9 @@ category: "BSD"
 shortName: "BSD-5-Clause-Entessa"
 spdxIdentifier: "Entessa"
 
+canonicalNameHistory:
+  - "Entessa License"
+
 osiStatus: "approved"
 osiCategory: "non-reusable"
 

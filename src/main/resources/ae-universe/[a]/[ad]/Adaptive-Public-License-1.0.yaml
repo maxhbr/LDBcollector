@@ -6,6 +6,9 @@ canonicalName: "Adaptive Public License 1.0"
 category: "Adaptive Public License"
 spdxIdentifier: "APL-1.0"
 
+canonicalNameHistory:
+  - "Adaptice Public License 1.0"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

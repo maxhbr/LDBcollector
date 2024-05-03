@@ -6,6 +6,9 @@ canonicalName: "BSD-2-Clause License (variant 012)"
 category: "BSD"
 shortName: "BSD-2-Clause-012"
 
+canonicalNameHistory:
+  - "Redistribution Terms (JS Foundation)"
+
 alternativeNames:
   - "Redistribution Terms (JS Foundation)"
 

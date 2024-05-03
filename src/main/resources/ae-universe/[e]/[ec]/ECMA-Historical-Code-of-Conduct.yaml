@@ -6,6 +6,10 @@ canonicalName: "ECMA Historical Code of Conduct"
 category: "ECMA Historical Code of Conduct"
 shortName: "ECMA-Patent-CoC"
 
+canonicalNameHistory:
+  - "ECMA Historical Code of Conduct in Patent Matters"
+  - "Ecma Historical Code of Conduct in Patent Matters"
+
 alternativeNames:
   - "ecma-patent-coc-0"
 

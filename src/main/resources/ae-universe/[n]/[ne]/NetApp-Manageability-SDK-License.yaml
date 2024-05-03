@@ -6,5 +6,8 @@ canonicalName: "NetApp Manageability SDK License"
 category: "NetApp Manageability SDK License Agreement"
 shortName: "NetApp-Manageability-SDK"
 
+canonicalNameHistory:
+  - "NetApp Manageability SDK License Agreement"
+
 otherIds: 
   - "scancode:netapp-sdk-aug2020"

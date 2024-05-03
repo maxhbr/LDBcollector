@@ -7,6 +7,9 @@ category: "GPL U-Boot Exception"
 shortName: "U-Boot-Exception-GPL"
 spdxIdentifier: "u-boot-exception-2.0"
 
+canonicalNameHistory:
+  - "U-Boot Exception 2.0"
+
 type: "exception"
 
 alternativeNames:

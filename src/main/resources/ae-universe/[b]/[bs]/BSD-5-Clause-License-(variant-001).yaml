@@ -6,3 +6,6 @@ canonicalName: "BSD 5-Clause License (variant 001)"
 category: "BSD"
 shortName: "BSD-5-Clause-001"
 
+canonicalNameHistory:
+  - "BSD alike (SVN)"
+

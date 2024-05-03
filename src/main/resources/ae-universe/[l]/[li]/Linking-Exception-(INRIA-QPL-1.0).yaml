@@ -7,6 +7,11 @@ category: "QPL Linking Exception"
 shortName: "Linking-Exception-QPL"
 spdxIdentifier: "QPL-1.0-INRIA-2004-exception"
 
+canonicalNameHistory:
+  - "INRIA Linking Exception"
+  - "INRIA QPL 1.0 2004 variant exception"
+  - "Linking Exception (QPL)"
+
 type: "exception"
 
 alternativeNames:

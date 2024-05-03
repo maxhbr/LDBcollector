@@ -6,5 +6,8 @@ canonicalName: "LHA License"
 category: "LHA"
 shortName: "LHA"
 
+canonicalNameHistory:
+  - "LHA"
+
 otherIds: 
   - "scancode:lha"

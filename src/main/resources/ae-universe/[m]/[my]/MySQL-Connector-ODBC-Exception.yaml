@@ -6,6 +6,9 @@ canonicalName: "MySQL Connector ODBC Exception"
 category: "MySQL Connector ODBC Exception"
 shortName: "MySQL-Connector-ODBC-Exception"
 
+canonicalNameHistory:
+  - "MySQL Connector ODBC Exception 2.0"
+
 type: "exception"
 
 alternativeNames:

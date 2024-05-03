@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (without binary clause; variant 006)"
 category: "BSD"
 shortName: "BSD-3-Clause-without-binary-006"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (Axis)"
+
 alternativeNames:
   - "bsd-axis"
 

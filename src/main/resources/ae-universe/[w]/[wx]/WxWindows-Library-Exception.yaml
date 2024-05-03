@@ -7,6 +7,9 @@ category: "WxWindows Exception"
 shortName: "WxWindows-Exception"
 spdxIdentifier: "WxWindows-exception-3.1"
 
+canonicalNameHistory:
+  - "WxWindows Library Exception 3.1"
+
 type: "exception"
 
 alternativeNames:

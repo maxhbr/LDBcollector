@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 025)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-025"
 
+canonicalNameHistory:
+  - "OpenSSL Exception"
+
 type: "exception"
 
 alternativeNames:

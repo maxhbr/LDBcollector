@@ -6,6 +6,9 @@ canonicalName: "zlib/libpng License (with acknowledgement)"
 category: "zlib-acknowledgement"
 spdxIdentifier: "zlib-acknowledgement"
 
+canonicalNameHistory:
+  - "zlib/libpng License with Acknowledgement"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

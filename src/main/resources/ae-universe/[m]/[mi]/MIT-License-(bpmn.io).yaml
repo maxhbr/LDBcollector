@@ -6,6 +6,9 @@ canonicalName: "MIT License (bpmn.io)"
 category: "MIT"
 shortName: "MIT-bpmn-io"
 
+canonicalNameHistory:
+  - "bpmn.io License"
+
 alternativeNames:
   - "bpmn.io License"
 

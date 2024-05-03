@@ -6,6 +6,9 @@ canonicalName: "X11 License (Adobe)"
 category: "X11"
 shortName: "X11-Adobe"
 
+canonicalNameHistory:
+  - "X11-Style (Adobe)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

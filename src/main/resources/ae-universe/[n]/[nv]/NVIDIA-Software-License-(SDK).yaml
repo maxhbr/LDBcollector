@@ -6,6 +6,9 @@ canonicalName: "NVIDIA Software License (SDK)"
 category: "NVIDIA ISAAC EULA"
 shortName: "NVIDIA-ISAAC-EULA"
 
+canonicalNameHistory:
+  - "NVIDIA ISAAC EULA"
+
 alternativeNames:
   - "NVIDIA ISAAC EULA"
 

@@ -6,6 +6,10 @@ canonicalName: "ISC License (Veillard)"
 category: "Permission"
 spdxIdentifier: "ISC-Veillard"
 
+canonicalNameHistory:
+  - "Permission Terms Var008"
+  - "Permission Terms (variant 008)"
+
 alternativeNames:
   - "ISC-Veillard"
   - "ISC Veillard variant"

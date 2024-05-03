@@ -7,6 +7,9 @@ category: "Linking Exception"
 shortName: "cryptsetup-OpenSSL-Exception"
 spdxIdentifier: "cryptsetup-OpenSSL-exception"
 
+canonicalNameHistory:
+  - "cryptsetup OpenSSL exception"
+
 type: "exception"
 
 alternativeNames:

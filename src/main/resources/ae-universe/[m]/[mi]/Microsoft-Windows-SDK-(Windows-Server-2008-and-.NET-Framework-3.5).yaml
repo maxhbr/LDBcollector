@@ -6,6 +6,9 @@ canonicalName: "Microsoft Windows SDK (Windows Server 2008 and .NET Framework 3.
 category: "Microsoft Windows SDK"
 shortName: "MS-Windows-SDK-Server-2008-NET-3.5"
 
+canonicalNameHistory:
+  - "Microsoft Windows SDK for Windows Server 2008 and .NET Framework 3.5"
+
 alternativeNames:
   - "Microsoft Windows SDK for Windows Server 2008 and .NET Framework 3.5"
 

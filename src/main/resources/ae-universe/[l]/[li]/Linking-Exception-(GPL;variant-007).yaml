@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (GPL; variant 007)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-007"
 
+canonicalNameHistory:
+  - "Kyoto Products Specific FOSS Library Linking Exception"
+
 type: "exception"
 
 otherIds: 

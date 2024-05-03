@@ -6,6 +6,10 @@ canonicalName: "BSD 4-Clause License (without endorsement clause; variant 002)"
 category: "BSD"
 shortName: "BSD-4-Clause-UC-no-3rd-clause"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (UC; without 3rd Clause)"
+  - "BSD 4-Clause License (UC; without 3rd Clause)"
+
 alternativeNames:
   - "BSD 4-Clause (University of California-Specific)"
   - "http://www.freebsd.org/copyright/license.html"

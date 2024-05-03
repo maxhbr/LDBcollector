@@ -6,6 +6,9 @@ canonicalName: "OGC Software Notice"
 category: "OGC Software Notice"
 shortName: "OGC-Software"
 
+canonicalNameHistory:
+  - "OGC GeoApi License"
+
 alternativeNames:
   - "OGC Software Notice"
 

@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 021)"
 category: "RT"
 shortName: "RT-Var021"
 
+canonicalNameHistory:
+  - "BSD License (source distribution obligation)"
+
 alternativeNames:
   - "bsd-simplified-source"
 

@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (Inferno Nettverk)"
 category: "BSD"
 spdxIdentifier: "BSD-Inferno-Nettverk"
 
+canonicalNameHistory:
+  - "BSD-Inferno-Nettverk"
+
 alternativeNames:
   - "BSD-Inferno-Nettverk"
 

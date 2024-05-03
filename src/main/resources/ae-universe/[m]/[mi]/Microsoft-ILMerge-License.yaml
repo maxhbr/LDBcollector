@@ -6,6 +6,9 @@ canonicalName: "Microsoft ILMerge License"
 category: "MS ILMerge License"
 shortName: "MS-ILMerge"
 
+canonicalNameHistory:
+  - "MS ILMerge License"
+
 alternativeNames:
   - "MS ILMerge License"
   - "ILMerge license"

@@ -6,6 +6,9 @@ canonicalName: "ICU 58 License (or any later version)"
 category: "ICU"
 shortName: "ICU-58+"
 
+canonicalNameHistory:
+  - "ICU 58 License"
+
 alternativeNames:
   - "COPYRIGHT AND PERMISSION NOTICE (ICU 58 and later)"
 

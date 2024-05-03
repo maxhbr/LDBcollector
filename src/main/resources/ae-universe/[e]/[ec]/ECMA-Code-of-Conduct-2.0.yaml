@@ -6,6 +6,10 @@ canonicalName: "ECMA Code of Conduct 2.0"
 category: "ECMA Code of Conduct"
 shortName: "ECMA-Patent-CoC-2.0"
 
+canonicalNameHistory:
+  - "ECMA Code of Conduct in Patent Matters 2.0"
+  - "Ecma Code of Conduct in Patent Matters 2.0"
+
 alternativeNames:
   - "ecma-patent-coc-2"
 

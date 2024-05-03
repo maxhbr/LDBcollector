@@ -6,6 +6,9 @@ canonicalName: "Carnegie Mellon UC Regents License"
 category: "Carnegie Mellon UC Regents"
 shortName: "Carnegie-Mellon-UC-Regents"
 
+canonicalNameHistory:
+  - "Carnegie Mellon UC Regents MIT-style License"
+
 alternativeNames:
   - "cmu-mit"
   - "Carnegie Mellon UC Regents MIT-style License"

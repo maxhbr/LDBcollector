@@ -7,6 +7,9 @@ category: "GPL OpenJDK Assembly Exception"
 shortName: "OpenJDK-Assembly-Exception-GPL"
 spdxIdentifier: "OpenJDK-assembly-exception-1.0"
 
+canonicalNameHistory:
+  - "OpenJDK Assembly Exception 1.0"
+
 type: "exception"
 
 otherIds: 

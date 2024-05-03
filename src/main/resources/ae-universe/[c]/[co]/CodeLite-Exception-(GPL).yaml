@@ -6,6 +6,9 @@ canonicalName: "CodeLite Exception (GPL)"
 category: "CodeLite Exception"
 shortName: "Codelite-Exception-GPL"
 
+canonicalNameHistory:
+  - "CodeLite Exception to GPL"
+
 type: "exception"
 
 alternativeNames:

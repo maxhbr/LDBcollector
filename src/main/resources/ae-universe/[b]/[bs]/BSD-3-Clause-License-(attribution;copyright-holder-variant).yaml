@@ -6,3 +6,6 @@ canonicalName: "BSD 3-Clause License (attribution; copyright holder variant)"
 category: "BSD"
 shortName: "BSD-3-Clause-Attribution-copyright-variant"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (attribution; copyright variant)"
+

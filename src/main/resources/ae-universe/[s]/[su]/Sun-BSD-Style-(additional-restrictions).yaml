@@ -6,6 +6,9 @@ canonicalName: "Sun BSD-Style (additional restrictions)"
 category: "Sun BSD-Style"
 shortName: "Sun-BSD-Extra"
 
+canonicalNameHistory:
+  - "Sun BSD-Style with Additional Restrictions"
+
 alternativeNames:
   - "Sun Open Source License"
 

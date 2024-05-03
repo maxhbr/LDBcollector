@@ -6,6 +6,9 @@ canonicalName: "LaTeX Project Public License 1.3c"
 category: "LPPL"
 spdxIdentifier: "LPPL-1.3c"
 
+canonicalNameHistory:
+  - "LPPL 1.3c"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

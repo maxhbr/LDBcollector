@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (variant 051)"
 category: "BSD"
 shortName: "BSD-3-Clause-051"
 
+canonicalNameHistory:
+  - "Allen Institute Software License 2018"
+
 alternativeNames:
   - "Allen Institute Software License 2018"
 

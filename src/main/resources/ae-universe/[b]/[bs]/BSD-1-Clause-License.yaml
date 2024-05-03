@@ -6,6 +6,10 @@ canonicalName: "BSD 1-Clause License"
 category: "BSD"
 spdxIdentifier: "BSD-1-Clause"
 
+canonicalNameHistory:
+  - "BSD 1-Clause License (copyright holder variant)"
+  - "BSD 1-Clause License (copyright variant)"
+
 openCoDEStatus: "approved"
 
 osiStatus: "approved"

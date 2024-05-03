@@ -6,6 +6,9 @@ canonicalName: "Bash Exception (GPL)"
 category: "GPL Bash Exception"
 shortName: "Bash-Exception-GPL"
 
+canonicalNameHistory:
+  - "Bash Exception (to GPL)"
+
 type: "exception"
 
 otherIds: 

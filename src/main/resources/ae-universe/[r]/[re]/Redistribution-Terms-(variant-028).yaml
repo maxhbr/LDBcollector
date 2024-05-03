@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 028)"
 category: "RT"
 shortName: "RT-Var028"
 
+canonicalNameHistory:
+  - "BSD alike (PNG; with advertising clause)"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "LicenseRef-scancode-greg-roelofs"
 

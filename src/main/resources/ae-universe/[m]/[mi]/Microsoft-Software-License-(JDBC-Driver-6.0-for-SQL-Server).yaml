@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (JDBC Driver 6.0 for SQL Server)"
 category: "Microsoft Software"
 shortName: "MS-Software-JDBC-Driver-60-SQL-Server"
 
+canonicalNameHistory:
+  - "Microsoft JDBC Driver 6.0 for SQL Server"
+
 alternativeNames:
   - "Microsoft JDBC Driver 6.0 for SQL Server"
   - "MICROSOFT JDBC DRIVER 6.0 FOR SQL SERVER"

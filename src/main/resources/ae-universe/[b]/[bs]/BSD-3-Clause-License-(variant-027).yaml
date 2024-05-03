@@ -6,5 +6,8 @@ canonicalName: "BSD 3-Clause License (variant 027)"
 category: "BSD"
 shortName: "BSD-3-Clause-027"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License Var027"
+
 otherIds: 
   - "scancode:bsd-no-mod"

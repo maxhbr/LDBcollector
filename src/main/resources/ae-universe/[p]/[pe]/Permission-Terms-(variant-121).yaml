@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 121)"
 category: "Permission"
 shortName: "PT-Var121"
 
+canonicalNameHistory:
+  - "MIT Szabolcs Nagy"
+
 alternativeNames:
   - "mit-nagy"
 

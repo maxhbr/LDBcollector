@@ -6,6 +6,9 @@ canonicalName: "NCL Source Code License"
 category: "NCL Source Code"
 spdxIdentifier: "NCL"
 
+canonicalNameHistory:
+  - "Spherepack License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

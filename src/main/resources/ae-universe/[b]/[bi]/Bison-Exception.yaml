@@ -6,6 +6,9 @@ canonicalName: "Bison Exception"
 category: "Bison Exception"
 spdxIdentifier: "Bison-exception-1.24"
 
+canonicalNameHistory:
+  - "Bison Exception 2.0"
+
 type: "exception"
 
 alternativeNames:

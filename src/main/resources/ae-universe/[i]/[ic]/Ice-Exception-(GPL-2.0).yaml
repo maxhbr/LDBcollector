@@ -6,6 +6,9 @@ canonicalName: "Ice Exception (GPL 2.0)"
 category: "Ice Exception"
 shortName: "Ice-Exception-GPL-2.0"
 
+canonicalNameHistory:
+  - "Ice Exception to GPL 2.0"
+
 type: "exception"
 
 otherIds: 

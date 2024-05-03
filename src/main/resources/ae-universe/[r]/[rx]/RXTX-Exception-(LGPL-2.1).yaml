@@ -6,6 +6,9 @@ canonicalName: "RXTX Exception (LGPL 2.1)"
 category: "RXTX"
 shortName: "RXTX-Exception-LGPL-2.1"
 
+canonicalNameHistory:
+  - "RXTX exception to LGPL 2.1"
+
 type: "exception"
 
 alternativeNames:

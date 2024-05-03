@@ -6,6 +6,9 @@ canonicalName: "LaTeX Project Public License 1.3a"
 category: "LPPL"
 spdxIdentifier: "LPPL-1.3a"
 
+canonicalNameHistory:
+  - "LPPL 1.3a"
+
 alternativeNames:
   - "LPPL, Version 1.3a"
   - "LPPL 1.3a"

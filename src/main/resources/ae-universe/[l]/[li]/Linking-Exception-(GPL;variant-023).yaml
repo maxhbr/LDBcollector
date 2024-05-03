@@ -7,6 +7,9 @@ category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-023"
 spdxIdentifier: "openvpn-openssl-exception"
 
+canonicalNameHistory:
+  - "OpenVPN OpenSSL Exception"
+
 type: "exception"
 
 alternativeNames:

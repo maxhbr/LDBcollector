@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (without binary clause; variant 004)"
 category: "BSD"
 shortName: "BSD-3-Clause-without-binary-004"
 
+canonicalNameHistory:
+  - "BSD 3-Clause License (no modification)"
+
 alternativeNames:
   - "bsd-axis-nomod"
 

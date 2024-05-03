@@ -6,6 +6,9 @@ canonicalName: "OGC Document Notice"
 category: "OGC Document Notice"
 shortName: "OGC-Document-2020"
 
+canonicalNameHistory:
+  - "OGC Document Notice 2020"
+
 alternativeNames:
   - "OGC Document Notice 2020"
 

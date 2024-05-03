@@ -6,6 +6,9 @@ canonicalName: "SSH Notice (short)"
 category: "SSH"
 spdxIdentifier: "SSH-short"
 
+canonicalNameHistory:
+  - "SSH short notice"
+
 alternativeNames:
   - "SSH short notice"
   - "Tatu Ylonen's original licence"

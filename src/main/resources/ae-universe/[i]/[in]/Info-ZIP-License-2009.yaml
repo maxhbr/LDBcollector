@@ -7,6 +7,9 @@ category: "Info-ZIP License"
 shortName: "Info-ZIP-2009"
 spdxIdentifier: "Info-ZIP"
 
+canonicalNameHistory:
+  - "Info-ZIP License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

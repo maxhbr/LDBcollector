@@ -6,6 +6,9 @@ canonicalName: "Symlinks License"
 category: "Symlinks"
 spdxIdentifier: "Symlinks"
 
+canonicalNameHistory:
+  - "Symlinks Clarification License"
+
 alternativeNames:
   - "Symlinks Clarification License"
   - "Symlinks License"

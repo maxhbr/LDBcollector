@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (variant 002)"
 category: "Linking Exception"
 shortName: "Linking-Exception-002"
 
+canonicalNameHistory:
+  - "Unlimited Binary Linking Exception"
+
 type: "exception"
 
 alternativeNames:

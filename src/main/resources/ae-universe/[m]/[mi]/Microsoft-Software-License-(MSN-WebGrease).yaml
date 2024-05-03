@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (MSN WebGrease)"
 category: "Microsoft Software"
 shortName: "MS-Software-MSN-Webgrease"
 
+canonicalNameHistory:
+  - "Microsoft MSN WebGrease License"
+
 alternativeNames:
   - "Microsoft MSN WebGrease License"
   - "MICROSOFT MSN WEBGREASE"

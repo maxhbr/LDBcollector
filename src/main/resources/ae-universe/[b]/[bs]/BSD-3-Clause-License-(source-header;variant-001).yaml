@@ -6,6 +6,9 @@ canonicalName: "BSD 3-Clause License (source header; variant 001)"
 category: "BSD"
 shortName: "BSD-3-Clause-source-header-001"
 
+canonicalNameHistory:
+  - "BSD-InnoSys License"
+
 alternativeNames:
   - "BSD-InnoSys License"
 

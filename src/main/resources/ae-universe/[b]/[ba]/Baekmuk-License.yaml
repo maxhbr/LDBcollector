@@ -6,6 +6,9 @@ canonicalName: "Baekmuk License"
 category: "Baekmuk"
 spdxIdentifier: "Baekmuk"
 
+canonicalNameHistory:
+  - "Baekmuk Fonts License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

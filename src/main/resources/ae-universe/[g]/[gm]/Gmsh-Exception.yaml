@@ -6,6 +6,9 @@ canonicalName: "Gmsh Exception"
 category: "Gmsh-Exception"
 spdxIdentifier: "Gmsh-exception"
 
+canonicalNameHistory:
+  - "Gmsh exception>"
+
 type: "exception"
 
 alternativeNames:

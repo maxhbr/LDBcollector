@@ -7,6 +7,10 @@ category: "MIT Modern"
 shortName: "MIT-modern"
 spdxIdentifier: "MIT-Modern-Variant"
 
+canonicalNameHistory:
+  - "MIT License Modern Variant"
+  - "MIT Old Style License (variant 002)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

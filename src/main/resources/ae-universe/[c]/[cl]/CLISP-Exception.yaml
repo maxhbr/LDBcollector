@@ -7,6 +7,9 @@ category: "CLISP Exception"
 shortName: "CLISP-Exception"
 spdxIdentifier: "CLISP-exception-2.0"
 
+canonicalNameHistory:
+  - "CLISP Exception 2.0"
+
 type: "exception"
 
 otherIds: 

@@ -6,6 +6,9 @@ canonicalName: "MIT Open Group (variant 001)"
 category: "X11"
 shortName: "MIT-Open-Group-001"
 
+canonicalNameHistory:
+  - "MIT Open Group (001)"
+
 alternativeNames:
   - "MIT Open Group (001)"
 

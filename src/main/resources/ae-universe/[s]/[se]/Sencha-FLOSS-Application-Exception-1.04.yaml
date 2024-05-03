@@ -6,6 +6,9 @@ canonicalName: "Sencha FLOSS Application Exception 1.04"
 category: "Sencha FLOSS Exception"
 shortName: "Sencha-FLOSS-Exception-1.04"
 
+canonicalNameHistory:
+  - "Sencha Open Source Floss Exception (GPL 3.0)"
+
 type: "exception"
 
 otherIds: 

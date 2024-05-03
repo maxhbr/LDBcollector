@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (.NET Library 2018-11)"
 category: "Microsoft .NET Library License"
 shortName: "MS-NET-Library-2018-11"
 
+canonicalNameHistory:
+  - "Microsoft .NET Library License 2018-11"
+
 alternativeNames:
   - "Microsoft .NET Library License 2018-11"
   - "https://dotnet.microsoft.com/dotnet_library_license.htm"

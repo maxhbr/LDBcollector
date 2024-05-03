@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 123)"
 category: "Permission"
 shortName: "PT-Var123"
 
+canonicalNameHistory:
+  - "MIT Old Style License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

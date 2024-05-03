@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software Supplemental License (Container OS Image)"
 category: "Microsoft Software Supplemental"
 shortName: "MS-Software-Supplemental"
 
+canonicalNameHistory:
+  - "Microsoft IIS Container Images EULA 202"
+
 alternativeNames:
   - "Microsoft IIS Container Images EULA 202"
 

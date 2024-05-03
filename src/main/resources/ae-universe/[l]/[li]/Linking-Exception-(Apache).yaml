@@ -6,6 +6,9 @@ canonicalName: "Linking Exception (Apache)"
 category: "Apache Linking Exception"
 shortName: "Linking-Exception-Apache"
 
+canonicalNameHistory:
+  - "Apache 2.0 Linking Exception"
+
 type: "exception"
 
 alternativeNames:

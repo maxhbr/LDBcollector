@@ -6,6 +6,9 @@ canonicalName: "MicroType Express License"
 category: "MicroType Express (MTX) License"
 shortName: "MTX-Licensing-Statement"
 
+canonicalNameHistory:
+  - "MicroType Express (MTX) License"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

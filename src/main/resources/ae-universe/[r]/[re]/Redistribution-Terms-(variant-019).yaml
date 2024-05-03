@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (variant 019)"
 category: "RT"
 shortName: "RT-Var019"
 
+canonicalNameHistory:
+  - "BSD Distributed Processing Technology License"
+
 alternativeNames:
   - "bsd-dpt"
 

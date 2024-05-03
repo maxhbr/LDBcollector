@@ -6,6 +6,9 @@ canonicalName: "AROS Public License 1.1"
 category: "AROS"
 shortName: "AROS-1.1"
 
+canonicalNameHistory:
+  - "AROS Public License (APL) 1.1"
+
 osiStatus: "unclear"
 
 alternativeNames:

@@ -7,6 +7,9 @@ category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-002"
 spdxIdentifier: "GPL-3.0-linking-exception"
 
+canonicalNameHistory:
+  - "GPL 3.0 Linking Exception"
+
 type: "exception"
 
 otherIds: 

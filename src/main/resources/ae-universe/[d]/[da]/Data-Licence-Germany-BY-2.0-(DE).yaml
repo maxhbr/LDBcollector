@@ -6,6 +6,9 @@ canonicalName: "Data Licence Germany BY 2.0 (DE)"
 category: "Data Licence BY"
 shortName: "DL-DE-BY-2.0-de"
 
+canonicalNameHistory:
+  - "Data Licence BY 2.0 (DE)"
+
 alternativeNames:
   - "Datenlizenz Deutschland – Namensnennung – Version 2.0"
 

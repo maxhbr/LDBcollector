@@ -6,5 +6,8 @@ canonicalName: "BSD 3-Clause License (variant 047)"
 category: "BSD"
 shortName: "BSD-3-Clause-047"
 
+canonicalNameHistory:
+  - "BSD-3 Clause License (with addition and missing disclaimer parts)"
+
 otherIds: 
   - "scancode:flex-2.5"

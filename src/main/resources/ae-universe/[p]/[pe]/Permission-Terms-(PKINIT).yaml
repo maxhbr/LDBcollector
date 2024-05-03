@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (PKINIT)"
 category: "Permission"
 shortName: "PT-PKINIT"
 
+canonicalNameHistory:
+  - "MIT alike (PKINIT)"
+
 otherIds: 
   - "scancode:michigan-disclaimer"

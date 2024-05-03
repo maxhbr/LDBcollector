@@ -6,6 +6,9 @@ canonicalName: "Microsoft Software License (Visual Studio 2017)"
 category: "Microsoft Software"
 shortName: "MS-Software-Visual-Studio-2017"
 
+canonicalNameHistory:
+  - "Microsoft Visual Studio 2017"
+
 alternativeNames:
   - "Microsoft Visual Studio 2017 License"
 

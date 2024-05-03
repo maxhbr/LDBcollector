@@ -6,6 +6,9 @@ canonicalName: "Creative Commons PDDC"
 category: "CC-PDDC"
 spdxIdentifier: "CC-PDDC"
 
+canonicalNameHistory:
+  - "Creative Commons Public Domain Dedication and Certification"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

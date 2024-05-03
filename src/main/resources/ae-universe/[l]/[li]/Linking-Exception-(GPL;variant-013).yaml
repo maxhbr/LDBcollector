@@ -7,6 +7,9 @@ category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-013"
 spdxIdentifier: "freertos-exception-2.0"
 
+canonicalNameHistory:
+  - "FreeRTOS Exception 2.0"
+
 type: "exception"
 
 alternativeNames:

@@ -6,6 +6,9 @@ canonicalName: "Cygwin Exception (GPL 3.0+)"
 category: "Cygwin Exception"
 shortName: "Cygwin-Exception-GPL-3.0+"
 
+canonicalNameHistory:
+  - "Cygwin License"
+
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "GPL-3.0-or-later"
 

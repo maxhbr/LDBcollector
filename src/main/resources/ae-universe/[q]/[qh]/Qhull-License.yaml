@@ -6,6 +6,9 @@ canonicalName: "Qhull License"
 category: "Qhull License"
 spdxIdentifier: "Qhull"
 
+canonicalNameHistory:
+  - "Qhull"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

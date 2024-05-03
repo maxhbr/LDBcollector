@@ -6,6 +6,9 @@ canonicalName: "ElementTree License"
 category: "ElementTree"
 shortName: "ElementTree"
 
+canonicalNameHistory:
+  - "Permission Terms (variant 125)"
+
 openCoDEStatus: "approved"
 
 otherIds: 
