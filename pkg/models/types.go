@@ -17,7 +17,7 @@ import (
 // It provides structured storage for license-related information.
 type LicenseDB struct {
 	Id              int64                                        `json:"rf_id" gorm:"primary_key;column:rf_id" example:"123"`
-	Shortname       string                                       `json:"rf_shortname" gorm:"unique;not null;column:rf_shortname" binding:"required" example:"MIT"`
+	Shortname       string                                       `json:"rf_shortname" gorm:"unique;not null;column:rf_shortname" example:"MIT"`
 	Fullname        string                                       `json:"rf_fullname" gorm:"column:rf_fullname" example:"MIT License"`
 	Text            string                                       `json:"rf_text" gorm:"column:rf_text" example:"MIT License Text here"`
 	Url             string                                       `json:"rf_url" gorm:"column:rf_url" example:"https://opensource.org/licenses/MIT"`
@@ -38,6 +38,31 @@ type LicenseDB struct {
 	Flag            int64                                        `json:"rf_flag" gorm:"default:1;column:rf_flag" example:"1"`
 	Marydone        bool                                         `json:"marydone" gorm:"column:marydone"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
+}
+
+// LicensePOSTRequestJSONSchema struct represents the input or payload required for creating a license.
+// It contains various fields that capture the necessary information for defining a license entity.
+type LicensePOSTRequestJSONSchema struct {
+	Shortname       string                                       `json:"rf_shortname" binding:"required" example:"MIT"`
+	Fullname        string                                       `json:"rf_fullname" binding:"required" example:"MIT License"`
+	Text            string                                       `json:"rf_text" binding:"required" example:"MIT License Text here"`
+	Url             string                                       `json:"rf_url" binding:"required" example:"https://opensource.org/licenses/MIT"`
+	Copyleft        bool                                         `json:"rf_copyleft" binding:"required"`
+	FSFfree         bool                                         `json:"rf_FSFfree" binding:"required"`
+	OSIapproved     bool                                         `json:"rf_OSIapproved" binding:"required"`
+	GPLv2compatible bool                                         `json:"rf_GPLv2compatible" binding:"required"`
+	GPLv3compatible bool                                         `json:"rf_GPLv3compatible" binding:"required"`
+	Notes           string                                       `json:"rf_notes" example:"This license has been superseded." binding:"required"`
+	Fedora          string                                       `json:"rf_Fedora" binding:"required"`
+	TextUpdatable   bool                                         `json:"rf_text_updatable" binding:"required"`
+	DetectorType    int64                                        `json:"rf_detector_type" example:"1" binding:"required"`
+	Active          bool                                         `json:"rf_active" binding:"required"`
+	Source          string                                       `json:"rf_source" binding:"required"`
+	SpdxId          string                                       `json:"rf_spdx_id" binding:"required" example:"MIT"`
+	Risk            int64                                        `json:"rf_risk" binding:"required"`
+	Flag            int64                                        `json:"rf_flag" binding:"required" example:"1"`
+	Marydone        bool                                         `json:"marydone" binding:"required"`
+	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref" binding:"required"`
 }
 
 type LicenseJson struct {
@@ -63,28 +88,27 @@ type LicenseJson struct {
 	Marydone        string `json:"marydone"`
 }
 
-// LicenseUpdate struct represents the input format for updating an existing license.
+// LicensePATCHRequestJSONSchema struct represents the input format for updating an existing license.
 // Note that the license ID and shortname cannot be updated.
-type LicenseUpdate struct {
-	Fullname        string    `json:"rf_fullname" gorm:"column:rf_fullname" example:"MIT License"`
-	Text            string    `json:"rf_text" gorm:"column:rf_text" example:"MIT License Text here"`
-	Url             string    `json:"rf_url" gorm:"column:rf_url" example:"https://opensource.org/licenses/MIT"`
-	AddDate         time.Time `json:"rf_add_date" gorm:"default:CURRENT_TIMESTAMP;column:rf_add_date" example:"2023-12-01T18:10:25.00+05:30"`
-	Copyleft        bool      `json:"rf_copyleft" gorm:"column:rf_copyleft"`
-	FSFfree         bool      `json:"rf_FSFfree" gorm:"column:rf_FSFfree"`
-	OSIapproved     bool      `json:"rf_OSIapproved" gorm:"column:rf_OSIapproved"`
-	GPLv2compatible bool      `json:"rf_GPLv2compatible" gorm:"column:rf_GPLv2compatible"`
-	GPLv3compatible bool      `json:"rf_GPLv3compatible" gorm:"column:rf_GPLv3compatible"`
-	Notes           string    `json:"rf_notes" gorm:"column:rf_notes" example:"This license has been superseded."`
-	Fedora          string    `json:"rf_Fedora" gorm:"column:rf_Fedora"`
-	TextUpdatable   bool      `json:"rf_text_updatable" gorm:"column:rf_text_updatable"`
-	DetectorType    int64     `json:"rf_detector_type" gorm:"column:rf_detector_type" example:"1"`
-	Active          bool      `json:"rf_active" gorm:"column:rf_active"`
-	Source          string    `json:"rf_source" gorm:"column:rf_source"`
-	SpdxId          string    `json:"rf_spdx_id" gorm:"column:rf_spdx_id" example:"MIT"`
-	Risk            int64     `json:"rf_risk" gorm:"column:rf_risk"`
-	Flag            int64     `json:"rf_flag" gorm:"default:1;column:rf_flag" example:"1"`
-	Marydone        bool      `json:"marydone" gorm:"column:marydone"`
+type LicensePATCHRequestJSONSchema struct {
+	Fullname        OptionalData[string] `json:"rf_fullname" example:"MIT License"`
+	Text            OptionalData[string] `json:"rf_text" example:"MIT License Text here"`
+	Url             OptionalData[string] `json:"rf_url" example:"https://opensource.org/licenses/MIT"`
+	Copyleft        OptionalData[bool]   `json:"rf_copyleft"`
+	FSFfree         OptionalData[bool]   `json:"rf_FSFfree"`
+	OSIapproved     OptionalData[bool]   `json:"rf_OSIapproved"`
+	GPLv2compatible OptionalData[bool]   `json:"rf_GPLv2compatible"`
+	GPLv3compatible OptionalData[bool]   `json:"rf_GPLv3compatible"`
+	Notes           OptionalData[string] `json:"rf_notes" example:"This license has been superseded."`
+	Fedora          OptionalData[string] `json:"rf_Fedora"`
+	TextUpdatable   OptionalData[bool]   `json:"rf_text_updatable"`
+	DetectorType    OptionalData[int64]  `json:"rf_detector_type" example:"1"`
+	Active          OptionalData[bool]   `json:"rf_active"`
+	Source          OptionalData[string] `json:"rf_source"`
+	SpdxId          OptionalData[string] `json:"rf_spdx_id" example:"MIT"`
+	Risk            OptionalData[int64]  `json:"rf_risk"`
+	Flag            OptionalData[int64]  `json:"rf_flag" example:"1"`
+	Marydone        OptionalData[bool]   `json:"marydone"`
 }
 
 // UpdateExternalRefsJSONPayload struct represents the external ref key value
@@ -147,32 +171,6 @@ type LicenseError struct {
 	Error     string `json:"error" example:"invalid request body"`
 	Path      string `json:"path" example:"/api/v1/licenses"`
 	Timestamp string `json:"timestamp" example:"2023-12-01T10:00:51+05:30"`
-}
-
-// The LicenseInput struct represents the input or payload required for creating a license.
-// It contains various fields that capture the necessary information for defining a license entity.
-type LicenseInput struct {
-	Shortname       string                                       `json:"rf_shortname" example:"MIT"`
-	Fullname        string                                       `json:"rf_fullname" example:"MIT License"`
-	Text            string                                       `json:"rf_text" example:"MIT License Text here"`
-	Url             string                                       `json:"rf_url" example:"https://opensource.org/licenses/MIT"`
-	AddDate         time.Time                                    `json:"rf_add_date" example:"2023-12-01T18:10:25.00+05:30"`
-	Copyleft        bool                                         `json:"rf_copyleft"`
-	FSFfree         bool                                         `json:"rf_FSFfree"`
-	OSIapproved     bool                                         `json:"rf_OSIapproved"`
-	GPLv2compatible bool                                         `json:"rf_GPLv2compatible"`
-	GPLv3compatible bool                                         `json:"rf_GPLv3compatible"`
-	Notes           string                                       `json:"rf_notes" example:"This license has been superseded."`
-	Fedora          string                                       `json:"rf_Fedora"`
-	TextUpdatable   bool                                         `json:"rf_text_updatable"`
-	DetectorType    int64                                        `json:"rf_detector_type" example:"1"`
-	Active          bool                                         `json:"rf_active"`
-	Source          string                                       `json:"rf_source"`
-	SpdxId          string                                       `json:"rf_spdx_id" example:"MIT"`
-	Risk            int64                                        `json:"rf_risk"`
-	Flag            int64                                        `json:"rf_flag" example:"1"`
-	Marydone        bool                                         `json:"marydone"`
-	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
 }
 
 // User struct is representation of user information.
