@@ -130,6 +130,8 @@ check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence Apache-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence Apache-2.0 " -e 2" "-e 1"
 
+check_presence APSL-2.0 " -e 2" "-e 1 -e [3-9]"
+
 check_presence Artistic-1.0 " -e 1.0 -e 1" "-e 2 "
 check_presence Artistic-2.0 " -e 2 -e 2.0 " "-e 1"
 
