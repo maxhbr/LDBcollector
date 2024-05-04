@@ -20,6 +20,7 @@
   "Helper functionality focused on regex matching. Note: this namespace is not
   part of the public API of lice-comb and may change without notice."
   (:require [clojure.string       :as s]
+            [clojure.set          :as set]
             [medley.core          :as med]
             [rencg.api            :as rencg]
             [embroidery.api       :as e]
@@ -60,24 +61,25 @@
   "A generic SPDX id constructor which works for many simple regexes."
   [m]
   (when m
-    (let [version    (get-rencgs m ["version"])
-          confidence (if (s/blank? (:latest-ver m))
-                       :high  ; We didn't need a version
-                       (if (s/blank? version)
-                         :low  ; Version not provided at all
-                         (if (and (:pad-ver? m)
-                                  (not (s/includes? version ".")))
-                           :medium   ; We got a partial version
-                           :high)))  ; We got a full version
-          version    (if (s/blank? version)
-                       (:latest-ver m)
-                       version)
-          version    (if (and (:pad-ver? m)
-                              (not (s/includes? version ".")))
-                        (str version ".0")
-                        version)
-          id         (str (:id m) (when-not (s/blank? version) (str "-" version)))]
-      [(assert-listed-id id) confidence])))
+    (let [version (get-rencgs m ["version"])
+          [confidence confidence-explanations]
+                  (if (s/blank? (:latest-ver m))
+                    [:high]  ; We didn't need a version
+                    (if (s/blank? version)
+                      [:low #{:missing-version}]
+                      (if (and (:pad-ver? m)
+                               (not (s/includes? version ".")))
+                        [:medium #{:partial-version}]   ; We got a partial version
+                        [:high])))  ; We got a full version
+          version (if (s/blank? version)
+                    (:latest-ver m)
+                    version)
+          version (if (and (:pad-ver? m)
+                           (not (s/includes? version ".")))
+                     (str version ".0")
+                     version)
+          id      (str (:id m) (when-not (s/blank? version) (str "-" version)))]
+      [(assert-listed-id id) confidence confidence-explanations])))
 
 (defn- number-name-to-number
   "Converts the name of a number to that number (as a string). e.g.
@@ -102,12 +104,13 @@
                                     (if (contains? #{"simplified" "new" "revised" "modified" "aduna"} clause-count1)
                                       clause-count1
                                       clause-count2))
-        [clause-count confidence] (case preferred-clause-count
+        [clause-count confidence confidence-explanations]
+                                  (case preferred-clause-count
                                     ("2" "simplified")                       ["2" :high]
                                     ("3" "new" "revised" "modified" "aduna") ["3" :high]
                                     ("4" "original")                         ["4" :high]
-                                    ["4" :low])  ; Note: we default to 4 clause, since it was the original form of the BSD license
-        suffix                    (case (get-rencgs m ["suffix"])
+                                    ["4" :low #{:missing-clause-count}])  ; Note: we default to 4 clause, since it was the original form of the BSD license
+        suffix                    (case (get-rencgs m ["suffix" "clausecount2"])  ; Note: when the clause count is missing, the suffix can end up being captured by the clausecount2 capturing group
                                     "patent"                                              "Patent"
                                     "views"                                               "Views"
                                     "attribution"                                         "Attribution"
@@ -131,11 +134,11 @@
                                     nil)
         base-id                   (str (:id m) "-" clause-count "-Clause")
         id-with-suffix            (str base-id "-" suffix)]
-    (if (contains? @lcis/license-ids-d id-with-suffix)  ; Not all suffixes are valid with all BSD clause counts, so check that it's valid before returning it
-      [id-with-suffix confidence]
-      [(assert-listed-id base-id) (if suffix
-                                    (if (= confidence :low) :low :medium)  ; We got a suffix but it wasn't valid, which knocks down confidence
-                                    confidence)])))                        ; We didn't get a suffix, so leave confidence where it was
+    (if suffix
+      (if (contains? @lcis/license-ids-d id-with-suffix)  ; Not all suffixes are valid with all BSD clause counts, so check that it's valid before returning it
+        [id-with-suffix confidence confidence-explanations]
+        [(assert-listed-id base-id) :low (set/union #{:invalid-suffix} confidence-explanations)])  ; We got a suffix but it wasn't valid, which lowers our confidence
+      [(assert-listed-id base-id) confidence confidence-explanations])))                       ; We didn't get a suffix
 
 (defn- cc-id-constructor
   "An SPDX id constructor specific to the Creative Commons family of licenses."
@@ -145,11 +148,12 @@
         sa?            (not (s/blank? (get-rencgs m ["sharealike"])))
         version        (get-rencgs m ["version"] "")
         version        (s/replace version #"\p{Punct}+" ".")
-        confidence     (if (s/blank? version)
-                         :low
+        [confidence confidence-explanations]
+                       (if (s/blank? version)
+                         [:low #{:missing-version}]
                          (if (s/includes? version ".")
-                           :high
-                           :medium))
+                           [:high]
+                           [:medium #{:partial-version}]))
         version        (if (s/blank? version)
                          (:latest-ver m)
                          version)
@@ -173,9 +177,11 @@
                          ("united states" "usa" "us")                           "US"
                          nil)
         id-with-region (str base-id (when-not (s/blank? region) (str "-" region)))]
-    (if (contains? @lcis/license-ids-d id-with-region)  ; Not all license variants and versions have a region specific identifier, so check that it's valid before returning it
-      [id-with-region confidence]
-      [(assert-listed-id base-id) confidence])))
+    (if region
+      (if (contains? @lcis/license-ids-d id-with-region)  ; Not all license variants and versions have a region specific identifier, so check that it's valid before returning it
+        [id-with-region confidence confidence-explanations]
+        [(assert-listed-id base-id) :low (set/union #{:invalid-region} confidence-explanations)])
+      [(assert-listed-id base-id) confidence confidence-explanations])))
 
 (defn- gpl-id-constructor
   "An SPDX id constructor specific to the GNU family of licenses."
@@ -185,11 +191,12 @@
                          (contains? m "gpl")  "GPL")
         version    (get-rencgs m ["version"] "")
         version    (s/replace version #"\p{Punct}+" ".")
-        confidence (if (s/blank? version)
-                     :low
+        [confidence confidence-explanations]
+                   (if (s/blank? version)
+                     [:low #{:missing-version}]
                      (if (s/includes? version ".")
-                       :high
-                       :medium))
+                       [:high]
+                       [:medium #{:partial-version}]))
         version    (if (s/blank? version)
                      (:latest-ver m)
                      version)
@@ -200,15 +207,18 @@
                      "or-later"
                      "only")  ; Note: we (conservatively) default to "only" when we don't have an explicit suffix
         id         (str variant "-" version  "-" suffix)]
-    [(assert-listed-id id) confidence]))
+    [(assert-listed-id id) confidence confidence-explanations]))
 
 (defn- simple-regex-match
   "Constructs a 'simple' name match structure that's a case-insensitive match
   for s."
   [s]
   {:id    s
-   :regex (re-pattern (str "(?i)\\b" (lciu/escape-re s) "\\b"))
-   :fn    (constantly [s :medium])})
+   :regex (re-pattern (str "(?i)\\b(?<id>" (lciu/escape-re s) ")\\b"))
+   :fn    (fn [m] (if (= s (get m "id"))
+                    [s :high]
+                    [s :medium #{:case-mismatch}]))})
+
 
 ; The regex for the GNU family is a nightmare, so we build it up (and test it) in pieces
 (def agpl-re          #"(?<agpl>AGPL|Affero)(\s+GNU)?(\s+General)?(\s+Public)?(\s+Licen[cs]e)?(\s+\(?AGPL\)?)?")
@@ -227,7 +237,7 @@
                                       "\n# Only/or-Later suffix\n"
                                       only-or-later-re))
 
-; Regexes used for license name matching, along with functions for constructing an SPDX id and confidence metric from them
+; Regexes used for license name matching, along with functions for constructing a tuple of [SPDX id, confidence metric, and (optionally) confidence explanation] from them
 (def ^:private license-name-matching-d (delay
   (concat
     ; By default we add most SPDX ids as "simple" regex matches
@@ -330,7 +340,7 @@
        :latest-ver "1.3"}
       {:id         "Plexus"
        :regex      #"(?i)\bApache\s+Licen[cs]e(\s+but)?(\s+with)?(\s+the)?\s+acknowledgment\s+clause\s+removed\b"
-       :fn         (constantly ["Plexus" :medium])}
+       :fn         (constantly ["Plexus" :medium [:inferred-license-name]])}
       {:id         "Proprietary or commercial"
        :regex      #"(?i)\b(Propriet[aoe]ry|Commercial|All\s+Rights\s+Reserved|Private)\b"
        :fn         (constantly [(lcis/proprietary-commercial) :high])}
@@ -373,14 +383,15 @@
   Returns nil if there was no match."
   [s elem]
   (when-let [match (rencg/re-find-ncg (:regex elem) s)]
-    (let [[id confidence] ((:fn elem) (merge {:name s} elem match))
-          source          (s/trim (subs s (:start match) (:end match)))]
-      {:id         id
-       :type       :concluded
-       :confidence (if (= source id) :high confidence)
-       :strategy   :regex-matching
-       :source     (list source)
-       :start      (:start match)})))
+    (let [[id confidence confidence-explanations] ((:fn elem) (merge {:name s} elem match))
+          source                                  (s/trim (subs s (:start match) (:end match)))]
+      (merge {:id         id
+              :type       :concluded
+              :confidence (if (= source id) :high confidence)
+              :strategy   :regex-matching
+              :source     (list source)
+              :start      (:start match)}
+             (when (seq confidence-explanations) {:confidence-explanations confidence-explanations})))))
 
 (defn matches
   "Returns a sequence (NOT A SET!) of maps where each key is a SPDX license or
@@ -389,6 +400,8 @@
   The map contains these keys:
   * :type       The 'type' of match - will always have the value :concluded
   * :confidence The confidence of the match: either :high, :medium, or :low
+  * :confdience-explanations A sequence of explanations (keywords) for the given
+                confiddence.
   * :strategy   The matching strategy - will always have the value :regex-matching
   * :source     A sequence of strings containing source information
                 (specifically the substring of s that matched this identifier)
@@ -400,11 +413,13 @@
     (some->> matches
              (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
              (sort-by :start)
-             (map #(hash-map (:id %) (list {:id         (:id %)   ; We duplicate this here in case the result gets merged into an expression
-                                            :type       (:type %)
-                                            :confidence (:confidence %)
-                                            :strategy   (:strategy %)
-                                            :source     (:source %)}))))))
+             (map #(hash-map (:id %) (list (merge {:id                      (:id %)   ; We duplicate this here in case the result gets merged into an expression
+                                                   :type                    (:type %)
+                                                   :confidence              (:confidence %)
+                                                   :strategy                (:strategy %)
+                                                   :source                  (:source %)}
+                                                  (when (seq (:confidence-explanations %))
+                                                    {:confidence-explanations (:confidence-explanations %)}))))))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

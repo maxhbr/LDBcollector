@@ -89,7 +89,9 @@
     (is (valid= #{"Apache-2.0"}                         (name->expressions "Apache-2.0")))
     (is (valid= #{"CC-BY-SA-4.0"}                       (name->expressions "CC-BY-SA-4.0")))
     (is (valid= #{"GPL-2.0-only"}                       (name->expressions "GPL-2.0")))
-    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0-with-classpath-exception"))))
+    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0-with-classpath-exception")))
+    (is (valid= #{"LicenseRef-non-lice-comb"}           (name->expressions "LicenseRef-non-lice-comb")))
+    (is (valid= #{"DocumentRef-acme:LicenseRef-text"}   (name->expressions "DocumentRef-acme:LicenseRef-text"))))
   (testing "Public domain and proprietary/commercial"
     (is (valid= #{(lcis/public-domain)}                 (name->expressions "Public Domain")))
     (is (valid= #{(lcis/public-domain)}                 (name->expressions "Public domain")))  ; Test lower case
@@ -100,7 +102,11 @@
   (testing "SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0 WITH Classpath-exception-2.0")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache-2.0 OR GPL-3.0")))
-    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)"))))
+    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
+; ####TODO: in preparation for SPDX 3.0 support (https://github.com/pmonks/lice-comb/issues/42)
+;    (is (valid= #{"LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb"} (name->expressions "LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb")))
+;    (is (valid= #{"DocumentRef-acme:LicenseRef-test WITH DocumentRef-acme:AdditionRef-test"} (name->expressions "DocumentRef-acme:LicenseRef-test with DocumentRef-acme:AdditionRef-test")))
+)
   (testing "Single expressions that are not SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 with the GNU Classpath Exception")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache License version 2.0 or GNU General Public License version 3")))
@@ -761,21 +767,23 @@
   (testing "License ids that aren't SPDX ids"
     (is (valid-info= {"Apache-2.0" (list {:id "Apache-2.0" :type :concluded :confidence :high :strategy :regex-matching :source (list "Apache Software License version 2.0")})}
                      (name->expressions-info "Apache Software License version 2.0")))
-    (is (valid-info= {"Apache-2.0" (list {:id "Apache-2.0" :type :concluded :confidence :medium :strategy :regex-matching :source (list "Apache License 2")})}
+    (is (valid-info= {"Apache-2.0" (list {:id "Apache-2.0" :type :concluded :confidence :medium :confidence-explanations #{:partial-version} :strategy :regex-matching :source (list "Apache License 2")})}
                      (name->expressions-info "Apache License 2")))
-    (is (valid-info= {"Apache-2.0" (list {:id "Apache-2.0" :type :concluded :confidence :low :strategy :regex-matching :source (list "Apache")})}
-                     (name->expressions-info "Apache"))))
-  (testing "Single expressions that are not valid SPDX"
+    (is (valid-info= {"Apache-2.0" (list {:id "Apache-2.0" :type :concluded :confidence :low :confidence-explanations #{:missing-version} :strategy :regex-matching :source (list "Apache")})}
+                     (name->expressions-info "Apache")))
+    (is (valid-info= {"BSD-4-Clause" (list {:id "BSD-4-Clause" :type :concluded :confidence :low :confidence-explanations #{:missing-clause-count :invalid-suffix} :strategy :regex-matching :source (list "bsd patent")})}
+                     (name->expressions-info "bsd patent"))))  ; Defaults to 4 clause, but "patent" is not a valid suffix for BSD-4-Clause (which tests a case of multiple :confidence-explanations)
+  (testing "Single expressions"
     (is (valid-info= {"GPL-2.0-only WITH Classpath-exception-2.0" (list {:type :concluded :confidence :low :strategy :expression-inference :source (list "GNU General Public License, version 2 with the GNU Classpath Exception")}
-                                                                        {:id "GPL-2.0-only"            :type :concluded :confidence :medium :strategy :regex-matching :source (list "GNU General Public License, version 2 with the GNU Classpath Exception" "GNU General Public License, version 2")}
-                                                                        {:id "Classpath-exception-2.0" :type :concluded :confidence :low    :strategy :regex-matching :source (list "GNU General Public License, version 2 with the GNU Classpath Exception" "the GNU Classpath Exception" "Classpath Exception")})}
+                                                                        {:id "GPL-2.0-only"            :type :concluded :confidence :medium :confidence-explanations #{:partial-version} :strategy :regex-matching :source (list "GNU General Public License, version 2 with the GNU Classpath Exception" "GNU General Public License, version 2")}
+                                                                        {:id "Classpath-exception-2.0" :type :concluded :confidence :low    :confidence-explanations #{:missing-version} :strategy :regex-matching :source (list "GNU General Public License, version 2 with the GNU Classpath Exception" "the GNU Classpath Exception" "Classpath Exception")})}
                      (name->expressions-info "GNU General Public License, version 2 with the GNU Classpath Exception")))
     (is (valid-info= {"GPL-2.0-only WITH Classpath-exception-2.0" (list {:type :concluded :confidence :high :strategy :expression-inference :source (list "GNU General Public License, version 2.0 with the Classpath Exception 2.0")}
                                                                         {:id "GPL-2.0-only"            :type :concluded :confidence :high :strategy :regex-matching :source (list "GNU General Public License, version 2.0 with the Classpath Exception 2.0" "GNU General Public License, version 2.0")}
                                                                         {:id "Classpath-exception-2.0" :type :concluded :confidence :high :strategy :regex-matching :source (list "GNU General Public License, version 2.0 with the Classpath Exception 2.0" "the Classpath Exception 2.0" "Classpath Exception 2.0")})}
                      (name->expressions-info "GNU General Public License, version 2.0 with the Classpath Exception 2.0"))))
   (testing "Multiple expressions"
-    (is (valid-info= {"BSD-4-Clause" (list {:id "BSD-4-Clause" :type :concluded :confidence :low  :strategy :regex-matching :source (list "MIT / BSD" "BSD")})
+    (is (valid-info= {"BSD-4-Clause" (list {:id "BSD-4-Clause" :type :concluded :confidence :low  :confidence-explanations #{:missing-clause-count} :strategy :regex-matching :source (list "MIT / BSD" "BSD")})
                       "MIT"          (list {:id "MIT"          :type :concluded :confidence :high :strategy :regex-matching :source (list "MIT / BSD" "MIT")})}
                      (name->expressions-info "MIT / BSD"))))
   (testing "Some names from Clojars"

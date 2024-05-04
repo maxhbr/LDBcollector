@@ -345,7 +345,7 @@
    (when-let [version (or version (ga-latest-version group-id artifact-id))]
      (when-let [pom-uri (gav->pom-uri group-id artifact-id version)]
        (with-open [pom-is (io/input-stream pom-uri)]
-         (pom->expressions-info pom-is (str pom-uri)))))))
+         (lciei/prepend-source (str group-id "/" artifact-id "@" version) (pom->expressions-info pom-is (str pom-uri))))))))
 
 (defn gav->expressions
   "Returns a set of SPDX expressions (`String`s) for the given GA and

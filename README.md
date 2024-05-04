@@ -123,6 +123,7 @@ $ deps-try com.github.pmonks/lice-comb
 ;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
 ;                "GNU Public License 2.0 or later")}
 ;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching,
+;       :confidence-explanations (:missing-version),
 ;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
 ;                "the GNU Classpath Exception"
 ;                "Classpath Exception")})}
@@ -138,7 +139,7 @@ $ deps-try com.github.pmonks/lice-comb
 ;; Pretty print expressions-info
 (require '[lice-comb.utils :as lcu])
 
-(println (lcu/expressions-info->string (lcd/dep->expressions-info ['com.amazonaws/aws-java-sdk-s3 {:deps/manifest :mvn :mvn/version "1.12.129"}])))
+(println (lcu/expressions-info->string (lcmvn/gav->expressions-info "com.amazonaws" "aws-java-sdk-s3" "1.12.129")))
 ;=> Apache-2.0:
 ;     Concluded
 ;       Confidence: high

@@ -99,7 +99,7 @@
 (defn re-concat
   "Concatenate all of the given regexes or strings into a single regex."
   [& res]
-  (re-pattern (apply str res)))
+  (re-pattern (s/join res)))
 
 (defn base62-encode
   "Encodes the given string to Base62/UTF-8."

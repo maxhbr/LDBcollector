@@ -206,7 +206,7 @@
 
                 ; 5. No clue, so return a single unidentified SPDX LicenseRef
                 (let [id (lcis/name->unidentified s)]
-                  (list {id (list {:id id :type :concluded :confidence :low :strategy :unidentified :source (list s)})})))]
+                  (list {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list s)})})))]
       (map (partial lciei/prepend-source s) ids))))
 
 (defn- filter-blanks
@@ -266,7 +266,7 @@
                 new-name   (str left-name " with " right-name)
                 new-id     (lcis/name->unidentified new-name)]
             (recur (take 3 skip2) (rest skip2)
-                   (concat result (list {new-id (list {:id new-id :type :concluded :confidence :low :strategy :unidentified :source (list new-name)})}))))
+                   (concat result (list {new-id (list {:id new-id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list new-name)})}))))
           (recur (take 3 r) (rest r)
                  (concat result (list left))))))))
 
@@ -347,7 +347,7 @@
                                   ; Check whether all we have are unidentified LicenseRefs, and if so just return the entire thing as a single unidentified LicenseRef
                                   (if (every? lcis/unidentified? ids-only)
                                     (let [id (lcis/name->unidentified (s/trim name))]
-                                      {id (list {:id id :type :concluded :confidence :low :strategy :unidentified :source (list)})})
+                                      {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list)})})
                                     (some->> partial-result
                                              build-expressions-info-map
                                              (lciu/mapfonk sexp/normalise)))))))))

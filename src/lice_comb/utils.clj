@@ -23,7 +23,8 @@
 (def strategy->string
   "A map that turns a matching strategy keyword (as found in an expression-info
   map) into a human readable equivalent.  This is mostly intended for debugging
-  / developer discovery purposes, and the behaviour may change without warning."
+  / developer informational purposes, and the behaviour may change without
+  warning."
   {:spdx-expression                               "SPDX expression"
    :spdx-listed-identifier-exact-match            "SPDX identifier"
    :spdx-listed-identifier-case-insensitive-match "SPDX identifier (case insensitive match)"
@@ -37,8 +38,8 @@
 
 (defn expression-info-sort-by-keyfn
   "A [[clojure.core/sort-by]] keyfn for expression-info maps.  This is mostly
-  intended for debugging / developer discovery purposes, and the behaviour may
-  change without warning."
+  intended for debugging / developer informational purposes, and the behaviour
+  may change without warning."
   [m]
   (when m
     (str (case (:id m)
@@ -69,7 +70,7 @@
 
 (defn expression-info->string
   "Converts `m`, an expression-info map, into a human-readable `String`.  This
-  is mostly intended for debugging / developer discovery purposes, and the
+  is mostly intended for debugging / developer informational purposes, and the
   behaviour may change without warning."
   [m expr]
   (when (and m expr)
@@ -79,14 +80,15 @@
                                 (case (:type %)
                                   :declared  "Declared"
                                   :concluded "Concluded")
-                                (when-let [confidence (:confidence %)]   (str "\n    Confidence: "    (name confidence)))
-                                (when-let [strategy   (:strategy %)]     (str "\n    Strategy: "      (get strategy->string strategy (name strategy))))
-                                (when-let [source     (seq (:source %))] (str "\n    Source:\n    > " (s/join "\n    > " source))))
+                                (when-let [confidence              (:confidence %)]                    (str "\n    Confidence: "       (name confidence)))
+                                (when-let [confidence-explanations (seq (:confidence-explanations %))] (str "\n      Explanation(s): " (s/join ", " (map (fn [exp] (s/replace (name exp) "-" " ")) (sort confidence-explanations)))))
+                                (when-let [strategy                (:strategy %)]                      (str "\n    Strategy: "         (get strategy->string strategy (name strategy))))
+                                (when-let [source                  (seq (:source %))]                  (str "\n    Source:\n    > "    (s/join "\n    > " source))))
                           info-list))))))
 
 (defn expressions-info->string
   "Converts `m`, an expressions-info map, into a human-readable `String`.  This
-  is mostly intended for debugging / developer discovery purposes, and the
+  is mostly intended for debugging / developer informational purposes, and the
   behaviour may change without warning."
   [m]
   (when m
