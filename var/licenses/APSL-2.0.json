@@ -1,0 +1,23 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Apple Public Source License 2.0",
+    "scancode_key": "apsl-2.0",
+    "spdxid": "APSL-2.0",
+    "aliases": [
+        "Apple Public Source License 2.0",
+        "Apple Public Source License, Version 2.0",
+        "scancode://apsl-2.0",
+        "APSL, Version 2.0",
+        "APSL-2.0",
+        "APPLE PUBLIC SOURCE LICENSE 2.0",
+        "APPLE PUBLIC SOURCE LICENSE v2.0",
+        "APPLE PUBLIC SOURCE LICENSE Version 2.0",
+        "Apple Public Source License Ver. 2.0",
+        "scancode:apsl-2.0",
+        "osi:APSL-2.0",
+        "APSL-2"
+    ]
+}

@@ -130,6 +130,8 @@ check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence Apache-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence Apache-2.0 " -e 2" "-e 1"
 
+check_presence APSL-2.0 " -e 2" "-e 1 -e [3-9]"
+
 check_presence Artistic-1.0 " -e 1.0 -e 1" "-e 2 "
 check_presence Artistic-2.0 " -e 2 -e 2.0 " "-e 1"
 
@@ -139,7 +141,9 @@ check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
+check_presence BSD-2-Clause-Views " -i -e view"  " -e 0 -e 1 -e 3 -e 4"
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
+check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
 
 check_presence CC0-1.0 " -e 1 -e 0 " " -e [2-9]"
@@ -154,6 +158,9 @@ check_presence CDDL-1.0 " -e 1.0 " " -e 1.1"
 check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
 
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
+
+check_presence EFL-1.0 " -e 1.0 -e 1" " -e 2"
+check_presence EFL-2.0 " -e 2.0 -e 2" " -e 1"
 
 check_presence EPL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EPL-2.0 " -e 2.0 -e 2" " -e 1"
@@ -176,7 +183,7 @@ check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2"
 
 check_presence IJG " -i -e ijg -e independent -e jpeg " ""
 
-check_presence LGPL-2.0-only " -e 2.0 " " -e 3  -e later"
+check_presence LGPL-2.0-only " -e 2.0 -e 2 " " -e 3  -e later"
 check_presence LGPL-2.1-only " -e 2.1 " " -e 3  -e later"
 check_presence LGPL-3.0-only " -e 3 " " -e 2  -e later"
 
@@ -185,9 +192,11 @@ check_presence LGPL-3.0-or-later " -e 3 -e later" " -e 2"
 
 check_presence LicenseRef-scancode-g10-permissive " -i -e  g10 " ""
 
-check_presence MIT " -i -e MIT -e Expat" " -e 0"
-check_presence MIT-0 " -e 0 -i -e \"no attribution\"" ""
-check_presence MIT-advertising " -e 0 -i -e advertising" " -i -e \"no advertising\""
+check_presence MIT " -i -e MIT -e Expat" " -i -e 0 -e we -e advert -e modern "
+check_presence MIT-0 " -e 0 -i -e \"no attribution\"" " -i -e we -e advert -e modern -e wu"
+check_presence MIT-advertising " -e 0 -i -e advertising" " -i -e \"no advertising\" -e wu -e 0 -e modern"
+check_presence MIT-Modern-Variant " -i -e modern" " -i -e advertising -e 0 -e wu"
+check_presence MIT-Wu " -i -e wu " " -i -e advertising -e modern -e 0 "
 
 check_presence MPL-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
@@ -199,6 +208,10 @@ check_presence OFL-1.1 " -e 1.1" " -e 1.0"
 
 check_presence TU-Berlin-1.0 " -e 1" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
+
+check_presence W3C " -i -e w3c -e w3.org " " -e 1998 -e 2015 "
+check_presence W3C-19980720 " 1998 " " -e 2015 "
+check_presence W3C-20150513 " 2015 " " -e 1998 "
 
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT'" 
 

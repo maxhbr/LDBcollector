@@ -56,7 +56,9 @@ check_license_schema:
 check-reuse: clean
 	reuse --suppress-deprecation lint
 
-license: check_license_files 
+lint: check-reuse py-lint
+
+license: check_license_files check-py-cli check_license_schema
 
 .PHONY: python check-py-cli
 python: py-test py-sort py-lint check-py-cli py-doctest py-doc
@@ -75,7 +77,7 @@ py-lint:
 	cd python && PYTHONPATH=. flake8 flame
 
 py-doc:
-	#cd python/docs && PYTHONPATH=. make html
+#cd python/docs && PYTHONPATH=. make html
 	cd python && rm -fr docs/build && PYTHONPATH=. sphinx-build -E docs/source/ docs/build/html
 
 

@@ -20,6 +20,14 @@
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
+        "Apple Public Source License": {
+            "aliases": [
+                "License :: OSI Approved :: Apple Public Source License",
+                "Apple Public Source License",
+                "Apple Public Source License (APSL)"
+            ],
+            "problem": "This license has different version (1.0, 1.1, 1.2 and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
         "Artistic License": {
             "aliases": [
                 "License :: OSI Approved :: Artistic License",
@@ -61,6 +69,12 @@
             ],
             "problem": "There are couple of versions of the CPL license (0.5 and 1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
+        "Eiffel Forum License": {
+            "aliases": [
+                "License :: OSI Approved :: Eiffel Forum License"
+            ],
+            "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
         "GCC Runtime Library exception": {
             "aliases": [
                 "GCC exception",
@@ -91,7 +105,8 @@
                 "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
                 "GNU Lesser General Public License v2 (LGPLv2)",
                 "LGPLv2 or later",
-                "LGPLv2"
+                "LGPLv2",
+                "LGPL-2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -102,6 +117,17 @@
                 "MPLv1"
             ],
             "problem": "This license has different version (1.0, 1.1 and 2.0). Without a version number clearly distinguishing the versions it is not possible to determine which of the versions is meant."
+        },
+        "Python Software Foundation License": {
+            "aliases": [
+                "PSF",
+                "PSFL",
+                "Python",
+                "Python Software Foundation License",
+                "PSF LICENSE AGREEMENT",
+                "PSF License"
+            ],
+            "problem": "This license has different version (2.0 and 2.0.1). Without a version number clearly distinguishing the versions it is not possible to determine which of the versions is meant."
         }
     }
 }
