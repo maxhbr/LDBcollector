@@ -214,6 +214,8 @@ check_presence W3C-19980720 " 1998 " " -e 2015 "
 check_presence W3C-20150513 " 2015 " " -e 1998 "
 
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT'" 
+check_presence LicenseRef-scancode-xfree86-1.0 " -i -e 1.0 " " -e  X/MIT -e 1.1 " 
+check_presence XFree86-1.1 " -i -e 1.1 " " -e  X/MIT -e 1.0 " 
 
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
 check_presence ZPL-2.0 " -e 2.0" " -e 1"
