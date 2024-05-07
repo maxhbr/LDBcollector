@@ -192,10 +192,11 @@ check_presence LGPL-3.0-or-later " -e 3 -e later" " -e 2"
 
 check_presence LicenseRef-scancode-g10-permissive " -i -e  g10 " ""
 
-check_presence MIT " -i -e MIT -e Expat" " -e 0"
-check_presence MIT-0 " -e 0 -i -e \"no attribution\"" ""
-check_presence MIT-advertising " -e 0 -i -e advertising" " -i -e \"no advertising\""
-check_presence MIT-Modern-Variant " -i -e modern" " -i -e advertising"
+check_presence MIT " -i -e MIT -e Expat" " -i -e 0 -e we -e advert -e modern "
+check_presence MIT-0 " -e 0 -i -e \"no attribution\"" " -i -e we -e advert -e modern -e wu"
+check_presence MIT-advertising " -e 0 -i -e advertising" " -i -e \"no advertising\" -e wu -e 0 -e modern"
+check_presence MIT-Modern-Variant " -i -e modern" " -i -e advertising -e 0 -e wu"
+check_presence MIT-Wu " -i -e wu " " -i -e advertising -e modern -e 0 "
 
 check_presence MPL-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
