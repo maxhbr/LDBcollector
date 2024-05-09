@@ -8,6 +8,11 @@ usage = '''
 Fedora packages can include files with character entity declaration sets purportedly covered by this license text.
 '''
 
+packages_with_exceptions = [
+    "dotnet7.0",
+    "dotnet8.0"
+]
+
 text = '''
      Permission to copy in any form is granted for use with
      conforming SGML systems and applications as defined in
