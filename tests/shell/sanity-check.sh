@@ -70,19 +70,6 @@ check_file_presence()
     echo "$RESULT"
 }
 
-check_schema()
-{
-    # Make sure schema is valid JSON
-    echo -n "License schema: " ; 
-    jq . var/license_schema.json > /dev/null 
-    if [ $? -ne 0 ]
-    then
-        echo FAIL;
-        RET=$(( $RET + 1 ))
-    fi
-    echo "OK" 
-}
-
 check_presence()
 {
     LICENSE=$1
@@ -133,8 +120,10 @@ check_presence()
 }
 
 check_test_case
-check_file_presence
-check_schema
+
+# below is performed in Makefile
+# check_file_presence
+# check_schema
 
 
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\""
