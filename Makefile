@@ -52,13 +52,19 @@ check_license_schema:
 		   	PYTHONPATH=python python/flame/__main__.py --check license mpl-2.0  > /dev/null || exit 1 ; \
 			echo "OK" ; 
 
+check_schema:
+# check the license schema
+	@echo -n "Make sure schema is in valid JSON: " 
+	@jq . var/license_schema.json > /dev/null 
+	@echo "OK" ; 
+
 
 check-reuse: clean
 	reuse --suppress-deprecation lint
 
 lint: check-reuse py-lint
 
-license: check_license_files check-py-cli check_license_schema
+license: check_schema check_license_files check-py-cli check_license_schema
 
 .PHONY: python check-py-cli
 python: py-test py-sort py-lint check-py-cli py-doctest py-doc
