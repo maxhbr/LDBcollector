@@ -1566,7 +1566,71 @@ const docTemplate = `{
             }
         },
         "models.LicensePATCHRequestJSONSchema": {
-            "type": "object"
+            "type": "object",
+            "properties": {
+                "marydone": {
+                    "type": "boolean"
+                },
+                "rf_FSFfree": {
+                    "type": "boolean"
+                },
+                "rf_Fedora": {
+                    "type": "string"
+                },
+                "rf_GPLv2compatible": {
+                    "type": "boolean"
+                },
+                "rf_GPLv3compatible": {
+                    "type": "boolean"
+                },
+                "rf_OSIapproved": {
+                    "type": "boolean"
+                },
+                "rf_active": {
+                    "type": "boolean"
+                },
+                "rf_copyleft": {
+                    "type": "boolean"
+                },
+                "rf_detector_type": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "rf_flag": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "rf_fullname": {
+                    "type": "string",
+                    "example": "MIT License"
+                },
+                "rf_notes": {
+                    "type": "string",
+                    "example": "This license has been superseded."
+                },
+                "rf_risk": {
+                    "type": "integer",
+                    "example": 3
+                },
+                "rf_source": {
+                    "type": "string"
+                },
+                "rf_spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "rf_text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                },
+                "rf_text_updatable": {
+                    "type": "boolean"
+                },
+                "rf_url": {
+                    "type": "string",
+                    "example": "https://opensource.org/licenses/MIT"
+                }
+            }
         },
         "models.LicensePOSTRequestJSONSchema": {
             "type": "object",
@@ -1926,18 +1990,6 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
-                }
-            }
-        },
-        "models.OptionalData-string": {
-            "type": "object",
-            "properties": {
-                "isDefined": {
-                    "description": "This is set to true if corresponding key is present in json object",
-                    "type": "boolean"
-                },
-                "value": {
-                    "type": "string"
                 }
             }
         },
