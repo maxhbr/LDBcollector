@@ -11,6 +11,7 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
+	"path/filepath"
 	"strconv"
 	"time"
 
@@ -883,4 +884,254 @@ func SearchInLicense(c *gin.Context) {
 		},
 	}
 	c.JSON(http.StatusOK, res)
+}
+
+// ImportLicenses creates new licenses records via a json file.
+//
+//	@Summary		Import licenses by uploading a json file
+//	@Description	Import licenses by uploading a json file
+//	@Id				ImportLicenses
+//	@Tags			Licenses
+//	@Accept			multipart/form-data
+//	@Produce		json
+//	@Param			file	formData	file true "licenses json file list"
+//	@Success		200		{object}	models.ImportLicensesResponse{data=[]models.LicenseImportStatus}
+//	@Failure		400		{object}	models.LicenseError	"input file must be present"
+//	@Failure		500		{object}	models.LicenseError	"Internal server error"
+//	@Security		ApiKeyAuth
+//	@Router			/licenses/import [post]
+func ImportLicenses(c *gin.Context) {
+	username := c.GetString("username")
+	file, header, err := c.Request.FormFile("file")
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "input file must be present",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	defer file.Close()
+
+	if filepath.Ext(header.Filename) != ".json" {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "only files with format *.json are allowed",
+			Error:     "only files with format *.json are allowed",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	var licenses []models.LicenseImport
+	decoder := json.NewDecoder(file)
+	if err := decoder.Decode(&licenses); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "invalid json",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+
+	res := models.ImportLicensesResponse{
+		Status: http.StatusOK,
+	}
+
+	for _, license := range licenses {
+		_ = db.DB.Transaction(func(tx *gorm.DB) error {
+			newLicenseMap := make(map[string]interface{})
+			if err := addStructFieldToMap(c, &license.Shortname, "rf_shortname", newLicenseMap, "", &res); err != nil {
+				return err
+			}
+			if err := addStructFieldToMap(c, &license.Fullname, "rf_fullname", newLicenseMap, license.Shortname.Value, &res); err != nil {
+				return err
+			}
+			if err := addStructFieldToMap(c, &license.Text, "rf_text", newLicenseMap, license.Shortname.Value, &res); err != nil {
+				return err
+			}
+			if err := addStructFieldToMap(c, &license.Url, "rf_url", newLicenseMap, license.Shortname.Value, &res); err != nil {
+				return err
+			}
+			if err := addStructFieldToMap(c, &license.Active, "rf_active", newLicenseMap, license.Shortname.Value, &res); err != nil {
+				return err
+			}
+			if err := addStructFieldToMap(c, &license.Source, "rf_source", newLicenseMap, license.Shortname.Value, &res); err != nil {
+				return err
+			}
+			if err := addStructFieldToMap(c, &license.SpdxId, "rf_spdx_id", newLicenseMap, license.Shortname.Value, &res); err != nil {
+				return err
+			}
+			if err := addStructFieldToMap(c, &license.Risk, "rf_risk", newLicenseMap, license.Shortname.Value, &res); err != nil {
+				return err
+			}
+
+			if license.Copyleft.IsDefinedAndNotNull {
+				newLicenseMap["rf_copyleft"] = license.Copyleft.Value
+			}
+			if license.FSFfree.IsDefinedAndNotNull {
+				newLicenseMap["rf_FSFfree"] = license.FSFfree.Value
+			}
+			if license.OSIapproved.IsDefinedAndNotNull {
+				newLicenseMap["rf_OSIapproved"] = license.OSIapproved.Value
+			}
+			if license.GPLv2compatible.IsDefinedAndNotNull {
+				newLicenseMap["rf_GPLv2compatible"] = license.GPLv2compatible.Value
+			}
+			if license.GPLv3compatible.IsDefinedAndNotNull {
+				newLicenseMap["rf_GPLv3compatible"] = license.GPLv3compatible.Value
+			}
+			if license.Notes.IsDefinedAndNotNull {
+				newLicenseMap["rf_notes"] = license.Notes.Value
+			}
+			if license.Fedora.IsDefinedAndNotNull {
+				newLicenseMap["rf_Fedora"] = license.Fedora.Value
+			}
+			if license.DetectorType.IsDefinedAndNotNull {
+				newLicenseMap["rf_detector_type"] = license.DetectorType.Value
+			}
+			if license.Flag.IsDefinedAndNotNull {
+				newLicenseMap["rf_flag"] = license.Flag.Value
+			}
+			if license.Marydone.IsDefinedAndNotNull {
+				newLicenseMap["marydone"] = license.Marydone.Value
+			}
+			newLicenseMap["external_ref"] = license.ExternalRef
+
+			errMessage, importStatus, newLicense, oldLicense := InsertOrUpdateLicenseOnImport(tx, newLicenseMap)
+
+			if importStatus == models.IMPORT_FAILED {
+				res.Data = append(res.Data, models.LicenseError{
+					Status:    http.StatusInternalServerError,
+					Message:   errMessage,
+					Error:     newLicense.Shortname,
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				})
+				return errors.New(errMessage)
+			} else if importStatus == models.IMPORT_LICENSE_CREATED {
+				res.Data = append(res.Data, models.LicenseImportStatus{
+					Data:   models.LicenseId{Id: oldLicense.Id, Shortname: oldLicense.Shortname},
+					Status: http.StatusCreated,
+				})
+			} else if importStatus == models.IMPORT_LICENSE_UPDATED {
+				if err := addChangelogsForLicenseUpdate(tx, username, newLicense, oldLicense); err != nil {
+					res.Data = append(res.Data, models.LicenseError{
+						Status:    http.StatusInternalServerError,
+						Message:   "Failed to update license",
+						Error:     newLicense.Shortname,
+						Path:      c.Request.URL.Path,
+						Timestamp: time.Now().Format(time.RFC3339),
+					})
+					return err
+				}
+				res.Data = append(res.Data, models.LicenseImportStatus{
+					Data:   models.LicenseId{Id: newLicense.Id, Shortname: newLicense.Shortname},
+					Status: http.StatusOK,
+				})
+			} else if importStatus == models.IMPORT_LICENSE_UPDATED_EXCEPT_TEXT {
+				if err := addChangelogsForLicenseUpdate(tx, username, newLicense, oldLicense); err != nil {
+					res.Data = append(res.Data, models.LicenseError{
+						Status:    http.StatusInternalServerError,
+						Message:   "Failed to update license",
+						Error:     newLicense.Shortname,
+						Path:      c.Request.URL.Path,
+						Timestamp: time.Now().Format(time.RFC3339),
+					})
+					return err
+				}
+
+				res.Data = append(res.Data, models.LicenseError{
+					Status:    http.StatusConflict,
+					Message:   errMessage,
+					Error:     newLicense.Shortname,
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				})
+				// error is not returned here as it will rollback the transaction
+			}
+
+			return nil
+		})
+	}
+
+	c.JSON(http.StatusOK, res)
+}
+
+// addStructFieldToMap checks whether a field is defined and then adds it to the license map for update
+func addStructFieldToMap[T any](c *gin.Context, structField *models.NullableAndOptionalData[T], structFieldName string,
+	licenseMap map[string]interface{}, shortName string, res *models.ImportLicensesResponse) error {
+	if structField.IsDefinedAndNotNull {
+		licenseMap[structFieldName] = structField.Value
+	} else {
+		res.Data = append(res.Data, models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   fmt.Sprintf("field %s cannot be null", structFieldName),
+			Error:     shortName,
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		})
+		return fmt.Errorf("field %s cannot be null", structFieldName)
+	}
+	return nil
+}
+
+// Updates/Creates a license from a map containing license values
+func InsertOrUpdateLicenseOnImport(tx *gorm.DB, newLicenseMap map[string]interface{}) (string, models.LicenseImportStatusCode, *models.LicenseDB, *models.LicenseDB) {
+	var message string
+	var importStatus models.LicenseImportStatusCode
+	var newLicense, oldLicense models.LicenseDB
+
+	result := tx.
+		Where(&models.LicenseDB{Shortname: newLicenseMap["rf_shortname"].(string)}).
+		FirstOrCreate(&oldLicense)
+	if result.Error != nil {
+		message = fmt.Sprintf("failed to create license: %s", result.Error.Error())
+		importStatus = models.IMPORT_FAILED
+		return message, importStatus, &newLicense, &oldLicense
+	} else if result.RowsAffected == 0 {
+		// case when license exists in database and is updated
+
+		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
+		if err := tx.Model(&models.LicenseDB{}).Where(&models.LicenseDB{Shortname: newLicenseMap["rf_shortname"].(string)}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(external_ref || ?)", newLicenseMap["external_ref"])).Error; err != nil {
+			message = fmt.Sprintf("failed to update license: %s", err.Error())
+			importStatus = models.IMPORT_FAILED
+			return message, importStatus, &newLicense, &oldLicense
+		}
+
+		// Update all other fields except external_ref
+		query := tx.Model(&newLicense).Where(&models.LicenseDB{Shortname: newLicenseMap["rf_shortname"].(string)}).Omit("external_ref")
+
+		// Do not update text in import if it was modified manually
+		if oldLicense.Flag == 2 {
+			query = query.Omit("rf_text")
+		}
+
+		if err := query.Clauses(clause.Returning{}).Updates(newLicenseMap).Error; err != nil {
+			message = fmt.Sprintf("failed to update license: %s", err.Error())
+			importStatus = models.IMPORT_FAILED
+			return message, importStatus, &newLicense, &oldLicense
+		}
+
+		if oldLicense.Flag == 2 {
+			message = "all fields except rf_text were updated. rf_text was updated manually and cannot be overwritten in an import."
+			importStatus = models.IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
+			// error is not returned here as it will rollback the transaction
+		} else {
+			importStatus = models.IMPORT_LICENSE_UPDATED
+		}
+	} else {
+		// case when license doesn't exist in database and is inserted
+		importStatus = models.IMPORT_LICENSE_CREATED
+	}
+
+	return message, importStatus, &newLicense, &oldLicense
 }

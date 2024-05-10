@@ -62,6 +62,16 @@ definitions:
         example: 200
         type: integer
     type: object
+  models.ImportLicensesResponse:
+    properties:
+      data:
+        description: can be of type models.LicenseError or models.LicenseImportStatus
+        items: {}
+        type: array
+      status:
+        example: 200
+        type: integer
+    type: object
   models.ImportObligationsResponse:
     properties:
       data:
@@ -146,6 +156,23 @@ definitions:
       timestamp:
         example: "2023-12-01T10:00:51+05:30"
         type: string
+    type: object
+  models.LicenseId:
+    properties:
+      id:
+        example: 31
+        type: integer
+      shortname:
+        example: MIT
+        type: string
+    type: object
+  models.LicenseImportStatus:
+    properties:
+      data:
+        $ref: '#/definitions/models.LicenseId'
+      status:
+        example: 200
+        type: integer
     type: object
   models.LicenseMapShortnamesElement:
     properties:
@@ -872,6 +899,45 @@ paths:
       security:
       - ApiKeyAuth: []
       summary: Update a license
+      tags:
+      - Licenses
+  /licenses/import:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Import licenses by uploading a json file
+      operationId: ImportLicenses
+      parameters:
+      - description: licenses json file list
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/models.ImportLicensesResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.LicenseImportStatus'
+                  type: array
+              type: object
+        "400":
+          description: input file must be present
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Import licenses by uploading a json file
       tags:
       - Licenses
   /login:

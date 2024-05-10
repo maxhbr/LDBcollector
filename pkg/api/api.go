@@ -104,6 +104,7 @@ func Router() *gin.Engine {
 		{
 			licenses.POST("", CreateLicense)
 			licenses.PATCH(":shortname", UpdateLicense)
+			licenses.POST("import", ImportLicenses)
 		}
 		users := authorizedv1.Group("/users")
 		{
