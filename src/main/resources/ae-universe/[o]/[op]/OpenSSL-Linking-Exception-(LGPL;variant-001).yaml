@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Linking Exception (LGPL; variant 008)"
-category: "LGPL Linking Exception"
-shortName: "Linking-Exception-LGPL-008"
+canonicalName: "OpenSSL Linking Exception (LGPL; variant 001)"
+category: "OpenSSL Linking Exception"
+shortName: "OpenSSL-Linking-Exception-LGPL-001"
 
 canonicalNameHistory:
   - "OpenSSL Exception (LGPL) 2.0"
+  - "Linking Exception (LGPL; variant 008)"
 
 type: "exception"
 

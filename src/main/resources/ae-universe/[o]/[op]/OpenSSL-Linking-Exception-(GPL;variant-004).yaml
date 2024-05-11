@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Linking Exception (GPL; variant 025)"
-category: "GPL Linking Exception"
-shortName: "Linking-Exception-GPL-025"
+canonicalName: "OpenSSL Linking Exception (GPL; variant 004)"
+category: "OpenSSL Linking Exception"
+shortName: "OpenSSL-Linking-Exception-GPL-004"
 
 canonicalNameHistory:
   - "OpenSSL Exception"
+  - "Linking Exception (GPL; variant 025)"
 
 type: "exception"
 

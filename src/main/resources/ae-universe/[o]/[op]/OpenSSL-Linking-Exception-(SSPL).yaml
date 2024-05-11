@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Linking Exception (SSPL)"
-category: "SSPL Linking Exception"
-shortName: "Linking-Exception-SSPL"
+canonicalName: "OpenSSL Linking Exception (SSPL)"
+category: "OpenSSL Linking Exception"
+shortName: "OpenSSL-Linking-Exception-SSPL"
 
 canonicalNameHistory:
   - "OpenSSL Exception (MongoDB SSPL)"
+  - "Linking Exception (SSPL)"
 
 type: "exception"
 

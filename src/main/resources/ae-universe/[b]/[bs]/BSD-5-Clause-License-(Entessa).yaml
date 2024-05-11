@@ -19,6 +19,8 @@ alternativeNames:
   - "ENTESSA License"
   - "Entessa Public License"
   - "ENTESSA Public License"
+  - "BSD 5-Clause License (Entessa)"
+  - "BSD-5-Clause-Entessa"
 
 otherIds: 
   - "scancode:entessa-1.0"

@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "strongSwan Exception"
-category: "strongSwan Exception"
-shortName: "strongSwan-Exception"
+canonicalName: "OpenSSL Linking Exception (GPL; variant 003)"
+category: "OpenSSL Linking Exception"
+shortName: "OpenSSL-Linking-Exception-GPL-003"
+
+canonicalNameHistory:
+  - "strongSwan Exception"
 
 type: "exception"
 
