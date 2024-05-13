@@ -219,3 +219,9 @@ restriction. If you distribute the software to others, you may do
 so according to the terms of your choice. This software is offered as
 is, without warranty of any kind.
 '''
+
+package = libsurvive
+location = https://github.com/cntools/libsurvive/blob/master/redist/crc32.c#L2-L3
+text = '''
+You may use this program, or code or tables extracted from it, as desired without restriction.
+'''
