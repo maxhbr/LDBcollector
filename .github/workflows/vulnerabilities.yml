@@ -45,8 +45,8 @@ jobs:
           NVD_API_TOKEN: ${{ secrets.NVD_API_TOKEN }}
         run: clojure -Srepro -J-Dclojure.main.report=stderr -T:build nvd
 
-      - name: Deploy NVD vulnerability report (release branch only)
-        if: ${{ ( success() || failure() ) && github.ref == 'refs/heads/release' }}  # Only deploy report from release branch, and regardless of whether the job succeeded or failed
+      - name: Deploy NVD vulnerability report (dev branch only)                  # Because GitHub is idiotic and only supports timed jobs on the default branch (dev)
+        if: ${{ ( success() || failure() ) && github.ref == 'refs/heads/dev' }}  # Deploy report regardless of whether the job succeeded or failed
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
