@@ -91,24 +91,24 @@ type LicenseJson struct {
 // LicensePATCHRequestJSONSchema struct represents the input format for updating an existing license.
 // Note that the license ID and shortname cannot be updated.
 type LicensePATCHRequestJSONSchema struct {
-	Fullname        OptionalData[string] `json:"rf_fullname" example:"MIT License"`
-	Text            OptionalData[string] `json:"rf_text" example:"MIT License Text here"`
-	Url             OptionalData[string] `json:"rf_url" example:"https://opensource.org/licenses/MIT"`
-	Copyleft        OptionalData[bool]   `json:"rf_copyleft"`
-	FSFfree         OptionalData[bool]   `json:"rf_FSFfree"`
-	OSIapproved     OptionalData[bool]   `json:"rf_OSIapproved"`
-	GPLv2compatible OptionalData[bool]   `json:"rf_GPLv2compatible"`
-	GPLv3compatible OptionalData[bool]   `json:"rf_GPLv3compatible"`
-	Notes           OptionalData[string] `json:"rf_notes" example:"This license has been superseded."`
-	Fedora          OptionalData[string] `json:"rf_Fedora"`
-	TextUpdatable   OptionalData[bool]   `json:"rf_text_updatable"`
-	DetectorType    OptionalData[int64]  `json:"rf_detector_type" example:"1"`
-	Active          OptionalData[bool]   `json:"rf_active"`
-	Source          OptionalData[string] `json:"rf_source"`
-	SpdxId          OptionalData[string] `json:"rf_spdx_id" example:"MIT"`
-	Risk            OptionalData[int64]  `json:"rf_risk"`
-	Flag            OptionalData[int64]  `json:"rf_flag" example:"1"`
-	Marydone        OptionalData[bool]   `json:"marydone"`
+	Fullname        OptionalData[string] `json:"rf_fullname" swaggertype:"string" example:"MIT License"`
+	Text            OptionalData[string] `json:"rf_text" swaggertype:"string" example:"MIT License Text here"`
+	Url             OptionalData[string] `json:"rf_url" swaggertype:"string" example:"https://opensource.org/licenses/MIT"`
+	Copyleft        OptionalData[bool]   `json:"rf_copyleft" swaggertype:"boolean"`
+	FSFfree         OptionalData[bool]   `json:"rf_FSFfree" swaggertype:"boolean"`
+	OSIapproved     OptionalData[bool]   `json:"rf_OSIapproved" swaggertype:"boolean"`
+	GPLv2compatible OptionalData[bool]   `json:"rf_GPLv2compatible" swaggertype:"boolean"`
+	GPLv3compatible OptionalData[bool]   `json:"rf_GPLv3compatible" swaggertype:"boolean"`
+	Notes           OptionalData[string] `json:"rf_notes" example:"This license has been superseded." swaggertype:"string"`
+	Fedora          OptionalData[string] `json:"rf_Fedora" swaggertype:"string"`
+	TextUpdatable   OptionalData[bool]   `json:"rf_text_updatable" swaggertype:"boolean"`
+	DetectorType    OptionalData[int64]  `json:"rf_detector_type" example:"1" swaggertype:"integer"`
+	Active          OptionalData[bool]   `json:"rf_active" swaggertype:"boolean"`
+	Source          OptionalData[string] `json:"rf_source" swaggertype:"string"`
+	SpdxId          OptionalData[string] `json:"rf_spdx_id" example:"MIT" swaggertype:"string"`
+	Risk            OptionalData[int64]  `json:"rf_risk" swaggertype:"integer" example:"3"`
+	Flag            OptionalData[int64]  `json:"rf_flag" example:"1" swaggertype:"integer"`
+	Marydone        OptionalData[bool]   `json:"marydone" swaggertype:"boolean"`
 }
 
 // UpdateExternalRefsJSONPayload struct represents the external ref key value
