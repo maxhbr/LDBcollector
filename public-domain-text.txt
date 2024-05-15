@@ -1590,3 +1590,9 @@ location = https://github.com/Danny02/OpenCTM/raw/e2e588db50a1d2a6b63f668f703bf8
 text = '''
 Public Domain
 '''
+
+package = loguru
+location = https://github.com/emilk/loguru/blob/4adaa185883e3c04da25913579c451d3c32cfac1/README.md?plain=1#L13
+text = '''
+This software is in the public domain. Where that dedication is not recognized, you are granted a perpetual, irrevocable license to copy, modify and distribute it as you see fit.
+'''
