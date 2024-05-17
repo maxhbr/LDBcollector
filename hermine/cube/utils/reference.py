@@ -23,6 +23,8 @@ LICENSE_SHARED_FIELDS = (
     "ethical_clause",
     "non_commercial",
     "non_tivoisation",
+    "warranty",
+    "liability",
     "law_choice",
     "venue_choice",
     "comment",
