@@ -12,8 +12,15 @@
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: python:3.8-alpine
 
+include:
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+  - project: 'to-be-continuous/docker'
+    ref: '5.10.1'
+    file: '/templates/gitlab-ci-docker.yml'
+
 variables:
   DOCKER_DRIVER: overlay2
+  DOCKER_TRIVY_ARGS: --vuln-type library
 
 tests:
   stage: test
@@ -37,7 +44,7 @@ tests:
   - poetry run python manage.py test
 
 pages:
-  stage: deploy
+  stage: production
   rules:
   - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
     changes:
@@ -59,7 +66,7 @@ pages:
     - public
 
 release:
-  stage: deploy
+  stage: publish
   rules:
     - if: $CI_COMMIT_TAG
   image: registry.gitlab.com/gitlab-org/release-cli:latest
