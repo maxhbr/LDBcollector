@@ -44,8 +44,10 @@
     (is (false? (unidentified? "\n")))
     (is (false? (unidentified? "\t"))))
   (testing "Unidentified LicensRef"
-    (is (true?  (unidentified? (lcis/name->unidentified))))
-    (is (true?  (unidentified? (lcis/name->unidentified "foo")))))
+    (is (true?  (unidentified? (lcis/name->unidentified-license-ref))))
+    (is (true?  (unidentified? (lcis/name->unidentified-license-ref "foo"))))
+    (is (true?  (unidentified? (lcis/name->unidentified-addition-ref))))
+    (is (true?  (unidentified? (lcis/name->unidentified-addition-ref "foo")))))
   (testing "Listed ids are not unidentified"
     (is (every? false? (map unidentified? (sl/ids))))
     (is (every? false? (map unidentified? (se/ids))))))
@@ -103,10 +105,8 @@
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0 WITH Classpath-exception-2.0")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache-2.0 OR GPL-3.0")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
-; ####TODO: in preparation for SPDX 3.0 support (https://github.com/pmonks/lice-comb/issues/42)
-;    (is (valid= #{"LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb"} (name->expressions "LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb")))
-;    (is (valid= #{"DocumentRef-acme:LicenseRef-test WITH DocumentRef-acme:AdditionRef-test"} (name->expressions "DocumentRef-acme:LicenseRef-test with DocumentRef-acme:AdditionRef-test")))
-)
+    (is (valid= #{"LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb"} (name->expressions "LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb")))                                   ; Since SPDX specification v3.0
+    (is (valid= #{"DocumentRef-acme:LicenseRef-test WITH DocumentRef-acme:AdditionRef-test"} (name->expressions "DocumentRef-acme:LicenseRef-test with DocumentRef-acme:AdditionRef-test"))))  ; Since SPDX specification v3.0
   (testing "Single expressions that are not SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 with the GNU Classpath Exception")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache License version 2.0 or GNU General Public License version 3")))
@@ -114,22 +114,29 @@
     (is (valid= #{"Apache-2.0 AND MIT"}                 (name->expressions "Apache & MIT licence")))
     (is (valid= #{"CDDL-1.1"}                           (name->expressions "Common Development and Distribution Licence")))
     (is (valid= #{"BSD-2-Clause-FreeBSD"}               (name->expressions "BSD 2 clause freebsd")))
-    (is (valid= #{"BSD-2-Clause-Darwin"}                (name->expressions "BSD 2 clause darwin")))   ; Since SPDX v3.23
-    (is (valid= #{"BSD-3-Clause-acpica"}                (name->expressions "BSD 3 CLAUSE ACPICA"))))  ; Since SPDX v3.23
+    (is (valid= #{"BSD-2-Clause-Darwin"}                (name->expressions "BSD 2 clause darwin")))  ; Since SPDX license list v3.23
+    (is (valid= #{"BSD-3-Clause-acpica"}                (name->expressions "BSD 3 CLAUSE ACPICA")))  ; Since SPDX license list v3.23
+    (is (valid= #{(str (lcis/name->unidentified-license-ref "foo") " WITH Classpath-exception-2.0")} (name->expressions "foo with classpath exception")))
+    (is (valid= #{(str "Apache-2.0 WITH " (lcis/name->unidentified-addition-ref "foo"))} (name->expressions "Apache with foo")))  ; Since SPDX specification v3.0
+    (is (valid= #{(str (lcis/name->unidentified-license-ref "foo WITH bar"))} (name->expressions "foo WITH bar"))))  ; Test collapsing of unidentified LicenseRef and AdditionRef
   (testing "Expressions with weird operators"
     (is (valid= #{"Apache-2.0"}                         (name->expressions "and and and Apache License 2.0")))
     (is (valid= #{"Apache-2.0"}                         (name->expressions "Apache Licence 2.0 or or or")))
     (is (valid= #{"Apache-2.0 OR MIT"}                  (name->expressions "Apache License 2.0 or or or or or or or or MIT license")))
     (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache License 2.0 or and or and or and or and MIT license")))
     (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "or and Apache Licence 2.0 or and or and or and or and MIT and or and")))
-    (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache License 2.0 and/or MIT licence"))))
+    (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache License 2.0 and/or MIT licence")))
+    (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache License 2.0 and with MIT licence")))
+    (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache License 2.0 with or MIT licence")))
+    (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache with MIT")))
+    (is (valid= #{"Apache-2.0"}                         (name->expressions "Apache with Apache")))
+    (is (valid= #{"Apache-1.0" "Apache-2.0"}            (name->expressions "Apache 1 with Apache 2")))
+    (is (valid= #{"GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU public license with with classpath exception"))))
   (testing "Multiple expressions"
     (is (valid= #{"MIT" "BSD-4-Clause"}                 (name->expressions "MIT / BSD")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only"}          (name->expressions "Apache License version 2.0 / GNU General Public License version 3")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
     (is (valid= #{"EPL-2.0 OR (GPL-2.0-or-later WITH Classpath-exception-2.0 AND MIT) OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception aNd MIT Licence or three clause bsd and Apache Licence"))))
-  (testing "Cursed license expressions"
-    (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache with MIT"))))
   (testing "Names seen in handpicked POMs on Maven Central"
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License (AGPL) version 3.0")))
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3.0 only")))
@@ -208,7 +215,7 @@
     (is (valid= #{"UPL-1.0"}                            (name->expressions "Universal Permissive License, Version 1.0")))
     (is (valid= #{"CC0-1.0"}                            (name->expressions "Public Domain, per Creative Commons CC0")))
     (is (valid= #{"LicenseRef-lice-comb-UNIDENTIFIED-210UC7nlCWUwBBse5ma6Ntey1j3a0v0J3kvJVbZ38z7UIQnaj"} (name->expressions "provided without support or warranty")))   ; A nasty corner case because of the "or"
-    (is (valid= #{(str (lcis/name->unidentified "CC Attribution 4.0 International with exception for binary distribution") " OR Apache-2.0")} (name->expressions "CC Attribution 4.0 International with exception for binary distribution or apache 2.0"))))  ; A nasty corner case of a non-standard exception in an otherwise valid expression
+    (is (valid= #{(str "CC-BY-4.0 WITH " (lcis/name->unidentified-addition-ref "exception for binary distribution") " OR Apache-2.0")} (name->expressions "CC Attribution 4.0 International with exception for binary distribution or apache 2.0"))))
   (testing "All names seen in POMs on Clojars as of 2023-07-13"
     (is (valid= #{"AFL-3.0"}                            (name->expressions "Academic Free License 3.0")))
     (is (valid= #{"AGPL-3.0-only" (lcis/proprietary-commercial)} (name->expressions "GNU Affero General Public License Version 3; Other commercial licenses available.")))
@@ -378,7 +385,7 @@
     (is (valid= #{"Beerware"}                           (name->expressions "THE BEER-WARE LICENSE")))
     (is (valid= #{"CC-BY-2.5"}                          (name->expressions "Creative Commons Attribution 2.5 License")))
     (is (valid= #{"CC-BY-3.0"}                          (name->expressions "Creative Commons 3.0")))
-    (is (valid= #{(lcis/name->unidentified "CC Attribution 4.0 International with exception for binary distribution")} (name->expressions "CC Attribution 4.0 International with exception for binary distribution")))  ; The exception in this case doesn't map to any listed SPDX identifier (including CC-BY variants), and as of SPDX 2.0 unidentified exceptions are to be "rolled in" with the associated license identifier, and reported as a (single) LicenseRef. In SPDX v3.0+ this will change with the addition of the AdditionRef construct.
+    (is (valid= #{(str "CC-BY-4.0 WITH " (lcis/name->unidentified-addition-ref "exception for binary distribution"))} (name->expressions "CC Attribution 4.0 International with exception for binary distribution")))  ; The exception in this case doesn't map to any listed SPDX identifier (including CC-BY variants), and as of SPDX 2.0 unidentified exceptions are to be "rolled in" with the associated license identifier, and reported as a (single) LicenseRef. In SPDX v3.0+ this will change with the addition of the AdditionRef construct.
     (is (valid= #{"CC-BY-4.0"}                          (name->expressions "CC-BY-4.0")))
     (is (valid= #{"CC-BY-4.0"}                          (name->expressions "Creative Commons Attribution License")))  ; Listed license missing version - we assume the latest
     (is (valid= #{"CC-BY-NC-3.0"}                       (name->expressions "Creative Commons Attribution-NonCommercial 3.0")))
@@ -667,7 +674,7 @@
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "Wildbit Proprietary License")))
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "proprietary")))
     (is (valid= #{(lcis/public-domain)}                 (name->expressions "Public Domain")))
-    (is (valid= #{(str "GPL-2.0-or-later OR " (lcis/name->unidentified "Swiss Ephemeris"))} (name->expressions "GPL v2+ or Swiss Ephemeris")))
+    (is (valid= #{(str "GPL-2.0-or-later OR " (lcis/name->unidentified-license-ref "Swiss Ephemeris"))} (name->expressions "GPL v2+ or Swiss Ephemeris")))
     (is (valid= #{(str "MIT AND " (lcis/proprietary-commercial))} (name->expressions "Dual MIT & Proprietary")))
     (is (unidentified-only?                             (name->expressions "${license.id}")))
     (is (unidentified-only?                             (name->expressions "A Clojure library for Google Cloud Pub/Sub.")))

@@ -179,7 +179,7 @@
         (if (lciu/valid-http-uri? name)
           (if-let [ids (uri->expressions-info name)]
             ids
-            {(lcis/name->unidentified name) (list {:type :concluded :confidence :low :strategy :unidentified :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unidentified
+            {(lcis/name->unidentified-license-ref name) (list {:type :concluded :confidence :low :strategy :unidentified :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unidentified
           ; 3. Attempt to build SPDX expression(s) from the name
           (lcim/name->expressions-info name))))))
 

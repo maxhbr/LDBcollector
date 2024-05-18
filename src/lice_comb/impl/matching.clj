@@ -97,15 +97,15 @@
   (if (= 2 (count expressions))
     (if (set? expressions)
       ; expressions is a set
-      (let [license-id   (first (seq (filter sl/listed-id? expressions)))
-            exception-id (first (seq (filter se/listed-id? expressions)))]
+      (let [license-id   (first (seq (filter #(or (sl/listed-id? %) (sl/license-ref?  %)) expressions)))
+            exception-id (first (seq (filter #(or (se/listed-id? %) (se/addition-ref? %)) expressions)))]
         (if (and license-id exception-id)
           #{(str license-id " WITH " exception-id)}
           expressions))
       ; expressions is a map
       (let [exprs        (keys expressions)
-            license-id   (first (seq (filter sl/listed-id? exprs)))
-            exception-id (first (seq (filter se/listed-id? exprs)))]
+            license-id   (first (seq (filter #(or (sl/listed-id? %) (sl/license-ref?  %)) exprs)))
+            exception-id (first (seq (filter #(or (se/listed-id? %) (se/addition-ref? %)) exprs)))]
         (if (and license-id exception-id)
           {(str license-id " WITH " exception-id) (reduce concat (vals expressions))}
           expressions)))
@@ -182,8 +182,9 @@
   order of appearance as they appear in s.
 
   If no listed SPDX license or exception identifiers are found in s, returns a
-  sequence containing a single expressions-info map with a lice-comb specific
-  'unidentified' LicenseRef that encodes s."
+  sequence containing a single expressions-info map with a String started with
+  \"UNIDENTIFIED-\" and with s appended. Callers are expected to turn this value
+  into a lice-comb inidentified LicenseRef or AdditionRef, depending on context."
   [s]
   (when-not (s/blank? s)
     (let [s   (s/trim s)
@@ -204,8 +205,8 @@
                 ; 4. Attempt regex name matching
                 (lcirm/matches s)
 
-                ; 5. No clue, so return a single unidentified SPDX LicenseRef
-                (let [id (lcis/name->unidentified s)]
+                ; 5. No clue, so return a single info map, but with a made up "UNIDENTIFIED-" value instead of an SPDX license or exception identifier
+                (let [id (str "UNIDENTIFIED-" s)]
                   (list {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list s)})})))]
       (map (partial lciei/prepend-source s) ids))))
 
@@ -244,33 +245,45 @@
          filter-blanks
          (map #(if (string? %) (s/trim %) %)))))
 
-(defn- collapse-unlisted-exceptions
-  "Collapses exception fragments with a LicenseRef on the right side (which is
-  not valid in SPDX v2.3, returning a single LicenseRef for the entire fragment
-  instead.
+(defn- fix-unidentified
+  "Fixes a singleton UNIDENTIFIED- expression info map by converting the id to
+  either a lice-comb unidentified LicenseRef or AdditionRef, depending on prev.
+  Returns x unchanged if it's neither an expression info map nor has an
+  UNIDENTIFIED- id."
+  ([x] (fix-unidentified nil x))
+  ([prev x]
+   (if-not (map? x)
+     ; It's not an expression info map (i.e. it's an operator keyword), so let it through unchanged
+     x
+     ; It's a (singleton) expression info map 
+     (let [id (first (keys x))]
+       (if (s/starts-with? id "UNIDENTIFIED-")
+         ; It's an expression info map with an unidentified id, so we have to fix it
+         (let [fixed-id  (if (= :with prev)
+                           (lcis/name->unidentified-addition-ref (subs id (count "UNIDENTIFIED-")))
+                           (lcis/name->unidentified-license-ref  (subs id (count "UNIDENTIFIED-"))))
+               v         (first (vals x))
+               fixed-val (map #(if (:id %) (assoc % :id fixed-id) %) v)]
+          {fixed-id fixed-val})
+         ; It's a (singleton) expression info map but with an identified id, so let it through unchanged
+         x)))))
 
-  Note: this will need to change substantially as part of https://github.com/pmonks/lice-comb/issues/42"
+(defn- fix-unidentifieds
+  "Fixes all entries in sequence l that have an UNIDENTIFIED- id by converting
+  those ids to either a lice-comb unidentified LicenseRef or AdditionRef,
+  depending on context (i.e. whether the entry is preceeded by a :with operator
+  or not)."
   [l]
-  (loop [f      (take 3 l)
+  (loop [f      (take 2 l)
          r      (rest l)
-         result nil]
-    (if (< (count f) 3)
-      (concat result f)
-      (let [left  (first f)
-            op    (second f)
-            right (second (rest f))]
-        (if (and (= :with op) (lcis/unidentified? (first (keys right))))
-          (let [skip2      (rest (rest r))
-                left-name  (first (:source (first (first (vals left)))))
-                right-name (lcis/unidentified->name (first (keys right)))
-                new-name   (str left-name " with " right-name)
-                new-id     (lcis/name->unidentified new-name)]
-            (recur (take 3 skip2) (rest skip2)
-                   (concat result (list {new-id (list {:id new-id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list new-name)})}))))
-          (recur (take 3 r) (rest r)
-                 (concat result (list left))))))))
-
-(def ^:private push conj)   ; With lists-as-stacks conj == push
+         result (list (fix-unidentified (first f)))]
+    (if-not (seq f)
+      result
+      (recur (take 2 r)
+             (rest r)
+             (if-let [fixed-id-with-info (fix-unidentified (first f) (second f))]
+               (concat result [fixed-id-with-info])
+               result)))))
 
 (defn- calculate-confidence-for-expression
   "Calculate the confidence for an expression, as the lowest confidence in the
@@ -279,6 +292,8 @@
   (if-let [confidence (lciei/lowest-confidence (filter identity (map :confidence expression-infos)))]
     confidence
     :high))   ; For when none of the components have a confidence (i.e. they're all :type :declared)
+
+(def ^:private push conj)   ; With lists-as-stacks conj == push
 
 (defn- process-expression-element
   "Processes a single new expression element e (either a keyword representing
@@ -303,8 +318,9 @@
               s-minus-2 (pop s-minus-1)]
           (if (nil? prior)
             (push s-minus-2 e)       ; s had one keyword on it (which is invalid), so drop it and push e on
-            (if (or (not= :with kw)  ; If the prior keyword was :and or :or, or :with and the current element is a listed exception id, build an SPDX expression fragment and push the result onto s
-                    (se/listed-id? (first (keys e))))
+            (if (or (not= :with kw)  ; If the prior keyword was :and or :or, or :with and the current element is a listed exception id or AdditionRef, build an SPDX expression fragment and push the result onto s
+                    (se/listed-id?    (first (keys e)))
+                    (se/addition-ref? (first (keys e))))
               (let [k                (s/join " " [(first (keys prior)) operator (first (keys e))])
                     expression-infos (concat (first (vals prior)) (first (vals e)))
                     v                (distinct (concat (list {:type :concluded :confidence (calculate-confidence-for-expression expression-infos) :strategy :expression-inference})
@@ -336,17 +352,19 @@
                                 (get @cursed-names-d name)
 
                                 ; 2. Construct an expressions-info map from the name
-                                (let [partial-result (some->> (split-on-operators name)
-                                                              (drop-while keyword?)
-                                                              (lc3/rdrop-while keyword?)
-                                                              (map #(if (keyword? %) % (string->ids-info %)))
-                                                              flatten
-                                                              collapse-unlisted-exceptions
+                                (let [partial-result (some->> name
+                                                              split-on-operators                               ; Split on operators
+                                                              (drop-while keyword?)                            ; Drop (nonsensical) leading operators
+                                                              (lc3/rdrop-while keyword?)                       ; Drop (nonsensical) trailing operators
+                                                              dedupe                                           ; Deduplicate consecutive identical values (mostly applies to duplicate operators, which are redundant)
+                                                              (map #(if (keyword? %) % (string->ids-info %)))  ; Determine SPDX ids (or UNIDENTIFIED-xxx) with info for all non-operators
+                                                              flatten                                          ; Flatten back to an unnested sequence (since string->ids-info returns sequences)
+                                                              fix-unidentifieds                                ; Convert each unidentified non-operator into either a LicenseRef or AdditionRef, depending on context
                                                               seq)
                                       ids-only       (seq (mapcat keys (filter map? partial-result)))]
-                                  ; Check whether all we have are unidentified LicenseRefs, and if so just return the entire thing as a single unidentified LicenseRef
+                                  ; Check whether all we have are unidentified LicenseRefs/AdditionRefs, and if so just return the entire thing as a single unidentified LicenseRef
                                   (if (every? lcis/unidentified? ids-only)
-                                    (let [id (lcis/name->unidentified (s/trim name))]
+                                    (let [id (lcis/name->unidentified-license-ref (s/trim name))]
                                       {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list)})})
                                     (some->> partial-result
                                              build-expressions-info-map

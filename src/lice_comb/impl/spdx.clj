@@ -47,6 +47,10 @@
 (def ^:private proprietary-commercial-license-ref (str lice-comb-license-ref-prefix "-PROPRIETARY-COMMERCIAL"))
 (def ^:private unidentified-license-ref-prefix    (str lice-comb-license-ref-prefix "-UNIDENTIFIED"))
 
+; The addition refs lice-comb uses (note: the unidentified one usually has a hyphen then a base62 suffix appended)
+(def ^:private lice-comb-addition-ref-prefix      "AdditionRef-lice-comb")
+(def ^:private unidentified-addition-ref-prefix   (str lice-comb-addition-ref-prefix "-UNIDENTIFIED"))
+
 ; Lower case id map
 (def spdx-ids-d (delay (merge (into {} (map #(vec [(s/lower-case %) %]) @license-ids-d))
                               (into {} (map #(vec [(s/lower-case %) %]) @exception-ids-d)))))
@@ -73,6 +77,11 @@
   [id]
   (s/starts-with? (s/lower-case id) (s/lower-case lice-comb-license-ref-prefix)))
 
+(defn lice-comb-addition-ref?
+  "Is the given id one of lice-comb's custom AdditionRefs?"
+  [id]
+  (s/starts-with? (s/lower-case id) (s/lower-case lice-comb-addition-ref-prefix)))
+
 (defn public-domain?
   "Is the given id lice-comb's custom 'public domain' LicenseRef?"
   [id]
@@ -96,41 +105,100 @@
   proprietary-commercial
   (constantly proprietary-commercial-license-ref))
 
-(defn unidentified?
+(defn unidentified-license-ref?
   "Is the given id a lice-comb custom 'unidentified' LicenseRef?"
   [id]
   (when id
     (s/starts-with? (s/lower-case id) (s/lower-case unidentified-license-ref-prefix))))
 
-(defn name->unidentified
+(defn unidentified-addition-ref?
+  "Is the given id a lice-comb custom 'unidentified' AdditionRef?"
+  [id]
+  (when id
+    (s/starts-with? (s/lower-case id) (s/lower-case unidentified-addition-ref-prefix))))
+
+(defn unidentified?
+  "Is the given id a lice-comb custom 'unidentified' LicenseRef or AdditionRef?"
+  [id]
+  (or (unidentified-license-ref? id) (unidentified-addition-ref? id)))
+
+(defn name->unidentified-license-ref
   "Constructs a valid SPDX id (a LicenseRef specific to lice-comb) for an
   unidentified license, with the given name (if provided) appended as Base62
   (since clj-spdx identifiers are limited to a small superset of Base62)."
-  ([] (name->unidentified nil))
+  ([] (name->unidentified-license-ref nil))
   ([name]
    (str unidentified-license-ref-prefix (when-not (s/blank? name) (str "-" (lciu/base62-encode name))))))
 
-(defn unidentified->name
-  "Get the original name of the given unidentified license. Returns nil if id is
-  nil or is not a lice-comb unidentified LicenseRef."
+(defn name->unidentified-addition-ref
+  "Constructs a valid SPDX id (an AdditionRef specific to lice-comb) for an
+  unidentified license exception, with the given name (if provided) appended as
+  Base62 (since clj-spdx identifiers are limited to a small superset of Base62)."
+  ([] (name->unidentified-addition-ref nil))
+  ([name]
+   (str unidentified-addition-ref-prefix (when-not (s/blank? name) (str "-" (lciu/base62-encode name))))))
+
+(defn unidentified-license-ref->name
+  "Get the original name of the given unidentified license ref. Returns nil if
+  id is nil or is not a lice-comb unidentified LicenseRef."
   [id]
-  (when (unidentified? id)
+  (when (unidentified-license-ref? id)
     (if (> (count id) (count unidentified-license-ref-prefix))
       (lciu/base62-decode (subs id (inc (count unidentified-license-ref-prefix))))
       "")))
 
-(defn unidentified->human-readable-name
+(defn unidentified-addition-ref->name
+  "Get the original name of the given unidentified addition ref. Returns nil if
+  id is nil or is not a lice-comb unidentified AdditionRef."
+  [id]
+  (when (unidentified-addition-ref? id)
+    (if (> (count id) (count unidentified-license-ref-prefix))
+      (lciu/base62-decode (subs id (inc (count unidentified-license-ref-prefix))))
+      "")))
+
+(defn unidentified->name
+  "Get the original name of the given unidentified license ref or addition ref.
+  Returns nil if id is nil or is not a lice-comb unidentified LicenseRef or
+  AdditionRef."
+  [id]
+  (cond
+    (unidentified-license-ref?  id) (unidentified-license-ref->name id)
+    (unidentified-addition-ref? id) (unidentified-addition-ref->name id)))
+
+(defn unidentified-license-ref->human-readable-name
   "Returns the string 'Unidentified' with the original name of the given
   unidentified license in parens. Returns nil if id is nil or is not a
   lice-comb unidentified LicenseRef."
   [id]
-  (when (unidentified? id)
+  (when (unidentified-license-ref? id)
     (let [original-name (unidentified->name id)]
       (str "Unidentified (\""
            (if (s/blank? original-name)
              "-original name not available-"
              (s/trim original-name))
            "\")"))))
+
+(defn unidentified-addition-ref->human-readable-name
+  "Returns the string 'Unidentified' with the original name of the given
+  unidentified license exception in parens. Returns nil if id is nil or
+  is not a lice-comb unidentified AdditionRef."
+  [id]
+  (when (unidentified-addition-ref? id)
+    (let [original-name (unidentified->name id)]
+      (str "Unidentified (\""
+           (if (s/blank? original-name)
+             "-original name not available-"
+             (s/trim original-name))
+           "\")"))))
+
+(defn unidentified->human-readable-name
+  "Returns the string 'Unidentified' with the original name of the given
+  unidentified license or license exception in parens. Returns nil if id is nil
+  or is not a lice-comb unidentified LicenseRef or AdditionRef."
+  [id]
+  (cond
+    (unidentified-license-ref?  id) (unidentified-license-ref->human-readable-name id)
+    (unidentified-addition-ref? id) (unidentified-addition-ref->human-readable-name id)))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
