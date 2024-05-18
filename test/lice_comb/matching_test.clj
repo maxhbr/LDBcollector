@@ -823,4 +823,6 @@
   (testing "URIs that aren't in the SPDX license list, but do match via retrieval and full text matching"
     (is (= #{"Apache-2.0"}              (uri->expressions "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
     (is (= #{"Apache-2.0"}              (uri->expressions "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))
-    (is (= #{"Apache-2.0"}              (uri->expressions "HTTPS://GITHUB.COM/pmonks/lice-comb/blob/main/LICENSE")))))
+    (is (= #{"Apache-2.0"}              (uri->expressions "HTTPS://GITHUB.COM/pmonks/lice-comb/blob/main/LICENSE"))))
+  (testing "URIs that aren't in the SPDX license list, but do match via retrieval, HTML->text conversion, and full text matching"
+    (is (= #{"MPL-2.0"}                 (uri->expressions "https://www.mozilla.org/en-US/MPL/2.0/")))))
