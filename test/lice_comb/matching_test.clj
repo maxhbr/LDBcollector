@@ -100,14 +100,18 @@
     (is (valid= #{(lcis/public-domain)}                 (name->expressions "              Public domain   ")))  ; Test whitespace
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "Proprietary")))
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "Commercial")))
+    (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "proprietary/commercial")))
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "All rights reserved"))))
+  (testing "Proprietary/commercial in an expression"
+    (is (valid= #{(str (lcis/proprietary-commercial) " WITH Classpath-exception-2.0")} (name->expressions "Proprietary/commercial with classpath exception")))
+    (is (valid= #{(str (lcis/proprietary-commercial) " WITH " (lcis/name->unidentified-addition-ref "foo"))} (name->expressions "Proprietary/commercial with foo"))))
   (testing "SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0 WITH Classpath-exception-2.0")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache-2.0 OR GPL-3.0")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
     (is (valid= #{"LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb"} (name->expressions "LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb")))                                   ; Since SPDX specification v3.0
     (is (valid= #{"DocumentRef-acme:LicenseRef-test WITH DocumentRef-acme:AdditionRef-test"} (name->expressions "DocumentRef-acme:LicenseRef-test with DocumentRef-acme:AdditionRef-test"))))  ; Since SPDX specification v3.0
-  (testing "Single expressions that are not SPDX expressions"
+  (testing "Simple expressions that are not SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 with the GNU Classpath Exception")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache License version 2.0 or GNU General Public License version 3")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
@@ -132,7 +136,7 @@
     (is (valid= #{"Apache-2.0"}                         (name->expressions "Apache with Apache")))
     (is (valid= #{"Apache-1.0" "Apache-2.0"}            (name->expressions "Apache 1 with Apache 2")))
     (is (valid= #{"GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU public license with with classpath exception"))))
-  (testing "Multiple expressions"
+  (testing "Complex expressions"
     (is (valid= #{"MIT" "BSD-4-Clause"}                 (name->expressions "MIT / BSD")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only"}          (name->expressions "Apache License version 2.0 / GNU General Public License version 3")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
