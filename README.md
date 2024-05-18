@@ -123,10 +123,10 @@ $ deps-try com.github.pmonks/lice-comb
 ;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
 ;                "GNU Public License 2.0 or later")}
 ;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching,
-;       :confidence-explanations (:missing-version),
 ;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
 ;                "the GNU Classpath Exception"
-;                "Classpath Exception")})}
+;                "Classpath Exception"),
+;       :confidence-explanations #{:missing-version}})}
 
 (lcmvn/pom->expressions-info "https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom")
 ;=> {"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
