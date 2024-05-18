@@ -19,12 +19,10 @@
 (ns lice-comb.files-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [clojure.java.io            :as io]
-            [lice-comb.test-boilerplate :refer [fixture valid=]]
+            [lice-comb.test-boilerplate :refer [fixture valid= test-data-path]]
             [lice-comb.files            :refer [init! probable-license-file? probable-license-files file->expressions dir->expressions zip->expressions]]))
 
 (use-fixtures :once fixture)
-
-(def test-data-path "./test/lice_comb/data")
 
 (deftest init!-tests
   (testing "Nil response"
@@ -77,7 +75,8 @@
                (io/file (str test-data-path "/simple.pom"))
                (io/file (str test-data-path "/complex.pom"))
                (io/file (str test-data-path "/CC-BY-4.0/LICENSE"))
-               (io/file (str test-data-path "/MPL-2.0/LICENSE"))}
+               (io/file (str test-data-path "/MPL-2.0/LICENSE"))
+               (io/file (str test-data-path "/MPL-2.0/LICENSE.html"))}
              (probable-license-files test-data-path)))))
 
 (deftest file->expressions-tests
@@ -93,18 +92,19 @@
     (is (nil? (file->expressions "."))))
   (testing "Files on disk"
 ;    (is (= #{"CC-BY-4.0"}    (file->expressions  (str test-data-path "/CC-BY-4.0/LICENSE"))))  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/233
-    (is (valid= #{"MPL-2.0"} (file->expressions  (str test-data-path "/MPL-2.0/LICENSE")))))
+    (is (valid= #{"MPL-2.0"} (file->expressions (str test-data-path "/MPL-2.0/LICENSE"))))
+    (is (valid= #{"MPL-2.0"} (file->expressions (str test-data-path "/MPL-2.0/LICENSE.html")))))
   (testing "URLs"
-    (is (valid= #{"Apache-2.0"} (file->expressions  "https://www.apache.org/licenses/LICENSE-2.0.txt")))
-    (is (valid= #{"Apache-2.0"} (file->expressions  (io/as-url "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
+    (is (valid= #{"Apache-2.0"} (file->expressions "https://www.apache.org/licenses/LICENSE-2.0.txt")))
+    (is (valid= #{"Apache-2.0"} (file->expressions (io/as-url "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
   (testing "InputStreams"
     (is (thrown? clojure.lang.ExceptionInfo (with-open [is (io/input-stream "https://www.apache.org/licenses/LICENSE-2.0.txt")] (file->expressions  is))))
     (is (valid= #{"Apache-2.0"} (with-open [is (io/input-stream "https://www.apache.org/licenses/LICENSE-2.0.txt")]             (file->expressions  is "LICENSE_2.0.txt")))))
   (testing "POM files"
-    (is (valid= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/simple.pom"))))
-    (is (valid= #{"BSD-3-Clause"} (file->expressions  (str test-data-path "/no-xml-ns.pom"))))
-    (is (valid= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/asf-cat-1.0.12.pom"))))
-    (is (valid= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/with-parent.pom"))))))
+    (is (valid= #{"Apache-2.0"}   (file->expressions (str test-data-path "/simple.pom"))))
+    (is (valid= #{"BSD-3-Clause"} (file->expressions (str test-data-path "/no-xml-ns.pom"))))
+    (is (valid= #{"Apache-2.0"}   (file->expressions (str test-data-path "/asf-cat-1.0.12.pom"))))
+    (is (valid= #{"Apache-2.0"}   (file->expressions (str test-data-path "/with-parent.pom"))))))
 
 (deftest zip->expressions-tests
   (testing "Nil, empty, or blank zip file name"

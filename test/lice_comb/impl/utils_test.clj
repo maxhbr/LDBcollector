@@ -19,12 +19,13 @@
 (ns lice-comb.impl.utils-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [clojure.java.io            :as io]
-            [lice-comb.test-boilerplate :refer [fixture]]
-            [lice-comb.impl.utils       :refer [simplify-uri filepath filename]]))
+            [lice-comb.test-boilerplate :refer [fixture test-data-path]]
+            [lice-comb.impl.utils       :refer [simplify-uri filepath filename html->text]]))
 
 (use-fixtures :once fixture)
 
 (def simplified-apache2-uri "http://apache.org/license/license-2.0")
+(def local-mpl2-html        (str test-data-path "/MPL-2.0/LICENSE.html"))
 
 (deftest simplify-uri-tests
   (testing "Nil, empty or blank values"
@@ -104,23 +105,38 @@
     (is (= "" (filename "\n")))
     (is (= "" (filename "\t"))))
   (testing "Files"
-    (is (= "file.txt"                       (filename (io/file "file.txt"))))
-    (is (= "file.txt"                       (filename (io/file "/some/path/or/other/file.txt")))))
+    (is (= "file.txt" (filename (io/file "file.txt"))))
+    (is (= "file.txt" (filename (io/file "/some/path/or/other/file.txt")))))
   (testing "Strings"
-    (is (= "file.txt"                       (filename "file.txt")))
-    (is (= "file.txt"                       (filename "/some/path/or/other/file.txt")))
-    (is (= ""                               (filename "https://www.google.com")))
-    (is (= ""                               (filename "https://www.google.com/")))
-    (is (= "deps.edn"                       (filename "https://github.com/pmonks/lice-comb/blob/main/deps.edn"))))
+    (is (= "file.txt" (filename "file.txt")))
+    (is (= "file.txt" (filename "/some/path/or/other/file.txt")))
+    (is (= ""         (filename "https://www.google.com")))
+    (is (= ""         (filename "https://www.google.com/")))
+    (is (= "deps.edn" (filename "https://github.com/pmonks/lice-comb/blob/main/deps.edn"))))
   (testing "ZipEntries"
-    (is (= "file.txt"                       (filename (java.util.zip.ZipEntry. "file.txt"))))
-    (is (= "file.txt"                       (filename (java.util.zip.ZipEntry. "/some/path/or/other/file.txt")))))
+    (is (= "file.txt" (filename (java.util.zip.ZipEntry. "file.txt"))))
+    (is (= "file.txt" (filename (java.util.zip.ZipEntry. "/some/path/or/other/file.txt")))))
   (testing "URLs"
-    (is (= ""                               (filename (io/as-url "https://www.google.com/"))))
-    (is (= "deps.edn"                       (filename (io/as-url "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
+    (is (= ""         (filename (io/as-url "https://www.google.com/"))))
+    (is (= "deps.edn" (filename (io/as-url "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
   (testing "URIs"
-    (is (= ""                               (filename (java.net.URI. "https://www.google.com/"))))
-    (is (= "deps.edn"                       (filename (java.net.URI. "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
+    (is (= ""         (filename (java.net.URI. "https://www.google.com/"))))
+    (is (= "deps.edn" (filename (java.net.URI. "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
   (testing "InputStream"
     (is (thrown? clojure.lang.ExceptionInfo (filename (io/input-stream "deps.edn"))))))
 
+(deftest html->text-tests
+  (testing "Nil, empty or blank values"
+    (is (nil? (html->text nil)))
+    (is (= "" (html->text "")))
+    (is (= "" (filename "       ")))
+    (is (= "" (filename "\n")))
+    (is (= "" (filename "\t"))))
+  (testing "Simple HTML"
+    (is (= "Hello, world!" (html->text "Hello, world!")))
+    (is (= "Hello, world!" (html->text "<html><body><p>Hello, world!</p></body></html>")))
+    (is (= "Hello, world!" (html->text "<html><body><h1>Hello, world!</h1></body></html>")))
+    (is (= "Hello, world!" (html->text "<html><head><title>Hello, world!</title></head></html>")))
+    (is (= ""              (html->text "<html><body><p class=\"Hello, world!\"></p></body></html>"))))
+  (testing "Real world HTML"
+    (is (= "Mozilla Public License, version 2.0" (subs (html->text (slurp local-mpl2-html)) 0 35)))))

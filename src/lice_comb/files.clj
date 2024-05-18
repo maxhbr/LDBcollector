@@ -28,7 +28,7 @@
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.utils            :as lciu]))
 
-(def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "copying" "unlicense"})   ;TODO: consider "license.md" and #".+\.spdx" (see https://github.com/spdx/spdx-maven-plugin for why the latter is important)...
+(def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "license.html" "copying" "unlicense"})
 
 ; This is public because it's used in the tests
 (defn probable-license-file?
@@ -72,12 +72,14 @@
   ([f filepath]
    (when (lciu/readable-file? f)
      (let [fname  (lciu/filename filepath)
-           lfname (s/lower-case fname)]
-            (lciei/prepend-source filepath
-                                  (cond (or (= lfname "pom.xml")
-                                            (s/ends-with? lfname ".pom")) (doall (lcmvn/pom->expressions-info f fname))
-                                        (instance? java.io.InputStream f) (doall (lcm/text->expressions-info f))
-                                        :else                             (with-open [is (io/input-stream f)] (doall (lcm/text->expressions-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
+           lfname (s/lower-case fname)
+           result (cond (or (= lfname "pom.xml")
+                            (s/ends-with? lfname ".pom")) (doall (lcmvn/pom->expressions-info f fname))
+                        (or (s/ends-with? lfname ".html")
+                            (s/ends-with? lfname ".htm")) (doall (lcm/text->expressions-info (lciu/html->text (slurp f))))
+                        (instance? java.io.InputStream f) (doall (lcm/text->expressions-info f))
+                        :else                             (with-open [is (io/input-stream f)] (doall (lcm/text->expressions-info is))))]  ; Default is to assume it's a plain text file containing license text(s)
+       (lciei/prepend-source filepath result)))))
 
 (defn file->expressions
   "Returns a set of SPDX expressions (`String`s) for `f`. See
