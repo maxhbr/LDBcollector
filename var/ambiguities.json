@@ -124,7 +124,7 @@
             ],
             "problem": "This is not a license identifier. It is most likely a license similar to MIT, but without more information no assumptions can be made."
         },
-        "Mozille Public License": {
+        "Mozilla Public License": {
             "aliases": [
                 "MPL",
                 "MPL-1",
