@@ -225,3 +225,15 @@ location = https://github.com/cntools/libsurvive/blob/master/redist/crc32.c#L2-L
 text = '''
 You may use this program, or code or tables extracted from it, as desired without restriction.
 '''
+
+package = rust-bat
+          rust-syntect
+          rust-syntect4
+          rust-two-face
+location = https://github.com/sublimehq/Packages/blob/master/LICENSE
+text = '''
+Permission to copy, use, modify, sell and distribute this
+software is granted. This software is provided "as is" without
+express or implied warranty, and with no claim as to its
+suitability for any purpose.
+'''
