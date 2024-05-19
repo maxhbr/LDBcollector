@@ -119,6 +119,11 @@
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
+        "MIT Style": {
+            "aliases": [
+            ],
+            "problem": "This is not a license identifier. It is most likely a license similar to MIT, but without more information no assumptions can be made."
+        },
         "Mozille Public License": {
             "aliases": [
                 "MPL",
