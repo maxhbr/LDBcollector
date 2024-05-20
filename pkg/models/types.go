@@ -117,6 +117,59 @@ type UpdateExternalRefsJSONPayload struct {
 	ExternalRef map[string]interface{} `json:"external_ref"`
 }
 
+// LicenseImport represents an license record in the import json file.
+type LicenseImport struct {
+	Shortname       NullableAndOptionalData[string] `json:"rf_shortname" validate:"required" example:"MIT"`
+	Fullname        NullableAndOptionalData[string] `json:"rf_fullname" validate:"required" example:"MIT License"`
+	Text            NullableAndOptionalData[string] `json:"rf_text" validate:"required" example:"MIT License Text here"`
+	Url             NullableAndOptionalData[string] `json:"rf_url" validate:"required" example:"https://opensource.org/licenses/MIT"`
+	Copyleft        NullableAndOptionalData[bool]   `json:"rf_copyleft"`
+	FSFfree         NullableAndOptionalData[bool]   `json:"rf_FSFfree"`
+	OSIapproved     NullableAndOptionalData[bool]   `json:"rf_OSIapproved"`
+	GPLv2compatible NullableAndOptionalData[bool]   `json:"rf_GPLv2compatible"`
+	GPLv3compatible NullableAndOptionalData[bool]   `json:"rf_GPLv3compatible"`
+	Notes           NullableAndOptionalData[string] `json:"rf_notes" example:"This license has been superseded."`
+	Fedora          NullableAndOptionalData[string] `json:"rf_Fedora"`
+	TextUpdatable   NullableAndOptionalData[bool]   `json:"rf_text_updatable" validate:"required"`
+	DetectorType    NullableAndOptionalData[int64]  `json:"rf_detector_type" example:"1"`
+	Active          NullableAndOptionalData[bool]   `json:"rf_active" validate:"required"`
+	Source          NullableAndOptionalData[string] `json:"rf_source" validate:"required"`
+	SpdxId          NullableAndOptionalData[string] `json:"rf_spdx_id" validate:"required" example:"MIT"`
+	Risk            NullableAndOptionalData[int64]  `json:"rf_risk" validate:"required"`
+	Flag            NullableAndOptionalData[int64]  `json:"rf_flag"`
+	Marydone        NullableAndOptionalData[bool]   `json:"marydone"`
+	ExternalRef     map[string]interface{}          `json:"external_ref"`
+}
+
+// LicenseImportStatusCode is internally used for checking status of a license import
+type LicenseImportStatusCode int
+
+// Status codes covering various scenarios that can occur on a license import
+const (
+	IMPORT_FAILED LicenseImportStatusCode = iota + 1
+	IMPORT_LICENSE_CREATED
+	IMPORT_LICENSE_UPDATED
+	IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
+)
+
+// LicenseId is the id of successfully imported license
+type LicenseId struct {
+	Id        int64  `json:"id" example:"31"`
+	Shortname string `json:"shortname" example:"MIT"`
+}
+
+// LicenseImportStatus is the status of license records successfully inserted in the database during import
+type LicenseImportStatus struct {
+	Status int       `json:"status" example:"200"`
+	Data   LicenseId `json:"data"`
+}
+
+// ImportObligationsResponse is the response structure for import obligation response
+type ImportLicensesResponse struct {
+	Status int           `json:"status" example:"200"`
+	Data   []interface{} `json:"data"` // can be of type models.LicenseError or models.LicenseImportStatus
+}
+
 // The PaginationMeta struct represents additional metadata associated with a
 // license retrieval operation.
 // It contains information that provides context and supplementary details

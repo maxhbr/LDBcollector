@@ -36,3 +36,25 @@ func (v *OptionalData[T]) UnmarshalJSON(data []byte) error {
 	}
 	return nil
 }
+
+type NullableAndOptionalData[T any] struct {
+	// This is set to true if corresponding key is present in json object
+	IsDefinedAndNotNull bool
+	rawJson             json.RawMessage
+	Value               T
+}
+
+func (v *NullableAndOptionalData[T]) UnmarshalJSON(data []byte) error {
+	v.rawJson = append((v.rawJson)[0:0], data...)
+	if len(v.rawJson) != 0 {
+		var x *T
+		if err := json.Unmarshal(data, &x); err != nil {
+			return err
+		}
+		if x != nil {
+			v.Value = *x
+			v.IsDefinedAndNotNull = true
+		}
+	}
+	return nil
+}

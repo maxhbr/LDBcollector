@@ -418,6 +418,71 @@
                 }
             }
         },
+        "/licenses/import": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Import licenses by uploading a json file",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Import licenses by uploading a json file",
+                "operationId": "ImportLicenses",
+                "parameters": [
+                    {
+                        "type": "file",
+                        "description": "licenses json file list",
+                        "name": "file",
+                        "in": "formData",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/models.ImportLicensesResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/models.LicenseImportStatus"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "input file must be present",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/licenses/{shortname}": {
             "get": {
                 "description": "Get a single license by its shortname",
@@ -1444,6 +1509,20 @@
                 }
             }
         },
+        "models.ImportLicensesResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "description": "can be of type models.LicenseError or models.LicenseImportStatus",
+                    "type": "array",
+                    "items": {}
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
         "models.ImportObligationsResponse": {
             "type": "object",
             "properties": {
@@ -1561,6 +1640,31 @@
                 "timestamp": {
                     "type": "string",
                     "example": "2023-12-01T10:00:51+05:30"
+                }
+            }
+        },
+        "models.LicenseId": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "example": 31
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "MIT"
+                }
+            }
+        },
+        "models.LicenseImportStatus": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/models.LicenseId"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },
