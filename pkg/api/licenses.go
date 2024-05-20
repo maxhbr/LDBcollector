@@ -850,7 +850,19 @@ func SearchInLicense(c *gin.Context) {
 	query := db.DB.Model(&license)
 
 	if input.Search == "fuzzy" {
-		query = query.Where(fmt.Sprintf("%s ILIKE ?", input.Field), fmt.Sprintf("%%%s%%", input.SearchTerm))
+		if !db.DB.Migrator().HasColumn(&models.LicenseDB{}, input.Field) {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   fmt.Sprintf("invalid field name '%s'", input.Field),
+				Error:     "field does not exist in the database",
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return
+		}
+		query = query.Where(fmt.Sprintf("%s ILIKE ?", input.Field),
+			fmt.Sprintf("%%%s%%", input.SearchTerm))
 	} else if input.Search == "" || input.Search == "full_text_search" {
 		query = query.Where(input.Field+" @@ plainto_tsquery(?)", input.SearchTerm)
 	} else {
