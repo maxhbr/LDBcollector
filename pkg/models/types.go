@@ -329,8 +329,8 @@ type ObligationImportRequest struct {
 	ObligationFile string `form:"file"`
 }
 
-// ObligationImport represents an obligation record in the import json file.
-type ObligationImport struct {
+// ObligationJSONFileFormat represents an obligation record in the import/export json file.
+type ObligationJSONFileFormat struct {
 	Topic          string   `json:"topic" example:"copyleft" validate:"required"` // binding:"required" tag cannot be used as is works only for request body
 	Type           string   `json:"type" enums:"obligation,restriction,risk,right" validate:"required"`
 	Text           string   `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
