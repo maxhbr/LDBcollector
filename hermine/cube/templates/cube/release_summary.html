@@ -107,8 +107,8 @@ SPDX-License-Identifier: AGPL-3.0-only
             <tbody>
               {% for scope in exploitation_scopes %}
                 <tr>
-                  <td>{{ scope.project }}</td>
-                  <td>{{ scope.scope }}</td>
+                  <td>{{ scope.project|default:"<em>Any</em>" }}</td>
+                  <td>{{ scope.scope |default:"<em>Any</em>"}}</td>
                   <td>{{ scope.count }}</td>
                   <td>
                     {% if scope.exploitation %}
@@ -139,7 +139,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <p>
             <a href="{% url 'cube:release_exploitation_create' release.id %}" class="button is-primary">Create a new exploitation decision</a>
           </p>
-          {% if custom_scopes %}
+          {% if adhoc_exploitations %}
             <h4>Component level custom exploitations</h4>
             <table>
               <thead>
@@ -151,7 +151,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 </tr>
               </thead>
               <tbody>
-                {% for usage in custom_scopes %}
+                {% for usage in adhoc_exploitations %}
                   <tr>
                     <td>{{ usage.project }}</td>
                     <td>{{ usage.scope }}</td>
