@@ -56,9 +56,9 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ usage.version.effective_license}}</td>
             <td>{{ usage.license_expression }}</td>
             <td>{% for license_chosen in usage.licenses_chosen.all %}
-              <span class="tag {{ license_chosen|licenseAllowedCSS }}">
+              <a href="{% url 'cube:license_detail' license_chosen.id %}"><span class="tag {{ license_chosen|licenseAllowedCSS }}">
                 {{ license_chosen.spdx_id }}
-              </span>
+              </span></a>
             {% endfor %}
             </td>
             <td><a href="{% url 'cube:usage_update' usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
@@ -69,6 +69,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   </div>
 {% endblock %}
+
 
 
 
