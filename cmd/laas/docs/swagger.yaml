@@ -62,6 +62,60 @@ definitions:
         example: 200
         type: integer
     type: object
+  models.ExportLicenseDB:
+    properties:
+      external_ref:
+        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
+      marydone:
+        type: boolean
+      rf_FSFfree:
+        type: boolean
+      rf_Fedora:
+        type: string
+      rf_GPLv2compatible:
+        type: boolean
+      rf_GPLv3compatible:
+        type: boolean
+      rf_OSIapproved:
+        type: boolean
+      rf_active:
+        type: boolean
+      rf_add_date:
+        example: "2023-12-01T18:10:25.00+05:30"
+        type: string
+      rf_copyleft:
+        type: boolean
+      rf_detector_type:
+        example: 1
+        type: integer
+      rf_flag:
+        example: 1
+        type: integer
+      rf_fullname:
+        example: MIT License
+        type: string
+      rf_notes:
+        example: This license has been superseded.
+        type: string
+      rf_risk:
+        type: integer
+      rf_shortname:
+        example: MIT
+        type: string
+      rf_source:
+        type: string
+      rf_spdx_id:
+        example: MIT
+        type: string
+      rf_text:
+        example: MIT License Text here
+        type: string
+      rf_text_updatable:
+        type: boolean
+      rf_url:
+        example: https://opensource.org/licenses/MIT
+        type: string
+    type: object
   models.ImportLicensesResponse:
     properties:
       data:
@@ -987,6 +1041,28 @@ paths:
       security:
       - ApiKeyAuth: []
       summary: Update a license
+      tags:
+      - Licenses
+  /licenses/export:
+    get:
+      description: Export all licenses as a json file
+      operationId: ExportLicenses
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.ExportLicenseDB'
+            type: array
+        "500":
+          description: Failed to fetch Licenses
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Export all licenses as a json file
       tags:
       - Licenses
   /licenses/import:

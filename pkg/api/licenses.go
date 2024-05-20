@@ -13,6 +13,7 @@ import (
 	"net/http"
 	"path/filepath"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/fossology/LicenseDb/pkg/db"
@@ -1134,4 +1135,42 @@ func InsertOrUpdateLicenseOnImport(tx *gorm.DB, newLicenseMap map[string]interfa
 	}
 
 	return message, importStatus, &newLicense, &oldLicense
+}
+
+// ExportLicenses gives users all licenses as a json file.
+//
+//	@Summary		Export all licenses as a json file
+//	@Description	Export all licenses as a json file
+//	@Id				ExportLicenses
+//	@Tags			Licenses
+//	@Produce		json
+//	@Success		200	{array}		models.ExportLicenseDB
+//	@Failure		500	{object}	models.LicenseError	"Failed to fetch Licenses"
+//	@Security		ApiKeyAuth
+//	@Router			/licenses/export [get]
+func ExportLicenses(c *gin.Context) {
+
+	var licenses []models.ExportLicenseDB
+	query := db.DB.Model(&models.LicenseDB{})
+	err := query.Find(&licenses).Error
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Licenses not found",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	fileName := strings.Map(func(r rune) rune {
+		if r == '+' || r == ':' {
+			return '_'
+		}
+		return r
+	}, fmt.Sprintf("license-export-%s.json", time.Now().Format(time.RFC3339)))
+
+	c.Header("Content-Disposition", fmt.Sprintf("attachment; filename=%s", fileName))
+	c.JSON(http.StatusOK, &licenses)
 }
