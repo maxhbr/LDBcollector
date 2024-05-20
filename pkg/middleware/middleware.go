@@ -125,11 +125,11 @@ func PaginationMiddleware() gin.HandlerFunc {
 		var page models.PaginationInput
 		parsedPage, err := strconv.ParseInt(c.Query("page"), 10, 64)
 		if err == nil {
-			page.Page = int(parsedPage)
+			page.Page = parsedPage
 		}
 		parsedLimit, err := strconv.ParseInt(c.Query("limit"), 10, 64)
 		if err == nil {
-			page.Limit = int(parsedLimit)
+			page.Limit = parsedLimit
 		}
 
 		if page.Page == 0 {
@@ -193,7 +193,7 @@ func PaginationMiddleware() gin.HandlerFunc {
 			metaObject.Page = page.Page
 			metaObject.Limit = page.Limit
 			metaObject.ResourceCount = paginationMeta.ResourceCount
-			metaObject.TotalPages = int(math.Ceil(float64(paginationMeta.ResourceCount) / float64(page.Limit)))
+			metaObject.TotalPages = int64(math.Ceil(float64(paginationMeta.ResourceCount) / float64(page.Limit)))
 			// Can go next
 			if metaObject.Page < metaObject.TotalPages {
 				params.Set("page", strconv.FormatInt(int64(metaObject.Page+1), 10))

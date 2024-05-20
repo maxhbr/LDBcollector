@@ -25,9 +25,9 @@ import (
 
 var (
 	// DefaultPage Set default page to 1
-	DefaultPage = 1
+	DefaultPage int64 = 1
 	// DefaultLimit Set default max limit to 20
-	DefaultLimit = 20
+	DefaultLimit int64 = 20
 )
 
 // The Converter function takes an input of type models.LicenseJson and converts it into a
@@ -174,7 +174,7 @@ func PreparePaginateResponse(c *gin.Context, query *gorm.DB,
 	}
 	pagination := pageVar.(models.PaginationInput)
 
-	query.Offset(pagination.GetOffset()).Limit(pagination.GetLimit())
+	query.Offset(int(pagination.GetOffset())).Limit(int(pagination.GetLimit()))
 
 	var paginationMeta models.PaginationMeta
 	paginationMeta.ResourceCount = int(totalRows)
