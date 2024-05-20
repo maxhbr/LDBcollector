@@ -200,17 +200,17 @@ type ImportLicensesResponse struct {
 // about the retrieved license data.
 type PaginationMeta struct {
 	ResourceCount int    `json:"resource_count" example:"200"`
-	TotalPages    int    `json:"total_pages,omitempty" example:"20"`
-	Page          int    `json:"page,omitempty" example:"10"`
-	Limit         int    `json:"limit,omitempty" example:"10"`
+	TotalPages    int64  `json:"total_pages,omitempty" example:"20"`
+	Page          int64  `json:"page,omitempty" example:"10"`
+	Limit         int64  `json:"limit,omitempty" example:"10"`
 	Next          string `json:"next,omitempty" example:"/api/v1/licenses?limit=10&page=11"`
 	Previous      string `json:"previous,omitempty" example:"/api/v1/licenses?limit=10&page=9"`
 }
 
 // The PaginationInput struct represents the input required for pagination.
 type PaginationInput struct {
-	Page  int `json:"page" example:"10"`
-	Limit int `json:"limit" example:"10"`
+	Page  int64 `json:"page" example:"10"`
+	Limit int64 `json:"limit" example:"10"`
 }
 
 // PaginationParse interface processes the pagination input.
@@ -220,12 +220,12 @@ type PaginationParse interface {
 }
 
 // GetOffset returns the offset value for gorm.
-func (p PaginationInput) GetOffset() int {
+func (p PaginationInput) GetOffset() int64 {
 	return (p.Page - 1) * p.Limit
 }
 
 // GetLimit returns the limit value for gorm.
-func (p PaginationInput) GetLimit() int {
+func (p PaginationInput) GetLimit() int64 {
 	return p.Limit
 }
 
