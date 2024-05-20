@@ -128,6 +128,12 @@
         },
         "MIT Style": {
             "aliases": [
+                "MIT-style License",
+                "MIT-style",
+                "MIT style",
+                "MIT-like",
+                "MIT like",
+                "MIT Like"
             ],
             "problem": "This is not a license identifier. It is most likely a license similar to MIT, but without more information no assumptions can be made."
         },
