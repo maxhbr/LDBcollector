@@ -32,8 +32,8 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
-          <th>Component</th>
-          <th>Version</th>
+          <th>Subproject:Scope</th>
+          <th>Component (Version)</th>
           <th>Linking</th>
           <th>Exploitation</th>
           <th>Modified</th>
@@ -48,8 +48,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 
         {% for usage in usages %}
           <tr>
-            <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
-            <td>{{ usage.version.version_number }}</td>
+            <td>{{ usage.project }}:{{ usage.scope }}</td>
+            <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a>({{ usage.version.version_number }})</td>
             <td>{{ usage.linking }}</td>
             <td>{{ usage.get_exploitation_display }}</td>
             <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
@@ -69,6 +69,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   </div>
 {% endblock %}
+
 
 
 
