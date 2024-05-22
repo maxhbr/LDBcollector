@@ -13,6 +13,7 @@
         },
         "Apache License": {
             "aliases": [
+                "Apache",
                 "Apache License",
                 "Apache Software License",
                 "OSI Approved :: Apache Software License",
@@ -49,10 +50,19 @@
                 "BSD License (BSD License)",
                 "BSD License",
                 "BSD-Style",
-                "BSD-Style",
+                "BSD-style",
+                "BSD-style license",
+                "BSD-like",
                 "BSD LICENSE"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "BSL": {
+            "aliases": [
+                "bsl-1",
+                "BSL-1"
+            ],
+            "problem": "BSL or BSL-1 might refer to the Boost License(s) Original Boost and BSL-1.0. BSL can also refer to Business Source License or BUSL."
         },
         "Common Development and Distribution License": {
             "aliases": [
@@ -74,6 +84,12 @@
                 "License :: OSI Approved :: Eiffel Forum License"
             ],
             "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "Eclipse Public License": {
+            "aliases": [
+                "EPL"
+            ],
+            "problem": "There are two versions of the EPL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
         "GCC Runtime Library exception": {
             "aliases": [
@@ -110,7 +126,18 @@
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
-        "Mozille Public License": {
+        "MIT Style": {
+            "aliases": [
+                "MIT-style License",
+                "MIT-style",
+                "MIT style",
+                "MIT-like",
+                "MIT like",
+                "MIT Like"
+            ],
+            "problem": "This is not a license identifier. It is most likely a license similar to MIT, but without more information no assumptions can be made."
+        },
+        "Mozilla Public License": {
             "aliases": [
                 "MPL",
                 "MPL-1",
