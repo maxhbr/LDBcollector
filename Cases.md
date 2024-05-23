@@ -264,6 +264,19 @@ Link: http://www.internetcases.com/library/cases/2005-11-28_wallace_v_fsf.pdf
 ___
 ## Frankreich
 ___
+
+#### Cour d’appel de Paris, 2024-02-14, Case No. 2/18071
+
+Entr’ouvert v. Orange
+
+Link: [https://www.courdecassation.fr/decision/65cdbcdf2425a70008258563](https://www.courdecassation.fr/decision/65cdbcdf2425a70008258563)
+
+#### Cour de Cassation, 2022-10-05, Case No. 21/15.386
+
+Entr’ouvert v. Orange
+
+Link: [https://www.courdecassation.fr/toutes-les-actualites/2022/10/05/clarification-admissibility-software-copyright-infringement-action](https://www.courdecassation.fr/toutes-les-actualites/2022/10/05/clarification-admissibility-software-copyright-infringement-action)
+
 #### TGI de Paris, 2019-06-21
 
 Entr’ouvert v. Orange
@@ -275,12 +288,6 @@ Link: https://www.legalis.net/jurisprudences/tgi-de-paris-3eme-ch-3eme-section-j
 Entr’ouvert v. Orange
 
 Link: https://www.legalis.net/jurisprudences/cour-dappel-de-paris-pole-5-ch-2-arret-du-19-mars-2021/
-
-#### Le Tribunal de première instance de Nivelles, 2010-10-26, Case No. 09-1684-A.
-
-Allard et al v. Festival de Theatre de Spa
-
-Link: http://www.technollama.co.uk/wordpress/wp-content/uploads/2010/11/2010-10-26-D%C3%A9cision-trib.-Nivelles-Lich%C3%B4dmapwa.pdf
 
 #### Cour d'Appel de Paris, 2009-09-16, Case No. 04/24298
 
@@ -343,3 +350,10 @@ Curry v. Audax
 Link: http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204
 
 English translation at http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf
+
+#### Le Tribunal de première instance de Nivelles, 2010-10-26, Case No. 09-1684-A.
+
+Allard et al v. Festival de Theatre de Spa
+
+Link: https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf
+
