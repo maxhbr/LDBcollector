@@ -638,7 +638,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - path: "[A glob pattern matching files or paths.]"
             |     start_lines: "[String with comma-separated list of starting line integers.]"
             |     line_count: [Integer for number of lines to match.]
-            |     detected_license: "${license}"
+            |     detected_license: "$license"
             |     concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
             |     reason: "INCORRECT"
             |     comment: "[A comment explaining why the scanner is incorrect.]"
@@ -776,7 +776,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - path: "[A glob pattern matching files or paths.]"
             |     start_lines: "[String with comma-separated list of starting line integers.]"
             |     line_count: [Integer for number of lines to match.]
-            |     detected_license: "${license}"
+            |     detected_license: "$license"
             |     concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
             |     reason: "INCORRECT"
             |     comment: "[A comment explaining why the scanner is incorrect.]"
@@ -903,7 +903,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - path: "[A glob pattern matching files or paths.]"
             |     start_lines: "[String with comma-separated list of starting line integers.]"
             |     line_count: [Integer for number of lines to match.]
-            |     detected_license: "${license}"
+            |     detected_license: "$license"
             |     concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
             |     reason: "INCORRECT"
             |     comment: "[A comment explaining why the scanner is incorrect.]"
@@ -951,7 +951,7 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
         |     - path: "[A glob pattern matching files or paths.]"
         |       start_lines: "[String with comma-separated list of starting line integers.]"
         |       line_count: [Integer for number of lines to match.]
-        |       detected_license: "${license}"
+        |       detected_license: "$license"
         |       concluded_license: "[SPDX license expression for the correct license or use NONE to remove the detected license.]"
         |       reason: "INCORRECT"
         |       comment: "[A comment explaining why the scanner is incorrect.]"
