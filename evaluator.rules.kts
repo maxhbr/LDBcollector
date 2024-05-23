@@ -141,7 +141,7 @@ val ortYmlFileLicenseFindingCurationMdLink = "[license finding curation](https:/
 val ortYmlFileRuleViolationResolutionMdLink = "[rule violation resolution](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md#resolutions)"
 val relatesToIssueText = "Relates-to: [Insert related issue number]".takeIf { ortResult.labels["jira"].isNullOrEmpty() } ?: "Relates-to: ${ortResult.labels["jira"]}"
 
-enum class PolicyRules() {
+enum class PolicyRules {
     OSS_PROJECT,
     PROPRIETARY_PROJECT
 }
