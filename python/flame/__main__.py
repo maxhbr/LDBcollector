@@ -191,7 +191,7 @@ def version_info(fl, formatter, args):
 
 def compatibility(fl, formatter, args):
     validations = __validations(args)
-    compatibilities = fl.expression_compatibility_as(' '.join(args.license), validations)
+    compatibilities = fl.expression_compatibility_as(' '.join(args.license), validations, update_dual=(not args.no_dual_update))
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
 def show_license(fl, formatter, args):
