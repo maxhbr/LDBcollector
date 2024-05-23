@@ -977,9 +977,7 @@ fun PackageRule.hasDefinitionFileName(vararg definitionFileNames: String) =
         override val description = "hasDefinitionFileName(${matchingNames.joinToString()})"
 
         override fun matches(): Boolean {
-            val project = ortResult.getProject(pkg.metadata.id)
-            if (project == null) return false
-
+            val project = ortResult.getProject(pkg.metadata.id) ?: return false
             return project.definitionFilePath.substringAfterLast('/') in matchingNames
         }
     }
