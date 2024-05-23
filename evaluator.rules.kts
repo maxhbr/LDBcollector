@@ -147,7 +147,7 @@ enum class PolicyRules() {
 }
 
 fun getArtifactOrUrlName(url: String): String =
-    "name of the artifact".takeIf { url.isNullOrBlank() } ?: "${url.substringAfterLast("/")}"
+    "name of the artifact".takeIf { url.isNullOrBlank() } ?: url.substringAfterLast("/")
 
 fun getArtifactMavenSourcesMdLink(pkg: Package): String {
     if (pkg.binaryArtifact.url.isNullOrEmpty()) return "URL of the binary"
@@ -295,7 +295,7 @@ fun PackageRule.howToFixLicenseViolationDefault(
         // Violation is flagged for the project scanned.
         if (licenseSource == LicenseSource.DETECTED) {
             // License is detected by the scanner in the source code of the project.
-            return "${resolveViolationInSourceCodeText(pkg.metadata, license)}".trimMargin()
+            return resolveViolationInSourceCodeText(pkg.metadata, license).trimMargin()
         }
 
         // License is declared in project's package manifest file (pom, package.json, etc.).
@@ -305,11 +305,11 @@ fun PackageRule.howToFixLicenseViolationDefault(
     // Violation is thrown for one of the project's dependencies.
     if (licenseSource == LicenseSource.DETECTED) {
         // Violation thrown for license detected by the scanner in the source code of the dependency.
-        return "${resolveViolationInDependencySourceCodeText(pkg.metadata, license)}".trimMargin()
+        return resolveViolationInDependencySourceCodeText(pkg.metadata, license).trimMargin()
     }
 
     // Violation thrown for declared license in dependency's package manifest file (pom, package.json, etc.).
-    return "${resolveViolationInDependencyDeclaredLicenseText(pkg.metadata)}".trimMargin()
+    return resolveViolationInDependencyDeclaredLicenseText(pkg.metadata).trimMargin()
 }
 
 fun PackageRule.howToFixUnhandledLicense(
@@ -1536,7 +1536,7 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
         error(
             "The license $license is currently not covered by policy rules. " +
                     "The license was ${licenseSource.name.lowercase()} in package " +
-                    "${pkg.metadata.id.toCoordinates()}",
+                    pkg.metadata.id.toCoordinates(),
             howToFixUnhandledLicense(license.toString(), licenseSource)
         )
     }
