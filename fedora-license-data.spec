@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.46
+Version:        1.47
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,24 @@ make check-grammar
 
 
 %changelog
+* Thu May 23 2024 Miroslav Suchý <msuchy@redhat.com> 1.47-1
+- add GPL-2.0-or-later WITH RRDtool-FLOSS-exception-2.0
+- add text of ultrapermissive dedication from sublimehq
+- add HPND-export2-US license
+- add Gutmann license
+- add HPND-merchantability-variant license
+- fix case in license id of BSD-2-Clause-first-lines
+- add HPND-export-US-acknowledgement license
+- add HPND-Intel license
+- add loguru public domain dedication
+- add BSD-3-Clause WITH AdditionRef-OpenEXR-Additional-IP-Rights-Grant
+- add HPND-sell-variant-MIT-disclaimer-rev license
+- add GD license
+- Add crc32 license found in libsurvive to UltraPermissive
+- allow lower case variant
+- add any-OSI license
+- document dotnet* packages as exception for LicenseRef-ISO-8879
+
 * Fri Apr 26 2024 Miroslav Suchý <msuchy@redhat.com> 1.46-1
 - rename LicenseRef-Catharon to Catharon
 - add NCL license
