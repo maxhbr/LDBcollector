@@ -147,10 +147,10 @@ enum class PolicyRules {
 }
 
 fun getArtifactOrUrlName(url: String): String =
-    "name of the artifact".takeIf { url.isNullOrBlank() } ?: url.substringAfterLast("/")
+    "name of the artifact".takeIf { url.isBlank() } ?: url.substringAfterLast("/")
 
 fun getArtifactMavenSourcesMdLink(pkg: Package): String {
-    if (pkg.binaryArtifact.url.isNullOrEmpty()) return "URL of the binary"
+    if (pkg.binaryArtifact.url.isEmpty()) return "URL of the binary"
 
     val binaryUrl = pkg.binaryArtifact.url
     val binaryName = binaryUrl.substringAfterLast("/").substringBeforeLast(".")
@@ -161,7 +161,7 @@ fun getArtifactMavenSourcesMdLink(pkg: Package): String {
 }
 
 fun getArtifactMdLink(url: String): String =
-    "URL of the artifact".takeIf { url.isNullOrBlank() } ?: "[${url.substringAfterLast("/")}]($url)"
+    "URL of the artifact".takeIf { url.isBlank() } ?: "[${url.substringAfterLast("/")}]($url)"
 
 /**
  * Return set of policy rules based on project label passed to ORT.
@@ -244,7 +244,7 @@ fun getPackageCurationsFilePath(id: Identifier): String =
  * Return a MarkDown link to the code repository for package [pkg].
  */
 fun getVcsMdLink(pkg: Package) : String {
-    if (pkg.vcsProcessed.url.isNullOrEmpty()) {
+    if (pkg.vcsProcessed.url.isEmpty()) {
         return "URL of the source code repository"
     }
 
