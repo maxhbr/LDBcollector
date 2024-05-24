@@ -442,7 +442,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |Try to resolve this violation by following the advice below:
             |
             |1. Exclude the package scope if the package is not part of the released artifacts:
-            |   - Check _Paths_ > _Scope_ for ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Check _Paths_ > _Scope_ for '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - If _Scope_ indicates the package is used for building or testing your code (e.g. 'compile' or 'test'),
             |     exclude it by adding a $ortYmlFileScopeExcludeMdLink to your $ortYmlFileMdLink.
             |
@@ -451,7 +451,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Find the licenses applicable to $binaryUrlMdLink by comparing its contents with the scan results for $sourcesUrlMdLink.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink.)
-            |   - For each license that applies, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
@@ -476,7 +476,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |
             |   ```
             |
-            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -495,7 +495,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |Try to resolve this violation by following the advice below:
             |
             |1. Exclude the package scope if the package is not part of the released artifacts:
-            |   - Check _Paths_ > _Scope_ for ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Check _Paths_ > _Scope_ for '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - If _Scope_ indicates the package is used for building or testing your code (e.g. 'compile' or 'test'),
             |     exclude it by adding a $ortYmlFileScopeExcludeMdLink to your $ortYmlFileMdLink.
             |
@@ -504,7 +504,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Find the licenses applicable to $binaryUrlMdLink by comparing its contents with the scan results for $sourcesUrlMdLink.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink.)
-            |   - For each license that applies, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
@@ -529,7 +529,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |
             |   ```
             |
-            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -544,7 +544,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |It may be possible to resolve this violation as follows:
             |
             |1. Try to exclude the scope of the package if it is not part of the released artifacts:
-            |   - Check the _Paths_ section for ${pkg.id.toCoordinates()} in the Web App scan report for the scopes where the package was found.
+            |   - Check the _Paths_ section for '${pkg.id.toCoordinates()}' in the Web App scan report for the scopes where the package was found.
             |   - If a scope is only for packages used for building or testing your code,
             |     exclude it by adding a $ortYmlFileScopeExcludeMdLink to your $ortYmlFileMdLink.
             |
@@ -553,7 +553,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Find the licenses applicable to $vcsUrlMdLink which are included in your release artifacts.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $vcsUrlMdLink).
-            |   - For each license that is not compiled in your release artifacts, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting `concluded_license`
+            |   - For each license that is not compiled in your release artifacts, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
@@ -578,7 +578,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |
             |   ```
             |
-            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -608,7 +608,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - $binaryUrlMdLink
             |   - $sourcesUrlMdLink
             |4. Find the lines which triggered this violation:
-            |   - Expand the _Scan Results_ section under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Expand the _Scan Results_ section under '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the license to which the violation refers
             |5. If there are license file findings for this package in directories in (extracted) $sourcesUrlMdLink but not $binaryUrlMdLink:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `source-artifact.yml`.
@@ -635,7 +635,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   packages: Add excludes for ${pkg.id.toCoordinates()}
+            |   packages: Add excludes for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -674,18 +674,18 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   packages: Add curations for ${pkg.id.toCoordinates()}
+            |   packages: Add curations for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
             |   ```
             |   - Once your $ortYmlFileLicenseFindingCurationMdLink is merged, re-scan to see if the violation has been resolved.
             |            |
-            |7. If ${pkg.id.toCoordinates()} includes license choices or a large number of findings to be excluded or curated:
+            |7. If '${pkg.id.toCoordinates()}' includes license choices or a large number of findings to be excluded or curated:
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Determine the applicable licenses for $binaryUrlMdLink by comparing its contents with the scan result findings.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink).
-            |   - For each license that applies to $binaryUrlMdLink, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies to $binaryUrlMdLink, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
@@ -706,7 +706,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -727,15 +727,15 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |1. Clone $ortConfigVcsMdLink using Git.
             |2. Download and extract $binaryUrlMdLink.
             |3. Find the lines which triggered this violation:
-            !   - Expand the _Scan Results_ section  under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            !   - Expand the _Scan Results_ section  under '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the licenses to which the violation refers
             |4. Open the $vcsUrlMdLink in a web browser and find the source code for version `${pkg.id.version}`.
             |5. If the extracted $binaryUrlMdLink contains fewer files or directories than shown under 
-            |   the _Scan Results_ for ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`, you may need to
+            |   the _Scan Results_ for '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`, you may need to
             |   limit the number of files/directories the scanner scans. For example, if the repository contains other
-            |   packages and not just ${pkg.id.toCoordinates()}:
+            |   packages and not just '${pkg.id.toCoordinates()}':
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
-            |   - Add an entry for `${pkg.id.toCoordinates()}` setting the `path` under `vcs`
+            |   - Add an entry for '${pkg.id.toCoordinates()}' setting the `path` under `vcs`
             |     to the repository directory that contains the source code for the $binaryUrlMdLink.
             |     (To find the correct directory, search the names of files in the extracted $binaryUrlMdLink within $vcsUrlMdLink.)
             |     Use the following template, replacing the `path` field as appropriate.
@@ -755,7 +755,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   feat(curations): Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
+            |   feat(curations): Set VCS path for `${pkg.id.toCoordinatesWithoutVersion()}`
             |
             |   $relatesToIssueText
             |
@@ -763,7 +763,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   - Once your $ortCurationsYmlVcsUrlMdLink is merged, re-scan to see if the violation has been resolved.
             |
-            |6. If there are license file findings for ${pkg.id.toCoordinates()} in directories in $vcsUrlMdLink but not in the extracted $binaryUrlMdLink:
+            |6. If there are license file findings for '${pkg.id.toCoordinates()}' in directories in $vcsUrlMdLink but not in the extracted $binaryUrlMdLink:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `vcs.yml`.
             |   - Open `vcs.yml` in a text editor.
             |   - For each _directory_ found in the $vcsUrlMdLink but not in extracted $binaryUrlMdLink, add a $ortPackageConfigurationFileMdLink entry 
@@ -789,7 +789,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   packages: Add excludes for ${pkg.id.toCoordinates()}
+            |   packages: Add excludes for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -828,7 +828,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   packages: Add curations for ${pkg.id.toCoordinates()}
+            |   packages: Add curations for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -836,11 +836,11 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   - Once your $ortYmlFileLicenseFindingCurationMdLink is merged, re-scan to see if the violation has been resolved.
             |
-            |8. If ${pkg.id.toCoordinates()} includes license choices or a large number of findings to be excluded or curated:
+            |8. If '${pkg.id.toCoordinates()}' includes license choices or a large number of findings to be excluded or curated:
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Determine the applicable licenses for $binaryUrlMdLink by comparing its contents with the scan result findings.
             |     (A license does not apply if the scan results show it to be in a particular file, but that file is absent in $binaryUrlMdLink).
-            |   - For each license that applies to $binaryUrlMdLink, create an entry for ${pkg.id.toCoordinates()} in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
+            |   - For each license that applies to $binaryUrlMdLink, create an entry for '${pkg.id.toCoordinates()}' in `${getPackageCurationsFilePath(pkg.id)}`, setting  `concluded_license`
             |     to show the appropriate [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/).
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
@@ -861,7 +861,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -876,12 +876,12 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |1. Clone $ortConfigVcsMdLink using Git.
             |2. Find the lines which triggered this violation:
-            |   - Expand the _Scan Results_ section under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
+            |   - Expand the _Scan Results_ section under '${pkg.id.toCoordinates()}' in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the licenses to which the violation refers
             |3. Open the $vcsUrlMdLink in a web browser and find the code for version `${pkg.id.version}`.
-            |4. If this package is in a repository containing other packages beside ${pkg.id.toCoordinates()}:
+            |4. If this package is in a repository containing other packages beside '${pkg.id.toCoordinates()}':
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
-            |   - Add an entry for `${pkg.id.toCoordinates()}` setting the `path` under `vcs`
+            |   - Add an entry for '${pkg.id.toCoordinates()}' setting the `path` under `vcs`
             |     to the repository directory that contains the source code for the package.
             |     Use the following template, changing the value of `path` as appropriate.
             |
@@ -900,7 +900,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   feat(curations): Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
+            |   feat(curations): Set VCS path for `${pkg.id.toCoordinatesWithoutVersion()}`
             |
             |   $relatesToIssueText
             |
@@ -908,7 +908,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   - Once your $ortCurationsYmlVcsUrlMdLink is merged, re-scan to see if the violation has been resolved.
             |
-            |5. If there are license findings for ${pkg.id.toCoordinates()} in directories in $vcsUrlMdLink used only for building or testing the code:
+            |5. If there are license findings for '${pkg.id.toCoordinates()}' in directories in $vcsUrlMdLink used only for building or testing the code:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `vcs.yml`.
             |   - Open `vcs.yml` in a text editor.
             |   - For each _directory_ found in the $vcsUrlMdLink, but not in extracted $binaryUrlMdLink, add a 
@@ -933,7 +933,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   packages: Add excludes for ${pkg.id.toCoordinates()}
+            |   packages: Add excludes for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -971,7 +971,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   packages: Add curations for ${pkg.id.toCoordinates()}
+            |   packages: Add curations for `${pkg.id.toCoordinates()}`
             |
             |   $relatesToIssueText
             |
@@ -988,7 +988,7 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
         |Try to resolve this violation by following the advice below:
         |
         |1. Find the lines which triggered this violation:
-        |   - expand the _Scan Results_ section under ${pkg.id.toCoordinates()} in `*-web-app.html`
+        |   - expand the _Scan Results_ section under '${pkg.id.toCoordinates()}' in `*-web-app.html`
         |   - filter the _Value_ column, selecting only the license to which the violation refers.
         |2. Try to exclude the files or directories to which the violation refers but which are not part of the release artifacts
         |   of your project by adding a $ortYmlFilePathExcludeMdLink to your $ortYmlFileMdLink.
@@ -1221,7 +1221,7 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
 
         error(
             "The ScanCode 'copyleft' categorized license $license was ${licenseSource.name.lowercase()} in project " +
-                    "${pkg.metadata.id.toCoordinates()}.",
+                    "'${pkg.metadata.id.toCoordinates()}'.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
@@ -1241,7 +1241,7 @@ fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOU
 
         error(
             "The ScanCode 'copyleft-limited' categorized license $license was ${licenseSource.name.lowercase()} in " +
-                    "project ${pkg.metadata.id.toCoordinates()}.",
+                    "project '${pkg.metadata.id.toCoordinates()}'.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
@@ -1596,7 +1596,7 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
         error(
             "The license $license is currently not covered by policy rules. " +
                     "The license was ${licenseSource.name.lowercase()} in package " +
-                    pkg.metadata.id.toCoordinates(),
+                    "'${pkg.metadata.id.toCoordinates()}'.",
             howToFixUnhandledLicense(license.toString(), licenseSource)
         )
     }
@@ -1610,7 +1610,7 @@ fun RuleSet.unmappedDeclaredLicenseRule() = packageRule("UNMAPPED_DECLARED_LICEN
     resolvedLicenseInfo.licenseInfo.declaredLicenseInfo.processed.unmapped.forEach { unmappedLicense ->
         warning(
             "The declared license '$unmappedLicense' could not be mapped to a valid license or parsed as an SPDX " +
-                    "expression. The license was found in package ${pkg.metadata.id.toCoordinates()}.",
+                    "expression. The license was found in package '${pkg.metadata.id.toCoordinates()}'.",
             howToFixUnmappedDeclaredLicense(unmappedLicense)
         )
     }
