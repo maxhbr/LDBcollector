@@ -356,7 +356,7 @@ class FossLicenses:
 
         tmp_license_expression = ret['license_expression']
         for alias in reversed(collections.OrderedDict(sorted(aliases.items(), key=lambda x: len(x[0])))):
-            needle = r'(?:\s+|^)%s(?:\s+|$)' % alias
+            needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias)
             if re.search(needle, tmp_license_expression):
                 real_lic = self.license_db[AMBIG_TAG]['aliases'][alias]
                 if alias != real_lic:
