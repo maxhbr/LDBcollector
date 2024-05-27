@@ -8,7 +8,9 @@
             "spdxid": "Apache-2.0 WITH LLVM-exception",
             "aliases": [
                 "Apache-2.0-WITH-LLVM-exception",
-                "Apache-2.0-with-LLVM-exception"
+                "Apache-2.0-with-LLVM-exception",
+                "APACHE-2-LLVM-EXCEPTIONS",
+                "Apache-2.0 WITH LLVM exceptions"
             ],
             "compatibility_as": "0BSD"            
         },
