@@ -41,7 +41,10 @@
             "aliases": [
                 "Boost License",
                 "Boost license",
-                "Boost"
+                "Boost",
+                "Boost Software License",
+                "Boost Software Licence",
+                "boost"
             ],
             "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
