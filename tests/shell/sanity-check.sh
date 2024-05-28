@@ -295,7 +295,7 @@ check_presence TU-Berlin-1.0 " -e 1" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
 check_presence UnixCrypt " -i -e unixcrypt" ""
-check_presence Unlicense " -i -e unlicense" ""
+check_presence Unlicense " -i -e unlicense  -e unli[n]cence " ""
 
 check_presence Vim " -i -e vim" ""
 
