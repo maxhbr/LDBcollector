@@ -1,0 +1,9 @@
+---
+id: "Maven:org.apache.commons:commons-compress:1.26.2"
+vcs:
+  type: "Git"
+  url: "https://gitbox.apache.org/repos/asf/commons-compress.git"
+  revision: "95727006cac0892c654951c4e7f1db142462f22a"
+path_excludes:
+- pattern: "src/test/**"
+  reason: "TEST_OF"
