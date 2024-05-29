@@ -5,5 +5,30 @@ vcs:
   url: "https://gitbox.apache.org/repos/asf/commons-compress.git"
   revision: "95727006cac0892c654951c4e7f1db142462f22a"
 path_excludes:
+- pattern: ".github/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "CODE_OF_CONDUCT.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "SECURITY.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "src/changes/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "src/main/java/org/apache/commons/compress/archivers/examples/**"
+  reason: "EXAMPLE_OF"
+- pattern: "src/site/**"
+  reason: "DOCUMENTATION_OF"
 - pattern: "src/test/**"
   reason: "TEST_OF"
+license_finding_curations:
+- path: "src/main/java/org/apache/commons/compress/archivers/zip/*.java"
+  detected_license: "LicenseRef-scancode-proprietary-license"
+  reason: "REFERENCE"
+  comment: |-
+    This is a match on 'Refer to the section in this document entitled "Incorporating PKWARE Proprietary Technology into
+    Your Product" for more information', see
+    https://github.com/apache/commons-compress/blob/rel/commons-compress-1.26.2/src/main/java/org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java#L251-L252
+    Running Git blame on the line shows that this is a reference to the ZIP file format specification, see
+    https://github.com/apache/commons-compress/commit/a433f625f89c1d464b05186411ff20802e292fb4.
+  concluded_license: "NONE"
