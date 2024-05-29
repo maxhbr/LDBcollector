@@ -204,7 +204,7 @@ An example
               if: ${{ success() }}
             - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_4.json --silent"
               if: ${{ success() }}
-            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_5.json --silent"
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_5/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_5.json --silent"
               if: ${{ success() }}
             - uses: actions/upload-artifact@v2
 ```
