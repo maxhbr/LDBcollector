@@ -71,6 +71,11 @@
         "BSD -3 Clause",
         "BSD 3-clause",
         "3 Clause BSD",
-        "BSD3C"
+        "BSD3C",
+        "BSD-3-clauses",
+        "new-BSD-License",
+        "new-BSD",
+        "BSD-new license",
+        "3-clause-BSD-License"
     ]
 }
