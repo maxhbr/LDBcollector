@@ -122,17 +122,20 @@
   "Attempts to determine the license(s) (a map) from a POM license name/URL
   pair. Returns nil if no matches were found."
   [{:keys [name url]}]
-  ; 1. Look in the name field
-  (let [name-expressions (lcm/name->expressions-info name)]
-    (if (or (empty? name-expressions)
-            (and (= 1 (count name-expressions)) (lcm/unidentified? (first (keys name-expressions)))))
-      ; 2. If the name didn't give us any identified licenses, look in the url field (this can be slower and less accurate, which is why it has lower priority)
-      (let [uri-expressions (lcm/uri->expressions-info url)]
-        (if (or (empty? uri-expressions)
-                (and (= 1 (count uri-expressions)) (lcm/unidentified? (first (keys uri-expressions)))))
-          (lciei/prepend-source "<licenses><license><name>" name-expressions)   ; Nothing useful found in URI, so revert to whatever we found in name (i.e. an unidentified license)
-          (lciei/prepend-source "<licenses><license><url>" uri-expressions)))
-      (lciei/prepend-source "<licenses><license><name>" name-expressions))))
+  (when (or name url)
+    ; 1. Look in the name field
+    (let [name-expressions (lcm/name->expressions-info name)]
+      (if (or (empty? name-expressions)
+              (and (= 1 (count name-expressions))
+                   (lcm/unidentified? (first (keys name-expressions)))))
+        ; 2. If the name didn't give us any identified licenses, look in the url field (this can be slower and less accurate, which is why it has lower priority)
+        (let [uri-expressions (lcm/uri->expressions-info url)]
+          (if (or (empty? uri-expressions)
+                  (and (= 1 (count uri-expressions))
+                       (lcm/unidentified? (first (keys uri-expressions)))))
+            (lciei/prepend-source "<licenses><license><name>" name-expressions)   ; Nothing useful found in URI, so revert to whatever we found in name (i.e. an unidentified license)
+            (lciei/prepend-source "<licenses><license><url>" uri-expressions)))
+        (lciei/prepend-source "<licenses><license><name>" name-expressions)))))
 
 (defn- xml-find-all-alts
   "As for xi/find-all, but supports an alternative fallback set of tags (to
@@ -269,6 +272,16 @@
          (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) (vals @remote-maven-repos-a))))]
            (java.net.URI. remote-uri)))))))
 
+(defn- create-single-expression
+  "Creates a single SPDX license expression by merging all the license info maps
+  in `licenses`, using `op` (either :and or :or) as the operator."
+  ([licenses] (create-single-expression :or licenses))
+  ([op licenses]
+   (when-let [new-expression (lciei/join-maps-with-operator op licenses)]
+     (let [exp  (key (first new-expression))
+           info (val (first new-expression))]
+       {exp (concat (list {:type :declared :strategy :maven-pom-multi-license-rule}) info)}))))
+
 (defmulti pom->expressions-info
   "Returns an expressions-info map for `pom` (an `InputStream` or something that
   can have an `clojure.java.io/input-stream` opened on it), or `nil` if no
@@ -289,17 +302,21 @@
     (let [pom-xml (xml/parse pom-is)
           result  (if-let [pom-licenses (xml-find-all-alts pom-xml [::pom/project ::pom/licenses] [:project :licenses])]
                     ; <licenses> block exists - process it
-                    (let [name-uri-pairs (some->> pom-licenses
-                                                  (filter map?)                                                    ; Get rid of non-tag content (whitespace etc.)
-                                                  (filter #(or (= ::pom/license (:tag %)) (= :license (:tag %))))  ; Get rid of non <license> tags (which shouldn't exist, but Maven POMs are a shitshow...)
-                                                  (map #(identity (let [name (xml-find-first-string-alts % [::pom/license ::pom/name] [:license :name])
-                                                                        url  (xml-find-first-string-alts % [::pom/license ::pom/url]  [:license :url])]
-                                                                    (when (or name url)
-                                                                      {:name name :url url}))))
-                                                  set)
-                          licenses       (into {} (map licenses-from-pair name-uri-pairs))]
-                      (lcim/manual-fixes licenses))
-                    ; License block doesn't exist, so attempt to lookup the parent pom and try again with it
+                    (let [license-ei (some->> pom-licenses
+                                              (filter map?)                                                    ; Get rid of non-tag content (whitespace etc.)
+                                              (filter #(or (= ::pom/license (:tag %)) (= :license (:tag %))))  ; Get rid of non <license> tags (which shouldn't exist, but Maven POMs are a shitshow...)
+                                              (map #(identity (let [name (xml-find-first-string-alts % [::pom/license ::pom/name] [:license :name])
+                                                                    url  (xml-find-first-string-alts % [::pom/license ::pom/url]  [:license :url])]
+                                                                (when (or name url)
+                                                                  {:name name :url url}))))
+                                              distinct
+                                              (map licenses-from-pair)
+;                                              (map lcim/manual-fixes)    ;####TODO: FIGURE OUT WHERE/HOW TO DO THIS!
+                                              (filter identity)
+                                              (into {})
+                                              create-single-expression)]
+                      license-ei)
+                    ; License block doesn't exist, so attempt to lookup the parent pom and try again
                     (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
                           parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
                           parent-gav   (merge {}

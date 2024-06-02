@@ -44,7 +44,7 @@
   (testing "Synthetic pom files"
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/simple.pom"))))
     (is (valid= #{"BSD-3-Clause"}              (pom->expressions (str test-data-path "/no-xml-ns.pom"))))
-    (is (valid= #{"Apache-2.0" "MIT" "GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Unlicense AND CC0-1.0"} (pom->expressions (str test-data-path "/complex.pom")))))
+    (is (valid= #{"Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0)"} (pom->expressions (str test-data-path "/complex.pom")))))
   (testing "Real pom files - local"
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/asf-cat-1.0.12.pom")))))
   (testing "Real pom files - remote"
@@ -58,7 +58,7 @@
     (is (valid= #{"Plexus"}                    (pom->expressions "https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom")))                  ; See https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
     (is (valid= #{"GPL-3.0-only"}              (pom->expressions "https://repo1.maven.org/maven2/org/activecomponents/jadex/jadex-kernel-component/3.0.117/jadex-kernel-component-3.0.117.pom"))))
   (testing "Real pom files - remote - dual-licensed"
-    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "MIT"} (pom->expressions "https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom"))))
+    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0 OR MIT"} (pom->expressions "https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom"))))
   (testing "Real pom files - remote - malformed"
     (is (thrown? javax.xml.stream.XMLStreamException (pom->expressions "https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom"))))
   (testing "Synthetic pom files with licenses in parent - local"

@@ -19,7 +19,8 @@
 (ns lice-comb.impl.expressions-info
   "lice-comb expressions-info map helper functionality. Note: this namespace is
   not part of the public API of lice-comb and may change without notice."
-  (:require [clojure.string :as s]))
+  (:require [clojure.string   :as s]
+            [spdx.expressions :as sexp]))
 
 (defn prepend-source
   "Prepends the given source s (a String) onto the :source sequence of all
@@ -41,13 +42,26 @@
 
 (defn merge-maps
   "Merges any number of expressions-info maps, by concatenating and de-duping
-  values for the same key (expression)."
+  values for the same key (expression). Returns a single map that may contain
+  multiple map entries."
   [& maps]
   (let [maps (filter identity maps)]
     (when-not (empty? maps)
       (let [grouped-maps (group-by first (mapcat identity maps))]
         (into {} (map #(vec [% (seq (distinct (mapcat second (get grouped-maps %))))])
                       (keys grouped-maps)))))))
+
+(defn join-maps-with-operator
+  "Joins `eim`, an expressions-info map with multiple entries into an
+  expressions-info map with a single entry that is an SPDX expression joining
+  all of the entries via SPDX operator `op` (either :and or :or)."
+  [op eim]
+  (when (and op eim)
+    (if (<= (count eim) 1)
+      eim
+      (let [new-expr (sexp/normalise (s/join (str " " (s/upper-case (name op)) " ") (keys eim)))
+            new-ei   (apply concat (vals eim))]
+        {new-expr new-ei}))))
 
 (def ^:private confidence-sort {
   :low    0
@@ -71,3 +85,11 @@
   [cs]
   (when cs
     (last (sort-confidences cs))))
+
+(defn calculate-confidence-for-expression
+  "Calculate the confidence for an expression, as the lowest confidence in the
+  expression-infos for the identifiers that make up the expression."
+  [expression-infos]
+  (if-let [confidence (lowest-confidence (filter identity (map :confidence expression-infos)))]
+    confidence
+    :high))   ; For when none of the components have a confidence (i.e. they're all :type :declared)

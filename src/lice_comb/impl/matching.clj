@@ -177,35 +177,40 @@
       (lciei/prepend-source uri result))))
 
 (defn- string->ids-info
-  "Converts the given string (a fragment of a license name) into a sequence of
-  singleton expressions-info maps (one per expression), ordered in the same
+  "Converts the given string (a fragment of a license name) into a **sequence**
+  of singleton expressions-info maps (one per expression), ordered in the same
   order of appearance as they appear in s.
 
   If no listed SPDX license or exception identifiers are found in s, returns a
   sequence containing a single expressions-info map with a String started with
   \"UNIDENTIFIED-\" and with s appended. Callers are expected to turn this value
-  into a lice-comb inidentified LicenseRef or AdditionRef, depending on context."
+  into a lice-comb unidentified LicenseRef or AdditionRef, depending on context."
   [s]
   (when-not (s/blank? s)
     (let [s   (s/trim s)
-          ids (or ; 1. Is it an SPDX license or exception id?
+          ids (or
+                ; 1. Is it cursed?
+                (when-let [cursed-name (get @cursed-names-d s)]
+                  (map #(apply hash-map %) cursed-name))
+
+                ; 2. Is it an SPDX license or exception id?
                 (when-let [id (get @lcis/spdx-ids-d (s/lower-case s))]
                   (if (= id s)
                     (list {id (list {:id id :type :declared :strategy :spdx-listed-identifier-exact-match :source (list s)})})
                     (list {id (list {:id id :type :concluded :confidence :high :strategy :spdx-listed-identifier-case-insensitive-match :source (list s)})})))
 
-                ; 2. Is it the name of one or more SPDX licenses or exceptions?
+                ; 3. Is it the name of one or more SPDX licenses or exceptions?
                 (when-let [ids (get @lcis/index-name-to-id-d (s/lower-case s))]
                   (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-name :source (list s)})) ids))
 
-                ; 3. Might it be a URI?  (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
+                ; 4. Might it be a URI?  (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
                 (when-let [ids (uri->expressions-info s)]
                   (map #(hash-map (key %) (val %)) ids))
 
-                ; 4. Attempt regex name matching
+                ; 5. Attempt regex name matching
                 (lcirm/matches s)
 
-                ; 5. No clue, so return a single info map, but with a made up "UNIDENTIFIED-" value instead of an SPDX license or exception identifier
+                ; 6. No clue, so return a single info map, but with a made up "UNIDENTIFIED-" value instead of an SPDX license or exception identifier
                 (let [id (str "UNIDENTIFIED-" s)]
                   (list {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list s)})})))]
       (map (partial lciei/prepend-source s) ids))))
@@ -218,14 +223,14 @@
 
 (defn- map-split-and-interpose
   "Maps over the given sequence, splitting strings using the given regex re and
-  interposing the given value int, returning a (flattened) sequence."
-  [re int coll]
+  interposing the given value inter, returning a (flattened) sequence."
+  [re inter coll]
   (mapcat #(if-not (string? %)
              [%]
              (let [splits (s/split % re)]
-               (if (nil? int)
+               (if (nil? inter)
                  splits
-                 (interpose int splits))))
+                 (interpose inter splits))))
           coll))
 
 (defn split-on-operators
@@ -242,6 +247,8 @@
                                   :or)
          (map-split-and-interpose #"(?i)\b(with\b|w/)(?!\s+the\s+acknowledgment\s+clause\s+removed)"
                                   :with)
+         (map-split-and-interpose #"(?i)(?<=CDDL)/(?=GPL)"   ; Special case for splitting particularly cursed combos such as CDDL/GPLv2+CE
+                                  nil)
          filter-blanks
          (map #(if (string? %) (s/trim %) %)))))
 
@@ -285,14 +292,6 @@
                (concat result [fixed-id-with-info])
                result)))))
 
-(defn- calculate-confidence-for-expression
-  "Calculate the confidence for an expression, as the lowest confidence in the
-  expression-infos for the identifiers that make up the expression"
-  [expression-infos]
-  (if-let [confidence (lciei/lowest-confidence (filter identity (map :confidence expression-infos)))]
-    confidence
-    :high))   ; For when none of the components have a confidence (i.e. they're all :type :declared)
-
 (def ^:private push conj)   ; With lists-as-stacks conj == push
 
 (defn- process-expression-element
@@ -323,7 +322,7 @@
                     (se/addition-ref? (first (keys e))))
               (let [k                (s/join " " [(first (keys prior)) operator (first (keys e))])
                     expression-infos (concat (first (vals prior)) (first (vals e)))
-                    v                (distinct (concat (list {:type :concluded :confidence (calculate-confidence-for-expression expression-infos) :strategy :expression-inference})
+                    v                (distinct (concat (list {:type :concluded :confidence (lciei/calculate-confidence-for-expression expression-infos) :strategy :expression-inference})
                                                        expression-infos))]
                 (push s-minus-2 {k v}))
               (push s-minus-1 e))))  ; We had a :with operator without a valid exception id following it, so simply drop the :with keyword from the stack and push the current element on
@@ -344,31 +343,27 @@
 
 (defn name->expressions-info
   "Returns an expressions-info map for the given license name."
-  [name]
-  (when-not (s/blank? name)
-    (let [name (s/trim name)]
-      (lciei/prepend-source name
-                            (or ; 1. Is it a cursed name?
-                                (get @cursed-names-d name)
-
-                                ; 2. Construct an expressions-info map from the name
-                                (let [partial-result (some->> name
-                                                              split-on-operators                               ; Split on operators
-                                                              (drop-while keyword?)                            ; Drop (nonsensical) leading operators
-                                                              (lc3/rdrop-while keyword?)                       ; Drop (nonsensical) trailing operators
-                                                              dedupe                                           ; Deduplicate consecutive identical values (mostly applies to duplicate operators, which are redundant)
-                                                              (map #(if (keyword? %) % (string->ids-info %)))  ; Determine SPDX ids (or UNIDENTIFIED-xxx) with info for all non-operators
-                                                              flatten                                          ; Flatten back to an unnested sequence (since string->ids-info returns sequences)
-                                                              fix-unidentifieds                                ; Convert each unidentified non-operator into either a LicenseRef or AdditionRef, depending on context
-                                                              seq)
-                                      ids-only       (seq (mapcat keys (filter map? partial-result)))]
-                                  ; Check whether all we have are unidentified LicenseRefs/AdditionRefs, and if so just return the entire thing as a single unidentified LicenseRef
-                                  (if (every? lcis/unidentified? ids-only)
-                                    (let [id (lcis/name->unidentified-license-ref (s/trim name))]
-                                      {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list)})})
-                                    (some->> partial-result
-                                             build-expressions-info-map
-                                             (lciu/mapfonk sexp/normalise)))))))))
+  [n]
+  (when-not (s/blank? n)
+    (let [n              (s/trim n)
+          partial-result (some->> n
+                                  split-on-operators                               ; Split on operators
+                                  (drop-while keyword?)                            ; Drop (nonsensical) leading operators
+                                  (lc3/rdrop-while keyword?)                       ; Drop (nonsensical) trailing operators
+                                  dedupe                                           ; Deduplicate consecutive identical values (mostly applies to duplicate operators, which are redundant)
+                                  (map #(if (keyword? %) % (string->ids-info %)))  ; Determine SPDX ids (or UNIDENTIFIED-xxx) with info for all non-operators
+                                  flatten                                          ; Flatten back to an unnested sequence (since string->ids-info returns sequences)
+                                  fix-unidentifieds                                ; Convert each unidentified non-operator into either a LicenseRef or AdditionRef, depending on context
+                                  seq)
+          ids-only       (seq (mapcat keys (filter map? partial-result)))
+          result         ; Check whether all we have are unidentified LicenseRefs/AdditionRefs, and if so just return the entire thing as a single unidentified LicenseRef
+                         (if (every? lcis/unidentified? ids-only)
+                           (let [id (lcis/name->unidentified-license-ref n)]
+                             {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list)})})
+                           (some->> partial-result
+                                    build-expressions-info-map
+                                    (lciu/mapfonk sexp/normalise)))]
+      (lciei/prepend-source n result))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

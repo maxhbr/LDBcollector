@@ -31,10 +31,11 @@
    :spdx-matching-guidelines                      "SPDX matching guidelines"
    :spdx-listed-name                              "SPDX listed name (case insensitive match)"
    :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
+   :maven-pom-multi-license-rule                  "Maven POM multiple license conjunction rule"
+   :manual-verification                           "manual verification"
    :expression-inference                          "inferred license expression"
    :regex-matching                                "regular expression matching"
-   :unidentified                                  "fallback to unidentified LicenseRef"
-   :manual-verification                           "manual verification"})
+   :unidentified                                  "fallback to unidentified LicenseRef"})
 
 (defn expression-info-sort-by-keyfn
   "A [[clojure.core/sort-by]] keyfn for expression-info maps.  This is mostly
@@ -57,16 +58,17 @@
            :low       "3")
          "-"
          (case (:strategy m)
-           :spdx-expression                               "0"
-           :spdx-listed-identifier-exact-match            "1"
-           :spdx-listed-identifier-case-insensitive-match "2"
-           :spdx-matching-guidelines                      "3"
-           :spdx-listed-name                              "4"
-           :spdx-listed-uri                               "5"
-           :manual-verification                           "6"
-           :expression-inference                          "7"
-           :regex-matching                                "8"
-           :unidentified                                  "9"))))
+           :maven-pom-multi-license-rule                  "00"
+           :spdx-expression                               "01"
+           :spdx-listed-identifier-exact-match            "02"
+           :spdx-listed-identifier-case-insensitive-match "03"
+           :spdx-matching-guidelines                      "04"
+           :spdx-listed-name                              "05"
+           :spdx-listed-uri                               "06"
+           :manual-verification                           "07"
+           :expression-inference                          "08"
+           :regex-matching                                "09"
+           :unidentified                                  "10"))))
 
 (defn expression-info->string
   "Converts `m`, an expression-info map, into a human-readable `String`.  This
@@ -74,7 +76,7 @@
   behaviour may change without warning."
   [m expr]
   (when (and m expr)
-    (str expr " "
+    (str expr "\n"
       (when-let [info-list (sort-by expression-info-sort-by-keyfn (seq (get m expr)))]
         (s/join "\n" (map #(str (when-let [md-id (:id %)] (when (not= expr md-id) (str "  " md-id " ")))
                                 (case (:type %)

@@ -136,10 +136,10 @@
     (is (nil? (dir->expressions  "this_directory_does_not_exist")))
     (is (nil? (dir->expressions  "deps.edn"))))
   (testing "Valid directory"
-    (is (valid= ;#{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0"}  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/233
-                #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0"}
+    (is (valid= ;#{"BSD-3-Clause" "Apache-2.0" "Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0)" "MPL-2.0" "CC-BY-4.0"}  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/233
+                #{"BSD-3-Clause" "Apache-2.0" "Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0)" "MPL-2.0"}
                 (dir->expressions "."))))
   (testing "Valid directory - include ZIP compressed files"
-    (is (valid= ;#{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0" "AGPL-3.0-or-later"}  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/233
-                #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "AGPL-3.0-or-later"}
+    (is (valid= ;#{"Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0) OR MPL-2.0 OR CC-BY-4.0 OR AGPL-3.0-or-later"}  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/233
+                #{"BSD-3-Clause" "Apache-2.0" "AGPL-3.0-or-later" "Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0)" "MPL-2.0"}
                 (dir->expressions  "." {:include-zips? true})))))
