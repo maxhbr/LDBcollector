@@ -271,9 +271,9 @@ type UserLogin struct {
 
 // UserResponse struct is representation of design API response of user.
 type UserResponse struct {
-	Status int            `json:"status" example:"200"`
-	Data   []User         `json:"data"`
-	Meta   PaginationMeta `json:"paginationmeta"`
+	Status int             `json:"status" example:"200"`
+	Data   []User          `json:"data"`
+	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
 // SearchLicense struct represents the input needed to search in a license.

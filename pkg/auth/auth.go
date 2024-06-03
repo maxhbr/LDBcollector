@@ -96,7 +96,7 @@ func CreateUser(c *gin.Context) {
 	res := models.UserResponse{
 		Data:   []models.User{user},
 		Status: http.StatusCreated,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -112,14 +112,19 @@ func CreateUser(c *gin.Context) {
 //	@Tags			Users
 //	@Accept			json
 //	@Produce		json
-//	@Success		200	{object}	models.UserResponse
-//	@Failure		404	{object}	models.LicenseError	"Users not found"
+//	@Param			page	query		int	false	"Page number"
+//	@Param			limit	query		int	false	"Number of records per page"
+//	@Success		200		{object}	models.UserResponse
+//	@Failure		404		{object}	models.LicenseError	"Users not found"
 //	@Security		ApiKeyAuth
 //	@Router			/users [get]
 func GetAllUser(c *gin.Context) {
 	var users []models.User
 
-	if err := db.DB.Find(&users).Error; err != nil {
+	query := db.DB.Model(&models.User{})
+	_ = utils.PreparePaginateResponse(c, query, &models.UserResponse{})
+
+	if err := query.Find(&users).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "Users not found",
@@ -136,7 +141,7 @@ func GetAllUser(c *gin.Context) {
 	res := models.UserResponse{
 		Data:   users,
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: len(users),
 		},
 	}
@@ -181,7 +186,7 @@ func GetUser(c *gin.Context) {
 	res := models.UserResponse{
 		Data:   []models.User{user},
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -197,8 +202,8 @@ func GetUser(c *gin.Context) {
 //	@Tags			Users
 //	@Accept			json
 //	@Produce		json
-//	@Param			user	body		models.UserLogin	true	"Login credentials"
-//	@Success		200		{object}	object{token=string}		"JWT token"
+//	@Param			user	body		models.UserLogin		true	"Login credentials"
+//	@Success		200		{object}	object{token=string}	"JWT token"
 //	@Router			/login [post]
 func Login(c *gin.Context) {
 	var input models.UserLogin

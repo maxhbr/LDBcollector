@@ -69,7 +69,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "Invalid token",
-				Error:     err.Error(),
+				Error:     "Invalid token",
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
@@ -82,8 +82,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		userId := int64(claims["id"].(float64))
 
 		var user models.User
-		result := db.DB.Where(models.User{Id: userId}).First(&user)
-		if result.Error != nil {
+		if err := db.DB.Where(models.User{Id: userId}).First(&user).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "User not found",
@@ -161,9 +160,11 @@ func PaginationMiddleware() gin.HandlerFunc {
 			var licenseRes models.LicenseResponse
 			var obligationRes models.ObligationResponse
 			var auditRes models.AuditResponse
+			var userRes models.UserResponse
 			isLicenseRes := false
 			isObligationRes := false
 			isAuditRes := false
+			isUserRes := false
 			responseModel, _ := c.Get("responseModel")
 			switch responseModel.(type) {
 			case *models.LicenseResponse:
@@ -178,6 +179,10 @@ func PaginationMiddleware() gin.HandlerFunc {
 				err = json.Unmarshal(originalBody, &auditRes)
 				isAuditRes = true
 				metaObject = auditRes.Meta
+			case *models.UserResponse:
+				err = json.Unmarshal(originalBody, &userRes)
+				isUserRes = true
+				metaObject = userRes.Meta
 			default:
 				err = fmt.Errorf("unknown response model type")
 			}
@@ -218,6 +223,8 @@ func PaginationMiddleware() gin.HandlerFunc {
 				newBody, err = json.Marshal(obligationRes)
 			} else if isAuditRes {
 				newBody, err = json.Marshal(auditRes)
+			} else if isUserRes {
+				newBody, err = json.Marshal(userRes)
 			}
 			if err != nil {
 				log.Fatalf("Error marshalling new body: %s", err.Error())

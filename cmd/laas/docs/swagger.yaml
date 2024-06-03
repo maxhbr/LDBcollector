@@ -1561,6 +1561,15 @@ paths:
       - application/json
       description: Get all service users
       operationId: GetAllUsers
+      parameters:
+      - description: Page number
+        in: query
+        name: page
+        type: integer
+      - description: Number of records per page
+        in: query
+        name: limit
+        type: integer
       produces:
       - application/json
       responses:
