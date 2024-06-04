@@ -316,7 +316,7 @@
                                               distinct
                                               (map licenses-from-pair)
                                               (filter identity)
-                                              (into {})
+                                              (into (array-map))   ; We force the use of an array-map here to preserve order
                                               lcim/manual-fixes
                                               create-single-expression)]
                       license-ei)
