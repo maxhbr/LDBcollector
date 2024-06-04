@@ -291,7 +291,11 @@
   close it, and a filepath associated with the `InputStream` *must* be provided
   as the second parameter (it is not required for other types of input).
 
-  Note: throws on XML parsing error"
+  Notes:
+  * despite the name, will always return a singleton map, due to [Maven's rule
+    about multi-licensed POMs](https://maven.apache.org/ref/3.9.7/maven-model/maven.html)
+    (then search that page for 'licenses/license*')
+  * throws on XML parsing error"
   {:arglists '([pom] [pom filepath])}
   (fn [& args] (type (first args))))
 
@@ -311,9 +315,9 @@
                                                                   {:name name :url url}))))
                                               distinct
                                               (map licenses-from-pair)
-;                                              (map lcim/manual-fixes)    ;####TODO: FIGURE OUT WHERE/HOW TO DO THIS!
                                               (filter identity)
                                               (into {})
+                                              lcim/manual-fixes
                                               create-single-expression)]
                       license-ei)
                     ; License block doesn't exist, so attempt to lookup the parent pom and try again
@@ -356,7 +360,13 @@
   on it.
 
   If `version` is not provided, the latest version is looked up (which involves
-  file and potentially also network I/O)."
+  file and potentially also network I/O).
+
+  Notes:
+  * despite the name, will always return a singleton map, due to [Maven's rule
+    about multi-licensed POMs](https://maven.apache.org/ref/3.9.7/maven-model/maven.html)
+    (then search that page for 'licenses/license*')
+  * throws on XML parsing error"  
   ([group-id artifact-id] (gav->expressions-info group-id artifact-id nil))
   ([group-id artifact-id version]
    (when-let [version (or version (ga-latest-version group-id artifact-id))]
