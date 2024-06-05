@@ -280,7 +280,9 @@
    (when-let [new-expression (lciei/join-maps-with-operator op licenses)]
      (let [exp  (key (first new-expression))
            info (val (first new-expression))]
-       {exp (concat (list {:type :declared :strategy :maven-pom-multi-license-rule}) info)}))))
+       (if (> (count licenses) 1)
+         {exp (concat (list {:type :declared :strategy :maven-pom-multi-license-rule}) info)}
+         {exp info})))))
 
 (defmulti pom->expressions-info
   "Returns an expressions-info map for `pom` (an `InputStream` or something that
