@@ -83,7 +83,8 @@ $ deps-try com.github.pmonks/lice-comb
 (lcmvn/gav->expressions "commons-io" "commons-io" "2.15.0")
 ;=> #{"Apache-2.0"}
 
-; Note: this looks up and uses only the latest version of the given project
+; Note: this looks up and uses the latest version of the given project (1.5.0-b01 at the time of
+; writing), so the results you get may be different to what you see here
 (lcmvn/gav->expressions "javax.mail" "mail")
 ;=> #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"}
 
