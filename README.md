@@ -85,7 +85,7 @@ $ deps-try com.github.pmonks/lice-comb
 
 ; Note: this looks up and uses only the latest version of the given project
 (lcmvn/gav->expressions "javax.mail" "mail")
-;=> #{"GPL-2.0-only WITH Classpath-exception-2.0" "CDDL-1.1"}
+;=> #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"}
 
 (lcmvn/pom->expressions (str (System/getProperty "user.home") "/.m2/repository/org/clojure/clojure/1.11.2/clojure-1.11.2.pom"))
 ;=> #{"EPL-1.0"}
