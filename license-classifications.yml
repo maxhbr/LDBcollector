@@ -4321,7 +4321,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
-      - "property:advertising-clause"
 
   # https://spdx.org/licenses/zlib-acknowledgement.html
   - id: "zlib-acknowledgement"
