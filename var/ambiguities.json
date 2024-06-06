@@ -113,6 +113,7 @@
                 "GPL",
                 "GNU GPL",
                 "GPL+"
+                "GNU General Public License."
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -128,6 +129,7 @@
                 "LGPLv2 or later",
                 "LGPLv2",
                 "LGPL-2",
+                "LGPL2",
                 "LGPL+",
                 "GNU LGPLv2"
             ],
