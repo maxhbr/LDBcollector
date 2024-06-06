@@ -128,7 +128,8 @@
                 "LGPLv2 or later",
                 "LGPLv2",
                 "LGPL-2",
-                "LGPL+"
+                "LGPL+",
+                "GNU LGPLv2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
