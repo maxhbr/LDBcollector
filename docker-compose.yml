@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2024 Kaushlendra Pratap <kaushlendra-pratap.singh@siemens.com>
+# SPDX-License-Identifier: GPL-2.0-only
+services:
+  licensedb:
+    container_name: licensedb
+    build:
+      context: .
+    environment:
+      DB_PASSWORD: fossy
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: fossy
+      DB_NAME: fossology
+      POPULATE_DB: true
+      GIN_MODE: debug
+    ports:
+      - 8080:8080
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: always
+    networks:
+      - licensedb-network
+  postgres:
+    container_name: postgres
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: fossy
+      POSTGRES_USER: fossy
+      POSTGRES_DB: fossology
+#    ports:
+#      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready --dbname $$POSTGRES_DB --username $$POSTGRES_USER"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - licensedb-network
+networks:
+  licensedb-network:
+    driver: bridge
+volumes:
+  pgdata:
