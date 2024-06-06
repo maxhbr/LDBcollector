@@ -1,7 +1,11 @@
 - id: "Maven:xmlunit:xmlunit:(,2.0["
   curations:
     comment: |-
-      Wrong SVN repository URL in POM: https://repo1.maven.org/maven2/xmlunit/xmlunit/1.3/xmlunit-1.3.pom
+      The POM, e.g. https://repo1.maven.org/maven2/xmlunit/xmlunit/1.3/xmlunit-1.3.pom, contains a `BSD-3-Clause`
+      license header but a non-SPDX license name tag. Also the SVN repository URL is wrong as it either points to the
+      view URL or hard-codes the trunk revision.
+    declared_license_mapping:
+      BSD License: "BSD-3-Clause"
     vcs:
       type: "Subversion"
       url: "https://svn.code.sf.net/p/xmlunit/code"
