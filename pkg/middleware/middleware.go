@@ -79,7 +79,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			return
 		}
 
-		userId := int64(claims["id"].(float64))
+		userId := int64(claims["user"].(map[string]interface{})["id"].(float64))
 
 		var user models.User
 		if err := db.DB.Where(models.User{Id: userId}).First(&user).Error; err != nil {
