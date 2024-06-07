@@ -66,13 +66,13 @@ func GetAllObligation(c *gin.Context) {
 
 	if err = query.Find(&obligations).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   "Obligations not found",
+			Status:    http.StatusInternalServerError,
+			Message:   "Unable to fetch obligations",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusNotFound, er)
+		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
 	res := models.ObligationResponse{
@@ -781,4 +781,65 @@ func addChangelogsForObligationUpdate(tx *gorm.DB, username string,
 	}
 
 	return nil
+}
+
+// GetAllObligationPreviews retrieves a list of topics and types of all obligations
+//
+//	@Summary		Get topic and types of all active obligations
+//	@Description	Get topic and type of all active obligations from the service
+//	@Id				GetAllObligationPreviews
+//	@Tags			Obligations
+//	@Accept			json
+//	@Produce		json
+//	@Param			active	query		bool	true	"Active obligation only"
+//	@Success		200		{object}	models.ObligationPreviewResponse
+//	@Router			/obligations/preview [get]
+func GetAllObligationPreviews(c *gin.Context) {
+	var obligations []models.Obligation
+	var obligationPreviews []models.ObligationPreview
+	active := c.Query("active")
+	if active == "" {
+		active = "true"
+	}
+	var parsedActive bool
+	parsedActive, err := strconv.ParseBool(active)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Invalid active value",
+			Error:     fmt.Sprintf("Parsing failed for value '%s'", active),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	query := db.DB.Model(&models.Obligation{})
+	query.Where("active = ?", parsedActive)
+
+	if err = query.Find(&obligations).Error; err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "Unable to fetch obligations",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+
+	for _, ob := range obligations {
+		obligationPreviews = append(obligationPreviews, models.ObligationPreview{
+			Topic: ob.Topic,
+			Type:  ob.Type,
+		})
+	}
+
+	res := models.ObligationPreviewResponse{
+		Data:   obligationPreviews,
+		Status: http.StatusOK,
+	}
+
+	c.JSON(http.StatusOK, res)
 }

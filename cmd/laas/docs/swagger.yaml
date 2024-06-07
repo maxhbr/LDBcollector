@@ -592,6 +592,29 @@ definitions:
     - topic
     - type
     type: object
+  models.ObligationPreview:
+    properties:
+      topic:
+        example: Provide Copyright Notices
+        type: string
+      type:
+        enum:
+        - obligation
+        - restriction
+        - risk
+        - right
+        type: string
+    type: object
+  models.ObligationPreviewResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ObligationPreview'
+        type: array
+      status:
+        example: 200
+        type: integer
+    type: object
   models.ObligationResponse:
     properties:
       data:
@@ -1522,6 +1545,28 @@ paths:
       security:
       - ApiKeyAuth: []
       summary: Import obligations by uploading a json file
+      tags:
+      - Obligations
+  /obligations/preview:
+    get:
+      consumes:
+      - application/json
+      description: Get topic and type of all active obligations from the service
+      operationId: GetAllObligationPreviews
+      parameters:
+      - description: Active obligation only
+        in: query
+        name: active
+        required: true
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ObligationPreviewResponse'
+      summary: Get topic and types of all active obligations
       tags:
       - Obligations
   /search:
