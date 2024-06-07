@@ -26,37 +26,6 @@ import (
 	"gorm.io/gorm/clause"
 )
 
-// GetAllLicense The get all License function returns all the license data present in the database.
-func GetAllLicense(c *gin.Context) {
-
-	var licenses []models.LicenseDB
-	query := db.DB.Model(&models.LicenseDB{})
-
-	_ = utils.PreparePaginateResponse(c, query, &models.LicenseResponse{})
-
-	err := query.Find(&licenses).Error
-	if err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "Licenses not found",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-	res := models.LicenseResponse{
-		Data:   licenses,
-		Status: http.StatusOK,
-		Meta: &models.PaginationMeta{
-			ResourceCount: len(licenses),
-		},
-	}
-
-	c.JSON(http.StatusOK, res)
-}
-
 // FilterLicense Get licenses from service based on different filters.
 //
 //	@Summary		Filter licenses
@@ -109,13 +78,9 @@ func FilterLicense(c *gin.Context) {
 		}
 	}
 
-	var license []models.LicenseDB
-	query := db.DB.Model(&license)
+	var licenses []models.LicenseDB
+	query := db.DB.Model(&licenses)
 
-	if SpdxId == "" && GPLv2compatible == "" && GPLv3compatible == "" && DetectorType == "" && marydone == "" && active == "" && fsffree == "" && OSIapproved == "" && copyleft == "" && externalRef == "" {
-		GetAllLicense(c)
-		return
-	}
 	if active != "" {
 		parsedActive, err := strconv.ParseBool(active)
 		if err != nil {
@@ -196,7 +161,11 @@ func FilterLicense(c *gin.Context) {
 		query = query.Where(fmt.Sprintf("external_ref->>'%s' = ?", externalRefKey), externalRefValue)
 	}
 
-	if err := query.Error; err != nil {
+	query.Order("rf_shortname")
+
+	_ = utils.PreparePaginateResponse(c, query, &models.LicenseResponse{})
+
+	if err := query.Find(&licenses).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "incorrect query to search in the database",
@@ -208,15 +177,11 @@ func FilterLicense(c *gin.Context) {
 		return
 	}
 
-	_ = utils.PreparePaginateResponse(c, query, &models.LicenseResponse{})
-
-	query.Find(&license)
-
 	res := models.LicenseResponse{
-		Data:   license,
+		Data:   licenses,
 		Status: http.StatusOK,
 		Meta: &models.PaginationMeta{
-			ResourceCount: len(license),
+			ResourceCount: len(licenses),
 		},
 	}
 	c.JSON(http.StatusOK, res)
