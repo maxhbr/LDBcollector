@@ -142,7 +142,10 @@
                 "MIT style",
                 "MIT-like",
                 "MIT like",
-                "MIT Like"
+                "MIT Like",
+                "MIT-style License.",
+                "MIT-license",
+                "MIT-Licences"
             ],
             "problem": "This is not a license identifier. It is most likely a license similar to MIT, but without more information no assumptions can be made."
         },
