@@ -36,6 +36,7 @@
     "scancode:epl-1.0",
     "osi:EPL-1.0",
     "Eclipse Public License 1.0 (EPL-1.0)",
-    "EPLv1.0"
+      "EPLv1.0",
+      "Eclipse-Public-License-v1.0"
   ]
 }
