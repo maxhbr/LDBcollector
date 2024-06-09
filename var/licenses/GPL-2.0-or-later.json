@@ -54,6 +54,7 @@
         "GPLv2.0+",
         "GPL version 2 or any later version",
         "GPL (>= 2)",
-        "GPL 2+"
+        "GPL 2+",
+        "GPLV2+"
     ]
 }

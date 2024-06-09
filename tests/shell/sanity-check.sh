@@ -129,7 +129,7 @@ check_test_case
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
 BSD2_PATENT_PRESENT=" -i -e patent" 
-BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' "
+BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
 
 check_presence AFL-1.1 " -e 1.1 " "-e 2. -e 1.2  -e 3"
@@ -295,7 +295,7 @@ check_presence TU-Berlin-1.0 " -e 1" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
 check_presence UnixCrypt " -i -e unixcrypt" ""
-check_presence Unlicense " -i -e unlicense" ""
+check_presence Unlicense " -i -e unlicense  -e unli[n]cence " ""
 
 check_presence Vim " -i -e vim" ""
 
@@ -304,7 +304,7 @@ check_presence W3C-19980720 " 1998 " " -e 2015 "
 check_presence W3C-20150513 " 2015 " " -e 1998 "
 check_presence WTFPL " -i -e WTFPL -e what -e wtf\ p" ""
 
-check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT'" 
+check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT' -e MIT-X" "" 
 check_presence X11-distribute-modifications-variant " -i -e modifications -e fsf" ""
 check_presence x11-keith-packard " -i -e packard" ""
 check_presence Xfig " -i -e Xfig" ""

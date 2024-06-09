@@ -41,7 +41,10 @@
             "aliases": [
                 "Boost License",
                 "Boost license",
-                "Boost"
+                "Boost",
+                "Boost Software License",
+                "Boost Software Licence",
+                "boost"
             ],
             "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -53,7 +56,9 @@
                 "BSD-style",
                 "BSD-style license",
                 "BSD-like",
-                "BSD LICENSE"
+                "BSD LICENSE",
+                "BSD-variant",
+                "BSD-License"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -107,7 +112,8 @@
             "aliases": [
                 "GPL",
                 "GNU GPL",
-                "GPL+"
+                "GPL+",
+                "GNU General Public License."
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -122,7 +128,10 @@
                 "GNU Lesser General Public License v2 (LGPLv2)",
                 "LGPLv2 or later",
                 "LGPLv2",
-                "LGPL-2"
+                "LGPL-2",
+                "LGPL2",
+                "LGPL+",
+                "GNU LGPLv2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -133,7 +142,10 @@
                 "MIT style",
                 "MIT-like",
                 "MIT like",
-                "MIT Like"
+                "MIT Like",
+                "MIT-style License.",
+                "MIT-license",
+                "MIT-Licences"
             ],
             "problem": "This is not a license identifier. It is most likely a license similar to MIT, but without more information no assumptions can be made."
         },
