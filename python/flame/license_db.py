@@ -10,6 +10,7 @@ import logging
 import re
 from pathlib import Path
 import license_expression
+import spdx_license_list
 from enum import Enum
 
 from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, read_config
@@ -47,6 +48,7 @@ class Validation(Enum):
     RELAXED = 1
     SPDX = 2
     OSADL = 3
+    SCANCODE = 4
 
 class FossLicenses:
     """
@@ -316,7 +318,7 @@ class FossLicenses:
         # remove multiple blanks
         license_expression = re.sub(' [ ]*', ' ', license_expression)
 
-        cache_key = f'{license_expression}__{update_dual}'
+        cache_key = f'{license_expression}__{validations}__{update_dual}'
         if cache_key in self.license_cache:
             return self.license_cache.get(cache_key)
 
@@ -626,6 +628,8 @@ class FossLicenses:
         if validations:
             if Validation.SPDX in validations:
                 self.__validate_license_spdx(license_expression)
+            if Validation.SCANCODE in validations:
+                self.__validate_license_scancode(license_expression)
             if Validation.RELAXED in validations:
                 self.__validate_license_relaxed(license_expression)
             if Validation.OSADL in validations:
@@ -658,17 +662,30 @@ class FossLicenses:
     def __validate_license_spdx(self, expr):
         """
         """
+        missing = []
+        license_list = self.__license_list(expr)
+        for _lic in license_list:
+            lic = _lic.strip()
+            spdx_license = lic in spdx_license_list.LICENSES
+            spdx_exception = "exception" in lic.lower()
+            if not (spdx_license or spdx_exception):
+                missing.append(lic)
 
+        if missing:
+            raise FlameException(f'License validation of "{expr}" failed. Non SPDX identifiers: "{", ".join(missing)}"')
+
+    def __validate_license_scancode(self, expr):
+        """
+        """
         expr_info = self.license_expression.validate(expr)
 
         if expr_info.errors:
-            raise FlameException(f'License validation failed. Errors: "{", ".join(expr_info.errors)}"')
+            raise FlameException(f'License validation of "{expr}" failed. Errors: "{", ".join(expr_info.errors)}"')
 
     def __validate_license_relaxed(self, expr):
         """
         """
-        SPDX_OPERATORS = ['AND', 'OR', 'WITH']
-        license_list = re.split(f'{"|".join(SPDX_OPERATORS)}', expr)
+        license_list = self.__license_list(expr)
         for _lic in license_list:
             lic = _lic.strip()
             if " " in lic.strip():
@@ -680,3 +697,7 @@ class FossLicenses:
         if not compat_supported['supported']:
             raise FlameException('Not all licenses supported by OSADL\'s compatibility matrix',
                                  compat_supported)
+
+    def __license_list(self, expr):
+        SPDX_OPERATORS = ['AND', 'OR', 'WITH']
+        return re.split(f'{"|".join(SPDX_OPERATORS)}', expr)

@@ -84,6 +84,7 @@ def get_parser():
 
     subparsers = parser.add_subparsers(help='Sub commands')
     parser.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
+    parser.add_argument('--validate-scancode', action='store_true', dest='validate_scancode', help='Validate that the resulting license expression is valid according to SPDX syntax and identifier exists in the Scancode license list', default=False)
     parser.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
     parser.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix.', default=False)
 
@@ -216,6 +217,8 @@ def __validations(args):
         validations.append(Validation.RELAXED)
     if args.validate_osadl:
         validations.append(Validation.OSADL)
+    if args.validate_scancode:
+        validations.append(Validation.SCANCODE)
 
     return validations
 

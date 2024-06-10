@@ -389,7 +389,7 @@ class TextOutputFormatter(OutputFormatter):
         ret.append(f'{id_lic}')
         if verbose:
             for identification in expression['identifications']:
-                ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]} via "{identification["identified_via"]}"')
+                ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]}" via "{identification["identified_via"]}"')
         if expression['ambiguities']:
             warnings = f'Warnings: {", ".join(expression["ambiguities"])}'
         else:
