@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.47
+Version:        1.48
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,9 @@ make check-grammar
 
 
 %changelog
+* Mon Jun 10 2024 Miroslav Suchý <msuchy@redhat.com> 1.48-1
+- Add GPL-2.0-only WITH vsftpd-openssl-exception
+
 * Thu May 23 2024 Miroslav Suchý <msuchy@redhat.com> 1.47-1
 - add GPL-2.0-or-later WITH RRDtool-FLOSS-exception-2.0
 - add text of ultrapermissive dedication from sublimehq
