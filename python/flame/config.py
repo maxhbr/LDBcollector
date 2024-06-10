@@ -44,7 +44,7 @@ REPORTING BUGS
   File a ticket at https://github.com/hesa/flame/issues
 
 COPYRIGHT
-  Copyright (c) 2023 Henrik Sandklef<hesa@sandklef.com>.
+  Copyright (c) 2024 Henrik Sandklef<hesa@sandklef.com>.
   License GPL-3.0-or-later
 
 ATTRIBUTION
