@@ -318,7 +318,7 @@ class FossLicenses:
         # remove multiple blanks
         license_expression = re.sub(' [ ]*', ' ', license_expression)
 
-        cache_key = f'{license_expression}__{update_dual}'
+        cache_key = f'{license_expression}__{validations}__{update_dual}'
         if cache_key in self.license_cache:
             return self.license_cache.get(cache_key)
 
