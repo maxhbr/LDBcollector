@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -256,8 +256,8 @@ class OutputFormatter():
         """
         Return a formatted string of the existing ambiguities
 
-        :param operators: A list of ambiguites.
-        :type operators: list
+        :param ambiguities: A list of ambiguites.
+        :type ambiguities: list
         :param verbose: provide additional information
         :type verbose: boolean
         :raise FlameException: if ambiguites is not valid
@@ -271,6 +271,29 @@ class OutputFormatter():
         >>> ambiguities = fl.ambiguities_list()
         >>> formatter = OutputFormatterFactory.formatter("TEXT")
         >>> formatted = formatter.format_ambiguities(ambiguities)
+
+        """
+        return None, None
+
+    def format_compounds(self, compounds, verbose=False):
+        """
+        Return a formatted string of the existing compounds
+
+        :param compounds: A list of ambiguites.
+        :type compounds: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if compounds is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> compounds = fl.compound_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_compounds(compounds)
 
         """
         return None, None
@@ -311,6 +334,9 @@ class JsonOutputFormatter(OutputFormatter):
     def format_ambiguities(self, ambiguities, verbose=False):
         return json.dumps(ambiguities), None
 
+    def format_compounds(self, compounds, verbose=False):
+        return json.dumps(compounds), None
+
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
@@ -342,6 +368,9 @@ class YamlOutputFormatter(OutputFormatter):
 
     def format_ambiguities(self, ambiguities, verbose=False):
         return yaml.safe_dump(ambiguities), None
+
+    def format_compounds(self, compounds, verbose=False):
+        return yaml.safe_dump(compounds), None
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -410,6 +439,12 @@ class TextOutputFormatter(OutputFormatter):
         ret = []
         for k, v in ambiguities.items():
             ret += [f'{a} -> {k}' for a in v['aliases']]
+        return '\n'.join(ret), None
+
+    def format_compounds(self, compounds, verbose=False):
+        ret = []
+        for compound in compounds:
+            ret += [f'{a} -> {compound["spdxid"]}' for a in compound['aliases']]
         return '\n'.join(ret), None
 
     def format_error(self, error, verbose=False):
