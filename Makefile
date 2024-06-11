@@ -125,6 +125,8 @@ stats:
 	@PYTHONPATH=./python ./python/flame/__main__.py operators | wc -l
 	@echo -n "ambiguities:  "
 	@PYTHONPATH=./python ./python/flame/__main__.py ambiguities | wc -l
+	@echo -n "compounds:    "
+	@PYTHONPATH=./python ./python/flame/__main__.py compounds | wc -l
 
 clean:
 	find . -name "*~"    | xargs rm -fr
