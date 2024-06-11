@@ -12,8 +12,8 @@ import logging
 fl = FossLicenses(config={
     'license-dir': 'tests/licenses',
     'level': 'INFO',
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json'
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json'
 })
 
 def test_compat_misc_blanks():

@@ -10,10 +10,11 @@ from flame.exception import FlameException
 import logging
 
 fl = FossLicenses(config={
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json',
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json',
     'check': True,
     'license-dir': 'tests/licenses',
+    'additional-license-dir': 'dummy',
     'level': 'logging.INFO'})
 
 def test_supported():
