@@ -14,7 +14,7 @@ import spdx_license_list
 from enum import Enum
 
 from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, read_config
-from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPUNDS_FILE, LICENSE_AMBIG_FILE, LICENSE_DUALS_FILE
+from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPOUNDS_FILE, LICENSE_AMBIG_FILE, LICENSE_DUALS_FILE
 
 from flame.exception import FlameException
 from jsonschema import validate
@@ -181,8 +181,9 @@ class FossLicenses:
         # should be "GPL-2.0-only WITH
         # Classpath-exception-2.0". This file provides
         # translations for such
-        compounds_file = self.config.get('compunds_file', LICENSE_COMPUNDS_FILE)
+        compounds_file = self.config.get('compounds_file', LICENSE_COMPOUNDS_FILE)
         data = self.__read_json(compounds_file)
+        self.license_db[COMPOUNDS_TAG] = data['compounds']
         for compound in data[COMPOUNDS_TAG]:
             licenses[compound['spdxid']] = compound
             for alias in compound[FLAME_ALIASES_TAG]:
@@ -472,6 +473,18 @@ class FossLicenses:
         # List all compatibility_as that exist
         licenses = self.license_db[LICENSES_TAG]
         return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]['spdxid']} for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
+
+    def compound_list(self) -> [str]:
+        """Return a list of all the compound licenses.
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> compats = fl.compound_list()
+
+        """
+        # List all compounds
+        return self.license_db[COMPOUNDS_TAG]
 
     def alias_list(self, alias_license: str = None) -> [str]:
         """Returns a list of all the aliases. Supplying alias_license
