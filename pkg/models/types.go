@@ -135,6 +135,12 @@ type LicensePATCHRequestJSONSchema struct {
 	Marydone        OptionalData[bool]   `json:"marydone" swaggertype:"boolean"`
 }
 
+// LicensePreviewResponse gets us the list of all license shortnames
+type LicensePreviewResponse struct {
+	Status     int      `json:"status" example:"200"`
+	Shortnames []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later"`
+}
+
 // UpdateExternalRefsJSONPayload struct represents the external ref key value
 // pairs for update
 type UpdateExternalRefsJSONPayload struct {

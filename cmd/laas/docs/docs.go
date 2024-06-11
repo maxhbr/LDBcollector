@@ -525,6 +525,51 @@ const docTemplate = `{
                 }
             }
         },
+        "/licenses/preview": {
+            "get": {
+                "description": "Get shortnames of all active licenses from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Licenses"
+                ],
+                "summary": "Get shortnames of all active licenses",
+                "operationId": "GetAllLicensePreviews",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active license only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicensePreviewResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid active value",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Unable to fetch licenses",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/licenses/{shortname}": {
             "get": {
                 "description": "Get a single license by its shortname",
@@ -1984,6 +2029,25 @@ const docTemplate = `{
                 "rf_url": {
                     "type": "string",
                     "example": "https://opensource.org/licenses/MIT"
+                }
+            }
+        },
+        "models.LicensePreviewResponse": {
+            "type": "object",
+            "properties": {
+                "shortnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "GPL-2.0-only",
+                        "GPL-2.0-or-later"
+                    ]
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },

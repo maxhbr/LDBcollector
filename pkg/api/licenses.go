@@ -873,7 +873,7 @@ func SearchInLicense(c *gin.Context) {
 //	@Tags			Licenses
 //	@Accept			multipart/form-data
 //	@Produce		json
-//	@Param			file	formData	file true "licenses json file list"
+//	@Param			file	formData	file	true	"licenses json file list"
 //	@Success		200		{object}	models.ImportLicensesResponse{data=[]models.LicenseImportStatus}
 //	@Failure		400		{object}	models.LicenseError	"input file must be present"
 //	@Failure		500		{object}	models.LicenseError	"Internal server error"
@@ -1151,4 +1151,61 @@ func ExportLicenses(c *gin.Context) {
 
 	c.Header("Content-Disposition", fmt.Sprintf("attachment; filename=%s", fileName))
 	c.JSON(http.StatusOK, &licenses)
+}
+
+// GetAllLicensePreviews retrieves a list of shortnames of all licenses
+//
+//	@Summary		Get shortnames of all active licenses
+//	@Description	Get shortnames of all active licenses from the service
+//	@Id				GetAllLicensePreviews
+//	@Tags			Licenses
+//	@Accept			json
+//	@Produce		json
+//	@Param			active	query		bool	true	"Active license only"
+//	@Success		200		{object}	models.LicensePreviewResponse
+//	@Failure		400		{object}	models.LicenseError	"Invalid active value"
+//	@Failure		500		{object}	models.LicenseError	"Unable to fetch licenses"
+//	@Router			/licenses/preview [get]
+func GetAllLicensePreviews(c *gin.Context) {
+	var licenses []models.LicenseDB
+	active := c.Query("active")
+	if active == "" {
+		active = "true"
+	}
+	var parsedActive bool
+	parsedActive, err := strconv.ParseBool(active)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Invalid active value",
+			Error:     fmt.Sprintf("Parsing failed for value '%s'", active),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	query := db.DB.Model(&models.LicenseDB{})
+	query.Where("rf_active = ?", parsedActive)
+
+	if err = query.Find(&licenses).Error; err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "Unable to fetch licenses",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+
+	var res models.LicensePreviewResponse
+	for _, lic := range licenses {
+		res.Shortnames = append(res.Shortnames, lic.Shortname)
+	}
+
+	res.Status = http.StatusOK
+
+	c.JSON(http.StatusOK, res)
 }
