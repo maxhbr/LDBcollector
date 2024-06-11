@@ -8,8 +8,8 @@ import logging
 # add additional dirs (with licenses)
 fl = FossLicenses(config={
     'license-dir': 'tests/licenses',
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json',
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json',
     'level': 'INFO',
     'additional-license-dir': 'tests/additional-licenses'})
 

@@ -128,6 +128,11 @@ def get_parser():
         'compats', help='Display all compatibilities')
     parser_cs.set_defaults(which='compats', func=compats)
 
+    # compounds
+    parser_cs = subparsers.add_parser(
+        'compounds', help='Display all compounds')
+    parser_cs.set_defaults(which='compounds', func=compounds)
+
     # licenses
     parser_cs = subparsers.add_parser(
         'licenses', help='show all licenses')
@@ -186,6 +191,10 @@ def simplify(fl, formatter, args):
 def compats(fl, formatter, args):
     all_compats = fl.compatibility_as_list()
     return formatter.format_compat_list(all_compats, args.verbose)
+
+def compounds(fl, formatter, args):
+    compounds = fl.compound_list()
+    return formatter.format_compounds(compounds, args.verbose)
 
 def version_info(fl, formatter, args):
     return flame.config.SW_VERSION, None
