@@ -8,8 +8,8 @@ import logging
 fl = FossLicenses(config={
     'license-dir': 'tests/licenses',
     'level': 'INFO',
-    'duals_file': 'tests/licenses-additional/duals.json',
-    'compunds_file': 'tests/licenses-additional/compounds.json'
+    'duals_file': 'tests/var/duals.json',
+    'compounds_file': 'tests/var/compounds.json'
 })
 
 def test_compound_gpl_with():
@@ -23,3 +23,7 @@ def test_compound_gpl_with_bad():
 def test_compound_gpl_with_and():
     lic = fl.expression_license("GPL-2.0-only AND Classpath-exception-2.0", update_dual=False)
     assert lic['identified_license'] == "GPL-2.0-only WITH Classpath-exception-2.0"
+
+def test_compound_lsit():
+    lic = fl.compound_list()
+    assert len(lic) == 2
