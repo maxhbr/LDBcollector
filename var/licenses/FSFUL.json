@@ -10,6 +10,7 @@
         "FSF Unlimited License",
         "scancode://fsf-free",
         "FSFUL",
-        "scancode:fsf-free"
+        "scancode:fsf-free",
+        "fsf-free"
     ]
 }

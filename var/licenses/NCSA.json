@@ -1,24 +1,24 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "University of Illinois/NCSA Open Source License",
-  "scancode_key": "uoi-ncsa",
-  "spdxid": "NCSA",
-  "aliases": [
-   "NCSA",
-   "University of Illinois/NCSA Open Source License",
-   "ncsa",
-   "UIUC/NCSA",
-   "NCSA License",
-   "uoi-ncsa",
-   "The University of Illinois/NCSA Open Source License",
-   "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
-   "scancode://uoi-ncsa",
-   "NCSA Open Source License",
-   "NCSA LICENSE",
-   "scancode:uoi-ncsa",
-   "osi:NCSA"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "University of Illinois/NCSA Open Source License",
+    "scancode_key": "uoi-ncsa",
+    "spdxid": "NCSA",
+    "aliases": [
+        "NCSA",
+        "University of Illinois/NCSA Open Source License",
+        "ncsa",
+        "UIUC/NCSA",
+        "NCSA License",
+        "uoi-ncsa",
+        "The University of Illinois/NCSA Open Source License",
+        "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
+        "scancode://uoi-ncsa",
+        "NCSA Open Source License",
+        "NCSA LICENSE",
+        "scancode:uoi-ncsa",
+        "osi:NCSA"
+    ]
 }

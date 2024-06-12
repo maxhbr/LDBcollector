@@ -1,20 +1,21 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Common Development and Distribution License 1.1",
-  "scancode_key": "cddl-1.1",
-  "spdxid": "CDDL-1.1",
-  "aliases": [
-   "CDDL-1.1",
-   "Common Development and Distribution License 1.1",
-   "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1",
-   "scancode://cddl-1.1",
-   "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1",
-   "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1",
-   "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
-   "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
-   "scancode:cddl-1.1"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Common Development and Distribution License 1.1",
+    "scancode_key": "cddl-1.1",
+    "spdxid": "CDDL-1.1",
+    "aliases": [
+        "CDDL-1.1",
+        "Common Development and Distribution License 1.1",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1",
+        "scancode://cddl-1.1",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
+        "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
+        "scancode:cddl-1.1",
+        "cddl-1.1"
+    ]
 }

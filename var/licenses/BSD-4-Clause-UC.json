@@ -11,8 +11,7 @@
         "BSD-4-Clause (University of California-Specific)",
         "BSD-4-Clause-UC",
         "scancode://bsd-original-uc",
-        "BSD-Original-UC"
-
-        
+        "BSD-Original-UC",
+        "bsd-original-uc"
     ]
 }

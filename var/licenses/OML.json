@@ -1,17 +1,18 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "FastCGI DevKit",
-  "scancode_key": "fastcgi-devkit", 
-  "spdxid": "OML",
-  "aliases": [
-   "OML",
-   "Open Market License",
-   "scancode://fastcgi-devkit",
-   "FastCGI DevKit",
-   "OM License",
-   "scancode:fastcgi-devkit"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "FastCGI DevKit",
+    "scancode_key": "fastcgi-devkit", 
+    "spdxid": "OML",
+    "aliases": [
+        "OML",
+        "Open Market License",
+        "scancode://fastcgi-devkit",
+        "FastCGI DevKit",
+        "OM License",
+        "scancode:fastcgi-devkit",
+        "fastcgi-devkit"
+    ]
 }

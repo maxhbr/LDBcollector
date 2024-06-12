@@ -1,18 +1,19 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Libpng License",
-  "scancode_key": "libpng", 
-  "spdxid": "Libpng",
-  "aliases": [
-   "Libpng",
-   "libpng License",
-   "PNG Reference Library License 1.0",
-   "Libpng-1.0",
-   "scancode://libpng",
-   "PNG Reference Library License 1",
-   "PNG Reference Library License version 1"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Libpng License",
+    "scancode_key": "libpng", 
+    "spdxid": "Libpng",
+    "aliases": [
+        "Libpng",
+        "libpng License",
+        "PNG Reference Library License 1.0",
+        "Libpng-1.0",
+        "scancode://libpng",
+        "PNG Reference Library License 1",
+        "PNG Reference Library License version 1",
+        "libpng"
+    ]
 }

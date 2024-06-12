@@ -8,5 +8,6 @@
     "spdxid": "LicenseRef-scancode-g10-permissive",
     "compatibility_as": "MIT",
     "aliases": [
+        "g10-permissive"
     ]
 }

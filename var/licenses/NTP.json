@@ -1,18 +1,19 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "MIT Old Style no advertising",
-  "scancode_key": "ntpl", 
-  "spdxid": "NTP",
-  "aliases": [
-   "NTP",
-   "NTP License",
-   "NTP License (NTP)",
-   "scancode://ntpl",
-   "scancode:network-time-protocol",
-   "scancode:ntpl",
-   "osi:NTP"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "MIT Old Style no advertising",
+    "scancode_key": "ntpl", 
+    "spdxid": "NTP",
+    "aliases": [
+        "NTP",
+        "NTP License",
+        "NTP License (NTP)",
+        "scancode://ntpl",
+        "scancode:network-time-protocol",
+        "scancode:ntpl",
+        "osi:NTP",
+        "ntpl"
+    ]
 }

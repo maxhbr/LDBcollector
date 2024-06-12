@@ -5,7 +5,9 @@
     },
     "name": "UnixCrypt License",
     "scancode_key": "unixcrypt",
-    "compatibility_as": "MIT",    "spdxid": "UnixCrypt",
+    "compatibility_as": "MIT",
+    "spdxid": "UnixCrypt",
     "aliases": [
+        "unixcrypt"
     ]
 }

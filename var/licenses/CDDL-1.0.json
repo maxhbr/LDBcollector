@@ -1,27 +1,28 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Common Development and Distribution License 1.0",
-  "scancode_key": "cddl-1.0",
-  "spdxid": "CDDL-1.0",
-  "aliases": [
-   "CDDL-1.0",
-   "Common Development and Distribution License 1.0",
-   "CDDL 1.0",
-   "Common Development and Distribution License, Version 1.0",
-   "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
-   "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California",
-   "scancode://cddl-1.0",
-   "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0",
-   "Common Development and Distribution License 1.0 (\"CDDL\")",
-   "CDDL, v1.0",
-   "CDDLv1.0",
-   "Common Development and Distribution Licence version 1.0 (CDDL)",
-   "Common Development and Distribution License (CDDL), Version 1.0",
-   "scancode:cddl-1.0",
-   "osi:CDDL-1.0",
-   "Common Development and Distribution License 1.0 (CDDL-1.0)"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Common Development and Distribution License 1.0",
+    "scancode_key": "cddl-1.0",
+    "spdxid": "CDDL-1.0",
+    "aliases": [
+        "CDDL-1.0",
+        "Common Development and Distribution License 1.0",
+        "CDDL 1.0",
+        "Common Development and Distribution License, Version 1.0",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California",
+        "scancode://cddl-1.0",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0",
+        "Common Development and Distribution License 1.0 (\"CDDL\")",
+        "CDDL, v1.0",
+        "CDDLv1.0",
+        "Common Development and Distribution Licence version 1.0 (CDDL)",
+        "Common Development and Distribution License (CDDL), Version 1.0",
+        "scancode:cddl-1.0",
+        "osi:CDDL-1.0",
+        "Common Development and Distribution License 1.0 (CDDL-1.0)",
+        "cddl-1.0"
+    ]
 }

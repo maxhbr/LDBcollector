@@ -16,6 +16,7 @@
         "ECL, Version 1.0",
         "Educational Community License version 1.0",
         "scancode:ecl-1.0",
-        "osi:ECL-1.0"
+        "osi:ECL-1.0",
+        "ecl-1.0"
     ]
 }

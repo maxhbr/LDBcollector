@@ -1,11 +1,12 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "XFree86 License 1.0",
-  "scancode_key": "xfree86-1.0",
-  "spdxid": "LicenseRef-scancode-xfree86-1.0",
-  "aliases": [
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "XFree86 License 1.0",
+    "scancode_key": "xfree86-1.0",
+    "spdxid": "LicenseRef-scancode-xfree86-1.0",
+    "aliases": [
+        "xfree86-1.0"
+    ]
 }

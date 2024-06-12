@@ -11,6 +11,7 @@
         "BSD-2-Clause-Views",
         "BSD 2-Clause with Views Sentence",
         "BSD 2-Clause with views sentence",
-        "scancode://bsd-2-clause-views"
+        "scancode://bsd-2-clause-views",
+        "bsd-2-clause-views"
     ]
 }

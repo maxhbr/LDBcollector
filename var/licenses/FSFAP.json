@@ -13,6 +13,7 @@
         "scancode://fsf-ap",
         "FSF All Permissive",
         "FSF all permissive",
-        "scancode:fsf-ap"
+        "scancode:fsf-ap",
+        "fsf-ap"
     ]
 }

@@ -1,15 +1,16 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "JSON License",
-  "scancode_key": "json", 
-  "spdxid": "JSON",
-  "aliases": [
-   "JSON",
-   "JSON License",
-   "scancode://json",
-   "JSON evil license"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "JSON License",
+    "scancode_key": "json", 
+    "spdxid": "JSON",
+    "aliases": [
+        "JSON",
+        "JSON License",
+        "scancode://json",
+        "JSON evil license",
+        "json"
+    ]
 }

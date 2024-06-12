@@ -7,6 +7,7 @@
   "scancode_key": "iso-8879",
   "spdxid": "LicenseRef-scancode-iso-8879",
   "aliases": [
-      "LicenseRef-ISO-8879"
+      "LicenseRef-ISO-8879",
+      "iso-8879"
   ]
 }

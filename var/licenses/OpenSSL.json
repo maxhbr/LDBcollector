@@ -1,18 +1,19 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "OpenSSL/SSLeay License",
-  "scancode_key": "openssl-ssleay",
-  "spdxid": "OpenSSL",
-  "aliases": [
-   "OpenSSL",
-   "OpenSSL License",
-   "scancode://openssl-ssleay",
-   "OpenSSL/SSLeay License",
-   "scancode://openssl",
-   "LicenseRef-scancode-openssl",
-   "OpenSSL license"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "OpenSSL/SSLeay License",
+    "scancode_key": "openssl-ssleay",
+    "spdxid": "OpenSSL",
+    "aliases": [
+        "OpenSSL",
+        "OpenSSL License",
+        "scancode://openssl-ssleay",
+        "OpenSSL/SSLeay License",
+        "scancode://openssl",
+        "LicenseRef-scancode-openssl",
+        "OpenSSL license",
+        "openssl-ssleay"
+    ]
 }

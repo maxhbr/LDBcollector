@@ -1,25 +1,26 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "X11 License",
-  "scancode_key": "x11-xconsortium", 
-  "spdxid": "X11",
-  "aliases": [
-   "X11",
-   "X11 License",
-   "scancode://x11-xconsortium",
-   "X11-Style (X Consortium)",
-   "scancode://x11",
-   "X License",
-   "MIT/X Consortium",
-   "X/MIT License",
-   "MIT/X11",
-   "MIT variant (X11)",
-   "scancode:x11-xconsortium",
-   "MIT-X-Consortium",
-   "MIT-X11",
-   "X-Consortium"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "X11 License",
+    "scancode_key": "x11-xconsortium", 
+    "spdxid": "X11",
+    "aliases": [
+        "X11",
+        "X11 License",
+        "scancode://x11-xconsortium",
+        "X11-Style (X Consortium)",
+        "scancode://x11",
+        "X License",
+        "MIT/X Consortium",
+        "X/MIT License",
+        "MIT/X11",
+        "MIT variant (X11)",
+        "scancode:x11-xconsortium",
+        "MIT-X-Consortium",
+        "MIT-X11",
+        "X-Consortium",
+        "x11-xconsortium"
+    ]
 }

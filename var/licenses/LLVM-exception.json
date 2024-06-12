@@ -10,6 +10,7 @@
         "LLVM Exceptions",
         "LLVM Exception",
         "LLVM exception",
-        "LLVM-exception"
-  ]
+        "LLVM-exception",
+        "llvm-exception"
+    ]
 }
