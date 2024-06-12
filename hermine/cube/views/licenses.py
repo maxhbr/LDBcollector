@@ -36,6 +36,7 @@ from cube.forms.licenses import (
     CopyReferenceObligationForm,
     SyncEverythingFromReferenceForm,
 )
+from cube.forms.licenses import ObligationForm
 from cube.models import License, Generic, Obligation
 from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
@@ -451,8 +452,8 @@ class ObligationCreateView(
 ):
     permission_required = "cube.add_obligation"
     model = Obligation
-    fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
     license = None
+    form_class = ObligationForm
 
     def get_success_url(self):
         return reverse("cube:license_detail", args=[self.object.license.id])
@@ -461,7 +462,7 @@ class ObligationCreateView(
 class ObligationUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = "cube.change_obligation"
     model = Obligation
-    fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
+    form_class = ObligationForm
 
     def get_success_url(self):
         return reverse("cube:license_detail", args=[self.object.license.id])
