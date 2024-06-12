@@ -38,6 +38,7 @@ class ObligationInlineTab(admin.TabularInline):
 
 class ObligationAdmin(admin.ModelAdmin):
     search_fields = ["name", "license__spdx_id"]
+    autocomplete_fields = ("generic",)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -119,8 +120,11 @@ class LicenseAdmin(admin.ModelAdmin):
 class GenericAdmin(admin.ModelAdmin):
     inlines = [ObligationInlineTab]
     list_display = ("name", "in_core", "metacategory", "team")
+    search_fields = [
+        "name",
+    ]
     list_filter = ["in_core"]
-    ordering = ["in_core"]
+    ordering = ["-in_core", "name"]
 
 
 class ComponentAdmin(admin.ModelAdmin):
