@@ -17,6 +17,7 @@
         "scancode://sleepycat",
         "Berkeley DB License",
         "scancode:sleepycat",
-        "osi:Sleepycat"
+        "osi:Sleepycat",
+        "sleepycat"
     ]
 }

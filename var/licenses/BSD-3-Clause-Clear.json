@@ -15,6 +15,7 @@
         "scancode://clear-bsd",
         "Clear BSD License",
         "Clear BSD license",
-        "scancode:clear-bsd"
+        "scancode:clear-bsd",
+        "clear-bsd"
     ]
 }

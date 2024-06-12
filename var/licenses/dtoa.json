@@ -8,5 +8,6 @@
     "compatibility_as": "X11",
     "spdxid": "dtoa",
     "aliases": [
+        "x11-lucent"
     ]
 }

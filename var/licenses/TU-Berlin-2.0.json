@@ -1,23 +1,24 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Technische Universitaet Berlin License 2.0",
-  "scancode_key": "tu-berlin-2.0",
-  "spdxid": "TU-Berlin-2.0",
-  "aliases": [
-   "TU-Berlin-2.0",
-   "Technische Universitaet Berlin License 2.0",
-   "TU Berlin License 2.0",
-   "scancode://tu-berlin-2.0",
-   "TU Berlin, Version 2.0",
-   "TU Berlin 2.0",
-   "TU-Berlin, Version 2.0",
-   "TU-Berlin 2.0",
-   "TU Berlin License, Version 2.0",
-   "TU-Berlin License, Version 2.0",
-   "TU-Berlin License, 2.0",
-   "scancode:tu-berlin-2.0"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Technische Universitaet Berlin License 2.0",
+    "scancode_key": "tu-berlin-2.0",
+    "spdxid": "TU-Berlin-2.0",
+    "aliases": [
+        "TU-Berlin-2.0",
+        "Technische Universitaet Berlin License 2.0",
+        "TU Berlin License 2.0",
+        "scancode://tu-berlin-2.0",
+        "TU Berlin, Version 2.0",
+        "TU Berlin 2.0",
+        "TU-Berlin, Version 2.0",
+        "TU-Berlin 2.0",
+        "TU Berlin License, Version 2.0",
+        "TU-Berlin License, Version 2.0",
+        "TU-Berlin License, 2.0",
+        "scancode:tu-berlin-2.0",
+        "tu-berlin-2.0"
+    ]
 }

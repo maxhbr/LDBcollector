@@ -1,11 +1,12 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Zope Public License 1.0",
-  "scancode_key": "zpl-1.0",
-  "spdxid": "LicenseRef-scancode-zpl-1.0",
-  "aliases": [
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Zope Public License 1.0",
+    "scancode_key": "zpl-1.0",
+    "spdxid": "LicenseRef-scancode-zpl-1.0",
+    "aliases": [
+        "zpl-1.0"
+    ]
 }

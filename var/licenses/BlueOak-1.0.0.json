@@ -1,15 +1,16 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Blue Oak Model License 1.0.0",
-  "scancode_key": "blueoak-1.0.0",
-  "spdxid": "BlueOak-1.0.0",
-  "aliases": [
-      "BlueOak-1.0.0",
-      "scancode://blueoak-1.0.0",
-      "Blue Oak Model License Version 1.0.0",
-      "scancode:blueoak-1.0.0"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Blue Oak Model License 1.0.0",
+    "scancode_key": "blueoak-1.0.0",
+    "spdxid": "BlueOak-1.0.0",
+    "aliases": [
+        "BlueOak-1.0.0",
+        "scancode://blueoak-1.0.0",
+        "Blue Oak Model License Version 1.0.0",
+        "scancode:blueoak-1.0.0",
+        "blueoak-1.0.0"
+    ]
 }

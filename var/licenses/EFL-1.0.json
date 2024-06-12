@@ -18,6 +18,7 @@
         "EFL, Version 1.0",
         "Eiffel Forum License, version 1",
         "scancode:efl-1.0",
-        "osi:EFL-1.0"
+        "osi:EFL-1.0",
+        "efl-1.0"
     ]
 }

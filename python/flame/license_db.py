@@ -228,9 +228,6 @@ class FossLicenses:
         elif name in self.license_db[FLAME_ALIASES_TAG]:
             ret_name = self.license_db[FLAME_ALIASES_TAG][name]
             ret_id = 'alias'
-        elif name in self.license_db[SCANCODE_KEYS_TAG]:
-            ret_name = self.license_db[SCANCODE_KEYS_TAG][name]
-            ret_id = 'scancode_key'
         else:
             raise FlameException(f'Could not identify license from "{name}"')
 
@@ -328,11 +325,6 @@ class FossLicenses:
         ret = self.__update_license_expression_helper(self.license_db[FLAME_ALIASES_TAG],
                                                       'alias',
                                                       license_expression)
-        replacements += ret['identifications']
-
-        ret = self.__update_license_expression_helper(self.license_db[SCANCODE_KEYS_TAG],
-                                                      'scancode',
-                                                      ret['license_expression'])
         replacements += ret['identifications']
 
         ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],

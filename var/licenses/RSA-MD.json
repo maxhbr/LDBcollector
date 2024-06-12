@@ -1,22 +1,21 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "RSA Data Security MD5",
-  "scancode_key": "rsa-md5",
-  "spdxid": "RSA-MD",
-  "aliases": [
-   "RSA-MD",
-   "RSA Message-Digest License ",
-   "RSA MD License",
-   "RSA Message-Digest License",
-   "scancode://rsa-md5",
-   "RSA-MD5 License",
-   "RSA MD LICENSE",
-   "RSA-MD License",
-   "RSA-MD LICENSE",
-   "RSA Data Security MD4",
-   "scancode:rsa-md4"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "RSA Data Security MD5",
+    "scancode_key": "rsa-md5",
+    "spdxid": "RSA-MD",
+    "aliases": [
+        "RSA-MD",
+        "RSA Message-Digest License ",
+        "RSA MD License",
+        "RSA Message-Digest License",
+        "scancode://rsa-md5",
+        "RSA-MD5 License",
+        "RSA MD LICENSE",
+        "RSA-MD License",
+        "RSA-MD LICENSE",
+        "rsa-md5"
+    ]
 }

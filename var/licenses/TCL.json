@@ -1,18 +1,19 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "TCL/TK License",
-  "scancode_key": "tcl",
-  "spdxid": "TCL",
-  "aliases": [
-   "TCL",
-   "TCL/TK License",
-   "TCL License",
-   "scancode://tcl",
-   "scancode://ttcl",
-   "LicenseRef-scancode-ttcl",
-   "scancode:tcl"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "TCL/TK License",
+    "scancode_key": "tcl",
+    "spdxid": "TCL",
+    "aliases": [
+        "TCL",
+        "TCL/TK License",
+        "TCL License",
+        "scancode://tcl",
+        "scancode://ttcl",
+        "LicenseRef-scancode-ttcl",
+        "scancode:tcl",
+        "tcl"
+    ]
 }

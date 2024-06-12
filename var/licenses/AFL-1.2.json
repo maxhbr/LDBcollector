@@ -1,18 +1,19 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Academic Free License 1.2",
-  "scancode_key": "afl-1.2",
-  "spdxid": "AFL-1.2",
-  "aliases": [
-   "AFL-1.2",
-   "Academic Free License 1.2",
-   "scancode://afl-1.2",
-   "AFL 1.2",
-   "AFL, Version 1.2",
-   "AFL, 1.2",
-   "scancode:afl-1.2"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Academic Free License 1.2",
+    "scancode_key": "afl-1.2",
+    "spdxid": "AFL-1.2",
+    "aliases": [
+        "AFL-1.2",
+        "Academic Free License 1.2",
+        "scancode://afl-1.2",
+        "AFL 1.2",
+        "AFL, Version 1.2",
+        "AFL, 1.2",
+        "scancode:afl-1.2",
+        "afl-1.2"
+    ]
 }

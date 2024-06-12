@@ -1,15 +1,15 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "SQLite Blessing",
-  "scancode_key": "blessing",
-  "spdxid": "blessing",
-  "aliases": [
-   "blessing",
-   "SQLite Blessing",
-   "scancode://blessing",
-   "scancode:blessing"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "SQLite Blessing",
+    "scancode_key": "blessing",
+    "spdxid": "blessing",
+    "aliases": [
+        "blessing",
+        "SQLite Blessing",
+        "scancode://blessing",
+        "scancode:blessing"
+    ]
 }

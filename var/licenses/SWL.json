@@ -1,20 +1,21 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "Scheme Widget Library (SWL) Software License Agreement",
-  "scancode_key": "swl",
-  "spdxid": "SWL",
-  "aliases": [
-   "SWL",
-   "Scheme Widget Library (SWL) Software License Agreement",
-   "Scheme Widget Library Software License Agreement",
-   "scancode://swl",
-   "Scheme Widget Library (SWL) Software License",
-   "SWL License",
-   "SWL license",
-   "under SWL",
-   "scancode:swl"
-  ]
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Scheme Widget Library (SWL) Software License Agreement",
+    "scancode_key": "swl",
+    "spdxid": "SWL",
+    "aliases": [
+        "SWL",
+        "Scheme Widget Library (SWL) Software License Agreement",
+        "Scheme Widget Library Software License Agreement",
+        "scancode://swl",
+        "Scheme Widget Library (SWL) Software License",
+        "SWL License",
+        "SWL license",
+        "under SWL",
+        "scancode:swl",
+        "swl"
+    ]
 }
