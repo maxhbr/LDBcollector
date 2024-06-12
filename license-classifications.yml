@@ -33,6 +33,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "3D-Slicer-1.0"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "AAL"
   categories:
   - "permissive"
@@ -81,6 +85,10 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "AMD-newlib"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "AMDPLPA"
   categories:
   - "permissive"
@@ -237,6 +245,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "BSD-2-Clause-Views"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "BSD-2-Clause-first-lines"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -786,6 +798,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "Catharon"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "ClArtistic"
   categories:
   - "copyleft-limited"
@@ -1176,6 +1192,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "Gutmann"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "HP-1986"
   categories:
   - "permissive"
@@ -1200,6 +1220,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "HPND-Intel"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "HPND-Kevlin-Henney"
   categories:
   - "permissive"
@@ -1220,6 +1244,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "HPND-UC-export-US"
+  categories:
+  - "free-restricted"
+  - "include-in-notice-file"
 - id: "HPND-doc"
   categories:
   - "permissive"
@@ -1232,7 +1260,19 @@ categorizations:
   categories:
   - "free-restricted"
   - "include-in-notice-file"
+- id: "HPND-export-US-acknowledgement"
+  categories:
+  - "free-restricted"
+  - "include-in-notice-file"
 - id: "HPND-export-US-modify"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "HPND-export2-US"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "HPND-merchantability-variant"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -1249,6 +1289,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "HPND-sell-variant-MIT-disclaimer"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "HPND-sell-variant-MIT-disclaimer-rev"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -1883,6 +1927,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-any-osi"
+  categories:
+  - "unstated-license"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-aop-pd"
   categories:
   - "public-domain"
@@ -2388,6 +2436,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-bsd-1988"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-bsd-2-clause-first-lines"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -4716,6 +4768,10 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-gutmann"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-h2-1.0"
   categories:
   - "copyleft-limited"
@@ -4897,6 +4953,10 @@ categorizations:
   categories:
   - "free-restricted"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-hpnd-export-us-acknowledgement"
+  categories:
+  - "free-restricted"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-hpnd-fenneberg-livingston"
   categories:
   - "permissive"
@@ -4925,9 +4985,17 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-hpnd-sell-variant-mit-disclaimer-rev"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-hpnd-uc"
   categories:
   - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-hpnd-uc-export-us"
+  categories:
+  - "free-restricted"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-hs-regexp"
   categories:
@@ -6124,6 +6192,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-mit-export-control"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-mit-khronos-old"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -7993,6 +8065,11 @@ categorizations:
   categories:
   - "proprietary-free"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-ppl"
+  categories:
+  - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-ppp"
   categories:
   - "permissive"
@@ -8950,6 +9027,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-sun-ppp-2000"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-sun-project-x"
   categories:
   - "proprietary-free"
@@ -9211,6 +9292,10 @@ categorizations:
   - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-threeparttable"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-ti-broadband-apps"
   categories:
   - "proprietary-free"
@@ -9953,6 +10038,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-xzoom"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-yahoo-browserplus-eula"
   categories:
   - "proprietary-free"
@@ -10133,6 +10222,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "MIT-Khronos-old"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "MIT-Modern-Variant"
   categories:
   - "permissive"
@@ -10269,9 +10362,17 @@ categorizations:
   - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "NCBI-PD"
+  categories:
+  - "public-domain"
+  - "include-in-notice-file"
 - id: "NCGL-UK-2.0"
   categories:
   - "free-restricted"
+  - "include-in-notice-file"
+- id: "NCL"
+  categories:
+  - "permissive"
   - "include-in-notice-file"
 - id: "NCSA"
   categories:
@@ -10369,6 +10470,10 @@ categorizations:
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
 - id: "O-UDA-1.0"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "OAR"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -10601,6 +10706,11 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "PPL"
+  categories:
+  - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "PSF-2.0"
   categories:
   - "permissive"
@@ -10836,6 +10946,10 @@ categorizations:
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
 - id: "Sun-PPP"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "Sun-PPP-2000"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -11077,6 +11191,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "any-OSI"
+  categories:
+  - "unstated-license"
+  - "include-in-notice-file"
 - id: "bcrypt-Solar-Designer"
   categories:
   - "permissive"
@@ -11108,6 +11226,10 @@ categorizations:
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
 - id: "curl"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "cve-tou"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -11201,6 +11323,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "pkgconf"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "pnmstitch"
   categories:
   - "permissive"
@@ -11237,6 +11363,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "threeparttable"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "ulem"
   categories:
   - "permissive"
@@ -11263,6 +11393,10 @@ categorizations:
   - "permissive"
   - "include-in-notice-file"
 - id: "xpp"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "xzoom"
   categories:
   - "permissive"
   - "include-in-notice-file"
