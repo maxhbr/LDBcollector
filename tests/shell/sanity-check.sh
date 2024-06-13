@@ -157,6 +157,7 @@ check_presence Beerware " -i -e beer " ""
 check_presence Bitstream-Vera " -i -e bitstream " ""
 check_presence blessing " -i -e blessing " ""
 check_presence BlueOak-1.0.0  " -e 1 " " -e 2"
+check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
 check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
