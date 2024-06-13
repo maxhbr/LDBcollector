@@ -61,16 +61,20 @@
 (defn get-text
   "Attempts to get plain text as a String from the given URI, returning nil if
   unable to do so (including for error conditions - there is no way to
-  disambiguate errors from non-text content, for example)."
+  disambiguate errors from non-text content, for example).
+
+  HTML responses are automatically converted to plain text (using JSoup)."
   [uri]
   (when (lciu/valid-http-uri? uri)
     (try
       (when-let [response (hc/get (cdn-uri uri)
                                   {:http-client @http-client-d
-                                   :accept      "text/plain;q=1,*/*;q=0"  ; Kindly request that the server only return text/plain... ...even though this gets ignored a lot of the time 🙄
+                                   :accept      "text/plain;q=1,text/html;q=0.5,application/xhtml+xml;q=0.5,*/*;q=0"  ; Kindly request that the server give us text/plain... ...though this gets ignored a lot of the time 🙄
                                    :header      {"user agent" "com.github.pmonks/lice-comb"}})]
-        (when (= :text/plain (:content-type response))
-          (:body response)))
+        (case (:content-type response)
+           :text/plain            (:body response)
+           :text/html             (lciu/html->text (:body response))
+           :application/xhtml+xml (lciu/html->text (:body response))))
       (catch Exception _
         nil))))
 

@@ -99,7 +99,7 @@
 (defn re-concat
   "Concatenate all of the given regexes or strings into a single regex."
   [& res]
-  (re-pattern (apply str res)))
+  (re-pattern (s/join res)))
 
 (defn base62-encode
   "Encodes the given string to Base62/UTF-8."
@@ -115,9 +115,15 @@
       (java.lang.String. ^bytes (base62/decode s) java.nio.charset.StandardCharsets/UTF_8)
       (throw (ex-info (str "Invalid BASE62 value provided: " s) {})))))   ; Because clj-base62 has crappy error messages
 
+(defn html->text
+  "Converts `html` (a String) to plain text (also a String)."
+  [^String html]
+  (when html
+    (s/trim (.text (org.jsoup.Jsoup/parse html)))))
+
 (defn valid-http-uri?
   "Returns true if given string is a valid HTTP or HTTPS URI."
-  [s]
+  [^String s]
   ; Note: no nil check needed since the isValid method handles null sanely
   (.isValid (org.apache.commons.validator.routines.UrlValidator. ^"[Ljava.lang.String;" (into-array String ["http" "https"])) s))
 

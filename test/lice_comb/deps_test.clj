@@ -132,14 +132,14 @@
     (is (nil? (dep->expressions ['slipset/deps-deploy         {:deps/manifest :mvn :mvn/version "0.2.0"}])))
     (is (nil? (dep->expressions ['borkdude/sci.impl.reflector {:deps/manifest :mvn :mvn/version "0.0.1"}]))))
   (testing "Valid deps - multi license"
-    (is (valid= #{"EPL-1.0" "LGPL-3.0-only"}                              (dep->expressions ['ch.qos.logback/logback-classic            {:deps/manifest :mvn :mvn/version "1.2.7"}])))
-    (is (valid= #{"EPL-1.0" "LGPL-3.0-only"}                              (dep->expressions ['ch.qos.logback/logback-core               {:deps/manifest :mvn :mvn/version "1.2.7"}])))
-    (is (valid= #{"CDDL-1.1" "GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.mail/mail                           {:deps/manifest :mvn :mvn/version "1.4.7"}])))
-    (is (valid= #{"Apache-2.0" "LGPL-2.1-or-later"}                       (dep->expressions ['net.java.dev.jna/jna-platform             {:deps/manifest :mvn :mvn/version "5.10.0"}])))
-    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "MIT"}      (dep->expressions ['org.checkerframework/checker-compat-qual  {:deps/manifest :mvn :mvn/version "2.5.5"}])))
-    (is (valid= #{"CDDL-1.1" "GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.xml.bind/jaxb-api                   {:deps/manifest :mvn :mvn/version "2.4.0-b180830.0359"}]))))
+    (is (valid= #{"EPL-1.0 OR LGPL-3.0-only"}                              (dep->expressions ['ch.qos.logback/logback-classic            {:deps/manifest :mvn :mvn/version "1.2.7"}])))
+    (is (valid= #{"EPL-1.0 OR LGPL-3.0-only"}                              (dep->expressions ['ch.qos.logback/logback-core               {:deps/manifest :mvn :mvn/version "1.2.7"}])))
+    (is (valid= #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.mail/mail                           {:deps/manifest :mvn :mvn/version "1.4.7"}])))
+    (is (valid= #{"LGPL-2.1-or-later OR Apache-2.0"}                       (dep->expressions ['net.java.dev.jna/jna-platform             {:deps/manifest :mvn :mvn/version "5.10.0"}])))
+    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0 OR MIT"}      (dep->expressions ['org.checkerframework/checker-compat-qual  {:deps/manifest :mvn :mvn/version "2.5.5"}])))
+    (is (valid= #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.xml.bind/jaxb-api                   {:deps/manifest :mvn :mvn/version "2.4.0-b180830.0359"}]))))
   (testing "Valid deps - Maven classifiers"
-    (is (= #{"Apache-2.0" "LGPL-3.0-only"} (dep->expressions ['com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.12"}])))))
+    (is (= #{"Apache-2.0 OR LGPL-3.0-only"} (dep->expressions ['com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.12"}])))))
 
 (defn- distinct-licenses-in-lib-map
   [lib-map-with-license-info]
@@ -154,7 +154,7 @@
   (testing "Single deps"
     (is (valid= #{"EPL-1.0"}                    (distinct-licenses-in-lib-map (deps-expressions {'org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.10.3"}}))))
     (is (valid= #{"EPL-1.0"}                    (distinct-licenses-in-lib-map (deps-expressions {'com.github.athos/clj-check {:deps/manifest :deps :git/sha "518d5a1cbfcd7c952f548e6dbfcb9a4a5faf9062" :deps/root (str gitlib-dir "/com.github.athos/clj-check")}}))))
-    (is (valid= #{"Apache-2.0" "LGPL-3.0-only"} (distinct-licenses-in-lib-map (deps-expressions {'com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.12"}}))))
+    (is (valid= #{"Apache-2.0 OR LGPL-3.0-only"} (distinct-licenses-in-lib-map (deps-expressions {'com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.12"}}))))
     (is (= (distinct-licenses-in-lib-map (deps-expressions {'com.github.jnr/jffi        {:deps/manifest :mvn :mvn/version "1.3.12"}}))
            (distinct-licenses-in-lib-map (deps-expressions {'com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.12"}})))))
   (testing "Multiple deps"

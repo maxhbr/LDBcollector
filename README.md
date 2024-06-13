@@ -1,7 +1,7 @@
 | | | |
 |---:|:---:|:---:|
 | [**release**](https://github.com/pmonks/lice-comb/tree/release) | [![CI](https://github.com/pmonks/lice-comb/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Arelease) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Arelease) |
-| [**dev**](https://github.com/pmonks/lice-comb/tree/dev) | [![CI](https://github.com/pmonks/lice-comb/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Adev) |
+| [**dev**](https://github.com/pmonks/lice-comb/tree/dev) | [![CI](https://github.com/pmonks/lice-comb/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Adev) |
 
 [![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/lice-comb)](https://clojars.org/com.github.pmonks/lice-comb/) [![License](https://img.shields.io/github/license/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/blob/release/LICENSE) [![Open Issues](https://img.shields.io/github/issues/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/issues) [![Vulnerabilities](https://github.com/pmonks/lice-comb/actions/workflows/vulnerabilities.yml/badge.svg)](https://pmonks.github.io/lice-comb/nvd/dependency-check-report.html)
 
@@ -83,9 +83,10 @@ $ deps-try com.github.pmonks/lice-comb
 (lcmvn/gav->expressions "commons-io" "commons-io" "2.15.0")
 ;=> #{"Apache-2.0"}
 
-; Note: this looks up and uses only the latest version of the given project
+; Note: this looks up and uses the latest version of the given project (1.5.0-b01 at the time of
+; writing), so the results you get may be different to what you see here
 (lcmvn/gav->expressions "javax.mail" "mail")
-;=> #{"GPL-2.0-only WITH Classpath-exception-2.0" "CDDL-1.1"}
+;=> #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"}
 
 (lcmvn/pom->expressions (str (System/getProperty "user.home") "/.m2/repository/org/clojure/clojure/1.11.2/clojure-1.11.2.pom"))
 ;=> #{"EPL-1.0"}
@@ -125,7 +126,8 @@ $ deps-try com.github.pmonks/lice-comb
 ;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching,
 ;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
 ;                "the GNU Classpath Exception"
-;                "Classpath Exception")})}
+;                "Classpath Exception"),
+;       :confidence-explanations #{:missing-version}})}
 
 (lcmvn/pom->expressions-info "https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom")
 ;=> {"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -138,7 +140,7 @@ $ deps-try com.github.pmonks/lice-comb
 ;; Pretty print expressions-info
 (require '[lice-comb.utils :as lcu])
 
-(println (lcu/expressions-info->string (lcd/dep->expressions-info ['com.amazonaws/aws-java-sdk-s3 {:deps/manifest :mvn :mvn/version "1.12.129"}])))
+(println (lcu/expressions-info->string (lcmvn/gav->expressions-info "com.amazonaws" "aws-java-sdk-s3" "1.12.129")))
 ;=> Apache-2.0:
 ;     Concluded
 ;       Confidence: high

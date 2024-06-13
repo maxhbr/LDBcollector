@@ -32,34 +32,33 @@
     [ga {:mvn/version version :deps/manifest :mvn}]))   ;####TODO: Synthesise :paths key (for paths to JAR files)
 
 (defn dep->expressions-info
-  "Attempt to detect the SPDX license expression(s) (a map) in a Leiningen
-  style dep (a vector of the form `[groupId/artifactId \"version\"]`)."
+  "Returns an expressions-info map for `dep`, a Leiningen style dep (a vector of
+  the form `[groupId/artifactId \"version\"]`), or `nil` if or no expressions
+  were found."
   [dep]
   (when-let [toolsdep-dep (lein-dep->toolsdeps-dep dep)]
     (lciei/prepend-source (pr-str dep) (lcd/dep->expressions-info toolsdep-dep))))
 
 (defn dep->expressions
-  "Attempt to detect the SPDX license expression(s) (a set) in a Leiningen
-  style dep (a vector of the form `[groupId/artifactId \"version\"]`)."
+  "Returns a set of SPDX expressions (`String`s) for `dep`. See
+  [[dep->expressions-info]] for details."
   [dep]
   (some-> (dep->expressions-info dep)
           keys
           set))
 
 (defn deps->expressions-info
-  "Attempt to detect all of the SPDX license expression(s) in a Leiningen style
-  dependency vector. The result is a map, where each entry in the map has a key
-  that is the Leiningen dep, and the value is the lice-comb expressions-info map
-  for that dep."
+  "Returns a map of expressions-info maps for each Leiningen style dep in
+  `deps`.  Each key in the map is a value from `deps`, and the associated value
+  is the expressions-info map for that dep (which will be `nil` if no
+  expressions were found)."
   [deps]
   (when deps
     (into {} (e/pmap* #(vec [% (dep->expressions-info %)]) deps))))
 
 (defn deps->expressions
-  "Attempt to detect all of the SPDX license expression(s) in a Leiningen style
-  dependency vector. The result is a map, where each entry in the map has a key
-  that is the Leiningen dep, and the value is the set of SPDX license
-  expression(s) for that dep."
+  "Returns a map of sets of SPDX expressions (`String`s) for each Leiningen
+  style dep in `deps`. See [[deps->expressions-info]] for details."
   [deps]
   (when deps
     (into {} (e/pmap* #(vec [% (dep->expressions %)]) deps))))
@@ -68,7 +67,9 @@
   "Initialises this namespace upon first call (and does nothing on subsequent
   calls), returning nil. Consumers of this namespace are not required to call
   this fn, as initialisation will occur implicitly anyway; it is provided to
-  allow explicit control of the cost of initialisation to callers who need it."
+  allow explicit control of the cost of initialisation to callers who need it.
+
+  Note: this method may have a substantial performance cost."  
   []
   (lcd/init!)
   nil)

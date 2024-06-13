@@ -71,9 +71,8 @@
                                            (:paths info))))))))
 
 (defmulti dep->expressions-info
-  "Returns an expressions-info map for the given tools.dep dep (a MapEntry or
-  two-element vector of `['group-id/artifact-id dep-info]`), or nil if no
-  expressions were found."
+  "Returns an expressions-info map for `dep` (a `MapEntry` or two-element vector
+  of `['group-id/artifact-id dep-info]`), or `nil` if no expressions were found."
   {:arglists '([[ga info :as dep]])}
   (fn [[_ info]] (:deps/manifest info)))
 
@@ -106,9 +105,8 @@
                   {:dep dep})))
 
 (defn dep->expressions
-  "Returns a set of SPDX expressions (Strings) for the given tools.dep dep (a
-  MapEntry or two-element vector of `['group-id/artifact-id dep-info-map]`), or
-  nil if no expressions were found."
+  "Returns a set of SPDX expressions (`String`s) for `dep`. See
+  [[dep->expressions-info]] for details."
   [dep]
   (some-> (dep->expressions-info dep)
           keys
@@ -129,12 +127,12 @@
                    deps))))
 
 (defn dep->pom-uri
-  "Returns a java.net.URI that points to the pom for the given tools.dep dep (a
-  MapEntry or two-element vector of `['group-id/artifact-id dep-info]`), or nil if
-  the dep is not a Maven dep, or a POM could not be found.  The returned URI is
-  guaranteed to be resolvable - either to a file that exists in the local Maven
-  cache, or to an HTTP-accessible resource on a remote Maven repository (i.e.
-  Maven Central or Clojars) that resolves."
+  "Returns a `URI` that points to the pom for `dep` (a `MapEntry` or two-element
+  vector of `['group-id/artifact-id dep-info]`), or `nil` if `dep` is not a
+  Maven dep, or a POM could not be found for it.  When non-`nil`, the returned
+  URI is guaranteed to be resolvable - either to a file that exists in the local
+  Maven cache, or to an HTTP-accessible resource on a remote Maven artifact
+  repository (e.g. Maven Central or Clojars)."
   [dep]
   (when (and dep
              (= :mvn (:deps/manifest (second dep))))
@@ -144,10 +142,9 @@
       (lcmvn/gav->pom-uri group-id artifact-id version))))
 
 (defmulti dep->locations
-  "Returns a sequence of Strings representing locations that may be searched
-  for license information for the given tools.dep dep (a MapEntry or two-element
-  vector of `['group-id/artifact-id dep-info]`),or nil if no locations were
-  found."
+  "Returns a sequence of `String`s representing locations that may be searched
+  for license information for `dep` (a `MapEntry` or two-element vector of
+  `['group-id/artifact-id dep-info]`), or `nil` if no locations were found."
   {:arglists '([[ga info :as dep]])}
   (fn [[_ info]] (:deps/manifest info)))
 
@@ -172,9 +169,9 @@
                   {:dep dep})))
 
 (defmulti dep->version
-  "Returns the version (as a String) for the given tools.dep dep (a MapEntry or
-  two-element vector of `['group-id/artifact-id dep-info]`),or nil if no version
-  was found."
+  "Returns the Maven version (as a `String`) for `dep` (a `MapEntry` or
+  two-element vector of `['group-id/artifact-id dep-info]`), or `nil` if no
+  version was found."
   {:arglists '([[ga info :as dep]])}
   (fn [[_ info]] (:deps/manifest info)))
 
@@ -198,9 +195,11 @@
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
-  calls), returning nil. Consumers of this namespace are not required to call
+  calls), returning `nil`. Consumers of this namespace are not required to call
   this fn, as initialisation will occur implicitly anyway; it is provided to
-  allow explicit control of the cost of initialisation to callers who need it."
+  allow explicit control of the cost of initialisation to callers who need it.
+
+  Note: this method may have a substantial performance cost."
   []
   (lcmvn/init!)
   (lcf/init!)

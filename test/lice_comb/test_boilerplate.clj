@@ -25,6 +25,8 @@
          "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " " (System/getProperty "java.vm.version") ")")
          "/ SPDX License List" (slic/version))
 
+(def test-data-path "./test/lice_comb/data")
+
 ; Here we hack up a "global once" function
 (def ^:private global-setup (delay
                               ; Enable spec validation
