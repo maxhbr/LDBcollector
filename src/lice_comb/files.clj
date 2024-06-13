@@ -30,9 +30,6 @@
 
 (def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "license.html" "copying" "unlicense"})
 
-; Maximum allowed concurrency for file operations - the value of 8192 is based on macOS's pitiful ulimit of 10240 open file handles per process (Linux and especially Windows have far higher ulimits)
-(def ^:private max-file-concurrency 8192)
-
 ; This is public because it's used in the tests
 (defn probable-license-file?
   "Returns `true` if the given file-like thing (`String` containing a filename,
@@ -160,21 +157,19 @@
   ([dir] (dir->expressions-info dir nil))
   ([dir {:keys [include-hidden-dirs? include-zips?] :or {include-hidden-dirs? false include-zips? false} :as opts}]
    (when (lciu/readable-dir? dir)
-     (let [file-expressions (into {} (filter identity (e/bounded-pmap* max-file-concurrency 
-                                                                       #(try
-                                                                          (file->expressions-info %)
-                                                                          (catch Exception e
-                                                                            (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
-                                                                            nil))
-                                                                       (probable-license-files dir opts))))]
+     (let [file-expressions (into {} (filter identity (e/pmap* #(try
+                                                                  (file->expressions-info %)
+                                                                  (catch Exception e
+                                                                    (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
+                                                                    nil))
+                                                               (probable-license-files dir opts))))]
        (if include-zips?
-         (let [zip-expressions (into {} (filter identity (e/bounded-pmap* max-file-concurrency 
-                                                                          #(try
-                                                                             (zip->expressions-info %)
-                                                                             (catch Exception e
-                                                                               (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
-                                                                               nil))
-                                                                          (zip-compressed-files dir opts))))]
+         (let [zip-expressions (into {} (filter identity (e/pmap* #(try
+                                                                     (zip->expressions-info %)
+                                                                     (catch Exception e
+                                                                       (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
+                                                                       nil))
+                                                                  (zip-compressed-files dir opts))))]
            (lciei/prepend-source (lciu/filepath dir) (merge file-expressions zip-expressions)))
          (lciei/prepend-source (lciu/filepath dir) file-expressions))))))
 
