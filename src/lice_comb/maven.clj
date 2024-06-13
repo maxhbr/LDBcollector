@@ -281,7 +281,7 @@
      (let [exp  (key (first new-expression))
            info (val (first new-expression))]
        (if (> (count licenses) 1)
-         {exp (concat (list {:type :declared :strategy :maven-pom-multi-license-rule}) info)}
+         {exp (concat (list {:type :concluded :confidence (lciei/calculate-confidence-for-expression info) :strategy :maven-pom-multi-license-rule}) info)}
          {exp info})))))
 
 (defmulti pom->expressions-info
