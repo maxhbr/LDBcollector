@@ -24,6 +24,8 @@ Each expression-info map in the sequence of values has this structure:
     Whether this identifier was unambiguously declared within the input or was instead concluded by lice-comb (see [the SPDX FAQ](https://wiki.spdx.org/view/SPDX_FAQ) for more detail on the definition of these two terms).
   * `:confidence` (one of: `:high`, `:medium`, `:low`, only provided when `:type` = `:concluded`):
     Indicates the approximate confidence lice-comb has in its conclusions for this particular SPDX identifier.
+  * `:confidence-explanations` (a set of keywords, optional):
+    Describes why the associated `:confidence` was not `:high`.
   * `:strategy` (a keyword, mandatory):
     The strategy lice-comb used to determine this particular SPDX identifier.  See [[lice-comb.utils/strategy->string]] for an up-to-date list of all possible values.
   * `:source` (a sequence of `String`s):
