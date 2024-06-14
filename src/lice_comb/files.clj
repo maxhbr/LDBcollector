@@ -100,19 +100,20 @@
     (let [zip-file (io/file zip)]
       (java.util.zip.ZipFile. zip-file)  ; This no-op forces validation of the zip file - ZipInputStream does not reliably perform validation
       (with-open [zip-is (java.util.zip.ZipInputStream. (io/input-stream zip-file))]
-        (loop [result {}
-               entry  (.getNextEntry zip-is)]
-          (if entry
-            (if (probable-license-file? entry)
-              (if-let [expressions (try
-                                     (file->expressions-info zip-is (lciu/filename entry))
-                                     (catch Exception e
-                                       (log/warn (str "Unexpected exception while processing " (lciu/filename zip) ":" (lciu/filename entry) " - ignoring") e)
-                                       nil))]
-                (recur (merge result expressions) (.getNextEntry zip-is))
+        (doall
+          (loop [result {}
+                 entry  (.getNextEntry zip-is)]
+            (if entry
+              (if (probable-license-file? entry)
+                (if-let [expressions (try
+                                       (file->expressions-info zip-is (lciu/filename entry))
+                                       (catch Exception e
+                                         (log/warn (str "Unexpected exception while processing " (lciu/filename zip) ":" (lciu/filename entry) " - ignoring") e)
+                                         nil))]
+                  (recur (merge result expressions) (.getNextEntry zip-is))
+                  (recur result (.getNextEntry zip-is)))
                 (recur result (.getNextEntry zip-is)))
-              (recur result (.getNextEntry zip-is)))
-            (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result))))))))
+              (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result)))))))))
 
 (defn zip->expressions
   "Returns a set of SPDX expressions (`String`s) for `zip`. See

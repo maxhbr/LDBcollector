@@ -153,7 +153,7 @@
 
 (defmulti readable-file?
   "Is f (a String, File, InputStream, or Reader) a readable file?"
-  type)
+  class)
 
 (defmethod readable-file? nil
   [_])
@@ -189,7 +189,7 @@
 (defmulti filepath
   "Returns the full path and name of the given file-like thing (String, File,
   ZipEntry, URI, URL)."
-  type)
+  class)
 
 (defmethod filepath nil
   [_])
@@ -206,10 +206,6 @@
         (filepath (io/as-url s))
         (filepath (io/file   s))))))
 
-(defmethod filepath java.util.zip.ZipEntry
-  [^java.util.zip.ZipEntry ze]
-  (.getName ze))
-
 (defmethod filepath java.net.URI
   [^java.net.URI uri]
   (str uri))
@@ -218,6 +214,10 @@
   [^java.net.URL url]
   (str url))
 
+(defmethod filepath java.util.zip.ZipEntry
+  [^java.util.zip.ZipEntry ze]
+  (.getName ze))
+
 (defmethod filepath java.io.InputStream
   [_]
   (throw (ex-info "Cannot determine filepath of an InputStream - did you forget to provide it separately?" {})))
@@ -225,7 +225,7 @@
 (defmulti filename
   "Returns just the name component of the given file-like thing (String, File,
   ZipEntry, URI, URL), excluding any parents."
-  type)
+  class)
 
 (defmethod filename nil
   [_])
@@ -242,10 +242,6 @@
         (filename (io/as-url s))
         (filename (io/file s))))))
 
-(defmethod filename java.util.zip.ZipEntry
-  [^java.util.zip.ZipEntry ze]
-  (filename (.getName ze)))
-
 (defmethod filename java.net.URI
   [^java.net.URI uri]
   (filename (.getPath uri)))
@@ -253,6 +249,10 @@
 (defmethod filename java.net.URL
   [^java.net.URL url]
   (filename (.getPath url)))
+
+(defmethod filename java.util.zip.ZipEntry
+  [^java.util.zip.ZipEntry ze]
+  (filename (.getName ze)))
 
 (defmethod filename java.io.InputStream
   [_]

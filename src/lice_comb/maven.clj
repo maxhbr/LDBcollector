@@ -207,10 +207,11 @@
   [group-id artifact-id]
   (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
     (with-open [metadata-is (io/input-stream metadata-uri)]
-      (let [metadata-xml (xml/parse metadata-is)]
-        (if-let [latest-version (xml-find-first-string metadata-xml [:metadata :versioning :latest])]
-          latest-version
-          (last (xi/find-all metadata-xml [:metadata :versioning :versions :version])))))))
+      (doall
+        (let [metadata-xml (xml/parse metadata-is)]
+          (if-let [latest-version (xml-find-first-string metadata-xml [:metadata :versioning :latest])]
+            latest-version
+            (last (xi/find-all metadata-xml [:metadata :versioning :versions :version]))))))))
 
 (defn ga-release-version
   "Determines the release version (if any) of the given GA as a `String`, or
@@ -218,8 +219,9 @@
   [group-id artifact-id]
   (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
     (with-open [metadata-is (io/input-stream metadata-uri)]
-      (let [metadata-xml (xml/parse metadata-is)]
-        (xml-find-first-string metadata-xml [:metadata :versioning :release])))))
+      (doall
+        (let [metadata-xml (xml/parse metadata-is)]
+          (xml-find-first-string metadata-xml [:metadata :versioning :release]))))))
 
 (defn- snapshot-version?
   "Is version a SNAPSHOT?"
@@ -234,10 +236,11 @@
   (if (snapshot-version? version)
     (when-let [metadata-uri (gav->metadata-uri group-id artifact-id version)]
       (with-open [metadata-is (io/input-stream metadata-uri)]
-        (let [metadata-xml (xml/parse metadata-is)
-              timestamp    (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :timestamp])
-              build-number (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :buildNumber])]
-          (str (s/replace version #"(?i)SNAPSHOT" (str timestamp "-" build-number))))))
+        (doall
+          (let [metadata-xml (xml/parse metadata-is)
+                timestamp    (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :timestamp])
+                build-number (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :buildNumber])]
+            (str (s/replace version #"(?i)SNAPSHOT" (str timestamp "-" build-number)))))))
     version))
 
 (defn- release-version?
@@ -299,7 +302,7 @@
     (then search that page for 'licenses/license*')
   * throws on XML parsing error"
   {:arglists '([pom] [pom filepath])}
-  (fn [& args] (type (first args))))
+  (fn [& args] (class (first args))))
 
 ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - so we look for both namespaced and non-namespaced versions of all tags
 (defmethod pom->expressions-info java.io.InputStream
@@ -343,9 +346,10 @@
   ([pom filepath]
    (when pom
      (with-open [pom-is (io/input-stream pom)]
-       (if-let [expressions (pom->expressions-info pom-is filepath)]
-         expressions
-         (log/info (str "'" filepath "'") "contains no license information"))))))
+       (doall
+         (if-let [expressions (doall (pom->expressions-info pom-is filepath))]
+           expressions
+           (log/info (str "'" filepath "'") "contains no license information")))))))
 
 (defn pom->expressions
   "Returns a set of SPDX expressions (`String`s) for `pom`. See
@@ -374,7 +378,7 @@
    (when-let [version (or version (ga-latest-version group-id artifact-id))]
      (when-let [pom-uri (gav->pom-uri group-id artifact-id version)]
        (with-open [pom-is (io/input-stream pom-uri)]
-         (lciei/prepend-source (str group-id "/" artifact-id "@" version) (pom->expressions-info pom-is (str pom-uri))))))))
+         (doall (lciei/prepend-source (str group-id "/" artifact-id "@" version) (pom->expressions-info pom-is (str pom-uri)))))))))
 
 (defn gav->expressions
   "Returns a set of SPDX expressions (`String`s) for the given GA and
