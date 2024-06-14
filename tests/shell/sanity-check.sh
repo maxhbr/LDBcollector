@@ -272,12 +272,12 @@ check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e
 check_presence NCSA " -i -e ncsa -e illinois " ""
 check_presence NTP " -i -e ntp -e network " ""
 
+check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
 check_presence ODC-By-1.0 " -i -e 1.0 -e odc" ""
 check_presence OFL-1.0 " -e 1.0" " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
 check_presence OpenSSL " -i -e openssl " ""
-
 check_presence Plexus " -i -e plexus -e classworlds " ""
 check_presence PostgreSQL " -i -e postgresql " ""
 check_presence Python-2.0.1 " -i -e Python " ""
