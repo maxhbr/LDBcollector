@@ -121,6 +121,7 @@
     (is (thrown? java.util.zip.ZipException (zip->expressions (str test-data-path "/bad.zip")))))
   (testing "Valid zip file"
     (is (valid= #{"Apache-2.0"}        (zip->expressions (str test-data-path "/good.zip"))))
+    (is (valid= #{"EPL-1.0"}           (zip->expressions (str test-data-path "/zip-with-html-license.zip"))))
     (is (valid= #{"AGPL-3.0-or-later"} (zip->expressions (str test-data-path "/pom-in-a-zip.zip")))))
   (testing "Valid zip file containing a mix of valid and invalid probablelicense files"
     (is (valid= #{"Apache-2.0"}        (zip->expressions (str test-data-path "/malformed-pom-and-bsd-license-text.zip"))))))
@@ -141,5 +142,5 @@
                 (dir->expressions "."))))
   (testing "Valid directory - include ZIP compressed files"
     (is (valid= ;#{"Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0) OR MPL-2.0 OR CC-BY-4.0 OR AGPL-3.0-or-later"}  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/233
-                #{"BSD-3-Clause" "Apache-2.0" "AGPL-3.0-or-later" "Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0)" "MPL-2.0"}
+                #{"BSD-3-Clause" "Apache-2.0" "AGPL-3.0-or-later" "Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0)" "EPL-1.0" "MPL-2.0"}
                 (dir->expressions  "." {:include-zips? true})))))
