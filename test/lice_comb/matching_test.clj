@@ -108,13 +108,13 @@
   (testing "SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0 WITH Classpath-exception-2.0")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache-2.0 OR GPL-3.0")))
-    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
+    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (Apache-2.0 AND BSD-3-Clause)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
     (is (valid= #{"LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb"} (name->expressions "LicenseRef-non-lice-comb WITH AdditionRef-non-lice-comb")))                                   ; Since SPDX specification v3.0
     (is (valid= #{"DocumentRef-acme:LicenseRef-test WITH DocumentRef-acme:AdditionRef-test"} (name->expressions "DocumentRef-acme:LicenseRef-test with DocumentRef-acme:AdditionRef-test"))))  ; Since SPDX specification v3.0
   (testing "Simple expressions that are not SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 with the GNU Classpath Exception")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache License version 2.0 or GNU General Public License version 3")))
-    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
+    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (Apache-2.0 AND BSD-3-Clause)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
     (is (valid= #{"Apache-2.0 AND MIT"}                 (name->expressions "Apache & MIT licence")))
     (is (valid= #{"CDDL-1.1"}                           (name->expressions "Common Development and Distribution Licence")))
     (is (valid= #{"BSD-2-Clause-FreeBSD"}               (name->expressions "BSD 2 clause freebsd")))
@@ -140,7 +140,7 @@
     (is (valid= #{"MIT" "BSD-4-Clause"}                 (name->expressions "MIT / BSD")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only"}          (name->expressions "Apache License version 2.0 / GNU General Public License version 3")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
-    (is (valid= #{"EPL-2.0 OR (GPL-2.0-or-later WITH Classpath-exception-2.0 AND MIT) OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception aNd MIT Licence or three clause bsd and Apache Licence"))))
+    (is (valid= #{"EPL-2.0 OR (Apache-2.0 AND BSD-3-Clause) OR (GPL-2.0-or-later WITH Classpath-exception-2.0 AND MIT)"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception aNd MIT Licence or three clause bsd and Apache Licence"))))
   (testing "Names seen in handpicked POMs on Maven Central"
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License (AGPL) version 3.0")))
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3.0 only")))
@@ -219,7 +219,7 @@
     (is (valid= #{"UPL-1.0"}                            (name->expressions "Universal Permissive License, Version 1.0")))
     (is (valid= #{"CC0-1.0"}                            (name->expressions "Public Domain, per Creative Commons CC0")))
     (is (valid= #{"LicenseRef-lice-comb-UNIDENTIFIED-210UC7nlCWUwBBse5ma6Ntey1j3a0v0J3kvJVbZ38z7UIQnaj"} (name->expressions "provided without support or warranty")))   ; A nasty corner case because of the "or"
-    (is (valid= #{(str "CC-BY-4.0 WITH " (lcis/name->unidentified-addition-ref "exception for binary distribution") " OR Apache-2.0")} (name->expressions "CC Attribution 4.0 International with exception for binary distribution or apache 2.0")))
+    (is (valid= #{(str "Apache-2.0 OR CC-BY-4.0 WITH " (lcis/name->unidentified-addition-ref "exception for binary distribution"))} (name->expressions "CC Attribution 4.0 International with exception for binary distribution or apache 2.0")))
     (is (valid= #{"CDDL-1.1" "GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "CDDL/GPLv2+CE"))))
   (testing "All names seen in POMs on Clojars as of 2023-07-13"
     (is (valid= #{"AFL-3.0"}                            (name->expressions "Academic Free License 3.0")))
@@ -427,7 +427,7 @@
     (is (valid= #{"EPL-1.0"}                            (name->expressions "Eclipse Public Licese - v 1.0")))
     (is (valid= #{"EPL-1.0"}                            (name->expressions "https://github.com/cmiles74/uio/blob/master/LICENSE")))
     (is (valid= #{"EPL-2.0 AND LGPL-3.0-only"}          (name->expressions "Dual: EPL and LGPL")))  ; Listed license missing version - we assume the latest
-    (is (valid= #{"EPL-2.0 OR Apache-2.0"}              (name->expressions "Double licensed under the Eclipse Public License (the same as Clojure) or the Apache Public License 2.0.")))  ; Listed license missing version - we assume the latest
+    (is (valid= #{"Apache-2.0 OR EPL-2.0"}              (name->expressions "Double licensed under the Eclipse Public License (the same as Clojure) or the Apache Public License 2.0.")))  ; Listed license missing version - we assume the latest
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "<script lang=\"javascript\">alert('hi');</script>EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-2.0-or-later WITH Classpath Exception")))  ; Listed exception missing version - we assume the latest
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
@@ -680,7 +680,7 @@
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "proprietary")))
     (is (valid= #{(lcis/public-domain)}                 (name->expressions "Public Domain")))
     (is (valid= #{(str "GPL-2.0-or-later OR " (lcis/name->unidentified-license-ref "Swiss Ephemeris"))} (name->expressions "GPL v2+ or Swiss Ephemeris")))
-    (is (valid= #{(str "MIT AND " (lcis/proprietary-commercial))} (name->expressions "Dual MIT & Proprietary")))
+    (is (valid= #{(str (lcis/proprietary-commercial) " AND MIT")} (name->expressions "Dual MIT & Proprietary")))
     (is (unidentified-only?                             (name->expressions "${license.id}")))
     (is (unidentified-only?                             (name->expressions "A Clojure library for Google Cloud Pub/Sub.")))
     (is (unidentified-only?                             (name->expressions "APGL")))  ; Probable typo
