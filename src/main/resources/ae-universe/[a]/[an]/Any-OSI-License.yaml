@@ -2,12 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "KDE Accepted LGPL"
-category: "KDE Accepted LGPL"
-shortName: "KDE-Accepted-LGPL"
+canonicalName: "Any OSI License"
+category: "Any OSI"
+spdxIdentifier: "any-OSI"
 
 alternativeNames:
-  - "KDE Accepted LGPL"
+  - "any-OSI"
+  - "Any OSI License"
 
-otherIds: 
-  - "scancode:kde-accepted-lgpl"

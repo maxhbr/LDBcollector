@@ -2,9 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Google Terms of Service (undefined)"
-category: "Google Terms of Service"
-shortName: "Google-TOS-?"
+canonicalName: "Peer Production License"
+category: "PPL"
+spdxIdentifier: "PPL"
 
-unspecific: true
+alternativeNames:
+  - "Peer Production License"
 

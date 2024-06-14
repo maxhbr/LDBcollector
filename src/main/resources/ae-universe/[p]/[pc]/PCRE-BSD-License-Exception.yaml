@@ -5,6 +5,7 @@
 canonicalName: "PCRE BSD License Exception"
 category: "PCRE BSD Exception"
 shortName: "PCRE-BSD-Exception"
+spdxIdentifier: "PCRE2-exception"
 
 type: "exception"
 

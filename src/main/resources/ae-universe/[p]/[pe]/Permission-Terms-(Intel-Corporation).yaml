@@ -4,10 +4,12 @@
 
 canonicalName: "Permission Terms (Intel Corporation)"
 category: "Permission"
-shortName: "PT-Intel-Corporation"
+spdxIdentifier: "HPND-Intel"
 
 alternativeNames:
   - "Permission Terms (Intel Corporation)"
+  - "HPND-Intel"
+  - "Historical Permission Notice and Disclaimer - Intel variant"
 
 otherIds: 
   - "scancode:intel-osl-1993"

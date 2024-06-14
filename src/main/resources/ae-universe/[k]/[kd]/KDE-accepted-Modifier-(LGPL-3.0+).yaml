@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "KDE accepted Modifier (LGPL-3.0+)"
+category: "KDE accepted Modifier"
+shortName: "KDE-accepted-Modifier-LGPL-3.0+"
+
+canonicalNameHistory:
+  - "KDE Accepted LGPL"
+
+type: "modifier"
+
+alternativeNames:
+  - "KDE Accepted LGPL"
+
+otherIds: 
+  - "scancode:kde-accepted-lgpl"

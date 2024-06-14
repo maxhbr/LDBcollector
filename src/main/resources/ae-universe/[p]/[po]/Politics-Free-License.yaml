@@ -2,15 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "IJG License"
-category: "IJG"
-spdxIdentifier: "IJG"
+canonicalName: "Politics Free License"
+category: "Politics Free License"
+shortName: "politics-free-license"
 
-openCoDEStatus: "approved"
+osiStatus: "unclear"
 
 alternativeNames:
-  - "IJG License"
-  - "IJG LICENSE"
+  - "Politics-Free License"
 
-otherIds: 
-  - "scancode:ijg"

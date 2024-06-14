@@ -5,6 +5,7 @@
 canonicalName: "Permission Terms (with export note; variant 002)"
 category: "Permission"
 shortName: "PT-with-export-note-Var-02"
+spdxIdentifier: "HPND-export-US-acknowledgement"
 
 canonicalNameHistory:
   - "Permission Terms (with export note) Var-02"

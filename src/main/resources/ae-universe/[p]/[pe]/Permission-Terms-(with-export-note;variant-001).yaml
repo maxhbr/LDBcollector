@@ -4,10 +4,15 @@
 
 canonicalName: "Permission Terms (with export note; variant 001)"
 category: "Permission"
-shortName: "PT-with-export-note-Var-01"
+spdxIdentifier: "HPND-export2-US"
 
 canonicalNameHistory:
   - "Permission Terms (with export note) Var-01"
+  - "HPND with US Government export control and 2 disclaimers"
+
+alternativeNames:
+  - "HPND-export2-US"
+  - "HPND with US Government export control and 2 disclaimers"
 
 otherIds: 
   - "scancode:mit-no-advert-export-control"

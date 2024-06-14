@@ -2,16 +2,18 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "NIST Public Domain Notice"
-category: "NIST PD"
-spdxIdentifier: "NIST-PD"
+canonicalName: "Independent JPEG Group License"
+category: "IJG"
+spdxIdentifier: "IJG"
+
+canonicalNameHistory:
+  - "IJG License"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
-  - "nist-pd"
-  - "NIST-PD"
-  - "NIST Public Domain Notice"
+  - "IJG License"
+  - "IJG LICENSE"
 
 otherIds: 
-  - "scancode:nist-pd"
+  - "scancode:ijg"

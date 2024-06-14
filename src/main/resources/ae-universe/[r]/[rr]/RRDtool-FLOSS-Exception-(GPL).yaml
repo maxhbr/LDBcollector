@@ -5,8 +5,13 @@
 canonicalName: "RRDtool FLOSS Exception (GPL)"
 category: "RRDtool FLOSS Exception"
 shortName: "RRDtool-FLOSS-Exception-GPL"
+spdxIdentifier: "RRDtool-FLOSS-exception-2.0"
 
 type: "exception"
+
+alternativeNames:
+  - "RRDtool-FLOSS-exception-2.0"
+  - "RRDtool FLOSS exception 2.0"
 
 otherIds: 
   - "scancode:rrdtool-floss-exception-2.0"

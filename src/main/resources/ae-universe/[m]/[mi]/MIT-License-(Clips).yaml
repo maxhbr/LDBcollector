@@ -2,17 +2,17 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Xfig License"
-category: "Xfig"
-spdxIdentifier: "Xfig"
+canonicalName: "MIT License (Clips)"
+category: "MIT"
+shortName: "MIT-Clips"
+spdxIdentifier: "Clips"
 
 canonicalNameHistory:
-  - "MIT Xfig Variant"
-  - "Permission Terms (variant 124)"
+  - "Clips License"
 
 alternativeNames:
-  - "Xfig License"
-  - "License : XFIG"
+  - "Clips License"
+  - "CLIPS License"
 
 otherIds: 
-  - "scancode:mit-xfig"
+  - "scancode:clips-2017"

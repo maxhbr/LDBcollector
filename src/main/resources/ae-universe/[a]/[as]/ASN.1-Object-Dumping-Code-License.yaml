@@ -4,11 +4,16 @@
 
 canonicalName: "ASN.1 Object Dumping Code License"
 category: "ASN.1 Object Dumping Code License"
-shortName: "ASN1"
+shortName: "ASN1-object-dumping-code"
+spdxIdentifier: "Gutmann"
+
+canonicalNameHistory:
+  - "Gutmann License"
 
 alternativeNames:
   - "ASN.1 Object Dumping Code License"
   - "ASN.1 object dumping code"
+  - "Gutmann License"
 
 otherIds: 
   - "scancode:asn1"

@@ -4,10 +4,11 @@
 
 canonicalName: "NCBI Public Domain Notice"
 category: "NCBI Public Domain Notice"
-shortName: "ncbi"
+spdxIdentifier: "NCBI-PD"
 
 alternativeNames:
   - "NCBI Public Domain Notice"
+  - "NCBI-PD"
 
 otherIds: 
   - "scancode:ncbi"

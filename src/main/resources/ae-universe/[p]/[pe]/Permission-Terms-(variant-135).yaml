@@ -2,9 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "KDE Accepted GPL"
-category: "KDE Accepted GPL"
-shortName: "KDE-Accepted-GPL"
+canonicalName: "Permission Terms (variant 135)"
+category: "Permission"
+shortName: "PT-Var135"
 
-otherIds: 
-  - "scancode:kde-accepted-gpl"
