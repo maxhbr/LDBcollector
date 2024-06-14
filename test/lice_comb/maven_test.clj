@@ -44,7 +44,7 @@
   (testing "Synthetic pom files"
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/simple.pom"))))
     (is (valid= #{"BSD-3-Clause"}              (pom->expressions (str test-data-path "/no-xml-ns.pom"))))
-    (is (valid= #{"Apache-2.0 OR MIT OR GPL-2.0-only WITH Classpath-exception-2.0 OR BSD-3-Clause OR (Unlicense AND CC0-1.0)"} (pom->expressions (str test-data-path "/complex.pom")))))
+    (is (valid= #{"Apache-2.0 OR BSD-3-Clause OR GPL-2.0-only WITH Classpath-exception-2.0 OR MIT OR (CC0-1.0 AND Unlicense)"} (pom->expressions (str test-data-path "/complex.pom")))))
   (testing "Real pom files - local"
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/asf-cat-1.0.12.pom")))))
   (testing "Real pom files - remote"

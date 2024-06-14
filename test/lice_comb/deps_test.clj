@@ -135,7 +135,7 @@
     (is (valid= #{"EPL-1.0 OR LGPL-3.0-only"}                              (dep->expressions ['ch.qos.logback/logback-classic            {:deps/manifest :mvn :mvn/version "1.2.7"}])))
     (is (valid= #{"EPL-1.0 OR LGPL-3.0-only"}                              (dep->expressions ['ch.qos.logback/logback-core               {:deps/manifest :mvn :mvn/version "1.2.7"}])))
     (is (valid= #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.mail/mail                           {:deps/manifest :mvn :mvn/version "1.4.7"}])))
-    (is (valid= #{"LGPL-2.1-or-later OR Apache-2.0"}                       (dep->expressions ['net.java.dev.jna/jna-platform             {:deps/manifest :mvn :mvn/version "5.10.0"}])))
+    (is (valid= #{"Apache-2.0 OR LGPL-2.1-or-later"}                       (dep->expressions ['net.java.dev.jna/jna-platform             {:deps/manifest :mvn :mvn/version "5.10.0"}])))
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0 OR MIT"}      (dep->expressions ['org.checkerframework/checker-compat-qual  {:deps/manifest :mvn :mvn/version "2.5.5"}])))
     (is (valid= #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.xml.bind/jaxb-api                   {:deps/manifest :mvn :mvn/version "2.4.0-b180830.0359"}]))))
   (testing "Valid deps - Maven classifiers"
