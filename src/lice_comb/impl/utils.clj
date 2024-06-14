@@ -121,6 +121,25 @@
   (when html
     (s/trim (.text (org.jsoup.Jsoup/parse html)))))
 
+(defmulti html-file->text
+  "Converts `f`, a file-like thing (input-stream, or anything that can be
+  slurped) to plain text (a String)."
+  class)
+
+(defmethod html-file->text nil
+  [_])
+
+(defmethod html-file->text java.io.InputStream
+  [is]
+  (let [sw (java.io.StringWriter.)]
+    (io/copy is sw)
+    (html->text (str sw))))
+
+(defmethod html-file->text :default
+  [f]
+  (when f
+    (html->text (slurp f))))
+
 (defn valid-http-uri?
   "Returns true if given string is a valid HTTP or HTTPS URI."
   [^String s]

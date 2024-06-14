@@ -76,7 +76,7 @@
            result (cond (or (= lfname "pom.xml")
                             (s/ends-with? lfname ".pom")) (doall (lcmvn/pom->expressions-info f fname))
                         (or (s/ends-with? lfname ".html")
-                            (s/ends-with? lfname ".htm")) (doall (lcm/text->expressions-info (lciu/html->text (slurp f))))
+                            (s/ends-with? lfname ".htm")) (doall (lcm/text->expressions-info (lciu/html-file->text f)))
                         (instance? java.io.InputStream f) (doall (lcm/text->expressions-info f))
                         :else                             (with-open [is (io/input-stream f)] (doall (lcm/text->expressions-info is))))]  ; Default is to assume it's a plain text file containing license text(s)
        (lciei/prepend-source filepath result)))))
@@ -98,22 +98,24 @@
   [zip]
   (when (lciu/readable-file? zip)
     (let [zip-file (io/file zip)]
-      (java.util.zip.ZipFile. zip-file)  ; This no-op forces validation of the zip file - ZipInputStream does not reliably perform validation
+      (java.util.zip.ZipFile. zip-file)  ; This no-op forces validation of the zip file - ZipInputStream constructor does not reliably perform validation
       (with-open [zip-is (java.util.zip.ZipInputStream. (io/input-stream zip-file))]
         (doall
           (loop [result {}
                  entry  (.getNextEntry zip-is)]
-            (if entry
+            (if-not entry
+              ; Base case
+              (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result))
+              ; Recursive case
               (if (probable-license-file? entry)
                 (if-let [expressions (try
-                                       (file->expressions-info zip-is (lciu/filename entry))
+                                       (file->expressions-info zip-is (lciu/filepath entry))
                                        (catch Exception e
                                          (log/warn (str "Unexpected exception while processing " (lciu/filename zip) ":" (lciu/filename entry) " - ignoring") e)
                                          nil))]
                   (recur (merge result expressions) (.getNextEntry zip-is))
                   (recur result (.getNextEntry zip-is)))
-                (recur result (.getNextEntry zip-is)))
-              (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result)))))))))
+                (recur result (.getNextEntry zip-is))))))))))
 
 (defn zip->expressions
   "Returns a set of SPDX expressions (`String`s) for `zip`. See
