@@ -169,6 +169,7 @@ check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BS
 check_presence BSD-2-Clause-Views " -i -e view"  " -e 0 -e 1 -e 3 -e 4"
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
 check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
+check_presence BSD-3-Clause-No-Nuclear-Warranty " -i -e nuclear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
 check_presence BSD-4-Clause-UC " -i -e university -e UC" " -e 1 -e 2 -e 3"
 check_presence BSD-Source-Code " -i -e source -e code " " -e 1 -e 2 -e 3"
