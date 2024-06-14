@@ -125,7 +125,7 @@
   "Returns an expressions-info map for the given license text, or nil if no
   matches are found."
   {:arglists '([text])}
-  type)
+  class)
 
 (defmethod text->expressions-info java.lang.String
   [s]
@@ -157,7 +157,7 @@
   [src]
   (when src
     (with-open [r (io/reader src)]
-      (text->expressions-info r))))
+      (doall (text->expressions-info r)))))
 
 (defn uri->expressions-info
   "Returns an expressions-info map for the given license uri, or nil if no
