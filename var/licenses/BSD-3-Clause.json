@@ -77,6 +77,8 @@
         "new-BSD",
         "BSD-new license",
         "3-clause-BSD-License",
-        "bsd-new"
+        "bsd-new",
+        "Modified-BSD-License",
+        "BSD-3-Clause-License"
     ]
 }
