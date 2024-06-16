@@ -7,7 +7,8 @@
         "Academic Free License": {
             "aliases": [
                 "License :: OSI Approved :: Academic Free License (AFL)",
-                "AFLv2"
+                "AFLv2",
+                "AFL"
             ],
             "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
