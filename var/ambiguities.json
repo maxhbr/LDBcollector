@@ -114,7 +114,8 @@
                 "GPL",
                 "GNU GPL",
                 "GPL+",
-                "GNU General Public License."
+                "GNU General Public License.",
+                "GPL-unspecified"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
