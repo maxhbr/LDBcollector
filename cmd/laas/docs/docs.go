@@ -1075,6 +1075,39 @@ const docTemplate = `{
                 }
             }
         },
+        "/obligations/preview": {
+            "get": {
+                "description": "Get topic and type of all active obligations from the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get topic and types of all active obligations",
+                "operationId": "GetAllObligationPreviews",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationPreviewResponse"
+                        }
+                    }
+                }
+            }
+        },
         "/obligations/{topic}": {
             "get": {
                 "description": "Get an active based on given topic",
@@ -2298,6 +2331,39 @@ const docTemplate = `{
                         "risk",
                         "right"
                     ]
+                }
+            }
+        },
+        "models.ObligationPreview": {
+            "type": "object",
+            "properties": {
+                "topic": {
+                    "type": "string",
+                    "example": "Provide Copyright Notices"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "obligation",
+                        "restriction",
+                        "risk",
+                        "right"
+                    ]
+                }
+            }
+        },
+        "models.ObligationPreviewResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationPreview"
+                    }
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },

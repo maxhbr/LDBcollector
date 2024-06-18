@@ -340,6 +340,18 @@ type Obligation struct {
 	Md5            string `gorm:"unique" json:"-"`
 }
 
+// ObligationPreview is just the Type and Topic of Obligation
+type ObligationPreview struct {
+	Topic string `json:"topic" example:"Provide Copyright Notices"`
+	Type  string `json:"type" enums:"obligation,restriction,risk,right"`
+}
+
+// ObligationResponse represents the response format for obligation data.
+type ObligationPreviewResponse struct {
+	Status int                 `json:"status" example:"200"`
+	Data   []ObligationPreview `json:"data"`
+}
+
 // ObligationPOSTRequestJSONSchema represents the data format of POST request for obligation
 type ObligationPOSTRequestJSONSchema struct {
 	Topic          string   `json:"topic" binding:"required" example:"copyleft"`

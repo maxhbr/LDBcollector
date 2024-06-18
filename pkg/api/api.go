@@ -80,6 +80,7 @@ func Router() *gin.Engine {
 		obligations := unAuthorizedv1.Group("/obligations")
 		{
 			obligations.GET("", GetAllObligation)
+			obligations.GET("/preview", GetAllObligationPreviews)
 			obligations.GET(":topic", GetObligation)
 			obligations.GET(":topic/audits", GetObligationAudits)
 			obligations.GET("export", ExportObligations)
