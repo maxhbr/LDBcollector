@@ -265,6 +265,12 @@ ___
 ## Frankreich
 ___
 
+#### Chinesische Übersetzungen von Cour d’appel de Paris, 2024-02-14, Case No. 2/18071, und Cour d’appel de Paris, 2024-02-14, Case No. 2/18071
+
+Entr’ouvert v. Orange
+
+Link: https://atomgit.com/translation/Contransus/blob/master/%E5%8F%B8%E6%B3%95%E6%A1%88%E4%BE%8B%E7%BF%BB%E8%AF%91/%E6%B3%95%E8%AF%91%E4%B8%AD-Entr%20ouvert_Orange%E5%8F%8AOrange%E5%95%86%E4%B8%9AAPP%20%204%E4%BB%BD%E5%88%A4%E5%86%B3.pdf (Registrierung erforderlich)
+
 #### Cour d’appel de Paris, 2024-02-14, Case No. 2/18071
 
 Entr’ouvert v. Orange
