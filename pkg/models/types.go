@@ -258,6 +258,13 @@ type User struct {
 	Userpassword *string `json:"password,omitempty" binding:"required"`
 }
 
+// JWTUser struct is representation of user information in JWT.
+type JWTUser struct {
+	Id        int64  `json:"id"`
+	Username  string `json:"username"`
+	Userlevel string `json:"userlevel"`
+}
+
 type UserInput struct {
 	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
 	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`

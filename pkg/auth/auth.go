@@ -307,13 +307,18 @@ func encryptUserPassword(user *models.User) error {
 // generateToken generates a JWT token for the user.
 func generateToken(user models.User) (string, error) {
 	tokenLifespan, err := strconv.Atoi(os.Getenv("TOKEN_HOUR_LIFESPAN"))
-
 	if err != nil {
 		return "", err
 	}
 
+	jwtUser := models.JWTUser{
+		Id:        user.Id,
+		Username:  user.Username,
+		Userlevel: user.Userlevel,
+	}
+
 	claims := jwt.MapClaims{}
-	claims["id"] = user.Id
+	claims["user"] = jwtUser
 	claims["nbf"] = time.Now().Unix()
 	claims["exp"] = time.Now().Add(time.Hour * time.Duration(tokenLifespan)).Unix()
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
