@@ -2229,6 +2229,16 @@ const docTemplate = `{
                 "topic": {
                     "type": "string",
                     "example": "copyleft"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "obligation",
+                        "restriction",
+                        "risk",
+                        "right"
+                    ],
+                    "example": "obligation"
                 }
             }
         },

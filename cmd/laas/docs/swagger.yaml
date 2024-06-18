@@ -515,6 +515,14 @@ definitions:
       topic:
         example: copyleft
         type: string
+      type:
+        enum:
+        - obligation
+        - restriction
+        - risk
+        - right
+        example: obligation
+        type: string
     type: object
   models.ObligationPATCHRequestJSONSchema:
     properties:

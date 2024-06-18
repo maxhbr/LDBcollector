@@ -84,6 +84,7 @@ func GetObligationMapByTopic(c *gin.Context) {
 
 	resObMap = models.ObligationMapUser{
 		Topic:      topic,
+		Type:       obligation.Type,
 		Shortnames: shortnameList,
 	}
 
@@ -155,6 +156,7 @@ func GetObligationMapByLicense(c *gin.Context) {
 			return
 		}
 		resObMapList = append(resObMapList, models.ObligationMapUser{
+			Type:       obligation.Type,
 			Topic:      obligation.Topic,
 			Shortnames: []string{licenseShortName},
 		})
@@ -538,6 +540,7 @@ func createObligationMapUser(obligation models.Obligation, obMaps []models.Oblig
 	}
 	return &models.ObligationMapUser{
 		Topic:      obligation.Topic,
+		Type:       obligation.Type,
 		Shortnames: shortnameList,
 	}, nil
 }

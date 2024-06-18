@@ -394,6 +394,7 @@ type ObligationMap struct {
 // ObligationMapUser Structure with obligation topic and license shortname list, a simple representation for user.
 type ObligationMapUser struct {
 	Topic      string   `json:"topic" example:"copyleft"`
+	Type       string   `json:"type" example:"obligation" enums:"obligation,restriction,risk,right"`
 	Shortnames []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later"`
 }
 
