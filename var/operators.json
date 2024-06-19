@@ -5,10 +5,12 @@
     },
     "operators": {
         "OR": "OR",
+        "<OR>": "OR",
         "or": "OR",
         "|": "OR",
         "||": "OR",
         "AND": "AND",
+        "<AND>": "AND",
         "and": "AND",
         "&": "AND",
         "&&": "AND",
