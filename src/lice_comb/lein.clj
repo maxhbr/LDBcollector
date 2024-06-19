@@ -19,8 +19,7 @@
 (ns lice-comb.lein
   "Functionality related to combing Leiningen dependency sequences for license
   information."
-  (:require [embroidery.api                  :as e]
-            [lice-comb.deps                  :as lcd]
+  (:require [lice-comb.deps                  :as lcd]
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.utils            :as lciu]))
 
