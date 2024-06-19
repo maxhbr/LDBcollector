@@ -3,8 +3,9 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import os
 
-from django.urls import reverse
 from django.conf import settings
+from django.urls import reverse
+
 from cube.models import (
     Usage,
     LicenseCuration,
@@ -259,7 +260,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         Exploitation.objects.create(
             release_id=1,
             scope=Usage.DEFAULT_SCOPE,
-            project=Usage.DEFAULT_PROJECT,
+            project="",
             exploitation=Usage.EXPLOITATION_INTERNAL,
         )
 
