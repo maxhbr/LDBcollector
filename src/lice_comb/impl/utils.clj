@@ -22,7 +22,8 @@
   lice-comb and may change without notice."
   (:require [clojure.string  :as s]
             [clojure.java.io :as io]
-            [clj-base62.core :as base62]))
+            [clj-base62.core :as base62]
+            [embroidery.api  :as e]))
 
 (defn mapfonk
   "Returns a new map where f has been applied to all of the keys of m."
@@ -326,3 +327,14 @@
       (if-not (s/blank? val)
         val
         default))))
+
+; Note: we could use OSHI to determine the actual number of possible open file
+; handles on the runtime environment, but it seems like overkill to bring in
+; such a large dependency for this one feature, especially when lice-comb
+; typically won't get close to opening this many files.
+(defn file-handle-bounded-pmap
+  "bounded-pmap* hardcoded to no more than 8192 virtual threads. This size is
+  determined conservatively from macOS, since it's the least common denominator
+  of the major OSes in terms of number of possible open file handles."
+  [f coll]
+  (e/bounded-pmap* 8192 f coll))

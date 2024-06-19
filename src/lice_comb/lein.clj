@@ -21,7 +21,8 @@
   information."
   (:require [embroidery.api                  :as e]
             [lice-comb.deps                  :as lcd]
-            [lice-comb.impl.expressions-info :as lciei]))
+            [lice-comb.impl.expressions-info :as lciei]
+            [lice-comb.impl.utils            :as lciu]))
 
 (defn- lein-dep->toolsdeps-dep
   "Converts a leiningen style dependency vector into a (partial) tools.deps style
@@ -54,14 +55,14 @@
   expressions were found)."
   [deps]
   (when deps
-    (into {} (e/pmap* #(vec [% (dep->expressions-info %)]) deps))))
+    (into {} (lciu/file-handle-bounded-pmap #(vec [% (dep->expressions-info %)]) deps))))
 
 (defn deps->expressions
   "Returns a map of sets of SPDX expressions (`String`s) for each Leiningen
   style dep in `deps`. See [[deps->expressions-info]] for details."
   [deps]
   (when deps
-    (into {} (e/pmap* #(vec [% (dep->expressions %)]) deps))))
+    (into {} (lciu/file-handle-bounded-pmap #(vec [% (dep->expressions %)]) deps))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
