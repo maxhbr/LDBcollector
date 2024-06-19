@@ -109,7 +109,6 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         Exploitation.objects.create(release_id=1, scope="front")
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
-        self.assertContains(res, "Exploitation decisions")
 
     def test_release_validation_view(self):
         url = reverse("cube:release_validation", kwargs={"pk": 1})

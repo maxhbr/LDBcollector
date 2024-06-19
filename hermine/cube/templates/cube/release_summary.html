@@ -90,12 +90,10 @@ SPDX-License-Identifier: AGPL-3.0-only
         <header class="card-header">
           <p class="card-header-title">
             <span class="icon"><i class="fas fa-sitemap"></i></span>
-            Exploitation decisions for the different scopes of the release
+            Dependencies scopes ({{exploitation_scopes|length }}) and exploitation modes
           </p>
         </header>
         <div class="card-content">
-
-          <h4>Release scopes exploitations ({{exploitation_scopes|length }})</h4>
           <table>
             <thead>
               <tr>
@@ -118,14 +116,21 @@ SPDX-License-Identifier: AGPL-3.0-only
                     {% else %}
                       <span class="tag is-warning">No exploitation has been defined for this scope</span>
                     {% endif%}
-                  </td>
-                  <td>
                     {% if scope.exploitation %}
-                      <a href="{% url 'cube:release_exploitation_update' release.id scope.exploitation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-                      <a href="{% url 'cube:release_delete_exploitation' release.id scope.exploitation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                      <a href="{% url 'cube:release_exploitation_update' release.id scope.exploitation.id %}" title="Edit exploitation choice">
+                        <span class="icon"><i class="fas fa-edit"></i></span>
+                      </a> |
+                      <a href="{% url 'cube:release_delete_exploitation' release.id scope.exploitation.id %}" title="Delete exploitation choice">
+                        <span class="icon"><i class="fas fa-trash"></i></span>
+                      </a>
                     {% else %}
                       <a href="{% url 'cube:release_exploitation_create' release.id %}?project={{scope.project}}&scope={{scope.scope}}"><span class="icon"><i class="fas fa-plus-circle"></i></span></a>
                     {% endif%}
+                  </td>
+                  <td>
+                    <a href="{% url 'cube:scope_usages_delete' release.id %}?project={{ scope.project|urlencode }}&scope={{ scope.scope|urlencode }}">
+                      <span class="icon has-text-danger"><i class="fas fa-trash"></i></span>
+                    </a>
                   </td>
                 </tr>
               {% endfor %}

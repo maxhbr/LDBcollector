@@ -7,6 +7,7 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.forms import Form
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
@@ -284,3 +285,32 @@ class UsageDeleteView(
         return reverse(
             "cube:release_bom", kwargs={"release_pk": self.object.release.pk}
         )
+
+
+class ScopeUsagesDeleteView(
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    ReleaseContextMixin,
+    generic.FormView,
+    generic.ListView,
+):
+    permission_required = "cube.delete_usage"
+    model = Usage
+    form_class = Form
+    template_name = "cube/scope_usages_delete.html"
+
+    def get_success_url(self):
+        return reverse("cube:release_summary", kwargs={"release_pk": self.release.pk})
+
+    def get_queryset(self):
+        qs = Usage.objects.filter(release=self.kwargs["release_pk"])
+        if "scope" in self.request.GET and self.request.GET["scope"]:
+            qs = qs.filter(scope=self.request.GET["scope"])
+        if "project" in self.request.GET and self.request.GET["project"]:
+            qs = qs.filter(project=self.request.GET["project"])
+
+        return qs
+
+    def form_valid(self, form):
+        self.get_queryset().delete()
+        return super().form_valid(form)

@@ -265,6 +265,11 @@ urlpatterns = [
         views.ReleaseGenericView.as_view(),
         name="release_generic",
     ),
+    path(
+        "releases/<int:release_pk>/delete_usages/",
+        views.ScopeUsagesDeleteView.as_view(),
+        name="scope_usages_delete",
+    ),
     # Usage views
     path(
         "releases/<int:release_pk>/new_usage/",
