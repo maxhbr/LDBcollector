@@ -289,8 +289,13 @@ def validate_exploitations(release: Release):
 
     for project, scope, count in scopes:
         try:
-            release.exploitations.get(scope=scope, project=project)
+            release.exploitations.get(
+                (Q(scope=scope) | Q(scope="")) & (Q(project=project) | Q(project=""))
+            )
         except Exploitation.DoesNotExist:
+            unset_scopes.add((project, scope, count))
+        except Exploitation.MultipleObjectsReturned:
+            logger.warning("Multiple exploitations for %s %s", project, scope)
             unset_scopes.add((project, scope, count))
 
     context["exploitations"] = release.exploitations.all()
