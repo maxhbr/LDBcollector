@@ -121,7 +121,7 @@ class ReleaseExploitationFormMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        # Existing scopes
+        # List existing scopes
         scopes = list(
             self.release.usage_set.values("project", "scope")
             .annotate(count=Count("*"))
@@ -148,11 +148,11 @@ class ReleaseExploitationFormMixin:
                 }
             )
 
-        # Usages with custom scopes
+        # Usages with ad-hoc exploitation
         exploitation_rules_subquery = self.release.exploitations.filter(
             project=OuterRef("project"), scope=OuterRef("scope")
         ).values("exploitation")[:1]
-        custom_scopes = (
+        adhoc_exploitations = (
             self.release.usage_set.annotate(
                 registered_exploitation=Coalesce(
                     Subquery(exploitation_rules_subquery), Value("")
@@ -163,7 +163,7 @@ class ReleaseExploitationFormMixin:
         )
 
         context["exploitation_scopes"] = scopes
-        context["custom_scopes"] = custom_scopes
+        context["adhoc_exploitations"] = adhoc_exploitations
 
         return context
 
