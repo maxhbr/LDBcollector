@@ -49,6 +49,8 @@
     `:type` = `:concluded`):
     Indicates the approximate confidence lice-comb has in its conclusions for
     this particular SPDX identifier.
+  * `:confidence-explanations` (a set of keywords, optional):
+    Describes why the associated `:confidence` was not `:high`.
   * `:strategy` (a keyword, mandatory):
     The strategy lice-comb used to determine this particular SPDX identifier.
     See [[lice-comb.utils/strategy->string]] for an up-to-date list of all

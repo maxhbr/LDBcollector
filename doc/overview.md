@@ -24,6 +24,8 @@ Each expression-info map in the sequence of values has this structure:
     Whether this identifier was unambiguously declared within the input or was instead concluded by lice-comb (see [the SPDX FAQ](https://wiki.spdx.org/view/SPDX_FAQ) for more detail on the definition of these two terms).
   * `:confidence` (one of: `:high`, `:medium`, `:low`, only provided when `:type` = `:concluded`):
     Indicates the approximate confidence lice-comb has in its conclusions for this particular SPDX identifier.
+  * `:confidence-explanations` (a set of keywords, optional):
+    Describes why the associated `:confidence` was not `:high`.
   * `:strategy` (a keyword, mandatory):
     The strategy lice-comb used to determine this particular SPDX identifier.  See [[lice-comb.utils/strategy->string]] for an up-to-date list of all possible values.
   * `:source` (a sequence of `String`s):
@@ -41,34 +43,54 @@ For example, this code:
 results in this expressions-info map (pretty printed for clarity):
 
 ```clojure
-{"GPL-2.0-or-later"
-   ({:id         "GPL-2.0-or-later",
-     :type       :concluded,
-     :confidence :medium,
-     :strategy   :regex-matching,
-     :source     ("https://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.pom"
-                  "https://repo1.maven.org/maven2/com/sun/mail/all/1.6.2/all-1.6.2.pom"
-                  "<licenses><license><name>"
-                  "CDDL/GPLv2+CE"
-                  "GPLv2+")}),
- "CDDL-1.1"
-   ({:id         "CDDL-1.1",
-     :type       :concluded,
-     :confidence :low,
-     :strategy   :regex-matching,
-     :source     ("https://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.pom"
-                  "https://repo1.maven.org/maven2/com/sun/mail/all/1.6.2/all-1.6.2.pom"
-                  "<licenses><license><name>"
-                  "CDDL/GPLv2+CE"
-                  "CDDL")})}
+{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"
+ ({:type       :concluded
+   :confidence :low
+   :strategy   :maven-pom-multi-license-rule
+   :source     ("javax.mail/javax.mail-api@1.6.2"
+                "https://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.pom"
+                "https://repo1.maven.org/maven2/com/sun/mail/all/1.6.2/all-1.6.2.pom")}
+  {:id         "GPL-2.0-only"
+   :type       :concluded
+   :confidence :high
+   :strategy   :manual-verification
+   :source     ("javax.mail/javax.mail-api@1.6.2"
+                "https://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.pom"
+                "https://repo1.maven.org/maven2/com/sun/mail/all/1.6.2/all-1.6.2.pom"
+                "<licenses><license><name>"
+                "CDDL/GPLv2+CE"
+                "GPLv2+CE"
+                "GPLv2")}
+  {:id         "Classpath-exception-2.0"
+   :type       :concluded
+   :confidence :high
+   :strategy   :manual-verification
+   :source     ("javax.mail/javax.mail-api@1.6.2"
+                "https://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.pom"
+                "https://repo1.maven.org/maven2/com/sun/mail/all/1.6.2/all-1.6.2.pom"
+                "<licenses><license><name>"
+                "CDDL/GPLv2+CE"
+                "GPLv2+CE"
+                "CE")}
+  {:id         "CDDL-1.1"
+   :type       :concluded
+   :confidence :low
+   :confidence-explanations #{:missing-version}
+   :strategy   :regex-matching
+   :source     ("javax.mail/javax.mail-api@1.6.2"
+                "https://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.pom"
+                "https://repo1.maven.org/maven2/com/sun/mail/all/1.6.2/all-1.6.2.pom"
+                "<licenses><license><name>"
+                "CDDL/GPLv2+CE"
+                "CDDL")})}
 ```
 
-A key insight that the expressions-info map tells us in this case is that the `javax.mail/javax.mail-api@1.6.2` artifact doesn't declare which version of the CDDL it uses, and lice-comb has _inferred_ the latest (`CDDL-1.1`), and in doing so reduced its confidence to "low".  This important insight is not apparent when the `simple` variant of the function is used instead:
+A key insight that the expressions-info map tells us in this case is that the `javax.mail/javax.mail-api@1.6.2` artifact doesn't declare which version of the CDDL it uses, and lice-comb has _inferred_ the latest (`CDDL-1.1`), and in doing so reduced its confidence to "low" (while also provided a helpful confidence explanation).  This important insight is not apparent when the `simple` variant of the function is used instead:
 
 ```clojure
 (lcmvn/gav->expressions "javax.mail" "javax.mail-api" "1.6.2")
 
-#{"CDDL-1.1" "GPL-2.0-or-later"}
+#{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"}
 ```
 
 [Back to GitHub](https://github.com/pmonks/lice-comb)
