@@ -9,3 +9,6 @@ shortName: "BSD-3-Clause-001"
 canonicalNameHistory:
   - "BSD 3-Clause License Var001"
 
+alternativeNames:
+  - "This file is a 1:1 port from the OpenBSD blowfish.c"
+

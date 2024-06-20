@@ -3,21 +3,14 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
 canonicalName: "W3C Software Notice and License (2002-12-31)"
-category: "W3C"
+category: "W3C Software"
+shortName: "W3C-Software-2002-12-31"
 spdxIdentifier: "W3C"
 
-canonicalNameHistory:
-  - "W3C Software Notice and License (2002)"
-  - "W3C"
-
 openCoDEStatus: "approved"
-
-osiStatus: "approved"
-osiCategory: "non-reusable"
 
 alternativeNames:
   - "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
 
 otherIds: 
   - "scancode:w3c"
-  - "osi:W3C"

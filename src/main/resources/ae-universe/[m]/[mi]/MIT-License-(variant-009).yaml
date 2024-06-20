@@ -2,10 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Universal General Public License"
-category: "UGPL"
-shortName: "UGPL"
-
-alternativeNames:
-  - "Universal General Public License"
+canonicalName: "MIT License (variant 009)"
+category: "MIT"
+shortName: "MIT-Var009"
 
