@@ -27,6 +27,7 @@
         "scancode:mpl-2.0",
         "osi:MPL-2.0",
         "MPLv2",
-        "MPL-2.0+"
+        "MPL-2.0+",
+        "MPLv2.0."
     ]
 }
