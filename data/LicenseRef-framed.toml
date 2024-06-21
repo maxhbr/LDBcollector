@@ -1,0 +1,16 @@
+[license]
+
+expression = "LicenseRef-framed"
+
+status = [ "allowed" ]
+
+usage = '''
+Replace this with an SPDX identifier when possible (likely a revised version of
+`ulem` which as of 2024-06-21 is not a match for this license text).
+'''
+
+text = '''
+These macros may be freely transmitted, reproduced, or modified
+for any purpose provided that this notice is left intact.
+'''
+
