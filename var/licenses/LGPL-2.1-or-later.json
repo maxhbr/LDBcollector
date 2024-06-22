@@ -60,6 +60,8 @@
         "GNU Lesser General Public License v2 or later (LGPLv2+)",
         "LGPLv2.0+",
         "LGPL-2.1 or later",
-        "lgpl-2.1-plus"
+        "lgpl-2.1-plus",
+        "LPGL-2.1+",
+        "LGPL-2.1-or later"
     ]
 }
