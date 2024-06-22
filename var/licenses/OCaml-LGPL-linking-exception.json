@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "OCaml LGPL Linking Exception",
+    "scancode_key": "ocaml-lgpl-linking-exception",
+    "spdxid": "OCaml-LGPL-linking-exception",
+    "aliases": [
+        "ocaml-lgpl-linking-exception"        
+    ]
+}

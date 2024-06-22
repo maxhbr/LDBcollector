@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "BSD 3-Clause No Nuclear Warranty",
+    "scancode_key": "bsd-3-clause-no-nuclear-warranty",
+    "spdxid": "BSD-3-Clause-No-Nuclear-Warranty",
+    "aliases": [
+        "BSD 3-Clause License (no nuclear warranty)",
+        "BSD 3-Clause No Nuclear Warranty",
+        "BSD-3-Clause-No-Nuclear-Warranty",
+        "scancode://bsd-3-clause-no-nuclear-warranty",
+        "BSD 3 Clause No Nuclear Warranty",
+        "bsd-3-clause-no-nuclear-warranty"
+    ]
+}

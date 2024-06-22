@@ -34,6 +34,19 @@
             ]
         },
         {
+            "spdxid": "GPL-2.0-or-later WITH Libtool-exception",
+            "aliases": [
+                "GPL-2+-libtool-exception"
+            ]
+        },
+        {
+            "spdxid": "GPL-2.0-only WITH Libtool-exception",
+            "aliases": [
+                "GPL-2-libtool-exception",
+                "GPL-2--libtool-exception"
+            ]
+        },
+        {
             "spdxid": "GPL-3.0-or-later WITH GCC-exception-3.1",
             "aliases": [
                 "GPL-3.0-with-GCC-exception",
@@ -43,9 +56,16 @@
             "compatibility_as": "0BSD"
         },
         {
-            "spdxid": "GPL-2.0-or-later WITH Libtool-exception",
+            "spdxid": "GPL-3.0-or-later WITH Libtool-exception",
             "aliases": [
-                "GPL-2+-libtool-exception"
+                "GPL-3+-libtool-exception"
+            ]
+        },
+        {
+            "spdxid": "GPL-3.0-only WITH Libtool-exception",
+            "aliases": [
+                "GPL-3-libtool-exception",
+                "GPL-3--libtool-exception"
             ]
         }
     ]

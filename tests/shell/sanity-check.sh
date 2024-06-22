@@ -126,7 +126,7 @@ check_test_case
 # check_schema
 
 
-ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\""
+ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\" -e \" 0 \""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
 BSD2_PATENT_PRESENT=" -i -e patent" 
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse "
@@ -138,8 +138,8 @@ check_presence AFL-2.0 " -e 2.0 " "-e 1 -e 2.1 -e 3"
 check_presence AFL-2.1 " -e 2.1 " "-e 1. -e 2.0 -e 0  -e 3"
 check_presence AFL-3.0 " -e 3 " "-e 1 -e 2 "
 
-check_presence AGPL-3.0-only     " -e 3 " " -e '1 ' -e 2 -e later -e plus -e +"
-check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2"
+check_presence AGPL-3.0-only     " -e 3 " " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
+check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2  -e library -e lesser "
 
 check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence Apache-1.1 " -e 1.1" "-e 2 -e 1.0"
@@ -157,6 +157,7 @@ check_presence Beerware " -i -e beer " ""
 check_presence Bitstream-Vera " -i -e bitstream " ""
 check_presence blessing " -i -e blessing " ""
 check_presence BlueOak-1.0.0  " -e 1 " " -e 2"
+check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
 check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
@@ -168,6 +169,7 @@ check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BS
 check_presence BSD-2-Clause-Views " -i -e view"  " -e 0 -e 1 -e 3 -e 4"
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
 check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
+check_presence BSD-3-Clause-No-Nuclear-Warranty " -i -e nuclear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
 check_presence BSD-4-Clause-UC " -i -e university -e UC" " -e 1 -e 2 -e 3"
 check_presence BSD-Source-Code " -i -e source -e code " " -e 1 -e 2 -e 3"
@@ -211,13 +213,14 @@ check_presence FSFULLRWD " -i -e FSFULLRWD -e warranty " " -e FSFAP  "
 check_presence FTL " -i -e FTL -e freetype " ""
 
 check_presence GCC-exception-3.1 " -e GCC -e 3" " -e 2 "
-check_presence GPL-1.0-only " -e 1 " " -e 2 -e later -e 3"
-check_presence GPL-2.0-only " -e 2 " " -e '1 ' -e later -e 3"
-check_presence GPL-3.0-only " -e 3 " " -e '1 ' -e 2 -e later -i -e affero "
+GPL_COMMON_EXCL=" -e lgpl -e library -e lesser -e affero -e agpl"
+check_presence GPL-1.0-only " -e 1 " " -e 2 -e later -e 3 $GPL_COMMON_EXCL "
+check_presence GPL-2.0-only " -e 2 " " -e '1 ' -e later -e 3  $GPL_COMMON_EXCL  "
+check_presence GPL-3.0-only " -e 3 " " -e '1 ' -e 2 -e later -i  $GPL_COMMON_EXCL "
 
-check_presence GPL-1.0-or-later " -e 1 -e later" " -e 2 -e 3"
-check_presence GPL-2.0-or-later " -e 2 -e later" " -e '1 ' -e 3"
-check_presence GPL-3.0-or-later " -e 3 -e later" " -e '1 ' -e 2"
+check_presence GPL-1.0-or-later " -e 1 -e later" " -e 2 -e 3 $GPL_COMMON_EXCL  "
+check_presence GPL-2.0-or-later " -e 2 -e later" " -e '1 ' -e 3 $GPL_COMMON_EXCL "
+check_presence GPL-3.0-or-later " -e 3 -e later" " -e '1 ' -e 2 $GPL_COMMON_EXCL "
 
 check_presence HPND " -i -e hpnd -e historic" ""
 
@@ -230,13 +233,14 @@ check_presence JSON " -i -e JSON  " ""
 
 check_presence Latex2e " -i -e latex2  " ""
 
-check_presence LGPL-2.0-only " -e 2.0 -e 2 " " -e 3  -e later"
-check_presence LGPL-2.0-or-later " -e 2.0 -e 2 -e later " " -e 3"
-check_presence LGPL-2.1-only " -e 2.1 " " -e 3  -e later"
-check_presence LGPL-3.0-only " -e 3 " " -e 2  -e later"
+LGPL_COMMON=" -e lgpl -e lesser -e library -e affero "
+check_presence LGPL-2.0-only " $LGPL_COMMON -e 2.0 -e 2 " " -e 3  -e later"
+check_presence LGPL-2.0-or-later " $LGPL_COMMON -e 2.0 -e 2 -e later " " -e 3"
+check_presence LGPL-2.1-only " $LGPL_COMMON -e 2.1 " " -e 3  -e later"
+check_presence LGPL-3.0-only " $LGPL_COMMON -e 3 " " -e 2  -e later"
 
-check_presence LGPL-2.1-or-later " -e 2 -e later" " -e 3"
-check_presence LGPL-3.0-or-later " -e 3 -e later" " -e 2"
+check_presence LGPL-2.1-or-later " $LGPL_COMMON -e 2 -e later" " -e 3"
+check_presence LGPL-3.0-or-later " $LGPL_COMMON -e 3 -e later" " -e 2"
 
 check_presence LicenseRef-scancode-boost-original " -i -e original " ""
 check_presence LicenseRef-scancode-docbook " -i -e dmit -e docbook " ""
@@ -251,6 +255,7 @@ check_presence LicenseRef-scancode-zpl-1.0 "-i -e zpl" ""
 check_presence Libpng " -i -e libpng -e PNG  " " -e 2 "
 check_presence libpng-2.0 " -i -e libpng -e PNG  " ""
 check_presence libtiff " -i -e tiff  " ""
+check_presence Libtool-exception " -i -e libtool  " ""
 check_presence Linux-syscall-note " -i -e syscall  " ""
 check_presence LLVM-exception " -i -e llvm  " ""
 
@@ -270,12 +275,12 @@ check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e
 check_presence NCSA " -i -e ncsa -e illinois " ""
 check_presence NTP " -i -e ntp -e network " ""
 
+check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
 check_presence ODC-By-1.0 " -i -e 1.0 -e odc" ""
 check_presence OFL-1.0 " -e 1.0" " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
 check_presence OpenSSL " -i -e openssl " ""
-
 check_presence Plexus " -i -e plexus -e classworlds " ""
 check_presence PostgreSQL " -i -e postgresql " ""
 check_presence Python-2.0.1 " -i -e Python " ""

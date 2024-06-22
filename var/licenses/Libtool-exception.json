@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "GNU Libtool exception to GPL 2.0",
+    "scancode_key": "libtool-exception-2.0",
+    "spdxid": "Libtool-exception",
+    "aliases": [
+        "Libtool exception",
+        "libtool-exception-2.0"
+    ]
+}
