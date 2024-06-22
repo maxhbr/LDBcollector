@@ -78,6 +78,8 @@
         "Lesser GPL 3.0",
         "scancode:lgpl-3.0",
         "osi:LGPL-3.0",
-        "GNU Lesser General Public License v3 (LGPLv3)"
+        "GNU Lesser General Public License v3 (LGPLv3)",
+        "GNU Lesser General Public License v3.0",
+        "GNU Lesser General Public License (GNU Lesser GPL), version 3"
     ]
 }
