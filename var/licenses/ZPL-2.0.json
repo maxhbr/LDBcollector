@@ -16,6 +16,7 @@
         "ZPL 2.0",
         "scancode:zpl-2.0",
         "osi:ZPL-2.0",
-        "zpl-2.0"
+        "zpl-2.0",
+        "ZPLv2.0"
     ]
 }
