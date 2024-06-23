@@ -20,7 +20,9 @@
         "scancode:x11-xconsortium",
         "MIT-X-Consortium",
         "MIT-X11",
+        "MIT-X",
         "X-Consortium",
-        "x11-xconsortium"
+        "x11-xconsortium",
+        "MIT-X-Consortium-License"
     ]
 }
