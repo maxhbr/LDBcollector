@@ -9,7 +9,7 @@
 
 # lice-comb
 
-A Clojure library for software *lice*nse detection.  It does this by *comb*ing through tools.deps and Leiningen dependencies, directory structures, and JAR & ZIP files, attempting to detect what license(s) they reference and/or contain, and then normalising them into [SPDX license expressions](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/).
+A Clojure library for software *lice*nse detection.  It does this by *comb*ing through tools.deps and Leiningen dependencies (i.e. artifacts hosted on Maven repositories), directory structures, and JAR & ZIP files, attempting to detect what license(s) they reference and/or contain, and then normalising them into [SPDX license expressions](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/).
 
 This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial) is a good (albeit slightly outdated) intro.
 
