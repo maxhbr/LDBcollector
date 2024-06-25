@@ -9,6 +9,7 @@ from django.utils.functional import cached_property
 
 from cube.models import Usage
 from cube.utils.reference import license_reference_diff, generic_reference_diff
+from cube.utils.validators import validate_spdx_id
 
 
 class LicenseManager(models.Manager):
@@ -84,7 +85,9 @@ class License(models.Model):
     ]
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
-    spdx_id = models.CharField("SPDX Identifier", max_length=200, unique=True)
+    spdx_id = models.CharField(
+        "SPDX Identifier", max_length=200, unique=True, validators=[validate_spdx_id]
+    )
     status = models.CharField(
         "Review status",
         max_length=20,

@@ -2,9 +2,9 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 
-from django.core.exceptions import ValidationError
 from django.conf import settings
-from license_expression import ExpressionError
+from django.core.exceptions import ValidationError
+from license_expression import ExpressionError, BaseSymbol
 
 from .spdx import licensing, has_ors
 
@@ -22,6 +22,22 @@ def validate_spdx_expression(spdx_expression: str):
         raise ValidationError(
             f"{spdx_expression} is not a valid SPDX expression : {', '.join(info.errors)}"
         )
+
+
+def validate_spdx_id(spdx_id: str):
+    try:
+        parsed = licensing.parse(spdx_id)
+    except ExpressionError as e:
+        raise ValidationError(f"{spdx_id} is not a valid SPDX identifier : {e}")
+
+    info = licensing.validate(spdx_id, strict=False)
+    if len(info.errors) > 0:
+        raise ValidationError(
+            f"{spdx_id} is not a valid SPDX identifier : {', '.join(info.errors)}"
+        )
+
+    if not isinstance(parsed, BaseSymbol):
+        raise ValidationError(f"{spdx_id} is not a valid SPDX identifier")
 
 
 def validate_no_ors_expression(spdx_expression: str):
