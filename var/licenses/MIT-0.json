@@ -1,24 +1,25 @@
 {
-"meta": {
-    "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "MIT No Attribution",
-  "scancode_key": "mit-0", 
-  "spdxid": "MIT-0",
-  "compatibility_as": "MIT",
-  "aliases": [
-   "MIT-0",
-   "MIT No Attribution",
-   "mit-0",
-   "MIT License (no attribution)",
-   "scancode://mit-0",
-   "MIT-0-Clause",
-   "MIT, Version 0",
-   "MIT, 0",
-   "MIT License, Version 0",
-   "MIT License 0",
-   "MIT No Attribution License (MIT-0)",
-   "MIT0"   
+    "meta": {
+        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "MIT No Attribution",
+    "scancode_key": "mit-0",
+    "spdxid": "MIT-0",
+    "compatibility_as": "MIT",
+    "aliases": [
+        "MIT-0",
+        "MIT No Attribution",
+        "mit-0",
+        "MIT License (no attribution)",
+        "scancode://mit-0",
+        "MIT-0-Clause",
+        "MIT, Version 0",
+        "MIT, 0",
+        "MIT License, Version 0",
+        "MIT License 0",
+        "MIT No Attribution License (MIT-0)",
+        "MIT0",
+        "The MIT-0 Software License"
   ]
 }
