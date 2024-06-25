@@ -19,7 +19,13 @@
                 "Apache Software License",
                 "OSI Approved :: Apache Software License",
                 "The Apache Software License",
-                "Apache-Software-License"
+                "Apache-Software-License",
+                "Apache Licence",
+                "Apache licence",
+                "apache license",
+                "Apache Software Licenese",
+                "Apache Software Licenses",
+                "The Apache License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -57,11 +63,16 @@
                 "BSD-Style",
                 "BSD-style",
                 "BSD-style license",
+                "BSD style License",
+                "BSD style license",
                 "BSD-like",
                 "BSD-Like",
                 "BSD LICENSE",
                 "BSD-variant",
-                "BSD-License"
+                "BSD-License",
+                "BSDLicense",
+                "The BSD License",
+                "BSD-Style License"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
