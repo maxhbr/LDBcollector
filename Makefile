@@ -35,6 +35,9 @@ grammar: json
 	$(GRAMMARDIR)/create-grammar.py $(GRAMMARDIR)/grammar.lark \
 		$(GRAMMARDIR)/fedora-all-spdx.txt > $(GRAMMARDIR)/full-grammar-with-not-allowed.lark
 
+scancode: json
+	$(TOPDIR)/tools/generate-scancode-toolkit-policy.py $(JSONDB) > $(TOPDIR)/scancode-license-policy.yaml
+
 install-grammar: grammar
 	install -D -p $(GRAMMARDIR)/full-grammar.lark $(DESTDIR)$(DATADIR)/fedora-license-data/grammar.lark
 	install -D -p $(GRAMMARDIR)/full-grammar-with-not-allowed.lark $(DESTDIR)$(DATADIR)/fedora-license-data/grammar-with-not-allowed.lark
