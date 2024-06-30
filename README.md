@@ -50,7 +50,10 @@ The files for [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal):
 
  * [allowed-licenses.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/allowed-licenses.adoc?job=legal-doc)
  * [not-allowed-licenses.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/not-allowed-licenses.adoc?job=legal-doc)
- * [all-allowed.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/all-allowed.adoc?job=legal-doc
+ * [all-allowed.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/all-allowed.adoc?job=legal-doc)
+
+We produce [License Policy file](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/scancode-license-policy.yaml?job=scancode) for [Scancode Tookit](https://scancode-toolkit.readthedocs.io/en/stable/plugins/licence_policy_plugin.html)
+
 
 ## License
 
