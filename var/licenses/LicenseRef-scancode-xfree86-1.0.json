@@ -6,6 +6,7 @@
     "name": "XFree86 License 1.0",
     "scancode_key": "xfree86-1.0",
     "spdxid": "LicenseRef-scancode-xfree86-1.0",
+    "compatibility_as": "X11",
     "aliases": [
         "xfree86-1.0"
     ]
