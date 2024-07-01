@@ -10,6 +10,9 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "ECMA License"
+  - "Ecma-262 Edition 5.1"
+  - "The ECMAScript Language Specification 5.1"
+  - "The ECMAScript Language Specification 262"
 
 otherIds: 
   - "scancode:ecma-documentation"
