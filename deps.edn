@@ -23,7 +23,7 @@
     org.clojure/data.xml                  {:mvn/version "0.2.0-alpha9"}
     clj-xml-validation/clj-xml-validation {:mvn/version "1.0.2"}
     tolitius/xml-in                       {:mvn/version "0.1.1"}
-    hato/hato                             {:mvn/version "0.9.0"}
+    hato/hato                             {:mvn/version "1.0.0"}
     dev.weavejester/medley                {:mvn/version "1.8.0"}
     miikka/clj-base62                     {:mvn/version "0.1.1"}
     com.github.pmonks/clj-spdx            {:mvn/version "1.0.176"}
