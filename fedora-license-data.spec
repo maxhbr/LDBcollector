@@ -4,6 +4,11 @@
 %else
 %bcond_with     rpmlint
 %endif
+%if 0%{?fedora} > 39
+%bcond_without  scancode
+%else
+%bcond_with     scancode
+%endif
 
 Name:           fedora-license-data
 Version:        1.50
@@ -19,6 +24,9 @@ BuildArch:      noarch
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  make
+%if 0%{?fedora} > 39
+BuildRequires:  scancode-toolkit
+%endif
 BuildRequires:  python3-devel
 %if 0%{?fedora} || 0%{?rhel} >= 8
 BuildRequires:  (python%{python3_pkgversion}-tomli if python%{python3_pkgversion} < 3.11)
@@ -71,10 +79,10 @@ The Fedora Legal team is responsible for the content.
 
 
 %build
-%make_build spec-validate json grammar scancode  %{?with_rpmlint:rpmlint}
+%make_build spec-validate json grammar %{?with_scancode:scancode} %{?with_rpmlint:rpmlint}
 
 %install
-make DESTDIR=%{buildroot} install-json install-grammar install-scancode %{?with_rpmlint:install-rpmlint}
+make DESTDIR=%{buildroot} install-json install-grammar %{?with_scancode:install-scancode} %{?with_rpmlint:install-rpmlint}
 
 %check
 %if 0%{?fedora} || 0%{?rhel} > 8
