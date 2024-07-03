@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.49
+Version:        1.50
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,15 @@ make check-grammar
 
 
 %changelog
+* Wed Jul 03 2024 Miroslav Suchý <msuchy@redhat.com> 1.50-1
+- include scancode-license-policy.yaml in rpm
+- add BSD-3-Clause-No-Nuclear-Warranty license
+- add unicode-mappiing license as not-allowed
+- add LicenseRef-W3C-Document-2023
+- add W3C-20150513 license
+- add 'make scancode' that produces scancode license policy file
+- Add LicenseRef-framed as allowed
+
 * Fri Jun 21 2024 Miroslav Suchý <msuchy@redhat.com> 1.49-1
 - add AMD-newlib
 
