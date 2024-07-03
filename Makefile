@@ -52,7 +52,10 @@ install-json:
 	install -D -p -m 0644 $(JSONDB) \
 		$(DESTDIR)$(DATADIR)/fedora-license-data/licenses/$(shell basename $(JSONDB))
 
-install: install-json install-rpmlint install-grammar
+install-scancode: scancode
+	install -D -p $(TOPDIR)/scancode-license-policy.yaml $(DESTDIR)$(DATADIR)/fedora-license-data/scancode-license-policy.yaml
+
+install: install-json install-rpmlint install-grammar install-scancode
 
 check-grammar: grammar
 	$(GRAMMARDIR)/test-grammar.py --file $(GRAMMARDIR)/full-grammar.lark

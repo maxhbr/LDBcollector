@@ -71,10 +71,10 @@ The Fedora Legal team is responsible for the content.
 
 
 %build
-%make_build spec-validate json grammar %{?with_rpmlint:rpmlint}
+%make_build spec-validate json grammar scancode  %{?with_rpmlint:rpmlint}
 
 %install
-make DESTDIR=%{buildroot} install-json install-grammar %{?with_rpmlint:install-rpmlint}
+make DESTDIR=%{buildroot} install-json install-grammar install-scancode %{?with_rpmlint:install-rpmlint}
 
 %check
 %if 0%{?fedora} || 0%{?rhel} > 8
