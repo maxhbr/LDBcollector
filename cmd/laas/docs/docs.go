@@ -1906,6 +1906,10 @@ const docTemplate = `{
         "models.LicensePATCHRequestJSONSchema": {
             "type": "object",
             "properties": {
+                "external_ref": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
                 "marydone": {
                     "type": "boolean"
                 },
