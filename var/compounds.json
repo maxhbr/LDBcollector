@@ -10,7 +10,8 @@
                 "Apache-2.0-WITH-LLVM-exception",
                 "Apache-2.0-with-LLVM-exception",
                 "APACHE-2-LLVM-EXCEPTIONS",
-                "Apache-2.0 WITH LLVM exceptions"
+                "Apache-2.0 WITH LLVM exceptions",
+                "Apache-2.0 WITH LLVM-exception"
             ],
             "compatibility_as": "0BSD"            
         },
