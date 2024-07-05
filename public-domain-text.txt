@@ -6,8 +6,7 @@
 # This file is for collecting the text of such public domain dedications.
 #
 # Please search this file first to see if the public domain text you've found 
-# is the same as text already recorded here. If so, simply add  
-# your package name and location to the existing part of this file that contains that text.
+# is the same as text already recorded here. 
 #
 # Include the following information:
 # 
@@ -29,6 +28,58 @@ location =
 text = '''
 text here
 '''
+
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/pbm/g3topbm.c
+text = '''
+contributed it to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/pbm/g3topbm.c
+text = '''
+  Others have modified the program since Bryan's initial work, each
+  contributing their work to the public domain.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/ppm/411toppm.c
+text = '''
+Bryan's contribution is public domain.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/converter/other/exif.c
+text = '''
+contributed to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/analyzer/pamsharpmap.c
+text = '''
+Bryan placed his modifications in the public domain.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/editor/pamhue.c
+text = '''
+contributes his work to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/generator/pbmmake.c
+text = '''
+contributed his work to the public domain
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/trunk/generator/pbmtextps.c
+text = '''
+contributed to public domain by author
+'''
+
+
 
 package = glibc
 location = https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=stdlib/tst-random.c
