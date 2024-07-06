@@ -3,6 +3,8 @@
 expression = "LicenseRef-JasPer-1.0"
 
 status = [ "not-allowed" ]
+
+text = '''
 /* __START_OF_JASPER_LICENSE__
  * 
  * JasPer Software License
@@ -106,7 +108,5 @@ status = [ "not-allowed" ]
  * NOTICE SPECIFIED IN THIS SECTION.
  * 
  * __END_OF_JASPER_LICENSE__
-text = '''
-
 '''
 
