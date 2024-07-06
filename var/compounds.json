@@ -19,7 +19,8 @@
             "spdxid": "GPL-2.0-only WITH Classpath-exception-2.0",
             "aliases": [
                 "GPL-2.0-with-classpath-exception",
-                "GPL-2.0-only AND Classpath-exception-2.0"
+                "GPL-2.0-only AND Classpath-exception-2.0",
+                "GNU General Public License, Version 2, with the Classpath Exception"
             ]
         },
         {
