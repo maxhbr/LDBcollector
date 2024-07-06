@@ -1,18 +1,25 @@
 [license]
 
-expression = "LicenseRef-NPSL-0.94"
+expression = "LicenseRef-NPSL-0.93"
 status = [ "not-allowed" ]
 
+# The first two URLs are labeled version 0.93
+# The second two URLs are labeled version 0.94
+# The differences among these four versions are non-substantive in the SPDX-legal sense
+# Hence a single LicenseRef- can cover all of them
+
 url = '''
+https://github.com/nmap/nmap/blob/a3c846c368766ddb85cccf27378be9e81430a46d/LICENSE
+https://github.com/nmap/nmap/blob/b319123646cc6760687041eb8e82d32697ba1fb8/LICENSE
 https://github.com/nmap/nmap/blob/158c2e493cd1562a2f7b415b504b5d9f6dd31cbf/LICENSE
 https://github.com/nmap/nmap/blob/c2d6b01f358e6bc262fb6d7ba132ecbb3a494a88/LICENSE
 '''
 
-
-# There are different URLs in the two known versions of NPSL 0.94
+# Crude markup delimited by double braces to indicate the differences among the versions
+# other than pure whitespace differences
 
 text = '''
-Nmap Public Source License Version 0.94
+Nmap Public Source License Version {{0.93|0.94}}
 For more information on this license, see https://nmap.org/npsl/
 
 0. Preamble
@@ -95,7 +102,7 @@ and can not modify its governing terms in any way.
 
 * "License" means this document, including Exhibits.
 
-* "Licensor" means Nmap Software LLC and its successors and assigns.
+* "Licensor" means {{Nmap Software|Insecure.Com}} LLC and its successors and assigns.
 
 * "Main License Body" means all of the terms of this document,
   excluding Exhibits.
@@ -258,7 +265,7 @@ Goods is expressly excluded.
 10. Npcap and the Official Nmap Windows Builds
 
 The official Windows Nmap builds includes the Npcap driver and library
-(https://npcap.com) for packet capture and transmission on
+({{https://npcap.com|https://npcap.org}}) for packet capture and transmission on
 Windows. That software is under its own separate license terms rather
 than this license. Therefore anyone wishing to use or redistribute
 both pieces of software must comply with both licenses. Since Npcap
@@ -577,7 +584,7 @@ DAMAGES.
 END OF TERMS AND CONDITIONS
 
 [For brevity, we've cut out the GPL's final section on "How to Apply
-These Terms to Your New Program", but you can find that at
+{{These|Tehse}} Terms to Your New Program", but you can find that at
 https://www.gnu.org/licenses/gpl-2.0.html#SEC4 ]
 '''
 
