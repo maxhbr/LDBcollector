@@ -5,7 +5,11 @@ status = [ "not-allowed" ]
 
 url = '''
 https://github.com/nmap/nmap/blob/47919b8dac98ad0f2639018e2b99ea3ad6b5e70a/LICENSE
+https://github.com/nmap/nmap/blob/d0a8fb0f304aa08e3408de31073dfdf647af4d60/LICENSE
 '''
+
+# There are at 2024-07-05 two known versions of NPSL 0.95, apparently differing only with 
+# respect to a paragraph break
 
 text = '''
 Nmap Public Source License Version 0.95
