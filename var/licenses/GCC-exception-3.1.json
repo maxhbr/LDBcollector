@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "GCC Runtime Library Exception v3.1",
