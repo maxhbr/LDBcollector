@@ -1,0 +1,11 @@
+- id: "NuGet::DynamicDataDisplay:0.3.0"
+  curations:
+    comment: |
+      The repository linked in the package's metadata was deleted. However, it is still accessible at Software Heritage,
+      see https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/apoydence/DynamicDataDisplay.
+      From there, an archive was created from the only commit added on the date when version 0.3.0 was released.
+    source_artifact:
+      url: "https://archive.softwareheritage.org/api/1/vault/flat/swh:1:dir:4f72c3a2df183509a8a698645a436d0399536d22/raw"
+      hash:
+        value: "3d712598add793473d19d3a63e7b5b5846ef5729"
+        algorithm: "SHA1"
