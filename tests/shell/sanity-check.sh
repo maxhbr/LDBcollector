@@ -8,6 +8,7 @@
 THIS_FILE=${BASH_SOURCE[0]}
 
 RET=0
+LICENSE_ERRORS=""
 set -o pipefail
 
 
@@ -45,7 +46,7 @@ check_file_presence()
             echo "FAIL: $LICENSE_FILE missing"
             RET=$(( $RET + 1 ))
             RESULT=" FAIL"
-
+            LICENSE_ERRORS="$LICENSE_ERRORS $LICENSE_FILE missing, "
         fi
         jq . $lf > /dev/null
         if [ $? -ne 0 ]
@@ -53,6 +54,7 @@ check_file_presence()
             echo "FAIL: $lf not in JSON format"
             RET=$(( $RET + 1 ))
             RESULT=" FAIL"
+            LICENSE_ERRORS="$LICENSE_ERRORS $lf not in JSON format, "
         fi
     done
     
@@ -65,6 +67,7 @@ check_file_presence()
            echo "FAIL $lf file missing"
            RET=$(( $RET + 1 ))
            RESULT=" FAIL"
+           LICENSE_ERRORS="$LICENSE_ERRORS $lf file missing, "
        fi
     done
     echo "$RESULT"
@@ -93,6 +96,7 @@ check_presence()
         echo " --------------------------"
         RET=$(( $RET + 1 ))
         _RET="FAIL"
+        LICENSE_ERRORS="$LICENSE_ERRORS  $REG_EXP_PRESENCE not present in $FILE"
     fi
 
     # check unpresence
@@ -102,12 +106,13 @@ check_presence()
         if [ "$UNPRESENT" != "" ]
         then
             echo "FAIL"
-            echo " * cause: Incorrectly not present in $FILE"
+            echo " * cause: Incorrectly present in $FILE"
             echo " --------------------------"
-            echo "Unpresent: \"$UNPRESENT\""
+            echo "Should be unpresent: \"$UNPRESENT\""
             echo " --------------------------"
             RET=$(( $RET + 1 ))
             _RET="FAIL"
+            LICENSE_ERRORS="$LICENSE_ERRORS  \"$REG_EXP_UNPRESENCE\" incorrectly found in \"$FILE\""
         fi
     fi
     
@@ -115,7 +120,7 @@ check_presence()
     then
         echo OK
     else
-        exit 1
+        echo FAILURE
     fi
 }
 
@@ -272,6 +277,7 @@ check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence MPL-2.0 " -e 2" " -e 1"
 check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
 
+check_presence NAIST-2003 " -i -e naist -e nara " ""
 check_presence NCSA " -i -e ncsa -e illinois " ""
 check_presence NTP " -i -e ntp -e network " ""
 
@@ -311,19 +317,25 @@ check_presence WTFPL " -i -e WTFPL -e what -e wtf\ p" ""
 
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT' -e MIT-X" "" 
 check_presence X11-distribute-modifications-variant " -i -e modifications -e fsf" ""
-check_presence x11-keith-packard " -i -e packard" ""
+check_presence x11-keith-packard " -i -e packard -e hpnd " ""
 check_presence Xfig " -i -e Xfig" ""
 check_presence xpp " -i -e xpp -e indiana " ""
 
 check_presence LicenseRef-scancode-xfree86-1.0 " -i -e 1.0 " " -e  X/MIT -e 1.1 " 
 check_presence XFree86-1.1 " -i -e 1.1 " " -e  X/MIT -e 1.0 " 
 
-check_presence Zlib " -i -e libz -e zlib" ""
+check_presence Zlib " -i -e libz -e zlib" " -i bsd "
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
-check_presence ZPL-2.0 " -e 2.0" " -e 1"
-check_presence ZPL-2.1 " -e 2.1" " -e 1.1"
+check_presence ZPL-2.0 " -e 2.0" " -e 1 -e 2.1"
+check_presence ZPL-2.1 " -e 2.1" " -e 1.1 -e 2.0"
 
 
-
+if [ $RET -ne 0 ]
+then
+    echo ""
+    echo "License errors"
+    echo "$LICENSE_ERRORS"
+    echo 
+fi
 
 exit $RET
