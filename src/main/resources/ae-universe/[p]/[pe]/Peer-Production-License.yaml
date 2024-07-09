@@ -9,3 +9,5 @@ spdxIdentifier: "PPL"
 alternativeNames:
   - "Peer Production License"
 
+otherIds: 
+  - "scancode:ppl"

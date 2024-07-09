@@ -6,3 +6,5 @@ canonicalName: "Libjpeg License"
 category: "Libjpeg"
 shortName: "Libjpeg"
 
+otherIds: 
+  - "scancode:ijg-2020"
