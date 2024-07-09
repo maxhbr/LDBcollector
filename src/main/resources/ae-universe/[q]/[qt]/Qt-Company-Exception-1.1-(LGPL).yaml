@@ -18,6 +18,7 @@ alternativeNames:
   - "Nokia-Qt-exception, Version 1.1"
   - "Nokia-Qt-exception, 1.1"
   - "Nokia Qt LGPL Exception version 1.1"
+  - "Qt-LGPL-exception-1.1"
 
 otherIds: 
   - "scancode:qt-lgpl-exception-1.1"

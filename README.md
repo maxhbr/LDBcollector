@@ -111,7 +111,7 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 32.0.8 is used. The version has not been fully processed, yet. Updates pending.
+Currently, ScanCode version 32.1.2 is used. The version has not been fully processed, yet. Updates pending.
 
 Non-approved OSI status information is not yet complete; more details is added incrementally.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected

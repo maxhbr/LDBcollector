@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Red Hat Enterprise Linux EULA"
+category: "Red Hat Enterprise Linux EULA"
+shortName: "Red-Hat-Enterprise-Linux-EULA"
+
+alternativeNames:
+  - "RED HAT® ENTERPRISE LINUX® AND RED HAT APPLICATIONS"
+  - "RED HAT ENTERPRISE LINUX AND RED HAT APPLICATIONS"
+
+otherIds: 
+  - "scancode:rh-eula"

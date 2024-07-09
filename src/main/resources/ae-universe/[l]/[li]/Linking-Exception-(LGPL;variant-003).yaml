@@ -12,5 +12,8 @@ canonicalNameHistory:
 
 type: "exception"
 
+alternativeNames:
+  - "OCaml-LGPL-linking-exception"
+
 otherIds: 
   - "scancode:ocaml-lgpl-linking-exception"
