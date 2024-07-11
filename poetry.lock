@@ -169,13 +169,13 @@ redis = ["redis (>=2.10.5)"]
 
 [[package]]
 name = "certifi"
-version = "2024.6.2"
+version = "2024.7.4"
 description = "Python package for providing Mozilla's CA Bundle."
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "certifi-2024.6.2-py3-none-any.whl", hash = "sha256:ddc6c8ce995e6987e7faf5e3f1b02b302836a0e5d98ece18392cb1a36c72ad56"},
-    {file = "certifi-2024.6.2.tar.gz", hash = "sha256:3cd43f1c6fa7dedc5899d69d3ad0398fd018ad1a17fba83ddaf78aa46c747516"},
+    {file = "certifi-2024.7.4-py3-none-any.whl", hash = "sha256:c198e21b1289c2ab85ee4e67bb4b4ef3ead0892059901a8d5b622f24a1101e90"},
+    {file = "certifi-2024.7.4.tar.gz", hash = "sha256:5a1e7645bc0ec61a09e26c36f6106dd4cf40c6db3a1fb6352b0244e7fb057c7b"},
 ]
 
 [[package]]
@@ -497,19 +497,19 @@ test-randomorder = ["pytest-randomly"]
 
 [[package]]
 name = "cyclonedx-python-lib"
-version = "7.4.1"
+version = "7.5.1"
 description = "Python library for CycloneDX"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "cyclonedx_python_lib-7.4.1-py3-none-any.whl", hash = "sha256:73bf8d5c09ad10698c75d3ce3f123c84c9aff3959d67b8b5ca9e5a7c5da43abe"},
-    {file = "cyclonedx_python_lib-7.4.1.tar.gz", hash = "sha256:23bf8196e008bb8e06c1040ad2ab69492891d8a581cb2aefa36a77f199790a37"},
+    {file = "cyclonedx_python_lib-7.5.1-py3-none-any.whl", hash = "sha256:9fc2c2e5facfd9530ede1f4525c903d29d91945688c5689b6d5fab46381dcab9"},
+    {file = "cyclonedx_python_lib-7.5.1.tar.gz", hash = "sha256:00cfe1e58452698650ae08b8f4389f7b1ec203a3e1c50cbf6ca6d320941dfb3f"},
 ]
 
 [package.dependencies]
 license-expression = ">=30,<31"
 packageurl-python = ">=0.11,<2"
-py-serializable = ">=1.0.3,<2"
+py-serializable = ">=1.1.0,<2.0.0"
 sortedcontainers = ">=2.4.0,<3.0.0"
 
 [package.extras]
@@ -541,13 +541,13 @@ files = [
 
 [[package]]
 name = "django"
-version = "5.0.6"
+version = "5.0.7"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "Django-5.0.6-py3-none-any.whl", hash = "sha256:8363ac062bb4ef7c3f12d078f6fa5d154031d129a15170a1066412af49d30905"},
-    {file = "Django-5.0.6.tar.gz", hash = "sha256:ff1b61005004e476e0aeea47c7f79b85864c70124030e95146315396f1e7951f"},
+    {file = "Django-5.0.7-py3-none-any.whl", hash = "sha256:f216510ace3de5de01329463a315a629f33480e893a9024fc93d8c32c22913da"},
+    {file = "Django-5.0.7.tar.gz", hash = "sha256:bd4505cae0b9bd642313e8fb71810893df5dc2ffcacaa67a33af2d5cd61888f2"},
 ]
 
 [package.dependencies]
@@ -1168,24 +1168,24 @@ files = [
 
 [[package]]
 name = "pip"
-version = "24.1.1"
+version = "24.1.2"
 description = "The PyPA recommended tool for installing Python packages."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pip-24.1.1-py3-none-any.whl", hash = "sha256:efca15145a95e95c00608afeab66311d40bfb73bb2266a855befd705e6bb15a0"},
-    {file = "pip-24.1.1.tar.gz", hash = "sha256:5aa64f65e1952733ee0a9a9b1f52496ebdb3f3077cc46f80a16d983b58d1180a"},
+    {file = "pip-24.1.2-py3-none-any.whl", hash = "sha256:7cd207eed4c60b0f411b444cd1464198fe186671c323b6cd6d433ed80fc9d247"},
+    {file = "pip-24.1.2.tar.gz", hash = "sha256:e5458a0b89f2755e0ee8c0c77613fe5273e05f337907874d64f13171a898a7ff"},
 ]
 
 [[package]]
 name = "pip-api"
-version = "0.0.33"
+version = "0.0.34"
 description = "An unofficial, importable pip API"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "pip-api-0.0.33.tar.gz", hash = "sha256:1c2522ae21efcb034d89cc99f6cf1025293b31c63c29ee98b23f03a85f36bdae"},
-    {file = "pip_api-0.0.33-py3-none-any.whl", hash = "sha256:b8d6eb5a87d3a9e112a20a8e9d24a6fc12d4e1c94d7595eeaf74be11ad47276c"},
+    {file = "pip_api-0.0.34-py3-none-any.whl", hash = "sha256:8b2d7d7c37f2447373aa2cf8b1f60a2f2b27a84e1e9e0294a3f6ef10eb3ba6bb"},
+    {file = "pip_api-0.0.34.tar.gz", hash = "sha256:9b75e958f14c5a2614bae415f2adf7eeb54d50a2cfbe7e24fd4826471bac3625"},
 ]
 
 [package.dependencies]
@@ -1348,13 +1348,13 @@ files = [
 
 [[package]]
 name = "py-serializable"
-version = "1.0.3"
+version = "1.1.0"
 description = "Library for serializing and deserializing Python Objects to and from JSON and XML."
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "py_serializable-1.0.3-py3-none-any.whl", hash = "sha256:afba815f465b9fe7ab1c1a56d1aa8880c8a9e67a6e28b7ed62d4696fa369caf8"},
-    {file = "py_serializable-1.0.3.tar.gz", hash = "sha256:da3cb4b1f3cc5cc5ebecdd3dadbabd5f65d764357366fa64ee9cbaf0d4b70dcf"},
+    {file = "py_serializable-1.1.0-py3-none-any.whl", hash = "sha256:ae7ae4326b0d037b7e710f6e8bb1a97ece4ac2895a1f443a17ffd17f85547d76"},
+    {file = "py_serializable-1.1.0.tar.gz", hash = "sha256:3311ab39063b131caca0fb75e2038153682e55576c67f24a2de72d402dccb6e0"},
 ]
 
 [package.dependencies]
@@ -1708,13 +1708,13 @@ doc = ["Sphinx", "sphinx-rtd-theme"]
 
 [[package]]
 name = "setuptools"
-version = "70.2.0"
+version = "70.3.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "setuptools-70.2.0-py3-none-any.whl", hash = "sha256:b8b8060bb426838fbe942479c90296ce976249451118ef566a5a0b7d8b78fb05"},
-    {file = "setuptools-70.2.0.tar.gz", hash = "sha256:bd63e505105011b25c3c11f753f7e3b8465ea739efddaccef8f0efac2137bac1"},
+    {file = "setuptools-70.3.0-py3-none-any.whl", hash = "sha256:fe384da74336c398e0d956d1cae0669bc02eed936cdb1d49b57de1990dc11ffc"},
+    {file = "setuptools-70.3.0.tar.gz", hash = "sha256:f171bab1dfbc86b132997f26a119f6056a57950d058587841a0082e8830f9dc5"},
 ]
 
 [package.extras]
