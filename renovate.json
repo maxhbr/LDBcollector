@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    ":semanticCommitScopeDisabled",
+    ":semanticCommitTypeAll(deps)"
+  ],
+  "dependencyDashboard": false,
+  "labels": ["dependencies"]
+}
