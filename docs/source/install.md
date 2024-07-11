@@ -13,12 +13,7 @@ or clone latest development version from [GitLab](https://gitlab.com/hermine-pro
 
 ```bash
 git clone https://gitlab.com/hermine-project/hermine.git
-```
-
-You can also use git to clone a specific version :
-    
-```bash
-git clone --branch v0.0.1 https://gitlab.com/hermine-project/hermine.git
+cd hermine/
 ```
 
 Major versions changes mean breaking changes, either in the installation configuration or in the API.
@@ -83,7 +78,6 @@ and renew HTTPS certificates.
 To update your instance : 
 
 ```bash
-cd hermine/
 git switch main && git pull
 docker-compose --profile https up -d --build
 ```
@@ -160,7 +154,6 @@ Using [poetry](https://python-poetry.org/docs/), you can create the
 virtual environment and install the dependencies with:
 
 ```bash
-cd hermine/
 poetry install
 ```
 
