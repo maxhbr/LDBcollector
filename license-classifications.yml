@@ -930,6 +930,16 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+  # https://spdx.org/licenses/CPOL-1.02.html
+  - id: "CPOL-1.02"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:mark-modifications"
+      - "property:modification-related-obligations"
+
   # https://spdx.org/licenses/CUA-OPL-1.0.html
   - id: "CUA-OPL-1.0"
     categories:
