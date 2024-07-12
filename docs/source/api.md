@@ -7,8 +7,9 @@ SPDX-License-Identifier: CC-BY-4.0
 # REST API
 
 Hermine's API uses the [Djano REST](https://www.django-rest-framework.org/) framework.
+There is an auto-generated doc for the API using [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/) available at `{HERMINE_HOST}/api-doc/`for users with admin rights.
 
-:::{warning}
+:::{danger}
 Most API endpoints have a trailing slash. If you omit it, you may get a 301 redirect, which may cause problems in case of `POST` requests.
 :::
 
