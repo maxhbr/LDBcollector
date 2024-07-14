@@ -120,6 +120,7 @@
         },
         "GNU": {
             "aliases": [
+                "GNU v3"
             ],
             "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
         },
@@ -149,7 +150,9 @@
                 "LGPL2",
                 "LGPL+",
                 "GNU LGPLv2",
-                "lgpl"
+                "lgpl",
+                "GNU Library General Public License version 2",
+                "GNU LESSER GENERAL PUBLIC LICENSE"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
