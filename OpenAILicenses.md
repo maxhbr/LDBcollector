@@ -15,7 +15,8 @@ Ein Überblick über die Systematik der RAIL-Lizenzen findet sich unter https://
 1. Responsible Artificial Intelligence Source Code License (v 1.1) (OpenRAIL-S): https://www.licenses.ai/source-code-license
 1. SIL RAIL-M RAIL License (v1.0): https://huggingface.co/spaces/sil-ai/model-license
 2. Software for Open Models License (SOM) (v.1.0): https://github.com/nomic-ai/gpt4all/blob/main/LICENSE_SOM.txt
-1. STABILITY AI NON-COMMERCIAL RESEARCH COMMUNITY LICENSE AGREEMENT /Version Release Date: November 28, 2023): https://huggingface.co/stabilityai/sdxl-turbo/blob/main/LICENSE.TXT
+1. STABILITY AI NON-COMMERCIAL RESEARCH COMMUNITY LICENSE AGREEMENT /Version Release Date: November 28, 2023): [https://huggingface.co/stabilityai/sdxl-turbo/blob/main/LICENSE.TXT](https://web.archive.org/web/20240630153933/https://huggingface.co/stabilityai/sdxl-turbo/blob/main/LICENSE.TXT)
+2. Stability AI Community License Agreement (July 5, 2024): https://stability.ai/community-license-agreement
 1. Stable Video Diffusion Non-commercial Community License Agreement: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/main/LICENSE
 1. Tongyi Qianwen LICENSE AGREEMENT (Version Release Date: August 3, 2023): https://huggingface.co/Qwen/Qwen1.5-72B/blob/main/LICENSE
 
