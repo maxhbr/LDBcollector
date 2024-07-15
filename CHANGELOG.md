@@ -1,5 +1,41 @@
 # Changelog
 
+## 0.3.3
+
+FEATURES:
+* Validate license spdx ids ([e8da736](https://gitlab.com/hermine-project/hermine/commit/e8da736))
+* Allow deleting all usages for a scope / subproject ([3e2e888](https://gitlab.com/hermine-project/hermine/commit/3e2e888))
+* Blank values for scope and project in exploitations ([126763f](https://gitlab.com/hermine-project/hermine/commit/126763f))
+* Allow autocomplete on Generic field when adding/editing an obligation ([6c1e43f](https://gitlab.com/hermine-project/hermine/commit/6c1e43f))
+* Move warranty and liability to shared fields ([669c3a7](https://gitlab.com/hermine-project/hermine/commit/669c3a7))
+
+BUGFIXES:
+
+* Increase max length for license expressions to accomodate real life cases ([b020f06](https://gitlab.com/hermine-project/hermine/commit/b020f06))
+* Add style to button ([206fba9](https://gitlab.com/hermine-project/hermine/commit/206fba9))
+* Give variable name more related to their content ([e073dbf](https://gitlab.com/hermine-project/hermine/commit/e073dbf))
+* Display project and scope ([28c702f](https://gitlab.com/hermine-project/hermine/commit/28c702f))
+* Add hyperlink on licence name to licence page ([6addfce](https://gitlab.com/hermine-project/hermine/commit/6addfce))
+* Typo in title ([e52709c](https://gitlab.com/hermine-project/hermine/commit/e52709c))
+* Display PURLs in component versions ([541f05a](https://gitlab.com/hermine-project/hermine/commit/541f05a))
+* Add breadcrumb to product in release creation form ([0947b2f](https://gitlab.com/hermine-project/hermine/commit/0947b2f))
+
+
+DOCUMENTATION:
+
+* Update page for REST API ([12ab064](https://gitlab.com/hermine-project/hermine/commit/12ab064))
+
+
+CI: 
+* Use to be continuous Docker template ([f29e26a](https://gitlab.com/hermine-project/hermine/commit/f29e26a))
+* Use TBC standard stages ([be246a0](https://gitlab.com/hermine-project/hermine/commit/be246a0))
+* Fix Trivy's Docker image ([a0c54dd](https://gitlab.com/hermine-project/hermine/commit/a0c54dd))
+* Temporary removal to fix the blocking false positives ([7974279](https://gitlab.com/hermine-project/hermine/commit/7974279))
+* Delete the apt-get lists after installing ([815efe7](https://gitlab.com/hermine-project/hermine/commit/815efe7))
+* Update poetry version to allow package-mode option ([b31489d](https://gitlab.com/hermine-project/hermine/commit/b31489d))
+   
+MISC:
+
 ## 0.3.2
 BUGFIXES:
 * Add hlink to projects in dashboard ([d367c3e](https://gitlab.com/hermine-project/hermine/commit/d367c3e))
