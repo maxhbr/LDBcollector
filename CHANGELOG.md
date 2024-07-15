@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.4
+
+* Technical release.
+
 ## 0.3.3
 
 FEATURES:
