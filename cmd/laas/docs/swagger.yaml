@@ -246,6 +246,9 @@ definitions:
     type: object
   models.LicensePATCHRequestJSONSchema:
     properties:
+      external_ref:
+        additionalProperties: true
+        type: object
       marydone:
         type: boolean
       rf_FSFfree:

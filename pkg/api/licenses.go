@@ -21,7 +21,6 @@ import (
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 
-	"github.com/gin-gonic/gin/binding"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )
@@ -341,7 +340,6 @@ func CreateLicense(c *gin.Context) {
 func UpdateLicense(c *gin.Context) {
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var updates models.LicensePATCHRequestJSONSchema
-		var externalRefsPayload models.UpdateExternalRefsJSONPayload
 		var newLicense models.LicenseDB
 		var oldLicense models.LicenseDB
 		newLicenseMap := make(map[string]interface{})
@@ -361,8 +359,7 @@ func UpdateLicense(c *gin.Context) {
 			return err
 		}
 
-		// https://github.com/gin-gonic/gin/pull/1341
-		if err := c.ShouldBindBodyWith(&updates, binding.JSON); err != nil {
+		if err := c.ShouldBindJSON(&updates); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
 				Message:   "invalid json body update",
@@ -374,20 +371,8 @@ func UpdateLicense(c *gin.Context) {
 			return err
 		}
 
-		if err := c.ShouldBindBodyWith(&externalRefsPayload, binding.JSON); err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusBadRequest,
-				Message:   "invalid json body",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusBadRequest, er)
-			return err
-		}
-
 		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
-		if err := tx.Model(&oldLicense).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(external_ref || ?)", externalRefsPayload.ExternalRef)).Error; err != nil {
+		if err := tx.Model(&newLicense).Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", updates.ExternalRef)).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -520,7 +505,7 @@ func UpdateLicense(c *gin.Context) {
 		}
 
 		// Update all other fields except external_ref
-		if err := tx.Model(&newLicense).Where(models.LicenseDB{Id: oldLicense.Id}).Clauses(clause.Returning{}).Updates(newLicenseMap).Error; err != nil {
+		if err := tx.Model(&newLicense).Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).Updates(newLicenseMap).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
