@@ -351,6 +351,29 @@ const docTemplate = `{
                         "description": "External reference parameters",
                         "name": "externalRef",
                         "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "rf_spdx_id",
+                            "rf_shortname",
+                            "rf_fullname"
+                        ],
+                        "type": "string",
+                        "default": "rf_shortname",
+                        "description": "Sort by field",
+                        "name": "sort_by",
+                        "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "asc",
+                            "desc"
+                        ],
+                        "type": "string",
+                        "default": "asc",
+                        "description": "Asc or desc ordering",
+                        "name": "order_by",
+                        "in": "query"
                     }
                 ],
                 "responses": {
