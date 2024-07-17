@@ -79,3 +79,10 @@ release:
     name: "$(echo $CI_COMMIT_TAG | sed 's/^v//')"
     tag_name: "$CI_COMMIT_TAG"
     description: See changes in CHANGELOG.md
+
+cleanup:
+  extends: .docker-kaniko-base
+  stage: publish
+  script:
+    - docker image rm $DOCKER_SNAPSHOT_IMAGE
+
