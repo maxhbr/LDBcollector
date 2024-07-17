@@ -24,6 +24,7 @@ variables:
   DOCKER_TRIVY_IMAGE: registry.hub.docker.com/aquasec/trivy:0.52.2
   DOCKER_PROD_PUBLISH_STRATEGY: none
   DOCKER_BUILD_CACHE_DISABLED: true
+  DOCKER_BUILD_ARGS: "--no-push"
 
 tests:
   stage: test
@@ -79,10 +80,3 @@ release:
     name: "$(echo $CI_COMMIT_TAG | sed 's/^v//')"
     tag_name: "$CI_COMMIT_TAG"
     description: See changes in CHANGELOG.md
-
-cleanup:
-  extends: .docker-kaniko-base
-  stage: publish
-  script:
-    - docker image rm $DOCKER_SNAPSHOT_IMAGE
-
