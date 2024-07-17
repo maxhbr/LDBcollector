@@ -7,6 +7,13 @@ import json
 import logging
 from datetime import datetime
 
+from cyclonedx.model.bom import (
+    Bom as CDXBom,
+    Dependency as CDXDependency,
+    Component as CDXComponent,
+)
+from cyclonedx.schema import SchemaVersion
+from cyclonedx.validation.json import JsonStrictValidator
 from django.core.files.uploadedfile import TemporaryUploadedFile
 from django.db import transaction
 from packageurl import PackageURL
@@ -198,6 +205,59 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         )
 
     logger.info("SPDX import done", datetime.now())
+
+
+@transaction.atomic()
+def import_cyclonedx_file(cyclonedx_file, release_id, replace=False, linking: str = ""):
+    json_validator = JsonStrictValidator(SchemaVersion.V1_6)
+    validation_errors = json_validator.validate_str(cyclonedx_file)
+    if validation_errors:
+        raise SBOMImportFailure(f"Invalid CycloneDX file: {repr(validation_errors)}")
+    bom = CDXBom.from_json(json.loads(cyclonedx_file))
+
+    if replace:
+        Usage.objects.filter(release=release_id).delete()
+
+    dependencies: list[CDXDependency] = bom.dependencies
+    components: list[CDXComponent] = bom.components
+
+    for dependency in dependencies:
+        try:
+            component = next(
+                component
+                for component in components
+                if component.bom_ref == dependency.ref
+            )
+        except StopIteration:
+            if dependency.ref != bom.metadata.component.bom_ref:
+                raise SBOMImportFailure(
+                    f"Component {dependency.ref} not found in the components list"
+                )
+            else:
+                continue
+
+        if len(component.licenses) and hasattr(component.licenses[0], "expression"):
+            declared_license = component.licenses[0].expression
+        elif component.licenses is not None:
+            declared_license = " AND ".join(
+                lic.id or lic.name for lic in component.licenses
+            )
+        else:
+            declared_license = ""
+
+        add_dependency(
+            release_id,
+            "",
+            component.name,
+            {
+                "description": component.description or "",
+            },
+            component.version,
+            declared_license,
+            "",
+            linking,
+            str(component.purl),
+        )
 
 
 def add_dependency(
