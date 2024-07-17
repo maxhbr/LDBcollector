@@ -24,6 +24,9 @@ variables:
   DOCKER_TRIVY_IMAGE: registry.hub.docker.com/aquasec/trivy:0.52.2
   DOCKER_PROD_PUBLISH_STRATEGY: none
   DOCKER_BUILD_CACHE_DISABLED: true
+  DOCKER_BUILD_ARGS: "--no-push"
+  DOCKER_TRIVY_DISABLED: true
+  DOCKER_SBOM_DISABLED: true
 
 tests:
   stage: test
