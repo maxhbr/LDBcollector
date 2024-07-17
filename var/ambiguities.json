@@ -100,6 +100,12 @@
             ],
             "problem": "There are couple of versions of the CPL license (0.5 and 1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
+        "Creative Commons License": {
+            "aliases": [
+                "Creative Commons"
+            ],
+            "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
         "Eiffel Forum License": {
             "aliases": [
                 "License :: OSI Approved :: Eiffel Forum License"
