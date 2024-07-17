@@ -22,6 +22,7 @@ variables:
   DOCKER_DRIVER: overlay2
   DOCKER_TRIVY_ARGS: --vuln-type library
   DOCKER_TRIVY_IMAGE: registry.hub.docker.com/aquasec/trivy:0.52.2
+  DOCKER_PROD_PUBLISH_STRATEGY: none
 
 tests:
   stage: test
