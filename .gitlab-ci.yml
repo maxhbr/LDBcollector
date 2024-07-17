@@ -25,6 +25,8 @@ variables:
   DOCKER_PROD_PUBLISH_STRATEGY: none
   DOCKER_BUILD_CACHE_DISABLED: true
   DOCKER_BUILD_ARGS: "--no-push"
+  DOCKER_TRIVY_DISABLED: true
+  DOCKER_SBOM_DISABLED: true
 
 tests:
   stage: test
