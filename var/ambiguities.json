@@ -106,17 +106,23 @@
             ],
             "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
+        "Eclipse Public License": {
+            "aliases": [
+                "EPL"
+            ],
+            "problem": "There are two versions of the EPL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
         "Eiffel Forum License": {
             "aliases": [
                 "License :: OSI Approved :: Eiffel Forum License"
             ],
             "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
-        "Eclipse Public License": {
+        "European Union Public Licence": {
             "aliases": [
-                "EPL"
+                "EUPL"
             ],
-            "problem": "There are two versions of the EPL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are two versions of the EUPL license (1.0, 1.1 and 1.2). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
         "GCC Runtime Library exception": {
             "aliases": [
