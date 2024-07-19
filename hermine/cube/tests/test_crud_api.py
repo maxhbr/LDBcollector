@@ -154,6 +154,10 @@ class APICRUDTests(BaseHermineAPITestCase):
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
 
+        url = "/api/versions/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
     def test_post_retrieve_usage(self):
         """Test to create a new Usage"""
         self.create_product()
