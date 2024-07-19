@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.51
+Version:        1.52
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -105,6 +105,16 @@ make check-grammar
 
 
 %changelog
+* Fri Jul 19 2024 Miroslav Suchý <msuchy@redhat.com> 1.52-1
+- Add LicenseRef-Frontier-Artistic-1.0 as not-allowed
+- Add LicenseRef-JasPer-1.0 as not-allowed
+- Create missing TOML for Callaway Nmap but reclassify as not-allowed, with
+  usage exception
+- Add LicenseRef-NPSL-0.92 as not-allowed, corresponding to Callaway-era NPSL
+- Add LicenseRef-NPSL-0.93 as not-allowed to cover NPSL 0.93 and 0.94
+- Correct TOML files for LicenseRef-NPSL-0.94 and LicenseRef-NPSL-0.95
+- Add LicenseRef-NPSL-0.95 as not-allowed
+
 * Wed Jul 03 2024 Miroslav Suchý <msuchy@redhat.com> 1.51-1
 - add conditions when to use scancode
 
