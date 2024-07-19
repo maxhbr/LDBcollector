@@ -391,6 +391,7 @@ router.register(r"generics", api_views.GenericViewSet, basename="generics")
 # Models CRUD viewsets
 router.register(r"obligations", api_views.ObligationViewSet, basename="obligations")
 router.register(r"components", api_views.ComponentViewSet, basename="components")
+router.register(r"versions", api_views.VersionViewSet, basename="versions")
 router.register(r"usages", api_views.UsageViewSet, basename="usages")
 router.register(r"products", api_views.ProductViewSet, basename="products")
 router.register(r"licenses", api_views.LicenseViewSet, basename="licenses")
