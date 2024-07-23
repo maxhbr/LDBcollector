@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <description>A micro library that provides a Clojure implementation of the Apache Software Foundation's 3rd Party License Policy (https://www.apache.org/legal/resolved.html).</description>
+  <groupId>com.github.pmonks</groupId>
+  <artifactId>asf-cat</artifactId>
+  <name>asf-cat</name>
+  <scm>
+    <url>https://github.com/pmonks/asf-cat</url>
+    <connection>scm:git:git://github.com/pmonks/asf-cat.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/pmonks/asf-cat.git</developerConnection>
+    <tag>v1.0.12</tag>
+  </scm>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>pmonks</id>
+      <name>Peter Monks</name>
+      <email>pmonks+asf-cat@gmail.com</email>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/pmonks/asf-cat/issues</url>
+  </issueManagement>
+  <url>https://github.com/pmonks/asf-cat</url>
+  <version>1.0.12</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojure</artifactId>
+      <version>1.10.3</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+  </build>
+  <repositories>
+    <repository>
+      <id>clojars</id>
+      <url>https://repo.clojars.org/</url>
+    </repository>
+  </repositories>
+</project>

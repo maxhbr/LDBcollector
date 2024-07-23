@@ -1,0 +1,37 @@
+name: docs
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 21
+      - uses: DeLaGuardo/setup-clojure@12.5
+        with:
+          cli: latest
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gitlibs
+            ~/.clojure
+            ~/.cpcache
+          key: ${{ runner.os }}-${{ hashFiles('**/deps.edn') }}
+
+      - name: Generate docs
+        run: clojure -Srepro -J-Dclojure.main.report=stderr -T:build docs
+
+      - name: Deploy docs
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          keep_files: true    # Required so that we don't clobber the NVD report (published separately)
+          publish_dir: ./target/doc

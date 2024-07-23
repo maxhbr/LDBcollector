@@ -1,0 +1,15 @@
+name: dependencies
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 21 * * 0'
+
+jobs:
+  antq:
+    runs-on: ubuntu-latest
+    container:
+      image: uochan/antq
+    steps:
+      - uses: actions/checkout@v4
+      - run: java -jar /tmp/antq/antq.jar --skip=pom --error-format="::error file={{file}}::{{message}}"
