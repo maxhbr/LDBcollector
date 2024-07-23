@@ -55,9 +55,11 @@ class ImportLicensesForm(BaseJsonImportForm):
 class ImportBomForm(forms.ModelForm):
     BOM_ORT = "ORTBom"
     BOM_SPDX = "SPDXBom"
+    BOM_CYCLONEDX = "CYCLONEDXBom"
     BOM_CHOICES = (
-        (BOM_ORT, "ORT Evaluated model"),
+        (BOM_ORT, "ORT Evaluated model (JSON)"),
         (BOM_SPDX, "SPDX Bill of Materials"),
+        (BOM_CYCLONEDX, "CycloneDX Bill of Materials (JSON)"),
     )
     IMPORT_MODE_MERGE = "Merge"
     IMPORT_MODE_REPLACE = "Replace"

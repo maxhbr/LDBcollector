@@ -219,10 +219,11 @@ def import_spdx_file(
 @transaction.atomic()
 def import_cyclonedx_file(cyclonedx_file, release_id, replace=False, linking: str = ""):
     json_validator = JsonStrictValidator(SchemaVersion.V1_6)
-    validation_errors = json_validator.validate_str(cyclonedx_file)
+    cyclonedx_file_content = cyclonedx_file.read()
+    validation_errors = json_validator.validate_str(cyclonedx_file_content)
     if validation_errors:
         raise SBOMImportFailure(f"Invalid CycloneDX file: {repr(validation_errors)}")
-    bom = CDXBom.from_json(json.loads(cyclonedx_file))
+    bom = CDXBom.from_json(json.loads(cyclonedx_file_content))
 
     if replace:
         Usage.objects.filter(release=release_id).delete()
