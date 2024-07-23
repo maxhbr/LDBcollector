@@ -1,7 +1,7 @@
 USE CASE Source code delivery OR Binary delivery
 	YOU MUST Provide OR Reference License text
 	YOU MUST Forward License notice
-	YOU MUST Forward Reference To Warranty disclaimer
+	YOU MUST Forward Pointer To Warranty disclaimer
 	YOU MUST NOT Restrict Granted rights
 	YOU MUST NOT Use Technological measures
 		ATTRIBUTE To Restrict Exercise Of Granted rights
@@ -14,8 +14,8 @@ USE CASE Source code delivery OR Binary delivery
 	IF Title
 		YOU MUST Provide Title Of Work
 			ATTRIBUTE Reasonable
-	IF Reference To Copyright notices OR License
-		YOU MUST Provide Reference
+	IF Pointer To Copyright notices OR License
+		YOU MUST Provide Pointer
 			ATTRIBUTE Reasonable
 	IF Software modification
 		YOU MUST Provide Modification notice
@@ -32,7 +32,7 @@ USE CASE Source code delivery OR Binary delivery
 USE CASE Image delivery OR Font delivery
 	YOU MUST Provide OR Reference License text
 	YOU MUST Forward License notice
-	YOU MUST Forward Reference To Warranty disclaimer
+	YOU MUST Forward Pointer To Warranty disclaimer
 	YOU MUST NOT Restrict Granted rights
 	YOU MUST NOT Use Technological measures
 		ATTRIBUTE To Restrict Exercise Of Granted rights
@@ -45,8 +45,8 @@ USE CASE Image delivery OR Font delivery
 	IF Title
 		YOU MUST Provide Title Of Work
 			ATTRIBUTE Reasonable
-	IF Reference To Copyright notices OR License
-		YOU MUST Provide Reference
+	IF Pointer To Copyright notices OR License
+		YOU MUST Provide Pointer
 			ATTRIBUTE Reasonable
 	IF Modification
 		YOU MUST Provide Modification notice

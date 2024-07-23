@@ -1,0 +1,5 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST NOT Misrepresent Authorship
+	IF Software modification
+		YOU MUST Provide Modification notice
+		YOU MUST NOT Misrepresent Modified work

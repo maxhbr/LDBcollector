@@ -25,6 +25,7 @@ https://www.osadl.org/fileadmin/checklists/actions/Misrepresent.txt
 https://www.osadl.org/fileadmin/checklists/actions/Modify.txt
 https://www.osadl.org/fileadmin/checklists/actions/Not%20do%20anything%20else.txt
 https://www.osadl.org/fileadmin/checklists/actions/Notify.txt
+https://www.osadl.org/fileadmin/checklists/actions/Observe.txt
 https://www.osadl.org/fileadmin/checklists/actions/Permit.txt
 https://www.osadl.org/fileadmin/checklists/actions/Prepend.txt
 https://www.osadl.org/fileadmin/checklists/actions/Promote.txt
@@ -32,7 +33,6 @@ https://www.osadl.org/fileadmin/checklists/actions/Provide.txt
 https://www.osadl.org/fileadmin/checklists/actions/Publish.txt
 https://www.osadl.org/fileadmin/checklists/actions/Reference.txt
 https://www.osadl.org/fileadmin/checklists/actions/Rename.txt
-https://www.osadl.org/fileadmin/checklists/actions/Request.txt
 https://www.osadl.org/fileadmin/checklists/actions/Require.txt
 https://www.osadl.org/fileadmin/checklists/actions/Restrict.txt
 https://www.osadl.org/fileadmin/checklists/actions/Search.txt

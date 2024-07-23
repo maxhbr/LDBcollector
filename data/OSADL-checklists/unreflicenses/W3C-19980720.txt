@@ -3,7 +3,7 @@ USE CASE Source code delivery OR Binary delivery
 		ATTRIBUTE Viewable
 	YOU MUST Provide Legal notices
 	IF No Legal notices
-		YOU MUST Provide Notice "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"
+		YOU MUST Provide Copyright notice "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"
 	IF Software modification
 		YOU MUST Provide Modification notice
 		YOU MUST Provide Modification date

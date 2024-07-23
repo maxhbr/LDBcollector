@@ -1,0 +1,7 @@
+USE CASE Source code delivery OR Binary delivery
+	EITHER
+		YOU MUST Provide License text
+	OR
+		YOU MUST Reference License text
+			ATTRIBUTE https://blueoakcouncil.org/license/1.0.0
+PATENT HINTS Yes

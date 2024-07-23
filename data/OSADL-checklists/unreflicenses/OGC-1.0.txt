@@ -3,7 +3,7 @@ USE CASE Source code delivery OR Binary delivery
 		ATTRIBUTE Viewable
 	YOU MUST Provide Legal notices
 	IF NOT Legal notices
-		YOU MUST Provide Copyright notice "W3C Software Short Notice https://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html"
+		YOU MUST Provide Copyright notice "Copyright © [$date-of-document] Open Geospatial Consortium, Inc. All Rights Reserved. https://www.ogc.org/about-ogc/policies/copyright-notice-and-disclaimers/"
 	IF Software modification
 		YOU MUST Provide Modification notice
 		YOU MUST Provide Modification date

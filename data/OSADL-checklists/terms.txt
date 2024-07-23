@@ -7,6 +7,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Authorship.txt
 https://www.osadl.org/fileadmin/checklists/terms/Beginning.txt
 https://www.osadl.org/fileadmin/checklists/terms/Binary%20delivery.txt
 https://www.osadl.org/fileadmin/checklists/terms/Binary-only%20delivery.txt
+https://www.osadl.org/fileadmin/checklists/terms/Circumstances.txt
 https://www.osadl.org/fileadmin/checklists/terms/Circumvention.txt
 https://www.osadl.org/fileadmin/checklists/terms/Combined%20library.txt
 https://www.osadl.org/fileadmin/checklists/terms/Combined%20work%20delivery.txt
@@ -19,6 +20,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Copyright%20license.txt
 https://www.osadl.org/fileadmin/checklists/terms/Copyright%20notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/Customary%20medium.txt
 https://www.osadl.org/fileadmin/checklists/terms/Customary%20method.txt
+https://www.osadl.org/fileadmin/checklists/terms/Database%20delivery.txt
 https://www.osadl.org/fileadmin/checklists/terms/Debugging.txt
 https://www.osadl.org/fileadmin/checklists/terms/Delayed%20delivery.txt
 https://www.osadl.org/fileadmin/checklists/terms/Delayed%20source%20code%20delivery.txt
@@ -77,6 +79,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Name.txt
 https://www.osadl.org/fileadmin/checklists/terms/Network%20service.txt
 https://www.osadl.org/fileadmin/checklists/terms/No%20charge.txt
 https://www.osadl.org/fileadmin/checklists/terms/No%20profit.txt
+https://www.osadl.org/fileadmin/checklists/terms/Non-FOSS%20restrictions.txt
 https://www.osadl.org/fileadmin/checklists/terms/Non-permissive%20additional%20terms.txt
 https://www.osadl.org/fileadmin/checklists/terms/Notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/On%20behalf%20of.txt
@@ -91,6 +94,8 @@ https://www.osadl.org/fileadmin/checklists/terms/Other%20works.txt
 https://www.osadl.org/fileadmin/checklists/terms/Patent%20holder.txt
 https://www.osadl.org/fileadmin/checklists/terms/Patent%20license.txt
 https://www.osadl.org/fileadmin/checklists/terms/Patent%20notice.txt
+https://www.osadl.org/fileadmin/checklists/terms/Pointer.txt
+https://www.osadl.org/fileadmin/checklists/terms/Preexisting.txt
 https://www.osadl.org/fileadmin/checklists/terms/Prejudicial.txt
 https://www.osadl.org/fileadmin/checklists/terms/Product%20name.txt
 https://www.osadl.org/fileadmin/checklists/terms/Product.txt
@@ -99,6 +104,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Public%20domain.txt
 https://www.osadl.org/fileadmin/checklists/terms/Reasonable.txt
 https://www.osadl.org/fileadmin/checklists/terms/Recipient.txt
 https://www.osadl.org/fileadmin/checklists/terms/Relinking.txt
+https://www.osadl.org/fileadmin/checklists/terms/Request.txt
 https://www.osadl.org/fileadmin/checklists/terms/Retrieval%20information.txt
 https://www.osadl.org/fileadmin/checklists/terms/Reverse%20engineering.txt
 https://www.osadl.org/fileadmin/checklists/terms/Running.txt

@@ -19,10 +19,10 @@ USE CASE Source code delivery
 				YOU MUST Use Strong copyleft license
 	YOU MUST NOT Require License fee
 USE CASE Binary delivery
-	YOU MUST Reference Source code
-		IF Reference Expires
+	YOU MUST Provide Pointer To Source code
+		IF Pointer Expires
 			EITHER
-				YOU MUST Provide Reference On Request
+				YOU MUST Provide Pointer On Request
 					ATTRIBUTE Within 30 days
 			OR
 				YOU MUST End Binary delivery
