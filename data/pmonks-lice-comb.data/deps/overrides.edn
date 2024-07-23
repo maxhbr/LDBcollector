@@ -1,0 +1,3 @@
+{
+  javax.mail/mail {:spdx true :licenses #{"CDDL-1.1" "GPL-2.0-with-classpath-exception"} :evidence "https://javaee.github.io/javamail/JavaMail-License"}
+}
