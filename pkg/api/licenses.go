@@ -45,6 +45,8 @@ import (
 //	@Param			page			query		int						false	"Page number"
 //	@Param			limit			query		int						false	"Limit of responses per page"
 //	@Param			externalRef		query		string					false	"External reference parameters"
+//	@Param			sort_by			query		string					false	"Sort by field"			Enums(rf_spdx_id, rf_shortname, rf_fullname)	default(rf_shortname)
+//	@Param			order_by		query		string					false	"Asc or desc ordering"	Enums(asc, desc)								default(asc)
 //	@Success		200				{object}	models.LicenseResponse	"Filtered licenses"
 //	@Failure		400				{object}	models.LicenseError		"Invalid value"
 //	@Router			/licenses [get]
@@ -160,7 +162,20 @@ func FilterLicense(c *gin.Context) {
 		query = query.Where(fmt.Sprintf("external_ref->>'%s' = ?", externalRefKey), externalRefValue)
 	}
 
-	query.Order("rf_shortname")
+	sortBy := c.Query("sort_by")
+	orderBy := c.Query("order_by")
+	queryOrderString := ""
+	if sortBy != "" && (sortBy == "rf_spdx_id" || sortBy == "rf_shortname" || sortBy == "rf_fullname") {
+		queryOrderString += sortBy
+	} else {
+		queryOrderString += "rf_shortname"
+	}
+
+	if orderBy != "" && orderBy == "desc" {
+		queryOrderString += " desc"
+	}
+
+	query.Order(queryOrderString)
 
 	_ = utils.PreparePaginateResponse(c, query, &models.LicenseResponse{})
 

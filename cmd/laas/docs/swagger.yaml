@@ -969,6 +969,23 @@ paths:
         in: query
         name: externalRef
         type: string
+      - default: rf_shortname
+        description: Sort by field
+        enum:
+        - rf_spdx_id
+        - rf_shortname
+        - rf_fullname
+        in: query
+        name: sort_by
+        type: string
+      - default: asc
+        description: Asc or desc ordering
+        enum:
+        - asc
+        - desc
+        in: query
+        name: order_by
+        type: string
       produces:
       - application/json
       responses:
