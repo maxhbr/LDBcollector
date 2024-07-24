@@ -7,6 +7,9 @@ category: "W3C Software"
 shortName: "W3C-Software-2002-12-31"
 spdxIdentifier: "W3C"
 
+canonicalNameHistory:
+  - "W3C Software Notice and License (2002)"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

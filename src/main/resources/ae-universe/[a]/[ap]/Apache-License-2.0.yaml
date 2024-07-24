@@ -81,6 +81,7 @@ alternativeNames:
   - "Apache (ASL) 2.0"
   - "Apache Software License v2"
   - "www.apache.org/licenses/LICENSE-2.0"
+  - "This is released under the Apache license. The API's upstream prototype implementation also formed the basis of V8's implementation in src/wasm/c-api.cc."
 
 otherIds: 
   - "scancode:apache-2.0"

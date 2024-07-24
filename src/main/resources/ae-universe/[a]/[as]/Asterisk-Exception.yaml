@@ -7,6 +7,9 @@ category: "Asterisk Exception"
 shortName: "Asterisk-Exception"
 spdxIdentifier: "Asterisk-exception"
 
+canonicalNameHistory:
+  - "Asterisk exception"
+
 type: "exception"
 
 alternativeNames:

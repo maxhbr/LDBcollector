@@ -6,6 +6,9 @@ canonicalName: "Lucida Bitmap Fonts License"
 category: "Lucida-Bitmap-Fonts"
 spdxIdentifier: "Lucida-Bitmap-Fonts"
 
+canonicalNameHistory:
+  - "Lucida Legal Notice"
+
 alternativeNames:
   - "Lucida-Bitmap-Fonts"
   - "Lucida Bitmap Fonts License"

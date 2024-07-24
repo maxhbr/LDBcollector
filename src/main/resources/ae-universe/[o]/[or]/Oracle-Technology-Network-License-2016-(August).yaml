@@ -6,6 +6,9 @@ canonicalName: "Oracle Technology Network License 2016 (August)"
 category: "OTN"
 shortName: "OTN-2016"
 
+canonicalNameHistory:
+  - "Oracle Technology Network License"
+
 alternativeNames:
   - "Oracle Technology Network License"
 

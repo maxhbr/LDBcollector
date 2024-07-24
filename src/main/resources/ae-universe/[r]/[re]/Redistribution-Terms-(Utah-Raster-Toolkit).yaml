@@ -10,6 +10,7 @@ spdxIdentifier: "URT-RLE"
 canonicalNameHistory:
   - "Redistribution Terms (source provision; no warranty)"
   - "Redistribution Terms (variant 012)"
+  - "Utah Raster Toolkit Run Length Encoded License"
 
 openCoDEStatus: "approved"
 

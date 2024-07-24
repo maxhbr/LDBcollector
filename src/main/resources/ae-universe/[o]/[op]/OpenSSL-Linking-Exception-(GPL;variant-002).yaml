@@ -9,6 +9,7 @@ shortName: "OpenSSL-Linking-Exception-GPL-002"
 canonicalNameHistory:
   - "OpenSSL Exception (GPL)"
   - "Linking Exception (GPL; variant 024)"
+  - "OpenSSL Exception (gpl)"
 
 type: "exception"
 

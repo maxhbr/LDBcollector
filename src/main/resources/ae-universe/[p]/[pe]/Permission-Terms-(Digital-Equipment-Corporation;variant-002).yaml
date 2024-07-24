@@ -2,9 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "X11-Style (DEC 2)"
-category: "X11-Style (DEC 2)"
+canonicalName: "Permission Terms (Digital Equipment Corporation; variant 002)"
+category: "Permission"
+shortName: "PT-DEC-Var002"
 spdxIdentifier: "HPND-DEC"
+
+canonicalNameHistory:
+  - "X11-Style (DEC 2)"
 
 openCoDEStatus: "approved"
 
