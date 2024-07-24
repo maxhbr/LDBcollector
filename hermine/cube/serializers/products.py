@@ -166,6 +166,13 @@ class UploadSPDXSerializer(serializers.Serializer):
     default_scope_name = serializers.CharField(max_length=50, required=False)
 
 
+class UploadCYCLONEDXSerializer(serializers.Serializer):
+    cyclonedx_file = serializers.FileField(validators=[validate_file_size])
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    replace = serializers.BooleanField(default=False, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
+
+
 class UploadORTSerializer(serializers.Serializer):
     ort_file = serializers.FileField(validators=[validate_file_size])
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())

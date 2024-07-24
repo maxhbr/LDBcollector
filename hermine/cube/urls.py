@@ -382,6 +382,9 @@ router = Router()
 
 # Validation pipeline endpoints
 router.register(r"upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
+router.register(
+    r"upload_cyclonedx", api_views.UploadCYCLONEDXViewSet, basename="upload_cyclonedx"
+)
 router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
 router.register(r"releases", api_views.ReleaseViewSet, basename="releases")
 
