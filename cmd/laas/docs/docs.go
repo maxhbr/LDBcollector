@@ -974,6 +974,17 @@ const docTemplate = `{
                         "description": "Number of records per page",
                         "name": "limit",
                         "in": "query"
+                    },
+                    {
+                        "enum": [
+                            "asc",
+                            "desc"
+                        ],
+                        "type": "string",
+                        "default": "asc",
+                        "description": "Asc or desc ordering",
+                        "name": "order_by",
+                        "in": "query"
                     }
                 ],
                 "responses": {

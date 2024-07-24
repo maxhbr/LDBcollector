@@ -1377,6 +1377,14 @@ paths:
         in: query
         name: limit
         type: integer
+      - default: asc
+        description: Asc or desc ordering
+        enum:
+        - asc
+        - desc
+        in: query
+        name: order_by
+        type: string
       produces:
       - application/json
       responses:

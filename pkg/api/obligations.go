@@ -34,11 +34,12 @@ import (
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Param			active	query		bool	true	"Active obligation only"
-//	@Param			page	query		int		false	"Page number"
-//	@Param			limit	query		int		false	"Number of records per page"
-//	@Success		200		{object}	models.ObligationResponse
-//	@Failure		404		{object}	models.LicenseError	"No obligations in DB"
+//	@Param			active		query		bool	true	"Active obligation only"
+//	@Param			page		query		int		false	"Page number"
+//	@Param			limit		query		int		false	"Number of records per page"
+//	@Param			order_by	query		string	false	"Asc or desc ordering"	Enums(asc, desc)	default(asc)
+//	@Success		200			{object}	models.ObligationResponse
+//	@Failure		404			{object}	models.LicenseError	"No obligations in DB"
 //	@Router			/obligations [get]
 func GetAllObligation(c *gin.Context) {
 	var obligations []models.Obligation
@@ -63,6 +64,15 @@ func GetAllObligation(c *gin.Context) {
 	query.Where("active = ?", parsedActive)
 
 	_ = utils.PreparePaginateResponse(c, query, &models.ObligationResponse{})
+
+	orderBy := c.Query("order_by")
+	queryOrderString := "topic"
+
+	if orderBy != "" && orderBy == "desc" {
+		queryOrderString += " desc"
+	}
+
+	query.Order(queryOrderString)
 
 	if err = query.Find(&obligations).Error; err != nil {
 		er := models.LicenseError{
