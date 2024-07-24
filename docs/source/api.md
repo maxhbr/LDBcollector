@@ -80,23 +80,22 @@ An example would be:
 
 ```python
 endpoint = "api/upload_ort/"
-url = HERMINE_URL + endpoint
-
-evmodel_path = "path/to/your/evaluated-model.json"
-ort_file = open(evmodel_path, "rb")
-
+url = HERMINE_HOST + endpoint
 data = {
-    "release": <int:release_id>,
+    "release": 33,
 }
-
-upload_response = requests.post(url, files={"ort_file": ort_file}, data=data, headers=headers)
+evmodel_path = "path/to/your/evaluated-model.json"
+with open(evmodel_path, "rb") as ort_file:
+    upload_response = requests.post(
+        url, files={"ort_file": ort_file}, data=data, headers=headers
+    )
 ```
 
 
 ### SPDX file 
 
 
-```{py:function} PUT /api/upload_spdx/
+```{py:function} POST /api/upload_spdx/
 
 Adds the content of the SBOM as SPDX to a given release
 
@@ -111,16 +110,15 @@ An example would be:
 
 ```python
 endpoint = "api/upload_spdx/"
-url = HERMINE_URL + endpoint
-
-spdx_path = "path/to/your/spdx.json"
-spdx_file = open(spdx_path, "rb")
-
+url = HERMINE_HOST + endpoint
 data = {
-    "release": <int:release_id>,
+    "release": 33,
 }
-
-upload_response = requests.post(url, files={"spdx_file": spdx_file}, data=data, headers=headers)
+spdx_path = "path/to/your/spdx.json"
+with open(spdx_path, "rb") as spdx_file:
+    upload_response = requests.post(
+        url, files={"spdx_file": spdx_file}, data=data, headers=headers
+    )
 ```
 
 
