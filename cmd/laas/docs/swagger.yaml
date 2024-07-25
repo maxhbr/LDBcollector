@@ -4,6 +4,8 @@ definitions:
     type: object
   models.Audit:
     properties:
+      entity:
+        type: object
       id:
         example: 456
         type: integer
@@ -11,11 +13,16 @@ definitions:
         example: "2023-12-01T18:10:25.00+05:30"
         type: string
       type:
+        enum:
+        - obligation
+        - license
         example: license
         type: string
       type_id:
         example: 34
         type: integer
+      user:
+        $ref: '#/definitions/models.User'
       user_id:
         example: 123
         type: integer

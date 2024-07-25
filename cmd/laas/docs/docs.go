@@ -1594,6 +1594,9 @@ const docTemplate = `{
         "models.Audit": {
             "type": "object",
             "properties": {
+                "entity": {
+                    "type": "object"
+                },
                 "id": {
                     "type": "integer",
                     "example": 456
@@ -1604,11 +1607,18 @@ const docTemplate = `{
                 },
                 "type": {
                     "type": "string",
+                    "enum": [
+                        "obligation",
+                        "license"
+                    ],
                     "example": "license"
                 },
                 "type_id": {
                     "type": "integer",
                     "example": 34
+                },
+                "user": {
+                    "$ref": "#/definitions/models.User"
                 },
                 "user_id": {
                     "type": "integer",

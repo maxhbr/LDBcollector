@@ -31,12 +31,13 @@ import (
 //	@Security		ApiKeyAuth
 //	@Router			/audits [get]
 func GetAllAudit(c *gin.Context) {
-	var audit []models.Audit
-	query := db.DB.Model(&models.Audit{})
+	var audits []models.Audit
+
+	query := db.DB.Model(&models.Audit{}).Preload("User")
 
 	_ = utils.PreparePaginateResponse(c, query, &models.AuditResponse{})
 
-	if err := query.Order("timestamp desc").Find(&audit).Error; err != nil {
+	if err := query.Order("timestamp desc").Find(&audits).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "unable to fetch audits",
@@ -47,11 +48,17 @@ func GetAllAudit(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
+
+	for i := 0; i < len(audits); i++ {
+		if err := getAuditEntity(c, &audits[i]); err != nil {
+			return
+		}
+	}
 	res := models.AuditResponse{
-		Data:   audit,
+		Data:   audits,
 		Status: http.StatusOK,
 		Meta: &models.PaginationMeta{
-			ResourceCount: len(audit),
+			ResourceCount: len(audits),
 		},
 	}
 
@@ -80,7 +87,7 @@ func GetAudit(c *gin.Context) {
 		return
 	}
 
-	if err := db.DB.Where(models.Audit{Id: parsedId}).First(&audit).Error; err != nil {
+	if err := db.DB.Preload("User").Where(&models.Audit{Id: parsedId}).First(&audit).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "no audit with such id exists",
@@ -91,6 +98,11 @@ func GetAudit(c *gin.Context) {
 		c.JSON(http.StatusNotFound, er)
 		return
 	}
+
+	if err := getAuditEntity(c, &audit); err != nil {
+		return
+	}
+
 	res := models.AuditResponse{
 		Data:   []models.Audit{audit},
 		Status: http.StatusOK,
@@ -219,4 +231,36 @@ func GetChangeLogbyId(c *gin.Context) {
 		},
 	}
 	c.JSON(http.StatusOK, res)
+}
+
+// getAuditEntity is an utility function to fetch obligation or license associated with an audit
+func getAuditEntity(c *gin.Context, audit *models.Audit) error {
+	if audit.Type == "license" || audit.Type == "License" {
+		audit.Entity = &models.LicenseDB{}
+		if err := db.DB.Where(&models.LicenseDB{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "license corresponding with this audit does not exist",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
+		}
+	} else if audit.Type == "obligation" || audit.Type == "Obligation" {
+		audit.Entity = &models.Obligation{}
+		if err := db.DB.Where(&models.Obligation{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "obligation corresponding with this audit does not exist",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
+		}
+	}
+	return nil
 }
