@@ -44,7 +44,7 @@
     (is (nil?                      (dep->expressions ['slipset/deps-deploy         "0.2.0"])))
     (is (nil?                      (dep->expressions ['borkdude/sci.impl.reflector "0.0.1"]))))
   (testing "Valid deps - multi license"
-    (is (= #{"EPL-1.0 OR LGPL-3.0-only"} (dep->expressions ['ch.qos.logback/logback-classic "1.2.7"])))  ; Note: <url> implies LGPL-2.1-only, but name is ambiguous
+    (is (= #{"EPL-1.0 OR LGPL-2.0-or-later"} (dep->expressions ['ch.qos.logback/logback-classic "1.2.7"])))  ; Note: <url> implies LGPL-2.1-only, but name is ambiguous
     (is (= #{"CDDL-1.1 OR GPL-2.0-only WITH Classpath-exception-2.0"}
            (dep->expressions ['javax.mail/mail "1.4.7"]))))
   (testing "Valid deps - Maven classifiers"
