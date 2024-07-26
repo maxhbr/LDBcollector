@@ -29,8 +29,9 @@
 
 (defn- get-rencgs
   "Get a value for an re-ncg, potentially looking at multiple ncgs in order
-  until a non-blank value is found. Also trims and lower-cases the value, and
-  replaces all whitespace with a single space."
+  until a non-blank value is found. Returns `default` when no non-blank value is
+  found (and which defaults to `nil` if not provided). Trims and lower-cases the
+  value, and replaces all whitespace with a single space."
   ([m names] (get-rencgs m names nil))
   ([m names default]
     (loop [f (first names)
@@ -123,8 +124,8 @@
                                     "netbsd"                                              "NetBSD"
                                     "modification"                                        "Modification"
                                     ("no military license" "no military licence")         "No-Military-License"
-                                    ("no nuclear license" "no nuclear licence")           "No-Nuclear-License"
                                     ("no nuclear license 2014" "no nuclear licence 2014") "No-Nuclear-License-2014"
+                                    ("no nuclear license" "no nuclear licence")           "No-Nuclear-License"
                                     "no nuclear warranty"                                 "No-Nuclear-Warranty"
                                     "open mpi"                                            "Open-MPI"
                                     "shortened"                                           "Shortened"
@@ -186,27 +187,27 @@
 (defn- gpl-id-constructor
   "An SPDX id constructor specific to the GNU family of licenses."
   [m]
-  (let [variant    (cond (contains? m "agpl") "AGPL"
-                         (contains? m "lgpl") "LGPL"
-                         (contains? m "gpl")  "GPL")
-        version    (get-rencgs m ["version"] "")
-        version    (s/replace version #"\p{Punct}+" ".")
+  (let [variant            (cond (contains? m "agpl") "AGPL"
+                                 (contains? m "lgpl") "LGPL"
+                                 (contains? m "gpl")  "GPL")
+        version-present?   (boolean (get-rencgs m ["version"] false))
+        version            (get-rencgs m ["version"] (if (= variant "LGPL") "2.0" "1.0"))
+        version            (s/replace version #"\p{Punct}+" ".")
         [confidence confidence-explanations]
-                   (if (s/blank? version)
-                     [:low #{:missing-version}]
-                     (if (s/includes? version ".")
-                       [:high]
-                       [:medium #{:partial-version}]))
-        version    (if (s/blank? version)
-                     (:latest-ver m)
-                     version)
-        version    (if (s/includes? version ".")
-                     version
-                     (str version ".0"))
-        suffix     (if (contains? m "orLater")
-                     "or-later"
-                     "only")  ; Note: we (conservatively) default to "only" when we don't have an explicit suffix
-        id         (str variant "-" version  "-" suffix)]
+                           (if (s/blank? version)
+                             [:low #{:missing-version}]
+                             (if (s/includes? version ".")
+                               [:high]
+                               [:medium #{:partial-version}]))
+        version            (if (s/includes? version ".")
+                             version
+                             (str version ".0"))
+        [suffix confidence-explanations]
+                           (cond (contains? m "orLater") ["or-later" confidence-explanations]
+                                 (contains? m "only")    ["only"     confidence-explanations]
+                                 :else                   [(if version-present? "only" "or-later")  ; Note: on the advice of SPDX technical team, default to "or later" variant if version not present
+                                                          (set/union #{:missing-version-suffix} confidence-explanations)])
+        id                 (str variant "-" version  "-" suffix)]
     [(assert-listed-id id) confidence confidence-explanations]))
 
 (defn- simple-regex-match
@@ -221,9 +222,9 @@
 
 
 ; The regex for the GNU family is a nightmare, so we build it up (and test it) in pieces
-(def agpl-re          #"(?<agpl>AGPL|Affero)(\s+GNU)?(\s+General)?(\s+Public)?(\s+Licen[cs]e)?(\s+\(?AGPL\)?)?")
-(def lgpl-re          #"(?<lgpl>L\s?GPL|GNU\s+(Library|Lesser)|(Library|Lesser)\s+(L?GPL|General\s+Public\s+Licen[cs]e))(\s+or\s+Lesser)?(\s+General)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?LGPL\)?)?")
-(def gpl-re           #"(?<!(Affero|Lesser|Library)\s+)(?<gpl>GNU(?!\s+Classpath)|(?<!(L|A)\s*)GPL|General\s+Public\s+Licen[cs]e)(?!\s+(Affero|Library|Lesser|General\s+Lesser|General\s+Library|LGPL|AGPL))((\s+General)?(?!\s+(Affero|Lesser|Library))\s+Public\s+Licen[cs]e)?(\s+\(?GPL\)?)?")
+(def agpl-re          #"(?<agpl>AGPL|Affero)(\s+GNU)?(\s+Genere?al)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?AGPL\)?)?")
+(def lgpl-re          #"(?<lgpl>(GNU\s+(Genere?al\s+)?(Library\s+or\s+Lesser|Library|Lesser))|((Library\s+or\s+Lesser|Library|Lesser)\s+(GNU|GPL|Genere?al)|(L(esser\s)?\s*GPL)))(\s+Genere?al)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?L\s*GPL\)?)?")
+(def gpl-re           #"(?<!(Affero|Lesser|Library)\s+)(?<gpl>GNU(?!\s+Classpath)|(?<!(L|A)\s*)GPL|Genere?al\s+Pub?lic\s+Licen[cs]e)(?!\s+(Affero|Library|Lesser|Genere?al\s+Lesser|Genere?al\s+Library|LGPL|AGPL))((\s+General)?(?!\s+(Affero|Lesser|Library))\s+Pub?lic\s+Licen[cs]e)?(\s+\(?GPL\)?)?")
 (def version-re       #"[\s,-]*(_?V(ersion)?)?[\s\._]*(?<version>\d+([\._]\d+)?)?")
 (def only-or-later-re #"[\s,-]*((?<only>\(?only\)?)|(\(?or(\s+\(?at\s+your\s+(option|discretion)\)?)?(\s+any)?)?([\s-]*(?<orLater>lat[eo]r|newer|greater|\+)))?")
 (def gnu-re           (lciu/re-concat "(?x)(?i)\\b(\n# Alternative 1: AGPL\n"
