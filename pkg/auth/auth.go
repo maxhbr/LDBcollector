@@ -311,14 +311,8 @@ func generateToken(user models.User) (string, error) {
 		return "", err
 	}
 
-	jwtUser := models.JWTUser{
-		Id:        user.Id,
-		Username:  user.Username,
-		Userlevel: user.Userlevel,
-	}
-
 	claims := jwt.MapClaims{}
-	claims["user"] = jwtUser
+	claims["user"] = user
 	claims["nbf"] = time.Now().Unix()
 	claims["exp"] = time.Now().Add(time.Hour * time.Duration(tokenLifespan)).Unix()
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)

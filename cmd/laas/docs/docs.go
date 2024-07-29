@@ -2563,7 +2563,6 @@ const docTemplate = `{
         "models.User": {
             "type": "object",
             "required": [
-                "password",
                 "userlevel",
                 "username"
             ],
@@ -2571,9 +2570,6 @@ const docTemplate = `{
                 "id": {
                     "type": "integer",
                     "example": 123
-                },
-                "password": {
-                    "type": "string"
                 },
                 "userlevel": {
                     "type": "string",
@@ -2594,7 +2590,8 @@ const docTemplate = `{
             ],
             "properties": {
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "fossy"
                 },
                 "userlevel": {
                     "type": "string",
@@ -2614,7 +2611,8 @@ const docTemplate = `{
             ],
             "properties": {
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "fossy"
                 },
                 "username": {
                     "type": "string",

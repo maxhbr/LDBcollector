@@ -256,25 +256,18 @@ type User struct {
 	Id           int64   `json:"id" gorm:"primary_key" example:"123"`
 	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
 	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
-	Userpassword *string `json:"password,omitempty" binding:"required"`
-}
-
-// JWTUser struct is representation of user information in JWT.
-type JWTUser struct {
-	Id        int64  `json:"id"`
-	Username  string `json:"username"`
-	Userlevel string `json:"userlevel"`
+	Userpassword *string `json:"-"`
 }
 
 type UserInput struct {
 	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
 	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
-	Userpassword *string `json:"password,omitempty" binding:"required"`
+	Userpassword *string `json:"password,omitempty" binding:"required" example:"fossy"`
 }
 
 type UserLogin struct {
 	Username     string `json:"username" binding:"required" example:"fossy"`
-	Userpassword string `json:"password" binding:"required"`
+	Userpassword string `json:"password" binding:"required" example:"fossy"`
 }
 
 // UserResponse struct is representation of design API response of user.

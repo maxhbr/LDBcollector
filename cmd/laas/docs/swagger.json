@@ -2556,7 +2556,6 @@
         "models.User": {
             "type": "object",
             "required": [
-                "password",
                 "userlevel",
                 "username"
             ],
@@ -2564,9 +2563,6 @@
                 "id": {
                     "type": "integer",
                     "example": 123
-                },
-                "password": {
-                    "type": "string"
                 },
                 "userlevel": {
                     "type": "string",
@@ -2587,7 +2583,8 @@
             ],
             "properties": {
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "fossy"
                 },
                 "userlevel": {
                     "type": "string",
@@ -2607,7 +2604,8 @@
             ],
             "properties": {
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "fossy"
                 },
                 "username": {
                     "type": "string",

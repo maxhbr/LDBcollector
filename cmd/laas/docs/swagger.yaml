@@ -701,8 +701,6 @@ definitions:
       id:
         example: 123
         type: integer
-      password:
-        type: string
       userlevel:
         example: admin
         type: string
@@ -710,13 +708,13 @@ definitions:
         example: fossy
         type: string
     required:
-    - password
     - userlevel
     - username
     type: object
   models.UserInput:
     properties:
       password:
+        example: fossy
         type: string
       userlevel:
         example: admin
@@ -732,6 +730,7 @@ definitions:
   models.UserLogin:
     properties:
       password:
+        example: fossy
         type: string
       username:
         example: fossy

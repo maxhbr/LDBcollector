@@ -561,10 +561,6 @@ func UpdateLicense(c *gin.Context) {
 // addChangelogsForLicenseUpdate adds changelogs for the updated fields on license update
 func addChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 	newLicense, oldLicense *models.LicenseDB) error {
-	var user models.User
-	if err := tx.Where(models.User{Username: username}).First(&user).Error; err != nil {
-		return err
-	}
 	var changes []models.ChangeLog
 
 	if oldLicense.Fullname != newLicense.Fullname {
