@@ -79,6 +79,8 @@ class ImportBomForm(forms.ModelForm):
         initial=None,
         label="Components linking",
     )
+    default_project_name = forms.CharField(max_length=750, required=False)
+    default_scope_name = forms.CharField(max_length=50, required=False)
 
     class Meta:
         model = Release
