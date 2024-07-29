@@ -110,6 +110,8 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     self.object.pk,
                     replace,
                     linking=form.cleaned_data.get("linking"),
+                    default_project_name=form.cleaned_data.get("default_project_name"),
+                    default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
         except SBOMImportFailure as e:
             form.add_error("file", e)

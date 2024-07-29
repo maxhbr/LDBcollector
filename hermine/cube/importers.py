@@ -126,8 +126,8 @@ def import_ort_evaluated_model_json_file(
                     spdx_valid_license,
                     linking,
                     current_purl,
-                    scope_name,
                     project_name,
+                    scope_name,
                 )
         else:
             add_dependency(
@@ -217,7 +217,14 @@ def import_spdx_file(
 
 
 @transaction.atomic()
-def import_cyclonedx_file(cyclonedx_file, release_id, replace=False, linking: str = ""):
+def import_cyclonedx_file(
+    cyclonedx_file,
+    release_id,
+    replace=False,
+    linking: str = "",
+    default_project_name: str = "",
+    default_scope_name: str = "",
+):
     json_validator = JsonStrictValidator(SchemaVersion.V1_6)
     cyclonedx_file_content = cyclonedx_file.read()
     validation_errors = json_validator.validate_str(cyclonedx_file_content)
@@ -267,6 +274,8 @@ def import_cyclonedx_file(cyclonedx_file, release_id, replace=False, linking: st
             "",
             linking,
             str(component.purl),
+            default_project_name,
+            default_scope_name,
         )
 
 
@@ -280,8 +289,8 @@ def add_dependency(
     concluded_license,
     linking,
     purl="",
-    scope="",
     project="",
+    scope="",
 ):
     if not scope:
         scope = Usage.DEFAULT_SCOPE

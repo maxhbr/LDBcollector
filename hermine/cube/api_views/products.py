@@ -404,6 +404,7 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
 class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
     serializer_class = UploadCYCLONEDXSerializer
+    parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
@@ -418,6 +419,10 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             release.pk,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
+            default_project_name=serializer.validated_data.get(
+                "default_project_name", ""
+            ),
+            default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
         return Response()
 
