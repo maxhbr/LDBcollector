@@ -140,7 +140,14 @@ def import_ort_evaluated_model_json_file(
 
 
 @transaction.atomic()
-def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
+def import_spdx_file(
+    spdx_file,
+    release_id,
+    replace=False,
+    linking: str = "",
+    default_project_name: str = "",
+    default_scope_name: str = "",
+):
     # Importing SPDX BOM yaml
     logger.info("SPDX import started")
     try:
@@ -195,6 +202,8 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
             concluded_license,
             linking,
             purl,
+            default_project_name,
+            default_scope_name,
         )
 
     logger.info("SPDX import done", datetime.now())
@@ -210,9 +219,13 @@ def add_dependency(
     concluded_license,
     linking,
     purl="",
-    scope=Usage.DEFAULT_SCOPE,
-    project=Usage.DEFAULT_PROJECT,
+    scope="",
+    project="",
 ):
+    if not scope:
+        scope = Usage.DEFAULT_SCOPE
+    if not project:
+        project = Usage.DEFAULT_PROJECT
     # ORT has not concluded license, but declared license is valid
     if not concluded_license and is_valid(declared_license):
         concluded_license = declared_license
