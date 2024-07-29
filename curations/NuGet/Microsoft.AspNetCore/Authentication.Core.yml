@@ -1,5 +1,10 @@
-- id: "NuGet:Microsoft.AspNetCore:Authentication.Core:[2.1.7,)"
+- id: "NuGet:Microsoft.AspNetCore:Authentication.Core:[3.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
       path: "src/Http/Authentication.Core/src"
+- id: "NuGet:Microsoft.AspNetCore:Authentication.Core:(,3.0.0["
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.Authentication.Core"

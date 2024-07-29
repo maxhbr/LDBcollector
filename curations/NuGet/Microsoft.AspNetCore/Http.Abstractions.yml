@@ -1,5 +1,11 @@
-- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:[2.1.7,)"
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:[3.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
       path: "src/Http/Http.Abstractions/src"
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:(,3.0.0["
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.Http.Abstractions"
