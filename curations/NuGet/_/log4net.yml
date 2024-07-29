@@ -39,3 +39,8 @@
     vcs:
       type: Git
       url: "https://github.com/apache/logging-log4net.git"
+- id: "NuGet::log4net:"
+  curations:
+    comment: "The package resides in its own directory."
+    vcs:
+      path: "src/log4net"
