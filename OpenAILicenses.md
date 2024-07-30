@@ -9,6 +9,7 @@ Ein Überblick über die Systematik der RAIL-Lizenzen findet sich unter https://
 1. The ChatGLM3-6B License: https://huggingface.co/THUDM/chatglm3-6b/blob/main/MODEL_LICENSE
 1. Coqui Public Model License 1.0.0: https://huggingface.co/coqui/XTTS-v2/blob/main/LICENSE.txt
 1. CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
+2. Functional Source License, Version 1.1, MIT Future License: https://github.com/Pythagora-io/gpt-pilot/blob/main/LICENSE
 1. GEMMA Terms of Use (Version release: February 21, 2024): https://ai.google.dev/gemma/terms 
 1. Llma 2 Community License Agreement (Version Release Date: July 18, 2023): https://github.com/facebookresearch/llama/blob/v2/LICENSE
 1. Responsible Artificial Intelligence Source Code License (v 1.0) (OpenRAIL-S): https://www.licenses.ai/source-code-license-v1 
