@@ -10,3 +10,5 @@ spdxIdentifier: "HPND-export-US-acknowledgement"
 canonicalNameHistory:
   - "Permission Terms (with export note) Var-02"
 
+otherIds: 
+  - "scancode:hpnd-export-us-acknowledgement"

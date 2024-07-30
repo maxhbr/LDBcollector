@@ -10,3 +10,5 @@ alternativeNames:
   - "GCR-docs"
   - "Gnome GCR Documentation License"
 
+otherIds: 
+  - "scancode:gcr-docs"

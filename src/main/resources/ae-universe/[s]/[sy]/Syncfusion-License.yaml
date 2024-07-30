@@ -2,12 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "mailprio License"
-category: "mailprio"
-spdxIdentifier: "mailprio"
+canonicalName: "Syncfusion License"
+category: "Syncfusion"
+shortName: "Syncfusion"
 
 alternativeNames:
-  - "mailprio License"
+  - "Syncfusion License"
+  - "Syncfusion Terms"
 
-otherIds: 
-  - "scancode:mailprio"

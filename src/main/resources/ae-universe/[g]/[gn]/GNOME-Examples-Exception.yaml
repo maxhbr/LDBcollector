@@ -15,3 +15,5 @@ alternativeNames:
   - "GNOME-examples-exception"
   - "GNOME examples exception"
 
+otherIds: 
+  - "scancode:gnome-examples-exception"

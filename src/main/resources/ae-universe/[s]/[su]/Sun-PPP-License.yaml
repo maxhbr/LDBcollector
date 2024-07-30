@@ -10,3 +10,5 @@ alternativeNames:
   - "Sun-PPP"
   - "Sun PPP License"
 
+otherIds: 
+  - "scancode:sun-ppp"

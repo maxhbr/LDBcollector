@@ -12,3 +12,5 @@ type: "exception"
 alternativeNames:
   - "PCRE BSD License Exception"
 
+otherIds: 
+  - "scancode:pcre2-exception"

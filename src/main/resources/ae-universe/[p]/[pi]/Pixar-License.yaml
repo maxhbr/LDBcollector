@@ -9,3 +9,5 @@ spdxIdentifier: "Pixar"
 alternativeNames:
   - "Pixar License"
 
+otherIds: 
+  - "scancode:pixar"

@@ -9,3 +9,5 @@ spdxIdentifier: "gtkbook"
 alternativeNames:
   - "gtkbook License"
 
+otherIds: 
+  - "scancode:gtkbook"

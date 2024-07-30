@@ -15,3 +15,5 @@ alternativeNames:
   - "Gmsh-exception"
   - "Gmsh exception>"
 
+otherIds: 
+  - "scancode:gmsh-exception"
