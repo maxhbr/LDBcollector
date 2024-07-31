@@ -6,7 +6,16 @@
 import json
 import logging
 from datetime import datetime
+from typing import TextIO
 
+from cyclonedx.model.bom import (
+    Bom as CDXBom,
+    Dependency as CDXDependency,
+    Component as CDXComponent,
+)
+from cyclonedx.schema import SchemaVersion
+from cyclonedx.validation.json import JsonStrictValidator
+from django.core.files import File
 from django.core.files.uploadedfile import TemporaryUploadedFile
 from django.db import transaction
 from packageurl import PackageURL
@@ -26,7 +35,7 @@ class SBOMImportFailure(Exception):
 
 @transaction.atomic()
 def import_ort_evaluated_model_json_file(
-    json_file, release_id, replace=False, linking: str = ""
+    json_file: File | TextIO, release_id: int, replace=False, linking: str = ""
 ):
     try:
         data = json.load(json_file)
@@ -119,8 +128,8 @@ def import_ort_evaluated_model_json_file(
                     spdx_valid_license,
                     linking,
                     current_purl,
-                    scope_name,
                     project_name,
+                    scope_name,
                 )
         else:
             add_dependency(
@@ -141,8 +150,8 @@ def import_ort_evaluated_model_json_file(
 
 @transaction.atomic()
 def import_spdx_file(
-    spdx_file,
-    release_id,
+    spdx_file: File | TextIO,
+    release_id: int,
     replace=False,
     linking: str = "",
     default_project_name: str = "",
@@ -209,6 +218,69 @@ def import_spdx_file(
     logger.info("SPDX import done", datetime.now())
 
 
+@transaction.atomic()
+def import_cyclonedx_file(
+    cyclonedx_file: File | TextIO,
+    release_id,
+    replace=False,
+    linking: str = "",
+    default_project_name: str = "",
+    default_scope_name: str = "",
+):
+    json_validator = JsonStrictValidator(SchemaVersion.V1_6)
+    cyclonedx_file_content = cyclonedx_file.read()
+    validation_errors = json_validator.validate_str(cyclonedx_file_content)
+    if validation_errors:
+        raise SBOMImportFailure(f"Invalid CycloneDX file: {repr(validation_errors)}")
+    bom = CDXBom.from_json(json.loads(cyclonedx_file_content))
+
+    if replace:
+        Usage.objects.filter(release=release_id).delete()
+
+    dependencies: list[CDXDependency] = bom.dependencies
+    components: list[CDXComponent] = bom.components
+
+    for dependency in dependencies:
+        try:
+            component = next(
+                component
+                for component in components
+                if component.bom_ref == dependency.ref
+            )
+        except StopIteration:
+            if dependency.ref != bom.metadata.component.bom_ref:
+                raise SBOMImportFailure(
+                    f"Component {dependency.ref} not found in the components list"
+                )
+            else:
+                continue
+
+        if len(component.licenses) and hasattr(component.licenses[0], "expression"):
+            declared_license = component.licenses[0].expression
+        elif component.licenses is not None:
+            declared_license = " AND ".join(
+                lic.id or lic.name for lic in component.licenses
+            )
+        else:
+            declared_license = ""
+
+        add_dependency(
+            release_id,
+            "",
+            component.name,
+            {
+                "description": component.description or "",
+            },
+            component.version,
+            declared_license,
+            "",
+            linking,
+            str(component.purl),
+            default_project_name,
+            default_scope_name,
+        )
+
+
 def add_dependency(
     release_id,
     component_purl_type,
@@ -219,14 +291,14 @@ def add_dependency(
     concluded_license,
     linking,
     purl="",
-    scope="",
     project="",
+    scope="",
 ):
     if not scope:
         scope = Usage.DEFAULT_SCOPE
     if not project:
         project = Usage.DEFAULT_PROJECT
-    # ORT has not concluded license, but declared license is valid
+    # ORT or CycloneDX has not concluded license, but declared license is valid
     if not concluded_license and is_valid(declared_license):
         concluded_license = declared_license
 
@@ -381,7 +453,7 @@ def add_version(component, version_number, declared_license, concluded_license, 
 # https://github.com/spdx/tools-python/blob/21ea183f72a1179c62ec146a992ec5642cc5f002/spdx/parsers/parse_anything.py
 # SPDX-FileCopyrightText: spdx contributors
 # SPDX-License-Identifier: Apache-2.0
-def parse_spdx_file(spdx_file):
+def parse_spdx_file(spdx_file: File):
     if isinstance(spdx_file, TemporaryUploadedFile):
         return parse_file(spdx_file.temporary_file_path())
 

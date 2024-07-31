@@ -7,7 +7,7 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
 
-from cube.importers import import_spdx_file
+from cube.importers import import_spdx_file, import_cyclonedx_file, SBOMImportFailure
 from cube.models import Generic, Usage, License, Team, Obligation, Release, Component
 from cube.utils.generics import export_generics, handle_generics_json
 from cube.utils.licenses import (
@@ -195,3 +195,18 @@ class ImportSBOMTestCase(TestCase):
             usage.pk,
             new_usage.pk,
         )
+
+
+class ImportCycloneDXTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_invalid_cyclonedx(self):
+        # not a cyclonedx file
+        with open("cube/fixtures/fake_sbom.json") as f:
+            with self.assertRaises(SBOMImportFailure):
+                import_cyclonedx_file(f, 1)
+
+    def test_valid_cyclonedx(self):
+        with open("cube/fixtures/proton-bridge-v1.8.0.cyclonedx-bom.json") as f:
+            import_cyclonedx_file(f, 1)
+        self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 203)
