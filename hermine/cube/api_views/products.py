@@ -23,7 +23,7 @@ from cube.models import Product, Release, Exploitation
 from cube.serializers import (
     ReleaseSerializer,
     UploadSPDXSerializer,
-    UploadCYCLONEDXSerializer,
+    UploadCycloneDXSerializer,
     UploadORTSerializer,
 )
 from cube.serializers.products import (
@@ -403,7 +403,7 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
 
 class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
-    serializer_class = UploadCYCLONEDXSerializer
+    serializer_class = UploadCycloneDXSerializer
     parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
