@@ -137,7 +137,7 @@ def propagate_choices(release: Release):
                 usage.license_expression = expression_out
                 usage.save()
 
-    resolved = (
+    resolved = {
         usage
         for usage in release.usage_set.all()
         .select_related("version")
@@ -145,8 +145,7 @@ def propagate_choices(release: Release):
         if has_ors(
             usage.version.effective_license
         )  # we want to list only usages for which a choice was actually necessary
-    )
-
+    }
     return {"to_resolve": to_resolve, "resolved": resolved}
 
 
