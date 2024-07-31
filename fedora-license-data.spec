@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.52
+Version:        1.53
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -105,6 +105,15 @@ make check-grammar
 
 
 %changelog
+* Wed Jul 31 2024 Miroslav Suchý <msuchy@redhat.com> 1.53-1
+- add HPND-Netrek license
+- Add license text for py-sdl2 Public Domain license
+- remove LicenseRef-framed as ulem license was extended to allow LicenseRef-
+  framed variation
+- add HIDAPI license
+- add Ruby-pty license
+- add LicenseRef-OASIS-spec
+
 * Fri Jul 19 2024 Miroslav Suchý <msuchy@redhat.com> 1.52-1
 - Add LicenseRef-Frontier-Artistic-1.0 as not-allowed
 - Add LicenseRef-JasPer-1.0 as not-allowed
