@@ -75,6 +75,7 @@ class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListVie
         release__isnull=True,
         component__isnull=True,
         version__isnull=True,
+        category__isnull=True,
         scope="",
         exploitation="",
     )
