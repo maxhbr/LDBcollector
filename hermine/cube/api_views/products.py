@@ -11,13 +11,19 @@ from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
+from rest_framework.parsers import MultiPartParser
 from rest_framework.response import Response
 
-from cube.importers import import_spdx_file, import_ort_evaluated_model_json_file
+from cube.importers import (
+    import_spdx_file,
+    import_cyclonedx_file,
+    import_ort_evaluated_model_json_file,
+)
 from cube.models import Product, Release, Exploitation
 from cube.serializers import (
     ReleaseSerializer,
     UploadSPDXSerializer,
+    UploadCYCLONEDXSerializer,
     UploadORTSerializer,
 )
 from cube.serializers.products import (
@@ -373,6 +379,7 @@ class ExploitationViewSet(viewsets.ModelViewSet):
 
 class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
     serializer_class = UploadSPDXSerializer
+    parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
@@ -387,12 +394,42 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             release.pk,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
+            default_project_name=serializer.validated_data.get(
+                "default_project_name", ""
+            ),
+            default_scope_name=serializer.validated_data.get("default_scope_name", ""),
+        )
+        return Response()
+
+
+class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    serializer_class = UploadCYCLONEDXSerializer
+    parser_classes = (MultiPartParser,)
+
+    @swagger_auto_schema(responses={201: "Created"})
+    def create(self, request, *args, **kwargs):
+        """Upload a CycloneDX file to Hermine."""
+        return super().create(request, *args, **kwargs)
+
+    def perform_create(self, serializer):
+        cyclonedx_file = serializer.validated_data["cyclonedx_file"]
+        release = serializer.validated_data["release"]
+        import_cyclonedx_file(
+            cyclonedx_file,
+            release.pk,
+            serializer.validated_data.get("replace", False),
+            linking=serializer.validated_data.get("linking", ""),
+            default_project_name=serializer.validated_data.get(
+                "default_project_name", ""
+            ),
+            default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
         return Response()
 
 
 class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
     serializer_class = UploadORTSerializer
+    parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):

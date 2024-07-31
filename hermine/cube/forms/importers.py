@@ -55,9 +55,11 @@ class ImportLicensesForm(BaseJsonImportForm):
 class ImportBomForm(forms.ModelForm):
     BOM_ORT = "ORTBom"
     BOM_SPDX = "SPDXBom"
+    BOM_CYCLONEDX = "CYCLONEDXBom"
     BOM_CHOICES = (
-        (BOM_ORT, "ORT Evaluated model"),
+        (BOM_ORT, "ORT Evaluated model (JSON)"),
         (BOM_SPDX, "SPDX Bill of Materials"),
+        (BOM_CYCLONEDX, "CycloneDX Bill of Materials (JSON)"),
     )
     IMPORT_MODE_MERGE = "Merge"
     IMPORT_MODE_REPLACE = "Replace"
@@ -79,6 +81,8 @@ class ImportBomForm(forms.ModelForm):
         initial=None,
         label="Components linking",
     )
+    default_project_name = forms.CharField(max_length=750, required=False)
+    default_scope_name = forms.CharField(max_length=50, required=False)
 
     class Meta:
         model = Release

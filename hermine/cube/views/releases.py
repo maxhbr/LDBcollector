@@ -25,6 +25,7 @@ from cube.forms.releases import UsageForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
     import_spdx_file,
+    import_cyclonedx_file,
     SBOMImportFailure,
 )
 from cube.models import (
@@ -100,6 +101,17 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     self.object.pk,
                     replace,
                     linking=form.cleaned_data.get("linking"),
+                    default_project_name=form.cleaned_data.get("default_project_name"),
+                    default_scope_name=form.cleaned_data.get("default_scope_name"),
+                )
+            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_CYCLONEDX:
+                import_cyclonedx_file(
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    linking=form.cleaned_data.get("linking"),
+                    default_project_name=form.cleaned_data.get("default_project_name"),
+                    default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
         except SBOMImportFailure as e:
             form.add_error("file", e)

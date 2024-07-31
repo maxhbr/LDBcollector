@@ -382,6 +382,9 @@ router = Router()
 
 # Validation pipeline endpoints
 router.register(r"upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
+router.register(
+    r"upload_cyclonedx", api_views.UploadCYCLONEDXViewSet, basename="upload_cyclonedx"
+)
 router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
 router.register(r"releases", api_views.ReleaseViewSet, basename="releases")
 
@@ -391,6 +394,7 @@ router.register(r"generics", api_views.GenericViewSet, basename="generics")
 # Models CRUD viewsets
 router.register(r"obligations", api_views.ObligationViewSet, basename="obligations")
 router.register(r"components", api_views.ComponentViewSet, basename="components")
+router.register(r"versions", api_views.VersionViewSet, basename="versions")
 router.register(r"usages", api_views.UsageViewSet, basename="usages")
 router.register(r"products", api_views.ProductViewSet, basename="products")
 router.register(r"licenses", api_views.LicenseViewSet, basename="licenses")

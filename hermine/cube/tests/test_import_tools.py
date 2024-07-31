@@ -204,9 +204,9 @@ class ImportCycloneDXTestCase(TestCase):
         # not a cyclonedx file
         with open("cube/fixtures/fake_sbom.json") as f:
             with self.assertRaises(SBOMImportFailure):
-                import_cyclonedx_file(str(f.read()), 1)
+                import_cyclonedx_file(f, 1)
 
     def test_valid_cyclonedx(self):
         with open("cube/fixtures/proton-bridge-v1.8.0.cyclonedx-bom.json") as f:
-            import_cyclonedx_file(str(f.read()), 1)
+            import_cyclonedx_file(f, 1)
         self.assertEqual(Release.objects.get(pk=1).usage_set.count(), 203)
