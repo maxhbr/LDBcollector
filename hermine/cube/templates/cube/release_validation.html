@@ -237,6 +237,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Component</th>
           <th>License expression</th>
           <th>Add choice</th>
+          {% if perms.cube.add_licensecuration %}<th>Correct license</th>{% endif %}
           <th>Actions</th>
         </tr>
       </thead>
@@ -250,6 +251,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{% if perms.cube.add_licensechoice %}
               <a href="{% url 'cube:release_licensechoice_create' usage.id %}">Add choice rule</a>
             {% endif %}</td>
+            {% if perms.cube.add_licensecuration %}<td><a href="{% url "cube:release_licensecuration_create" usage.id %}">Correct license</a></td>{% endif %}
             <td>{% if perms.cube.change_usage %}
               <a href="{% url "cube:usage_update" usage.id %}?from={{ request.path|urlencode }}" title="Edit this usage"><span class="icon"><i class="fas fa-edit"></i></span></a>
             {% endif %}{% if perms.cube.delete_usage %}
@@ -278,7 +280,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Waiting for previous steps</p>
       </div>
       <div class="message-body">
-        Validate step 2 to check no license choice needs to be done.
+        Currently no choice to make, but step 2 still needs to be validated.
       </div>
     </article>
   {% endif %}
@@ -512,6 +514,8 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
 {% endblock %}
+
+
 
 
 
