@@ -23,11 +23,42 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
+        "/apiCollection": {
+            "get": {
+                "description": "Returns the apis which require authentication and which do not",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "API Collection"
+                ],
+                "summary": "Returns the apis which require authentication and which do not",
+                "operationId": "getAPICollection",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.APICollectionResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Unable to parse swagger docs",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/audits": {
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get all audit records from the server",
@@ -76,7 +107,8 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get a specific audit records by ID",
@@ -126,7 +158,8 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get changelogs of an audit record",
@@ -182,7 +215,8 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Get a specific changelog of an audit record by its ID",
@@ -267,6 +301,12 @@ const docTemplate = `{
         },
         "/licenses": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Filter licenses based on different parameters",
                 "consumes": [
                     "application/json"
@@ -452,7 +492,8 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Export all licenses as a json file",
@@ -550,6 +591,12 @@ const docTemplate = `{
         },
         "/licenses/preview": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get shortnames of all active licenses from the service",
                 "consumes": [
                     "application/json"
@@ -595,6 +642,12 @@ const docTemplate = `{
         },
         "/licenses/{shortname}": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get a single license by its shortname",
                 "consumes": [
                     "application/json"
@@ -743,6 +796,12 @@ const docTemplate = `{
         },
         "/obligation_maps/license/{license}": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get obligation maps for a given license shortname",
                 "consumes": [
                     "application/json"
@@ -782,6 +841,12 @@ const docTemplate = `{
         },
         "/obligation_maps/topic/{topic}": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get obligation maps for a given obligation topic",
                 "consumes": [
                     "application/json"
@@ -943,6 +1008,12 @@ const docTemplate = `{
         },
         "/obligations": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get all active obligations from the service",
                 "consumes": [
                     "application/json"
@@ -1061,6 +1132,12 @@ const docTemplate = `{
         },
         "/obligations/export": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Export all obligations as a json file",
                 "produces": [
                     "application/json"
@@ -1156,6 +1233,12 @@ const docTemplate = `{
         },
         "/obligations/preview": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get topic and type of all active obligations from the service",
                 "consumes": [
                     "application/json"
@@ -1189,6 +1272,12 @@ const docTemplate = `{
         },
         "/obligations/{topic}": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Get an active based on given topic",
                 "consumes": [
                     "application/json"
@@ -1332,7 +1421,8 @@ const docTemplate = `{
             "get": {
                 "security": [
                     {
-                        "ApiKeyAuth": []
+                        "ApiKeyAuth": [],
+                        "{}": []
                     }
                 ],
                 "description": "Fetches audits corresponding to an obligation",
@@ -1392,6 +1482,12 @@ const docTemplate = `{
         },
         "/search": {
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": [],
+                        "{}": []
+                    }
+                ],
                 "description": "Search licenses on different filters and algorithms",
                 "consumes": [
                     "application/json"
@@ -1590,6 +1686,29 @@ const docTemplate = `{
     "definitions": {
         "datatypes.JSONType-models_LicenseDBSchemaExtension": {
             "type": "object"
+        },
+        "models.APICollection": {
+            "type": "object",
+            "properties": {
+                "authenticated": {
+                    "type": "object"
+                },
+                "unAuthenticated": {
+                    "type": "object"
+                }
+            }
+        },
+        "models.APICollectionResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/models.APICollection"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
         },
         "models.Audit": {
             "type": "object",
