@@ -256,25 +256,18 @@ type User struct {
 	Id           int64   `json:"id" gorm:"primary_key" example:"123"`
 	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
 	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
-	Userpassword *string `json:"password,omitempty" binding:"required"`
-}
-
-// JWTUser struct is representation of user information in JWT.
-type JWTUser struct {
-	Id        int64  `json:"id"`
-	Username  string `json:"username"`
-	Userlevel string `json:"userlevel"`
+	Userpassword *string `json:"-"`
 }
 
 type UserInput struct {
 	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
 	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
-	Userpassword *string `json:"password,omitempty" binding:"required"`
+	Userpassword *string `json:"password,omitempty" binding:"required" example:"fossy"`
 }
 
 type UserLogin struct {
 	Username     string `json:"username" binding:"required" example:"fossy"`
-	Userpassword string `json:"password" binding:"required"`
+	Userpassword string `json:"password" binding:"required" example:"fossy"`
 }
 
 // UserResponse struct is representation of design API response of user.
@@ -296,10 +289,11 @@ type SearchLicense struct {
 type Audit struct {
 	Id         int64       `json:"id" gorm:"primary_key" example:"456"`
 	UserId     int64       `json:"user_id" example:"123"`
-	User       User        `gorm:"foreignKey:UserId;references:Id" json:"-"`
-	TypeId     int64       `json:"type_id" example:"34"`
+	User       User        `gorm:"foreignKey:UserId;references:Id" json:"user"`
 	Timestamp  time.Time   `json:"timestamp" example:"2023-12-01T18:10:25.00+05:30"`
-	Type       string      `json:"type" example:"license"`
+	Type       string      `json:"type" enums:"obligation,license" example:"license"`
+	TypeId     int64       `json:"type_id" example:"34"`
+	Entity     interface{} `json:"entity" gorm:"-" swaggertype:"object"`
 	ChangeLogs []ChangeLog `json:"-"`
 }
 

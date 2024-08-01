@@ -1594,6 +1594,9 @@ const docTemplate = `{
         "models.Audit": {
             "type": "object",
             "properties": {
+                "entity": {
+                    "type": "object"
+                },
                 "id": {
                     "type": "integer",
                     "example": 456
@@ -1604,11 +1607,18 @@ const docTemplate = `{
                 },
                 "type": {
                     "type": "string",
+                    "enum": [
+                        "obligation",
+                        "license"
+                    ],
                     "example": "license"
                 },
                 "type_id": {
                     "type": "integer",
                     "example": 34
+                },
+                "user": {
+                    "$ref": "#/definitions/models.User"
                 },
                 "user_id": {
                     "type": "integer",
@@ -2553,7 +2563,6 @@ const docTemplate = `{
         "models.User": {
             "type": "object",
             "required": [
-                "password",
                 "userlevel",
                 "username"
             ],
@@ -2561,9 +2570,6 @@ const docTemplate = `{
                 "id": {
                     "type": "integer",
                     "example": 123
-                },
-                "password": {
-                    "type": "string"
                 },
                 "userlevel": {
                     "type": "string",
@@ -2584,7 +2590,8 @@ const docTemplate = `{
             ],
             "properties": {
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "fossy"
                 },
                 "userlevel": {
                     "type": "string",
@@ -2604,7 +2611,8 @@ const docTemplate = `{
             ],
             "properties": {
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "fossy"
                 },
                 "username": {
                     "type": "string",
