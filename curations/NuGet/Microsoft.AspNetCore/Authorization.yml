@@ -1,19 +1,9 @@
-- id: "NuGet:Microsoft.AspNetCore:Authorization:2.1.7"
+- id: "NuGet:Microsoft.AspNetCore:Authorization:(,2.2.0]"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
-      path: "src/Security/src/Microsoft.AspNetCore.Authorization"
-- id: "NuGet:Microsoft.AspNetCore:Authorization:2.2.1"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "src/Security/src/Microsoft.AspNetCore.Authorization"
-- id: "NuGet:Microsoft.AspNetCore:Authorization:[2.1.8,2.1.31]"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "src/Security/Authorization/Core/src"
-- id: "NuGet:Microsoft.AspNetCore:Authorization:[2.2.2,)"
+      path: "src/Microsoft.AspNetCore.Authorization"
+- id: "NuGet:Microsoft.AspNetCore:Authorization:[3.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
