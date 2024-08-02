@@ -1679,3 +1679,19 @@ location = https://github.com/emilk/loguru/blob/4adaa185883e3c04da25913579c451d3
 text = '''
 This software is in the public domain. Where that dedication is not recognized, you are granted a perpetual, irrevocable license to copy, modify and distribute it as you see fit.
 '''
+
+package = sdl-crypto
+location = https://github.com/SDL-Hercules-390/crypto/blob/a5096e5dd79f46b568806240c0824cd8cb2fcda2/crypto.LICENSE.txt#L51-L63
+text = '''
+ * SHA-1 in C
+ * By Steve Reid <steve@edmweb.com>
+ * 100% Public Domain
+ *
+ * Test Vectors (from FIPS PUB 180-1)
+ * "abc"
+ *   A9993E36 4706816A BA3E2571 7850C26C 9CD0D89D
+ * "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"
+ *   84983E44 1C3BD26E BAAE4AA1 F95129E5 E54670F1
+ * A million repetitions of "a"
+ *   34AA973C D4C4DAA4 F61EEB2B DBAD2731 6534016F
+'''
