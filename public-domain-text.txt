@@ -994,7 +994,22 @@ risk.
 '''
 
 package = dnsmasq
+          xz
 location = https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob_plain;f=po/es.po;hb=HEAD
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/ca.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/cs.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/da.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/fi.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/fr.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/it.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/pt.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/pt_BR.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/sr.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/tr.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/zh_CN.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po/zh_TW.po#L2
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po4a/fr.po#L3
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/po4a/pt_BR.po#L3
 text = '''
 This file is put in the public domain.
 '''
@@ -1694,4 +1709,11 @@ text = '''
  *   84983E44 1C3BD26E BAAE4AA1 F95129E5 E54670F1
  * A million repetitions of "a"
  *   34AA973C D4C4DAA4 F61EEB2B DBAD2731 6534016F
+'''
+
+package = xz
+location = https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/doc/lzma-file-format.txt#L38
+           https://github.com/tukaani-project/xz/blob/bf901dee5d4c46609645e50311c0cb2dfdcf9738/doc/xz-file-format.txt#L78
+text = '''
+This document has been put into the public domain.
 '''
