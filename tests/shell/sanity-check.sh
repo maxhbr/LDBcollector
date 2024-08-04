@@ -134,7 +134,7 @@ check_test_case
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\" -e \" 0 \""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
 BSD2_PATENT_PRESENT=" -i -e patent" 
-BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse "
+BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse -e 2.0 "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
 
 check_presence AFL-1.1 " -e 1.1 " "-e 2. -e 1.2  -e 3"
@@ -143,7 +143,7 @@ check_presence AFL-2.0 " -e 2.0 " "-e 1 -e 2.1 -e 3"
 check_presence AFL-2.1 " -e 2.1 " "-e 1. -e 2.0 -e 0  -e 3"
 check_presence AFL-3.0 " -e 3 " "-e 1 -e 2 "
 
-check_presence AGPL-3.0-only     " -e 3 " " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
+check_presence AGPL-3.0-only     " -i -e 3 -e affero" " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
 check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2  -e library -e lesser "
 
 check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
@@ -166,13 +166,14 @@ check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
 check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
+check_presence LicenseRef-scancode-ssleay " -i -e leay "        " -e openssl"  
 
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence BSD-1-Clause " -i BSD" " -e 2 -e 3 -e 4 "
 check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-2-Clause-Views " -i -e view"  " -e 0 -e 1 -e 3 -e 4"
-check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
+check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT  -i -e two -e simplified -e freebsd "
 check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-No-Nuclear-Warranty " -i -e nuclear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
