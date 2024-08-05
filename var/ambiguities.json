@@ -88,7 +88,8 @@
         "Common Development and Distribution License": {
             "aliases": [
                 "CDDL",
-                "CDDL-1"
+                "CDDL-1",
+                "Common Development and Distribution License (CDDL)"
             ],
             "problem": "There are two versions of the CDDL license (CDDL-1.0 and CDDL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."    
         },
@@ -108,7 +109,8 @@
         },
         "Eclipse Public License": {
             "aliases": [
-                "EPL"
+                "EPL",
+                "Eclipse Public License (EPL)"
             ],
             "problem": "There are two versions of the EPL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
