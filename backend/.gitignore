@@ -12,3 +12,8 @@ __pycache__/
 temp_files
 *.log
 token
+app/logging/
+app/token
+temp_files
+*.log
+token

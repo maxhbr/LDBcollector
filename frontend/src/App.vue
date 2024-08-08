@@ -11,6 +11,7 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
+            <b-nav-item to="/compliance">Check Compliance</b-nav-item>
             <b-nav-item @click="enter_rec">Choose a license</b-nav-item>
             <b-nav-item to="/query">Compatibility query</b-nav-item>
             <b-nav-item to="/guide">Guideline</b-nav-item>

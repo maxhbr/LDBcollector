@@ -11,6 +11,11 @@ export default new Router({
     component: ()=> import('@/pages/main')
   },
   {
+    path:'/compliance',
+    name: 'compliance',
+    component: ()=> import('@/pages/compliance')
+  },
+  {
     path: '/rec',
     name: 'rec',
     component: ()=> import('@/pages/rec'),

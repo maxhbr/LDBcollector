@@ -33,6 +33,7 @@
                                     open source license for you in a personalized way!
                                 </p>
                                 <hr class="my-4">
+                                <b-button to="/compliance">Check Compliance</b-button>
                                 <b-button to="/rec">Choose a License</b-button>
                                 <b-button @click="jump_query">Compatibility query</b-button>
                                 <b-button to="/guide">Guideline</b-button>
