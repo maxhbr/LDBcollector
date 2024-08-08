@@ -10,7 +10,7 @@ temp_files
 projects.json
 data
 token
-
+scancode-toolkit/
 # python ignores
 __pycache__/
 *.py[cod]
