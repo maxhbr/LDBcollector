@@ -10,15 +10,15 @@
   
       <div id="main1" class="main1" style="height: auto">
         <el-row :gutter="20" style="margin-top: 20px; height: 600px">
-          <el-col :span="16">
+          <el-col :span="24">
             <div class="file_box">
               <div>
-                <el-card style="height: 600px;">
+                <el-card style="height: 6%;">
                   <div slot="header" class="clearfix">
                     <span style="font-size: 20px;color:white">License Compatibility Check</span>
                   </div>
                   <div class="file-url" v-loading="loading" element-loading-text="It may take a while...">
-                  <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository url. If you want to choose a license for a new project, you can just <b style="color:red">skip this step</b>.</p>
+                  <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository url. </p>
                   <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
                     :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload" :on-change="file_change" :before-remove="remove_file"
                     :limit=1 accept=".rar,.zip" drag :auto-upload="false" :disabled="upload_disabled">
@@ -75,9 +75,9 @@
               </div>
             </div>
           </el-col>
-          <el-col :span="8">
-            <div class="list">
-              <el-card style="height: 600px">
+          <!-- <el-col :span="8">
+            <div class="list"> -->
+              <!-- <el-card style="height: 600px">
                 <div slot="header" class="clearfix">
                   <span style="font-size: 20px;color:white">Recommendation List</span>
                 </div>
@@ -86,21 +86,21 @@
                     <el-option v-for="item in sort_options" :key="item.value" :label="item.label" :value="item.value">
                     </el-option>
                   </el-select>
-                </div>
+                </div> -->
   
                 <!-- Reconmmend List -->
-                <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class" empty-text="No data">
+                <!-- <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class" empty-text="No data">
                   <el-table-column label="Compatibility" width="110" align="center">
                     <template slot-scope="scope">
                       <div class="circle"></div>
                     </template>
                   </el-table-column>
                   <el-table-column prop="name" label="Name" width="200"></el-table-column>
-                </el-table>
+                </el-table> -->
   
-              </el-card>
-            </div>
-          </el-col>
+              <!-- </el-card> -->
+            <!-- </div>
+          </el-col> -->
         </el-row>
   
         <el-row>
@@ -126,7 +126,7 @@
         </el-row>
   
         <el-row :gutter="20" style="margin-top: 20px">
-          <el-col :span="18">
+          <el-col :span="24">
   
             <span id="upload-span"><b-button id="upload-button" variant="success" @click="upload_file_or_url">Start checking</b-button></span>
             <!-- <span id="back-span"><b-button id="back-button"  @click="back_upload">Previous Step</b-button></span>
@@ -135,7 +135,6 @@
             <span id="reupload-span"><b-button variant="success" @click="reupload">Reupload</b-button></span>
           </el-col>
         </el-row>
-  
         <el-row>
           <el-col :span="24">
             <div style="margin-top: 20px; background: azure; text-align: left;" id="copyleft-area">
@@ -438,6 +437,7 @@
             $('#skip-span').hide()
             $('#question-span').show()
             $("#back-span").show()
+            $("#reupload-span").show()
             if (this.check_res.confilct_copyleft_list.length > 0) {
               $("#copyleft-area").show()
             }
