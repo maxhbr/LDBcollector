@@ -1,5 +1,5 @@
 <template>
-  <div id="page" >
+  <div id="page">
     <div class="steps">
       <el-steps :active="step_active" align-center finish-status="success">
         <el-step title="Compatibility Check"></el-step>
@@ -17,59 +17,61 @@
                 <div slot="header" class="clearfix">
                   <span style="font-size: 20px;color:white">License Compatibility Check</span>
                 </div>
-                <div class="file-url" v-loading="loading" element-loading-text="It may take a while...">
-                <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository url. If you want to choose a license for a new project, you can just <b style="color:red">skip this step</b>.</p>
-                <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
-                  :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload" :on-change="file_change" :before-remove="remove_file"
-                  :limit=1 accept=".rar,.zip" drag :auto-upload="false" :disabled="upload_disabled">
-                  
-                  <i class="el-icon-upload" style="color: #095da7"></i>
-                  <div class="el-upload__text">Drag the file here, or <em>click to upload</em></div>
-                  <div class="el-upload__tip" slot="tip">Only <strong>zip/rar</strong> files can be uploaded</div>
-                </el-upload>
-                <el-divider></el-divider>
-                
-                <div class="giturl">
+                <div class="file-url" v-loading="loading" element-loading-text="Please be patient. It may take a while...">
+                  <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository
+                    url. If you want to choose a license for a new project, you can just <b style="color:red">skip this
+                      step</b>.</p>
+                  <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
+                    :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload" :on-change="file_change"
+                    :before-remove="remove_file" :limit=1 accept=".rar,.zip" drag :auto-upload="false"
+                    :disabled="upload_disabled">
+
+                    <i class="el-icon-upload" style="color: #095da7"></i>
+                    <div class="el-upload__text">Drag the file here, or <em>click to upload</em></div>
+                    <div class="el-upload__tip" slot="tip">Only <strong>zip/rar</strong> files can be uploaded</div>
+                  </el-upload>
+                  <el-divider></el-divider>
+
+                  <div class="giturl">
                     <span style="display: inline; font-size: 20px">https://github.com/</span>
-                    <b-form-input v-model="git_address.username" :disabled="git_disabled" 
-                    placeholder="Username"
-                    @change="git_change" style="width: 200px; display: inline"></b-form-input>
+                    <b-form-input v-model="git_address.username" :disabled="git_disabled" placeholder="Username"
+                      @change="git_change" style="width: 200px; display: inline"></b-form-input>
                     <span style="display: inline; font-size: 20px">/</span>
-                    <b-form-input v-model="git_address.reponame" :disabled="git_disabled" 
-                    placeholder="Repository name"
-                    @change="git_change" style="width: 200px; display: inline"></b-form-input>
-                </div>
+                    <b-form-input v-model="git_address.reponame" :disabled="git_disabled" placeholder="Repository name"
+                      @change="git_change" style="width: 200px; display: inline"></b-form-input>
+                  </div>
                 </div>
                 <div class="description" id="description" style="display: none">
-                <span>The licenses in the project</span>
-                <el-divider></el-divider>
+                  <span>The licenses in the project</span>
+                  <el-divider></el-divider>
 
-                <div style="overflow-y:scroll; height: 450px;">
-                  <el-table :data="licenses_in_files_list" :span-method="span_method" :row-class-name="licenses_row_class" empty-text="No data">
-                    <el-table-column width="50px">
-                      <template slot-scope="scope"><i class="el-icon-warning"></i></template>
-                    </el-table-column>
-                    <el-table-column prop="path" label="path"></el-table-column>
-                    <el-table-column label="license">
-                      <template slot-scope="scope">
-                        <el-popover placement="bottom" width="400" trigger="hover">
-                          <span>{{depend_dict[scope.row.license]}}</span>
-                          <span slot="reference">{{scope.row.license}}</span>
+                  <div style="overflow-y:scroll; height: 450px;">
+                    <el-table :data="licenses_in_files_list" :span-method="span_method"
+                      :row-class-name="licenses_row_class" empty-text="No data">
+                      <el-table-column width="50px">
+                        <template slot-scope="scope"><i class="el-icon-warning"></i></template>
+                      </el-table-column>
+                      <el-table-column prop="path" label="path"></el-table-column>
+                      <el-table-column label="license">
+                        <template slot-scope="scope">
+                          <el-popover placement="bottom" width="400" trigger="hover">
+                            <span>{{ depend_dict[scope.row.license] }}</span>
+                            <span slot="reference">{{ scope.row.license }}</span>
 
-                        </el-popover>
-                      </template>
-                    </el-table-column>
-                  </el-table>
-                </div>
+                          </el-popover>
+                        </template>
+                      </el-table-column>
+                    </el-table>
+                  </div>
                 </div>
 
                 <div>
-                <div id="questions">
-                  <questions @question_over="change_rec_license"></questions>
-                </div>
-                <div id="compare">
-                  <compare :licenses="table_data" ref="compare_comp"></compare>
-                </div>
+                  <div id="questions">
+                    <questions @question_over="change_rec_license"></questions>
+                  </div>
+                  <div id="compare">
+                    <compare :licenses="table_data" ref="compare_comp"></compare>
+                  </div>
                 </div>
               </el-card>
             </div>
@@ -89,7 +91,8 @@
               </div>
 
               <!-- Reconmmend List -->
-              <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class" empty-text="No data">
+              <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class"
+                empty-text="No data">
                 <el-table-column label="Compatibility" width="110" align="center">
                   <template slot-scope="scope">
                     <div class="circle"></div>
@@ -103,21 +106,30 @@
         </el-col>
       </el-row>
 
+
       <el-row>
         <el-col :span="24">
+          <el-progress :percentage="progress" :show-text="false" v-if="loading"></el-progress>
           <div style="margin-top: 20px; text-align: left; ">
             <div id="question-icons">
-              <i class="el-icon-error" ></i><span>: There is a compatibility conflict between the licenses of files that have a dependent relationship.</span>
-              <i class="el-icon-success" ></i><span>: There is no conflict as described above. </span>
-              <i class="el-icon-warning" ></i><span>: Do not support checking the compatibility of this license, please check manually.</span>
-              <i class="circle" style="border-color: #1230da"></i><span>: Both secondarily compatible and combinatively compatible.</span>
+              <i class="el-icon-error"></i><span>: There is a compatibility conflict between the licenses of files that
+                have a
+                dependent relationship.</span>
+              <i class="el-icon-success"></i><span>: There is no conflict as described above. </span>
+              <i class="el-icon-warning"></i><span>: Do not support checking the compatibility of this license, please
+                check
+                manually.</span>
+              <i class="circle" style="border-color: #1230da"></i><span>: Both secondarily compatible and combinatively
+                compatible.</span>
               <i class="circle" style="border-color: #28d811"></i><span>: Secondarily compatible.</span>
               <i class="circle" style="border-color: #c7db11"></i><span>: Combinatively compatible.</span>
             </div>
             <div id="term-icons">
-              <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp:The term is explicitly included.</span>
+              <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp:The term is explicitly
+                included.</span>
               <span class="icon-wrong"><i class="temp"></i></span><span>&nbsp&nbsp:The term is not mentioned.</span>
-              <i class="circle" style="border-color: #1230da"></i><span>:Both secondarily compatible and combinatively compatible.</span>
+              <i class="circle" style="border-color: #1230da"></i><span>:Both secondarily compatible and combinatively
+                compatible.</span>
               <i class="circle" style="border-color: #28d811"></i><span>:Secondarily compatible.</span>
               <i class="circle" style="border-color: #c7db11"></i><span>:Combinatively compatible.&nbsp</span>
             </div>
@@ -128,10 +140,12 @@
       <el-row :gutter="20" style="margin-top: 20px">
         <el-col :span="18">
 
-          <span id="upload-span"><b-button id="upload-button" variant="success" @click="upload_file_or_url">Start checking</b-button></span>
-          <span id="back-span"><b-button id="back-button"  @click="back_upload">Previous Step</b-button></span>
-          <span id="question-span"><b-button id="question-button"  @click="enter_questions(false)">Next step</b-button></span>
-          <span id="skip-span"><b-button id="skip-button"  @click="skip_upload">Skip this step</b-button></span>
+          <span id="upload-span"><b-button id="upload-button" variant="success" @click="upload_file_or_url">Start
+              checking</b-button></span>
+          <span id="back-span"><b-button id="back-button" @click="back_upload">Previous Step</b-button></span>
+          <span id="question-span"><b-button id="question-button" @click="enter_questions(false)">Next
+              step</b-button></span>
+          <span id="skip-span"><b-button id="skip-button" @click="skip_upload">Skip this step</b-button></span>
           <span id="reupload-span"><b-button variant="success" @click="reupload">Reupload</b-button></span>
         </el-col>
       </el-row>
@@ -140,14 +154,14 @@
         <el-col :span="24">
           <div style="margin-top: 20px; background: azure; text-align: left;" id="copyleft-area">
             <p>Copyleft compatibility conflict:</p>
-            <div v-for="conflict in check_res.confilct_copyleft_list" >
-            <i class="el-icon-error" style="color: red"></i>
-            <span>{{conflict}}</span>
+            <div v-for="conflict in check_res.confilct_copyleft_list">
+              <i class="el-icon-error" style="color: red"></i>
+              <span>{{ conflict }}</span>
             </div>
           </div>
         </el-col>
       </el-row>
-      
+
     </div>
   </div>
 
@@ -159,36 +173,38 @@ import questions from '../components/questions.vue'
 import compare from '../components/compare.vue'
 export default {
   name: 'rec',
-  components: {questions, compare},
+  components: { questions, compare },
   data() {
     return {
       depend_dict: {},
+      progress: 0,
+      loading: false,
       licenses_in_files_list: [],
       span_arr: [],
       support_list: [],
       step_active: 0,
       // licenses: [["MIT"], [ "GPL-2.0-only", "LGPL-2.1-or-later", "BSL-1.0", "Apache-2.0", "GPL-2.0-or-later"], ["LicenseRef-scancode-wordnet", "LicenseRef-scancode-public-domain", "LicenseRef-scancode-other-permissive", "LicenseRef-scancode-mit-old-style"]],
       table_data: [
-        {compatibility: 0,name: 'MIT', readability: 59.57333333, usage: 59986},
-        {compatibility: 0,name: 'Apache-2.0', readability: 481.73, usage: 14537},
-        {compatibility: 0,name: 'GPL-3.0-only', readability: 1699.506667, usage: 9039},
-        {compatibility: 0,name: 'BSD-3-Clause', readability: 75.61666667, usage: 2503},
-        {compatibility: 0,name: 'GPL-2.0-only', readability: 894.4466667, usage: 1958},
-        {compatibility: 0,name: 'AGPL-3.0-only', readability: 1666.586667, usage: 1678},
-        {compatibility: 0,name: 'MPL-2.0', readability: 710.0233333, usage: 1027},
-        {compatibility: 0,name: 'LGPL-3.0-only', readability: 375.79, usage: 912},
-        {compatibility: 0,name: 'BSD-2-Clause', readability: 66.61, usage: 884},
-        {compatibility: 0,name: 'Unlicense', readability: 66.02333333, usage: 777},
-        {compatibility: 0,name: 'ISC', readability: 42.13666667, usage: 623},
-        {compatibility: 0,name: 'EPL-1.0', readability: 516.8866667, usage: 421},
-        {compatibility: 0,name: 'CC0-1.0', readability: 327.7833333, usage: 376},
-        {compatibility: 0,name: 'LGPL-2.1-only', readability: 1315.186667, usage: 310},
-        {compatibility: 0,name: 'WTFPL', readability: 28.14333333, usage: 184},
-        {compatibility: 0,name: 'Zlib', readability: 48.56, usage: 139},
-        {compatibility: 0,name: 'EPL-2.0', readability: 646.26, usage: 138},
-        {compatibility: 0,name: 'MulanPSL-2.0', readability: 235.5233333, usage: 0},
-        {compatibility: 0,name: 'MulanPubL-2.0', readability: 409.6733333, usage: 0},
-        {compatibility: 0,name: 'Artistic-2.0', readability: 417.62, usage: 43},
+        { compatibility: 0, name: 'MIT', readability: 59.57333333, usage: 59986 },
+        { compatibility: 0, name: 'Apache-2.0', readability: 481.73, usage: 14537 },
+        { compatibility: 0, name: 'GPL-3.0-only', readability: 1699.506667, usage: 9039 },
+        { compatibility: 0, name: 'BSD-3-Clause', readability: 75.61666667, usage: 2503 },
+        { compatibility: 0, name: 'GPL-2.0-only', readability: 894.4466667, usage: 1958 },
+        { compatibility: 0, name: 'AGPL-3.0-only', readability: 1666.586667, usage: 1678 },
+        { compatibility: 0, name: 'MPL-2.0', readability: 710.0233333, usage: 1027 },
+        { compatibility: 0, name: 'LGPL-3.0-only', readability: 375.79, usage: 912 },
+        { compatibility: 0, name: 'BSD-2-Clause', readability: 66.61, usage: 884 },
+        { compatibility: 0, name: 'Unlicense', readability: 66.02333333, usage: 777 },
+        { compatibility: 0, name: 'ISC', readability: 42.13666667, usage: 623 },
+        { compatibility: 0, name: 'EPL-1.0', readability: 516.8866667, usage: 421 },
+        { compatibility: 0, name: 'CC0-1.0', readability: 327.7833333, usage: 376 },
+        { compatibility: 0, name: 'LGPL-2.1-only', readability: 1315.186667, usage: 310 },
+        { compatibility: 0, name: 'WTFPL', readability: 28.14333333, usage: 184 },
+        { compatibility: 0, name: 'Zlib', readability: 48.56, usage: 139 },
+        { compatibility: 0, name: 'EPL-2.0', readability: 646.26, usage: 138 },
+        { compatibility: 0, name: 'MulanPSL-2.0', readability: 235.5233333, usage: 0 },
+        { compatibility: 0, name: 'MulanPubL-2.0', readability: 409.6733333, usage: 0 },
+        { compatibility: 0, name: 'Artistic-2.0', readability: 417.62, usage: 43 },
       ],
       static_table: [],
       cur_option: '',
@@ -210,7 +226,7 @@ export default {
         username: '',
         reponame: ''
       },
-      check_res : {
+      check_res: {
         compatible_both_list: [],
         compatible_combine_list: [],
         compatible_licenses: [],
@@ -239,9 +255,9 @@ export default {
     $("#copyleft-area").hide()
     this.static_table = this.table_data;
     this.axios.post('/api/support_list')
-    .then(res => {
-      this.support_list = res.data;
-    })
+      .then(res => {
+        this.support_list = res.data;
+      })
 
     // this.timer = window.setInterval(() => {
     //   setTimeout(() => {
@@ -367,81 +383,54 @@ export default {
       }
 
       this.loading = true;
+      this.progress = 0;
       this.axios.post(url, data, config)
-      .then(res => {
-        if (res.status == 200) {
-          console.log(res);
-          if (res.data != "URL ERROR") {
-            config.headers['Content-Type'] = 'application/json';
+        .then(res => {
+          if (res.status == 200 && res.data != "URL ERROR") {
             var unzip_path = res.data;
-            console.log(unzip_path);
             var timer = window.setInterval(() => {
-              console.log("tick");
-              this.axios.post('/api/poll', {path: unzip_path}, config)
-              .then(res => {
-                if (res.data != 'doing') {
-                  console.log(res.data);
-                  this.check_res = res.data;
-                  window.clearInterval(timer)
-                  this.upload_done()
-                }
-              })
+              if (this.progress < 50) this.progress += 8; // 每次增加8%
+              if (this.progress > 50 && this.progress<80) this.progress +=5; // 最多到90%，留10%给最终处理
+              if (this.progress >= 80 && this.progress< 90) this.progress +=1;
+              if (this.progress >= 90) this.progress = 90;
+              this.axios.post('/api/poll', { path: unzip_path }, config)
+                .then(res => {
+                  if (res.data != 'doing') {
+                    this.progress = 100; // 完成时设为100%
+                    window.clearInterval(timer);
+                    this.check_res = res.data;
+                    this.upload_done();
+                  }
+                });
             }, 2000)
-            // this.check_res = res.data;
-            // this.table_data = [];
-            // for (const license of res.data.compatible_licenses) {
-            //   this.table_data.push({name: license})
-            // }
-            // var temp_table = []
-            // for (const license of this.table_data) {
-            //   if (this.has(res.data.compatible_licenses, license.name)) {
-            //     temp_table.push(license)
-            //   }
-            // }
-            // this.table_data = temp_table;
-            // this.generate_licenses_list();
-            // this.generate_depend_dict();
-            // $('.file-url').hide()
-            // $('#description').show()
-            // $('#upload-span').hide()
-            // $('#skip-span').hide()
-            // $('#question-span').show()
-            // $("#back-span").show()
-            // $("#copyleft-area").show()
+
           } else if (res.data == "URL ERROR") { // git url is wrong
             this.$message.error("Make sure the git url is correct!")
           }
-          // this.loading = false;
-          
-        } else {
-          console.log('upload_file_or_url wrong');
-        }
-      }).catch(res => {
-        console.log(res);
-        // this.loading = false;
-      })
+          console.log(res);
+        })
     },
 
     upload_done() {
-        var temp_table = []
-          for (const license of this.table_data) {
-            if (this.has(this.check_res.compatible_licenses, license.name)) {
-              temp_table.push(license)
-            }
-          }
-          this.table_data = temp_table;
-          this.generate_licenses_list();
-          this.generate_depend_dict();
-          $('.file-url').hide()
-          $('#description').show()
-          $('#upload-span').hide()
-          $('#skip-span').hide()
-          $('#question-span').show()
-          $("#back-span").show()
-          if (this.check_res.confilct_copyleft_list.length > 0) {
-            $("#copyleft-area").show()
-          }
-          this.loading = false;
+      var temp_table = []
+      for (const license of this.table_data) {
+        if (this.has(this.check_res.compatible_licenses, license.name)) {
+          temp_table.push(license)
+        }
+      }
+      this.table_data = temp_table;
+      this.generate_licenses_list();
+      this.generate_depend_dict();
+      $('.file-url').hide()
+      $('#description').show()
+      $('#upload-span').hide()
+      $('#skip-span').hide()
+      $('#question-span').show()
+      $("#back-span").show()
+      if (this.check_res.confilct_copyleft_list.length > 0) {
+        $("#copyleft-area").show()
+      }
+      this.loading = false;
     },
 
     // 进入答题界面
@@ -461,7 +450,7 @@ export default {
       } else {
         this.$message.error("Make sure there are no conflicts in files until you proceed to next step!")
       }
-      
+
       // console.log('enter');
       // $(".file-url").hide()
       // $("#description").hide()
@@ -477,7 +466,7 @@ export default {
 
     skip_upload() {
       console.log('skip');
-      this.check_res.compatible_both_list = ['MIT', 'Apache-2.0','GPL-3.0-only','BSD-3-Clause','GPL-2.0-only', 'AGPL-3.0-only', 'MPL-2.0','LGPL-3.0-only','BSD-2-Clause','Unlicense','ISC','EPL-1.0','CC0-1.0','LGPL-2.1-only','WTFPL','Zlib','EPL-2.0','MulanPSL-2.0','MulanPubL-2.0','Artistic-2.0'];
+      this.check_res.compatible_both_list = ['MIT', 'Apache-2.0', 'GPL-3.0-only', 'BSD-3-Clause', 'GPL-2.0-only', 'AGPL-3.0-only', 'MPL-2.0', 'LGPL-3.0-only', 'BSD-2-Clause', 'Unlicense', 'ISC', 'EPL-1.0', 'CC0-1.0', 'LGPL-2.1-only', 'WTFPL', 'Zlib', 'EPL-2.0', 'MulanPSL-2.0', 'MulanPubL-2.0', 'Artistic-2.0'];
       this.enter_questions(true);
     },
 
@@ -494,8 +483,8 @@ export default {
       this.table_data = this.static_table;
       // this.check_res = {}
       this.check_res.confilct_copyleft_list = [],
-      this.check_res.compatible_both_list = [],
-      this.step_active = 0
+        this.check_res.compatible_both_list = [],
+        this.step_active = 0
     },
 
     reupload() {
@@ -517,21 +506,21 @@ export default {
       this.span_arr = [];
       for (const path in this.check_res.licenses_in_files) {
         for (const license of this.check_res.licenses_in_files[path]) {
-          this.licenses_in_files_list.push({'path': path, 'license': license})
+          this.licenses_in_files_list.push({ 'path': path, 'license': license })
         }
       }
 
       var contactDot = 0;
-      this.licenses_in_files_list.forEach( (item,index) => {
-      if(index===0){
-        this.span_arr.push(1)
-      }else{
-        if(item.path === this.licenses_in_files_list[index-1].path){
-          this.span_arr[contactDot] += 1;
-          this.span_arr.push(0)
-        }else{
-          contactDot = index
+      this.licenses_in_files_list.forEach((item, index) => {
+        if (index === 0) {
           this.span_arr.push(1)
+        } else {
+          if (item.path === this.licenses_in_files_list[index - 1].path) {
+            this.span_arr[contactDot] += 1;
+            this.span_arr.push(0)
+          } else {
+            contactDot = index
+            this.span_arr.push(1)
           }
         }
       })
@@ -553,7 +542,7 @@ export default {
       this.depend_dict = temp_depend;
     },
 
-    span_method({row, column, rowIndex, columnIndex}) {
+    span_method({ row, column, rowIndex, columnIndex }) {
       if (columnIndex === 1) {
         var _row = this.span_arr[rowIndex];
         var _col = _row > 0 ? 1 : 0;
@@ -561,15 +550,15 @@ export default {
           rowspan: _row,
           colspan: _col,
         }
-        }
+      }
     },
 
-    licenses_row_class({row, rowIndex}) {
+    licenses_row_class({ row, rowIndex }) {
       for (const pair of this.check_res.confilct_depend_dict) {
         if (row.license == pair.dest_license || row.license == pair.src_license) {
           return "conflict-license";
         }
-      } 
+      }
       for (const support of this.support_list) {
         if (row.license == support) {
           return "support-license";
@@ -585,7 +574,7 @@ export default {
       return false;
     },
 
-    tabel_row_class({row, rowIndex}) {
+    tabel_row_class({ row, rowIndex }) {
       if (this.has(this.check_res.compatible_both_list, row.name)) {
         return "both-row"
       }
@@ -603,28 +592,28 @@ export default {
 </script>
 
 <style scoped>
-.both-row > * > * >.circle {
+.both-row>*>*>.circle {
   border: 7px solid #1230da;
 }
 
-.secondary-row > * > * >.circle {
+.secondary-row>*>*>.circle {
   border: 7px solid #28d811;
 }
 
-.combine-row > * > * >.circle {
+.combine-row>*>*>.circle {
   border: 7px solid #c7db11;
 }
 
-.conflict-license > * > * > i::before {
+.conflict-license>*>*>i::before {
   content: "\e79d";
   color: red;
 }
 
-.conflict-license > * >  .cell > span{
+.conflict-license>*>.cell>span {
   color: red
 }
 
-.support-license  > * > * > i::before {
+.support-license>*>*>i::before {
   content: "\e79c";
   color: #28d811;
 }
@@ -664,14 +653,14 @@ export default {
   /* width: 15px; */
   /* margin-left: 10px; */
   /* font-family: element-icons!important; */
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: baseline;
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
 }
 
 .circle.both {
@@ -732,48 +721,49 @@ export default {
 }
 
 .temp {
-    text-align: center;
+  text-align: center;
 }
 
-.icon-success > .temp, .icon-wrong > .temp {
-    position: relative;
-    /* font-size: 1; */
-    height: 20px;
-    width: auto;
-    margin-left: 15px;
+.icon-success>.temp,
+.icon-wrong>.temp {
+  position: relative;
+  /* font-size: 1; */
+  height: 20px;
+  width: auto;
+  margin-left: 15px;
 }
 
-.icon-success > .temp::before{
-    content: '√';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(22, 194, 74);
-    border: 2px solid rgb(22, 194, 74);
-    border-radius: 50%;
+.icon-success>.temp::before {
+  content: '√';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(22, 194, 74);
+  border: 2px solid rgb(22, 194, 74);
+  border-radius: 50%;
 }
 
-.icon-wrong > .temp::before{
-    content: '×';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    color: red;
-    border: 2px solid red;
-    border-radius: 50%;
+.icon-wrong>.temp::before {
+  content: '×';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
 }
 </style>

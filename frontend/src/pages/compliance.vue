@@ -17,7 +17,7 @@
                   <div slot="header" class="clearfix">
                     <span style="font-size: 20px;color:white">License Compatibility Check</span>
                   </div>
-                  <div class="file-url" v-loading="loading" element-loading-text="It may take a while...">
+                  <div class="file-url" v-loading="loading" element-loading-text="Please be patient. It may take a while...">
                   <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository url. </p>
                   <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
                     :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload" :on-change="file_change" :before-remove="remove_file"
@@ -105,6 +105,7 @@
   
         <el-row>
           <el-col :span="24">
+            <el-progress :percentage="progress" :show-text="false" v-if="loading"></el-progress>
             <div style="margin-top: 20px; text-align: left; ">
               <div id="question-icons">
                 <i class="el-icon-error" ></i><span>: There is a compatibility conflict between the licenses of files that have a dependent relationship.</span>
@@ -162,6 +163,8 @@
     data() {
       return {
         depend_dict: {},
+        progress: 0,
+        loading: false,
         licenses_in_files_list: [],
         span_arr: [],
         support_list: [],
@@ -340,86 +343,60 @@
       },
   
       async upload_file_or_url() {
-        var data;
-        var url = ''
-        var config = {
-          headers: {
-            "Content-Type": ''
-          }
+      var data;
+      var url = ''
+      var config = {
+        headers: {
+          "Content-Type": ''
         }
-  
-        if (this.upload_disabled == false && this.git_disabled == true) {
-          data = new FormData()
-          data.append('file', this.file);
-          url = '/api/zip'
-          config.headers['Content-Type'] = 'multipart/form-data'
-        } else if (this.upload_disabled == true && this.git_disabled == false) {
-          data = {
-            'username': this.git_address.username,
-            'reponame': this.git_address.reponame,
-          }
-          url = '/api/git'
-          config.headers['Content-Type'] = 'application/json';
-        } else {
-          this.$message.error('Please choose a file or input URL!')
-          return
+      }
+
+      if (this.upload_disabled == false && this.git_disabled == true) {
+        data = new FormData()
+        data.append('file', this.file);
+        url = '/api/zip'
+        config.headers['Content-Type'] = 'multipart/form-data'
+      } else if (this.upload_disabled == true && this.git_disabled == false) {
+        data = {
+          'username': this.git_address.username,
+          'reponame': this.git_address.reponame,
         }
-  
-        this.loading = true;
-        this.axios.post(url, data, config)
+        url = '/api/git'
+        config.headers['Content-Type'] = 'application/json';
+      } else {
+        this.$message.error('Please choose a file or input URL!')
+        return
+      }
+
+      this.loading = true;
+      this.progress = 0;
+      this.axios.post(url, data, config)
         .then(res => {
-          if (res.status == 200) {
-            console.log(res);
-            if (res.data != "URL ERROR") {
-              config.headers['Content-Type'] = 'application/json';
-              var unzip_path = res.data;
-              console.log(unzip_path);
-              var timer = window.setInterval(() => {
-                console.log("tick");
-                this.axios.post('/api/poll', {path: unzip_path}, config)
+          if (res.status == 200 && res.data != "URL ERROR") {
+            var unzip_path = res.data;
+            var timer = window.setInterval(() => {
+              if (this.progress < 50) this.progress += 8; // 每次增加8%
+              if (this.progress > 50 && this.progress<80) this.progress +=5; // 最多到90%，留10%给最终处理
+              if (this.progress >= 80 && this.progress< 90) this.progress +=1;
+              if (this.progress >= 90) this.progress = 90;
+              this.axios.post('/api/poll', { path: unzip_path }, config)
                 .then(res => {
                   if (res.data != 'doing') {
-                    console.log(res.data);
+                    this.progress = 100; // 完成时设为100%
+                    window.clearInterval(timer);
                     this.check_res = res.data;
-                    window.clearInterval(timer)
-                    this.upload_done()
+                    this.upload_done();
                   }
-                })
-              }, 2000)
-              // this.check_res = res.data;
-              // this.table_data = [];
-              // for (const license of res.data.compatible_licenses) {
-              //   this.table_data.push({name: license})
-              // }
-              // var temp_table = []
-              // for (const license of this.table_data) {
-              //   if (this.has(res.data.compatible_licenses, license.name)) {
-              //     temp_table.push(license)
-              //   }
-              // }
-              // this.table_data = temp_table;
-              // this.generate_licenses_list();
-              // this.generate_depend_dict();
-              // $('.file-url').hide()
-              // $('#description').show()
-              // $('#upload-span').hide()
-              // $('#skip-span').hide()
-              // $('#question-span').show()
-              // $("#back-span").show()
-              // $("#copyleft-area").show()
-            } else if (res.data == "URL ERROR") { // git url is wrong
-              this.$message.error("Make sure the git url is correct!")
-            }
-            // this.loading = false;
-            
-          } else {
-            console.log('upload_file_or_url wrong');
+                });
+            }, 2000)
+
+          } else if (res.data == "URL ERROR") { // git url is wrong
+            this.$message.error("Make sure the git url is correct!")
           }
-        }).catch(res => {
           console.log(res);
-          // this.loading = false;
         })
-      },
+    },
+
   
       upload_done() {
           var temp_table = []
