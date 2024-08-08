@@ -71,7 +71,10 @@ def license_compatibility_filter(in_licenses):
     dual_no_checked_license = set()
     for licenseA in in_licenses:
         if len(licenseA) <=1:
-            licenseA=licenseA[0]
+            try:
+                licenseA=licenseA[0]
+            except:
+                continue
             if licenseA in check_license_list:
                 checked_list.append(licenseA)
                 for licenseB in all_licenses:
