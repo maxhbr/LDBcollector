@@ -12,6 +12,7 @@ import (
 	"fmt"
 	"net/http"
 	"path/filepath"
+	"reflect"
 	"strconv"
 	"strings"
 	"time"
@@ -720,41 +721,78 @@ func addChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 			UpdatedValue: &newVal,
 		})
 	}
-	if (oldLicense.ExternalRef.Data().InternalComment == nil && newLicense.ExternalRef.Data().InternalComment != nil) ||
-		(oldLicense.ExternalRef.Data().InternalComment != nil && newLicense.ExternalRef.Data().InternalComment == nil) ||
-		((oldLicense.ExternalRef.Data().InternalComment != nil && newLicense.ExternalRef.Data().InternalComment != nil) && (*oldLicense.ExternalRef.Data().InternalComment != *newLicense.ExternalRef.Data().InternalComment)) {
-		changes = append(changes, models.ChangeLog{
-			Field:        "ExternalRef.InternalComment",
-			OldValue:     oldLicense.ExternalRef.Data().InternalComment,
-			UpdatedValue: newLicense.ExternalRef.Data().InternalComment,
-		})
-	}
-	if (oldLicense.ExternalRef.Data().LicenseExplanation == nil && newLicense.ExternalRef.Data().LicenseExplanation != nil) ||
-		(oldLicense.ExternalRef.Data().LicenseExplanation != nil && newLicense.ExternalRef.Data().LicenseExplanation == nil) ||
-		((oldLicense.ExternalRef.Data().LicenseExplanation != nil && newLicense.ExternalRef.Data().LicenseExplanation != nil) && (*oldLicense.ExternalRef.Data().LicenseExplanation != *newLicense.ExternalRef.Data().LicenseExplanation)) {
-		changes = append(changes, models.ChangeLog{
-			Field:        "ExternalRef.LicenseExplanation",
-			OldValue:     oldLicense.ExternalRef.Data().LicenseExplanation,
-			UpdatedValue: newLicense.ExternalRef.Data().LicenseExplanation,
-		})
-	}
-	if (oldLicense.ExternalRef.Data().LicenseSuffix == nil && newLicense.ExternalRef.Data().LicenseSuffix != nil) ||
-		(oldLicense.ExternalRef.Data().LicenseSuffix != nil && newLicense.ExternalRef.Data().LicenseSuffix == nil) ||
-		((oldLicense.ExternalRef.Data().LicenseSuffix != nil && newLicense.ExternalRef.Data().LicenseSuffix != nil) && (*oldLicense.ExternalRef.Data().LicenseSuffix != *newLicense.ExternalRef.Data().LicenseSuffix)) {
-		changes = append(changes, models.ChangeLog{
-			Field:        "ExternalRef.LicenseSuffix",
-			OldValue:     oldLicense.ExternalRef.Data().LicenseSuffix,
-			UpdatedValue: newLicense.ExternalRef.Data().LicenseSuffix,
-		})
-	}
-	if (oldLicense.ExternalRef.Data().LicenseVersion == nil && newLicense.ExternalRef.Data().LicenseVersion != nil) ||
-		(oldLicense.ExternalRef.Data().LicenseVersion != nil && newLicense.ExternalRef.Data().LicenseVersion == nil) ||
-		((oldLicense.ExternalRef.Data().LicenseVersion != nil && newLicense.ExternalRef.Data().LicenseVersion != nil) && (*oldLicense.ExternalRef.Data().LicenseVersion != *newLicense.ExternalRef.Data().LicenseVersion)) {
-		changes = append(changes, models.ChangeLog{
-			Field:        "ExternalRef.LicenseVersion",
-			OldValue:     oldLicense.ExternalRef.Data().LicenseVersion,
-			UpdatedValue: newLicense.ExternalRef.Data().LicenseVersion,
-		})
+
+	oldLicenseExternalRef := oldLicense.ExternalRef.Data()
+	oldExternalRefVal := reflect.ValueOf(oldLicenseExternalRef)
+	typesOf := oldExternalRefVal.Type()
+
+	newLicenseExternalRef := newLicense.ExternalRef.Data()
+	newExternalRefVal := reflect.ValueOf(newLicenseExternalRef)
+
+	for i := 0; i < oldExternalRefVal.NumField(); i++ {
+		fieldName := typesOf.Field(i).Name
+
+		switch typesOf.Field(i).Type.String() {
+		case "*boolean":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*bool)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*bool)
+			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
+				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
+				var oldVal, newVal *string
+				oldVal, newVal = nil, nil
+
+				if oldFieldPtr != nil {
+					_oldVal := fmt.Sprintf("%t", *oldFieldPtr)
+					oldVal = &_oldVal
+				}
+
+				if newFieldPtr != nil {
+					_newVal := fmt.Sprintf("%t", *newFieldPtr)
+					newVal = &_newVal
+				}
+
+				changes = append(changes, models.ChangeLog{
+					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
+					OldValue:     oldVal,
+					UpdatedValue: newVal,
+				})
+			}
+		case "*string":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*string)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*string)
+			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
+				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
+				changes = append(changes, models.ChangeLog{
+					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
+					OldValue:     oldFieldPtr,
+					UpdatedValue: newFieldPtr,
+				})
+			}
+		case "*int":
+			oldFieldPtr, _ := oldExternalRefVal.Field(i).Interface().(*int)
+			newFieldPtr, _ := newExternalRefVal.Field(i).Interface().(*int)
+			if (oldFieldPtr == nil && newFieldPtr != nil) || (oldFieldPtr != nil && newFieldPtr == nil) ||
+				((oldFieldPtr != nil && newFieldPtr != nil) && (*oldFieldPtr != *newFieldPtr)) {
+				var oldVal, newVal *string
+				oldVal, newVal = nil, nil
+
+				if oldFieldPtr != nil {
+					_oldVal := fmt.Sprintf("%d", *oldFieldPtr)
+					oldVal = &_oldVal
+				}
+
+				if newFieldPtr != nil {
+					_newVal := fmt.Sprintf("%d", *newFieldPtr)
+					newVal = &_newVal
+				}
+
+				changes = append(changes, models.ChangeLog{
+					Field:        fmt.Sprintf("ExternalRef.%s", fieldName),
+					OldValue:     oldVal,
+					UpdatedValue: newVal,
+				})
+			}
+		}
 	}
 
 	if len(changes) != 0 {

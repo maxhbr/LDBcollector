@@ -23,6 +23,10 @@ jobs:
         check-latest: true
         cache: true
 
+    - name: Code Generation
+      run: |
+        cp external_ref_fields.example.yaml external_ref_fields.yaml && go generate ./...
+
     - name: Install swag
       run: |
         go install github.com/swaggo/swag/cmd/swag@latest
@@ -33,7 +37,7 @@ jobs:
 
     - name: Check doc diff
       run: |
-        diff swag/docs/docs.go cmd/laas/docs/docs.go > swagger-diff.txt
+        diff swag/docs/docs.go cmd/laas/docs/docs.go > swagger-diff.txt || true
         # Check if file swagger-diff.txt is empty
         if [ -s swagger-diff.txt ]
         then

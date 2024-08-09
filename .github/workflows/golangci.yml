@@ -27,6 +27,9 @@ jobs:
         check-latest: true
         cache: true
 
+    - name: Code Generation
+      run: cp external_ref_fields.example.yaml external_ref_fields.yaml && go generate ./...
+
     - name: lint
       uses: golangci/golangci-lint-action@v3
       with:

@@ -71,6 +71,20 @@ git clone https://github.com/fossology/LicenseDb.git
 cd LicenseDb
 ```
 
+- Create the `external_ref_fields.yaml` file in the root directory of the project and change the
+  values of the extra license json keys as per your requirement.
+
+```bash
+cp external_ref_fields.yaml.example external_ref_fields.yaml
+vim external_ref_fields.yaml
+```
+
+- Generate Go struct for the extra fields listed in the external_ref_fields.yaml.
+
+```bash
+go generate ./...
+```
+
 - Build the project using following command.
 
 ```bash
