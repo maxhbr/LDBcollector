@@ -9,7 +9,6 @@ import argparse
 import logging
 import sys
 import traceback
-import re
 
 from flame.license_db import FossLicenses
 from flame.license_db import Validation
@@ -173,16 +172,7 @@ def licenses(fl, formatter, args):
 
 def unknown(fl, formatter, args):
     validations = __validations(args)
-    compat_license_expression = fl.expression_license(' '.join(args.license), validations=validations, update_dual=(not args.no_dual_update))
-    compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', compat_license_expression['identified_license'])]
-    compat_licenses = [x for x in compat_licenses if x]
-    unknown_symbols = set()
-    for compat_license in compat_licenses:
-        if compat_license not in fl.known_symbols():
-            unknown_symbols.add(compat_license)
-    if len(unknown_symbols) != 0:
-        raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)))
-    return 'OK', None
+    return fl.unknown_symbols(args.license, validations)
 
 def simplify(fl, formatter, args):
     simplified = fl.simplify(args.license_expression)
