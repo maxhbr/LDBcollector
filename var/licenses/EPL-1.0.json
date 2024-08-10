@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "Eclipse Public License 1.0",
@@ -37,6 +37,8 @@
         "osi:EPL-1.0",
         "Eclipse Public License 1.0 (EPL-1.0)",
         "EPLv1.0",
-        "Eclipse-Public-License-v1.0"
+        "Eclipse-Public-License-v1.0",
+        "EPL - v 1.0",
+        "Eclipse Public License - v 1.0"
     ]
 }

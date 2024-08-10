@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
 	"comment": "",
 	"date": "2023-08-29"
     },
@@ -100,7 +100,28 @@
         "Apache-License-2.0",
         "Apache2.0",
         "Apache-License-Version-2.0",
-        "Apache-License-v2.0"
-        
+        "Apache-License-v2.0",
+        "Apache License,Version 2.0",
+        "Apache License, Version 2.0, January 2004",
+        "Apache Software License, Version 2.0",
+        "The Apache Licence, Version 2.0",
+        "The Apache License Software License, Version 2.0",
+        "\"The Apache License, Version 2.0\"",
+        "The Apache License, Version 2.0",
+        "The Apache software License, Version 2.0",
+        "'The Apache Software License, Version 2.0'",
+        "The ApacheSoftware License, Version 2.0",
+        "This material is licensed under the Apache Software License, Version 2.0",
+        "Apache2 License",
+        "APACHE 2.0",
+        "Apache_License_2.0",
+        "Apache License version 2.0",
+        "APACHE LICENSE, VERSION 2.0",
+        "The Apache 2.0 License",
+        "The Apache Software License, Version2.0",
+        "The_Apache_Software_License,Version_2.0",
+        "Apache License Version 2",
+        "Apache v2 License",
+        "ASF 2.0"
     ]
 }

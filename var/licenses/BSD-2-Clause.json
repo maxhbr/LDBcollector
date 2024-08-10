@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
 	"comment": "",
 	"date": "2023-08-29"
     },
@@ -46,6 +46,11 @@
         "The 2-Clause BSD License",
         "BSD License 2",
         "bsd-simplified",
-        "BSD2C"
+        "BSD2C",
+        "BSD Simplified",
+        "The BSD 2-Clause License",
+        "BSD Two Clause",
+        "The FreeBSD Copyright",
+        "Simplified BSD License (BSD)"
     ]
 }

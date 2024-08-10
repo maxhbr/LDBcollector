@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "X11 License",
@@ -20,7 +20,9 @@
         "scancode:x11-xconsortium",
         "MIT-X-Consortium",
         "MIT-X11",
+        "MIT-X",
         "X-Consortium",
-        "x11-xconsortium"
+        "x11-xconsortium",
+        "MIT-X-Consortium-License"
     ]
 }

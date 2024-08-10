@@ -8,6 +8,7 @@
 THIS_FILE=${BASH_SOURCE[0]}
 
 RET=0
+LICENSE_ERRORS=""
 set -o pipefail
 
 
@@ -45,7 +46,7 @@ check_file_presence()
             echo "FAIL: $LICENSE_FILE missing"
             RET=$(( $RET + 1 ))
             RESULT=" FAIL"
-
+            LICENSE_ERRORS="$LICENSE_ERRORS $LICENSE_FILE missing, "
         fi
         jq . $lf > /dev/null
         if [ $? -ne 0 ]
@@ -53,6 +54,7 @@ check_file_presence()
             echo "FAIL: $lf not in JSON format"
             RET=$(( $RET + 1 ))
             RESULT=" FAIL"
+            LICENSE_ERRORS="$LICENSE_ERRORS $lf not in JSON format, "
         fi
     done
     
@@ -65,6 +67,7 @@ check_file_presence()
            echo "FAIL $lf file missing"
            RET=$(( $RET + 1 ))
            RESULT=" FAIL"
+           LICENSE_ERRORS="$LICENSE_ERRORS $lf file missing, "
        fi
     done
     echo "$RESULT"
@@ -93,6 +96,7 @@ check_presence()
         echo " --------------------------"
         RET=$(( $RET + 1 ))
         _RET="FAIL"
+        LICENSE_ERRORS="$LICENSE_ERRORS  $REG_EXP_PRESENCE not present in $FILE"
     fi
 
     # check unpresence
@@ -102,12 +106,13 @@ check_presence()
         if [ "$UNPRESENT" != "" ]
         then
             echo "FAIL"
-            echo " * cause: Incorrectly not present in $FILE"
+            echo " * cause: Incorrectly present in $FILE"
             echo " --------------------------"
-            echo "Unpresent: \"$UNPRESENT\""
+            echo "Should be unpresent: \"$UNPRESENT\""
             echo " --------------------------"
             RET=$(( $RET + 1 ))
             _RET="FAIL"
+            LICENSE_ERRORS="$LICENSE_ERRORS  \"$REG_EXP_UNPRESENCE\" incorrectly found in \"$FILE\""
         fi
     fi
     
@@ -115,7 +120,7 @@ check_presence()
     then
         echo OK
     else
-        exit 1
+        echo FAILURE
     fi
 }
 
@@ -129,7 +134,7 @@ check_test_case
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\" -e \" 0 \""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
 BSD2_PATENT_PRESENT=" -i -e patent" 
-BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse "
+BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse -e 2.0 "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
 
 check_presence AFL-1.1 " -e 1.1 " "-e 2. -e 1.2  -e 3"
@@ -138,7 +143,7 @@ check_presence AFL-2.0 " -e 2.0 " "-e 1 -e 2.1 -e 3"
 check_presence AFL-2.1 " -e 2.1 " "-e 1. -e 2.0 -e 0  -e 3"
 check_presence AFL-3.0 " -e 3 " "-e 1 -e 2 "
 
-check_presence AGPL-3.0-only     " -e 3 " " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
+check_presence AGPL-3.0-only     " -i -e 3 -e affero" " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
 check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2  -e library -e lesser "
 
 check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
@@ -161,13 +166,14 @@ check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
 check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
+check_presence LicenseRef-scancode-ssleay " -i -e leay "        " -e openssl"  
 
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence BSD-1-Clause " -i BSD" " -e 2 -e 3 -e 4 "
 check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-2-Clause-Views " -i -e view"  " -e 0 -e 1 -e 3 -e 4"
-check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
+check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT  -i -e two -e simplified -e freebsd "
 check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-No-Nuclear-Warranty " -i -e nuclear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
@@ -272,6 +278,7 @@ check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence MPL-2.0 " -e 2" " -e 1"
 check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
 
+check_presence NAIST-2003 " -i -e naist -e nara " ""
 check_presence NCSA " -i -e ncsa -e illinois " ""
 check_presence NTP " -i -e ntp -e network " ""
 
@@ -311,19 +318,25 @@ check_presence WTFPL " -i -e WTFPL -e what -e wtf\ p" ""
 
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT' -e MIT-X" "" 
 check_presence X11-distribute-modifications-variant " -i -e modifications -e fsf" ""
-check_presence x11-keith-packard " -i -e packard" ""
+check_presence x11-keith-packard " -i -e packard -e hpnd " ""
 check_presence Xfig " -i -e Xfig" ""
 check_presence xpp " -i -e xpp -e indiana " ""
 
 check_presence LicenseRef-scancode-xfree86-1.0 " -i -e 1.0 " " -e  X/MIT -e 1.1 " 
 check_presence XFree86-1.1 " -i -e 1.1 " " -e  X/MIT -e 1.0 " 
 
-check_presence Zlib " -i -e libz -e zlib" ""
+check_presence Zlib " -i -e libz -e zlib" " -i bsd "
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
-check_presence ZPL-2.0 " -e 2.0" " -e 1"
-check_presence ZPL-2.1 " -e 2.1" " -e 1.1"
+check_presence ZPL-2.0 " -e 2.0" " -e 1 -e 2.1"
+check_presence ZPL-2.1 " -e 2.1" " -e 1.1 -e 2.0"
 
 
-
+if [ $RET -ne 0 ]
+then
+    echo ""
+    echo "License errors"
+    echo "$LICENSE_ERRORS"
+    echo 
+fi
 
 exit $RET

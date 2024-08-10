@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "GNU General Public License 3.0",
@@ -71,6 +71,12 @@
         "GNU General Public License v3 (GPLv3)",
         "GPLv3.0",
         "GPL v. 3.0",
-        "GPL-3.0 license"
+        "GPL-3.0 license",
+        "GPL-v3.0",
+        "GPL v3.0",
+        "GPL - v 3.0",
+        "GNU General Public License version 3",
+        "GNU GENERAL PUBLIC LICENSE V3",
+        "GLPv3"
     ]
 }

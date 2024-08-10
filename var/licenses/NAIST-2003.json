@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Nara Institute License 2003",
+    "scancode_key": "naist-2003",
+    "spdxid": "NAIST-2003",
+    "compatibility_as": "MIT",
+    "aliases": [
+        "Nara Institute License 2003",
+        "scancode://naist-2003",
+        "Nara Institute of Science and Technology License (2003)",
+        "scancode:naist-2003"
+    ]
+}

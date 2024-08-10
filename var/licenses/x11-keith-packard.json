@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
 	"comment": ""
     },
     "comment": "This license can be found in misc freedesktop/X11 related projects.",
@@ -11,7 +11,8 @@
         "X11-Style (Keith Packard)",
         "scancode://x11-keith-packard",
         "x11-keith-packard",
-        "Keith Packard License"
+        "Keith Packard License",
+        "HPND-sell-variant"
     ],
     "compatibility_as": "HPND"
 }

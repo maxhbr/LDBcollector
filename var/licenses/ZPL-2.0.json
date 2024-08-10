@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "Zope Public License 2.0",
@@ -16,6 +16,7 @@
         "ZPL 2.0",
         "scancode:zpl-2.0",
         "osi:ZPL-2.0",
-        "zpl-2.0"
+        "zpl-2.0",
+        "ZPLv2.0"
     ]
 }

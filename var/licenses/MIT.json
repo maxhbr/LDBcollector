@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "MIT License",
@@ -39,6 +39,8 @@
         "MIT License (MIT)",
         "MIT/Expat",
         "The MIT License (MIT)",
-        "[MIT] License"
+        "[MIT] License",
+        "The MIT Licence",
+        "The MIT Licensse"
     ]
 }

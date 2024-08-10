@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "Boost Software License 1.0",
@@ -27,6 +27,7 @@
         "BSL 1.0 License",
         "Boost-1.0",
         "Boost Software license 1.0",
-        "boost-1.0"
+        "boost-1.0",
+        "BOOST-1.0"
     ]
 }

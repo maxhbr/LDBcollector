@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
         "comment": ""
     },
     "name": "Mozilla Public License 2.0",
@@ -28,6 +28,7 @@
         "osi:MPL-2.0",
         "MPLv2",
         "MPL-2.0+",
-        "MPLv2.0."
+        "MPLv2.0.",
+        "MPL2.0"
     ]
 }

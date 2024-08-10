@@ -6,6 +6,7 @@
     "name": "Indiana University Extreme! Lab Software License Version 1.2",
     "scancode_key": "indiana-extreme-1.2",
     "spdxid": "xpp",
+    "compatibility_as": "BSD-4-Clause",
     "aliases": [
         "xpp",
         "XPP License",

@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https:https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
 	"comment": "",
 	"date": "2023-08-22"
     },
@@ -14,8 +14,11 @@
         "BSD (3 clause)",
         "BSD License (no advertising)",
         "bsd-3-clause",
+        "'BSD-3-Clause'",
+        "'BSD 3-Clause'",
         "BSD 3-Clause License",
         "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+        "BSD 3 Clause",
         "BSD-3",
         "Revised BSD License",
         "Modified BSD License",
@@ -77,8 +80,18 @@
         "new-BSD",
         "BSD-new license",
         "3-clause-BSD-License",
+        "3-Clause-BSD-License",
         "bsd-new",
         "Modified-BSD-License",
-        "BSD-3-Clause-License"
+        "BSD-3-Clause-License",
+        "BSD-3-Clause License",
+        "New BSD license",
+        "The 3-Clause BSD License",
+        "The BSD 3-Clause License",
+        "The BSD 3-Clause License (BSD3)",
+        "The Revised BSD Licence",
+        "3-clause BSD License",
+        "BSD 3-clause License",
+        "Modified BSD"
     ]
 }
