@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -309,7 +309,6 @@ class FossLicenses:
         BSD-3-Clause AND LicenseRef-flame-x11-keith-packard
 
         """
-
         if not isinstance(license_expression, str):
             raise FlameException('Wrong type (type(license_expresssion)) of input to the function expression_license. Only string is allowed.')
 
@@ -326,32 +325,19 @@ class FossLicenses:
                                                       'alias',
                                                       license_expression)
         replacements += ret['identifications']
-
         ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
                                                       'operator',
                                                       ret['license_expression'],
                                                       allow_letter=True)
         replacements += ret['identifications']
 
-        # Manage dual licenses (such as GPL-2.0-or-later)
-        updates_object = self.__update_or_later(ret['license_expression'])
-        updates = updates_object['updates']
-        try:
-            updated_license = str(self.license_expression.parse(updates_object['license_expression']))
-        except boolean.boolean.ParseError as e:
-            raise FlameException(f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}')
-
-        if update_dual:
-            license_parsed = updated_license
-        else:
-            license_parsed = str(self.license_expression.parse(ret['license_expression']))
-
+        # manage ambiguities
         ambiguities = []
         aliases = self.license_db[AMBIG_TAG]['aliases']
 
         tmp_license_expression = ret['license_expression']
         for alias in reversed(collections.OrderedDict(sorted(aliases.items(), key=lambda x: len(x[0])))):
-            needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias)
+            needle = r'(?:\s+|^)%s(?:\s+|$)' % re.escape(alias.replace(" and ", " AND "))
             if re.search(needle, tmp_license_expression):
                 real_lic = self.license_db[AMBIG_TAG]['aliases'][alias]
                 if alias != real_lic:
@@ -362,7 +348,38 @@ class FossLicenses:
                 ambiguities.append(f'{about_license} Problem: {problem}')
                 tmp_license_expression = re.sub(needle, ' ', tmp_license_expression)
 
+        update_problem = None
+        updates = []
+        if update_dual:
+            # Manage dual licenses (such as GPL-2.0-or-later)
+            updates_object = self.__update_or_later(ret['license_expression'])
+            updates = updates_object['updates']
+            try:
+                updated_license = str(self.license_expression.parse(updates_object['license_expression']))
+            except boolean.boolean.ParseError as e:
+                update_problem = f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}'
+                updated_license = updates_object['license_expression']
+        else:
+            try:
+                updated_license = str(self.license_expression.parse(ret['license_expression']))
+            except boolean.boolean.ParseError as e:
+                update_problem = f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}'
+                updated_license = updates_object['license_expression']
+
+        license_parsed = updated_license
+
         self.__validate_license(validations, license_parsed)
+
+        if update_problem:
+            amb_text = ''
+            if ambiguities:
+                amb_text = f'Ambiguities were found: {ambiguities}.'
+
+            parse_text = ''
+            if update_problem:
+                parse_text = f'Parsing failed: {update_problem}.'
+
+            raise FlameException(f'Could not parse the license "{license_expression}". {amb_text} {parse_text}')
 
         ret = {
             'queried_license': license_expression,
@@ -507,13 +524,48 @@ class FossLicenses:
         # List all aliases that exist
         return self.license_db[AMBIG_TAG]['ambiguities']
 
+    def unknown_symbols(self, _license_expression, validations=None):
+        """Returns a list of all all unknown license symbols for a license expression
+        Note: developer function - not for "normal" users
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> unknowns = fl.unknown_symbols(["MIT"])
+
+        """
+        license_expression = ' '.join(_license_expression)
+
+        try:
+            compat_license_expression = self.expression_license(license_expression, validations=validations)
+            fixed_license_expression = compat_license_expression['identified_license']
+        except Exception:
+            fixed_license_expression = license_expression
+
+        for ambig in self.ambiguities_list():
+            aliases = self.license_db[AMBIG_TAG]['ambiguities'][ambig]['aliases']
+            for alias in sorted(aliases, key=len, reverse=True):
+                if alias in fixed_license_expression:
+                    fixed_license_expression = re.sub(f'\s{alias}\s', '...', fixed_license_expression)
+                    break
+
+        compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', fixed_license_expression)]
+        compat_licenses = [x for x in compat_licenses if x]
+        unknown_symbols = set()
+        for compat_license in compat_licenses:
+            if compat_license not in self.known_symbols():
+                unknown_symbols.add(compat_license)
+        if len(unknown_symbols) != 0:
+            raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)))
+        return 'OK', None
+
     def known_symbols(self):
         """Returns a list of all all known license symbols.
 
         :Example:
 
         >>> fl = FossLicenses()
-        >>> aliases = fl.known_symbols()
+        >>> symbols = fl.known_symbols()
 
         """
         _symbols = set()
