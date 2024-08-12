@@ -1750,3 +1750,10 @@ location = https://svn.apache.org/viewvc/httpd/httpd/tags/2.4.62/docs/icons/tar.
 text = '''
 This icon is in the public domain. 1995 Kevin Hughes, kevinh@eit.com
 '''
+
+package = mailcap
+location = https://pagure.io/mailcap/blob/ffd61c5c86d00b58a52751fe21e692b58e97a4b8/f/COPYING
+text = '''
+Red Hat disclaims any copyright on the "mailcap" and "mime-types" files and places them in the public domain. You are
+free to do whatever you wish with these files.
+'''
