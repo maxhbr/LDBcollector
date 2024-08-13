@@ -33,6 +33,7 @@ import (
 //	@Success		200		{object}	models.ObligationMapResponse
 //	@Failure		404		{object}	models.LicenseError	"No obligation with given topic found or no map for
 //	obligation exists"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligation_maps/topic/{topic} [get]
 func GetObligationMapByTopic(c *gin.Context) {
 	var obligation models.Obligation
@@ -110,6 +111,7 @@ func GetObligationMapByTopic(c *gin.Context) {
 //	@Success		200		{object}	models.ObligationMapResponse
 //	@Failure		404		{object}	models.LicenseError	"No license with given shortname found or no map for
 //	license exists"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligation_maps/license/{license} [get]
 func GetObligationMapByLicense(c *gin.Context) {
 	var license models.LicenseDB

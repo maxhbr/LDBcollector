@@ -49,6 +49,7 @@ import (
 //	@Param			order_by		query		string					false	"Asc or desc ordering"	Enums(asc, desc)								default(asc)
 //	@Success		200				{object}	models.LicenseResponse	"Filtered licenses"
 //	@Failure		400				{object}	models.LicenseError		"Invalid value"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/licenses [get]
 func FilterLicense(c *gin.Context) {
 	SpdxId := c.Query("spdxid")
@@ -212,6 +213,7 @@ func FilterLicense(c *gin.Context) {
 //	@Param			shortname	path		string	true	"Shortname of the license"
 //	@Success		200			{object}	models.LicenseResponse
 //	@Failure		404			{object}	models.LicenseError	"License with shortname not found"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/licenses/{shortname} [get]
 func GetLicense(c *gin.Context) {
 	var license models.LicenseDB
@@ -791,6 +793,7 @@ func addChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 //	@Success		200		{object}	models.LicenseResponse	"Licenses matched"
 //	@Failure		400		{object}	models.LicenseError		"Invalid request"
 //	@Failure		404		{object}	models.LicenseError		"Search algorithm doesn't exist"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/search [post]
 func SearchInLicense(c *gin.Context) {
 	var input models.SearchLicense
@@ -1120,7 +1123,7 @@ func InsertOrUpdateLicenseOnImport(tx *gorm.DB, newLicenseMap map[string]interfa
 //	@Produce		json
 //	@Success		200	{array}		models.ExportLicenseDB
 //	@Failure		500	{object}	models.LicenseError	"Failed to fetch Licenses"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/licenses/export [get]
 func ExportLicenses(c *gin.Context) {
 
@@ -1161,6 +1164,7 @@ func ExportLicenses(c *gin.Context) {
 //	@Success		200		{object}	models.LicensePreviewResponse
 //	@Failure		400		{object}	models.LicenseError	"Invalid active value"
 //	@Failure		500		{object}	models.LicenseError	"Unable to fetch licenses"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/licenses/preview [get]
 func GetAllLicensePreviews(c *gin.Context) {
 	var licenses []models.LicenseDB

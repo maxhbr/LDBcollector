@@ -451,3 +451,35 @@ type ImportObligationsResponse struct {
 	Status int           `json:"status" example:"200"`
 	Data   []interface{} `json:"data"` // can be of type models.LicenseError or models.ObligationImportStatus
 }
+
+// Api contains the information about an endpoint
+type Api struct {
+	Href          string `json:"href" example:"/api/v1/licenses"`
+	RequestMethod string `json:"request_method" enums:"POST,PATCH,DELETE,PUT,GET" example:"POST"`
+}
+
+// LinksCollection is a collection of links
+type LinksCollection struct {
+	Links map[string]Api `json:"_links" swaggertype:"object,string" example:"licenses:{}"`
+}
+
+// APICollection is the object that lists which apis require authentication and which do not
+type APICollection struct {
+	Authenticated   LinksCollection `json:"authenticated" swaggertype:"object"`
+	UnAuthenticated LinksCollection `json:"unAuthenticated" swaggertype:"object"`
+}
+
+// APICollectionResponse represents the response format for api collection data.
+type APICollectionResponse struct {
+	Status int           `json:"status" example:"200"`
+	Data   APICollection `json:"data"`
+}
+
+// SwaggerDocAPISecurityScheme is the json schema describing info about various apis
+type SwaggerDocAPISecurityScheme struct {
+	BasePath string `json:"basePath" example:"/api/v1"`
+	Paths    map[string]map[string]struct {
+		Security    []map[string]interface{} `json:"security" swaggertype:"array,object"`
+		OperationId string                   `json:"operationId" example:"GetLicense"`
+	} `json:"paths"`
+}

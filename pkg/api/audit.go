@@ -28,7 +28,7 @@ import (
 //	@Param			limit	query		int						false	"Number of records per page"
 //	@Success		200		{object}	models.AuditResponse	"Audit records"
 //	@Failure		404		{object}	models.LicenseError		"Not changelogs in DB"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits [get]
 func GetAllAudit(c *gin.Context) {
 	var audits []models.Audit
@@ -77,7 +77,7 @@ func GetAllAudit(c *gin.Context) {
 //	@Success		200			{object}	models.AuditResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid audit ID"
 //	@Failure		404			{object}	models.LicenseError	"No audit entry with given ID"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits/{audit_id} [get]
 func GetAudit(c *gin.Context) {
 	var audit models.Audit
@@ -127,7 +127,7 @@ func GetAudit(c *gin.Context) {
 //	@Failure		400			{object}	models.LicenseError	"Invalid audit ID"
 //	@Failure		404			{object}	models.LicenseError	"No audit entry with given ID"
 //	@Failure		500			{object}	models.LicenseError	"unable to find changes"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits/{audit_id}/changes [get]
 func GetChangeLogs(c *gin.Context) {
 	var changelog []models.ChangeLog
@@ -186,7 +186,7 @@ func GetChangeLogs(c *gin.Context) {
 //	@Success		200			{object}	models.ChangeLogResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid ID"
 //	@Failure		404			{object}	models.LicenseError	"No changelog with given ID found"
-//	@Security		ApiKeyAuth
+//	@Security		ApiKeyAuth || {}
 //	@Router			/audits/{audit_id}/changes/{id} [get]
 func GetChangeLogbyId(c *gin.Context) {
 	var changelog models.ChangeLog

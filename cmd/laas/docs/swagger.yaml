@@ -2,6 +2,21 @@ basePath: /api/v1
 definitions:
   datatypes.JSONType-models_LicenseDBSchemaExtension:
     type: object
+  models.APICollection:
+    properties:
+      authenticated:
+        type: object
+      unAuthenticated:
+        type: object
+    type: object
+  models.APICollectionResponse:
+    properties:
+      data:
+        $ref: '#/definitions/models.APICollection'
+      status:
+        example: 200
+        type: integer
+    type: object
   models.Audit:
     properties:
       entity:
@@ -764,6 +779,26 @@ info:
   title: laas (License as a Service) API
   version: 0.0.9
 paths:
+  /apiCollection:
+    get:
+      consumes:
+      - application/json
+      description: Returns the apis which require authentication and which do not
+      operationId: getAPICollection
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.APICollectionResponse'
+        "500":
+          description: Unable to parse swagger docs
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Returns the apis which require authentication and which do not
+      tags:
+      - API Collection
   /audits:
     get:
       consumes:
@@ -791,7 +826,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get audit records
       tags:
       - Audits
@@ -823,7 +859,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get an audit record
       tags:
       - Audits
@@ -859,7 +896,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get changelogs
       tags:
       - Audits
@@ -896,7 +934,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get a changelog
       tags:
       - Audits
@@ -1003,6 +1042,9 @@ paths:
           description: Invalid value
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Filter licenses
       tags:
       - Licenses
@@ -1065,6 +1107,9 @@ paths:
           description: License with shortname not found
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get a license by shortname
       tags:
       - Licenses
@@ -1131,7 +1176,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Export all licenses as a json file
       tags:
       - Licenses
@@ -1201,6 +1247,9 @@ paths:
           description: Unable to fetch licenses
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get shortnames of all active licenses
       tags:
       - Licenses
@@ -1253,6 +1302,9 @@ paths:
           description: No license with given shortname found or no map for
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get maps for a license
       tags:
       - Obligations
@@ -1279,6 +1331,9 @@ paths:
           description: No obligation with given topic found or no map for
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get maps for an obligation
       tags:
       - Obligations
@@ -1402,6 +1457,9 @@ paths:
           description: No obligations in DB
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get all active obligations
       tags:
       - Obligations
@@ -1489,6 +1547,9 @@ paths:
           description: No obligation with given topic found
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get an obligation
       tags:
       - Obligations
@@ -1569,7 +1630,8 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - ApiKeyAuth: []
+      - '{}': []
+        ApiKeyAuth: []
       summary: Fetches audits corresponding to an obligation
       tags:
       - Obligations
@@ -1590,6 +1652,9 @@ paths:
           description: Failed to fetch obligations
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Export all obligations as a json file
       tags:
       - Obligations
@@ -1651,6 +1716,9 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/models.ObligationPreviewResponse'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Get topic and types of all active obligations
       tags:
       - Obligations
@@ -1682,6 +1750,9 @@ paths:
           description: Search algorithm doesn't exist
           schema:
             $ref: '#/definitions/models.LicenseError'
+      security:
+      - '{}': []
+        ApiKeyAuth: []
       summary: Search licenses
       tags:
       - Licenses

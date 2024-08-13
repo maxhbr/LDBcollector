@@ -40,6 +40,7 @@ import (
 //	@Param			order_by	query		string	false	"Asc or desc ordering"	Enums(asc, desc)	default(asc)
 //	@Success		200			{object}	models.ObligationResponse
 //	@Failure		404			{object}	models.LicenseError	"No obligations in DB"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligations [get]
 func GetAllObligation(c *gin.Context) {
 	var obligations []models.Obligation
@@ -107,6 +108,7 @@ func GetAllObligation(c *gin.Context) {
 //	@Param			topic	path		string	true	"Topic of the obligation"
 //	@Success		200		{object}	models.ObligationResponse
 //	@Failure		404		{object}	models.LicenseError	"No obligation with given topic found"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligations/{topic} [get]
 func GetObligation(c *gin.Context) {
 	var obligation models.Obligation
@@ -438,7 +440,9 @@ func DeleteObligation(c *gin.Context) {
 // @Success		200		{object}	models.AuditResponse
 // @Failure		404		{object}	models.LicenseError	"No obligation with given topic found"
 // @Failure		500		{object}	models.LicenseError	"unable to find audits with such obligation topic"
-// @Security		ApiKeyAuth
+//
+//	@Security		ApiKeyAuth || {}
+//
 // @Router			/obligations/{topic}/audits [get]
 func GetObligationAudits(c *gin.Context) {
 	var obligation models.Obligation
@@ -642,6 +646,7 @@ func ImportObligations(c *gin.Context) {
 //	@Produce		json
 //	@Success		200	{array}		models.ObligationJSONFileFormat
 //	@Failure		500	{object}	models.LicenseError	"Failed to fetch obligations"
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligations/export [get]
 func ExportObligations(c *gin.Context) {
 	var obligations []models.Obligation
@@ -803,6 +808,7 @@ func addChangelogsForObligationUpdate(tx *gorm.DB, username string,
 //	@Produce		json
 //	@Param			active	query		bool	true	"Active obligation only"
 //	@Success		200		{object}	models.ObligationPreviewResponse
+//	@Security		ApiKeyAuth || {}
 //	@Router			/obligations/preview [get]
 func GetAllObligationPreviews(c *gin.Context) {
 	var obligations []models.Obligation
