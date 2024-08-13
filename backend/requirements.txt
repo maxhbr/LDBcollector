@@ -1,8 +1,15 @@
-Flask==2.2.2
+app == 0.0.1
+Flask==3.0.3
 joblib==1.0.1
-orjson==3.8.1
+matplotlib==3.1.2
+numpy==1.17.4
+orjson==3.10.7
+packaging==24.1
 pandas==1.2.4
 pymongo==4.0.1
+python_dateutil==2.9.0.post0
 rarfile==4.0
-tqdm==4.64.1
-Werkzeug==2.2.2
+tqdm==4.65.0
+Werkzeug==3.0.3
+z3==0.2.0
+z3_solver==4.12.1.0

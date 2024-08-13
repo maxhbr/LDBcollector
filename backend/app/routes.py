@@ -3,7 +3,7 @@ from flask import request, send_from_directory
 from app import app
 from werkzeug.utils import secure_filename
 import os
-import datetime
+from datetime import datetime
 import zipfile
 from pathlib import Path
 import rarfile
@@ -12,6 +12,7 @@ from .query import license_compatibility_judge
 from .download_github import download_git
 from .question import license_terms_choice
 from .compare import license_compare
+from .remediator import * 
 import logging
 import threading
 logging.basicConfig(
@@ -36,7 +37,24 @@ def git_check(unzip_path):
     "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
     "compatible_combine_list":compatible_combine_list}
     lock.release()
+def git_check_c(unzip_path):
+    licenses_in_files, dep_tree,require_dist=license_detection_files(unzip_path, unzip_path+".json")
+    #dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
 
+    confilct_copyleft_list,confilct_depend_dict,dep_incompatible=conflict_dection_compliance(licenses_in_files)
+    rem_lst = []
+    if dep_tree is not None and dep_incompatible:
+        rem = get_remediation(mongo_uri = "mongodb://localhost:27017/",package='test_project',version="0.0.1",requires_dist=require_dist,dep_tree=dep_tree,license= licenses_in_files["LICENSE"][0])
+        for i in rem["changes"]:
+            rem_lst.append("; ".join(i)) 
+    compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
+    
+    lock.acquire()
+    job[unzip_path] =  {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
+    "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
+    "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
+    "compatible_combine_list":compatible_combine_list,"remediation":rem_lst}
+    lock.release()
 # 主页面
 @app.route('/')
 @app.route('/index')
@@ -50,7 +68,7 @@ def upload():
     ip=request.remote_addr
     logging.info(f"user_ip: {ip}")
     f = request.files.get("file")
-    file_path = './temp_files/' + str( datetime.datetime.now())
+    file_path = './temp_files/' + str( datetime.now())
     os.makedirs(file_path)
     file_path = os.path.join(file_path, secure_filename(f.filename))
     unzip_path=file_path[:-4]
@@ -64,19 +82,29 @@ def upload():
         z.extractall(unzip_path)
         z.close()
 
-    # licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
-    # dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
-    # # print(licenses_in_files)
-    # # print(dependecy)
-    # confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
-    # compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
-    
-    # return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
-    # "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
-    # "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
-    # "compatible_combine_list":compatible_combine_list}
-
     threading.Thread(target=git_check, args=(unzip_path,)).start()
+    return unzip_path
+
+@app.route('/zip_c', methods=['POST'])
+def upload_c():
+    ip=request.remote_addr
+    logging.info(f"user_ip: {ip}")
+    f = request.files.get("file")
+    file_path = './temp_files/' + str(datetime.now())
+    os.makedirs(file_path)
+    file_path = os.path.join(file_path, secure_filename(f.filename))
+    unzip_path=file_path[:-4]
+    f.save(file_path)
+    if ".zip" in file_path:
+        z = zipfile.ZipFile(file_path, "r")
+        z.extractall(unzip_path)
+        z.close()
+    elif ".rar" in file_path:
+        z = rarfile.RarFile(file_path, "r")
+        z.extractall(unzip_path)
+        z.close()
+
+    threading.Thread(target=git_check_c, args=(unzip_path,)).start()
     return unzip_path
 
 @app.route('/git', methods=['POST'])
@@ -93,17 +121,27 @@ def download():
     z = zipfile.ZipFile(file_path, "r")
     z.extractall(unzip_path)
     z.close()
-    # licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
-    # dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
 
-    # confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
-    # compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
-    
-    # return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
-    # "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
-    # "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
-    # "compatible_combine_list":compatible_combine_list}
     threading.Thread(target=git_check, args=(unzip_path,)).start()
+    return unzip_path
+
+
+@app.route('/git_c', methods=['POST'])
+def download_c():
+    ip=request.remote_addr
+    logging.info(f"user_ip: {ip}")
+    username= request.json.get("username")
+    reponame = request.json.get("reponame")
+    print(reponame)
+    file_path=download_git(username,reponame)
+    if file_path == "URL ERROR":
+        return "URL ERROR"
+    unzip_path=file_path[:-4]
+    z = zipfile.ZipFile(file_path, "r")
+    z.extractall(unzip_path)
+    z.close()
+
+    threading.Thread(target=git_check_c, args=(unzip_path,)).start()
     return unzip_path
 
 @app.route('/poll', methods=['POST'])

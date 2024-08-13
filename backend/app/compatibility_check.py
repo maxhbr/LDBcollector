@@ -5,7 +5,13 @@ import pandas as pd
 import tqdm
 from .parse_dependency import *
 import pymongo
-
+from .z3resolver import *
+import logging
+from .remediator import *   
+logging.basicConfig(
+        format="%(asctime)s (Process %(process)d) [%(levelname)s] %(filename)s:%(lineno)d %(message)s",
+        level=logging.DEBUG,
+    )
 MONGO_HOST = '127.0.0.1'  # docker container
 if "RECLIC_MONGO_PORT" in os.environ:
     MONGO_HOST = 'mongodb'
@@ -13,6 +19,7 @@ if "RECLIC_MONGO_PORT" in os.environ:
 mongo_client = pymongo.MongoClient(f'mongodb://{MONGO_HOST}:27017/')
 mongo_db = mongo_client['libraries']
 mongo_collection = mongo_db['projects']
+mongo_pypi =  mongo_client["license"]["package"]
 
 def compatibility_judge(licenseA,licenseB):
     df = pd.read_csv('./app/knowledgebase/compatibility_63.csv', index_col=0)
@@ -36,26 +43,60 @@ def license_detection_files(file_path,output_path):
                 for license in licenses:
                     if "scancode" not in license["spdx_license_key"]:
                         licenses_spdx.append(license["spdx_license_key"])
-                results[file["path"]]=list(set(licenses_spdx))
-    dep_license=get_dependencies_licenses(file_path)
+                if "LICENSE" in file["path"]:
+                    results["LICENSE"]=list(set(licenses_spdx))
+                else:
+                    results[file["path"]]=list(set(licenses_spdx))
+
+    dep_license, dep_tree, require_dist=get_dependencies_licenses(file_path)
     results.update(dep_license)
-    return results
+    return results, dep_tree, require_dist
+
+def get_direct_dep(require_dist):
+    direct_dep = []
+    for i in require_dist:
+        try:
+            req = Requirement(i)
+            dep_name = req.name.lower()
+            direct_dep.append(dep_name)
+        except:
+            continue
+    return direct_dep
 
 def get_dependencies_licenses(file_path):
     dep_license={}
     dep=traverse(os.path.abspath(file_path))
+    dep_tree = None
+    require_dist = None
     for lang in dep:
-        for p in dep[lang]:
-            if lang !="JavaScript":
-                res=mongo_collection.find_one({"Name":p,"Language":lang})
-            else:
-                res=mongo_collection.find_one({ "$or" : [{"Name":p,"Language":"JavaScript"},{"Name":p,"Language":"TypeScript"} ]})
-            if res:
-                if "," in res['Licenses']:
-                    dep_license[f"dependency({p})"]=res['Licenses'].split(",")
-                else:
-                    dep_license[f"dependency({p})"]=[res['Licenses']]
-    return dep_license
+        if lang != "Python" :
+            for p in dep[lang]:
+                res=None
+                if lang =="Java":
+                    res=mongo_collection.find_one({"Name":p,"Language":lang})
+                elif lang=="JavaScript":
+                    res=mongo_collection.find_one({ "$or" : [{"Name":p,"Language":"JavaScript"},{"Name":p,"Language":"TypeScript"} ]})
+                if res:
+                    if "," in res['Licenses']:
+                        dep_license[f"direct_dependency({p})"]=res['Licenses'].split(",")
+                    else:
+                        dep_license[f"direct_dependency({p})"]=[res['Licenses']]
+            
+        if lang=="Python":
+            require_dist = list(dep['Python'])
+            direct_dep = get_direct_dep(require_dist)
+            mongo_uri = "mongodb://localhost:27017/"
+            dr = Z3DependencyResolver(mongo_uri, file_path.split("/")[-1])
+            dep_tree = dr.resolve(require_dist)
+            for i in dep_tree:
+                pkg = mongo_pypi.find_one({"name": i, "version": dep_tree[i]})
+                if pkg:
+                    if i in direct_dep:
+                        dep_license[f"direct_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
+                    else:
+                        dep_license[f"indirect_dependency({i}_{dep_tree[i]})"] = [pkg["license_clean"]]
+
+    return dep_license , dep_tree, require_dist
 
 
 def license_compatibility_filter(in_licenses):
@@ -131,7 +172,7 @@ def depend_detection(src_path,temp_path):
         os.makedirs(output_depend_path)
     surport_lang = ["python","java","cpp","ruby","pom"]
     dependencies = []
-    for lang in surport_lang:
+    for lang in surport_lang: 
         # relative path need to be fixed
         proc = subprocess.Popen(
             ["java","-jar","./depends/depends.jar" ,"-d=" + output_depend_path , lang , src_path , lang + 'depend'])
@@ -151,7 +192,53 @@ def depend_detection(src_path,temp_path):
                     dependencies.append((os.path.abspath(src_file).replace(os.path.abspath(src_path),project_name) ,os.path.abspath(dest_file).replace(os.path.abspath(src_path),project_name)))
     return dependencies
 
+def conflict_dection_compliance(res):
+    root_license = res["LICENSE"][0]
+    
+    dep_incompatible = False
+    df1 = pd.read_csv(os.path.join('./app/knowledgebase/compatibility_63.csv'), index_col=0)
 
+    check_license_list = df1.index.tolist()
+    confilct_copyleft_set = set()
+    confilct_depend_dict = []
+    if root_license not in check_license_list:
+        return [f"The license ({root_license}) of this project is not within our knowledge scope. Please manually check for compliance."],[]
+
+    for file in res:
+        if file == "LICENSE": 
+            continue
+        for license in res[file]:
+            if license in check_license_list:
+                compatibility_result = compatibility_judge(license, root_license)
+                if compatibility_result == '0':
+                    if "dependency" in file:
+                        dep_incompatible = True
+                    confilct_copyleft_set.add(f"License {root_license} of the project and License {license} in {file} are not compatible.")
+                    confilct_depend_dict.append({"src_file":"LICENSE","src_license":root_license,"dest_file":file,"dest_license":license})
+    
+    license_file={}
+    for f in res:
+        if f == "LICENSE" or "/" in f:  #skip dependencies
+            for l in res[f]:
+                license_file[l]=license_file.get(l,[])+[f]
+
+    for lA in license_file:
+        for lB in license_file:
+            iscompatibility = 0
+            ischeck = 0
+            if lA in check_license_list and lB in check_license_list:
+                ischeck = 1
+                compatibility_result_ab = compatibility_judge(lA, lB)
+                compatibility_result_ba = compatibility_judge(lB, lA)
+                if compatibility_result_ab != '0' or compatibility_result_ba != '0':
+                    iscompatibility = 1
+            if iscompatibility == 0 and ischeck == 1:
+                fileAs=",".join(license_file[lA])
+                fileBs=",".join(license_file[lB])
+                if f"License {lA} in files({fileAs}) and License {lB} in files({fileBs}) are not compatible." not in confilct_copyleft_set and f"License {lB} in files({fileBs}) and License {lA} in files({fileAs}) are not compatible." not in confilct_copyleft_set:
+                    confilct_copyleft_set.add(f"License {lA} in files({fileAs}) and License {lB} in files({fileBs}) are not compatible.")
+
+    return list(confilct_copyleft_set),confilct_depend_dict,dep_incompatible
 
 def conflict_dection(file_license_results,dependencies):
     df1 = pd.read_csv(os.path.join('./app/knowledgebase/compatibility_63.csv'), index_col=0)
@@ -198,9 +285,20 @@ def conflict_dection(file_license_results,dependencies):
     return list(confilct_copyleft_set),confilct_depend_dict
 
 if __name__ == "__main__":
-    # res=license_detection_files("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie.json")
+    licenses_in_files, dep_tree,require_dist=license_detection_files("/home/wwxu/RecLicense/backend/temp_files/2024-08-12 12:16:49.123700/test_project","/home/wwxu/RecLicense/backend/temp_files/2024-08-12 12:16:49.123700/test_project.json")
     # depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie/temp.json")
-    # print(conflict_dection(res,depends))
+    # print(res)
+    # print(conflict_dection_compliance(res))
+    
+    #dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
+
+    confilct_copyleft_list,confilct_depend_dict,dep_incompatible=conflict_dection_compliance(licenses_in_files)
+    if dep_tree is not None and dep_incompatible:
+        rem = get_remediation(mongo_uri = "mongodb://localhost:27017/",package='test_project',version="0.0.1",requires_dist=require_dist,dep_tree=dep_tree,license= licenses_in_files["LICENSE"][0])
+        rem_lst = []
+        for i in rem["changes"]:
+            rem_lst.append(";".join(i))
+    print(rem_lst)
     # license_compatibility_filter(res.values())
     #print(get_dependencies_licenses("/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper"))
     pass
