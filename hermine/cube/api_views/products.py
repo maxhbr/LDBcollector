@@ -12,6 +12,7 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
 from rest_framework.parsers import MultiPartParser
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from cube.importers import (
@@ -378,12 +379,14 @@ class ExploitationViewSet(viewsets.ModelViewSet):
 
 
 class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]  # Custom permissions in .create
     serializer_class = UploadSPDXSerializer
     parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
         """Upload an SPDX file to Hermine."""
+        self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
@@ -403,12 +406,14 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
 
 class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]
     serializer_class = UploadCycloneDXSerializer
     parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
         """Upload a CycloneDX file to Hermine."""
+        self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
@@ -428,12 +433,14 @@ class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
 
 class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]
     serializer_class = UploadORTSerializer
     parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
         """Upload an ORT Evaluated model file to Hermine."""
+        self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
