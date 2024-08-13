@@ -29,7 +29,7 @@ def compatibility_judge(licenseA,licenseB):
 def license_detection_files(file_path,output_path):
     results={}
     pipe = subprocess.Popen(
-        ["../scancode-toolkit/scancode","-l" ,"-n","10","--license-score","95","--json", output_path, file_path,"--license-text"],#relative path
+        ["../scancode-toolkit/scancode","-l" ,"-n","30","--license-score","95","--json", output_path, file_path,"--license-text"],#relative path
         stdout=subprocess.PIPE)
     return_code=pipe.wait()
     with open(output_path,"r") as f:
