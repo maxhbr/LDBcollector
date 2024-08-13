@@ -1108,6 +1108,7 @@ func InsertOrUpdateLicenseOnImport(tx *gorm.DB, newLicenseMap map[string]interfa
 
 	result := tx.
 		Where(&models.LicenseDB{Shortname: newLicenseMap["rf_shortname"].(string)}).
+		Attrs(newLicenseMap).
 		FirstOrCreate(&oldLicense)
 	if result.Error != nil {
 		message = fmt.Sprintf("failed to create license: %s", result.Error.Error())
