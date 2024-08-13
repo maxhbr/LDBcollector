@@ -3,7 +3,6 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from typing import Any, Callable, Iterable, List, Tuple
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import pymongo
