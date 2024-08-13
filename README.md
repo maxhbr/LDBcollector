@@ -1,13 +1,13 @@
 # LicenseRec
 
-这是[北京大学开源分析实验室](https://github.com/osslab-pku/)研发的工具，以帮助开源许可证的选择.
+这是[北京大学开源分析实验室](https://github.com/osslab-pku/)研发的工具，以帮助开源许可证合规性分析与开源许可证的选择.
 
 ![Image text](https://github.com/osslab-pku/RecLicense/blob/1caf4372960a9a54cfcbfbbbdf9ee86ab922d61a/frontend/src/assets/tool.png)
 
 
 ## 简介
 
-LicenseRec是一个开源许可证推荐工具，帮助开发者为他们的开源软件项目选择一个最佳许可证。
+LicenseRec是一个可证合规性分析与开源许可证推荐工具，帮助开发者为他们的开源软件项目选择一个最佳许可证。
 LicenseRec对开源软件项目的代码和依赖关系进行细粒度的许可证兼容性检查，并通过一个交互式的向导来帮助开发者选择最佳的许可证，该向导有三个方面的指引：个人开放源码风格、商业模式和社区发展。
 
 该工具可在[licenserec.com](https://licenserec.com/)使用，演示视频在[video.licenserec.com](https://video.licenserec.com/)。该工具已发表在ICSE'23的DEMO Track上，论文参见：[LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://ieeexplore.ieee.org/abstract/document/10172799).
