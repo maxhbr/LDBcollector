@@ -75,7 +75,7 @@ cd LicenseDb
   values of the extra license json keys as per your requirement.
 
 ```bash
-cp external_ref_fields.yaml.example external_ref_fields.yaml
+cp external_ref_fields.example.yaml external_ref_fields.yaml
 vim external_ref_fields.yaml
 ```
 
