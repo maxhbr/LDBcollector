@@ -117,6 +117,7 @@ class Usage(models.Model):
     class Meta:
         verbose_name = "Component usage"
         verbose_name_plural = "Component usages"
+        ordering = ["id"]
 
 
 class Component(models.Model):
