@@ -29,3 +29,7 @@ licenseRef.json
 # IDE related files
 /.idea
 /LicenseDb.iml
+
+external_ref_fields.yaml
+
+pkg/models/external_ref_structs.go

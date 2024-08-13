@@ -12,6 +12,7 @@ import (
 
 	"github.com/joho/godotenv"
 
+	_ "github.com/dave/jennifer/jen"
 	_ "github.com/fossology/LicenseDb/cmd/laas/docs"
 	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/db"
