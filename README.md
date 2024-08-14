@@ -1,18 +1,19 @@
 # LicenseRec
 
-这是[北京大学开源分析实验室](https://github.com/osslab-pku/)研发的工具，以帮助开源许可证合规性分析与开源许可证的选择.
-
-![Image text](https://github.com/osslab-pku/RecLicense/blob/1caf4372960a9a54cfcbfbbbdf9ee86ab922d61a/frontend/src/assets/tool.png)
+## 更新
+📢 *LicenseRec V2.0.0 正式上线！增加了包括精确到包版本的合规性分析、基于SMT-Solver的许可证不兼容消解等功能！*
 
 
 ## 简介
+这是[北京大学开源分析实验室](https://github.com/osslab-pku/)研发的工具，以帮助开源许可证合规性分析与开源许可证的选择.
 
-LicenseRec是一个可证合规性分析与开源许可证推荐工具，帮助开发者为他们的开源软件项目选择一个最佳许可证。
-LicenseRec对开源软件项目的代码和依赖关系进行细粒度的许可证兼容性检查，并通过一个交互式的向导来帮助开发者选择最佳的许可证，该向导有三个方面的指引：个人开放源码风格、商业模式和社区发展。
+LicenseRec是一个可证合规性分析与开源许可证推荐工具，帮助开发者为他们的开源软件项目进行合规性分析和选择一个最佳许可证。
+LicenseRec对开源软件项目的代码和依赖关系（包括直接依赖与间接依赖）进行细粒度的许可证合规性分析，针对不兼容情况，使用基于约束求解的方法给出了最小代价的不兼容消解方案。合规性分析与不兼容消解功能可在[https://licenserec.com/#/compliance](https://licenserec.com/#/compliance)使用。
+LicenseRec在合规性分析的基础上，通过一个交互式的向导来帮助开发者选择最佳的许可证，该向导有三个方面的指引：个人开放源码风格、商业模式和社区发展。推荐功能可在[https://licenserec.com/#/rec](https://licenserec.com/#/rec)使用。
 
-该工具可在[licenserec.com](https://licenserec.com/)使用，演示视频在[video.licenserec.com](https://video.licenserec.com/)。该工具已发表在ICSE'23的DEMO Track上，论文参见：[LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://ieeexplore.ieee.org/abstract/document/10172799).
+该工具可演示视频在[video.licenserec.com](https://video.licenserec.com/)。该工具的推荐功能已发表在ICSE'23的DEMO Track上，论文参见：[LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://ieeexplore.ieee.org/abstract/document/10172799)，合规性分析与不兼容消减方法已发表在ASE'23上，论文参见：[Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem](https://ieeexplore.ieee.org/abstract/document/10298475)。
 
-快来上传你的项目，在[licenserec.com](https://licenserec.com/)上挑选最佳的开源许可证吧!
+快来上传你的项目，在[licenserec.com](https://licenserec.com/)上进行合规性分析并挑选最佳的开源许可证吧!
 
 ## 安装
 
@@ -39,18 +40,31 @@ LicenseRec依赖于以下开源项目。
   year={2023},
   pages={180-183},
   doi={10.1109/ICSE-Companion58688.2023.00050}}
+
+@inproceedings{SILENCE2023,
+  title={Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem},
+  author={Xu, Weiwei and He, Hao and Gao, Kai and Zhou, Minghui},
+  booktitle={2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+  pages={178--190},
+  year={2023},
+  organization={IEEE}
+}
 ```
-
-
+## News
+📢 *LicenseRec V2.0.0 is officially launched! New features include compliance analysis accurate to package versions and license incompatibility remediation based on SMT-Solver!*
 
 ## Introduction
 
-LicenseRec is an open source license recommendation tool that helps developers choose a optimal license for their OSS project.
-LicenseRec performs fine-grained license compatibility checks on OSS projects’ code and dependencies, and assists developers to choose the optimal license through an interactive wizard with guidelines of three aspects: personal open source style, business pattern, and community development.
 
-The tool is available at [licenserec.com](https://licenserec.com/) and the demonstration video is at [video.licenserec.com](https://video.licenserec.com/).The tool has been published in the DEMO Track of ICSE'23, see the paper: [LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://zhcxww.github.io/files/LicenseRec_DEMO.pdf).
+LicenseRec is a license compliance analysis and open-source license recommendation tool that helps developers perform compliance analysis and select the optimal license for their open-source software projects.
 
-Upload your project and pick the best open source license on [licenserec.com](https://licenserec.com/)!
+LicenseRec conducts fine-grained license compliance analysis on the code and dependencies (including direct and indirect dependencies) of open-source software projects. For incompatibility cases, it provides a minimum-cost incompatibility remediation solution using a constraint-solving based method. The compliance analysis and incompatibility remediation functions can be accessed at [https://licenserec.com/#/compliance](https://licenserec.com/#/compliance).
+
+Based on the compliance analysis, LicenseRec helps developers choose the best license through an interactive wizard. This wizard provides guidance in three aspects: personal open-source style, business model, and community development. The recommendation function can be used at [https://licenserec.com/#/rec](https://licenserec.com/#/rec).
+
+A demonstration video of the tool is available at [video.licenserec.com](https://video.licenserec.com/). The recommendation feature of this tool has been published in the DEMO Track of ICSE'23, and the paper can be found here: [LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://ieeexplore.ieee.org/abstract/document/10172799). The compliance analysis and incompatibility remediation method have been published at ASE'23, and the paper can be found here: [Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem](https://ieeexplore.ieee.org/abstract/document/10298475).
+
+Come and upload your project to perform compliance analysis and select the best open-source license at [licenserec.com](https://licenserec.com/)!
 
 ## Installation
 
@@ -79,4 +93,13 @@ For citing, please use following BibTex citation:
   year={2023},
   pages={180-183},
   doi={10.1109/ICSE-Companion58688.2023.00050}}
+
+@inproceedings{SILENCE2023,
+  title={Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem},
+  author={Xu, Weiwei and He, Hao and Gao, Kai and Zhou, Minghui},
+  booktitle={2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+  pages={178--190},
+  year={2023},
+  organization={IEEE}
+}
 ```
