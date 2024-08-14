@@ -9,9 +9,11 @@ from .z3resolver import *
 import logging
 from .remediator import *   
 logging.basicConfig(
-        format="%(asctime)s (Process %(process)d) [%(levelname)s] %(filename)s:%(lineno)d %(message)s",
-        level=logging.DEBUG,
-    )
+    filename=f"./app/logging/backend.log",
+    filemode='a',
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    level=logging.INFO
+)
 MONGO_HOST = '127.0.0.1'  # docker container
 if "RECLIC_MONGO_PORT" in os.environ:
     MONGO_HOST = 'mongodb'

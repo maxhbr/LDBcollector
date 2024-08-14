@@ -110,7 +110,9 @@
           <el-progress :percentage="progress" :show-text="false" v-if="loading"></el-progress>
           <div style="margin-top: 20px; text-align: left; ">
             <div id="question-icons">
-              <i class="el-icon-error"></i><span>: There is a compatibility conflict between the licenses of this project and the file (or dependency).</span>
+              <i class="el-icon-error"></i><span>: There is a compatibility conflict between the licenses of this
+                project and
+                the file (or dependency).</span>
               <i class="el-icon-success"></i><span>: There is no conflict. </span>
               <i class="el-icon-warning"></i><span>: Do not support checking the compatibility of this license, please
                 check
@@ -245,7 +247,7 @@ export default {
           dest_license: ''
         }],
         licenses_in_files: {},
-        remediation:[]
+        remediation: []
       }
     }
   },
@@ -422,6 +424,11 @@ export default {
 
 
     upload_done() {
+      if (this.check_res.error) {
+        this.$message.error(this.check_res.error);
+        this.loading = false;
+        return;
+      }
       var temp_table = []
       for (const license of this.table_data) {
         if (this.has(this.check_res.compatible_licenses, license.name)) {

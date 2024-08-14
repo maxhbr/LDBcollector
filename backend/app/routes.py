@@ -26,6 +26,7 @@ lock = threading.Lock()
 
 def git_check(unzip_path):
     licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
+
     dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
 
     confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
@@ -40,7 +41,12 @@ def git_check(unzip_path):
 def git_check_c(unzip_path):
     licenses_in_files, dep_tree,require_dist=license_detection_files(unzip_path, unzip_path+".json")
     #dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
-
+    if "LICENSE" not in licenses_in_files or not licenses_in_files["LICENSE"]:
+        error_message = "No LICENSE file found in the project root directory."
+        lock.acquire()
+        job[unzip_path] = {"error": error_message}
+        lock.release()
+        return
     confilct_copyleft_list,confilct_depend_dict,dep_incompatible=conflict_dection_compliance(licenses_in_files)
     rem_lst = []
     if dep_tree is not None and dep_incompatible:
@@ -55,17 +61,25 @@ def git_check_c(unzip_path):
     "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
     "compatible_combine_list":compatible_combine_list,"remediation":rem_lst}
     lock.release()
+
+def get_client_ip():
+    if request.headers.getlist("X-Forwarded-For"):
+        return request.headers.getlist("X-Forwarded-For")[0]
+    return request.remote_addr
+
+
 # 主页面
 @app.route('/')
 @app.route('/index')
 def index():
-    ip=request.remote_addr
+    ip = get_client_ip()
     logging.info(f"user_ip: {ip}")
     return render_template('index.html')
 
+@app.route('/api/zip', methods=['POST'])
 @app.route('/zip', methods=['POST'])
 def upload():
-    ip=request.remote_addr
+    ip = get_client_ip()
     logging.info(f"user_ip: {ip}")
     f = request.files.get("file")
     file_path = './temp_files/' + str( datetime.now())
@@ -84,10 +98,10 @@ def upload():
 
     threading.Thread(target=git_check, args=(unzip_path,)).start()
     return unzip_path
-
+@app.route('/api/zip_c', methods=['POST'])
 @app.route('/zip_c', methods=['POST'])
 def upload_c():
-    ip=request.remote_addr
+    ip = get_client_ip()
     logging.info(f"user_ip: {ip}")
     f = request.files.get("file")
     file_path = './temp_files/' + str(datetime.now())
@@ -106,10 +120,10 @@ def upload_c():
 
     threading.Thread(target=git_check_c, args=(unzip_path,)).start()
     return unzip_path
-
+@app.route('/api/git', methods=['POST'])
 @app.route('/git', methods=['POST'])
 def download():
-    ip=request.remote_addr
+    ip = get_client_ip()
     logging.info(f"user_ip: {ip}")
     username= request.json.get("username")
     reponame = request.json.get("reponame")
@@ -125,10 +139,10 @@ def download():
     threading.Thread(target=git_check, args=(unzip_path,)).start()
     return unzip_path
 
-
+@app.route('/api/git_c', methods=['POST'])
 @app.route('/git_c', methods=['POST'])
 def download_c():
-    ip=request.remote_addr
+    ip = get_client_ip()
     logging.info(f"user_ip: {ip}")
     username= request.json.get("username")
     reponame = request.json.get("reponame")
@@ -143,7 +157,7 @@ def download_c():
 
     threading.Thread(target=git_check_c, args=(unzip_path,)).start()
     return unzip_path
-
+@app.route('/api/poll', methods=['POST'])
 @app.route('/poll', methods=['POST'])
 def status():
     path = request.json.get("path")
@@ -154,37 +168,37 @@ def status():
         del job[path]
     lock.release()
     return res
-
+@app.route('/api/support_list', methods=['POST'])
 @app.route('/support_list', methods=['POST'])
 def support_lst():
     df1 = pd.read_csv('./app/knowledgebase/compatibility_63.csv', index_col=0)
     license_list = df1.index.tolist()
     return license_list
-
+@app.route('/api/query', methods=['POST'])
 @app.route('/query', methods=['POST'])
 def query():
     l1 = request.json.get("licenseA")
     l2 = request.json.get("licenseB")
     return license_compatibility_judge(l1,l2)
-
+@app.route('/api/choice', methods=['POST'])
 @app.route('/choice', methods=['POST'])
 def choice():
-    ip=request.remote_addr
+    ip = get_client_ip()
     logging.info(f"user_ip: {ip}")
     answer = request.json.get("answer")
     return license_terms_choice(answer)
-
+@app.route('/api/compare',methods=['POST'])
 @app.route('/compare',methods=['POST'])
 def compare():
     lst = request.json.get("recommend_list")
     return license_compare(lst)
-
+@app.route('/api/test', methods=['POST'])
 @app.route('/test', methods=['POST'])
 def test():
     data = request.json.get("testdata")
     print(data)
     return 'success'
-
+@app.route('/api/favico.ico', methods=['GET'])
 @app.route('/favico.ico', methods=['GET'])
 def ico():
     return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')

@@ -1,0 +1,143 @@
+ * Debug mode: off
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  5562  100  5562    0     0   5447      0  0:00:01  0:00:01 --:--:--  5452
+Setup plugins...
+Collect file inventory...
+Scan files for: licenses with 30 process(es)...
+Scanning done.
+Summary:        licenses with 30 process(es)
+Errors count:   0
+Scan Speed:     22.54 files/sec. 
+Initial counts: 52 resource(s): 45 file(s) and 7 directorie(s) 
+Final counts:   52 resource(s): 45 file(s) and 7 directorie(s) 
+Timings:
+  scan_start: 2024-08-14T081945.431398
+  scan_end:   2024-08-14T081952.208056
+  setup_scan:licenses: 4.76s
+  setup: 4.76s
+  scan: 2.00s
+  total: 6.79s
+Removing temporary files...done.
+Exception in thread Thread-3 (git_check_c):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data/wwxu/RecLicense/backend/app/routes.py", line 41, in git_check_c
+    licenses_in_files, dep_tree,require_dist=license_detection_files(unzip_path, unzip_path+".json")
+  File "/data/wwxu/RecLicense/backend/app/compatibility_check.py", line 53, in license_detection_files
+    dep_license, dep_tree, require_dist=get_dependencies_licenses(file_path)
+  File "/data/wwxu/RecLicense/backend/app/compatibility_check.py", line 92, in get_dependencies_licenses
+    dep_tree = dr.resolve(require_dist)
+  File "/data/wwxu/RecLicense/backend/app/z3resolver.py", line 190, in resolve
+    pkgver2reqs, req2cands = self.build_solution_space(require_dist, extras, before)
+  File "/data/wwxu/RecLicense/backend/app/z3resolver.py", line 93, in build_solution_space
+    if req.marker is not None and not req.marker.evaluate():
+  File "/home/wwxu/.local/lib/python3.10/site-packages/packaging/markers.py", line 325, in evaluate
+    return _evaluate_markers(self._markers, current_environment)
+  File "/home/wwxu/.local/lib/python3.10/site-packages/packaging/markers.py", line 225, in _evaluate_markers
+    groups[-1].append(_eval_op(lhs_value, op, rhs_value))
+  File "/home/wwxu/.local/lib/python3.10/site-packages/packaging/markers.py", line 183, in _eval_op
+    return spec.contains(lhs, prereleases=True)
+  File "/home/wwxu/.local/lib/python3.10/site-packages/packaging/specifiers.py", line 552, in contains
+    normalized_item = _coerce_version(item)
+  File "/home/wwxu/.local/lib/python3.10/site-packages/packaging/specifiers.py", line 28, in _coerce_version
+    version = Version(version)
+  File "/home/wwxu/.local/lib/python3.10/site-packages/packaging/version.py", line 202, in __init__
+    raise InvalidVersion(f"Invalid version: '{version}'")
+packaging.version.InvalidVersion: Invalid version: 'cpython'
+ * Debug mode: off
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  5973  100  5973    0     0   8440      0 --:--:-- --:--:-- --:--:--  8448
+Setup plugins...
+Collect file inventory...
+Scan files for: licenses with 30 process(es)...
+Scanning done.
+Summary:        licenses with 30 process(es)
+Errors count:   0
+Scan Speed:     23.61 files/sec. 
+Initial counts: 52 resource(s): 45 file(s) and 7 directorie(s) 
+Final counts:   52 resource(s): 45 file(s) and 7 directorie(s) 
+Timings:
+  scan_start: 2024-08-14T082130.375530
+  scan_end:   2024-08-14T082134.885435
+  setup_scan:licenses: 2.58s
+  setup: 2.58s
+  scan: 1.91s
+  total: 4.52s
+Removing temporary files...done.
+Exception in thread Thread-8 (git_check_c):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data/wwxu/RecLicense/backend/app/routes.py", line 44, in git_check_c
+    confilct_copyleft_list,confilct_depend_dict,dep_incompatible=conflict_dection_compliance(licenses_in_files)
+  File "/data/wwxu/RecLicense/backend/app/compatibility_check.py", line 198, in conflict_dection_compliance
+    root_license = res["LICENSE"][0]
+KeyError: 'LICENSE'
+ * Debug mode: off
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  5756  100  5756    0     0   7954      0 --:--:-- --:--:-- --:--:--  7950
+Setup plugins...
+Collect file inventory...
+Scan files for: licenses with 30 process(es)...
+Scanning done.
+Summary:        licenses with 30 process(es)
+Errors count:   0
+Scan Speed:     22.54 files/sec. 
+Initial counts: 53 resource(s): 46 file(s) and 7 directorie(s) 
+Final counts:   53 resource(s): 46 file(s) and 7 directorie(s) 
+Timings:
+  scan_start: 2024-08-14T084546.964204
+  scan_end:   2024-08-14T084556.333838
+  setup_scan:licenses: 7.31s
+  setup: 7.31s
+  scan: 2.04s
+  total: 9.39s
+Removing temporary files...done.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 57 18141   57 10400    0     0  12793      0  0:00:01 --:--:--  0:00:01 12792100 18141  100 18141    0     0  19484      0 --:--:-- --:--:-- --:--:-- 19485
+Setup plugins...
+Collect file inventory...
+Scan files for: licenses with 30 process(es)...
+Scanning done.
+Summary:        licenses with 30 process(es)
+Errors count:   0
+Scan Speed:     59.89 files/sec. 
+Initial counts: 130 resource(s): 114 file(s) and 16 directorie(s) 
+Final counts:   130 resource(s): 114 file(s) and 16 directorie(s) 
+Timings:
+  scan_start: 2024-08-14T092140.241254
+  scan_end:   2024-08-14T092149.636207
+  setup_scan:licenses: 7.45s
+  setup: 7.45s
+  scan: 1.90s
+  total: 9.42s
+Removing temporary files...done.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 18141  100 18141    0     0  21262      0 --:--:-- --:--:-- --:--:-- 21242
+Setup plugins...
+Collect file inventory...
+Scan files for: licenses with 30 process(es)...
+Scanning done.
+Summary:        licenses with 30 process(es)
+Errors count:   0
+Scan Speed:     47.29 files/sec. 
+Initial counts: 130 resource(s): 114 file(s) and 16 directorie(s) 
+Final counts:   130 resource(s): 114 file(s) and 16 directorie(s) 
+Timings:
+  scan_start: 2024-08-14T092243.409567
+  scan_end:   2024-08-14T092248.344219
+  setup_scan:licenses: 2.48s
+  setup: 2.48s
+  scan: 2.41s
+  total: 4.96s
+Removing temporary files...done.

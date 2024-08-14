@@ -90,13 +90,12 @@ class Z3DependencyResolver:
                 req_text = req_queue.pop(0)
                 req = Requirement(req_text)
                 pkg_name = req.name.lower()
-            except InvalidRequirement:
-                logger.warning("Invalid requirement: %s", req)
-                continue
-
-            if req.marker is not None and not req.marker.evaluate():
-                continue
-            if req.extras is not None and not req.extras.issubset(extras):
+                if req.marker is not None and not req.marker.evaluate():
+                    continue
+                if req.extras is not None and not req.extras.issubset(extras):
+                    continue
+            except (InvalidRequirement, InvalidVersion) as ex:
+                logger.warning("%s: %s", ex, req_text)
                 continue
 
             candidates = self.match_version(req, before)
