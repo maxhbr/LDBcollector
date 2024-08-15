@@ -40,7 +40,7 @@
             [clojure.tools.logging           :as log]
             [xml-in.core                     :as xi]
             [lice-comb.matching              :as lcm]
-            [lice-comb.impl.matching         :as lcim]
+            [lice-comb.impl.parsing          :as lcip]
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.http             :as lcihttp]
             [lice-comb.impl.utils            :as lciu]))
@@ -322,7 +322,7 @@
                                               (map licenses-from-pair)
                                               (filter identity)
                                               (into (array-map))   ; We force the use of an array-map here to preserve order
-                                              lcim/manual-fixes
+                                              lcip/manual-fixes
                                               create-single-expression)]
                       license-ei)
                     ; License block doesn't exist, so attempt to lookup the parent pom and try again

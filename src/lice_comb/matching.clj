@@ -60,13 +60,13 @@
     starting from the most general (the input) through to the most specific
     (the smallest subset of the input that was used to make this
     determination)."
-  (:require [clojure.string          :as s]
-            [spdx.licenses           :as sl]
-            [spdx.exceptions         :as se]
-            [spdx.expressions        :as sexp]
-            [lice-comb.impl.spdx     :as lcis]
-            [lice-comb.impl.matching :as lcim]
-            [lice-comb.impl.utils    :as lciu]))
+  (:require [clojure.string         :as s]
+            [spdx.licenses          :as sl]
+            [spdx.exceptions        :as se]
+            [spdx.expressions       :as sexp]
+            [lice-comb.impl.spdx    :as lcis]
+            [lice-comb.impl.parsing :as lcip]
+            [lice-comb.impl.utils   :as lciu]))
 
 (defn lice-comb-license-ref?
   "Is the given id one of lice-comb's custom LicenseRefs?"
@@ -124,7 +124,7 @@
   * you cannot pass a `String` representation of a filename to this method - you
     should pass filenames through `clojure.java.io/file` (or similar) first"
   [text]
-  (lcim/text->expressions-info text))
+  (lcip/match-text text))
 
 (defn text->expressions
   "Returns a set of SPDX expressions (`String`s) for `text`. See
@@ -151,7 +151,7 @@
   2. URIs in the SPDX license and exception lists are not unique - the same URI
      may represent multiple licenses and/or exceptions."
   [uri]
-  (lcim/uri->expressions-info uri))
+  (lcip/parse-uri uri))
 
 (defn uri->expressions
   "Returns a set of SPDX expressions (`String`s) for `uri`. See
@@ -162,28 +162,31 @@
           set))
 
 (defn name->expressions-info
-  "Returns an expressions-info map for `name` (a `String`), or `nil` if no
+  "Returns an expressions-info map for `n` (a `String`), or `nil` if no
   expressions were found.  This involves:
 
-  1. Determining whether `name` is a valid SPDX license expression, and if so
+  1. Determining whether `n` is a valid SPDX license expression, and if so
      normalising it (see [clj-spdx's `spdx.expressions/normalise` fn](https://pmonks.github.io/clj-spdx/spdx.expressions.html#var-normalise))
-  2. Checking if `name` is actually a URI, and if so performing URL matching
+  2. Checking if `n` is actually a URI, and if so performing URL matching
      on it via [[uri->expressions-info]]
-  3. attempting to parse `name` to construct one or more SPDX license
+  3. attempting to parse `n` to construct one or more SPDX license
      expressions"
-  [name]
-  (when-not (s/blank? name)
-    (let [name (s/trim name)]
+  [n]
+  (when-not (s/blank? n)
+    (let [n (s/trim n)]
       ; 1. If it's a valid SPDX expression, return the normalised rendition of it
-      (if-let [normalised-expression (sexp/normalise name)]
-        {normalised-expression (list {:type :declared :strategy :spdx-expression :source (list name)})}
-        ; 2. If it's a URI, use URI matching (this is to handle messed up real world cases where license names in POMs contain a URI)
-        (if (lciu/valid-http-uri? name)
-          (if-let [ids (uri->expressions-info name)]
-            ids
-            {(lcis/name->unidentified-license-ref name) (list {:type :concluded :confidence :low :strategy :unidentified :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unidentified
-          ; 3. Attempt to build SPDX expression(s) from the name
-          (lcim/name->expressions-info name))))))
+      (if-let [normalised-expression (sexp/normalise n)]
+        {normalised-expression (list {:type :declared :strategy :spdx-expression :source (list n)})}
+        ; 2. Is it a listed license or exception name?
+        (if-let [ids (lcis/near-match-name n)]
+          (into {} (map #(vec [% (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-name :source (list n)})]) ids))
+          ; 3. If it's a URI, use URI matching (this is to handle messed up real world cases where license names in POMs contain a URI)
+          (if (lciu/valid-http-uri? n)
+            (if-let [ids (uri->expressions-info n)]
+              ids
+              {(lcis/name->unidentified-license-ref n) (list {:type :concluded :confidence :low :strategy :unidentified :source (list n)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unidentified
+            ; 4. Attempt to parse the name
+            (lcip/parse-name n)))))))
 
 (defn name->expressions
   "Returns a set of SPDX expressions (`String`s) for `name`. See
@@ -202,5 +205,5 @@
   Note: this method may have a substantial performance cost."
   []
   (lcis/init!)
-  (lcim/init!)
+  (lcip/init!)
   nil)

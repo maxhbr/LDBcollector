@@ -50,7 +50,7 @@
   (testing "Real pom files - remote"
     (is (valid= #{"Apache-2.0"}                (pom->expressions "https://repo1.maven.org/maven2/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.pom")))
     (is (valid= #{(lcis/public-domain)}        (pom->expressions "https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom")))           ; Note: non-SPDX
-    (is (valid= #{"EPL-1.0"}                   (pom->expressions "https://repo.clojars.org/org/clojure/clojure/1.4.0/clojure-1.4.0.pom")))
+    (is (valid= #{"EPL-1.0"}                   (pom->expressions "https://repo1.maven.org/maven2/org/clojure/clojure/1.4.0/clojure-1.4.0.pom")))
     (is (valid= #{"Apache-2.0"}                (pom->expressions "https://repo.clojars.org/com/github/pmonks/asf-cat/1.0.12/asf-cat-1.0.12.pom")))
     (is (valid= #{"Apache-2.0"}                (pom->expressions "https://repo.clojars.org/http-kit/http-kit/2.5.3/http-kit-2.5.3.pom")))
     (is (nil?                                  (pom->expressions "https://repo.clojars.org/borkdude/sci.impl.reflector/0.0.1/sci.impl.reflector-0.0.1.pom")))   ; This project has no license information in its pom
@@ -81,7 +81,7 @@
     (is (valid= #{"EPL-2.0"}    (gav->expressions "quil"                "quil"        "4.3.1323")))                   ; Clojars
     (is (valid= #{"EPL-2.0"}    (gav->expressions "quil"                "quil"        "4.3.1426-5368295-SNAPSHOT")))  ; Clojars, SNAPSHOT
     (is (valid= #{"EPL-2.0"}    (gav->expressions "quil"                "quil"        "4.3.1426-5368295-snapshot")))  ; Clojars, SNAPSHOT lower case
-    (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.11.1")))                     ; Maven Central
+    (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.11.3")))                     ; Maven Central
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "RELEASE")))                    ; Maven Central, RELEASE version
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.12.0-alpha5")))              ; Maven Central, custom suffix
     (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core" "6.1.0")))                      ; Maven Central

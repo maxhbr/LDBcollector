@@ -16,9 +16,10 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.impl.regex-matching
-  "Helper functionality focused on regex matching. Note: this namespace is not
-  part of the public API of lice-comb and may change without notice."
+(ns lice-comb.impl.id-detection
+  "Helper functionality focused on detecting SPDX id(s) from a (short) string.
+  Note: this namespace is not part of the public API of lice-comb and may change
+  without notice."
   (:require [clojure.string       :as s]
             [clojure.set          :as set]
             [medley.core          :as med]
@@ -194,11 +195,11 @@
         version            (get-rencgs m ["version"] (if (= variant "LGPL") "2.0" "1.0"))
         version            (s/replace version #"\p{Punct}+" ".")
         [confidence confidence-explanations]
-                           (if (s/blank? version)
-                             [:low #{:missing-version}]
+                           (if version-present?
                              (if (s/includes? version ".")
                                [:high]
-                               [:medium #{:partial-version}]))
+                               [:medium #{:partial-version}])
+                             [:low #{:missing-version}])
         version            (if (s/includes? version ".")
                              version
                              (str version ".0"))
@@ -223,7 +224,7 @@
 
 ; The regex for the GNU family is a nightmare, so we build it up (and test it) in pieces
 (def agpl-re          #"(?<agpl>AGPL|Affero)(\s+GNU)?(\s+Genere?al)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?AGPL\)?)?")
-(def lgpl-re          #"(?<lgpl>(GNU\s+(Genere?al\s+)?(Library\s+or\s+Lesser|Library|Lesser))|((Library\s+or\s+Lesser|Library|Lesser)\s+(GNU|GPL|Genere?al)|(L(esser\s)?\s*GPL)))(\s+Genere?al)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?L\s*GPL\)?)?")
+(def lgpl-re          #"(?<lgpl>(GNU\s+(Genere?al\s+)?(Library\s+or\s+Lesser|Lesser\s+or\s+Library|Library|Lesser))|((Library\s+or\s+Lesser|Lesser\s+or\s+Library|Library|Lesser)\s+(GNU|GPL|Genere?al)|(L(esser\s)?\s*GPL)))(\s+Genere?al)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?L\s*GPL\)?)?")
 (def gpl-re           #"(?<!(Affero|Lesser|Library)\s+)(?<gpl>GNU(?!\s+Classpath)|(?<!(L|A)\s*)GPL|Genere?al\s+Pub?lic\s+Licen[cs]e)(?!\s+(Affero|Library|Lesser|Genere?al\s+Lesser|Genere?al\s+Library|LGPL|AGPL))((\s+General)?(?!\s+(Affero|Lesser|Library))\s+Pub?lic\s+Licen[cs]e)?(\s+\(?GPL\)?)?")
 (def version-re       #"[\s,-]*(_?V(ersion)?)?[\s\._]*(?<version>\d+([\._]\d+)?)?")
 (def only-or-later-re #"[\s,-]*((?<only>\(?only\)?)|(\(?or(\s+\(?at\s+your\s+(option|discretion)\)?)?(\s+any)?)?([\s-]*(?<orLater>lat[eo]r|newer|greater|\+)))?")
@@ -370,7 +371,7 @@
        :fn         (constantly ["Zlib" :high])}
       ])))
 
-(defn- match
+(defn- parse-id
   "If a match occured for the given regex element when tested against string s,
   returns a map containing the following keys:
   * :id         The SPDX license or exception identifier that was determined
@@ -394,7 +395,7 @@
               :start      (:start match)}
              (when (seq confidence-explanations) {:confidence-explanations confidence-explanations})))))
 
-(defn matches
+(defn parse-ids
   "Returns a sequence (NOT A SET!) of maps where each key is a SPDX license or
   exception identifier (a String) that was found in s, and the value is a
   sequence containing a single map describing how the identifier was determined.
@@ -410,7 +411,7 @@
   Results are in the order in which they appear in the string, and the function
   returns nil if there were no matches."
   [s]
-  (when-let [matches (seq (filter identity (e/pmap* (partial match s) @license-name-matching-d)))]
+  (when-let [matches (seq (filter identity (e/pmap* (partial parse-id s) @license-name-matching-d)))]
     (some->> matches
              (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
              (sort-by :start)

@@ -102,18 +102,40 @@
   [& res]
   (re-pattern (s/join res)))
 
+(defn retained-split
+  "As for `clojure.string/split`, but retains whatever `re` matched as distinct
+  elements in the result."
+  [s re]
+  (let [m             (re-matcher re s)
+        split-indices (loop [result []
+                             f      (.find m)]
+                        (if f
+                          (recur (concat result [(.start m) (.end m)]) (.find m))
+                          (when-not (empty? result)
+                            (dedupe (concat [0] result [(count s)])))))]
+    (if (empty? split-indices)
+      [s]
+      (mapv #(subs s (first %) (second %)) (partition 2 1 split-indices)))))
+
+(def ^java.nio.charset.Charset utf8-charset java.nio.charset.StandardCharsets/UTF_8)
+
+(defn utf8-bytes
+  "The UTF-8 encoded bytes of `s` (a `String`), as a Java `byte[]`."
+  [^String s]
+  (.getBytes s utf8-charset))
+
 (defn base62-encode
   "Encodes the given string to Base62/UTF-8."
   [^String s]
   (when s
-    (base62/encode (.getBytes s java.nio.charset.StandardCharsets/UTF_8))))
+    (base62/encode (utf8-bytes s))))
 
 (defn base62-decode
   "Decodes the given Base62/UTF-8 string."
   [^String s]
   (when s
     (if (re-matches #"\p{Alnum}*" s)
-      (java.lang.String. ^bytes (base62/decode s) java.nio.charset.StandardCharsets/UTF_8)
+      (java.lang.String. ^bytes (base62/decode s) utf8-charset)
       (throw (ex-info (str "Invalid BASE62 value provided: " s) {})))))   ; Because clj-base62 has crappy error messages
 
 (defn html->text

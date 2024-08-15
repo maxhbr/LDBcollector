@@ -31,6 +31,11 @@
 (def ^:private global-setup (delay
                               ; Enable spec validation
                               (spec/check-asserts true)
+                              ; Initialise clj-spdx (since this can be slow)
+                              (println "ℹ️ Initialising clj-spdx...")
+                              (sexp/init!)
+                              (println "ℹ️ clj-spdx initialised.")
+                              (flush)
                               nil))
 
 (defn fixture

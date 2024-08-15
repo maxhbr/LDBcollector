@@ -16,9 +16,9 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.impl.matching
-  "Matching helper functionality. Note: this namespace is not part of
-  the public API of lice-comb and may change without notice."
+(ns lice-comb.impl.parsing
+  "License name, URI, and text parsing functionality. Note: this namespace is
+  not part of the public API of lice-comb and may change without notice."
   (:require [clojure.string                  :as s]
             [clojure.set                     :as set]
             [clojure.java.io                 :as io]
@@ -28,9 +28,9 @@
             [spdx.expressions                :as sexp]
             [embroidery.api                  :as e]
             [lice-comb.impl.spdx             :as lcis]
-            [lice-comb.impl.regex-matching   :as lcirm]
+            [lice-comb.impl.id-detection     :as lciid]
+            [lice-comb.impl.splitting        :as lcisp]
             [lice-comb.impl.expressions-info :as lciei]
-            [lice-comb.impl.3rd-party        :as lc3]
             [lice-comb.impl.http             :as lcihttp]
             [lice-comb.impl.data             :as lcid]
             [lice-comb.impl.utils            :as lciu]))
@@ -121,13 +121,13 @@
           fix-mpl-2
           fix-license-id-with-exception-id))
 
-(defmulti text->expressions-info
+(defmulti match-text
   "Returns an expressions-info map for the given license text, or nil if no
   matches are found."
   {:arglists '([text])}
   class)
 
-(defmethod text->expressions-info java.lang.String
+(defmethod match-text java.lang.String
   [s]
   ; clj-spdx's *-within-text APIs are *expensive* but support batching, so we check batches of ids in parallel
   (let [num-cpus             (.availableProcessors (Runtime/getRuntime))
@@ -143,36 +143,36 @@
       ; Note: we don't need to sexp/normalise the keys here, as the only expressions that can be returned are constructed correctly
       (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-matching-guidelines})) expressions-found))))))
 
-(defmethod text->expressions-info java.io.Reader
+(defmethod match-text java.io.Reader
   [r]
   (let [sw (java.io.StringWriter.)]
     (io/copy r sw)
-    (text->expressions-info (str sw))))
+    (match-text (str sw))))
 
-(defmethod text->expressions-info java.io.InputStream
+(defmethod match-text java.io.InputStream
   [is]
-  (text->expressions-info (io/reader is)))
+  (match-text (io/reader is)))
 
-(defmethod text->expressions-info :default
+(defmethod match-text :default
   [src]
   (when src
     (with-open [r (io/reader src)]
-      (doall (text->expressions-info r)))))
+      (doall (match-text r)))))
 
-(defn uri->expressions-info
-  "Returns an expressions-info map for the given license uri, or nil if no
-  matches are found."
+(defn parse-uri
+  "Parses the given license `uri`, returning an expressions-info map, or `nil`
+  if no matching license ids were found."
   [uri]
   (when-not (s/blank? uri)
     (let [result (manual-fixes
-                   (let [suri (lciu/simplify-uri uri)]
-                     (or ; 1. Does the simplified URI match any of the simplified URIs in the SPDX license or exception lists?
-                       (when-let [ids (get @lcis/index-uri-to-id-d suri)]
-                         (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-uri :source (list uri)})) ids)))
+                   (or
+                     ; 1. Is the URI a close match for any of the URIs in the SPDX license or exception lists?
+                     (when-let [ids (lcis/near-match-uri uri)]
+                       (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-uri :source (list uri)})) ids)))
 
-                       ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
-                       (when-let [license-text (lcihttp/get-text uri)]
-                         (text->expressions-info license-text)))))]
+                     ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
+                     (when-let [license-text (lcihttp/get-text uri)]
+                       (match-text license-text))))]
       ; We don't need to sexp/normalise the keys here, as we never detect an expression from a URI
       (lciei/prepend-source uri result))))
 
@@ -194,63 +194,26 @@
                   (map #(apply hash-map %) cursed-name))
 
                 ; 2. Is it an SPDX license or exception id?
-                (when-let [id (get @lcis/spdx-ids-d (s/lower-case s))]
+                (when-let [id (lcis/near-match-id s)]
                   (if (= id s)
                     (list {id (list {:id id :type :declared :strategy :spdx-listed-identifier-exact-match :source (list s)})})
                     (list {id (list {:id id :type :concluded :confidence :high :strategy :spdx-listed-identifier-case-insensitive-match :source (list s)})})))
 
                 ; 3. Is it the name of one or more SPDX licenses or exceptions?
-                (when-let [ids (get @lcis/index-name-to-id-d (s/lower-case s))]
+                (when-let [ids (lcis/near-match-name s)]
                   (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-name :source (list s)})) ids))
 
                 ; 4. Might it be a URI?  (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
-                (when-let [ids (uri->expressions-info s)]
+                (when-let [ids (parse-uri s)]
                   (map #(hash-map (key %) (val %)) ids))
 
-                ; 5. Attempt regex name matching
-                (lcirm/matches s)
+                ; 5. Attempt to parse ids from the name
+                (lciid/parse-ids s)
 
-                ; 6. No clue, so return a single info map, but with a made up "UNIDENTIFIED-" value instead of an SPDX license or exception identifier
+                ; 6. No clue, so return a single info map, but with a made up "UNIDENTIFIED-" value (NOT A LICENSEREF!) instead of an SPDX license or exception identifier
                 (let [id (str "UNIDENTIFIED-" s)]
                   (list {id (list {:id id :type :concluded :confidence :low :confidence-explanations [:unidentified] :strategy :unidentified :source (list s)})})))]
       (map (partial lciei/prepend-source s) ids))))
-
-(defn- filter-blanks
-  "Filter blank strings out of coll"
-  [coll]
-  (when (seq coll)
-    (seq (filter #(or (not (string? %)) (not (s/blank? %))) coll))))
-
-(defn- map-split-and-interpose
-  "Maps over the given sequence, splitting strings using the given regex re and
-  interposing the given value inter, returning a (flattened) sequence."
-  [re inter coll]
-  (mapcat #(if-not (string? %)
-             [%]
-             (let [splits (s/split % re)]
-               (if (nil? inter)
-                 splits
-                 (interpose inter splits))))
-          coll))
-
-(defn split-on-operators
-  "Case insensitively splits a string based on license operators (and,
-  or, with), but only if they're not also part of a license name (e.g.
-  'Common Development and Distribution License', 'GNU General Public
-  License version 2.0 or (at your option) any later version', etc.)."
-  [s]
-  (when-not (s/blank? s)
-    (->> (s/split (s/trim s) #"(?i)\band[/-\\]+or\b")
-         (map-split-and-interpose #"(?i)(\band\b|\&)(?!\s+(distribution|all\s+rights\s+reserved))"
-                                  :and)
-         (map-split-and-interpose #"(?i)\bor\b(?!\s*(-?(greater|(any\s+)?later|(any\s+)?lator|(any\s+)?newer|lesser|library|\(?at\s+your\s+(option|discretion)\)?|([\"']?(Revised|Modified)[\"']?))))"
-                                  :or)
-         (map-split-and-interpose #"(?i)\b(with\b|w/)(?!\s+the\s+acknowledgment\s+clause\s+removed)"
-                                  :with)
-         (map-split-and-interpose #"(?i)(?<=CDDL)/(?=GPL)"   ; Special case for splitting particularly cursed combos such as CDDL/GPLv2+CE
-                                  nil)
-         filter-blanks
-         (map #(if (string? %) (s/trim %) %)))))
 
 (defn- fix-unidentified
   "Fixes a singleton UNIDENTIFIED- expression info map by converting the id to
@@ -341,16 +304,13 @@
       (recur (process-expression-element result f) (first r) (rest r))
       (manual-fixes (into {} result)))))
 
-(defn name->expressions-info
-  "Returns an expressions-info map for the given license name."
+(defn parse-name
+  "Parses the given license `n`ame, returning an expressions-info map."
   [n]
   (when-not (s/blank? n)
     (let [n              (s/trim n)
           partial-result (some->> n
-                                  split-on-operators                               ; Split on operators
-                                  (drop-while keyword?)                            ; Drop (nonsensical) leading operators
-                                  (lc3/rdrop-while keyword?)                       ; Drop (nonsensical) trailing operators
-                                  dedupe                                           ; Deduplicate consecutive identical values (mostly applies to duplicate operators, which are redundant)
+                                  lcisp/split-on-operators                         ; Split on operators
                                   (map #(if (keyword? %) % (string->ids-info %)))  ; Determine SPDX ids (or UNIDENTIFIED-xxx) with info for all non-operators
                                   flatten                                          ; Flatten back to an unnested sequence (since string->ids-info returns sequences)
                                   fix-unidentifieds                                ; Convert each unidentified non-operator into either a LicenseRef or AdditionRef, depending on context
@@ -374,7 +334,7 @@
   Note: this method has a substantial performance cost."
   []
   (lcis/init!)
-  (lcirm/init!)
+  (lciid/init!)
   (lcihttp/init!)
   @cursed-names-d
   nil)

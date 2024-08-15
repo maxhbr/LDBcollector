@@ -34,7 +34,7 @@
     Use underscore ('_') instead.
   * Unlike during class loading, Clojure does not automatically switch hyphens
     in classpath resource path elements to underscores. This inconsistency can
-    be a time-wasting trap."
+    be a time-wasting foot gun."
   [path]
   (when-not (s/blank? path)
     (try

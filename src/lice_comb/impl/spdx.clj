@@ -20,6 +20,7 @@
   "SPDX-related functionality. Note: this namespace is not part of the public
   API of lice-comb and may change without notice."
   (:require [clojure.string       :as s]
+            [embroidery.api       :as e]
             [spdx.licenses        :as sl]
             [spdx.exceptions      :as se]
             [spdx.expressions     :as sexp]
@@ -52,15 +53,28 @@
 (def ^:private unidentified-addition-ref-prefix   (str lice-comb-addition-ref-prefix "-UNIDENTIFIED"))
 
 ; Lower case id map
-(def spdx-ids-d (delay (merge (into {} (map #(vec [(s/lower-case %) %]) @license-ids-d))
-                              (into {} (map #(vec [(s/lower-case %) %]) @exception-ids-d)))))
+(def ^:private spdx-ids-d (delay (merge (into {} (map #(vec [(s/lower-case %) %]) @license-ids-d))
+                                        (into {} (map #(vec [(s/lower-case %) %]) @exception-ids-d)))))
+
+(defn near-match-id
+  "Returns the (case-corrected) id for the given license or exception id `id`,
+  or `nil` if one wasn't found."
+  [id]
+  (get @spdx-ids-d (s/lower-case id)))
 
 (defn- name-to-id-tuple
   [list-entry]
   [(s/lower-case (s/trim (:name list-entry))) (:id list-entry)])
 
-(def index-name-to-id-d (delay (merge (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (map name-to-id-tuple @license-list-d)))
-                                      (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (map name-to-id-tuple @exception-list-d))))))
+(def ^:private index-name-to-id-d (delay (merge (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (map name-to-id-tuple @license-list-d)))
+                                                (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (map name-to-id-tuple @exception-list-d))))))
+
+;####TODO: REPLACE THIS WITH REGEX BASED NEAR-MATCHING (to account for whitespace variance and #"licen[cs]e", for example)
+(defn near-match-name
+  "Returns the id(s) for the given license or exception name `n`, or `nil` if
+  no ids were found."
+  [n]
+  (get @index-name-to-id-d (s/lower-case n)))
 
 (defn- urls-to-id-tuples
   "Extracts all urls for a given list (license or exception) entry."
@@ -69,8 +83,14 @@
         simplified-uris (map lciu/simplify-uri (filter (complement s/blank?) (concat (:see-also list-entry) (get-in list-entry [:cross-refs :url]))))]
     (map #(vec [% id]) simplified-uris)))
 
-(def index-uri-to-id-d (delay (merge (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @license-list-d)))
-                                     (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @exception-list-d))))))
+(def ^:private index-uri-to-id-d (delay (merge (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @license-list-d)))
+                                               (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @exception-list-d))))))
+
+(defn near-match-uri
+  "Returns the id(s) for the given license or exception `uri`, or `nil` if no
+  ids were found."
+  [uri]
+  (get @index-uri-to-id-d (lciu/simplify-uri uri)))
 
 (defn lice-comb-license-ref?
   "Is the given id one of lice-comb's custom LicenseRefs?"
@@ -209,8 +229,8 @@
   Note: this method has a substantial performance cost."
   []
   ; Parallelise initialisation of the spdx.licenses and spdx.exceptions namespaces, as they're both sloooooooow (~1.5 mins total)
-  (let [sl-init (future (sl/init!))
-        se-init (future (se/init!))]
+  (let [sl-init (e/future* (sl/init!))
+        se-init (e/future* (se/init!))]
     @sl-init
     @se-init)
   (sexp/init!)

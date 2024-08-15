@@ -16,13 +16,13 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.impl.regex-matching-test
-  (:require [clojure.test                  :refer [deftest testing is use-fixtures]]
-            [clojure.set                   :as set]
-            [rencg.api                     :as rencg]
-            [lice-comb.impl.utils          :as lcu]
-            [lice-comb.test-boilerplate    :refer [fixture testing-with-data]]
-            [lice-comb.impl.regex-matching :refer [init! version-re only-or-later-re agpl-re lgpl-re gpl-re gnu-re matches]]))
+(ns lice-comb.impl.id-parsing-test
+  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [clojure.set                :as set]
+            [rencg.api                  :as rencg]
+            [lice-comb.impl.utils       :as lcu]
+            [lice-comb.test-boilerplate :refer [fixture testing-with-data]]
+            [lice-comb.impl.id-parsing  :refer [init! version-re only-or-later-re agpl-re lgpl-re gpl-re gnu-re parse-ids]]))
 
 (use-fixtures :once fixture)
 
@@ -69,6 +69,7 @@
   "GNU LGPL version 3"                                                                   '("LGPL-3.0-only")
   "GNU LGPL-3.0"                                                                         '("LGPL-3.0-only")
   "GNU LGPLv3 "                                                                          '("LGPL-3.0-only")
+  "GNU Lesser"                                                                           '("LGPL-2.0-or-later")
   "GNU Lesser GPL"                                                                       '("LGPL-2.0-or-later")
   "GNU Lesser General Public Licence"                                                    '("LGPL-2.0-or-later")
   "GNU Lesser General Public Licence 3.0"                                                '("LGPL-3.0-only")
@@ -92,12 +93,15 @@
   "GNU Lesser General Public License, version 3 or greater"                              '("LGPL-3.0-or-later")
   "GNU Lesser General Public License, version 3.0 or (at your option) any later version" '("LGPL-3.0-or-later")
   "GNU Lesser General Pulic License v2.1"                                                '("LGPL-2.1-only")
-  "GNU Lesser Genereal Public License"                                                   '("LGPL-2.0-or-later")
+  "GNU Lesser Genereal Public License"                                                   '("LGPL-2.0-or-later")    ; Note messed up spelling of "general"
   "GNU Lesser Public License"                                                            '("LGPL-2.0-or-later")
+  "GNU Library"                                                                          '("LGPL-2.0-or-later")
   "GNU Library General Public License"                                                   '("LGPL-2.0-or-later")
+  "GNU Lesser or Library General Public License (LGPL)"                                  '("LGPL-2.0-or-later")
   "GNU Library or Lesser General Public License (LGPL)"                                  '("LGPL-2.0-or-later")
   "GNU Library or Lesser General Public License (LGPL) 2.1"                              '("LGPL-2.1-only")
   "GNU Library or Lesser General Public License (LGPL) V2.1"                             '("LGPL-2.1-only")
+  "GNU Lesser or Library General Public License (LGPL) V2.1"                             '("LGPL-2.1-only")
   "Gnu Lesser Public License"                                                            '("LGPL-2.0-or-later")
   "L GPL 3"                                                                              '("LGPL-3.0-only")
   "LGPL"                                                                                 '("LGPL-2.0-or-later")
@@ -112,6 +116,9 @@
   "LGPLv3"                                                                               '("LGPL-3.0-only")
   "LGPLv3+"                                                                              '("LGPL-3.0-or-later")
   "Lesser GPL"                                                                           '("LGPL-2.0-or-later")
+  "Lesser GNU"                                                                           '("LGPL-2.0-or-later")
+  "Library GPL"                                                                          '("LGPL-2.0-or-later")
+  "Library GNU"                                                                          '("LGPL-2.0-or-later")
   "Lesser General Public License"                                                        '("LGPL-2.0-or-later")
   "Lesser General Public License (LGPL)"                                                 '("LGPL-2.0-or-later")
   "Licensed under GNU Lesser General Public License Version 3 or later (the "            '("LGPL-3.0-or-later")
@@ -241,5 +248,5 @@
     (is (every? not-nil? (map (partial test-regex gnu-re) gnu-licenses)))))
 
 (deftest match-regexes-tests
-  (testing-with-data "GNU Family Regexes - correct identifier results" #(mapcat keys (matches %)) gnu-licenses-and-ids)
-  (testing-with-data "CC Family Regexes - correct identifier results"  #(mapcat keys (matches %)) cc-by-licenses-and-ids))
+  (testing-with-data "GNU Family Regexes - correct identifier results" #(mapcat keys (parse-ids %)) gnu-licenses-and-ids)
+  (testing-with-data "CC Family Regexes - correct identifier results"  #(mapcat keys (parse-ids %)) cc-by-licenses-and-ids))
