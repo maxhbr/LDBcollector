@@ -16,13 +16,13 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.impl.id-parsing-test
-  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
-            [clojure.set                :as set]
-            [rencg.api                  :as rencg]
-            [lice-comb.impl.utils       :as lcu]
-            [lice-comb.test-boilerplate :refer [fixture testing-with-data]]
-            [lice-comb.impl.id-parsing  :refer [init! version-re only-or-later-re agpl-re lgpl-re gpl-re gnu-re parse-ids]]))
+(ns lice-comb.impl.id-detection-test
+  (:require [clojure.test                :refer [deftest testing is use-fixtures]]
+            [clojure.set                 :as set]
+            [rencg.api                   :as rencg]
+            [lice-comb.impl.utils        :as lcu]
+            [lice-comb.test-boilerplate  :refer [fixture testing-with-data]]
+            [lice-comb.impl.id-detection :refer [init! version-re only-or-later-re agpl-re lgpl-re gpl-re gnu-re detect-ids]]))
 
 (use-fixtures :once fixture)
 
@@ -248,5 +248,5 @@
     (is (every? not-nil? (map (partial test-regex gnu-re) gnu-licenses)))))
 
 (deftest match-regexes-tests
-  (testing-with-data "GNU Family Regexes - correct identifier results" #(mapcat keys (parse-ids %)) gnu-licenses-and-ids)
-  (testing-with-data "CC Family Regexes - correct identifier results"  #(mapcat keys (parse-ids %)) cc-by-licenses-and-ids))
+  (testing-with-data "GNU Family Regexes - correct identifier results" #(mapcat keys (detect-ids %)) gnu-licenses-and-ids)
+  (testing-with-data "CC Family Regexes - correct identifier results"  #(mapcat keys (detect-ids %)) cc-by-licenses-and-ids))

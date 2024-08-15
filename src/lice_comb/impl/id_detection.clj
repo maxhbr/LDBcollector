@@ -371,7 +371,7 @@
        :fn         (constantly ["Zlib" :high])}
       ])))
 
-(defn- parse-id
+(defn- detect-id
   "If a match occured for the given regex element when tested against string s,
   returns a map containing the following keys:
   * :id         The SPDX license or exception identifier that was determined
@@ -395,7 +395,7 @@
               :start      (:start match)}
              (when (seq confidence-explanations) {:confidence-explanations confidence-explanations})))))
 
-(defn parse-ids
+(defn detect-ids
   "Returns a sequence (NOT A SET!) of maps where each key is a SPDX license or
   exception identifier (a String) that was found in s, and the value is a
   sequence containing a single map describing how the identifier was determined.
@@ -411,7 +411,7 @@
   Results are in the order in which they appear in the string, and the function
   returns nil if there were no matches."
   [s]
-  (when-let [matches (seq (filter identity (e/pmap* (partial parse-id s) @license-name-matching-d)))]
+  (when-let [matches (seq (filter identity (e/pmap* (partial detect-id s) @license-name-matching-d)))]
     (some->> matches
              (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
              (sort-by :start)

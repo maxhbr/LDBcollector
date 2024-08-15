@@ -207,8 +207,8 @@
                 (when-let [ids (parse-uri s)]
                   (map #(hash-map (key %) (val %)) ids))
 
-                ; 5. Attempt to parse ids from the name
-                (lciid/parse-ids s)
+                ; 5. Attempt to detect ids in the string
+                (lciid/detect-ids s)
 
                 ; 6. No clue, so return a single info map, but with a made up "UNIDENTIFIED-" value (NOT A LICENSEREF!) instead of an SPDX license or exception identifier
                 (let [id (str "UNIDENTIFIED-" s)]
