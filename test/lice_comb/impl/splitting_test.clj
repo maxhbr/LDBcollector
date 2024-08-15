@@ -197,5 +197,5 @@
   (testing "No splitting of any names in the SPDX license and exception lists"
     (let [lic-names (map #(:name (slic/id->info %)) (slic/ids))
           exc-names (map #(:name (sexc/id->info %)) (sexc/ids))]
-      (is (every? true? (map #(= % (s/join (split-on-operators %))) lic-names)))
-      (is (every? true? (map #(= % (s/join (split-on-operators %))) exc-names))))))
+      (run! #(is (= [%] (split-on-operators %))) lic-names)
+      (run! #(is (= [%] (split-on-operators %))) exc-names))))
