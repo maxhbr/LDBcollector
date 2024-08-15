@@ -90,7 +90,7 @@
   [#"(?i)\bHPND\s+with\s+US\s+Government\s+export\s+control\s+warning\s*\z"           #"(?i)\A\s*(acknowledgment|modification)\b"]
   [#"(?i)\bHistorical\s+Permission\s+Notice\s*\z"                                     #"(?i)\A\s*Disclaimer\b"]
   [#"(?i)\bIBM\s+PowerPC\s+Initialization\s*\z"                                       #"(?i)\A\s*Boot\s+Software\b"]
-  [#"(?i)\bLZMA\s+SDK\s+Licen[cs]e\s+\(?versions?\s+ß\d\.\d\d\s*\z"                   #"(?i)\A\s*beyond\)?\b"]
+  [#"(?i)\bLZMA\s+SDK\s+Licen[cs]e\s+\(?versions?\s+\d\.\d\d\s*\z"                    #"(?i)\A\s*beyond\)?\b"]
   [#"(?i)\bNara\s+Institute\s+of\s+Science\s*\z"                                      #"(?i)\A\s*Technology\s+Licen[cs]e\b"]
   [#"(?i)\bOpen\s+LDAP\s+Public\s+Licen[cs]e\s+v2\.0\s+\(?or\s+possibly\s+2\.0A\s*\z" #"(?i)\A\s*2.0B\)?\b"]
   [#"(?i)\bUnicode\s+Licen[cs]e\s+Agreement\s+[\-\s]*Data\s+Files\s*\z"               #"(?i)\A\s*Software\b"]
