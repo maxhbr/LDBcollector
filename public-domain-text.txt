@@ -1735,3 +1735,18 @@ text = '''
  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 '''
+
+package = aws
+          httpd
+location = https://github.com/AdaCore/aws/tree/5bf233b8e3a8c9fad7f4b6180d14326f6a45da96/web_elements/icons (in several GIF files)
+           https://svn.apache.org/viewvc/httpd/httpd/tags/2.4.62/docs/icons/ (in several GIF and PNG files)
+text = '''
+This art is in the public domain. Kevin Hughes, kevinh@eit.com, September 1995
+'''
+
+package = httpd
+location = https://svn.apache.org/viewvc/httpd/httpd/tags/2.4.62/docs/icons/tar.gif?view=co&revision=1919316
+           https://svn.apache.org/viewvc/httpd/httpd/tags/2.4.62/docs/icons/tar.png?view=co&revision=1919316
+text = '''
+This icon is in the public domain. 1995 Kevin Hughes, kevinh@eit.com
+'''
