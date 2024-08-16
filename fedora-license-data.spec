@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.53
+Version:        1.54
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -105,6 +105,16 @@ make check-grammar
 
 
 %changelog
+* Fri Aug 16 2024 Miroslav Suchý <msuchy@redhat.com> 1.54-1
+- public domain dedication found in mailcap
+- public domain dedications found in web server icons
+- replaced obsolescent command with modern equivalent
+- add LicenseRef-compface
+- Add rijndael from sdl-crypto to public domain
+- add public domain dedication for xz
+- Add sha1 from sdl-crypto to public domain
+- correct location of HPND-Netrek.toml
+
 * Wed Jul 31 2024 Miroslav Suchý <msuchy@redhat.com> 1.53-1
 - add HPND-Netrek license
 - Add license text for py-sdl2 Public Domain license
