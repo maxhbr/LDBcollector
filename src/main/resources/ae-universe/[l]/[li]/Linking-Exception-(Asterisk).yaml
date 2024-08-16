@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Linking Exception (Asterisk)"
+category: "Asterisk Linking Exception"
+shortName: "Asterisk-Linking-Exception"
+spdxIdentifier: "Asterisk-linking-protocols-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:asterisk-linking-protocols-exception"

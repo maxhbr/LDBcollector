@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Markus Mummert Permissive"
-category: "Markus Mummert Permissive"
-shortName: "markus-mummert-permissive"
+canonicalName: "Redistribution Terms (Markus Mummert)"
+category: "RT"
+shortName: "RT-Markus-Mummert"
+
+canonicalNameHistory:
+  - "Markus Mummert Permissive"
 
 alternativeNames:
   - "Markus Mummert Permissive"

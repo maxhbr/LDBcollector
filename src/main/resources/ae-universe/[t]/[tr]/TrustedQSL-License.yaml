@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Porter Stemming Algorithm License"
-category: "Porter Stemming Algorithm"
-shortName: "porter-stemming"
+canonicalName: "TrustedQSL License"
+category: "TrustedQSL"
+shortName: "TrustedQSL-License"
 
 alternativeNames:
-  - "Porter Stemming Algorithm License"
+  - "TrustedQSL License"
 

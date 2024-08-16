@@ -4,7 +4,7 @@
 
 canonicalName: "Permission Terms (Netrek)"
 category: "Permission"
-shortName: "PT-Netrek"
+spdxIdentifier: "HPND-Netrek"
 
 canonicalNameHistory:
   - "Permission Terms (Nettrek)"

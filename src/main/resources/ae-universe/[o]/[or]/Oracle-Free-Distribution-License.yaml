@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Verbatim Copying License"
-category: "Verbatim Copying"
-shortName: "Verbatim-Copying"
+canonicalName: "Oracle Free Distribution License"
+category: "Oracle"
+shortName: "oracle-free-distribution-license"
 
 alternativeNames:
-  - "Verbatim Copying License"
+  - "Oracle Free Distribution"
 

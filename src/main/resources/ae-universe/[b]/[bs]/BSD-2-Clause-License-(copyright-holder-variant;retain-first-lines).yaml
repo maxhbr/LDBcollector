@@ -9,3 +9,5 @@ spdxIdentifier: "BSD-2-clause-first-lines"
 canonicalNameHistory:
   - "BSD 2-Clause License (copyright holder variant; variant 001)"
 
+otherIds: 
+  - "scancode:bsd-2-clause-first-lines"

@@ -8,6 +8,8 @@ shortName: "openwall-md5-permissive"
 
 alternativeNames:
   - "Openwall MD5 Permissive"
+  - "bcrypt Solar Designer License"
 
 otherIds: 
   - "scancode:openwall-md5-permissive"
+  - "scancode:bcrypt-solar-designer"

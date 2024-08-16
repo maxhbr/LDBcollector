@@ -2,10 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Porter Stemming Algorithm License"
-category: "Porter Stemming Algorithm"
-shortName: "porter-stemming"
+canonicalName: "Permission Terms (CMU; variant 002)"
+category: "Permission Terms"
+shortName: "PT-CMU-002"
 
 alternativeNames:
-  - "Porter Stemming Algorithm License"
+  - "Permission Terms (CMU; variant 002)"
+  - "PT-CMU-002"
 

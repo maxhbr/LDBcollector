@@ -2,15 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "No Warranty License"
-category: "No Warranty License"
-shortName: "No-Warranty-License"
+canonicalName: "Ruby PTY Extension License"
+category: "Ruby-PTY"
+spdxIdentifier: "Ruby-pty"
 
 canonicalNameHistory:
-  - "No Warranty Licnese"
-
-osiStatus: "unclear"
+  - "Ruby pty extension license"
 
 alternativeNames:
-  - "No-Warranty-License"
+  - "Ruby-pty"
+  - "Ruby pty extension license"
 
