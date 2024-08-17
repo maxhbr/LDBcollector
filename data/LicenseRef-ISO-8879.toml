@@ -10,7 +10,8 @@ Fedora packages can include files with character entity declaration sets purport
 
 packages_with_exceptions = [
     "dotnet7.0",
-    "dotnet8.0"
+    "dotnet8.0",
+    "dotnet9.0"
 ]
 
 text = '''
