@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Mulan Permissive Software License, Version 2",
+    "scancode_key": "mulanpsl-2.0",
+    "spdxid": "MulanPSL-2.0",
+    "aliases": [
+        "Mulan Permissive Software License 2.0",
+        "Mulan Permissive Software License, Version 2",
+        "mulanpsl-2.0",
+        "Mulan PSL v2",
+        "scancode://mulanpsl-2.0"
+    ]
+}

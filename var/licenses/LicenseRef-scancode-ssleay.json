@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Original SSLeay License",
+    "scancode_key": "ssleay",
+    "spdxid": "LicenseRef-scancode-ssleay",
+    "aliases": [
+        "SSLeay"
+    ]
+}

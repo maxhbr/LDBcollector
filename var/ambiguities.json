@@ -12,6 +12,13 @@
             ],
             "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
+        "GNU Affero General Public License": {
+            "aliases": [
+                "AGPL",
+                "GNU Affero General Public License"
+            ],
+            "problem": "This license has different versions (1.0, 2.0 and 3.0) and different names (version 1.0 does not have GNU in the name). Without a version number it is not possible to determine which of the versions is meant."
+        },
         "Apache License": {
             "aliases": [
                 "Apache",
@@ -169,7 +176,8 @@
                 "GNU LGPLv2",
                 "lgpl",
                 "GNU Library General Public License version 2",
-                "GNU LESSER GENERAL PUBLIC LICENSE"
+                "GNU LESSER GENERAL PUBLIC LICENSE",
+                "Lesser General Public License"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },

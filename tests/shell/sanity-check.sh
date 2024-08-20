@@ -278,6 +278,9 @@ check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence MPL-2.0 " -e 2" " -e 1"
 check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
 
+check_presence MulanPSL-1.0 " -e 1" " -e 2"
+check_presence MulanPSL-2.0 " -e 2" " -e 1"
+
 check_presence NAIST-2003 " -i -e naist -e nara " ""
 check_presence NCSA " -i -e ncsa -e illinois " ""
 check_presence NTP " -i -e ntp -e network " ""
@@ -300,6 +303,7 @@ check_presence SGI-B-2.0 " -i -e SGI " ""
 check_presence Sleepycat " -i -e sleepycat -e Berkeley " ""
 check_presence SSPL-1.0 " -i -e SSPL -e server\ side" ""
 check_presence SunPro " -i -e SunPro " ""
+check_presence SMLNJ " -i -e smlnj -e Jersey -e nj " ""
 check_presence SWL " -i -e SWL -e Scheme\ Widget" ""
 
 check_presence TCL " -i -e tcl " ""
