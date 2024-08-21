@@ -395,7 +395,8 @@ class TextOutputFormatter(OutputFormatter):
                 ret.append(f' * "{compat["queried_name"]}" -> "{compat["name"]}" via "{compat["identified_via"]}"')
 
         if compats['ambiguities']:
-            warnings = f'Warnings: {", ".join(compats["ambiguities"])}'
+            descr = [x['description'] for x in compats['ambiguities']]
+            warnings = f'Warnings: {", ".join(descr)}'
         else:
             warnings = None
 
@@ -420,7 +421,8 @@ class TextOutputFormatter(OutputFormatter):
             for identification in expression['identifications']:
                 ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]}" via "{identification["identified_via"]}"')
         if expression['ambiguities']:
-            warnings = f'Warnings: {", ".join(expression["ambiguities"])}'
+            descr = [x['description'] for x in expression['ambiguities']]
+            warnings = f'Warnings: {", ".join(descr)}'
         else:
             warnings = None
         return '\n'.join(ret), warnings
