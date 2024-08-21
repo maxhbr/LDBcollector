@@ -150,7 +150,6 @@ src/licensedcode/tokenize.py
 src/licensedcode/data/.gitignore
 src/licensedcode/data/cc-by-4.0.LICENSE
 src/licensedcode/data/scancode-data.ABOUT
-src/licensedcode/data/cache/license_index/index_cache
 src/licensedcode/data/inactive/rules/free-unknown_url_glc_90.RULE
 src/licensedcode/data/inactive/rules/free-unknown_url_glc_90.yml
 src/licensedcode/data/inactive/rules/free-unknown_url_glc_91.RULE

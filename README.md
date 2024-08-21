@@ -14,6 +14,31 @@ LicenseRec在合规性分析的基础上，通过一个交互式的向导来帮�
 该工具可演示视频在[video.licenserec.com](https://video.licenserec.com/)。该工具的推荐功能已发表在ICSE'23的DEMO Track上，论文参见：[LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://ieeexplore.ieee.org/abstract/document/10172799)，合规性分析与不兼容消减方法已发表在ASE'23上，论文参见：[Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem](https://ieeexplore.ieee.org/abstract/document/10298475)。
 
 快来上传你的项目，在[licenserec.com](https://licenserec.com/)上进行合规性分析并挑选最佳的开源许可证吧!
+## 合规性分析模块介绍
+
+### 依赖解析
+本工具支持对任意Python进行合规性分析。通过解析requirements.txt,setup.py和代码文件中的import语句来识别直接依赖与对应的版本约束。通过模拟pip依赖解析的行为（即在不存在版本冲突的情况下，尽可能使用最新版本的包），本工具使用SMT-Solver进行约束求解，求解得到对应的所有的直接依赖与间接依赖（精确到版本）。 本工具使用的Pypi生态的所有包版本的依赖数据与许可数据截止到2024.6.19.
+
+此外，本工具也支持Java与Javascript项目的合规性检查，但支持直接依赖检查，依赖与许可数据使用Libraries.io（截止到2022.10）。
+
+### 冲突检测
+
+本工具主要检测以下两种冲突：
+
+1. 项目的依赖许可证或项目中组件的许可证与项目许可证（根目录下LICENSE文件）不兼容
+
+2. 项目组件之间的许可证互不兼容。
+
+### 消解策略
+
+本工具支持对依赖不兼容给出代价最小的不兼容消解策略。使用SMT-Solver进行依赖解析时，增加许可证约束，求解合规的依赖树，由此得到对不兼容的依赖的迁移，升降级、删除等操作的建议。
+消解算法描述详见：[Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem](https://ieeexplore.ieee.org/abstract/document/10298475)([https://github.com/osslab-pku/SILENCE](https://github.com/osslab-pku/SILENCE)).
+
+
+
+
+
+
 
 ## 安装
 
@@ -39,7 +64,8 @@ LicenseRec依赖于以下开源项目。
   title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
   year={2023},
   pages={180-183},
-  doi={10.1109/ICSE-Companion58688.2023.00050}}
+  doi={10.1109/ICSE-Companion58688.2023.00050}
+}
 
 @inproceedings{SILENCE2023,
   title={Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem},
@@ -65,6 +91,25 @@ Based on the compliance analysis, LicenseRec helps developers choose the best li
 A demonstration video of the tool is available at [video.licenserec.com](https://video.licenserec.com/). The recommendation feature of this tool has been published in the DEMO Track of ICSE'23, and the paper can be found here: [LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://ieeexplore.ieee.org/abstract/document/10172799). The compliance analysis and incompatibility remediation method have been published at ASE'23, and the paper can be found here: [Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem](https://ieeexplore.ieee.org/abstract/document/10298475).
 
 Come and upload your project to perform compliance analysis and select the best open-source license at [licenserec.com](https://licenserec.com/)!
+
+## Introduction to the Compliance Analysis Module
+
+### Dependency Resolution
+This tool supports compliance analysis for any Python project. It identifies direct dependencies and their corresponding version constraints by parsing `requirements.txt`, `setup.py`, and `import` statements in code files. By simulating the behavior of `pip` dependency resolution (i.e., using the latest version of the package whenever there is no version conflict), this tool uses an SMT-Solver for constraint solving, obtaining all direct and indirect dependencies (precise to the version). The dependency data and license data of all package versions in the PyPI ecosystem used by this tool are up-to-date as of June 19, 2024.
+
+Additionally, this tool also supports compliance checks for Java and Javascript projects, but only supports direct dependency checking. The dependency and license data are from Libraries.io (as of October 2022).
+
+### Conflict Detection
+
+This tool mainly detects the following two types of conflicts:
+
+1. The dependency licenses of the project or the licenses of components within the project are incompatible with the project license (the LICENSE file in the root directory).
+
+2. The licenses between the project components are incompatible with each other.
+
+### Remediation Strategy
+
+This tool supports providing the least costly remediation strategy for incompatible dependencies. When using the SMT-Solver for dependency resolution, license constraints are added to solve for a compliant dependency tree, thus providing suggestions for migration, upgrading/downgrading, deletion, etc., of incompatible dependencies. The description of the remediation algorithm can be found in: [Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem](https://ieeexplore.ieee.org/abstract/document/10298475) ([https://github.com/osslab-pku/SILENCE](https://github.com/osslab-pku/SILENCE)).
 
 ## Installation
 
@@ -92,7 +137,8 @@ For citing, please use following BibTex citation:
   title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
   year={2023},
   pages={180-183},
-  doi={10.1109/ICSE-Companion58688.2023.00050}}
+  doi={10.1109/ICSE-Companion58688.2023.00050}
+}
 
 @inproceedings{SILENCE2023,
   title={Understanding and Remediating Open-Source License Incompatibilities in the PyPI Ecosystem},
