@@ -2,12 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "MIT License (Click)"
-category: "MIT License"
-shortName: "MIT-License-Click"
+canonicalName: "DocBook Stylesheet License"
+category: "DocBook Stylesheet"
+shortName: "DocBook-Stylesheet"
 
 alternativeNames:
-  - "MIT License (Click)"
+  - "DocBook Stylesheet License"
 
-otherIds: 
-  - "scancode:click-license"
