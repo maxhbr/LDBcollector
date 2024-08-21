@@ -250,10 +250,13 @@ The LicenseRec Tool stores all the data in the MongoDB database and the `backend
 
 ### 1. Copy MongoDB Data
 
-LicenseRec reuses the [libraries.io](https://libraries.io/) dataset to indentify the license of project dependencies. The dataset is stored in the `projects` collection in the `libraries` database. You can download the dataset from [here](https://drive.google.com/file/d/1os3KffCzM_psR5Fv3v5WKe0r397s4E1i/view?usp=sharing) and import it to the MongoDB database.
+Due to the file size limit on GitHub, please download the dataset at [here](https://figshare.com/s/3a098d0249693061cd93).
+
+And you need to import it into MongoDB. Run:
 
 ```bash
-mongoimport --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=libraries --collection projects --drop projects.json
+mongorestore --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=license --gzip data/package.bson.gz
+mongorestore --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=libraries --gzip data/projects.bson.gz
 ```
 
 If another instance of LicenseRec is already running, copying the whole MongoDB data directory will do the trick:
