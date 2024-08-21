@@ -345,7 +345,12 @@ class FossLicenses:
                 else:
                     about_license = f'An ambiguity was identified in "{ret["license_expression"]}". The ambiguous license is "{real_lic}"-'
                 problem = self.license_db[AMBIG_TAG]["ambiguities"][real_lic]["problem"]
-                ambiguities.append(f'{about_license} Problem: {problem}')
+                ambiguities.append({
+                    'license': ret['license_expression'],
+                    'ambigous_license': real_lic,
+                    'problem': problem,
+                    'description': f'{about_license} Problem: {problem}',
+                })
                 tmp_license_expression = re.sub(needle, ' ', tmp_license_expression)
 
         update_problem = None
