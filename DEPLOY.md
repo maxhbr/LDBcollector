@@ -255,8 +255,8 @@ Due to the file size limit on GitHub, please download the dataset at [here](http
 And you need to import it into MongoDB. Run:
 
 ```bash
-mongorestore --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=license --gzip data/package.bson.gz
-mongorestore --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=libraries --gzip data/projects.bson.gz
+mongorestore --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=license --gzip licenserecdata/package.bson.gz
+mongorestore --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=libraries --gzip licenserecdata/projects.bson.gz
 ```
 
 If another instance of LicenseRec is already running, copying the whole MongoDB data directory will do the trick:
