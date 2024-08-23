@@ -33,7 +33,8 @@
                 "apache license",
                 "Apache Software Licenese",
                 "Apache Software Licenses",
-                "The Apache License"
+                "The Apache License",
+                "License :: OSI Approved :: Apache Software License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -125,7 +126,8 @@
         },
         "Eiffel Forum License": {
             "aliases": [
-                "License :: OSI Approved :: Eiffel Forum License"
+                "License :: OSI Approved :: Eiffel Forum License",
+                "License :: Eiffel Forum License"
             ],
             "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
