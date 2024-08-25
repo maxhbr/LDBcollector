@@ -161,7 +161,8 @@
                 "GNU General Public License.",
                 "GPL-unspecified",
                 "GPL License",
-                "GNU GENERAL PUBLIC LICENSE"
+                "GNU GENERAL PUBLIC LICENSE",
+                "License :: OSI Approved :: GNU General Public License"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -183,7 +184,9 @@
                 "lgpl",
                 "GNU Library General Public License version 2",
                 "GNU LESSER GENERAL PUBLIC LICENSE",
-                "Lesser General Public License"
+                "Lesser General Public License",
+                "License :: OSI Approved :: GNU Library or...",
+                "License :: OSI Approved :: GNU Lesser General Public License v2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
