@@ -54,7 +54,6 @@ SECURE_PROXY_SSL_HEADER = getattr(config, "SECURE_PROXY_SSL_HEADER", None)
 # Application definition
 
 INSTALLED_APPS = [
-    "cube.apps.CubeConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -67,6 +66,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "django_filters",
     "hermine",
+    "cube.apps.CubeConfig",
     "drf_yasg",
 ]
 
@@ -214,11 +214,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 # REST API stuff
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticatedOrReadOnly"
-    ],
+    # Use Django's standard `django.contrib.auth` permissions
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.DjangoModelPermissions"],
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.BasicAuthentication",
         "rest_framework.authentication.SessionAuthentication",

@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
-# SPDX-License-Identifier: AGPL-3.0-only
+#  SPDX-License-Identifier: AGPL-3.0-only
 from django.urls import reverse
 
 from cube.models import (
@@ -216,7 +216,7 @@ class APICRUDTests(BaseHermineAPITestCase):
 
         release_id = Release.objects.first().pk
 
-        url = reverse("cube:releases-exploitations-list", args=[release_id])
+        url = reverse("cube:api:releases-exploitations-list", args=[release_id])
         data = {
             "scope": "testscope",
             "project": "testproject",
