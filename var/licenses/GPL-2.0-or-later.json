@@ -15,7 +15,6 @@
         "GNU General Public License v2.0 or later",
         "scancode://gpl-2.0-plus",
         "GPL 2.0 or later",
-
         "GNU GENERAL PUBLIC LICENSE version 2 or higher",
         "GNU General Public License (GPL) version 2, or any later version",
         "GNU General Public License Version 2 or later",
@@ -56,6 +55,7 @@
         "GPL (>= 2)",
         "GPL 2+",
         "GPLV2+",
-        "gpl-2.0-plus"
+        "gpl-2.0-plus",
+        "License :: OSI Approved :: GNU General Public License v2 or later"
     ]
 }
