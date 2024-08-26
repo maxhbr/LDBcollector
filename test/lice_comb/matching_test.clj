@@ -21,8 +21,8 @@
             [lice-comb.test-boilerplate :refer [fixture valid= valid-info=]]
             [lice-comb.impl.spdx        :as lcis]
             [lice-comb.matching         :refer [init! unidentified? proprietary-commercial? text->expressions name->expressions name->expressions-info uri->expressions]]
-            [spdx.licenses              :as sl]
-            [spdx.exceptions            :as se]))
+            [spdx.licenses              :as slic]
+            [spdx.exceptions            :as sexc]))
 
 (use-fixtures :once fixture)
 
@@ -49,8 +49,8 @@
     (is (true?  (unidentified? (lcis/name->unidentified-addition-ref))))
     (is (true?  (unidentified? (lcis/name->unidentified-addition-ref "foo")))))
   (testing "Listed ids are not unidentified"
-    (is (every? false? (map unidentified? (sl/ids))))
-    (is (every? false? (map unidentified? (se/ids))))))
+    (is (every? false? (map unidentified? (slic/ids))))
+    (is (every? false? (map unidentified? (sexc/ids))))))
 
 (deftest proprietary-commercial?-tests
   (testing "Nil, empty or blank ids"
@@ -62,8 +62,8 @@
   (testing "Properietary/commercial LicenseRef"
     (is (true?  (proprietary-commercial? (lcis/proprietary-commercial)))))
   (testing "Listed ids are not proprietary/commercial"
-    (is (every? false? (map proprietary-commercial? (sl/ids))))
-    (is (every? false? (map proprietary-commercial? (se/ids))))))
+    (is (every? false? (map proprietary-commercial? (slic/ids))))
+    (is (every? false? (map proprietary-commercial? (sexc/ids))))))
 
 ; Note: we keep these shorts as they're generally expensive, and are extensively tested by clj-spdx
 (deftest text->expressions-tests
@@ -162,11 +162,8 @@
     (is (valid= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
     (is (valid= #{"EPL-2.0 OR (Apache-2.0 AND BSD-3-Clause) OR (GPL-2.0-or-later WITH Classpath-exception-2.0 AND MIT)"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception aNd MIT Licence or three clause bsd and Apache Licence"))))
   (testing "Listed names"
-    (let [lic-names (map #(:name (slic/id->info %)) (slic/ids))
-          exc-names (map #(:name (sexc/id->info %)) (sexc/ids))]
-      (run! #(is (= [%] (split-on-operators %))) lic-names)
-      (run! #(is (= [%] (split-on-operators %))) exc-names))))
-
+    (run! #(is (= #{(:id %)} (name->expressions (:name %)))) @lcis/license-list-d)
+    (run! #(is (= #{(:id %)} (name->expressions (:name %)))) @lcis/exception-list-d))
   (testing "Names seen in handpicked POMs on Maven Central"
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License (AGPL) version 3.0")))
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3.0 only")))
