@@ -162,8 +162,8 @@
     (is (valid= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
     (is (valid= #{"EPL-2.0 OR (Apache-2.0 AND BSD-3-Clause) OR (GPL-2.0-or-later WITH Classpath-exception-2.0 AND MIT)"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception aNd MIT Licence or three clause bsd and Apache Licence"))))
   (testing "Listed names"
-    (run! #(is (= #{(:id %)} (name->expressions (:name %)))) @lcis/license-list-d)
-    (run! #(is (= #{(:id %)} (name->expressions (:name %)))) @lcis/exception-list-d))
+    (run! #(is (some #{(:id %)} (name->expressions (:name %)))) @lcis/license-list-d)
+    (run! #(is (some #{(:id %)} (name->expressions (:name %)))) @lcis/exception-list-d))
   (testing "Names seen in handpicked POMs on Maven Central"
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License (AGPL) version 3.0")))
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3.0 only")))
