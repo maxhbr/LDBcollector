@@ -48,6 +48,9 @@ if host := getattr(config, "HOST", None):
 else:
     ALLOWED_HOSTS = []
 
+USE_X_FORWARDED_HOST = getattr(config, "USE_X_FORWARDED_HOST", False)
+SECURE_PROXY_SSL_HEADER = getattr(config, "SECURE_PROXY_SSL_HEADER", None)
+
 # Application definition
 
 INSTALLED_APPS = [
