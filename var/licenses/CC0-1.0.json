@@ -19,6 +19,7 @@
         "scancode:cc0-1.0",
         "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
         "CC0",
-        "CC0 1.0 Universal"
+        "CC0 1.0 Universal",
+        "License :: CC0 1.0 Universal"
     ]
 }
