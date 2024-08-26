@@ -53,6 +53,7 @@
         "GNU General Public License v3 or later (GPLv3+)",
         "GPLv3.0+",
         "GPL 3+",
-        "gpl-3.0-plus"
+        "gpl-3.0-plus",
+        "License :: OSI Approved :: GNU General Public License v3 or later"
     ]
 }
