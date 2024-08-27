@@ -59,16 +59,34 @@ The Fedora Legal team is responsible for this project.
 
 %if %{with rpmlint}
 %package -n rpmlint-%{name}
-Summary:        Rpmlint configuration with valid license expressions
+Summary:        Rpmlint configuration with valid SPDX license identifiers
 # this package does not need to depend on the main one
 Requires:       rpmlint >= 2
 Supplements:    rpmlint >= 2
 
+# Require the legacy subpackage for backwards compatibility
+%if 0%{?fedora} && 0%{?fedora} < 41
+Requires:       rpmlint-%{name}-legacy = %{version}-%{release}
+%endif
+
 %description -n rpmlint-%{name}
 This package contains information about licenses used in the Fedora
 Linux project. The licenses are stored in a way that makes rpmlint read it.
-Both the SPDX license expressions and the legacy (callaway) expressions are
-allowed.
+Only the SPDX license identifiers are listed in this package.
+The legacy (callaway) identifiers are listed in rpmlint-%{name}-legacy.
+
+The Fedora Legal team is responsible for the content.
+
+
+%package -n rpmlint-%{name}-legacy
+Summary:        Rpmlint configuration with legacy (callaway) license identifiers
+Requires:       rpmlint >= 2
+
+%description -n rpmlint-%{name}-legacy
+This package contains information about licenses used in the Fedora
+Linux project. The licenses are stored in a way that makes rpmlint read it.
+Only the legacy (callaway) identifiers are listed in this package.
+The SPDX identifiers are listed in rpmlint-%{name}.
 
 The Fedora Legal team is responsible for the content.
 %endif
@@ -100,7 +118,12 @@ make check-grammar
 %files -n rpmlint-%{name}
 %license LICENSES/CC0-1.0.txt
 %doc AUTHORS README.md
-%config(noreplace) %{_sysconfdir}/xdg/rpmlint/*.toml
+%config(noreplace) %{_sysconfdir}/xdg/rpmlint/fedora-spdx-licenses.toml
+
+%files -n rpmlint-%{name}-legacy
+%license LICENSES/CC0-1.0.txt
+%doc AUTHORS README.md
+%config(noreplace) %{_sysconfdir}/xdg/rpmlint/fedora-legacy-licenses.toml
 %endif
 
 
