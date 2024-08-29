@@ -29,6 +29,14 @@ text = '''
 text here
 '''
 
+package = perl-Coro-Multicore
+location = https://metacpan.org/release/MLEHMANN/Coro-Multicore-1.07/source/perlmulticore.h#L156
+text = '''
+The perlmulticore.h header file is put into the public domain. Where
+this is legally not possible, or at your option, it can be licensed
+under creativecommons CC0 license:
+<https://creativecommons.org/publicdomain/zero/1.0/>.
+'''
 
 package = python-pysdl2
 location = https://github.com/py-sdl/py-sdl2/blob/0.9.16/doc/copying.rst
