@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.54
+Version:        1.55
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,17 @@ make check-grammar
 
 
 %changelog
+* Fri Aug 30 2024 Miroslav Suchý <msuchy@redhat.com> 1.55-1
+- Split rpmlint-fedora-license-data-legacy from rpmlint-fedora-license-
+  data
+- add LicenseRef-IUPAC-InChI-Trust as not allowed
+- add TrustedQSL
+- add TU-Berlin-1.0 license
+- add DocBook-XML license
+- add DocBook-Schema license
+- add AGPL-3.0-or-later WITH PS-or-PDF-font-exception-20170817
+- Extend ISO-8879 exception to dotnet9.0
+
 * Fri Aug 16 2024 Miroslav Suchý <msuchy@redhat.com> 1.54-1
 - public domain dedication found in mailcap
 - public domain dedications found in web server icons
