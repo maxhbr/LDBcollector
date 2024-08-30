@@ -1,7 +1,7 @@
 # LicenseRec
 
 ## 更新
-📢 *LicenseRec V2.0.0 正式上线！增加了包括精确到包版本的合规性分析、基于SMT-Solver的许可证不兼容消解等功能！*
+📢 *2024.8.30 LicenseRec V2.0.0 正式上线！增加了包括精确到包版本的合规性分析、基于SMT-Solver的许可证不兼容消解等功能！*
 
 
 ## 简介
@@ -77,7 +77,7 @@ LicenseRec依赖于以下开源项目。
 }
 ```
 ## News
-📢 *LicenseRec V2.0.0 is officially launched! New features include compliance analysis accurate to package versions and license incompatibility remediation based on SMT-Solver!*
+📢 *2024.8.30 LicenseRec V2.0.0 is officially launched! New features include compliance analysis accurate to package versions and license incompatibility remediation based on SMT-Solver!*
 
 ## Introduction
 
