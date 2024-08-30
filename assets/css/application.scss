@@ -6,6 +6,7 @@
 
 body {
   background: #fafafa;
+  --backgroundColor: #fafafa;
   color: #5c5855;
   font: 0.875rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -13,6 +14,7 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background: #212121;
+    --backgroundColor: #212121;
     color: #d0c8c1;
   }
 
