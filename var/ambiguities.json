@@ -128,6 +128,7 @@
         "Eiffel Forum License": {
             "aliases": [
                 "License :: OSI Approved :: Eiffel Forum License",
+                "License :: Eiffel Forum License (EFL)",
                 "License :: Eiffel Forum License"
             ],
             "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
