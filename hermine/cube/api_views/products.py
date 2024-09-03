@@ -372,6 +372,9 @@ class ExploitationViewSet(viewsets.ModelViewSet):
     lookup_field = "id"
 
     def get_queryset(self):
+        if "release_id" not in self.kwargs:
+            # Ony used by yasg when it tries to check permissions on the viexw
+            return Exploitation.objects.all()
         return Exploitation.objects.filter(release=self.kwargs["release_id"])
 
     def perform_create(self, serializer):
