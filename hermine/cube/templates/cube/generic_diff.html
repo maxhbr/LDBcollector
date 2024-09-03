@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
-    <li><a href="{% url 'cube:generic_list' %}">Generic obligations</a></li>
+    <li><a href="{% url 'cube:generic_list' %}">Compliance actions</a></li>
     <li><a href="{% url "cube:generic_detail" generic.id %}">{{ generic.name }}</a></li>
     <li>Reference comparaison</li>
   </ul>
@@ -52,6 +52,6 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% endfor %}
     </table>
   {% else %}
-    <p>No difference in generic obligation.</p>
+    <p>No difference in compliance action.</p>
   {% endif %}
 {% endblock %}

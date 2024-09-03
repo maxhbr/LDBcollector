@@ -721,11 +721,11 @@ Example :
 </testsuites>
 ```
 
-## Endpoints for generic obligations 
+## Endpoints for compliance actions 
 
 ```{py:function} GET api/generics/
 
-List generic obligations, optionnaly filtered by license or exploitation.
+List compliance actions, optionnaly filtered by license or exploitation.
 
 
 Accept the following filtering parameters to list only obligations triggered by some
@@ -740,7 +740,7 @@ licenses and usage contexts :
     
 ```{py:function} POST api/generics/sbom/
 
-List generic obligations for a list of components with their licenses and context.
+List compliance actions for a list of components with their licenses and context.
 
 :param list packages: a list of package objects with
 :param str packages.package_id: a arbitrary identifier name (used in the response)
@@ -748,7 +748,7 @@ List generic obligations for a list of components with their licenses and contex
 :param str packages.exploitation: an exploitation among Usage.EXPLOITATION_CHOICES
 :param str packages.modification: a modification among Usage.MODIFICATION_CHOICES
 
-:return: a list of generic obligations with a `triggered_by` attributes containing
+:return: a list of compliance actions with a `triggered_by` attributes containing
 the package identifier which triggered the obligation
 ```
 

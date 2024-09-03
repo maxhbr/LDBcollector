@@ -36,11 +36,11 @@ class APICRUDTests(BaseHermineAPITestCase):
         self.assertEqual(r.status_code, 200)
 
     def test_post_retrieve_generic(self):
-        """Test to post a Generic obligation"""
+        """Test to post a compliance action"""
         url = "/api/generics/"
         data = {
             "name": "TestGeneric",
-            "description": "This generic obligation is for testing purpose.",
+            "description": "This compliance action is for testing purpose.",
             "in_core": "True",
             "metacategory": "IPManagement",
             "passivity": "Active",

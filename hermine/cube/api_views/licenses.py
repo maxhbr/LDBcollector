@@ -26,7 +26,6 @@ from cube.utils.licenses import (
     get_license_triggered_obligations,
 )
 
-
 license_id_param = openapi.Parameter(
     "id",
     openapi.IN_PATH,
@@ -118,7 +117,7 @@ class GenericFilter(filters.FilterSet):
 
 class GenericViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows generic obligations to be viewed or edited.
+    API endpoint that allows compliance actions to be viewed or edited.
     """
 
     queryset = Generic.objects.all()
@@ -134,7 +133,7 @@ class GenericViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=["POST"])
     def sbom(self, request):
         """
-        Get list of generic obligations for a given SBOM. Uploads a list of
+        Get list of compliance actions for a given SBOM. Uploads a list of
         package with their licenses SPDX and return a list of generic
         obligations with packages which triggered them.
         """

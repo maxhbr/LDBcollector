@@ -76,7 +76,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "model": "cube.obligation",
                 "fields": {
                     "license": ["lorem license"],
-                    "generic": ["Generic Obligation 1"],
+                    "generic": ["Compliance Action 1"],
                     "name": "License 1 obligation 1",
                     "verbatim": "Long text.",
                     "passivity": "Active",
@@ -88,7 +88,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "model": "cube.obligation",
                 "fields": {
                     "license": ["lorem license"],
-                    "generic": ["Generic Obligation 2"],
+                    "generic": ["Compliance Action 2"],
                     "name": "License 1 obligation 2",
                     "verbatim": "Long text.",
                     "passivity": "Active",
@@ -100,7 +100,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
                 "model": "cube.obligation",
                 "fields": {
                     "license": ["lorem-license-2"],
-                    "generic": ["Generic Obligation 1"],
+                    "generic": ["Compliance Action 1"],
                     "name": "License 2 obligation 1",
                     "verbatim": "Long text.",
                     "passivity": "Active",
