@@ -43,6 +43,13 @@ services:
       - ENABLE_PROFILING=${HERMINE_ENABLE_PROFILING:-${HERMINE_PROFILING:-False}}
       - MAX_UPLOAD_SIZE=${HERMINE_MAX_UPLOAD_SIZE}
       - TRUST_PROXY_HEADERS=${HERMINE_TRUST_PROXY_HEADERS:-True}
+      - EMAIL_HOST=${HERMINE_EMAIL_HOST}
+      - EMAIL_HOST_PASSWORD=${HERMINE_EMAIL_HOST_PASSWORD}
+      - EMAIL_HOST_USER=${HERMINE_EMAIL_HOST_USER}
+      - EMAIL_PORT=${HERMINE_EMAIL_PORT}
+      - EMAIL_USE_TLS=${HERMINE_EMAIL_USE_TLS:-False} # activate for TLS connections (usually on port 465)
+      - EMAIL_USE_SSL=${HERMINE_EMAIL_USE_SSL:-True} # activate for connections using STARTSSL (usually on port 587)
+      - DEFAULT_FROM_EMAIL=${HERMINE_FROM_EMAIL}
     links:
       - db
     networks:
