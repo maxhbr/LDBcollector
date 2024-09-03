@@ -4,8 +4,8 @@
 from django.db import transaction
 from django.forms import ModelForm, ModelChoiceField, Form
 
-from cube.models import Generic, Obligation, License
 from cube.forms.mixins import AutocompleteFormMixin
+from cube.models import Generic, Obligation, License
 from cube.utils.reference import GENERIC_SHARED_FIELDS, LICENSE_SHARED_FIELDS
 
 
@@ -63,7 +63,7 @@ class CopyReferenceLicensesForm(Form):
 
 
 class CopyReferenceGenericsForm(Form):
-    """Form to copy all missing generic obligations to local data from reference."""
+    """Form to copy all missing compliance actions to local data from reference."""
 
     def save(self):
         """Copy all missing licenses to local data from reference."""

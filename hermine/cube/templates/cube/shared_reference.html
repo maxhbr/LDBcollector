@@ -65,7 +65,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               </button>
             </div>
             <div class="help">
-              This will also copy any linked obligation or generic obligation.
+              This will also copy any linked obligation or compliance action.
             </div>
           </div>
         </form>
@@ -73,7 +73,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   {% endif %}
 
-  <h3>Generic obligations</h3>
+  <h3>Compliance actions</h3>
   <table class="is-flex">
     <tr>
       <th>Total in local data</th>
@@ -117,7 +117,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="message-body">
       <p><b>Use this cautiously.</b><p>
         <p>
-          This updates all licenses, obligations and generic obligations to match the shared database,
+          This updates all licenses, obligations and compliance actions to match the shared database,
           erasing all your local changes.<br> This also copies any missing data.
         </p>
         <form method="post" action="{% url "cube:shared_sync_everything" %}">

@@ -52,8 +52,8 @@ to list the most frequently used Open Source component accross all your products
 ### Define a licence policy by reviewing licences 
 
 You must first create a licence policy by [analysing the Open Source licences](defining_a_FOSS_policy.md).
-If you want to test the application, you can import the shared data provided by the Hermine project (analysed licences and generic obligations) :
-- Download the [Generic obligations JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Example_generic_obligations.json) and import it from the <span class ="guilabel">Generic Obligations</span> page. 
+If you want to test the application, you can import the shared data provided by the Hermine project (analysed licences and compliance actions) :
+- Download the [Compliance actions JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Example_generic_obligations.json) and import it from the <span class ="guilabel">Generic Obligations</span> page. 
 - Download the [License JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Exemple_licences.json) and import it from the <span class ="guilabel">Licenses</span> page. 
 
 

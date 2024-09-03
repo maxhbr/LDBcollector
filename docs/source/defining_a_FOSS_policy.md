@@ -118,7 +118,7 @@ For licences that are allowed only in certain contexts, it is possible to define
 - A category to which the product belongs
 
 
-## Obligations and generic obligations
+## Obligations and compliance actions
 
 ### Licence obligations
 
@@ -160,17 +160,17 @@ If an obligation is triggered by two different types of exploitation, you'll hav
 
 - **Modification**: Indicates if the obligations applies only if the component is modified, only if it is not modified or in both cases.
 
-### Generic obligations
+### Compliance actions
 
-A licence obligation can be related to a generic obligation. A generic obligation is a way to group licence obligations that would amount to the same operational actions.
+A licence obligation can be related to a compliance action (in older versions of Hermine, a "generic obligation"). A compliance action is a way to group licence obligations that would amount to the same operational actions.
 
-### Core set of generic obligations
+### Core set of compliance actions
 
-Some generic obligations are very common and have a low cost of implementations. It appears often more effective to honor for every licence, even if the licence doesn't explicitely require it.  
+Some compliance actions are very common and have a low cost of implementations. It appears often more effective to honor for every licence, even if the licence doesn't explicitely require it.  
 
-The set of such generic obligations are named "core generic obligations".
+The set of such compliance actions are named "core compliance actions".
 
-So if a release of a product has all its generic obligations in the core, you know that you don't have any specific action to perform to reach compliance.
+So if a release of a product has all its compliance actions in the core, you know that you don't have any specific action to perform to reach compliance.
 
 
 

@@ -334,7 +334,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <div class="card-content">
             <div class="content">
               {% if obligation.generic %}
-                <p>Related to generic obligation: <a href="{% url 'cube:generic_detail' obligation.generic.id %}">{{obligation.generic}}</a> </p>
+                <p>Related to compliance action: <a href="{% url 'cube:generic_detail' obligation.generic.id %}">{{obligation.generic}}</a> </p>
               {% endif %}
               {% if obligation.passivity == "Active" %}
                 <p>Applies:</p>

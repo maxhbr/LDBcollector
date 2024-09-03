@@ -19,7 +19,7 @@ and community data.
 
 Hermine Reference Data is made of 2 top-level types of object : 
 - Licences
-- Generic obligations
+- Compliance actions
 
 
 ## Generic principles
@@ -92,10 +92,10 @@ The page lists the differences, showing local and reference
 value, with a button to update your local value.
 
 
-### In the licence and generic obligation pages
+### In the licence and compliance action pages
 
-In each licence or generic obligation page, if the licence 
-or generic obligation identifier is present in the reference data, 
+In each licence or compliance action page, if the licence 
+or compliance action identifier is present in the reference data, 
 a information box will be displayed if the local data for 
 this object differs from the one in Reference Data, with a 
 link to display the differences. 

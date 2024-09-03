@@ -21,7 +21,7 @@ router.register(
 router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
 router.register(r"releases", api_views.ReleaseViewSet, basename="releases")
 
-# Generic obligations
+# Compliance actions
 router.register(r"generics", api_views.GenericViewSet, basename="generics")
 
 # Models CRUD viewsets
