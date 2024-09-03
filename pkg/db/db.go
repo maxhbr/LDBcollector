@@ -5,6 +5,7 @@ package db
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"log"
 	"os"
@@ -45,20 +46,18 @@ func Populatedb(datafile string) {
 		log.Fatalf("error reading from json file: %v", err)
 	}
 	for _, license := range licenses {
-		var existingLicense models.LicenseDB
-		// Create the license if it does not already exist in the database.
-		// Otherwise, update the license if flag is 1.
 		result := utils.Converter(license)
-		DB.Where(models.LicenseDB{Shortname: result.Shortname}).First(&existingLicense)
-		// check if existingLicense found
-		if existingLicense.Id != 0 && existingLicense.Flag == 2 {
-			// Do not update the license where text was updated manually.
-			continue
-		}
-		err := DB.Where(models.LicenseDB{Shortname: result.Shortname}).Assign(result).
-			FirstOrCreate(&result).Error
-		if err != nil {
-			log.Fatalf("error creating license: %v", err)
-		}
+		_ = DB.Transaction(func(tx *gorm.DB) error {
+			errMessage, importStatus, _, _ := utils.InsertOrUpdateLicenseOnImport(tx, &result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})})
+			if importStatus == utils.IMPORT_FAILED {
+				// ANSI escape code for red text
+				red := "\033[31m"
+				reset := "\033[0m"
+				log.Printf("%s%s: %s%s", red, *result.Shortname, errMessage, reset)
+				return errors.New(errMessage)
+			}
+			return nil
+		})
+
 	}
 }

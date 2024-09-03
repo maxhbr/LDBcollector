@@ -84,60 +84,6 @@ definitions:
         example: 200
         type: integer
     type: object
-  models.ExportLicenseDB:
-    properties:
-      external_ref:
-        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
-      marydone:
-        type: boolean
-      rf_FSFfree:
-        type: boolean
-      rf_Fedora:
-        type: string
-      rf_GPLv2compatible:
-        type: boolean
-      rf_GPLv3compatible:
-        type: boolean
-      rf_OSIapproved:
-        type: boolean
-      rf_active:
-        type: boolean
-      rf_add_date:
-        example: "2023-12-01T18:10:25.00+05:30"
-        type: string
-      rf_copyleft:
-        type: boolean
-      rf_detector_type:
-        example: 1
-        type: integer
-      rf_flag:
-        example: 1
-        type: integer
-      rf_fullname:
-        example: MIT License
-        type: string
-      rf_notes:
-        example: This license has been superseded.
-        type: string
-      rf_risk:
-        type: integer
-      rf_shortname:
-        example: MIT
-        type: string
-      rf_source:
-        type: string
-      rf_spdx_id:
-        example: MIT
-        type: string
-      rf_text:
-        example: MIT License Text here
-        type: string
-      rf_text_updatable:
-        type: boolean
-      rf_url:
-        example: https://opensource.org/licenses/MIT
-        type: string
-    type: object
   models.ImportLicensesResponse:
     properties:
       data:
@@ -183,20 +129,23 @@ definitions:
         type: boolean
       rf_detector_type:
         example: 1
+        maximum: 2
+        minimum: 0
         type: integer
       rf_flag:
         example: 1
+        maximum: 2
+        minimum: 0
         type: integer
       rf_fullname:
         example: MIT License
         type: string
-      rf_id:
-        example: 123
-        type: integer
       rf_notes:
         example: This license has been superseded.
         type: string
       rf_risk:
+        maximum: 5
+        minimum: 0
         type: integer
       rf_shortname:
         example: MIT
@@ -214,6 +163,11 @@ definitions:
       rf_url:
         example: https://opensource.org/licenses/MIT
         type: string
+    required:
+    - rf_fullname
+    - rf_shortname
+    - rf_spdx_id
+    - rf_text
     type: object
   models.LicenseError:
     properties:
@@ -266,128 +220,6 @@ definitions:
           $ref: '#/definitions/models.LicenseMapShortnamesElement'
         type: array
     type: object
-  models.LicensePATCHRequestJSONSchema:
-    properties:
-      external_ref:
-        additionalProperties: true
-        type: object
-      marydone:
-        type: boolean
-      rf_FSFfree:
-        type: boolean
-      rf_Fedora:
-        type: string
-      rf_GPLv2compatible:
-        type: boolean
-      rf_GPLv3compatible:
-        type: boolean
-      rf_OSIapproved:
-        type: boolean
-      rf_active:
-        type: boolean
-      rf_copyleft:
-        type: boolean
-      rf_detector_type:
-        example: 1
-        type: integer
-      rf_flag:
-        example: 1
-        type: integer
-      rf_fullname:
-        example: MIT License
-        type: string
-      rf_notes:
-        example: This license has been superseded.
-        type: string
-      rf_risk:
-        example: 3
-        type: integer
-      rf_source:
-        type: string
-      rf_spdx_id:
-        example: MIT
-        type: string
-      rf_text:
-        example: MIT License Text here
-        type: string
-      rf_text_updatable:
-        type: boolean
-      rf_url:
-        example: https://opensource.org/licenses/MIT
-        type: string
-    type: object
-  models.LicensePOSTRequestJSONSchema:
-    properties:
-      external_ref:
-        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
-      marydone:
-        type: boolean
-      rf_FSFfree:
-        type: boolean
-      rf_Fedora:
-        type: string
-      rf_GPLv2compatible:
-        type: boolean
-      rf_GPLv3compatible:
-        type: boolean
-      rf_OSIapproved:
-        type: boolean
-      rf_active:
-        type: boolean
-      rf_copyleft:
-        type: boolean
-      rf_detector_type:
-        example: 1
-        type: integer
-      rf_flag:
-        example: 1
-        type: integer
-      rf_fullname:
-        example: MIT License
-        type: string
-      rf_notes:
-        example: This license has been superseded.
-        type: string
-      rf_risk:
-        type: integer
-      rf_shortname:
-        example: MIT
-        type: string
-      rf_source:
-        type: string
-      rf_spdx_id:
-        example: MIT
-        type: string
-      rf_text:
-        example: MIT License Text here
-        type: string
-      rf_text_updatable:
-        type: boolean
-      rf_url:
-        example: https://opensource.org/licenses/MIT
-        type: string
-    required:
-    - external_ref
-    - marydone
-    - rf_FSFfree
-    - rf_Fedora
-    - rf_GPLv2compatible
-    - rf_GPLv3compatible
-    - rf_OSIapproved
-    - rf_active
-    - rf_copyleft
-    - rf_detector_type
-    - rf_flag
-    - rf_fullname
-    - rf_notes
-    - rf_risk
-    - rf_shortname
-    - rf_source
-    - rf_spdx_id
-    - rf_text
-    - rf_text_updatable
-    - rf_url
-    type: object
   models.LicensePreviewResponse:
     properties:
       shortnames:
@@ -422,6 +254,71 @@ definitions:
         items:
           type: string
         type: array
+    type: object
+  models.LicenseUpdateJSONSchema:
+    properties:
+      external_ref:
+        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
+      marydone:
+        example: false
+        type: boolean
+      rf_FSFfree:
+        example: false
+        type: boolean
+      rf_Fedora:
+        example: Fedora
+        type: string
+      rf_GPLv2compatible:
+        example: false
+        type: boolean
+      rf_GPLv3compatible:
+        example: false
+        type: boolean
+      rf_OSIapproved:
+        example: false
+        type: boolean
+      rf_active:
+        example: true
+        type: boolean
+      rf_copyleft:
+        example: false
+        type: boolean
+      rf_detector_type:
+        example: 1
+        maximum: 2
+        minimum: 0
+        type: integer
+      rf_flag:
+        example: 1
+        maximum: 2
+        minimum: 0
+        type: integer
+      rf_fullname:
+        example: MIT License
+        type: string
+      rf_notes:
+        example: This license has been superseded.
+        type: string
+      rf_risk:
+        example: 1
+        maximum: 5
+        minimum: 0
+        type: integer
+      rf_source:
+        example: Source
+        type: string
+      rf_spdx_id:
+        example: MIT
+        type: string
+      rf_text:
+        example: MIT License Text here
+        type: string
+      rf_text_updatable:
+        example: false
+        type: boolean
+      rf_url:
+        example: https://opensource.org/licenses/MIT
+        type: string
     type: object
   models.Obligation:
     properties:
@@ -1059,7 +956,7 @@ paths:
         name: license
         required: true
         schema:
-          $ref: '#/definitions/models.LicensePOSTRequestJSONSchema'
+          $ref: '#/definitions/models.LicenseDB'
       produces:
       - application/json
       responses:
@@ -1129,7 +1026,7 @@ paths:
         name: license
         required: true
         schema:
-          $ref: '#/definitions/models.LicensePATCHRequestJSONSchema'
+          $ref: '#/definitions/models.LicenseUpdateJSONSchema'
       produces:
       - application/json
       responses:
@@ -1169,7 +1066,7 @@ paths:
           description: OK
           schema:
             items:
-              $ref: '#/definitions/models.ExportLicenseDB'
+              $ref: '#/definitions/models.LicenseDB'
             type: array
         "500":
           description: Failed to fetch Licenses

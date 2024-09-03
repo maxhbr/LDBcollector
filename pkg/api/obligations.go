@@ -210,7 +210,7 @@ func CreateObligation(c *gin.Context) {
 	}
 	for _, i := range input.Shortnames {
 		var license models.LicenseDB
-		db.DB.Where(models.LicenseDB{Shortname: i}).Find(&license)
+		db.DB.Where(models.LicenseDB{Shortname: &i}).Find(&license)
 		obmap := models.ObligationMap{
 			ObligationPk: obligation.Id,
 			RfPk:         license.Id,
@@ -680,7 +680,7 @@ func ExportObligations(c *gin.Context) {
 
 		var shortnames []string
 		for _, obMap := range obligationMaps {
-			shortnames = append(shortnames, obMap.LicenseDB.Shortname)
+			shortnames = append(shortnames, *obMap.LicenseDB.Shortname)
 		}
 
 		obJSONFileFormat := models.ObligationJSONFileFormat{
