@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Open Group Test Suite License",
+    "scancode_key": "opengroup",
+    "spdxid": "OGTSL",
+    "aliases": [
+        "License :: OSI Approved :: Open Group Test Suite License",
+        "OGTSL",
+        "Open Group Test Suite License",
+        "scancode://opengroup",
+        "The Open Group Test Suite License (OGTSL)",
+        "OGTS license",
+        "OGTSL license",
+        "osi:OGTSL",
+        "scancode:opengroup"
+    ]
+}
