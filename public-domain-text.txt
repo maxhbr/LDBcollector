@@ -29,6 +29,13 @@ text = '''
 text here
 '''
 
+package = bsh
+location = https://github.com/beanshell/beanshell/blob/master/bsh-bsf-engine/src/main/java/bsh/util/BeanShellBSFEngine.java#L7 
+text = '''
+This file is hereby placed into the public domain...  You may copy,
+modify, and redistribute it without restriction.
+'''
+
 package = perl-Coro-Multicore
 location = https://metacpan.org/release/MLEHMANN/Coro-Multicore-1.07/source/perlmulticore.h#L156
 text = '''
