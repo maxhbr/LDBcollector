@@ -29,6 +29,15 @@ text = '''
 text here
 '''
 
+package = btop
+# used in https://github.com/aristocratos/btop/blob/main/include/widechar_width.hpp
+location = https://github.com/ridiculousfish/widecharwidth/
+text = '''
+widecharwidth and its output files are released into the public domain. They
+may be used for any purpose without requiring attribution, or under the CC0
+license if public domain is not available. See included LICENSE.
+'''
+
 package = bsh
 location = https://github.com/beanshell/beanshell/blob/master/bsh-bsf-engine/src/main/java/bsh/util/BeanShellBSFEngine.java#L7 
 text = '''
