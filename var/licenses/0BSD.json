@@ -19,6 +19,7 @@
         "Zero BSD",
         "Zero-Clause BSD",
         "bsd-zero",
-        "BSD 0 Clause License"
+        "BSD 0 Clause License",
+        "License :: OSI Approved :: Zero-Clause BSD"
   ]
 }

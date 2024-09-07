@@ -6,11 +6,9 @@
 
 
 THIS_FILE=${BASH_SOURCE[0]}
-
 RET=0
 LICENSE_ERRORS=""
 set -o pipefail
-
 
 check_test_case()
 {
@@ -18,13 +16,14 @@ check_test_case()
     RESULT="OK"
     for lf in `ls var/licenses/*.json`; 
     do 
-        LICENSE_NAME=`echo $lf | sed -e 's/\.json//g' -e 's,[/]*var/licenses[/]*,,g'`
-        TEST_EXIST=$(cat $THIS_FILE | grep check_presence | grep -w $LICENSE_NAME | wc -l)
+        LICENSE_NAME=$(echo $lf | sed -e 's/\.json//g' -e 's,[/]*var/licenses[/]*,,g')
+        TEST_EXIST=$(cat $THIS_FILE | grep check_presence | grep -w $LICENSE_NAME | grep -v "^#" | wc -l)
         echo -n "$LICENSE_NAME: "
         if [ $TEST_EXIST -eq 0 ]
         then
+            LICENSE_ERRORS="$LICENSE_NAME is missing test case."
             echo missing
-            exit 1
+            RET=1
         else
             echo "OK"
         fi
@@ -75,9 +74,14 @@ check_file_presence()
 
 check_presence()
 {
+    echo $*
+}
+
+check_presence()
+{
     LICENSE=$1
     FILE=var/licenses/$LICENSE.json
-
+    
     REG_EXP_PRESENCE="$2"
     REG_EXP_UNPRESENCE="$3"
 
@@ -124,12 +128,12 @@ check_presence()
     fi
 }
 
+
 check_test_case
 
 # below is performed in Makefile
 # check_file_presence
 # check_schema
-
 
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\" -e \" 0 \""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
@@ -161,7 +165,7 @@ check_presence Autoconf-exception-3.0 " -e autoconf " " -e 2"
 check_presence Beerware " -i -e beer " ""
 check_presence Bitstream-Vera " -i -e bitstream " ""
 check_presence blessing " -i -e blessing " ""
-check_presence BlueOak-1.0.0  " -e 1 " " -e 2"
+check_presence BlueOak-1.0.0  " -i -e 1 -e model" " -e 2"
 check_presence Bootloader-exception " -i bootloader" ""
 check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
 
@@ -175,6 +179,7 @@ check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BS
 check_presence BSD-2-Clause-Views " -i -e view"  " -e 0 -e 1 -e 3 -e 4"
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT  -i -e two -e simplified -e freebsd "
 check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
+check_presence BSD-3-Clause-Modification " -i -e modification -e repoze " " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-No-Nuclear-Warranty " -i -e nuclear" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
 check_presence BSD-4-Clause-UC " -i -e university -e UC" " -e 1 -e 2 -e 3"
@@ -192,6 +197,10 @@ check_presence CC-BY-SA-4.0 " -e 4 " " -e 2 -e 3"
 
 check_presence CDDL-1.0 " -e 1.0 " " -e 1.1"
 check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
+
+check_presence CECILL-B " -i -e cecill-b -e cecill\ b" " -e -A -e -C"
+check_presence CECILL-C " -i -e cecill-c -e cecill\ c" " -e -A -e -B"
+check_presence CECILL-2.1 " -i -e cecill-2.1 -e 2.1" " -e -A -e -B -e -C"
 
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
@@ -233,6 +242,7 @@ check_presence HPND " -i -e hpnd -e historic" ""
 check_presence ICU " -i -e icu " ""
 check_presence IJG " -i -e ijg -e independent -e jpeg " " -e short"
 check_presence IJG-short " -i -e ijg -e independent -e jpeg  " ""
+check_presence IPL-1.0 " -i -e ipl -e ibm   " ""
 check_presence ISC " -i -e isc  " ""
 
 check_presence JSON " -i -e JSON  " ""
@@ -283,14 +293,19 @@ check_presence MulanPSL-2.0 " -e 2" " -e 1"
 
 check_presence NAIST-2003 " -i -e naist -e nara " ""
 check_presence NCSA " -i -e ncsa -e illinois " ""
+check_presence NGPL " -i -e ngpl -e nethack" ""
+check_presence Nokia " -i -e nokia -e nokos " ""
 check_presence NTP " -i -e ntp -e network " ""
 
 check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
 check_presence ODC-By-1.0 " -i -e 1.0 -e odc" ""
 check_presence OFL-1.0 " -e 1.0" " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
+check_presence OGTSL " -i -e ogtsl -e Open\ Group -e ogts\ license -e opengroup" ""
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
 check_presence OpenSSL " -i -e openssl " ""
+check_presence OSL-3.0 " -i -e Open\ Software -e OSL-3 -e OSL\ 3" ""
+
 check_presence Plexus " -i -e plexus -e classworlds " ""
 check_presence PostgreSQL " -i -e postgresql " ""
 check_presence Python-2.0.1 " -i -e Python " ""
@@ -301,6 +316,7 @@ check_presence SAX-PD " -i -e SAX -e xmlpull " ""
 check_presence Sendmail " -i -e sendmail " ""
 check_presence SGI-B-2.0 " -i -e SGI " ""
 check_presence Sleepycat " -i -e sleepycat -e Berkeley " ""
+check_presence SPL-1.0 " -i -e sun -e spl" ""
 check_presence SSPL-1.0 " -i -e SSPL -e server\ side" ""
 check_presence SunPro " -i -e SunPro " ""
 check_presence SMLNJ " -i -e smlnj -e Jersey -e nj " ""
@@ -312,6 +328,7 @@ check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
 check_presence UnixCrypt " -i -e unixcrypt" ""
 check_presence Unlicense " -i -e unlicense  -e unli[n]cence " ""
+check_presence UPL-1.0 " -i -e upl -e universal" ""
 
 check_presence Vim " -i -e vim" ""
 

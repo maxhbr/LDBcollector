@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Nethack General Public License",
+    "scancode_key": "ngpl",
+    "spdxid": "NGPL",
+    "aliases": [
+        "License :: OSI Approved :: Nethack General Public License",
+        "Nethack General Public License",
+        "NGPL",
+        "scancode://ngpl",
+        "The Nethack General Public License",
+        "https://spdx.org/licenses/ngpl",
+        "http://www.nethack.org/common/license.html",
+        "NETHACK GENERAL PUBLIC LICENSE",
+        "osi:NGPL",
+        "scancode:ngpl"
+    ]
+}

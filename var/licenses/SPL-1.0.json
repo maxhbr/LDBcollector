@@ -1,0 +1,22 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Sun Public License 1.0",
+    "scancode_key": "spl-1.0",
+    "spdxid": "SPL-1.0",
+    "aliases": [
+        "License :: OSI Approved :: Sun Public License",
+        "scancode://spl-1.0",
+        "SPL 1.0",
+        "SPL-1.0",
+        "Sun Public License 1.0",
+        "Sun Public License v1.0",
+        "Sun Public License, Version 1.0",
+        "SUN PUBLIC LICENSE Version 1.0",
+        "osi:SPL-1.0",
+        "scancode:spl-1.0",
+        "SPL, Version 1.0"
+    ]
+}

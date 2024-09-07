@@ -8,7 +8,8 @@
             "aliases": [
                 "License :: OSI Approved :: Academic Free License (AFL)",
                 "AFLv2",
-                "AFL"
+                "AFL",
+                "License :: OSI Approved :: Academic Free License"
             ],
             "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -33,7 +34,8 @@
                 "Apache Software Licenese",
                 "Apache Software Licenses",
                 "The Apache License",
-                "Apache license"
+                "Apache license",
+                "License :: OSI Approved :: Apache Software License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -82,7 +84,8 @@
                 "BSDLicense",
                 "The BSD License",
                 "BSD-Style License",
-                "BSD license"
+                "BSD license",
+                "License :: OSI Approved :: BSD License"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -124,7 +127,9 @@
         },
         "Eiffel Forum License": {
             "aliases": [
-                "License :: OSI Approved :: Eiffel Forum License"
+                "License :: OSI Approved :: Eiffel Forum License",
+                "License :: Eiffel Forum License (EFL)",
+                "License :: Eiffel Forum License"
             ],
             "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -143,7 +148,9 @@
         },
         "GNU": {
             "aliases": [
-                "GNU v3"
+                "GNU v3",
+                "License :: OSI Approved :: GNU...v3 or later",
+                "License :: OSI Approved :: GNU...v2 or later"
             ],
             "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
         },
@@ -155,7 +162,8 @@
                 "GNU General Public License.",
                 "GPL-unspecified",
                 "GPL License",
-                "GNU GENERAL PUBLIC LICENSE"
+                "GNU GENERAL PUBLIC LICENSE",
+                "License :: OSI Approved :: GNU General Public License"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -177,7 +185,9 @@
                 "lgpl",
                 "GNU Library General Public License version 2",
                 "GNU LESSER GENERAL PUBLIC LICENSE",
-                "Lesser General Public License"
+                "Lesser General Public License",
+                "License :: OSI Approved :: GNU Library or...",
+                "License :: OSI Approved :: GNU Lesser General Public License v2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -220,7 +230,8 @@
         "Zope Public License": {
             "aliases": [
                 "zpl",
-                "ZPL"
+                "ZPL",
+                "License :: OSI Approved :: Zope Public License"
             ],
             "problem": "This license has different versions (1.0, 1.1, 2.0 and 2.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         }

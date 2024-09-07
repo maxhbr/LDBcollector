@@ -16,7 +16,9 @@
       "public-domain",
       "Public-domain",
       "PUBLIC-DOMAIN",
-      "PublicDomain"
+      "PublicDomain",
+      "License :: Public Domain",
+      "Public Domain Dedication"
   ],
   "compatibility_as": "CC0-1.0"
 }

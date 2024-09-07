@@ -1,0 +1,22 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "CeCILL-C Free Software License Agreement",
+    "scancode_key": "cecill-c",
+    "spdxid": "CECILL-C",
+    "aliases": [
+        "CECILL-C",
+        "CeCILL-C Free Software License Agreement",
+        "CeCILL-C License",
+        "CECILL C License",
+        "scancode://cecill-c",
+        "CeCILL-C",
+        "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
+        "CECILL-C License",
+        "https://spdx.org/licenses/cecill-c",
+        "scancode:cecill-c",
+        "License :: CeCILL-C Free Software License Agreement (CECILL-C)"
+    ]
+}

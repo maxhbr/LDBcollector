@@ -11,6 +11,7 @@
         "scancode://blueoak-1.0.0",
         "Blue Oak Model License Version 1.0.0",
         "scancode:blueoak-1.0.0",
-        "blueoak-1.0.0"
+        "blueoak-1.0.0",
+        "License :: OSI Approved :: Blue Oak Model License"
     ]
 }

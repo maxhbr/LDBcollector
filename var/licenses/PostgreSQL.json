@@ -7,14 +7,15 @@
     "scancode_key": "postgresql",
     "spdxid": "PostgreSQL",
     "aliases": [
+        "postgresql",
         "PostgreSQL",
         "PostgreSQL License",
-        "postgresql",
-        "The PostgreSQL Licence",
         "scancode://postgresql",
+        "The PostgreSQL Licence",
         "License: PostgreSQL",
+        "osi:PostgreSQL",
         "POSTGRESQL License",
         "scancode:postgresql",
-        "osi:PostgreSQL"
+        "License :: OSI Approved :: PostgreSQL License"
     ]
 }
