@@ -44,6 +44,13 @@ COMPOUNDS_TAG = 'compounds'
 
 LICENSE_OPERATORS_TAG = 'license_operators'
 
+# expression for splitting a license expression in to a list of the
+# actual license name/id without the "AND", "OR", "(", ")"
+#
+# Note: OR and AND needs a space around them to prevent splitting for
+# example "OReilly" in to "OR eilly"
+LICENSE_SPLIT_RE = r'( AND | OR |\(|\))'
+
 class Validation(Enum):
     RELAXED = 1
     SPDX = 2
@@ -262,7 +269,7 @@ class FossLicenses:
     def __update_or_later(self, license_expression):
         updates = []
         new_expr = []
-        for lic in re.split(r'(AND|OR|\(|\))', license_expression):
+        for lic in re.split(LICENSE_SPLIT_RE, license_expression):
             if lic.strip() == '':
                 continue
             trimmed_license = lic.strip().split()[0]
@@ -554,7 +561,7 @@ class FossLicenses:
                     fixed_license_expression = re.sub(f'\s{alias}\s', '...', fixed_license_expression)
                     break
 
-        compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', fixed_license_expression)]
+        compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE, fixed_license_expression)]
         compat_licenses = [x for x in compat_licenses if x]
         unknown_symbols = set()
         for compat_license in compat_licenses:
@@ -668,7 +675,7 @@ class FossLicenses:
         compats = ret['identifications']
         compat_license_expression = ret['license_expression']
 
-        compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', compat_license_expression)]
+        compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE, compat_license_expression)]
         compat_licenses = [x for x in compat_licenses if x]
         compat_support = self.__validate_compatibilities_support(compat_licenses)
 
