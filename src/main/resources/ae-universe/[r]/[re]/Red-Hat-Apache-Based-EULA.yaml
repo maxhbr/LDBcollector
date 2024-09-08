@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Red Hat Apache-Based EULA"
+category: "Red Hat EULA"
+shortName: "RH-Apache-Based-EULA"
+
+alternativeNames:
+  - "Red Hat Apache-Based End User License Agreement"
+  - "END USER LICENSE AGREEMENT RED HAT APACHE-BASED"
+
+otherIds: 
+  - "scancode:rh-eula-apache2"

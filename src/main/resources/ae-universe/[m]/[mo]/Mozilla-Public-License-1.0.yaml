@@ -16,6 +16,10 @@ alternativeNames:
   - "Mozilla Public License 1.0 (MPL)"
   - "Mozilla Public License, Version 1.0"
   - "MPLv1.0"
+  - "Mozilla License (Version 1.0)"
+  - "Mozilla License (version 1.0)"
+  - "Mozilla License (v1.0)"
+  - "Mozilla License (1.0)"
 
 otherIds: 
   - "scancode:mpl-1.0"

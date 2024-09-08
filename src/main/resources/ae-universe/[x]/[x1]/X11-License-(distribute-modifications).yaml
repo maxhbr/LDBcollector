@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "X11 License Distribution Modification (variant)"
-category: "X11-distribute-modifications-variant"
+canonicalName: "X11 License (distribute modifications)"
+category: "X11"
 spdxIdentifier: "X11-distribute-modifications-variant"
 
 canonicalNameHistory:
   - "X11 License Distribution Modification Variant"
+  - "X11 License Distribution Modification (variant)"
 
 openCoDEStatus: "approved"
 

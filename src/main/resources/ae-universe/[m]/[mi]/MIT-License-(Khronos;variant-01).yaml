@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "MIT License (Khronos; variant 01)"
+category: "MIT"
+shortName: "MIT-Khronos-01"
+spdxIdentifier: "MIT-Khronos-old"
+
+alternativeNames:
+  - "MIT Khronos - old variant"
+
+otherIds: 
+  - "scancode:mit-khronos-old"
