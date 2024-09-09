@@ -3286,6 +3286,15 @@ categorizations:
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
+  # https://scancode-licensedb.aboutcode.org/openssl-nokia-psk-contribution.html
+  - id: "LicenseRef-scancode-openssl-nokia-psk-contribution"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
   # https://scancode-licensedb.aboutcode.org/oracle-openjdk-classpath-exception-2.0.html
   - id: "LicenseRef-scancode-oracle-openjdk-classpath-exception-2.0"
     categories:
