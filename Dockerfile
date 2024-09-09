@@ -11,7 +11,7 @@
 
 # Build vite modules on a separate image so we do not
 # install node on the runtime image
-FROM node:20 as build
+FROM node:20 AS build
 
 ARG BUILD_PATH=/opt/hermine
 
@@ -23,7 +23,7 @@ RUN npm ci
 COPY . $BUILD_PATH
 RUN npm run build
 
-FROM python:3.12-slim as runtime
+FROM python:3.12-slim AS runtime
 
 ARG INSTALL_PATH=/opt/hermine
 ARG POETRY_VERSION=1.8.2
