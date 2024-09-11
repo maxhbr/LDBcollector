@@ -29,6 +29,17 @@ text = '''
 text here
 '''
 
+package = calf
+location = https://github.com/calf-studio-gear/calf/blob/master/src/calf/lv2_external_ui.h#L4
+           https://github.com/calf-studio-gear/calf/blob/master/src/calf/lv2_progress.h#L4
+text = '''
+This work is in public domain.
+
+This file is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
 package = btop
 # used in https://github.com/aristocratos/btop/blob/main/include/widechar_width.hpp
 location = https://github.com/ridiculousfish/widecharwidth/
