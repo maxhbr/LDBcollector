@@ -1772,3 +1772,21 @@ text = '''
 Red Hat disclaims any copyright on the "mailcap" and "mime-types" files and places them in the public domain. You are
 free to do whatever you wish with these files.
 '''
+
+package = upx
+location =  https://github.com/upx/upx/blob/devel/src/stub/src/arch/arm/v4a/lzma_d-arm.S#L2
+            https://github.com/upx/upx/blob/devel/src/stub/src/arch/arm64/v8/lzma_d-arm.S#L2
+text = '''
+LZMA SDK is written and placed in the public domain by Igor Pavlov.
+'''
+
+package = upx
+location =  https://github.com/upx/upx/blob/devel/src/compress/compress_lzma.cpp#L51
+text = '''
+INFO: LZMA SDK is placed in the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute the original LZMA SDK code, either in source code form
+or as a compiled binary, for any purpose, commercial or non-commercial,
+and by any means.
+'''
