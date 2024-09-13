@@ -34,6 +34,7 @@
         "scancode:epl-2.0",
         "osi:EPL-2.0",
         "Eclipse Public License 2.0 (EPL-2.0)",
-        "License :: OSI Approved :: Eclipse Public License 2.0"
+        "License :: OSI Approved :: Eclipse Public License 2.0",
+        "License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)"
     ]
 }
