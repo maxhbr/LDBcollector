@@ -1,0 +1,10 @@
+{
+    "canonical": "DocBook-Stylesheet",
+    "aliases": {
+        "spdx": [
+            "DocBook Stylesheet License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "MIT-Click",
+    "aliases": {
+        "spdx": [
+            "MIT Click License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

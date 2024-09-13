@@ -1,0 +1,10 @@
+{
+    "canonical": "GPL-3.0-389-ds-base-exception",
+    "aliases": {
+        "spdx": [
+            "GPL-3.0 389 DS Base Exception"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}
