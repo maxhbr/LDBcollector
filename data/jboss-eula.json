@@ -1,0 +1,10 @@
+{
+    "canonical": "jboss-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "JBoss EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

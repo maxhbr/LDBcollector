@@ -1,0 +1,10 @@
+{
+    "canonical": "xenomai-gpl-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Xenomai GPL Exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

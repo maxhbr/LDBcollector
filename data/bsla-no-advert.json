@@ -1,0 +1,11 @@
+{
+    "canonical": "bsla-no-advert",
+    "aliases": {
+        "scancode-licensedb": [
+            "Berkeley Software License Agreement with no advertizing",
+            "BSLA no advertizing"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

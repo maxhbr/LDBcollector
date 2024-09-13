@@ -1,0 +1,10 @@
+{
+    "canonical": "intel-mcu-2018",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel MCU path license 2018"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

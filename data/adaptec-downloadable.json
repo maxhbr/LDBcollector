@@ -1,0 +1,10 @@
+{
+    "canonical": "adaptec-downloadable",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adaptec Downloadable Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-plus-nant",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 or later with NAnt exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "atkinson-hyperlegible-font",
+    "aliases": {
+        "scancode-licensedb": [
+            "Atkinson Hyperlegible Font License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

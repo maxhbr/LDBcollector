@@ -1,0 +1,13 @@
+{
+    "canonical": "MIT-enna",
+    "aliases": {
+        "spdx": [
+            "enna License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "enna"
+        ]
+    },
+    "src": "spdx"
+}

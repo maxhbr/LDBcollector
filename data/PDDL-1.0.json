@@ -1,0 +1,15 @@
+{
+    "canonical": "PDDL-1.0",
+    "aliases": {
+        "spdx": [
+            "Open Data Commons Public Domain Dedication & License 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Public Domain Dedication & Licence (PDDL)",
+            "pddl-1.0",
+            "PDDL 1.0"
+        ]
+    },
+    "src": "spdx"
+}

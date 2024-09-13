@@ -1,0 +1,15 @@
+{
+    "canonical": "Swift-exception",
+    "aliases": {
+        "spdx": [
+            "Swift Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Runtime Library Exception to the Apache 2.0 License",
+            "Runtime Library Exception to Apache 2.0",
+            "apple-runtime-library-exception"
+        ]
+    },
+    "src": "spdx"
+}

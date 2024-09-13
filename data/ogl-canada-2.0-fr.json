@@ -1,0 +1,11 @@
+{
+    "canonical": "ogl-canada-2.0-fr",
+    "aliases": {
+        "scancode-licensedb": [
+            "OGL Canada 2.0 Francais",
+            "Licence du gouvernement ouvert Canada 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

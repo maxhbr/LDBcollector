@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-artwork",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD Artwork License",
+            "BSD Artwork"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

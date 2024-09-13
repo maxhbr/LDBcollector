@@ -1,0 +1,11 @@
+{
+    "canonical": "t-license-amp-tkse",
+    "aliases": {
+        "scancode-licensedb": [
+            "T-License for AMP TKSE",
+            "T-License for AMP T-Kernel Standard Extension"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

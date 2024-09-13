@@ -1,0 +1,15 @@
+{
+    "canonical": "Nokia",
+    "aliases": {
+        "spdx": [
+            "Nokia Open Source License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Nokia Open Source License 1.0a",
+            "NOKOS License 1.0a",
+            "nokos-1.0a"
+        ]
+    },
+    "src": "spdx"
+}

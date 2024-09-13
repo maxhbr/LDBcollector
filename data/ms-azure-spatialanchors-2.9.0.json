@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-azure-spatialanchors-2.9.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Azure Spatial Anchors WinRT 2.9.0",
+            "Microsoft Azure Spatial Anchors WinRT 2.9.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

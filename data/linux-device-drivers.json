@@ -1,0 +1,11 @@
+{
+    "canonical": "linux-device-drivers",
+    "aliases": {
+        "scancode-licensedb": [
+            "Linux Device Drivers License",
+            "Linux Device Drivers"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

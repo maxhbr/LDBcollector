@@ -1,0 +1,15 @@
+{
+    "canonical": "BSD-2-Clause-Darwin",
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause - Ian Darwin variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsd-simplified-darwin",
+            "BSD Simplified Darwin",
+            "LicenseRef-scancode-bsd-simplified-darwin"
+        ]
+    },
+    "src": "spdx"
+}

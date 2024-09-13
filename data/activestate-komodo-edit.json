@@ -1,0 +1,10 @@
+{
+    "canonical": "activestate-komodo-edit",
+    "aliases": {
+        "scancode-licensedb": [
+            "ActiveState Komodo Edit EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

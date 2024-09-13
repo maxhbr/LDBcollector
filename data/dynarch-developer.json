@@ -1,0 +1,10 @@
+{
+    "canonical": "dynarch-developer",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dynarch Developer Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

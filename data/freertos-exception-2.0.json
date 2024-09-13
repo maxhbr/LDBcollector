@@ -1,0 +1,14 @@
+{
+    "canonical": "freertos-exception-2.0",
+    "aliases": {
+        "spdx": [
+            "FreeRTOS Exception 2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "freertos-exception-2.0",
+            "FreeRTOS exception to GPL 2.0"
+        ]
+    },
+    "src": "spdx"
+}

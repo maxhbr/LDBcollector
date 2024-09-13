@@ -1,0 +1,10 @@
+{
+    "canonical": "appsflyer-framework",
+    "aliases": {
+        "scancode-licensedb": [
+            "AppsFlyer Framework License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

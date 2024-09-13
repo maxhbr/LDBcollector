@@ -1,0 +1,15 @@
+{
+    "canonical": "LPD-document",
+    "aliases": {
+        "spdx": [
+            "LPD Documentation License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Peter Deutsch Document License",
+            "LicenseRef-scancode-peter-deutsch-document",
+            "peter-deutsch-document"
+        ]
+    },
+    "src": "spdx"
+}

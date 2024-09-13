@@ -1,0 +1,11 @@
+{
+    "canonical": "free-fork",
+    "aliases": {
+        "scancode-licensedb": [
+            "Free-Fork License",
+            "University of Washington Free-Fork License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

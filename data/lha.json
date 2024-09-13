@@ -1,0 +1,11 @@
+{
+    "canonical": "lha",
+    "aliases": {
+        "scancode-licensedb": [
+            "LHA",
+            "lha"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

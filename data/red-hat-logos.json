@@ -1,0 +1,10 @@
+{
+    "canonical": "red-hat-logos",
+    "aliases": {
+        "scancode-licensedb": [
+            "Red Hat Logos License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

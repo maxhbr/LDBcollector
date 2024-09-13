@@ -1,0 +1,10 @@
+{
+    "canonical": "proprietary",
+    "aliases": {
+        "scancode-licensedb": [
+            "Proprietary"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

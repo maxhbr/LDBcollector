@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-acer",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (Acer)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

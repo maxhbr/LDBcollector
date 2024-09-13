@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-iiop",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun IIOP License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "CATOSL-1.1",
+    "aliases": {
+        "spdx": [
+            "Computer Associates Trusted Open Source License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ca-tosl-1.1",
+            "CA Trusted Open Source License 1.1"
+        ]
+    },
+    "src": "spdx"
+}

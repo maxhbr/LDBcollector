@@ -1,0 +1,10 @@
+{
+    "canonical": "st-mcd-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "STMicro Liberty License v2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

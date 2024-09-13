@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-office-system-programs-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Office System Programs Software EULA",
+            "MS Office System Programs Software EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "Minpack",
+    "aliases": {
+        "spdx": [
+            "Minpack License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Minpack Copyright Notice",
+            "minpack",
+            "LicenseRef-scancode-minpack"
+        ]
+    },
+    "src": "spdx"
+}

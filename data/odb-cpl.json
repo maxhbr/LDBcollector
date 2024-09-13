@@ -1,0 +1,11 @@
+{
+    "canonical": "odb-cpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "ODB Commercial Proprietary License (CPL)",
+            "ODB CPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

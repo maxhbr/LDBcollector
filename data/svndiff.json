@@ -1,0 +1,10 @@
+{
+    "canonical": "svndiff",
+    "aliases": {
+        "scancode-licensedb": [
+            "svndiff License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

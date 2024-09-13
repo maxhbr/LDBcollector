@@ -1,0 +1,10 @@
+{
+    "canonical": "libselinux-pd",
+    "aliases": {
+        "scancode-licensedb": [
+            "libselinux License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

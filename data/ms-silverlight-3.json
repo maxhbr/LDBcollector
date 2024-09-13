@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-silverlight-3",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Silverlight 3 License",
+            "MS Silverlight 3 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

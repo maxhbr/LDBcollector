@@ -1,0 +1,10 @@
+{
+    "canonical": "openwall-md5-permissive",
+    "aliases": {
+        "scancode-licensedb": [
+            "Openwall MD5 Permissive"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

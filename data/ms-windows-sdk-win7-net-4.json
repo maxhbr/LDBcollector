@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-windows-sdk-win7-net-4",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Windows SDK for Windows 7 and .NET Framework 4",
+            "MS Windows SDK Windows7 .NET Framework 4"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

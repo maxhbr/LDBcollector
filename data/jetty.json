@@ -1,0 +1,10 @@
+{
+    "canonical": "jetty",
+    "aliases": {
+        "scancode-licensedb": [
+            "Jetty License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

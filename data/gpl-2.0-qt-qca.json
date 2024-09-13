@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-qt-qca",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with Qt-QCA exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

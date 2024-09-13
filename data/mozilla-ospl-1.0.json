@@ -1,0 +1,11 @@
+{
+    "canonical": "mozilla-ospl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Mozilla Open Software Patent License 1.0",
+            "Mozilla Open Software Patent License Agreement v1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

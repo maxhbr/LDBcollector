@@ -1,0 +1,14 @@
+{
+    "canonical": "AAL",
+    "aliases": {
+        "spdx": [
+            "Attribution Assurance License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "AAL",
+            "attribution"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-cc-pp-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun CC-PP Processing License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

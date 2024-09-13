@@ -1,0 +1,10 @@
+{
+    "canonical": "mysql-linking-exception-2018",
+    "aliases": {
+        "scancode-licensedb": [
+            "MySQL linking exception 2018"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

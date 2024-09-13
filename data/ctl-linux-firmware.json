@@ -1,0 +1,10 @@
+{
+    "canonical": "ctl-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Creative Technology Linux Firmware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

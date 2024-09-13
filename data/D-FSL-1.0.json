@@ -1,0 +1,13 @@
+{
+    "canonical": "D-FSL-1.0",
+    "aliases": {
+        "spdx": [
+            "Deutsche Freie Software Lizenz"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "d-fsl-1.0-de"
+        ]
+    },
+    "src": "spdx"
+}

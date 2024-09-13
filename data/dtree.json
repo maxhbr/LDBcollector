@@ -1,0 +1,10 @@
+{
+    "canonical": "dtree",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dtree License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

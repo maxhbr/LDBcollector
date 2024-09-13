@@ -1,2 +1,68 @@
+#
+# Copyright (c) Siemens AG 2024 ALL RIGHTS RESERVED
+#
+
+# --- ROOT ---
 venv
 .idea
+*.log
+
+# --- JAVA ---
+
+# Gradle generated files
+/java/.gradle/
+/java/build/
+/java/bin/
+
+# IntelliJ control files
+/java/.idea/
+/java/out/
+/Java/*.iml
+/Java/*.ipr
+/Java/*.iws
+
+# Eclipse control files
+/java/.project
+/java/.classpath
+/java/.settings/
+
+# Ignore Gradle project-specific cache directory
+/java.gradle
+
+# Ignore Gradle build output directory
+/java/build
+
+
+# --- PYTHON ---
+
+/python/.idea/
+/python/.coverage
+/python/coverage.xml
+/python/output/
+/python/dist/
+/python/*.pyc
+/python/toms_demo.py
+**/__pycache__/
+
+
+# --- SCRIPTS ---
+
+/scripts/.idea
+/scripts/poetry-demo
+/scripts/.coverage
+/scripts/dist
+/scripts/*.log
+
+
+# --- TYPESCRIPT ---
+/typescript/node_modules
+/typescript/*/dist
+/typescript/.vscode
+/typescript/.idea/
+/typescript/_support/
+/typescript/coverage/
+
+/**/*.js
+
+
+

@@ -1,0 +1,11 @@
+{
+    "canonical": "commercial-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-Commercial",
+            "Commercial License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

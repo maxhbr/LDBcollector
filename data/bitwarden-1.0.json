@@ -1,0 +1,10 @@
+{
+    "canonical": "bitwarden-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Bitwarden License Agreement v1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

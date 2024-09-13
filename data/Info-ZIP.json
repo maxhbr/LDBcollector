@@ -1,0 +1,14 @@
+{
+    "canonical": "Info-ZIP",
+    "aliases": {
+        "spdx": [
+            "Info-ZIP License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "info-zip",
+            "Info-Zip License"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "abrms",
+    "aliases": {
+        "scancode-licensedb": [
+            "ABRMS",
+            "Anyone But Richard Stallman License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

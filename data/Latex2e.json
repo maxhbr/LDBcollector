@@ -1,0 +1,13 @@
+{
+    "canonical": "Latex2e",
+    "aliases": {
+        "spdx": [
+            "Latex2e License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "latex2e"
+        ]
+    },
+    "src": "spdx"
+}

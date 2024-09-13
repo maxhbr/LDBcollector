@@ -1,0 +1,10 @@
+{
+    "canonical": "synopsys-attribution",
+    "aliases": {
+        "scancode-licensedb": [
+            "Synopsys Attribution License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

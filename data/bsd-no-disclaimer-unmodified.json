@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-no-disclaimer-unmodified",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-2-Clause no disclaimer Unmod",
+            "BSD-2-Clause without Warranty Disclaimer with Unmodified requirement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "splunk-3pp-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Splunk EULA for Third-Party Content"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

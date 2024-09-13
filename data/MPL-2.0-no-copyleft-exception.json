@@ -1,0 +1,14 @@
+{
+    "canonical": "MPL-2.0-no-copyleft-exception",
+    "aliases": {
+        "spdx": [
+            "Mozilla Public License 2.0 (no copyleft exception)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "MPL 2.0 with no copyleft exception",
+            "mpl-2.0-no-copyleft-exception"
+        ]
+    },
+    "src": "spdx"
+}

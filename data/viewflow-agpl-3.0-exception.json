@@ -1,0 +1,10 @@
+{
+    "canonical": "viewflow-agpl-3.0-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Viewflow Library Exception to AGPL 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

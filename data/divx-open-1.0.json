@@ -1,0 +1,11 @@
+{
+    "canonical": "divx-open-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "DivX Open License 1.0",
+            "DivX Open License v1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

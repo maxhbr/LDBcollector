@@ -1,0 +1,11 @@
+{
+    "canonical": "oracle-nftc-2021",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle NFTC 2021",
+            "Oracle No-Fee Terms and Conditions (NFTC) 2021"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

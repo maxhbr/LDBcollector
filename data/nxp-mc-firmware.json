@@ -1,0 +1,10 @@
+{
+    "canonical": "nxp-mc-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "NXP MC Firmware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "zuora-software",
+    "aliases": {
+        "scancode-licensedb": [
+            "Zuora Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "brent-corkum",
+    "aliases": {
+        "scancode-licensedb": [
+            "Brent Corkum License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

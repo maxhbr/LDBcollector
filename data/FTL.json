@@ -1,0 +1,14 @@
+{
+    "canonical": "FTL",
+    "aliases": {
+        "spdx": [
+            "Freetype Project License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "freetype",
+            "FreeType Project License"
+        ]
+    },
+    "src": "spdx"
+}

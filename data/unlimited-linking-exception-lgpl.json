@@ -1,0 +1,11 @@
+{
+    "canonical": "unlimited-linking-exception-lgpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unlimited linking exception to LGPL",
+            "LicenseRef-scancode-unlimited-linking-exception-lgpl"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

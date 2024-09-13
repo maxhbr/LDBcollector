@@ -1,0 +1,13 @@
+{
+    "canonical": "Zeeff",
+    "aliases": {
+        "spdx": [
+            "Zeeff License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "zeeff"
+        ]
+    },
+    "src": "spdx"
+}

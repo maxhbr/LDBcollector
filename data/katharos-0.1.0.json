@@ -1,0 +1,10 @@
+{
+    "canonical": "katharos-0.1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Katharos License v0.1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

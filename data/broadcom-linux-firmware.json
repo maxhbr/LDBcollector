@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Linux Firmware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

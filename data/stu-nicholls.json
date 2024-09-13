@@ -1,0 +1,10 @@
+{
+    "canonical": "stu-nicholls",
+    "aliases": {
+        "scancode-licensedb": [
+            "Stu Nicholls License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

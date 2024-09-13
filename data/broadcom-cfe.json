@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-cfe",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom CFE License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

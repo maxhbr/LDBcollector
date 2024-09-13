@@ -1,0 +1,11 @@
+{
+    "canonical": "mod-dav-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "mod_dav License Agreement v1",
+            "mod_dav License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

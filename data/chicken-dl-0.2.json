@@ -1,0 +1,11 @@
+{
+    "canonical": "chicken-dl-0.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "Chicken Dance License v0.2",
+            "Chicken Dance v0.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

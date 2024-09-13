@@ -1,0 +1,10 @@
+{
+    "canonical": "cygwin-exception-lgpl-3.0-plus",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cygwin exception to LGPL 3.0 or later"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "cpp-core-guidelines",
+    "aliases": {
+        "scancode-licensedb": [
+            "CppCoreGuidelines License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

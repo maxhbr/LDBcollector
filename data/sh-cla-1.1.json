@@ -1,0 +1,11 @@
+{
+    "canonical": "sh-cla-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Software Heritage CLA 1.1",
+            "Software Heritage Contributor License Agreement 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

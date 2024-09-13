@@ -1,0 +1,11 @@
+{
+    "canonical": "toppers-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "TOPPERS License",
+            "TOPPERS License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

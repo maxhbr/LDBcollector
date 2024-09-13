@@ -1,0 +1,14 @@
+{
+    "canonical": "DOC",
+    "aliases": {
+        "spdx": [
+            "DOC License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ace-tao",
+            "ACE TAO License"
+        ]
+    },
+    "src": "spdx"
+}

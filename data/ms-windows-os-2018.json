@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-windows-os-2018",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Windows OS 2018",
+            "Microsoft Windows Operating System License 2019"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

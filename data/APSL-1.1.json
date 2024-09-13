@@ -1,0 +1,14 @@
+{
+    "canonical": "APSL-1.1",
+    "aliases": {
+        "spdx": [
+            "Apple Public Source License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "apsl-1.1",
+            "APSL 1.1"
+        ]
+    },
+    "src": "spdx"
+}

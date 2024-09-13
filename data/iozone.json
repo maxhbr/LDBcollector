@@ -1,0 +1,10 @@
+{
+    "canonical": "iozone",
+    "aliases": {
+        "scancode-licensedb": [
+            "IOzone License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

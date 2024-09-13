@@ -1,0 +1,14 @@
+{
+    "canonical": "Condor-1.1",
+    "aliases": {
+        "spdx": [
+            "Condor Public License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "condor-1.1",
+            "Condor Public License 1.1"
+        ]
+    },
+    "src": "spdx"
+}

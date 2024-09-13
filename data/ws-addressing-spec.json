@@ -1,0 +1,10 @@
+{
+    "canonical": "ws-addressing-spec",
+    "aliases": {
+        "scancode-licensedb": [
+            "WS-Addressing Specification License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

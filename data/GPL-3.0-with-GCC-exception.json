@@ -1,0 +1,14 @@
+{
+    "canonical": "GPL-3.0-with-GCC-exception",
+    "aliases": {
+        "spdx": [
+            "GNU General Public License v3.0 w/GCC Runtime Library exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "GPL 3.0 with GCC runtime library exception",
+            "gpl-3.0-gcc"
+        ]
+    },
+    "src": "spdx"
+}

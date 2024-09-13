@@ -1,0 +1,11 @@
+{
+    "canonical": "sencha-app-floss-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sencha Open Source License Exception for Applications",
+            "Sencha GPL 3.0 Exception for Applications"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

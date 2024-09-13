@@ -1,0 +1,10 @@
+{
+    "canonical": "gregory-pietsch",
+    "aliases": {
+        "scancode-licensedb": [
+            "Gregory Pietsch Liberal License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

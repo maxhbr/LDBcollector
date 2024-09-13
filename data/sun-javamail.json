@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-javamail",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun JavaMail"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

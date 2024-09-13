@@ -1,0 +1,15 @@
+{
+    "canonical": "AMD-newlib",
+    "aliases": {
+        "spdx": [
+            "AMD newlib License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-amd-historical",
+            "amd-historical",
+            "AMD Historical License"
+        ]
+    },
+    "src": "spdx"
+}

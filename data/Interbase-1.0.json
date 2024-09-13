@@ -1,0 +1,14 @@
+{
+    "canonical": "Interbase-1.0",
+    "aliases": {
+        "spdx": [
+            "Interbase Public License v1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "interbase-1.0",
+            "Interbase Public License 1.0"
+        ]
+    },
+    "src": "spdx"
+}

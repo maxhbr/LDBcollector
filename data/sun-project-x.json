@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-project-x",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Project X"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

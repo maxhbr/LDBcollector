@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-ibm",
+    "aliases": {
+        "scancode-licensedb": [
+            "IBM Derivative Works License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "triptracker",
+    "aliases": {
+        "scancode-licensedb": [
+            "TripTracker Slideshow License",
+            "TripTracker License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

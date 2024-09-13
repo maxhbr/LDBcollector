@@ -1,0 +1,15 @@
+{
+    "canonical": "HPND-Kevlin-Henney",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - Kevlin Henney variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Kevlin Henney License",
+            "LicenseRef-scancode-kevlin-henney",
+            "kevlin-henney"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "idt-notice",
+    "aliases": {
+        "scancode-licensedb": [
+            "IDT License Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

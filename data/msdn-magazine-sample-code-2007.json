@@ -1,0 +1,11 @@
+{
+    "canonical": "msdn-magazine-sample-code-2007",
+    "aliases": {
+        "scancode-licensedb": [
+            "MSDN Magazine Sample Code EULA 2007",
+            "Microsoft MSDN Magazine Sample Code EULA 2007"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

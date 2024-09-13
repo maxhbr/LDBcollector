@@ -1,0 +1,10 @@
+{
+    "canonical": "gitleaks-action-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Gitleaks-Action EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

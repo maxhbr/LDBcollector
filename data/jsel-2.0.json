@@ -1,0 +1,11 @@
+{
+    "canonical": "jsel-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "JSEL 2.0",
+            "JAHIA Sustainable Enterprise License (JSEL) 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

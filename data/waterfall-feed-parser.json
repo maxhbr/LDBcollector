@@ -1,0 +1,10 @@
+{
+    "canonical": "waterfall-feed-parser",
+    "aliases": {
+        "scancode-licensedb": [
+            "Waterfall Feed Parser License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

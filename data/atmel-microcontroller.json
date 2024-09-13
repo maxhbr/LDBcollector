@@ -1,0 +1,10 @@
+{
+    "canonical": "atmel-microcontroller",
+    "aliases": {
+        "scancode-licensedb": [
+            "Atmel Microcontroller License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

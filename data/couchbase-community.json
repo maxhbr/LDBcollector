@@ -1,0 +1,10 @@
+{
+    "canonical": "couchbase-community",
+    "aliases": {
+        "scancode-licensedb": [
+            "Couchbase Community Edition License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "itu-t",
+    "aliases": {
+        "scancode-licensedb": [
+            "ITU-T License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

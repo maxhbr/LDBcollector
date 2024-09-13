@@ -1,0 +1,10 @@
+{
+    "canonical": "responsible-ai-source-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Reponsible AI Source Code License v1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "shavlik-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Shavlik Technologies EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

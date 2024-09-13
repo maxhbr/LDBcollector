@@ -1,0 +1,13 @@
+{
+    "canonical": "mailprio",
+    "aliases": {
+        "spdx": [
+            "mailprio License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mailprio"
+        ]
+    },
+    "src": "spdx"
+}

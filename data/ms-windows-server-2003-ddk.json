@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-windows-server-2003-ddk",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Windows Server 2003 DDK License",
+            "Microsoft Windows Server 2003 DDK License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

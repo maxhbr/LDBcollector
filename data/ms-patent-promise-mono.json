@@ -1,0 +1,10 @@
+{
+    "canonical": "ms-patent-promise-mono",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Patent Promise for Mono"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

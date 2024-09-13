@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-asp-net-mvc4",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft ASP.NET MVC 4 License",
+            "MS ASP.NET MVC4"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

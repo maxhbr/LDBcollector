@@ -1,0 +1,10 @@
+{
+    "canonical": "pybench",
+    "aliases": {
+        "scancode-licensedb": [
+            "pybench License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

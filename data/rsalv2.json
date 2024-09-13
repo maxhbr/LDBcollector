@@ -1,0 +1,11 @@
+{
+    "canonical": "rsalv2",
+    "aliases": {
+        "scancode-licensedb": [
+            "RSALv2",
+            "Redis Source Available License 2.0 (RSALv2) Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

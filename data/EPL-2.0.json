@@ -1,0 +1,27 @@
+{
+    "canonical": "EPL-2.0",
+    "aliases": {
+        "spdx": [
+            "Eclipse Public License 2.0"
+        ],
+        "custom": [
+            "Eclipse Public License v2.0",
+            "EPL License 2.0",
+            "EPL v2.0",
+            "Eclipse License 2.0",
+            "Eclipse Public License Version 2.0",
+            "EPL 2.0 License",
+            "EPL-2.0 License",
+            "EPL (2.0)",
+            "Eclipse Public License (2.0)",
+            "EPL Version 2.0",
+            "Eclipse Public License v2.0 (EPL-2.0)",
+            "EPL 2.0 Open Source License"
+        ],
+        "scancode-licensedb": [
+            "epl-2.0",
+            "EPL 2.0"
+        ]
+    },
+    "src": "spdx"
+}

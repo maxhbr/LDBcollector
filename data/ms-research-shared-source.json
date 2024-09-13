@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-research-shared-source",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Research Shared Source License",
+            "Microsoft Research Shared Source License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

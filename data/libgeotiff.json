@@ -1,0 +1,10 @@
+{
+    "canonical": "libgeotiff",
+    "aliases": {
+        "scancode-licensedb": [
+            "libgeoTiff License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

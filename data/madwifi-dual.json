@@ -1,0 +1,10 @@
+{
+    "canonical": "madwifi-dual",
+    "aliases": {
+        "scancode-licensedb": [
+            "MadWifi Dual BSD-GPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

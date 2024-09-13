@@ -1,0 +1,10 @@
+{
+    "canonical": "docbook",
+    "aliases": {
+        "scancode-licensedb": [
+            "Docbook License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

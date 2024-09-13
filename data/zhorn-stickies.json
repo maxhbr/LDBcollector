@@ -1,0 +1,10 @@
+{
+    "canonical": "zhorn-stickies",
+    "aliases": {
+        "scancode-licensedb": [
+            "Zhorn Stickies License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "ubc",
+    "aliases": {
+        "scancode-licensedb": [
+            "University of British Columbia License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

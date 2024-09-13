@@ -1,0 +1,10 @@
+{
+    "canonical": "jsr-107-jcache-spec",
+    "aliases": {
+        "scancode-licensedb": [
+            "JSR-107 JCache Specification License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

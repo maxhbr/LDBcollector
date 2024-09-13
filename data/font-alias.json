@@ -1,0 +1,10 @@
+{
+    "canonical": "font-alias",
+    "aliases": {
+        "scancode-licensedb": [
+            "font-alias License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

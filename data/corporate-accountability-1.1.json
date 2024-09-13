@@ -1,0 +1,11 @@
+{
+    "canonical": "corporate-accountability-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Corporate Accountability Lab Software",
+            "CAL Software"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

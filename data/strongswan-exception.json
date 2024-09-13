@@ -1,0 +1,10 @@
+{
+    "canonical": "strongswan-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "strongSwan exception to GPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

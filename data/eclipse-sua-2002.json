@@ -1,0 +1,10 @@
+{
+    "canonical": "eclipse-sua-2002",
+    "aliases": {
+        "scancode-licensedb": [
+            "Eclipse Foundation Software User Agreement 2002"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

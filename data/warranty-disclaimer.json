@@ -1,0 +1,10 @@
+{
+    "canonical": "warranty-disclaimer",
+    "aliases": {
+        "scancode-licensedb": [
+            "Generic Bare Warranty Disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "cups",
+    "aliases": {
+        "scancode-licensedb": [
+            "CUPS License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

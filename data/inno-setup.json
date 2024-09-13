@@ -1,0 +1,10 @@
+{
+    "canonical": "inno-setup",
+    "aliases": {
+        "scancode-licensedb": [
+            "Inno Setup License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

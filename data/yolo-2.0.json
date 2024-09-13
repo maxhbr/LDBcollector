@@ -1,0 +1,10 @@
+{
+    "canonical": "yolo-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "YOLO License v2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

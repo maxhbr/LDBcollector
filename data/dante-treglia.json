@@ -1,0 +1,10 @@
+{
+    "canonical": "dante-treglia",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dante Treglia License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

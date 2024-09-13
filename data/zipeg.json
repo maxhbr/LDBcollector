@@ -1,0 +1,10 @@
+{
+    "canonical": "zipeg",
+    "aliases": {
+        "scancode-licensedb": [
+            "Zipeg License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

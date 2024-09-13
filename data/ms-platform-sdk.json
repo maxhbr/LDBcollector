@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-platform-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Platform SDK License",
+            "Microsoft Platform SDK License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

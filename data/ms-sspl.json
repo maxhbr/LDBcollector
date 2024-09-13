@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-sspl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Shared Source Permissive License (SS-PL)",
+            "MS-SS-PL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

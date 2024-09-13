@@ -1,0 +1,13 @@
+{
+    "canonical": "LAL-1.2",
+    "aliases": {
+        "spdx": [
+            "Licence Art Libre 1.2"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "lal-1.2"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "hauppauge-firmware-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Hauppauge Firmware EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

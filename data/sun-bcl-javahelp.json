@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-bcl-javahelp",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL JavaHelp"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

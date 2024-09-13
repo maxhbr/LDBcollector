@@ -1,0 +1,10 @@
+{
+    "canonical": "visual-numerics",
+    "aliases": {
+        "scancode-licensedb": [
+            "Visual Numerics License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

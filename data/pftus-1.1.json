@@ -1,0 +1,11 @@
+{
+    "canonical": "pftus-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "PFTUS-license",
+            "Protected Free To Use Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

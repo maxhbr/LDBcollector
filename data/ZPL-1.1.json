@@ -1,0 +1,14 @@
+{
+    "canonical": "ZPL-1.1",
+    "aliases": {
+        "spdx": [
+            "Zope Public License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "zpl-1.1",
+            "ZPL 1.1"
+        ]
+    },
+    "src": "spdx"
+}

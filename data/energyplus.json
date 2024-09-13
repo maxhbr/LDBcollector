@@ -1,0 +1,10 @@
+{
+    "canonical": "energyplus",
+    "aliases": {
+        "scancode-licensedb": [
+            "EnergyPlus License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "authorizenet-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "AuthorizeNet SDK License",
+            "AuthorizeNet Software Development Kit (SDK) License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

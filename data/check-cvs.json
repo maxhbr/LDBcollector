@@ -1,0 +1,13 @@
+{
+    "canonical": "check-cvs",
+    "aliases": {
+        "spdx": [
+            "check-cvs License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "check-cvs"
+        ]
+    },
+    "src": "spdx"
+}

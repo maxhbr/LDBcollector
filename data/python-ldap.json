@@ -1,0 +1,13 @@
+{
+    "canonical": "python-ldap",
+    "aliases": {
+        "spdx": [
+            "Python ldap License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "python-ldap"
+        ]
+    },
+    "src": "spdx"
+}

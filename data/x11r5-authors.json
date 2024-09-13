@@ -1,0 +1,10 @@
+{
+    "canonical": "x11r5-authors",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-R5 Authors"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

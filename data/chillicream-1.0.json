@@ -1,0 +1,10 @@
+{
+    "canonical": "chillicream-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "ChilliCream License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

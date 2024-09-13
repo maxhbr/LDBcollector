@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-asp-net-web-pages-templates",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS ASP.NET Web Pages Templates License",
+            "Microsoft ASP.NET Web Pages Templates License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

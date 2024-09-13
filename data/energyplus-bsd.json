@@ -1,0 +1,10 @@
+{
+    "canonical": "energyplus-bsd",
+    "aliases": {
+        "scancode-licensedb": [
+            "EnergyPlus BSD-Style License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

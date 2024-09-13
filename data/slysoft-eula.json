@@ -1,0 +1,10 @@
+{
+    "canonical": "slysoft-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "SlySoft EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

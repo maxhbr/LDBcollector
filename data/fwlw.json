@@ -1,0 +1,13 @@
+{
+    "canonical": "fwlw",
+    "aliases": {
+        "spdx": [
+            "fwlw License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "fwlw"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "doug-lea",
+    "aliases": {
+        "scancode-licensedb": [
+            "Doug Lea License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "confluent-community-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Confluent Community License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

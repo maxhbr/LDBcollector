@@ -1,0 +1,10 @@
+{
+    "canonical": "bytemark",
+    "aliases": {
+        "scancode-licensedb": [
+            "BYTEmark License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

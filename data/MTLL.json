@@ -1,0 +1,13 @@
+{
+    "canonical": "MTLL",
+    "aliases": {
+        "spdx": [
+            "Matrix Template Library License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mtll"
+        ]
+    },
+    "src": "spdx"
+}

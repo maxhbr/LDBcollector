@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-koterov",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with Dmitry Koterov additions"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

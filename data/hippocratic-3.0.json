@@ -1,0 +1,10 @@
+{
+    "canonical": "hippocratic-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Hippocratic License v3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "broadcom-proprietary",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Proprietary",
+            "Broadcom Proprietary License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

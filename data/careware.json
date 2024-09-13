@@ -1,0 +1,11 @@
+{
+    "canonical": "careware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Careware",
+            "Careware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

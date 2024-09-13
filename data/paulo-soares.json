@@ -1,0 +1,10 @@
+{
+    "canonical": "paulo-soares",
+    "aliases": {
+        "scancode-licensedb": [
+            "Paulo Soares License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

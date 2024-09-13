@@ -1,0 +1,10 @@
+{
+    "canonical": "oracle-entitlement-05-15",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle Entitlement 5 plus 15"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

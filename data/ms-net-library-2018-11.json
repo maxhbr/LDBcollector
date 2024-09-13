@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-net-library-2018-11",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS .NET Library License 2018-11",
+            "Microsoft .NET Library License 2018-11"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

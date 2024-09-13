@@ -1,0 +1,10 @@
+{
+    "canonical": "qcad-exception-gpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "QCAD Exception to GPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

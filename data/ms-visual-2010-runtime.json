@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-visual-2010-runtime",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Visual C++ 2010 Runtime Libraries License",
+            "MS Visual C++ 2010 Runtime Libraries License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

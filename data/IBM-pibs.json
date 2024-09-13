@@ -1,0 +1,14 @@
+{
+    "canonical": "IBM-pibs",
+    "aliases": {
+        "spdx": [
+            "IBM PowerPC Initialization and Boot Software"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ibm-pibs",
+            "IBM PowerPC Software"
+        ]
+    },
+    "src": "spdx"
+}

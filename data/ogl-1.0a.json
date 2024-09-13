@@ -1,0 +1,11 @@
+{
+    "canonical": "ogl-1.0a",
+    "aliases": {
+        "scancode-licensedb": [
+            "Open Game License v1.0a",
+            "OGL 1.0a"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

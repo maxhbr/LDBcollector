@@ -1,0 +1,10 @@
+{
+    "canonical": "facebook-software-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "Facebook Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

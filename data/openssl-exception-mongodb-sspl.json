@@ -1,0 +1,11 @@
+{
+    "canonical": "openssl-exception-mongodb-sspl",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenSSL exception to the Server Side Public License",
+            "OpenSSL exception to SSPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

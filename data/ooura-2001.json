@@ -1,0 +1,10 @@
+{
+    "canonical": "ooura-2001",
+    "aliases": {
+        "scancode-licensedb": [
+            "OOURA License 2001"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

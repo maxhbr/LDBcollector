@@ -1,0 +1,10 @@
+{
+    "canonical": "opengroup-pl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Open Group Public License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

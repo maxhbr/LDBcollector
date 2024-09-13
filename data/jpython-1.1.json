@@ -1,0 +1,11 @@
+{
+    "canonical": "jpython-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "JPython 1.1",
+            "JPython License 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

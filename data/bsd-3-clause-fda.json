@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-3-clause-fda",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD 3-Clause FDA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "polyform-perimeter-1.0.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "PolyForm Perimeter License 1.0.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

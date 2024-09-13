@@ -1,0 +1,10 @@
+{
+    "canonical": "takuya-ooura",
+    "aliases": {
+        "scancode-licensedb": [
+            "Takuya OOURA License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

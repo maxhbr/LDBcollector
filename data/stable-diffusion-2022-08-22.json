@@ -1,0 +1,10 @@
+{
+    "canonical": "stable-diffusion-2022-08-22",
+    "aliases": {
+        "scancode-licensedb": [
+            "Stable Diffusion License 2022-08-22"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

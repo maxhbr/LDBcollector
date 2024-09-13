@@ -1,0 +1,10 @@
+{
+    "canonical": "xfree86-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "XFree86 License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

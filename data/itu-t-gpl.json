@@ -1,0 +1,11 @@
+{
+    "canonical": "itu-t-gpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "ITU-T Software Tools General Public License",
+            "ITU-T General Public License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

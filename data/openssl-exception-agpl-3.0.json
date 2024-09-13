@@ -1,0 +1,10 @@
+{
+    "canonical": "openssl-exception-agpl-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenSSL exception to AGPL 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

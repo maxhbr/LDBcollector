@@ -1,0 +1,15 @@
+{
+    "canonical": "RRDtool-FLOSS-exception-2.0",
+    "aliases": {
+        "spdx": [
+            "RRDtool FLOSS exception 2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "rrdtool-floss-exception-2.0",
+            "RRDtool FLOSS Exception to GPL 2.0",
+            "LicenseRef-scancode-rrdtool-floss-exception-2.0"
+        ]
+    },
+    "src": "spdx"
+}

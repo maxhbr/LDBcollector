@@ -1,0 +1,10 @@
+{
+    "canonical": "michael-barr",
+    "aliases": {
+        "scancode-licensedb": [
+            "Michael Barr License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

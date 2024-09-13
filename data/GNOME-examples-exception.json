@@ -1,0 +1,13 @@
+{
+    "canonical": "GNOME-examples-exception",
+    "aliases": {
+        "spdx": [
+            "GNOME examples exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gnome-examples-exception"
+        ]
+    },
+    "src": "spdx"
+}

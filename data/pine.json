@@ -1,0 +1,10 @@
+{
+    "canonical": "pine",
+    "aliases": {
+        "scancode-licensedb": [
+            "Pine License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

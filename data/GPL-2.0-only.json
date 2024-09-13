@@ -1,0 +1,17 @@
+{
+    "canonical": "GPL-2.0-only",
+    "aliases": {
+        "spdx": [
+            "GNU General Public License v2.0 only",
+            "GPL-2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-GPL-2.0",
+            "GPL 2.0",
+            "GNU General Public License 2.0",
+            "gpl-2.0"
+        ]
+    },
+    "src": "spdx"
+}

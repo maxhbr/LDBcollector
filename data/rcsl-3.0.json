@@ -1,0 +1,11 @@
+{
+    "canonical": "rcsl-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "RealNetworks Community Source License v3.0",
+            "RCSL R&D 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-bcl-11-06",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL 11 plus 6"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

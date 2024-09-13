@@ -1,0 +1,11 @@
+{
+    "canonical": "yahoo-browserplus-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Yahoo BrowserPlus EULA",
+            "Yahoo BrowserPlus End User License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

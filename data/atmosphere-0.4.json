@@ -1,0 +1,11 @@
+{
+    "canonical": "atmosphere-0.4",
+    "aliases": {
+        "scancode-licensedb": [
+            "Atmosphere Software License Version 0.4",
+            "atmosphere"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

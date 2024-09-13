@@ -1,0 +1,11 @@
+{
+    "canonical": "wifi-alliance",
+    "aliases": {
+        "scancode-licensedb": [
+            "Wi-Fi Alliance",
+            "Wi-Fi Alliance License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

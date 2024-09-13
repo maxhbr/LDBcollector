@@ -1,0 +1,10 @@
+{
+    "canonical": "public-domain-disclaimer",
+    "aliases": {
+        "scancode-licensedb": [
+            "Public Domain Disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

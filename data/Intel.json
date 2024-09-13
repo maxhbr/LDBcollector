@@ -1,0 +1,14 @@
+{
+    "canonical": "Intel",
+    "aliases": {
+        "spdx": [
+            "Intel Open Source License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Intel BSD - Export Control",
+            "intel-bsd-export-control"
+        ]
+    },
+    "src": "spdx"
+}

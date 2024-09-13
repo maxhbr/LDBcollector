@@ -1,0 +1,10 @@
+{
+    "canonical": "politepix-pl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Politepix Public License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

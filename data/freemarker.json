@@ -1,0 +1,10 @@
+{
+    "canonical": "freemarker",
+    "aliases": {
+        "scancode-licensedb": [
+            "FreeMarker License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

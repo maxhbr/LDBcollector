@@ -1,0 +1,10 @@
+{
+    "canonical": "nxp-warranty-disclaimer",
+    "aliases": {
+        "scancode-licensedb": [
+            "NXP Warranty Disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "fatfs",
+    "aliases": {
+        "scancode-licensedb": [
+            "FatFs License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

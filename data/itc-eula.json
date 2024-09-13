@@ -1,0 +1,11 @@
+{
+    "canonical": "itc-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "ITC End User License Agreement",
+            "ITC EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

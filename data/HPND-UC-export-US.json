@@ -1,0 +1,14 @@
+{
+    "canonical": "HPND-UC-export-US",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - University of California, US export warning"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "HPND UC US export warning",
+            "hpnd-uc-export-us"
+        ]
+    },
+    "src": "spdx"
+}

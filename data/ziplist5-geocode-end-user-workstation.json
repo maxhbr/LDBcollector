@@ -1,0 +1,12 @@
+{
+    "canonical": "ziplist5-geocode-end-user-workstation",
+    "aliases": {
+        "scancode-licensedb": [
+            "ZIPList5 Geocode End-User Workstation (Single-User) License Agreement",
+            "ZIPList5 Geocode End-User Workstation License",
+            "LicenseRef-scancode-ziplist5-geocode-end-user-workstation"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

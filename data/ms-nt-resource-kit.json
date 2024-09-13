@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-nt-resource-kit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft NT Resource Kit License",
+            "MS NT Resource Kit License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

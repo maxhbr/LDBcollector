@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-raspberry-pi",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Raspberry Pi Firmware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

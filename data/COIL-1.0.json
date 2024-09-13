@@ -1,0 +1,15 @@
+{
+    "canonical": "COIL-1.0",
+    "aliases": {
+        "spdx": [
+            "Copyfree Open Innovation License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "COIL-1.0",
+            "Copyfree Open Innovation License 1.0",
+            "coil-1.0"
+        ]
+    },
+    "src": "spdx"
+}

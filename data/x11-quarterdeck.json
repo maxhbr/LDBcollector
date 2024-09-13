@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-quarterdeck",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (Quarterdeck)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

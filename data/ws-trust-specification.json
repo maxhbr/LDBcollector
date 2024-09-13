@@ -1,0 +1,10 @@
+{
+    "canonical": "ws-trust-specification",
+    "aliases": {
+        "scancode-licensedb": [
+            "WS-Trust Specification"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

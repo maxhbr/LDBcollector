@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-original-muscle",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-Original-Muscle"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

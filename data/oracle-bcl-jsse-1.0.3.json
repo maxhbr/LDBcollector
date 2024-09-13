@@ -1,0 +1,10 @@
+{
+    "canonical": "oracle-bcl-jsse-1.0.3",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle BCL for JSSE 1.0.3 for CDC 1.0.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

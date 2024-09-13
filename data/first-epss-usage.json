@@ -1,0 +1,10 @@
+{
+    "canonical": "first-epss-usage",
+    "aliases": {
+        "scancode-licensedb": [
+            "FIRST EPSS Usage Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

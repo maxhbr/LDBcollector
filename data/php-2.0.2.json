@@ -1,0 +1,10 @@
+{
+    "canonical": "php-2.0.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "PHP License 2.0.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "wxwindows-u-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "wxWindows Unrestricted Licence 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

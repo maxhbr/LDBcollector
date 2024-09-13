@@ -1,0 +1,13 @@
+{
+    "canonical": "Caldera",
+    "aliases": {
+        "spdx": [
+            "Caldera License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "caldera"
+        ]
+    },
+    "src": "spdx"
+}

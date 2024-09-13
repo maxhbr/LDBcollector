@@ -1,0 +1,11 @@
+{
+    "canonical": "cc-gpl-2.0-pt",
+    "aliases": {
+        "scancode-licensedb": [
+            "Creative Commons Licen\u00e7a P\u00fablica Geral do GNU (GPL) [General Public License]",
+            "CC-GPL-2.0-PT"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

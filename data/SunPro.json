@@ -1,0 +1,15 @@
+{
+    "canonical": "SunPro",
+    "aliases": {
+        "spdx": [
+            "SunPro License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "SunPro Attribution License",
+            "LicenseRef-scancode-sunpro",
+            "sunpro"
+        ]
+    },
+    "src": "spdx"
+}

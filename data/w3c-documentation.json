@@ -1,0 +1,10 @@
+{
+    "canonical": "w3c-documentation",
+    "aliases": {
+        "scancode-licensedb": [
+            "W3C Documentation License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

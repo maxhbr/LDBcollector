@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-communications-api",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Communications API"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

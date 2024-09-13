@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-3-Clause-LBNL",
+    "aliases": {
+        "spdx": [
+            "Lawrence Berkeley National Labs BSD variant license"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "lbnl-bsd",
+            "LBNL BSD Variant"
+        ]
+    },
+    "src": "spdx"
+}

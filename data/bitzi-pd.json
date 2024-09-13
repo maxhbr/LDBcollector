@@ -1,0 +1,11 @@
+{
+    "canonical": "bitzi-pd",
+    "aliases": {
+        "scancode-licensedb": [
+            "Bitzi-PD",
+            "Bitzi Public Domain"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

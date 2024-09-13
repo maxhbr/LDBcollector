@@ -1,0 +1,10 @@
+{
+    "canonical": "wrox-download",
+    "aliases": {
+        "scancode-licensedb": [
+            "Wrox Download Terms and Conditions"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

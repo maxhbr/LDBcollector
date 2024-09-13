@@ -1,0 +1,10 @@
+{
+    "canonical": "oreilly-notice",
+    "aliases": {
+        "scancode-licensedb": [
+            "O'Reilly Code Sample Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

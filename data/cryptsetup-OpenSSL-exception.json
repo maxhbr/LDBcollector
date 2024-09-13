@@ -1,0 +1,15 @@
+{
+    "canonical": "cryptsetup-OpenSSL-exception",
+    "aliases": {
+        "spdx": [
+            "cryptsetup OpenSSL exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "OpenSSL exception to GPL 3.0 or later",
+            "LicenseRef-scancode-openssl-exception-gpl-3.0-plus",
+            "openssl-exception-gpl-3.0-plus"
+        ]
+    },
+    "src": "spdx"
+}

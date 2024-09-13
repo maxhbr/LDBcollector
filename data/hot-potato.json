@@ -1,0 +1,11 @@
+{
+    "canonical": "hot-potato",
+    "aliases": {
+        "scancode-licensedb": [
+            "Hot Potato",
+            "Hot Potato License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

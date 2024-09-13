@@ -1,0 +1,11 @@
+{
+    "canonical": "service-comp-arch",
+    "aliases": {
+        "scancode-licensedb": [
+            "Service Component Architecture License",
+            "License for the Service Component Architecture JavaDoc, Interface Definition files and XSD files"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

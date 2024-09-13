@@ -1,0 +1,13 @@
+{
+    "canonical": "QPL-1.0-INRIA-2004",
+    "aliases": {
+        "spdx": [
+            "Q Public License 1.0 - INRIA 2004 variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "qpl-1.0-inria-2004"
+        ]
+    },
+    "src": "spdx"
+}

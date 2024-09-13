@@ -1,0 +1,14 @@
+{
+    "canonical": "Entessa",
+    "aliases": {
+        "spdx": [
+            "Entessa Public License v1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "entessa-1.0",
+            "Entessa 1.0"
+        ]
+    },
+    "src": "spdx"
+}

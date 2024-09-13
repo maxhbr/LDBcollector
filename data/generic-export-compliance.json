@@ -1,0 +1,10 @@
+{
+    "canonical": "generic-export-compliance",
+    "aliases": {
+        "scancode-licensedb": [
+            "Generic Export Compliance Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

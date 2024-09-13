@@ -1,0 +1,10 @@
+{
+    "canonical": "embedthis-evaluation",
+    "aliases": {
+        "scancode-licensedb": [
+            "EmbedThis Evaluation License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "slint-commercial-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Slint Commercial License 2.0",
+            "Slint Software License Agreement Version 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

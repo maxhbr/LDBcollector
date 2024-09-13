@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-device-emulator-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Device Emulator 3.0",
+            "MS Device Emulator 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

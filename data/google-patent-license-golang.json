@@ -1,0 +1,10 @@
+{
+    "canonical": "google-patent-license-golang",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Patent License for Go"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

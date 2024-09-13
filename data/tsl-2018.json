@@ -1,0 +1,11 @@
+{
+    "canonical": "tsl-2018",
+    "aliases": {
+        "scancode-licensedb": [
+            "Timescale License Agreement",
+            "TSL Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

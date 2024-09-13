@@ -1,0 +1,10 @@
+{
+    "canonical": "jython",
+    "aliases": {
+        "scancode-licensedb": [
+            "Jython License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

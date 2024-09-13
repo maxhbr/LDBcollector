@@ -1,0 +1,10 @@
+{
+    "canonical": "nucleusicons-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "NucleusIcons EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

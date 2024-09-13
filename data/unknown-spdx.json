@@ -1,0 +1,11 @@
+{
+    "canonical": "unknown-spdx",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unknown SPDX license detected but not recognized",
+            "unknown SPDX"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "slf4j-2008",
+    "aliases": {
+        "scancode-licensedb": [
+            "SLF4J License 2008"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

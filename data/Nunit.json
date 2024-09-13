@@ -1,0 +1,10 @@
+{
+    "canonical": "Nunit",
+    "aliases": {
+        "spdx": [
+            "Nunit License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

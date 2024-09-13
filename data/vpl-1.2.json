@@ -1,0 +1,11 @@
+{
+    "canonical": "vpl-1.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "VPL 1.2",
+            "Vtiger Public License 1.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

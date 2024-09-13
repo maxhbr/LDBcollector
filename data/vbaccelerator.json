@@ -1,0 +1,10 @@
+{
+    "canonical": "vbaccelerator",
+    "aliases": {
+        "scancode-licensedb": [
+            "vbAccelerator Distribution Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

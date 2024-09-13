@@ -1,0 +1,11 @@
+{
+    "canonical": "hfoil-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "HFOILv1.0",
+            "Hugging Face Optimized Inference License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "flex2sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe Flex 2.0.1 SDK EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

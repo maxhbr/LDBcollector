@@ -1,0 +1,13 @@
+{
+    "canonical": "BSD-Protection",
+    "aliases": {
+        "spdx": [
+            "BSD Protection License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsd-protection"
+        ]
+    },
+    "src": "spdx"
+}

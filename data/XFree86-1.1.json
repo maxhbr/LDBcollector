@@ -1,0 +1,13 @@
+{
+    "canonical": "XFree86-1.1",
+    "aliases": {
+        "spdx": [
+            "XFree86 License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "xfree86-1.1"
+        ]
+    },
+    "src": "spdx"
+}

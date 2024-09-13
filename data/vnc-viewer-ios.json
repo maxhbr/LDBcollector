@@ -1,0 +1,11 @@
+{
+    "canonical": "vnc-viewer-ios",
+    "aliases": {
+        "scancode-licensedb": [
+            "VNCViewer iOS EULA",
+            "VNCViewer for iOS EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "crcalc",
+    "aliases": {
+        "scancode-licensedb": [
+            "CRCalc license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

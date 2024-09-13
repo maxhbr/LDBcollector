@@ -1,0 +1,10 @@
+{
+    "canonical": "ekioh",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ekioh License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

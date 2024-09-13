@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-windows-sdk-win10-net-6",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Windows SDK for Windows 10 and.NET Framework 6",
+            "MS Windows SDK Windows10 .NET Framework 6"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

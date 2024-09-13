@@ -1,0 +1,10 @@
+{
+    "canonical": "aladdin-md5",
+    "aliases": {
+        "scancode-licensedb": [
+            "Aladdin MD5 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

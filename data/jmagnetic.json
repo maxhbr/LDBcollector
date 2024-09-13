@@ -1,0 +1,10 @@
+{
+    "canonical": "jmagnetic",
+    "aliases": {
+        "scancode-licensedb": [
+            "JMagnetic License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

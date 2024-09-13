@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-entitlement-03-15",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Entitlement 3 plus 15"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

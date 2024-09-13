@@ -1,0 +1,11 @@
+{
+    "canonical": "tenable-nessus",
+    "aliases": {
+        "scancode-licensedb": [
+            "Tenable Nessus License",
+            "Tenable Nessus Software License and Subscription Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

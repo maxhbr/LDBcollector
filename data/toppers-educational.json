@@ -1,0 +1,11 @@
+{
+    "canonical": "toppers-educational",
+    "aliases": {
+        "scancode-licensedb": [
+            "TOPPERS Educational",
+            "TOPPERS Educational contents license agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

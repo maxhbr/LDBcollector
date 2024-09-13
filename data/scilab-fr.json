@@ -1,0 +1,11 @@
+{
+    "canonical": "scilab-fr",
+    "aliases": {
+        "scancode-licensedb": [
+            "Licence SCILAB",
+            "SCILAB FR"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

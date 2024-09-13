@@ -1,0 +1,25 @@
+{
+    "canonical": "BSD-3-Clause",
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause \"New\" or \"Revised\" License"
+        ],
+        "custom": [
+            "BSD 3-Clause",
+            "BSD 3-Clause License",
+            "BSD 3-Clause Revised",
+            "BSD-3-Clause Revised",
+            "BSD 3-Clause New",
+            "BSD-3-Clause New",
+            "BSD License 3-Clause",
+            "New BSD License",
+            "Modified BSD License",
+            "3-Clause BSD License"
+        ],
+        "scancode-licensedb": [
+            "bsd-new",
+            "LicenseRef-scancode-libzip"
+        ]
+    },
+    "src": "spdx"
+}

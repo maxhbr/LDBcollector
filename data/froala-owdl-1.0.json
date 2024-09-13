@@ -1,0 +1,10 @@
+{
+    "canonical": "froala-owdl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Froala Open Web Design License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "cclrc",
+    "aliases": {
+        "scancode-licensedb": [
+            "CCLRC License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

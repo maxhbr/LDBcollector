@@ -1,0 +1,10 @@
+{
+    "canonical": "d-fsl-1.0-en",
+    "aliases": {
+        "scancode-licensedb": [
+            "German Free Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

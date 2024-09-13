@@ -1,0 +1,11 @@
+{
+    "canonical": "aptana-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Aptana 1.0",
+            "Aptana Public License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

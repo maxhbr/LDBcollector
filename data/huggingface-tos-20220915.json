@@ -1,0 +1,11 @@
+{
+    "canonical": "huggingface-tos-20220915",
+    "aliases": {
+        "scancode-licensedb": [
+            "HuggingFace Terms of Service 2022-09-15",
+            "HuggingFace TOS 2022-09-15"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

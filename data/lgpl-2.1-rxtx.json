@@ -1,0 +1,10 @@
+{
+    "canonical": "lgpl-2.1-rxtx",
+    "aliases": {
+        "scancode-licensedb": [
+            "LGPL 2.1 with RXTX exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "sencha-commercial-3.9",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sencha Software License Agreement v3.9",
+            "Sencha Software License Agreement 3.9"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "accellera-systemc",
+    "aliases": {
+        "scancode-licensedb": [
+            "SystemC Open Source License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "cc-sa-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Creative Commons ShareAlike License 1.0",
+            "CC-SA-1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

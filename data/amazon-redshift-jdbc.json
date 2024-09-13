@@ -1,0 +1,10 @@
+{
+    "canonical": "amazon-redshift-jdbc",
+    "aliases": {
+        "scancode-licensedb": [
+            "Amazon Redshift JDBC Driver License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

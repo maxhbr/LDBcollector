@@ -1,0 +1,10 @@
+{
+    "canonical": "ntpl-origin",
+    "aliases": {
+        "scancode-licensedb": [
+            "NTP Origin License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "reading-godiva-2010",
+    "aliases": {
+        "scancode-licensedb": [
+            "Reading Godiva License 2010"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

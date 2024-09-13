@@ -1,0 +1,10 @@
+{
+    "canonical": "dropbear",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dropbear License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

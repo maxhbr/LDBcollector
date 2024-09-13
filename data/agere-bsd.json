@@ -1,0 +1,11 @@
+{
+    "canonical": "agere-bsd",
+    "aliases": {
+        "scancode-licensedb": [
+            "Agere BSD",
+            "Agere Systems BSD Software license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "dr-john-maddock",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dr John Maddock License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

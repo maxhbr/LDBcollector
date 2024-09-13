@@ -1,0 +1,10 @@
+{
+    "canonical": "scintilla",
+    "aliases": {
+        "scancode-licensedb": [
+            "Scintilla License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "ntlm",
+    "aliases": {
+        "scancode-licensedb": [
+            "NTLM License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "intel-microcode",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Microcode License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

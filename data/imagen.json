@@ -1,0 +1,10 @@
+{
+    "canonical": "imagen",
+    "aliases": {
+        "scancode-licensedb": [
+            "IMAGEN License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

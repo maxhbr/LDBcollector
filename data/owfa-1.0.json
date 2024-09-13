@@ -1,0 +1,10 @@
+{
+    "canonical": "owfa-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OWFa 1.0 - Patent and Copyright Grants"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

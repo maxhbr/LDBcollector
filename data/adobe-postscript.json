@@ -1,0 +1,10 @@
+{
+    "canonical": "adobe-postscript",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe PostScript License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

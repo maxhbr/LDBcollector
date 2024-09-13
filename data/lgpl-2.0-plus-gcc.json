@@ -1,0 +1,11 @@
+{
+    "canonical": "lgpl-2.0-plus-gcc",
+    "aliases": {
+        "scancode-licensedb": [
+            "LGPL 2.0 or later with GCC Runtime Library exception",
+            "LGPL 2.0 or later with GCC exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

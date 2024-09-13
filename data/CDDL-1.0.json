@@ -1,0 +1,29 @@
+{
+    "canonical": "CDDL-1.0",
+    "aliases": {
+        "spdx": [
+            "Common Development and Distribution License 1.0"
+        ],
+        "custom": [
+            "Common Development and Distribution License v1.0",
+            "CDDL License 1.0",
+            "CDDL v1.0",
+            "CDDL License",
+            "Common Development and Distribution License",
+            "CDDL 1.0 License",
+            "CDDL Version 1.0",
+            "CDDL 1.0 (CDDL-1.0)",
+            "CDDL-1.0 License",
+            "CDDL (1.0)",
+            "Common Development License 1.0",
+            "CDDL 1.0 Open Source License",
+            "CDDL Version 1.0 License",
+            "Common Development and Distribution License Version 1.0"
+        ],
+        "scancode-licensedb": [
+            "CDDL 1.0",
+            "cddl-1.0"
+        ]
+    },
+    "src": "spdx"
+}

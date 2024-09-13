@@ -1,0 +1,15 @@
+{
+    "canonical": "OGL-Canada-2.0",
+    "aliases": {
+        "spdx": [
+            "Open Government Licence - Canada"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Open Government Licence Canada 2.0",
+            "can-ogl-2.0-en",
+            "OGL Canada 2.0"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "OCCT-exception-1.0",
+    "aliases": {
+        "spdx": [
+            "Open CASCADE Exception 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Open CASCADE Exception to LGPL 2.1",
+            "occt-exception-1.0"
+        ]
+    },
+    "src": "spdx"
+}

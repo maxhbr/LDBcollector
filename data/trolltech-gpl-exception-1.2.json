@@ -1,0 +1,11 @@
+{
+    "canonical": "trolltech-gpl-exception-1.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "Trolltech GPL Exception version v1.2",
+            "Trolltech GPL Exception 1.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

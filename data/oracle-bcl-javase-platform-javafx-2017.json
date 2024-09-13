@@ -1,0 +1,12 @@
+{
+    "canonical": "oracle-bcl-javase-platform-javafx-2017",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle BCL for Java SE Platform Products and JavaFX 2017 Restricted",
+            "LicenseRef-scancode-oracle-bcl-javase-platform-javafx-2017",
+            "Oracle BCL for Java SE and JavaFX 2017 Restricted"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

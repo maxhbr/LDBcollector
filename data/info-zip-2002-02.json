@@ -1,0 +1,10 @@
+{
+    "canonical": "info-zip-2002-02",
+    "aliases": {
+        "scancode-licensedb": [
+            "Info-Zip License 2002-02"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

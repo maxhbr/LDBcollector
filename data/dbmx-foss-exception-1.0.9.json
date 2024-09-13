@@ -1,0 +1,10 @@
+{
+    "canonical": "dbmx-foss-exception-1.0.9",
+    "aliases": {
+        "scancode-licensedb": [
+            "Kyoto Products FOSS License Exception v1.0.9"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

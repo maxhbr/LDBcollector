@@ -1,0 +1,10 @@
+{
+    "canonical": "script-asylum",
+    "aliases": {
+        "scancode-licensedb": [
+            "Script Asylum License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

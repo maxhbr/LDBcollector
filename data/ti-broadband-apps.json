@@ -1,0 +1,11 @@
+{
+    "canonical": "ti-broadband-apps",
+    "aliases": {
+        "scancode-licensedb": [
+            "Texas Instruments Broadband Applications License",
+            "TI Broadband Applications License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

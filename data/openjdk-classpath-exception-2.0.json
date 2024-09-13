@@ -1,0 +1,11 @@
+{
+    "canonical": "openjdk-classpath-exception-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-openjdk-classpath-exception-2.0",
+            "OpenJDK Classpath exception to GPL 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

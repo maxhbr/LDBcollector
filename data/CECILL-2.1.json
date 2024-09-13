@@ -1,0 +1,14 @@
+{
+    "canonical": "CECILL-2.1",
+    "aliases": {
+        "spdx": [
+            "CeCILL Free Software License Agreement v2.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "CeCILL 2.1",
+            "cecill-2.1"
+        ]
+    },
+    "src": "spdx"
+}

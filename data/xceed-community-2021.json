@@ -1,0 +1,10 @@
+{
+    "canonical": "xceed-community-2021",
+    "aliases": {
+        "scancode-licensedb": [
+            "Xceed Community License 2021"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

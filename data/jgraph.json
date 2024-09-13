@@ -1,0 +1,10 @@
+{
+    "canonical": "jgraph",
+    "aliases": {
+        "scancode-licensedb": [
+            "JGraph License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

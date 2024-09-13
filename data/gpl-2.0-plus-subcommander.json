@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-plus-subcommander",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 or later with Subcommander exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

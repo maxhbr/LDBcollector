@@ -1,0 +1,11 @@
+{
+    "canonical": "ohdl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OHDL-1.0",
+            "Open Hardware Description License Version 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

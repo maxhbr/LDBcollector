@@ -1,0 +1,13 @@
+{
+    "canonical": "CC-BY-SA-2.1-JP",
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution Share Alike 2.1 Japan"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cc-by-sa-2.1-jp"
+        ]
+    },
+    "src": "spdx"
+}

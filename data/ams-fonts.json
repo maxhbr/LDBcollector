@@ -1,0 +1,10 @@
+{
+    "canonical": "ams-fonts",
+    "aliases": {
+        "scancode-licensedb": [
+            "AMSFonts license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

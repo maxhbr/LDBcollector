@@ -1,0 +1,10 @@
+{
+    "canonical": "addthis-mobile-sdk-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "AddThis Mobile Application SDK License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

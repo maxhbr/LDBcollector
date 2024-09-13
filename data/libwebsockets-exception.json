@@ -1,0 +1,10 @@
+{
+    "canonical": "libwebsockets-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "libwebsockets exception to LGPL 2.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

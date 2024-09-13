@@ -1,0 +1,13 @@
+{
+    "canonical": "copyleft-next-0.3.1",
+    "aliases": {
+        "spdx": [
+            "copyleft-next 0.3.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "copyleft-next-0.3.1"
+        ]
+    },
+    "src": "spdx"
+}

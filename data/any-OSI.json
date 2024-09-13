@@ -1,0 +1,13 @@
+{
+    "canonical": "any-OSI",
+    "aliases": {
+        "spdx": [
+            "Any OSI License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "any-osi"
+        ]
+    },
+    "src": "spdx"
+}

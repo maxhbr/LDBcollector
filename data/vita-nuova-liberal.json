@@ -1,0 +1,10 @@
+{
+    "canonical": "vita-nuova-liberal",
+    "aliases": {
+        "scancode-licensedb": [
+            "Vita Nuova Liberal Source License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

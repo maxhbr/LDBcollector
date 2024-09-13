@@ -1,0 +1,10 @@
+{
+    "canonical": "nvidia-isaac-eula-2019.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "NVIDIA ISAAC EULA v2019.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

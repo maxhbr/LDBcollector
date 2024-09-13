@@ -1,0 +1,13 @@
+{
+    "canonical": "LZMA-SDK-9.11-to-9.20",
+    "aliases": {
+        "spdx": [
+            "LZMA SDK License (versions 9.11 to 9.20)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "lzma-sdk-9.11-to-9.20"
+        ]
+    },
+    "src": "spdx"
+}

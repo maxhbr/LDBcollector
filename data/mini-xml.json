@@ -1,0 +1,10 @@
+{
+    "canonical": "mini-xml",
+    "aliases": {
+        "scancode-licensedb": [
+            "LGPL 2.0 with Mini-XML exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

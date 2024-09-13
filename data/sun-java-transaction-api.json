@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-java-transaction-api",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Java Transaction API License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

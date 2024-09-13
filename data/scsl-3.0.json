@@ -1,0 +1,10 @@
+{
+    "canonical": "scsl-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Community Source License 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

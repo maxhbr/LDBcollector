@@ -1,0 +1,10 @@
+{
+    "canonical": "gatling-highcharts",
+    "aliases": {
+        "scancode-licensedb": [
+            "Gatling-Highcharts License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

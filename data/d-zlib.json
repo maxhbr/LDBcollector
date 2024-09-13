@@ -1,0 +1,11 @@
+{
+    "canonical": "d-zlib",
+    "aliases": {
+        "scancode-licensedb": [
+            "D Zlib",
+            "Digital Mars Zlib"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

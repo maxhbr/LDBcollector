@@ -1,0 +1,11 @@
+{
+    "canonical": "osgi-spec-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OSGi Specification License 2.0",
+            "OSGi Specification License Version 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

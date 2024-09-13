@@ -1,0 +1,14 @@
+{
+    "canonical": "CERN-OHL-W-2.0",
+    "aliases": {
+        "spdx": [
+            "CERN Open Hardware Licence Version 2 - Weakly Reciprocal"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "CERN-OHL-W-2.0",
+            "cern-ohl-w-2.0"
+        ]
+    },
+    "src": "spdx"
+}

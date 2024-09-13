@@ -1,0 +1,10 @@
+{
+    "canonical": "pd-programming",
+    "aliases": {
+        "scancode-licensedb": [
+            "PD'Programming License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

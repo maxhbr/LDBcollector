@@ -1,0 +1,10 @@
+{
+    "canonical": "unicode",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unicode Inc License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

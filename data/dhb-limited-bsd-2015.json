@@ -1,0 +1,11 @@
+{
+    "canonical": "dhb-limited-bsd-2015",
+    "aliases": {
+        "scancode-licensedb": [
+            "DHB Limited BSD License 2015",
+            "David H. Bailey Limited BSD License 2015"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

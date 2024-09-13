@@ -1,0 +1,11 @@
+{
+    "canonical": "openorb-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenORB Community Software License Version 1.0",
+            "OpenORB Community License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

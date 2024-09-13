@@ -1,0 +1,10 @@
+{
+    "canonical": "stax",
+    "aliases": {
+        "scancode-licensedb": [
+            "Stax License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

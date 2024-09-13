@@ -1,0 +1,10 @@
+{
+    "canonical": "minecraft-mod",
+    "aliases": {
+        "scancode-licensedb": [
+            "Minecraft Mod License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

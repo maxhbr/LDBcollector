@@ -1,0 +1,13 @@
+{
+    "canonical": "ulem",
+    "aliases": {
+        "spdx": [
+            "ulem License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ulem"
+        ]
+    },
+    "src": "spdx"
+}

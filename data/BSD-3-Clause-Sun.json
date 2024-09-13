@@ -1,0 +1,15 @@
+{
+    "canonical": "BSD-3-Clause-Sun",
+    "aliases": {
+        "spdx": [
+            "BSD 3-Clause Sun Microsystems"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "BSD 3-Clause Sun",
+            "LicenseRef-scancode-bsd-3-clause-sun",
+            "bsd-3-clause-sun"
+        ]
+    },
+    "src": "spdx"
+}

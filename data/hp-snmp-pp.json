@@ -1,0 +1,10 @@
+{
+    "canonical": "hp-snmp-pp",
+    "aliases": {
+        "scancode-licensedb": [
+            "SNMP++ License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "stlport-4.5",
+    "aliases": {
+        "scancode-licensedb": [
+            "STLport License v4.5",
+            "STLport License 4.5"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

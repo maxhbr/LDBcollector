@@ -1,0 +1,13 @@
+{
+    "canonical": "Symlinks",
+    "aliases": {
+        "spdx": [
+            "Symlinks License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "symlinks"
+        ]
+    },
+    "src": "spdx"
+}

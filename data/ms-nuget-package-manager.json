@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-nuget-package-manager",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft NuGet-Based Package Manager License",
+            "MS NuGet-Based Package Manager License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

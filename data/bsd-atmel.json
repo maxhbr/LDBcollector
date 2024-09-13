@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-atmel",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD Atmel License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

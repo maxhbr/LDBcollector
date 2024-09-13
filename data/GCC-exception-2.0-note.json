@@ -1,0 +1,14 @@
+{
+    "canonical": "GCC-exception-2.0-note",
+    "aliases": {
+        "spdx": [
+            "GCC    Runtime Library exception 2.0 - note variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gcc-exception-2.0-note",
+            "GCC Runtime Library exception 2.0 - note variant"
+        ]
+    },
+    "src": "spdx"
+}

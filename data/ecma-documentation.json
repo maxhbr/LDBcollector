@@ -1,0 +1,10 @@
+{
+    "canonical": "ecma-documentation",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ecma Documentation License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

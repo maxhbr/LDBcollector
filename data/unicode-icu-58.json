@@ -1,0 +1,10 @@
+{
+    "canonical": "unicode-icu-58",
+    "aliases": {
+        "scancode-licensedb": [
+            "ICU License 58 and later"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

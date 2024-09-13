@@ -1,0 +1,11 @@
+{
+    "canonical": "adcolony-tos-2022",
+    "aliases": {
+        "scancode-licensedb": [
+            "AdColony TOS for Publishers 2022",
+            "AdColony Terms of Service for Publishers 2022"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

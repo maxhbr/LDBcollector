@@ -1,0 +1,10 @@
+{
+    "canonical": "kalle-kaukonen",
+    "aliases": {
+        "scancode-licensedb": [
+            "Kalle Kaukonen License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

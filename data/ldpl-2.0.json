@@ -1,0 +1,11 @@
+{
+    "canonical": "ldpl-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Linux Documentation Project License (LDPL) v2.0",
+            "LDPL-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

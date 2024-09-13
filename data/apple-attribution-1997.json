@@ -1,0 +1,11 @@
+{
+    "canonical": "apple-attribution-1997",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apple Attribution License 1997",
+            "Apple Attribution 1997"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

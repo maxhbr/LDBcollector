@@ -1,0 +1,13 @@
+{
+    "canonical": "xinetd",
+    "aliases": {
+        "spdx": [
+            "xinetd License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "xinetd"
+        ]
+    },
+    "src": "spdx"
+}

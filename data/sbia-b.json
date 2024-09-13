@@ -1,0 +1,11 @@
+{
+    "canonical": "sbia-b",
+    "aliases": {
+        "scancode-licensedb": [
+            "SBIA Part B",
+            "SBIA Software license - Downloading Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

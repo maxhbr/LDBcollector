@@ -1,0 +1,13 @@
+{
+    "canonical": "Glulxe",
+    "aliases": {
+        "spdx": [
+            "Glulxe License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "glulxe"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "qt-kde-linking-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Qt Linking Exception to GPL 2.0 or later"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

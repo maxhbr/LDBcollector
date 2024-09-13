@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-stanford",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (Stanford University)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

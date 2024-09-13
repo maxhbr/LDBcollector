@@ -1,0 +1,10 @@
+{
+    "canonical": "asn1",
+    "aliases": {
+        "scancode-licensedb": [
+            "ASN.1 Object Dumping Code License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

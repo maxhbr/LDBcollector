@@ -1,0 +1,11 @@
+{
+    "canonical": "owf-cla-1.0-copyright-patent",
+    "aliases": {
+        "scancode-licensedb": [
+            "OWF CLA 1.0 - Copyright and Patent",
+            "OWF Contributor License Agreement 1.0 - Copyright and Patent"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

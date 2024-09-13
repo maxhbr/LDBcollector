@@ -1,0 +1,13 @@
+{
+    "canonical": "AdaCore-doc",
+    "aliases": {
+        "spdx": [
+            "AdaCore Doc License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "adacore-doc"
+        ]
+    },
+    "src": "spdx"
+}

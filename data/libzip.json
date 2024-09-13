@@ -1,0 +1,11 @@
+{
+    "canonical": "libzip",
+    "aliases": {
+        "scancode-licensedb": [
+            "NiH libzip License",
+            "libzip License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

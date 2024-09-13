@@ -1,0 +1,16 @@
+{
+    "canonical": "LLGPL",
+    "aliases": {
+        "spdx": [
+            "LLGPL Preamble"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LLGPL",
+            "Lisp Lesser General Public License (LLPGL)",
+            "LicenseRef-scancode-llgpl",
+            "llgpl"
+        ]
+    },
+    "src": "spdx"
+}

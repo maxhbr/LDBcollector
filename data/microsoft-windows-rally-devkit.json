@@ -1,0 +1,11 @@
+{
+    "canonical": "microsoft-windows-rally-devkit",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Windows Rally Development Kit License",
+            "Microsoft Windows Rally Development Kit License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

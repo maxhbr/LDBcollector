@@ -1,0 +1,10 @@
+{
+    "canonical": "opencarp-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "openCARP v1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

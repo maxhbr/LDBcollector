@@ -1,0 +1,10 @@
+{
+    "canonical": "nilsson-historical",
+    "aliases": {
+        "scancode-licensedb": [
+            "Nilsson Historical License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

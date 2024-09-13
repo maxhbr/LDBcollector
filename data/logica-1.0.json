@@ -1,0 +1,11 @@
+{
+    "canonical": "logica-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Logica OSL 1.0",
+            "Logica Open Source License v1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

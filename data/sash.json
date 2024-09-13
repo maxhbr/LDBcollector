@@ -1,0 +1,10 @@
+{
+    "canonical": "sash",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sash Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

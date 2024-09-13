@@ -1,0 +1,15 @@
+{
+    "canonical": "ECL-1.0",
+    "aliases": {
+        "spdx": [
+            "Educational Community License v1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ecl-1.0",
+            "ECL 1.0",
+            "Educational Community License 1.0"
+        ]
+    },
+    "src": "spdx"
+}

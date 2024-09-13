@@ -1,0 +1,10 @@
+{
+    "canonical": "jam-stapl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Jam STAPL Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

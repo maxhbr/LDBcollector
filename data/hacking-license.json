@@ -1,0 +1,10 @@
+{
+    "canonical": "hacking-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "Hacking License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

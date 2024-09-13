@@ -1,0 +1,11 @@
+{
+    "canonical": "kevan-stannard",
+    "aliases": {
+        "scancode-licensedb": [
+            "Kevan Stannard Free Software License",
+            "Kevan Stannard License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

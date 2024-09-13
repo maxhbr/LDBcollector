@@ -1,0 +1,10 @@
+{
+    "canonical": "openssl-exception-lgpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenSSL exception to LGPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

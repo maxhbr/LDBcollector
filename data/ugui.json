@@ -1,0 +1,10 @@
+{
+    "canonical": "ugui",
+    "aliases": {
+        "scancode-licensedb": [
+            "UGUI License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

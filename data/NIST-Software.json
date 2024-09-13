@@ -1,0 +1,13 @@
+{
+    "canonical": "NIST-Software",
+    "aliases": {
+        "spdx": [
+            "NIST Software License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "nist-software"
+        ]
+    },
+    "src": "spdx"
+}

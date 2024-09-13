@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-no-high-risk-activities",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun No High Risk Activities License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

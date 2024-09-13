@@ -1,0 +1,10 @@
+{
+    "canonical": "numerical-recipes-notice",
+    "aliases": {
+        "scancode-licensedb": [
+            "Numerical Recipes Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

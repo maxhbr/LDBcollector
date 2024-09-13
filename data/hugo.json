@@ -1,0 +1,10 @@
+{
+    "canonical": "hugo",
+    "aliases": {
+        "scancode-licensedb": [
+            "Hugo License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

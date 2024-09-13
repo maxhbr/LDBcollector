@@ -1,0 +1,10 @@
+{
+    "canonical": "yahoo-messenger-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Yahoo Messenger EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

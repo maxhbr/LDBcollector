@@ -1,0 +1,11 @@
+{
+    "canonical": "opera-widget-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Opera Widget License v1.0",
+            "Opera Widget License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

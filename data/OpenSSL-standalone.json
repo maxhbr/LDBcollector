@@ -1,0 +1,10 @@
+{
+    "canonical": "OpenSSL-standalone",
+    "aliases": {
+        "spdx": [
+            "OpenSSL License - standalone"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-sysinternals-sla",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Sysinternals Software License Terms",
+            "MS Sysinternals SLA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-prop-non-commercial",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Proprietary Non-Commercial License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "CMU-Mach-nodoc",
+    "aliases": {
+        "spdx": [
+            "CMU    Mach - no notices-in-documentation variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "NRL permission",
+            "LicenseRef-scancode-nrl-permission",
+            "nrl-permission"
+        ]
+    },
+    "src": "spdx"
+}

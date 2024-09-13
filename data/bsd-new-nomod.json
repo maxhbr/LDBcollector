@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-new-nomod",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-3-Clause without notice modification"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

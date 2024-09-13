@@ -1,0 +1,14 @@
+{
+    "canonical": "Barr",
+    "aliases": {
+        "spdx": [
+            "Barr License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Barr TeX License",
+            "barr-tex"
+        ]
+    },
+    "src": "spdx"
+}

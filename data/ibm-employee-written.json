@@ -1,0 +1,11 @@
+{
+    "canonical": "ibm-employee-written",
+    "aliases": {
+        "scancode-licensedb": [
+            "IBM Employee-Written Software License",
+            "IBM License Agreement for IBM Employee-Written Software"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

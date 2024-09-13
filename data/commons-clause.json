@@ -1,0 +1,11 @@
+{
+    "canonical": "commons-clause",
+    "aliases": {
+        "scancode-licensedb": [
+            "Commons Clause",
+            "Commons Clause License Condition v1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

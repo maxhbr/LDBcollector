@@ -1,0 +1,14 @@
+{
+    "canonical": "OSL-1.1",
+    "aliases": {
+        "spdx": [
+            "Open Software License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "OSL 1.1",
+            "osl-1.1"
+        ]
+    },
+    "src": "spdx"
+}

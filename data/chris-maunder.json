@@ -1,0 +1,10 @@
+{
+    "canonical": "chris-maunder",
+    "aliases": {
+        "scancode-licensedb": [
+            "Chris Maunder License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

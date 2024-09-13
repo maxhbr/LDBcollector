@@ -1,0 +1,10 @@
+{
+    "canonical": "punycode",
+    "aliases": {
+        "scancode-licensedb": [
+            "Punycode License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

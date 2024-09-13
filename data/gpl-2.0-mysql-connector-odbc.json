@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-mysql-connector-odbc",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with MySQL Connector ODBC exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

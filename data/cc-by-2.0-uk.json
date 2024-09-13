@@ -1,0 +1,11 @@
+{
+    "canonical": "cc-by-2.0-uk",
+    "aliases": {
+        "scancode-licensedb": [
+            "CC-BY-2.0-UK",
+            "Creative Commons Attribution License 2.0 UK"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

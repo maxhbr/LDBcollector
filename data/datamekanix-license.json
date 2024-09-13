@@ -1,0 +1,10 @@
+{
+    "canonical": "datamekanix-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "DataMekanix License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

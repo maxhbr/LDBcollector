@@ -1,0 +1,14 @@
+{
+    "canonical": "NCSA",
+    "aliases": {
+        "spdx": [
+            "University of Illinois/NCSA Open Source License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "uoi-ncsa",
+            "NCSA Open Source License"
+        ]
+    },
+    "src": "spdx"
+}

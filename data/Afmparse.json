@@ -1,0 +1,14 @@
+{
+    "canonical": "Afmparse",
+    "aliases": {
+        "spdx": [
+            "Afmparse License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "afmparse",
+            "afmparse License"
+        ]
+    },
+    "src": "spdx"
+}

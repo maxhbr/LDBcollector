@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-opus-patent-2012",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Opus Patent Terms 2012",
+            "MS Opus Patent Terms 2012"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

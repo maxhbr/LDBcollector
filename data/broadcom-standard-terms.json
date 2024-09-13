@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-standard-terms",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Standard Terms"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "dual-bsd-gpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dual BSD-GPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

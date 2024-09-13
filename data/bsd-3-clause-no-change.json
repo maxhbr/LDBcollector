@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-3-clause-no-change",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD 3-Clause No Change"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

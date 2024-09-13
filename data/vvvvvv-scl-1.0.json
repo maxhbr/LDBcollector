@@ -1,0 +1,10 @@
+{
+    "canonical": "vvvvvv-scl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "VVVVVV Source Code License v1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

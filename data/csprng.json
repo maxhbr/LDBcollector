@@ -1,0 +1,10 @@
+{
+    "canonical": "csprng",
+    "aliases": {
+        "scancode-licensedb": [
+            "CSPRNG"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

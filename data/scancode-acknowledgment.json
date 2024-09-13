@@ -1,0 +1,11 @@
+{
+    "canonical": "scancode-acknowledgment",
+    "aliases": {
+        "scancode-licensedb": [
+            "ScanCode acknowledgment",
+            "ScanCode generated data acknowledgment"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

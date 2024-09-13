@@ -1,0 +1,10 @@
+{
+    "canonical": "ryszard-szopa",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ryszard Szopa License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

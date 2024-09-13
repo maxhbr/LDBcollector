@@ -1,0 +1,11 @@
+{
+    "canonical": "independent-module-linking-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-independent-module-linking-exception",
+            "Independent Module Linking Exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

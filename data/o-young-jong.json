@@ -1,0 +1,10 @@
+{
+    "canonical": "o-young-jong",
+    "aliases": {
+        "scancode-licensedb": [
+            "O Young Jong License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

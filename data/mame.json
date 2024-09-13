@@ -1,0 +1,10 @@
+{
+    "canonical": "mame",
+    "aliases": {
+        "scancode-licensedb": [
+            "MAME license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

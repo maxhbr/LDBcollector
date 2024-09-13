@@ -1,0 +1,10 @@
+{
+    "canonical": "zveno-research",
+    "aliases": {
+        "scancode-licensedb": [
+            "Zveno Research License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "artistic-dist-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Artistic License for dist 1.0",
+            "Artistic dist 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

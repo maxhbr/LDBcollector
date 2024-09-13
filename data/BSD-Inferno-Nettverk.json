@@ -1,0 +1,13 @@
+{
+    "canonical": "BSD-Inferno-Nettverk",
+    "aliases": {
+        "spdx": [
+            "BSD-Inferno-Nettverk"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsd-inferno-nettverk"
+        ]
+    },
+    "src": "spdx"
+}

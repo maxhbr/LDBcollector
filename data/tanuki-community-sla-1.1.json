@@ -1,0 +1,11 @@
+{
+    "canonical": "tanuki-community-sla-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Tanuki Community SLA 1.1",
+            "Tanuki Community Software License Agreement 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "dual-commercial-gpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dual Commercial-GPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "HaskellReport",
+    "aliases": {
+        "spdx": [
+            "Haskell Language Report License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "haskell-report",
+            "Haskell Report License"
+        ]
+    },
+    "src": "spdx"
+}

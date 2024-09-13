@@ -1,0 +1,10 @@
+{
+    "canonical": "bruno-podetti",
+    "aliases": {
+        "scancode-licensedb": [
+            "Bruno Podetti License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

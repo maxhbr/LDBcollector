@@ -1,0 +1,10 @@
+{
+    "canonical": "llama-2-license-2023",
+    "aliases": {
+        "scancode-licensedb": [
+            "Llama 2 Community License Agreement 2023"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

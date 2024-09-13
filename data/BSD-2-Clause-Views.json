@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-2-Clause-Views",
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause with views sentence"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "BSD-2-Clause-Views",
+            "bsd-2-clause-views"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "defensive-patent-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Defensive Patent License v1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

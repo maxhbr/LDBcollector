@@ -1,0 +1,10 @@
+{
+    "canonical": "AGPL-1.0",
+    "aliases": {
+        "spdx": [
+            "Affero General Public License v1.0"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

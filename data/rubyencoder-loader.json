@@ -1,0 +1,10 @@
+{
+    "canonical": "rubyencoder-loader",
+    "aliases": {
+        "scancode-licensedb": [
+            "RubyEncoder Loader Licence"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

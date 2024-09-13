@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-realmode",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (Realmode)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

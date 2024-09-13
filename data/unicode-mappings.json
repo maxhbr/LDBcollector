@@ -1,0 +1,10 @@
+{
+    "canonical": "unicode-mappings",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unicode Mappings License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "google-cla",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Individual Contributor License Agreement",
+            "Google CLA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

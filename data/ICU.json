@@ -1,0 +1,10 @@
+{
+    "canonical": "ICU",
+    "aliases": {
+        "spdx": [
+            "ICU License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

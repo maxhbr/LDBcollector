@@ -1,0 +1,15 @@
+{
+    "canonical": "dtoa",
+    "aliases": {
+        "spdx": [
+            "David M. Gay dtoa License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "x11-lucent",
+            "X11-Style (Lucent)",
+            "LicenseRef-scancode-x11-lucent"
+        ]
+    },
+    "src": "spdx"
+}

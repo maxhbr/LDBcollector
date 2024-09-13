@@ -1,0 +1,11 @@
+{
+    "canonical": "simpl-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Simple Public License Version 1.1",
+            "SimPL 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

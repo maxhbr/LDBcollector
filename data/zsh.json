@@ -1,0 +1,11 @@
+{
+    "canonical": "zsh",
+    "aliases": {
+        "scancode-licensedb": [
+            "zsh License",
+            "Z Shell License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

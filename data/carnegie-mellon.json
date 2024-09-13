@@ -1,0 +1,10 @@
+{
+    "canonical": "carnegie-mellon",
+    "aliases": {
+        "scancode-licensedb": [
+            "Carnegie Mellon License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

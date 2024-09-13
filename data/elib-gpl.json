@@ -1,0 +1,11 @@
+{
+    "canonical": "elib-gpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "GNU Elib General Public License",
+            "GPL-Elib"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-sql-server-compact-4.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS SQL Server Compact 4.0 License",
+            "Microsoft SQL Server Compact 4.0 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

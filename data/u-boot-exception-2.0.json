@@ -1,0 +1,14 @@
+{
+    "canonical": "u-boot-exception-2.0",
+    "aliases": {
+        "spdx": [
+            "U-Boot exception 2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "u-boot-exception-2.0",
+            "U-Boot exception to GPL 2.0"
+        ]
+    },
+    "src": "spdx"
+}

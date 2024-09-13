@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-xconsortium_veillard",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (X Consortium Veillard) - Deprecated"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

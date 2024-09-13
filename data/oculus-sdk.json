@@ -1,0 +1,10 @@
+{
+    "canonical": "oculus-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oculus SDK License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "nunit-v2",
+    "aliases": {
+        "scancode-licensedb": [
+            "NUnit v2 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

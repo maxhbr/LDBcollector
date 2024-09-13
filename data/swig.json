@@ -1,0 +1,10 @@
+{
+    "canonical": "swig",
+    "aliases": {
+        "scancode-licensedb": [
+            "SWIG Library License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

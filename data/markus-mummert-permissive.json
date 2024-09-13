@@ -1,0 +1,10 @@
+{
+    "canonical": "markus-mummert-permissive",
+    "aliases": {
+        "scancode-licensedb": [
+            "Markus Mummert Permissive"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

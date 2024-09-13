@@ -1,0 +1,11 @@
+{
+    "canonical": "cockroach",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cockroach Community License",
+            "CCL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

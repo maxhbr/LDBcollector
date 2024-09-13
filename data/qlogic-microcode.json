@@ -1,0 +1,10 @@
+{
+    "canonical": "qlogic-microcode",
+    "aliases": {
+        "scancode-licensedb": [
+            "QLogic Microcode"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "x11-r75",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-R7.5",
+            "X.Org Preferred License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

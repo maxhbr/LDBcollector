@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-generic-additional-terms",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL Generic Additional Terms"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

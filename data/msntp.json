@@ -1,0 +1,11 @@
+{
+    "canonical": "msntp",
+    "aliases": {
+        "scancode-licensedb": [
+            "MSNTP software license",
+            "MSNTP License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

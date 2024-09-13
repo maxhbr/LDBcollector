@@ -1,0 +1,10 @@
+{
+    "canonical": "tizen-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Tizen SDK License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

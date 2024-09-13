@@ -1,0 +1,10 @@
+{
+    "canonical": "scribbles",
+    "aliases": {
+        "scancode-licensedb": [
+            "Scribbles Demos Recognizer Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

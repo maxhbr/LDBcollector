@@ -1,0 +1,13 @@
+{
+    "canonical": "Fair",
+    "aliases": {
+        "spdx": [
+            "Fair License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "fair"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-asp-net-mvc4-extensions",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS ASP.NET MVC 4 Extensions",
+            "Microsoft ASP.NET MVC 4 Extensions License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

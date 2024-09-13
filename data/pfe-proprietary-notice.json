@@ -1,0 +1,10 @@
+{
+    "canonical": "pfe-proprietary-notice",
+    "aliases": {
+        "scancode-licensedb": [
+            "PFE Proprietary Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

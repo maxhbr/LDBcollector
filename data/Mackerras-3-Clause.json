@@ -1,0 +1,15 @@
+{
+    "canonical": "Mackerras-3-Clause",
+    "aliases": {
+        "spdx": [
+            "Mackerras 3-Clause License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Paul Mackerras New License",
+            "LicenseRef-scancode-paul-mackerras-new",
+            "paul-mackerras-new"
+        ]
+    },
+    "src": "spdx"
+}

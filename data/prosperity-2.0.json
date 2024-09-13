@@ -1,0 +1,11 @@
+{
+    "canonical": "prosperity-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "The Prosperity Public License 2.0",
+            "Prosperity Public License 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

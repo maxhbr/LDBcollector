@@ -1,0 +1,10 @@
+{
+    "canonical": "dmtf-2017",
+    "aliases": {
+        "scancode-licensedb": [
+            "DMTF License 2017"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "dpl-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "DSTC Public License (DPL) v1.1",
+            "DPL-1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

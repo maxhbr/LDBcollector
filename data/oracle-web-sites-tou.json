@@ -1,0 +1,11 @@
+{
+    "canonical": "oracle-web-sites-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle Web Sites Terms of Use",
+            "Oracle Web Sites TOU"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

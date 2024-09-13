@@ -1,0 +1,10 @@
+{
+    "canonical": "ti-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "TI Linux Firmware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

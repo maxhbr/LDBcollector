@@ -1,0 +1,10 @@
+{
+    "canonical": "richard-black",
+    "aliases": {
+        "scancode-licensedb": [
+            "Richard Black License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

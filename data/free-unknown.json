@@ -1,0 +1,11 @@
+{
+    "canonical": "free-unknown",
+    "aliases": {
+        "scancode-licensedb": [
+            "Free unknown license detected but not recognized",
+            "Free unknown"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

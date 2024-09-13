@@ -1,0 +1,11 @@
+{
+    "canonical": "mule-source-1.1.4",
+    "aliases": {
+        "scancode-licensedb": [
+            "Mule Source PL 1.1.4",
+            "Mule Source Public License 1.1.4"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

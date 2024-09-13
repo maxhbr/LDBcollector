@@ -1,0 +1,14 @@
+{
+    "canonical": "iMatix",
+    "aliases": {
+        "spdx": [
+            "iMatix Standard Function Library Agreement"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "SFL License Agreement",
+            "sfl-license"
+        ]
+    },
+    "src": "spdx"
+}

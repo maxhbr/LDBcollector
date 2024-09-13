@@ -1,0 +1,10 @@
+{
+    "canonical": "unrar-v3",
+    "aliases": {
+        "scancode-licensedb": [
+            "UnRar License v3"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-ack-carrot2",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD Acknowledgment (Carrot2) License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

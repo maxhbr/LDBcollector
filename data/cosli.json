@@ -1,0 +1,11 @@
+{
+    "canonical": "cosli",
+    "aliases": {
+        "scancode-licensedb": [
+            "COSLi",
+            "Civilian Open Source License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

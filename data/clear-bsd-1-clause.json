@@ -1,0 +1,10 @@
+{
+    "canonical": "clear-bsd-1-clause",
+    "aliases": {
+        "scancode-licensedb": [
+            "Clear BSD 1-Clause License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

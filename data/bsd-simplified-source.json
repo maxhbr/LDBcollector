@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-simplified-source",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-Simplified source"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

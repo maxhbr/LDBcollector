@@ -1,0 +1,13 @@
+{
+    "canonical": "HIDAPI",
+    "aliases": {
+        "spdx": [
+            "HIDAPI License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "hidapi"
+        ]
+    },
+    "src": "spdx"
+}

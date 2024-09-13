@@ -1,0 +1,15 @@
+{
+    "canonical": "x11vnc-openssl-exception",
+    "aliases": {
+        "spdx": [
+            "x11vnc OpenSSL Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "OpenSSL exception to GPL 2.0",
+            "openssl-exception-gpl-2.0",
+            "LicenseRef-scancode-openssl-exception-gpl-2.0"
+        ]
+    },
+    "src": "spdx"
+}

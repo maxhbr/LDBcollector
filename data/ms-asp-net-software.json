@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-asp-net-software",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft ASP.NET Software License",
+            "MS ASP.NET Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

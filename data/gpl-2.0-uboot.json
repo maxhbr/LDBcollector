@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-uboot",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with U-Boot exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

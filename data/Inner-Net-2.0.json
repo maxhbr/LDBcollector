@@ -1,0 +1,16 @@
+{
+    "canonical": "Inner-Net-2.0",
+    "aliases": {
+        "spdx": [
+            "Inner Net License v2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-inner-net-2.0",
+            "inner-net-2.0",
+            "Inner Net License 2.0",
+            "Inner Net 2.0"
+        ]
+    },
+    "src": "spdx"
+}

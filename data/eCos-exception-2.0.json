@@ -1,0 +1,14 @@
+{
+    "canonical": "eCos-exception-2.0",
+    "aliases": {
+        "spdx": [
+            "eCos exception 2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ecos-exception-2.0",
+            "eCos Exception to GPL 2.0 or later"
+        ]
+    },
+    "src": "spdx"
+}

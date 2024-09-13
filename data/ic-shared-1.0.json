@@ -1,0 +1,11 @@
+{
+    "canonical": "ic-shared-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Internet Computer Shared Community Source License 1.0",
+            "IC Shared 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

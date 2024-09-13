@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-openssl",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with OpenSSL exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

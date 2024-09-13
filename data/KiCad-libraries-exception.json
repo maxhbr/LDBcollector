@@ -1,0 +1,14 @@
+{
+    "canonical": "KiCad-libraries-exception",
+    "aliases": {
+        "spdx": [
+            "KiCad Libraries Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "kicad-libraries-exception",
+            "KiCad Libraries Exception to CC-BY-SA-4.0"
+        ]
+    },
+    "src": "spdx"
+}

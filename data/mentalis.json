@@ -1,0 +1,11 @@
+{
+    "canonical": "mentalis",
+    "aliases": {
+        "scancode-licensedb": [
+            "Mentalis Source Code License",
+            "Mentalis License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "W3C-20150513",
+    "aliases": {
+        "spdx": [
+            "W3C Software Notice and Document License (2015-05-13)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "W3C Software and Document (2015-05-13)",
+            "w3c-software-doc-20150513",
+            "W3C-SOFTWARE-DOC-20150513"
+        ]
+    },
+    "src": "spdx"
+}

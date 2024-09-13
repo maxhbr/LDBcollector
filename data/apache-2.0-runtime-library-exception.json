@@ -1,0 +1,10 @@
+{
+    "canonical": "apache-2.0-runtime-library-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apache 2.0 with Runtime Library Exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

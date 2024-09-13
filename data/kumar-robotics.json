@@ -1,0 +1,10 @@
+{
+    "canonical": "kumar-robotics",
+    "aliases": {
+        "scancode-licensedb": [
+            "Kumar Robotics License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,12 @@
+{
+    "canonical": "ziplist5-geocode-duplication-addendum",
+    "aliases": {
+        "scancode-licensedb": [
+            "ZIPList5 Geocode Duplication Addendum",
+            "LicenseRef-scancode-ziplist5-geocode-duplication-addendum",
+            "ZIPList5 Geocode Duplication License Addendum"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

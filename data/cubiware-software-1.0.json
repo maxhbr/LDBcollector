@@ -1,0 +1,11 @@
+{
+    "canonical": "cubiware-software-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cubiware Sp. z o.o. Software License Version 1.0",
+            "Cubiware Software License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

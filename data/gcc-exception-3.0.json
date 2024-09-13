@@ -1,0 +1,11 @@
+{
+    "canonical": "gcc-exception-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "GCC Runtime Library Exception v3.0",
+            "LicenseRef-scancode-exception-3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

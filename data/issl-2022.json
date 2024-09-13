@@ -1,0 +1,11 @@
+{
+    "canonical": "issl-2022",
+    "aliases": {
+        "scancode-licensedb": [
+            "Intel Simplified Software License (Version October 2022)",
+            "ISSL 2022"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

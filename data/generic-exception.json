@@ -1,0 +1,10 @@
+{
+    "canonical": "generic-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Generic Exception Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

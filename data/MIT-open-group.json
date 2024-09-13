@@ -1,0 +1,15 @@
+{
+    "canonical": "MIT-open-group",
+    "aliases": {
+        "spdx": [
+            "MIT Open Group variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "x11-opengroup",
+            "X11-Style (Open Group)",
+            "LicenseRef-scancode-x11-opengroup"
+        ]
+    },
+    "src": "spdx"
+}

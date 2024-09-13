@@ -1,0 +1,11 @@
+{
+    "canonical": "jasper-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Jasper 1.0",
+            "Jasper Reports License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

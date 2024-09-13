@@ -1,0 +1,10 @@
+{
+    "canonical": "quirksmode",
+    "aliases": {
+        "scancode-licensedb": [
+            "Quirksmode Copyright Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

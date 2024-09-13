@@ -1,0 +1,10 @@
+{
+    "canonical": "jsfromhell",
+    "aliases": {
+        "scancode-licensedb": [
+            "JSFromHell License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

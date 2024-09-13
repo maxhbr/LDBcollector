@@ -1,0 +1,10 @@
+{
+    "canonical": "icot-free",
+    "aliases": {
+        "scancode-licensedb": [
+            "ICOT Free Software"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "asmus",
+    "aliases": {
+        "scancode-licensedb": [
+            "ASMUS License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

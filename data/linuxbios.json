@@ -1,0 +1,10 @@
+{
+    "canonical": "linuxbios",
+    "aliases": {
+        "scancode-licensedb": [
+            "LinuxBIOS License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

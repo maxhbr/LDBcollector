@@ -1,0 +1,11 @@
+{
+    "canonical": "jrunner",
+    "aliases": {
+        "scancode-licensedb": [
+            "JRunner Software License",
+            "JRunner License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

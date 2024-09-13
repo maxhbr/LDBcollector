@@ -1,0 +1,13 @@
+{
+    "canonical": "Noweb",
+    "aliases": {
+        "spdx": [
+            "Noweb License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "noweb"
+        ]
+    },
+    "src": "spdx"
+}

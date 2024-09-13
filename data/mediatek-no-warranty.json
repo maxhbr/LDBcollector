@@ -1,0 +1,10 @@
+{
+    "canonical": "mediatek-no-warranty",
+    "aliases": {
+        "scancode-licensedb": [
+            "MediaTek No Warranty Clause"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

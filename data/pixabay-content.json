@@ -1,0 +1,10 @@
+{
+    "canonical": "pixabay-content",
+    "aliases": {
+        "scancode-licensedb": [
+            "Pixabay Content License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

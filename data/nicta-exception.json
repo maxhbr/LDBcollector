@@ -1,0 +1,10 @@
+{
+    "canonical": "nicta-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "NICTA Exception to AGPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

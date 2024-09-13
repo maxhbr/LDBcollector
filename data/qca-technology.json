@@ -1,0 +1,11 @@
+{
+    "canonical": "qca-technology",
+    "aliases": {
+        "scancode-licensedb": [
+            "QCA Technology License",
+            "Qualcomm Atheros Technology License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

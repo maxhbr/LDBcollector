@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-x11",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-3-Clause X11 disclaimer",
+            "BSD-3-Clause with X11 disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

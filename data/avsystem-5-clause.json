@@ -1,0 +1,10 @@
+{
+    "canonical": "avsystem-5-clause",
+    "aliases": {
+        "scancode-licensedb": [
+            "AVSystem 5-Clause License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

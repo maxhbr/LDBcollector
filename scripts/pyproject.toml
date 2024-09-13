@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "scripts"
+version = "0.1.0"
+description = ""
+authors = ["Leo Reinmann <leo.reinmann@siemens.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+flake8 = "^7.0.0"
+coverage = "^7.4.4"
+mypy = "^1.9.0"
+
+[tool.poetry.scripts]
+data_validation = "src.validate.data_validation:main"
+merge_data = "src.load.merge_data:main"
+data_update = "src.update.data_update:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

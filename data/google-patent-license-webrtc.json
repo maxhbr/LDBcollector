@@ -1,0 +1,10 @@
+{
+    "canonical": "google-patent-license-webrtc",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Patent License for WebRTC"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

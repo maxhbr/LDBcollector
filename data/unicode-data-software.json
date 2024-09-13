@@ -1,0 +1,11 @@
+{
+    "canonical": "unicode-data-software",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unicode - Data Files and Software",
+            "Unicode License Agreement - Data Files and Software"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

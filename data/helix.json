@@ -1,0 +1,11 @@
+{
+    "canonical": "helix",
+    "aliases": {
+        "scancode-licensedb": [
+            "Helix DNA Technology Binary Research Use License",
+            "Helix DNA License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

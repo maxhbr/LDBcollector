@@ -1,0 +1,10 @@
+{
+    "canonical": "oracle-master-agreement",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle Master Agreement (OMA)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

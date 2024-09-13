@@ -1,0 +1,13 @@
+{
+    "canonical": "Wsuipa",
+    "aliases": {
+        "spdx": [
+            "Wsuipa License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "wsuipa"
+        ]
+    },
+    "src": "spdx"
+}

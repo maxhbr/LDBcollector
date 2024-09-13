@@ -1,0 +1,15 @@
+{
+    "canonical": "BSD-4.3RENO",
+    "aliases": {
+        "spdx": [
+            "BSD 4.3 RENO License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-bsd-original-uc-1986",
+            "BSD-Original-UC-1986",
+            "bsd-original-uc-1986"
+        ]
+    },
+    "src": "spdx"
+}

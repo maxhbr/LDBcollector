@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-bsd-extra",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BSD-Style with Additional Restrictions"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

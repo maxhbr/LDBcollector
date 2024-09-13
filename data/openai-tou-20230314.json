@@ -1,0 +1,10 @@
+{
+    "canonical": "openai-tou-20230314",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenAI Terms of Use 20230314"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

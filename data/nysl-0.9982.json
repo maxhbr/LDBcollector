@@ -1,0 +1,10 @@
+{
+    "canonical": "nysl-0.9982",
+    "aliases": {
+        "scancode-licensedb": [
+            "NYSL 0.9982"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

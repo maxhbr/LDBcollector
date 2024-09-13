@@ -1,0 +1,10 @@
+{
+    "canonical": "hp-ux-java",
+    "aliases": {
+        "scancode-licensedb": [
+            "HP-UX 11i Java Technology Software"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

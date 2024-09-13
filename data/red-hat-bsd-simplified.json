@@ -1,0 +1,10 @@
+{
+    "canonical": "red-hat-bsd-simplified",
+    "aliases": {
+        "scancode-licensedb": [
+            "Red Hat BSD-Simplified"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

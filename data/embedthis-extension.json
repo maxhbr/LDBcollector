@@ -1,0 +1,10 @@
+{
+    "canonical": "embedthis-extension",
+    "aliases": {
+        "scancode-licensedb": [
+            "Embedthis Extension License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

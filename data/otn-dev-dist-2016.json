@@ -1,0 +1,11 @@
+{
+    "canonical": "otn-dev-dist-2016",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle Technology Network License Agreement 2016",
+            "OTN License 2016"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

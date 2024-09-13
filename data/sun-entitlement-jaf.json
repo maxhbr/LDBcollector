@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-entitlement-jaf",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun Entitlement JAF"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

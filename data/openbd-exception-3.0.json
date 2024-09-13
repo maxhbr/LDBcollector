@@ -1,0 +1,10 @@
+{
+    "canonical": "openbd-exception-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenBD exception to GPL 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

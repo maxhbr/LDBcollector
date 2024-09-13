@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-visual-2015-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Visual Studio 2015 Software Development Kit License",
+            "MS Visual Studio 2015 SDK"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

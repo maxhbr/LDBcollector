@@ -1,0 +1,11 @@
+{
+    "canonical": "mulanpubl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "MulanPubl-1.0",
+            "Mulan Public License, Version 1 (Mulan PubL v1)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

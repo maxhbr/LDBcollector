@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-oracle-openjdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 with Oracle OpenJDK classpath exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

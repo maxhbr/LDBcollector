@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-ejb-spec-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun EJB Specification 3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

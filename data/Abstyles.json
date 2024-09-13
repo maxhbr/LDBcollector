@@ -1,0 +1,13 @@
+{
+    "canonical": "Abstyles",
+    "aliases": {
+        "spdx": [
+            "Abstyles License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "abstyles"
+        ]
+    },
+    "src": "spdx"
+}

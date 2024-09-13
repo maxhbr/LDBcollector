@@ -1,0 +1,10 @@
+{
+    "canonical": "gareth-mccaughan",
+    "aliases": {
+        "scancode-licensedb": [
+            "Gareth McCaughan License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

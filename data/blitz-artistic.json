@@ -1,0 +1,11 @@
+{
+    "canonical": "blitz-artistic",
+    "aliases": {
+        "scancode-licensedb": [
+            "Blitz++ Artistic License",
+            "Blitz++ Artistic"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

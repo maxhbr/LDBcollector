@@ -1,0 +1,10 @@
+{
+    "canonical": "xxd",
+    "aliases": {
+        "scancode-licensedb": [
+            "xxd License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

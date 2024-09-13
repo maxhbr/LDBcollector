@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-bcl-sdk-5.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL SDK 5.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

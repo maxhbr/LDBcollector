@@ -1,0 +1,10 @@
+{
+    "canonical": "sparky",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sparky License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

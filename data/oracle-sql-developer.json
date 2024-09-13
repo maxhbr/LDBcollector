@@ -1,0 +1,10 @@
+{
+    "canonical": "oracle-sql-developer",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oracle SQL Developer License Terms"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "pd-mit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Modified MIT License for Public Domain software"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

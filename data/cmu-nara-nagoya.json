@@ -1,0 +1,10 @@
+{
+    "canonical": "cmu-nara-nagoya",
+    "aliases": {
+        "scancode-licensedb": [
+            "CMU Nara Nagoya License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

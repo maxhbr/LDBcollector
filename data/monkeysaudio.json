@@ -1,0 +1,10 @@
+{
+    "canonical": "monkeysaudio",
+    "aliases": {
+        "scancode-licensedb": [
+            "Monkeys Audio License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

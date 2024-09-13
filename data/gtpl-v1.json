@@ -1,0 +1,11 @@
+{
+    "canonical": "gtpl-v1",
+    "aliases": {
+        "scancode-licensedb": [
+            "GTPL-v1",
+            "Globus Toolkit Public License (GTPL) v1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

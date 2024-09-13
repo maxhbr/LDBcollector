@@ -1,0 +1,11 @@
+{
+    "canonical": "c-fsl-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Convertible Free Software License 1.1",
+            "C-FSL 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

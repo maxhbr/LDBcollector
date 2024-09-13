@@ -1,0 +1,10 @@
+{
+    "canonical": "jelurida-public-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Jeulurida Public License 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

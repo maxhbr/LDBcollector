@@ -1,0 +1,15 @@
+{
+    "canonical": "FSFULLRWD",
+    "aliases": {
+        "spdx": [
+            "FSF Unlimited License (With License Retention and Warranty Disclaimer)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "fsf-unlimited-no-warranty",
+            "LicenseRef-scancode-fsf-unlimited-no-warranty",
+            "FSF Unlimited License No Warranty"
+        ]
+    },
+    "src": "spdx"
+}

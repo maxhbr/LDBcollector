@@ -1,0 +1,14 @@
+{
+    "canonical": "SISSL",
+    "aliases": {
+        "spdx": [
+            "Sun Industry Standards Source License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Sun Industry Standards Source License 1.1",
+            "sun-sissl-1.1"
+        ]
+    },
+    "src": "spdx"
+}

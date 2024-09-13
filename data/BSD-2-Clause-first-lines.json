@@ -1,0 +1,14 @@
+{
+    "canonical": "BSD-2-Clause-first-lines",
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause - first lines requirement"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "BSD 2-Clause first lines",
+            "bsd-2-clause-first-lines"
+        ]
+    },
+    "src": "spdx"
+}

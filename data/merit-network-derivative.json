@@ -1,0 +1,10 @@
+{
+    "canonical": "merit-network-derivative",
+    "aliases": {
+        "scancode-licensedb": [
+            "Merit Network Derivative Works License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

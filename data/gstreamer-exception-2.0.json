@@ -1,0 +1,10 @@
+{
+    "canonical": "gstreamer-exception-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "GStreamer exception to GPL 2.0 or later"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

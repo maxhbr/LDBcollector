@@ -1,0 +1,10 @@
+{
+    "canonical": "fplot",
+    "aliases": {
+        "scancode-licensedb": [
+            "FPLOT LIcense"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

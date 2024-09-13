@@ -1,0 +1,10 @@
+{
+    "canonical": "ws-policy-specification",
+    "aliases": {
+        "scancode-licensedb": [
+            "WS-Policy Specification"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

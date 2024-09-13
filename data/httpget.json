@@ -1,0 +1,10 @@
+{
+    "canonical": "httpget",
+    "aliases": {
+        "scancode-licensedb": [
+            "httpget notice and disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

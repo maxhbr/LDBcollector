@@ -1,0 +1,11 @@
+{
+    "canonical": "aslp",
+    "aliases": {
+        "scancode-licensedb": [
+            "Artop Software License for Preparatory Development",
+            "Artop ASLP"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

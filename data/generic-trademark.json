@@ -1,0 +1,12 @@
+{
+    "canonical": "generic-trademark",
+    "aliases": {
+        "scancode-licensedb": [
+            "Generic Trademark and Name Protection Notice",
+            "LicenseRef-scancode-trademark-notice",
+            "Generic Trademark Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

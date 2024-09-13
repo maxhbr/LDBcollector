@@ -1,0 +1,10 @@
+{
+    "canonical": "ecma-patent-coc-1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ecma Code of Conduct in Patent Matters v1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

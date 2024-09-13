@@ -1,0 +1,10 @@
+{
+    "canonical": "spark-jive",
+    "aliases": {
+        "scancode-licensedb": [
+            "Spark Jive License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "JSON",
+    "aliases": {
+        "spdx": [
+            "JSON License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "json"
+        ]
+    },
+    "src": "spdx"
+}

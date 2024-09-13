@@ -1,0 +1,11 @@
+{
+    "canonical": "msppl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft patterns & practices License",
+            "MSPPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

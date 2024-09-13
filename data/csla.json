@@ -1,0 +1,11 @@
+{
+    "canonical": "csla",
+    "aliases": {
+        "scancode-licensedb": [
+            "CSLA License",
+            "CSLA .NET License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

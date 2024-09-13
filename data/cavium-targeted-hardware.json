@@ -1,0 +1,10 @@
+{
+    "canonical": "cavium-targeted-hardware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cavium Targeted Hardware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

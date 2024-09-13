@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-bcl-j2re-1.2.x",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL J2RE 1.2.X"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

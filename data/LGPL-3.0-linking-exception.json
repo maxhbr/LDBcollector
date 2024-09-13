@@ -1,0 +1,15 @@
+{
+    "canonical": "LGPL-3.0-linking-exception",
+    "aliases": {
+        "spdx": [
+            "LGPL-3.0 Linking Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "lgpl-3.0-linking-exception",
+            "LicenseRef-scancode-lgpl-3-plus-linking",
+            "LicenseRef-scancode-linking-exception-lgpl-3.0"
+        ]
+    },
+    "src": "spdx"
+}

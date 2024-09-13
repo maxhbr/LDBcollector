@@ -1,0 +1,11 @@
+{
+    "canonical": "speechworks-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "SpeechWorks Public License v1.1",
+            "SpeechWorks Public License 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

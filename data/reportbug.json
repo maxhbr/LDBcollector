@@ -1,0 +1,10 @@
+{
+    "canonical": "reportbug",
+    "aliases": {
+        "scancode-licensedb": [
+            "Debian reportbug License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

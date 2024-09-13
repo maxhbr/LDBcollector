@@ -1,0 +1,13 @@
+{
+    "canonical": "XSkat",
+    "aliases": {
+        "spdx": [
+            "XSkat License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "xskat"
+        ]
+    },
+    "src": "spdx"
+}

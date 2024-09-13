@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-tektronix",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (Tektronix)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

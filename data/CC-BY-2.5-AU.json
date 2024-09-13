@@ -1,0 +1,13 @@
+{
+    "canonical": "CC-BY-2.5-AU",
+    "aliases": {
+        "spdx": [
+            "Creative Commons Attribution 2.5 Australia"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "cc-by-2.5-au"
+        ]
+    },
+    "src": "spdx"
+}

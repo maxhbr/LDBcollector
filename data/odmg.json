@@ -1,0 +1,10 @@
+{
+    "canonical": "odmg",
+    "aliases": {
+        "scancode-licensedb": [
+            "ODMG License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

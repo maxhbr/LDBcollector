@@ -1,0 +1,10 @@
+{
+    "canonical": "phil-bunce",
+    "aliases": {
+        "scancode-licensedb": [
+            "Phil Bunce License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

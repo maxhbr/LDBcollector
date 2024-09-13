@@ -1,0 +1,10 @@
+{
+    "canonical": "cc-devnations-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Developing Nations 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

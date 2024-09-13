@@ -1,0 +1,10 @@
+{
+    "canonical": "DocBook-XML",
+    "aliases": {
+        "spdx": [
+            "DocBook XML License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

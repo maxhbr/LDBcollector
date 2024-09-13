@@ -1,0 +1,10 @@
+{
+    "canonical": "fabric-agreement-2017",
+    "aliases": {
+        "scancode-licensedb": [
+            "Fabric Software and Services Agreement 2017"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

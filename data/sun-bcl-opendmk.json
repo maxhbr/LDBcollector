@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-bcl-opendmk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL OpenDMK"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

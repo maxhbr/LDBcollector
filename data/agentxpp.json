@@ -1,0 +1,10 @@
+{
+    "canonical": "agentxpp",
+    "aliases": {
+        "scancode-licensedb": [
+            "AgentX++ License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "AFL-1.1",
+    "aliases": {
+        "spdx": [
+            "Academic Free License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Academic Free License 1.1",
+            "afl-1.1",
+            "AFL 1.1"
+        ]
+    },
+    "src": "spdx"
+}

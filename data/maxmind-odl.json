@@ -1,0 +1,10 @@
+{
+    "canonical": "maxmind-odl",
+    "aliases": {
+        "scancode-licensedb": [
+            "MaxMind Open Data License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

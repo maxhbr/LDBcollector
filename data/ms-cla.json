@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-cla",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Contribution License Agreement (CLA)",
+            "Microsoft Contribution License Agreement (CLA)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "CAL-1.0-Combined-Work-Exception",
+    "aliases": {
+        "spdx": [
+            "Cryptographic Autonomy License 1.0 (Combined Work Exception)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "CAL-1.0-Combined-Work-Exception",
+            "cal-1.0-combined-work-exception"
+        ]
+    },
+    "src": "spdx"
+}

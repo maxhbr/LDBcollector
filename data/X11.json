@@ -1,0 +1,31 @@
+{
+    "canonical": "X11",
+    "aliases": {
+        "spdx": [
+            "X11 License"
+        ],
+        "custom": [
+            "X Window System License",
+            "X.Org License",
+            "X.Org Public License",
+            "X11 License (MIT)",
+            "MIT/X11",
+            "MIT X11",
+            "X11/MIT License",
+            "X11/MIT",
+            "X11 Open Source License",
+            "X11 Open License",
+            "X11 License v1.0",
+            "X11 License (Open Source)",
+            "X License",
+            "X11 License (X Window System)",
+            "X Window System License v1.0",
+            "X11 License (X.Org)"
+        ],
+        "scancode-licensedb": [
+            "x11-xconsortium",
+            "X11-Style (X Consortium)"
+        ]
+    },
+    "src": "spdx"
+}

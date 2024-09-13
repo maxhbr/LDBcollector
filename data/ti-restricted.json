@@ -1,0 +1,11 @@
+{
+    "canonical": "ti-restricted",
+    "aliases": {
+        "scancode-licensedb": [
+            "Texas Instruments Restricted Use License",
+            "TI Restricted Use License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,14 @@
+{
+    "canonical": "NLPL",
+    "aliases": {
+        "spdx": [
+            "No Limit Public License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "NLPL",
+            "nlpl"
+        ]
+    },
+    "src": "spdx"
+}

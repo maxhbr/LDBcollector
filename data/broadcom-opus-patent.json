@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-opus-patent",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Opus Patent License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "nvidia-gov",
+    "aliases": {
+        "scancode-licensedb": [
+            "NVIDIA License with Government Qualifications"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

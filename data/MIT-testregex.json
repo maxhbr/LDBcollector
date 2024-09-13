@@ -1,0 +1,13 @@
+{
+    "canonical": "MIT-testregex",
+    "aliases": {
+        "spdx": [
+            "MIT testregex Variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mit-testregex"
+        ]
+    },
+    "src": "spdx"
+}

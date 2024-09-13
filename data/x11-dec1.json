@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-dec1",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (DEC 1)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

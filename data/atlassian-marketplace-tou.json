@@ -1,0 +1,10 @@
+{
+    "canonical": "atlassian-marketplace-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "Atlassian Marketplace Terms of Use"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

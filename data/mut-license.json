@@ -1,0 +1,10 @@
+{
+    "canonical": "mut-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "muT-License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

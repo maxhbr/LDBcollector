@@ -1,0 +1,16 @@
+{
+    "canonical": "AGPL-1.0-only",
+    "aliases": {
+        "spdx": [
+            "Affero General Public License v1.0 only"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Affero General Public License 1.0",
+            "agpl-1.0",
+            "AGPL-1.0",
+            "AGPL 1.0"
+        ]
+    },
+    "src": "spdx"
+}

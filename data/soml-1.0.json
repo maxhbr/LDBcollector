@@ -1,0 +1,11 @@
+{
+    "canonical": "soml-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "SOML-1.0",
+            "Software for Open Models License (SOM) 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

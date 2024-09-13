@@ -1,0 +1,15 @@
+{
+    "canonical": "HPND-UC",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - University of California variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Historical Permission Notice and Disclaimer University of California variant",
+            "hpnd-uc",
+            "Historical UC variant"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "NAIST-2003",
+    "aliases": {
+        "spdx": [
+            "Nara Institute of Science and Technology License (2003)"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Nara Institute License 2003",
+            "naist-2003",
+            "LicenseRef-scancode-naist-2003"
+        ]
+    },
+    "src": "spdx"
+}

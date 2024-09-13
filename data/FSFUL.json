@@ -1,0 +1,15 @@
+{
+    "canonical": "FSFUL",
+    "aliases": {
+        "spdx": [
+            "FSF Unlimited License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "fsf-free",
+            "Free Software Foundation - Free Software License",
+            "FSF Free Software License"
+        ]
+    },
+    "src": "spdx"
+}

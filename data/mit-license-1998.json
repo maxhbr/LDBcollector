@@ -1,0 +1,10 @@
+{
+    "canonical": "mit-license-1998",
+    "aliases": {
+        "scancode-licensedb": [
+            "MIT License 1998"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

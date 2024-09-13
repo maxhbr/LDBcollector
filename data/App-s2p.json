@@ -1,0 +1,13 @@
+{
+    "canonical": "App-s2p",
+    "aliases": {
+        "spdx": [
+            "App::s2p License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "app-s2p"
+        ]
+    },
+    "src": "spdx"
+}

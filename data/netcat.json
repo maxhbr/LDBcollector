@@ -1,0 +1,10 @@
+{
+    "canonical": "netcat",
+    "aliases": {
+        "scancode-licensedb": [
+            "Netcat License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

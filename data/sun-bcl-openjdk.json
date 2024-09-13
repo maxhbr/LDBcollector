@@ -1,0 +1,10 @@
+{
+    "canonical": "sun-bcl-openjdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun BCL OpenJDK"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

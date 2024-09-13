@@ -1,0 +1,10 @@
+{
+    "canonical": "HPND-Netrek",
+    "aliases": {
+        "spdx": [
+            "Historical Permission Notice and Disclaimer - Netrek variant"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

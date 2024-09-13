@@ -1,0 +1,10 @@
+{
+    "canonical": "adobe-color-profile-bundling",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe Color Profile Bundling agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

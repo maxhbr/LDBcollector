@@ -1,0 +1,11 @@
+{
+    "canonical": "oxygen-xml-webhelp-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oxygen XML WebHelp EULA",
+            "Oxygen XML WebHelp End-User License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

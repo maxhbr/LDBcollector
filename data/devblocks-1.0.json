@@ -1,0 +1,11 @@
+{
+    "canonical": "devblocks-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Devblocks 1.0",
+            "Devblocks Public License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

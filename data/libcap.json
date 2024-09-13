@@ -1,0 +1,10 @@
+{
+    "canonical": "libcap",
+    "aliases": {
+        "scancode-licensedb": [
+            "libcap License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "timestamp-picker",
+    "aliases": {
+        "scancode-licensedb": [
+            "Timestamp Picker License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

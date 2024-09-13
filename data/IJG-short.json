@@ -1,0 +1,13 @@
+{
+    "canonical": "IJG-short",
+    "aliases": {
+        "spdx": [
+            "Independent JPEG Group License - short"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ijg-short"
+        ]
+    },
+    "src": "spdx"
+}

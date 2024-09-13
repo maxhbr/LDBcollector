@@ -1,0 +1,11 @@
+{
+    "canonical": "oasis-ipr-policy-2014",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oasis IPR Policy License 2014-10-15",
+            "Oasis IPR Policy License 2014"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

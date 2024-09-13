@@ -1,0 +1,10 @@
+{
+    "canonical": "copyheart",
+    "aliases": {
+        "scancode-licensedb": [
+            "Copyheart"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

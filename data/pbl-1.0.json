@@ -1,0 +1,11 @@
+{
+    "canonical": "pbl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "PBL-1.0",
+            "Permissive Binary License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "altova-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Altova EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

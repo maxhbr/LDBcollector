@@ -1,0 +1,10 @@
+{
+    "canonical": "cvwl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Collaborative Virtual Workspace License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

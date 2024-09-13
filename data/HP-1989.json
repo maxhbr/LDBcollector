@@ -1,0 +1,15 @@
+{
+    "canonical": "HP-1989",
+    "aliases": {
+        "spdx": [
+            "Hewlett-Packard 1989 License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-osf-1990",
+            "osf-1990",
+            "OSF 1990 License"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "qaplug",
+    "aliases": {
+        "scancode-licensedb": [
+            "QAPlug License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

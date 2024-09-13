@@ -1,0 +1,10 @@
+{
+    "canonical": "romic-exception",
+    "aliases": {
+        "spdx": [
+            "Romic Exception"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

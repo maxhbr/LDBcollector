@@ -1,0 +1,13 @@
+{
+    "canonical": "BlueOak-1.0.0",
+    "aliases": {
+        "spdx": [
+            "Blue Oak Model License 1.0.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "blueoak-1.0.0"
+        ]
+    },
+    "src": "spdx"
+}

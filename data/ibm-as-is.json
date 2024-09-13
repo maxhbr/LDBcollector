@@ -1,0 +1,10 @@
+{
+    "canonical": "ibm-as-is",
+    "aliases": {
+        "scancode-licensedb": [
+            "IBM AS-IS License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

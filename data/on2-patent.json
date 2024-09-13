@@ -1,0 +1,10 @@
+{
+    "canonical": "on2-patent",
+    "aliases": {
+        "scancode-licensedb": [
+            "On2 VP3 Codec Software Patent grant"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "linuxhowtos",
+    "aliases": {
+        "scancode-licensedb": [
+            "linuxhowtos License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

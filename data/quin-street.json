@@ -1,0 +1,10 @@
+{
+    "canonical": "quin-street",
+    "aliases": {
+        "scancode-licensedb": [
+            "QuinStreet License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

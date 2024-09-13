@@ -1,0 +1,10 @@
+{
+    "canonical": "g10-permissive",
+    "aliases": {
+        "scancode-licensedb": [
+            "g10-permissive"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

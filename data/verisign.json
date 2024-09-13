@@ -1,0 +1,10 @@
+{
+    "canonical": "verisign",
+    "aliases": {
+        "scancode-licensedb": [
+            "VeriSign License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

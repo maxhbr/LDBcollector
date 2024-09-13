@@ -1,0 +1,10 @@
+{
+    "canonical": "volatility-vsl-v1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Volatility Software License Version 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "wtfpl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "WTFPL 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

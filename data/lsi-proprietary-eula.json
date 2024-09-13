@@ -1,0 +1,10 @@
+{
+    "canonical": "lsi-proprietary-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "LSI Proprietary EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

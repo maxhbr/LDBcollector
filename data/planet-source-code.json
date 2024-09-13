@@ -1,0 +1,10 @@
+{
+    "canonical": "planet-source-code",
+    "aliases": {
+        "scancode-licensedb": [
+            "Planet Source Code License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

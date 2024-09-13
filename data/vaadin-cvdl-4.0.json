@@ -1,0 +1,10 @@
+{
+    "canonical": "vaadin-cvdl-4.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Commercial Vaadin Developer License 4.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

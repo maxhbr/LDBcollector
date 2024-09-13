@@ -1,0 +1,10 @@
+{
+    "canonical": "icann-public",
+    "aliases": {
+        "scancode-licensedb": [
+            "ICANN-Public"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

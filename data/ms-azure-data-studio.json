@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-azure-data-studio",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Azure Data Studio License Terms",
+            "MS Azure Data Studio License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

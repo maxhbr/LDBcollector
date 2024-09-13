@@ -1,0 +1,11 @@
+{
+    "canonical": "mit-nagy",
+    "aliases": {
+        "scancode-licensedb": [
+            "MIT Nagy Variant",
+            "MIT Szabolcs Nagy Variant"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "t-license-smp-t-kernel",
+    "aliases": {
+        "scancode-licensedb": [
+            "T-License for SMP T-Kernel"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "librato-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Librato Open License Version 1.0",
+            "Librato Open License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

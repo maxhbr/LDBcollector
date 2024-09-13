@@ -1,0 +1,14 @@
+{
+    "canonical": "MirOS",
+    "aliases": {
+        "spdx": [
+            "The MirOS Licence"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "MirOS License",
+            "mir-os"
+        ]
+    },
+    "src": "spdx"
+}

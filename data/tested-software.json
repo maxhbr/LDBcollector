@@ -1,0 +1,10 @@
+{
+    "canonical": "tested-software",
+    "aliases": {
+        "scancode-licensedb": [
+            "Tested Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

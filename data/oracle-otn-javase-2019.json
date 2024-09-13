@@ -1,0 +1,11 @@
+{
+    "canonical": "oracle-otn-javase-2019",
+    "aliases": {
+        "scancode-licensedb": [
+            "OTN for Oracle Java SE 2019",
+            "Oracle Technology Network License Agreement for Oracle Java SE"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

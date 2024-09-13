@@ -1,0 +1,10 @@
+{
+    "canonical": "hp-netperf",
+    "aliases": {
+        "scancode-licensedb": [
+            "HP Netperf License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

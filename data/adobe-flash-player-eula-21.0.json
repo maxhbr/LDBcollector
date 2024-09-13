@@ -1,0 +1,10 @@
+{
+    "canonical": "adobe-flash-player-eula-21.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe Flash Player EULA 21.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

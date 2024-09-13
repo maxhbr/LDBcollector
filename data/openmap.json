@@ -1,0 +1,10 @@
+{
+    "canonical": "openmap",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenMap Software License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

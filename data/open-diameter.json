@@ -1,0 +1,10 @@
+{
+    "canonical": "open-diameter",
+    "aliases": {
+        "scancode-licensedb": [
+            "Open Diameter License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-credit",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD-Credit"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

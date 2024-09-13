@@ -1,0 +1,10 @@
+{
+    "canonical": "srgb",
+    "aliases": {
+        "scancode-licensedb": [
+            "sRGB Profile Licensing Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

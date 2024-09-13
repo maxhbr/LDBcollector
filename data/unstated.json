@@ -1,0 +1,10 @@
+{
+    "canonical": "unstated",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unstated License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

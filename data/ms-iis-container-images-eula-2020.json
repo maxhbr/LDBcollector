@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-iis-container-images-eula-2020",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-ms-iis-container-images-eula-2020",
+            "Microsoft IIS Container Images EULA 202",
+            "MS IIS Container Images EULA 2020"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

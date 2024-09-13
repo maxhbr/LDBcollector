@@ -1,0 +1,11 @@
+{
+    "canonical": "biopython",
+    "aliases": {
+        "scancode-licensedb": [
+            "Biopython License",
+            "Biopython License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

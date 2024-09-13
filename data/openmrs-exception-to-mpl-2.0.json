@@ -1,0 +1,10 @@
+{
+    "canonical": "openmrs-exception-to-mpl-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OpenMRS Exception to MPL-2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

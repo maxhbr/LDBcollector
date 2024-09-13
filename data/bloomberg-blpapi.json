@@ -1,0 +1,10 @@
+{
+    "canonical": "bloomberg-blpapi",
+    "aliases": {
+        "scancode-licensedb": [
+            "Bloomberg BLPAPI License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

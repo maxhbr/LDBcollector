@@ -1,0 +1,11 @@
+{
+    "canonical": "notre-dame",
+    "aliases": {
+        "scancode-licensedb": [
+            "University of Notre Dame License",
+            "Notre Dame License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

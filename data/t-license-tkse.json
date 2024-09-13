@@ -1,0 +1,11 @@
+{
+    "canonical": "t-license-tkse",
+    "aliases": {
+        "scancode-licensedb": [
+            "T-License for TKSE",
+            "T-License for T-Kernel Standard Extension"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

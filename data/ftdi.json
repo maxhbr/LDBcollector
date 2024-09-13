@@ -1,0 +1,11 @@
+{
+    "canonical": "ftdi",
+    "aliases": {
+        "scancode-licensedb": [
+            "FTDI License",
+            "Future Technology Devices International License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "khronos",
+    "aliases": {
+        "scancode-licensedb": [
+            "Khronos License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

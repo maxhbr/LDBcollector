@@ -1,0 +1,11 @@
+{
+    "canonical": "tpl-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "TPL 2.0",
+            "Terracotta Public License 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

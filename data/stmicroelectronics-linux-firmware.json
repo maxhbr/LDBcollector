@@ -1,0 +1,11 @@
+{
+    "canonical": "stmicroelectronics-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "STMicroelectronics Linux Firmware License",
+            "LicenseRef-scancode-stmicroelectronics-linux-firmware"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

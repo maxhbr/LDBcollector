@@ -1,0 +1,11 @@
+{
+    "canonical": "newton-king-cla",
+    "aliases": {
+        "scancode-licensedb": [
+            "James Newton-King CLA",
+            "Newton-King CLA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

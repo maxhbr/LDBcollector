@@ -1,0 +1,11 @@
+{
+    "canonical": "agpl-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "AGPL 2.0",
+            "Affero General Public License 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "esri-devkit",
+    "aliases": {
+        "scancode-licensedb": [
+            "Esri Developer Kit License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

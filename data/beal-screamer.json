@@ -1,0 +1,10 @@
+{
+    "canonical": "beal-screamer",
+    "aliases": {
+        "scancode-licensedb": [
+            "Beal Screamer License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "snmp4j-smi",
+    "aliases": {
+        "scancode-licensedb": [
+            "SNMP4J-SMI License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

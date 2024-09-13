@@ -1,0 +1,11 @@
+{
+    "canonical": "scansoft-1.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "ScanSoft Public License 1.2",
+            "ScanSoft Public License v1.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "twisted-snmp",
+    "aliases": {
+        "scancode-licensedb": [
+            "TwistedSNMP License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

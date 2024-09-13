@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-limited-community",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Limited Community License",
+            "Microsoft Limited Community License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

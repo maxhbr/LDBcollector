@@ -1,0 +1,11 @@
+{
+    "canonical": "adobe-general-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe General TOU",
+            "Adobe General Terms of Use"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

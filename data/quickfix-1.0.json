@@ -1,0 +1,11 @@
+{
+    "canonical": "quickfix-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "QuickFix 1.0",
+            "The QuickFIX Software License, Version 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-intel",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD Intel License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

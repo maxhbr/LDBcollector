@@ -1,0 +1,10 @@
+{
+    "canonical": "egrappler",
+    "aliases": {
+        "scancode-licensedb": [
+            "eGrappler License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

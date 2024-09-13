@@ -1,0 +1,13 @@
+{
+    "canonical": "stunnel-exception",
+    "aliases": {
+        "spdx": [
+            "stunnel Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "stunnel-exception"
+        ]
+    },
+    "src": "spdx"
+}

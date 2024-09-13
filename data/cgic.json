@@ -1,0 +1,10 @@
+{
+    "canonical": "cgic",
+    "aliases": {
+        "scancode-licensedb": [
+            "CGIC License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

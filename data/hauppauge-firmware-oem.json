@@ -1,0 +1,10 @@
+{
+    "canonical": "hauppauge-firmware-oem",
+    "aliases": {
+        "scancode-licensedb": [
+            "Hauppauge Firmware OEM License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

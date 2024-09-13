@@ -1,0 +1,10 @@
+{
+    "canonical": "semgrep-registry",
+    "aliases": {
+        "scancode-licensedb": [
+            "Semgrep Registry License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

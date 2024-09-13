@@ -1,0 +1,10 @@
+{
+    "canonical": "mvt-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "MVT License 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

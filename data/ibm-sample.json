@@ -1,0 +1,11 @@
+{
+    "canonical": "ibm-sample",
+    "aliases": {
+        "scancode-licensedb": [
+            "IBM Sample License",
+            "IBM Sample Program License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

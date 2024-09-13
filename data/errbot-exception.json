@@ -1,0 +1,10 @@
+{
+    "canonical": "errbot-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Errbot exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

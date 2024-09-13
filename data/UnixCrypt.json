@@ -1,0 +1,13 @@
+{
+    "canonical": "UnixCrypt",
+    "aliases": {
+        "spdx": [
+            "UnixCrypt License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "unixcrypt"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "cximage",
+    "aliases": {
+        "scancode-licensedb": [
+            "CxImage License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

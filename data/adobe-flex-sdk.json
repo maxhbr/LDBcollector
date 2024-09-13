@@ -1,0 +1,10 @@
+{
+    "canonical": "adobe-flex-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe Flex SDK SLA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

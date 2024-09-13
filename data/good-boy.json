@@ -1,0 +1,10 @@
+{
+    "canonical": "good-boy",
+    "aliases": {
+        "scancode-licensedb": [
+            "Good Boy License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "psytec-freesoft",
+    "aliases": {
+        "scancode-licensedb": [
+            "Psytec Free Software License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

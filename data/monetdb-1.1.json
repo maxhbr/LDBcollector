@@ -1,0 +1,11 @@
+{
+    "canonical": "monetdb-1.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "MonetDB 1.1",
+            "MonetDB Public License Version 1.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

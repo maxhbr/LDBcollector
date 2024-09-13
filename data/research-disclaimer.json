@@ -1,0 +1,10 @@
+{
+    "canonical": "research-disclaimer",
+    "aliases": {
+        "scancode-licensedb": [
+            "Research Software Disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

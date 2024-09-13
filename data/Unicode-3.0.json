@@ -1,0 +1,14 @@
+{
+    "canonical": "Unicode-3.0",
+    "aliases": {
+        "spdx": [
+            "Unicode License v3"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "unicode-v3",
+            "LicenseRef-scancode-unicode-v3"
+        ]
+    },
+    "src": "spdx"
+}

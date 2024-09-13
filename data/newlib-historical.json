@@ -1,0 +1,10 @@
+{
+    "canonical": "newlib-historical",
+    "aliases": {
+        "scancode-licensedb": [
+            "Newlib Historical License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

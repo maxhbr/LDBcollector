@@ -1,0 +1,10 @@
+{
+    "canonical": "unlimited-binary-use-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Unlimited Binary Use Exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

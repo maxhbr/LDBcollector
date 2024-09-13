@@ -1,0 +1,11 @@
+{
+    "canonical": "adobe-indesign-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe SDK License for INDESIGN, INDESIGN SERVER and INCOPY Software",
+            "Adobe InDesign SDK License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

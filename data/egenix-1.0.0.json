@@ -1,0 +1,10 @@
+{
+    "canonical": "egenix-1.0.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "eGenix Public License 1.0.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

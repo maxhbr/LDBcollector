@@ -1,0 +1,11 @@
+{
+    "canonical": "apache-patent-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apache Patent Provision Exception Terms",
+            "LicenseRef-scancode-apache-patent-provision-exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "t-engine-public",
+    "aliases": {
+        "scancode-licensedb": [
+            "T-Engine Public License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

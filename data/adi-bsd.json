@@ -1,0 +1,11 @@
+{
+    "canonical": "adi-bsd",
+    "aliases": {
+        "scancode-licensedb": [
+            "ADI BSD License",
+            "ADI BSD"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

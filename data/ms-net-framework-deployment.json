@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-net-framework-deployment",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS .NET Framework Redistributable EULA",
+            "Microsoft .NET Framework Redistributable EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

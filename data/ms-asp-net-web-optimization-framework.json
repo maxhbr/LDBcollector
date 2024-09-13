@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-asp-net-web-optimization-framework",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS ASP.NET Web Optimization Framework",
+            "LicenseRef-scancode-ms-asp-net-web-optimization-framework",
+            "Microsoft ASP.NET Web Optimization Framework"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

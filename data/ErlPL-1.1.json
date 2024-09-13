@@ -1,0 +1,14 @@
+{
+    "canonical": "ErlPL-1.1",
+    "aliases": {
+        "spdx": [
+            "Erlang Public License v1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "erlangpl-1.1",
+            "Erlang Public License 1.1"
+        ]
+    },
+    "src": "spdx"
+}

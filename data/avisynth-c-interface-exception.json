@@ -1,0 +1,10 @@
+{
+    "canonical": "avisynth-c-interface-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Avisynth C Interface Exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "Xdebug-1.03",
+    "aliases": {
+        "spdx": [
+            "Xdebug License v 1.03"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "xdebug-1.03"
+        ]
+    },
+    "src": "spdx"
+}

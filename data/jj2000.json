@@ -1,0 +1,10 @@
+{
+    "canonical": "jj2000",
+    "aliases": {
+        "scancode-licensedb": [
+            "JJ2000 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "yensdesign",
+    "aliases": {
+        "scancode-licensedb": [
+            "Yensdesign License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "winzip-self-extractor",
+    "aliases": {
+        "scancode-licensedb": [
+            "WinZip Self-Extractor License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "fpdf",
+    "aliases": {
+        "scancode-licensedb": [
+            "FPDF License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

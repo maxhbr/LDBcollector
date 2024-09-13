@@ -1,0 +1,10 @@
+{
+    "canonical": "aldor-public-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Aldor Public License 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

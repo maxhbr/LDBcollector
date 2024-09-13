@@ -1,0 +1,10 @@
+{
+    "canonical": "other-copyleft",
+    "aliases": {
+        "scancode-licensedb": [
+            "Other Copyleft Licenses"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

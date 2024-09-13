@@ -1,0 +1,13 @@
+{
+    "canonical": "SGP4",
+    "aliases": {
+        "spdx": [
+            "SGP4 Permission Notice"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "sgp4"
+        ]
+    },
+    "src": "spdx"
+}

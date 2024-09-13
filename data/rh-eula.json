@@ -1,0 +1,11 @@
+{
+    "canonical": "rh-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Red Hat EULA",
+            "Red Hat EULA for Enterprise Linux and Applications"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

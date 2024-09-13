@@ -1,0 +1,10 @@
+{
+    "canonical": "whitecat",
+    "aliases": {
+        "scancode-licensedb": [
+            "Whitecat License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

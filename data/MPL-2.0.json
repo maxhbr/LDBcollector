@@ -1,0 +1,30 @@
+{
+    "canonical": "MPL-2.0",
+    "aliases": {
+        "spdx": [
+            "Mozilla Public License 2.0"
+        ],
+        "custom": [
+            "Mozilla Public License v2.0",
+            "MPL v2.0",
+            "MPL 2.0 License",
+            "MPL v2.0 License",
+            "Mozilla Public License 2.0 (MPL)",
+            "MPL (2.0)",
+            "MPL-2.0 License",
+            "MPL 2.0 (Mozilla)",
+            "MPL 2.0 (Open Source)",
+            "Mozilla Public License (2.0)",
+            "Mozilla Public License (MPL 2.0)",
+            "Mozilla License 2.0",
+            "MPL 2.0 Open Source License",
+            "MPL 2.0 (Open Source License)",
+            "Mozilla Public License v2.0 (MPL)"
+        ],
+        "scancode-licensedb": [
+            "mpl-2.0",
+            "MPL 2.0"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "kfgqpc-uthmanic-script-hafs",
+    "aliases": {
+        "scancode-licensedb": [
+            "Uthmanic Script License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

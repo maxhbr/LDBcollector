@@ -1,0 +1,13 @@
+{
+    "canonical": "GL2PS",
+    "aliases": {
+        "spdx": [
+            "GL2PS License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gl2ps"
+        ]
+    },
+    "src": "spdx"
+}

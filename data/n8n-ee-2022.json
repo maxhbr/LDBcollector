@@ -1,0 +1,10 @@
+{
+    "canonical": "n8n-ee-2022",
+    "aliases": {
+        "scancode-licensedb": [
+            "n8n Enterprise License 2022"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

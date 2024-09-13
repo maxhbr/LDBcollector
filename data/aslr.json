@@ -1,0 +1,11 @@
+{
+    "canonical": "aslr",
+    "aliases": {
+        "scancode-licensedb": [
+            "Artop ASLR",
+            "Artop Software License Based on AUTOSAR Released Material"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

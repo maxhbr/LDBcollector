@@ -1,0 +1,10 @@
+{
+    "canonical": "oasis-ws-security-spec",
+    "aliases": {
+        "scancode-licensedb": [
+            "Oasis WS Security Specification License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

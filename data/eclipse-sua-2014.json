@@ -1,0 +1,10 @@
+{
+    "canonical": "eclipse-sua-2014",
+    "aliases": {
+        "scancode-licensedb": [
+            "Eclipse Foundation Software User Agreement 2014"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

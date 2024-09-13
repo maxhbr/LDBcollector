@@ -1,0 +1,15 @@
+{
+    "canonical": "X11-distribute-modifications-variant",
+    "aliases": {
+        "spdx": [
+            "X11 License Distribution Modification Variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-x11-fsf",
+            "x11-fsf",
+            "X11-Style (FSF)"
+        ]
+    },
+    "src": "spdx"
+}

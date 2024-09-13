@@ -1,0 +1,11 @@
+{
+    "canonical": "agtpl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Access Grid Toolkit Public License (AGTPL)",
+            "AGTPL"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

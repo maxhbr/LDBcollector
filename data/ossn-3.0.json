@@ -1,0 +1,11 @@
+{
+    "canonical": "ossn-3.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OSSN-3.0",
+            "Open Source Social Network License v3.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

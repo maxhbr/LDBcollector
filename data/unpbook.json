@@ -1,0 +1,10 @@
+{
+    "canonical": "unpbook",
+    "aliases": {
+        "scancode-licensedb": [
+            "UNIX Network Programming Book License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

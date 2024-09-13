@@ -1,0 +1,10 @@
+{
+    "canonical": "rar-winrar-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "RAR and WinRAR EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

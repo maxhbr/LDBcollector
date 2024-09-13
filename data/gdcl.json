@@ -1,0 +1,10 @@
+{
+    "canonical": "gdcl",
+    "aliases": {
+        "scancode-licensedb": [
+            "GDCL License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,16 @@
+{
+    "canonical": "UBDL-exception",
+    "aliases": {
+        "spdx": [
+            "Unmodified Binary Distribution exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "Unmodified Binary Distribution Licence",
+            "LicenseRef-scancode-ubdl",
+            "ubdl",
+            "Unmodified Binary Distribution Licence Exception"
+        ]
+    },
+    "src": "spdx"
+}

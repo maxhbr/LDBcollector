@@ -1,0 +1,10 @@
+{
+    "canonical": "cavium-malloc",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cavium malloc License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "odl",
+    "aliases": {
+        "scancode-licensedb": [
+            "Open Directory License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

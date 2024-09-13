@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-unpublished-source",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Unpublished Source License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

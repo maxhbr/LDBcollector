@@ -1,0 +1,10 @@
+{
+    "canonical": "alexisisaac-freeware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Alexisisaac Freeware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

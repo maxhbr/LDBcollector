@@ -1,0 +1,10 @@
+{
+    "canonical": "linotype-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Linotype EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

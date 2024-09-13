@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-typescript-msbuild-4.1.4",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS TypeScript MSBuild 4.1.4",
+            "Microsoft TypeScript MSBuild 4.1.4"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

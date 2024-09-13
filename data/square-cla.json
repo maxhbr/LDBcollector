@@ -1,0 +1,11 @@
+{
+    "canonical": "square-cla",
+    "aliases": {
+        "scancode-licensedb": [
+            "Square Inc. Individual Contributor License Agreement",
+            "Square CLA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

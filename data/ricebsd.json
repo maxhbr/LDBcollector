@@ -1,0 +1,11 @@
+{
+    "canonical": "ricebsd",
+    "aliases": {
+        "scancode-licensedb": [
+            "Rice BSD Software License",
+            "RiceBSD"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

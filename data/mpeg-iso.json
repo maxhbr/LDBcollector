@@ -1,0 +1,11 @@
+{
+    "canonical": "mpeg-iso",
+    "aliases": {
+        "scancode-licensedb": [
+            "MPEG-2 NBC MPEG-4 Audio ISO",
+            "MPEG-2 NBC MPEG-4 Audio ISO License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

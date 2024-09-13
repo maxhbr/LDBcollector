@@ -1,0 +1,15 @@
+{
+    "canonical": "DigiRule-FOSS-exception",
+    "aliases": {
+        "spdx": [
+            "DigiRule FOSS License Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "DigiRule FOSS License Exception to GPL 2.0",
+            "DigiRule FOSS Exception to GPL 2.0",
+            "digirule-foss-exception"
+        ]
+    },
+    "src": "spdx"
+}

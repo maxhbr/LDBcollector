@@ -1,0 +1,10 @@
+{
+    "canonical": "nvidia-video-codec-agreement",
+    "aliases": {
+        "scancode-licensedb": [
+            "NVIDIA Video Codec SDK Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

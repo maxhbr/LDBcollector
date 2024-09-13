@@ -1,0 +1,10 @@
+{
+    "canonical": "activestate-community-2012",
+    "aliases": {
+        "scancode-licensedb": [
+            "ActiveState Community License 2012"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

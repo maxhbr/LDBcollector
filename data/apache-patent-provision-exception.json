@@ -1,0 +1,10 @@
+{
+    "canonical": "apache-patent-provision-exception",
+    "aliases": {
+        "scancode-licensedb": [
+            "Apache Patent Provision Exception Deprecated"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

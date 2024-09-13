@@ -1,0 +1,10 @@
+{
+    "canonical": "stanford-pvrg",
+    "aliases": {
+        "scancode-licensedb": [
+            "Stanford PVRG License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

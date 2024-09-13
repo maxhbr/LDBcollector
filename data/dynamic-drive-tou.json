@@ -1,0 +1,11 @@
+{
+    "canonical": "dynamic-drive-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "Dynamic Drive TOU",
+            "Dynamic Drive Terms of Use"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "lavantech",
+    "aliases": {
+        "scancode-licensedb": [
+            "LavanTech License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

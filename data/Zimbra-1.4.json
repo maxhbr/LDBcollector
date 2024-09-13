@@ -1,0 +1,14 @@
+{
+    "canonical": "Zimbra-1.4",
+    "aliases": {
+        "spdx": [
+            "Zimbra Public License v1.4"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "zimbra-1.4",
+            "Zimbra PL 1.4"
+        ]
+    },
+    "src": "spdx"
+}

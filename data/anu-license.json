@@ -1,0 +1,11 @@
+{
+    "canonical": "anu-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "Australian National University License",
+            "ANU License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

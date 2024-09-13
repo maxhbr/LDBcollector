@@ -1,0 +1,14 @@
+{
+    "canonical": "Giftware",
+    "aliases": {
+        "spdx": [
+            "Giftware License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "allegro-4",
+            "Allegro 4 License"
+        ]
+    },
+    "src": "spdx"
+}

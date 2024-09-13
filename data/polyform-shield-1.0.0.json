@@ -1,0 +1,11 @@
+{
+    "canonical": "polyform-shield-1.0.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-polyform-defensive-1.0.0",
+            "Polyform Shield License 1.0.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

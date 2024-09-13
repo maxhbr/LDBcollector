@@ -1,0 +1,11 @@
+{
+    "canonical": "ldpgpl-1",
+    "aliases": {
+        "scancode-licensedb": [
+            "LDPGPL-1",
+            "Linux Documentation Project General Public License v1, September 1998"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

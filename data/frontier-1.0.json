@@ -1,0 +1,10 @@
+{
+    "canonical": "frontier-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Frontier Artistic License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

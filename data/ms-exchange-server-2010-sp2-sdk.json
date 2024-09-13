@@ -1,0 +1,12 @@
+{
+    "canonical": "ms-exchange-server-2010-sp2-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Exchange Server 2010 SP2 Web Services SDK",
+            "MS Exchange Server 2010 SP2 Web Services SDK",
+            "LicenseRef-scancode-ms-exchange-server-2010-sp2-sdk"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

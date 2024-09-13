@@ -1,0 +1,10 @@
+{
+    "canonical": "bsd-top-gpl-addition",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD 3-Clause with GPL reference"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

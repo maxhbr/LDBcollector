@@ -1,0 +1,10 @@
+{
+    "canonical": "stanford-mrouted",
+    "aliases": {
+        "scancode-licensedb": [
+            "Stanford mrouted License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

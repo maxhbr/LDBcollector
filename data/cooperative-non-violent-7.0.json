@@ -1,0 +1,11 @@
+{
+    "canonical": "cooperative-non-violent-7.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Cooperative Non-Violent Public License v7",
+            "CNVPL 7.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

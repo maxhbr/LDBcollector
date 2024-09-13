@@ -1,0 +1,10 @@
+{
+    "canonical": "red-hat-attribution",
+    "aliases": {
+        "scancode-licensedb": [
+            "Red Hat Attribution License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

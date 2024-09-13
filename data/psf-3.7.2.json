@@ -1,0 +1,11 @@
+{
+    "canonical": "psf-3.7.2",
+    "aliases": {
+        "scancode-licensedb": [
+            "PSF License Agreement for Python 3.7.2",
+            "PSF Python License 3.7.2"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

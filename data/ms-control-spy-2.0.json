@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-control-spy-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Control Spy 2.0",
+            "MS Control Spy 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

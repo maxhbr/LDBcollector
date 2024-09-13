@@ -1,0 +1,10 @@
+{
+    "canonical": "mit-specification-disclaimer",
+    "aliases": {
+        "scancode-licensedb": [
+            "MIT with Specification Disclaimer"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

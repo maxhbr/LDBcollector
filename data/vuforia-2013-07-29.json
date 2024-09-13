@@ -1,0 +1,11 @@
+{
+    "canonical": "vuforia-2013-07-29",
+    "aliases": {
+        "scancode-licensedb": [
+            "Vuforia SDK License Agreement 2013-07-29",
+            "Vuforia 2013-07-29"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,15 @@
+{
+    "canonical": "NLOD-1.0",
+    "aliases": {
+        "spdx": [
+            "Norwegian Licence for Open Government Data (NLOD) 1.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "NLOD-1.0",
+            "nlod-1.0",
+            "Norwegian Licence for Open Government Data"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-visual-studio-code",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Visual Studio Code License",
+            "MS Visual Studio Code License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

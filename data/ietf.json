@@ -1,0 +1,11 @@
+{
+    "canonical": "ietf",
+    "aliases": {
+        "scancode-licensedb": [
+            "Internet Engineering Task Force License",
+            "IETF License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

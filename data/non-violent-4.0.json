@@ -1,0 +1,11 @@
+{
+    "canonical": "non-violent-4.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Non-Violent Public License v4",
+            "NVPL 4.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

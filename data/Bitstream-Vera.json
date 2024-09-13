@@ -1,0 +1,14 @@
+{
+    "canonical": "Bitstream-Vera",
+    "aliases": {
+        "spdx": [
+            "Bitstream Vera Font License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bitstream",
+            "LicenseRef-scancode-bitstream"
+        ]
+    },
+    "src": "spdx"
+}

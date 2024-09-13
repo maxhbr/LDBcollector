@@ -1,0 +1,10 @@
+{
+    "canonical": "okl",
+    "aliases": {
+        "scancode-licensedb": [
+            "OKL license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

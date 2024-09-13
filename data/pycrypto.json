@@ -1,0 +1,10 @@
+{
+    "canonical": "pycrypto",
+    "aliases": {
+        "scancode-licensedb": [
+            "PyCrypto License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

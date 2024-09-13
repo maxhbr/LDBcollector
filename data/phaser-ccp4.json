@@ -1,0 +1,10 @@
+{
+    "canonical": "phaser-ccp4",
+    "aliases": {
+        "scancode-licensedb": [
+            "Phaser Commercial EULA (CCP4)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

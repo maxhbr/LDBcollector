@@ -1,0 +1,11 @@
+{
+    "canonical": "mcafee-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "McAfee Software royalty-Free License",
+            "McAfee Free License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

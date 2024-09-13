@@ -1,0 +1,10 @@
+{
+    "canonical": "scanlogd-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "scanlogd License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

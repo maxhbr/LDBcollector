@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-specification",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Specification License",
+            "MS Specification License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

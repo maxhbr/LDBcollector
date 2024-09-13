@@ -1,0 +1,11 @@
+{
+    "canonical": "sun-jta-spec-1.0.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Sun JTA Specification License v1.0.1",
+            "Sun JTA Specification License 1.0.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "DocBook-Schema",
+    "aliases": {
+        "spdx": [
+            "DocBook Schema License"
+        ],
+        "custom": []
+    },
+    "src": "spdx"
+}

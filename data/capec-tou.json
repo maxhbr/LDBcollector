@@ -1,0 +1,11 @@
+{
+    "canonical": "capec-tou",
+    "aliases": {
+        "scancode-licensedb": [
+            "Common Attack Pattern Enumeration and Classification ToU",
+            "CAPEC ToU"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

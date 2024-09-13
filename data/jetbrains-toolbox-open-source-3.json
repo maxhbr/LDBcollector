@@ -1,0 +1,12 @@
+{
+    "canonical": "jetbrains-toolbox-open-source-3",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-jetbrains-toolbox-open-source-3",
+            "JetBrains Toolbox Open Source License v3",
+            "Toolbox Subscription License Agreement For Open Source Projects Version 3"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

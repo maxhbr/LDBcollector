@@ -1,0 +1,12 @@
+{
+    "canonical": "public-domain",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-PublicDomain",
+            "Public Domain",
+            "LicenseRef-Fedora-Public-Domain"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "epaperpress",
+    "aliases": {
+        "scancode-licensedb": [
+            "ePaperPress License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

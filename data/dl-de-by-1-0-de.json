@@ -1,0 +1,11 @@
+{
+    "canonical": "dl-de-by-1-0-de",
+    "aliases": {
+        "scancode-licensedb": [
+            "dl-de/by-1-0-de",
+            "Datenlizenz Deutschland - Namensnennung - Version 1.0 - Deutsch"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

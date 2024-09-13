@@ -1,0 +1,10 @@
+{
+    "canonical": "telerik-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Telerik EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

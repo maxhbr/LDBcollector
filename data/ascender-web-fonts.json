@@ -1,0 +1,10 @@
+{
+    "canonical": "ascender-web-fonts",
+    "aliases": {
+        "scancode-licensedb": [
+            "Ascender Web Fonts License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "ogc-2006",
+    "aliases": {
+        "scancode-licensedb": [
+            "OGC Software Notice 2006"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

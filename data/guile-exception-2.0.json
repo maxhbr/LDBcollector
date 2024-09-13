@@ -1,0 +1,10 @@
+{
+    "canonical": "guile-exception-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "GUILE exception to GPL 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "hdf4",
+    "aliases": {
+        "scancode-licensedb": [
+            "HDF4 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

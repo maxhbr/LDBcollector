@@ -1,0 +1,11 @@
+{
+    "canonical": "html5",
+    "aliases": {
+        "scancode-licensedb": [
+            "HTML 5 specification License",
+            "HTML 5 spec License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "mulle-kybernetik",
+    "aliases": {
+        "scancode-licensedb": [
+            "Mulle Kybernetik License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

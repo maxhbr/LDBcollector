@@ -1,0 +1,10 @@
+{
+    "canonical": "ms-entity-framework-5",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Entity Framework 5 License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

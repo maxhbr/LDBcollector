@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-windows-identity-foundation",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Windows Identity Foundation License",
+            "MS Windows Identity Foundation License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

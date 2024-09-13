@@ -1,0 +1,11 @@
+{
+    "canonical": "opnl-2.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "OPNL-2.0",
+            "Open Innovation License version 2.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

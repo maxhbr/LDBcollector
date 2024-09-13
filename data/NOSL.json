@@ -1,0 +1,15 @@
+{
+    "canonical": "NOSL",
+    "aliases": {
+        "spdx": [
+            "Netizen Open Source License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "NOSL 1.0",
+            "nosl-1.0",
+            "Netizen Open Source License 1.0"
+        ]
+    },
+    "src": "spdx"
+}

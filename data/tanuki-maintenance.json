@@ -1,0 +1,11 @@
+{
+    "canonical": "tanuki-maintenance",
+    "aliases": {
+        "scancode-licensedb": [
+            "Tanuki Maintenance Support Services Addendum 1.3",
+            "Tanuki Maintenance Addendum 1.3"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

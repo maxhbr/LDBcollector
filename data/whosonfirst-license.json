@@ -1,0 +1,10 @@
+{
+    "canonical": "whosonfirst-license",
+    "aliases": {
+        "scancode-licensedb": [
+            "whosonfirst license"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

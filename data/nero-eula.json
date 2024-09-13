@@ -1,0 +1,10 @@
+{
+    "canonical": "nero-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "Nero EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

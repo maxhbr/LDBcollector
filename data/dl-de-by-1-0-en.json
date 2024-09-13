@@ -1,0 +1,11 @@
+{
+    "canonical": "dl-de-by-1-0-en",
+    "aliases": {
+        "scancode-licensedb": [
+            "Data licence Germany - attribution - Version 1 - English",
+            "dl-de/by-1-0-en"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

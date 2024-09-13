@@ -1,0 +1,10 @@
+{
+    "canonical": "qt-commercial-agreement-4.4.1",
+    "aliases": {
+        "scancode-licensedb": [
+            "Qt License Agreement v4.4.1"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

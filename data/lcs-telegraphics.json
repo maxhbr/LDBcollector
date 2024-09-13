@@ -1,0 +1,10 @@
+{
+    "canonical": "lcs-telegraphics",
+    "aliases": {
+        "scancode-licensedb": [
+            "LCS-Telegraphics License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

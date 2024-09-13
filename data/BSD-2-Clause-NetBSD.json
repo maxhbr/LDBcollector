@@ -1,0 +1,15 @@
+{
+    "canonical": "BSD-2-Clause-NetBSD",
+    "aliases": {
+        "spdx": [
+            "BSD 2-Clause NetBSD License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "bsd-2-clause-netbsd",
+            "BSD-2-Clause-NetBSD License",
+            "BSD-2-Clause-NetBSD"
+        ]
+    },
+    "src": "spdx"
+}

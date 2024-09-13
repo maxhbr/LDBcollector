@@ -1,0 +1,11 @@
+{
+    "canonical": "bsd-dpt",
+    "aliases": {
+        "scancode-licensedb": [
+            "BSD Distributed Processing Technology License",
+            "BSD DPT"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

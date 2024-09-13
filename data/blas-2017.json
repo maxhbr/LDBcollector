@@ -1,0 +1,10 @@
+{
+    "canonical": "blas-2017",
+    "aliases": {
+        "scancode-licensedb": [
+            "BLAS License 2017"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

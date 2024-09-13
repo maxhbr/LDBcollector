@@ -1,0 +1,10 @@
+{
+    "canonical": "chelsio-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Chelsio Linux Firmware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

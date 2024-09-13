@@ -1,0 +1,10 @@
+{
+    "canonical": "microchip-linux-firmware",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microchip Linux Firmware License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

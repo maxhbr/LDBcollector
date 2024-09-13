@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-visual-studio-2017-tools",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Visual Studio 2017 Tools",
+            "MS Visual Studio 2017 Tools"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

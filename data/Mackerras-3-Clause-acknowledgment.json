@@ -1,0 +1,15 @@
+{
+    "canonical": "Mackerras-3-Clause-acknowledgment",
+    "aliases": {
+        "spdx": [
+            "Mackerras 3-Clause - acknowledgment variant"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-paul-mackerras",
+            "Paul Mackerras License",
+            "paul-mackerras"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "google-patent-license-fuchsia",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google Patent License for Fuchsia"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

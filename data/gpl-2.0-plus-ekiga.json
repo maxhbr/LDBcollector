@@ -1,0 +1,10 @@
+{
+    "canonical": "gpl-2.0-plus-ekiga",
+    "aliases": {
+        "scancode-licensedb": [
+            "GPL 2.0 or later with Ekiga exception"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

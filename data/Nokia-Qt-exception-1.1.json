@@ -1,0 +1,14 @@
+{
+    "canonical": "Nokia-Qt-exception-1.1",
+    "aliases": {
+        "spdx": [
+            "Nokia Qt LGPL exception 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "nokia-qt-exception-1.1",
+            "Nokia Qt Exception to LGPL 2.1"
+        ]
+    },
+    "src": "spdx"
+}

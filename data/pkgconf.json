@@ -1,0 +1,15 @@
+{
+    "canonical": "pkgconf",
+    "aliases": {
+        "spdx": [
+            "pkgconf License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "mit-taylor-variant",
+            "MIT Taylor Variant",
+            "LicenseRef-scancode-mit-taylor-variant"
+        ]
+    },
+    "src": "spdx"
+}

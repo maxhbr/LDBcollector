@@ -1,0 +1,11 @@
+{
+    "canonical": "efsl-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Eclipse Foundation Specification License - v1.0",
+            "EFSL 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

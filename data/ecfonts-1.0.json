@@ -1,0 +1,11 @@
+{
+    "canonical": "ecfonts-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "latex-ec-fonts",
+            "Copyright notice to the ec fonts"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

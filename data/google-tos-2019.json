@@ -1,0 +1,11 @@
+{
+    "canonical": "google-tos-2019",
+    "aliases": {
+        "scancode-licensedb": [
+            "Google TOS 2019",
+            "Google Terms of Service 2019"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

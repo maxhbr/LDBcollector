@@ -1,0 +1,10 @@
+{
+    "canonical": "esri",
+    "aliases": {
+        "scancode-licensedb": [
+            "Esri License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

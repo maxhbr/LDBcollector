@@ -1,0 +1,10 @@
+{
+    "canonical": "freebsd-boot",
+    "aliases": {
+        "scancode-licensedb": [
+            "FreeBSD Boot"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

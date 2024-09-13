@@ -1,0 +1,10 @@
+{
+    "canonical": "larabie",
+    "aliases": {
+        "scancode-licensedb": [
+            "Larabie Fonts EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

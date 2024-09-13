@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-eula-win-script-host",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS EULA for Windows Script Host",
+            "Microsoft EULA for Windows Script Host"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

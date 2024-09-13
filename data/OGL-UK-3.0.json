@@ -1,0 +1,15 @@
+{
+    "canonical": "OGL-UK-3.0",
+    "aliases": {
+        "spdx": [
+            "Open Government Licence v3.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ogl-uk-3.0",
+            "OGL-UK-3.0",
+            "U.K. Open Government License for Public Sector Information v3.0"
+        ]
+    },
+    "src": "spdx"
+}

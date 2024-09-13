@@ -1,0 +1,10 @@
+{
+    "canonical": "wrox",
+    "aliases": {
+        "scancode-licensedb": [
+            "Wrox Press License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

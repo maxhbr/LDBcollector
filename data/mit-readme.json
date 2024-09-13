@@ -1,0 +1,10 @@
+{
+    "canonical": "mit-readme",
+    "aliases": {
+        "scancode-licensedb": [
+            "MIT README License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

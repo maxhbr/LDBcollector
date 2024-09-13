@@ -1,0 +1,10 @@
+{
+    "canonical": "mx4j",
+    "aliases": {
+        "scancode-licensedb": [
+            "MX4J License 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

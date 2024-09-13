@@ -1,0 +1,13 @@
+{
+    "canonical": "NGPL",
+    "aliases": {
+        "spdx": [
+            "Nethack General Public License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "ngpl"
+        ]
+    },
+    "src": "spdx"
+}

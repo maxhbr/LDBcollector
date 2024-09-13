@@ -1,0 +1,11 @@
+{
+    "canonical": "msj-sample-code",
+    "aliases": {
+        "scancode-licensedb": [
+            "Microsoft Systems Journal Sample Code License",
+            "MS Systems Journal Sample Code License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

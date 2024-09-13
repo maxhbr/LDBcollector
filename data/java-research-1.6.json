@@ -1,0 +1,11 @@
+{
+    "canonical": "java-research-1.6",
+    "aliases": {
+        "scancode-licensedb": [
+            "Java Research License 1.6",
+            "Java Research License Version 1.6"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

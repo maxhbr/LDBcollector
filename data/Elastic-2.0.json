@@ -1,0 +1,15 @@
+{
+    "canonical": "Elastic-2.0",
+    "aliases": {
+        "spdx": [
+            "Elastic License 2.0"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "LicenseRef-scancode-elastic-license-v2",
+            "elastic-license-v2",
+            "Elastic License 2.0 (ELv2)"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,13 @@
+{
+    "canonical": "blessing",
+    "aliases": {
+        "spdx": [
+            "SQLite Blessing"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "blessing"
+        ]
+    },
+    "src": "spdx"
+}

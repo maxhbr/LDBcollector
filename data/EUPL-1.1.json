@@ -1,0 +1,15 @@
+{
+    "canonical": "EUPL-1.1",
+    "aliases": {
+        "spdx": [
+            "European Union Public License 1.1"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "EUPL 1.1",
+            "European Union Public Licence 1.1",
+            "eupl-1.1"
+        ]
+    },
+    "src": "spdx"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "lzma-sdk-original",
+    "aliases": {
+        "scancode-licensedb": [
+            "LZMA SDK Original"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

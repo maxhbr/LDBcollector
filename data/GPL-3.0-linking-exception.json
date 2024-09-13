@@ -1,0 +1,13 @@
+{
+    "canonical": "GPL-3.0-linking-exception",
+    "aliases": {
+        "spdx": [
+            "GPL-3.0 Linking Exception"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "gpl-3.0-linking-exception"
+        ]
+    },
+    "src": "spdx"
+}

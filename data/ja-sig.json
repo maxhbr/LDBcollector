@@ -1,0 +1,10 @@
+{
+    "canonical": "ja-sig",
+    "aliases": {
+        "scancode-licensedb": [
+            "JA-SiG License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "brian-clapper",
+    "aliases": {
+        "scancode-licensedb": [
+            "Brian Clapper License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

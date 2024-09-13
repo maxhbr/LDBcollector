@@ -1,0 +1,10 @@
+{
+    "canonical": "fancyzoom",
+    "aliases": {
+        "scancode-licensedb": [
+            "FancyZoom License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

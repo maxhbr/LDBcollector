@@ -1,0 +1,10 @@
+{
+    "canonical": "x11-hanson",
+    "aliases": {
+        "scancode-licensedb": [
+            "X11-Style (David R. Hanson)"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

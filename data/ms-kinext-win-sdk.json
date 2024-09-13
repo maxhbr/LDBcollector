@@ -1,0 +1,11 @@
+{
+    "canonical": "ms-kinext-win-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "MS Kinect for Windows SDK License",
+            "Microsoft Kinect for Windows SDK License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

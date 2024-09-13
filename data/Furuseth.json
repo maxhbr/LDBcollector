@@ -1,0 +1,13 @@
+{
+    "canonical": "Furuseth",
+    "aliases": {
+        "spdx": [
+            "Furuseth License"
+        ],
+        "custom": [],
+        "scancode-licensedb": [
+            "furuseth"
+        ]
+    },
+    "src": "spdx"
+}

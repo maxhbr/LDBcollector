@@ -1,0 +1,10 @@
+{
+    "canonical": "adobe-dng-sdk",
+    "aliases": {
+        "scancode-licensedb": [
+            "Adobe DNG SDK License Agreement"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

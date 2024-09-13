@@ -1,0 +1,11 @@
+{
+    "canonical": "metrolink-1.0",
+    "aliases": {
+        "scancode-licensedb": [
+            "Metro Link Public License 1.0",
+            "Metrolink 1.0"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "treeview-distributor",
+    "aliases": {
+        "scancode-licensedb": [
+            "TreeView Distributor License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

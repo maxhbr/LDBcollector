@@ -1,0 +1,11 @@
+{
+    "canonical": "cecill-b-en",
+    "aliases": {
+        "scancode-licensedb": [
+            "CeCILL-B License English",
+            "CeCILL-B Free Software License Agreement English"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

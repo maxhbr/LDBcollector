@@ -1,0 +1,10 @@
+{
+    "canonical": "rsa-demo",
+    "aliases": {
+        "scancode-licensedb": [
+            "RSA Demo License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

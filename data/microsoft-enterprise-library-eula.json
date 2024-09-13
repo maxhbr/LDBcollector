@@ -1,0 +1,12 @@
+{
+    "canonical": "microsoft-enterprise-library-eula",
+    "aliases": {
+        "scancode-licensedb": [
+            "LicenseRef-scancode-microsoft-enterprise-library-eula",
+            "MS Enterprise Library EULA",
+            "Microsoft Enterprise Library EULA"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

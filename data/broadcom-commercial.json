@@ -1,0 +1,10 @@
+{
+    "canonical": "broadcom-commercial",
+    "aliases": {
+        "scancode-licensedb": [
+            "Broadcom Commercial Notice"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,11 @@
+{
+    "canonical": "elastic-license-2018",
+    "aliases": {
+        "scancode-licensedb": [
+            "Elastic License 2018",
+            "Elastic License Agreement 2018"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}

@@ -1,0 +1,10 @@
+{
+    "canonical": "componentace-jcraft",
+    "aliases": {
+        "scancode-licensedb": [
+            "ComponentAce JCraft License"
+        ],
+        "custom": []
+    },
+    "src": "scancode-licensedb"
+}
