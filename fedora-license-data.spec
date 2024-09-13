@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.55
+Version:        1.56
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,18 @@ make check-grammar
 
 
 %changelog
+* Fri Sep 13 2024 Miroslav Suchý <msuchy@redhat.com> 1.56-1
+- add public domain dedication in package calf
+- add public domain dedication for btop
+- add public domain dedication for upx
+- add DocBook-Stylesheet
+- add LGPL-2.1-only WITH WxWindows-exception-3.1
+- add public domain dedication for bsh
+- Add vim into OPUBL-1.0 exceptions
+- add GPL-1.0-or-later WITH Autoconf-exception-generic
+- LicenseRef-Fedora-Public-Domain: Add perlmulticore.h
+- add MIT-Click
+
 * Fri Aug 30 2024 Miroslav Suchý <msuchy@redhat.com> 1.55-1
 - Split rpmlint-fedora-license-data-legacy from rpmlint-fedora-license-
   data
