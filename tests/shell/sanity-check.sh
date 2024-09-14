@@ -74,11 +74,6 @@ check_file_presence()
 
 check_presence()
 {
-    echo $*
-}
-
-check_presence()
-{
     LICENSE=$1
     FILE=var/licenses/$LICENSE.json
     
