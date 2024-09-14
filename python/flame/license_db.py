@@ -549,16 +549,19 @@ class FossLicenses:
         license_expression = ' '.join(_license_expression)
 
         try:
-            compat_license_expression = self.expression_license(license_expression, validations=validations)
+            compat_license_expression = self.expression_license(license_expression, validations=validations, update_dual=False)
             fixed_license_expression = compat_license_expression['identified_license']
         except Exception:
             fixed_license_expression = license_expression
+            ambig_aliases = {}
+            for ambig in self.ambiguities_list():
+                aliases = self.license_db[AMBIG_TAG]['ambiguities'][ambig]['aliases']
+                for alias in aliases:
+                    ambig_aliases[alias] = ambig
 
-        for ambig in self.ambiguities_list():
-            aliases = self.license_db[AMBIG_TAG]['ambiguities'][ambig]['aliases']
-            for alias in sorted(aliases, key=len, reverse=True):
+            for alias in reversed(collections.OrderedDict(sorted(ambig_aliases.items(), key=lambda x: len(x[0])))):
                 if alias in fixed_license_expression:
-                    fixed_license_expression = re.sub(f'\s{alias}\s', '...', fixed_license_expression)
+                    fixed_license_expression = re.sub(re.escape(alias), ambig, fixed_license_expression)
                     break
 
         compat_licenses = [x.strip() for x in re.split(LICENSE_SPLIT_RE, fixed_license_expression)]

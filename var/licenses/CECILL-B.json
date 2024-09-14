@@ -18,6 +18,7 @@
         "https://spdx.org/licenses/cecill-b",
         "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
         "scancode:cecill-b",
-        "License :: CeCILL-B Free Software License Agreement"
+        "License :: CeCILL-B Free Software License Agreement",
+        "License :: CeCILL-B Free Software License Agreement (CECILL-B)"
     ]
 }
