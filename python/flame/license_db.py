@@ -559,7 +559,7 @@ class FossLicenses:
                 for alias in aliases:
                     ambig_aliases[alias] = ambig
 
-            for alias in  reversed(collections.OrderedDict(sorted(ambig_aliases.items(), key=lambda x: len(x[0])))):
+            for alias in reversed(collections.OrderedDict(sorted(ambig_aliases.items(), key=lambda x: len(x[0])))):
                 if alias in fixed_license_expression:
                     fixed_license_expression = re.sub(re.escape(alias), ambig, fixed_license_expression)
                     break
