@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "CNRI Open Source License Agreement for Python 1.6",
+    "scancode_key": "cnri-python-1.6",
+    "spdxid": "CNRI-Python",
+    "aliases": [
+        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
+        "CNRI Open Source License Agreement (Python 1.6b1)",
+        "CNRI portion of the multi-part Python License",
+        "CNRI-Python",
+        "CNRI Python 1.6",
+        "CNRI-Python-1.6b1",
+        "CNRI Python License",
+        "License :: OSI Approved :: Python License (CNRI Python License)",
+        "scancode://cnri-python-1.6",
+        "http://spdx.org/licenses/CNRI-Python",
+        "https://spdx.org/licenses/cnri-python",
+        "http://www.opensource.org/licenses/CNRI-Python",
+        "osi:CNRI-Python",
+        "scancode:cnri-python-1.6"
+    ]
+}
