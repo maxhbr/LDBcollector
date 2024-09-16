@@ -1810,3 +1810,10 @@ distribute the original LZMA SDK code, either in source code form
 or as a compiled binary, for any purpose, commercial or non-commercial,
 and by any means.
 '''
+
+package = zork
+location = https://github.com/devshane/zork/blob/master/README.md?plain=1#L10
+text = '''
+Public Domain source code to the original DUNGEON game (Zork I). Released to the PD by Infocom. Includes 
+source files, headers, and information.
+'''
