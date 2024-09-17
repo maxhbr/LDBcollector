@@ -10,7 +10,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.abspath(os.path.join(script_dir, '../../../data'))
 JSON_EXTENSION = ".json"
 
-logger, error_tracking_handler = setup_logger(__name__)
+logger = setup_logger(__name__)
 
 
 class LicenseListType(Enum):
@@ -167,7 +167,9 @@ def main():
     check_json_filename()
     check_unique_aliases()
     check_length_and_characters()
-    if error_tracking_handler.error_occurred:
+
+    # Check if error occurred
+    if logger.handlers[1]:
         exit(1)
 
 

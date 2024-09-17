@@ -6,7 +6,7 @@ import requests
 
 from src.logger import setup_logger
 
-logger, error_tracking_handler = setup_logger(__name__, log_level=10)
+logger = setup_logger(__name__, log_level=10)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)

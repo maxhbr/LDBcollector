@@ -49,4 +49,4 @@ def setup_logger(logger_name, log_file=os.path.join(parent_dir, 'licence_lynx.lo
         # Handle any errors in setting up the file handler
         logger.error("Failed to set up file handler: %s", e)
 
-    return logger, error_tracking_handler
+    return logger
