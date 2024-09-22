@@ -46,9 +46,17 @@ When you're working with compliance you are used to licenses called differently 
 
 Another problem you face when working with compliance is the need to check whether the licenses in a combined work are compatible. One example is the [`X11-Style (Keith Packard)`](https://scancode-licensedb.aboutcode.org/x11-keith-packard.html) license, which really is the same license as the [Historical Permission Notice and Disclaimer - sell variant](https://spdx.org/licenses/HPND-sell-variant.html). `X11-Style (Keith Packard)` is not supported for example in the OSADL matrix, but `HPND-sell-variant` is. Again, a seasoned license engineer or lawyer knows which licenses are compatible and which are not, but we need to make it possible for a machine to assist us. 
 
+# Status
+
+Current suport:
+
+```{include} STATUS.md
+```
+
+
 # About
 
-This projet aims at providing a database with:
+This project aims at providing a database with:
 
 * "all" different names for a license in a database
 
