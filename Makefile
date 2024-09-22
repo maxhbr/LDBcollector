@@ -121,18 +121,18 @@ stats:
 	@echo ""
 	@echo "|Type            | Number |"
 	@echo "|----------------|--------|"
-	@echo "|Licenses        | `PYTHONPATH=./python ./python/flame/__main__.py licenses | wc -l`    | "
-	@echo "|Aliases         | `PYTHONPATH=./python ./python/flame/__main__.py aliases | wc -l`     | "
-	@echo "|Compatibilities | `PYTHONPATH=./python ./python/flame/__main__.py compats | wc -l`     | "
-	@echo "|Operators       | `PYTHONPATH=./python ./python/flame/__main__.py operators | wc -l`   | "
-	@echo "|Ambiguities     | `PYTHONPATH=./python ./python/flame/__main__.py ambiguities | wc -l` | "
-	@echo "|Compounds       | `PYTHONPATH=./python ./python/flame/__main__.py compounds | wc -l`   | "
+	@echo "|Licenses        | `PYTHONPATH=./python ./python/flame/__main__.py licenses | wc -l`    |"
+	@echo "|Aliases         | `PYTHONPATH=./python ./python/flame/__main__.py aliases | wc -l`     |"
+	@echo "|Compatibilities | `PYTHONPATH=./python ./python/flame/__main__.py compats | wc -l`     |"
+	@echo "|Operators       | `PYTHONPATH=./python ./python/flame/__main__.py operators | wc -l`   |"
+	@echo "|Ambiguities     | `PYTHONPATH=./python ./python/flame/__main__.py ambiguities | wc -l` |"
+	@echo "|Compounds       | `PYTHONPATH=./python ./python/flame/__main__.py compounds | wc -l`   |"
 
 stats-file:
 	@make --silent stats > STATUS.md
 
 status: stats-file
-	cat templates/README.tmpl | perl  -p -e "s/__STATUS__/`cat STATUS.md`/g" # > README.md
+	cat templates/README.tmpl | perl  -p -e "s/__STATUS__/`cat STATUS.md`/g"  > README.md
 
 clean:
 	find . -name "*~"    | xargs rm -fr
