@@ -2,6 +2,9 @@
 SPDX-FileCopyrightText: 2024 Henrik Sandklef <hesa@sandklef.com>
 
 SPDX-License-Identifier: GPL-3.0-or-later
+
+README.md is generated from templates/README.tmpl
+
 -->
 
 # FOSS Licenses 
@@ -48,11 +51,17 @@ Another problem you face when working with compliance is the need to check wheth
 
 # Status
 
-Current suport:
+Current support:
 
-```{include} STATUS.md
-```
 
+|Type            | Number |
+|----------------|--------|
+|Licenses        | 183    |
+|Aliases         | 2454     |
+|Compatibilities | 22     |
+|Operators       | 14   |
+|Ambiguities     | 131 |
+|Compounds       | 23   |
 
 # About
 
