@@ -132,6 +132,7 @@ stats-file:
 	@make --silent stats > STATUS.md
 
 status: stats-file
+	cat templates/README.tmpl | perl  -p -e "s/__STATUS__/`cat STATUS.md`/g" # > README.md
 
 clean:
 	find . -name "*~"    | xargs rm -fr
