@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 # Script to check if all python classifiers as listed over at
 # https://pypi.org/pypi?%3Aaction=list_classifiers, with some
 # exceptions, are managed
