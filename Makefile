@@ -1,9 +1,8 @@
-# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-
-check: license python clean check-reuse build
+check: license python clean check-reuse build status
 	@echo "\n\n\n   Yay.... check succeeded :)\n\n\n"
 
 check_license_files:
@@ -119,18 +118,21 @@ py-release: check clean build
 	@echo "twine upload --repository foss-flame --verbose  dist/*"
 
 stats:
-	@echo -n "licenses:     "
-	@PYTHONPATH=./python ./python/flame/__main__.py licenses | wc -l
-	@echo -n "aliases:      "
-	@PYTHONPATH=./python ./python/flame/__main__.py aliases | wc -l
-	@echo -n "compats:      "
-	@PYTHONPATH=./python ./python/flame/__main__.py compats | wc -l
-	@echo -n "operators:    "
-	@PYTHONPATH=./python ./python/flame/__main__.py operators | wc -l
-	@echo -n "ambiguities:  "
-	@PYTHONPATH=./python ./python/flame/__main__.py ambiguities | wc -l
-	@echo -n "compounds:    "
-	@PYTHONPATH=./python ./python/flame/__main__.py compounds | wc -l
+	@echo ""
+	@echo "|Type            | Number |"
+	@echo "|----------------|--------|"
+	@echo "|Licenses        | `PYTHONPATH=./python ./python/flame/__main__.py licenses | wc -l`    |"
+	@echo "|Aliases         | `PYTHONPATH=./python ./python/flame/__main__.py aliases | wc -l`     |"
+	@echo "|Compatibilities | `PYTHONPATH=./python ./python/flame/__main__.py compats | wc -l`     |"
+	@echo "|Operators       | `PYTHONPATH=./python ./python/flame/__main__.py operators | wc -l`   |"
+	@echo "|Ambiguities     | `PYTHONPATH=./python ./python/flame/__main__.py ambiguities | wc -l` |"
+	@echo "|Compounds       | `PYTHONPATH=./python ./python/flame/__main__.py compounds | wc -l`   |"
+
+stats-file:
+	@make --silent stats > STATUS.md
+
+status: stats-file
+	cat templates/README.tmpl | perl  -p -e "s/__STATUS__/`cat STATUS.md`/g"  > README.md
 
 clean:
 	find . -name "*~"    | xargs rm -fr
