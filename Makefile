@@ -37,6 +37,10 @@ check_license_files:
 	@echo -m "Sanity check the licenses: " ; \
 		./tests/shell/sanity-check.sh || exit 1; echo "OK"
 
+# Check disclaimers
+	@echo -m "Check the disclaimers: " ; \
+		./tests/shell/check-disclaimer.sh || exit 1; echo "OK"
+
 # check JSON file not being licenses
 	@for lf in `find var/  -maxdepth 1  -name "*.json" `; \
 		do \
