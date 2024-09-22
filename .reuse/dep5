@@ -55,3 +55,6 @@ Files: python/docs/Makefile python/docs/make.bat
 Copyright: 2023 (c) SPhinx authors, www.sphinx-doc.org
 License: BSD-2-Clause
 
+Files: STATUS.md
+Copyright: 2024 Henrik Sandklef
+License: CC-BY-4.0
