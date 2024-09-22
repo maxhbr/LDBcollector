@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2024 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 PROD_DISCLAIMERS=$(find . -name "*.json" | xargs grep disclaimer | grep http | cut -d : -f 3-10 | sort  -u | wc -l)
 TEST_DISCLAIMERS=$(find . -name "*.json" | xargs grep disclaimer | grep test | cut -d : -f 3-10 | sort  -u | wc -l)
