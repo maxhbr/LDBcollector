@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Educational Community License 2.0",
+    "scancode_key": "ecl-2.0",
+    "spdxid": "ECL-2.0",
+    "aliases": [
+        "ecl2",
+        "ecl-2.0",
+        "ECL 2.0",
+        "ECL-2.0",
+        "Educational Community License 2.0",
+        "Educational Community License v2.0",
+        "Educational Community License, Version 2.0",
+        "scancode://ecl-2.0",
+        "ECL, Version 2.0",
+        "Educational Community License version 2.0",
+        "osi:ECL-2.0",
+        "scancode:ecl-2.0",
+        "License :: OSI Approved :: Educational Community License, Version 2.0 (ECL-2.0)"
+    ]
+}

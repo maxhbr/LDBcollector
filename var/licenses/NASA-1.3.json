@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "NASA Open Source License v1.3",
+    "scancode_key": "nasa-1.3",
+    "spdxid": "NASA-1.3",
+    "aliases": [
+        "nasa1.3",
+        "NASA 1.3",
+        "NASA-1.3",
+        "NASA License 1.3",
+        "NASA Open Source Agreement 1.3",
+        "NASA Open Source Agreement, Version 1.3",
+        "scancode://nasa-1.3",
+        "NASA, 1.3",
+        "NASA License, 1.3",
+        "NASA License, Version 1.3",
+        "NASA OPEN SOURCE AGREEMENT VERSION 1.3",
+        "NASA, Version 1.3",
+        "osi:NASA-1.3",
+        "scancode:nasa-1.3",
+        "License :: OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)"
+    ]
+}

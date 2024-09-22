@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Altera License",
+    "scancode_key": "xnet",
+    "spdxid": "Xnet",
+    "aliases": [
+        "Altera License",
+        "MIT License (X.Net)",
+        "scancode://xnet",
+        "The X.Net, Inc. License",
+        "Xnet",
+        "osi:Xnet",
+        "scancode:xnet",
+        "Xnet license",
+        "Xnet License",
+        "XNet license",
+        "X.Net License",
+        "XNet License",
+        "License :: OSI Approved :: X.Net License"
+    ]
+}

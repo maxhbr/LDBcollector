@@ -1,0 +1,23 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Intel BSD - Export Control",
+    "scancode_key": "intel-bsd-export-control",
+    "spdxid": "Intel",
+    "aliases": [
+        "Intel",
+        "Intel BSD - Export Control",
+        "Intel License Agreement",
+        "Intel Open Source License",
+        "intel-osl",
+        "License :: OSI Approved :: Intel Open Source License",
+        "scancode://intel-bsd-export-control",
+        "The Intel Open Source License",
+        "http://opensource.org/licenses/intel",
+        "https://opensource.org/licenses/intel",
+        "osi:Intel",
+        "scancode:intel-bsd-export-control"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Ricoh Source Code Public License v1.0",
+    "scancode_key": "ricoh-1.0",
+    "spdxid": "RSCPL",
+    "aliases": [
+        "License :: OSI Approved :: Ricoh Source Code Public License",
+        "Ricoh Source Code Public License",
+        "Ricoh Source Code Public License 1.0",
+        "RSCPL",
+        "scancode://ricoh-1.0",
+        "The Ricoh Source Code Public License",
+        "osi:RSCPL",
+        "scancode:ricoh-1.0"
+    ]
+}

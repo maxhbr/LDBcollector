@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Collaborative Virtual Workspace License",
+    "scancode_key": "cvwl",
+    "spdxid": "LicenseRef-scancode-cvwl",
+    "aliases": [
+        "License :: OSI Approved :: MITRE Collaborative Virtual Workspace License (CVW)"
+    ]
+}

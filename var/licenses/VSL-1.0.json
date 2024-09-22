@@ -1,0 +1,23 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Vovida Software License v. 1.0",
+    "scancode_key": "vsl-1.0",
+    "spdxid": "VSL-1.0",
+    "aliases": [
+        "License :: OSI Approved :: Vovida Software License 1.0",
+        "scancode://vsl-1.0",
+        "The Vovida Software License, Version 1.0",
+        "Vovida Software License 1.0",
+        "Vovida Software License v1.0",
+        "VSL-1.0",
+        "osi:VSL-1.0",
+        "scancode:vsl-1.0",
+        "Vovida Software License v. 1.0",
+        "Vovida Software License, Version 1.0",
+        "VSL, 1.0",
+        "VSL, Version 1.0"
+    ]
+}
