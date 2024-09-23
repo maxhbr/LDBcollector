@@ -4,7 +4,7 @@
 
 canonicalName: "DocBook XML License"
 category: "DocBook"
-shortName: "DocBook-XML"
+spdxIdentifier: "DocBook-XML"
 
 alternativeNames:
   - "DocBook XML License"

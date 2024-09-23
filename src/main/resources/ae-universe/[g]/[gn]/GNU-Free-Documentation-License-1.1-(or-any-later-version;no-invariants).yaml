@@ -7,6 +7,8 @@ category: "GFDL"
 shortName: "GFDL-1.1+-no-invariants"
 spdxIdentifier: "GFDL-1.1-no-invariants-or-later"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "GNU Free Documentation License v1.1 or later - no invariants"
   - "GNU Free Documentation License 1.1 or later - no invariants"

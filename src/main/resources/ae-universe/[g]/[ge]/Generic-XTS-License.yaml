@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "DocBook Schema License"
-category: "DocBook Schema"
-spdxIdentifier: "DocBook-Schema"
+canonicalName: "Generic XTS License"
+category: "Generic XTS License"
+shortName: "generic-xts-license"
 
 alternativeNames:
-  - "DocBook Schema License"
+  - "Generic XTS License"
 

@@ -2,11 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Boehm-Demers-Weiser GC License"
-category: "Boehm-GC"
-spdxIdentifier: "Boehm-GC"
+canonicalName: "Keypirinha License"
+category: "Keypirinha License"
+shortName: "keypirinha"
 
 alternativeNames:
-  - "Boehm-GC"
-  - "Boehm-Demers-Weiser GC License"
+  - "Keypirinha License"
 
+otherIds: 
+  - "scancode:keypirinha"

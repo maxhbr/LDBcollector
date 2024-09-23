@@ -9,6 +9,8 @@ shortName: "BSD-4-Clause-without-endorsement"
 canonicalNameHistory:
   - "BSD 2-Clause License (with advertizing clause)"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "bsd-2-clause-plus-advertizing"
 

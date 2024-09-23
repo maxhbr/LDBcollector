@@ -4,10 +4,14 @@
 
 canonicalName: "Permission Terms (variant 009)"
 category: "Permission"
-shortName: "PT-Var009"
+spdxIdentifier: "Boehm-GC"
 
 canonicalNameHistory:
   - "Permission Terms Var009"
+
+alternativeNames:
+  - "Boehm-GC"
+  - "Boehm-Demers-Weiser GC License"
 
 otherIds: 
   - "scancode:mozilla-gc"

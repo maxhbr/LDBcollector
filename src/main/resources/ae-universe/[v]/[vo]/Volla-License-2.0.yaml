@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "DocBook Schema License"
-category: "DocBook Schema"
-spdxIdentifier: "DocBook-Schema"
+canonicalName: "Volla License 2.0"
+category: "Volla License"
+shortName: "volla-license-2.0"
 
 alternativeNames:
-  - "DocBook Schema License"
+  - "Volla License 2.0"
 

@@ -10,7 +10,3 @@ canonicalNameHistory:
   - "BSD 2-Clause License (with advertizing clause) var-001"
   - "BSD 2-Clause License (with advertizing clause; variant 001)"
 
-openCoDEStatus: "approved"
-
-otherIds: 
-  - "scancode:bsd-2-clause-plus-advertizing"
