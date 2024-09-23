@@ -283,6 +283,8 @@ Entr’ouvert v. Orange
 
 Link: [https://www.courdecassation.fr/toutes-les-actualites/2022/10/05/clarification-admissibility-software-copyright-infringement-action](https://www.courdecassation.fr/toutes-les-actualites/2022/10/05/clarification-admissibility-software-copyright-infringement-action)
 
+https://www.courdecassation.fr/toutes-les-actualites/2022/10/05/clarification-admissibility-software-copyright-infringement-action (English Translation)
+
 #### TGI de Paris, 2019-06-21
 
 Entr’ouvert v. Orange
