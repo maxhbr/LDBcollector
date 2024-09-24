@@ -169,7 +169,7 @@ def main():
     check_length_and_characters()
 
     # Check if error occurred
-    if logger.handlers[1]:
+    if logger.handlers[1].error_occurred:
         exit(1)
 
 
