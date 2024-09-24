@@ -44,7 +44,7 @@ tests:
   - cp hermine/hermine/config.default.py hermine/hermine/config.py
   - cd hermine
   - poetry run black --check .
-  - poetry run ruff .
+  - poetry run ruff check .
   - poetry run djhtml cube/templates/ --check
   - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
   - poetry run python manage.py test
