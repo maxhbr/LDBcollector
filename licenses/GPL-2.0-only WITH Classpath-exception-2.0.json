@@ -1,11 +1,7 @@
 {
     "spdx_id": "GPL-2.0-only WITH Classpath-exception-2.0",
     "long_name": "GPL-2.0-only WITH Classpath-exception-2.0",
-    "license_version": "",
-    "radical": "",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "Strong",
     "url": "https://spdx.org/licenses/Classpath-exception-2.0.html",
     "osi_approved": null,

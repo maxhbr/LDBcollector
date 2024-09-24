@@ -1,11 +1,7 @@
 {
     "spdx_id": "BSD-2-Clause-FreeBSD",
     "long_name": "BSD 2-Clause FreeBSD License",
-    "license_version": "",
-    "radical": "BSD-2-Clause-FreeBSD",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.freebsd.org/copyright/freebsd-license.html",
     "osi_approved": false,

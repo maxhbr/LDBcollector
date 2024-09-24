@@ -1,11 +1,7 @@
 {
     "spdx_id": "OPL-1.0",
     "long_name": "Open Public License v1.0",
-    "license_version": "1.0",
-    "radical": "OPL",
-    "autoupgrade": true,
     "steward": "Lutris Technologies, Inc.",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "https://fedoraproject.org/wiki/Licensing/Open_Public_License",
     "osi_approved": false,

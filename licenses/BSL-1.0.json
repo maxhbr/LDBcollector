@@ -1,11 +1,7 @@
 {
     "spdx_id": "BSL-1.0",
     "long_name": "Boost Software License 1.0",
-    "license_version": "1.0",
-    "radical": "BSL",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.boost.org/LICENSE_1_0.txt",
     "osi_approved": true,

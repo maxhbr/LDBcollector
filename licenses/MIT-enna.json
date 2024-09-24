@@ -1,11 +1,7 @@
 {
     "spdx_id": "MIT-enna",
     "long_name": "enna License",
-    "license_version": "",
-    "radical": "MIT-enna",
-    "autoupgrade": false,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://fedoraproject.org/wiki/Licensing/MIT#enna",
     "osi_approved": false,

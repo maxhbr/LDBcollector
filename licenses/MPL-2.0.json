@@ -1,11 +1,7 @@
 {
     "spdx_id": "MPL-2.0",
     "long_name": "Mozilla Public License 2.0",
-    "license_version": "2.0",
-    "radical": "MPL",
-    "autoupgrade": true,
     "steward": "Mozilla Foundation",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "http://www.mozilla.org/MPL/2.0/",
     "osi_approved": true,

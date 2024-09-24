@@ -1,11 +1,7 @@
 {
     "spdx_id": "MS-PL",
     "long_name": "Microsoft Public License",
-    "license_version": "",
-    "radical": "MS-PL",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.microsoft.com/opensource/licenses.mspx",
     "osi_approved": true,

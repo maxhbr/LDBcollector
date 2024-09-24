@@ -1,11 +1,7 @@
 {
     "spdx_id": "BSD-3-Clause-Clear",
     "long_name": "BSD 3-Clause Clear License",
-    "license_version": "",
-    "radical": "BSD-3-Clause-Clear",
-    "autoupgrade": false,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://labs.metacarta.com/license-explanation.html#license",
     "osi_approved": false,

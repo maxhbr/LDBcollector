@@ -1,11 +1,7 @@
 {
     "spdx_id": "AFL-2.1",
     "long_name": "Academic Free License v2.1",
-    "license_version": "2.1",
-    "radical": "AFL",
-    "autoupgrade": false,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://opensource.linux-mirror.org/licenses/afl-2.1.txt",
     "osi_approved": true,

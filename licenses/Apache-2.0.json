@@ -1,11 +1,7 @@
 {
     "spdx_id": "Apache-2.0",
     "long_name": "Apache License 2.0",
-    "license_version": "2.0",
-    "radical": "Apache",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.apache.org/licenses/LICENSE-2.0",
     "osi_approved": true,

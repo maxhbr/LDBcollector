@@ -1,11 +1,7 @@
 {
     "spdx_id": "Libpng",
     "long_name": "libpng License",
-    "license_version": "",
-    "radical": "Libpng",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt",
     "osi_approved": true,
