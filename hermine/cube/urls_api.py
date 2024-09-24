@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2024 Hermine-team
+# SPDX-License-Identifier: AGPL-3.0-only
 # API urls
 from django.urls import path, include
 from rest_framework.authtoken import views as authviews
