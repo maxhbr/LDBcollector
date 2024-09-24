@@ -99,12 +99,7 @@ True if the licence allows only non-commercial uses (e.g. Creative commons with 
 The information below can be usefull, but is considered secondary from an operational point of view (only available in the Django Admnin interface).
 
 - **categories:** Currently, it is just a text to receive free text, that could be a comma separated list, for instance.
-- **license_version:** The version of the licence (e.g. "2.1" for LGPL-2.1-only). 
-- **radical:** The root of the name of the licence (e.g. "LGPL" for LGPL-2.1-only).
-- **autoupgrade:** True if the licence authorise to apply latter versions of the licence (e.g. : False for LGPL-2.1-only and True for LGPL-2.1-or-later) 
 - **steward:** The name of the entity that is allowed to create new versions of the licence (e.g. : the Eclipse Foundation for the EPL-2.0)
-- **inspiration_spdx:** The licence that served as inspiration for the analysed licence, mentionned by its SPDX ID, in case it's not registered in Hermine   
-- **inspiration:** The licence that served as inspiration for the analysed licence, in case it's registered in Hermine 
 - **osi_approved:** If the licence has been approved by the OSI
 - **fsf_approved:** If the licence has been approved by the FSF
 - **non_tivoisation:** True if the licence contains a clause against [tivoization](https://en.wikipedia.org/wiki/Tivoization) (e.g. GPL-3.0-only)

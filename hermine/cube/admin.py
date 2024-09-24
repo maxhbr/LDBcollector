@@ -88,11 +88,6 @@ class LicenseAdmin(admin.ModelAdmin):
             {
                 "classes": ("collapse",),
                 "fields": (
-                    "license_version",
-                    "radical",
-                    "autoupgrade",
-                    "inspiration_spdx",
-                    "inspiration",
                     "foss",
                     "osi_approved",
                     "fsf_approved",

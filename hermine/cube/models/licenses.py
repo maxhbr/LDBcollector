@@ -96,23 +96,7 @@ class License(models.Model):
     )
     long_name = models.CharField("Name", max_length=200, blank=True)
     categories = models.CharField(max_length=200, blank=True)
-    license_version = models.CharField(max_length=200, blank=True)
-    radical = models.CharField(max_length=200, blank=True)
-    autoupgrade = models.BooleanField(null=True)
     steward = models.CharField(max_length=200, blank=True)
-    inspiration_spdx = models.CharField(
-        max_length=200,
-        blank=True,
-        help_text="SPDX Identifier of another license which inspired this one",
-    )
-    inspiration = models.ForeignKey(
-        "self",
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        help_text="A Licence which inspired this one",
-    )
-
     copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
     allowed = models.CharField(
         "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True

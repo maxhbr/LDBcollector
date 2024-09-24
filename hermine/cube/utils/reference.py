@@ -9,11 +9,7 @@ import django.test.testcases
 LICENSE_SHARED_FIELDS = (
     "spdx_id",
     "long_name",
-    "license_version",
-    "radical",
-    "autoupgrade",
     "steward",
-    "inspiration_spdx",
     "copyleft",
     "url",
     "osi_approved",

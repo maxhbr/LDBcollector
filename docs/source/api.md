@@ -636,11 +636,7 @@ The response type is `application/json` with the following schema :
       "id": 0,
       "spdx_id": "string",
       "long_name": "string",
-      "license_version": "string",
-      "radical": "string",
-      "autoupgrade": true,
       "steward": "string",
-      "inspiration_spdx": "string",
       "copyleft": "None",
       "allowed": "always",
       "allowed_explanation": "string",
@@ -811,3 +807,5 @@ A detailed view for an instance of a class can be found at `/api/<str:class_name
 For example: `/api/products/1/`.
 
 You can check the list of the endpoints at `/api/`.
+
+
