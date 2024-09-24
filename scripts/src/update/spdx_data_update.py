@@ -1,6 +1,8 @@
 import json
 import os
 import sys
+from typing import List
+
 import requests
 from src.logger import setup_logger
 
@@ -49,7 +51,7 @@ def create_json(input_file, is_exception: bool = False):
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # Dictionary to keep track of deprecated license IDs; [0] is non-deprecated license path, [1] the deprecated one
-    duplicate_aliases: dict[str, [str]] = {}
+    duplicate_aliases: dict[str, List[str]] = {}
 
     # Dictionary to map canonical names to their corresponding filenames
     canonical_to_file: dict[str, str] = {}
