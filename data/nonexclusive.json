@@ -2,7 +2,8 @@
     "canonical": "nonexclusive",
     "aliases": {
         "scancode-licensedb": [
-            "Nonexclusive License"
+            "Nonexclusive License",
+            "LicenseRef-scancode-nonexclusive"
         ],
         "custom": []
     },

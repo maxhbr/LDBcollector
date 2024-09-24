@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Kyoto Products FOSS Library Linking Exception v1.0",
-            "Kyoto Products Specific FOSS Library Linking Exception v1.0"
+            "Kyoto Products Specific FOSS Library Linking Exception v1.0",
+            "LicenseRef-scancode-dbmx-linking-exception-1.0"
         ],
         "custom": []
     },

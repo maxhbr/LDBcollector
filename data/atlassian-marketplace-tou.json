@@ -2,7 +2,8 @@
     "canonical": "atlassian-marketplace-tou",
     "aliases": {
         "scancode-licensedb": [
-            "Atlassian Marketplace Terms of Use"
+            "Atlassian Marketplace Terms of Use",
+            "LicenseRef-scancode-atlassian-marketplace-tou"
         ],
         "custom": []
     },

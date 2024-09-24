@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "BSD-4-Clause with Voices",
-            "BSD-4-Clause with Voices in Head"
+            "BSD-4-Clause with Voices in Head",
+            "LicenseRef-scancode-bsd-original-voices"
         ],
         "custom": []
     },

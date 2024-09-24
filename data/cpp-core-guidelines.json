@@ -2,7 +2,8 @@
     "canonical": "cpp-core-guidelines",
     "aliases": {
         "scancode-licensedb": [
-            "CppCoreGuidelines License"
+            "CppCoreGuidelines License",
+            "LicenseRef-scancode-cpp-core-guidelines"
         ],
         "custom": []
     },

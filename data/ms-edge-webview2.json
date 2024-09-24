@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS Edge WebView2 Runtime",
-            "Microsoft Edge WebView2 Runtime License"
+            "Microsoft Edge WebView2 Runtime License",
+            "LicenseRef-scancode-ms-edge-webview2"
         ],
         "custom": []
     },

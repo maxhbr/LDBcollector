@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "LicenseRef-PublicDomain",
             "Public Domain",
-            "LicenseRef-Fedora-Public-Domain"
+            "LicenseRef-Fedora-Public-Domain",
+            "LicenseRef-scancode-public-domain"
         ],
         "custom": []
     },

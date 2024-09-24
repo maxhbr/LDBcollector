@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Apple ML Ferret 2023",
-            "Apple ML Ferret License 2023"
+            "Apple ML Ferret License 2023",
+            "LicenseRef-scancode-apple-ml-ferret-2023"
         ],
         "custom": []
     },

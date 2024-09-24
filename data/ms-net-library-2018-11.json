@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS .NET Library License 2018-11",
-            "Microsoft .NET Library License 2018-11"
+            "Microsoft .NET Library License 2018-11",
+            "LicenseRef-scancode-ms-net-library-2018-11"
         ],
         "custom": []
     },

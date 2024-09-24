@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Oxygen XML WebHelp EULA",
-            "Oxygen XML WebHelp End-User License Agreement"
+            "Oxygen XML WebHelp End-User License Agreement",
+            "LicenseRef-scancode-oxygen-xml-webhelp-eula"
         ],
         "custom": []
     },

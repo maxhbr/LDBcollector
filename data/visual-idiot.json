@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Visual Idiot License",
-            "Visual Idiot"
+            "Visual Idiot",
+            "LicenseRef-scancode-visual-idiot"
         ],
         "custom": []
     },

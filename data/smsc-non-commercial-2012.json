@@ -2,7 +2,8 @@
     "canonical": "smsc-non-commercial-2012",
     "aliases": {
         "scancode-licensedb": [
-            "SMSC Non-Commercial 2012"
+            "SMSC Non-Commercial 2012",
+            "LicenseRef-scancode-smsc-non-commercial-2012"
         ],
         "custom": []
     },

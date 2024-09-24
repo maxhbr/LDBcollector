@@ -2,7 +2,8 @@
     "canonical": "nice",
     "aliases": {
         "scancode-licensedb": [
-            "Nice License"
+            "Nice License",
+            "LicenseRef-scancode-nice"
         ],
         "custom": []
     },

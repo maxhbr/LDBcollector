@@ -2,7 +2,8 @@
     "canonical": "lcs-telegraphics",
     "aliases": {
         "scancode-licensedb": [
-            "LCS-Telegraphics License"
+            "LCS-Telegraphics License",
+            "LicenseRef-scancode-lcs-telegraphics"
         ],
         "custom": []
     },

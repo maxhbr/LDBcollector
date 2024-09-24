@@ -2,7 +2,8 @@
     "canonical": "numerical-recipes-notice",
     "aliases": {
         "scancode-licensedb": [
-            "Numerical Recipes Notice"
+            "Numerical Recipes Notice",
+            "LicenseRef-scancode-numerical-recipes-notice"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "phorum-2.0",
     "aliases": {
         "scancode-licensedb": [
-            "Phorum License 2.0"
+            "Phorum License 2.0",
+            "LicenseRef-scancode-phorum-2.0"
         ],
         "custom": []
     },

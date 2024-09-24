@@ -2,7 +2,8 @@
     "canonical": "crapl-0.1",
     "aliases": {
         "scancode-licensedb": [
-            "CRAPL v0 BETA 1"
+            "CRAPL v0 BETA 1",
+            "LicenseRef-scancode-crapl-0.1"
         ],
         "custom": []
     },

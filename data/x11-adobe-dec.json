@@ -2,7 +2,8 @@
     "canonical": "x11-adobe-dec",
     "aliases": {
         "scancode-licensedb": [
-            "X11-Style (Adobe-DEC)"
+            "X11-Style (Adobe-DEC)",
+            "LicenseRef-scancode-x11-adobe-dec"
         ],
         "custom": []
     },

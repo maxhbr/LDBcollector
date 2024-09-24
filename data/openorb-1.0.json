@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OpenORB Community Software License Version 1.0",
-            "OpenORB Community License 1.0"
+            "OpenORB Community License 1.0",
+            "LicenseRef-scancode-openorb-1.0"
         ],
         "custom": []
     },

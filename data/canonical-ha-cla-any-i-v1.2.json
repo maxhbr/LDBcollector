@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Canonical-HA-CLA-ANY-I_v1.2",
-            "Canonical Individual Contributor License Agreement v1.2"
+            "Canonical Individual Contributor License Agreement v1.2",
+            "LicenseRef-scancode-canonical-ha-cla-any-i-v1.2"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "lil-1",
     "aliases": {
         "scancode-licensedb": [
-            "Lil License v1"
+            "Lil License v1",
+            "LicenseRef-scancode-lil-1"
         ],
         "custom": []
     },

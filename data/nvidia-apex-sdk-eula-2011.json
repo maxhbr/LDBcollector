@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "NVIDIA APEX SDK EULA 2011",
-            "NVIDIA APEX SDK End User License Agreement 2011"
+            "NVIDIA APEX SDK End User License Agreement 2011",
+            "LicenseRef-scancode-nvidia-apex-sdk-eula-2011"
         ],
         "custom": []
     },

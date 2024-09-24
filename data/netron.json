@@ -2,7 +2,8 @@
     "canonical": "netron",
     "aliases": {
         "scancode-licensedb": [
-            "Netron Project License"
+            "Netron Project License",
+            "LicenseRef-scancode-netron"
         ],
         "custom": []
     },

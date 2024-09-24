@@ -2,7 +2,8 @@
     "canonical": "bsd-1988",
     "aliases": {
         "scancode-licensedb": [
-            "BSD 1988"
+            "BSD 1988",
+            "LicenseRef-scancode-bsd-1988"
         ],
         "custom": []
     },

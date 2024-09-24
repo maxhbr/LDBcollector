@@ -2,7 +2,8 @@
     "canonical": "componentace-jcraft",
     "aliases": {
         "scancode-licensedb": [
-            "ComponentAce JCraft License"
+            "ComponentAce JCraft License",
+            "LicenseRef-scancode-componentace-jcraft"
         ],
         "custom": []
     },

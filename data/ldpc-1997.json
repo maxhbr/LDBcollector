@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "LDPC-1997",
-            "Linux Documentation Project Copying License 1997-01-06"
+            "Linux Documentation Project Copying License 1997-01-06",
+            "LicenseRef-scancode-ldpc-1997"
         ],
         "custom": []
     },

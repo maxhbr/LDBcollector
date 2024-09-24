@@ -2,7 +2,8 @@
     "canonical": "egrappler",
     "aliases": {
         "scancode-licensedb": [
-            "eGrappler License"
+            "eGrappler License",
+            "LicenseRef-scancode-egrappler"
         ],
         "custom": []
     },

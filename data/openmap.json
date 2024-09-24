@@ -2,7 +2,8 @@
     "canonical": "openmap",
     "aliases": {
         "scancode-licensedb": [
-            "OpenMap Software License Agreement"
+            "OpenMap Software License Agreement",
+            "LicenseRef-scancode-openmap"
         ],
         "custom": []
     },

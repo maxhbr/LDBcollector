@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "GNU Elib General Public License",
-            "GPL-Elib"
+            "GPL-Elib",
+            "LicenseRef-scancode-elib-gpl"
         ],
         "custom": []
     },

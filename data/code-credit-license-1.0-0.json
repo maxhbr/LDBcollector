@@ -2,7 +2,8 @@
     "canonical": "code-credit-license-1.0-0",
     "aliases": {
         "scancode-licensedb": [
-            "Code Credit License v1.0.0"
+            "Code Credit License v1.0.0",
+            "LicenseRef-scancode-code-credit-license-1.0.0"
         ],
         "custom": []
     },

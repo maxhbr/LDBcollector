@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS VS Add-Ons and Extensions 17.2.0",
-            "Microsoft Visual Studio Add-Ons and Extensions 17.2.0"
+            "Microsoft Visual Studio Add-Ons and Extensions 17.2.0",
+            "LicenseRef-scancode-ms-vs-addons-ext-17.2.0"
         ],
         "custom": []
     },

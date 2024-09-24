@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Google APIs Terms of Service 2021",
-            "Google APIs TOS 2021"
+            "Google APIs TOS 2021",
+            "LicenseRef-scancode-google-apis-tos-2021"
         ],
         "custom": []
     },

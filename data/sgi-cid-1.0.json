@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "SGI CID Font Code Public License 1.0",
-            "SGI CID Font Code Public License v1.0"
+            "SGI CID Font Code Public License v1.0",
+            "LicenseRef-scancode-sgi-cid-1.0"
         ],
         "custom": []
     },

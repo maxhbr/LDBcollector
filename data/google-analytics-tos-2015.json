@@ -2,7 +2,8 @@
     "canonical": "google-analytics-tos-2015",
     "aliases": {
         "scancode-licensedb": [
-            "Google Analytics Terms of Service 2015"
+            "Google Analytics Terms of Service 2015",
+            "LicenseRef-scancode-google-analytics-tos-2015"
         ],
         "custom": []
     },

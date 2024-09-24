@@ -2,7 +2,8 @@
     "canonical": "brocade-firmware",
     "aliases": {
         "scancode-licensedb": [
-            "Brocade Firmware License"
+            "Brocade Firmware License",
+            "LicenseRef-scancode-brocade-firmware"
         ],
         "custom": []
     },

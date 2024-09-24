@@ -2,7 +2,8 @@
     "canonical": "fatfs",
     "aliases": {
         "scancode-licensedb": [
-            "FatFs License"
+            "FatFs License",
+            "LicenseRef-scancode-fatfs"
         ],
         "custom": []
     },

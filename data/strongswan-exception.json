@@ -2,7 +2,8 @@
     "canonical": "strongswan-exception",
     "aliases": {
         "scancode-licensedb": [
-            "strongSwan exception to GPL"
+            "strongSwan exception to GPL",
+            "LicenseRef-scancode-strongswan-exception"
         ],
         "custom": []
     },

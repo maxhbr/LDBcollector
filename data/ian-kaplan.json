@@ -2,7 +2,8 @@
     "canonical": "ian-kaplan",
     "aliases": {
         "scancode-licensedb": [
-            "Ian Kaplan License"
+            "Ian Kaplan License",
+            "LicenseRef-scancode-ian-kaplan"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Licence SCILAB",
-            "SCILAB FR"
+            "SCILAB FR",
+            "LicenseRef-scancode-scilab-fr"
         ],
         "custom": []
     },

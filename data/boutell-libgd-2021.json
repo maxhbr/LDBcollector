@@ -2,7 +2,8 @@
     "canonical": "boutell-libgd-2021",
     "aliases": {
         "scancode-licensedb": [
-            "Boutell libgd declarations 2021"
+            "Boutell libgd declarations 2021",
+            "LicenseRef-scancode-boutell-libgd-2021"
         ],
         "custom": []
     },

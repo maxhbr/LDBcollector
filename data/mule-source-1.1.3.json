@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Mule Source PL 1.1.3",
-            "Mule Source Public License version 1.1.3"
+            "Mule Source Public License version 1.1.3",
+            "LicenseRef-scancode-mule-source-1.1.3"
         ],
         "custom": []
     },

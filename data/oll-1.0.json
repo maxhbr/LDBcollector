@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Open Logistics License Version 1.0",
-            "OLL-1.0"
+            "OLL-1.0",
+            "LicenseRef-scancode-oll-1.0"
         ],
         "custom": []
     },

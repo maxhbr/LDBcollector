@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "IBM developerWorks Community Download Agreement",
             "IBM developerWorks Community Download of Content Agreement",
-            "LicenseRef-scancode-ibm-developerworks-community-download"
+            "LicenseRef-scancode-ibm-developerworks-community-download",
+            "LicenseRef-scancode-ibm-developerworks-community"
         ],
         "custom": []
     },

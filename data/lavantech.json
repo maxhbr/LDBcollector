@@ -2,7 +2,8 @@
     "canonical": "lavantech",
     "aliases": {
         "scancode-licensedb": [
-            "LavanTech License"
+            "LavanTech License",
+            "LicenseRef-scancode-lavantech"
         ],
         "custom": []
     },

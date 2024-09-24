@@ -2,7 +2,8 @@
     "canonical": "khronos",
     "aliases": {
         "scancode-licensedb": [
-            "Khronos License"
+            "Khronos License",
+            "LicenseRef-scancode-khronos"
         ],
         "custom": []
     },

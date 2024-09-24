@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Intel Binary Code License",
-            "Intel BCL"
+            "Intel BCL",
+            "LicenseRef-scancode-intel-bcl"
         ],
         "custom": []
     },

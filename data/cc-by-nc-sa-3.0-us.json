@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Creative Commons Attribution Non-Commercial Share Alike License 3.0 US",
-            "CC-BY-NC-SA-3.0-US"
+            "CC-BY-NC-SA-3.0-US",
+            "LicenseRef-scancode-cc-by-nc-sa-3.0-us"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "D Zlib",
-            "Digital Mars Zlib"
+            "Digital Mars Zlib",
+            "LicenseRef-scancode-d-zlib"
         ],
         "custom": []
     },

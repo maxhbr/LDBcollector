@@ -2,7 +2,8 @@
     "canonical": "adobe-air-sdk-2014",
     "aliases": {
         "scancode-licensedb": [
-            "Adobe Air SDK EULA - 2014"
+            "Adobe Air SDK EULA - 2014",
+            "LicenseRef-scancode-adobe-air-sdk-2014"
         ],
         "custom": []
     },

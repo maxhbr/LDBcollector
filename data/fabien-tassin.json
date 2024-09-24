@@ -2,7 +2,8 @@
     "canonical": "fabien-tassin",
     "aliases": {
         "scancode-licensedb": [
-            "Fabien Tassin License"
+            "Fabien Tassin License",
+            "LicenseRef-scancode-fabien-tassin"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Trolltech GPL Exception 1.0",
-            "Trolltech GPL Exception version v1.0"
+            "Trolltech GPL Exception version v1.0",
+            "LicenseRef-scancode-trolltech-gpl-exception-1.0"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "ncsa-httpd-1995",
     "aliases": {
         "scancode-licensedb": [
-            "NCSA HTTPd License 1995"
+            "NCSA HTTPd License 1995",
+            "LicenseRef-scancode-ncsa-httpd-1995"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Apache Patent Provision Exception Terms",
-            "LicenseRef-scancode-apache-patent-provision-exception"
+            "LicenseRef-scancode-apache-patent-provision-exception",
+            "LicenseRef-scancode-apache-patent-exception"
         ],
         "custom": []
     },

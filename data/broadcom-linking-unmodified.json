@@ -2,7 +2,8 @@
     "canonical": "broadcom-linking-unmodified",
     "aliases": {
         "scancode-licensedb": [
-            "Broadcom Linking Exception if unmodified"
+            "Broadcom Linking Exception if unmodified",
+            "LicenseRef-scancode-broadcom-linking-unmodified"
         ],
         "custom": []
     },

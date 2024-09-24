@@ -2,7 +2,8 @@
     "canonical": "wordnet",
     "aliases": {
         "scancode-licensedb": [
-            "Wordnet License"
+            "Wordnet License",
+            "LicenseRef-scancode-wordnet"
         ],
         "custom": []
     },

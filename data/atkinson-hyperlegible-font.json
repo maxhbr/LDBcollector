@@ -2,7 +2,8 @@
     "canonical": "atkinson-hyperlegible-font",
     "aliases": {
         "scancode-licensedb": [
-            "Atkinson Hyperlegible Font License"
+            "Atkinson Hyperlegible Font License",
+            "LicenseRef-scancode-atkinson-hyperlegible-font"
         ],
         "custom": []
     },

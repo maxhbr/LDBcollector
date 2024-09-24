@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "CWE ToU",
-            "Common Weaness Enumeration ToU License"
+            "Common Weaness Enumeration ToU License",
+            "LicenseRef-scancode-cwe-tou"
         ],
         "custom": []
     },

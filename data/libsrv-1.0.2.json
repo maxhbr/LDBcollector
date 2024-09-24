@@ -2,7 +2,8 @@
     "canonical": "libsrv-1.0.2",
     "aliases": {
         "scancode-licensedb": [
-            "libsrv License v1.0.2"
+            "libsrv License v1.0.2",
+            "LicenseRef-scancode-libsrv-1.0.2"
         ],
         "custom": []
     },

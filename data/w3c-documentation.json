@@ -2,7 +2,8 @@
     "canonical": "w3c-documentation",
     "aliases": {
         "scancode-licensedb": [
-            "W3C Documentation License"
+            "W3C Documentation License",
+            "LicenseRef-scancode-w3c-documentation"
         ],
         "custom": []
     },

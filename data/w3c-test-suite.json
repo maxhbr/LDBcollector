@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "W3C Test Suite Licence",
-            "W3C Test Suite"
+            "W3C Test Suite",
+            "LicenseRef-scancode-w3c-test-suite"
         ],
         "custom": []
     },

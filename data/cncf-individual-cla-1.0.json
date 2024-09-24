@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "CNCF Individual Contributor License Agreement (\"Agreement\") v1.0",
-            "CNCF Individual CLA 1.0"
+            "CNCF Individual CLA 1.0",
+            "LicenseRef-scancode-cncf-individual-cla-1.0"
         ],
         "custom": []
     },

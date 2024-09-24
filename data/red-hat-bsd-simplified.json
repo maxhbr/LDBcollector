@@ -2,7 +2,8 @@
     "canonical": "red-hat-bsd-simplified",
     "aliases": {
         "scancode-licensedb": [
-            "Red Hat BSD-Simplified"
+            "Red Hat BSD-Simplified",
+            "LicenseRef-scancode-red-hat-bsd-simplified"
         ],
         "custom": []
     },

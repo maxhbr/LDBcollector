@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "LicenseRef-scancode-microsoft-enterprise-library-eula",
             "MS Enterprise Library EULA",
-            "Microsoft Enterprise Library EULA"
+            "Microsoft Enterprise Library EULA",
+            "LicenseRef-scancode-ms-enterprise-library-eula"
         ],
         "custom": []
     },

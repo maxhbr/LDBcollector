@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "CeCILL-B License English",
-            "CeCILL-B Free Software License Agreement English"
+            "CeCILL-B Free Software License Agreement English",
+            "LicenseRef-scancode-cecill-b-en"
         ],
         "custom": []
     },

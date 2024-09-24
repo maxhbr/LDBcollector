@@ -2,7 +2,8 @@
     "canonical": "ppp",
     "aliases": {
         "scancode-licensedb": [
-            "ppp License"
+            "ppp License",
+            "LicenseRef-scancode-ppp"
         ],
         "custom": []
     },

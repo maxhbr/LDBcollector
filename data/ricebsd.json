@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Rice BSD Software License",
-            "RiceBSD"
+            "RiceBSD",
+            "LicenseRef-scancode-ricebsd"
         ],
         "custom": []
     },

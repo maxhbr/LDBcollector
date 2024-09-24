@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Tanuki Development License 1.3",
-            "Tanuki Development Software License Agreement 1.3"
+            "Tanuki Development Software License Agreement 1.3",
+            "LicenseRef-scancode-tanuki-development"
         ],
         "custom": []
     },

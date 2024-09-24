@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Internet Computer Shared Community Source License 1.0",
-            "IC Shared 1.0"
+            "IC Shared 1.0",
+            "LicenseRef-scancode-ic-shared-1.0"
         ],
         "custom": []
     },

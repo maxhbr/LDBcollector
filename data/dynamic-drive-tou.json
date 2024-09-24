@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Dynamic Drive TOU",
-            "Dynamic Drive Terms of Use"
+            "Dynamic Drive Terms of Use",
+            "LicenseRef-scancode-dynamic-drive-tou"
         ],
         "custom": []
     },

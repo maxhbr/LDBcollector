@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "latex-ec-fonts",
-            "Copyright notice to the ec fonts"
+            "Copyright notice to the ec fonts",
+            "LicenseRef-scancode-ecfonts-1.0"
         ],
         "custom": []
     },

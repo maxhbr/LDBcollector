@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Oracle DevTools for Visual Studio .NET Development",
-            "Oracle Developer Tools for Visual Studio .NET Development License"
+            "Oracle Developer Tools for Visual Studio .NET Development License",
+            "LicenseRef-scancode-oracle-devtools-vsnet-dev"
         ],
         "custom": []
     },

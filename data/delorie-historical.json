@@ -2,7 +2,8 @@
     "canonical": "delorie-historical",
     "aliases": {
         "scancode-licensedb": [
-            "Delorie Historical License"
+            "Delorie Historical License",
+            "LicenseRef-scancode-delorie-historical"
         ],
         "custom": []
     },

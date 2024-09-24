@@ -2,7 +2,8 @@
     "canonical": "broadcom-commercial",
     "aliases": {
         "scancode-licensedb": [
-            "Broadcom Commercial Notice"
+            "Broadcom Commercial Notice",
+            "LicenseRef-scancode-broadcom-commercial"
         ],
         "custom": []
     },

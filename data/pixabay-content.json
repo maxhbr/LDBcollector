@@ -2,7 +2,8 @@
     "canonical": "pixabay-content",
     "aliases": {
         "scancode-licensedb": [
-            "Pixabay Content License"
+            "Pixabay Content License",
+            "LicenseRef-scancode-pixabay-content"
         ],
         "custom": []
     },

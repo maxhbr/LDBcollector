@@ -2,7 +2,8 @@
     "canonical": "dynarch-developer",
     "aliases": {
         "scancode-licensedb": [
-            "Dynarch Developer Agreement"
+            "Dynarch Developer Agreement",
+            "LicenseRef-scancode-dynarch-developer"
         ],
         "custom": []
     },

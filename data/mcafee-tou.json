@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "McAfee Software royalty-Free License",
-            "McAfee Free License"
+            "McAfee Free License",
+            "LicenseRef-scancode-mcafee-tou"
         ],
         "custom": []
     },

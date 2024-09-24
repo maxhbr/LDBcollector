@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "CC-PD Mark 1.0",
-            "Creative Commons Public Domain Mark 1.0"
+            "Creative Commons Public Domain Mark 1.0",
+            "LicenseRef-scancode-cc-pdm-1.0"
         ],
         "custom": []
     },

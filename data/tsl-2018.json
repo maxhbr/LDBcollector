@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Timescale License Agreement",
-            "TSL Agreement"
+            "TSL Agreement",
+            "LicenseRef-scancode-tsl-2018"
         ],
         "custom": []
     },

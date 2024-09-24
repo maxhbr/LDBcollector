@@ -2,7 +2,8 @@
     "canonical": "sglib",
     "aliases": {
         "scancode-licensedb": [
-            "Sglib License"
+            "Sglib License",
+            "LicenseRef-scancode-sglib"
         ],
         "custom": []
     },

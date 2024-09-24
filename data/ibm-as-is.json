@@ -2,7 +2,8 @@
     "canonical": "ibm-as-is",
     "aliases": {
         "scancode-licensedb": [
-            "IBM AS-IS License"
+            "IBM AS-IS License",
+            "LicenseRef-scancode-ibm-as-is"
         ],
         "custom": []
     },

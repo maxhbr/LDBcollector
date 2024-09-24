@@ -2,7 +2,8 @@
     "canonical": "wol",
     "aliases": {
         "scancode-licensedb": [
-            "Wide Open License"
+            "Wide Open License",
+            "LicenseRef-scancode-wol"
         ],
         "custom": []
     },

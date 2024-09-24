@@ -2,7 +2,8 @@
     "canonical": "nucleusicons-eula",
     "aliases": {
         "scancode-licensedb": [
-            "NucleusIcons EULA"
+            "NucleusIcons EULA",
+            "LicenseRef-scancode-nucleusicons-eula"
         ],
         "custom": []
     },

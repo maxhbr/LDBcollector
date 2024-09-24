@@ -2,7 +2,8 @@
     "canonical": "nexb-eula-saas-1.1.0",
     "aliases": {
         "scancode-licensedb": [
-            "nexB EULA for SaaS 1.1.0"
+            "nexB EULA for SaaS 1.1.0",
+            "LicenseRef-scancode-nexb-eula-saas-1.1.0"
         ],
         "custom": []
     },

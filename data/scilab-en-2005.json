@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "LicenseRef-scancode-scilba-en",
             "SCILAB en 2005",
-            "SCILAB License 2005"
+            "SCILAB License 2005",
+            "LicenseRef-scancode-scilab-en"
         ],
         "custom": []
     },

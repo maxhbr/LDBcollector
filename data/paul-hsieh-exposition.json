@@ -2,7 +2,8 @@
     "canonical": "paul-hsieh-exposition",
     "aliases": {
         "scancode-licensedb": [
-            "Paul Hsieh Exposition License"
+            "Paul Hsieh Exposition License",
+            "LicenseRef-scancode-paul-hsieh-exposition"
         ],
         "custom": []
     },

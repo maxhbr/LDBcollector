@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OpenGL Utility Toolkit (GLUT) License",
-            "GLUT License"
+            "GLUT License",
+            "LicenseRef-scancode-glut"
         ],
         "custom": []
     },

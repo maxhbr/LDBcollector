@@ -2,7 +2,8 @@
     "canonical": "ntlm",
     "aliases": {
         "scancode-licensedb": [
-            "NTLM License"
+            "NTLM License",
+            "LicenseRef-scancode-ntlm"
         ],
         "custom": []
     },

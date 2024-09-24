@@ -2,7 +2,8 @@
     "canonical": "ecma-no-patent",
     "aliases": {
         "scancode-licensedb": [
-            "Ecma no patent notice"
+            "Ecma no patent notice",
+            "LicenseRef-scancode-ecma-no-patent"
         ],
         "custom": []
     },

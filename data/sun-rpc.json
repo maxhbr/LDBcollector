@@ -2,7 +2,8 @@
     "canonical": "sun-rpc",
     "aliases": {
         "scancode-licensedb": [
-            "Sun RPC License"
+            "Sun RPC License",
+            "LicenseRef-scancode-sun-rpc"
         ],
         "custom": []
     },

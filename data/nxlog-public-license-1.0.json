@@ -2,7 +2,8 @@
     "canonical": "nxlog-public-license-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "NXLOG Public License v1.0"
+            "NXLOG Public License v1.0",
+            "LicenseRef-scancode-nxlog-public-license-1.0"
         ],
         "custom": []
     },

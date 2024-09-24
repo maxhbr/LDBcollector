@@ -2,7 +2,8 @@
     "canonical": "copyheart",
     "aliases": {
         "scancode-licensedb": [
-            "Copyheart"
+            "Copyheart",
+            "LicenseRef-scancode-copyheart"
         ],
         "custom": []
     },

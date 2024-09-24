@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "AMD Secure Encrypted Virtualization (SEV) Firmware License",
-            "AMD-ASPF-2023"
+            "AMD-ASPF-2023",
+            "LicenseRef-scancode-amd-aspf-2023"
         ],
         "custom": []
     },

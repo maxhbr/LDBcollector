@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS ASP.NET MVC 4 Extensions",
-            "Microsoft ASP.NET MVC 4 Extensions License"
+            "Microsoft ASP.NET MVC 4 Extensions License",
+            "LicenseRef-scancode-ms-asp-net-mvc4-extensions"
         ],
         "custom": []
     },

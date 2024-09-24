@@ -2,7 +2,8 @@
     "canonical": "t-license-amp-t-kernel",
     "aliases": {
         "scancode-licensedb": [
-            "T-License for AMP T-Kernel"
+            "T-License for AMP T-Kernel",
+            "LicenseRef-scancode-t-license-amp-t-kernel"
         ],
         "custom": []
     },

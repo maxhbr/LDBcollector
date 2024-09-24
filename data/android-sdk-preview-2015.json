@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Android SDK Preview License Agreement",
-            "Android SDK Preview License"
+            "Android SDK Preview License",
+            "LicenseRef-scancode-android-sdk-preview-2015"
         ],
         "custom": []
     },

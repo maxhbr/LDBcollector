@@ -2,7 +2,8 @@
     "canonical": "mame",
     "aliases": {
         "scancode-licensedb": [
-            "MAME license"
+            "MAME license",
+            "LicenseRef-scancode-mame"
         ],
         "custom": []
     },

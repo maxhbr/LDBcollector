@@ -2,7 +2,8 @@
     "canonical": "g10-permissive",
     "aliases": {
         "scancode-licensedb": [
-            "g10-permissive"
+            "g10-permissive",
+            "LicenseRef-scancode-g10-permissive"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "scrub",
     "aliases": {
         "scancode-licensedb": [
-            "SCRUB License"
+            "SCRUB License",
+            "LicenseRef-scancode-scrub"
         ],
         "custom": []
     },

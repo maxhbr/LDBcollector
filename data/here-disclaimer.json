@@ -2,7 +2,8 @@
     "canonical": "here-disclaimer",
     "aliases": {
         "scancode-licensedb": [
-            "HERE Disclaimer"
+            "HERE Disclaimer",
+            "LicenseRef-scancode-here-disclaimer"
         ],
         "custom": []
     },

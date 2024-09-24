@@ -2,7 +2,8 @@
     "canonical": "flowplayer-gpl-3.0",
     "aliases": {
         "scancode-licensedb": [
-            "Flowplayer GPL 3.0"
+            "Flowplayer GPL 3.0",
+            "LicenseRef-scancode-flowplayer-gpl-3.0"
         ],
         "custom": []
     },

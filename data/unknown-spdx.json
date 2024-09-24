@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Unknown SPDX license detected but not recognized",
-            "unknown SPDX"
+            "unknown SPDX",
+            "LicenseRef-scancode-unknown-spdx"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "paul-hsieh-derivative",
     "aliases": {
         "scancode-licensedb": [
-            "Paul Hsieh Derivative License"
+            "Paul Hsieh Derivative License",
+            "LicenseRef-scancode-paul-hsieh-derivative"
         ],
         "custom": []
     },

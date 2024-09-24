@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS Xamarin.UITest 3.2.0",
-            "Microsoft Xamarin.UITest 3.2.0"
+            "Microsoft Xamarin.UITest 3.2.0",
+            "LicenseRef-scancode-ms-xamarin-uitest3.2.0"
         ],
         "custom": []
     },

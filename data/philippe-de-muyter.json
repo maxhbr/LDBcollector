@@ -2,7 +2,8 @@
     "canonical": "philippe-de-muyter",
     "aliases": {
         "scancode-licensedb": [
-            "Philippe De Muyter License"
+            "Philippe De Muyter License",
+            "LicenseRef-scancode-philippe-de-muyter"
         ],
         "custom": []
     },

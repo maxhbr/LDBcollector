@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Cockroach Community License",
-            "CCL"
+            "CCL",
+            "LicenseRef-scancode-cockroach"
         ],
         "custom": []
     },

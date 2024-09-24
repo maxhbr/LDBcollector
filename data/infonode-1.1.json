@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "InfoNode Software License 1.1",
-            "InfoNode Software License Version 1.1"
+            "InfoNode Software License Version 1.1",
+            "LicenseRef-scancode-infonode-1.1"
         ],
         "custom": []
     },

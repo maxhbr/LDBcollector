@@ -2,7 +2,8 @@
     "canonical": "iso-recorder",
     "aliases": {
         "scancode-licensedb": [
-            "ISO Recorder License"
+            "ISO Recorder License",
+            "LicenseRef-scancode-iso-recorder"
         ],
         "custom": []
     },

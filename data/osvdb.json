@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OSVDB License",
-            "Open Sourced Vulnerability Database (OSVDB) License"
+            "Open Sourced Vulnerability Database (OSVDB) License",
+            "LicenseRef-scancode-osvdb"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MSNTP software license",
-            "MSNTP License"
+            "MSNTP License",
+            "LicenseRef-scancode-msntp"
         ],
         "custom": []
     },

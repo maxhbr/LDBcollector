@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "T-License for AMP TKSE",
-            "T-License for AMP T-Kernel Standard Extension"
+            "T-License for AMP T-Kernel Standard Extension",
+            "LicenseRef-scancode-t-license-amp-tkse"
         ],
         "custom": []
     },

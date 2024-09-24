@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Open Weights Permissive License Version 1.0.0",
-            "Open Weights Permissive License v1.0.0"
+            "Open Weights Permissive License v1.0.0",
+            "LicenseRef-scancode-open-weights-permissive-1.0.0"
         ],
         "custom": []
     },

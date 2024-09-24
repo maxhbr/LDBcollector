@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Elastic License 2018",
-            "Elastic License Agreement 2018"
+            "Elastic License Agreement 2018",
+            "LicenseRef-scancode-elastic-license-2018"
         ],
         "custom": []
     },

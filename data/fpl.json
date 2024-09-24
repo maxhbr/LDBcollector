@@ -2,7 +2,8 @@
     "canonical": "fpl",
     "aliases": {
         "scancode-licensedb": [
-            "Freeware Public License (FPL)"
+            "Freeware Public License (FPL)",
+            "LicenseRef-scancode-fpl"
         ],
         "custom": []
     },

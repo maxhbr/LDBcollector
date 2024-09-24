@@ -2,7 +2,8 @@
     "canonical": "karl-peterson",
     "aliases": {
         "scancode-licensedb": [
-            "Karl Peterson License"
+            "Karl Peterson License",
+            "LicenseRef-scancode-karl-peterson"
         ],
         "custom": []
     },

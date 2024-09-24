@@ -2,7 +2,8 @@
     "canonical": "emx-library",
     "aliases": {
         "scancode-licensedb": [
-            "EMX Library License"
+            "EMX Library License",
+            "LicenseRef-scancode-emx-library"
         ],
         "custom": []
     },

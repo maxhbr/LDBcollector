@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS Azure Spatial Anchors WinRT 2.9.0",
-            "Microsoft Azure Spatial Anchors WinRT 2.9.0"
+            "Microsoft Azure Spatial Anchors WinRT 2.9.0",
+            "LicenseRef-scancode-ms-azure-spatialanchors-2.9.0"
         ],
         "custom": []
     },

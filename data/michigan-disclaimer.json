@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "University of Michigan Open Source License",
-            "University of Michigan OSL"
+            "University of Michigan OSL",
+            "LicenseRef-scancode-michigan-disclaimer"
         ],
         "custom": []
     },

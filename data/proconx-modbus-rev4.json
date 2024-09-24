@@ -2,7 +2,8 @@
     "canonical": "proconx-modbus-rev4",
     "aliases": {
         "scancode-licensedb": [
-            "proconX Modbus Driver License rev4"
+            "proconX Modbus Driver License rev4",
+            "LicenseRef-scancode-proconx-modbus-rev4"
         ],
         "custom": []
     },

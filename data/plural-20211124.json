@@ -2,7 +2,8 @@
     "canonical": "plural-20211124",
     "aliases": {
         "scancode-licensedb": [
-            "Plural Licensing 20211124"
+            "Plural Licensing 20211124",
+            "LicenseRef-scancode-plural-20211124"
         ],
         "custom": []
     },

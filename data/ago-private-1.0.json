@@ -2,7 +2,8 @@
     "canonical": "ago-private-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "Ago Private License 1.0"
+            "Ago Private License 1.0",
+            "LicenseRef-scancode-ago-private-1.0"
         ],
         "custom": []
     },

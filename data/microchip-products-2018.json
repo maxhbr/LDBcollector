@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microchip Technology Products 2018",
-            "Microchip Products 2018"
+            "Microchip Products 2018",
+            "LicenseRef-scancode-microchip-products-2018"
         ],
         "custom": []
     },

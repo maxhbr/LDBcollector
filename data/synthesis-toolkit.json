@@ -2,7 +2,8 @@
     "canonical": "synthesis-toolkit",
     "aliases": {
         "scancode-licensedb": [
-            "Synthesis Toolkit License"
+            "Synthesis Toolkit License",
+            "LicenseRef-scancode-synthesis-toolkit"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "bytemark",
     "aliases": {
         "scancode-licensedb": [
-            "BYTEmark License"
+            "BYTEmark License",
+            "LicenseRef-scancode-bytemark"
         ],
         "custom": []
     },

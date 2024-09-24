@@ -2,7 +2,8 @@
     "canonical": "first-works-appreciative-1.2",
     "aliases": {
         "scancode-licensedb": [
-            "First Works Appreciative License 1.2"
+            "First Works Appreciative License 1.2",
+            "LicenseRef-scancode-first-works-appreciative-1.2"
         ],
         "custom": []
     },

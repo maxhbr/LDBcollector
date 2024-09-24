@@ -2,7 +2,8 @@
     "canonical": "protobuf",
     "aliases": {
         "scancode-licensedb": [
-            "Protobuf License"
+            "Protobuf License",
+            "LicenseRef-scancode-protobuf"
         ],
         "custom": []
     },

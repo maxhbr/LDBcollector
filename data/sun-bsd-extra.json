@@ -2,7 +2,8 @@
     "canonical": "sun-bsd-extra",
     "aliases": {
         "scancode-licensedb": [
-            "Sun BSD-Style with Additional Restrictions"
+            "Sun BSD-Style with Additional Restrictions",
+            "LicenseRef-scancode-sun-bsd-extra"
         ],
         "custom": []
     },

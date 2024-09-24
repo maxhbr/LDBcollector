@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "NVIDIA SDK EULA v0.11",
-            "License Agreement for NVIDIA Software Development Kits v0.11"
+            "License Agreement for NVIDIA Software Development Kits v0.11",
+            "LicenseRef-scancode-nvidia-sdk-eula-v0.11"
         ],
         "custom": []
     },

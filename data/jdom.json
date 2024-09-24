@@ -2,7 +2,8 @@
     "canonical": "jdom",
     "aliases": {
         "scancode-licensedb": [
-            "JDOM License"
+            "JDOM License",
+            "LicenseRef-scancode-jdom"
         ],
         "custom": []
     },

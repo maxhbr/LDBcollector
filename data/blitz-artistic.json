@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Blitz++ Artistic License",
-            "Blitz++ Artistic"
+            "Blitz++ Artistic",
+            "LicenseRef-scancode-blitz-artistic"
         ],
         "custom": []
     },

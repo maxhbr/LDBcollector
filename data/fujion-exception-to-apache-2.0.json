@@ -2,7 +2,8 @@
     "canonical": "fujion-exception-to-apache-2.0",
     "aliases": {
         "scancode-licensedb": [
-            "Fujion Clinical Exception to Apache 2.0"
+            "Fujion Clinical Exception to Apache 2.0",
+            "LicenseRef-scancode-fujion-exception-to-apache-2.0"
         ],
         "custom": []
     },

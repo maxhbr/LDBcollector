@@ -2,7 +2,8 @@
     "canonical": "hp",
     "aliases": {
         "scancode-licensedb": [
-            "HP Non-Commercial License"
+            "HP Non-Commercial License",
+            "LicenseRef-scancode-hp"
         ],
         "custom": []
     },

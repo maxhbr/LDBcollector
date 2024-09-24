@@ -2,7 +2,8 @@
     "canonical": "happy-bunny",
     "aliases": {
         "scancode-licensedb": [
-            "The Happy Bunny License"
+            "The Happy Bunny License",
+            "LicenseRef-scancode-happy-bunny"
         ],
         "custom": []
     },

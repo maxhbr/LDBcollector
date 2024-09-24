@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Adobe Flex 4 SDK Software License Agreement",
-            "Adobe Flex 4 SDK SLA"
+            "Adobe Flex 4 SDK SLA",
+            "LicenseRef-scancode-adobe-flex-4-sdk"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "lucre",
     "aliases": {
         "scancode-licensedb": [
-            "Lucre License"
+            "Lucre License",
+            "LicenseRef-scancode-lucre"
         ],
         "custom": []
     },

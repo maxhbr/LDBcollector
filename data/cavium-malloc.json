@@ -2,7 +2,8 @@
     "canonical": "cavium-malloc",
     "aliases": {
         "scancode-licensedb": [
-            "Cavium malloc License"
+            "Cavium malloc License",
+            "LicenseRef-scancode-cavium-malloc"
         ],
         "custom": []
     },

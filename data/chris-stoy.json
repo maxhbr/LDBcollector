@@ -2,7 +2,8 @@
     "canonical": "chris-stoy",
     "aliases": {
         "scancode-licensedb": [
-            "Chris Stoy Attribution License"
+            "Chris Stoy Attribution License",
+            "LicenseRef-scancode-chris-stoy"
         ],
         "custom": []
     },

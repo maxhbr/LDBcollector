@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "STLport License v4.5",
-            "STLport License 4.5"
+            "STLport License 4.5",
+            "LicenseRef-scancode-stlport-4.5"
         ],
         "custom": []
     },

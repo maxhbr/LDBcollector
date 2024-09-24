@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Tanuki Community SLA 1.2",
-            "Tanuki Community Software License Agreement 1.2"
+            "Tanuki Community Software License Agreement 1.2",
+            "LicenseRef-scancode-tanuki-community-sla-1.2"
         ],
         "custom": []
     },

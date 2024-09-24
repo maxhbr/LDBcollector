@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Sun BCL Java Servlet Implementation Classes 2.1.1",
-            "Sun BCL Java Servlet Implementation 2.1.1"
+            "Sun BCL Java Servlet Implementation 2.1.1",
+            "LicenseRef-scancode-sun-bcl-java-servlet-imp-2.1.1"
         ],
         "custom": []
     },

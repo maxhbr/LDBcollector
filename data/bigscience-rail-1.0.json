@@ -2,7 +2,8 @@
     "canonical": "bigscience-rail-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "BigScience RAIL License v1.0"
+            "BigScience RAIL License v1.0",
+            "LicenseRef-scancode-bigscience-rail-1.0"
         ],
         "custom": []
     },

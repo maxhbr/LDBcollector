@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Wi-Fi Alliance",
-            "Wi-Fi Alliance License"
+            "Wi-Fi Alliance License",
+            "LicenseRef-scancode-wifi-alliance"
         ],
         "custom": []
     },

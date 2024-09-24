@@ -2,7 +2,8 @@
     "canonical": "oracle-sql-developer",
     "aliases": {
         "scancode-licensedb": [
-            "Oracle SQL Developer License Terms"
+            "Oracle SQL Developer License Terms",
+            "LicenseRef-scancode-oracle-sql-developer"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "sunsoft",
     "aliases": {
         "scancode-licensedb": [
-            "Sunsoft License"
+            "Sunsoft License",
+            "LicenseRef-scancode-sunsoft"
         ],
         "custom": []
     },

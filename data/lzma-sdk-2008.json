@@ -2,7 +2,8 @@
     "canonical": "lzma-sdk-2008",
     "aliases": {
         "scancode-licensedb": [
-            "LZMA SDK 2008"
+            "LZMA SDK 2008",
+            "LicenseRef-scancode-lzma-sdk-2008"
         ],
         "custom": []
     },

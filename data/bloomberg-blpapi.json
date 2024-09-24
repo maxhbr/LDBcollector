@@ -2,7 +2,8 @@
     "canonical": "bloomberg-blpapi",
     "aliases": {
         "scancode-licensedb": [
-            "Bloomberg BLPAPI License"
+            "Bloomberg BLPAPI License",
+            "LicenseRef-scancode-bloomberg-blpapi"
         ],
         "custom": []
     },

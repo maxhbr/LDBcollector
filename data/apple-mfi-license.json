@@ -2,7 +2,8 @@
     "canonical": "apple-mfi-license",
     "aliases": {
         "scancode-licensedb": [
-            "Apple MFi License"
+            "Apple MFi License",
+            "LicenseRef-scancode-apple-mfi-license"
         ],
         "custom": []
     },

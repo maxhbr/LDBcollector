@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "BSD-1-Clause Build system",
-            "BSD-1-Clause Build"
+            "BSD-1-Clause Build",
+            "LicenseRef-scancode-bsd-1-clause-build"
         ],
         "custom": []
     },

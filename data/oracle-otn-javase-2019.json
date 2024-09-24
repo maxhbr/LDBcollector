@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OTN for Oracle Java SE 2019",
-            "Oracle Technology Network License Agreement for Oracle Java SE"
+            "Oracle Technology Network License Agreement for Oracle Java SE",
+            "LicenseRef-scancode-oracle-otn-javase-2019"
         ],
         "custom": []
     },

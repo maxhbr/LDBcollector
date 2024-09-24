@@ -2,7 +2,8 @@
     "canonical": "cups",
     "aliases": {
         "scancode-licensedb": [
-            "CUPS License"
+            "CUPS License",
+            "LicenseRef-scancode-cups"
         ],
         "custom": []
     },

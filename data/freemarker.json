@@ -2,7 +2,8 @@
     "canonical": "freemarker",
     "aliases": {
         "scancode-licensedb": [
-            "FreeMarker License"
+            "FreeMarker License",
+            "LicenseRef-scancode-freemarker"
         ],
         "custom": []
     },

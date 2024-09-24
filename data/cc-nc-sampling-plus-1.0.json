@@ -2,7 +2,8 @@
     "canonical": "cc-nc-sampling-plus-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "NonCommercial Sampling Plus 1.0"
+            "NonCommercial Sampling Plus 1.0",
+            "LicenseRef-scancode-cc-nc-sampling-plus-1.0"
         ],
         "custom": []
     },

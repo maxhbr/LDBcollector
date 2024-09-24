@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "LicenseRef-KFQF-Accepted-GPL",
-            "KFQF Accepted GPL"
+            "KFQF Accepted GPL",
+            "LicenseRef-scancode-kfqf-accepted-gpl"
         ],
         "custom": []
     },

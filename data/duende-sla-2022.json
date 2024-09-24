@@ -2,7 +2,8 @@
     "canonical": "duende-sla-2022",
     "aliases": {
         "scancode-licensedb": [
-            "Duende SLA 2022"
+            "Duende SLA 2022",
+            "LicenseRef-scancode-duende-sla-2022"
         ],
         "custom": []
     },

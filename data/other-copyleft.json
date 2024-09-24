@@ -2,7 +2,8 @@
     "canonical": "other-copyleft",
     "aliases": {
         "scancode-licensedb": [
-            "Other Copyleft Licenses"
+            "Other Copyleft Licenses",
+            "LicenseRef-scancode-other-copyleft"
         ],
         "custom": []
     },

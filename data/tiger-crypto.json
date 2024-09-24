@@ -2,7 +2,8 @@
     "canonical": "tiger-crypto",
     "aliases": {
         "scancode-licensedb": [
-            "Tiger Cryptography License"
+            "Tiger Cryptography License",
+            "LicenseRef-scancode-tiger-crypto"
         ],
         "custom": []
     },

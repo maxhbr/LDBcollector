@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS Limited Community License",
-            "Microsoft Limited Community License"
+            "Microsoft Limited Community License",
+            "LicenseRef-scancode-ms-limited-community"
         ],
         "custom": []
     },

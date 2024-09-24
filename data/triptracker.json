@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "TripTracker Slideshow License",
-            "TripTracker License"
+            "TripTracker License",
+            "LicenseRef-scancode-triptracker"
         ],
         "custom": []
     },

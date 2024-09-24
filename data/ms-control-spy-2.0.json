@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft Control Spy 2.0",
-            "MS Control Spy 2.0"
+            "MS Control Spy 2.0",
+            "LicenseRef-scancode-ms-control-spy-2.0"
         ],
         "custom": []
     },

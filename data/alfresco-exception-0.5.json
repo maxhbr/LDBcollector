@@ -2,7 +2,8 @@
     "canonical": "alfresco-exception-0.5",
     "aliases": {
         "scancode-licensedb": [
-            "Alfresco FLOSS Exception v0.5"
+            "Alfresco FLOSS Exception v0.5",
+            "LicenseRef-scancode-alfresco-exception-0.5"
         ],
         "custom": []
     },

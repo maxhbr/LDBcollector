@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OLF-CCLA-1.0",
-            "Open Logistics Foundation Corporate Contributor CLA 1.0"
+            "Open Logistics Foundation Corporate Contributor CLA 1.0",
+            "LicenseRef-scancode-olf-ccla-1.0"
         ],
         "custom": []
     },

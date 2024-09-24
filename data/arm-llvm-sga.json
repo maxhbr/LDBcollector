@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "ARM LLVM Grant",
-            "ARM LLVM Software Grant License Agreement"
+            "ARM LLVM Software Grant License Agreement",
+            "LicenseRef-scancode-arm-llvm-sga"
         ],
         "custom": []
     },

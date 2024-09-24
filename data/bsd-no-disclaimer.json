@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "BSD-2-Clause no disclaimer",
-            "BSD-2-Clause without Warranty Disclaimer"
+            "BSD-2-Clause without Warranty Disclaimer",
+            "LicenseRef-scancode-bsd-no-disclaimer"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "pycrypto",
     "aliases": {
         "scancode-licensedb": [
-            "PyCrypto License"
+            "PyCrypto License",
+            "LicenseRef-scancode-pycrypto"
         ],
         "custom": []
     },

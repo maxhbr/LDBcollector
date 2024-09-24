@@ -2,7 +2,8 @@
     "canonical": "stmicroelectronics-centrallabs",
     "aliases": {
         "scancode-licensedb": [
-            "STMicroelectronics CentralLabs License"
+            "STMicroelectronics CentralLabs License",
+            "LicenseRef-scancode-stmicroelectronics-centrallabs"
         ],
         "custom": []
     },

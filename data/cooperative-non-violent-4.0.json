@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "CNVPL 4.0",
-            "Cooperative Non-Violent Public License v4"
+            "Cooperative Non-Violent Public License v4",
+            "LicenseRef-scancode-cooperative-non-violent-4.0"
         ],
         "custom": []
     },

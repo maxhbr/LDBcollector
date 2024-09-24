@@ -2,7 +2,8 @@
     "canonical": "energyplus",
     "aliases": {
         "scancode-licensedb": [
-            "EnergyPlus License"
+            "EnergyPlus License",
+            "LicenseRef-scancode-energyplus-2023"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "brian-clapper",
     "aliases": {
         "scancode-licensedb": [
-            "Brian Clapper License"
+            "Brian Clapper License",
+            "LicenseRef-scancode-brian-clapper"
         ],
         "custom": []
     },

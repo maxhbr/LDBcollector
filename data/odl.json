@@ -2,7 +2,8 @@
     "canonical": "odl",
     "aliases": {
         "scancode-licensedb": [
-            "Open Directory License"
+            "Open Directory License",
+            "LicenseRef-scancode-odl"
         ],
         "custom": []
     },

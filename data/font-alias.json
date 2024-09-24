@@ -2,7 +2,8 @@
     "canonical": "font-alias",
     "aliases": {
         "scancode-licensedb": [
-            "font-alias License"
+            "font-alias License",
+            "LicenseRef-scancode-font-alias"
         ],
         "custom": []
     },

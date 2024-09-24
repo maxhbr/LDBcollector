@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "LicenseRef-scancode-independent-module-linking-exception",
-            "Independent Module Linking Exception"
+            "Independent Module Linking Exception",
+            "LicenseRef-scancode-indie-module-linking-exception"
         ],
         "custom": []
     },

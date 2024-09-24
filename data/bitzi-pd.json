@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Bitzi-PD",
-            "Bitzi Public Domain"
+            "Bitzi Public Domain",
+            "LicenseRef-scancode-bitzi-pd"
         ],
         "custom": []
     },

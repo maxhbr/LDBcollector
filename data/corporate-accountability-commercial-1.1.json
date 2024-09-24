@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "CC+CAL",
             "LicenseRef-scancode-corporate-accountability-commercial-1.1",
-            "CC + Corporate Accountability Lab"
+            "CC + Corporate Accountability Lab",
+            "LicenseRef-scancode-accountability-commercial-1.1"
         ],
         "custom": []
     },

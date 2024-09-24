@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS Kinect for Windows SDK License",
-            "Microsoft Kinect for Windows SDK License"
+            "Microsoft Kinect for Windows SDK License",
+            "LicenseRef-scancode-ms-kinext-win-sdk"
         ],
         "custom": []
     },

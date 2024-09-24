@@ -2,7 +2,8 @@
     "canonical": "semgrep-registry",
     "aliases": {
         "scancode-licensedb": [
-            "Semgrep Registry License"
+            "Semgrep Registry License",
+            "LicenseRef-scancode-semgrep-registry"
         ],
         "custom": []
     },

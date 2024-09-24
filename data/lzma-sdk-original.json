@@ -2,7 +2,8 @@
     "canonical": "lzma-sdk-original",
     "aliases": {
         "scancode-licensedb": [
-            "LZMA SDK Original"
+            "LZMA SDK Original",
+            "LicenseRef-scancode-lzma-sdk-original"
         ],
         "custom": []
     },

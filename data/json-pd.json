@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "JSON Public Domain Notice",
-            "JSON-PD"
+            "JSON-PD",
+            "LicenseRef-scancode-json-pd"
         ],
         "custom": []
     },

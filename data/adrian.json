@@ -2,7 +2,8 @@
     "canonical": "adrian",
     "aliases": {
         "scancode-licensedb": [
-            "Andre Adrian DFS license"
+            "Andre Adrian DFS license",
+            "LicenseRef-scancode-adrian"
         ],
         "custom": []
     },

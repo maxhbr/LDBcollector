@@ -2,7 +2,8 @@
     "canonical": "research-disclaimer",
     "aliases": {
         "scancode-licensedb": [
-            "Research Software Disclaimer"
+            "Research Software Disclaimer",
+            "LicenseRef-scancode-research-disclaimer"
         ],
         "custom": []
     },

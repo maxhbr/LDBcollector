@@ -2,7 +2,8 @@
     "canonical": "scola-en",
     "aliases": {
         "scancode-licensedb": [
-            "Statistics Canada Open Licence Agreement"
+            "Statistics Canada Open Licence Agreement",
+            "LicenseRef-scancode-scola-en"
         ],
         "custom": []
     },

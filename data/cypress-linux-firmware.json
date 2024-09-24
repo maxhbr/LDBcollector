@@ -2,7 +2,8 @@
     "canonical": "cypress-linux-firmware",
     "aliases": {
         "scancode-licensedb": [
-            "Cypress Linux Firmware License"
+            "Cypress Linux Firmware License",
+            "LicenseRef-scancode-cypress-linux-firmware"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "bsd-new-tcpdump",
     "aliases": {
         "scancode-licensedb": [
-            "BSD-3-Clause tcpdump variant"
+            "BSD-3-Clause tcpdump variant",
+            "LicenseRef-scancode-bsd-new-tcpdump"
         ],
         "custom": []
     },

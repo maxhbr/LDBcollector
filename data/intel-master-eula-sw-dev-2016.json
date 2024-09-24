@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Intel Master EULA for SW Dev 2016",
-            "Intel Master EULA for SW Development Products March 2016"
+            "Intel Master EULA for SW Development Products March 2016",
+            "LicenseRef-scancode-intel-master-eula-sw-dev-2016"
         ],
         "custom": []
     },

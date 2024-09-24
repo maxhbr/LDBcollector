@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Redis Source Available License 1.0",
-            "Redis Source Available License Agreement 1.0"
+            "Redis Source Available License Agreement 1.0",
+            "LicenseRef-scancode-redis-source-available-1.0"
         ],
         "custom": []
     },

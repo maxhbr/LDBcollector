@@ -2,7 +2,8 @@
     "canonical": "hacking-license",
     "aliases": {
         "scancode-licensedb": [
-            "Hacking License"
+            "Hacking License",
+            "LicenseRef-scancode-hacking-license"
         ],
         "custom": []
     },

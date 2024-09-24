@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "LicenseRef-scancode-jetbrains-toolbox-open-source-3",
             "JetBrains Toolbox Open Source License v3",
-            "Toolbox Subscription License Agreement For Open Source Projects Version 3"
+            "Toolbox Subscription License Agreement For Open Source Projects Version 3",
+            "LicenseRef-scancode-jetbrains-toolbox-oss-3"
         ],
         "custom": []
     },

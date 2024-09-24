@@ -2,7 +2,8 @@
     "canonical": "iozone",
     "aliases": {
         "scancode-licensedb": [
-            "IOzone License"
+            "IOzone License",
+            "LicenseRef-scancode-iozone"
         ],
         "custom": []
     },

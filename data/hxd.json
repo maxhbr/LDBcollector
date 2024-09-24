@@ -2,7 +2,8 @@
     "canonical": "hxd",
     "aliases": {
         "scancode-licensedb": [
-            "HxD License"
+            "HxD License",
+            "LicenseRef-scancode-hxd"
         ],
         "custom": []
     },

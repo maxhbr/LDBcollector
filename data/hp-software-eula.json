@@ -2,7 +2,8 @@
     "canonical": "hp-software-eula",
     "aliases": {
         "scancode-licensedb": [
-            "HP Software EULA"
+            "HP Software EULA",
+            "LicenseRef-scancode-hp-software-eula"
         ],
         "custom": []
     },

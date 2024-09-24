@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "BOHL-0.2",
-            "The Balloon Open Hardware License v0.2"
+            "The Balloon Open Hardware License v0.2",
+            "LicenseRef-scancode-bohl-0.2"
         ],
         "custom": []
     },

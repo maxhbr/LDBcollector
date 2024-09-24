@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "NIST NVD API TOU",
-            "NIST NVD API Terms of Use"
+            "NIST NVD API Terms of Use",
+            "LicenseRef-scancode-nist-nvd-api-tou"
         ],
         "custom": []
     },

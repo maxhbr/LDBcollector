@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "JPython 1.1",
-            "JPython License 1.1"
+            "JPython License 1.1",
+            "LicenseRef-scancode-jpython-1.1"
         ],
         "custom": []
     },

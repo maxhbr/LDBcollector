@@ -2,7 +2,8 @@
     "canonical": "lyubinskiy-dropdown",
     "aliases": {
         "scancode-licensedb": [
-            "Lyubinskiy dropdown License"
+            "Lyubinskiy dropdown License",
+            "LicenseRef-scancode-lyubinskiy-dropdown"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "patent-disclaimer",
     "aliases": {
         "scancode-licensedb": [
-            "Generic patent disclaimer"
+            "Generic patent disclaimer",
+            "LicenseRef-scancode-patent-disclaimer"
         ],
         "custom": []
     },

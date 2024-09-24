@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Mulan PSL v1.0 (En)",
-            "Mulan Permissive Software License, Version 1 (English)"
+            "Mulan Permissive Software License, Version 1 (English)",
+            "LicenseRef-scancode-mulanpsl-1.0-en"
         ],
         "custom": []
     },

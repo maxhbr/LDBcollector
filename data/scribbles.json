@@ -2,7 +2,8 @@
     "canonical": "scribbles",
     "aliases": {
         "scancode-licensedb": [
-            "Scribbles Demos Recognizer Notice"
+            "Scribbles Demos Recognizer Notice",
+            "LicenseRef-scancode-scribbles"
         ],
         "custom": []
     },

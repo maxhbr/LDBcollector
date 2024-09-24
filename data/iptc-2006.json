@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "IPTC License Agreement 2006",
-            "License Agreement for International Press Telecommunications Council 2006"
+            "License Agreement for International Press Telecommunications Council 2006",
+            "LicenseRef-scancode-iptc-2006"
         ],
         "custom": []
     },

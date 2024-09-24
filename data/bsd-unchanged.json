@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "BSD Simplified with Unchanged requirement",
-            "BSD Unchanged"
+            "BSD Unchanged",
+            "LicenseRef-scancode-bsd-unchanged"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "LicenseRef-scancode-gladman-older-rijndael-code-use",
-            "Gladman Older Rigndael Code Use"
+            "Gladman Older Rigndael Code Use",
+            "LicenseRef-scancode-gladman-older-rijndael-code"
         ],
         "custom": []
     },

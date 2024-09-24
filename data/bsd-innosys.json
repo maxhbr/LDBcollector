@@ -2,7 +2,8 @@
     "canonical": "bsd-innosys",
     "aliases": {
         "scancode-licensedb": [
-            "BSD-InnoSys"
+            "BSD-InnoSys",
+            "LicenseRef-scancode-bsd-innosys"
         ],
         "custom": []
     },

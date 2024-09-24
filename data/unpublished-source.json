@@ -2,7 +2,8 @@
     "canonical": "unpublished-source",
     "aliases": {
         "scancode-licensedb": [
-            "Unpublished Source License"
+            "Unpublished Source License",
+            "LicenseRef-scancode-unpublished-source"
         ],
         "custom": []
     },

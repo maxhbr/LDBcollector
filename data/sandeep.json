@@ -2,7 +2,8 @@
     "canonical": "sandeep",
     "aliases": {
         "scancode-licensedb": [
-            "Sandeep License"
+            "Sandeep License",
+            "LicenseRef-scancode-sandeep"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "nwhm",
     "aliases": {
         "scancode-licensedb": [
-            "Non White Heterosexual Male"
+            "Non White Heterosexual Male",
+            "LicenseRef-scancode-nwhm"
         ],
         "custom": []
     },

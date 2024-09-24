@@ -2,7 +2,8 @@
     "canonical": "blender-2010",
     "aliases": {
         "scancode-licensedb": [
-            "Blender License 2010"
+            "Blender License 2010",
+            "LicenseRef-scancode-blender-2010"
         ],
         "custom": []
     },

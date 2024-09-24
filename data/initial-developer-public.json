@@ -2,7 +2,8 @@
     "canonical": "initial-developer-public",
     "aliases": {
         "scancode-licensedb": [
-            "Initial Developer Public License"
+            "Initial Developer Public License",
+            "LicenseRef-scancode-initial-developer-public"
         ],
         "custom": []
     },

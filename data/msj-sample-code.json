@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft Systems Journal Sample Code License",
-            "MS Systems Journal Sample Code License"
+            "MS Systems Journal Sample Code License",
+            "LicenseRef-scancode-msj-sample-code"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "synopsys-attribution",
     "aliases": {
         "scancode-licensedb": [
-            "Synopsys Attribution License"
+            "Synopsys Attribution License",
+            "LicenseRef-scancode-synopsys-attribution"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "ogc",
     "aliases": {
         "scancode-licensedb": [
-            "OGC Software Notice"
+            "OGC Software Notice",
+            "LicenseRef-scancode-ogc"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "x11-realmode",
     "aliases": {
         "scancode-licensedb": [
-            "X11-Style (Realmode)"
+            "X11-Style (Realmode)",
+            "LicenseRef-scancode-x11-realmode"
         ],
         "custom": []
     },

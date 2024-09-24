@@ -2,7 +2,8 @@
     "canonical": "rtools-util",
     "aliases": {
         "scancode-licensedb": [
-            "RTools.Util License"
+            "RTools.Util License",
+            "LicenseRef-scancode-rtools-util"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Carnegie Mellon UC Regents MIT-style License",
-            "CMU MIT-style"
+            "CMU MIT-style",
+            "LicenseRef-scancode-cmu-mit"
         ],
         "custom": []
     },

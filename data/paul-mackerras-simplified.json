@@ -2,7 +2,8 @@
     "canonical": "paul-mackerras-simplified",
     "aliases": {
         "scancode-licensedb": [
-            "Paul Mackerras Simplified License"
+            "Paul Mackerras Simplified License",
+            "LicenseRef-scancode-paul-mackerras-simplified"
         ],
         "custom": []
     },

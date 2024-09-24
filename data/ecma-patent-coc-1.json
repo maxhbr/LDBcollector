@@ -2,7 +2,8 @@
     "canonical": "ecma-patent-coc-1",
     "aliases": {
         "scancode-licensedb": [
-            "Ecma Code of Conduct in Patent Matters v1"
+            "Ecma Code of Conduct in Patent Matters v1",
+            "LicenseRef-scancode-ecma-patent-coc-1"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "ITC End User License Agreement",
-            "ITC EULA"
+            "ITC EULA",
+            "LicenseRef-scancode-itc-eula"
         ],
         "custom": []
     },

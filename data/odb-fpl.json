@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "ODB FPL",
-            "ODB Free Proprietary License (FPL)"
+            "ODB Free Proprietary License (FPL)",
+            "LicenseRef-scancode-odb-fpl"
         ],
         "custom": []
     },

@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "ZIPList5 Geocode End-User Workstation (Single-User) License Agreement",
             "ZIPList5 Geocode End-User Workstation License",
-            "LicenseRef-scancode-ziplist5-geocode-end-user-workstation"
+            "LicenseRef-scancode-ziplist5-geocode-end-user-workstation",
+            "LicenseRef-scancode-ziplist5-geocode-workstation"
         ],
         "custom": []
     },

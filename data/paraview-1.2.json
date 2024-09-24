@@ -2,7 +2,8 @@
     "canonical": "paraview-1.2",
     "aliases": {
         "scancode-licensedb": [
-            "ParaView License 1.2"
+            "ParaView License 1.2",
+            "LicenseRef-scancode-paraview-1.2"
         ],
         "custom": []
     },

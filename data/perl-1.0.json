@@ -2,7 +2,8 @@
     "canonical": "perl-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "Perl 1.0"
+            "Perl 1.0",
+            "LicenseRef-scancode-perl-1.0"
         ],
         "custom": []
     },

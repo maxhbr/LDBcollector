@@ -2,7 +2,8 @@
     "canonical": "cpm-2022",
     "aliases": {
         "scancode-licensedb": [
-            "CP/M License 2022"
+            "CP/M License 2022",
+            "LicenseRef-scancode-cpm-2022"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "red-hat-logos",
     "aliases": {
         "scancode-licensedb": [
-            "Red Hat Logos License"
+            "Red Hat Logos License",
+            "LicenseRef-scancode-red-hat-logos"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "stlport-2000",
     "aliases": {
         "scancode-licensedb": [
-            "STLport License 2000"
+            "STLport License 2000",
+            "LicenseRef-scancode-stlport-2000"
         ],
         "custom": []
     },

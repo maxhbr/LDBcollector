@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "VNCViewer iOS EULA",
-            "VNCViewer for iOS EULA"
+            "VNCViewer for iOS EULA",
+            "LicenseRef-scancode-vnc-viewer-ios"
         ],
         "custom": []
     },

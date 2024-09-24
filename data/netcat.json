@@ -2,7 +2,8 @@
     "canonical": "netcat",
     "aliases": {
         "scancode-licensedb": [
-            "Netcat License"
+            "Netcat License",
+            "LicenseRef-scancode-netcat"
         ],
         "custom": []
     },

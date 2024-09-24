@@ -2,7 +2,8 @@
     "canonical": "truecrypt-3.1",
     "aliases": {
         "scancode-licensedb": [
-            "TrueCrypt License 3.1"
+            "TrueCrypt License 3.1",
+            "LicenseRef-scancode-truecrypt-3.1"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "libgeotiff",
     "aliases": {
         "scancode-licensedb": [
-            "libgeoTiff License"
+            "libgeoTiff License",
+            "LicenseRef-scancode-libgeotiff"
         ],
         "custom": []
     },

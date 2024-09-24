@@ -2,7 +2,8 @@
     "canonical": "jason-mayes",
     "aliases": {
         "scancode-licensedb": [
-            "Jason Mayes License"
+            "Jason Mayes License",
+            "LicenseRef-scancode-jason-mayes"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "docbook",
     "aliases": {
         "scancode-licensedb": [
-            "Docbook License"
+            "Docbook License",
+            "LicenseRef-scancode-docbook"
         ],
         "custom": []
     },

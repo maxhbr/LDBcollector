@@ -2,7 +2,8 @@
     "canonical": "jython",
     "aliases": {
         "scancode-licensedb": [
-            "Jython License"
+            "Jython License",
+            "LicenseRef-scancode-jython"
         ],
         "custom": []
     },

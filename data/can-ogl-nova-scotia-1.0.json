@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OGL Nova Scotia 1.0",
-            "Open Government Licence Nova Scotia 1.0"
+            "Open Government Licence Nova Scotia 1.0",
+            "LicenseRef-scancode-can-ogl-nova-scotia-1.0"
         ],
         "custom": []
     },

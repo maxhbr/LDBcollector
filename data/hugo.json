@@ -2,7 +2,8 @@
     "canonical": "hugo",
     "aliases": {
         "scancode-licensedb": [
-            "Hugo License"
+            "Hugo License",
+            "LicenseRef-scancode-hugo"
         ],
         "custom": []
     },

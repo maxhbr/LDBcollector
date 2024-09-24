@@ -2,7 +2,8 @@
     "canonical": "lilo",
     "aliases": {
         "scancode-licensedb": [
-            "LILO License"
+            "LILO License",
+            "LicenseRef-scancode-lilo"
         ],
         "custom": []
     },

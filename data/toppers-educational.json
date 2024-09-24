@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "TOPPERS Educational",
-            "TOPPERS Educational contents license agreement"
+            "TOPPERS Educational contents license agreement",
+            "LicenseRef-scancode-toppers-educational"
         ],
         "custom": []
     },

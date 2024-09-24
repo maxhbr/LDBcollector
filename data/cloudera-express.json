@@ -2,7 +2,8 @@
     "canonical": "cloudera-express",
     "aliases": {
         "scancode-licensedb": [
-            "Cloudera Express License"
+            "Cloudera Express License",
+            "LicenseRef-scancode-cloudera-express"
         ],
         "custom": []
     },

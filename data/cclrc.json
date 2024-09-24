@@ -2,7 +2,8 @@
     "canonical": "cclrc",
     "aliases": {
         "scancode-licensedb": [
-            "CCLRC License"
+            "CCLRC License",
+            "LicenseRef-scancode-cclrc"
         ],
         "custom": []
     },

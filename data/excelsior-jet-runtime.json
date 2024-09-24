@@ -2,7 +2,8 @@
     "canonical": "excelsior-jet-runtime",
     "aliases": {
         "scancode-licensedb": [
-            "Excelsior JET Runtime License"
+            "Excelsior JET Runtime License",
+            "LicenseRef-scancode-excelsior-jet-runtime"
         ],
         "custom": []
     },

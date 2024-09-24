@@ -2,7 +2,8 @@
     "canonical": "cognitive-web-osl-1.1",
     "aliases": {
         "scancode-licensedb": [
-            "CognitiveWeb Open Source License 1.1"
+            "CognitiveWeb Open Source License 1.1",
+            "LicenseRef-scancode-cognitive-web-osl-1.1"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Any Source Available License 1.0",
-            "ASAL 1.0"
+            "ASAL 1.0",
+            "LicenseRef-scancode-asal-1.0"
         ],
         "custom": []
     },

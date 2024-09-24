@@ -2,7 +2,8 @@
     "canonical": "embedthis-extension",
     "aliases": {
         "scancode-licensedb": [
-            "Embedthis Extension License"
+            "Embedthis Extension License",
+            "LicenseRef-scancode-embedthis-extension"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "polyform-internal-use-1.0.0",
     "aliases": {
         "scancode-licensedb": [
-            "Polyform Internal Use License 1.0.0"
+            "Polyform Internal Use License 1.0.0",
+            "LicenseRef-scancode-polyform-internal-use-1.0.0"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "NVPL 7.0",
-            "Non-Violent Public License v7"
+            "Non-Violent Public License v7",
+            "LicenseRef-scancode-non-violent-7.0"
         ],
         "custom": []
     },

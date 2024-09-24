@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "GitHub CodeQL Terms and Conditions 2020",
-            "GitHub CodeQL Terms 2020"
+            "GitHub CodeQL Terms 2020",
+            "LicenseRef-scancode-github-codeql-terms-2020"
         ],
         "custom": []
     },

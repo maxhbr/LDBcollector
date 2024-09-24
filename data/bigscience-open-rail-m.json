@@ -2,7 +2,8 @@
     "canonical": "bigscience-open-rail-m",
     "aliases": {
         "scancode-licensedb": [
-            "BigScience Open RAIL-M License"
+            "BigScience Open RAIL-M License",
+            "LicenseRef-scancode-bigscience-open-rail-m"
         ],
         "custom": []
     },

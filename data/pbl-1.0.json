@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "PBL-1.0",
-            "Permissive Binary License 1.0"
+            "Permissive Binary License 1.0",
+            "LicenseRef-scancode-pbl-1.0"
         ],
         "custom": []
     },

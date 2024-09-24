@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OGL Canada 2.0 Francais",
-            "Licence du gouvernement ouvert Canada 2.0"
+            "Licence du gouvernement ouvert Canada 2.0",
+            "LicenseRef-scancode-ogl-canada-2.0-fr"
         ],
         "custom": []
     },

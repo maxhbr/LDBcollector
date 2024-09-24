@@ -2,7 +2,8 @@
     "canonical": "saf",
     "aliases": {
         "scancode-licensedb": [
-            "Service Availability Forum License"
+            "Service Availability Forum License",
+            "LicenseRef-scancode-saf"
         ],
         "custom": []
     },

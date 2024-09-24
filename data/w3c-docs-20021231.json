@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "W3C-DOCS-20021231",
-            "W3C Document License (2002-12-31)"
+            "W3C Document License (2002-12-31)",
+            "LicenseRef-scancode-w3c-docs-20021231"
         ],
         "custom": []
     },

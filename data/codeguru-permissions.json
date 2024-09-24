@@ -2,7 +2,8 @@
     "canonical": "codeguru-permissions",
     "aliases": {
         "scancode-licensedb": [
-            "CodeGuru Permissions"
+            "CodeGuru Permissions",
+            "LicenseRef-scancode-codeguru-permissions"
         ],
         "custom": []
     },

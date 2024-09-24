@@ -2,7 +2,8 @@
     "canonical": "hippocratic-3.0",
     "aliases": {
         "scancode-licensedb": [
-            "Hippocratic License v3.0"
+            "Hippocratic License v3.0",
+            "LicenseRef-scancode-Hippocratic-3.0"
         ],
         "custom": []
     },

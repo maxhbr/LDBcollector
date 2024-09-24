@@ -2,7 +2,8 @@
     "canonical": "gradle-tou-2022-01-13",
     "aliases": {
         "scancode-licensedb": [
-            "Gradle Terms of Use 2022-01-13"
+            "Gradle Terms of Use 2022-01-13",
+            "LicenseRef-scancode-gradle-tou-2022-01-13"
         ],
         "custom": []
     },

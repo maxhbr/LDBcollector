@@ -2,7 +2,8 @@
     "canonical": "naughter",
     "aliases": {
         "scancode-licensedb": [
-            "Naughter Software License"
+            "Naughter Software License",
+            "LicenseRef-scancode-naughter"
         ],
         "custom": []
     },

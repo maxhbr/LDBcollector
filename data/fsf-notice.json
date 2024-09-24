@@ -2,7 +2,8 @@
     "canonical": "fsf-notice",
     "aliases": {
         "scancode-licensedb": [
-            "FSF Notice"
+            "FSF Notice",
+            "LicenseRef-scancode-fsf-notice"
         ],
         "custom": []
     },

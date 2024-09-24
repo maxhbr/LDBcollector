@@ -2,7 +2,8 @@
     "canonical": "trustonic-proprietary-2013",
     "aliases": {
         "scancode-licensedb": [
-            "Trustonic Proprietary License 2013"
+            "Trustonic Proprietary License 2013",
+            "LicenseRef-scancode-trustonic-proprietary-2013"
         ],
         "custom": []
     },

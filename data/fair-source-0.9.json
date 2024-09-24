@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Fair Source v0.9",
-            "Fair Source License v0.9"
+            "Fair Source License v0.9",
+            "LicenseRef-scancode-fair-source-0.9"
         ],
         "custom": []
     },

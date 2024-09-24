@@ -2,7 +2,8 @@
     "canonical": "psytec-freesoft",
     "aliases": {
         "scancode-licensedb": [
-            "Psytec Free Software License"
+            "Psytec Free Software License",
+            "LicenseRef-scancode-psytec-freesoft"
         ],
         "custom": []
     },

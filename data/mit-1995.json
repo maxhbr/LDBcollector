@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MIT INRIA W3C 1995",
-            "MIT 1995"
+            "MIT 1995",
+            "LicenseRef-scancode-mit-1995"
         ],
         "custom": []
     },

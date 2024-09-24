@@ -2,7 +2,8 @@
     "canonical": "ms-ilmerge",
     "aliases": {
         "scancode-licensedb": [
-            "MS ILMerge License"
+            "MS ILMerge License",
+            "LicenseRef-scancode-ms-ilmerge"
         ],
         "custom": []
     },

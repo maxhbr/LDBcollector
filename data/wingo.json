@@ -2,7 +2,8 @@
     "canonical": "wingo",
     "aliases": {
         "scancode-licensedb": [
-            "wingo License"
+            "wingo License",
+            "LicenseRef-scancode-wingo"
         ],
         "custom": []
     },

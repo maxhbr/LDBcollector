@@ -2,7 +2,8 @@
     "canonical": "clause-6-exception-lgpl-2.1",
     "aliases": {
         "scancode-licensedb": [
-            "Clause 6 Exception to LGPL 2.1"
+            "Clause 6 Exception to LGPL 2.1",
+            "LicenseRef-scancode-clause-6-exception-lgpl-2.1"
         ],
         "custom": []
     },

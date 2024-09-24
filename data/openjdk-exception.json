@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "OpenJDK Exception",
             "Assembly-exception",
-            "OpenJDK Classpath and Assembly Exception"
+            "OpenJDK Classpath and Assembly Exception",
+            "LicenseRef-scancode-openjdk-exception"
         ],
         "custom": []
     },

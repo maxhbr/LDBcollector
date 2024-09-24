@@ -2,7 +2,8 @@
     "canonical": "netronome-firmware",
     "aliases": {
         "scancode-licensedb": [
-            "Netronome Firmware License"
+            "Netronome Firmware License",
+            "LicenseRef-scancode-netronome-firmware"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "fplot",
     "aliases": {
         "scancode-licensedb": [
-            "FPLOT LIcense"
+            "FPLOT LIcense",
+            "LicenseRef-scancode-fplot"
         ],
         "custom": []
     },

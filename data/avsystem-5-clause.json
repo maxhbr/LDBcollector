@@ -2,7 +2,8 @@
     "canonical": "avsystem-5-clause",
     "aliases": {
         "scancode-licensedb": [
-            "AVSystem 5-Clause License"
+            "AVSystem 5-Clause License",
+            "LicenseRef-scancode-avsystem-5-clause"
         ],
         "custom": []
     },

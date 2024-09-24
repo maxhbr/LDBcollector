@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "SoftFloat Legal Notice 2.0",
-            "SoftFloat Legal Notice with Prominent Notice"
+            "SoftFloat Legal Notice with Prominent Notice",
+            "LicenseRef-scancode-softfloat-2.0"
         ],
         "custom": []
     },

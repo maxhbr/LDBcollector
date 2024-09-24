@@ -2,7 +2,8 @@
     "canonical": "csprng",
     "aliases": {
         "scancode-licensedb": [
-            "CSPRNG"
+            "CSPRNG",
+            "LicenseRef-scancode-csprng"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "goahead",
     "aliases": {
         "scancode-licensedb": [
-            "GoAhead License"
+            "GoAhead License",
+            "LicenseRef-scancode-goahead"
         ],
         "custom": []
     },

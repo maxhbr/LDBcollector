@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "DOS32 Advanced DOS Extender Software License",
-            "DOS32A Extender License"
+            "DOS32A Extender License",
+            "LicenseRef-scancode-dos32a-extender"
         ],
         "custom": []
     },

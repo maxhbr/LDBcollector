@@ -2,7 +2,8 @@
     "canonical": "click-license",
     "aliases": {
         "scancode-licensedb": [
-            "Click License"
+            "Click License",
+            "LicenseRef-scancode-click-license"
         ],
         "custom": []
     },

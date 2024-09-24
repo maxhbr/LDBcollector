@@ -2,7 +2,8 @@
     "canonical": "gatling-highcharts",
     "aliases": {
         "scancode-licensedb": [
-            "Gatling-Highcharts License"
+            "Gatling-Highcharts License",
+            "LicenseRef-scancode-gatling-highcharts"
         ],
         "custom": []
     },

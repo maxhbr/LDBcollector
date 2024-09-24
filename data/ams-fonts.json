@@ -2,7 +2,8 @@
     "canonical": "ams-fonts",
     "aliases": {
         "scancode-licensedb": [
-            "AMSFonts license"
+            "AMSFonts license",
+            "LicenseRef-scancode-ams-fonts"
         ],
         "custom": []
     },

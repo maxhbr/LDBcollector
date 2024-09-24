@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "DivX Open License 2.1",
-            "DivX Open License v2.1"
+            "DivX Open License v2.1",
+            "LicenseRef-scancode-divx-open-2.1"
         ],
         "custom": []
     },

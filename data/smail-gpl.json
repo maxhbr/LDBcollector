@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "SMAIL General Public License",
-            "SMAIL GPL"
+            "SMAIL GPL",
+            "LicenseRef-scancode-smail-gpl"
         ],
         "custom": []
     },

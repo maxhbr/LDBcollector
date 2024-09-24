@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "LDPGPL-1a",
-            "Linux Documentation Project General Public License v1a, November 1998"
+            "Linux Documentation Project General Public License v1a, November 1998",
+            "LicenseRef-scancode-ldpgpl-1a"
         ],
         "custom": []
     },

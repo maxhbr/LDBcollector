@@ -2,7 +2,8 @@
     "canonical": "supervisor",
     "aliases": {
         "scancode-licensedb": [
-            "Supervisor License"
+            "Supervisor License",
+            "LicenseRef-scancode-supervisor"
         ],
         "custom": []
     },

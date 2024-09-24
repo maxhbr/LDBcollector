@@ -2,7 +2,8 @@
     "canonical": "rackspace",
     "aliases": {
         "scancode-licensedb": [
-            "Rackspace License"
+            "Rackspace License",
+            "LicenseRef-scancode-rackspace"
         ],
         "custom": []
     },

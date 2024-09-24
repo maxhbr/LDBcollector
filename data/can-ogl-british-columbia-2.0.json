@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Open Government Licence British Columbia 2.0",
-            "OGL British Columbia 2.0"
+            "OGL British Columbia 2.0",
+            "LicenseRef-scancode-can-ogl-british-columbia-2.0"
         ],
         "custom": []
     },

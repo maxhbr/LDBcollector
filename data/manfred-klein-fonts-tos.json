@@ -2,7 +2,8 @@
     "canonical": "manfred-klein-fonts-tos",
     "aliases": {
         "scancode-licensedb": [
-            "Manfred Klein Fonts TOS"
+            "Manfred Klein Fonts TOS",
+            "LicenseRef-scancode-manfred-klein-fonts-tos"
         ],
         "custom": []
     },

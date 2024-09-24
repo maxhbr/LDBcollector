@@ -2,7 +2,8 @@
     "canonical": "proguard-exception-2.0",
     "aliases": {
         "scancode-licensedb": [
-            "ProGuard exception to GPL 2.0"
+            "ProGuard exception to GPL 2.0",
+            "LicenseRef-scancode-proguard-exception-2.0"
         ],
         "custom": []
     },

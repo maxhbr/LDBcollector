@@ -2,7 +2,8 @@
     "canonical": "ac3filter",
     "aliases": {
         "scancode-licensedb": [
-            "AC3Filter License"
+            "AC3Filter License",
+            "LicenseRef-scancode-ac3filter"
         ],
         "custom": []
     },

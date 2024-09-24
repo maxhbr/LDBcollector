@@ -2,7 +2,8 @@
     "canonical": "ghostpdl-permissive",
     "aliases": {
         "scancode-licensedb": [
-            "Ghostpdl Permissive"
+            "Ghostpdl Permissive",
+            "LicenseRef-scancode-ghostpdl-permissive"
         ],
         "custom": []
     },

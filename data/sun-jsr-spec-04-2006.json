@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Sun JSR Specification License April 2006",
-            "Sun JSR Specification 04-2006"
+            "Sun JSR Specification 04-2006",
+            "LicenseRef-scancode-sun-jsr-spec-04-2006"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "bpmn-io",
     "aliases": {
         "scancode-licensedb": [
-            "bpmn.io License"
+            "bpmn.io License",
+            "LicenseRef-scancode-bpmn-io"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "ibm-data-server-2011",
     "aliases": {
         "scancode-licensedb": [
-            "IBM Data Server License 2011"
+            "IBM Data Server License 2011",
+            "LicenseRef-scancode-ibm-data-server-2011"
         ],
         "custom": []
     },

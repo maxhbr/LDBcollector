@@ -2,7 +2,8 @@
     "canonical": "atmel-firmware",
     "aliases": {
         "scancode-licensedb": [
-            "Atmel Firmware License"
+            "Atmel Firmware License",
+            "LicenseRef-scancode-atmel-firmware"
         ],
         "custom": []
     },

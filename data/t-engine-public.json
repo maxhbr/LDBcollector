@@ -2,7 +2,8 @@
     "canonical": "t-engine-public",
     "aliases": {
         "scancode-licensedb": [
-            "T-Engine Public License"
+            "T-Engine Public License",
+            "LicenseRef-scancode-t-engine-public"
         ],
         "custom": []
     },

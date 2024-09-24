@@ -2,7 +2,8 @@
     "canonical": "visual-numerics",
     "aliases": {
         "scancode-licensedb": [
-            "Visual Numerics License"
+            "Visual Numerics License",
+            "LicenseRef-scancode-visual-numerics"
         ],
         "custom": []
     },

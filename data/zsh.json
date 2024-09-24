@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "zsh License",
-            "Z Shell License"
+            "Z Shell License",
+            "LicenseRef-scancode-zsh"
         ],
         "custom": []
     },

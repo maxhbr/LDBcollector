@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Logica OSL 1.0",
-            "Logica Open Source License v1.0"
+            "Logica Open Source License v1.0",
+            "LicenseRef-scancode-logica-1.0"
         ],
         "custom": []
     },

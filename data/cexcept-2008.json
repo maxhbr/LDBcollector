@@ -2,7 +2,8 @@
     "canonical": "cexcept-2008",
     "aliases": {
         "scancode-licensedb": [
-            "cexcept License 2008"
+            "cexcept License 2008",
+            "LicenseRef-scancode-cexcept-2008"
         ],
         "custom": []
     },

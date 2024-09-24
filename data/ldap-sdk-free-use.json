@@ -2,7 +2,8 @@
     "canonical": "ldap-sdk-free-use",
     "aliases": {
         "scancode-licensedb": [
-            "UnboundID LDAP SDK Free Use License"
+            "UnboundID LDAP SDK Free Use License",
+            "LicenseRef-scancode-ldap-sdk-free-use"
         ],
         "custom": []
     },

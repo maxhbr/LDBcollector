@@ -2,7 +2,8 @@
     "canonical": "gpl-generic-additional-terms",
     "aliases": {
         "scancode-licensedb": [
-            "GPL Generic Additional Terms"
+            "GPL Generic Additional Terms",
+            "LicenseRef-scancode-gpl-generic-additional-terms"
         ],
         "custom": []
     },

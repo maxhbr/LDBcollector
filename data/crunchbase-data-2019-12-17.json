@@ -2,7 +2,8 @@
     "canonical": "crunchbase-data-2019-12-17",
     "aliases": {
         "scancode-licensedb": [
-            "Crunchbase Data Access Terms 2019-12-17"
+            "Crunchbase Data Access Terms 2019-12-17",
+            "LicenseRef-scancode-crunchbase-data-2019-12-17"
         ],
         "custom": []
     },

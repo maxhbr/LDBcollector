@@ -2,7 +2,8 @@
     "canonical": "ascender-web-fonts",
     "aliases": {
         "scancode-licensedb": [
-            "Ascender Web Fonts License"
+            "Ascender Web Fonts License",
+            "LicenseRef-scancode-ascender-web-fonts"
         ],
         "custom": []
     },

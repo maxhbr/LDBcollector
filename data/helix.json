@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Helix DNA Technology Binary Research Use License",
-            "Helix DNA License"
+            "Helix DNA License",
+            "LicenseRef-scancode-helix"
         ],
         "custom": []
     },

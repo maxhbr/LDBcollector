@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "dl-de/by-nc-1-0-en",
-            "Data licence Germany - attribution - non-commercial - Version 1.0 - English"
+            "Data licence Germany - attribution - non-commercial - Version 1.0 - English",
+            "LicenseRef-scancode-dl-de-by-nc-1-0-en"
         ],
         "custom": []
     },

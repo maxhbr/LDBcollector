@@ -2,7 +2,8 @@
     "canonical": "adobe-acrobat-reader-eula",
     "aliases": {
         "scancode-licensedb": [
-            "Adobe Acrobat Reader EULA"
+            "Adobe Acrobat Reader EULA",
+            "LicenseRef-scancode-adobe-acrobat-reader-eula"
         ],
         "custom": []
     },

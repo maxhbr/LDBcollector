@@ -2,7 +2,8 @@
     "canonical": "google-patent-license",
     "aliases": {
         "scancode-licensedb": [
-            "Google Patent License"
+            "Google Patent License",
+            "LicenseRef-scancode-google-patent-license"
         ],
         "custom": []
     },

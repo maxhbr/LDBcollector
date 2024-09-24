@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Amazon Software License",
-            "LicenseRef-scancode-amazon-sl"
+            "LicenseRef-scancode-amazon-sl",
+            "LicenseRef-.amazon.com.-AmznSL-1.0"
         ],
         "custom": []
     },

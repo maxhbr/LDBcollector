@@ -2,7 +2,8 @@
     "canonical": "first-epss-usage",
     "aliases": {
         "scancode-licensedb": [
-            "FIRST EPSS Usage Agreement"
+            "FIRST EPSS Usage Agreement",
+            "LicenseRef-scancode-first-epss-usage"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "pybench",
     "aliases": {
         "scancode-licensedb": [
-            "pybench License"
+            "pybench License",
+            "LicenseRef-scancode-pybench"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "ScanCode acknowledgment",
-            "ScanCode generated data acknowledgment"
+            "ScanCode generated data acknowledgment",
+            "LicenseRef-scancode-scancode-acknowledgment"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Datenlizenz Deutschland - Namensnennung - nicht kommerziell - Version 1.0 - Deutsch",
-            "dl-de/by-nc-1-0-de"
+            "dl-de/by-nc-1-0-de",
+            "LicenseRef-scancode-dl-de-by-nc-1-0-de"
         ],
         "custom": []
     },

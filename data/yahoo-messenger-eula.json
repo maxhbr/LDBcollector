@@ -2,7 +2,8 @@
     "canonical": "yahoo-messenger-eula",
     "aliases": {
         "scancode-licensedb": [
-            "Yahoo Messenger EULA"
+            "Yahoo Messenger EULA",
+            "LicenseRef-scancode-yahoo-messenger-eula"
         ],
         "custom": []
     },

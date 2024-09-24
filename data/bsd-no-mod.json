@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Madwifi License Agreement",
-            "Madwifi License"
+            "Madwifi License",
+            "LicenseRef-scancode-bsd-no-mod"
         ],
         "custom": []
     },

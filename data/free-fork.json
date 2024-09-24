@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Free-Fork License",
-            "University of Washington Free-Fork License"
+            "University of Washington Free-Fork License",
+            "LicenseRef-scancode-free-fork"
         ],
         "custom": []
     },

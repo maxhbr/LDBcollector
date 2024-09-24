@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Enhydra Public License 1.1",
-            "Enhydra 1.1"
+            "Enhydra 1.1",
+            "LicenseRef-scancode-enhydra-1.1"
         ],
         "custom": []
     },

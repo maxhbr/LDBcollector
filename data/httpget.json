@@ -2,7 +2,8 @@
     "canonical": "httpget",
     "aliases": {
         "scancode-licensedb": [
-            "httpget notice and disclaimer"
+            "httpget notice and disclaimer",
+            "LicenseRef-scancode-httpget"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "whitecat",
     "aliases": {
         "scancode-licensedb": [
-            "Whitecat License"
+            "Whitecat License",
+            "LicenseRef-scancode-whitecat"
         ],
         "custom": []
     },

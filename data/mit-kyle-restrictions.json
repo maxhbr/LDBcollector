@@ -2,7 +2,8 @@
     "canonical": "mit-kyle-restrictions",
     "aliases": {
         "scancode-licensedb": [
-            "MIT with Jamie Kyle Restrictions"
+            "MIT with Jamie Kyle Restrictions",
+            "LicenseRef-scancode-mit-kyle-restrictions"
         ],
         "custom": []
     },

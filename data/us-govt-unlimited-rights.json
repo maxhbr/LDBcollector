@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "US Government Grant of Unlimited Rights",
-            "US Government Unlimited Rights"
+            "US Government Unlimited Rights",
+            "LicenseRef-scancode-us-govt-unlimited-rights"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "d-fsl-1.0-en",
     "aliases": {
         "scancode-licensedb": [
-            "German Free Software License"
+            "German Free Software License",
+            "LicenseRef-scancode-d-fsl-1.0-en"
         ],
         "custom": []
     },

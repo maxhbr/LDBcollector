@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Open Works License v0.9.4",
-            "OWL-0.9.4"
+            "OWL-0.9.4",
+            "LicenseRef-scancode-owl-0.9.4"
         ],
         "custom": []
     },

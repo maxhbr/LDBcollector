@@ -2,7 +2,8 @@
     "canonical": "bsd-3-clause-jtag",
     "aliases": {
         "scancode-licensedb": [
-            "BSD 3-Clause jtag"
+            "BSD 3-Clause jtag",
+            "LicenseRef-scancode-bsd-3-clause-jtag"
         ],
         "custom": []
     },

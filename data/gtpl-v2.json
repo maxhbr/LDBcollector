@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Globus Toolkit Public License (GTPL) v2",
-            "GTPL-v2"
+            "GTPL-v2",
+            "LicenseRef-scancode-gtpl-v2"
         ],
         "custom": []
     },

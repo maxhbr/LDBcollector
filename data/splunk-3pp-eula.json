@@ -2,7 +2,8 @@
     "canonical": "splunk-3pp-eula",
     "aliases": {
         "scancode-licensedb": [
-            "Splunk EULA for Third-Party Content"
+            "Splunk EULA for Third-Party Content",
+            "LicenseRef-scancode-splunk-3pp-eula"
         ],
         "custom": []
     },

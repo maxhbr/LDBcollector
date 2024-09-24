@@ -2,7 +2,8 @@
     "canonical": "dual-commercial-gpl",
     "aliases": {
         "scancode-licensedb": [
-            "Dual Commercial-GPL"
+            "Dual Commercial-GPL",
+            "LicenseRef-scancode-dual-commercial-gpl"
         ],
         "custom": []
     },

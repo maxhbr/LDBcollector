@@ -2,7 +2,8 @@
     "canonical": "xiph-patent",
     "aliases": {
         "scancode-licensedb": [
-            "Xiph Opus Patent License"
+            "Xiph Opus Patent License",
+            "LicenseRef-scancode-xiph-patent"
         ],
         "custom": []
     },

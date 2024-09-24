@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft ASP.NET Software License",
-            "MS ASP.NET Software License"
+            "MS ASP.NET Software License",
+            "LicenseRef-scancode-ms-asp-net-software"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "x11-stanford",
     "aliases": {
         "scancode-licensedb": [
-            "X11-Style (Stanford University)"
+            "X11-Style (Stanford University)",
+            "LicenseRef-scancode-x11-stanford"
         ],
         "custom": []
     },

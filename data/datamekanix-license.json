@@ -2,7 +2,8 @@
     "canonical": "datamekanix-license",
     "aliases": {
         "scancode-licensedb": [
-            "DataMekanix License"
+            "DataMekanix License",
+            "LicenseRef-scancode-datamekanix-license"
         ],
         "custom": []
     },

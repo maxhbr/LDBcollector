@@ -2,7 +2,8 @@
     "canonical": "houdini-project",
     "aliases": {
         "scancode-licensedb": [
-            "Houdini Project License"
+            "Houdini Project License",
+            "LicenseRef-scancode-houdini"
         ],
         "custom": []
     },

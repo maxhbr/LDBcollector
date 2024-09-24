@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Intel Open Source License 1989",
-            "Intel OSL 1989"
+            "Intel OSL 1989",
+            "LicenseRef-scancode-intel-osl-1989"
         ],
         "custom": []
     },

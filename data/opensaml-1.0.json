@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OpenSAML License v1",
-            "OpenSAML License Version 1"
+            "OpenSAML License Version 1",
+            "LicenseRef-scancode-opensaml-1.0"
         ],
         "custom": []
     },

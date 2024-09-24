@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "NXP Microcontroller Proprietary",
-            "LicenseRef-scancode-nxp-microcontroller-proprietary"
+            "LicenseRef-scancode-nxp-microcontroller-proprietary",
+            "LicenseRef-scancode-nxp-microctl-proprietary"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "redpanda-community-la",
     "aliases": {
         "scancode-licensedb": [
-            "Redpanda Community License Agreement"
+            "Redpanda Community License Agreement",
+            "LicenseRef-scancode-redpanda-community-la"
         ],
         "custom": []
     },

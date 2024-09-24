@@ -2,7 +2,8 @@
     "canonical": "tekhvc",
     "aliases": {
         "scancode-licensedb": [
-            "TekHVC License"
+            "TekHVC License",
+            "LicenseRef-scancode-tekhvc"
         ],
         "custom": []
     },

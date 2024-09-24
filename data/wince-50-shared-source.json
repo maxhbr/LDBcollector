@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft Windows CE 5.0 Shared Source License Agreement",
-            "MS Windows CE 5.0 Shared Source License"
+            "MS Windows CE 5.0 Shared Source License",
+            "LicenseRef-scancode-wince-50-shared-source"
         ],
         "custom": []
     },

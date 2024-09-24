@@ -2,7 +2,8 @@
     "canonical": "ej-technologies-eula",
     "aliases": {
         "scancode-licensedb": [
-            "ej-technologies EULA"
+            "ej-technologies EULA",
+            "LicenseRef-scancode-ej-technologies-eula"
         ],
         "custom": []
     },

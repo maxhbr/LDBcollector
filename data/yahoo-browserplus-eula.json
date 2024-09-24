@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Yahoo BrowserPlus EULA",
-            "Yahoo BrowserPlus End User License"
+            "Yahoo BrowserPlus End User License",
+            "LicenseRef-scancode-yahoo-browserplus-eula"
         ],
         "custom": []
     },

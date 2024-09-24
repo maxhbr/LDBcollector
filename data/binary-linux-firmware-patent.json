@@ -2,7 +2,8 @@
     "canonical": "binary-linux-firmware-patent",
     "aliases": {
         "scancode-licensedb": [
-            "Binary-Only Linux Firmware Patent License"
+            "Binary-Only Linux Firmware Patent License",
+            "LicenseRef-scancode-binary-linux-firmware-patent"
         ],
         "custom": []
     },

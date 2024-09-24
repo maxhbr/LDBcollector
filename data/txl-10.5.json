@@ -2,7 +2,8 @@
     "canonical": "txl-10.5",
     "aliases": {
         "scancode-licensedb": [
-            "TXL 10.5 License"
+            "TXL 10.5 License",
+            "LicenseRef-scancode-txl-10.5"
         ],
         "custom": []
     },

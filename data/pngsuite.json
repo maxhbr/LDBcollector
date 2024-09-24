@@ -2,7 +2,8 @@
     "canonical": "pngsuite",
     "aliases": {
         "scancode-licensedb": [
-            "PngSuite License"
+            "PngSuite License",
+            "LicenseRef-scancode-pngsuite"
         ],
         "custom": []
     },

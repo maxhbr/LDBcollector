@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "H2 1.0",
-            "H2 License 1.0"
+            "H2 License 1.0",
+            "LicenseRef-scancode-h2-1.0"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "inno-setup",
     "aliases": {
         "scancode-licensedb": [
-            "Inno Setup License"
+            "Inno Setup License",
+            "LicenseRef-scancode-inno-setup"
         ],
         "custom": []
     },

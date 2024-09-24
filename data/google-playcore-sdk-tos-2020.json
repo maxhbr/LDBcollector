@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Google",
-            "Google Play Core SDK TOS 2020"
+            "Google Play Core SDK TOS 2020",
+            "LicenseRef-scancode-google-playcore-sdk-tos-2020"
         ],
         "custom": []
     },

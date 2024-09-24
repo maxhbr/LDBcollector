@@ -2,7 +2,8 @@
     "canonical": "x11-doc",
     "aliases": {
         "scancode-licensedb": [
-            "X11 Documentation License"
+            "X11 Documentation License",
+            "LicenseRef-scancode-x11-doc"
         ],
         "custom": []
     },

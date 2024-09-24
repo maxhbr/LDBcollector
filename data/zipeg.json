@@ -2,7 +2,8 @@
     "canonical": "zipeg",
     "aliases": {
         "scancode-licensedb": [
-            "Zipeg License"
+            "Zipeg License",
+            "LicenseRef-scancode-zipeg"
         ],
         "custom": []
     },

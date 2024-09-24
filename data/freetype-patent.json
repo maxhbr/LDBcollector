@@ -2,7 +2,8 @@
     "canonical": "freetype-patent",
     "aliases": {
         "scancode-licensedb": [
-            "FreeType Patent Grant"
+            "FreeType Patent Grant",
+            "LicenseRef-scancode-freetype-patent"
         ],
         "custom": []
     },

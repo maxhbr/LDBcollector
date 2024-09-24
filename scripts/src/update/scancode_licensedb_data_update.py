@@ -59,6 +59,10 @@ def get_alias(license_data, is_spdx=True):
     short_name = license_data["short_name"]
     name = license_data["name"]
 
+    license_ref_spdy_key = None
+
+    if "spdx_license_key" in license_data and license_data["spdx_license_key"].startswith("LicenseRef"):
+        license_ref_spdy_key = license_data["spdx_license_key"]
     if "other_spdx_license_keys" in license_data:
         other_spdx_license_keys = license_data["other_spdx_license_keys"]
         alias = set(other_spdx_license_keys)
@@ -67,12 +71,17 @@ def get_alias(license_data, is_spdx=True):
             alias.update([license_key, short_name, name])
         else:
             alias.update([short_name, name])
+        if license_ref_spdy_key:
+            alias.update([license_ref_spdy_key])
     else:
-        logger.debug(f"No other spdx license keys for {license_key}")
+        logger.debug(f"No other spdx license keys for {license_data['key']}")
         if is_spdx:
             alias = {license_key, short_name, name}
         else:
             alias = {short_name, name}
+
+        if license_ref_spdy_key:
+            alias.update([license_ref_spdy_key])
 
     return list(alias)
 

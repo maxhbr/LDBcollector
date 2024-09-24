@@ -2,7 +2,8 @@
     "canonical": "windriver-commercial",
     "aliases": {
         "scancode-licensedb": [
-            "Wind River License"
+            "Wind River License",
+            "LicenseRef-scancode-windriver-commercial"
         ],
         "custom": []
     },

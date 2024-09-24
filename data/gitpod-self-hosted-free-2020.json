@@ -2,7 +2,8 @@
     "canonical": "gitpod-self-hosted-free-2020",
     "aliases": {
         "scancode-licensedb": [
-            "Gitpod Self-Hosted Free License Terms 2020"
+            "Gitpod Self-Hosted Free License Terms 2020",
+            "LicenseRef-scancode-gitpod-self-hosted-free-2020"
         ],
         "custom": []
     },

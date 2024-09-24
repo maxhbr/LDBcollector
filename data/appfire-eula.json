@@ -2,7 +2,8 @@
     "canonical": "appfire-eula",
     "aliases": {
         "scancode-licensedb": [
-            "Appfire EULA"
+            "Appfire EULA",
+            "LicenseRef-scancode-appfire-eula"
         ],
         "custom": []
     },

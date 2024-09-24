@@ -2,7 +2,8 @@
     "canonical": "foobar2000",
     "aliases": {
         "scancode-licensedb": [
-            "foobar2000 License"
+            "foobar2000 License",
+            "LicenseRef-scancode-foobar2000"
         ],
         "custom": []
     },

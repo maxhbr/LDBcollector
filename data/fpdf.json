@@ -2,7 +2,8 @@
     "canonical": "fpdf",
     "aliases": {
         "scancode-licensedb": [
-            "FPDF License"
+            "FPDF License",
+            "LicenseRef-scancode-fpdf"
         ],
         "custom": []
     },

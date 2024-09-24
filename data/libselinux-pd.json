@@ -2,7 +2,8 @@
     "canonical": "libselinux-pd",
     "aliases": {
         "scancode-licensedb": [
-            "libselinux License"
+            "libselinux License",
+            "LicenseRef-scancode-libselinux-pd"
         ],
         "custom": []
     },

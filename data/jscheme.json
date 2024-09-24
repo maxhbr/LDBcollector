@@ -2,7 +2,8 @@
     "canonical": "jscheme",
     "aliases": {
         "scancode-licensedb": [
-            "Jscheme License"
+            "Jscheme License",
+            "LicenseRef-scancode-jscheme"
         ],
         "custom": []
     },

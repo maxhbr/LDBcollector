@@ -2,7 +2,8 @@
     "canonical": "mit-readme",
     "aliases": {
         "scancode-licensedb": [
-            "MIT README License"
+            "MIT README License",
+            "LicenseRef-scancode-mit-readme"
         ],
         "custom": []
     },

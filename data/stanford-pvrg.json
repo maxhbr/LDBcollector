@@ -2,7 +2,8 @@
     "canonical": "stanford-pvrg",
     "aliases": {
         "scancode-licensedb": [
-            "Stanford PVRG License"
+            "Stanford PVRG License",
+            "LicenseRef-scancode-stanford-pvrg"
         ],
         "custom": []
     },

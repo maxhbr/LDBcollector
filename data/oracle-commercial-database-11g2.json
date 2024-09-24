@@ -4,7 +4,8 @@
         "scancode-licensedb": [
             "Oracle Commercial Database License 11g2",
             "LicenseRef-scancode-oracle-commercial-database-11g2",
-            "Oracle Commercial Database License 11g Release 2 (11.2)"
+            "Oracle Commercial Database License 11g Release 2 (11.2)",
+            "LicenseRef-scancode-oracle-commercial-db-11g2"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "thomas-bandt",
     "aliases": {
         "scancode-licensedb": [
-            "Thomas Bandt License"
+            "Thomas Bandt License",
+            "LicenseRef-scancode-thomas-bandt"
         ],
         "custom": []
     },

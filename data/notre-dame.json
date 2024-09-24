@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "University of Notre Dame License",
-            "Notre Dame License"
+            "Notre Dame License",
+            "LicenseRef-scancode-notre-dame"
         ],
         "custom": []
     },

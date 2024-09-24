@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft JDBC Driver 6.0 for SQL Server",
-            "MS JDBC Driver 6.0 for SQL Server"
+            "MS JDBC Driver 6.0 for SQL Server",
+            "LicenseRef-scancode-ms-jdbc-driver-60-sql-server"
         ],
         "custom": []
     },

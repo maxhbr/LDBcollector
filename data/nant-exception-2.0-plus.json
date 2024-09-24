@@ -2,7 +2,8 @@
     "canonical": "nant-exception-2.0-plus",
     "aliases": {
         "scancode-licensedb": [
-            "NAnt exception to GPL 2.0 or later"
+            "NAnt exception to GPL 2.0 or later",
+            "LicenseRef-scancode-nant-exception-2.0-plus"
         ],
         "custom": []
     },

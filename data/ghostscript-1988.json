@@ -2,7 +2,8 @@
     "canonical": "ghostscript-1988",
     "aliases": {
         "scancode-licensedb": [
-            "Ghostscript General Public License 1988"
+            "Ghostscript General Public License 1988",
+            "LicenseRef-scancode-ghostscript-1988"
         ],
         "custom": []
     },

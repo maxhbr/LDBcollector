@@ -2,7 +2,8 @@
     "canonical": "jsfromhell",
     "aliases": {
         "scancode-licensedb": [
-            "JSFromHell License"
+            "JSFromHell License",
+            "LicenseRef-scancode-jsfromhell"
         ],
         "custom": []
     },

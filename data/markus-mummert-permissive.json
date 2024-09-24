@@ -2,7 +2,8 @@
     "canonical": "markus-mummert-permissive",
     "aliases": {
         "scancode-licensedb": [
-            "Markus Mummert Permissive"
+            "Markus Mummert Permissive",
+            "LicenseRef-scancode-markus-mummert-permissive"
         ],
         "custom": []
     },

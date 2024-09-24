@@ -2,7 +2,8 @@
     "canonical": "bsd-new-nomod",
     "aliases": {
         "scancode-licensedb": [
-            "BSD-3-Clause without notice modification"
+            "BSD-3-Clause without notice modification",
+            "LicenseRef-scancode-bsd-new-nomod"
         ],
         "custom": []
     },

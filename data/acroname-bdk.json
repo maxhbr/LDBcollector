@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Acroname BDK",
-            "Acroname Brainstem Development Kit license"
+            "Acroname Brainstem Development Kit license",
+            "LicenseRef-scancode-acroname-bdk"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Anti 996 License Version 1.0 (Draft)",
-            "Anti 996 License 1.0"
+            "Anti 996 License 1.0",
+            "LicenseRef-scancode-996-icu-1.0"
         ],
         "custom": []
     },

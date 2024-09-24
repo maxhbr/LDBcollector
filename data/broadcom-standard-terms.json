@@ -2,7 +2,8 @@
     "canonical": "broadcom-standard-terms",
     "aliases": {
         "scancode-licensedb": [
-            "Broadcom Standard Terms"
+            "Broadcom Standard Terms",
+            "LicenseRef-scancode-broadcom-standard-terms"
         ],
         "custom": []
     },

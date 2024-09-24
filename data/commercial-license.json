@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "LicenseRef-Commercial",
-            "Commercial License"
+            "Commercial License",
+            "LicenseRef-scancode-commercial-license"
         ],
         "custom": []
     },

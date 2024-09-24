@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS Platform SDK License",
-            "Microsoft Platform SDK License"
+            "Microsoft Platform SDK License",
+            "LicenseRef-scancode-ms-platform-sdk"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "McRae General Public License (version 4.r53)",
-            "McRae PL v4.r53"
+            "McRae PL v4.r53",
+            "LicenseRef-scancode-mcrae-pl-4-r53"
         ],
         "custom": []
     },

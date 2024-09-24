@@ -2,7 +2,8 @@
     "canonical": "tested-software",
     "aliases": {
         "scancode-licensedb": [
-            "Tested Software License"
+            "Tested Software License",
+            "LicenseRef-scancode-tested-software"
         ],
         "custom": []
     },

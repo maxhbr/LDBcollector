@@ -2,7 +2,8 @@
     "canonical": "make-human-exception",
     "aliases": {
         "scancode-licensedb": [
-            "MakeHuman License"
+            "MakeHuman License",
+            "LicenseRef-scancode-make-human-exception"
         ],
         "custom": []
     },

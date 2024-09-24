@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Simple Public License Version 1.1",
-            "SimPL 1.1"
+            "SimPL 1.1",
+            "LicenseRef-scancode-simpl-1.1"
         ],
         "custom": []
     },

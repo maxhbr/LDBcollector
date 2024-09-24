@@ -2,7 +2,8 @@
     "canonical": "npsl-exception-0.94",
     "aliases": {
         "scancode-licensedb": [
-            "Nmap NPSL Exception 0.94"
+            "Nmap NPSL Exception 0.94",
+            "LicenseRef-scancode-npsl-exception-0.94"
         ],
         "custom": []
     },

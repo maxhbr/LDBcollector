@@ -2,7 +2,8 @@
     "canonical": "bigcode-open-rail-m-v1",
     "aliases": {
         "scancode-licensedb": [
-            "BigCode Open RAIL-M v1 License Agreement"
+            "BigCode Open RAIL-M v1 License Agreement",
+            "LicenseRef-scancode-bigcode-open-rail-m-v1"
         ],
         "custom": []
     },

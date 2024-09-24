@@ -2,7 +2,8 @@
     "canonical": "mit-old-style",
     "aliases": {
         "scancode-licensedb": [
-            "MIT Old Style"
+            "MIT Old Style",
+            "LicenseRef-scancode-mit-old-style"
         ],
         "custom": []
     },

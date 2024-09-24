@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Hot Potato",
-            "Hot Potato License"
+            "Hot Potato License",
+            "LicenseRef-scancode-hot-potato"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "usrobotics-permissive",
     "aliases": {
         "scancode-licensedb": [
-            "USRobotics Permissive License"
+            "USRobotics Permissive License",
+            "LicenseRef-scancode-usrobotics-permissive"
         ],
         "custom": []
     },

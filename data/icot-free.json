@@ -2,7 +2,8 @@
     "canonical": "icot-free",
     "aliases": {
         "scancode-licensedb": [
-            "ICOT Free Software"
+            "ICOT Free Software",
+            "LicenseRef-scancode-icot-free"
         ],
         "custom": []
     },

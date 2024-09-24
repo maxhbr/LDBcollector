@@ -2,7 +2,8 @@
     "canonical": "libmng-2007",
     "aliases": {
         "scancode-licensedb": [
-            "libmng License 2007"
+            "libmng License 2007",
+            "LicenseRef-scancode-libmng-2007"
         ],
         "custom": []
     },

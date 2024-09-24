@@ -2,7 +2,8 @@
     "canonical": "bacula-exception",
     "aliases": {
         "scancode-licensedb": [
-            "Bacula exception to AGPL 3.0"
+            "Bacula exception to AGPL 3.0",
+            "LicenseRef-scancode-bacula-exception"
         ],
         "custom": []
     },

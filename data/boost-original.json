@@ -2,7 +2,8 @@
     "canonical": "boost-original",
     "aliases": {
         "scancode-licensedb": [
-            "Boost Original"
+            "Boost Original",
+            "LicenseRef-scancode-boost-original"
         ],
         "custom": []
     },

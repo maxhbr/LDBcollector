@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "dbad",
-            "Dont Be A Dick Public License"
+            "Dont Be A Dick Public License",
+            "LicenseRef-scancode-dbad"
         ],
         "custom": []
     },

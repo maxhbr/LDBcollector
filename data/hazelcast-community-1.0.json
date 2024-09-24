@@ -2,7 +2,8 @@
     "canonical": "hazelcast-community-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "Hazelcast Community License 1.0"
+            "Hazelcast Community License 1.0",
+            "LicenseRef-scancode-hazelcast-community-1.0"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "mut-license",
     "aliases": {
         "scancode-licensedb": [
-            "muT-License"
+            "muT-License",
+            "LicenseRef-scancode-mut-license"
         ],
         "custom": []
     },

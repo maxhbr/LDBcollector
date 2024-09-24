@@ -2,7 +2,8 @@
     "canonical": "phil-bunce",
     "aliases": {
         "scancode-licensedb": [
-            "Phil Bunce License"
+            "Phil Bunce License",
+            "LicenseRef-scancode-phil-bunce"
         ],
         "custom": []
     },

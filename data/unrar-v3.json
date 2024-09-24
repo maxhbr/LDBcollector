@@ -2,7 +2,8 @@
     "canonical": "unrar-v3",
     "aliases": {
         "scancode-licensedb": [
-            "UnRar License v3"
+            "UnRar License v3",
+            "LicenseRef-scancode-unrar-v3"
         ],
         "custom": []
     },

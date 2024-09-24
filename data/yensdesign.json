@@ -2,7 +2,8 @@
     "canonical": "yensdesign",
     "aliases": {
         "scancode-licensedb": [
-            "Yensdesign License"
+            "Yensdesign License",
+            "LicenseRef-scancode-yensdesign"
         ],
         "custom": []
     },

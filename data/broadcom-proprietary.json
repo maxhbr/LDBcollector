@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Broadcom Proprietary",
-            "Broadcom Proprietary License"
+            "Broadcom Proprietary License",
+            "LicenseRef-scancode-broadcom-proprietary"
         ],
         "custom": []
     },

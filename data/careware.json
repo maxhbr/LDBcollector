@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Careware",
-            "Careware License"
+            "Careware License",
+            "LicenseRef-scancode-careware"
         ],
         "custom": []
     },

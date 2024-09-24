@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MS TypeScript MSBuild 4.1.4",
-            "Microsoft TypeScript MSBuild 4.1.4"
+            "Microsoft TypeScript MSBuild 4.1.4",
+            "LicenseRef-scancode-ms-typescript-msbuild-4.1.4"
         ],
         "custom": []
     },

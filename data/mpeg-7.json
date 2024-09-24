@@ -2,7 +2,8 @@
     "canonical": "mpeg-7",
     "aliases": {
         "scancode-licensedb": [
-            "MPEG-7 License"
+            "MPEG-7 License",
+            "LicenseRef-scancode-mpeg-7"
         ],
         "custom": []
     },

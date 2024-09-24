@@ -2,7 +2,8 @@
     "canonical": "minecraft-mod",
     "aliases": {
         "scancode-licensedb": [
-            "Minecraft Mod License"
+            "Minecraft Mod License",
+            "LicenseRef-scancode-minecraft-mod"
         ],
         "custom": []
     },

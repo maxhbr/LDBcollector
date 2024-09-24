@@ -2,7 +2,8 @@
     "canonical": "vitesse-prop",
     "aliases": {
         "scancode-licensedb": [
-            "Vitesse Proprietary Notice"
+            "Vitesse Proprietary Notice",
+            "LicenseRef-scancode-vitesse-prop"
         ],
         "custom": []
     },

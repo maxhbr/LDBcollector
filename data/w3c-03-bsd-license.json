@@ -2,7 +2,8 @@
     "canonical": "w3c-03-bsd-license",
     "aliases": {
         "scancode-licensedb": [
-            "W3C 3-Clause BSD License"
+            "W3C 3-Clause BSD License",
+            "LicenseRef-scancode-w3c-03-bsd-license"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "node-js",
     "aliases": {
         "scancode-licensedb": [
-            "Node License"
+            "Node License",
+            "LicenseRef-scancode-node-js"
         ],
         "custom": []
     },

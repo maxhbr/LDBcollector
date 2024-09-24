@@ -2,7 +2,8 @@
     "canonical": "codelite-exception-to-gpl",
     "aliases": {
         "scancode-licensedb": [
-            "CodeLite Exception to GPL"
+            "CodeLite Exception to GPL",
+            "LicenseRef-scancode-codelite-exception-to-gpl"
         ],
         "custom": []
     },

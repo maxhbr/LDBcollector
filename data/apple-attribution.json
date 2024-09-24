@@ -2,7 +2,8 @@
     "canonical": "apple-attribution",
     "aliases": {
         "scancode-licensedb": [
-            "Apple Attribution License"
+            "Apple Attribution License",
+            "LicenseRef-scancode-apple-attribution"
         ],
         "custom": []
     },

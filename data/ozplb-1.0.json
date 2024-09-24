@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Australian Public Licence B Version 1.0",
-            "OZPLB 1.0"
+            "OZPLB 1.0",
+            "LicenseRef-scancode-ozplb-1.0"
         ],
         "custom": []
     },

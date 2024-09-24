@@ -2,7 +2,8 @@
     "canonical": "array-input-method-pl",
     "aliases": {
         "scancode-licensedb": [
-            "Array Input Method Public License"
+            "Array Input Method Public License",
+            "LicenseRef-scancode-array-input-method-pl"
         ],
         "custom": []
     },

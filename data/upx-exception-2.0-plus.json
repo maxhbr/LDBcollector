@@ -2,7 +2,8 @@
     "canonical": "upx-exception-2.0-plus",
     "aliases": {
         "scancode-licensedb": [
-            "UPX exception to GPL 2.0 or later"
+            "UPX exception to GPL 2.0 or later",
+            "LicenseRef-scancode-upx-exception-2.0-plus"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "generic-loop",
     "aliases": {
         "scancode-licensedb": [
-            "Common Lisp Generic LOOP License"
+            "Common Lisp Generic LOOP License",
+            "LicenseRef-scancode-generic-loop"
         ],
         "custom": []
     },

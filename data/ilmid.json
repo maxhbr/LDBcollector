@@ -2,7 +2,8 @@
     "canonical": "ilmid",
     "aliases": {
         "scancode-licensedb": [
-            "ilmid License"
+            "ilmid License",
+            "LicenseRef-scancode-ilmid"
         ],
         "custom": []
     },

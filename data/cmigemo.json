@@ -2,7 +2,8 @@
     "canonical": "cmigemo",
     "aliases": {
         "scancode-licensedb": [
-            "C/Migemo License"
+            "C/Migemo License",
+            "LicenseRef-scancode-cmigemo"
         ],
         "custom": []
     },

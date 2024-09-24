@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "HDF5 License",
-            "HDF5License"
+            "HDF5License",
+            "LicenseRef-scancode-hdf5"
         ],
         "custom": []
     },

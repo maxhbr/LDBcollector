@@ -2,7 +2,8 @@
     "canonical": "oswego-concurrent",
     "aliases": {
         "scancode-licensedb": [
-            "Oswego Concurrent License"
+            "Oswego Concurrent License",
+            "LicenseRef-scancode-oswego-concurrent"
         ],
         "custom": []
     },

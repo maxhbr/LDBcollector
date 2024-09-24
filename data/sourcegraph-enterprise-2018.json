@@ -2,7 +2,8 @@
     "canonical": "sourcegraph-enterprise-2018",
     "aliases": {
         "scancode-licensedb": [
-            "Sourcegraph Enterprise License 2018"
+            "Sourcegraph Enterprise License 2018",
+            "LicenseRef-scancode-sourcegraph-enterprise-2018"
         ],
         "custom": []
     },

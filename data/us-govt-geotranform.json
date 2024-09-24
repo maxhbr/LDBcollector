@@ -2,7 +2,8 @@
     "canonical": "us-govt-geotranform",
     "aliases": {
         "scancode-licensedb": [
-            "US Government GeoTransform"
+            "US Government GeoTransform",
+            "LicenseRef-scancode-us-govt-geotranform"
         ],
         "custom": []
     },

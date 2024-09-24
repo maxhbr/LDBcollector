@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "KDE Accepted LGPL",
-            "LicenseRef-KDE-Accepted-LGPL"
+            "LicenseRef-KDE-Accepted-LGPL",
+            "LicenseRef-scancode-kde-accepted-lgpl"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "dropbear",
     "aliases": {
         "scancode-licensedb": [
-            "Dropbear License"
+            "Dropbear License",
+            "LicenseRef-scancode-dropbear"
         ],
         "custom": []
     },

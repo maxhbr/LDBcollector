@@ -2,7 +2,8 @@
     "canonical": "autoit-eula",
     "aliases": {
         "scancode-licensedb": [
-            "Autoit EULA"
+            "Autoit EULA",
+            "LicenseRef-scancode-autoit-eula"
         ],
         "custom": []
     },

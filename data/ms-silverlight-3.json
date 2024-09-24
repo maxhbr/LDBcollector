@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft Silverlight 3 License",
-            "MS Silverlight 3 License"
+            "MS Silverlight 3 License",
+            "LicenseRef-scancode-ms-silverlight-3"
         ],
         "custom": []
     },

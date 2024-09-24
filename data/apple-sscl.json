@@ -2,7 +2,8 @@
     "canonical": "apple-sscl",
     "aliases": {
         "scancode-licensedb": [
-            "Apple Sample Source Code License"
+            "Apple Sample Source Code License",
+            "LicenseRef-scancode-apple-sscl"
         ],
         "custom": []
     },

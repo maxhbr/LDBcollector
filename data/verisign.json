@@ -2,7 +2,8 @@
     "canonical": "verisign",
     "aliases": {
         "scancode-licensedb": [
-            "VeriSign License"
+            "VeriSign License",
+            "LicenseRef-scancode-verisign"
         ],
         "custom": []
     },

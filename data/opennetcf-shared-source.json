@@ -2,7 +2,8 @@
     "canonical": "opennetcf-shared-source",
     "aliases": {
         "scancode-licensedb": [
-            "OpenNETCF Shared Source License"
+            "OpenNETCF Shared Source License",
+            "LicenseRef-scancode-opennetcf-shared-source"
         ],
         "custom": []
     },

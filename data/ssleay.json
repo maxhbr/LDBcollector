@@ -2,7 +2,8 @@
     "canonical": "ssleay",
     "aliases": {
         "scancode-licensedb": [
-            "Original SSLeay License"
+            "Original SSLeay License",
+            "LicenseRef-scancode-ssleay"
         ],
         "custom": []
     },

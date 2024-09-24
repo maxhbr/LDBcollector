@@ -2,7 +2,8 @@
     "canonical": "amd-linux-firmware",
     "aliases": {
         "scancode-licensedb": [
-            "AMD Linux Firmware License"
+            "AMD Linux Firmware License",
+            "LicenseRef-scancode-amd-linux-firmware"
         ],
         "custom": []
     },

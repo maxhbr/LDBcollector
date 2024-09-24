@@ -2,7 +2,8 @@
     "canonical": "gsoap-1.3a",
     "aliases": {
         "scancode-licensedb": [
-            "gSOAP Public License v1.3a"
+            "gSOAP Public License v1.3a",
+            "LicenseRef-scancode-gsoap-1.3a"
         ],
         "custom": []
     },

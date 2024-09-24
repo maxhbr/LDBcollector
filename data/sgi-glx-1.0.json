@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "SGI GLX Public License 1.0",
-            "SGI GLX Public License v1.0"
+            "SGI GLX Public License v1.0",
+            "LicenseRef-scancode-sgi-glx-1.0"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "flora-1.1",
     "aliases": {
         "scancode-licensedb": [
-            "Flora License v1.1"
+            "Flora License v1.1",
+            "LicenseRef-scancode-flora-1.1"
         ],
         "custom": []
     },

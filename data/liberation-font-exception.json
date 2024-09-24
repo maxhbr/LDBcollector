@@ -2,7 +2,8 @@
     "canonical": "liberation-font-exception",
     "aliases": {
         "scancode-licensedb": [
-            "Liberation Font Exception to GPL 2.0"
+            "Liberation Font Exception to GPL 2.0",
+            "LicenseRef-scancode-liberation-font-exception"
         ],
         "custom": []
     },

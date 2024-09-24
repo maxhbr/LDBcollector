@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Biopython License",
-            "Biopython License Agreement"
+            "Biopython License Agreement",
+            "LicenseRef-scancode-biopython"
         ],
         "custom": []
     },

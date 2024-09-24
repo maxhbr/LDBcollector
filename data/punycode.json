@@ -2,7 +2,8 @@
     "canonical": "punycode",
     "aliases": {
         "scancode-licensedb": [
-            "Punycode License"
+            "Punycode License",
+            "LicenseRef-scancode-punycode"
         ],
         "custom": []
     },

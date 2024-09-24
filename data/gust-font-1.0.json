@@ -2,7 +2,8 @@
     "canonical": "gust-font-1.0",
     "aliases": {
         "scancode-licensedb": [
-            "GUST Font License 1.0"
+            "GUST Font License 1.0",
+            "LicenseRef-scancode-gust-font-1.0"
         ],
         "custom": []
     },

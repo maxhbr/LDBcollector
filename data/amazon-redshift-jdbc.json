@@ -2,7 +2,8 @@
     "canonical": "amazon-redshift-jdbc",
     "aliases": {
         "scancode-licensedb": [
-            "Amazon Redshift JDBC Driver License Agreement"
+            "Amazon Redshift JDBC Driver License Agreement",
+            "LicenseRef-scancode-amazon-redshift-jdbc"
         ],
         "custom": []
     },

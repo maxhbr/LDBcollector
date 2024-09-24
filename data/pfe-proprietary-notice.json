@@ -2,7 +2,8 @@
     "canonical": "pfe-proprietary-notice",
     "aliases": {
         "scancode-licensedb": [
-            "PFE Proprietary Notice"
+            "PFE Proprietary Notice",
+            "LicenseRef-scancode-pfe-proprietary-notice"
         ],
         "custom": []
     },

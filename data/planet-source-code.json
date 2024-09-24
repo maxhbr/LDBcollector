@@ -2,7 +2,8 @@
     "canonical": "planet-source-code",
     "aliases": {
         "scancode-licensedb": [
-            "Planet Source Code License"
+            "Planet Source Code License",
+            "LicenseRef-scancode-planet-source-code"
         ],
         "custom": []
     },

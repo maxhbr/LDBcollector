@@ -2,7 +2,8 @@
     "canonical": "cc-devnations-2.0",
     "aliases": {
         "scancode-licensedb": [
-            "Developing Nations 2.0"
+            "Developing Nations 2.0",
+            "LicenseRef-scancode-cc-devnations-2.0"
         ],
         "custom": []
     },

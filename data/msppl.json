@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft patterns & practices License",
-            "MSPPL"
+            "MSPPL",
+            "LicenseRef-scancode-msppl"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "treeview-distributor",
     "aliases": {
         "scancode-licensedb": [
-            "TreeView Distributor License"
+            "TreeView Distributor License",
+            "LicenseRef-scancode-treeview-distributor"
         ],
         "custom": []
     },

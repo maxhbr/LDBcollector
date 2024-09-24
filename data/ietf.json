@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Internet Engineering Task Force License",
-            "IETF License"
+            "IETF License",
+            "LicenseRef-scancode-ietf"
         ],
         "custom": []
     },

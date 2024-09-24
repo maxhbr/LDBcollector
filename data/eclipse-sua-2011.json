@@ -2,7 +2,8 @@
     "canonical": "eclipse-sua-2011",
     "aliases": {
         "scancode-licensedb": [
-            "Eclipse Foundation Software User Agreement 2011"
+            "Eclipse Foundation Software User Agreement 2011",
+            "LicenseRef-scancode-eclipse-sua-2011"
         ],
         "custom": []
     },

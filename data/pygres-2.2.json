@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "PyGres License v2.2",
-            "PyGres License 2.2"
+            "PyGres License 2.2",
+            "LicenseRef-scancode-pygres-2.2"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OPML Specification License 1.0",
-            "OPML 1.0"
+            "OPML 1.0",
+            "LicenseRef-scancode-opml-1.0"
         ],
         "custom": []
     },

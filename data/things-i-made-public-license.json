@@ -2,7 +2,8 @@
     "canonical": "things-i-made-public-license",
     "aliases": {
         "scancode-licensedb": [
-            "Things I Made (TIM) Public License"
+            "Things I Made (TIM) Public License",
+            "LicenseRef-scancode-things-i-made-public-license"
         ],
         "custom": []
     },

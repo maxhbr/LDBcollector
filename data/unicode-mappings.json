@@ -2,7 +2,8 @@
     "canonical": "unicode-mappings",
     "aliases": {
         "scancode-licensedb": [
-            "Unicode Mappings License"
+            "Unicode Mappings License",
+            "LicenseRef-scancode-unicode-mappings"
         ],
         "custom": []
     },

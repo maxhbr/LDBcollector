@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Talis Community License",
-            "The Talis Community License"
+            "The Talis Community License",
+            "LicenseRef-scancode-ttcl"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "San Francisco Font License",
-            "Apple San Francisco Font License"
+            "Apple San Francisco Font License",
+            "LicenseRef-scancode-san-francisco-font"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "jide-sla",
     "aliases": {
         "scancode-licensedb": [
-            "JIDE SLA"
+            "JIDE SLA",
+            "LicenseRef-scancode-jide-sla"
         ],
         "custom": []
     },

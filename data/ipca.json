@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "IPCA",
-            "IPFire Project Contributor Agreement"
+            "IPFire Project Contributor Agreement",
+            "LicenseRef-scancode-ipca"
         ],
         "custom": []
     },

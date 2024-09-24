@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "OTN Early Adopter Development License",
-            "OTN Early Adopter Development License Agreement"
+            "OTN Early Adopter Development License Agreement",
+            "LicenseRef-scancode-otn-early-adopter-development"
         ],
         "custom": []
     },

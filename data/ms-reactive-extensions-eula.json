@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Microsoft Reactive Extensions EULA",
-            "MS Reactive Extensions EULA"
+            "MS Reactive Extensions EULA",
+            "LicenseRef-scancode-ms-reactive-extensions-eula"
         ],
         "custom": []
     },

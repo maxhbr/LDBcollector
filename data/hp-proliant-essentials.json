@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "hp-proliant-essentials",
-            "hp-proliant-essentials EULA"
+            "hp-proliant-essentials EULA",
+            "LicenseRef-scancode-hp-proliant-essentials"
         ],
         "custom": []
     },

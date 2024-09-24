@@ -2,7 +2,8 @@
     "canonical": "no-license",
     "aliases": {
         "scancode-licensedb": [
-            "No License Stated"
+            "No License Stated",
+            "LicenseRef-scancode-no-license"
         ],
         "custom": []
     },

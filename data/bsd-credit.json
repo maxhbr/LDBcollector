@@ -2,7 +2,8 @@
     "canonical": "bsd-credit",
     "aliases": {
         "scancode-licensedb": [
-            "BSD-Credit"
+            "BSD-Credit",
+            "LicenseRef-scancode-bsd-credit"
         ],
         "custom": []
     },

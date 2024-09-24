@@ -2,7 +2,8 @@
     "canonical": "ms-container-eula",
     "aliases": {
         "scancode-licensedb": [
-            "Microsoft Container EULA"
+            "Microsoft Container EULA",
+            "LicenseRef-scancode-ms-container-eula"
         ],
         "custom": []
     },

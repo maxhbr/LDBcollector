@@ -2,7 +2,8 @@
     "canonical": "broadcom-linux-timer",
     "aliases": {
         "scancode-licensedb": [
-            "Broadcom Warranty Disclaimer"
+            "Broadcom Warranty Disclaimer",
+            "LicenseRef-scancode-broadcom-linux-timer"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "openssl-nokia-psk-contribution",
     "aliases": {
         "scancode-licensedb": [
-            "Patent Disclaimer for OpenSSL"
+            "Patent Disclaimer for OpenSSL",
+            "LicenseRef-scancode-openssl-nokia-psk-contribution"
         ],
         "custom": []
     },

@@ -2,7 +2,8 @@
     "canonical": "brent-corkum",
     "aliases": {
         "scancode-licensedb": [
-            "Brent Corkum License"
+            "Brent Corkum License",
+            "LicenseRef-scancode-brent-corkum"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "unknown",
-            "Unknown license detected but not recognized"
+            "Unknown license detected but not recognized",
+            "LicenseRef-scancode-unknown"
         ],
         "custom": []
     },

@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Adobe General TOU",
-            "Adobe General Terms of Use"
+            "Adobe General Terms of Use",
+            "LicenseRef-scancode-adobe-general-tou"
         ],
         "custom": []
     },

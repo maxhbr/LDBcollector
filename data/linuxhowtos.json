@@ -2,7 +2,8 @@
     "canonical": "linuxhowtos",
     "aliases": {
         "scancode-licensedb": [
-            "linuxhowtos License"
+            "linuxhowtos License",
+            "LicenseRef-scancode-linuxhowtos"
         ],
         "custom": []
     },

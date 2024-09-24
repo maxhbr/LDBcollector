@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "SBIA Part B",
-            "SBIA Software license - Downloading Agreement"
+            "SBIA Software license - Downloading Agreement",
+            "LicenseRef-scancode-sbia-b"
         ],
         "custom": []
     },

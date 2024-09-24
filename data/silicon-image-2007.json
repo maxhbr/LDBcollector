@@ -2,7 +2,8 @@
     "canonical": "silicon-image-2007",
     "aliases": {
         "scancode-licensedb": [
-            "Silicon Image Proprietary License 2007"
+            "Silicon Image Proprietary License 2007",
+            "LicenseRef-scancode-silicon-image-2007"
         ],
         "custom": []
     },

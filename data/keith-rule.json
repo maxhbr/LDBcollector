@@ -2,7 +2,8 @@
     "canonical": "keith-rule",
     "aliases": {
         "scancode-licensedb": [
-            "Keith Rule License"
+            "Keith Rule License",
+            "LicenseRef-scancode-keith-rule"
         ],
         "custom": []
     },

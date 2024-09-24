@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "MaxMind GeoLite2 End User License Agreement 2019",
-            "MaxMind GeoLite2 EULA 2019"
+            "MaxMind GeoLite2 EULA 2019",
+            "LicenseRef-scancode-maxmind-geolite2-eula-2019"
         ],
         "custom": []
     },

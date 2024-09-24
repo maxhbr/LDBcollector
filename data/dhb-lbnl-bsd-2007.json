@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "David H. Bailey LBNL BSD License 2007",
-            "DHB LBNL BSD License 2007"
+            "DHB LBNL BSD License 2007",
+            "LicenseRef-scancode-dhb-lbnl-bsd-2007"
         ],
         "custom": []
     },

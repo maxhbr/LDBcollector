@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "Oracle GFTC 2023-06-12",
-            "Oracle GraalVM Free Terms and Conditions (GFTC) 2023-06-12"
+            "Oracle GraalVM Free Terms and Conditions (GFTC) 2023-06-12",
+            "LicenseRef-scancode-oracle-gftc-2023-06-12"
         ],
         "custom": []
     },

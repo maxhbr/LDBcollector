@@ -3,7 +3,8 @@
     "aliases": {
         "scancode-licensedb": [
             "COSLi",
-            "Civilian Open Source License"
+            "Civilian Open Source License",
+            "LicenseRef-scancode-cosli"
         ],
         "custom": []
     },
