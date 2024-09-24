@@ -1,11 +1,7 @@
 {
     "spdx_id": "Ruby",
     "long_name": "Ruby License",
-    "license_version": "",
-    "radical": "Ruby",
-    "autoupgrade": false,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "http://www.ruby-lang.org/en/LICENSE.txt",
     "osi_approved": false,

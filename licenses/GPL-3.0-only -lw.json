@@ -1,11 +1,7 @@
 {
     "spdx_id": "GPL-3.0-only -lw",
     "long_name": "GNU General Public License v3.0 only",
-    "license_version": "",
-    "radical": "",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "Strong",
     "url": "https://spdx.org/licenses/GPL-3.0-only.html",
     "osi_approved": null,

@@ -1,11 +1,7 @@
 {
     "spdx_id": "LGPL-3.0-only",
     "long_name": "GNU Lesser General Public License v3.0 only",
-    "license_version": "3.0",
-    "radical": "LGPL",
-    "autoupgrade": false,
     "steward": "Free Software Foundation, Inc.",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "https://www.gnu.org/licenses/lgpl-3.0-standalone.html",
     "osi_approved": true,

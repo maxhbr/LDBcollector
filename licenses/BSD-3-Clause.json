@@ -1,11 +1,7 @@
 {
     "spdx_id": "BSD-3-Clause",
     "long_name": "BSD 3-Clause \"New\" or \"Revised\" License",
-    "license_version": "",
-    "radical": "BSD-3-Clause",
-    "autoupgrade": false,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://opensource.org/licenses/BSD-3-Clause",
     "osi_approved": true,

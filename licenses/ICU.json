@@ -1,11 +1,7 @@
 {
     "spdx_id": "ICU",
     "long_name": "ICU License",
-    "license_version": "",
-    "radical": "ICU",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://source.icu-project.org/repos/icu/icu/trunk/license.html",
     "osi_approved": false,

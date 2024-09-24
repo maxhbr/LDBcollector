@@ -1,11 +1,7 @@
 {
     "spdx_id": "Abstyles",
     "long_name": "Abstyles License",
-    "license_version": "",
-    "radical": "Abstyles",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://fedoraproject.org/wiki/Licensing/Abstyles",
     "osi_approved": false,

@@ -1,11 +1,7 @@
 {
     "spdx_id": "zlib-acknowledgement",
     "long_name": "zlib/libpng License with Acknowledgement",
-    "license_version": "",
-    "radical": "zlib-acknowledgement",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement",
     "osi_approved": false,

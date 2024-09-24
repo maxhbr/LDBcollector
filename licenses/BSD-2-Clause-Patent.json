@@ -1,11 +1,7 @@
 {
     "spdx_id": "BSD-2-Clause-Patent",
     "long_name": "BSD-2-Clause Plus Patent License",
-    "license_version": "",
-    "radical": "BSD-2-Clause-Patent",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://opensource.org/licenses/BSDplusPatent",
     "osi_approved": true,

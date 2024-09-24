@@ -1,11 +1,7 @@
 {
     "spdx_id": "CC0-1.0",
     "long_name": "Creative Commons Zero v1.0 Universal",
-    "license_version": "1.0",
-    "radical": "CC0",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
     "osi_approved": false,

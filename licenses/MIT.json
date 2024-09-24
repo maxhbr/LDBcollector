@@ -1,11 +1,7 @@
 {
     "spdx_id": "MIT",
     "long_name": "MIT License",
-    "license_version": "",
-    "radical": "MIT",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://opensource.org/licenses/MIT",
     "osi_approved": true,

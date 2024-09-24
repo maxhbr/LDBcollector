@@ -1,11 +1,7 @@
 {
     "spdx_id": "0BSD",
     "long_name": "BSD Zero Clause License",
-    "license_version": "",
-    "radical": "0BSD",
-    "autoupgrade": false,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://landley.net/toybox/license.html",
     "osi_approved": true,

@@ -1,11 +1,7 @@
 {
     "spdx_id": "BSD-1-Clause",
     "long_name": "BSD 1-Clause License",
-    "license_version": "",
-    "radical": "BSD-1-Clause",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823",
     "osi_approved": true,

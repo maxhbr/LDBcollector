@@ -1,11 +1,7 @@
 {
     "spdx_id": "GPL-3.0-only",
     "long_name": "GNU General Public License v3.0 only",
-    "license_version": "3.0",
-    "radical": "GPL",
-    "autoupgrade": false,
     "steward": "Free Software Foundation, Inc.",
-    "inspiration_spdx": "",
     "copyleft": "Strong",
     "url": "https://www.gnu.org/licenses/gpl-3.0-standalone.html",
     "osi_approved": true,

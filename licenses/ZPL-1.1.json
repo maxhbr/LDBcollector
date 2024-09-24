@@ -1,11 +1,7 @@
 {
     "spdx_id": "ZPL-1.1",
     "long_name": "Zope Public License 1.1",
-    "license_version": "1.1",
-    "radical": "ZPL",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://old.zope.org/Resources/License/ZPL-1.1",
     "osi_approved": false,

@@ -1,11 +1,7 @@
 {
     "spdx_id": "MIT-0",
     "long_name": "MIT No Attribution",
-    "license_version": "",
-    "radical": "MIT-0",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "https://github.com/aws/mit-0",
     "osi_approved": true,

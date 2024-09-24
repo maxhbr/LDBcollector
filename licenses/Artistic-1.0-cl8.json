@@ -1,11 +1,7 @@
 {
     "spdx_id": "Artistic-1.0-cl8",
     "long_name": "Artistic License 1.0 w/clause 8",
-    "license_version": "1.0",
-    "radical": "Artistic",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "https://opensource.org/licenses/Artistic-1.0",
     "osi_approved": true,

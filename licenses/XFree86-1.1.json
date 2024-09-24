@@ -1,11 +1,7 @@
 {
     "spdx_id": "XFree86-1.1",
     "long_name": "XFree86 License 1.1",
-    "license_version": "1.1",
-    "radical": "XFree86",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "None",
     "url": "http://www.xfree86.org/current/LICENSE4.html",
     "osi_approved": false,

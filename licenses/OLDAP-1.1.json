@@ -1,11 +1,7 @@
 {
     "spdx_id": "OLDAP-1.1",
     "long_name": "Open LDAP Public License v1.1",
-    "license_version": "1.1",
-    "radical": "OLDAP",
-    "autoupgrade": null,
     "steward": "",
-    "inspiration_spdx": "",
     "copyleft": "Weak",
     "url": "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=806557a5ad59804ef3a44d5abfbe91d706b0791f",
     "osi_approved": false,
