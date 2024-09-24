@@ -3,16 +3,14 @@ layout: default
 title: "Urteile - ifrOSS.org"
 ---
 
-<h1>Urteile</h1>
-
 * TOC
 {:toc}
 
-___
+# Urteilssammlung
+
 ## Deutschland
-___
+
 ### Urheberrecht und Wettbewerbsrecht
-___
 
 #### LG Mannheim, Vergleich v. 27.12.2021, Az. 7 O 2/21
 
@@ -140,10 +138,7 @@ Link: http://www.ifross.org/Fremdartikel/urteil_lg_muenchen_gpl.pdf
 
 English translation: http://www.ifross.org/Fremdartikel/judgment_dc_munich_gpl.pdf
 
-___
-
 ### Sonstige Rechte
-___
 
 #### OLG Köln, Urteil v. 30.9.2016, Az. 6 U 18/16
 
@@ -177,9 +172,7 @@ Link: http://juris.bundespatentgericht.de/cgi-bin/rechtsprechung/document.py?Ger
 
 Link: http://juris.bundespatentgericht.de/cgi-bin/rechtsprechung/document.py?Gericht=bpatg&Art=en&sid=71106ec331426a33cc72cf400983e7ba&nr=10116&pos=0&anz=1&Blank=1.pdf
 
-___
 ## USA
-___
 
 #### US Court of Appeals for the Ninth Circuit, 2022-02-18, Cas No. 21-16029
 
@@ -261,9 +254,8 @@ Link: http://www.internetlibrary.com/pdf/Wallace-IBM-7th-Cir.pdf
 Wallace v. FSF
 
 Link: http://www.internetcases.com/library/cases/2005-11-28_wallace_v_fsf.pdf
-___
+
 ## Frankreich
-___
 
 #### Chinesische Übersetzungen von Cour d’appel de Paris, 2024-02-14, Case No. 2/18071, und Cour d’appel de Paris, 2024-02-14, Case No. 2/18071
 
@@ -307,9 +299,8 @@ Link: http://fsffrance.org/news/arret-ca-paris-16.09.2009.pdf
 
 S.A. Educaffix v. CNRS
 Link: https://www.doctrine.fr/d/TGI/Paris/2007/KFV64D3F65FB87F53D68B40
-___
+
 ## China
-___
 
 #### Supreme People's Court of the People's Republic of China, 2023-10-312, Case No. (2021) No. 51
 
@@ -322,9 +313,9 @@ Link: https://www.ifross.org/sites/default/files/CN_to_EN-Wangjing_vs_Yibang_Jud
 Jining Luohe Network Technology Co., Ltd. v. Fujian Fengling Chuangjing Technology Co., Ltd et al
 
 Link: https://www-oschina-net.translate.goog/news/159435?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=nui
-___
+
 ## Spanien
-___
+
 #### Audiencia Provincial de Madrid, Sección 28, 2007-07-05, Case No. 150/2007
 
 Sociedad General de Autores y Editores (SGAE) v. Buena Vistilla club social
@@ -350,9 +341,8 @@ Link: http://www.derecho-internet.org/node/363
 Sociedad General de Autores y Editores (SGAE) v. Asociacion cultural ladinamo
 
 Link: http://www.derecho-internet.org/node/359
-___
+
 ## Andere Länder
-___
 
 #### District Court of Jerusalem, 2011-01-06, Case No. CA 3560/09, CA 3561/09
 
