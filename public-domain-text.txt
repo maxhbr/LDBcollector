@@ -1829,3 +1829,15 @@ text = '''
 Public Domain source code to the original DUNGEON game (Zork I). Released to the PD by Infocom. Includes 
 source files, headers, and information.
 '''
+
+package = ddate
+location = https://github.com/bo0ts/ddate/blob/master/ddate.c#L15
+text = '''
+This program is in the public domain.  Distribute freely.  Or not.
+'''
+
+package = ddate
+location = https://github.com/bo0ts/ddate/blob/master/ddate.1#L1
+text = '''
+All Rites Reversed. This file is in the PUBLIC DOMAIN.
+'''
