@@ -14,11 +14,10 @@ title: "Urteile - ifrOSS.org"
 
 #### LG Mannheim, Vergleich v. 27.12.2021, Az. 7 O 2/21
 
-Ayuso, Welte, Kedlecsik v. McHardy: Vergleich zu GPL-Durchsetzung 
-
-Link: https://www.netfilter.org/files/2022-01-24-Beschluss_und_Vergleich.pdf
-
-English translation: https://www.netfilter.org/files/2022-01-24-Translation_Court_Order_and_Settlement.pdf
+| **Beteiligte** | Ayuso, Welte, Kedlecsik v. McHardy |
+|:---:|:---:|
+| **Beschreibung** | Vergleich zu GPL-Durchsetzung |
+| **Links** | [🇩🇪](https://www.netfilter.org/files/2022-01-24-Beschluss_und_Vergleich.pdf) [🇬🇧](https://www.netfilter.org/files/2022-01-24-Translation_Court_Order_and_Settlement.pdf) |
 
 #### OLG Karlsruhe, Urteil v. 13.11.2020, Az. 6 U 60/20
 
