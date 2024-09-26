@@ -49,16 +49,16 @@ func makeRequest(method, path string, body interface{}, isAuthanticated bool) *h
 }
 func TestGetLicense(t *testing.T) {
 	expectLicense := models.LicenseDB{
-		Shortname:     "MIT",
-		Fullname:      "MIT License",
-		Text:          "MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
-		Url:           "https://opensource.org/licenses/MIT",
-		TextUpdatable: false,
-		DetectorType:  1,
-		Active:        true,
-		Flag:          1,
-		Marydone:      true,
-		SpdxId:        "MIT",
+		Shortname:     func(s string) *string { return &s }("MIT"),
+		Fullname:      func(s string) *string { return &s }("MIT License"),
+		Text:          func(s string) *string { return &s }("MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"),
+		Url:           func(s string) *string { return &s }("https://opensource.org/licenses/MIT"),
+		TextUpdatable: func(b bool) *bool { return &b }(false),
+		DetectorType:  func(i int64) *int64 { return &i }(1),
+		Active:        func(b bool) *bool { return &b }(true),
+		Flag:          func(i int64) *int64 { return &i }(1),
+		Marydone:      func(b bool) *bool { return &b }(true),
+		SpdxId:        func(s string) *string { return &s }("MIT"),
 	}
 	w := makeRequest("GET", "/api/licenses/MIT", nil, false)
 	assert.Equal(t, http.StatusOK, w.Code)
@@ -75,14 +75,14 @@ func TestGetLicense(t *testing.T) {
 
 func TestCreateLicense(t *testing.T) {
 	License := models.LicenseDB{
-		Shortname:     "ABCD",
-		Fullname:      "ABCD License",
-		Text:          "just a license",
-		Url:           "https://abcdlicense/ABCD",
-		SpdxId:        "1",
-		TextUpdatable: false,
-		DetectorType:  1,
-		Active:        true,
+		Shortname:     func(s string) *string { return &s }("ABCD"),
+		Fullname:      func(s string) *string { return &s }("ABCD License"),
+		Text:          func(s string) *string { return &s }("just a license"),
+		Url:           func(s string) *string { return &s }("https://abcdlicense/ABCD"),
+		SpdxId:        func(s string) *string { return &s }("1"),
+		TextUpdatable: func(b bool) *bool { return &b }(false),
+		DetectorType:  func(i int64) *int64 { return &i }(1),
+		Active:        func(b bool) *bool { return &b }(true),
 	}
 	w := makeRequest("POST", "/api/licenses", License, true)
 	assert.Equal(t, http.StatusCreated, w.Code)
@@ -99,19 +99,19 @@ func TestCreateLicense(t *testing.T) {
 
 func TestUpdateLicense(t *testing.T) {
 	License := models.LicenseDB{
-		Marydone: true,
+		Marydone: func(b bool) *bool { return &b }(true),
 	}
 	expectedLicense := models.LicenseDB{
-		Shortname:     "MIT",
-		Fullname:      "MIT License",
-		Text:          "MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
-		Url:           "https://opensource.org/licenses/MIT",
-		TextUpdatable: false,
-		DetectorType:  1,
-		Active:        true,
-		Flag:          1,
-		Marydone:      true,
-		SpdxId:        "MIT",
+		Shortname:     func(s string) *string { return &s }("MIT"),
+		Fullname:      func(s string) *string { return &s }("MIT License"),
+		Text:          func(s string) *string { return &s }("MIT License\n\nCopyright (c) <year> <copyright holders>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"),
+		Url:           func(s string) *string { return &s }("https://opensource.org/licenses/MIT"),
+		TextUpdatable: func(b bool) *bool { return &b }(false),
+		DetectorType:  func(i int64) *int64 { return &i }(1),
+		Active:        func(b bool) *bool { return &b }(true),
+		Flag:          func(i int64) *int64 { return &i }(1),
+		Marydone:      func(b bool) *bool { return &b }(true),
+		SpdxId:        func(s string) *string { return &s }("MIT"),
 	}
 	w := makeRequest("PATCH", "/api/licenses/MIT", License, true)
 	assert.Equal(t, http.StatusOK, w.Code)
@@ -128,16 +128,16 @@ func TestUpdateLicense(t *testing.T) {
 
 func TestSearchInLicense(t *testing.T) {
 	expectLicense := models.LicenseDB{
-		Shortname:     "PostgreSQL",
-		Fullname:      "PostgreSQL License",
-		Text:          "PostgreSQL Database Management System\n(formerly known as Postgres, then as Postgres95)\n\nPortions Copyright (c) 1996-2010, The PostgreSQL Global Development Group\n\nPortions Copyright (c) 1994, The Regents of the University of California\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose, without fee, and without a written agreement is hereby granted, provided that the above copyright notice and this paragraph and the following two paragraphs appear in all copies.\n\nIN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nTHE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND THE UNIVERSITY OF CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n",
-		Url:           "http://www.postgresql.org/about/licence",
-		TextUpdatable: false,
-		DetectorType:  1,
-		Active:        true,
-		Flag:          1,
-		Marydone:      false,
-		SpdxId:        "PostgreSQL",
+		Shortname:     func(s string) *string { return &s }("PostgreSQL"),
+		Fullname:      func(s string) *string { return &s }("PostgreSQL License"),
+		Text:          func(s string) *string { return &s }("PostgreSQL Database Management System\n(formerly known as Postgres, then as Postgres95)\n\nPortions Copyright (c) 1996-2010, The PostgreSQL Global Development Group\n\nPortions Copyright (c) 1994, The Regents of the University of California\n\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose, without fee, and without a written agreement is hereby granted, provided that the above copyright notice and this paragraph and the following two paragraphs appear in all copies.\n\nIN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nTHE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND THE UNIVERSITY OF CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n"),
+		Url:           func(s string) *string { return &s }("http://www.postgresql.org/about/licence"),
+		TextUpdatable: func(b bool) *bool { return &b }(false),
+		DetectorType:  func(i int64) *int64 { return &i }(1),
+		Active:        func(b bool) *bool { return &b }(true),
+		Flag:          func(i int64) *int64 { return &i }(1),
+		Marydone:      func(b bool) *bool { return &b }(false),
+		SpdxId:        func(s string) *string { return &s }("PostgreSQL"),
 	}
 	search := models.SearchLicense{
 		Field:      "fullname",
@@ -160,30 +160,30 @@ func TestSearchInLicense(t *testing.T) {
 func TestSearchInLicense2(t *testing.T) {
 	expectLicense := []models.LicenseDB{
 		{
-			Shortname:     "GPL-2.0-with-autoconf-exception",
-			Fullname:      "GNU General Public License v2.0 w/Autoconf exception",
-			Text:          "insert GPL v2 license text here\n\nAutoconf Exception\n\nAs a special exception, the Free Software Foundation gives unlimited permission to copy, distribute and modify the configure scripts that are the output of Autoconf. You need not follow the terms of the GNU General Public License when using or distributing such scripts, even though portions of the text of Autoconf appear in them. The GNU General Public License (GPL) does govern all other use of the material that constitutes the Autoconf program.\n\nCertain portions of the Autoconf source text are designed to be copied (in certain cases, depending on the input) into the output of Autoconf. We call these the \"data\" portions. The rest of the Autoconf source text consists of comments plus executable code that decides which of the data portions to output in any given case. We call these comments and executable code the \"non-data\" portions. Autoconf never copies any of the non-data portions into its output.\n\nThis special exception to the GPL applies to versions of Autoconf released by the Free Software Foundation. When you make and distribute a modified version of Autoconf, you may extend this special exception to the GPL to apply to your modified version as well, *unless* your modified version has the potential to copy into its output some of the text that was the non-data portion of the version that you started with. (In other words, unless your change moves or copies text from the non-data portions to the data portions.) If your modification has such potential, you must delete any notice of this special exception to the GPL from your modified version.\n\n",
-			Url:           "http://ac-archive.sourceforge.net/doc/copyright.html",
-			Notes:         "DEPRECATED: Use license expression including main license, \"WITH\" operator, and identifier: Autoconf-exception-2.0",
-			TextUpdatable: false,
-			DetectorType:  1,
-			Active:        true,
-			Flag:          1,
-			Marydone:      false,
-			SpdxId:        "LicenseRef-fossology-GPL-2.0-with-autoconf-exception",
+			Shortname:     func(s string) *string { return &s }("GPL-2.0-with-autoconf-exception"),
+			Fullname:      func(s string) *string { return &s }("GNU General Public License v2.0 w/Autoconf exception"),
+			Text:          func(s string) *string { return &s }("insert GPL v2 license text here\n\nAutoconf Exception\n\nAs a special exception, the Free Software Foundation gives unlimited permission to copy, distribute and modify the configure scripts that are the output of Autoconf. You need not follow the terms of the GNU General Public License when using or distributing such scripts, even though portions of the text of Autoconf appear in them. The GNU General Public License (GPL) does govern all other use of the material that constitutes the Autoconf program.\n\nCertain portions of the Autoconf source text are designed to be copied (in certain cases, depending on the input) into the output of Autoconf. We call these the \"data\" portions. The rest of the Autoconf source text consists of comments plus executable code that decides which of the data portions to output in any given case. We call these comments and executable code the \"non-data\" portions. Autoconf never copies any of the non-data portions into its output.\n\nThis special exception to the GPL applies to versions of Autoconf released by the Free Software Foundation. When you make and distribute a modified version of Autoconf, you may extend this special exception to the GPL to apply to your modified version as well, *unless* your modified version has the potential to copy into its output some of the text that was the non-data portion of the version that you started with. (In other words, unless your change moves or copies text from the non-data portions to the data portions.) If your modification has such potential, you must delete any notice of this special exception to the GPL from your modified version.\n\n"),
+			Url:           func(s string) *string { return &s }("http://ac-archive.sourceforge.net/doc/copyright.html"),
+			Notes:         func(s string) *string { return &s }("DEPRECATED: Use license expression including main license, \"WITH\" operator, and identifier: Autoconf-exception-2.0"),
+			TextUpdatable: func(b bool) *bool { return &b }(false),
+			DetectorType:  func(i int64) *int64 { return &i }(1),
+			Active:        func(b bool) *bool { return &b }(true),
+			Flag:          func(i int64) *int64 { return &i }(1),
+			Marydone:      func(b bool) *bool { return &b }(false),
+			SpdxId:        func(s string) *string { return &s }("LicenseRef-fossology-GPL-2.0-with-autoconf-exception"),
 		},
 		{
-			Shortname:     "Autoconf-exception-2.0",
-			Fullname:      "Autoconf exception 2.0",
-			Text:          "As a special exception, the Free Software Foundation gives unlimited permission to copy, distribute and modify the configure scripts that are the output of Autoconf. You need not follow the terms of the GNU General Public License when using or distributing such scripts, even though portions of the text of Autoconf appear in them. The GNU General Public License (GPL) does govern all other use of the material that constitutes the Autoconf program.\n\nCertain portions of the Autoconf source text are designed to be copied (in certain cases, depending on the input) into the output of Autoconf. We call these the \"data\" portions. The rest of the Autoconf source text consists of comments plus executable code that decides which of the data portions to output in any given case. We call these comments and executable code the \"non-data\" portions. Autoconf never copies any of the non-data portions into its output.\n\nThis special exception to the GPL applies to versions of Autoconf released by the Free Software Foundation. When you make and distribute a modified version of Autoconf, you may extend this special exception to the GPL to apply to your modified version as well, *unless* your modified version has the potential to copy into its output some of the text that was the non-data portion of the version that you started with. (In other words, unless your change moves or copies text from the non-data portions to the data portions.) If your modification has such potential, you must delete any notice of this special exception to the GPL from your modified version.\n",
-			Url:           "http://ac-archive.sourceforge.net/doc/copyright.html",
-			Notes:         "Typically used with GPL-2.0",
-			TextUpdatable: false,
-			DetectorType:  1,
-			Active:        true,
-			Flag:          1,
-			Marydone:      false,
-			SpdxId:        "Autoconf-exception-2.0",
+			Shortname:     func(s string) *string { return &s }("Autoconf-exception-2.0"),
+			Fullname:      func(s string) *string { return &s }("Autoconf exception 2.0"),
+			Text:          func(s string) *string { return &s }("As a special exception, the Free Software Foundation gives unlimited permission to copy, distribute and modify the configure scripts that are the output of Autoconf. You need not follow the terms of the GNU General Public License when using or distributing such scripts, even though portions of the text of Autoconf appear in them. The GNU General Public License (GPL) does govern all other use of the material that constitutes the Autoconf program.\n\nCertain portions of the Autoconf source text are designed to be copied (in certain cases, depending on the input) into the output of Autoconf. We call these the \"data\" portions. The rest of the Autoconf source text consists of comments plus executable code that decides which of the data portions to output in any given case. We call these comments and executable code the \"non-data\" portions. Autoconf never copies any of the non-data portions into its output.\n\nThis special exception to the GPL applies to versions of Autoconf released by the Free Software Foundation. When you make and distribute a modified version of Autoconf, you may extend this special exception to the GPL to apply to your modified version as well, *unless* your modified version has the potential to copy into its output some of the text that was the non-data portion of the version that you started with. (In other words, unless your change moves or copies text from the non-data portions to the data portions.) If your modification has such potential, you must delete any notice of this special exception to the GPL from your modified version.\n"),
+			Url:           func(s string) *string { return &s }("http://ac-archive.sourceforge.net/doc/copyright.html"),
+			Notes:         func(s string) *string { return &s }("Typically used with GPL-2.0"),
+			TextUpdatable: func(b bool) *bool { return &b }(false),
+			DetectorType:  func(i int64) *int64 { return &i }(1),
+			Active:        func(b bool) *bool { return &b }(true),
+			Flag:          func(i int64) *int64 { return &i }(1),
+			Marydone:      func(b bool) *bool { return &b }(false),
+			SpdxId:        func(s string) *string { return &s }("Autoconf-exception-2.0"),
 		},
 	}
 	search := models.SearchLicense{

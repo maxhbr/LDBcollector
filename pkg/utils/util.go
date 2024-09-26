@@ -15,10 +15,12 @@ import (
 	"time"
 
 	"gorm.io/gorm"
+	"gorm.io/gorm/clause"
 
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/gin-gonic/gin"
+	"github.com/go-playground/validator/v10"
 
 	"github.com/fossology/LicenseDb/pkg/models"
 )
@@ -93,26 +95,26 @@ func Converter(input models.LicenseJson) models.LicenseDB {
 	}
 
 	result := models.LicenseDB{
-		Shortname:       input.Shortname,
-		Fullname:        input.Fullname,
-		Text:            input.Text,
-		Url:             input.Url,
-		Copyleft:        copyleft,
+		Shortname:       &input.Shortname,
+		Fullname:        &input.Fullname,
+		Text:            &input.Text,
+		Url:             &input.Url,
+		Copyleft:        &copyleft,
 		AddDate:         addDate,
-		FSFfree:         fsfFree,
-		OSIapproved:     osiApproved,
-		GPLv2compatible: gplv2Compatible,
-		GPLv3compatible: gplv3Compatible,
-		Notes:           input.Notes,
-		Fedora:          input.Fedora,
-		TextUpdatable:   textUpdatable,
-		DetectorType:    detectorType,
-		Active:          active,
-		Source:          input.Source,
-		SpdxId:          input.SpdxCompatible,
-		Risk:            risk,
-		Flag:            flag,
-		Marydone:        marydone,
+		FSFfree:         &fsfFree,
+		OSIapproved:     &osiApproved,
+		GPLv2compatible: &gplv2Compatible,
+		GPLv3compatible: &gplv3Compatible,
+		Notes:           &input.Notes,
+		Fedora:          &input.Fedora,
+		TextUpdatable:   &textUpdatable,
+		DetectorType:    &detectorType,
+		Active:          &active,
+		Source:          &input.Source,
+		SpdxId:          &input.SpdxCompatible,
+		Risk:            &risk,
+		Flag:            &flag,
+		Marydone:        &marydone,
 	}
 	return result
 }
@@ -182,4 +184,79 @@ func PreparePaginateResponse(c *gin.Context, query *gorm.DB,
 	c.Set("paginationMeta", paginationMeta)
 	c.Set("responseModel", responseModel)
 	return pagination
+}
+
+// LicenseImportStatusCode is internally used for checking status of a license import
+type LicenseImportStatusCode int
+
+// Status codes covering various scenarios that can occur on a license import
+const (
+	IMPORT_FAILED LicenseImportStatusCode = iota + 1
+	IMPORT_LICENSE_CREATED
+	IMPORT_LICENSE_UPDATED
+	IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
+)
+
+func InsertOrUpdateLicenseOnImport(tx *gorm.DB, license *models.LicenseDB, externalRefs *models.UpdateExternalRefsJSONPayload) (string, LicenseImportStatusCode, *models.LicenseDB, *models.LicenseDB) {
+	var message string
+	var importStatus LicenseImportStatusCode
+	var newLicense, oldLicense models.LicenseDB
+
+	validate := validator.New(validator.WithRequiredStructEnabled())
+
+	if err := validate.Struct(license); err != nil {
+		message = fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag())
+		importStatus = IMPORT_FAILED
+		return message, importStatus, &oldLicense, &newLicense
+	}
+
+	result := tx.
+		Where(&models.LicenseDB{Shortname: license.Shortname}).
+		Attrs(license).
+		FirstOrCreate(&oldLicense)
+	if result.Error != nil {
+		message = fmt.Sprintf("failed to create license: %s", result.Error.Error())
+		importStatus = IMPORT_FAILED
+		return message, importStatus, &oldLicense, &newLicense
+	} else if result.RowsAffected == 0 {
+		// case when license exists in database and is updated
+
+		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
+		if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", &externalRefs.ExternalRef)).Error; err != nil {
+			message = fmt.Sprintf("failed to update license: %s", err.Error())
+			importStatus = IMPORT_FAILED
+			return message, importStatus, &oldLicense, &newLicense
+		}
+
+		// https://github.com/go-gorm/gorm/issues/3938: BeforeSave hook is called on the struct passed in .Model()
+		// Cannot pass empty newLicense struct in .Model() as all fields will be empty and no validation will happen
+		newLicense = *license
+
+		// Update all other fields except external_ref and rf_shortname
+		query := tx.Model(&newLicense).Where(&models.LicenseDB{Id: oldLicense.Id}).Omit("external_ref", "rf_shortname")
+
+		// Do not update text in import if it was modified manually
+		if *oldLicense.Flag == 2 {
+			query = query.Omit("rf_text")
+		}
+
+		if err := query.Clauses(clause.Returning{}).Updates(&newLicense).Error; err != nil {
+			message = fmt.Sprintf("failed to update license: %s", err.Error())
+			importStatus = IMPORT_FAILED
+			return message, importStatus, &oldLicense, &newLicense
+		}
+
+		if *newLicense.Flag == 2 {
+			message = "all fields except rf_text were updated. rf_text was updated manually and cannot be overwritten in an import."
+			importStatus = IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
+			// error is not returned here as it will rollback the transaction
+		} else {
+			importStatus = IMPORT_LICENSE_UPDATED
+		}
+	} else {
+		// case when license doesn't exist in database and is inserted
+		importStatus = IMPORT_LICENSE_CREATED
+	}
+
+	return message, importStatus, &oldLicense, &newLicense
 }

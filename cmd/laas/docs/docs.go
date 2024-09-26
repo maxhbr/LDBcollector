@@ -456,7 +456,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicensePOSTRequestJSONSchema"
+                            "$ref": "#/definitions/models.LicenseDB"
                         }
                     }
                 ],
@@ -511,7 +511,7 @@ const docTemplate = `{
                         "schema": {
                             "type": "array",
                             "items": {
-                                "$ref": "#/definitions/models.ExportLicenseDB"
+                                "$ref": "#/definitions/models.LicenseDB"
                             }
                         }
                     },
@@ -716,7 +716,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicensePATCHRequestJSONSchema"
+                            "$ref": "#/definitions/models.LicenseUpdateJSONSchema"
                         }
                     }
                 ],
@@ -1806,83 +1806,6 @@ const docTemplate = `{
                 }
             }
         },
-        "models.ExportLicenseDB": {
-            "type": "object",
-            "properties": {
-                "external_ref": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
-                },
-                "marydone": {
-                    "type": "boolean"
-                },
-                "rf_FSFfree": {
-                    "type": "boolean"
-                },
-                "rf_Fedora": {
-                    "type": "string"
-                },
-                "rf_GPLv2compatible": {
-                    "type": "boolean"
-                },
-                "rf_GPLv3compatible": {
-                    "type": "boolean"
-                },
-                "rf_OSIapproved": {
-                    "type": "boolean"
-                },
-                "rf_active": {
-                    "type": "boolean"
-                },
-                "rf_add_date": {
-                    "type": "string",
-                    "example": "2023-12-01T18:10:25.00+05:30"
-                },
-                "rf_copyleft": {
-                    "type": "boolean"
-                },
-                "rf_detector_type": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_flag": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_fullname": {
-                    "type": "string",
-                    "example": "MIT License"
-                },
-                "rf_notes": {
-                    "type": "string",
-                    "example": "This license has been superseded."
-                },
-                "rf_risk": {
-                    "type": "integer"
-                },
-                "rf_shortname": {
-                    "type": "string",
-                    "example": "MIT"
-                },
-                "rf_source": {
-                    "type": "string"
-                },
-                "rf_spdx_id": {
-                    "type": "string",
-                    "example": "MIT"
-                },
-                "rf_text": {
-                    "type": "string",
-                    "example": "MIT License Text here"
-                },
-                "rf_text_updatable": {
-                    "type": "boolean"
-                },
-                "rf_url": {
-                    "type": "string",
-                    "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
         "models.ImportLicensesResponse": {
             "type": "object",
             "properties": {
@@ -1913,6 +1836,12 @@ const docTemplate = `{
         },
         "models.LicenseDB": {
             "type": "object",
+            "required": [
+                "rf_fullname",
+                "rf_shortname",
+                "rf_spdx_id",
+                "rf_text"
+            ],
             "properties": {
                 "external_ref": {
                     "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
@@ -1947,26 +1876,28 @@ const docTemplate = `{
                 },
                 "rf_detector_type": {
                     "type": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
                     "example": 1
                 },
                 "rf_flag": {
                     "type": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
                     "example": 1
                 },
                 "rf_fullname": {
                     "type": "string",
                     "example": "MIT License"
                 },
-                "rf_id": {
-                    "type": "integer",
-                    "example": 123
-                },
                 "rf_notes": {
                     "type": "string",
                     "example": "This license has been superseded."
                 },
                 "rf_risk": {
-                    "type": "integer"
+                    "type": "integer",
+                    "maximum": 5,
+                    "minimum": 0
                 },
                 "rf_shortname": {
                     "type": "string",
@@ -2066,172 +1997,6 @@ const docTemplate = `{
                 }
             }
         },
-        "models.LicensePATCHRequestJSONSchema": {
-            "type": "object",
-            "properties": {
-                "external_ref": {
-                    "type": "object",
-                    "additionalProperties": true
-                },
-                "marydone": {
-                    "type": "boolean"
-                },
-                "rf_FSFfree": {
-                    "type": "boolean"
-                },
-                "rf_Fedora": {
-                    "type": "string"
-                },
-                "rf_GPLv2compatible": {
-                    "type": "boolean"
-                },
-                "rf_GPLv3compatible": {
-                    "type": "boolean"
-                },
-                "rf_OSIapproved": {
-                    "type": "boolean"
-                },
-                "rf_active": {
-                    "type": "boolean"
-                },
-                "rf_copyleft": {
-                    "type": "boolean"
-                },
-                "rf_detector_type": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_flag": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_fullname": {
-                    "type": "string",
-                    "example": "MIT License"
-                },
-                "rf_notes": {
-                    "type": "string",
-                    "example": "This license has been superseded."
-                },
-                "rf_risk": {
-                    "type": "integer",
-                    "example": 3
-                },
-                "rf_source": {
-                    "type": "string"
-                },
-                "rf_spdx_id": {
-                    "type": "string",
-                    "example": "MIT"
-                },
-                "rf_text": {
-                    "type": "string",
-                    "example": "MIT License Text here"
-                },
-                "rf_text_updatable": {
-                    "type": "boolean"
-                },
-                "rf_url": {
-                    "type": "string",
-                    "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
-        "models.LicensePOSTRequestJSONSchema": {
-            "type": "object",
-            "required": [
-                "external_ref",
-                "marydone",
-                "rf_FSFfree",
-                "rf_Fedora",
-                "rf_GPLv2compatible",
-                "rf_GPLv3compatible",
-                "rf_OSIapproved",
-                "rf_active",
-                "rf_copyleft",
-                "rf_detector_type",
-                "rf_flag",
-                "rf_fullname",
-                "rf_notes",
-                "rf_risk",
-                "rf_shortname",
-                "rf_source",
-                "rf_spdx_id",
-                "rf_text",
-                "rf_text_updatable",
-                "rf_url"
-            ],
-            "properties": {
-                "external_ref": {
-                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
-                },
-                "marydone": {
-                    "type": "boolean"
-                },
-                "rf_FSFfree": {
-                    "type": "boolean"
-                },
-                "rf_Fedora": {
-                    "type": "string"
-                },
-                "rf_GPLv2compatible": {
-                    "type": "boolean"
-                },
-                "rf_GPLv3compatible": {
-                    "type": "boolean"
-                },
-                "rf_OSIapproved": {
-                    "type": "boolean"
-                },
-                "rf_active": {
-                    "type": "boolean"
-                },
-                "rf_copyleft": {
-                    "type": "boolean"
-                },
-                "rf_detector_type": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_flag": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_fullname": {
-                    "type": "string",
-                    "example": "MIT License"
-                },
-                "rf_notes": {
-                    "type": "string",
-                    "example": "This license has been superseded."
-                },
-                "rf_risk": {
-                    "type": "integer"
-                },
-                "rf_shortname": {
-                    "type": "string",
-                    "example": "MIT"
-                },
-                "rf_source": {
-                    "type": "string"
-                },
-                "rf_spdx_id": {
-                    "type": "string",
-                    "example": "MIT"
-                },
-                "rf_text": {
-                    "type": "string",
-                    "example": "MIT License Text here"
-                },
-                "rf_text_updatable": {
-                    "type": "boolean"
-                },
-                "rf_url": {
-                    "type": "string",
-                    "example": "https://opensource.org/licenses/MIT"
-                }
-            }
-        },
         "models.LicensePreviewResponse": {
             "type": "object",
             "properties": {
@@ -2281,6 +2046,92 @@ const docTemplate = `{
                         "GPL-2.0-only",
                         "GPL-2.0-or-later"
                     ]
+                }
+            }
+        },
+        "models.LicenseUpdateJSONSchema": {
+            "type": "object",
+            "properties": {
+                "external_ref": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                },
+                "marydone": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "rf_FSFfree": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "rf_Fedora": {
+                    "type": "string",
+                    "example": "Fedora"
+                },
+                "rf_GPLv2compatible": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "rf_GPLv3compatible": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "rf_OSIapproved": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "rf_active": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "rf_copyleft": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "rf_detector_type": {
+                    "type": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "rf_flag": {
+                    "type": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "rf_fullname": {
+                    "type": "string",
+                    "example": "MIT License"
+                },
+                "rf_notes": {
+                    "type": "string",
+                    "example": "This license has been superseded."
+                },
+                "rf_risk": {
+                    "type": "integer",
+                    "maximum": 5,
+                    "minimum": 0,
+                    "example": 1
+                },
+                "rf_source": {
+                    "type": "string",
+                    "example": "Source"
+                },
+                "rf_spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "rf_text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                },
+                "rf_text_updatable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "rf_url": {
+                    "type": "string",
+                    "example": "https://opensource.org/licenses/MIT"
                 }
             }
         },

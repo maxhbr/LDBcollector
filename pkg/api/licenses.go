@@ -10,6 +10,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"net/http"
 	"path/filepath"
 	"reflect"
@@ -21,6 +22,8 @@ import (
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin/binding"
+	"github.com/go-playground/validator/v10"
 
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
@@ -89,7 +92,7 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			parsedActive = false
 		}
-		query = query.Where(models.LicenseDB{Active: parsedActive})
+		query = query.Where(models.LicenseDB{Active: &parsedActive})
 	}
 
 	if fsffree != "" {
@@ -97,7 +100,7 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			parsedFsffree = false
 		}
-		query = query.Where(models.LicenseDB{FSFfree: parsedFsffree})
+		query = query.Where(models.LicenseDB{FSFfree: &parsedFsffree})
 	}
 
 	if OSIapproved != "" {
@@ -105,7 +108,7 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			parsedOsiApproved = false
 		}
-		query = query.Where(models.LicenseDB{OSIapproved: parsedOsiApproved})
+		query = query.Where(models.LicenseDB{OSIapproved: &parsedOsiApproved})
 	}
 
 	if copyleft != "" {
@@ -113,11 +116,11 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			parsedCopyleft = false
 		}
-		query = query.Where(models.LicenseDB{Copyleft: parsedCopyleft})
+		query = query.Where(models.LicenseDB{Copyleft: &parsedCopyleft})
 	}
 
 	if SpdxId != "" {
-		query = query.Where(models.LicenseDB{SpdxId: SpdxId})
+		query = query.Where(models.LicenseDB{SpdxId: &SpdxId})
 	}
 
 	if DetectorType != "" {
@@ -133,7 +136,7 @@ func FilterLicense(c *gin.Context) {
 			c.JSON(http.StatusBadRequest, er)
 			return
 		}
-		query = query.Where(models.LicenseDB{DetectorType: parsedDetectorType})
+		query = query.Where(models.LicenseDB{DetectorType: &parsedDetectorType})
 	}
 
 	if GPLv2compatible != "" {
@@ -141,7 +144,7 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			parsedGPLv2compatible = false
 		}
-		query = query.Where(models.LicenseDB{GPLv2compatible: parsedGPLv2compatible})
+		query = query.Where(models.LicenseDB{GPLv2compatible: &parsedGPLv2compatible})
 	}
 
 	if GPLv3compatible != "" {
@@ -149,7 +152,7 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			parsedGPLv3compatible = false
 		}
-		query = query.Where(models.LicenseDB{GPLv3compatible: parsedGPLv3compatible})
+		query = query.Where(models.LicenseDB{GPLv3compatible: &parsedGPLv3compatible})
 	}
 
 	if marydone != "" {
@@ -157,7 +160,7 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			parsedMarydone = false
 		}
-		query = query.Where(models.LicenseDB{Marydone: parsedMarydone})
+		query = query.Where(models.LicenseDB{Marydone: &parsedMarydone})
 	}
 
 	for externalRefKey, externalRefValue := range externalRefData {
@@ -224,7 +227,7 @@ func GetLicense(c *gin.Context) {
 		return
 	}
 
-	err := db.DB.Where(models.LicenseDB{Shortname: queryParam}).First(&license).Error
+	err := db.DB.Where(models.LicenseDB{Shortname: &queryParam}).First(&license).Error
 
 	if err != nil {
 		er := models.LicenseError{
@@ -257,15 +260,15 @@ func GetLicense(c *gin.Context) {
 //	@Tags			Licenses
 //	@Accept			json
 //	@Produce		json
-//	@Param			license	body		models.LicensePOSTRequestJSONSchema	true	"New license to be created"
-//	@Success		201		{object}	models.LicenseResponse				"New license created successfully"
-//	@Failure		400		{object}	models.LicenseError					"Invalid request body"
-//	@Failure		409		{object}	models.LicenseError					"License with same shortname already exists"
-//	@Failure		500		{object}	models.LicenseError					"Failed to create license"
+//	@Param			license	body		models.LicenseDB		true	"New license to be created"
+//	@Success		201		{object}	models.LicenseResponse	"New license created successfully"
+//	@Failure		400		{object}	models.LicenseError		"Invalid request body"
+//	@Failure		409		{object}	models.LicenseError		"License with same shortname already exists"
+//	@Failure		500		{object}	models.LicenseError		"Failed to create license"
 //	@Security		ApiKeyAuth
 //	@Router			/licenses [post]
 func CreateLicense(c *gin.Context) {
-	var input models.LicensePOSTRequestJSONSchema
+	var input models.LicenseDB
 
 	if err := c.ShouldBindJSON(&input); err != nil {
 		er := models.LicenseError{
@@ -279,43 +282,22 @@ func CreateLicense(c *gin.Context) {
 		return
 	}
 
-	license := models.LicenseDB{
-		Shortname:       input.Shortname,
-		Fullname:        input.Fullname,
-		Text:            input.Text,
-		Url:             input.Url,
-		Copyleft:        input.Copyleft,
-		Active:          input.Active,
-		FSFfree:         input.FSFfree,
-		GPLv2compatible: input.GPLv2compatible,
-		GPLv3compatible: input.GPLv3compatible,
-		OSIapproved:     input.OSIapproved,
-		TextUpdatable:   input.TextUpdatable,
-		DetectorType:    input.DetectorType,
-		Marydone:        input.Marydone,
-		Notes:           input.Notes,
-		Fedora:          input.Fedora,
-		Flag:            input.Flag,
-		Source:          input.Source,
-		SpdxId:          input.SpdxId,
-		Risk:            input.Risk,
-		ExternalRef:     input.ExternalRef,
-	}
-
-	result := db.DB.
-		Where(&models.LicenseDB{Shortname: license.Shortname}).
-		FirstOrCreate(&license)
-	if result.RowsAffected == 0 {
+	validate := validator.New(validator.WithRequiredStructEnabled())
+	if err := validate.Struct(&input); err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusConflict,
-			Message:   "can not create license with same shortname",
-			Error:     fmt.Sprintf("Error: License with shortname '%s' already exists", input.Shortname),
+			Status:    http.StatusBadRequest,
+			Message:   "can not create license with these field values",
+			Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusConflict, er)
+		c.JSON(http.StatusBadRequest, er)
 		return
 	}
+
+	result := db.DB.
+		Where(&models.LicenseDB{Shortname: input.Shortname}).
+		FirstOrCreate(&input)
 	if result.Error != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
@@ -327,8 +309,19 @@ func CreateLicense(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
+	if result.RowsAffected == 0 {
+		er := models.LicenseError{
+			Status:    http.StatusConflict,
+			Message:   "can not create license with same shortname",
+			Error:     fmt.Sprintf("Error: License with shortname '%s' already exists", *input.Shortname),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusConflict, er)
+		return
+	}
 	res := models.LicenseResponse{
-		Data:   []models.LicenseDB{license},
+		Data:   []models.LicenseDB{input},
 		Status: http.StatusCreated,
 		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
@@ -346,26 +339,25 @@ func CreateLicense(c *gin.Context) {
 //	@Tags			Licenses
 //	@Accept			json
 //	@Produce		json
-//	@Param			shortname	path		string									true	"Shortname of the license to be updated"
-//	@Param			license		body		models.LicensePATCHRequestJSONSchema	true	"Update license body (requires only the fields to be updated)"
-//	@Success		200			{object}	models.LicenseResponse					"License updated successfully"
-//	@Failure		400			{object}	models.LicenseError						"Invalid license body"
-//	@Failure		404			{object}	models.LicenseError						"License with shortname not found"
-//	@Failure		409			{object}	models.LicenseError						"License with same shortname already exists"
-//	@Failure		500			{object}	models.LicenseError						"Failed to update license"
+//	@Param			shortname	path		string							true	"Shortname of the license to be updated"
+//	@Param			license		body		models.LicenseUpdateJSONSchema	true	"Update license body (requires only the fields to be updated)"
+//	@Success		200			{object}	models.LicenseResponse			"License updated successfully"
+//	@Failure		400			{object}	models.LicenseError				"Invalid license body"
+//	@Failure		404			{object}	models.LicenseError				"License with shortname not found"
+//	@Failure		409			{object}	models.LicenseError				"License with same shortname already exists"
+//	@Failure		500			{object}	models.LicenseError				"Failed to update license"
 //	@Security		ApiKeyAuth
 //	@Router			/licenses/{shortname} [patch]
 func UpdateLicense(c *gin.Context) {
 	_ = db.DB.Transaction(func(tx *gorm.DB) error {
-		var updates models.LicensePATCHRequestJSONSchema
-		var newLicense models.LicenseDB
+		var updates models.LicenseUpdateJSONSchema
+		var externalRefsPayload models.UpdateExternalRefsJSONPayload
 		var oldLicense models.LicenseDB
-		newLicenseMap := make(map[string]interface{})
 
 		username := c.GetString("username")
 
 		shortname := c.Param("shortname")
-		if err := tx.Where(models.LicenseDB{Shortname: shortname}).First(&oldLicense).Error; err != nil {
+		if err := tx.Where(models.LicenseDB{Shortname: &shortname}).First(&oldLicense).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   fmt.Sprintf("license with shortname '%s' not found", shortname),
@@ -377,7 +369,8 @@ func UpdateLicense(c *gin.Context) {
 			return err
 		}
 
-		if err := c.ShouldBindJSON(&updates); err != nil {
+		// https://github.com/gin-gonic/gin/pull/1341
+		if err := c.ShouldBindBodyWith(&updates, binding.JSON); err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
 				Message:   "invalid json body update",
@@ -389,21 +382,33 @@ func UpdateLicense(c *gin.Context) {
 			return err
 		}
 
-		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
-		if err := tx.Model(&newLicense).Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", updates.ExternalRef)).Error; err != nil {
+		validate := validator.New()
+		if err := validate.Struct(&updates); err != nil {
 			er := models.LicenseError{
-				Status:    http.StatusInternalServerError,
-				Message:   "Failed to update license",
+				Status:    http.StatusBadRequest,
+				Message:   "can not update license with these field values",
+				Error:     fmt.Sprintf("field '%s' failed validation: %s\n", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag()),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return err
+		}
+
+		if err := c.ShouldBindBodyWith(&externalRefsPayload, binding.JSON); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "invalid json body",
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
-			c.JSON(http.StatusInternalServerError, er)
+			c.JSON(http.StatusBadRequest, er)
 			return err
 		}
 
-		if updates.Text.IsDefined && oldLicense.Text != updates.Text.Value {
-			if !oldLicense.TextUpdatable {
+		if updates.Text != nil && *oldLicense.Text != *updates.Text {
+			if !*oldLicense.TextUpdatable {
 				er := models.LicenseError{
 					Status:    http.StatusBadRequest,
 					Message:   "Text is not updatable",
@@ -415,115 +420,29 @@ func UpdateLicense(c *gin.Context) {
 				return errors.New("field `rf_text_updatable` needs to be true to update the text")
 			}
 
-			if updates.Text.Value == "" {
-				er := models.LicenseError{
-					Status:    http.StatusBadRequest,
-					Message:   "`rf_text` field cannot be empty",
-					Error:     "`rf_text` field cannot be empty",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusBadRequest, er)
-				return errors.New("`rf_text` field cannot be empty")
-			}
-
 			// Update flag to indicate the license text was updated.
-			newLicenseMap["rf_flag"] = 2
-			newLicenseMap["rf_text"] = updates.Text.Value
+			*updates.Flag = 2
 		}
 
-		if updates.Fullname.IsDefined {
-			if updates.Fullname.Value == "" {
-				er := models.LicenseError{
-					Status:    http.StatusBadRequest,
-					Message:   "`rf_fullname` field cannot be empty",
-					Error:     "`rf_fullname` field cannot be empty",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusBadRequest, er)
-				return errors.New("`rf_fullname` field cannot be empty")
+		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
+		if err := tx.Model(&models.LicenseDB{}).Where(models.LicenseDB{Id: oldLicense.Id}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(COALESCE(external_ref, '{}'::jsonb) || ?)", externalRefsPayload.ExternalRef)).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update license",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
 			}
-			newLicenseMap["rf_fullname"] = updates.Fullname.Value
+			c.JSON(http.StatusInternalServerError, er)
+			return err
 		}
 
-		if updates.SpdxId.IsDefined {
-			if updates.SpdxId.Value == "" {
-				er := models.LicenseError{
-					Status:    http.StatusBadRequest,
-					Message:   "`rf_spdx_id` field cannot be empty",
-					Error:     "`rf_spdx_id` field cannot be empty",
-					Path:      c.Request.URL.Path,
-					Timestamp: time.Now().Format(time.RFC3339),
-				}
-				c.JSON(http.StatusBadRequest, er)
-				return errors.New("`rf_spdx_id` field cannot be empty")
-			}
-			newLicenseMap["rf_spdx_id"] = updates.SpdxId.Value
-		}
+		// https://github.com/go-gorm/gorm/issues/3938: BeforeSave hook is called on the struct passed in .Model()
+		// Cannot pass empty newLicense struct in .Model() as all fields will be empty and no validation will happen
+		newLicense := models.LicenseDB(updates)
 
-		if updates.Url.IsDefined {
-			newLicenseMap["rf_url"] = updates.Url.Value
-		}
-
-		if updates.Copyleft.IsDefined {
-			newLicenseMap["rf_copyleft"] = updates.Copyleft.Value
-		}
-
-		if updates.FSFfree.IsDefined {
-			newLicenseMap["rf_FSFfree"] = updates.FSFfree.Value
-		}
-
-		if updates.OSIapproved.IsDefined {
-			newLicenseMap["rf_OSIapproved"] = updates.OSIapproved.Value
-		}
-
-		if updates.GPLv2compatible.IsDefined {
-			newLicenseMap["rf_GPLv2compatible"] = updates.GPLv2compatible.Value
-		}
-
-		if updates.GPLv3compatible.IsDefined {
-			newLicenseMap["rf_GPLv3compatible"] = updates.GPLv3compatible.Value
-		}
-
-		if updates.Notes.IsDefined {
-			newLicenseMap["rf_notes"] = updates.Notes.Value
-		}
-
-		if updates.Fedora.IsDefined {
-			newLicenseMap["rf_Fedora"] = updates.Fedora.Value
-		}
-
-		if updates.TextUpdatable.IsDefined {
-			newLicenseMap["rf_text_updatable"] = updates.TextUpdatable.Value
-		}
-
-		if updates.DetectorType.IsDefined {
-			newLicenseMap["rf_detector_type"] = updates.DetectorType.Value
-		}
-
-		if updates.Active.IsDefined {
-			newLicenseMap["rf_active"] = updates.Active.Value
-		}
-
-		if updates.Source.IsDefined {
-			newLicenseMap["rf_source"] = updates.Source.Value
-		}
-
-		if updates.Risk.IsDefined {
-			newLicenseMap["rf_risk"] = updates.Risk.Value
-		}
-
-		if updates.Flag.IsDefined {
-			newLicenseMap["rf_flag"] = updates.Flag.Value
-		}
-
-		if updates.Marydone.IsDefined {
-			newLicenseMap["marydone"] = updates.Marydone.Value
-		}
-
-		// Update all other fields except external_ref
-		if err := tx.Model(&newLicense).Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).Updates(newLicenseMap).Error; err != nil {
+		// Update all other fields except external_ref and rf_shortname
+		if err := tx.Model(&newLicense).Omit("external_ref", "rf_shortname").Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).Updates(newLicense).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -566,18 +485,18 @@ func addChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 	newLicense, oldLicense *models.LicenseDB) error {
 	var changes []models.ChangeLog
 
-	if oldLicense.Fullname != newLicense.Fullname {
+	if *oldLicense.Fullname != *newLicense.Fullname {
 		changes = append(changes, models.ChangeLog{
 			Field:        "Fullname",
-			OldValue:     &oldLicense.Fullname,
-			UpdatedValue: &newLicense.Fullname,
+			OldValue:     oldLicense.Fullname,
+			UpdatedValue: newLicense.Fullname,
 		})
 	}
-	if oldLicense.Url != newLicense.Url {
+	if *oldLicense.Url != *newLicense.Url {
 		changes = append(changes, models.ChangeLog{
 			Field:        "Url",
-			OldValue:     &oldLicense.Url,
-			UpdatedValue: &newLicense.Url,
+			OldValue:     oldLicense.Url,
+			UpdatedValue: newLicense.Url,
 		})
 	}
 	if oldLicense.AddDate != newLicense.AddDate {
@@ -589,134 +508,134 @@ func addChangelogsForLicenseUpdate(tx *gorm.DB, username string,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.Active != newLicense.Active {
-		oldVal := strconv.FormatBool(oldLicense.Active)
-		newVal := strconv.FormatBool(newLicense.Active)
+	if *oldLicense.Active != *newLicense.Active {
+		oldVal := strconv.FormatBool(*oldLicense.Active)
+		newVal := strconv.FormatBool(*newLicense.Active)
 		changes = append(changes, models.ChangeLog{
 			Field:        "Active",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.Copyleft != newLicense.Copyleft {
-		oldVal := strconv.FormatBool(oldLicense.Copyleft)
-		newVal := strconv.FormatBool(newLicense.Copyleft)
+	if *oldLicense.Copyleft != *newLicense.Copyleft {
+		oldVal := strconv.FormatBool(*oldLicense.Copyleft)
+		newVal := strconv.FormatBool(*newLicense.Copyleft)
 		changes = append(changes, models.ChangeLog{
 			Field:        "Copyleft",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.FSFfree != newLicense.FSFfree {
-		oldVal := strconv.FormatBool(oldLicense.FSFfree)
-		newVal := strconv.FormatBool(newLicense.FSFfree)
+	if *oldLicense.FSFfree != *newLicense.FSFfree {
+		oldVal := strconv.FormatBool(*oldLicense.FSFfree)
+		newVal := strconv.FormatBool(*newLicense.FSFfree)
 		changes = append(changes, models.ChangeLog{
 			Field:        "FSFfree",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.GPLv2compatible != newLicense.GPLv2compatible {
-		oldVal := strconv.FormatBool(oldLicense.GPLv2compatible)
-		newVal := strconv.FormatBool(newLicense.GPLv2compatible)
+	if *oldLicense.GPLv2compatible != *newLicense.GPLv2compatible {
+		oldVal := strconv.FormatBool(*oldLicense.GPLv2compatible)
+		newVal := strconv.FormatBool(*newLicense.GPLv2compatible)
 		changes = append(changes, models.ChangeLog{
 			Field:        "GPLv2compatible",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.GPLv3compatible != newLicense.GPLv3compatible {
-		oldVal := strconv.FormatBool(oldLicense.GPLv3compatible)
-		newVal := strconv.FormatBool(newLicense.GPLv3compatible)
+	if *oldLicense.GPLv3compatible != *newLicense.GPLv3compatible {
+		oldVal := strconv.FormatBool(*oldLicense.GPLv3compatible)
+		newVal := strconv.FormatBool(*newLicense.GPLv3compatible)
 		changes = append(changes, models.ChangeLog{
 			Field:        "GPLv3compatible",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.OSIapproved != newLicense.OSIapproved {
-		oldVal := strconv.FormatBool(oldLicense.OSIapproved)
-		newVal := strconv.FormatBool(newLicense.OSIapproved)
+	if *oldLicense.OSIapproved != *newLicense.OSIapproved {
+		oldVal := strconv.FormatBool(*oldLicense.OSIapproved)
+		newVal := strconv.FormatBool(*newLicense.OSIapproved)
 		changes = append(changes, models.ChangeLog{
 			Field:        "OSIapproved",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.Text != newLicense.Text {
+	if *oldLicense.Text != *newLicense.Text {
 		changes = append(changes, models.ChangeLog{
 			Field:        "Text",
-			OldValue:     &oldLicense.Text,
-			UpdatedValue: &newLicense.Text,
+			OldValue:     oldLicense.Text,
+			UpdatedValue: newLicense.Text,
 		})
 	}
-	if oldLicense.TextUpdatable != newLicense.TextUpdatable {
-		oldVal := strconv.FormatBool(oldLicense.TextUpdatable)
-		newVal := strconv.FormatBool(newLicense.TextUpdatable)
+	if *oldLicense.TextUpdatable != *newLicense.TextUpdatable {
+		oldVal := strconv.FormatBool(*oldLicense.TextUpdatable)
+		newVal := strconv.FormatBool(*newLicense.TextUpdatable)
 		changes = append(changes, models.ChangeLog{
 			Field:        "TextUpdatable",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.Fedora != newLicense.Fedora {
+	if *oldLicense.Fedora != *newLicense.Fedora {
 		changes = append(changes, models.ChangeLog{
 			Field:        "Fedora",
-			OldValue:     &oldLicense.Fedora,
-			UpdatedValue: &newLicense.Fedora,
+			OldValue:     oldLicense.Fedora,
+			UpdatedValue: newLicense.Fedora,
 		})
 	}
-	if oldLicense.Flag != newLicense.Flag {
-		oldVal := strconv.FormatInt(oldLicense.Flag, 10)
-		newVal := strconv.FormatInt(newLicense.Flag, 10)
+	if *oldLicense.Flag != *newLicense.Flag {
+		oldVal := strconv.FormatInt(*oldLicense.Flag, 10)
+		newVal := strconv.FormatInt(*newLicense.Flag, 10)
 		changes = append(changes, models.ChangeLog{
 			Field:        "Flag",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.Notes != newLicense.Notes {
+	if *oldLicense.Notes != *newLicense.Notes {
 		changes = append(changes, models.ChangeLog{
 			Field:        "Notes",
-			OldValue:     &oldLicense.Notes,
-			UpdatedValue: &newLicense.Notes,
+			OldValue:     oldLicense.Notes,
+			UpdatedValue: newLicense.Notes,
 		})
 	}
-	if oldLicense.DetectorType != newLicense.DetectorType {
-		oldVal := strconv.FormatInt(oldLicense.DetectorType, 10)
-		newVal := strconv.FormatInt(newLicense.DetectorType, 10)
+	if *oldLicense.DetectorType != *newLicense.DetectorType {
+		oldVal := strconv.FormatInt(*oldLicense.DetectorType, 10)
+		newVal := strconv.FormatInt(*newLicense.DetectorType, 10)
 		changes = append(changes, models.ChangeLog{
 			Field:        "DetectorType",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.Source != newLicense.Source {
+	if *oldLicense.Source != *newLicense.Source {
 		changes = append(changes, models.ChangeLog{
 			Field:        "Source",
-			OldValue:     &oldLicense.Source,
-			UpdatedValue: &newLicense.Source,
+			OldValue:     oldLicense.Source,
+			UpdatedValue: newLicense.Source,
 		})
 	}
-	if oldLicense.SpdxId != newLicense.SpdxId {
+	if *oldLicense.SpdxId != *newLicense.SpdxId {
 		changes = append(changes, models.ChangeLog{
 			Field:        "SpdxId",
-			OldValue:     &oldLicense.SpdxId,
-			UpdatedValue: &newLicense.SpdxId,
+			OldValue:     oldLicense.SpdxId,
+			UpdatedValue: newLicense.SpdxId,
 		})
 	}
-	if oldLicense.Risk != newLicense.Risk {
-		oldVal := strconv.FormatInt(oldLicense.Risk, 10)
-		newVal := strconv.FormatInt(newLicense.Risk, 10)
+	if *oldLicense.Risk != *newLicense.Risk {
+		oldVal := strconv.FormatInt(*oldLicense.Risk, 10)
+		newVal := strconv.FormatInt(*newLicense.Risk, 10)
 		changes = append(changes, models.ChangeLog{
 			Field:        "Risk",
 			OldValue:     &oldVal,
 			UpdatedValue: &newVal,
 		})
 	}
-	if oldLicense.Marydone != newLicense.Marydone {
-		oldVal := strconv.FormatBool(oldLicense.Marydone)
-		newVal := strconv.FormatBool(newLicense.Marydone)
+	if *oldLicense.Marydone != *newLicense.Marydone {
+		oldVal := strconv.FormatBool(*oldLicense.Marydone)
+		newVal := strconv.FormatBool(*newLicense.Marydone)
 		changes = append(changes, models.ChangeLog{
 			Field:        "Marydone",
 			OldValue:     &oldVal,
@@ -944,9 +863,34 @@ func ImportLicenses(c *gin.Context) {
 		return
 	}
 
-	var licenses []models.LicenseImport
 	decoder := json.NewDecoder(file)
+
+	var licenses []models.LicenseDB
 	if err := decoder.Decode(&licenses); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "invalid json",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+
+	if _, err = file.Seek(0, io.SeekStart); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "error parsing json",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+	var externalRefs []models.UpdateExternalRefsJSONPayload
+	if err := decoder.Decode(&externalRefs); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "invalid json",
@@ -962,103 +906,45 @@ func ImportLicenses(c *gin.Context) {
 		Status: http.StatusOK,
 	}
 
-	for _, license := range licenses {
+	for i := range licenses {
 		_ = db.DB.Transaction(func(tx *gorm.DB) error {
-			newLicenseMap := make(map[string]interface{})
-			if err := addStructFieldToMap(c, &license.Shortname, "rf_shortname", newLicenseMap, "", &res); err != nil {
-				return err
-			}
-			if err := addStructFieldToMap(c, &license.Fullname, "rf_fullname", newLicenseMap, license.Shortname.Value, &res); err != nil {
-				return err
-			}
-			if err := addStructFieldToMap(c, &license.Text, "rf_text", newLicenseMap, license.Shortname.Value, &res); err != nil {
-				return err
-			}
-			if err := addStructFieldToMap(c, &license.Url, "rf_url", newLicenseMap, license.Shortname.Value, &res); err != nil {
-				return err
-			}
-			if err := addStructFieldToMap(c, &license.Active, "rf_active", newLicenseMap, license.Shortname.Value, &res); err != nil {
-				return err
-			}
-			if err := addStructFieldToMap(c, &license.Source, "rf_source", newLicenseMap, license.Shortname.Value, &res); err != nil {
-				return err
-			}
-			if err := addStructFieldToMap(c, &license.SpdxId, "rf_spdx_id", newLicenseMap, license.Shortname.Value, &res); err != nil {
-				return err
-			}
-			if err := addStructFieldToMap(c, &license.Risk, "rf_risk", newLicenseMap, license.Shortname.Value, &res); err != nil {
-				return err
-			}
+			errMessage, importStatus, oldLicense, newLicense := utils.InsertOrUpdateLicenseOnImport(tx, &licenses[i], &externalRefs[i])
 
-			if license.Copyleft.IsDefinedAndNotNull {
-				newLicenseMap["rf_copyleft"] = license.Copyleft.Value
-			}
-			if license.FSFfree.IsDefinedAndNotNull {
-				newLicenseMap["rf_FSFfree"] = license.FSFfree.Value
-			}
-			if license.OSIapproved.IsDefinedAndNotNull {
-				newLicenseMap["rf_OSIapproved"] = license.OSIapproved.Value
-			}
-			if license.GPLv2compatible.IsDefinedAndNotNull {
-				newLicenseMap["rf_GPLv2compatible"] = license.GPLv2compatible.Value
-			}
-			if license.GPLv3compatible.IsDefinedAndNotNull {
-				newLicenseMap["rf_GPLv3compatible"] = license.GPLv3compatible.Value
-			}
-			if license.Notes.IsDefinedAndNotNull {
-				newLicenseMap["rf_notes"] = license.Notes.Value
-			}
-			if license.Fedora.IsDefinedAndNotNull {
-				newLicenseMap["rf_Fedora"] = license.Fedora.Value
-			}
-			if license.DetectorType.IsDefinedAndNotNull {
-				newLicenseMap["rf_detector_type"] = license.DetectorType.Value
-			}
-			if license.Flag.IsDefinedAndNotNull {
-				newLicenseMap["rf_flag"] = license.Flag.Value
-			}
-			if license.Marydone.IsDefinedAndNotNull {
-				newLicenseMap["marydone"] = license.Marydone.Value
-			}
-			newLicenseMap["external_ref"] = license.ExternalRef
-
-			errMessage, importStatus, newLicense, oldLicense := InsertOrUpdateLicenseOnImport(tx, newLicenseMap)
-
-			if importStatus == models.IMPORT_FAILED {
+			if importStatus == utils.IMPORT_FAILED {
 				res.Data = append(res.Data, models.LicenseError{
 					Status:    http.StatusInternalServerError,
 					Message:   errMessage,
-					Error:     newLicense.Shortname,
+					Error:     *licenses[i].Shortname,
 					Path:      c.Request.URL.Path,
 					Timestamp: time.Now().Format(time.RFC3339),
 				})
 				return errors.New(errMessage)
-			} else if importStatus == models.IMPORT_LICENSE_CREATED {
+			} else if importStatus == utils.IMPORT_LICENSE_CREATED {
 				res.Data = append(res.Data, models.LicenseImportStatus{
-					Data:   models.LicenseId{Id: oldLicense.Id, Shortname: oldLicense.Shortname},
+					Data:   models.LicenseId{Id: oldLicense.Id, Shortname: *oldLicense.Shortname},
 					Status: http.StatusCreated,
 				})
-			} else if importStatus == models.IMPORT_LICENSE_UPDATED {
+			} else if importStatus == utils.IMPORT_LICENSE_UPDATED {
 				if err := addChangelogsForLicenseUpdate(tx, username, newLicense, oldLicense); err != nil {
 					res.Data = append(res.Data, models.LicenseError{
 						Status:    http.StatusInternalServerError,
 						Message:   "Failed to update license",
-						Error:     newLicense.Shortname,
+						Error:     *newLicense.Shortname,
 						Path:      c.Request.URL.Path,
 						Timestamp: time.Now().Format(time.RFC3339),
 					})
 					return err
 				}
 				res.Data = append(res.Data, models.LicenseImportStatus{
-					Data:   models.LicenseId{Id: newLicense.Id, Shortname: newLicense.Shortname},
+					Data:   models.LicenseId{Id: newLicense.Id, Shortname: *newLicense.Shortname},
 					Status: http.StatusOK,
 				})
-			} else if importStatus == models.IMPORT_LICENSE_UPDATED_EXCEPT_TEXT {
+			} else if importStatus == utils.IMPORT_LICENSE_UPDATED_EXCEPT_TEXT {
 				if err := addChangelogsForLicenseUpdate(tx, username, newLicense, oldLicense); err != nil {
 					res.Data = append(res.Data, models.LicenseError{
 						Status:    http.StatusInternalServerError,
 						Message:   "Failed to update license",
-						Error:     newLicense.Shortname,
+						Error:     *newLicense.Shortname,
 						Path:      c.Request.URL.Path,
 						Timestamp: time.Now().Format(time.RFC3339),
 					})
@@ -1068,7 +954,7 @@ func ImportLicenses(c *gin.Context) {
 				res.Data = append(res.Data, models.LicenseError{
 					Status:    http.StatusConflict,
 					Message:   errMessage,
-					Error:     newLicense.Shortname,
+					Error:     *newLicense.Shortname,
 					Path:      c.Request.URL.Path,
 					Timestamp: time.Now().Format(time.RFC3339),
 				})
@@ -1082,77 +968,6 @@ func ImportLicenses(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// addStructFieldToMap checks whether a field is defined and then adds it to the license map for update
-func addStructFieldToMap[T any](c *gin.Context, structField *models.NullableAndOptionalData[T], structFieldName string,
-	licenseMap map[string]interface{}, shortName string, res *models.ImportLicensesResponse) error {
-	if structField.IsDefinedAndNotNull {
-		licenseMap[structFieldName] = structField.Value
-	} else {
-		res.Data = append(res.Data, models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   fmt.Sprintf("field %s cannot be null", structFieldName),
-			Error:     shortName,
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		})
-		return fmt.Errorf("field %s cannot be null", structFieldName)
-	}
-	return nil
-}
-
-// Updates/Creates a license from a map containing license values
-func InsertOrUpdateLicenseOnImport(tx *gorm.DB, newLicenseMap map[string]interface{}) (string, models.LicenseImportStatusCode, *models.LicenseDB, *models.LicenseDB) {
-	var message string
-	var importStatus models.LicenseImportStatusCode
-	var newLicense, oldLicense models.LicenseDB
-
-	result := tx.
-		Where(&models.LicenseDB{Shortname: newLicenseMap["rf_shortname"].(string)}).
-		Attrs(newLicenseMap).
-		FirstOrCreate(&oldLicense)
-	if result.Error != nil {
-		message = fmt.Sprintf("failed to create license: %s", result.Error.Error())
-		importStatus = models.IMPORT_FAILED
-		return message, importStatus, &newLicense, &oldLicense
-	} else if result.RowsAffected == 0 {
-		// case when license exists in database and is updated
-
-		// Overwrite values of existing keys, add new key value pairs and remove keys with null values.
-		if err := tx.Model(&models.LicenseDB{}).Where(&models.LicenseDB{Shortname: newLicenseMap["rf_shortname"].(string)}).UpdateColumn("external_ref", gorm.Expr("jsonb_strip_nulls(external_ref || ?)", newLicenseMap["external_ref"])).Error; err != nil {
-			message = fmt.Sprintf("failed to update license: %s", err.Error())
-			importStatus = models.IMPORT_FAILED
-			return message, importStatus, &newLicense, &oldLicense
-		}
-
-		// Update all other fields except external_ref
-		query := tx.Model(&newLicense).Where(&models.LicenseDB{Shortname: newLicenseMap["rf_shortname"].(string)}).Omit("external_ref")
-
-		// Do not update text in import if it was modified manually
-		if oldLicense.Flag == 2 {
-			query = query.Omit("rf_text")
-		}
-
-		if err := query.Clauses(clause.Returning{}).Updates(newLicenseMap).Error; err != nil {
-			message = fmt.Sprintf("failed to update license: %s", err.Error())
-			importStatus = models.IMPORT_FAILED
-			return message, importStatus, &newLicense, &oldLicense
-		}
-
-		if oldLicense.Flag == 2 {
-			message = "all fields except rf_text were updated. rf_text was updated manually and cannot be overwritten in an import."
-			importStatus = models.IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
-			// error is not returned here as it will rollback the transaction
-		} else {
-			importStatus = models.IMPORT_LICENSE_UPDATED
-		}
-	} else {
-		// case when license doesn't exist in database and is inserted
-		importStatus = models.IMPORT_LICENSE_CREATED
-	}
-
-	return message, importStatus, &newLicense, &oldLicense
-}
-
 // ExportLicenses gives users all licenses as a json file.
 //
 //	@Summary		Export all licenses as a json file
@@ -1160,13 +975,12 @@ func InsertOrUpdateLicenseOnImport(tx *gorm.DB, newLicenseMap map[string]interfa
 //	@Id				ExportLicenses
 //	@Tags			Licenses
 //	@Produce		json
-//	@Success		200	{array}		models.ExportLicenseDB
+//	@Success		200	{array}		models.LicenseDB
 //	@Failure		500	{object}	models.LicenseError	"Failed to fetch Licenses"
 //	@Security		ApiKeyAuth || {}
 //	@Router			/licenses/export [get]
 func ExportLicenses(c *gin.Context) {
-
-	var licenses []models.ExportLicenseDB
+	var licenses []models.LicenseDB
 	query := db.DB.Model(&models.LicenseDB{})
 	err := query.Find(&licenses).Error
 	if err != nil {
@@ -1241,7 +1055,7 @@ func GetAllLicensePreviews(c *gin.Context) {
 
 	var res models.LicensePreviewResponse
 	for _, lic := range licenses {
-		res.Shortnames = append(res.Shortnames, lic.Shortname)
+		res.Shortnames = append(res.Shortnames, *lic.Shortname)
 	}
 
 	res.Status = http.StatusOK

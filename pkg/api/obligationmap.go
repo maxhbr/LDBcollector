@@ -80,7 +80,7 @@ func GetObligationMapByTopic(c *gin.Context) {
 			c.JSON(http.StatusNotFound, er)
 			return
 		}
-		shortnameList = append(shortnameList, license.Shortname)
+		shortnameList = append(shortnameList, *license.Shortname)
 	}
 
 	resObMap = models.ObligationMapUser{
@@ -120,7 +120,7 @@ func GetObligationMapByLicense(c *gin.Context) {
 
 	licenseShortName := c.Param("license")
 
-	if err := db.DB.Where(models.LicenseDB{Shortname: licenseShortName}).First(&license).Error; err != nil {
+	if err := db.DB.Where(models.LicenseDB{Shortname: &licenseShortName}).First(&license).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   fmt.Sprintf("license with shortname '%s' not found", licenseShortName),
@@ -225,7 +225,7 @@ func PatchObligationMap(c *gin.Context) {
 	for i := 0; i < len(obMapInput.MapInput); i++ {
 		var license models.LicenseDB
 		var obligationMap models.ObligationMap
-		if err := db.DB.Where(&models.LicenseDB{Shortname: obMapInput.MapInput[i].Shortname}).First(&license).Error; err != nil {
+		if err := db.DB.Where(&models.LicenseDB{Shortname: &obMapInput.MapInput[i].Shortname}).First(&license).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   fmt.Sprintf("license with shortname '%s' not found", obMapInput.MapInput[i].Shortname),
@@ -376,7 +376,7 @@ func GenerateDiffOfLicenses(c *gin.Context, obligation *models.Obligation, input
 	for i := 0; i < len(inputShortnames); i++ {
 		var license models.LicenseDB
 		var obligationMap models.ObligationMap
-		if err := db.DB.Where(&models.LicenseDB{Shortname: inputShortnames[i]}).First(&license).Error; err != nil {
+		if err := db.DB.Where(&models.LicenseDB{Shortname: &inputShortnames[i]}).First(&license).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusNotFound,
 				Message:   fmt.Sprintf("license with shortname '%s' not found", inputShortnames[i]),
@@ -538,7 +538,7 @@ func createObligationMapUser(obligation models.Obligation, obMaps []models.Oblig
 		if err := db.DB.Where(models.LicenseDB{Id: obMaps[i].RfPk}).First(&license).Error; err != nil {
 			return nil, err
 		}
-		shortnameList = append(shortnameList, license.Shortname)
+		shortnameList = append(shortnameList, *license.Shortname)
 	}
 	return &models.ObligationMapUser{
 		Topic:      obligation.Topic,
