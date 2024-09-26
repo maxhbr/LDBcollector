@@ -1,5 +1,5 @@
-| **Bezeichnung** | _ |
+| **Bezeichnung** | - |
 |:---:|:---:|
-| **Parteien** | _ |
-| **Thema** | _ |
+| **Parteien** | - |
+| **Thema** | - |
 | **Links** | [🇩🇪]() [🇬🇧]() |
