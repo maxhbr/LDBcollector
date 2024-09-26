@@ -5,9 +5,6 @@ title: "Committer Agreements - ifrOSS.org"
 
 <h1 style="text-align: center;">️Commiter Agreements</h1>
 
-* TOC
-{:toc}
-
 Der folgende Abschnitt führt Vereinbarungen auf, die die Umstände
 eines Beitrags regeln. Sie enthalten keine eigene Lizenz, sondern
 verweisen auf externe Lizenztexte. Übersetzen lässt sich der
