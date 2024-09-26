@@ -78,7 +78,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Bezeichnung** | LG Halle, Urteil v. 27.07.2015, Az. 4 O 133/15 |
 |:---:|:---:|
 | **Parteien** | - |
-| **Thema** | Wiederholungsgefahr bei Verletzung der GPL-3.0 (Ziffer 8 Abs. 3 GPL-3.0) ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr)) |
+| **Thema** | Wiederholungsgefahr nachdem die Bedingungen der GPLv3 wieder eingehalten werden (Ziffer 8 Abs. 3 GPL-3.0) ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr)) |
 | **Links** | [🇩🇪](https://www.landesrecht.sachsen-anhalt.de/bsst/document/JURE150012453) |
 
 | **Bezeichnung** | LG Hannover, Urteil v. 21.07.2015, Az. 18 O 159/15 |
@@ -93,11 +93,23 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Thema** | Unterlassungsverfügung wg. GPL-Verletzung |
 | **Links** | [🇩🇪](https://www.jurpc.de/jurpc/show?id=20160008) |
 
+| **Bezeichnung** | OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial)) |
+| **Links** | [🇩🇪](http://medien-internet-und-recht.de/pdf/VT-MIR-2014-Dok-121.pdf) |
+
 | **Bezeichnung** | LG Köln, Urteil v. 17.7.2014, Az. 14 O 463/13 |
 |:---:|:---:|
 | **Parteien** | - |
 | **Thema** | GPL-Quellcode in LGPL übernommen; Verletzergewinn |
 | **Links** | [🇩🇪](http://dejure.org/2014,35553) |
+
+| **Bezeichnung** | LG Köln, Urteil v. 05.03.2014, Az. 28 O 232/13 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/lg-k-ln-beschr-nkt-cc-nc-rein-private-nutzungen)) |
+| **Links** | [🇩🇪](http://www.lhr-law.de/wp-content/uploads/2014/03/geschwärztes-Urteil-LG-Köln-2.pdf) |
 
 | **Bezeichnung** | LG Hamburg, Urteil v. 14.06.2013, Az. 308 O 10/13 |
 |:---:|:---:|
@@ -115,13 +127,19 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 |:---:|:---:|
 | **Parteien** | adhoc dataservice GmbH v. Buhl Data Service GmbH |
 | **Thema** | - |
-| **Links** | [🇩🇪](http://www.justiz.nrw.de/nrwe/lgs/bochum/lg_bochum/j2011/8_O_293_09teilurteil20110120.html) |
+| **Links** | [🇩🇪](http://www.telemedicus.info/urteile/Urheberrecht/Open-Source/1148-LG-Bochum-Az-I-8-O-29309-Ansprueche-bei-Verletzung-der-LGPL.html) |
 
 | **Bezeichnung** | LG Hamburg, Urteil v. 10.12.2010, Az. 406 O 50/10 |
 |:---:|:---:|
 | **Parteien** | - |
 | **Thema** | Abofalle |
 | **Links** | [🇩🇪](http://openjur.de/u/69386.html) |
+
+| **Bezeichnung** | LG Berlin, Beschluss v. 08.10.2010, Az. 16 O 458/10 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Creative Commons-Lizenz „Attribution – ShareAlike 3.0 Unported“ |
+| **Links** | [🇩🇪](Link: http://www.ifross.org/Fremdartikel/LG_Berlin_CC-Lizenz.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/District_Court_Berlin_CC_License.txt) |
 
 | **Bezeichnung** | LG München I, Urteil v. 12.07.2007, Az. 7 O 5245/07 |
 |:---:|:---:|
@@ -133,7 +151,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 |:---:|:---:|
 | **Parteien** | Welte v. D-Link Deutschland GmbH |
 | **Thema** | - |
-| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/urteil_lg_frankfurt_gpl.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/judgment_dc_frankfurt_gpl.pdf) |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/urteil_lg_frankfurt_gpl.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/judgment_dc_frankfurt_gpl.pdf) |
 
 | **Bezeichnung** | LG Berlin, Beschluss v. 21.02.2006, Az. 16 O 134/06 |
 |:---:|:---:|
@@ -165,13 +183,13 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 |:---:|:---:|
 | **Parteien** | - |
 | **Thema** | xt: commerce |
-| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/OLGDuesseldorfxtcommerce.pdf) |
+| **Links** | [🇩🇪](https://www.ifross.de/Fremdartikel/OLGDuesseldorfxtcommerce.pdf) |
 
 | **Bezeichnung** | BPatG, Beschluss v. 17.12.2009, Az. 25 W (pat) 65/08 |
 |:---:|:---:|
 | **Parteien** | - |
 | **Thema** | „Linuxwerkstatt“ (§ 8 Abs. 2 Nr. 1 MarkenG) |
-| **Links** | [🇩🇪](http://juris.bundespatentgericht.de/cgi-bin/rechtsprechung/document.py?Gericht=bpatg&Art=en&sid=37cfeadf3527936f099645d4c681e018&nr=29946&pos=10&anz=19&Blank=1.pdf) |
+| **Links** | [🇩🇪](http://www.bundespatentgericht.de/bpatg/leitsaetze/marken/25065_08.pdf) |
 
 | **Bezeichnung** | BPatG, Beschluss v. 30.09.2008, Az. 33 W (pat) 1/07 |
 |:---:|:---:|
@@ -204,6 +222,12 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Parteien** | Great Minds v. Fedex Office and Print Services Inc. |
 | **Thema** | Kopien durch kommerziellen Anbieter im Auftrag des nicht-kommerziell handelnden Lizenznehmers als nicht-kommerzielle Nutzung i.S.v. Creative Commons 4.0-BY-NC-SA international ([Kommentar bei Creative Commons](https://creativecommons.org/2017/02/24/update-great-minds-v-fedex-office-litigation-involving-nc-sa/)) |
 | **Links** | [🇬🇧](https://creativecommons.org/2017/02/24/update-great-minds-v-fedex-office-litigation-involving-nc-sa/) |
+
+| **Bezeichnung** | US District Court, N.D. California, San Francisco Division, Case No. 17-cv-04002-LB |
+|:---:|:---:|
+| **Parteien** | Open Source Security, Inc. & BRADLEY SPENGLER v. Bruce Perens |
+| **Thema** | Abweisung Verleumdungsklage wegen Diskussion über Auslegung der GPL (Reichweite des "further restrictions" Verbotes) in einem Blog |
+| **Links** | [🇬🇧](https://www.leagle.com/decision/infdco20171222c91) |
 
 | **Bezeichnung** | US District Court, N.D. California, 2014-05-16, Case No. 5:13-cv-05161-PSG |
 |:---:|:---:|
