@@ -29,6 +29,14 @@ text = '''
 text here
 '''
 
+package = ants
+# the upstream is dead, this reference file in the package
+location = license-info
+text = '''
+Ants Is free, public domain -- do with it what you want (it would be
+nice if you gave me credit for the original game).
+'''
+
 package = filedrop
 location = https://iharder.sourceforge.net/current/java/filedrop/
 text = '''
