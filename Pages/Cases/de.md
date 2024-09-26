@@ -167,6 +167,66 @@ title: "Urteile - ifrOSS.org"
 
 # USA
 
+| **Bezeichnung** | US Court of Appeals for the Ninth Circuit, 2022-02-18, Cas No. 21-16029 |
+|:---:|:---:|
+| **Parteien** | Neo4j, Inc. v. PureThink, LLC |
+| **Thema** | Bestätigung (vorläufiges Verfahren), dass bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" die "Commons Clause" nicht entfernt und die Software als Open Source Software bezeichnet werden darf. ([Kommentar bei Software Freedom Conservancy](https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/)) |
+| **Links** | [🇬🇧](https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscourts.cand.335295.140.0.pdf) |
+
+| **Bezeichnung** | US District Court, N.D. California, 2021-05-18, Case No. 5:18-cv-07182-EJD |
+|:---:|:---:|
+| **Parteien** | Neo4j, Inc. v. PureThink, LLC |
+| **Thema** | Bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" darf die "Commons Clause" nicht entfernt und die Software als Open Source Software bezeichnet werden. |
+| **Links** | [🇬🇧](https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscourts.cand.335295.118.0.pdf) |
+
+| **Bezeichnung** | US District Court, N.D. California, 2020-11-13, Case No. 5:19-cv-06226-EJD |
+|:---:|:---:|
+| **Parteien** | Neo4j, Inc. v. Graph Found., Inc. |
+| **Thema** | Bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" darf die "Commons Clause" nicht entfernt werden. |
+| **Links** | [🇬🇧](https://storage.courtlistener.com/recap/gov.uscourts.cand.349025/gov.uscourts.cand.349025.88.0.pdf) |
+
+| **Bezeichnung** | US District Court, E.D. New York, 2017-02-24, Case No. 16-CV-1462 (DRH)(ARL) |
+|:---:|:---:|
+| **Parteien** | Great Minds v. Fedex Office and Print Services Inc. |
+| **Thema** | Kopien durch kommerziellen Anbieter im Auftrag des nicht-kommerziell handelnden Lizenznehmers als nicht-kommerzielle Nutzung i.S.v. Creative Commons 4.0-BY-NC-SA international ([Kommentar bei Creative Commons](https://creativecommons.org/2017/02/24/update-great-minds-v-fedex-office-litigation-involving-nc-sa/)) |
+| **Links** | [🇬🇧](https://creativecommons.org/2017/02/24/update-great-minds-v-fedex-office-litigation-involving-nc-sa/) |
+
+| **Bezeichnung** | US District Court, N.D. California, 2014-05-16, Case No. 5:13-cv-05161-PSG |
+|:---:|:---:|
+| **Parteien** | XimpleWare v. Versata et al |
+| **Thema** | ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/ximpleware-v-versata-et-al-gplv2-bezogene-patentrechtliche-fragen)) |
+| **Links** | [🇬🇧](http://ia601009.us.archive.org/15/items/gov.uscourts.cand.271648/gov.uscourts.cand.271648.85.0.pdf) |
+
+| **Bezeichnung** | US District Court, W.D. Texas, 2014-03-11, Case No. A-14-CA-12-SS |
+|:---:|:---:|
+| **Parteien** | Versata v. Ameriprise |
+| **Thema** | ([Kommentar bei ifrOSS](http://www.ifross.org/node/1542)) |
+| **Links** | [🇬🇧](https://ia902501.us.archive.org/22/items/gov.uscourts.txwd.680419/gov.uscourts.txwd.680419.docket.html) |
+
+| **Bezeichnung** | N.D.Tex. 2009-01-16, Case No. 3:2007cv01767 |
+|:---:|:---:|
+| **Parteien** | Chang et al v. Virgin Mobile USA LLC et al |
+| **Thema** | - |
+| **Links** | [🇬🇧](http://dockets.justia.com/docket/texas/txndce/3:2007cv01767/171558/) |
+
+| **Bezeichnung** | US Court of Appeals for the Federal Circuit, 2008-08-13, Case No. 2008-1001. |
+|:---:|:---:|
+| **Parteien** | Jacobsen v. Katzer |
+| **Thema** | - |
+| **Links** | [🇬🇧](http://www.cafc.uscourts.gov/opinions/08-1001.pdf) |
+
+| **Bezeichnung** | US Court of Appeals for the Seventh Circuit, 2006-11-09, Case No. 06-2454. |
+|:---:|:---:|
+| **Parteien** | Wallace v. IBM |
+| **Thema** | - |
+| **Links** | [🇬🇧](http://www.internetlibrary.com/pdf/Wallace-IBM-7th-Cir.pdf) |
+
+| **Bezeichnung** | US District Court Southern District of Indiana, vom 2005-11-28, Case No. 05-618. |
+|:---:|:---:|
+| **Parteien** | Wallace v. FSF |
+| **Thema** | - |
+| **Links** | [🇬🇧](http://www.internetcases.com/library/cases/2005-11-28_wallace_v_fsf.pdf) |
+
 # Frankreich
 
 # China
