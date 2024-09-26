@@ -4,7 +4,6 @@ title: "Committer Agreements - ifrOSS.org"
 ---
 
 <h1 style="text-align: center;">️Commiter Agreements</h1>
-<h1>Inhalt</h1>
 
 * TOC
 {:toc}
