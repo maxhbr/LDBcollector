@@ -341,4 +341,4 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 |:---:|:---:|
 | **Parteien** | Allard et al v. Festival de Theatre de Spa |
 | **Thema** | - |
-| **Links** | [https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf](https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf) |
+| **Links** | [🇫🇷](https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf) |
