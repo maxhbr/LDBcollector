@@ -1,9 +1,3 @@
-<style>
-table {
-    width: 90%;
-}
-</style>
-
 ---
 layout: default
 title: "Urteile - ifrOSS.org"
