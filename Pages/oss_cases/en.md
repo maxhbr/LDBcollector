@@ -7,10 +7,11 @@ title: "Cases - ifrOSS.org"
 
 New cases can be added using the following template:
 
-| **Bezeichnung** | - |
+| **Name** | - |
 |:---:|:---:|
-| **Parteien** | - |
-| **Thema** | - |
+| **Parties** | - |
+| **Subject** | - |
+| **Licence** | - |
 | **Links** | [🇬🇧]() |
 
 Emojis for the links can be copied from https://emojipedia.org
