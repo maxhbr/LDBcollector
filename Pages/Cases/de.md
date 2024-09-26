@@ -3,7 +3,7 @@ layout: default
 title: "Urteile - ifrOSS.org"
 ---
 
-# Urteilssammlung
+<h1 style="text-align: center;">ifrOSS Urteilssammlung</h1>
 
 * TOC
 {:toc}
