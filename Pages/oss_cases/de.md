@@ -17,7 +17,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 --->
 
-<h1 style="text-align: center;">⚖️ ifrOSS Urteilssammlung ⚖️</h1>
+<h1 style="text-align: center;">ifrOSS Urteilssammlung zu OSS Lizenzen</h1>
 <h1>Inhalt</h1>
 
 * TOC

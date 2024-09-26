@@ -17,7 +17,7 @@ Emojis for the links can be copied from https://emojipedia.org
 
 --->
 
-<h1 style="text-align: center;">⚖️ ifrOSS Case Collection ⚖️</h1>
+<h1 style="text-align: center;">ifrOSS OSS-Licenses Case Collection</h1>
 <h1>Contents</h1>
 
 * TOC
