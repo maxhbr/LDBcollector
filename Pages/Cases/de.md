@@ -63,7 +63,7 @@ title: "Urteile - ifrOSS.org"
 | **Bezeichnung** | LG Halle, Urteil v. 27.07.2015, Az. 4 O 133/15 |
 |:---:|:---:|
 | **Parteien** | - |
-| **Thema** | Wiederholungsgefahr bei Verletzung der GPL-3.0 (Ziffer 8 Abs. 3 GPL-3.0) |
+| **Thema** | Wiederholungsgefahr bei Verletzung der GPL-3.0 (Ziffer 8 Abs. 3 GPL-3.0) (Artikel bei [ifrOSS](http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr)) |
 | **Links** | [🇩🇪](https://www.landesrecht.sachsen-anhalt.de/bsst/document/JURE150012453) |
 
 | **Bezeichnung** | LG Hannover, Urteil v. 21.07.2015, Az. 18 O 159/15 |
@@ -114,7 +114,55 @@ title: "Urteile - ifrOSS.org"
 | **Thema** | - |
 | **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/LGMuenchenUrteil.pdf) |
 
+| **Bezeichnung** | LG Frankfurt a.M., Urteil v. 06.09.2006, Az. 2-6 O 224/06 |
+|:---:|:---:|
+| **Parteien** | Welte v. D-Link Deutschland GmbH |
+| **Thema** | - |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/urteil_lg_frankfurt_gpl.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/judgment_dc_frankfurt_gpl.pdf) |
+
+| **Bezeichnung** | LG Berlin, Beschluss v. 21.02.2006, Az. 16 O 134/06 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | WLAN-Router |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/LG_Berlin_GPL-Entscheidung_21_2_06.pdf) |
+
+| **Bezeichnung** | LG München I, Urteil v. 19.05.2004, Az. 21 O 6123/04 |
+|:---:|:---:|
+| **Parteien** | Welte v. Sitecom Deutschland GmbH |
+| **Thema** | - |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/urteil_lg_muenchen_gpl.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/judgment_dc_munich_gpl.pdf) |
+
 ### Sonstige Rechte
+
+| **Bezeichnung** | OLG Köln, Urteil v. 30.9.2016, Az. 6 U 18/16 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Open LIMS (Artikel bei [ifrOSS](https://www.ifross.org/artikel/olg-k-ln-rechtserhaltenden-markenbenutzung-bei-open-source-software)) |
+| **Links** | [🇩🇪](http://www.justiz.nrw.de/nrwe/olgs/koeln/j2016/6_U_18_16_Urteil_20160930.html) |
+
+| **Bezeichnung** | OLG Düsseldorf, Urteil v. 24.04.2012, Az. 1-20 U 176/11 |
+|:---:|:---:|
+| **Parteien** | satco europe GmbH v. Dream Property GmbH |
+| **Thema** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/OLG_Duesseldorf_1-20_U_176-11.pdf) |
+
+| **Bezeichnung** | OLG Düsseldorf, Urteil v. 28.09.2010, Az. I-20 U 41/09 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | xt: commerce |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/OLGDuesseldorfxtcommerce.pdf) |
+
+| **Bezeichnung** | BPatG, Beschluss v. 17.12.2009, Az. 25 W (pat) 65/08 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | „Linuxwerkstatt“ (§ 8 Abs. 2 Nr. 1 MarkenG) |
+| **Links** | [🇩🇪](http://juris.bundespatentgericht.de/cgi-bin/rechtsprechung/document.py?Gericht=bpatg&Art=en&sid=37cfeadf3527936f099645d4c681e018&nr=29946&pos=10&anz=19&Blank=1.pdf) |
+
+| **Bezeichnung** | BPatG, Beschluss v. 30.09.2008, Az. 33 W (pat) 1/07 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | "Open Source Broker" |
+| **Links** | [🇩🇪](http://juris.bundespatentgericht.de/cgi-bin/rechtsprechung/document.py?Gericht=bpatg&Art=en&sid=71106ec331426a33cc72cf400983e7ba&nr=10116&pos=0&anz=1&Blank=1.pdf) |
 
 ## USA
 
