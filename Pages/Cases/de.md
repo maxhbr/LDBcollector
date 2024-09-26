@@ -3,14 +3,14 @@ layout: default
 title: "Urteile - ifrOSS.org"
 ---
 
+# Urteilssammlung
+
 * TOC
 {:toc}
 
-# Urteilssammlung
+# Deutschland
 
-## Deutschland
-
-### Urheberrecht und Wettbewerbsrecht
+## Urheberrecht und Wettbewerbsrecht
 
 | **Bezeichnung** | LG Mannheim, Vergleich v. 27.12.2021, Az. 7 O 2/21 |
 |:---:|:---:|
@@ -63,7 +63,7 @@ title: "Urteile - ifrOSS.org"
 | **Bezeichnung** | LG Halle, Urteil v. 27.07.2015, Az. 4 O 133/15 |
 |:---:|:---:|
 | **Parteien** | - |
-| **Thema** | Wiederholungsgefahr bei Verletzung der GPL-3.0 (Ziffer 8 Abs. 3 GPL-3.0) (Artikel bei [ifrOSS](http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr)) |
+| **Thema** | Wiederholungsgefahr bei Verletzung der GPL-3.0 (Ziffer 8 Abs. 3 GPL-3.0) ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr)) |
 | **Links** | [🇩🇪](https://www.landesrecht.sachsen-anhalt.de/bsst/document/JURE150012453) |
 
 | **Bezeichnung** | LG Hannover, Urteil v. 21.07.2015, Az. 18 O 159/15 |
@@ -132,12 +132,12 @@ title: "Urteile - ifrOSS.org"
 | **Thema** | - |
 | **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/urteil_lg_muenchen_gpl.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/judgment_dc_munich_gpl.pdf) |
 
-### Sonstige Rechte
+## Sonstige Rechte
 
 | **Bezeichnung** | OLG Köln, Urteil v. 30.9.2016, Az. 6 U 18/16 |
 |:---:|:---:|
 | **Parteien** | - |
-| **Thema** | Open LIMS (Artikel bei [ifrOSS](https://www.ifross.org/artikel/olg-k-ln-rechtserhaltenden-markenbenutzung-bei-open-source-software)) |
+| **Thema** | Open LIMS ([Kommentar bei ifrOSS](https://www.ifross.org/artikel/olg-k-ln-rechtserhaltenden-markenbenutzung-bei-open-source-software)) |
 | **Links** | [🇩🇪](http://www.justiz.nrw.de/nrwe/olgs/koeln/j2016/6_U_18_16_Urteil_20160930.html) |
 
 | **Bezeichnung** | OLG Düsseldorf, Urteil v. 24.04.2012, Az. 1-20 U 176/11 |
@@ -164,13 +164,13 @@ title: "Urteile - ifrOSS.org"
 | **Thema** | "Open Source Broker" |
 | **Links** | [🇩🇪](http://juris.bundespatentgericht.de/cgi-bin/rechtsprechung/document.py?Gericht=bpatg&Art=en&sid=71106ec331426a33cc72cf400983e7ba&nr=10116&pos=0&anz=1&Blank=1.pdf) |
 
-## USA
+# USA
 
-## Frankreich
+# Frankreich
 
-## China
+# China
 
-## Spanien
+# Spanien
 
-## Andere Rechtsordnungen
+# Andere Rechtsordnungen
 
