@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Urteile - ifrOSS.org"
+title: "Urteile zu OSS Lizenzen - ifrOSS.org"
 ---
 
 <!---
@@ -12,7 +12,7 @@ Neue Urteile können mit der folgenden Template eingefügt werden:
 | **Parteien** | - |
 | **Thema** | - |
 | **Lizenz** | - |
-| **Links** | [🇬🇧]() |
+| **Links** | [🇩🇪]() |
 
 Emojis für die Links können von https://emojipedia.org kopiert werden
 
