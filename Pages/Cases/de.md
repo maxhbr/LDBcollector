@@ -3,6 +3,20 @@ layout: default
 title: "Urteile - ifrOSS.org"
 ---
 
+<!---
+
+Neue Urteile können mit der folgenden Template eingefügt werden:
+
+| **Bezeichnung** | - |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | - |
+| **Links** | [🇬🇧]() |
+
+Emojis für die Links können von https://emojipedia.org kopiert werden
+
+--->
+
 <h1 style="text-align: center;">⚖️ ifrOSS Urteilssammlung ⚖️</h1>
 <h1>Inhalt</h1>
 
@@ -229,9 +243,102 @@ title: "Urteile - ifrOSS.org"
 
 # Frankreich
 
+| **Bezeichnung** | Cour d’appel de Paris, 2024-02-14, Case No. 2/18071 |
+|:---:|:---:|
+| **Parteien** | Entr’ouvert v. Orange |
+| **Thema** | - |
+| **Links** | [🇫🇷](https://www.courdecassation.fr/decision/65cdbcdf2425a70008258563) [🇹🇼](https://atomgit.com/translation/Contransus/blob/master/%E5%8F%B8%E6%B3%95%E6%A1%88%E4%BE%8B%E7%BF%BB%E8%AF%91/%E6%B3%95%E8%AF%91%E4%B8%AD-Entr%20ouvert_Orange%E5%8F%8AOrange%E5%95%86%E4%B8%9AAPP%20%204%E4%BB%BD%E5%88%A4%E5%86%B3.pdf) |
+
+| **Bezeichnung** | Cour de Cassation, 2022-10-05, Case No. 21/15.386 |
+|:---:|:---:|
+| **Parteien** | Entr’ouvert v. Orange |
+| **Thema** | - |
+| **Links** | [🇬🇧](https://www.courdecassation.fr/toutes-les-actualites/2022/10/05/clarification-admissibility-software-copyright-infringement-action](https://www.courdecassation.fr/toutes-les-actualites/2022/10/05/clarification-admissibility-software-copyright-infringement-action)) |
+
+| **Bezeichnung** | TGI de Paris, 2019-06-21 |
+|:---:|:---:|
+| **Parteien** | Entr’ouvert v. Orange |
+| **Thema** | - |
+| **Links** | [🇫🇷](https://www.legalis.net/jurisprudences/tgi-de-paris-3eme-ch-3eme-section-jugement-du-21-juin-2019/) |
+
+| **Bezeichnung** | Cour d’appel de Paris, 2021-03-19 |
+|:---:|:---:|
+| **Parteien** | Entr’ouvert v. Orange |
+| **Thema** | - |
+| **Links** | [🇫🇷](https://www.legalis.net/jurisprudences/cour-dappel-de-paris-pole-5-ch-2-arret-du-19-mars-2021/) |
+
+| **Bezeichnung** | Cour d'Appel de Paris, 2009-09-16, Case No. 04/24298 |
+|:---:|:---:|
+| **Parteien** | AFPA v. EDU 4 |
+| **Thema** | - |
+| **Links** | [🇫🇷](http://fsffrance.org/news/arret-ca-paris-16.09.2009.pdf) |
+
+| **Bezeichnung** | TGI de Paris, 2007-03-28, Case No. 05/16916 |
+|:---:|:---:|
+| **Parteien** | S.A. Educaffix v. CNRS |
+| **Thema** | - |
+| **Links** | [🇫🇷](https://www.doctrine.fr/d/TGI/Paris/2007/KFV64D3F65FB87F53D68B40) |
+
 # China
+
+| **Bezeichnung** | Supreme People's Court of the People's Republic of China, 2023-10-312, Case No. (2021) No. 51 |
+|:---:|:---:|
+| **Parteien** | Wangjing vs. Yibang, et al |
+| **Thema** | - |
+| **Links** | [🇬🇧](https://www.ifross.org/sites/default/files/CN_to_EN-Wangjing_vs_Yibang_Judgment%20_2023.pdf) |
+
+| **Bezeichnung** | Wenshu Court, 2021-03-30, Case No. Yue 03 Min Chu No. 3928 |
+|:---:|:---:|
+| **Parteien** | Jining Luohe Network Technology Co., Ltd. v. Fujian Fengling Chuangjing Technology Co., Ltd et al |
+| **Thema** | - |
+| **Links** | [🇬🇧](https://www-oschina-net.translate.goog/news/159435?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=nui) |
 
 # Spanien
 
-# Andere Rechtsordnungen
+| **Bezeichnung** | Audiencia Provincial de Madrid, Sección 28, 2007-07-05, Case No. 150/2007 |
+|:---:|:---:|
+| **Parteien** | Sociedad General de Autores y Editores (SGAE) v. Buena Vistilla club social |
+| **Thema** | - |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/node/414) |
 
+| **Bezeichnung** | Audiencia Provincial de Alicante, Sección 8, 2007-04-02, Case No. 111/2007 |
+|:---:|:---:|
+| **Parteien** | Sociedad General de Autores y Editores (SGAE) v. Bowling Sur S.A. |
+| **Thema** | - |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/files/2007-03-21_sentencia_ap-alicante.pdf) |
+
+| **Bezeichnung** | Juzgado de Primera Instancia nº 6 de Badajoz, 2006-02-17, Case No. 15/2006 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Disco Bar Metropol |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/node/363) [🇬🇧](http://mirrors.creativecommons.org/judgements/SGAE-Fernandez-English.pdf) |
+
+| **Bezeichnung** | Juzgado de lo Mercantil nº 5 de Madrid, 2006-02-02, Case No. 12/2006 |
+|:---:|:---:|
+| **Parteien** | Sociedad General de Autores y Editores (SGAE) v. Asociacion cultural ladinamo |
+| **Thema** | - |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/node/359) |
+
+# Israel
+
+| **Bezeichnung** | District Court of Jerusalem, 2011-01-06, Case No. CA 3560/09, CA 3561/09 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | - |
+| **Links** | [🇬🇧](http://www.law.co.il/media/computer-law/reuveni_rivlin.pdf) |
+
+# Niederlanden
+
+| **Bezeichnung** | Rechtbank Amsterdam, 2006-03-09, Case No. 334492 / KG 06-176 SR |
+|:---:|:---:|
+| **Parteien** | Curry v. Audax |
+| **Thema** | - |
+| **Links** | [🇳🇱](http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204) [🇬🇧](http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf) |
+
+# Belgien
+
+| **Bezeichnung** | Tribunal de première instance de Nivelles, 2010-10-26, Case No. 09-1684-A |
+|:---:|:---:|
+| **Parteien** | Allard et al v. Festival de Theatre de Spa |
+| **Thema** | - |
+| **Links** | [https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf](https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf) |
