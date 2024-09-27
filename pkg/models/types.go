@@ -19,50 +19,50 @@ import (
 // It provides structured storage for license-related information.
 type LicenseDB struct {
 	Id              int64                                        `json:"-" gorm:"primary_key;column:rf_id" example:"123"`
-	Shortname       *string                                      `json:"rf_shortname" gorm:"unique;not null;column:rf_shortname" validate:"required" example:"MIT"`
-	Fullname        *string                                      `json:"rf_fullname" gorm:"column:rf_fullname;not null" validate:"required" example:"MIT License"`
-	Text            *string                                      `json:"rf_text" gorm:"column:rf_text;not null" validate:"required" example:"MIT License Text here"`
-	Url             *string                                      `json:"rf_url" gorm:"column:rf_url;default:'';not null" example:"https://opensource.org/licenses/MIT"`
-	AddDate         time.Time                                    `json:"rf_add_date" gorm:"default:CURRENT_TIMESTAMP;column:rf_add_date" example:"2023-12-01T18:10:25.00+05:30"`
-	Copyleft        *bool                                        `json:"rf_copyleft" gorm:"column:rf_copyleft;not null;default:false"`
-	FSFfree         *bool                                        `json:"rf_FSFfree" gorm:"column:rf_FSFfree;not null;default:false"`
-	OSIapproved     *bool                                        `json:"rf_OSIapproved" gorm:"column:rf_OSIapproved;not null;default:false"`
-	GPLv2compatible *bool                                        `json:"rf_GPLv2compatible" gorm:"column:rf_GPLv2compatible;not null;default:false"`
-	GPLv3compatible *bool                                        `json:"rf_GPLv3compatible" gorm:"column:rf_GPLv3compatible;not null;default:false"`
-	Notes           *string                                      `json:"rf_notes" gorm:"column:rf_notes;not null;default:''" example:"This license has been superseded."`
-	Fedora          *string                                      `json:"rf_Fedora" gorm:"column:rf_Fedora;not null;default:''"`
-	TextUpdatable   *bool                                        `json:"rf_text_updatable" gorm:"column:rf_text_updatable;not null;default:false"`
-	DetectorType    *int64                                       `json:"rf_detector_type" gorm:"column:rf_detector_type;not null;default:1" validate:"omitempty,min=0,max=2" example:"1"`
-	Active          *bool                                        `json:"rf_active" gorm:"column:rf_active;not null;default:true"`
-	Source          *string                                      `json:"rf_source" gorm:"column:rf_source;not null;default:''"`
-	SpdxId          *string                                      `json:"rf_spdx_id" gorm:"column:rf_spdx_id;not null" validate:"required" example:"MIT"`
-	Risk            *int64                                       `json:"rf_risk" gorm:"column:rf_risk;not null;default:0" validate:"omitempty,min=0,max=5"`
-	Flag            *int64                                       `json:"rf_flag" gorm:"default:1;column:rf_flag;not null;default:0" validate:"omitempty,min=0,max=2" example:"1"`
+	Shortname       *string                                      `json:"shortname" gorm:"unique;not null;column:rf_shortname" validate:"required" example:"MIT"`
+	Fullname        *string                                      `json:"fullname" gorm:"column:rf_fullname;not null" validate:"required" example:"MIT License"`
+	Text            *string                                      `json:"text" gorm:"column:rf_text;not null" validate:"required" example:"MIT License Text here"`
+	Url             *string                                      `json:"url" gorm:"column:rf_url;default:'';not null" example:"https://opensource.org/licenses/MIT"`
+	AddDate         time.Time                                    `json:"add_date" gorm:"default:CURRENT_TIMESTAMP;column:rf_add_date" example:"2023-12-01T18:10:25.00+05:30"`
+	Copyleft        *bool                                        `json:"copyleft" gorm:"column:rf_copyleft;not null;default:false"`
+	FSFfree         *bool                                        `json:"FSFfree" gorm:"column:rf_FSFfree;not null;default:false"`
+	OSIapproved     *bool                                        `json:"OSIapproved" gorm:"column:rf_OSIapproved;not null;default:false"`
+	GPLv2compatible *bool                                        `json:"GPLv2compatible" gorm:"column:rf_GPLv2compatible;not null;default:false"`
+	GPLv3compatible *bool                                        `json:"GPLv3compatible" gorm:"column:rf_GPLv3compatible;not null;default:false"`
+	Notes           *string                                      `json:"notes" gorm:"column:rf_notes;not null;default:''" example:"This license has been superseded."`
+	Fedora          *string                                      `json:"Fedora" gorm:"column:rf_Fedora;not null;default:''"`
+	TextUpdatable   *bool                                        `json:"text_updatable" gorm:"column:rf_text_updatable;not null;default:false"`
+	DetectorType    *int64                                       `json:"detector_type" gorm:"column:rf_detector_type;not null;default:1" validate:"omitempty,min=0,max=2" example:"1"`
+	Active          *bool                                        `json:"active" gorm:"column:rf_active;not null;default:true"`
+	Source          *string                                      `json:"source" gorm:"column:rf_source;not null;default:''"`
+	SpdxId          *string                                      `json:"spdx_id" gorm:"column:rf_spdx_id;not null" validate:"required" example:"MIT"`
+	Risk            *int64                                       `json:"risk" gorm:"column:rf_risk;not null;default:0" validate:"omitempty,min=0,max=5"`
+	Flag            *int64                                       `json:"flag" gorm:"default:1;column:rf_flag;not null;default:0" validate:"omitempty,min=0,max=2" example:"1"`
 	Marydone        *bool                                        `json:"marydone" gorm:"column:marydone;not null;default:false"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
 }
 
 func (l *LicenseDB) BeforeSave(tx *gorm.DB) (err error) {
 	if l.Shortname != nil && *l.Shortname == "" {
-		return errors.New("rf_shortname cannot be an empty string")
+		return errors.New("shortname cannot be an empty string")
 	}
 	if l.Fullname != nil && *l.Fullname == "" {
-		return errors.New("rf_fullname cannot be an empty string")
+		return errors.New("fullname cannot be an empty string")
 	}
 	if l.Text != nil && *l.Text == "" {
-		return errors.New("rf_text cannot be an empty string")
+		return errors.New("text cannot be an empty string")
 	}
 	if l.SpdxId != nil && *l.SpdxId == "" {
-		return errors.New("rf_spdx_id cannot be an empty string")
+		return errors.New("spdx_id cannot be an empty string")
 	}
 	if l.Risk != nil && (*l.Risk < 0 && *l.Risk > 5) {
-		return errors.New("rf_risk can have values from 0 to 5 only")
+		return errors.New("risk can have values from 0 to 5 only")
 	}
 	if l.Flag != nil && (*l.Flag < 0 || *l.Flag > 2) {
-		return errors.New("rf_flag can have values from 0 to 2 only")
+		return errors.New("flag can have values from 0 to 2 only")
 	}
 	if l.DetectorType != nil && (*l.DetectorType < 0 || *l.DetectorType > 2) {
-		return errors.New("rf_detector_type can have values from 0 to 2 only")
+		return errors.New("detector_type can have values from 0 to 2 only")
 	}
 	return
 }
@@ -71,24 +71,24 @@ func (l *LicenseDB) BeforeSave(tx *gorm.DB) (err error) {
 type LicenseUpdateJSONSchema struct {
 	Id              int64                                        `json:"-" example:"123"`
 	Shortname       *string                                      `json:"-" example:"MIT"`
-	Fullname        *string                                      `json:"rf_fullname" example:"MIT License"`
-	Text            *string                                      `json:"rf_text" example:"MIT License Text here"`
-	Url             *string                                      `json:"rf_url" example:"https://opensource.org/licenses/MIT"`
+	Fullname        *string                                      `json:"fullname" example:"MIT License"`
+	Text            *string                                      `json:"text" example:"MIT License Text here"`
+	Url             *string                                      `json:"url" example:"https://opensource.org/licenses/MIT"`
 	AddDate         time.Time                                    `json:"-" example:"2023-12-01T18:10:25.00+05:30"`
-	Copyleft        *bool                                        `json:"rf_copyleft" example:"false"`
-	FSFfree         *bool                                        `json:"rf_FSFfree" example:"false"`
-	OSIapproved     *bool                                        `json:"rf_OSIapproved" example:"false"`
-	GPLv2compatible *bool                                        `json:"rf_GPLv2compatible" example:"false"`
-	GPLv3compatible *bool                                        `json:"rf_GPLv3compatible" example:"false"`
-	Notes           *string                                      `json:"rf_notes" example:"This license has been superseded."`
-	Fedora          *string                                      `json:"rf_Fedora" example:"Fedora"`
-	TextUpdatable   *bool                                        `json:"rf_text_updatable" example:"false"`
-	DetectorType    *int64                                       `json:"rf_detector_type" validate:"omitempty,min=0,max=2" example:"1"`
-	Active          *bool                                        `json:"rf_active" example:"true"`
-	Source          *string                                      `json:"rf_source" example:"Source"`
-	SpdxId          *string                                      `json:"rf_spdx_id" example:"MIT"`
-	Risk            *int64                                       `json:"rf_risk" validate:"omitempty,min=0,max=5" example:"1"`
-	Flag            *int64                                       `json:"rf_flag" validate:"omitempty,min=0,max=2" example:"1"`
+	Copyleft        *bool                                        `json:"copyleft" example:"false"`
+	FSFfree         *bool                                        `json:"FSFfree" example:"false"`
+	OSIapproved     *bool                                        `json:"OSIapproved" example:"false"`
+	GPLv2compatible *bool                                        `json:"GPLv2compatible" example:"false"`
+	GPLv3compatible *bool                                        `json:"GPLv3compatible" example:"false"`
+	Notes           *string                                      `json:"notes" example:"This license has been superseded."`
+	Fedora          *string                                      `json:"Fedora" example:"Fedora"`
+	TextUpdatable   *bool                                        `json:"text_updatable" example:"false"`
+	DetectorType    *int64                                       `json:"detector_type" validate:"omitempty,min=0,max=2" example:"1"`
+	Active          *bool                                        `json:"active" example:"true"`
+	Source          *string                                      `json:"source" example:"Source"`
+	SpdxId          *string                                      `json:"spdx_id" example:"MIT"`
+	Risk            *int64                                       `json:"risk" validate:"omitempty,min=0,max=5" example:"1"`
+	Flag            *int64                                       `json:"flag" validate:"omitempty,min=0,max=2" example:"1"`
 	Marydone        *bool                                        `json:"marydone" example:"false"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
 }
@@ -229,7 +229,7 @@ type UserResponse struct {
 
 // SearchLicense struct represents the input needed to search in a license.
 type SearchLicense struct {
-	Field      string `json:"field" binding:"required" example:"rf_text"`
+	Field      string `json:"field" binding:"required" example:"text"`
 	SearchTerm string `json:"search_term" binding:"required" example:"MIT License"`
 	Search     string `json:"search" enums:"fuzzy,full_text_search"`
 }
@@ -250,7 +250,7 @@ type Audit struct {
 // ChangeLog struct represents a change entity with certain attributes and properties
 type ChangeLog struct {
 	Id           int64   `json:"id" gorm:"primary_key" example:"789"`
-	Field        string  `json:"field" example:"rf_text"`
+	Field        string  `json:"field" example:"text"`
 	UpdatedValue *string `json:"updated_value" example:"New license text"`
 	OldValue     *string `json:"old_value" example:"Old license text"`
 	AuditId      int64   `json:"audit_id" example:"456"`
