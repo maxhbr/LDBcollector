@@ -22,7 +22,6 @@ werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unter
 
 Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung unklar" gekennzeichnet.
 
-
 ### Lizenzen ohne Copyleft-Effekt ("Permissive Licenses")
 
 Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
@@ -33,7 +32,9 @@ der Lizenznehmer veränderte Versionen der Software unter
 beliebigen Lizenzbedingungen weiterverbreiten, also auch in
 proprietäre Software überführen.
 
-1. [4Suite License (v. 1.1)](https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc)
+1. | Name | [4Suite License (v. 1.1)](https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc) |
+|*---*|*---*|
+| SPDX | - |
 2. [Academic Free License (AFL) (v. 1.0)](https://web.archive.org/web/20020808082753/http://www.rosenlaw.com:80/afl.html)
 3. [Academic Free License (AFL) (v. 1.1)](https://web.archive.org/web/20030224125640/http://www.rosenlaw.com:80/afl.html)
 4. [Academic Free License (AFL) (v. 1.2)](https://web.archive.org/web/20030515043719/http://www.rosenlaw.com:80/afl1.2.html)
@@ -156,13 +157,11 @@ proprietäre Software überführen.
 122. [Zope Public License (v. 2.0)](http://old.zope.org/Resources/License/ZPL-2.0)
 123. [Zope Public License (v. 2.1)](https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/)
 
-
 ### Lizenzen mit strengem Copyleft-Effekt
 
 Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software
 abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten
 Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
-
 
 #### GPLartige Lizenzen
 
@@ -186,7 +185,6 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 17. [Open RTLinux Patent License](https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html)
 18. [RedHat eCos Public License (v. 2.0)](http://sources.redhat.com/ecos/license-overview.html)
 19. [Simple Public License (v. 2.0)](https://web.archive.org/web/20080906145432/http://www.law.washington.edu/Casrip/License/SimplePublicLicense.html)
-
 
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
 
@@ -337,7 +335,6 @@ Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfa
 19. [Sleepycat License](https://fedoraproject.org/wiki/Licensing/Sleepycat)
 20. [Sleepycat Software Product License](http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html)
 21. [Vim License](http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license)
-
 
 ### Lizenzen mit Sonderrechten
 
