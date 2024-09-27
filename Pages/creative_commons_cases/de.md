@@ -333,18 +333,18 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 # Niederlanden
 
-### Rechtbank Amsterdam, 2006-03-09, Case No. 334492 / KG 06-176 SR.
-
-Curry v. Audax
-
-Link: http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204
-
-English translation at http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf
+| **Bezeichnung** | Rechtbank Amsterdam, 2006-03-09, Case No. 334492 / KG 06-176 SR |
+|:---:|:---:|
+| **Parteien** | Curry v. Audax |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇳🇱](http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204) [🇬🇧](http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf) |
 
 # Belgien
 
-### Tribunal de Premiere Instance de Nivelles, 2010-10-26, Case No. 09-1684-A.
-
-Allard et al. (Lichôdmapwa ) v.  Festival de théâtre de Spa
-
-Link: https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf
+| **Bezeichnung** | Tribunal de Premiere Instance de Nivelles, 2010-10-26, Case No. 09-1684-A |
+|:---:|:---:|
+| **Parteien** | Allard et al. (Lichôdmapwa ) v.  Festival de théâtre de Spa |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇫🇷](https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf) |

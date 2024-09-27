@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Cases - ifrOSS.org"
+title: "OSS Cases - ifrOSS.org"
 ---
 
 <!---
