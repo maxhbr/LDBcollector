@@ -73,7 +73,7 @@ proprietäre Software überführen.
 | Eiffel Forum License (v. 1.0) | [🇬🇧](http://www.eiffel-nice.org/license/forum.txt) | - |
 | Eiffel Forum License (v. 2.0) | [🇬🇧](http://www.eiffel-nice.org/license/eiffel-forum-license-2.html) | - |
 | Entessa Public License (v. 1.0) | [🇬🇧](http://web.archive.org/web/20050419215723/www.openseal.org/epl/) | - |
-| EU DataGrid Software License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20021229214435/http://eu-datagrid.web.cern.ch:80/eu-datagrid/license.html | - |
+| EU DataGrid Software License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20021229214435/http://eu-datagrid.web.cern.ch:80/eu-datagrid/license.html) | - |
 | Fair License | [🇬🇧](https://web.archive.org/web/20040803105645/http://rhid.com/fair) | - |
 | Free Fuzzy Logic Library Open Source License | [🇬🇧](http://ffll.sourceforge.net/license.txt) | - |
 | FreeType Project License | [🇬🇧](http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT) | - |
@@ -187,7 +187,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 | GNU Emacs General Public License | [🇬🇧](http://www.free-soft.org/gpl_history/emacs_gpl.html) | - |
 | GNU General Public License (GPL) (v. 1.0) | [🇬🇧](http://www.gnu.org/copyleft/copying-1.0.html) | - |
 | GNU General Public License (GPL) (v. 2.0) | [🇬🇧](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) | - |
-| GNU General Public License (GPL) (v. 3.0) | [🇬🇧](http://www.fsf.org/licensing/licenses/gpl.html) [🇩🇪](http://www.gnu.de/gpl-ger.html) | - |
+| GNU General Public License (GPL) (v. 3.0) | [🇬🇧](http://www.fsf.org/licensing/licenses/gpl.html) [🇩🇪](http://www.gnu.de/gpl-ger.html) | GPL-3.0-or-later |
 | Honest Public License (HPL) (v 1.0) | [🇬🇧](https://web.archive.org/web/20080215154706/http://www.projectpier.org/manual/tour/licence) | - |
 | Honest Public License (HPL) (v 1.1) | [🇬🇧](https://web.archive.org/web/20150815003528/http://gnugeneration.com/licenses/HPLv1.1.txt) | - |
 | Nethack General Public License | [🇬🇧](http://www.nethack.org/common/license.html) | - |

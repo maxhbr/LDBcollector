@@ -14,7 +14,7 @@ Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und 
 * [🚧 Open Hardware Lizenzen]()
 * [🚧 Sonstige Freie Lizenzen]()
 * [🚧 Ähnliche Lizenzen, die nicht den Anforderungen der Open Source Definition genügen]()
-* [🚧 Ethical Licenses]()
+* [🚧 Ethical Lizenzen]()
 * [🚧 Public Domain Erklärungen]()
 * [🚧 Open AI Lizenzen]()
  
