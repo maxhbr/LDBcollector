@@ -10,7 +10,7 @@ The ifrOSS License Center collects licenses for free content and assigns them to
 
 * [Free Software und Open Source Licences](/ifrOSS/wip.html)
 * [Open Content Licences](/ifrOSS/wip.html)
-* [Open Data Licences(/ifrOSS/wip.html)
+* [Open Data Licences](/ifrOSS/wip.html)
 * [Open Hardware Licence](/ifrOSS/wip.html)
 * [Other Free Licenses](/ifrOSS/wip.html)
 * [Similar Licences, that do not meet the requirements of the OSI Definition](/ifrOSS/wip.html)
