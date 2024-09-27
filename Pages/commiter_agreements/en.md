@@ -3,7 +3,7 @@ layout: default
 title: "Committer Agreements - ifrOSS.org"
 ---
 
-<h1 style="text-align: center;">️Commiter Agreements</h1>
+<h1 style="text-align: center;">Commiter Agreements</h1>
 
 The following section lists agreements that govern the circumstances
 of a contribution. They do not contain a license of their own, but
