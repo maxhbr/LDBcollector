@@ -247,7 +247,7 @@ func InsertOrUpdateLicenseOnImport(tx *gorm.DB, license *models.LicenseDB, exter
 		}
 
 		if *newLicense.Flag == 2 {
-			message = "all fields except rf_text were updated. rf_text was updated manually and cannot be overwritten in an import."
+			message = "all fields except text were updated. text was updated manually and cannot be overwritten in an import."
 			importStatus = IMPORT_LICENSE_UPDATED_EXCEPT_TEXT
 			// error is not returned here as it will rollback the transaction
 		} else {

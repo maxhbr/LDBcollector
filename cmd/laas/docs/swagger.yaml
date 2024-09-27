@@ -60,7 +60,7 @@ definitions:
         example: 456
         type: integer
       field:
-        example: rf_text
+        example: text
         type: string
       id:
         example: 789
@@ -106,68 +106,68 @@ definitions:
     type: object
   models.LicenseDB:
     properties:
-      external_ref:
-        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
-      marydone:
+      FSFfree:
         type: boolean
-      rf_FSFfree:
-        type: boolean
-      rf_Fedora:
+      Fedora:
         type: string
-      rf_GPLv2compatible:
+      GPLv2compatible:
         type: boolean
-      rf_GPLv3compatible:
+      GPLv3compatible:
         type: boolean
-      rf_OSIapproved:
+      OSIapproved:
         type: boolean
-      rf_active:
+      active:
         type: boolean
-      rf_add_date:
+      add_date:
         example: "2023-12-01T18:10:25.00+05:30"
         type: string
-      rf_copyleft:
+      copyleft:
         type: boolean
-      rf_detector_type:
+      detector_type:
         example: 1
         maximum: 2
         minimum: 0
         type: integer
-      rf_flag:
+      external_ref:
+        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
+      flag:
         example: 1
         maximum: 2
         minimum: 0
         type: integer
-      rf_fullname:
+      fullname:
         example: MIT License
         type: string
-      rf_notes:
+      marydone:
+        type: boolean
+      notes:
         example: This license has been superseded.
         type: string
-      rf_risk:
+      risk:
         maximum: 5
         minimum: 0
         type: integer
-      rf_shortname:
+      shortname:
         example: MIT
         type: string
-      rf_source:
+      source:
         type: string
-      rf_spdx_id:
+      spdx_id:
         example: MIT
         type: string
-      rf_text:
+      text:
         example: MIT License Text here
         type: string
-      rf_text_updatable:
+      text_updatable:
         type: boolean
-      rf_url:
+      url:
         example: https://opensource.org/licenses/MIT
         type: string
     required:
-    - rf_fullname
-    - rf_shortname
-    - rf_spdx_id
-    - rf_text
+    - fullname
+    - shortname
+    - spdx_id
+    - text
     type: object
   models.LicenseError:
     properties:
@@ -257,66 +257,66 @@ definitions:
     type: object
   models.LicenseUpdateJSONSchema:
     properties:
+      FSFfree:
+        example: false
+        type: boolean
+      Fedora:
+        example: Fedora
+        type: string
+      GPLv2compatible:
+        example: false
+        type: boolean
+      GPLv3compatible:
+        example: false
+        type: boolean
+      OSIapproved:
+        example: false
+        type: boolean
+      active:
+        example: true
+        type: boolean
+      copyleft:
+        example: false
+        type: boolean
+      detector_type:
+        example: 1
+        maximum: 2
+        minimum: 0
+        type: integer
       external_ref:
         $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
+      flag:
+        example: 1
+        maximum: 2
+        minimum: 0
+        type: integer
+      fullname:
+        example: MIT License
+        type: string
       marydone:
         example: false
         type: boolean
-      rf_FSFfree:
-        example: false
-        type: boolean
-      rf_Fedora:
-        example: Fedora
-        type: string
-      rf_GPLv2compatible:
-        example: false
-        type: boolean
-      rf_GPLv3compatible:
-        example: false
-        type: boolean
-      rf_OSIapproved:
-        example: false
-        type: boolean
-      rf_active:
-        example: true
-        type: boolean
-      rf_copyleft:
-        example: false
-        type: boolean
-      rf_detector_type:
-        example: 1
-        maximum: 2
-        minimum: 0
-        type: integer
-      rf_flag:
-        example: 1
-        maximum: 2
-        minimum: 0
-        type: integer
-      rf_fullname:
-        example: MIT License
-        type: string
-      rf_notes:
+      notes:
         example: This license has been superseded.
         type: string
-      rf_risk:
+      risk:
         example: 1
         maximum: 5
         minimum: 0
         type: integer
-      rf_source:
+      source:
         example: Source
         type: string
-      rf_spdx_id:
+      spdx_id:
         example: MIT
         type: string
-      rf_text:
+      text:
         example: MIT License Text here
         type: string
-      rf_text_updatable:
+      text_updatable:
         example: false
         type: boolean
-      rf_url:
+      url:
         example: https://opensource.org/licenses/MIT
         type: string
     type: object
@@ -594,7 +594,7 @@ definitions:
   models.SearchLicense:
     properties:
       field:
-        example: rf_text
+        example: text
         type: string
       search:
         enum:
@@ -911,12 +911,12 @@ paths:
         in: query
         name: externalRef
         type: string
-      - default: rf_shortname
+      - default: shortname
         description: Sort by field
         enum:
-        - rf_spdx_id
-        - rf_shortname
-        - rf_fullname
+        - spdx_id
+        - shortname
+        - fullname
         in: query
         name: sort_by
         type: string
