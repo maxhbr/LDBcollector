@@ -79,7 +79,7 @@ proprietäre Software überführen.
 | FreeType Project License | [🇬🇧](http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT) | - |
 | FSF Unlimited License | [🇬🇧](https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License) | - |
 | Galen Open Source License (GOSL) | [🇬🇧](http://www.opengalen.org/gosl.html) | - |
-| GD License | [🇬🇧](https://libgd.github.io/manuals/2.3.0/files/license-txt.html | - |
+| GD License | [🇬🇧](https://libgd.github.io/manuals/2.3.0/files/license-txt.html) | - |
 | Globus Toolkit Public License | [🇬🇧](https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html) | - |
 | Globus Toolkit Public License (GTPL) (v. 2.0) | [🇬🇧](http://www.globus.org/toolkit/license.html) | - |
 | ICU License | [🇬🇧](https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html) | - |
