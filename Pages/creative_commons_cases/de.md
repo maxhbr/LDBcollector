@@ -61,55 +61,63 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Lizenz** | - |
 | **Links** | [🇩🇪](https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2020-N-25945?AspxAutoDetectCookieSupport=1) |
 
+| **Bezeichnung** | OLG Frankfurt, Urteil v. 22.10.2019, Az. 11 U 95/18 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Bestätigung Urteil des LG Frankfurt v. 16.08.2018, Az. 2-03 O 32/17 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.rv.hessenrecht.hessen.de/bshe/document/LARE200000593) |
+
+| **Bezeichnung** | AG Aschaffenburg, Urteil v. 24.10.2019, Az. 126 C 837/19 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Kein Schadensersatz bei Verletzung von CC-BY 2.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/AG_Aschaffenburg_Urteil_126C837-19.pdf) |
+
+| **Bezeichnung** | AG Hamburg, Urteil v. 24.05.2019, Az. 32 C 83/19 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Kein Schadensersatz bei Verletzung von CC-BY-SA 2.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/AG_Hamburg_Urteil_32C83-19.pdf) |
+
+| **Bezeichnung** | AG Würzburg, Urteil v. 18.12.2018, Az. 18 C 611/18 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf) |
+
+| **Bezeichnung** | AG Würzburg, Urteil v. 11.10.2018, Az. 17 C 1149/18 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Erfolgreiche Feststellungsklage bei Ansprüchen auf Schadensersatz wegen Verletzung von CC-BY-SA 3.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_17C1149-18.pdf) |
+
+| **Bezeichnung** | LG Köln, Urteil v. 08.11.2018, Az. 14 S 50/16 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Feststellungsklage abgewiesen wg Schadensersatz bei Verletzung von CC BY-SA 3.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/LG_Koeln_Urteil_14S50-16.pdf) |
+
+| **Bezeichnung** | LG Frankfurt, Urteil v. 16.08.2018, Az. 2-03 O 32/17 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Negative Fetstellungsklage bei Abmahnung durch Verein wg Verletzung von CC-BY-ND 2.0, keine Berechnung nach MFM |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.rv.hessenrecht.hessen.de/bshe/document/LARE190005779) |
+
+| **Bezeichnung** | OLG Köln, Urteil v. 13.04.2018, Az. 6 U 131/17 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Kein Schadensersatzanspruch bei Verletzung von CC-BY-SA 3.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://openjur.de/u/2153856.html) |
 
 
-### OLG Frankfurt, Urteil v. 22.10.2019, Az. 11 U 95/18
-
-Bestätigung Urteil des LG Frankfurt v. 16.08.2018, Az. 2-03 O 32/17
-
-Link: https://www.rv.hessenrecht.hessen.de/bshe/document/LARE200000593
-
-### AG Aschaffenburg, Urteil v. 24.10.2019, Az. 126 C 837/19
-
-Kein Schadensersatz bei Verletzung von CC-BY 2.0
-
-Link: www.ifross.org/Fremdartikel/AG_Aschaffenburg_Urteil_126C837-19.pdf
-
-### AG Hamburg, Urteil v. 24.05.2019, Az. 32 C 83/19
-
-Kein Schadensersatz bei Verletzung von CC-BY-SA 2.0
-
-Link: www.ifross.org/Fremdartikel/AG_Hamburg_Urteil_32C83-19.pdf
-
-### AG Würzburg, Urteil v. 18.12.2018, Az. 18 C 611/18
-
-Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen
-
-Link: www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf
-
-### AG Würzburg, Urteil v. 11.10.2018, Az. 17 C 1149/18
-
-Erfolgreiche Feststellungsklage bei Ansprüchen auf Schadensersatz wegen ..Verletzung von CC-BY-SA 3.0
-
-Link: www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_17C1149-18.pdf
-
-### LG Köln, Urteil v. 08.11.2018, Az. 14 S 50/16
-
-Feststellungsklage abgewiesen wg Schadensersatz bei Verletzung von CC BY-SA 3.0
-
-Link: http://www.ifross.org/Fremdartikel/LG_Koeln_Urteil_14S50-16.pdf
-
-### LG Frankfurt, Urteil v. 16.08.2018, Az. 2-03 O 32/17
-
-Negative Fetstellungsklage bei Abmahnung durch Verein wg Verletzung von CC-BY-ND 2.0, keine Berechnung nach MFM
-
-Link: https://www.rv.hessenrecht.hessen.de/bshe/document/LARE190005779
-
-### OLG Köln, Urteil v. 13.04.2018, Az. 6 U 131/17
-
-Kein Schadensersatzanspruch bei Verletzung von CC-BY-SA 3.0
-
-Link: https://openjur.de/u/2153856.html
 
 ### AG Kiel, Urteil v. 31.05.2018, Az. 111 C 7/17
 
