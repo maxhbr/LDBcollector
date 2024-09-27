@@ -117,121 +117,138 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Lizenz** | - |
 | **Links** | [🇩🇪](https://openjur.de/u/2153856.html) |
 
+| **Bezeichnung** | AG Kiel, Urteil v. 31.05.2018, Az. 111 C 7/17 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Keine wirksame Abmahnung bei Geltendmachung einer Verletzung einer Creative Commons Lizenz durch "Verband zum Schutz geistigen Eigentums im Internet" |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/AG_Kiel_Urteil_111C7-17.pdf) |
 
+| **Bezeichnung** | OLG Köln, Urteil v. 13.04.2018, Az. 6 U 131/17 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Kein Schadensersatzanspruch bei Verletzung von Creative Commons Lizenz |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.justiz.nrw.de/nrwe/olgs/koeln/j2018/6_U_131_17_Urteil_20180413.html) |
 
-### AG Kiel, Urteil v. 31.05.2018, Az. 111 C 7/17
+| **Bezeichnung** | AG Bochum, Urteil v. 11.04.2018, Az. 70 C 471/17 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Kommerzielle Nutzung von Werken unter CC-BY-NC 3.0 und Höhe Schadensersatz EUR 100,- |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/AG_Bochum_Urteil_70C471-17.pdf) |
 
-Keine wirksame Abmahnung bei Geltendmachung einer Verletzung einer Creative Commons Lizenz durch "Verband zum Schutz geistigen Eigentums im Internet" 
+| **Bezeichnung** | AG Würzburg, Urteil v. 23.01.2018, Az. 34 C 1105/17 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Erfolgreiche Feststellungsklage nach Schadensersatzforderung wegen Verletzung von CC-BY-SA 3.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_34C1105-17.pdf) |
 
-Link: www.ifross.org/Fremdartikel/AG_Kiel_Urteil_111C7-17.pdf
+| **Bezeichnung** | LG Köln, Urteil v. 08.06.2017, Az. 14 O 331/15 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Schadensersatz bei Verletzung von CC BY-SA 3.0, 50 EUR und weiterer 50 EUR mangels Urhebernennung bei Berufsfotograf |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.justiz.nrw.de/nrwe/lgs/koeln/lg_koeln/j2017/14_O_331_15_Schlussurteil_20170608.html) |
 
-### OLG Köln, Urteil v. 13.04.2018, Az. 6 U 131/17
+| **Bezeichnung** | LG Hamburg, Beschluss v. 18.11.2016, Az. 310 O 402/16 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Haftung für Link auf Creative Commons lizenziertes Werk |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://dejure.org/ext/f812818c4cb65cf07438646d5442c684) |
 
-Kein Schadensersatzanspruch bei Verletzung von Creative Commons Lizenz
+| **Bezeichnung** | AG Köln, Urteil v. 17.11.2016, Az. 148 C 307/16 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Feststellungsklage stattgegeben wg Schadensersatz bei Verletzung von CC BY-SA 3.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/AG_Koeln_Urteil_148C307-16.pdf) |
 
-Link: https://www.justiz.nrw.de/nrwe/olgs/koeln/j2018/6_U_131_17_Urteil_20180413.html
+| **Bezeichnung** | LG Köln, Urteil v. 01.09.2016, Az. 14 O 307/15 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Unterlassung und Schadensersatz bei Verletzung von CC BY-SA 3.0 |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.justiz.nrw.de/nrwe/lgs/koeln/lg_koeln/j2016/14_O_307_15_Urteil_20160901.html) |
 
-### AG Bochum, Urteil v. 11.04.2018, Az. 70 C 471/17
+| **Bezeichnung** | OLG Köln, Urteil v. 29.06.2016, Az. 6 W 72/16 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Kein Schadensersatzanspruch bei Verletzung von Creative Commons Lizenz |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://www.telemedicus.info/urteile/Urheberrecht/1715-OLG-Koeln-Az-6-W-7216-Objektiver-Wert-von-Lichtbildern-Creative-Commons-Lizenz-ist-Null.html) |
 
-Kommerzielle Nutzung von Werken unter CC-BY-NC 3.0 und Höhe Schadensersatz EUR 100,- 
+| **Bezeichnung** | LG München, Beschluss v. 17.12.2014, Az. 37 O 8778/14 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Mouseover nicht ausreichend für Namensnennung bei Nutzung unter CC-BY 3.0 Unported |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://tlmd.in/u/1603) |
 
-Link: www.ifross.org/Fremdartikel/AG_Bochum_Urteil_70C471-17.pdf
+| **Bezeichnung** | LG München, Urteil v. 10.12.2014 Az. 21 S 2269/14 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Verwirkung einer Vertragsstrafe wegen Verletzung von CC-Lizenz |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://ifross.org/Fremdartikel/LG_Muenchen_I_Urteil_21S2269-14.pdf) |
 
-### AG Würzburg, Urteil v. 23.01.2018, Az. 34 C 1105/17
+| **Bezeichnung** | OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung ([]Kommentar bei ifrOSS(http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial)) |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://medien-internet-und-recht.de/pdf/VT-MIR-2014-Dok-121.pdf) |
 
-Erfolgreiche Feststellungsklage nach Schadensersatzforderung wegen Verletzung von CC-BY-SA 3.0 
+| **Bezeichnung** | LG Köln, Urteil v. 05.03.2014, Az. 28 O 232/13 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 ([Kommentar bei ifrOSS](http://www.ifross.org/artikel/lg-k-ln-beschr-nkt-cc-nc-rein-private-nutzungen)) |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://www.lhr-law.de/wp-content/uploads/2014/03/geschwärztes-Urteil-LG-Köln-2.pdf) |
 
-Link: www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_34C1105-17.pdf
+| **Bezeichnung** | AG München, Urteil v. 14.01.2014 Az. 155 C 29842/12 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Verletzung von CC-BY-SA 3.0 wegen Mouseovers und Zusprechung von Schadensersatz |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/AG_Muenchen_Urteil_155C29842-12.pdf) |
 
-### LG Köln, Urteil v. 08.06.2017, Az. 14 O 331/15
+| **Bezeichnung** | LG Köln, 23.07.2013 - 28 O 325/13 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://dejure.org/2013,35330) |
 
-Schadensersatz bei Verletzung von CC BY-SA 3.0, 50 EUR und weiterer 50 EUR mangels Urhebernennung bei Berufsfotograf
+| **Bezeichnung** | AG Düsseldorf, 06.11.2013 - 57 C 15202/13 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://dejure.org/2013,42561) |
 
-Link: https://www.justiz.nrw.de/nrwe/lgs/koeln/lg_koeln/j2017/14_O_331_15_Schlussurteil_20170608.html
+| **Bezeichnung** | LG Frankfurt am Main, Urteil v. 05.09.2013, Az. 2-03 S 11/12 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | GEMA-Vermutung und Creative Commons |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://ifross.org/Fremdartikel/LG_Frankfurt_2-03S11-12.pdf) |
 
-### LG Hamburg, Beschluss v. 18.11.2016, Az. 310 O 402/16
+| **Bezeichnung** | AG Frankfurt am Main, Urteil v. 27.08.2012, Az. 32 C 1286/12-48 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | GEMA-Vermutung und Creative Commons |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](https://openjur.de/u/441171.html) |
 
-Haftung für Link auf Creative Commons lizenziertes Werk
-
-Link: https://dejure.org/ext/f812818c4cb65cf07438646d5442c684
-
-### AG Köln, Urteil v. 17.11.2016, Az. 148 C 307/16
-
-Feststellungsklage stattgegeben wg Schadensersatz bei Verletzung von CC BY-SA 3.0
-
-Link: http://www.ifross.org/Fremdartikel/AG_Koeln_Urteil_148C307-16.pdf
-
-### LG Köln, Urteil v. 01.09.2016, Az. 14 O 307/15
-
-Unterlassung und Schadensersatz bei Verletzung von CC BY-SA 3.0
-
-Link: https://www.justiz.nrw.de/nrwe/lgs/koeln/lg_koeln/j2016/14_O_307_15_Urteil_20160901.html
-
-### OLG Köln, Urteil v. 29.06.2016, Az. 6 W 72/16
-
-Kein Schadensersatzanspruch bei Verletzung von Creative Commons Lizenz
-
-Link: https://www.telemedicus.info/urteile/Urheberrecht/1715-OLG-Koeln-Az-6-W-7216-Objektiver-Wert-von-Lichtbildern-Creative-Commons-Lizenz-ist-Null.html
-
-### LG München, Beschluss v. 17.12.2014, Az. 37 O 8778/14
-
-Mouseover nicht ausreichend für Namensnennung bei Nutzung unter CC-BY 3.0 Unported
-
-Link: http://tlmd.in/u/1603
-
-### LG München, Urteil v. 10.12.2014 Az. 21 S 2269/14
-
-Verwirkung einer Vertragsstrafe wegen Verletzung von CC-Lizenz
-
-Link: http://ifross.org/Fremdartikel/LG_Muenchen_I_Urteil_21S2269-14.pdf
-
-### OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14
-
-nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung
-
-Link: http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial, http://medien-internet-und-recht.de/pdf/VT-MIR-2014-Dok-121.pdf
-
-### LG Köln, Urteil v. 05.03.2014, Az. 28 O 232/13
-
-Nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported)
-
-Link: http://www.lhr-law.de/wp-content/uploads/2014/03/geschwärztes-Urteil-LG-Köln-2.pdf, http://www.ifross.org/artikel/lg-k-ln-beschr-nkt-cc-nc-rein-private-nutzungen
-
-### AG München, Urteil v. 14.01.2014 Az. 155 C 29842/12
-
-Verletzung von CC-BY-SA 3.0 wegen Mouseovers und Zusprechung von Schadensersatz
-
-Link: http://www.ifross.org/Fremdartikel/AG_Muenchen_Urteil_155C29842-12.pdf
-
-### LG Köln, 23.07.2013 - 28 O 325/13	
-
-Link: https://dejure.org/2013,35330
-
-### AG Düsseldorf, 06.11.2013 - 57 C 15202/13	 
-
-Link: https://dejure.org/2013,42561
-
-### LG Frankfurt am Main, Urteil v. 05.09.2013, Az. 2-03 S 11/12
-
-GEMA-Vermutung und Creative Commons 
-
-Link: http://ifross.org/Fremdartikel/LG_Frankfurt_2-03S11-12.pdf
-
-### AG Frankfurt am Main, Urteil v. 27.08.2012, Az. 32 C 1286/12-48
-
-GEMA-Vermutung und Creative Commons 
-
-Link: https://openjur.de/u/441171.html
-
-### LG Berlin, Beschluss v. 08.10.2010, Az. 16 O 458/10
-
-Creative Commons-Lizenz „Attribution – ShareAlike 3.0 Unported“
-
-Link: http://www.ifross.org/Fremdartikel/LG%20Berlin%20CC-Lizenz.pdf
-
-(English Translation, thanks to John Hendrik Weitzmann:
-
-http://www.ifross.org/Fremdartikel/District%20Court%20Berlin%20CC%20License.txt)
+| **Bezeichnung** | LG Berlin, Beschluss v. 08.10.2010, Az. 16 O 458/10 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Creative Commons-Lizenz „Attribution – ShareAlike 3.0 Unported“ |
+| **Lizenz** | - |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/LG%20Berlin%20CC-Lizenz.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/District%20Court%20Berlin%20CC%20License.txt) |
 
 # USA
 
