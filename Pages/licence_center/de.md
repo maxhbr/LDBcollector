@@ -10,13 +10,13 @@ Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und 
 
 * [Freie Software und Open Source Lizenzen](/ifrOSS/Pages/licence_center/foss/de)
 * [Open Content Lizenzen](/ifrOSS/wip.html)
-* [🚧 Open Data Lizenzen](/ifrOSS/wip.html)
-* [🚧 Open Hardware Lizenzen](/ifrOSS/wip.html)
-* [🚧 Sonstige Freie Lizenzen](/ifrOSS/wip.html)
-* [🚧 Ähnliche Lizenzen, die nicht den Anforderungen der Open Source Definition genügen](/ifrOSS/wip.html)
-* [🚧 Ethical Lizenzen](/ifrOSS/wip.html)
-* [🚧 Public Domain Erklärungen](/ifrOSS/wip.html)
-* [🚧 Open AI Lizenzen](/ifrOSS/wip.html)
+* [Open Data Lizenzen](/ifrOSS/wip.html)
+* [Open Hardware Lizenzen](/ifrOSS/wip.html)
+* [Sonstige Freie Lizenzen](/ifrOSS/wip.html)
+* [Ähnliche Lizenzen, die nicht den Anforderungen der Open Source Definition genügen](/ifrOSS/wip.html)
+* [Ethical Lizenzen](/ifrOSS/wip.html)
+* [Public Domain Erklärungen](/ifrOSS/wip.html)
+* [Open AI Lizenzen](/ifrOSS/wip.html)
  
 Damit wird eine einfache Auffindbarkeit und Charakterisierung
 ermöglicht. Da fortlaufend neue Lizenzen erstellt werden, in
