@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.56
+Version:        1.57
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,16 @@ make check-grammar
 
 
 %changelog
+* Fri Sep 27 2024 Miroslav Suchý <msuchy@redhat.com> 1.57-1
+- add filedrop public domain dedication
+- add ddate public domain dedication
+- Add wgrib license text
+- add zork public domain dedication
+- add AGPL-3.0-or-later WITH GPL-3.0-linking-source-exception
+- allow CC-BY-SA 3.0 for fonts
+- add Boehm-GC-without-fee license
+- add LicenseRef-Julius as not allowed
+
 * Fri Sep 13 2024 Miroslav Suchý <msuchy@redhat.com> 1.56-1
 - add public domain dedication in package calf
 - add public domain dedication for btop
