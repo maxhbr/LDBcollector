@@ -1,9 +1,7 @@
+
 ## Ethical Licenses
 
-Zunehmend besteht der Wunsch, ethische Ziele durch die Lizenzierung zu erreichen. Dies geschieht in der Regel dadurch, dass ein als ethisch 
-verstandenes Verhalten gefordert oder ein vermeintlich unethisches Verhalten verboten wird. Daher sind diese Lizenzen in der Regel nicht mit 
-der Open-Source-Definition vereinbar, da die Klauseln 5 und 6 "No Discrimination Against Persons or Groups"/"No Discrimination Against Fields of Endeavor" 
-solche Einschränkungen nicht vorsehen. Für weitere Informationen siehe https://ethicalsource.dev/.
+Increasingly, there is a desire to achieve ethical goals through licensing. This is usually done by requiring conduct that is understood to be ethical or by prohibiting allegedly unethical conduct. Therefore, these licenses are usually not compatible with the open source definition, since clauses 5 and 6 "No Discrimination Against Persons or Groups"/"No Discrimination Against Fields of Endeavor" do not provide for such restrictions. For more information see https://ethicalsource.dev/.
 
 1. 966.ICU: https://github.com/996icu/996.ICU
 2. ACAB License: https://github.com/jgrey4296/acab/blob/main/LICENSE
