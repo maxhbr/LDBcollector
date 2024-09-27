@@ -303,31 +303,33 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 # Spanien
 
-### Audiencia Provincial de Madrid, Sección 28, 2007-07-05, Case No. 150/2007
+| **Bezeichnung** | Audiencia Provincial de Madrid, Sección 28, 2007-07-05, Case No. 150/2007 |
+|:---:|:---:|
+| **Parteien** | Sociedad General de Autores y Editores (SGAE) v. Buena Vistilla club social |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/node/414) |
 
-Sociedad General de Autores y Editores (SGAE) v. Buena Vistilla club social
+| **Bezeichnung** | Audiencia Provincial de Alicante, Sección 8, 2007-04-02, Case No. 111/2007 |
+|:---:|:---:|
+| **Parteien** | Sociedad General de Autores y Editores (SGAE) v. Bowling Sur S.A. |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/files/2007-03-21_sentencia_ap-alicante.pdf) |
 
-Link: http://www.derecho-internet.org/node/414
+| **Bezeichnung** | Juzgado de Primera Instancia nº 6 de Badajoz, 2006-02-17, Case No. 15/2006 |
+|:---:|:---:|
+| **Parteien** | - |
+| **Thema** | Disco Bar Metropol |
+| **Lizenz** | - |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/node/363) [🇬🇧](http://mirrors.creativecommons.org/judgements/SGAE-Fernandez-English.pdf) |
 
-### Audiencia Provincial de Alicante, Sección 8, 2007-04-02, Case No. 111/2007
-
-Sociedad General de Autores y Editores (SGAE) v. Bowling Sur S.A.
-
-Link: http://www.derecho-internet.org/files/2007-03-21_sentencia_ap-alicante.pdf
-
-### Juzgado de Primera Instancia nº 6 de Badajoz, 2006-02-17, Case No. 15/2006,
-
-Disco Bar Metropol
-
-Link: http://www.derecho-internet.org/node/363
-
-(English translation at http://mirrors.creativecommons.org/judgements/SGAE-Fernandez-English.pdf)
-
-### Juzgado de lo Mercantil nº 5 de Madrid, 2006-02-02, Case No. 12/2006
-
-Sociedad General de Autores y Editores (SGAE) v. Asociacion cultural ladinamo
-
-Link: http://www.derecho-internet.org/node/359
+| **Bezeichnung** | Juzgado de lo Mercantil nº 5 de Madrid, 2006-02-02, Case No. 12/2006 |
+|:---:|:---:|
+| **Parteien** | Sociedad General de Autores y Editores (SGAE) v. Asociacion cultural ladinamo |
+| **Thema** | - |
+| **Lizenz** | - |
+| **Links** | [🇪🇸](http://www.derecho-internet.org/node/359) |
 
 # Niederlanden
 
