@@ -13,4 +13,4 @@ Emojis for the links can be copied from https://emojipedia.org
 
 --->
 
-<h1 style="text-align: center;">ifrOSS Licence Center - Open Content Licenses Licenses</h1>
+<h1 style="text-align: center;">ifrOSS Licence Center - Open Content Licenses</h1>
