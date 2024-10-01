@@ -64,7 +64,7 @@ Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder
 | SGI Free Software License B (v1.0) (Einordnung umstritten) | [🇬🇧](http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html) | - |
 | ShippySoft Source Available License (SSSAL) | [🇬🇧](http://www.shippysoft.com/license.shtml) | - |
 | Squeak License (Apple) | [🇬🇧](https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense) | - |
-| Sun Microsystems, Inc| Binary Code License Agreement | [🇬🇧](https://download.java.net/media/jai/builds/release/1_1_3/LICENSE-jai.txt) | - |
+| Sun Microsystems, Inc Binary Code License Agreement | [🇬🇧](https://download.java.net/media/jai/builds/release/1_1_3/LICENSE-jai.txt) | - |
 | Sun Community Source License | [🇬🇧](http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html) | - |
 | Sun Solaris Source Code (Foundation Release) License (v1.1) | [🇬🇧](http://www.mibsoftware.com/librock/librock/license/ssscfr.txt) | - |
 | The Code Project Open License (CPOL) 1.02 | [🇬🇧](http://www.codeproject.com/info/cpol10.aspx) | - |
