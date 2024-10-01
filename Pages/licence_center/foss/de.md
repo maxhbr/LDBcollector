@@ -9,6 +9,8 @@ Neue Lizenzen können mit der folgenden Template eingefügt werden:
 
 | Lizenzname | [🇬🇧](link) | SPDX-Tag |
 
+Emojis für die Links können von https://emojipedia.org kopiert werden
+
 --->
 
 <h1 style="text-align: center;">ifrOSS Licence Center - FOSS Lizenzen</h1>
