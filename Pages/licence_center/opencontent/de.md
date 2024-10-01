@@ -12,6 +12,7 @@ Neue Lizenzen können mit der folgenden Template eingefügt werden:
 Emojis für die Links können von https://emojipedia.org kopiert werden
 
 --->
+<p><a href="/ifrOSS/Pages/licence_center/de">Licence Center</a> \> Open Content<br></p>
 
 <h1 style="text-align: center;">ifrOSS Licence Center - Open Content Lizenzen</h1>
 
