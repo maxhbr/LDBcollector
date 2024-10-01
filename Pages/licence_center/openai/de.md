@@ -40,4 +40,4 @@ Ein Überblick über die Systematik der RAIL-Lizenzen findet sich unter https://
 | STABILITY AI NON-COMMERCIAL RESEARCH COMMUNITY LICENSE AGREEMENT /Version Release Date : November 28, 2023) | [🇬🇧](https://web.archive.org/web/20240630153933/https://huggingface.co/stabilityai/sdxl-turbo/blob/main/LICENSE.TXT) | - |
 | Stability AI Community License Agreement (July 5, 2024) | [🇬🇧](https://stability.ai/community-license-agreement) | - |
 | Stable Video Diffusion Non-commercial Community License Agreement | [🇬🇧](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/main/LICENSE) | - |
-| Tongyi Qianwen LICENSE AGREEMENT (Version Release Date : August 3, 2023) | [🇬🇧](https://huggingface.co/Qwen/Qwen1.5-72B/blob/main/LICENSE | - |
+| Tongyi Qianwen LICENSE AGREEMENT (Version Release Date : August 3, 2023) | [🇬🇧](https://huggingface.co/Qwen/Qwen1.5-72B/blob/main/LICENSE) | - |

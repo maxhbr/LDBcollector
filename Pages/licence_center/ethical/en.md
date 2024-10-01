@@ -45,4 +45,4 @@ Increasingly, there is a desire to achieve ethical goals through licensing. This
 | Kaitiakitanga License | [🇬🇧](https://github.com/TeHikuMedia/Kaitiakitanga-License/blob/tumu/LICENSE.md) | - |
 | ml5.js license | [🇬🇧](https://github.com/ml5js/Code-of-Conduct/blob/main/LICENSE.md) | - |
 | Non-Violent Public License (NPL) | [🇬🇧](https://git.pixie.town/thufie/NPL) | - |
-| Vaccine License | [🇬🇧](http://web.archive.org/web/20200826012936/https://vaccinelicense.com/vaccine-license/  | - |
+| Vaccine License | [🇬🇧](http://web.archive.org/web/20200826012936/https://vaccinelicense.com/vaccine-license/) | - |

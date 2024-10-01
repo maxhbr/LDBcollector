@@ -28,4 +28,4 @@ Im Folgenden werden Lizenzen aufgeführt, die weder der Kategorie der freien Sof
 | COVID-19 Public License Commitment (v. 0.2) | [🇬🇧](https://coronaopensource.org/licenses/ip-owner.html) | - |
 | Defensive Patent License | [🇬🇧](https://defensivepatentlicense.org/license) | - |
 | License for Open Source Software Implementations of OCB | [🇬🇧](https://www.cs.ucdavis.edu/~rogaway/ocb/license1.pdf) | - |
-| Open-Source Saatgut Lizenz | [🇬🇧](https://opensourceseeds.org/die-open-source-lizenz | - |
+| Open-Source Saatgut Lizenz | [🇬🇧](https://opensourceseeds.org/die-open-source-lizenz) | - |

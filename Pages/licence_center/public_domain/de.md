@@ -29,4 +29,4 @@ Diese Erklärungen dienen dazu, auf das Copyright an einem Werk zu verzichten bz
 | Public Domain Mark 1.0 | [🇬🇧](https://creativecommons.org/publicdomain/mark/1.0/) | - |
 | SQLite Public Domain Dedication | [🇬🇧](https://www.sqlite.org/copyright.html) | - |
 | Unlicense | [🇬🇧](http://unlicense.org/) | - |
-| Worldwide Public Domain Dedication (WPDD) | [🇬🇧](https://wpdd.info/wpdd.html | - |
+| Worldwide Public Domain Dedication (WPDD) | [🇬🇧](https://wpdd.info/wpdd.html) | - |
