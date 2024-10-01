@@ -29,6 +29,13 @@ text = '''
 text here
 '''
 
+package = BareBonesBrowserLaunch
+# inside tarball of 3.1 version of the package
+location = com/centerkey/utils/BareBonesBrowserLaunch.java
+text = '''
+Public Domain Software -- Free to Use as You Like
+'''
+
 package = ants
 # the upstream is dead, this reference file in the package
 location = license-info
