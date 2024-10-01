@@ -59,4 +59,4 @@ Dies ist eine Übersicht freier Lizenzen für Datenbanken. Einen Überblick zum 
 | Singapore Open Data Licence (v1.0) | [🇬🇧](https://data.gov.sg/open-data-licence) | - |
 | Statistics Canada Open Licence Agreement | [🇬🇧](https://www.statcan.gc.ca/eng/reference/licence) | - |
 | Talis Community License (TCL) | [🇬🇧](http://web.archive.org/web/20130923083859/http://tdnarchive.capita-libraries.co.uk/tcl) | - |
-| Toronto Region Conservation Authority Open Data License (v| 1.0) | [🇬🇧](https://trca.ca/about/open-data-licence/ | - |
+| Toronto Region Conservation Authority Open Data License (v1.0) | [🇬🇧](https://trca.ca/about/open-data-licence/ | - |
