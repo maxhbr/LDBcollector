@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Licence Center - Sonstige Lizenzen - ifrOSS.org"
+title: "Licence Center - Sonstige Freie Lizenzen - ifrOSS.org"
 ---
 
 <!---
@@ -13,9 +13,9 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 --->
 
-<p><a href="/ifrOSS/Pages/licence_center/de">Licence Center</a> > Sonstige Lizenzen<br></p>
+<p><a href="/ifrOSS/Pages/licence_center/de">Licence Center</a> > Sonstige Freie Lizenzen<br></p>
 
-<h1 style="text-align: center;">ifrOSS Licence Center - Sonstige Lizenzen</h1>
+<h1 style="text-align: center;">ifrOSS Licence Center - Sonstige Freie Lizenzen</h1>
 
 ## Andere Lizenzen für die freie Nutzung von geistigem Eigentum
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Licence Center - Other Licenses - ifrOSS.org"
+title: "Licence Center - Other Free Licenses - ifrOSS.org"
 ---
 
 <!---
@@ -13,9 +13,9 @@ Emojis for the links can be copied from https://emojipedia.org
 
 --->
 
-<p><a href="/ifrOSS/Pages/licence_center/en">Licence Center</a> > Other Licenses<br></p>
+<p><a href="/ifrOSS/Pages/licence_center/en">Licence Center</a> > Other Free Licenses<br></p>
 
-<h1 style="text-align: center;">ifrOSS Licence Center - Other Licenses</h1>
+<h1 style="text-align: center;">ifrOSS Licence Center - Other Free Licenses</h1>
 
 ## Other licenses for the free use of intellectual property
 
