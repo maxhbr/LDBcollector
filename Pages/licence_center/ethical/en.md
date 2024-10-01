@@ -21,6 +21,8 @@ Emojis for the links can be copied from https://emojipedia.org
 
 Increasingly, there is a desire to achieve ethical goals through licensing. This is usually done by requiring conduct that is understood to be ethical or by prohibiting allegedly unethical conduct. Therefore, these licenses are usually not compatible with the open source definition, since clauses 5 and 6 "No Discrimination Against Persons or Groups"/"No Discrimination Against Fields of Endeavor" do not provide for such restrictions. For more information see https://ethicalsource.dev/.
 
+| Lizenz | Text | SPDX-tag |
+|:---:|:---:|:---:|
 | 966.ICU | [🇬🇧](https://github.com/996icu/996.ICU) | - |
 | ACAB License | [🇬🇧](https://github.com/jgrey4296/acab/blob/main/LICENSE) | - |
 | Anti-Capitalist Software License | [🇬🇧](https://anticapitalist.software/) | - |
@@ -28,7 +30,7 @@ Increasingly, there is a desire to achieve ethical goals through licensing. This
 | Atmosphere Licenses (v0.4) | [🇬🇧](https://www.open-austin.org/atmosphere-license/atmosphere-static/index.html ) | - |
 | Be Gay Do Crimes License | [🇬🇧](https://github.com/Xe/waifud/blob/e7de416dbc0c14cf29e50b24e2d6337881294da9/LICENSE) | - |
 | BigScience RAIL License (v1.0) | [🇬🇧](https://huggingface.co/spaces/bigscience/license) | - |
-| +CAL Software License | [🇬🇧](https://corpaccountabilitylab.org/cal-software-license) | - |
+| CAL Software License | [🇬🇧](https://corpaccountabilitylab.org/cal-software-license) | - |
 | The CC+CAL Commercial Use License Agreement (v1.1) | [🇬🇧](https://corpaccountabilitylab.org/cccal-licensehttps://corpaccountabilitylab.org/cccal-license ) | - |
 | Cooperative Non-Violent Public License (CNPL) | [🇬🇧](https://git.pixie.town/thufie/CNPL) | - |
 | Digital Abundance License (DAL) | [🇬🇧](https://web.archive.org/web/20220117162852/https://github.com/dzuk-mutant/digital-abundance-license) | - |

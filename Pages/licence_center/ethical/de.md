@@ -21,6 +21,8 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 Es besteht der zunehmende Wunsch, ethische Ziele durch die Erteilung von Lizenzen zu erreichen. Dies geschieht in der Regel dadurch, dass ein als ethisch verstandenes Verhalten gefordert oder ein vermeintlich unethisches Verhalten verboten wird. Daher sind diese Lizenzen in der Regel nicht mit der Open-Source-Definition vereinbar, da die Klauseln 5 und 6 „Keine Diskriminierung von Personen oder Gruppen“/„Keine Diskriminierung von Tätigkeitsbereichen“ solche Einschränkungen nicht vorsehen. Für weitere Informationen siehe https://ethicalsource.dev/.
 
+| Lizenz | Text | SPDX-tag |
+|:---:|:---:|:---:|
 | 966.ICU | [🇬🇧](https://github.com/996icu/996.ICU) | - |
 | ACAB License | [🇬🇧](https://github.com/jgrey4296/acab/blob/main/LICENSE) | - |
 | Anti-Capitalist Software License | [🇬🇧](https://anticapitalist.software/) | - |
