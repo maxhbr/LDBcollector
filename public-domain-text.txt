@@ -29,6 +29,12 @@ text = '''
 text here
 '''
 
+package = clc
+location = https://github.com/elanthis/clc/blob/master/README#L3
+text = '''
+THIS CODE IS PUBLIC DOMAIN
+'''
+
 package = BareBonesBrowserLaunch
 # inside tarball of 3.1 version of the package
 location = com/centerkey/utils/BareBonesBrowserLaunch.java
