@@ -87,4 +87,4 @@ Die im Folgenden aufgeführten Lizenzen versuchen, den Grundgedanken, der der Fr
 | Open Game License (v. 1.0a) | [🇬🇧](http://www.opengamingfoundation.org/ogl.html) | - |
 | Open Publication License (v. 1.0) | [🇬🇧](http://opencontent.org/openpub) | - |
 | Open Source Music License (v. 1.5) (OSML) | [🇬🇧](https://web.archive.org/web/20120818042338/http://www.rootrecords.org:80/licenses.html) | - |
-| Public Documentation License (PDL) | [🇬🇧](http://www.openoffice.org/licenses/PDL.html
+| Public Documentation License (PDL) | [🇬🇧](http://www.openoffice.org/licenses/PDL.html) | - |
