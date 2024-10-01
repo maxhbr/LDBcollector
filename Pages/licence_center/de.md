@@ -16,7 +16,7 @@ Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und 
 * [Ähnliche Lizenzen, die nicht den Anforderungen der Open Source Definition genügen](/ifrOSS/Pages/licence_center/nonfree/de)
 * [Ethical Lizenzen](/ifrOSS/Pages/licence_center/ethical/de)
 * [Public Domain Erklärungen](/ifrOSS/Pages/licence_center/public_domain/de)
-* [Open AI Lizenzen](/ifrOSS//Pages/licence_center/openai/de)
+* [Open AI Lizenzen](/ifrOSS/Pages/licence_center/openai/de)
  
 Damit wird eine einfache Auffindbarkeit und Charakterisierung
 ermöglicht. Da fortlaufend neue Lizenzen erstellt werden, in

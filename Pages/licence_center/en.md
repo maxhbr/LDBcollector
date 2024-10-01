@@ -14,7 +14,7 @@ The ifrOSS License Center collects licenses for free content and assigns them to
 * [Open Hardware Licence](/ifrOSS/wip.html)
 * [Other Free Licenses](/ifrOSS/Pages/licence_center/other/en)
 * [Similar Licences, that do not meet the requirements of the OSI Definition](/ifrOSS/wip.html)
-* [Ethical Licenses](/ifrOSS/Pages/licence_center/ethical/de)
+* [Ethical Licenses](/ifrOSS/Pages/licence_center/ethical/en)
 * [Public Domain Statements](/ifrOSS/wip.html)
 * [Open AI Licences](/ifrOSS/wip.html)
  
