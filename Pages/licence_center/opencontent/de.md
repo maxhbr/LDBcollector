@@ -19,6 +19,8 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 Die im Folgenden aufgeführten Lizenzen versuchen, den Grundgedanken, der der Freien Software zu Grunde liegt, auch auf andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content Definition besteht, sind die Lizenzen sehr heterogen.
 
+| Lizenz | Text | SPDX-tag |
+|:---:|:---:|:---:|
 | Apple's Common Documentation License (v. 1.0) | [🇬🇧](https://web.archive.org/web/20060323013933/https://opensource.apple.com/cdl/) | - |
 | Creative Commons Attribution 1.0 | [🇬🇧](http://creativecommons.org/licenses/by/1.0/legalcode) | - |
 | Creative Commons Attribution 2.0 | [🇬🇧](http://creativecommons.org/licenses/by/2.0/legalcode) | - |
