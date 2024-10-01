@@ -1862,3 +1862,12 @@ location = https://github.com/bo0ts/ddate/blob/master/ddate.1#L1
 text = '''
 All Rites Reversed. This file is in the PUBLIC DOMAIN.
 '''
+
+package = astronomy-menus
+# upstream is dead, this reference file in a package
+location = README
+text = '''
+Icon file (dome.svg) was created by Nicu Buculei and licensed for use in
+Public Domain. Rest of files was created by Lubomir Rintel <lkundrak@v3.sk>
+and licensed for use in Public Domain.
+'''
