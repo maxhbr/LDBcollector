@@ -13,6 +13,8 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 --->
 
+<p><a href="/ifrOSS/Pages/licence_center/de">Licence Center</a> > Open Data<br></p>
+
 <h1 style="text-align: center;">ifrOSS Licence Center - Open Data Lizenzen</h1>
 
 ## Open Data Lizenzen
