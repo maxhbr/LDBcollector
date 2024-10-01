@@ -4,10 +4,6 @@ title: "Contributor License Agreements - ifrOSS.org"
 ---
 
 <h1 style="text-align: center;">Contributor License Agreements</h1>
-<h1>Content</h1>
-
-* TOC
-{:toc}
 
 The license agreements listed serve to grant the user further rights of use in addition to the rights of use granted by way of an open source license, e.g. to enable the user to change the license. Comprehensive information and sample texts can be found at [http://contributoragreements.org/](http://contributoragreements.org/).
 
