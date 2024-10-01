@@ -45,18 +45,18 @@ Dies ist eine Übersicht freier Lizenzen für Datenbanken. Einen Überblick zum 
 | Open Data Commons Attribution License (ODC-By) | [🇬🇧](https://opendatacommons.org/licenses/by/1.0/) | - |
 | Open Data Commons Public Domain Dedication and License (PDDL) | [🇬🇧](https://opendatacommons.org/licenses/pddl/1.0/) | - |
 | Open Data License STIB-MIVB | [🇬🇧](https://opendata.stib-mivb.be/store/license) | - |
-| Open Database License (ODbL) (v| 1.0) | [🇬🇧](https://opendatacommons.org/licenses/odbl/1.0/) | - |
+| Open Database License (ODbL) (v1.0) | [🇬🇧](https://opendatacommons.org/licenses/odbl/1.0/) | - |
 | Open Government Licence - Alberta | [🇬🇧](https://open.alberta.ca/licence) | - |
 | Open Government Licence – Nova Scotia | [🇬🇧](https://novascotia.ca/opendata/licence.asp) | - |
 | Open Government Licence – City of Victoria | [🇬🇧](http://www.victoria.ca/EN/main/online-services/open-data-catalogue/open-data-licence.html) | - |
-| Open Government Licence - Canada (v| 2.0) | [🇬🇧](https://open.canada.ca/en/open-government-licence-canada) | - |
-| Open Government Data License (v| 1.0) (Taiwan) | [🇬🇧](https://data.gov.tw/license#eng [OGDL-Taiwan-1.0]) | - |
-| Open Government Licence (v| 1.0) (UK) | [🇬🇧](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/) | - |
-| Open Government Licence (v| 2.0) (UK) | [🇬🇧](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) | - |
-| Open Government Licence (v| 3.0) (UK) | [🇬🇧](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) | - |
-| Open Use of Data Agreement (v| 1.0) | [🇬🇧](https://cdla.dev/open-use-of-data-agreement-v1-0/) | - |
-| Persper Public Data Set License Agreement (v| 1.0) | [🇬🇧](https://www.persper.org/pdl-v1) | - |
-| Singapore Open Data Licence (v| 1.0) | [🇬🇧](https://data.gov.sg/open-data-licence) | - |
+| Open Government Licence - Canada (v2.0) | [🇬🇧](https://open.canada.ca/en/open-government-licence-canada) | - |
+| Open Government Data License (v1.0) (Taiwan) | [🇬🇧](https://data.gov.tw/license#eng [OGDL-Taiwan-1.0]) | - |
+| Open Government Licence (v1.0) (UK) | [🇬🇧](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/) | - |
+| Open Government Licence (v2.0) (UK) | [🇬🇧](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) | - |
+| Open Government Licence (v3.0) (UK) | [🇬🇧](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) | - |
+| Open Use of Data Agreement (v1.0) | [🇬🇧](https://cdla.dev/open-use-of-data-agreement-v1-0/) | - |
+| Persper Public Data Set License Agreement (v1.0) | [🇬🇧](https://www.persper.org/pdl-v1) | - |
+| Singapore Open Data Licence (v1.0) | [🇬🇧](https://data.gov.sg/open-data-licence) | - |
 | Statistics Canada Open Licence Agreement | [🇬🇧](https://www.statcan.gc.ca/eng/reference/licence) | - |
 | Talis Community License (TCL) | [🇬🇧](http://web.archive.org/web/20130923083859/http://tdnarchive.capita-libraries.co.uk/tcl) | - |
 | Toronto Region Conservation Authority Open Data License (v| 1.0) | [🇬🇧](https://trca.ca/about/open-data-licence/ | - |
