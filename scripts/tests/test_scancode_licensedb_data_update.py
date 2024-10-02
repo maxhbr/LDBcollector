@@ -152,6 +152,7 @@ def test_get_alias_without_spdx(mock_logger):
     license_data = {
         "short_name": "MIT",
         "name": "MIT License",
+        "key": "mit",
     }
 
     alias = get_alias(license_data, is_spdx=False)
