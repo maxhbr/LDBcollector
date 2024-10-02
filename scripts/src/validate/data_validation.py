@@ -43,7 +43,7 @@ def load_ids_from_license_list(filepath, license_list_type: LicenseListType):
 
     elif license_list_type is LicenseListType.SCANCODE_LICENSEDB:
         for lic in data:
-            if "spdx_license_key" in data:
+            if "spdx_license_key" in lic and lic["spdx_license_key"] is not None:
                 spdx_id = lic["spdx_license_key"]
                 if not spdx_id.startswith("LicenseRef"):
                     license_ids.append(spdx_id)

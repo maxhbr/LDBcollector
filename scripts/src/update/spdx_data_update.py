@@ -78,7 +78,7 @@ def create_json(input_file, is_exception: bool = False):
         else:
             license_id = lic.get('licenseExceptionId')
 
-        if license_id in EXCEPTIONS_SPDX:
+        if EXCEPTIONS_SPDX and license_id in EXCEPTIONS_SPDX:
             continue
 
         output_file = os.path.join(DATA_DIR, f"{license_id}.json")

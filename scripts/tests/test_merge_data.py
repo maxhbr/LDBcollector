@@ -1,6 +1,9 @@
 import json
+import os
+import tempfile
+
 import pytest
-from src.load.merge_data import read_data, write_data
+from src.load.merge_data import read_data, write_data, main
 
 
 @pytest.fixture
@@ -37,6 +40,74 @@ def test_write_data(tmpdir):
     with open(output_path, 'r') as f:
         data = json.load(f)
     assert data == alias_mapping
+
+
+@pytest.fixture
+def temp_data_dir():
+    # Create a temporary directory with JSON files
+    with tempfile.TemporaryDirectory() as temp_dir:
+        # Create sample JSON files
+        license_1 = {
+            "canonical": "MIT",
+            "aliases": {
+                "source1": ["MIT License", "MIT Open Source License"],
+                "source2": ["MIT"]
+            }
+        }
+
+        license_2 = {
+            "canonical": "GPL",
+            "aliases": {
+                "source1": ["GNU General Public License", "GPL v3"],
+                "source2": ["GPLv3"]
+            }
+        }
+
+        # Write the JSON data to file in the temp directory
+        with open(os.path.join(temp_dir, 'license1.json'), 'w') as f:
+            json.dump(license_1, f)
+
+        with open(os.path.join(temp_dir, 'license2.json'), 'w') as f:
+            json.dump(license_2, f)
+
+        yield temp_dir  # This is the data directory
+
+
+@pytest.fixture
+def temp_output_file():
+    # Create a temporary output file
+    with tempfile.NamedTemporaryFile(delete=False) as temp_file:
+        yield temp_file.name
+    # Clean up after the test
+    os.remove(temp_file.name)
+
+
+def test_main_integration(temp_data_dir, temp_output_file, monkeypatch):
+    # Mock the command-line arguments
+    monkeypatch.setattr('sys.argv', ['data_validation', '--output', temp_output_file])
+
+    # Set the DATA_DIR variable to the temporary data directory for testing
+    monkeypatch.setattr('src.load.merge_data.DATA_DIR', temp_data_dir)
+
+    # Call the main function
+    main()
+
+    # Check the output file contents
+    with open(temp_output_file, 'r') as f:
+        output_data = json.load(f)
+
+    # Expected alias mappings
+    expected_output = {
+        "MIT": "MIT",
+        "MIT License": "MIT",
+        "MIT Open Source License": "MIT",
+        "GNU General Public License": "GPL",
+        "GPL v3": "GPL",
+        "GPLv3": "GPL",
+        "GPL": "GPL"
+    }
+
+    assert output_data == expected_output
 
 
 if __name__ == '__main__':

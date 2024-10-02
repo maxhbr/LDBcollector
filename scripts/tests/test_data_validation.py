@@ -10,11 +10,12 @@ from src.validate.data_validation import (
     check_unique_aliases,
     check_length_and_characters,
     check_src_and_canonical,
-    LicenseListType
+    LicenseListType,
+    main
 )
 
 # Mock setup_logger to avoid actual logging
-mock_logger, mock_error_tracking_handler = mock.MagicMock(), mock.MagicMock()
+mock_logger = mock.MagicMock()
 
 
 @pytest.fixture(autouse=True)
@@ -25,7 +26,6 @@ def setup_and_teardown():
 
     # Reset mocks
     mock_logger.reset_mock()
-    mock_error_tracking_handler.reset_mock()
 
     # Teardown: Remove the test_data directory after each test
     if os.path.exists("test_data"):
@@ -51,7 +51,7 @@ def test_download_spdx_license_list():
             download_license_list(url, filepath, LicenseListType.SPDX)
             mock_logger.info.assert_called_with('LicenseListType.SPDX downloaded successfully.')
 
-            # Check if file is written
+            # Check if the file is written
             with open(filepath, 'rb') as f:
                 content = f.read()
                 assert content == b'{"licenses": []}'
@@ -80,6 +80,54 @@ def test_load_spdx_license_list():
 
     result = load_ids_from_license_list(filepath, LicenseListType.SPDX)
     assert result == ["MIT"]
+
+
+def test_load_spdx_exception_list():
+    spdx_exception_data = {"exceptions": [{"licenseExceptionId": "MIT-Exception"}]}
+    filepath = os.path.join("test_data", 'licenses.json')
+    os.makedirs("test_data", exist_ok=True)
+
+    with open(filepath, 'w') as f:
+        json.dump(spdx_exception_data, f)
+
+    result = load_ids_from_license_list(filepath, LicenseListType.SPDX_EXCEPTION)
+    assert result == ["MIT-Exception"]
+
+
+def test_load_scancode_licensedb_list_with_spdx_key():
+    license_data = [{"spdx_license_key": "MIT-ScanCode"}]
+    filepath = os.path.join("test_data", 'licenses.json')
+    os.makedirs("test_data", exist_ok=True)
+
+    with open(filepath, 'w') as f:
+        json.dump(license_data, f)
+
+    result = load_ids_from_license_list(filepath, LicenseListType.SCANCODE_LICENSEDB)
+    assert result == ["MIT-ScanCode"]
+
+
+def test_load_scancode_licensedb_list_with_licenseref():
+    license_data = [{"spdx_license_key": "LicenseRef-MIT-ScanCode", "license_key": "MIT-ScanCode"}]
+    filepath = os.path.join("test_data", 'licenses.json')
+    os.makedirs("test_data", exist_ok=True)
+
+    with open(filepath, 'w') as f:
+        json.dump(license_data, f)
+
+    result = load_ids_from_license_list(filepath, LicenseListType.SCANCODE_LICENSEDB)
+    assert result == ["MIT-ScanCode"]
+
+
+def test_load_scancode_licensedb_list_without_spdx_key():
+    license_data = [{"license_key": "MIT-ScanCode"}]
+    filepath = os.path.join("test_data", 'licenses.json')
+    os.makedirs("test_data", exist_ok=True)
+
+    with open(filepath, 'w') as f:
+        json.dump(license_data, f)
+
+    result = load_ids_from_license_list(filepath, LicenseListType.SCANCODE_LICENSEDB)
+    assert result == ["MIT-ScanCode"]
 
 
 def test_delete_file():
@@ -274,6 +322,44 @@ def test_check_length_and_characters_failure():
     os.remove(filepath_long)
     os.remove(filepath_forbidden)
     os.rmdir("test_data")
+
+
+def test_main_integration():
+    # Mock the logger and its handlers
+    mock_logger.handlers = [mock.MagicMock(), mock.MagicMock()]
+    mock_logger.handlers[1].error_occurred = False  # Simulate no error occurring
+
+    with mock.patch("src.validate.data_validation.download_license_list"), \
+         mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+         mock.patch("src.validate.data_validation.delete_file"), \
+         mock.patch("src.validate.data_validation.check_json_filename"), \
+         mock.patch("src.validate.data_validation.check_unique_aliases"), \
+         mock.patch("src.validate.data_validation.check_length_and_characters"):
+        main()
+
+        # Verify that no error occurred (if checking the logger)
+        assert not mock_logger.handlers[1].error_occurred, "An error occurred in the logger"
+
+
+def test_main_integration_fail():
+    # Mock the logger and its handlers
+    mock_logger.handlers = [mock.MagicMock(), mock.MagicMock()]
+    mock_logger.handlers[1].error_occurred = True  # Simulate an error occurring
+
+    with mock.patch("src.validate.data_validation.download_license_list"), \
+         mock.patch("src.validate.data_validation.load_ids_from_license_list",
+                    side_effect=[["license1", "license2"], ["exception1"], ["license3", "license4"]]), \
+         mock.patch("src.validate.data_validation.check_src_and_canonical"), \
+         mock.patch("src.validate.data_validation.delete_file"), \
+         mock.patch("src.validate.data_validation.check_json_filename"), \
+         mock.patch("src.validate.data_validation.check_unique_aliases"), \
+         mock.patch("src.validate.data_validation.check_length_and_characters"):
+        main()
+
+        # Verify that no error occurred (if checking the logger)
+        assert mock_logger.handlers[1].error_occurred, "An error occurred in the logger"
 
 
 if __name__ == "__main__":
