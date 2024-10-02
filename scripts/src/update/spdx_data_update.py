@@ -148,8 +148,7 @@ def collect_duplicates(duplicate_aliases, is_deprecated, output_file, name):
         output_file: file path of the license
         name: name of the license
     """
-    if "GNU Free Documentation License v1.3 only" == name:
-        print()
+
     if name not in duplicate_aliases:
         duplicate_aliases[name] = []
     if is_deprecated:
