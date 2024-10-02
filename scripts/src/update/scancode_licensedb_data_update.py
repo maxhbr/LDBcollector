@@ -3,7 +3,7 @@ import os
 import sys
 import tempfile
 import requests
-
+from dotenv import load_dotenv
 from src.logger import setup_logger
 
 logger = setup_logger(__name__, log_level=10)
@@ -14,6 +14,10 @@ os.chdir(script_dir)
 sys.path.append(os.path.abspath(os.path.join(script_dir, '../../')))
 
 DATASOURCE_DIR = os.path.abspath(os.path.join(script_dir, '../../../data'))
+
+load_dotenv()
+
+EXCEPTION_SCANCODE_LICENSEDB = os.getenv('EXCEPTION_SCANCODE_LICENSEDB')
 
 
 def download_index_json(url, output_file):
@@ -135,16 +139,10 @@ def process_licenses():
     download_index_json("https://scancode-licensedb.aboutcode.org/index.json", filepath)
     index_data = load_json_file(filepath)
 
-    exceptions = ["brian-gladman-3-clause", "bsd-2-clause-freebsd", "bsd-2-clause-netbsd", "bsl-1.0", "hidapi", "intel",
-                  "libtool-exception",
-                  "nokia-qt-exception-1.1", "opl-1.0", "tpl-1.0", "ubuntu-font-1.0", "ms-limited-public", "ntpl",
-                  "w3c-software-20021231", "trademark-notice", "historical-sell-variant", "cmu-template",
-                  "bsd-2-clause-views", "bsd-simplified", "gfdl-1.1", "gfdl-1.2", "gfdl-1.3", "x11", "openssl"]
-
     for lic in index_data:
         license_key = lic["license_key"]
 
-        if license_key in exceptions:
+        if license_key in EXCEPTION_SCANCODE_LICENSEDB:
             logger.debug(f"Skipping {license_key}")
             continue
 

@@ -2,7 +2,7 @@ import json
 import os
 import sys
 from typing import List
-
+from dotenv import load_dotenv
 import requests
 from src.logger import setup_logger
 
@@ -15,6 +15,12 @@ os.chdir(script_dir)
 sys.path.append(os.path.abspath(os.path.join(script_dir, '../../')))
 
 DATA_DIR = os.path.abspath(os.path.join(script_dir, '../../../data'))
+
+load_dotenv()
+
+# GNU Free Documentation License v1.1 to v1.3 are deprecated but their alias also changed
+# The 'only' addition does not exist in the deprecated version
+EXCEPTIONS_SPDX = os.getenv('EXCEPTIONS_SPDX')
 
 
 def download_spdx_license_list(url, output_file):
@@ -43,7 +49,7 @@ def delete_file(filepath):
 
 def create_json(input_file, is_exception: bool = False):
     """
-    Create a json file that contains SPDX license information
+    Create a JSON file that contains SPDX license information
     Args:
         input_file: SPDX license list
         is_exception: boolean indicating if SPDX license list is the SPDX exception list or not
@@ -59,10 +65,6 @@ def create_json(input_file, is_exception: bool = False):
     # Load existing files to build the canonical_to_file dictionary
     build_canonical_dictionary(canonical_to_file)
 
-    # GNU Free Documentation License v1.1 to v1.3 are deprecated but their alias also changed
-    # The 'only' addition does not exist in the deprecated version
-    skip_licenses = ["GFDL-1.1", "GFDL-1.2", "GFDL-1.3"]
-
     with open(input_file, 'r') as f:
         data = json.load(f)
         if not is_exception:
@@ -76,7 +78,7 @@ def create_json(input_file, is_exception: bool = False):
         else:
             license_id = lic.get('licenseExceptionId')
 
-        if license_id in skip_licenses:
+        if license_id in EXCEPTIONS_SPDX:
             continue
 
         output_file = os.path.join(DATA_DIR, f"{license_id}.json")
