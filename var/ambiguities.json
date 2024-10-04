@@ -85,7 +85,8 @@
                 "The BSD License",
                 "BSD-Style License",
                 "BSD license",
-                "License :: OSI Approved :: BSD License"
+                "License :: OSI Approved :: BSD License",
+                "BSD licensed code"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -172,7 +173,8 @@
                 "GPL License",
                 "GNU GENERAL PUBLIC LICENSE",
                 "License :: OSI Approved :: GNU General Public License",
-                "License :: OSI Approved :: GNU General Public License (GPL)"
+                "License :: OSI Approved :: GNU General Public License (GPL)",
+                "GNU General Public License (GPL)"
             ],
             "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -236,6 +238,12 @@
                 "License :: OSI Approved"
             ],
             "problem": "OSI has approved many licenses. You It is not possible to determine which license is meant with this information."
+        },
+        "SIL Open Font License ": {
+            "aliases": [
+                "SIL OPEN FONT LICENSE"
+            ],
+            "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
         "Python Software Foundation License": {
             "aliases": [
