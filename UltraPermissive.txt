@@ -25,6 +25,12 @@ text = '''
 text here
 '''
 
+package = docbook5-schemas
+location = https://gitlab.com/fedora/legal/fedora-license-data/-/issues/560#note_2139674134
+text = '''
+Completely free to use.
+'''
+
 package = man-pages-ja
 location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man2/futex.2
 text = '''
