@@ -1878,3 +1878,15 @@ Icon file (dome.svg) was created by Nicu Buculei and licensed for use in
 Public Domain. Rest of files was created by Lubomir Rintel <lkundrak@v3.sk>
 and licensed for use in Public Domain.
 '''
+
+package = biblesync
+location = https://github.com/karlkleinpaste/biblesync/blob/master/COPYING
+text = '''
+All files related to implementation of BibleSync, including program
+source, READMEs, manual pages, and related similar documents, are in
+the public domain.  As a matter of simple decency, your social
+obligations are to credit the source and to coordinate any changes you
+make back to the origin repository.  These obligations are non-
+binding for public domain software, but they are to be seriously
+handled nonetheless.
+'''
