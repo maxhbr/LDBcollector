@@ -1,37 +1,38 @@
 {
-  "devDependencies": {
-    "@babel/preset-typescript": "^7.24.1",
-    "@jest/globals": "^29.7.0",
-    "@types/jest": "^29.5.12",
-    "@types/mock-fs": "^4.13.4",
-    "@types/node": "^20.12.12",
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^8.57.0",
-    "globals": "^15.3.0",
-    "jest": "^29.7.0",
-    "mock-fs": "^5.2.0",
-    "ts-jest": "^29.1.2",
-    "typescript": "^5.4.5",
-    "copyfiles": "^2.4.1",
-    "rimraf": "^3.0.2"
-  },
-  "name": "licenselynx",
-  "version": "0.7.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "clean": "rimraf dist",
-    "build": "npm run clean && tsc && npm run copy-resources",
-    "copy-resources": "copyfiles -u 1 \"src/**/*.!(ts)\" dist",
-    "test": "jest --coverage",
-    "lint": "eslint . --ext .ts"
-  },
-  "keywords": [],
-  "author": "Leo Reinmann",
-  "license": "Apache-2.0",
-  "description": ""
+    "devDependencies": {
+        "@babel/preset-typescript": "^7.24.1",
+        "@jest/globals": "^29.7.0",
+        "@types/jest": "^29.5.12",
+        "@types/mock-fs": "^4.13.4",
+        "@types/node": "^20.12.12",
+        "@typescript-eslint/eslint-plugin": "^7.11.0",
+        "@typescript-eslint/parser": "^7.11.0",
+        "copyfiles": "^2.4.1",
+        "eslint": "^8.57.0",
+        "globals": "^15.3.0",
+        "jest": "^29.7.0",
+        "mock-fs": "^5.2.0",
+        "rimraf": "^3.0.2",
+        "ts-jest": "^29.1.2",
+        "typescript": "^5.4.5"
+    },
+    "name": "licenselynx",
+    "version": "0.7.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "npm run clean && tsc && npm run copy-resources",
+        "copy-resources": "copyfiles -u 1 \"src/**/*.!(ts)\" dist",
+        "test": "jest --coverage",
+        "lint": "eslint . --ext .ts"
+    },
+    "keywords": [],
+    "author": "Leo Reinmann",
+    "license": "Apache-2.0",
+    "description": ""
 }
+
