@@ -52,7 +52,8 @@ def temp_data_dir():
             "aliases": {
                 "source1": ["MIT License", "MIT Open Source License"],
                 "source2": ["MIT"]
-            }
+            },
+            "src": "spdx"
         }
 
         license_2 = {
@@ -60,7 +61,8 @@ def temp_data_dir():
             "aliases": {
                 "source1": ["GNU General Public License", "GPL v3"],
                 "source2": ["GPLv3"]
-            }
+            },
+            "src": "spdx"
         }
 
         # Write the JSON data to file in the temp directory
@@ -98,13 +100,34 @@ def test_main_integration(temp_data_dir, temp_output_file, monkeypatch):
 
     # Expected alias mappings
     expected_output = {
-        "MIT": "MIT",
-        "MIT License": "MIT",
-        "MIT Open Source License": "MIT",
-        "GNU General Public License": "GPL",
-        "GPL v3": "GPL",
-        "GPLv3": "GPL",
-        "GPL": "GPL"
+        "MIT": {
+            "canonical": "MIT",
+            "src": "spdx"
+        },
+        "MIT License": {
+            "canonical": "MIT",
+            "src": "spdx"
+        },
+        "MIT Open Source License": {
+            "canonical": "MIT",
+            "src": "spdx"
+        },
+        "GNU General Public License": {
+            "canonical": "GPL",
+            "src": "spdx"
+        },
+        "GPL v3": {
+            "canonical": "GPL",
+            "src": "spdx"
+        },
+        "GPLv3": {
+            "canonical": "GPL",
+            "src": "spdx"
+        },
+        "GPL": {
+            "canonical": "GPL",
+            "src": "spdx"
+        },
     }
 
     assert output_data == expected_output

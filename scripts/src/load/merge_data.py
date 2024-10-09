@@ -1,6 +1,6 @@
+import argparse
 import json
 import os
-import argparse
 
 # Set the working directory to the script's directory
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,11 +16,12 @@ def read_data(data_dir):
             with open(filepath, 'r') as f:
                 license_data = json.load(f)
                 canonical_name = license_data.get("canonical")
+                src = license_data.get("src")
                 aliases = license_data.get("aliases", [])
-                data[canonical_name] = canonical_name
+                data[canonical_name] = {"canonical": canonical_name, "src": src}
                 for source in aliases:
                     for alias in aliases[source]:
-                        data[alias] = canonical_name
+                        data[alias] = {"canonical": canonical_name, "src": src}
     return data
 
 
