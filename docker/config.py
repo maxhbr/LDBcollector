@@ -28,6 +28,16 @@ DATABASES = {
 
 SECRET_KEY = os.environ.get("SECRET")
 
+# SMTP settings
+EMAIL_HOST = os.environ.get("EMAIL_HOST")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_PORT = os.environ.get("EMAIL_PORT")
+EMAIL_USE_TLS = os.environ.get("EMAIL_USE_TLS", "").lower() == "true"
+EMAIL_USE_SSL = os.environ.get("EMAIL_USE_SSL", "").lower() == "true"
+DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL")
+
+
 # Load OAuth application settings into memory
 OAUTH_CLIENT_ID = os.environ.get("OAUTH_CLIENT_ID")
 OAUTH_DOMAIN = os.environ.get("OAUTH_DOMAIN")

@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
-# SPDX-License-Identifier: AGPL-3.0-only
+#  SPDX-License-Identifier: AGPL-3.0-only
 from django.urls import reverse
 
 from cube.models import (
@@ -36,11 +36,11 @@ class APICRUDTests(BaseHermineAPITestCase):
         self.assertEqual(r.status_code, 200)
 
     def test_post_retrieve_generic(self):
-        """Test to post a Generic obligation"""
+        """Test to post a compliance action"""
         url = "/api/generics/"
         data = {
             "name": "TestGeneric",
-            "description": "This generic obligation is for testing purpose.",
+            "description": "This compliance action is for testing purpose.",
             "in_core": "True",
             "metacategory": "IPManagement",
             "passivity": "Active",
@@ -154,6 +154,10 @@ class APICRUDTests(BaseHermineAPITestCase):
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
 
+        url = "/api/versions/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
     def test_post_retrieve_usage(self):
         """Test to create a new Usage"""
         self.create_product()
@@ -212,7 +216,7 @@ class APICRUDTests(BaseHermineAPITestCase):
 
         release_id = Release.objects.first().pk
 
-        url = reverse("cube:releases-exploitations-list", args=[release_id])
+        url = reverse("cube:api:releases-exploitations-list", args=[release_id])
         data = {
             "scope": "testscope",
             "project": "testproject",

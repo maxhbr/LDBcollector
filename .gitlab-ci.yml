@@ -12,9 +12,21 @@
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: python:3.8-alpine
 
-stages:
-  - test
-  - release
+include:
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+  - project: 'to-be-continuous/docker'
+    ref: '5.10.1'
+    file: '/templates/gitlab-ci-docker.yml'
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_TRIVY_ARGS: --vuln-type library
+  DOCKER_TRIVY_IMAGE: registry.hub.docker.com/aquasec/trivy:0.52.2
+  DOCKER_PROD_PUBLISH_STRATEGY: none
+  DOCKER_BUILD_CACHE_DISABLED: true
+  DOCKER_BUILD_ARGS: "--no-push"
+  DOCKER_TRIVY_DISABLED: true
+  DOCKER_SBOM_DISABLED: true
 
 tests:
   stage: test
@@ -32,13 +44,13 @@ tests:
   - cp hermine/hermine/config.default.py hermine/hermine/config.py
   - cd hermine
   - poetry run black --check .
-  - poetry run ruff .
+  - poetry run ruff check .
   - poetry run djhtml cube/templates/ --check
   - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
   - poetry run python manage.py test
 
 pages:
-  stage: release
+  stage: production
   rules:
   - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
     changes:
@@ -58,11 +70,9 @@ pages:
   artifacts:
     paths:
     - public
-variables:
-  DOCKER_DRIVER: overlay2
 
 release:
-  stage: release
+  stage: publish
   rules:
     - if: $CI_COMMIT_TAG
   image: registry.gitlab.com/gitlab-org/release-cli:latest
@@ -72,6 +82,3 @@ release:
     name: "$(echo $CI_COMMIT_TAG | sed 's/^v//')"
     tag_name: "$CI_COMMIT_TAG"
     description: See changes in CHANGELOG.md
-
-include:
-  - template: Jobs/Dependency-Scanning.gitlab-ci.yml

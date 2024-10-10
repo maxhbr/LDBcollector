@@ -1,5 +1,80 @@
 # Changelog
 
+## 0.3.4
+
+* Technical release.
+
+## 0.3.3
+
+FEATURES:
+* Validate license spdx ids ([e8da736](https://gitlab.com/hermine-project/hermine/commit/e8da736))
+* Allow deleting all usages for a scope / subproject ([3e2e888](https://gitlab.com/hermine-project/hermine/commit/3e2e888))
+* Blank values for scope and project in exploitations ([126763f](https://gitlab.com/hermine-project/hermine/commit/126763f))
+* Allow autocomplete on Generic field when adding/editing an obligation ([6c1e43f](https://gitlab.com/hermine-project/hermine/commit/6c1e43f))
+* Move warranty and liability to shared fields ([669c3a7](https://gitlab.com/hermine-project/hermine/commit/669c3a7))
+
+BUGFIXES:
+
+* Increase max length for license expressions to accomodate real life cases ([b020f06](https://gitlab.com/hermine-project/hermine/commit/b020f06))
+* Add style to button ([206fba9](https://gitlab.com/hermine-project/hermine/commit/206fba9))
+* Give variable name more related to their content ([e073dbf](https://gitlab.com/hermine-project/hermine/commit/e073dbf))
+* Display project and scope ([28c702f](https://gitlab.com/hermine-project/hermine/commit/28c702f))
+* Add hyperlink on licence name to licence page ([6addfce](https://gitlab.com/hermine-project/hermine/commit/6addfce))
+* Typo in title ([e52709c](https://gitlab.com/hermine-project/hermine/commit/e52709c))
+* Display PURLs in component versions ([541f05a](https://gitlab.com/hermine-project/hermine/commit/541f05a))
+* Add breadcrumb to product in release creation form ([0947b2f](https://gitlab.com/hermine-project/hermine/commit/0947b2f))
+
+
+DOCUMENTATION:
+
+* Update page for REST API ([12ab064](https://gitlab.com/hermine-project/hermine/commit/12ab064))
+
+
+CI: 
+* Use to be continuous Docker template ([f29e26a](https://gitlab.com/hermine-project/hermine/commit/f29e26a))
+* Use TBC standard stages ([be246a0](https://gitlab.com/hermine-project/hermine/commit/be246a0))
+* Fix Trivy's Docker image ([a0c54dd](https://gitlab.com/hermine-project/hermine/commit/a0c54dd))
+* Temporary removal to fix the blocking false positives ([7974279](https://gitlab.com/hermine-project/hermine/commit/7974279))
+* Delete the apt-get lists after installing ([815efe7](https://gitlab.com/hermine-project/hermine/commit/815efe7))
+* Update poetry version to allow package-mode option ([b31489d](https://gitlab.com/hermine-project/hermine/commit/b31489d))
+   
+MISC:
+
+## 0.3.2
+BUGFIXES:
+* Add hlink to projects in dashboard ([d367c3e](https://gitlab.com/hermine-project/hermine/commit/d367c3e))
+* Categories widget in product forms ([e41e235](https://gitlab.com/hermine-project/hermine/commit/e41e235)), closes [#284](https://gitlab.com/hermine-project/hermine/issues/284)
+* Checking many-to-many relationships in check_liscenses_against_policy duplicates usages ([ee81971](https://gitlab.com/hermine-project/hermine/commit/ee81971))
+* Copy generics ([3cf6c16](https://gitlab.com/hermine-project/hermine/commit/3cf6c16))
+* Display empty progress bar ([69d7bb6](https://gitlab.com/hermine-project/hermine/commit/69d7bb6)), closes [#213](https://gitlab.com/hermine-project/hermine/issues/213)
+* Ensure we don't use external primary key value on import ([da91ef9](https://gitlab.com/hermine-project/hermine/commit/da91ef9))
+* Wrong statistics on shared database page ([6c8370c](https://gitlab.com/hermine-project/hermine/commit/6c8370c))
+* Adapt form layout to div not table ([7641cfd](https://gitlab.com/hermine-project/hermine/commit/7641cfd)), closes [#287](https://gitlab.com/hermine-project/hermine/issues/287)
+* Add link to Dashboard in breadcrumbs ([61c524e](https://gitlab.com/hermine-project/hermine/commit/61c524e))
+* Display purl type in component list ([4862f03](https://gitlab.com/hermine-project/hermine/commit/4862f03))
+* Restore value for model ([17d66c9](https://gitlab.com/hermine-project/hermine/commit/17d66c9))
+
+FEATURES:
+* Add number of scopes in summary ([148f27c](https://gitlab.com/hermine-project/hermine/commit/148f27c))
+* Change license comment field label ([85f0421](https://gitlab.com/hermine-project/hermine/commit/85f0421)), closes [#225](https://gitlab.com/hermine-project/hermine/issues/225)
+* Duplicate obligations with licenses ([d2ab406](https://gitlab.com/hermine-project/hermine/commit/d2ab406))
+* New shared data page ([39753c0](https://gitlab.com/hermine-project/hermine/commit/39753c0))
+* Pagination on top and bottom of lists ([9eecd30](https://gitlab.com/hermine-project/hermine/commit/9eecd30)), closes [#241](https://gitlab.com/hermine-project/hermine/issues/241)
+* Replace text field by select for scope field on derogation forms ([22a3faf](https://gitlab.com/hermine-project/hermine/commit/22a3faf))
+* Use purl name when available ([5503e61](https://gitlab.com/hermine-project/hermine/commit/5503e61))
+
+MISC:
+* HERMINE_ prefix for compose config ([510abd6](https://gitlab.com/hermine-project/hermine/commit/510abd6))
+* Add docker composer version warning to doc ([0617fca](https://gitlab.com/hermine-project/hermine/commit/0617fca))
+* Clarify .gitignore ([f19bc16](https://gitlab.com/hermine-project/hermine/commit/f19bc16))
+* Eable error logging in prod ([65b9424](https://gitlab.com/hermine-project/hermine/commit/65b9424))
+* Logging config ([884843b](https://gitlab.com/hermine-project/hermine/commit/884843b))
+* Reuse linting ([879aad3](https://gitlab.com/hermine-project/hermine/commit/879aad3))
+* Djhtml linting ([ef85f45](https://gitlab.com/hermine-project/hermine/commit/ef85f45))
+* Document dev container ([5a09973](https://gitlab.com/hermine-project/hermine/commit/5a09973))
+* Tun devcontainer settings ([97d896d](https://gitlab.com/hermine-project/hermine/commit/97d896d))
+
+
 ## 0.3.1
 MISC:
 * Update Django to 5.0.3

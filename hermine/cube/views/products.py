@@ -8,6 +8,7 @@ from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
 from django.views import generic
 
+from cube.forms.products import ProductForm
 from cube.models import Product, Release, Category
 from cube.views.mixins import SearchMixin
 
@@ -19,7 +20,7 @@ class ProductListView(
     model = Product
     template_name = "cube/product_list.html"
     search_fields = ("name", "description")
-    paginate_by = 10
+    paginate_by = 25
 
 
 class ProductDetailView(
@@ -34,8 +35,8 @@ class ProductCreateView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView
 ):
     permission_required = "cube.add_product"
-    fields = "__all__"
     model = Product
+    form_class = ProductForm
     template_name = "cube/product_create.html"
 
 
@@ -43,8 +44,8 @@ class ProductUpdateView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView
 ):
     permission_required = "cube.change_product"
-    fields = "__all__"
     model = Product
+    form_class = ProductForm
     template_name = "cube/product_update.html"
 
 

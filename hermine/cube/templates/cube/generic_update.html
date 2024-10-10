@@ -7,12 +7,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 
-{% block title %}Edit generic obligation{% endblock %}
+{% block title %}Edit compliance action{% endblock %}
 
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
-    <li><a href="{% url 'cube:generic_list' %}">Generic obligations</a></li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:generic_list' %}">Compliance actions</a></li>
     <li><a href="{% url "cube:generic_detail" generic.id %}">{{ generic.name }}</a></li>
     <li>Edit</li>
   </ul>
@@ -20,7 +20,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block herozone %}
   <h1 class="title">
-    Edit generic obligation
+    Edit compliance action
   </h1>
 {% endblock %}
 

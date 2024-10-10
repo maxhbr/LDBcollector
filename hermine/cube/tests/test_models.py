@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib.auth.models import Group
+from django.core.exceptions import ValidationError
 from django.test import TestCase
 
 from cube.models import (
@@ -10,6 +11,7 @@ from cube.models import (
     Component,
     Version,
 )
+from cube.utils.validators import validate_spdx_id
 
 
 # Models TestCases
@@ -41,3 +43,33 @@ class DefaultPermissionTestCase(TestCase):
     def default_groups_have_permissions(self):
         pm = Group.objects.get(name="Project manager (install preset)")
         self.assertTrue(pm.permissions.filter(codename="view_product").exists())
+
+
+class LicenseIDValidationTestCase(TestCase):
+    def test_valid_official_id(self):
+        validate_spdx_id("GPL-3.0-only")
+        validate_spdx_id("GPL-2.0")
+        validate_spdx_id("MPL-2.0")
+
+    def test_invalid_id(self):
+        with self.assertRaises(ValidationError):
+            validate_spdx_id("invalid_id")
+
+    def test_ref_id(self):
+        validate_spdx_id("LicenseRef-123")
+
+    def test_official_exception(self):
+        validate_spdx_id("GPL-2.0 WITH Classpath-exception-2.0")
+        validate_spdx_id("LicenseRef-123 WITH Classpath-exception-2.0")
+
+    def test_ref_exception(self):
+        validate_spdx_id("MIT WITH LicenseRef-CustomException")
+        validate_spdx_id("LicenseRef-123 WITH LicenseRef-456")
+
+    def test_invalid_exception(self):
+        with self.assertRaises(ValidationError):
+            validate_spdx_id("GPL-2.0 WITH CustomException")
+
+    def test_invalid_expression(self):
+        with self.assertRaises(ValidationError):
+            validate_spdx_id("ISC OR MIT")

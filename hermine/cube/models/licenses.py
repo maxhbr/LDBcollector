@@ -9,6 +9,7 @@ from django.utils.functional import cached_property
 
 from cube.models import Usage
 from cube.utils.reference import license_reference_diff, generic_reference_diff
+from cube.utils.validators import validate_spdx_id
 
 
 class LicenseManager(models.Manager):
@@ -84,7 +85,9 @@ class License(models.Model):
     ]
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated = models.DateTimeField(auto_now=True, null=True, blank=True)
-    spdx_id = models.CharField("SPDX Identifier", max_length=200, unique=True)
+    spdx_id = models.CharField(
+        "SPDX Identifier", max_length=200, unique=True, validators=[validate_spdx_id]
+    )
     status = models.CharField(
         "Review status",
         max_length=20,
@@ -223,8 +226,7 @@ class GenericManager(models.Manager):
 
 
 class Generic(models.Model):
-    """A Generic obligation which is the simplification of the instances of several
-    similar :class `Obligation`."""
+    """A Compliance action linked to several :class `Obligation`."""
 
     objects = GenericManager()
     created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
@@ -242,28 +244,28 @@ class Generic(models.Model):
     name = models.CharField(
         max_length=200,
         unique=True,
-        help_text="Short description of the Generic obligation. Unique.",
+        help_text="Short description of the compliance action. Unique.",
     )
     description = models.TextField(
         max_length=500, blank=True, help_text="Longer description, optional."
     )
     in_core = models.BooleanField(
         default=False,
-        help_text="If True, means this Generic obligation is assumed to systematically fit to the enterprise policy. "
+        help_text="If True, means this compliance action is assumed to systematically fit to the enterprise policy. "
         "Otherwise, means it has to be manually checked.",
     )
     metacategory = models.CharField(
         max_length=40,
         choices=METAGATEGORY_CHOICES,
         blank=True,
-        help_text="A category of Generic obligation.",
+        help_text="A category of compliance action.",
     )
     team = models.ForeignKey(Team, on_delete=models.SET_NULL, null=True, blank=True)
     passivity = models.CharField(
         max_length=20,
         choices=PASSIVITY_CHOICES,
         blank=True,
-        help_text="A Generic obligation needs to conduct some kind of action"
+        help_text="A compliance action needs to conduct some kind of action"
         "(Active) or NOT to do specific things (Passive)",
     )
 
@@ -278,11 +280,11 @@ class Generic(models.Model):
         return ("[Core]" if self.in_core else "") + self.name
 
     class Meta:
-        verbose_name = "Generic obligation"
-        verbose_name_plural = "Generic obligations"
+        verbose_name = "Compliance action"
+        verbose_name_plural = "Compliance actions"
         permissions = (
-            ("export_generic", "Can export generic obligations"),
-            ("import_generic", "Can import generic obligations"),
+            ("export_generic", "Can export compliance actions"),
+            ("import_generic", "Can import compliance actions"),
         )
 
 

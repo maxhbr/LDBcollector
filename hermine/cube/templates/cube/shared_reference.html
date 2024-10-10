@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url "cube:license_list" %}">Licenses</a></li>
     <li>Shared reference data</li>
   </ul>
@@ -28,15 +28,19 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if licenses.total %}
     <table class="is-flex">
       <tr>
-        <th>Total</th>
+        <th>Total in local data</th>
         <th>{{ licenses.total }}</th>
+      </tr>
+      <tr>
+        <th>Synced with shared data</th>
+        <td>{{ licenses.identical }}</td>
       </tr>
       <tr>
         <th>Different from shared data</th>
         <td>{{ licenses.diff }}</td>
       </tr>
       <tr>
-        <th>Absent from shared data</th>
+        <th>Only in local (absent from shared data)</th>
         <td>{{ licenses.only_local }}</td>
       </tr>
     </table>
@@ -61,7 +65,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               </button>
             </div>
             <div class="help">
-              This will also copy any linked obligation or generic obligation.
+              This will also copy any linked obligation or compliance action.
             </div>
           </div>
         </form>
@@ -69,18 +73,22 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   {% endif %}
 
-  <h3>Generic obligations</h3>
+  <h3>Compliance actions</h3>
   <table class="is-flex">
     <tr>
-      <th>Total</th>
+      <th>Total in local data</th>
       <th>{{ generics.total }}</th>
+    </tr>
+    <tr>
+      <th>Synced with shared data</th>
+      <td>{{ generics.identical }}</td>
     </tr>
     <tr>
       <th>Different from shared data</th>
       <td>{{ generics.diff }}</td>
     </tr>
     <tr>
-      <th>Absent from shared data</th>
+      <th>Only in local (absent from shared data) </th>
       <td>{{ generics.only_local }}</td>
     </tr>
   </table>
@@ -109,7 +117,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="message-body">
       <p><b>Use this cautiously.</b><p>
         <p>
-          This updates all licenses, obligations and generic obligations to match the shared database,
+          This updates all licenses, obligations and compliance actions to match the shared database,
           erasing all your local changes.<br> This also copies any missing data.
         </p>
         <form method="post" action="{% url "cube:shared_sync_everything" %}">

@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url 'cube:component_list' %}">Components</a></li>
     <li>{{ object.name }}</li>
   </ul>
@@ -81,12 +81,11 @@ SPDX-License-Identifier: AGPL-3.0-only
   <h2>Versions</h2>
   {% for version in object.versions.all %}
     <h3>{{ object.name }} : {{ version.version_number }} <a title="Edit this version" href="{% url 'admin:cube_version_change' version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></h3>
-    <p>The license expression is : <span class="icon"><i class="fas fa-balance-scale"></i></span>
+    <p><strong><span class="icon"><i class="fas fa-balance-scale"></i></span>License expression:</strong>
       {% if version.corrected_license%}
-        <strong>{{version.corrected_license}}</strong> (corrected from {{ version.spdx_valid_license_expr }})
-
+        {{version.corrected_license}} (corrected from {{ version.spdx_valid_license_expr }})
       {% else %}
-        <strong>{{version.spdx_valid_license_expr}}</strong>
+        {{version.spdx_valid_license_expr}}
       {% endif %}
       {% if version.spdx_valid_license_expr != version.declared_license_expr %}
         (declared License expression was {{ version.declared_license_expr }})
@@ -94,12 +93,13 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% if version.license_is_ambiguous %}
         <br>❌ License expression is ambiguous, corrected license needs to be specified
       {% endif %}
-      <p>This component is used in the following releases of your products:</p>
-      <ul>
-        {% for usage in version.usage_set.all %}
-          <li><a href="{% url 'cube:release_summary' usage.release.id %}"> <strong>{{ usage.release.product.name }}</strong> : {{ usage.release.release_number }} ({{ usage.project }}/ {{ usage.scope }})</a> </li>
-        {% endfor %}
-      </ul>
+      <strong>PURL : </strong> {{version.purl}}</p>
+    <p>This version is used in the following releases of your products:</p>
+    <ul>
+      {% for usage in version.usage_set.all %}
+        <li><a href="{% url 'cube:release_summary' usage.release.id %}"> <strong>{{ usage.release.product.name }}</strong> : {{ usage.release.release_number }} ({{ usage.project }}/ {{ usage.scope }})</a> </li>
+      {% endfor %}
+    </ul>
   {% endfor %}
 {% endblock %}
 

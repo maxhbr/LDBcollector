@@ -11,13 +11,20 @@ from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
+from rest_framework.parsers import MultiPartParser
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from cube.importers import import_spdx_file, import_ort_evaluated_model_json_file
+from cube.importers import (
+    import_spdx_file,
+    import_cyclonedx_file,
+    import_ort_evaluated_model_json_file,
+)
 from cube.models import Product, Release, Exploitation
 from cube.serializers import (
     ReleaseSerializer,
     UploadSPDXSerializer,
+    UploadCycloneDXSerializer,
     UploadORTSerializer,
 )
 from cube.serializers.products import (
@@ -365,6 +372,9 @@ class ExploitationViewSet(viewsets.ModelViewSet):
     lookup_field = "id"
 
     def get_queryset(self):
+        if "release_id" not in self.kwargs:
+            # Ony used by yasg when it tries to check permissions on the viexw
+            return Exploitation.objects.all()
         return Exploitation.objects.filter(release=self.kwargs["release_id"])
 
     def perform_create(self, serializer):
@@ -372,11 +382,14 @@ class ExploitationViewSet(viewsets.ModelViewSet):
 
 
 class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]  # Custom permissions in .create
     serializer_class = UploadSPDXSerializer
+    parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
         """Upload an SPDX file to Hermine."""
+        self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
@@ -387,16 +400,50 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             release.pk,
             serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
+            default_project_name=serializer.validated_data.get(
+                "default_project_name", ""
+            ),
+            default_scope_name=serializer.validated_data.get("default_scope_name", ""),
+        )
+        return Response()
+
+
+class UploadCYCLONEDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]
+    serializer_class = UploadCycloneDXSerializer
+    parser_classes = (MultiPartParser,)
+
+    @swagger_auto_schema(responses={201: "Created"})
+    def create(self, request, *args, **kwargs):
+        """Upload a CycloneDX file to Hermine."""
+        self.request.user.has_perm("cube.change_release")
+        return super().create(request, *args, **kwargs)
+
+    def perform_create(self, serializer):
+        cyclonedx_file = serializer.validated_data["cyclonedx_file"]
+        release = serializer.validated_data["release"]
+        import_cyclonedx_file(
+            cyclonedx_file,
+            release.pk,
+            serializer.validated_data.get("replace", False),
+            linking=serializer.validated_data.get("linking", ""),
+            default_project_name=serializer.validated_data.get(
+                "default_project_name", ""
+            ),
+            default_scope_name=serializer.validated_data.get("default_scope_name", ""),
         )
         return Response()
 
 
 class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    permission_classes = [IsAuthenticated]
     serializer_class = UploadORTSerializer
+    parser_classes = (MultiPartParser,)
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
         """Upload an ORT Evaluated model file to Hermine."""
+        self.request.user.has_perm("cube.change_release")
         return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):

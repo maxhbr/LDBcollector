@@ -48,10 +48,12 @@ if host := getattr(config, "HOST", None):
 else:
     ALLOWED_HOSTS = []
 
+USE_X_FORWARDED_HOST = getattr(config, "USE_X_FORWARDED_HOST", False)
+SECURE_PROXY_SSL_HEADER = getattr(config, "SECURE_PROXY_SSL_HEADER", None)
+
 # Application definition
 
 INSTALLED_APPS = [
-    "cube.apps.CubeConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -64,6 +66,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "django_filters",
     "hermine",
+    "cube.apps.CubeConfig",
     "drf_yasg",
 ]
 
@@ -149,6 +152,25 @@ if getattr(config, "OAUTH_CLIENT", None) is not None:
     ]
     SOCIAL_AUTH_URL_NAMESPACE = "social"
 
+# SMTP
+
+if getattr(config, "EMAIL_HOST", None) is not None:
+    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+if getattr(config, "EMAIL_HOST", None) is not None:
+    EMAIL_HOST = config.EMAIL_HOST
+if getattr(config, "EMAIL_PORT", None) is not None:
+    EMAIL_PORT = config.EMAIL_PORT
+if getattr(config, "EMAIL_HOST_USER", None) is not None:
+    EMAIL_HOST_USER = config.EMAIL_HOST_USER
+if getattr(config, "EMAIL_HOST_PASSWORD", None) is not None:
+    EMAIL_HOST_PASSWORD = config.EMAIL_HOST_PASSWORD
+if getattr(config, "DEFAULT_FROM_EMAIL", None) is not None:
+    DEFAULT_FROM_EMAIL = config.DEFAULT_FROM_EMAIL
+if getattr(config, "EMAIL_USE_TLS", None) is not None:
+    EMAIL_USE_TLS = config.EMAIL_USE_TLS
+if getattr(config, "EMAIL_USE_SSL", None) is not None:
+    EMAIL_USE_SSL = config.EMAIL_USE_SSL
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -211,11 +233,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 # REST API stuff
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticatedOrReadOnly"
-    ],
+    # Use Django's standard `django.contrib.auth` permissions
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.DjangoModelPermissions"],
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.BasicAuthentication",
         "rest_framework.authentication.SessionAuthentication",

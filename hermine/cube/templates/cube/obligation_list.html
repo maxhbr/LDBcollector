@@ -1,4 +1,4 @@
-<!--<!--
+<!--
 SPDX-FileCopyrightText: 2024 Hermine-team <hermine@inno3.fr>
 SPDX-License-Identifier: AGPL-3.0-only
 -->
@@ -8,7 +8,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li>Orphan obligations</li>
   </ul>
 {% endblock %}
@@ -24,7 +24,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
   <div id="content-main">
-    <p>Orphan obligations are obligations specific to a license, not attached to any generic obligation.
+    <p>Orphan obligations are obligations specific to a license, not attached to any compliance action.
     </p>
     <div class="b-table has-pagination">
       <div class="table-wrapper">
@@ -50,4 +50,5 @@ SPDX-License-Identifier: AGPL-3.0-only
 
       </div>
     </div>
+  </div>
 {% endblock %}

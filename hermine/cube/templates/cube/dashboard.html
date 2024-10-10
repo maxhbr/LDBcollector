@@ -40,7 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tbody>
           {% for release in last_releases %}
             <tr>
-              <td>{{ release.product.name }}</td>
+              <td><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></td>
               <td><a href="{% url 'cube:release_summary' release.id %}">{{ release.release_number }}</a>
               </td>
               <td>{{ release.ship_status }}</td>
@@ -167,7 +167,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               <div class="level-item">
                 <div class="is-widget-label">
                   <h3 class="subtitle is-spaced">
-                    Generic obligations
+                    Compliance actions
                   </h3>
                   <h1 class="title">
                     {{ generics_count }}

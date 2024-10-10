@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}{{ release.product.name }} {{release.release_number}}{% endblock %}
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
     <li><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a></li>
     <li><a href="{% url 'cube:release_obligations' release.id %}">Obligations</a></li>
@@ -25,15 +25,15 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block content %}
 
   <div id="content-main">
-    <p>List of components for which the following generic obligation has to be fulfilled</p>
+    <p>List of components for which the following compliance action has to be fulfilled</p>
     {{ generic.description|linebreaks }}
 
 
     <table class="table">
       <thead>
         <tr>
-          <th>Component</th>
-          <th>Version</th>
+          <th>Subproject:Scope</th>
+          <th>Component (Version)</th>
           <th>Linking</th>
           <th>Exploitation</th>
           <th>Modified</th>
@@ -48,17 +48,17 @@ SPDX-License-Identifier: AGPL-3.0-only
 
         {% for usage in usages %}
           <tr>
-            <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
-            <td>{{ usage.version.version_number }}</td>
+            <td>{{ usage.project }}:{{ usage.scope }}</td>
+            <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a>({{ usage.version.version_number }})</td>
             <td>{{ usage.linking }}</td>
             <td>{{ usage.get_exploitation_display }}</td>
             <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
             <td>{{ usage.version.effective_license}}</td>
             <td>{{ usage.license_expression }}</td>
             <td>{% for license_chosen in usage.licenses_chosen.all %}
-              <span class="tag {{ license_chosen|licenseAllowedCSS }}">
+              <a href="{% url 'cube:license_detail' license_chosen.id %}"><span class="tag {{ license_chosen|licenseAllowedCSS }}">
                 {{ license_chosen.spdx_id }}
-              </span>
+              </span></a>
             {% endfor %}
             </td>
             <td><a href="{% url 'cube:usage_update' usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
@@ -69,6 +69,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   </div>
 {% endblock %}
+
+
 
 
 

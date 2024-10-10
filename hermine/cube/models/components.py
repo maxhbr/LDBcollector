@@ -117,6 +117,7 @@ class Usage(models.Model):
     class Meta:
         verbose_name = "Component usage"
         verbose_name_plural = "Component usages"
+        ordering = ["id"]
 
 
 class Component(models.Model):
@@ -136,7 +137,7 @@ class Component(models.Model):
     purl_type = models.CharField("purl package type", max_length=200, blank=True)
     description = models.TextField(max_length=500, blank=True)
     programming_language = models.CharField(max_length=200, blank=True)
-    spdx_expression = models.CharField(max_length=200, blank=True)
+    spdx_expression = models.CharField(max_length=500, blank=True)
     homepage_url = models.URLField(max_length=200, blank=True)
     export_control_status = models.CharField(
         max_length=20, choices=EXPORT_CHOICES, blank=True
@@ -184,18 +185,18 @@ class Version(models.Model):
     )
     version_number = models.CharField(max_length=200)
     declared_license_expr = models.CharField(
-        max_length=200,
+        max_length=500,
         blank=True,
         help_text="Declared license expression (may not be SPDX valid)",
     )
     spdx_valid_license_expr = models.CharField(
-        max_length=200,
+        max_length=500,
         blank=True,
         help_text="License expression concluded by analyzing tool (e.g. ORT)",
         validators=[validate_spdx_expression],
     )
     corrected_license = models.CharField(
-        max_length=200,
+        max_length=500,
         blank=True,
         help_text="Final license expression used in legal evaluation (required when validated expression is ambiguous or empty)",
     )

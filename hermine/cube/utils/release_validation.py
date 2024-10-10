@@ -2,6 +2,7 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
+from itertools import groupby
 
 from django.db.models import (
     Count,
@@ -136,7 +137,7 @@ def propagate_choices(release: Release):
                 usage.license_expression = expression_out
                 usage.save()
 
-    resolved = (
+    resolved = {
         usage
         for usage in release.usage_set.all()
         .select_related("version")
@@ -144,8 +145,7 @@ def propagate_choices(release: Release):
         if has_ors(
             usage.version.effective_license
         )  # we want to list only usages for which a choice was actually necessary
-    )
-
+    }
     return {"to_resolve": to_resolve, "resolved": resolved}
 
 
@@ -179,17 +179,21 @@ def check_licenses_against_policy(release: Release):
                 ).values("pk")[:1]
             )
         )
-        .all()
     )
 
-    for usage in usages:
+    # Because of the way sql JOIN query operates, usages are duplicated
+    # for each license_chosen or categories. They are all identical objets,
+    # except some have a derogation and some don't.
+    for pk, usages in groupby(usages, key=lambda u: u.id):
+        usages = list(usages)
+        usage = usages[0]
         for license in usage.licenses_chosen.all():
             involved_lic.add(license)
 
             if license.allowed == License.ALLOWED_ALWAYS:
                 continue
 
-            if usage.derogation is not None:
+            if any(u.derogation is not None for u in usages):
                 license_derogations = list(
                     Derogation.objects.for_usage(usage).filter(license=license)
                 )
@@ -284,8 +288,13 @@ def validate_exploitations(release: Release):
 
     for project, scope, count in scopes:
         try:
-            release.exploitations.get(scope=scope, project=project)
+            release.exploitations.get(
+                (Q(scope=scope) | Q(scope="")) & (Q(project=project) | Q(project=""))
+            )
         except Exploitation.DoesNotExist:
+            unset_scopes.add((project, scope, count))
+        except Exploitation.MultipleObjectsReturned:
+            logger.warning("Multiple exploitations for %s %s", project, scope)
             unset_scopes.add((project, scope, count))
 
     context["exploitations"] = release.exploitations.all()

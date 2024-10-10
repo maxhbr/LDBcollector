@@ -12,6 +12,7 @@ def create_or_replace_by_natural_key(proxy_object: DeserializedObject):
         proxy_object.object.id = object_class.objects.get_by_natural_key(*key).id
         created = False
     except object_class.DoesNotExist:
+        proxy_object.object.id = None
         created = True
 
     proxy_object.save()

@@ -5,33 +5,6 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Developing Hermine
 
-In order to run Hermine in development mode,
-follow manual installation instructions in the [installation guide](install.md)
-up to the server part.
-
-Then, use the following commands to run the development server:
-
-```bash
-# inside poetry environment
-python hermine/manage.py runserver
-```
-
-To run the tests, use the following command:
-
-```bash
-# inside poetry environment
-python hermine/manage.py test
-```
-
-To build front modules, use the following command:
-
-```bash
-npm run install
-npm run watch # watch for changes and rebuild
-```
-
-
-
 We document here the Hermine-specific aspects of the code. 
 The different FOSS components on which Hermine relies have their own, very useful 
 doc:
@@ -46,6 +19,7 @@ and its [Python library](https://github.com/package-url/packageurl-python)
 maxdepth: 2
 caption: Contents
 ---
+dev_workflow
 coding_standards
 data_model
 permissions

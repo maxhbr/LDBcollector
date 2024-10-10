@@ -107,10 +107,10 @@ def get_usages_obligations(usages):
 def get_generic_usages(usages, generic):
     """
     Filters a list of usages to retain only those triggering the provided
-    generic obligation.
+    compliance action.
     :param usages: An iterable of Usage objects
     :param generic: A Generic object
-    :return: An iterable of Usage objects that actually trigger the generic obligation
+    :return: An iterable of Usage objects that actually trigger the compliance action
     """
     triggering_usages = set()
 

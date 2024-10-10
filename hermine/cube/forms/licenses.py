@@ -4,6 +4,7 @@
 from django.db import transaction
 from django.forms import ModelForm, ModelChoiceField, Form
 
+from cube.forms.mixins import AutocompleteFormMixin
 from cube.models import Generic, Obligation, License
 from cube.utils.reference import GENERIC_SHARED_FIELDS, LICENSE_SHARED_FIELDS
 
@@ -42,6 +43,7 @@ class CopyReferenceLicensesForm(Form):
         # Copy missing generics
         for generic in missing_generics:
             generic.id = None
+            generic._state.db = "default"
             generic.save(using="default")
 
         # Copy licenses then their obligations
@@ -61,7 +63,7 @@ class CopyReferenceLicensesForm(Form):
 
 
 class CopyReferenceGenericsForm(Form):
-    """Form to copy all missing generic obligations to local data from reference."""
+    """Form to copy all missing compliance actions to local data from reference."""
 
     def save(self):
         """Copy all missing licenses to local data from reference."""
@@ -72,6 +74,7 @@ class CopyReferenceGenericsForm(Form):
         # Copy missing generics
         for generic in missing_generics:
             generic.id = None
+            generic._state.db = "default"
             generic.save(using="default")
 
 
@@ -133,3 +136,17 @@ class SyncEverythingFromReferenceForm(Form):
 
         # Copy missing licenses then their obligations
         CopyReferenceLicensesForm().save()
+
+
+class ObligationForm(AutocompleteFormMixin, ModelForm):
+    class Meta:
+        model = Obligation
+        fields = (
+            "generic",
+            "name",
+            "verbatim",
+            "passivity",
+            "trigger_expl",
+            "trigger_mdf",
+        )
+        autocomplete_fields = ["generic"]

@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
     <li>{{object.release_number}}</li>
     <li>Obligations</li>
@@ -42,12 +42,12 @@ SPDX-License-Identifier: AGPL-3.0-only
     <a href="{% url "cube:license_detail" license_involved.id %}"><span class="tag {{ license_involved|licenseAllowedCSS }}">{{ license_involved.spdx_id }}</span></a>
   {% endfor %}
   </p>
-  <h2 class="title is-2">List of generic obligations to follow</h2>
+  <h2 class="title is-2">List of compliance actions to follow</h2>
   <table class="table">
     <thead>
       <tr>
         <th>In core?</th>
-        <th>Generic name</th>
+        <th>Name</th>
         <th>Lead</th>
         <th>Metacategory</th>
         <th>Active/Passive</th>

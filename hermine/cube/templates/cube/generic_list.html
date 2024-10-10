@@ -6,12 +6,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
-{% block title %}Generic obligation{% endblock %}
+{% block title %}Compliance action{% endblock %}
 
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
-    <li>Generic obligations</li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li>Compliance actions</li>
   </ul>
 {% endblock %}
 
@@ -32,7 +32,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </form>
     <a class="button" href="{% url "cube:generic_create" %}">
       <span class="icon"><i class="fas fa-plus"></i></span>
-      <span>Create a new generic obligation</span>
+      <span>Create a new compliance action</span>
     </a>
   {% endif %}
   {% if perms.cube.export_generic %}
@@ -48,20 +48,20 @@ SPDX-License-Identifier: AGPL-3.0-only
     <span class="icon is-medium">
       <i class="fas fa-award"></i>
     </span>
-    Generic obligations
+    Compliance actions
   </h1>
 {% endblock %}
 
 {% block content %}
   <div id="content-main">
-    <p>Each obligation extracted from the analysed licenses have been, whenever possible, attached to a generic obligation (the obligations that have not been attached are listed on the <a href="{% url "cube:obligations_orphans" %}">Orphan Obligations page</a>). Designed to simplify the compliance process, these generic obligations represent the common denominator for these many specific obligations.</p>
-    <p>Some of these generic obligations can be added to the <em>Core</em>, if your policy requires that these obligations be systematically met for each Open Source component, even if a component's licence does not explicitly require the obligation to be met. The other (non core) generic obligations will need to be monitored and may require additional work.
+    <p>Each obligation extracted from the analysed licenses have been, whenever possible, attached to a compliance action (the obligations that have not been attached are listed on the <a href="{% url "cube:obligations_orphans" %}">Orphan Obligations page</a>). Designed to simplify the compliance process, these compliance actions represent the common denominator for these many specific obligations.</p>
+    <p>Some of these compliance actions can be added to the <em>Core</em>, if your policy requires that these obligations be systematically met for each Open Source component, even if a component's licence does not explicitly require the obligation to be met. The other (non core) compliance actions will need to be monitored and may require additional work.
     </p>
     <div class="card has-table">
       <header class="card-header">
         <p class="card-header-title">
           <span class="icon"><i class="fas fa-award"></i></span>
-          {{ generics_incore|length }} generic obligations in the core
+          {{ generics_incore|length }} compliance actions in the core
         </p>
       </header>
       <div class="card-content">
@@ -142,7 +142,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <header class="card-header">
         <p class="card-header-title">
           <span class="icon"><i class="fas fa-award"></i></span>
-          {{generics_outcore|length}} generic obligations out of the core
+          {{generics_outcore|length}} compliance actions out of the core
         </p>
       </header>
       <div class="card-content">
