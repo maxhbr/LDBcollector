@@ -11,7 +11,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.57
+Version:        1.58
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -128,6 +128,18 @@ make check-grammar
 
 
 %changelog
+* Thu Oct 10 2024 Miroslav Suchý <msuchy@redhat.com> 1.58-1
+- add Ultra permissive dedication of docbook5-schemas
+- add public domain dedication for clc
+- add Sendmail-Open-Source-1.1 license
+- add public domain dedication for biblesync
+- add public domain dedication for BareBonesBrowserLaunch
+- add public domain dedication for astronomy-menus
+- add LGPL-2.1-only WITH OCCT-exception-1.0
+- add CERN-OHL-P-2.0
+- add Jam license
+- add public domain dedication for ants
+
 * Fri Sep 27 2024 Miroslav Suchý <msuchy@redhat.com> 1.57-1
 - add filedrop public domain dedication
 - add ddate public domain dedication
