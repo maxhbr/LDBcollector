@@ -16,6 +16,7 @@
         "osi:PostgreSQL",
         "POSTGRESQL License",
         "scancode:postgresql",
-        "License :: OSI Approved :: PostgreSQL License"
+        "License :: OSI Approved :: PostgreSQL License",
+        "PostgreSQL Global Development Group"
     ]
 }
