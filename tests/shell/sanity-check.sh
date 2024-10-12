@@ -130,7 +130,7 @@ check_test_case
 # check_file_presence
 # check_schema
 
-ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\" -e \" 0 \""
+ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\" -e \" 0 \"  -e \"0C\" "
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
 BSD2_PATENT_PRESENT=" -i -e patent" 
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' -e EDL -e eclipse -e 2.0 "
