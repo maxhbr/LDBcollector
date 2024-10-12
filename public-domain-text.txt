@@ -1399,6 +1399,18 @@ This is part of the libb64 project, and has been placed in the public domain.
 For details, see http://sourceforge.net/projects/libb64
 '''
 
+package = libb64
+location = https://libb64.sourceforge.net/
+text = '''
+This work is released into the Public Domain.
+
+It basically boils down to this: I put this work in the public domain, and you
+can take it and do whatever you want with it. An example of this "license" is
+the Creative Commons Public Domain License, a copy of which can be found in the
+LICENSE file in the distribution, and also on-line at
+http://creativecommons.org/licenses/publicdomain/
+'''
+
 package = memcached
 location = https://github.com/memcached/memcached/blob/master/murmur3_hash.c
 text = '''
