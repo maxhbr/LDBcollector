@@ -2010,3 +2010,9 @@ make back to the origin repository.  These obligations are non-
 binding for public domain software, but they are to be seriously
 handled nonetheless.
 '''
+
+package = emacs-slime
+location = https://github.com/slime/slime?tab=readme-ov-file#license
+text = '''
+SLIME is free software. All files, unless explicitly stated otherwise, are public domain. 
+'''
