@@ -1,20 +1,21 @@
 {
-"meta": {
-    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
-  },
-  "name": "X11-Style (Open Group)",
-  "scancode_key": "mit-open-group", 
-  "spdxid": "MIT-open-group",
-  "aliases": [
-   "MIT-open-group",
-   "MIT Open Group Variant",
-   "MIT Open Group",
-   "MIT-Open-Group",
-   "MIT Open Group variant",
-   "scancode://x11-opengroup",
-   "X11-Style (Open Group)",
-   "mit-open-group",
-   "scancode:mit-open-group"
-  ]
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "X11-Style (Open Group)",
+    "scancode_key": "mit-open-group", 
+    "spdxid": "MIT-open-group",
+    "aliases": [
+        "MIT-open-group",
+        "MIT Open Group Variant",
+        "MIT Open Group",
+        "MIT-Open-Group",
+        "MIT Open Group variant",
+        "scancode://x11-opengroup",
+        "X11-Style (Open Group)",
+        "mit-open-group",
+        "scancode:mit-open-group",
+        "x11-opengroup"
+    ]
 }

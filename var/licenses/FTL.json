@@ -19,6 +19,7 @@
         "https://spdx.org/licenses/ftl",
         "FreeType License",
         "scancode:freetype",
-        "freetype"
+        "freetype",
+        "Freetype"
     ]
 }
