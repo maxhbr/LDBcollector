@@ -29,6 +29,14 @@ text = '''
 text here
 '''
 
+package = cproto
+# See LICENSE in sources tarball
+location = https://invisible-island.net/cproto/cproto.html
+text = '''
+cproto is in the public domain; changes made to it by the current                                                                                                                                                  
+maintainer are likewise unrestricted.  That applies to most of the files.
+'''
+
 package = cockatrice
 location = https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gs.svg?plain=1
            https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/icons/lock.svg?plain=1
