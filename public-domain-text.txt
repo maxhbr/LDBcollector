@@ -29,6 +29,12 @@ text = '''
 text here
 '''
 
+package = klt
+location = http://cecas.clemson.edu/~stb/klt/index.html
+text = '''
+The source code is in the public domain, available for both commercial and non-commerical use.
+'''
+
 package = cproto
 # See LICENSE in sources tarball
 location = https://invisible-island.net/cproto/cproto.html
