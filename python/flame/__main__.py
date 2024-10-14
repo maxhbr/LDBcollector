@@ -175,8 +175,10 @@ def unknown(fl, formatter, args):
     return fl.unknown_symbols(args.license, validations)
 
 def simplify(fl, formatter, args):
-    simplified = fl.simplify(args.license_expression)
-    return str(simplified) # formatter.format_licenses(all_licenses, args.verbose)
+    validations = __validations(args)
+    expression = fl.expression_license(' '.join(args.license_expression), validations=validations, update_dual=(not args.no_dual_update))
+    simplified = fl.simplify([expression['identified_license']])
+    return formatter.format_licenses([str(simplified)], args.verbose)
 
 def compats(fl, formatter, args):
     all_compats = fl.compatibility_as_list()
