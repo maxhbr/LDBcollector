@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.3.5
+
+FEATURES:
+* Add CycloneDX import [6ad734fa](https://gitlab.com/hermine-project/hermine/-/commit/6ad734fa)
+* Add API endpoint to component versions [c7e35f08](https://gitlab.com/hermine-project/hermine/-/commit/c7e35f08)
+* Allow custom default sub-project/scope names  [550cd194](https://gitlab.com/hermine-project/hermine/-/commit/550cd194)
+* Allow to setup SMTP server in Compose .env [c25da744](https://gitlab.com/hermine-project/hermine/-/commit/c25da744)
+* Rename "generic obligations" to "compliance actions" [548ef08d](https://gitlab.com/hermine-project/hermine/-/commit/548ef08d)
+* Add a basic profile page  [46def88e](https://gitlab.com/hermine-project/hermine/-/commit/46def88e)
+
+BUGFIXES:
+
+* Disable-docker-snapshot [63d9016](https://gitlab.com/hermine-project/hermine/-/commit/63d9016)
+* Take proxy config from user config [df6d8474](https://gitlab.com/hermine-project/hermine/-/commit/df6d8474)
+* Show license_expression field in API [2e2eed47](https://gitlab.com/hermine-project/hermine/-/commit/2e2eed47)
+* Unbreak api-doc generation [60c3c105](https://gitlab.com/hermine-project/hermine/-/commit/60c3c105)
+
 ## 0.3.4
 
 * Technical release.
