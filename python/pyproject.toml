@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "licenselynx"
-version = "0.7.6"
-description = ""
+version = "0.7.7"
+description = "Unified License Mapper"
 authors = ["Leo Reinmann <leo.reinmann@siemens.com>"]
 readme = "README.md"
 license = "Apache-2.0"
-packages = [{ include = "src" }]
-include = [{ path = "src/resources/merged_data.json" }]
+packages = [{ include = "licenselynx" }]
+include = [{ path = "licenselynx/resources/merged_data.json" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
