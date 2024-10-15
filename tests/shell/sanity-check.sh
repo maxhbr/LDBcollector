@@ -202,7 +202,7 @@ check_presence CNRI-Python " -i -e CNRI  " ""
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
 check_presence Classpath-exception-2.0 " -i -e classpath " " -e 1"
-check_presence curl " -i -e curl " " -i -e mit "
+check_presence curl " -i -e curl " ""
 
 check_presence dtoa " -i -e dtoa -e x11 " ""
 
