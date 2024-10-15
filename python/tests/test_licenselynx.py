@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import mock_open, patch
-from src.license_lynx import LicenseLynx
+from src.licenselynx import LicenseLynx
 
 
 @pytest.fixture
