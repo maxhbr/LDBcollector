@@ -1,15 +1,21 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
 // SPDX-FileCopyrightText: 2023 Siemens AG
 // SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+// SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
 package models
 
 import (
+	"crypto/md5"
+	"encoding/hex"
+	"encoding/json"
 	"errors"
+	"fmt"
 	"time"
 
+	"github.com/go-playground/validator/v10"
 	"gorm.io/datatypes"
 	"gorm.io/gorm"
 )
@@ -40,6 +46,7 @@ type LicenseDB struct {
 	Flag            *int64                                       `json:"flag" gorm:"default:1;column:rf_flag;not null;default:0" validate:"omitempty,min=0,max=2" example:"1"`
 	Marydone        *bool                                        `json:"marydone" gorm:"column:marydone;not null;default:false"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
+	Obligations     []*Obligation                                `gorm:"many2many:obligation_licenses;" json:"obligations"`
 }
 
 func (l *LicenseDB) BeforeSave(tx *gorm.DB) (err error) {
@@ -91,6 +98,7 @@ type LicenseUpdateJSONSchema struct {
 	Flag            *int64                                       `json:"flag" validate:"omitempty,min=0,max=2" example:"1"`
 	Marydone        *bool                                        `json:"marydone" example:"false"`
 	ExternalRef     datatypes.JSONType[LicenseDBSchemaExtension] `json:"external_ref"`
+	Obligations     []*Obligation                                `json:"obligations"`
 }
 
 // UpdateExternalRefsJSONPayload struct represents the external ref key value pairs for update
@@ -271,18 +279,267 @@ type AuditResponse struct {
 	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
+type ObligationType struct {
+	Id   int64  `gorm:"primary_key"`
+	Type string `gorm:"unique;not null"`
+}
+
+type ObligationClassification struct {
+	Id             int64  `gorm:"primary_key"`
+	Classification string `gorm:"unique;not null"`
+	Color          string `gorm:"unique; not null"`
+}
+
 // Obligation represents an obligation record in the database.
 type Obligation struct {
-	Id             int64  `gorm:"primary_key" json:"id" example:"147"`
-	Topic          string `gorm:"unique" json:"topic" example:"copyleft"`
-	Type           string `json:"type" enums:"obligation,restriction,risk,right" example:"risk"`
-	Text           string `json:"text" example:"Source code be made available when distributing the software."`
-	Classification string `json:"classification" enums:"green,white,yellow,red" example:"green"`
-	Modifications  bool   `json:"modifications" example:"true"`
-	Comment        string `json:"comment"`
-	Active         bool   `json:"active"`
-	TextUpdatable  bool   `json:"text_updatable" example:"true"`
-	Md5            string `gorm:"unique" json:"-"`
+	Id                         int64                     `gorm:"primary_key"`
+	Topic                      *string                   `gorm:"unique;not null"`
+	Text                       *string                   `gorm:"not null"`
+	Modifications              *bool                     `gorm:"not null;default:false"`
+	Comment                    *string                   `gorm:"not null;default:''"`
+	Active                     *bool                     `gorm:"not null;default:true"`
+	TextUpdatable              *bool                     `gorm:"not null;default:false"`
+	Md5                        string                    `gorm:"unique;not null"`
+	ObligationClassificationId int64                     `gorm:"not null"`
+	ObligationTypeId           int64                     `gorm:"not null"`
+	Licenses                   []*LicenseDB              `gorm:"many2many:obligation_licenses;"`
+	Type                       *ObligationType           `gorm:"foreignKey:ObligationTypeId"`
+	Classification             *ObligationClassification `gorm:"foreignKey:ObligationClassificationId"`
+}
+
+func (o *Obligation) BeforeCreate(tx *gorm.DB) (err error) {
+	if o.Topic != nil && *o.Topic == "" {
+		return errors.New("topic cannot be an empty string")
+	}
+	// Checks whether the obligation type value passed on by the user is a valid value or not
+	// i.e. it should be already present in the obligation_type table. Then the object queried
+	// from the database is assigned to the Type field because it has primary key. Objects passed
+	// on without primary key are first saved into db and then foreignkey references are saved.
+	if o.Type != nil {
+		var obTypes []ObligationType
+		if err := tx.Find(&obTypes).Error; err != nil {
+			return err
+		}
+		allTypes := ""
+		for i := 0; i < len(obTypes); i++ {
+			allTypes += fmt.Sprintf(" %s", obTypes[i].Type)
+			if o.Type.Type == obTypes[i].Type {
+				o.Type = &obTypes[i]
+			}
+		}
+		if o.Type.Id == 0 {
+			return fmt.Errorf("obligation type must be one of the following values:%s", allTypes)
+		}
+	}
+	if o.Text != nil {
+		if *o.Text == "" {
+			return errors.New("text cannot be an empty string")
+		} else {
+			s := *o.Text
+			hash := md5.Sum([]byte(s))
+			md5hash := hex.EncodeToString(hash[:])
+			o.Md5 = md5hash
+		}
+	}
+	if o.Classification != nil {
+		var obClassifications []ObligationClassification
+		if err := tx.Find(&obClassifications).Error; err != nil {
+			return err
+		}
+		allClassifications := ""
+		for i := 0; i < len(obClassifications); i++ {
+			allClassifications += fmt.Sprintf(" %s", obClassifications[i].Classification)
+			if o.Classification.Classification == obClassifications[i].Classification {
+				o.Classification = &obClassifications[i]
+			}
+		}
+		if o.Classification.Id == 0 {
+			return fmt.Errorf("obligation classification must be one of the following values:%s", allClassifications)
+		}
+	}
+
+	for i := 0; i < len(o.Licenses); i++ {
+		var license LicenseDB
+		if err := tx.Where(LicenseDB{Shortname: o.Licenses[i].Shortname}).First(&license).Error; err != nil {
+			return fmt.Errorf("license with shortname %s not found", *o.Licenses[i].Shortname)
+		}
+		o.Licenses[i] = &license
+	}
+
+	return
+}
+
+type ContextKey string
+
+func (o *Obligation) BeforeUpdate(tx *gorm.DB) (err error) {
+
+	oldObligation, ok := tx.Statement.Context.Value(ContextKey("oldObligation")).(*Obligation)
+	if !ok {
+		return errors.New("something went wrong")
+	}
+
+	if o.Topic != nil && *o.Topic == "" {
+		return errors.New("topic cannot be an empty string")
+	}
+
+	if o.Type != nil {
+		var obTypes []ObligationType
+		if err := tx.Find(&obTypes).Error; err != nil {
+			return err
+		}
+		allTypes := ""
+		for i := 0; i < len(obTypes); i++ {
+			allTypes += fmt.Sprintf(" %s", obTypes[i].Type)
+			if o.Type.Type == obTypes[i].Type {
+				o.Type = &obTypes[i]
+			}
+		}
+		if o.Type.Id == 0 {
+			return fmt.Errorf("obligation type must be one of the following values:%s", allTypes)
+		}
+	}
+	if o.Text != nil {
+		if *o.Text == "" {
+			return errors.New("text cannot be an empty string")
+		} else {
+			hash := md5.Sum([]byte(*o.Text))
+			o.Md5 = hex.EncodeToString(hash[:])
+			if !*oldObligation.TextUpdatable {
+				if o.Md5 != oldObligation.Md5 {
+					return errors.New("can not update obligation text")
+				}
+			}
+		}
+	}
+	if o.Classification != nil {
+		var obClassifications []ObligationClassification
+		if err := tx.Find(&obClassifications).Error; err != nil {
+			return err
+		}
+		allClassifications := ""
+		for i := 0; i < len(obClassifications); i++ {
+			allClassifications += fmt.Sprintf(" %s", obClassifications[i].Classification)
+			if o.Classification.Classification == obClassifications[i].Classification {
+				o.Classification = &obClassifications[i]
+			}
+		}
+		if o.Classification.Id == 0 {
+			return fmt.Errorf("obligation classification must be one of the following values:%s", allClassifications)
+		}
+	}
+	return
+}
+
+// Custom json marshaller and unmarshaller for Obligation
+func (o *Obligation) MarshalJSON() ([]byte, error) {
+	ob := ObligationDTO{
+		Topic:         o.Topic,
+		Text:          o.Text,
+		Modifications: o.Modifications,
+		Comment:       o.Comment,
+		Active:        o.Active,
+		TextUpdatable: o.TextUpdatable,
+		Shortnames:    []string{},
+	}
+
+	if o.Type != nil {
+		ob.Type = &o.Type.Type
+	}
+
+	if o.Classification != nil {
+		ob.Classification = &o.Classification.Classification
+	}
+
+	for i := 0; i < len(o.Licenses); i++ {
+		ob.Shortnames = append(ob.Shortnames, *o.Licenses[i].Shortname)
+	}
+	return json.Marshal(ob)
+}
+
+// Custom JSON unmarshaller for Obligation
+func (o *Obligation) UnmarshalJSON(data []byte) error {
+	var dto ObligationDTO
+
+	if err := json.Unmarshal(data, &dto); err != nil {
+		return err
+	}
+
+	validate := validator.New(validator.WithRequiredStructEnabled())
+	if err := validate.Struct(&dto); err != nil {
+		return fmt.Errorf("field '%s' failed validation: %s", err.(validator.ValidationErrors)[0].Field(), err.(validator.ValidationErrors)[0].Tag())
+	}
+
+	o.Topic = dto.Topic
+	o.Text = dto.Text
+	o.Modifications = dto.Modifications
+	o.Comment = dto.Comment
+	o.Active = dto.Active
+	o.TextUpdatable = dto.TextUpdatable
+
+	if dto.Type != nil {
+		o.Type = &ObligationType{
+			Type: *dto.Type,
+		}
+	}
+
+	if dto.Classification != nil {
+		o.Classification = &ObligationClassification{
+			Classification: *dto.Classification,
+		}
+	}
+
+	o.Licenses = []*LicenseDB{}
+	for i := 0; i < len(dto.Shortnames); i++ {
+		o.Licenses = append(o.Licenses, &LicenseDB{
+			Shortname: &dto.Shortnames[i],
+		})
+	}
+
+	return nil
+}
+
+// ObligationDTO represents an obligation json object.
+type ObligationDTO struct {
+	Topic          *string  `json:"topic" example:"copyleft" validate:"required"`
+	Type           *string  `json:"type" example:"RISK" validate:"required"`
+	Text           *string  `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
+	Classification *string  `json:"classification" example:"GREEN" validate:"required"`
+	Modifications  *bool    `json:"modifications" example:"true"`
+	Comment        *string  `json:"comment"`
+	Active         *bool    `json:"active"`
+	TextUpdatable  *bool    `json:"text_updatable" example:"true"`
+	Shortnames     []string `json:"shortnames" validate:"required" example:"GPL-2.0-only,GPL-2.0-or-later"`
+}
+
+// ObligationUpdateDTO represents an obligation json object.
+type ObligationUpdateDTO struct {
+	Topic          *string `json:"-" example:"copyleft"`
+	Type           *string `json:"type" example:"RISK"`
+	Text           *string `json:"text" example:"Source code be made available when distributing the software."`
+	Classification *string `json:"classification" example:"GREEN"`
+	Modifications  *bool   `json:"modifications" example:"true"`
+	Comment        *string `json:"comment"`
+	Active         *bool   `json:"active"`
+	TextUpdatable  *bool   `json:"text_updatable" example:"true"`
+}
+
+func (obDto *ObligationUpdateDTO) Converter() *Obligation {
+	var o Obligation
+
+	o.Topic = obDto.Topic
+	if obDto.Type != nil {
+		o.Type = &ObligationType{Type: *obDto.Type}
+	}
+	o.Text = obDto.Text
+	if obDto.Classification != nil {
+		o.Classification = &ObligationClassification{Classification: *obDto.Classification}
+	}
+	o.Modifications = obDto.Modifications
+	o.Comment = obDto.Comment
+	o.Active = obDto.Active
+	o.TextUpdatable = obDto.TextUpdatable
+
+	return &o
 }
 
 // ObligationPreview is just the Type and Topic of Obligation
@@ -297,29 +554,6 @@ type ObligationPreviewResponse struct {
 	Data   []ObligationPreview `json:"data"`
 }
 
-// ObligationPOSTRequestJSONSchema represents the data format of POST request for obligation
-type ObligationPOSTRequestJSONSchema struct {
-	Topic          string   `json:"topic" binding:"required" example:"copyleft"`
-	Type           string   `json:"type" enums:"obligation,restriction,risk,right" binding:"required"`
-	Text           string   `json:"text" binding:"required" example:"Source code be made available when distributing the software."`
-	Classification string   `json:"classification" enums:"green,white,yellow,red" binding:"required"`
-	Modifications  bool     `json:"modifications" binding:"required"`
-	Comment        string   `json:"comment" binding:"required"`
-	Shortnames     []string `json:"shortnames" binding:"required" example:"GPL-2.0-only,GPL-2.0-or-later"`
-	Active         bool     `json:"active" binding:"required" example:"true"`
-}
-
-// ObligationPATCHRequestJSONSchema represents the data format of PATCH request for obligation
-type ObligationPATCHRequestJSONSchema struct {
-	Type           OptionalData[string] `json:"type" swaggertype:"string" enums:"obligation,restriction,risk,right"`
-	Text           OptionalData[string] `json:"text" swaggertype:"string" example:"Source code be made available when distributing the software."`
-	Classification OptionalData[string] `json:"classification" swaggertype:"string" enums:"green,white,yellow,red"`
-	Modifications  OptionalData[bool]   `json:"modifications" swaggertype:"boolean"`
-	Comment        OptionalData[string] `json:"comment" swaggertype:"string" example:"This is a comment."`
-	Active         OptionalData[bool]   `json:"active" swaggertype:"boolean" example:"true"`
-	TextUpdatable  OptionalData[bool]   `json:"text_updatable" swaggertype:"boolean"`
-}
-
 // ObligationResponse represents the response format for obligation data.
 type ObligationResponse struct {
 	Status int             `json:"status" example:"200"`
@@ -327,13 +561,11 @@ type ObligationResponse struct {
 	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
-// ObligationMap represents the mapping between an obligation and a license.
-type ObligationMap struct {
-	ObligationPk int64      `json:"obligation_pk"`
-	Obligation   Obligation `gorm:"foreignKey:ObligationPk;references:Id" json:"-"`
-	OmPk         int64      `json:"om_pk" gorm:"primary_key"`
-	RfPk         int64      `json:"rf_pk"`
-	LicenseDB    LicenseDB  `gorm:"foreignKey:RfPk;references:Id" json:"-"`
+// SwaggerObligationResponse represents the response format for obligation data.
+type SwaggerObligationResponse struct {
+	Status int             `json:"status" example:"200"`
+	Data   []ObligationDTO `json:"data"`
+	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
 // ObligationMapUser Structure with obligation topic and license shortname list, a simple representation for user.
@@ -371,19 +603,6 @@ type ObligationImportRequest struct {
 	ObligationFile string `form:"file"`
 }
 
-// ObligationJSONFileFormat represents an obligation record in the import/export json file.
-type ObligationJSONFileFormat struct {
-	Topic          string   `json:"topic" example:"copyleft" validate:"required"` // binding:"required" tag cannot be used as is works only for request body
-	Type           string   `json:"type" enums:"obligation,restriction,risk,right" validate:"required"`
-	Text           string   `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
-	Classification string   `json:"classification" enums:"green,white,yellow,red" validate:"required"`
-	Modifications  bool     `json:"modifications" validate:"required"`
-	Comment        string   `json:"comment" example:"This is a comment." validate:"required"`
-	Active         bool     `json:"active" validate:"required"`
-	TextUpdatable  bool     `json:"text_updatable" validate:"required"`
-	Shortnames     []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later" validate:"required"`
-}
-
 // ObligationId is the id of successfully imported obligation
 type ObligationId struct {
 	Id    int64  `json:"id" example:"31"`
@@ -392,8 +611,9 @@ type ObligationId struct {
 
 // ObligationImportStatus is the status of obligation records successfully inserted in the database during import
 type ObligationImportStatus struct {
-	Status int          `json:"status" example:"200"`
-	Data   ObligationId `json:"data"`
+	Status  int          `json:"status" example:"200"`
+	Data    ObligationId `json:"data"`
+	Message string       `json:"message"`
 }
 
 // ImportObligationsResponse is the response structure for import obligation response

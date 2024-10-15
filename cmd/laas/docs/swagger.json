@@ -1055,7 +1055,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationResponse"
+                            "$ref": "#/definitions/models.SwaggerObligationResponse"
                         }
                     },
                     "404": {
@@ -1091,7 +1091,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationPOSTRequestJSONSchema"
+                            "$ref": "#/definitions/models.ObligationDTO"
                         }
                     }
                 ],
@@ -1099,7 +1099,7 @@
                     "201": {
                         "description": "Created",
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationResponse"
+                            "$ref": "#/definitions/models.SwaggerObligationResponse"
                         }
                     },
                     "400": {
@@ -1146,7 +1146,7 @@
                         "schema": {
                             "type": "array",
                             "items": {
-                                "$ref": "#/definitions/models.ObligationJSONFileFormat"
+                                "$ref": "#/definitions/models.ObligationDTO"
                             }
                         }
                     },
@@ -1296,7 +1296,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationResponse"
+                            "$ref": "#/definitions/models.SwaggerObligationResponse"
                         }
                     },
                     "404": {
@@ -1378,7 +1378,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationPATCHRequestJSONSchema"
+                            "$ref": "#/definitions/models.ObligationUpdateDTO"
                         }
                     }
                 ],
@@ -1386,7 +1386,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationResponse"
+                            "$ref": "#/definitions/models.SwaggerObligationResponse"
                         }
                     },
                     "400": {
@@ -1887,6 +1887,12 @@
                     "type": "string",
                     "example": "This license has been superseded."
                 },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Obligation"
+                    }
+                },
                 "risk": {
                     "type": "integer",
                     "maximum": 5,
@@ -2100,6 +2106,12 @@
                     "type": "string",
                     "example": "This license has been superseded."
                 },
+                "obligations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Obligation"
+                    }
+                },
                 "risk": {
                     "type": "integer",
                     "maximum": 5,
@@ -2135,25 +2147,93 @@
                     "type": "boolean"
                 },
                 "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ],
-                    "example": "green"
+                    "$ref": "#/definitions/models.ObligationClassification"
                 },
                 "comment": {
                     "type": "string"
                 },
                 "id": {
-                    "type": "integer",
-                    "example": 147
+                    "type": "integer"
+                },
+                "licenses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.LicenseDB"
+                    }
+                },
+                "md5": {
+                    "type": "string"
+                },
+                "modifications": {
+                    "type": "boolean"
+                },
+                "obligationClassificationId": {
+                    "type": "integer"
+                },
+                "obligationTypeId": {
+                    "type": "integer"
+                },
+                "text": {
+                    "type": "string"
+                },
+                "textUpdatable": {
+                    "type": "boolean"
+                },
+                "topic": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/models.ObligationType"
+                }
+            }
+        },
+        "models.ObligationClassification": {
+            "type": "object",
+            "properties": {
+                "classification": {
+                    "type": "string"
+                },
+                "color": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                }
+            }
+        },
+        "models.ObligationDTO": {
+            "type": "object",
+            "required": [
+                "classification",
+                "shortnames",
+                "text",
+                "topic",
+                "type"
+            ],
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "classification": {
+                    "type": "string",
+                    "example": "GREEN"
+                },
+                "comment": {
+                    "type": "string"
                 },
                 "modifications": {
                     "type": "boolean",
                     "example": true
+                },
+                "shortnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "GPL-2.0-only",
+                        "GPL-2.0-or-later"
+                    ]
                 },
                 "text": {
                     "type": "string",
@@ -2169,13 +2249,7 @@
                 },
                 "type": {
                     "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ],
-                    "example": "risk"
+                    "example": "RISK"
                 }
             }
         },
@@ -2198,75 +2272,12 @@
                 "data": {
                     "$ref": "#/definitions/models.ObligationId"
                 },
+                "message": {
+                    "type": "string"
+                },
                 "status": {
                     "type": "integer",
                     "example": 200
-                }
-            }
-        },
-        "models.ObligationJSONFileFormat": {
-            "type": "object",
-            "required": [
-                "active",
-                "classification",
-                "comment",
-                "modifications",
-                "shortnames",
-                "text",
-                "text_updatable",
-                "topic",
-                "type"
-            ],
-            "properties": {
-                "active": {
-                    "type": "boolean"
-                },
-                "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ]
-                },
-                "comment": {
-                    "type": "string",
-                    "example": "This is a comment."
-                },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "shortnames": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
-                },
-                "text": {
-                    "type": "string",
-                    "example": "Source code be made available when distributing the software."
-                },
-                "text_updatable": {
-                    "type": "boolean"
-                },
-                "topic": {
-                    "description": "binding:\"required\" tag cannot be used as is works only for request body",
-                    "type": "string",
-                    "example": "copyleft"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ]
                 }
             }
         },
@@ -2317,108 +2328,6 @@
                 }
             }
         },
-        "models.ObligationPATCHRequestJSONSchema": {
-            "type": "object",
-            "properties": {
-                "active": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ]
-                },
-                "comment": {
-                    "type": "string",
-                    "example": "This is a comment."
-                },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "text": {
-                    "type": "string",
-                    "example": "Source code be made available when distributing the software."
-                },
-                "text_updatable": {
-                    "type": "boolean"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ]
-                }
-            }
-        },
-        "models.ObligationPOSTRequestJSONSchema": {
-            "type": "object",
-            "required": [
-                "active",
-                "classification",
-                "comment",
-                "modifications",
-                "shortnames",
-                "text",
-                "topic",
-                "type"
-            ],
-            "properties": {
-                "active": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ]
-                },
-                "comment": {
-                    "type": "string"
-                },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "shortnames": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
-                },
-                "text": {
-                    "type": "string",
-                    "example": "Source code be made available when distributing the software."
-                },
-                "topic": {
-                    "type": "string",
-                    "example": "copyleft"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ]
-                }
-            }
-        },
         "models.ObligationPreview": {
             "type": "object",
             "properties": {
@@ -2452,21 +2361,45 @@
                 }
             }
         },
-        "models.ObligationResponse": {
+        "models.ObligationType": {
             "type": "object",
             "properties": {
-                "data": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.Obligation"
-                    }
+                "id": {
+                    "type": "integer"
                 },
-                "paginationmeta": {
-                    "$ref": "#/definitions/models.PaginationMeta"
+                "type": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.ObligationUpdateDTO": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "type": "boolean"
                 },
-                "status": {
-                    "type": "integer",
-                    "example": 200
+                "classification": {
+                    "type": "string",
+                    "example": "GREEN"
+                },
+                "comment": {
+                    "type": "string"
+                },
+                "modifications": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "text": {
+                    "type": "string",
+                    "example": "Source code be made available when distributing the software."
+                },
+                "text_updatable": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "type": {
+                    "type": "string",
+                    "example": "RISK"
                 }
             }
         },
@@ -2520,6 +2453,24 @@
                 "search_term": {
                     "type": "string",
                     "example": "MIT License"
+                }
+            }
+        },
+        "models.SwaggerObligationResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationDTO"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },

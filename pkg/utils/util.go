@@ -1,15 +1,20 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
 // SPDX-FileCopyrightText: 2023 Siemens AG
 // SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+// SPDX-FileContributor: Dearsh Oberoi <dearsh.oberoi@siemens.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only
 
 package utils
 
 import (
+	"encoding/json"
+	"errors"
 	"fmt"
 	"html"
+	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -22,6 +27,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 
+	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
 )
 
@@ -259,4 +265,187 @@ func InsertOrUpdateLicenseOnImport(tx *gorm.DB, license *models.LicenseDB, exter
 	}
 
 	return message, importStatus, &oldLicense, &newLicense
+}
+
+// GenerateDiffForReplacingLicenses creates list of license associations to be created and deleted such that the list of currently associated
+// licenses to a obligation is overwritten by the list provided in the param newLicenseAssociations
+func GenerateDiffForReplacingLicenses(obligation *models.Obligation, newLicenseAssociations []string, removeLicenses, insertLicenses *[]string) {
+	// if license in currently associated with the obligation but isn't in newLicenseAssociations, remove it
+	for _, lic := range obligation.Licenses {
+		found := false
+		for _, shortname := range newLicenseAssociations {
+			if shortname == *lic.Shortname {
+				found = true
+				break
+			}
+		}
+		if !found {
+			*removeLicenses = append(*removeLicenses, *lic.Shortname)
+		}
+	}
+
+	// if license in newLicenseAssociations but not currently associated with the obligation, insert it
+	for _, shortname := range newLicenseAssociations {
+		found := false
+		for _, lic := range obligation.Licenses {
+			if shortname == *lic.Shortname {
+				found = true
+				break
+			}
+		}
+		if !found {
+			*insertLicenses = append(*insertLicenses, shortname)
+		}
+	}
+}
+
+// PerformObligationMapActions created associations for licenses in insertLicenses and deletes
+// associations for licenses in removeLicenses. It also calculates changelog for the changes.
+// It returns the final list of associated licenses.
+func PerformObligationMapActions(username string, obligation *models.Obligation,
+	removeLicenses, insertLicenses []string) ([]string, []error) {
+	createLicenseAssociations := []models.LicenseDB{}
+	deleteLicenseAssociations := []models.LicenseDB{}
+	var oldLicenseAssociations, newLicenseAssociations []string
+	var errs []error
+
+	for _, lic := range obligation.Licenses {
+		oldLicenseAssociations = append(oldLicenseAssociations, *lic.Shortname)
+	}
+
+	for _, lic := range insertLicenses {
+		var license models.LicenseDB
+		if err := db.DB.Where(models.LicenseDB{Shortname: &lic}).First(&license).Error; err != nil {
+			errs = append(errs, fmt.Errorf("unable to associate license '%s' to obligation '%s': %s", lic, *obligation.Topic, err.Error()))
+		} else {
+			createLicenseAssociations = append(createLicenseAssociations, license)
+		}
+	}
+
+	for _, lic := range removeLicenses {
+		var license models.LicenseDB
+		if err := db.DB.Where(models.LicenseDB{Shortname: &lic}).First(&license).Error; err != nil {
+			errs = append(errs, fmt.Errorf("unable to remove license '%s' from obligation '%s': %s", lic, *obligation.Topic, err.Error()))
+		} else {
+			deleteLicenseAssociations = append(deleteLicenseAssociations, license)
+		}
+	}
+
+	if err := db.DB.Transaction(func(tx *gorm.DB) error {
+
+		if len(createLicenseAssociations) == 0 && len(deleteLicenseAssociations) == 0 {
+			for _, lic := range obligation.Licenses {
+				newLicenseAssociations = append(newLicenseAssociations, *lic.Shortname)
+			}
+			return nil
+		}
+
+		if err := tx.Session(&gorm.Session{SkipHooks: true}).Model(obligation).Association("Licenses").Append(createLicenseAssociations); err != nil {
+			return err
+		}
+		if err := tx.Session(&gorm.Session{SkipHooks: true}).Model(obligation).Association("Licenses").Delete(deleteLicenseAssociations); err != nil {
+			return err
+		}
+
+		for _, lic := range obligation.Licenses {
+			newLicenseAssociations = append(newLicenseAssociations, *lic.Shortname)
+		}
+
+		return createObligationMapChangelog(tx, username, newLicenseAssociations, oldLicenseAssociations, obligation)
+	}); err != nil {
+		errs = append(errs, err)
+	}
+	return newLicenseAssociations, errs
+}
+
+// createObligationMapChangelog creates the changelog for the obligation map changes.
+func createObligationMapChangelog(tx *gorm.DB, username string,
+	newLicenseAssociations, oldLicenseAssociations []string, obligation *models.Obligation) error {
+	oldVal := strings.Join(oldLicenseAssociations, ", ")
+	newVal := strings.Join(newLicenseAssociations, ", ")
+	change := models.ChangeLog{
+		Field:        "Licenses",
+		OldValue:     &oldVal,
+		UpdatedValue: &newVal,
+	}
+
+	var user models.User
+	if err := tx.Where(models.User{Username: username}).First(&user).Error; err != nil {
+		return err
+	}
+
+	audit := models.Audit{
+		UserId:     user.Id,
+		TypeId:     obligation.Id,
+		Timestamp:  time.Now(),
+		Type:       "obligation",
+		ChangeLogs: []models.ChangeLog{change},
+	}
+
+	if err := tx.Create(&audit).Error; err != nil {
+		return err
+	}
+
+	return nil
+}
+
+// Populatedb populates the database with license data from a JSON file.
+func Populatedb(datafile string) {
+	var licenses []models.LicenseJson
+	// Read the content of the data file.
+	byteResult, err := os.ReadFile(datafile)
+	if err != nil {
+		log.Fatalf("Unable to read JSON file: %v", err)
+	}
+	// Unmarshal the JSON file data into a slice of LicenseJson structs.
+	if err := json.Unmarshal(byteResult, &licenses); err != nil {
+		log.Fatalf("error reading from json file: %v", err)
+	}
+	for _, license := range licenses {
+		result := Converter(license)
+		_ = db.DB.Transaction(func(tx *gorm.DB) error {
+			errMessage, importStatus, _, _ := InsertOrUpdateLicenseOnImport(tx, &result, &models.UpdateExternalRefsJSONPayload{ExternalRef: make(map[string]interface{})})
+			if importStatus == IMPORT_FAILED {
+				// ANSI escape code for red text
+				red := "\033[31m"
+				reset := "\033[0m"
+				log.Printf("%s%s: %s%s", red, *result.Shortname, errMessage, reset)
+				return errors.New(errMessage)
+			}
+			return nil
+		})
+
+	}
+}
+
+// GetAuditEntity is an utility function to fetch obligation or license associated with an audit
+func GetAuditEntity(c *gin.Context, audit *models.Audit) error {
+	if audit.Type == "license" || audit.Type == "License" {
+		audit.Entity = &models.LicenseDB{}
+		if err := db.DB.Where(&models.LicenseDB{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "license corresponding with this audit does not exist",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
+		}
+	} else if audit.Type == "obligation" || audit.Type == "Obligation" {
+		audit.Entity = &models.Obligation{}
+		if err := db.DB.Joins("Type").Joins("Classification").Where(&models.Obligation{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   "obligation corresponding with this audit does not exist",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
+		}
+	}
+	return nil
 }

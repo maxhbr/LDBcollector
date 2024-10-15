@@ -143,6 +143,10 @@ definitions:
       notes:
         example: This license has been superseded.
         type: string
+      obligations:
+        items:
+          $ref: '#/definitions/models.Obligation'
+        type: array
       risk:
         maximum: 5
         minimum: 0
@@ -299,6 +303,10 @@ definitions:
       notes:
         example: This license has been superseded.
         type: string
+      obligations:
+        items:
+          $ref: '#/definitions/models.Obligation'
+        type: array
       risk:
         example: 1
         maximum: 5
@@ -325,21 +333,60 @@ definitions:
       active:
         type: boolean
       classification:
-        enum:
-        - green
-        - white
-        - yellow
-        - red
-        example: green
-        type: string
+        $ref: '#/definitions/models.ObligationClassification'
       comment:
         type: string
       id:
-        example: 147
         type: integer
+      licenses:
+        items:
+          $ref: '#/definitions/models.LicenseDB'
+        type: array
+      md5:
+        type: string
+      modifications:
+        type: boolean
+      obligationClassificationId:
+        type: integer
+      obligationTypeId:
+        type: integer
+      text:
+        type: string
+      textUpdatable:
+        type: boolean
+      topic:
+        type: string
+      type:
+        $ref: '#/definitions/models.ObligationType'
+    type: object
+  models.ObligationClassification:
+    properties:
+      classification:
+        type: string
+      color:
+        type: string
+      id:
+        type: integer
+    type: object
+  models.ObligationDTO:
+    properties:
+      active:
+        type: boolean
+      classification:
+        example: GREEN
+        type: string
+      comment:
+        type: string
       modifications:
         example: true
         type: boolean
+      shortnames:
+        example:
+        - GPL-2.0-only
+        - GPL-2.0-or-later
+        items:
+          type: string
+        type: array
       text:
         example: Source code be made available when distributing the software.
         type: string
@@ -350,13 +397,14 @@ definitions:
         example: copyleft
         type: string
       type:
-        enum:
-        - obligation
-        - restriction
-        - risk
-        - right
-        example: risk
+        example: RISK
         type: string
+    required:
+    - classification
+    - shortnames
+    - text
+    - topic
+    - type
     type: object
   models.ObligationId:
     properties:
@@ -371,60 +419,11 @@ definitions:
     properties:
       data:
         $ref: '#/definitions/models.ObligationId'
+      message:
+        type: string
       status:
         example: 200
         type: integer
-    type: object
-  models.ObligationJSONFileFormat:
-    properties:
-      active:
-        type: boolean
-      classification:
-        enum:
-        - green
-        - white
-        - yellow
-        - red
-        type: string
-      comment:
-        example: This is a comment.
-        type: string
-      modifications:
-        type: boolean
-      shortnames:
-        example:
-        - GPL-2.0-only
-        - GPL-2.0-or-later
-        items:
-          type: string
-        type: array
-      text:
-        example: Source code be made available when distributing the software.
-        type: string
-      text_updatable:
-        type: boolean
-      topic:
-        description: binding:"required" tag cannot be used as is works only for request
-          body
-        example: copyleft
-        type: string
-      type:
-        enum:
-        - obligation
-        - restriction
-        - risk
-        - right
-        type: string
-    required:
-    - active
-    - classification
-    - comment
-    - modifications
-    - shortnames
-    - text
-    - text_updatable
-    - topic
-    - type
     type: object
   models.ObligationMapResponse:
     properties:
@@ -459,82 +458,6 @@ definitions:
         example: obligation
         type: string
     type: object
-  models.ObligationPATCHRequestJSONSchema:
-    properties:
-      active:
-        example: true
-        type: boolean
-      classification:
-        enum:
-        - green
-        - white
-        - yellow
-        - red
-        type: string
-      comment:
-        example: This is a comment.
-        type: string
-      modifications:
-        type: boolean
-      text:
-        example: Source code be made available when distributing the software.
-        type: string
-      text_updatable:
-        type: boolean
-      type:
-        enum:
-        - obligation
-        - restriction
-        - risk
-        - right
-        type: string
-    type: object
-  models.ObligationPOSTRequestJSONSchema:
-    properties:
-      active:
-        example: true
-        type: boolean
-      classification:
-        enum:
-        - green
-        - white
-        - yellow
-        - red
-        type: string
-      comment:
-        type: string
-      modifications:
-        type: boolean
-      shortnames:
-        example:
-        - GPL-2.0-only
-        - GPL-2.0-or-later
-        items:
-          type: string
-        type: array
-      text:
-        example: Source code be made available when distributing the software.
-        type: string
-      topic:
-        example: copyleft
-        type: string
-      type:
-        enum:
-        - obligation
-        - restriction
-        - risk
-        - right
-        type: string
-    required:
-    - active
-    - classification
-    - comment
-    - modifications
-    - shortnames
-    - text
-    - topic
-    - type
-    type: object
   models.ObligationPreview:
     properties:
       topic:
@@ -558,17 +481,34 @@ definitions:
         example: 200
         type: integer
     type: object
-  models.ObligationResponse:
+  models.ObligationType:
     properties:
-      data:
-        items:
-          $ref: '#/definitions/models.Obligation'
-        type: array
-      paginationmeta:
-        $ref: '#/definitions/models.PaginationMeta'
-      status:
-        example: 200
+      id:
         type: integer
+      type:
+        type: string
+    type: object
+  models.ObligationUpdateDTO:
+    properties:
+      active:
+        type: boolean
+      classification:
+        example: GREEN
+        type: string
+      comment:
+        type: string
+      modifications:
+        example: true
+        type: boolean
+      text:
+        example: Source code be made available when distributing the software.
+        type: string
+      text_updatable:
+        example: true
+        type: boolean
+      type:
+        example: RISK
+        type: string
     type: object
   models.PaginationMeta:
     properties:
@@ -607,6 +547,18 @@ definitions:
     required:
     - field
     - search_term
+    type: object
+  models.SwaggerObligationResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ObligationDTO'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
     type: object
   models.User:
     properties:
@@ -1349,7 +1301,7 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/models.ObligationResponse'
+            $ref: '#/definitions/models.SwaggerObligationResponse'
         "404":
           description: No obligations in DB
           schema:
@@ -1371,14 +1323,14 @@ paths:
         name: obligation
         required: true
         schema:
-          $ref: '#/definitions/models.ObligationPOSTRequestJSONSchema'
+          $ref: '#/definitions/models.ObligationDTO'
       produces:
       - application/json
       responses:
         "201":
           description: Created
           schema:
-            $ref: '#/definitions/models.ObligationResponse'
+            $ref: '#/definitions/models.SwaggerObligationResponse'
         "400":
           description: Bad request body
           schema:
@@ -1439,7 +1391,7 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/models.ObligationResponse'
+            $ref: '#/definitions/models.SwaggerObligationResponse'
         "404":
           description: No obligation with given topic found
           schema:
@@ -1466,14 +1418,14 @@ paths:
         name: obligation
         required: true
         schema:
-          $ref: '#/definitions/models.ObligationPATCHRequestJSONSchema'
+          $ref: '#/definitions/models.ObligationUpdateDTO'
       produces:
       - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/models.ObligationResponse'
+            $ref: '#/definitions/models.SwaggerObligationResponse'
         "400":
           description: Invalid request
           schema:
@@ -1543,7 +1495,7 @@ paths:
           description: OK
           schema:
             items:
-              $ref: '#/definitions/models.ObligationJSONFileFormat'
+              $ref: '#/definitions/models.ObligationDTO'
             type: array
         "500":
           description: Failed to fetch obligations
