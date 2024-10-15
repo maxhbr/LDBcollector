@@ -29,6 +29,14 @@ text = '''
 text here
 '''
 
+package = surfraw
+location = https://gitlab.com/surfraw/Surfraw/-/blob/master/COPYING
+text = '''
+The copyright holders listed above assert no rights on this release
+of the software ``surfraw'' and thereby explicity place this release into
+the public domain. Do what you will.
+'''
+
 package = klt
 location = http://cecas.clemson.edu/~stb/klt/index.html
 text = '''
