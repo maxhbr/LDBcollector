@@ -1,0 +1,38 @@
+<!--
+SPDX-FileCopyrightText: 2024 Jules Jouvin <gitlab.com/JulesJVN>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+
+{% extends "cube/cube.html" %}
+{% block title %}Profile{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li>Profile</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium">
+      <i class="fas fa-user"></i>
+    </span>
+    Profile
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <dl>
+      <dt><strong>Username</strong></dt>
+      <dd>{{user.username}}</dd>
+      <dt><strong>Full name</strong></dt>
+      <dd>{%if user.first_name or user.last_name %}{{user.first_name}} {{user.last_name}}{%else%}<em>None</em>{%endif%}</dd>
+      <dt><strong>Roles</strong></dt>
+      <dd><ul>{% for group in user.groups.all %} <li>{{ group }}</li> {%endfor%}</ul></dd>
+    </dl>
+  </div>
+
+{% endblock %}
