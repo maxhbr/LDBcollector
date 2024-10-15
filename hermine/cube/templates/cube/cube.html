@@ -2,6 +2,7 @@
 SPDX-FileCopyrightText: Viktor Kuzhelny https://github.com/vikdiesel/admin-one-bulma-dashboard/
 SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+SPDX-FileCopyrightText: 2024 Jules Jouvin <gitlab.com/JulesJVN>
 SPDX-License-Identifier: MIT
 -->
 <!DOCTYPE html>
@@ -35,8 +36,7 @@ SPDX-License-Identifier: MIT
         </div>
         <div class="navbar-menu fadeIn animated faster" id="navbar-menu">
           <div class="navbar-end">
-            <div class="navbar-item"><span class="icon"><i class="fas fa-users"></i></span> {% for group in user.groups.all %} {{ group }} {%endfor%}</div>
-            <div class="navbar-item">
+            <a href="{% url 'cube:profile' %}" class="navbar-item">
               <div class="is-user-avatar">
                 <span class="icon"><i class="fas fa-user"></i></span>
               </div>
@@ -44,7 +44,7 @@ SPDX-License-Identifier: MIT
                 <span>{%if user.first_name or user.last_name %}{{user.first_name}} {{user.last_name}}{%else%}{{user.username}}{%endif%}
                 </span>
               </div>
-            </div>
+            </a>
             <form class="navbar-item" method="post" action="{% url 'logout' %}">{% csrf_token %}
               <button class="button  is-desktop-icon-only" type="submit">
                 <span class="icon"><i class="fas fa-sign-out-alt"></i>

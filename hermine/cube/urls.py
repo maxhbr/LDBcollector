@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#  SPDX-FileCopyrightText: 2024 Jules Jouvin <gitlab.com/julesJVN>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.urls import path, include
@@ -10,6 +11,7 @@ app_name = "cube"
 urlpatterns = [
     path("", views.DashboardView.as_view(), name="dashboard"),
     path("about/", views.AboutView.as_view(), name="about"),
+    path("profile/", views.ProfileView.as_view(), name="profile"),
     # Product views
     path("products/", views.ProductListView.as_view(), name="product_list"),
     path(

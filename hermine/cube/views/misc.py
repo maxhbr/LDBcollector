@@ -1,5 +1,6 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #  SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#  SPDX-FileCopyrightText: 2024 Jules Jouvin <gitlab.com/julesJVN>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 
@@ -34,3 +35,7 @@ class DashboardView(LoginRequiredMixin, TemplateView):
 
 class AboutView(TemplateView):
     template_name = "cube/about.html"
+
+
+class ProfileView(LoginRequiredMixin, TemplateView):
+    template_name = "cube/profile.html"
