@@ -51,6 +51,20 @@ cproto is in the public domain; changes made to it by the current
 maintainer are likewise unrestricted.  That applies to most of the files.
 '''
 
+package = gnome-valgrind-session
+location = http://hp.cl.no/proj/gnome-valgrind-session/src/gnome-valgrind-session-1.1.tar.bz2
+# in file LICENSE
+text = '''
+This package is in the Public Domain.
+'''
+
+package = gnome-valgrind-session
+location = http://hp.cl.no/proj/gnome-valgrind-session/src/gnome-valgrind-session-1.1.tar.bz2
+# in almost every other file
+text = '''
+This file is in the Public Domain.
+'''
+
 package = cockatrice
 location = https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/countries/gs.svg?plain=1
            https://github.com/Cockatrice/Cockatrice/blob/master/cockatrice/resources/icons/lock.svg?plain=1
