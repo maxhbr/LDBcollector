@@ -29,6 +29,17 @@ text = '''
 text here
 '''
 
+package = gimpfx-foundry
+location = http://downloads.sourceforge.net/gimpfx-foundry/gimpfx-foundry-2.6-1.tar.gz
+# actual locations: bates-*.scm
+text = '''
+This script is released into the public domain.
+You may redistribute and/or modify this script or extract segments without prior consent.
+
+This script is distributed in the hope of being useful
+but without warranty, explicit or otherwise.
+'''
+
 package = surfraw
 location = https://gitlab.com/surfraw/Surfraw/-/blob/master/COPYING
 text = '''
