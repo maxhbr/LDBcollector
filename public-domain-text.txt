@@ -2042,3 +2042,9 @@ location = https://github.com/slime/slime?tab=readme-ov-file#license
 text = '''
 SLIME is free software. All files, unless explicitly stated otherwise, are public domain. 
 '''
+
+package = sqlite2
+location =  https://www.sqlite.org/src/file?name=tool/lemon.c&ci=trunk
+text = '''
+The author of this program disclaims copyright.
+'''
