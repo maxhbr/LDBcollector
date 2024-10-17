@@ -29,6 +29,13 @@ text = '''
 text here
 '''
 
+package = libmodplug
+location = http://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz
+# in the file COPYING
+text = '''
+ModPlug-XMMS and libmodplug are now in the public domain.
+'''
+
 package = gimpfx-foundry
 location = http://downloads.sourceforge.net/gimpfx-foundry/gimpfx-foundry-2.6-1.tar.gz
 # actual locations: bates-*.scm
