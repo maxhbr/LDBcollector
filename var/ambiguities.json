@@ -265,6 +265,12 @@
             ],
             "problem": "This license has different versions (1.0, 1.1 and 1.2). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
+        "Unicode License": {
+            "aliases": [
+                "Unicode"
+            ],
+            "problem": "This license has different variants/versions (Unicode Terms of Use, Unicode-3.0, Unicode Inc License Agreement .... ). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+        },
         "Zope Public License": {
             "aliases": [
                 "zpl",
