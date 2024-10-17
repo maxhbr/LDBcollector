@@ -2073,3 +2073,10 @@ location =  https://www.sqlite.org/src/file?name=tool/lemon.c&ci=trunk
 text = '''
 The author of this program disclaims copyright.
 '''
+
+package = perl-DateTime-Precise
+location = https://bugzilla.redhat.com/show_bug.cgi?id=426827#c4
+text = '''
+As far as I'm concerned, the code Blair extended into DateTime::Precise
+is public domain.
+'''
