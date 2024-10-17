@@ -601,7 +601,9 @@ This is in the public domain
 '''
 
 package = automake
+          mb2md
 location = https://git.savannah.gnu.org/cgit/automake.git/tree/lib/mkinstalldirs?h=v1.16#n8
+           http://batleth.sapienti-sat.org/projects/mb2md/mb2md-3.20.pl.gz
 text = '''
 Public domain.
 '''
