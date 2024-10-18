@@ -312,7 +312,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Parteien** | Entr’ouvert v. Orange |
 | **Thema** | - |
 | **Lizenz** | - |
-| **Links** | [🇫🇷](https://www.courdecassation.fr/decision/65cdbcdf2425a70008258563) [🇹🇼](https://atomgit.com/translation/Contransus/blob/master/%E5%8F%B8%E6%B3%95%E6%A1%88%E4%BE%8B%E7%BF%BB%E8%AF%91/%E6%B3%95%E8%AF%91%E4%B8%AD-Entr%20ouvert_Orange%E5%8F%8AOrange%E5%95%86%E4%B8%9AAPP%20%204%E4%BB%BD%E5%88%A4%E5%86%B3.pdf) |
+| **Links** | [🇫🇷](https://www.courdecassation.fr/decision/65cdbcdf2425a70008258563) [🇨🇳](https://atomgit.com/translation/Contransus/blob/master/%E5%8F%B8%E6%B3%95%E6%A1%88%E4%BE%8B%E7%BF%BB%E8%AF%91/%E6%B3%95%E8%AF%91%E4%B8%AD-Entr%20ouvert_Orange%E5%8F%8AOrange%E5%95%86%E4%B8%9AAPP%20%204%E4%BB%BD%E5%88%A4%E5%86%B3.pdf) |
 
 | **Bezeichnung** | Cour de Cassation, 2022-10-05, Case No. 21/15.386 |
 |:---:|:---:|
