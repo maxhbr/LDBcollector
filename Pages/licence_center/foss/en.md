@@ -25,16 +25,16 @@ Emojis for the links can be copied from https://emojipedia.org
 
 The licenses listed here meet the requirements of the Free Software Definition and Open Source Definition. They are divided into the following categories according to their licensing characteristics:
 
-* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
-* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
-* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
-* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
-* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
+* [Licenses without Copyleft](#Licenses-without-Copyleft-aka-Permissive-Licenses)
+* [Licenses with Strong Copyleft](#Licenses-with-Strong-Copyleft)
+* [Licenses with Weak Copyleft](#Licenses-with-Weak-Copyleft)
+* [Licenses with Choice Options](#Licenses-with-Choice-Options)
+* [Licenses with Privileges](#Licenses-with-Privileges)
 
 Software under such licenses may be referred to as Free or Open Source Software. For some of the listed licenses it is controversial or unclear whether these requirements are fulfilled, since the relevant definitions, the free software definition and the open source definition are not identical and license texts are not always clearly written. These licenses are marked with "unclear classification".
 
 
-### Lizenzen ohne Copyleft-Effekt ("Permissive Licenses")
+### Licenses without Copyleft aka Permissive Licenses
 
 Licenses without copyleft are characterized by the fact that they grant the licensee all freedoms of an open source license and do not contain any conditions regarding the type of license to be used for modifications of the software. This allows the licensee to redistribute modified versions of the software under any license conditions, i.e. also convert them into proprietary software.
 
@@ -163,11 +163,11 @@ Licenses without copyleft are characterized by the fact that they grant the lice
 | Zope Public License (v. 2.0) | [🇬🇧](http://old.zope.org/Resources/License/ZPL-2.0) | - |
 | Zope Public License (v. 2.1) | [🇬🇧](https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/) | - |
 
-### Lizenzen mit strengem Copyleft-Effekt
+### Licenses with Strong Copyleft
 
 In the case of licenses with a strict copyleft effect, the licensee is obliged to distribute  works derived from the original software only under the conditions of the original license. However, the licenses listed here are not necessarily "GPL-compatible".
 
-#### GPLartige Lizenzen
+#### GPL-style Licenses
 
 The licenses listed here contain the different GPL versions and derived license texts. There are also some GPL variants with exceptions from the strong copyleft. These licenses with exceptions are then to be understood as weak copyleft, but are listed here for the sake of a better orientation.
 
@@ -191,7 +191,7 @@ The licenses listed here contain the different GPL versions and derived license 
 | RedHat eCos Public License (v. 2.0) | [🇬🇧](http://sources.redhat.com/ecos/license-overview.html) | - |
 | Simple Public License (v. 2.0) | [🇬🇧](https://web.archive.org/web/20080906145432/http://www.law.washington.edu/Casrip/License/SimplePublicLicense.html) | - |
 
-#### Sonstige Lizenzen mit strengem Copyleft-Effekt
+#### Other Licenses with Strong Copyleft
 
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
@@ -231,11 +231,11 @@ The licenses listed here contain the different GPL versions and derived license 
 | vhf Public License | [🇬🇧](https://calrec.com/wp-content/uploads/2018/02/vhf-public-license-License-A.docx) | - |
 | VOSTROM Public License for Open Source | [🇬🇧](http://pwhois.org/license.who) | - |
 
-### Lizenzen mit beschränktem Copyleft-Effekt
+### Licenses with Weak Copyleft
 
 Licenses with weak copyleft have a copyleft effect, which does not include all derived works, but contains defined exceptions.
 
-#### MPLartige Lizenzen
+#### MPL-style Licenses
 
 MPL-style licenses have file-based Copyleft, i.e. if modifications of the software are implemented in separate files, these files can also be redistributed under other, e.g. proprietary license terms. The aim is to facilitate the combination of software under different license types.
 
@@ -283,7 +283,7 @@ MPL-style licenses have file-based Copyleft, i.e. if modifications of the softwa
 | Zimbra Publice License (v. 1.3) | [🇬🇧](https://web.archive.org/web/20120617001845/http://www.zimbra.com/license/zimbra-public-license-1-3.html) | - |
 | Zimbra Publice License (v. 1.4) | [🇬🇧](https://www.zimbra.com/legal/zimbra-public-license-1-4/) | - |
 
-#### Sonstige Lizenzen mit beschränktem Copyleft-Effekt
+#### Other Licenses with Weak Copyleft
 
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
@@ -316,7 +316,7 @@ MPL-style licenses have file-based Copyleft, i.e. if modifications of the softwa
 | wxWindows Library License (v. 3.1) | [🇬🇧](https://www.wxwidgets.org/about/licence/) | - |
 | Yahoo! Public License (YPL) (v. 1.1) | [🇬🇧](https://web.archive.org/web/20120617001853/http://www.zimbra.com/license/yahoo_public_license_1.0.html) | - |
 
-### Lizenzen mit Wahlmöglichkeiten
+### Licenses with Choice Options
 
 DSome licenses have different legal consequences, depending on how extensive a modification is. In addition, the licensee is given various options as to how further developments can be redistributed.
 
@@ -343,7 +343,7 @@ DSome licenses have different legal consequences, depending on how extensive a m
 | Sleepycat Software Product License | [🇬🇧](http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html) | - |
 | Vim License | [🇬🇧](http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license) | - |
 
-### Lizenzen mit Sonderrechten
+### Licenses with Privileges
 
 The licenses with privileges grant the licensees all of the rights that make up Free Software, but at the same time provide special privileges for the licensor in the event of modifications by the licensee. These licenses are mostly used with programs that were originally distributed proprietarily.
 
