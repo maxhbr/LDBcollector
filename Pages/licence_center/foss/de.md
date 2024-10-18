@@ -13,9 +13,9 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 
 --->
 
-<p><a href="/ifrOSS/Pages/licence_center/de">Licence Center</a> > FOSS<br></p>
+<p><a href="/ifrOSS/Pages/licence_center/de">Licenzcenter</a> > FOSS<br></p>
 
-<h1 style="text-align: center;">ifrOSS Licence Center - FOSS Lizenzen</h1>
+<h1 style="text-align: center;">ifrOSS Licenzcenter - FOSS Lizenzen</h1>
 <h1>Inhalt</h1>
 
 * TOC
