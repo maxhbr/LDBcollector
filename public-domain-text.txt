@@ -2444,3 +2444,19 @@ text = '''
 As far as I'm concerned, the code Blair extended into DateTime::Precise
 is public domain.
 '''
+
+package = sc
+location = http://www.ibiblio.org/pub/Linux/apps/financial/spreadsheet/sc-7.16.lsm
+text = '''
+Copying-policy:	Public domain
+'''
+
+package = sc
+location = http://www.ibiblio.org/pub/Linux/apps/financial/spreadsheet/sc-7.16.tar.gz
+# file sc.doc
+text = '''
+This is a much modified version of a public domain spread sheet                                                                                                                                                    
+originally authored by James Gosling,
+and subsequently modified and posted to USENET by
+Mark Weiser under the name vc.
+'''
