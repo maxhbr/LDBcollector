@@ -204,13 +204,10 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 | Lizenz | Text | SPDX-tag |
 |:---:|:---:|:---:|
 | Arphic Public License | [🇬🇧](http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE) | - |
-| CeCILL Free Software License Agreement (v. 1.0) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1-US.html) | - |
+| Contrat de License de Logiciel Libre CeCILL (v. 1.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1-US.html) | - |
 | CeCILL Free Software License Agreement (v. 1.1) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html) | - |
-| CeCILL Free Software License Agreement (v. 2.0) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2-en.html) | - |
-| CeCILL Free Software License Agreement (v. 2.1) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html) | - |
-| Contrat de License de Logiciel Libre CeCILL (v. 1.0) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html) | - |
-| Contrat de License de Logiciel Libre CeCILL (v. 2.0) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html) | - |
-| Contrat de License de Logiciel Libre CeCILL (v. 2.1) | [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html) | - |
+| Contrat de License de Logiciel Libre CeCILL (v. 2.0) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2-en.html) | - |
+| Contrat de License de Logiciel Libre CeCILL (v. 2.1) | [🇫🇷](http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html) [🇬🇧](http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html)| - |
 | Common Public License (v. 0.5) | [🇬🇧](http://www.eclipse.org/legal/cpl-v05.html) | - |
 | Common Public License (v. 1.0) | [🇬🇧](http://www.eclipse.org/legal/cpl-v10.html) | - |
 | Cryptographic Autonomy License (v.1.0) | [🇬🇧](https://github.com/holochain/cryptographic-autonomy-license) | - |
