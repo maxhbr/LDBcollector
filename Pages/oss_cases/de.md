@@ -159,7 +159,7 @@ Emojis für die Links können von https://emojipedia.org kopiert werden
 | **Parteien** | - |
 | **Thema** | Creative Commons-Lizenz „Attribution – ShareAlike 3.0 Unported“ |
 | **Lizenz** | - |
-| **Links** | [🇩🇪](Link: http://www.ifross.org/Fremdartikel/LG_Berlin_CC-Lizenz.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/District_Court_Berlin_CC_License.txt) |
+| **Links** | [🇩🇪](http://www.ifross.org/Fremdartikel/LG_Berlin_CC-Lizenz.pdf) [🇬🇧](http://www.ifross.org/Fremdartikel/District_Court_Berlin_CC_License.txt) |
 
 | **Bezeichnung** | LG München I, Urteil v. 12.07.2007, Az. 7 O 5245/07 |
 |:---:|:---:|
