@@ -35,7 +35,8 @@
                 "Apache Software Licenses",
                 "The Apache License",
                 "Apache license",
-                "License :: OSI Approved :: Apache Software License"
+                "License :: OSI Approved :: Apache Software License",
+                "OSI Approved Apache Software License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
