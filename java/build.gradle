@@ -59,16 +59,48 @@ project.gradle.taskGraph.whenReady { taskGraph ->
  * - - - -  DEPENDENCIES  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
 dependencies {
-    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
-    api group: 'org.slf4j', name: 'slf4j-api', version: '2.0.16'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+    testImplementation 'org.mockito:mockito-core:3.+'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.+'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
 
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-    testCompileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
-    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
-    testImplementation group: 'commons-io', name: 'commons-io'
-    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j2-impl', version: '2.24.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.23.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.1'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+    withSourcesJar()
+    withJavadocJar()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/java']
+        }
+        resources {
+            srcDirs = ['src/test/resources']
+        }
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
 
 /*
  * - - - -  INTELLIJ CONFIG  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -116,7 +148,7 @@ tasks.register('createVersionFile') {
         props.setProperty('libWebsite', "${project.ext.codeRepo}/-/tree/main/java")
         props.setProperty('libDescription', project.description)
         props.setProperty('specName', project.name)
-        props.setProperty('specVersion', project.ext.formatVersion)
+        //props.setProperty('specVersion', project.ext.formatVersion)
         props.setProperty('specWebsite', project.ext.website)
         outFile.withPrintWriter('UTF-8', {
             props.store(it, rootProject.name + ' version information')
@@ -206,32 +238,32 @@ javadocJar {
 /*
  * - - - -  JAVADOC  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
-tasks.named('javadoc').configure {
-    title = project.name + " v${project.version}"
-    options.locale = 'en'
-    options.encoding = 'UTF-8'
-    options.docEncoding = 'UTF-8'
-    options.charSet = 'UTF-8'
-    options.windowTitle = project.name
-    options.noDeprecated = true
-    options.header = project.name + " v${project.version}"
-    options.links('https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/',
-        'https://docs.oracle.com/javase/8/docs/api/')
-
-    // javadoc does not inherit the proxy settings (https://issues.gradle.org/browse/GRADLE-1228)
-    if (System.properties['http.proxyHost'] != null) {
-        options.jFlags('-DproxyHost=' + System.properties['http.proxyHost'],
-            '-DproxyPort=' + System.properties['http.proxyPort'],
-            '-DproxyUser=' + System.properties['http.proxyUser'],
-            '-DproxyPassword=' + System.properties['http.proxyPassword'])
-    }
-
-    // workaround for JDK 9+: https://github.com/gradle/gradle/issues/11182
-    def currentJavaVersion = JavaVersion.current()
-    if (currentJavaVersion >= JavaVersion.VERSION_1_9) {
-        options.addStringOption("-release", "8")
-    }
-}
+//tasks.named('javadoc').configure {
+//    title = project.name + " v${project.version}"
+//    options.locale = 'en'
+//    options.encoding = 'UTF-8'
+//    options.docEncoding = 'UTF-8'
+//    options.charSet = 'UTF-8'
+//    options.windowTitle = project.name
+//    options.noDeprecated = true
+//    options.header = project.name + " v${project.version}"
+//    options.links('https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/',
+//        'https://docs.oracle.com/javase/8/docs/api/')
+//
+//    // javadoc does not inherit the proxy settings (https://issues.gradle.org/browse/GRADLE-1228)
+//    if (System.properties['http.proxyHost'] != null) {
+//        options.jFlags('-DproxyHost=' + System.properties['http.proxyHost'],
+//            '-DproxyPort=' + System.properties['http.proxyPort'],
+//            '-DproxyUser=' + System.properties['http.proxyUser'],
+//            '-DproxyPassword=' + System.properties['http.proxyPassword'])
+//    }
+//
+//    // workaround for JDK 9+: https://github.com/gradle/gradle/issues/11182
+//    def currentJavaVersion = JavaVersion.current()
+//    if (currentJavaVersion >= JavaVersion.VERSION_1_9) {
+//        options.addStringOption("-release", "8")
+//    }
+//}
 
 
 /*

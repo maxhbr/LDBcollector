@@ -1,0 +1,7 @@
+/*
+ * Copyright (c) Siemens AG 2019-2024 ALL RIGHTS RESERVED
+ */
+
+
+rootProject.name = "LicenseLynx"
+include("src")
