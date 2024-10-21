@@ -7,8 +7,7 @@ For that, we offer libraries in Python, Java, and TypeScript.
 
 ## Folder Structure
 The folders **Java**, **Python**, and **TypeScript** are providing libraries to use in code. 
-The folder **scripts** contains several useful scripts to update, transform, and verify data. 
-The folder **web-api**, we simulate an API environment but functions as a file directory hosted on GitLab Pages. 
+The folder **scripts** contains several useful scripts to update, transform, and verify data.
 In the folder **website** we host a static website to introduce the community to the License Lynx project.
 <!--- ## Usage --->
 

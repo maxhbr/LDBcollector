@@ -4,14 +4,15 @@ For Java, use the ``map`` method from the ``LicenseLynx`` class to achieve the s
 
 ## Usage
 
-```javascript
+```java
 import com.siemens.LicenseLynx;
 
 public class LicenseExample {
     public static void main(String[] args) {
         // Map the license name
-        String canonicalName = LicenseLynx.map("licenseName");
-        System.out.println(canonicalName);
+        LicenseObject licenseObject = LicenseLynx.map("licenseName");
+        System.out.println(licenseObject.getCanonical());
+        System.out.println(licenseObject.getSrc());
     }
 }
 ```
