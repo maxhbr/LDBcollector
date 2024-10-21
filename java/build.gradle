@@ -1,0 +1,296 @@
+/*
+ * Copyright (c) Siemens AG 2024-2025 ALL RIGHTS RESERVED
+ */
+
+plugins {
+    id 'java-library'
+    id 'jacoco'
+    id 'idea'
+    id 'checkstyle'
+    id 'maven-publish'
+    id 'org.ajoberstar.grgit' version '4.1.1'
+    id 'org.barfuin.gradle.jacocolog' version '3.1.0'
+    id 'org.barfuin.gradle.taskinfo' version '2.2.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+import org.gradle.internal.jvm.Jvm
+
+/*
+ * - - - -  PROJECT METADATA  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+ext {
+    buildTimestamp = new Date()
+    grgit.open(currentDir: project.rootDir).withCloseable { gitRepo ->
+        gitVersion = grgit.describe {
+            tags = true
+            match = ['java_v*']
+            always = true
+        }
+        gitHash = gitRepo.head().id
+        gitCleanBuild = gitRepo.status().isClean()
+        if (gitVersion.startsWith('java_v')) {
+            gitVersion = gitVersion.substring('java_v'.length())
+        }
+        if (!gitCleanBuild) {
+            gitVersion += '-dirty'
+        }
+    }
+    website = 'https://licenselynx.org/'
+    codeRepo = 'https://github.org/licenselynx/licenselynx'
+}
+
+group = 'org.licenselynx'
+description = 'Unified License Mapper'
+version = project.ext.gitVersion
+
+project.gradle.taskGraph.whenReady { taskGraph ->
+    if (taskGraph.hasTask(':jar')) {
+        logger.lifecycle("\nBuilding ${project.name} ${project.version}")
+    }
+}
+
+
+/*
+ * - - - -  DEPENDENCIES  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+dependencies {
+    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+    api group: 'org.slf4j', name: 'slf4j-api', version: '2.0.16'
+
+
+    testCompileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    testImplementation group: 'commons-io', name: 'commons-io'
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j2-impl', version: '2.24.0'
+}
+
+
+/*
+ * - - - -  INTELLIJ CONFIG  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+idea.module {
+    downloadSources = true
+    downloadJavadoc = true
+    excludeDirs += file('.idea')
+    excludeDirs += file('_support')
+    excludeDirs += file('bin')
+}
+idea.project {
+    jdkName = JavaVersion.VERSION_1_8
+    languageLevel = JavaVersion.VERSION_1_8
+}
+
+
+/*
+ * - - - -  COMPILATION  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
+    withSourcesJar()
+    withJavadocJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation' << '-proc:none'
+}
+
+tasks.register('createVersionFile') {
+    group = LifecycleBasePlugin.BUILD_GROUP
+    description = 'Create a properties file containing the current version number.'
+    final File outFile = new File(temporaryDir, "licenselynx-version.properties")
+    outputs.file(outFile)
+    doLast {
+        Properties props = new Properties()
+        props.setProperty('clean', String.valueOf(project.ext.gitCleanBuild))
+        props.setProperty('libGroup', project.group)
+        props.setProperty('libName', project.name)
+        props.setProperty('libVersion', project.getVersion().toString())
+        props.setProperty('libWebsite', "${project.ext.codeRepo}/-/tree/main/java")
+        props.setProperty('libDescription', project.description)
+        props.setProperty('specName', project.name)
+        props.setProperty('specVersion', project.ext.formatVersion)
+        props.setProperty('specWebsite', project.ext.website)
+        outFile.withPrintWriter('UTF-8', {
+            props.store(it, rootProject.name + ' version information')
+        })
+    }
+}
+tasks.named('processResources').configure { it.dependsOn(tasks.createVersionFile) }
+sourceSets.main.resources.srcDir(tasks.createVersionFile.temporaryDir)
+
+
+/*
+ * - - - -  TESTS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+tasks.named('jacocoTestReport').configure {
+    it.dependsOn tasks.named('test')
+    reports {
+        html.required = true
+        xml.required = true
+        csv.required = false
+    }
+}
+tasks.named('check').configure { t ->
+    t.dependsOn tasks.named('jacocoTestReport')
+}
+
+
+/*
+ * - - - -  ARTIFACTS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+tasks.named('jar').configure {
+    into('META-INF') {
+        from 'LICENSE.md'
+    }
+    manifest {
+        attributes = [
+            'Manifest-Version'           : '1.0',
+            'Specification-Title'        : project.name,
+            'Specification-Vendor'       : 'The LicenseLynx OSS Projec',
+            'Specification-Vendor-Id'    : 'org.licenselynx',
+            'Specification-Version'      : project.version,
+            'Implementation-Title'       : project.name,
+            'Implementation-Vendor'      : 'The LicenseLynx OSS Projec',
+            'Implementation-Vendor-Id'   : 'org.licenselynx',
+            'Implementation-Version'     : project.version,
+            'Implementation-SCM-Revision': project.ext.gitHash,
+            'Automatic-Module-Name'      : 'org.licenselynx',
+            'Website'                    : project.ext.website,
+            'Created-By'                 : "Gradle ${gradle.gradleVersion}",
+            'Built-By'                   : System.getProperty('user.name'),
+            'Build-Jdk'                  : Jvm.current().toString(),
+            'Build-Clean'                : project.ext.gitCleanBuild
+        ]
+    }
+    doFirst {
+        manifest {
+            attributes 'Build-Timestamp': project.ext.buildTimestamp.toString()
+        }
+    }
+}
+
+sourcesJar {
+    into('META-INF') {
+        from 'LICENSE.md'
+    }
+    afterEvaluate {
+        manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
+        manifest {
+            attributes 'Build-Timestamp': project.ext.buildTimestamp.toString()
+        }
+    }
+}
+tasks.sourcesJar.dependsOn tasks.createVersionFile
+
+javadocJar {
+    into('META-INF') {
+        from 'LICENSE.md'
+    }
+    afterEvaluate {
+        manifest.getAttributes().putAll(tasks.jar.manifest.attributes.findAll { it.key != 'Automatic-Module-Name' })
+        manifest {
+            attributes 'Build-Timestamp': project.ext.buildTimestamp.toString()
+        }
+    }
+}
+
+
+/*
+ * - - - -  JAVADOC  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+tasks.named('javadoc').configure {
+    title = project.name + " v${project.version}"
+    options.locale = 'en'
+    options.encoding = 'UTF-8'
+    options.docEncoding = 'UTF-8'
+    options.charSet = 'UTF-8'
+    options.windowTitle = project.name
+    options.noDeprecated = true
+    options.header = project.name + " v${project.version}"
+    options.links('https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/',
+        'https://docs.oracle.com/javase/8/docs/api/')
+
+    // javadoc does not inherit the proxy settings (https://issues.gradle.org/browse/GRADLE-1228)
+    if (System.properties['http.proxyHost'] != null) {
+        options.jFlags('-DproxyHost=' + System.properties['http.proxyHost'],
+            '-DproxyPort=' + System.properties['http.proxyPort'],
+            '-DproxyUser=' + System.properties['http.proxyUser'],
+            '-DproxyPassword=' + System.properties['http.proxyPassword'])
+    }
+
+    // workaround for JDK 9+: https://github.com/gradle/gradle/issues/11182
+    def currentJavaVersion = JavaVersion.current()
+    if (currentJavaVersion >= JavaVersion.VERSION_1_9) {
+        options.addStringOption("-release", "8")
+    }
+}
+
+
+/*
+ * - - - -  CHECKSTYLE  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+checkstyle {
+    toolVersion '8.27'
+    showViolations = true
+    ignoreFailures = false
+}
+project.extensions.findByName('checkstyle').sourceSets.each { SourceSet s ->
+    Checkstyle task = (Checkstyle) tasks.findByName(s.getTaskName('checkstyle', null))
+    task.setSource(s.allSource)
+    getLogger().info('Reconfigured task \'' + task.name + '\' to include all files in sourceSet \'' + s.name + '\'')
+}
+
+dependencies {
+    checkstyle "com.puppycrawl.tools:checkstyle:${project.extensions.checkstyle.toolVersion}"
+    checkstyle group: 'com.github.sevntu-checkstyle', name: 'sevntu-checks', version: '1.37.0'
+}
+
+
+/*
+ * - - - -  PUBLISHING  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+publishing {
+    repositories {
+        maven {
+            name = 'localBuildDir'
+            url = "$buildDir/maven-repo-test"
+        }
+    }
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name = project.name
+                description = (String) project.description
+                url = (String) project.ext.website
+                inceptionYear = '2024'
+                licenses {
+                    license {
+                        name = 'Apache-2.0'
+                        url = project.ext.codeRepo + '/-/raw/v' + project.version + '/LICENSE.md'
+                    }
+                }
+                developers {
+                    developer {
+                        name = 'Leo Reinmann'
+                        email = 'leo.reinmann@siemens.com'
+                    }
+                }
+                final String ga = 'git@github.com:licenselynx/licenselynx.git'
+                scm {
+                    connection = 'scm:git:' + ga
+                    developerConnection = 'scm:git:' + ga
+                    url = ga
+                }
+            }
+        }
+    }
+}
