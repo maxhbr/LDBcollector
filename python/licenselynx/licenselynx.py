@@ -1,23 +1,22 @@
 import json
+from importlib import resources
 
 
 class LicenseLynx:
-
     @staticmethod
     def map(license_name):
         try:
-            with open('resources/merged_data.json', 'r') as file:
+            # Use importlib.resources to read the JSON file
+            with resources.open_text("licenselynx.resources", "merged_data.json") as file:
                 merged_data = json.load(file)
 
-                entry = merged_data.get(license_name)
-
-                if entry:
-                    # Create and return a LicenseObject with canonical and src
-                    return LicenseObject(canonical=entry.get("canonical"), src=entry.get("src"))
-                else:
-                    return {"error": "License not found"}
-        except FileNotFoundError:
-            return {"error": "License not found"}
+            entry = merged_data.get(license_name)
+            if entry:
+                return LicenseObject(canonical=entry.get("canonical"), src=entry.get("src"))
+            else:
+                return None
+        except Exception as e:
+            return {"error": f"Error reading or parsing file: {str(e)}"}
 
 
 class LicenseObject:
