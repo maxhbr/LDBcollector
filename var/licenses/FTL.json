@@ -20,6 +20,7 @@
         "FreeType License",
         "scancode:freetype",
         "freetype",
-        "Freetype"
+        "Freetype",
+        "The FreeType Project LICENSE"
     ]
 }
