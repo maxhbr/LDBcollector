@@ -15,6 +15,9 @@ class Usage(models.Model):
     DEFAULT_PROJECT = "Default project"
     DEFAULT_SCOPE = "Default scope"
 
+    MAX_LENGTH_DEFAULT_PROJECT_NAME = 750
+    MAX_LENGTH_DEFAULT_SCOPE_NAME = 50
+
     STATUS_AUTO = "Auto"
     STATUS_UNKNOWN = "Unknown"
     STATUS_VALIDATED = "Validated"
@@ -97,8 +100,12 @@ class Usage(models.Model):
     )
     description = models.TextField(max_length=500, blank=True)
     licenses_chosen = models.ManyToManyField("License", blank=True)
-    scope = models.CharField(max_length=50, default=DEFAULT_SCOPE)
-    project = models.CharField(max_length=750, default=DEFAULT_PROJECT)
+    scope = models.CharField(
+        max_length=MAX_LENGTH_DEFAULT_SCOPE_NAME, default=DEFAULT_SCOPE
+    )
+    project = models.CharField(
+        max_length=MAX_LENGTH_DEFAULT_PROJECT_NAME, default=DEFAULT_PROJECT
+    )
     license_expression = models.CharField(
         max_length=500,
         blank=True,
