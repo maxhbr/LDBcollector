@@ -6,8 +6,9 @@ class LicenseLynx:
     @staticmethod
     def map(license_name):
         try:
-            # Use importlib.resources to read the JSON file
-            with resources.open_text("licenselynx.resources", "merged_data.json") as file:
+            file_path = resources.files("licenselynx.resources").joinpath("merged_data.json")
+
+            with file_path.open() as file:
                 merged_data = json.load(file)
 
             entry = merged_data.get(license_name)
