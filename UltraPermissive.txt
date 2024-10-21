@@ -25,6 +25,12 @@ text = '''
 text here
 '''
 
+package = rubygem-ruby-shadow
+location = https://github.com/apalmblad/ruby-shadow/blob/master/LICENSE
+text = '''
+License: Free for any use with your own risk!
+'''
+
 package = docbook5-schemas
 location = https://gitlab.com/fedora/legal/fedora-license-data/-/issues/560#note_2139674134
 text = '''
