@@ -175,14 +175,17 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
             )
 
     def save(self, **kwargs):
-        if self.cleaned_data["product_release"] == self.PRODUCT:
-            self.instance.product = self.usage.release.product
-        elif self.cleaned_data["product_release"] == self.RELEASE:
+        if "product_release" in self.cleaned_data:
+            if self.cleaned_data["product_release"] == self.PRODUCT:
+                self.instance.product = self.usage.release.product
+            elif self.cleaned_data["product_release"] == self.RELEASE:
+                self.instance.release = self.usage.release
+            elif self.cleaned_data["product_release"] != self.ANY:
+                self.instance.category = Category.objects.get(
+                    pk=self.cleaned_data["product_release"]
+                )
+        else:
             self.instance.release = self.usage.release
-        elif self.cleaned_data["product_release"] != self.ANY:
-            self.instance.category = Category.objects.get(
-                pk=self.cleaned_data["product_release"]
-            )
         if self.cleaned_data["exploitation_choice"] == self.USAGE:
             self.instance.exploitation = self.usage.exploitation
         if self.cleaned_data["scope_choice"] == self.USAGE:
