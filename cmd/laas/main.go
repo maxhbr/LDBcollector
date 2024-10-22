@@ -11,12 +11,14 @@ import (
 	"log"
 
 	"github.com/joho/godotenv"
+	"gorm.io/gorm/clause"
 
 	_ "github.com/dave/jennifer/jen"
 	_ "github.com/fossology/LicenseDb/cmd/laas/docs"
 	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 )
 
 // declare flags to input the basic requirement of database connection and the path of the data file
@@ -68,12 +70,29 @@ func main() {
 		log.Fatalf("Failed to automigrate database: %v", err)
 	}
 
-	if err := db.DB.AutoMigrate(&models.ObligationMap{}); err != nil {
-		log.Fatalf("Failed to automigrate database: %v", err)
+	DEFAULT_OBLIGATION_TYPES := []*models.ObligationType{
+		{Type: "OBLIGATION"},
+		{Type: "RISK"},
+		{Type: "RESTRICTION"},
+		{Type: "RIGHT"},
+	}
+	DEFAULT_OBLIGATION_CLASSIFICATIONS := []*models.ObligationClassification{
+		{Classification: "GREEN", Color: "#00FF00"},
+		{Classification: "WHITE", Color: "#FFFFFF"},
+		{Classification: "YELLOW", Color: "#FFDE21"},
+		{Classification: "RED", Color: "#FF0000"},
+	}
+
+	if err := db.DB.Clauses(clause.OnConflict{DoNothing: true}).Create(DEFAULT_OBLIGATION_TYPES).Error; err != nil {
+		log.Fatalf("Failed to seed database with default obligation types: %s", err.Error())
+	}
+
+	if err := db.DB.Clauses(clause.OnConflict{DoNothing: true}).Create(DEFAULT_OBLIGATION_CLASSIFICATIONS).Error; err != nil {
+		log.Fatalf("Failed to seed database with default obligation classifications: %s", err.Error())
 	}
 
 	if *populatedb {
-		db.Populatedb(*datafile)
+		utils.Populatedb(*datafile)
 	}
 
 	r := api.Router()

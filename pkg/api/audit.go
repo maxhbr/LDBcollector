@@ -50,7 +50,15 @@ func GetAllAudit(c *gin.Context) {
 	}
 
 	for i := 0; i < len(audits); i++ {
-		if err := getAuditEntity(c, &audits[i]); err != nil {
+		if err := utils.GetAuditEntity(c, &audits[i]); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "unable to find audits",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
 			return
 		}
 	}
@@ -99,7 +107,7 @@ func GetAudit(c *gin.Context) {
 		return
 	}
 
-	if err := getAuditEntity(c, &audit); err != nil {
+	if err := utils.GetAuditEntity(c, &audit); err != nil {
 		return
 	}
 
@@ -231,36 +239,4 @@ func GetChangeLogbyId(c *gin.Context) {
 		},
 	}
 	c.JSON(http.StatusOK, res)
-}
-
-// getAuditEntity is an utility function to fetch obligation or license associated with an audit
-func getAuditEntity(c *gin.Context, audit *models.Audit) error {
-	if audit.Type == "license" || audit.Type == "License" {
-		audit.Entity = &models.LicenseDB{}
-		if err := db.DB.Where(&models.LicenseDB{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusNotFound,
-				Message:   "license corresponding with this audit does not exist",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusNotFound, er)
-			return err
-		}
-	} else if audit.Type == "obligation" || audit.Type == "Obligation" {
-		audit.Entity = &models.Obligation{}
-		if err := db.DB.Where(&models.Obligation{Id: audit.TypeId}).First(&audit.Entity).Error; err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusNotFound,
-				Message:   "obligation corresponding with this audit does not exist",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusNotFound, er)
-			return err
-		}
-	}
-	return nil
 }

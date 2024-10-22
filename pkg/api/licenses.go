@@ -442,7 +442,7 @@ func UpdateLicense(c *gin.Context) {
 		newLicense := models.LicenseDB(updates)
 
 		// Update all other fields except external_ref and rf_shortname
-		if err := tx.Model(&newLicense).Omit("external_ref", "rf_shortname").Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).Updates(newLicense).Error; err != nil {
+		if err := tx.Model(&newLicense).Omit("external_ref", "rf_shortname", "Obligations").Clauses(clause.Returning{}).Where(models.LicenseDB{Id: oldLicense.Id}).Updates(newLicense).Error; err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusInternalServerError,
 				Message:   "Failed to update license",
@@ -913,10 +913,14 @@ func ImportLicenses(c *gin.Context) {
 			errMessage, importStatus, oldLicense, newLicense := utils.InsertOrUpdateLicenseOnImport(tx, &licenses[i], &externalRefs[i])
 
 			if importStatus == utils.IMPORT_FAILED {
+				erroredLicense := ""
+				if licenses[i].Shortname != nil {
+					erroredLicense = *licenses[i].Shortname
+				}
 				res.Data = append(res.Data, models.LicenseError{
 					Status:    http.StatusInternalServerError,
 					Message:   errMessage,
-					Error:     *licenses[i].Shortname,
+					Error:     erroredLicense,
 					Path:      c.Request.URL.Path,
 					Timestamp: time.Now().Format(time.RFC3339),
 				})
