@@ -7,6 +7,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Authorship.txt
 https://www.osadl.org/fileadmin/checklists/terms/Beginning.txt
 https://www.osadl.org/fileadmin/checklists/terms/Binary%20delivery.txt
 https://www.osadl.org/fileadmin/checklists/terms/Binary-only%20delivery.txt
+https://www.osadl.org/fileadmin/checklists/terms/Change%20date.txt
 https://www.osadl.org/fileadmin/checklists/terms/Circumstances.txt
 https://www.osadl.org/fileadmin/checklists/terms/Circumvention.txt
 https://www.osadl.org/fileadmin/checklists/terms/Combined%20library.txt
@@ -15,6 +16,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Combined%20work.txt
 https://www.osadl.org/fileadmin/checklists/terms/Commercial%20distribution.txt
 https://www.osadl.org/fileadmin/checklists/terms/Compatible%20license.txt
 https://www.osadl.org/fileadmin/checklists/terms/Contributors.txt
+https://www.osadl.org/fileadmin/checklists/terms/Copy.txt
 https://www.osadl.org/fileadmin/checklists/terms/Copyright%20holder.txt
 https://www.osadl.org/fileadmin/checklists/terms/Copyright%20license.txt
 https://www.osadl.org/fileadmin/checklists/terms/Copyright%20notice.txt
